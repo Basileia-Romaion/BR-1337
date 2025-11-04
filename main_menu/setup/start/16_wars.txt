@@ -1,0 +1,395 @@
+war_manager = {
+	civil_war = {
+		war_name = {
+			name = "CIVIL_WAR_NAME"
+			ordinal = 1
+			first = {
+				name = "SCO"
+			}
+		}
+		
+		start_date = 1332.7.6
+		action = 1337.3.15
+		attacker = {
+			country = SBL
+			request = {
+				reason = Instigator
+			}
+		}
+		attacker = {
+			country = LOI
+			request = {
+				caller = SBL
+				reason = Subject
+			}
+		}
+		defender = {
+			country = SCO
+			request = {
+				reason = Target
+			}
+		}
+		defender = {
+			country = ROS
+			request = {
+				caller = SCO
+				reason = Subject
+			}
+		}
+		defender = {
+			country = MOY
+			request = {
+				caller = SCO
+				reason = Subject
+			}
+		}
+	}
+
+	war = {
+		war_name = {
+			name = "CRUSADE_WAR_NAME"
+			ordinal = 1
+			second = {
+				name = "LIT"
+			}
+		}
+		
+		take_province = {
+			type = crusade_conquest
+			casus_belli = cb_crusade
+			location = vilnius
+		}
+		
+		start_date = 1283.1.1
+		action = 1337.3.1
+		attacker = {
+			country = TEU #Teutonic Order
+			request = {
+				reason = Instigator
+			}
+		}
+		attacker = {
+			country = ERM #Ermland / Warmia
+			request = {
+				caller = TEU
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = SMD #Samland / Samia
+			request = {
+				caller = TEU
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = PMS #Pomesania
+			request = {
+				caller = TEU
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = CHL #Kulm / Chełmno
+			request = {
+				caller = TEU
+				reason = Subject
+			}
+		}
+
+		attacker = {
+			country = LIV #Livonian Order
+			request = {
+				caller = TEU
+				reason = Scripted
+				which = alliance
+			}
+		}
+		attacker = {
+			country = RIG
+			request = {
+				caller = LIV
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = ARR
+			request = {
+				caller = LIV
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = KUR
+			request = {
+				caller = LIV
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = BIO
+			request = {
+				caller = LIV
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = BID
+			request = {
+				caller = LIV
+				reason = Subject
+			}
+		}
+
+		defender = {
+			country = LIT #Lithuania
+			request = {
+				reason = Target
+			}
+		}
+		defender = {
+			country = DRU
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = NRK
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = PNK
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = POK
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = SSK
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = TPS
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = TUV
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = VBK
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+		defender = {
+			country = RZH
+			request = {
+				caller = LIT
+				reason = Subject
+			}
+		}
+	}
+
+	war = {
+		war_name={
+			name="NORMAL_WAR_NAME"
+			ordinal=1
+			first = {
+				name="MOR"
+			}
+			SECOND = {
+				name="TLE"
+			}
+		}
+		
+		take_province = {
+			type = conquer_province
+			casus_belli = cb_conquer_province
+			location = tlemcen
+		}
+		
+		start_date = 1335.1.1
+		action = 1337.3.1
+		attacker = {
+			country = MOR #Morocco
+			request = {
+				reason = Instigator
+			}
+		}
+
+		attacker = {
+			country = TFL #Tafilalt
+			request = {
+				caller = MOR
+				reason = Subject
+			}
+		}
+
+		defender = {
+			country = TLE #Tlemcen
+			request = {
+				reason = Target
+			}
+		}
+	}
+	truce = { #Polish-Teutonic War of 1326-1332
+		#Teutons and Vassals
+		attacker = TEU
+		attacker = ERM
+		attacker = SMD
+		attacker = PMS
+		attacker = CHL
+		#Livonia and Vassals
+		attacker = LIV
+		attacker = RIG
+		attacker = ARR
+		attacker = KUR
+		attacker = BIO
+		attacker = BID
+		#Poland and Vassals
+		defender = POL
+		defender = INO
+		defender = SDZ
+		defender = LCZ
+		defender = PLK
+		defender = RAW
+		defender = CZK
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1333.3.2
+		months = 120
+	}
+
+	truce = { #Polish-Teutonic War of 1326-1332
+		#Bohemia and Vassals
+		attacker = BOH
+		attacker = WRC
+		attacker = MVA
+		attacker = BRZ
+		attacker = BYM
+		attacker = GLO
+		attacker = LGC
+		attacker = NMD
+		attacker = NMS
+		attacker = OEL
+		attacker = OPL
+		attacker = OPV
+		attacker = OSW
+		attacker = PDK
+		attacker = RCB
+		attacker = SCI
+		attacker = SIZ
+		attacker = STZ
+		attacker = TES
+		attacker = ZAG
+		attacker = ZIE
+		attacker = NYS
+		#Hungary and Vassals
+		defender = HUN
+		defender = BOS
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1332.5.1
+		months = 60
+	}
+
+	truce = { #Polish-Teutonic War of 1326-1332
+		#Bohemia and Vassals
+		attacker = BOH
+		attacker = WRC
+		attacker = MVA
+		attacker = BRZ
+		attacker = BYM
+		attacker = GLO
+		attacker = LGC
+		attacker = NMD
+		attacker = NMS
+		attacker = OEL
+		attacker = OPL
+		attacker = OPV
+		attacker = OSW
+		attacker = PDK
+		attacker = RCB
+		attacker = SCI
+		attacker = SIZ
+		attacker = STZ
+		attacker = TES
+		attacker = ZAG
+		attacker = ZIE
+		attacker = NYS
+		#Poland and Vassals
+		defender = POL
+		defender = INO
+		defender = SDZ
+		defender = LCZ
+		defender = PLK
+		defender = RAW
+		defender = CZK
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1335.8.24
+		months = 60
+	}
+
+	truce = { #Bohemian-Austrian War of 1336
+		#Bohemia and Vassals
+		attacker = BOH
+		attacker = WRC
+		attacker = MVA
+		attacker = BRZ
+		attacker = BYM
+		attacker = GLO
+		attacker = LGC
+		attacker = NMD
+		attacker = NMS
+		attacker = OEL
+		attacker = OPL
+		attacker = OPV
+		attacker = OSW
+		attacker = PDK
+		attacker = RCB
+		attacker = SCI
+		attacker = SIZ
+		attacker = STZ
+		attacker = TES
+		attacker = ZAG
+		attacker = ZIE
+		attacker = NYS
+
+		defender = HAB
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1336.3.1
+		months = 60
+	}
+
+	truce = { #Hungarian-Austrian War of 1322-1337
+		#Hungary and Vassals
+		defender = HUN
+		defender = BOS
+
+		defender = HAB
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1337.9.11
+		months = 60
+	}
+	
+}

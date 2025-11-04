@@ -1,0 +1,80 @@
+diplomacy_manager = {
+	# England-France needs no introduction
+	rival = { first = FRA second = ENG }
+	rival = { first = ENG second = FRA }
+
+	# England-Scotland
+	rival = { first = SCO second = ENG }
+	rival = { first = ENG second = SCO }
+	# Novgorod-Hansa
+	rival = { first = NOV second = HSA }
+	rival = { first = HSA second = NOV }
+
+	# Burke Civil War
+	rival = { first = MYO second = CLR }
+	rival = { first = MYO second = ULS }
+	rival = { first = MYO second = CWM }
+
+	rival = { first = CLR second = MYO }
+	rival = { first = CLR second = CWM }
+	rival = { first = CLR second = ULS }
+	
+	rival = { first = CWM second = MYO }
+	rival = { first = CWM second = CLR }
+	rival = { first = CWM second = ULS }
+	
+	rival = { first = ULS second = MYO }
+	rival = { first = ULS second = CLR }
+	rival = { first = ULS second = CWM }
+
+	# Tyrone-Clandeboye O'Neill Feud
+	rival = { first = TYR second = CLA }
+	rival = { first = CLA second = TYR }
+	rival = { first = CLA second = ULS }
+	rival = { first = ULS second = CLA }
+
+	# O'Brien-MacCarthy-Geraldine feud over Munster
+	rival = { first = THO second = MCM }
+	rival = { first = THO second = DMS }
+
+	rival = { first = MCM second = THO }
+	rival = { first = MCM second = DMS }
+
+	rival = { first = DMS second = THO }
+	rival = { first = DMS second = MCM }
+
+
+	# East vs West Breifne
+	rival = { first = BFN second = CVN }
+	rival = { first = CVN second = BFN }
+
+	# Ross and the Isles feud
+	rival = { first = ROS second = LOI }
+	rival = { first = LOI second = ROS }
+
+
+	# Teutons-Poland
+	rival = { first = TEU second = POL }
+
+	#Castile-Morocco
+	rival = { first = CAS second = MOR }
+	rival = { first = MOR second = CAS }
+
+	#The Rival Families of the HRE
+	#Upper Bavaria and Bohemia
+	rival = { first = UBV second = BOH }
+	rival = { first = BOH second = UBV }
+	#Upper Bavaria and Austria
+	rival = { first = UBV second = HAB }
+	rival = { first = HAB second = UBV }
+
+	#The Two Sicilies
+	rival = { first = NAP second = SIC }
+	rival = { first = SIC second = NAP }
+
+	#Maghreb
+	rival = { first = MOR second = TLE }
+	rival = { first = TLE second = MOR }
+	rival = { first = TLE second = TUN }
+	rival = { first = TUN second = TLE }
+}

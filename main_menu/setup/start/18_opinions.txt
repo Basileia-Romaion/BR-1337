@@ -1,0 +1,115 @@
+diplomacy_manager = {
+
+	opinion = { first = DAN second = SWE type = border_aggression }
+	opinion = { first = SKE second = SWE type = opinion_bad_monarch } #Scania will invite danish monarc back in 1340
+	# trust = { first = DAN second = SWE type = border_aggression }		#can set trust as well..
+
+	#Naples first = country that has the modifier, second = country that is loved/hated by first, type = modifier name
+	opinion = { first = NAP second = SIC type = recent_conflict_lost }
+	opinion = { first = NAP second = ARA type = recent_conflict_lost }
+
+	opinion = { first = NAP second = PAP type = opinion_good_relations }
+	opinion = { first = PAP second = NAP type = opinion_good_relations }
+	opinion = { first = PAP second = VEN type = opinion_angry }
+	opinion = { first = VEN second = PAP type = opinion_angry }
+	opinion = { first = PAP second = FRA type = opinion_mildly_displeased }
+	opinion = { first = FRA second = PAP type = opinion_mildly_displeased }
+
+	opinion = { first = BOH second = NAP type = opinion_bad_monarch }
+
+	opinion = { first = SAL second = NAP type = opinion_supportive_monarch }
+
+	#Byzantium
+	opinion = { first = GEN second = BYZ type = opinion_angry }
+	opinion = { first = BYZ second = GEN type = opinion_angry }
+	opinion = { first = HUN second = BYZ type = opinion_irritated }
+	opinion = { first = BYZ second = HUN type = opinion_irritated }
+	opinion = { first = SER second = BYZ type = opinion_sent_help }
+	opinion = { first = BYZ second = SER type = opinion_good_relations }
+	opinion = { first = SER second = BYZ type = border_aggression }
+	opinion = { first = BYZ second = SER type = border_aggression }
+	opinion = { first = BUL second = BYZ type = border_aggression }
+	opinion = { first = BYZ second = BUL type = border_aggression }
+	opinion = { first = TUR second = BYZ type = successful_diplomacy }
+	opinion = { first = BYZ second = TUR type = successful_diplomacy }
+
+	#Venice
+	opinion = { first = VEN second = BYZ type = opinion_irritated }
+	opinion = { first = BYZ second = VEN type = opinion_raid_capital }
+	opinion = { first = VEN second = PAD type = opinion_declared_war }
+	opinion = { first = PAD second = VEN type = opinion_declared_war }
+	opinion = { first = VEN second = GEN type = opinion_declared_war }
+	opinion = { first = GEN second = VEN type = opinion_declared_war }
+	opinion = { first = VEN second = VER type = opinion_declared_war }
+	opinion = { first = VER second = VEN type = opinion_declared_war }
+	opinion = { first = VEN second = HUN type = border_aggression }
+	opinion = { first = HUN second = VEN type = border_aggression }
+
+	#Historical Friends
+	opinion = { first = POL second = LIT type = opinion_historical_friend_POL_LIT }
+	opinion = { first = LIT second = POL type = opinion_historical_friend_POL_LIT }
+	opinion = { first = TEU second = LIV type = opinion_historical_friend_TEU_LIV }
+
+	#Andes 
+	#Historical Rivals
+	opinion = { first = CSU second = AYA type = border_aggression }
+	opinion = { first = AYA second = CSU type = border_aggression }
+	opinion = { first = CSU second = URC type = opinion_threatens_conquest }
+	opinion = { first = AYA second = URC type = opinion_threatens_conquest }
+	opinion = { first = URC second = AYA type = opinion_threatens_conquest }
+	opinion = { first = URC second = CSU type = opinion_prey_to_conquest }
+
+
+	opinion = { first = KOR second = CHI type = opinion_good_relations }
+	opinion = { first = CHI second = KOR type = opinion_good_relations }
+
+	opinion = { first = RAV second = CES type = opinion_supportive_monarch }
+	opinion = { first = RIM second = CES type = opinion_supportive_monarch }
+
+	#HRE
+	#Bavaria
+	#Wittelsbacher Rivals
+	opinion = { first = UBV second = PAP type = opinion_angry } #represents the Interdict that germans did not care about
+	opinion = { first = PAP second = UBV type = opinion_angry } #represents the Interdict that germans did not care about
+	opinion = { first = UBV second = HAB type = opinion_irritated }
+	opinion = { first = HAB second = UBV type = opinion_irritated }
+	#Wittelsbacher Good House Relations
+	opinion = { first = UBV second = LBV type = opinion_good_relations }
+	opinion = { first = LBV second = UBV type = opinion_good_relations }
+	opinion = { first = UBV second = PAL type = opinion_good_relations }
+	opinion = { first = PAL second = UBV type = opinion_good_relations }
+	opinion = { first = UBV second = BRA type = opinion_good_relations }
+	opinion = { first = BRA second = UBV type = opinion_good_relations }
+
+	#Maghreb
+	opinion = { first = TUN second = TLE type = border_aggression }
+	opinion = { first = TLE second = MOR type = border_aggression }
+	opinion = { first = GRA second = MOR type = opinion_good_relations }
+	opinion = { first = MOR second = GRA type = opinion_good_relations }
+	
+	opinion = { first = LIT second = PSK type = opinion_supportive_monarch }
+	opinion = { first = PSK second = LIT type = opinion_supportive_monarch }
+	opinion = { first = LIT second = NOV type = opinion_supportive_monarch }
+	opinion = { first = NOV second = LIT type = opinion_supportive_monarch }
+	opinion = { first = LIT second = TVE type = opinion_supportive_monarch }
+	opinion = { first = TVE second = LIT type = opinion_supportive_monarch }
+	opinion = { first = LIT second = MOS type = opinion_declared_war }
+	opinion = { first = MOS second = LIT type = opinion_declared_war }
+
+	#Indonesia
+	opinion = { first = SPN second = LAV type = opinion_good_relations }
+	opinion = { first = SPN second = PTC type = opinion_dynastic_ties }
+	opinion = { first = SPN second = ADH type = opinion_dynastic_ties }
+	opinion = { first = LAV second = SPN type = opinion_good_relations }
+	opinion = { first = LAV second = PTC type = opinion_dynastic_ties }
+	opinion = { first = LAV second = ADH type = opinion_dynastic_ties }
+	opinion = { first = PTC second = SPN type = opinion_dynastic_ties }
+	opinion = { first = PTC second = LAV type = opinion_dynastic_ties }
+	opinion = { first = PTC second = ADH type = opinion_dynastic_ties }
+
+	#Maya
+	opinion = { first = COC second = XIU type = opinion_irritated }
+	opinion = { first = XIU second = COC type = opinion_tyrant_overlord }
+	opinion = { first = COC second = HEL type = opinion_irritated }
+	opinion = { first = HEL second = COC type = opinion_tyrant_overlord }
+}

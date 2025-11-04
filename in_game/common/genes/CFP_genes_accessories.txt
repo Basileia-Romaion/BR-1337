@@ -1,0 +1,59 @@
+﻿accessory_genes = {
+
+	INJECT_OR_CREATE:headwear = {
+
+		cfp_country_crowns = {
+			index = 80
+			male = {
+				1 = male_headwear_hungarian_cfp_royalty_01
+				1 = male_headwear_iberian_cfp_aragonese_royalty_01
+				1 = male_headwear_iberian_cfp_castilian_royalty_01
+				1 = male_headwear_latin_cfp_icol_01
+				1 = male_headwear_latin_cfp_royalty_01
+				1 = male_headwear_slavic_cfp_croatian_crown_01
+				1 = male_headwear_slavic_cfp_monomakh_crown_01
+				1 = male_headwear_slavic_cfp_skanderbeg_crown_01
+				1 = male_headwear_javanese_cfp_royalty_01
+			}
+			female = {
+				1 = female_headwear_hungarian_cfp_royalty_01
+				1 = female_headwear_iberian_cfp_aragonese_royalty_01
+				1 = female_headwear_iberian_cfp_castilian_royalty_01
+				1 = female_headwear_latin_cfp_icol_01
+				1 = female_headwear_latin_cfp_royalty_01
+				1 = female_headwear_slavic_cfp_croatian_crown_01
+				1 = female_headwear_slavic_cfp_monomakh_crown_01
+				1 = female_headwear_slavic_cfp_skanderbeg_crown_01
+				1 = female_headwear_javanese_cfp_royalty_01
+			}
+			boy = male
+			girl = female
+			adolescent_boy = boy
+			adolescent_girl = girl
+			infant = {}
+		}
+
+	}
+
+	INJECT_OR_CREATE:clothes = {
+
+		cfp_placeholder = {
+			index = 100
+			male = {
+				1 = empty
+			}
+			female = {
+				1 = empty
+			}
+			boy = male
+			girl = female
+			adolescent_boy = boy
+			adolescent_girl = girl
+			infant = {
+				1 = infant_cloth_swaddle_basic
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,118 @@
+exploration_manager = {
+	#ENG USA/CANADA Preference
+	add_exploration_preference = {
+		country = ENG
+		modifier = 2
+
+		area = atlantic_north_atlantic_current_area
+		area = atlantic_irminger_area
+		area = labrador_sea_area
+		area = atlantic_labrador_area
+		area = azores_sea_area
+
+		region = canada_region
+		region = east_coast_region
+	}
+
+	#ENG Africa/India preference
+	add_exploration_preference = {
+		country = ENG
+		modifier = 2
+
+		area = nw_africa_coast_area
+		area = west_africa_coastline
+		area = gulf_of_africa_sea
+		area = central_africa_coastline_area
+		area = southern_africa_coast_area
+		area = mozambique_channel_area
+		area = somali_sea_area
+		area = indian_horn_area
+		area = deccan_sea_zones_area
+	}
+
+	#PORTUGAL
+	add_exploration_preference = {
+		country = POR
+		modifier = 0.75
+		continent = africa
+		sub_continent = south_asia
+	}
+	add_exploration_preference = {
+		country = POR
+		modifier = 0.95
+		sub_continent = middle_east
+	}
+	add_exploration_preference = {
+		country = POR
+		modifier = 3
+		region = brazil_region
+
+		#Add Naval Regions on the way to preferred land
+		area = nw_africa_coast_area
+		area = atlantic_north_equatorial_area
+		area = west_africa_coastline
+		area = atlantic_equatorial_countercurrent_area
+		area = guayana_sea_zones_area
+		area = azores_sea_area
+		area = azores_area
+	}
+
+	#CASTILE
+	add_exploration_preference = {
+		country = CAS
+		modifier = 3
+		continent = south_america
+		region = mesoamerica_region
+		region = central_america_region
+		region = aridoamerica_region
+
+		#Add Naval Regions on the way to preferred land
+		area = azores_sea_area
+		area = azores_area
+		area = nw_africa_coast_area
+		area = west_africa_coastline
+		area = atlantic_north_equatorial_area
+		area = antilles_sea_area
+		area = east_caribbean_sea_area
+		area = west_caribbean_sea_area
+		area = gulf_of_mexico_area
+		area = bahamas_sea_area
+	}
+
+	add_exploration_preference = {
+		country = CAS
+		modifier = 2.5
+
+		#area preference for staging colonies needed to extend range
+		area = cuba_area
+		area = hispaniola_area
+	}
+
+	#adding brazil as a negative after adding south america as a positive will override what came before
+	add_exploration_preference = {
+		country = CAS
+		modifier = -0.5
+		region = brazil_region
+	}
+
+
+	#SWEDEN
+	add_exploration_preference = {
+		country = SWE
+		modifier = 3.0
+		area = finland_area
+	}
+
+	add_exploration_preference = {
+		country = SWE
+		modifier = 2.0
+		area = norrland_area
+	}
+
+	#NORWAY
+		add_exploration_preference = {
+		country = NOR
+		modifier = 2.0
+		area = nord_norge_area
+	}
+}
