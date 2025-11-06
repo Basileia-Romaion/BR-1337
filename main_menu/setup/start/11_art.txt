@@ -74,7 +74,6 @@ work_of_art_manager = {
 	statue = { location = venice origin = chios  quality = 60 creation_date = 200.1.1  key = saint_mark_horses } #https://en.wikipedia.org/wiki/Horses_of_Saint_Mark
 	monument = { location = venice origin = venice  quality = 82 creation_date = 829.1.1  key = saint_mark_basilica } #https://en.wikipedia.org/wiki/St_Mark%27s_Basilica
 	regalia = { location = venice origin = venice  quality = 64 creation_date = 1311.1.1  key = bucentaur } #https://en.wikipedia.org/wiki/Bucentaur
-	icon = { location = venice origin = constantinople quality = 69 creation_date = 1000.1.1 key = two_icons_of_archangel_michael }
 	# Papal States - PAP
 	palace = { artist = fra_jean_louvres location = avignon origin = avignon quality = 70 creation_date = 1309.1.1 key = palais_des_papes }#https://en.wikipedia.org/wiki/Palais_des_Papes
 	#Portugal - POR
@@ -89,6 +88,7 @@ work_of_art_manager = {
 	treatise = { artist = byz_nikephoros_kallistos_xanthopoulos location = constantinople origin = constantinople  quality = 51 creation_date = 1317.1.1  key = ecclesiastica_historia } #https://en.wikipedia.org/wiki/Nikephoros_Kallistos_Xanthopoulos
 	poem = { location = constantinople origin = constantinople quality = 46 creation_date = 1012.1.1 key = song_of_armouris } #https://en.wikipedia.org/wiki/Song_of_Armouris
 	treatise = { location = constantinople origin = constantinople quality = 50 creation_date = 1256.6.1 key = apoheteftiko_systhma_byzantio }
+	icon = { location = venice origin = constantinople quality = 69 creation_date = 1000.1.1 key = two_icons_of_archangel_michael }
 	#Poland - POL
 	chronicle = { artist = pol_wincenty_kadlubek location = krakow origin = krakow quality = 53 creation_date = 1208.6.1 key = historia_polonica } #https://en.wikipedia.org/wiki/Chronica_seu_originale_regum_et_principum_Poloniae
 	chronicle = { location = krakow origin = krakow quality = 74 creation_date = 1116.6.1 key = gesta_principum_polonorum }

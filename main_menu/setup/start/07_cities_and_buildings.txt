@@ -2229,28 +2229,29 @@ building_manager = {
 	cathedral 	= { tag = ANG level = 1 location = angouleme } #Saint-Pierre d'Angoulême Cathedral, established in 1128
 	cathedral 	= { tag = PRO level = 1 location = apt } #Sainte-Anne d'Apt Cathedral, established in 991
 	cathedral 	= { tag = PRO level = 1 location = arles } #Saint-Trophime d'Arles Cathedral, established in 250
-	cathedral		= { tag = ARS level = 1 location = arras } #Notre-Dame-et-Saint-Vaast d'Arras Cathedral, established in 1030
-	cathedral		= { tag = BUR level = 1 location = autun } #Saint-Lazare d'Autun Cathedral, established in 1132
-	cathedral		= { tag = AUX level = 1 location = auxerre } #Saint-Étienne d'Auxerre Cathedral, established in 1057
-	cathedral		= { tag = PAP level = 1 location = avignon } #Notre-Dame des Doms d'Avignon Cathedral, established in 1150
-	cathedral		= { tag = NRM level = 1 location = avranches } #Saint-André d'Avranches Cathedral, established in 1211
-	cathedral		= { tag = CAM level = 1 location = cambrai } #Notre-Dame de Cambrai Cathedral, established in 1148
+	cathedral	= { tag = ARS level = 1 location = arras } #Notre-Dame-et-Saint-Vaast d'Arras Cathedral, established in 1030
+	cathedral	= { tag = BUR level = 1 location = autun } #Saint-Lazare d'Autun Cathedral, established in 1132
+	cathedral	= { tag = AUX level = 1 location = auxerre } #Saint-Étienne d'Auxerre Cathedral, established in 1057
+	cathedral	= { tag = PAP level = 1 location = avignon } #Notre-Dame des Doms d'Avignon Cathedral, established in 1150
+	cathedral	= { tag = NRM level = 1 location = avranches } #Saint-André d'Avranches Cathedral, established in 1211
+	cathedral	= { tag = CAM level = 1 location = cambrai } #Notre-Dame de Cambrai Cathedral, established in 1148
 	cathedral 	= { tag = FOI level = 1 location = foix } #Notre-Dame d'Alet Cathedral, established in 1317
 	cathedral 	= { tag = PRO level = 1 location = grasse } #Notre-Dame-de-l'Immaculée-Conception d'Antibes Cathedral, established in 450
 	cathedral 	= { tag = FRA level = 1 location = paris } #Notre-Dame de Paris Cathedral, established in 1182
 	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
-	cathedral		= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
+	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
+	cathedral	= { tag = BYZ level = 1	location = constantinople }
 
 	#Greece and Balkans
 	
-	fine_cloth_guild = { tag = BYZ level = 3 location =  constantinople }
+	fine_cloth_guild = { tag = BYZ level = 5 location =  constantinople }
 	royal_court = { tag = BYZ level = 1 location =  constantinople }
 	sergeantry = { tag = BYZ level = 1 location =  constantinople }
-	market_warehouse = { tag = BYZ level = 1 location =  constantinople }
-	saltpeter_guild = { tag = BYZ level = 2 location =  constantinople }
+	market_warehouse = { tag = BYZ level = 2 location =  constantinople }
+	saltpeter_guild = { tag = BYZ level = 3 location =  constantinople }
 	#lacquerware_guild = { tag = BYZ level = 3 location =  constantinople }
-	tannery = { tag = BYZ level = 2 location =  constantinople }
-	scriptorium = { tag = BYZ level = 3 location =  constantinople }
+	tannery = { tag = BYZ level = 3 location =  constantinople }
+	scriptorium = { tag = BYZ level = 5 location =  constantinople }
 	hospital = { tag = BYZ level = 1 location =  constantinople }
 	castle = { tag = BYZ level = 1 location =  gallipoli }
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
