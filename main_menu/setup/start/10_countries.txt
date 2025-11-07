@@ -17246,13 +17246,11 @@ countries = {
 	}
 
 	#Flanders
-	FLA = {
+	FLA = { #BR edit
 		own_control_core = {
 			cassel dunkirk oudenaarde ypres veurne
 			ostend bruges hulst ghent sint_niklaas aalst kortriik
-		}
-		our_cores_conquered_by_others = {
-			lille douai tournai
+            lille douai tournai #BR edit
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
