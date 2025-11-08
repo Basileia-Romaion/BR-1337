@@ -1,4 +1,4 @@
-current_age = age_1_traditions
+﻿current_age = age_1_traditions
 
 # own_control_core
 # own_control_integrated
@@ -13938,15 +13938,40 @@ countries = {
 		capital = santiago_compostela
 	}
 
-	GRA = {
+	ADU = {
 		own_control_core = {
 			almeria almanzora baza gergal mojacar velez_rubio
 			granada adra almunecar guadix huescar illora loja pinar orgiva
 			malaga antequera velez_malaga
-		}
-
-		our_cores_conquered_by_others = {
-			olvera
+            #BR edit
+            avila adrada arevalo las_navas oropesa villatoro
+            burgos aranda_de_duero briviesca castrojeriz lerma logrono miranda_de_ebro najera sto_domingo_silos villadiego villarcayo
+            palencia aguilar_de_campoo carrion_de_los_condes monzon_campos palenzuela saldana reinosa
+            segovia cuellar fuentiduena pedraza sepulveda
+            soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
+            santander laredo potes san_vicente_barquera
+            valladolid medina_de_rioseco medina_del_campo penafiel tordesillas
+            cuenca alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena torralba
+            madrid alcala_de_henares brihuega buitrago_de_lozoya cobeta colmenar el_escorial guadalajara maqueda siguenza zorita
+            ciudad_real alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
+            toledo alcazar_de_san_juan chinchon consuegra guadalupe illescas los_yebenes navalucillos ocana puebla_de_montalban puente_arzobispo talavera_de_la_reina tomelloso ucles
+            badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
+            caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
+            plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea
+            coruna betanzos ferrol mondonedo vivero
+            lugo monforte_de_lemos navia_de_suarna sarria villalba
+            ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo
+            santiago_compostela finisterre lalin mellid noya pontevedra tuy
+            oviedo aviles cangas castropol llanes mieres tineo villaviciosa
+            leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
+            salamanca alba_de_tormes bejar ciudad_rodrigo coria ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes
+            zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
+            cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia
+            jaen andujar baeza cazorla jodar martos ubeda
+            murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
+            sevilla arcos_de_la_frontera cadiz carmona constantina ecija jerez_de_la_frontera medina_sidonia moron olvera osuna sanlucar tarifa
+            huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
+            bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
 		}
 
 		starting_technology_level = 3
@@ -13990,7 +14015,7 @@ countries = {
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
 
-		country_rank = rank_duchy
+		country_rank = rank_empire  #BR edit
 
 		tolerated_cultures = {
 			sephardi
