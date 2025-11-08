@@ -13945,10 +13945,9 @@ countries = {
 			malaga antequera velez_malaga
             #BR edit
             avila adrada arevalo las_navas oropesa villatoro
-            burgos aranda_de_duero briviesca castrojeriz lerma logrono miranda_de_ebro najera sto_domingo_silos villadiego villarcayo
+            burgos aranda_de_duero briviesca castrojeriz lerma miranda_de_ebro sto_domingo_silos villadiego villarcayo
             palencia aguilar_de_campoo carrion_de_los_condes monzon_campos palenzuela saldana reinosa
             segovia cuellar fuentiduena pedraza sepulveda
-            soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
             santander laredo potes san_vicente_barquera
             valladolid medina_de_rioseco medina_del_campo penafiel tordesillas
             cuenca alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena torralba
@@ -13971,7 +13970,6 @@ countries = {
             murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
             sevilla arcos_de_la_frontera cadiz carmona constantina ecija jerez_de_la_frontera medina_sidonia moron olvera osuna sanlucar tarifa
             huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
-            bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
 		}
 
 		starting_technology_level = 3
@@ -14029,10 +14027,9 @@ countries = {
 		own_control_core = {
 			pamplona elizondo estella olite roncesvalles sanguesa tudela viana laguardia
 			saint_jean_pied_de_port #Gascony
-		}
-
-		our_cores_conquered_by_others = {
-			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+            bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+            soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
+            logrono najera
 		}
 
 		starting_technology_level = 3
