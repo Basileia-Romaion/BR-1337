@@ -247,6 +247,8 @@ diplomacy_manager = {
     scripted_oneway = { first = FRA second = ANR type = guarantee }
     scripted_oneway = { first = FOI second = ANR type = guarantee }
 
+    dependency = { first = ADU second = MOR subject_type = vassal }
+
     #scripted_oneway = { first = ASU second = CTV type = military_sponsorship }   #BR edit
     #scripted_oneway = { first = ASU second = STO type = military_sponsorship }   #BR edit
     #scripted_oneway = { first = ASU second = ACT type = military_sponsorship }   #BR edit
