@@ -71,7 +71,6 @@ work_of_art_manager = {
 	painting = { location = jinju origin = jinju quality = 57 creation_date = 1304.1.1 key = devadatta } #https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Devadatta_%28Sojiji_Yokohama%29.jpg/250px-Devadatta_%28Sojiji_Yokohama%29.jpg
 	monument = { location = huicheon origin = huicheon  quality = 72 creation_date = 1024.1.1  key = pohyonsa } #https://en.wikipedia.org/wiki/Pohyonsa
 	#Venice - VEN
-	statue = { location = venice origin = chios  quality = 60 creation_date = 200.1.1  key = saint_mark_horses } #https://en.wikipedia.org/wiki/Horses_of_Saint_Mark
 	monument = { location = venice origin = venice  quality = 82 creation_date = 829.1.1  key = saint_mark_basilica } #https://en.wikipedia.org/wiki/St_Mark%27s_Basilica
 	regalia = { location = venice origin = venice  quality = 64 creation_date = 1311.1.1  key = bucentaur } #https://en.wikipedia.org/wiki/Bucentaur
 	# Papal States - PAP
@@ -80,6 +79,7 @@ work_of_art_manager = {
 	monument = { location = tomar origin = tomar  quality = 80 creation_date = 1118.1.1  key = convent_christ }
 	monument = { location = alcobaca origin = alcobaca  quality = 70 creation_date = 1153.1.1  key = alcobaca_monastery }
 	#Byzantium - BYZ
+	statue = { location = constantinople origin = chios  quality = 60 creation_date = 200.1.1  key = saint_mark_horses } #https://en.wikipedia.org/wiki/Horses_of_Saint_Mark #BR EDIT
 	monument = { location = constantinople origin = constantinople  quality = 57 creation_date = 548.1.1  key = hagia_irene } #https://en.wikipedia.org/wiki/Hagia_Irene
 	monument = { location = constantinople origin = constantinople  quality = 91 creation_date = 537.1.1  key = hagia_sophia } #https://en.wikipedia.org/wiki/Hagia_Sophia
 	monument = { location = constantinople origin = constantinople  quality = 48 creation_date = 413.1.1  key = theodosian_walls } #https://en.wikipedia.org/wiki/Walls_of_Constantinople
