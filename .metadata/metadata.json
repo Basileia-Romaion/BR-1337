@@ -1,11 +1,16 @@
 {
 	"name" : "Basileia-Romaion-1337",
-	"id" : "communityflavorpack",
+	"id" : "",
 	"version" : "1.0",
 	"supported_game_version" : "1.0.0",
 	"short_description" : "",
 	"tags" : [],
 	"picture": "thumbnail.png",
 	"relationships" : [],
-	"game_custom_data" : {}
+	"game_custom_data" : {
+   	 "multiplayer_synchronized" : true,
+     "replace_paths" : [
+      "main_menu/localization/english/replace"
+    ]
+  }
 }

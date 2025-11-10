@@ -1,0 +1,16 @@
+﻿l_english:
+ BYZ: "Basileía Romaíon"
+ BYZ_ADJ: "Basileía Romaíon"
+ BYZ_eastern_rome: "Eastern Rome"
+ BYZ_eastern_rome_ADJ: "Roman Empire"
+ BYZ_eastern_rome_abbreviation: "E.R.E."
+
+#Other
+
+ rank_empire: ""
+
+ rule_byz_name: "Basileía Romaíon Name"
+ setting_byz_name_default: "Default"
+ setting_byz_name_default_desc: "The [ShowCultureName('greek_culture')] [country|e] centered around [ShowProvinceDefinitionName('constantinople_province')] will be known as the $BYZ_ADJ$ Empire."
+ setting_byz_name_ere: "$BYZ_eastern_rome_ADJ$ Empire"
+ setting_byz_name_ere_desc: "The [ShowCultureName('greek_culture')] [country|e] centered around [ShowProvinceDefinitionName('constantinople_province')] will be known as the $BYZ_eastern_rome_ADJ$."
