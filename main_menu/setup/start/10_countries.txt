@@ -13940,6 +13940,7 @@ countries = {
             huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
             jativa alcoy alicante denia elche orihuela
             valencia gandia ayora bunol chelva lliria
+            ronda algeciras gibraltar marbella
             #Portugal
             lagos faro silves tavira
             evora alvalade alvito avis beja crato elvas estremoz mertola montemor mora_portugal moura odemira ourique ponte_sor portalegre portel salvaterra serpa sines vila_vicosa
@@ -18243,7 +18244,7 @@ countries = {
 	}
 
 	MOR = { #Morocco
-		own_control_core = {
+		own_control_core = { #BR edit
 			tangier ceuta tetouan asilah basra_al_hamra larache taunat
 			badis tizgane amergo al_mazamma
 			melilla ras_kebdana ghassasa temsamane tabarida
@@ -18261,7 +18262,6 @@ countries = {
 			jerada taourirt debdou echemmaia sidi_bennour
 			nedroma tegeget kalaat_sraghna midelt
 			aouint_yghomane afso ifrane
-			ronda algeciras gibraltar marbella
 		}
 
 		control = {
