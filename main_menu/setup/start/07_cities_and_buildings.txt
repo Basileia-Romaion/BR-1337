@@ -2242,21 +2242,50 @@ building_manager = {
 	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
 	cathedral	= { tag = BYZ level = 1	location = constantinople }
 
-	#Greece and Balkans
-	
-	fine_cloth_guild = { tag = BYZ level = 5 location =  constantinople }
+	#Greece and Balkans #BR edited
+
+	grand_palace = { tag = BYZ level = 1 location =  constantinople } #Great Palace(s) of Constantinople
 	royal_court = { tag = BYZ level = 1 location =  constantinople }
-	sergeantry = { tag = BYZ level = 1 location =  constantinople }
+	royal_garden = { tag = BYZ level = 1 location =  constantinople } #Gardens of the Great Palace
+	chancery = { tag = BYZ level = 1 location =  constantinople } #Senate
+	#constantinople_observatory = { tag = BYZ level = 1 location =  constantinople }
+
+	marketplace	= { tag = BYZ level = 25 location =  constantinople }
+	#merchants_quarters = { tag = BYZ level = 1 location =  constantinople }
+	#grand_marketplace = { tag = BYZ level = 1 location =  constantinople }
+	trading_hub = { tag = BYZ level = 1 location =  constantinople }
+	entrepot = { tag = BYZ level = 2 location =  constantinople }
 	market_warehouse = { tag = BYZ level = 2 location =  constantinople }
-	saltpeter_guild = { tag = BYZ level = 3 location =  constantinople }
-	#lacquerware_guild = { tag = BYZ level = 3 location =  constantinople }
-	tannery = { tag = BYZ level = 3 location =  constantinople }
-	scriptorium = { tag = BYZ level = 5 location =  constantinople }
+	
+	fine_cloth_guild = { tag = BYZ level = 12 location =  constantinople }
+	brewery = { tag = BYZ level = 4 location =  constantinople }
+	saltpeter_guild = { tag = BYZ level = 1 location =  constantinople }
+	lacquerware_guild = { tag = BYZ level = 5 location =  constantinople }
+	tannery = { tag = BYZ level = 8 location =  constantinople }
+	cloth_guild = { tag = BYZ level = 10 location =  constantinople }
+	dyes_guild = { tag = BYZ level = 5 location =  constantinople }
+	furniture_guild = { tag = BYZ level = 8 location =  constantinople }
+	glass_guild = { tag = BYZ level = 5 location =  constantinople }
+	paper_guild = { tag = BYZ level = 5 location =  constantinople }
+	porcelain_guild = { tag = BYZ level = 6 location =  constantinople }
+	pottery_guild = { tag = BYZ level = 4 location =  constantinople }
+	tools_guild = { tag = BYZ level = 4 location =  constantinople }
+	weapon_guild = { tag = BYZ level = 4 location =  constantinople }
+	
+	scriptorium = { tag = BYZ level = 8 location =  constantinople }
 	hospital = { tag = BYZ level = 1 location =  constantinople }
+	library = { tag = BYZ level = 1 location =  constantinople }
+	medical_school = { tag = BYZ level = 1 location =  constantinople }
+
 	castle = { tag = BYZ level = 1 location =  gallipoli }
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
+	wharf = { tag = BYZ level = 1 location =  constantinople }
 	dock = { tag = BYZ level = 1 location = constantinople }
-	sergeantry = { tag = TUR level = 1 location =  bursa }
+	sergeantry = { tag = BYZ level = 1 location =  constantinople }
+	#sergeantry = { tag = TUR level = 1 location =  bursa }
+	protected_harbor = { tag = BYZ level = 1 location =  constantinople }
+	coastal_fort = { tag = BYZ level = 1 location =  constantinople }
+
 	
 	castle = { tag = KNI level = 1 location =  rodos }
 	castle = { tag = SER level = 1 location =  kozelj }
