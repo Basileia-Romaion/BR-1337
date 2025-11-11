@@ -79,10 +79,10 @@ locations={
 	gallipoli = { rank = town 		town_setup = greek_town_port }
 	
 	# bulgaria
-	tarnovo = { rank = city 		town_setup = balkan_town }
+	tarnovo = { rank = town 		town_setup = balkan_town }
 	cherven = { rank = town 		town_setup = balkan_town }
 	drastar = { rank = town 		town_setup = balkan_town }
-	plovdiv = { rank = town 		town_setup = balkan_town }
+	plovdiv = { rank = city 		town_setup = balkan_town }
 	ruse = { rank = town 			town_setup = balkan_town }	
 	shumen = { rank = town 			town_setup = balkan_town }
 	sliven = { rank = town 			town_setup = balkan_town }
@@ -986,7 +986,7 @@ locations={
 	kabul = { rank = town town_setup = levant_city }
 
 	ganja = { rank = town town_setup = levant_city }
-	ani = { rank = town town_setup = levant_city }
+	ani = { rank = city town_setup = anatolian_city } #BR edit
 	astarabad = { rank = town town_setup = levant_city }
 	siraf = { rank = town town_setup = levant_city }
 	rasht = { rank = town town_setup = levant_city }
@@ -2330,6 +2330,8 @@ building_manager = {
 	miaphysite_monastery =  { tag = ETH level = 1 location = kubar } #Debre Kerbe 
 	miaphysite_monastery =  { tag = DBE level = 1 location = hayq } #Debre Hayq Estifanos 
 	miaphysite_monastery =  { tag = MED level = 1 location = keren } #Debre Sina 
+	miaphysite_monastery =  { tag = ARM level = 1 location = ani } #BR EDIT City of Churches
+	miaphysite_monastery =  { tag = ARM level = 1 location = yerevan } #BR EDIT
 
 	cawa_barracks = { tag = ETH level = 1 location = ankober }
 

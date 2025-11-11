@@ -4033,7 +4033,6 @@ countries = {
 			kiyl koptam uil emba atzhaksy shatyrlysay temir or_aktobe
 
 			chilia cetatea_alba gura_galbenei sarata tighina chatyun kutarka sernur morki urzhum
-			lusta soldaia 
 			zainsk syun verkhneyarkeyevo
 			menzelinsk lower_aktanyshbash chalninsky_pochinok chekmagush chishmy
 			ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo
@@ -12355,7 +12354,54 @@ countries = {
 		#dynasty = anjou_taranto_dynasty
 	}
 
-	#CEP BR REMOVED
+	CEP = {
+		own_control_core = {
+			zakynthos leukas cephalonia
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = ach_robert_taranto
+
+			ruler_term = { character = cep_riccardo_i_orsini start_date = 1194.1.1 end_date = 1197.1.1 regnal_number = 1 }
+			ruler_term = { character = cep_maio_i_orsini start_date = 1197.1.1 end_date = 1238.1.1 regnal_number = 1 }
+			ruler_term = { character = cep_maio_ii_orsini start_date = 1238.1.1 end_date = 1259.1.1 regnal_number = 2 }
+			ruler_term = { character = cep_riccardo_ii_orsini start_date = 1259.1.1 end_date = 1304.1.1 regnal_number = 2 }
+			ruler_term = { character = cep_giovanni_i_orsini start_date = 1304.1.1 end_date = 1317.1.1 regnal_number = 1 }
+			ruler_term = { character = epi_nikolaos_orsini start_date = 1317.1.1 end_date = 1323.1.1 regnal_number = 1 }
+			ruler_term = { character = cep_john_orsini start_date = 1323.1.1 end_date = 1324.1.1 regnal_number = 2 }
+
+			ruler_term = { character = alb_john_gravina start_date = 1324.1.1 end_date = 1336.4.5 regnal_number = 3 }
+			ruler_term = { character = ach_robert_taranto start_date = 1336.4.5 regnal_number = 1 }
+
+			regnal_numbers = {
+				#Margaritus = 1
+				name_matthew = 2
+				name_richard = 2
+				name_john = 3
+				name_charles = 1
+				name_robert = 1
+			}
+		}
+		
+		tolerated_cultures = {
+			greek_culture
+		}
+		capital = cephalonia
+		court_language = french_language
+		dynasty = anjou_dynasty
+		#dynasty = anjou_taranto_dynasty
+	}
+
 
 	LAT = { #The Latin Empire
 		starting_technology_level = 3
@@ -12446,9 +12492,6 @@ countries = {
 			#ALB
 			durres
 
-			#CEP
-			zakynthos leukas cephalonia
-
 			#BYZ
 			devol pyli
 
@@ -12458,6 +12501,8 @@ countries = {
 
 		}
 		our_cores_conquered_by_others = {
+			#CEP
+			zakynthos leukas cephalonia
 		}
 
 		starting_technology_level = 3
@@ -12614,7 +12659,10 @@ countries = {
 			
 		}
 		our_cores_conquered_by_others = { 
-
+			#ACH
+			damala ermioni kalamata kyparissia
+			andritsaina pontikokastro andravida corinth
+			chalandritsa patras vostitsa kalavryta xylokastro
 		}
 
 		starting_technology_level = 3
@@ -12750,9 +12798,36 @@ countries = {
 			#BR ADDED
 			#Thessaly 
 			demetrias tripolitsa veligosti karytaina farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
+			
+			#NEO
+			neopatras zetounion
+
+			#BOD
+			bodonitsa
+
+			#ATH
+			gravia athens megara thebes atalanti livadeia
+
+			#NEG
+			negroponte kleisoura karystos kymi oreos eretreia
 
 			#AHI
 			ankara cubuk haymana kalecik polatli karakecili
+
+			#KAR
+			aksaray kochisar insuyu
+			kirsehir nevsehir sariyahsi
+			konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
+			bekarlar bor_tur nigde
+			beysehir aksehir bolvadin sarkikaraagac seydisehir
+			ilgin turgut suluklu kulu_turkey obruk altinekin cumra
+
+			#MOE
+			tripolitsa veligosti karytaina
+			monemvasia mystras oitylo leuktron astros
+
+			#ARG
+			argos nafplio
 		}
 
 		starting_technology_level = 3
@@ -21559,7 +21634,7 @@ countries = {
 			ayntab dluk
 			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
 			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			damascus al_bab aleppo artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
 			umluj al_hawra al_manjur al_maramiyah
 			al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
 			duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
@@ -21568,7 +21643,6 @@ countries = {
 		}
 
 		own_control_conquered = {
-			iskenderun
 		}
 
 		include = "expl_muslim_mediterranean"
@@ -31008,6 +31082,10 @@ countries = {
 
 			#ALY
 			alaiye selinti
+
+			#MAM
+			iskenderun
+			antioch arsuz
 		}
 
 		our_cores_conquered_by_others = {
@@ -31015,7 +31093,9 @@ countries = {
 			develi
 			ayntab
 			kilis trapessac
-			iskenderun
+
+			#CYP
+			nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos
 		}
 
 		starting_technology_level = 3
@@ -31340,6 +31420,20 @@ countries = {
 
 		own_control_integrated = {
 			
+		}
+
+		our_cores_conquered_by_others = {
+			#ERE
+			akdagmadeni aydincik koyulhisar sulusaray tokat zile
+			bozok baliseyh candir dinek_keskin sorgun
+			corum huseyinabad sungurlu
+			divrigi arapgir egin arguvan
+			kayseri bogazliyan comana_cil develi tomarza
+			hacibektas urgup
+			sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara
+			bayburt erzincan ilic kelkit kemah sebinkarahisar siran
+			yahyali malatya
+
 		}
 
 		starting_technology_level = 3
@@ -31891,6 +31985,9 @@ countries = {
 
 			#GAZ
 			tana kaffa vosporo
+
+			#GLH
+			lusta soldaia 
 		}
 
 		our_cores_conquered_by_others = {
@@ -56609,9 +56706,11 @@ countries = {
 			ruler_term = { character = arm_zakare_iii start_date = 1250.1.1 end_date = 1261.1.1 regnal_number = 3 }
 			ruler_term = { character = arm_ivane_ii start_date = 1261.1.1 end_date = 1270.1.1 regnal_number = 2 }
 			ruler_term = { character = arm_shahnshah_ii start_date = 1270.1.1 end_date = 1320.1.1 regnal_number = 2 }
-			ruler_term = { character = arm_zakare_iv start_date = 1320.1.1 regnal_number = 4 }
+			#ruler_term = { character = arm_zakare_iv start_date = 1320.1.1 regnal_number = 4 }
 
-			ruler = arm_zakare_iv
+			ruler_term = { character = geo_george_v start_date = 1313.1.1 regnal_number = 5	} #BR EDIT Wanted a Bagratid on the Armenian throne so put them in a PU under Georgia
+
+			ruler = geo_george_v
 
 		}
 		liturgical_language = armenian_language
