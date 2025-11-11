@@ -30,8 +30,6 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = SER type = border_aggression }
 	opinion = { first = BUL second = BYZ type = border_aggression }
 	opinion = { first = BYZ second = BUL type = border_aggression }
-	opinion = { first = TUR second = BYZ type = successful_diplomacy }
-	opinion = { first = BYZ second = TUR type = successful_diplomacy }
 
 	#Venice
 	opinion = { first = VEN second = BYZ type = opinion_irritated }

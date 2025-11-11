@@ -210,8 +210,8 @@ diplomacy_manager = {
 
     #-------Italy-------
     dependency = { first = NAP second = ACH subject_type = vassal }
-    dependency = { first = ACH second = NAX subject_type = vassal }
-    dependency = { first = ACH second = CEP subject_type = vassal start_date = 1332.1.1 } #John of Gravina, Prince of Achaea, exchanges his Principality with Robert, Prince of Taranto
+    dependency = { first = VEN second = NAX subject_type = vassal } #BR EDIT
+    dependency = { first = VEN second = CYP subject_type = vassal } #BR ADDED
 
     dependency = { first = VEN second = TTE subject_type = vassal start_date = 1202.10.9 } #Trieste and Muggia swear loyalty to Dux Enrico Dandolo
     dependency = { first = VEN second = CRT subject_type = vassal }
@@ -233,8 +233,6 @@ diplomacy_manager = {
     dependency = { first = VER second = LUC subject_type = vassal }
 
     dependency = { first = SIC second = ATH subject_type = vassal }
-    dependency = { first = SIC second = NEO subject_type = vassal }
-    dependency = { first = SIC second = SAO subject_type = vassal }
 
     scripted_oneway = { first = PAP second = SIC type = guarantee }
     scripted_oneway = { first = ARA second = SIC type = guarantee }
@@ -287,6 +285,7 @@ diplomacy_manager = {
 
     #------Byzantium--------
     #dependency = { first = BYZ second = EPI subject_type = vassal } #BR EDIT
+    dependency = { first = BYZ second = FEO subject_type = vassal } #BR ADDED
 
     #-------Low Lands-------
     dependency = { first = HOL second = ZEE subject_type = fiefdom }
@@ -355,10 +354,6 @@ diplomacy_manager = {
     #Anatolia
     dependency = { first = BIT second = HZN subject_type = vassal }
     dependency = { first = BIT second = MUS subject_type = vassal }
-    dependency = { first = ERE second = KBD subject_type = tributary }
-    dependency = { first = ERE second = TDJ subject_type = tributary }
-    dependency = { first = ERE second = HCI subject_type = tributary }
-    dependency = { first = ERE second = BFR subject_type = tributary }
     dependency = { first = JAL second = ARD subject_type = vassal }
     dependency = { first = JAL second = ATZ subject_type = vassal }
     dependency = { first = JAL second = DML subject_type = vassal }
@@ -423,14 +418,15 @@ diplomacy_manager = {
     dependency = { first = ARM second = KCN subject_type = vassal }
     dependency = { first = ARM second = SYU subject_type = vassal }
     dependency = { first = GEO second = AAI subject_type = vassal }
-    dependency = { first = GEO second = ARM subject_type = vassal }
+    #dependency = { first = GEO second = ARM subject_type = vassal } #BR EDIT
     dependency = { first = GEO second = SKI subject_type = vassal }
     dependency = { first = GEO second = SME subject_type = vassal }
     dependency = { first = GLH second = AVR subject_type = vassal }
     dependency = { first = GLH second = LEK subject_type = vassal }
     dependency = { first = GLH second = SMS subject_type = vassal }
     dependency = { first = GLH second = TRK subject_type = vassal }
-    dependency = { first = SYU second = VDZ subject_type = vassal }
+    dependency = { first = ARM second = VDZ subject_type = vassal } #BR EDIT
+    dependency = { first = ARM second = ATZ subject_type = vassal } #BR ADDED
     dependency = { first = TRK second = KAI subject_type = vassal }
     dependency = { first = TRK second = TBA subject_type = vassal }
     dependency = { first = GEO second = RUT subject_type = tributary }

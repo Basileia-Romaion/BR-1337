@@ -12231,7 +12231,7 @@ countries = {
 
 	ATH = {
 		own_control_core = {
-			athens megara thebes atalanti livadeia gravia
+			athens megara thebes atalanti livadeia
 		}
 
 		starting_technology_level = 3
@@ -12432,7 +12432,7 @@ countries = {
 		dynasty = sanudo_dynasty
 	}
 
-	EPI = {
+	EPI = { #BR EDITED
 		own_control_core = {
 			nafpaktos angelokastron vonitsa arta preveza parga ioannina kleisoura_epirus butrint
 			argyrokastro avlonya karpenisi konitsa
@@ -12451,6 +12451,9 @@ countries = {
 
 			#BYZ
 			devol pyli
+
+			#SAO
+			salona loidoriki
 
 
 		}
@@ -12496,7 +12499,8 @@ countries = {
 		tolerated_cultures = {
 			aromanian
 		}
-
+		
+		country_rank = rank_duchy
 		liturgical_language = greek_language
 
 		capital = arta
@@ -12536,10 +12540,22 @@ countries = {
 		capital = thessaloniki
 	}
 
-	THS = { # Revolter
-		our_cores_conquered_by_others = {
-			demetrias elassona farsala karditsa larissa stomio trikala
-			loidoriki neopatras tyrnavos
+	THS = { #BR EDITED
+	own_control_core = {
+			#BYZ
+			demetrias tripolitsa veligosti karytaina farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
+			
+			#NEO
+			neopatras zetounion
+
+			#BOD
+			bodonitsa
+
+			#ATH
+			gravia
+		}
+		our_cores_conquered_by_others = { 
+			loidoriki  
 		}
 
 		starting_technology_level = 3
@@ -12584,7 +12600,66 @@ countries = {
 		country_rank = rank_duchy
 		liturgical_language = greek_language
 
-		capital = neopatras
+		capital = larissa
+	}
+
+	MOE = { #BR ADDED
+	own_control_core = {
+			#BYZ
+			tripolitsa veligosti karytaina
+			monemvasia mystras oitylo leuktron astros
+
+			#ARG
+			argos nafplio
+			
+		}
+		our_cores_conquered_by_others = { 
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1239.1.1 end_date = 1241.1.1 regnal_number = 1 }
+			ruler_term = { character = epi_michael_ii_komnenos_doukas start_date = 1241.1.1 end_date = 1268.1.1 regnal_number = 1 }
+			ruler_term = { character = ths_ioannes_i_doukas start_date = 1268.1.1 end_date = 1289.3.1 regnal_number = 1 }
+			ruler_term = {
+				character = ths_konstantinos_doukas start_date = 1289.3.1 end_date = 1299.1.1 regnal_number = 1
+				character = ths_theodoros_doukas start_date = 1289.3.1 end_date = 1299.1.1 regnal_number = 1 # Minor Co-Ruler
+			}
+			ruler_term = {
+				character = ths_konstantinos_doukas start_date = 1299.1.1 end_date = 1303.1.1 regnal_number = 1
+			}
+			ruler_term = { character = ths_ioannes_ii_doukas start_date = 1303.1.1 end_date = 1318.1.1 regnal_number = 2 }
+
+			ruler_term = { character = ths_stefanos_gabrielopoulos start_date = 1318.1.1 end_date = 1332.1.1 regnal_number = 1 }
+
+			ruler_term = { character = cep_john_orsini start_date = 1332.1.1 end_date = 1335.1.1 regnal_number = 3 }
+			ruler_term = { character = epi_nikephoros_ii_orsini start_date = 1335.1.1 end_date = 1366.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_emmanuel = 1
+				name_michael = 1
+				name_john = 3
+				name_constantine = 1
+				name_theodore = 1
+				name_stephen = 1
+				name_nikephoros = 1
+			}
+		}
+
+		country_rank = rank_duchy
+		liturgical_language = greek_language
+
+		capital = larissa
 	}
 
 	BYZ = {
@@ -12595,7 +12670,9 @@ countries = {
 			edirne hayrabolu corlu
 			rodoscuk enez kiyikoy ahtopol constantinople silivri catalca luleburgaz kirklareli
 			malgara alasehir
-			monemvasia mystras oitylo leuktron astros ostrovo
+
+			ostrovo
+
 			uskudar silli biga eregli
 			chios vize
 			ormenio
@@ -12640,9 +12717,6 @@ countries = {
 			#SHP
 			karahisar_i_sahib sandikli suhut
 
-			#AHI
-			ankara cubuk haymana kalecik polatli karakecili
-
 			#HMD
 			isparta burdur dinar egirdir uluborlu yalvac
 			golhisar stefani
@@ -12650,20 +12724,19 @@ countries = {
 			#TEK
 			antalya elmali karahisar_i_teke kas istanoz
 			manavgat finike
-			
+
+			#KNI
+			rodos kos
 		}
 		own_control_integrated = {
 			bukelon ustra
 		}
 		own_control_conquered = {
-			demetrias tripolitsa veligosti karytaina farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
+			
 		}
 		our_cores_conquered_by_others = {
 			#Vardar Province - lost in 1285
 			kocani strumica
-
-			#Rodos Province
-			kos rodos
 
 			#Prilep Province
 			kicevo prilep bitola ohrid florina tetovo
@@ -12674,8 +12747,12 @@ countries = {
 			#Bolu Province - partially lost in 1304
 			akcasehir konrapa akyazi
 
-			#Kocaeli Province
-			izmit atpazari
+			#BR ADDED
+			#Thessaly 
+			demetrias tripolitsa veligosti karytaina farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
+
+			#AHI
+			ankara cubuk haymana kalecik polatli karakecili
 		}
 
 		starting_technology_level = 3
@@ -13574,7 +13651,7 @@ countries = {
 			outward_vs_inward = -30
 		}
 
-		country_rank = rank_kingdom
+		country_rank = rank_empire #BR EDIT
 		capital = valladolid
 
 		ai_advance_preference_tags = {
@@ -13662,7 +13739,7 @@ countries = {
 			sephardi
 		}
 
-		country_rank = rank_kingdom
+		country_rank = rank_duchy #BR EDIT
 		capital = lisbon
 		ai_advance_preference_tags = {
 			exploration = 5
@@ -13867,7 +13944,7 @@ countries = {
 			sephardi
 		}
 
-		capital = granada
+		capital = cordoba #br edit
 	}
 
 	#Navarre
@@ -17813,104 +17890,16 @@ countries = {
 
 	}
 
-	NEO = {	#Neopatria
-		own_control_core = {
-			neopatras zetounion
-		}
+	#NEO BR REPLACED
 
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = ath_william
-			heir = sic_giovanni_sicily
-			designated_heir_reason = sibling_of_ruler
-
-			ruler_term = { character = ath_william start_date = 1319.1.1 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_william = 1
-			}
-		}
-
-		tolerated_cultures = {
-			greek_culture
-		}
-
-		country_rank = rank_duchy
-		court_language = catalan_dialect
-		capital = neopatras
-	}
-
-	BOD = {	#Bodonitsa
-		own_control_core = {
-			bodonitsa
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = bod_niccolo_i_zorzi
-			consort = bod_guglielma_pallavicini # In fact co-ruler
-
-			ruler_term = { character = bod_guido_pallavicini start_date = 1204.10.1 end_date = 1237.1.1 regnal_number = 1 }
-			ruler_term = { character = bod_ubertino_pallavicini start_date = 1237.1.1 end_date = 1278.1.1 regnal_number = 1 }
-			ruler_term = {
-				character = bod_isabella_pallavicini start_date = 1278.1.1 end_date = 1286.1.1 regnal_number = 1
-				character = ach_anton_the_flemish start_date = 1278.1.1 end_date = 1286.1.1 regnal_number = 1 # Marital Co-Ruler
-			}
-			ruler_term = { character = bod_tommaso_pallavicini start_date = 1286.1.1 end_date = 1300.1.1 regnal_number = 1 }
-			ruler_term = { character = bod_alberto_pallavicini start_date = 1300.1.1 end_date = 1311.3.15 regnal_number = 1 }
-
-			ruler_term = { character = bod_guglielma_pallavicini start_date = 1311.3.15 end_date = 1327.1.1 regnal_number = 1 } # In fact she ruled until 1358 together with her husband and her son.
-			ruler_term = {
-				character = bod_guglielma_pallavicini start_date = 1327.1.1 end_date = 1334.1.11 regnal_number = 1
-				character = bod_bartolomeo_zaccaria start_date = 1327.1.1 end_date = 1334.1.1 regnal_number = 1 # Marital Co-Ruler
-			}
-			ruler_term = { character = bod_guglielma_pallavicini start_date = 1334.1.1 end_date = 1335.1.1 regnal_number = 1 }
-			ruler_term = { character = bod_niccolo_i_zorzi start_date = 1335.1.1 regnal_number = 1 }
-			regnal_numbers = {
-				name_wido = 1
-				name_hubert = 1
-				name_elizabeth = 1
-				name_anthony = 1
-				name_thomas = 1
-				name_albert = 1
-				name_mary = 1
-				name_andrew = 1
-				name_willelma = 1
-				name_bartholomew = 1
-				name_nicholas = 1
-			}
-		}
-
-		tolerated_cultures = {
-			greek_culture
-		}
-
-		court_language = venetian_dialect
-		capital = bodonitsa
-	}
+	#BOD BR REMOVED
 
 	ARG = { #Argos
 		own_control_core = {
-			argos nafplio
+			
 		}
 		our_cores_conquered_by_others = {
-			athens megara thebes atalanti livadeia gravia
+			athens megara thebes atalanti livadeia
 		}
 
 		starting_technology_level = 3
@@ -17951,7 +17940,7 @@ countries = {
 
 	KNI = { #Knights Hospitaller
 		own_control_core = {
-			rodos kos
+			malta
 		}
 
 		include = "catholic_military_order"
@@ -18041,41 +18030,7 @@ countries = {
 		capital = negroponte
 	}
 
-	SAO = { #Salona
-		own_control_core = {
-			salona loidoriki
-			malta
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = sao_alfons_frederic_de_arago
-
-			ruler_term = { character = sao_alfons_frederic_de_arago start_date = 1318.1.1 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_thomas = 3
-				name_william = 1
-				name_roger = 1
-				name_alphonse = 1
-			}
-		}
-
-		tolerated_cultures = {
-			greek_culture maltese
-		}
-
-		court_language = catalan_dialect
-		capital = salona
-	}
+	#SAO BR REMOVED
 
 	TRO = { #Travunija		
 		our_cores_conquered_by_others = {
@@ -30989,34 +30944,7 @@ countries = {
 	#BR REMOVED
 
 	#Alaiye - ALY https://en.wikipedia.org/wiki/Alaiye
-	ALY = {
-		own_control_core = {
-			alaiye selinti
-		}
-
-		starting_technology_level = 3
-		include = "expl_eastern_europe"
-		include = "expl_muslim_mediterranean"
-		include = "turkish_beylik_no_mining"
-		government = {
-			ruler_term = {	 character = kar_mahmut start_date = 1293.1.1 end_date = 1308.1.1 }
-			ruler_term = {	 character = aly_yusuf start_date = 1308.1.1 }
-			ruler = aly_yusuf
-
-			privilege = {
-				sponsor_maritime_contracts
-				dhimmi_abrahamic_communities
-			}
-
-		}
-
-		tolerated_cultures = {
-			greek_culture
-		}
-
-		capital = alaiye
-		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
-	}
+	#BR REMOVED
 
 	#Artuqids - ATQ https://en.wikipedia.org/wiki/Artuqids
 	ATQ = {
@@ -31074,12 +31002,16 @@ countries = {
 			sis caxud hargan molevon
 			tarsus candir_cil corycus
 			ayas kapan
+
+			#KAR now ANA
+			silifke anamur mut ermenek
+
+			#ALY
+			alaiye selinti
 		}
 
 		our_cores_conquered_by_others = {
-			silifke anamur ermenek mut
-			selinti
-			nigde bor_tur
+			bor_tur
 			develi
 			ayntab
 			kilis trapessac
@@ -31177,7 +31109,7 @@ countries = {
 
 		court_language = french_language
 		capital = nicosia_cyp
-		country_rank = rank_kingdom
+		country_rank = rank_duchy
 	}
 
 	KOJ = { #Kingdom of Jerusalem
@@ -31391,44 +31323,67 @@ countries = {
 	#BR REMOVED
 
 	#Karamanids - KAR https://en.wikipedia.org/wiki/Karamanids
-	KAR = {
+	# BR REPLACED
+	ANA = {
 		own_control_core = {
+			#KAR
 			aksaray kochisar insuyu
 			kirsehir nevsehir sariyahsi
 			konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
-			bekarlar bor_tur ermenek
+			bekarlar bor_tur nigde
 			beysehir aksehir bolvadin sarkikaraagac seydisehir
 			ilgin turgut suluklu kulu_turkey obruk altinekin cumra
+
+			#AHI
+			ankara cubuk haymana kalecik polatli karakecili
 		}
 
 		own_control_integrated = {
-			silifke anamur mut nigde
+			
 		}
 
+		starting_technology_level = 3
 		include = "expl_eastern_europe"
-		include = "expl_muslim_mediterranean"
-		include = "turkish_beylik"
+		include = "eastern_european_monarchy"
 		government = {
-			ruler_term = {	 character = kar_mahmut start_date = 1300.1.1 end_date = 1312.1.1	}
-			ruler_term = {	 character = kar_musa start_date = 1312.1.1 end_date = 1318.1.1	}
-			ruler_term = {	 character = kar_ibrahim start_date = 1318.1.1 end_date = 1332.1.1	}
-			ruler_term = {	 character = kar_alaeddin_halil_mirza start_date = 1332.1.1	}
-			ruler = kar_alaeddin_halil_mirza
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = tre_basil_komnenos
 
-			privilege = {
-				sponsor_maritime_contracts
-				dhimmi_abrahamic_communities
+			ruler_term = { character = tre_alexios_i_komnenos start_date = 1204.4.1 end_date = 1222.2.1 regnal_number = 1 }
 
-				trunk_road_to_erzurum_privilege
+			ruler_term = { character = tre_andronikos_i_gidos start_date = 1222.2.1 end_date = 1235.1.1 regnal_number = 1 }
+
+			ruler_term = { character = tre_ioannes_i_auxouchos start_date = 1235.1.1 end_date = 1238.1.1 regnal_number = 1 }
+			ruler_term = { character = tre_manouel_i_komnenos start_date = 1238.1.1 end_date = 1263.3.1 regnal_number = 1 }
+			ruler_term = { character = tre_andronikos_ii_komnenos start_date = 1263.3.1 end_date = 1266.1.1 regnal_number = 2 }
+			ruler_term = { character = tre_georgios_komnenos start_date = 1266.1.1 end_date = 1280.6.1 regnal_number = 1 }
+			ruler_term = { character = tre_ioannes_ii_komnenos start_date = 1280.6.1 end_date = 1284.10.1 regnal_number = 2 }
+			ruler_term = { character = tre_theodora_komnene start_date = 1284.10.1 end_date = 1285.1.1 regnal_number = 1 }
+			ruler_term = { character = tre_ioannes_ii_komnenos start_date = 1285.1.1 end_date = 1297.8.16 regnal_number = 2 } # Restored
+			ruler_term = { character = tre_alexios_ii_komnenos start_date = 1297.8.16 end_date = 1330.5.3 regnal_number = 2 }
+			ruler_term = { character = tre_andronikos_iii_komnenos start_date = 1330.5.3 end_date = 1332.1.8 regnal_number = 3 }
+			ruler_term = { character = tre_manouel_ii_komnenos start_date = 1332.1.8 end_date = 1332.9.23 regnal_number = 2 }
+			ruler_term = { character = tre_basil_komnenos start_date = 1332.9.23 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_alexis = 2
+				name_andronikos = 3
+				name_john = 2
+				name_emmanuel = 2
+				name_george = 1
+				name_theodora = 1
+				name_basil = 1
 			}
 		}
+
+		country_rank = rank_kingdom
 		tolerated_cultures = {
 			cappadocian_greek_culture
-			turkoman_culture
+			armenian_culture
 		}
 
 		capital = konya
-		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 	}
 
 	#Kubadids - KBD https://tr.wikipedia.org/wiki/Kubado%C4%9Fullar%C4%B1_Emirli%C4%9Fi
@@ -31452,15 +31407,12 @@ countries = {
 	#Sutayids - SUT https://en.wikipedia.org/wiki/Sutayids
 	SUT = {
 		own_control_core = {
-			harput adakli keban palu
-			malazgirt hinis karakilise tekman tutak varto
-			ahlat bargiri ercis
 			diyarbekir ergani
-			erzurum tercan
 			cermik
+			mosul qayyarah tal_afar
 		}
 		own_control_integrated = {
-			mosul qayyarah tal_afar
+
 		}
 
 		include = "expl_middle_east"
@@ -31478,7 +31430,6 @@ countries = {
 
 		tolerated_cultures = {
 			kurdish_culture
-			armenian_culture
 		}
 
 		capital = diyarbekir
@@ -31981,7 +31932,7 @@ countries = {
 			}
 		}
 
-		country_rank = rank_empire
+		country_rank = rank_kingdom #BR EDIT
 		capital = trebizond
 
 		tolerated_cultures = {
@@ -56628,6 +56579,13 @@ countries = {
 			ani kars kagizman
 			amberd artashavan igdir khor_virap kumayri surmali
 			hasankale
+
+			#SUT
+			harput adakli keban palu
+			malazgirt hinis karakilise tekman tutak varto
+			ahlat bargiri ercis
+			erzurum tercan
+
 		}
 
 		our_cores_conquered_by_others = {
@@ -56637,6 +56595,8 @@ countries = {
 		include = "expl_christian_caucasus"
 		starting_technology_level = 3
 		include = "eastern_european_monarchy_no_coast"
+		country_rank = rank_kingdom #BR EDIT
+
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture

@@ -1615,7 +1615,7 @@ building_manager = {
 	
 	order_stronghold	= { tag = LIV level = 1	location = cesis } # Livonian Order
 	order_stronghold	= { tag = LIV level = 1	location = viljandi } # Livonian Order
-	order_stronghold	= { tag = KNI level = 1	location = rodos } # The Knights
+	order_stronghold	= { tag = KNI level = 1	location = malta } # The Knights #BR EDIT
 	
 	order_stronghold	= { tag = TEU level = 1	location = malbork } # Teutonic Order
 	order_stronghold	= { tag = TEU level = 1	location = elk } # Teutonic Order
@@ -1989,7 +1989,7 @@ building_manager = {
 	tar_kiln = { tag = ORT level = 1 location = kocevje } 
 	tar_kiln = { tag = LUC level = 1 location = massa } 
 	tar_kiln = { tag = BYZ level = 1 location = polygyros } 
-	tar_kiln = { tag = SRU level = 1 location = soma } 
+	tar_kiln = { tag = BYZ level = 1 location = soma } 
 
 	
 
@@ -2282,18 +2282,18 @@ building_manager = {
 	wharf = { tag = BYZ level = 1 location =  constantinople }
 	dock = { tag = BYZ level = 1 location = constantinople }
 	sergeantry = { tag = BYZ level = 1 location =  constantinople }
-	#sergeantry = { tag = TUR level = 1 location =  bursa }
+	sergeantry = { tag = BYZ level = 1 location =  bursa }
 	protected_harbor = { tag = BYZ level = 1 location =  constantinople }
 	coastal_fort = { tag = BYZ level = 1 location =  constantinople }
 
 	
-	castle = { tag = KNI level = 1 location =  rodos }
+	castle = { tag = KNI level = 1 location =  malta } #br edit
 	castle = { tag = SER level = 1 location =  kozelj }
 	castle = { tag = SER level = 1 location =  kucevo }
 	castle = { tag = SER level = 1 location =  trgoviste_SER }
 
 
-	order_headquarters = { tag = KNI level = 1 location =  rodos }
+	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit
 
 	#https://en.wikipedia.org/wiki/List_of_Serbian_Orthodox_monasteries
 	orthodox_monastery = { tag = HUN level = 1 location =  belgrad }
@@ -3443,20 +3443,20 @@ building_manager = {
 	
 	
 	#anatolia
-	dock = { tag = AYD level = 1 location = smyrna }
-	wharf = { tag = AYD level = 1 location = smyrna }
+	dock = { tag = BYZ level = 1 location = smyrna }
+	wharf = { tag = BYZ level = 1 location = smyrna }
 	
-	tar_kiln = { tag = TVS level = 1 location = tavas } 
-	tar_kiln = { tag = GRM level = 1 location = gediz } 
-	tar_kiln = { tag = BFR level = 1 location = gerze } 
+	tar_kiln = { tag = BYZ level = 1 location = tavas } 
+	tar_kiln = { tag = BYZ level = 1 location = gediz } 
+	tar_kiln = { tag = TRE level = 1 location = gerze } 
 	#castle = { tag = BYZ level = 1 location = alasehir } #it's a greek_town which already has a castle
-	#temple = { tag = AYD level = 1 location = birgi }
+	temple = { tag = BYZ level = 1 location = birgi }
 	#temple = { tag = KAR level = 1 location = ermenek }
 	#madrasa = { tag = TUR level = 1 location = iznik }
-	madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
+	#madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
 	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
-	seljuk_mint = { tag = KAR level = 1 location = konya }
-	seljuk_mint = { tag = ERE level = 1 location = sivas }
+	#seljuk_mint = { tag = KAR level = 1 location = konya }
+	#seljuk_mint = { tag = ERE level = 1 location = sivas }
 	
 	#middle east
 	tar_kiln = { tag = SUT level = 1 location = sirnak } 
