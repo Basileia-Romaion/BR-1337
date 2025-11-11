@@ -182,7 +182,7 @@ SUT = {
 	color = map_sutayids
 	color2 = rgb { 206 164 141 }
 
-	culture_definition = mongolian_culture
+	culture_definition = turkoman_culture #BR EDIT
 	religion_definition = sunni
 }
 
@@ -367,4 +367,11 @@ TVS = {
 
 	culture_definition = turkish_culture
 	religion_definition = sunni
+}
+
+ANA = { #BR addition
+	color = rgb { 205 38 38 }
+
+	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
 }
