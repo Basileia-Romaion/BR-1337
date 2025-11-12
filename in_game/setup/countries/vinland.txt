@@ -1,1 +1,44 @@
-﻿
+﻿NOR_VIN = { # Vinland
+	color = rgb{ 43 60 117 }
+	color2 = rgb{ 16 41 202 }
+	
+	culture_definition = vinlander
+	religion_definition = norse
+}
+
+NOR_MAR = { # Markland
+	color = rgb{ 43 60 117 }
+	color2 = rgb{ 16 41 202 }
+	
+	culture_definition = vinlander
+	religion_definition = norse
+}
+
+NOR_HEL = { # Helluland
+	color = rgb{ 43 60 117 }
+	color2 = rgb{ 16 41 202 }
+	
+	culture_definition = vinlander
+	religion_definition = norse
+}
+
+BEO = { # Beothuk People
+	color = map_beothuk
+	
+	culture_definition = beothuk_culture
+	religion_definition = midewiwin_religion
+}
+
+INN = { # Innu People
+	color = map_innu
+	
+	culture_definition = innu_culture
+	religion_definition = totemism
+}
+
+DOR = { # Dorset People
+	color = map_dorset
+	
+	culture_definition = dorset_culture
+	religion_definition = midewiwin_religion
+}

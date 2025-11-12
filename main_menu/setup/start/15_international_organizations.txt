@@ -539,7 +539,7 @@ international_organization_manager = {
 			VOL HAL KIE POK TUV PNK SSK MSV NRK DRU
 			FEO	
 			#BR ADDED
-			ANA MOE THS		
+			ANA MOE THS	KAP PAF CIL	
 		}
 		variables = { 
 			religion = religion:orthodox
@@ -616,7 +616,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 301.1.1
-		members = { ARM ATZ KCN SYU VDZ CIL }
+		members = { ARM ATZ KCN SYU VDZ MES KOG DER }
 		variables = { 
 			religion = religion:miaphysite
 			seat = location:ani #BR EDIT
