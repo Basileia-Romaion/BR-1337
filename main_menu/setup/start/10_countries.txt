@@ -31086,6 +31086,9 @@ countries = {
 			#MAM
 			iskenderun
 			antioch arsuz
+
+			#ERE
+			comana_cil
 		}
 
 		our_cores_conquered_by_others = {
@@ -31137,6 +31140,7 @@ countries = {
 		}
 
 		tolerated_cultures = {
+			armenian_culture
 			syriac_culture
 		}
 
@@ -31328,11 +31332,10 @@ countries = {
 			bozok baliseyh candir dinek_keskin sorgun
 			corum huseyinabad sungurlu
 			divrigi arapgir egin arguvan
-			kayseri bogazliyan comana_cil develi tomarza
 			hacibektas urgup
 			sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara
 			bayburt erzincan ilic kelkit kemah sebinkarahisar siran
-			yahyali malatya
+			malatya
 			}
 
 		our_cores_conquered_by_others = {
@@ -31478,6 +31481,88 @@ countries = {
 		}
 
 		capital = konya
+	}
+
+	KAP = {
+		own_control_core = {
+			#ERE
+			kayseri develi tomarza yahyali bogazliyan
+			urgup
+
+		}
+
+		own_control_integrated = {
+			
+		}
+
+		our_cores_conquered_by_others = {
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+			armenian_culture
+		}
+
+		capital = kayseri
+	}
+
+	PAF = {
+		own_control_core = {
+			#TRE
+			safranbulu ulus yenicepazari bartin
+			arac devrekani kure_i_mamure kastamonu taskopru inebolu
+			boyabat sinop
+			cankiri bayat cerkes kursunlu tosya sabanozu
+			iskilip gumus
+
+			#CND
+			bartin
+			kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
+			cankiri bayat cerkes kursunlu tosya
+			iskilip sabanozu ulus yenicepazari
+			gumus
+
+
+		}
+
+		own_control_integrated = {
+			
+			
+			
+
+			
+			
+		}
+
+		our_cores_conquered_by_others = {
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+			armenian_culture
+		}
+
+		capital = kastamonu
 	}
 
 	#Kubadids - KBD https://tr.wikipedia.org/wiki/Kubado%C4%9Fullar%C4%B1_Emirli%C4%9Fi
@@ -31967,17 +32052,10 @@ countries = {
 
 			#KBD
 			gadegara ladik_pontus merzifon
-			gumus
 			samsun
 
 			#BFR
 			bafra gerze
-
-			#CND
-			bartin
-			kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
-			cankiri bayat cerkes kursunlu tosya
-			iskilip sabanozu ulus yenicepazari
 		}
 
 		own_control_integrated = {
