@@ -369,9 +369,25 @@ TVS = {
 	religion_definition = sunni
 }
 
+#BR ADDITIONS
+
 ANA = { #BR addition
-	color = rgb { 205 38 38 }
+	color = rgb { 205 38 50 }
 
 	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
+}
+
+KAP = { #BR addition
+	color = rgb { 150 38 75 }
+
+	culture_definition = cappadocian_greek_culture
+	religion_definition = orthodox
+}
+
+PAF = { #BR addition
+	color = rgb { 175 50 138 }
+
+	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
 }

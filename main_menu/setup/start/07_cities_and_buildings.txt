@@ -986,7 +986,7 @@ locations={
 	kabul = { rank = town town_setup = levant_city }
 
 	ganja = { rank = town town_setup = levant_city }
-	ani = { rank = city town_setup = anatolian_city } #BR edit
+	ani = { rank = city town_setup = levant_city } #BR edit
 	astarabad = { rank = town town_setup = levant_city }
 	siraf = { rank = town town_setup = levant_city }
 	rasht = { rank = town town_setup = levant_city }
@@ -3443,7 +3443,8 @@ building_manager = {
 	galata = { tag = GEN level = 1 location = constantinople }
 	
 	
-	
+	dock = { tag = BYZ level = 1 location = thessaloniki }
+	wharf = { tag = BYZ level = 1 location = thessaloniki }
 	#anatolia
 	dock = { tag = BYZ level = 1 location = smyrna }
 	wharf = { tag = BYZ level = 1 location = smyrna }
@@ -3451,7 +3452,7 @@ building_manager = {
 	tar_kiln = { tag = BYZ level = 1 location = tavas } 
 	tar_kiln = { tag = BYZ level = 1 location = gediz } 
 	tar_kiln = { tag = TRE level = 1 location = gerze } 
-	#castle = { tag = BYZ level = 1 location = alasehir } #it's a greek_town which already has a castle
+	castle = { tag = BYZ level = 1 location = thessaloniki }
 	temple = { tag = BYZ level = 1 location = birgi }
 	#temple = { tag = KAR level = 1 location = ermenek }
 	#madrasa = { tag = TUR level = 1 location = iznik }
@@ -3459,6 +3460,28 @@ building_manager = {
 	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
 	#seljuk_mint = { tag = KAR level = 1 location = konya }
 	#seljuk_mint = { tag = ERE level = 1 location = sivas }
+	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
+	stockade = { tag = BYZ level = 1 location = antalya }
+	stockade = { tag = BYZ level = 1 location = uluborlu }
+	stockade = { tag = BYZ level = 1 location = iznik }
+	stockade = { tag = BYZ level = 1 location = bursa }
+	stockade = { tag = BYZ level = 1 location = izmit }
+	stockade = { tag = BYZ level = 1 location = rodos }
+	stockade = { tag = BYZ level = 1 location = gallipoli }
+	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
+	stockade = { tag = BYZ level = 1 location = lazkiye }
+	stockade = { tag = BYZ level = 1 location = alasehir }
+	stockade = { tag = BYZ level = 1 location = manisa }
+
+	stockade = { tag = CIL level = 1 location = alaiye }
+	stockade = { tag = CIL level = 1 location = kars_armenia }
+	stockade = { tag = CIL level = 1 location = mut }
+
+	stockade = { tag = TRE level = 1 location = kastamonu }
+	stockade = { tag = TRE level = 1 location = bafra }
+	stockade = { tag = TRE level = 1 location = amasya }
+	stockade = { tag = TRE level = 1 location = niksar }
+
 	
 	#middle east
 	tar_kiln = { tag = SUT level = 1 location = sirnak } 
