@@ -31314,15 +31314,12 @@ countries = {
 			hacibektas
 			corum huseyinabad sungurlu
 			akdagmadeni aydincik koyulhisar sulusaray tokat zile
-
 		}
 
 		own_control_integrated = {
-			
 		}
 
 		our_cores_conquered_by_others = {
-
 		}
 
 		starting_technology_level = 3
@@ -31350,15 +31347,12 @@ countries = {
 			kayseri develi tomarza yahyali bogazliyan
 			urgup
 			sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara
-
 		}
 
-		own_control_integrated = {
-			
+		own_control_integrated = {	
 		}
 
 		our_cores_conquered_by_others = {
-
 		}
 
 		starting_technology_level = 3
@@ -31393,21 +31387,12 @@ countries = {
 			cankiri bayat cerkes kursunlu tosya
 			iskilip sabanozu ulus yenicepazari
 			gumus
-
-
 		}
 
 		own_control_integrated = {
-			
-			
-			
-
-			
-			
 		}
 
 		our_cores_conquered_by_others = {
-
 		}
 
 		starting_technology_level = 3
@@ -31425,6 +31410,97 @@ countries = {
 		}
 
 		capital = kastamonu
+	}
+
+	DER = {
+		own_control_core = {
+			#SUT
+			harput adakli keban palu
+
+			#BIN
+			bingol genc
+
+			#CEM
+			cemisgezek kuzucan pertek
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			#random ruler for now
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = palu
+	}
+
+	KOG = {
+		own_control_core = {
+			#ERE
+			bayburt erzincan ilic kelkit kemah sebinkarahisar siran
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			#random ruler for now
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = palu
+	}
+
+	MES = {
+		own_control_core = {
+			#ERE
+			divrigi arapgir egin arguvan
+			malatya
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			#random ruler for now
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = arguvan
 	}
 
 	#Kubadids - KBD https://tr.wikipedia.org/wiki/Kubado%C4%9Fullar%C4%B1_Emirli%C4%9Fi
@@ -31502,28 +31578,7 @@ countries = {
 	}
 
 	#Bingöl/Çapakçur - BIN
-	BIN = {
-		own_control_core = {
-			bingol genc
-		}
-
-		include = "expl_middle_east"
-		include = "muslim_tribe_no_coast"
-
-
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = bin_shap
-		}
-
-		tolerated_cultures = {
-			armenian_culture
-		}
-
-		capital = bingol
-		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
-	}
+	#BR REMOVED
 
 	#Bitlis - BIT
 	BIT = {
@@ -56595,24 +56650,16 @@ countries = {
 			amberd artashavan igdir khor_virap kumayri surmali
 			hasankale
 
-			#SUT
-			harput adakli keban palu
 			malazgirt hinis karakilise tekman tutak varto
 			ahlat bargiri ercis
 			erzurum tercan
-
-			#CEM
-			cemisgezek kuzucan pertek
-
-			#ERE
-			divrigi arapgir egin arguvan
-			bayburt erzincan ilic kelkit kemah sebinkarahisar siran
-			malatya
-
 		}
 
 		our_cores_conquered_by_others = {
-
+			#SUT
+			harput adakli keban palu
+			#CEM
+			cemisgezek kuzucan pertek
 		}
 
 		include = "expl_christian_caucasus"

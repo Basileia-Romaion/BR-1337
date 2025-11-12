@@ -41,8 +41,7 @@ BFR = {
 }
 
 CIL = {
-	color = map_cilicia
-	color2 = rgb { 148 159 139 } 
+	color = rgb { 148 175 129 } 
 
 	#BR EDIT
 	culture_definition = greek_culture
@@ -390,4 +389,25 @@ PAF = { #BR addition
 
 	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
+}
+
+DER = { #BR addition
+	color = rgb { 75 99 148 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+KOG = { #BR addition
+	color = rgb { 57 118 88 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+MES = { #BR addition
+	color = rgb { 137 88 48 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
 }
