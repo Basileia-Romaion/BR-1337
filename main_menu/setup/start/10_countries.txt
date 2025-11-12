@@ -4312,8 +4312,6 @@ countries = {
 			launceston truro bodmin
 			# channel
 			jersey
-			# france			
-			abbeville montreuil #Ponthieu
 		}
 		own_control_conquered = {
 			berwick
@@ -16431,9 +16429,9 @@ countries = {
 	}
 
 	#Boulogne
-	BGN = {
+	BGN = { #BR edit
 		own_control_core = {
-			boulogne_sur_mer
+			boulogne_sur_mer montreuil abbeville #Ponthieu
 		}
 
 		starting_technology_level = 3
