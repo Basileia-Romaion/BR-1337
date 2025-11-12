@@ -12676,32 +12676,7 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 
-			ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1239.1.1 end_date = 1241.1.1 regnal_number = 1 }
-			ruler_term = { character = epi_michael_ii_komnenos_doukas start_date = 1241.1.1 end_date = 1268.1.1 regnal_number = 1 }
-			ruler_term = { character = ths_ioannes_i_doukas start_date = 1268.1.1 end_date = 1289.3.1 regnal_number = 1 }
-			ruler_term = {
-				character = ths_konstantinos_doukas start_date = 1289.3.1 end_date = 1299.1.1 regnal_number = 1
-				character = ths_theodoros_doukas start_date = 1289.3.1 end_date = 1299.1.1 regnal_number = 1 # Minor Co-Ruler
-			}
-			ruler_term = {
-				character = ths_konstantinos_doukas start_date = 1299.1.1 end_date = 1303.1.1 regnal_number = 1
-			}
-			ruler_term = { character = ths_ioannes_ii_doukas start_date = 1303.1.1 end_date = 1318.1.1 regnal_number = 2 }
-
-			ruler_term = { character = ths_stefanos_gabrielopoulos start_date = 1318.1.1 end_date = 1332.1.1 regnal_number = 1 }
-
-			ruler_term = { character = cep_john_orsini start_date = 1332.1.1 end_date = 1335.1.1 regnal_number = 3 }
-			ruler_term = { character = epi_nikephoros_ii_orsini start_date = 1335.1.1 end_date = 1366.1.1 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_emmanuel = 1
-				name_michael = 1
-				name_john = 3
-				name_constantine = 1
-				name_theodore = 1
-				name_stephen = 1
-				name_nikephoros = 1
-			}
+			#random ruler for now
 		}
 
 		country_rank = rank_duchy
@@ -31107,36 +31082,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = cil_leo_iv
 
-			ruler_term = { character = cil_levon_i_roupenid start_date = 1198.1.6 end_date = 1219.5.2 regnal_number = 1 }
-			ruler_term = { character = cil_zabel_i_roupenid start_date = 1219.5.2 end_date = 1226.1.1 regnal_number = 1 }
-			ruler_term = {
-				character = cil_zabel_i_roupenid start_date = 1226.1.1 end_date = 1252.1.23 regnal_number = 1
-				character = cil_hethum_i_hethumid start_date = 1226.1.1 end_date = 1252.1.23 regnal_number = 1
-			}
-			ruler_term = { character = cil_hethum_i_hethumid start_date = 1252.1.23 end_date = 1269.1.1 regnal_number = 1 }
-			ruler_term = { character = cil_leo_ii_hetumid start_date = 1269.1.1 end_date = 1289.1.1 regnal_number = 2 }
-			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1289.1.1 end_date = 1293.1.1 regnal_number = 2 }
-			ruler_term = { character = cil_thoros_iii_hetumid start_date = 1293.1.1 end_date = 1295.1.1 regnal_number = 1 }
-			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1295.1.1 end_date = 1296.1.1 regnal_number = 2 }
-			ruler_term = { character = cil_smbat_hetumid start_date = 1296.1.1 end_date = 1298.1.1 regnal_number = 1 }
-			ruler_term = { character = cil_kostandin_i_hetumid start_date = 1298.1.1 end_date = 1299.1.1 regnal_number = 1 }
-			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1299.1.1 end_date = 1305.5.1 regnal_number = 2 }
-			ruler_term = { character = cil_leo_iii_hetumid start_date = 1305.5.1 end_date = 1307.11.17 regnal_number = 3 }
-			ruler_term = { character = cil_oshin_hetumid start_date = 1307.11.17 end_date = 1320.7.20 regnal_number = 1 }
-			ruler_term = { character = cil_leo_iv start_date = 1320.7.20 regnal_number = 4 }
-
-			regnal_numbers = {
-				name_leon = 4
-				name_elizabeth = 1
-				name_philip = 1
-				name_hethum = 2
-				name_theodore = 1
-				name_simbad = 1
-				name_constantine = 1
-				name_oshin = 1
-			}
+			#random ruler for now
 		}
 
 		tolerated_cultures = {
@@ -31145,7 +31092,7 @@ countries = {
 		}
 
 		country_rank = rank_kingdom
-		capital = sis
+		capital = tarsus
 	}
 
 	#Candarids - CND https://en.wikipedia.org/wiki/Candar_dynasty
@@ -31163,28 +31110,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = cyp_hugues_iv
 
-			ruler_term = { character = cyp_guy_i_lusignan start_date = 1192.5.5 end_date = 1194.1.1 regnal_number = 1 }
-			ruler_term = { character = koj_aimery_ii_lusignan start_date = 1194.4.1 end_date = 1205.4.1 regnal_number = 1 }
-			ruler_term = { character = cyp_hugues_i_lusignan start_date = 1205.4.1 end_date = 1218.1.10 regnal_number = 1 }
-			ruler_term = { character = cyp_henri_i_lusignan start_date = 1218.1.10 end_date = 1253.1.18 regnal_number = 1 }
-			ruler_term = { character = cyp_hugues_ii_lusignan start_date = 1253.1.18 end_date = 1267.12.1 regnal_number = 2 }
-			ruler_term = { character = cyp_hugues_iii_lusignan start_date = 1267.12.1 end_date = 1284.1.1 regnal_number = 3 }
-			ruler_term = { character = cyp_jean_i_lusignan start_date = 1284.1.1 end_date = 1285.5.20 regnal_number = 2 }
-			ruler_term = { character = cyp_henri_ii_lusignan start_date = 1285.5.20 end_date = 1306.4.26 regnal_number = 2 }
-			ruler_term = { character = cyp_amaury_ii_lusignan start_date = 1306.4.26 end_date = 1310.6.5 regnal_number = 2 }
-			ruler_term = { character = cyp_henri_ii_lusignan start_date = 1310.6.5 end_date = 1324.8.31 regnal_number = 2 } # Restored
-			ruler_term = { character = cyp_hugues_iv start_date = 1324.8.31 regnal_number = 4 }
-
-			regnal_numbers = {
-				name_wido = 1
-				name_aimeric = 1
-				name_hugh = 4
-				name_henri = 2
-				name_john = 1
-				name_amalric = 2
-			}
+			#random ruler for now
 		}
 
 		tolerated_cultures = {
@@ -31445,33 +31372,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = tre_basil_komnenos
-
-			ruler_term = { character = tre_alexios_i_komnenos start_date = 1204.4.1 end_date = 1222.2.1 regnal_number = 1 }
-
-			ruler_term = { character = tre_andronikos_i_gidos start_date = 1222.2.1 end_date = 1235.1.1 regnal_number = 1 }
-
-			ruler_term = { character = tre_ioannes_i_auxouchos start_date = 1235.1.1 end_date = 1238.1.1 regnal_number = 1 }
-			ruler_term = { character = tre_manouel_i_komnenos start_date = 1238.1.1 end_date = 1263.3.1 regnal_number = 1 }
-			ruler_term = { character = tre_andronikos_ii_komnenos start_date = 1263.3.1 end_date = 1266.1.1 regnal_number = 2 }
-			ruler_term = { character = tre_georgios_komnenos start_date = 1266.1.1 end_date = 1280.6.1 regnal_number = 1 }
-			ruler_term = { character = tre_ioannes_ii_komnenos start_date = 1280.6.1 end_date = 1284.10.1 regnal_number = 2 }
-			ruler_term = { character = tre_theodora_komnene start_date = 1284.10.1 end_date = 1285.1.1 regnal_number = 1 }
-			ruler_term = { character = tre_ioannes_ii_komnenos start_date = 1285.1.1 end_date = 1297.8.16 regnal_number = 2 } # Restored
-			ruler_term = { character = tre_alexios_ii_komnenos start_date = 1297.8.16 end_date = 1330.5.3 regnal_number = 2 }
-			ruler_term = { character = tre_andronikos_iii_komnenos start_date = 1330.5.3 end_date = 1332.1.8 regnal_number = 3 }
-			ruler_term = { character = tre_manouel_ii_komnenos start_date = 1332.1.8 end_date = 1332.9.23 regnal_number = 2 }
-			ruler_term = { character = tre_basil_komnenos start_date = 1332.9.23 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_alexis = 2
-				name_andronikos = 3
-				name_john = 2
-				name_emmanuel = 2
-				name_george = 1
-				name_theodora = 1
-				name_basil = 1
-			}
+			
+			#random ruler for now
 		}
 
 		country_rank = rank_kingdom
@@ -31505,7 +31407,7 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
+			#random ruler for now
 		}
 
 		country_rank = rank_duchy
@@ -31519,7 +31421,7 @@ countries = {
 	PAF = {
 		own_control_core = {
 			#TRE
-			safranbulu ulus yenicepazari bartin
+			safranbolu ulus yenicepazari bartin
 			arac devrekani kure_i_mamure kastamonu taskopru inebolu
 			boyabat sinop
 			cankiri bayat cerkes kursunlu tosya sabanozu
@@ -31554,7 +31456,7 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
+			#random ruler for now
 		}
 
 		country_rank = rank_duchy
@@ -31687,30 +31589,8 @@ countries = {
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 	}
 
-	#Çemişgezek - CEM
-	CEM = {
-		own_control_core = {
-			cemisgezek kuzucan pertek
-		}
-
-		include = "expl_middle_east"
-		include = "muslim_tribe_no_coast"
-
-
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = random
-		}
-
-		tolerated_cultures = {
-			armenian_culture
-		}
-
-		capital = cemisgezek
-		dynasty = malkishi_dynasty
-		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
-	}
+	#Çemişgezek - CEM #BR REMOVED
+	
 
 	#Domboli-Bosht - DMB
 	DMB = {
@@ -56760,6 +56640,9 @@ countries = {
 			malazgirt hinis karakilise tekman tutak varto
 			ahlat bargiri ercis
 			erzurum tercan
+
+			#CEM
+			cemisgezek kuzucan pertek
 
 		}
 
