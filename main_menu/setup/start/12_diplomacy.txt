@@ -1,15 +1,24 @@
 diplomacy_manager = {
-    #-------England-------
-	
-    dependency = { first = ANG second = WLS subject_type = dominion start_date = 1283.1.1 }
-    dependency = { first = ANG second = PLE subject_type = dominion }
-    dependency = { first = ANG second = DHM subject_type = vassal }
-    dependency = { first = ANG second = CET subject_type = vassal }
-    dependency = { first = ANG second = LAN subject_type = vassal }
-    dependency = { first = SBL second = LOI subject_type = vassal }
+    # Anglia
+    dependency = { first = NOR second = ANG subject_type = dominion }
+    dependency = { first = ANG second = ZEA subject_type = vassal }
+    dependency = { first = ANG second = ZEL subject_type = vassal }
+    dependency = { first = ANG second = NOL subject_type = vassal }
+    dependency = { first = ANG second = ZEM subject_type = vassal }
+
+    # Britannia
+    dependency = { first = NRM second = ZED subject_type = vassal }
+    dependency = { first = NRM second = ZEK subject_type = vassal }
+    dependency = { first = NRM second = ZES subject_type = vassal }
+    dependency = { first = NRM second = ZEW subject_type = vassal }
+    dependency = { first = BRI second = CRN subject_type = vassal }
+
+    # Scotland
     dependency = { first = SCO second = ROS subject_type = vassal }
     dependency = { first = SCO second = MOY subject_type = vassal }
+    dependency = { first = SBL second = LOI subject_type = vassal }
 
+    # Wales
     dependency = { first = WLS second = GWR subject_type = vassal }
     dependency = { first = WLS second = GMG subject_type = vassal }
     dependency = { first = WLS second = MAC subject_type = vassal }
@@ -21,6 +30,7 @@ diplomacy_manager = {
     dependency = { first = WLS second = PMB subject_type = vassal }
     dependency = { first = WLS second = DEN subject_type = vassal }
 
+    # Ireland
     #dependency = { first = PLE second = CLR subject_type = vassal }
     dependency = { first = PLE second = CWM subject_type = vassal }
     #dependency = { first = PLE second = MYO subject_type = vassal }
@@ -42,7 +52,6 @@ diplomacy_manager = {
     scripted_mutual = { first = MYO second = UMH type = alliance }
 
     # Scandinavia
-
     dependency = { first = SWE second = SKE subject_type = fiefdom }
     dependency = { first = NOR second = ICE subject_type = dominion }
     dependency = { first = NOR second = GRL subject_type = dominion }
