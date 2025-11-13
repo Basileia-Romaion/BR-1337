@@ -1264,13 +1264,13 @@ building_manager = {
 	kurultai = { tag = CHG level = 1 location = almaty }
 	kurultai = { tag = CHG level = 1 location = balasagun }
 	
-	kurultai = { tag = GRG level = 1 location = gorgan }
+	kurultai = { tag = ERE level = 1 location = gorgan }
 	kurultai = { tag = JKR level = 1 location = nishapur }
-	kurultai = { tag = HLG level = 1 location = basra }
+	kurultai = { tag = KAR level = 1 location = basra }
 
-	kurultai = { tag = JAL level = 1 location = samarra }
-	kurultai = { tag = JAL level = 1 location = tabriz }
-	kurultai = { tag = JAL level = 1 location = baghdad }
+	kurultai = { tag = TUR level = 1 location = samarra }
+	kurultai = { tag = TUR level = 1 location = tabriz }
+	kurultai = { tag = TUR level = 1 location = baghdad }
 	kurultai = { tag = JUR level = 1 location = darab }
 	kurultai = { tag = UGH level = 1 location = qatruyeh }
 	kurultai = { tag = NGD level = 1 location = ghazni }
@@ -1286,7 +1286,7 @@ building_manager = {
 	
 	caravanserai = { tag = GLH level = 1 location = sarai_al_jadid }
 	caravanserai = { tag = CHG level = 1 location = almaliq }
-	caravanserai = { tag = GRG level = 1 location = gorgan }
+	caravanserai = { tag = ERE level = 1 location = gorgan }
 
 
 	# The Hanseatic Kontors
@@ -3478,12 +3478,12 @@ building_manager = {
 	stockade = { tag = MOE level = 1 location = tripolitsa }
 	stockade = { tag = MOE level = 1 location = mystras }
 	stockade = { tag = THS level = 1 location = larissa }
-	stockade = { tag = EPI level = 1 location = ionnina }
+	stockade = { tag = EPI level = 1 location = ioannina }
 	stockade = { tag = EPI level = 1 location = durres }
 	stockade = { tag = ATH level = 1 location = athens }
 	stockade = { tag = ATH level = 1 location = corinth }
 	stockade = { tag = FEO level = 1 location = theodoro }
-	stockade = { tag = PAF level = 1 location = sinope }
+	stockade = { tag = PAF level = 1 location = sinop }
 
 
 	stockade = { tag = CIL level = 1 location = alaiye }
