@@ -12584,8 +12584,7 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			#random ruler for now
+			ruler = random
 		}
 
 		country_rank = rank_duchy
@@ -12862,7 +12861,53 @@ countries = {
 		country_rank = rank_empire
 	}
 
-	#ALB BR REMOVED
+	ALB = {
+		own_control_core = {
+			
+		}
+
+		our_cores_conquered_by_others = {
+			durres elbasan kavaje kruje tirana
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			regency = consort_regency
+			active_regent = alb_agnes_perigord
+			start_regency_date = 1336.4.5
+			end_regency_date = 1341.1.1
+			heir = alb_charles_durazzo
+
+			ruler_term = { character = nap_charles_i_anjou start_date = 1272.2.1 end_date = 1285.1.7 regnal_number = 1 }
+			ruler_term = { character = nap_carlo_ii_anjou start_date = 1285.1.7 end_date = 1294.8.13 regnal_number = 2 }
+			ruler_term = { character = alb_filippo_i_taranto start_date = 1294.8.13 end_date = 1332.12.23 regnal_number = 1 }
+			ruler_term = { character = ach_robert_taranto start_date = 1332.12.23 end_date = 1333.1.1 regnal_number = 1 }
+			ruler_term = { character = alb_john_gravina start_date = 1333.1.1 end_date = 1336.4.5 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_john = 1
+				name_charles = 1
+			}
+		}
+
+		tolerated_cultures = {
+			bulgarian
+		}
+
+		country_rank = rank_kingdom
+		capital = durres
+		dynasty = anjou_dynasty
+		#dynasty = anjou_durazzo_dynasty
+	}
 
 	THP = {
 		own_control_core = {
@@ -12890,8 +12935,41 @@ countries = {
 		dynasty = thopia_dynasty
 	}
 
+	MZK = {
+		own_control_core = {
+		}
 
-	#MZK BR REMOVED
+		our_cores_conquered_by_others = {
+			berat ballsh
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = mzk_andrea_ii_muzaka
+
+			ruler_term = { character = mzk_andrea_ii_muzaka start_date = 1331.1.1 regnal_number = 2 }
+
+			regnal_numbers = {
+				name_andrew = 2
+			}
+		}
+
+		tolerated_cultures = {
+			aromanian
+		}
+
+		capital = berat
+		dynasty = muzakajt_dynasty
+	}
 
 	ANT = {
 		own_control_core = {
@@ -12923,7 +13001,33 @@ countries = {
 		dynasty = arianiti_dynasty
 	}
 
-	#MTR BR REMOVED
+	MTR = {
+		own_control_core = {
+		}
+		our_cores_conquered_by_others = {
+			kavaje
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = mtr_pal_mataranga
+
+			ruler_term = { character = mtr_pal_mataranga start_date = 1300.1.1 regnal_number = 1 }
+
+		}
+
+		capital = kavaje
+		dynasty = mataranga_dynasty
+	}
 
 	SER = {
 		own_control_core = {
@@ -17851,16 +17955,107 @@ countries = {
 
 	}
 
-	#NEO BR REPLACED
+	NEO = {	#Neopatria
+		own_control_core = {
+		}
+		our_cores_conquered_by_others = {
+			neopatras zetounion
+		}
 
-	#BOD BR REMOVED
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = ath_william
+			heir = sic_giovanni_sicily
+			designated_heir_reason = sibling_of_ruler
+
+			ruler_term = { character = ath_william start_date = 1319.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_william = 1
+			}
+		}
+
+		tolerated_cultures = {
+			greek_culture
+		}
+
+		country_rank = rank_duchy
+		court_language = catalan_dialect
+		capital = neopatras
+	}
+
+	BOD = {	#Bodonitsa
+		own_control_core = {
+		}
+		our_cores_conquered_by_others = {
+			bodonitsa
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = bod_niccolo_i_zorzi
+			consort = bod_guglielma_pallavicini # In fact co-ruler
+
+			ruler_term = { character = bod_guido_pallavicini start_date = 1204.10.1 end_date = 1237.1.1 regnal_number = 1 }
+			ruler_term = { character = bod_ubertino_pallavicini start_date = 1237.1.1 end_date = 1278.1.1 regnal_number = 1 }
+			ruler_term = {
+				character = bod_isabella_pallavicini start_date = 1278.1.1 end_date = 1286.1.1 regnal_number = 1
+				character = ach_anton_the_flemish start_date = 1278.1.1 end_date = 1286.1.1 regnal_number = 1 # Marital Co-Ruler
+			}
+			ruler_term = { character = bod_tommaso_pallavicini start_date = 1286.1.1 end_date = 1300.1.1 regnal_number = 1 }
+			ruler_term = { character = bod_alberto_pallavicini start_date = 1300.1.1 end_date = 1311.3.15 regnal_number = 1 }
+
+			ruler_term = { character = bod_guglielma_pallavicini start_date = 1311.3.15 end_date = 1327.1.1 regnal_number = 1 } # In fact she ruled until 1358 together with her husband and her son.
+			ruler_term = {
+				character = bod_guglielma_pallavicini start_date = 1327.1.1 end_date = 1334.1.11 regnal_number = 1
+				character = bod_bartolomeo_zaccaria start_date = 1327.1.1 end_date = 1334.1.1 regnal_number = 1 # Marital Co-Ruler
+			}
+			ruler_term = { character = bod_guglielma_pallavicini start_date = 1334.1.1 end_date = 1335.1.1 regnal_number = 1 }
+			ruler_term = { character = bod_niccolo_i_zorzi start_date = 1335.1.1 regnal_number = 1 }
+			regnal_numbers = {
+				name_wido = 1
+				name_hubert = 1
+				name_elizabeth = 1
+				name_anthony = 1
+				name_thomas = 1
+				name_albert = 1
+				name_mary = 1
+				name_andrew = 1
+				name_willelma = 1
+				name_bartholomew = 1
+				name_nicholas = 1
+			}
+		}
+
+		tolerated_cultures = {
+			greek_culture
+		}
+
+		court_language = venetian_dialect
+		capital = bodonitsa
+	}
 
 	ARG = { #Argos
 		own_control_core = {
-			
 		}
 		our_cores_conquered_by_others = {
-			athens megara thebes atalanti livadeia
+			athens megara thebes atalanti livadeia gravia
 		}
 
 		starting_technology_level = 3
@@ -17901,6 +18096,9 @@ countries = {
 	KNI = { #Knights Hospitaller
 		own_control_core = {
 			malta
+		}
+		our_cores_conquered_by_others = {
+			rodos kos
 		}
 
 		include = "catholic_military_order"
@@ -17990,7 +18188,43 @@ countries = {
 		capital = negroponte
 	}
 
-	#SAO BR REMOVED
+	SAO = { #Salona
+		own_control_core = {
+		}
+		our_cores_conquered_by_others = {
+			salona loidoriki
+			malta
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = sao_alfons_frederic_de_arago
+
+			ruler_term = { character = sao_alfons_frederic_de_arago start_date = 1318.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_thomas = 3
+				name_william = 1
+				name_roger = 1
+				name_alphonse = 1
+			}
+		}
+
+		tolerated_cultures = {
+			greek_culture maltese
+		}
+
+		court_language = catalan_dialect
+		capital = salona
+	}
 
 	TRO = { #Travunija		
 		our_cores_conquered_by_others = {
@@ -30992,8 +31226,7 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			#random ruler for now
+			ruler = random
 		}
 
 		tolerated_cultures = {
@@ -31020,8 +31253,7 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			#random ruler for now
+            ruler = random
 		}
 
 		tolerated_cultures = {
@@ -43525,8 +43757,6 @@ countries = {
 		include = "amerindian_mesoamerican_tribe_not_nahuatl"
 		include = "expl_mesoamerica"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		court_language = maya_language
@@ -43541,8 +43771,6 @@ countries = {
 		include = "amerindian_mesoamerican_tribe_not_nahuatl"
 		include = "expl_mesoamerica"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		court_language = maya_language
@@ -43615,8 +43843,6 @@ countries = {
 		include = "amerindian_mesoamerican_tribe_not_nahuatl"
 		include = "expl_mesoamerica"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		court_language = maya_language
@@ -43694,8 +43920,6 @@ countries = {
 		include = "amerindian_mesoamerican_tribe_not_nahuatl"
 		include = "expl_mesoamerica"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		court_language = maya_language
@@ -59825,6 +60049,205 @@ countries = {
 		government = {
 			ruler = random
 		}
+	}
+	ANA = {
+		own_control_core = {
+			#KAR
+			aksaray kochisar insuyu
+			kirsehir nevsehir sariyahsi
+			konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
+			bekarlar bor_tur nigde
+			beysehir aksehir bolvadin sarkikaraagac seydisehir
+			ilgin turgut suluklu kulu_turkey obruk altinekin cumra
+
+			#AHI
+			ankara cubuk haymana kalecik polatli karakecili
+
+			#ERE
+			bozok baliseyh candir dinek_keskin sorgun
+			hacibektas
+			corum huseyinabad sungurlu
+			akdagmadeni aydincik koyulhisar sulusaray tokat zile
+		}
+
+		own_control_integrated = {
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_kingdom
+		tolerated_cultures = {
+			cappadocian_greek_culture
+			armenian_culture
+		}
+
+		capital = konya
+	}
+
+	KAP = {
+		own_control_core = {
+			#ERE
+			kayseri develi tomarza yahyali bogazliyan
+			urgup
+			sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+			armenian_culture
+		}
+
+		capital = kayseri
+	}
+
+	PAF = {
+		own_control_core = {
+
+			#CND
+			bartin
+			kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
+			cankiri bayat cerkes kursunlu tosya
+			safranbolu iskilip sabanozu ulus yenicepazari
+			gumus
+		}
+
+		own_control_integrated = {
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+			armenian_culture
+		}
+
+		capital = kastamonu
+	}
+
+	DER = {
+		own_control_core = {
+			#SUT
+			harput adakli keban palu
+
+			#BIN
+			bingol genc
+
+			#CEM
+			cemisgezek kuzucan pertek
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = palu
+	}
+
+	KOG = {
+		own_control_core = {
+			#ERE
+			bayburt erzincan ilic kelkit kemah sebinkarahisar siran
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = palu
+	}
+
+	MES = {
+		own_control_core = {
+			#ERE
+			divrigi arapgir egin arguvan
+			malatya
+		}
+
+		own_control_integrated = {	
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		country_rank = rank_duchy
+		tolerated_cultures = {
+		}
+
+		capital = arguvan
 	}
 
 }
