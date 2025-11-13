@@ -53,6 +53,23 @@ MLL = {
 	
 }
 
+CAS = { #Keep it existing to avoid errors
+	color = map_asturias
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = castilian
+	religion_definition = catholic
+	
+	unit_color0 = rgb { 201 163 9 }
+	unit_color1 = rgb { 188 28 13 }
+	unit_color2 = rgb { 200 200 210 }
+
+	description_category = military
+	difficulty = 2
+
+	
+}
+
 
 ASU = { #BR edit (repurposed as asturias)
 	color = map_asturias
