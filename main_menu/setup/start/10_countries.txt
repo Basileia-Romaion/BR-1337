@@ -4246,10 +4246,10 @@ countries = {
 
 		#------------------ British Isles -------------------------
 
-		# ENG - Replaced by AEG and associated tags; BR edit
+		# ENG - Replaced by AGL and associated tags; BR edit
 
 		# Anglia - overlord of Norse-controlled England
-		AEG = {
+		AGL = {
 			own_control_core = {
 				abingdon aylesbury barking bedford bosworth buckingham cambridge chelmsford chesterfield colchester daventry derby dunstable ely harrow hedingham hertford henley huntingdon kettering kingston leicester london loughborough newark northampton nottingham prittlewell reading retford rutland royston st_albans walden windsor wycombe
 			}
@@ -4278,7 +4278,7 @@ countries = {
 		}
 
 		# East Anglia
-		ZEA = {
+		EAG = {
 			own_control_core = {
 				bury fakenham ipswich lavenham lowestoft lynn norwich thetford yarmouth
 			}
@@ -4303,7 +4303,7 @@ countries = {
 		}
 
 		# Lindsey
-		ZEL = {
+		LSY = {
 			own_control_core = {
 				boston grantham grimsby lincoln louth spalding
 			}
@@ -4328,7 +4328,7 @@ countries = {
 		}
 
 		# Merica
-		ZEM = {
+		MCA = {
 			own_control_core = {
 				banbury blackburn birmingham bristol cirencester cheltenham coventry glossop gloucester kidderminster lancaster liverpool macclesfield manchester nantwich oxford preston stafford stratford stoke tamworth worcester
 			}
@@ -4384,7 +4384,7 @@ countries = {
 		}
 
 		# Kent, overlord of Norman England
-		ZEK = {
+		KAT = {
 			own_control_core = {
 				canterbury chichester dover guildford hastings hythe lewes reigate rochester shoreham tonbridge woking
 			}
@@ -4408,7 +4408,7 @@ countries = {
 			capital = dover
 		}
 
-		ZED = {
+		DST = {
 			own_control_core = {
 				amesbury basingstoke chippenham dorchester lymington poole portsmouth salisbury shaftesbury southampton trowbridge weymouth wight winchester
 			}
@@ -4432,7 +4432,7 @@ countries = {
 			capital = newcastle
 		}
 
-		ZES = {
+		SMR = {
 			own_control_core = {
 				bath minehead portishead taunton wells
 			}
@@ -4456,7 +4456,7 @@ countries = {
 			capital = portishead
 		}
 
-		ZEW = {
+		WSX = {
 			own_control_core = {
 				bampton barnstaple bideford exeter okehampton plymouth
 			}

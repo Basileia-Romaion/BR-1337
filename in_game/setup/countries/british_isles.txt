@@ -604,19 +604,15 @@ GLY = {
 }
 
 ## BR Additions ##
-AEG = { # Anglia
+AGL = { # Anglia
 	color = rgb { 242 55 48 }
 	color2 = rgb { 16 41 202 }
-	
-	unit_color0 = hsv360 {	0 76 53 }
-	unit_color1 = hsv360 {	230 64 36 }
-	unit_color2 = hsv360 {	37 84 89 }
 	
 	culture_definition = english
 	religion_definition = catholic
 }
 
-ZED = { # Dorset
+DST = { # Dorset
 	color = rgb { 69 177 223 }
 	color2 = rgb { 16 41 202 }
 	
@@ -624,7 +620,7 @@ ZED = { # Dorset
 	religion_definition = catholic
 }
 
-ZEA = { # East Anglia
+EAG = { # East Anglia
 	color = rgb { 143 21 17 }
 	color2 = rgb { 16 41 202 }
 	
@@ -632,7 +628,7 @@ ZEA = { # East Anglia
 	religion_definition = catholic
 }
 
-ZEK = { # Kent
+KAT = { # Kent
 	color = rgb { 96 48 242 }
 	color2 = rgb { 16 41 202 }
 	
@@ -640,7 +636,7 @@ ZEK = { # Kent
 	religion_definition = catholic
 }
 
-ZEL = { # Lindsey/Lindon
+LSY = { # Lindsey/Lindon
 	color = rgb { 242 106 48 }
 	color2 = rgb { 16 41 202 }
 	
@@ -648,7 +644,7 @@ ZEL = { # Lindsey/Lindon
 	religion_definition = catholic
 }
 
-ZEM = { # Mercia
+MCA = { # Mercia
 	color = rgb { 239 36 28 }
 	color2 = rgb { 16 41 202 }
 	
@@ -656,7 +652,7 @@ ZEM = { # Mercia
 	religion_definition = catholic
 }
 
-ZES = { # Somerset
+SMR = { # Somerset
 	color = rgb { 97 76 232 }
 	color2 = rgb { 16 41 202 }
 	
@@ -664,7 +660,7 @@ ZES = { # Somerset
 	religion_definition = catholic
 }
 
-ZEW = {
+WSX = {
 	color = rgb { 77 131 213 }
 	color2 = rgb { 16 41 202 }
 	

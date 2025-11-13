@@ -1,16 +1,16 @@
 diplomacy_manager = {
     # Anglia
     dependency = { first = NOR second = ANG subject_type = dominion }
-    dependency = { first = ANG second = ZEA subject_type = vassal }
-    dependency = { first = ANG second = ZEL subject_type = vassal }
+    dependency = { first = ANG second = EAG subject_type = vassal }
+    dependency = { first = ANG second = LSY subject_type = vassal }
     dependency = { first = ANG second = NOL subject_type = vassal }
-    dependency = { first = ANG second = ZEM subject_type = vassal }
+    dependency = { first = ANG second = MCA subject_type = vassal }
 
     # Britannia
-    dependency = { first = NRM second = ZED subject_type = vassal }
-    dependency = { first = NRM second = ZEK subject_type = vassal }
-    dependency = { first = NRM second = ZES subject_type = vassal }
-    dependency = { first = NRM second = ZEW subject_type = vassal }
+    dependency = { first = NRM second = DST subject_type = vassal }
+    dependency = { first = NRM second = KAT subject_type = vassal }
+    dependency = { first = NRM second = SMR subject_type = vassal }
+    dependency = { first = NRM second = WSX subject_type = vassal }
     dependency = { first = BRI second = CRN subject_type = vassal }
 
     # Scotland
