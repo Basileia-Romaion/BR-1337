@@ -2241,6 +2241,7 @@ building_manager = {
 	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
 	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
 	cathedral	= { tag = BYZ level = 1	location = constantinople }
+	cathedral	= { tag = ARM level = 1	location = ani }
 
 	#Greece and Balkans #BR edited
 
@@ -3472,6 +3473,18 @@ building_manager = {
 	stockade = { tag = BYZ level = 1 location = lazkiye }
 	stockade = { tag = BYZ level = 1 location = alasehir }
 	stockade = { tag = BYZ level = 1 location = manisa }
+	stockade = { tag = CYP level = 1 location = nicosia_cyp }
+	stockade = { tag = CRT level = 1 location = cania }
+	stockade = { tag = MOE level = 1 location = tripolitsa }
+	stockade = { tag = MOE level = 1 location = mystras }
+	stockade = { tag = THS level = 1 location = larissa }
+	stockade = { tag = EPI level = 1 location = ionnina }
+	stockade = { tag = EPI level = 1 location = durres }
+	stockade = { tag = ATH level = 1 location = athens }
+	stockade = { tag = ATH level = 1 location = corinth }
+	stockade = { tag = FEO level = 1 location = theodoro }
+	stockade = { tag = PAF level = 1 location = sinope }
+
 
 	stockade = { tag = CIL level = 1 location = alaiye }
 	stockade = { tag = CIL level = 1 location = kars_armenia }
