@@ -376,8 +376,7 @@ diplomacy_manager = {
     dependency = { first = TUR second = SLI subject_type = vassal }
     dependency = { first = TUR second = SYY subject_type = vassal }
     dependency = { first = TUR second = ZBR subject_type = vassal }
-    dependency = { first = MAM second = DUL subject_type = vassal }
-    dependency = { first = MAM second = KIL subject_type = vassal }
+    dependency = { first = DUL second = KIL subject_type = vassal }
     dependency = { first = TUR second = BHT subject_type = vassal }
     dependency = { first = TUR second = BIT subject_type = vassal }
     dependency = { first = TUR second = CEM subject_type = vassal }
@@ -741,8 +740,7 @@ diplomacy_manager = {
     dependency = { first = MAM second = AMR subject_type = vassal }
     dependency = { first = MAM second = BKZ subject_type = vassal }
     dependency = { first = MAM second = BQA subject_type = vassal }
-    dependency = { first = MAM second = DGE subject_type = vassal }
-    dependency = { first = MAM second = FDL subject_type = vassal }
+    dependency = { first = KAR second = FDL subject_type = vassal }
     dependency = { first = MAM second = SKN subject_type = vassal }
 
     #------------Arabia-------------

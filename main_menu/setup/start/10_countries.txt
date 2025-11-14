@@ -986,8 +986,9 @@ countries = {
 					name_john = 1
 				}
 			}
-
+			accepted_cultures = { turkoman_culture }
 			tolerated_cultures = {
+				iraqi_culture
 			}
 
 			capital = piltene
@@ -31282,6 +31283,8 @@ countries = {
 			midyat
 			dunaysir
 			araban hasakah makisin mardin tunanir
+			raqqa  busayrah jabar madinat_far
+			urfa  birecik harran suruc viransehir  siverek
 		}
 		own_control_integrated = {
 			barqaid sinjar bara_iraq nusaybin ras_ayn
@@ -32153,6 +32156,8 @@ countries = {
 				dhimmi_administrative_posts
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
 
 				#Tribes
 				tribes_land_rights
@@ -32165,9 +32170,9 @@ countries = {
 		}
 
 		country_rank = rank_kingdom
-		capital = baghdad
+		capital = tabriz #baghdad
 		court_language = persian_language
-		accepted_cultures = { turkoman_culture }
+		accepted_cultures = { turkoman_culture azeri_culture }
 		tolerated_cultures = {
 			iraqi_culture
 			adhari_culture
@@ -32770,8 +32775,7 @@ countries = {
 	#Döger - DGE
 	DGE = {
 		own_control_core = {
-			raqqa  busayrah jabar madinat_far
-			urfa  birecik harran suruc viransehir  siverek
+			
 		}
 
 		starting_technology_level = 3
@@ -55087,9 +55091,8 @@ countries = {
 
 		religious_school = maturidi_school #Said to be predominant in Persia before the Safavids
 		court_language = turkmen_dialect
+		accepted_cultures = { turkmen_culture turkoman_culture }
 		tolerated_cultures = {
-			turkoman_culture
-			turkmen_culture
 			khorasani_culture
 			farsi_culture
 			adhari_culture
