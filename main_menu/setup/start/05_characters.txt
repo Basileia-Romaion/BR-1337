@@ -70572,6 +70572,96 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	#Eretnids - ERE
+	
+	#Ruler
+	ere_eretna = { #https://en.wikipedia.org/wiki/Eretna
+		first_name = { name = Alaeddin }
+		last_name = { name = Eretna }
+		dynasty = eretnids_dynasty
+		birth = elbistan
+		birth_date = 1290.1.1
+		culture = uyghur_culture
+		religion = sunni
+		tag = ERE
+	}
+	
+	#Spouse of the Ruler
+	ere_suli = {
+		first_name = { name = Suli }
+		last_name = { name = Pasha }
+		spouse = ere_eretna
+		birth = elbistan
+		birth_date = 1278.1.1
+		culture = uyghur_culture
+		religion = sunni
+		female = yes
+		tag = ERE
+	}
+	
+	#Spouse of the Ruler
+	ere_toga = {
+		first_name = { name = Toga }
+		last_name = { name = Hatun }
+		spouse = ere_eretna
+		birth = elbistan
+		birth_date = 1296.1.1
+		culture = uyghur_culture
+		religion = sunni
+		female = yes
+		tag = ERE
+	}
+
+	#Spouse of the Ruler
+	ere_isfahan = {
+		first_name = { name = Isfahan_Shah }
+		last_name = { name = Hatun }
+		spouse = ere_eretna	
+		birth = elbistan
+		birth_date = 1296.1.1
+		culture = uyghur_culture
+		religion = sunni
+		female = yes
+		tag = ERE
+	}
+
+	#Son of the Ruler
+	ere_hasan = {
+		first_name = { name = name_hasan }
+		father = ere_eretna
+		mother = ere_toga
+		dynasty = eretnids_dynasty
+		birth = sivas
+		birth_date = 1312.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = ERE
+	}
+
+	#Son of the Ruler
+	ere_jafer = { #https://en.wikipedia.org/wiki/Izz_al-Din_Jafar
+		first_name = { name = Jafer }
+		father = ere_eretna
+		mother = ere_toga
+		dynasty = eretnids_dynasty
+		birth = sivas
+		birth_date = 1316.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = ERE
+	}
+
+	#Heir
+	ere_mehmed = { #https://en.wikipedia.org/wiki/Ghiyath_al-Din_Muhammad_I
+		first_name = { name = name_muhammad }
+		father = ere_eretna
+		mother = ere_isfahan
+		dynasty = eretnids_dynasty
+		birth = kayseri
+		birth_date = 1332.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = ERE
+	}
 
 	#Germiyanids - GRM
 
@@ -70606,6 +70696,137 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	#Inanjids - INA
+	
+	#Ruler
+	ina_murad_arslan = {
+		first_name = { name = name_murad.name_arslan }
+		dynasty = inanjids_dynasty
+		birth = lazkiye
+		birth_date = 1297.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = INA
+	}
+	
+	ina_ishak = {
+		first_name = { name = Ishak }
+		father = ina_murad_arslan
+		dynasty = inanjids_dynasty
+		birth = lazkiye
+		birth_date = 1332.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = INA
+	}
+	
+	#Karamanids - KAR
+	kar_karaman_bey = { 
+		first_name = { name = Karaman }
+		dynasty = karamanids_dynasty
+		birth = ermenek
+		birth_date = 1221.1.1
+		death_date = 1263.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+
+	#Father of the Ruler
+	kar_mahmut = { #https://en.wikipedia.org/wiki/Badr_al-Din_Mahmud
+		first_name = { name = name_mahmud }
+		dynasty = karamanids_dynasty
+		birth = ermenek
+		birth_date = 1259.1.1
+		death_date = 1311.1.1
+		culture = turkish_culture
+		religion = sunni
+		father = kar_karaman_bey
+		tag = KAR
+	}
+	
+	#Brother of the Ruler
+	kar_ibrahim = { #https://en.wikipedia.org/wiki/Ibrahim_I_of_Karaman
+		first_name = { name = name_abraham }
+		father = kar_mahmut
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1282.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+	
+	kar_suleyman = {
+		first_name = { name = name_salomon }
+		father = kar_mahmut
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1288.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+
+	#Ruler
+	kar_alaeddin_halil_mirza = { #https://en.wikipedia.org/wiki/Halil_of_Karaman
+		first_name = { name = name_ala_ad_din.name_khalil }
+		nickname = { name = name_mirza }
+		father = kar_mahmut
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1288.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+	
+	#Brother of the Ruler
+	kar_musa = { #https://en.wikipedia.org/wiki/Musa_of_Karaman
+		first_name = { name = name_moses }
+		father = kar_mahmut
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1279.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+	
+	#Nephew of the Ruler
+	kar_fahreddin_ahmed = { #https://en.wikipedia.org/wiki/Ahmet_of_Karaman
+		first_name = { name = Fahreddin_Ahmed }
+		father = kar_ibrahim
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1319.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+	
+	#Nephew of the Ruler
+	kar_semseddin = { #https://en.wikipedia.org/wiki/%C5%9Eemseddin_of_Karaman
+		first_name = { name = Semseddin }
+		father = kar_ibrahim
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1322.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
+	
+	#Nephew of the Ruler
+	kar_karaman = {
+		first_name = { name = Karaman }
+		father = kar_ibrahim
+		dynasty = karamanids_dynasty
+		birth = konya
+		birth_date = 1328.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = KAR
+	}
 	
 	#Kubadids - KBD
 	
@@ -71159,6 +71380,787 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	#Ottomans - TUR
+	
+	#Grandfather of the Ruler
+	tur_ertugrul = { #https://en.wikipedia.org/wiki/Ertu%C4%9Frul
+		first_name = { name = name_ertugrul }
+		dynasty = ottomans_dynasty
+		birth = sogut #wasn't really born there, but ruled it
+		birth_date = 1210.1.1
+		death_date = 1280.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Father of the Ruler
+	tur_osman = { #https://en.wikipedia.org/wiki/Osman_I
+		first_name = { name = name_osman }
+		dynasty = ottomans_dynasty
+		father = tur_ertugrul
+		spouse = tur_malhun_hatun
+		spouse = tur_rabia_bala_hatun
+		birth = sogut
+		birth_date = 1254.1.1
+		death_date = 1323.6.4
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Mother of the Ruler
+	tur_malhun_hatun = { #https://en.wikipedia.org/wiki/Malhun_Hatun
+		first_name = { name = Kameriye_Malhun }
+		nickname = { name = Khatun }
+		spouse = tur_osman
+		birth = sogut
+		birth_date = 1258.1.1
+		death_date = 1326.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Ruler
+	tur_orhan = { #https://en.wikipedia.org/wiki/Orhan
+		first_name = { name = name_orhan }
+		nickname = { name = Ghazi }
+		adm = 76 dip = 79 mil = 97
+		father = tur_osman
+		mother = tur_malhun_hatun
+		spouse = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1281.2.6
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+		ruler_trait = conqueror
+		ruler_trait = inspiring_leader
+		general_trait = master_of_arms
+		timed_modifier = {
+			modifier = "healthy_character"
+			start_date = 1330.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	#Mother of the Brother of the Ruler
+	tur_rabia_bala_hatun = { #https://en.wikipedia.org/wiki/Rabia_Bala_Hatun
+		first_name = { name = Rabia_bala }
+		nickname = { name = Khatun }
+		spouse = tur_osman
+		birth = sogut
+		birth_date = 1260.1.1
+		death_date = 1324.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Concubine of the Father of the Ruler
+	tur_fulane_hatun = {
+		first_name = { name = name_fulane }
+		nickname = { name = Khatun }
+		spouse = tur_osman
+		birth = sogut
+		birth_date = 1265.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Older Brother of the Ruler
+	tur_fulan = {
+		first_name = { name = name_fulan }
+		father = tur_osman
+		mother = tur_fulane_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1277.1.1
+		death_date = 1330.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Younger Brother of the Ruler
+	tur_alaeddin_pasha = { #https://en.wikipedia.org/wiki/Alaeddin_Pasha
+		first_name = { name = name_ala.name_al_din }
+		nickname = { name = Pasha }
+		adm = 92 dip = 84 mil = 75
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1281.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Sister-in-law of the Ruler
+	tur_sister_in_law = {
+		first_name = random
+		spouse = tur_alaeddin_pasha
+		birth = sogut
+		birth_date = 1285.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Nephew of the Ruler
+	tur_kilic = {
+		first_name = { name = name_kilic }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		spouse = tur_spouse_of_nephew
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1300.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the Nephew of the Ruler
+	tur_spouse_of_nephew = {
+		first_name = random
+		spouse = tur_kilic
+		birth = sogut
+		birth_date = 1305.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#GrandNephew of the Ruler
+	tur_grandnephew = {
+		first_name = random
+		father = tur_kilic
+		mother = tur_spouse_of_nephew
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1325.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#2nd GrandNephew of the Ruler
+	tur_grandnephew_2 = {
+		first_name = random
+		father = tur_kilic
+		mother = tur_spouse_of_nephew
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1327.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#GrandNiece of the Ruler
+	tur_grandniece = {
+		first_name = random
+		father = tur_kilic
+		mother = tur_spouse_of_nephew
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1329.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	
+	#2nd Nephew of the Ruler
+	tur_hizir = {
+		first_name = { name = name_hizir }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		spouse = tur_spouse_of_hizir
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1302.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 2nd Nephew of the Ruler
+	tur_spouse_of_hizir = {
+		first_name = random
+		spouse = tur_hizir
+		birth = sogut
+		birth_date = 1307.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the 2nd Nephew of the Ruler
+	tur_son_second_nephew = {
+		first_name = random
+		father = tur_hizir
+		mother = tur_spouse_of_hizir
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1327.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#2nd Son of the 2nd Nephew of the Ruler
+	tur_second_son_second_nephew = {
+		first_name = random
+		father = tur_hizir
+		mother = tur_spouse_of_hizir
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1329.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the 2nd Nephew of the Ruler
+	tur_daughter_second_nephew = {
+		first_name = random
+		father = tur_hizir
+		mother = tur_spouse_of_hizir
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1330.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+	
+	#3rd Nephew of the Ruler
+	tur_muhammad = {
+		first_name = { name = name_muhammad }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		spouse = tur_spouse_of_muhammad
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1305.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 3rd Nephew of the Ruler
+	tur_spouse_of_muhammad = {
+		first_name = random
+		spouse = tur_muhammad
+		birth = sogut
+		birth_date = 1309.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the 3rd Nephew of the Ruler
+	tur_son_third_nephew = {
+		first_name = random
+		father = tur_muhammad
+		mother = tur_spouse_of_muhammad
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1329.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the 3rd Nephew of the Ruler
+	tur_daughter_third_nephew = {
+		first_name = random
+		father = tur_muhammad
+		mother = tur_spouse_of_muhammad
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1332.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+	
+	#4th Nephew of the Ruler
+	tur_abraham = {
+		first_name = { name = name_abraham }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		spouse = tur_spouse_of_abraham
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1307.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 4th Nephew of the Ruler
+	tur_spouse_of_abraham = {
+		first_name = random
+		spouse = tur_abraham
+		birth = sogut
+		birth_date = 1311.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the 4th Nephew of the Ruler
+	tur_son_fourth_nephew = {
+		first_name = random
+		father = tur_abraham
+		mother = tur_spouse_of_abraham
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1331.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the 4th Nephew of the Ruler
+	tur_daughter_fourth_nephew = {
+		first_name = random
+		father = tur_abraham
+		mother = tur_spouse_of_abraham
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1333.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+	
+	#5th Nephew of the Ruler
+	tur_sahi = {
+		first_name = { name = name_sahi }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		spouse = tur_spouse_of_sahi
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1310.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 5th Nephew of the Ruler
+	tur_spouse_of_sahi = {
+		first_name = random
+		spouse = tur_sahi
+		birth = sogut
+		birth_date = 1313.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Daughter of the 5th Nephew of the Ruler
+	tur_daughter_fifth_nephew = {
+		first_name = random
+		father = tur_sahi
+		mother = tur_spouse_of_sahi
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1335.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#1st Niece of the Ruler
+	tur_taci = {
+		first_name = { name = name_taci }
+		nickname = { name = Khatun }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1315.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#2nd Niece of the Ruler
+	tur_ayse = {
+		first_name = { name = name_ayse }
+		nickname = { name = Khatun }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1317.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#3rd Niece of the Ruler
+	tur_pasa = {
+		first_name = { name = name_pasa }
+		nickname = { name = Khatun }
+		father = tur_alaeddin_pasha
+		mother = tur_sister_in_law
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1319.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#2nd Younger Brother of the Ruler
+	tur_coban = {
+		first_name = { name = name_coban }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1283.1.1
+		death_date = 1337.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#3rd Younger Brother of the Ruler
+	tur_pazarli = {
+		first_name = { name = name_pazarli }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1285.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 3rd Younger Brother of the Ruler
+	tur_spouse_of_pazarli = {
+		first_name = random
+		spouse = tur_pazarli
+		birth = sogut
+		birth_date = 1287.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the 3rd Younger Brother of the Ruler
+	tur_ilyas = {
+		first_name = { name = name_ilyas }
+		father = tur_pazarli
+		mother = tur_spouse_of_pazarli
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1307.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#2nd Son of the 3rd Younger Brother of the Ruler
+	tur_second_son_third_brother = {
+		first_name = { name = name_murad }
+		father = tur_pazarli
+		mother = tur_spouse_of_pazarli
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1309.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the 3rd Younger Brother of the Ruler
+	tur_daughter_third_brother = {
+		first_name = random
+		father = tur_pazarli
+		mother = tur_spouse_of_pazarli
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1335.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#2nd Daughter of the 3rd Younger Brother of the Ruler
+	tur_second_daughter_third_brother = {
+		first_name = random
+		father = tur_pazarli
+		mother = tur_spouse_of_pazarli
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1323.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#4rd Younger Brother of the Ruler
+	tur_hamid = {
+		first_name = { name = name_hamid }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1288.1.1
+		death_date = 1329.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#5th Younger Brother of the Ruler
+	tur_murad_arslan = {
+		first_name = { name = name_murad.name_arslan }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		spouse = tur_spouse_of_murad_arslan
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1290.1.1
+		death_date = 1336.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 5th Younger Brother of the Ruler
+	tur_spouse_of_murad_arslan = {
+		first_name = random
+		spouse = tur_murad_arslan
+		birth = sogut
+		birth_date = 1292.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Daughter of the 5th Younger Brother of the Ruler
+	tur_melek = {
+		first_name = { name = name_melek }
+		father = tur_murad_arslan
+		mother = tur_spouse_of_murad_arslan
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1315.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#6th Younger Brother of the Ruler
+	tur_savci = {
+		first_name = { name = name_savci }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		spouse = tur_spouse_of_savci
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1292.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Spouse of the 6th Younger Brother of the Ruler
+	tur_spouse_of_savci = {
+		first_name = random
+		spouse = tur_savci
+		birth = sogut
+		birth_date = 1294.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the 6th Younger Brother of the Ruler
+	tur_salomon = {
+		first_name = { name = name_salomon }
+		father = tur_savci
+		mother = tur_spouse_of_savci
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1325.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Younger Sister of the Ruler
+	tur_fatima = {
+		first_name = { name = name_fatima }
+		father = tur_osman
+		mother = tur_rabia_bala_hatun
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1284.1.1
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Heir
+	tur_suleyman = { #https://en.wikipedia.org/wiki/S%C3%BCleyman_Pasha_(son_of_Orhan)
+
+		first_name = { name = name_salomon }
+		nickname = { name = Pasha }
+		adm = 59 dip = 61 mil = 92
+		father = tur_orhan
+		dynasty = ottomans_dynasty
+		birth = sogut
+		birth_date = 1306.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+		general_trait = inspirational_leader_general
+	}
+
+	#Concubine of the Ruler
+	tur_nilufer = { #https://en.wikipedia.org/wiki/Nil%C3%BCfer_Hatun
+
+		first_name = { name = name_nilufer }
+		nickname = { name = Khatun }
+		birth = bilecik
+		birth_date = 1283.1.1
+		culture = greek_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the Ruler
+	tur_murad = { #https://en.wikipedia.org/wiki/Murad_I
+		first_name = { name = name_murad }
+		father = tur_orhan
+		mother = tur_nilufer
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1326.6.29
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+	
+	#Spouse of the Ruler
+	tur_asporcha = { #https://en.wikipedia.org/wiki/Aspor%C3%A7a_Hatun
+		first_name = { name = name_asporcha }
+		nickname = { name = Khatun }
+		spouse = tur_orhan
+		birth = bilecik
+		birth_date = 1278.1.1
+		culture = greek_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the Ruler
+	tur_ibrahim = {
+
+		first_name = { name = name_abraham }
+		father = tur_orhan
+		mother = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1310.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the Ruler
+	tur_fatma_ottomans = {
+		first_name = { name = name_fatima }
+		father = tur_orhan
+		mother = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1315.1.1 #Unkown
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Son of the Ruler
+	tur_serefullah = {
+		first_name = { name = Serefullah }
+		father = tur_orhan
+		mother = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1320.1.1 #Unkown
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Daughter of the Ruler
+	tur_selcuk = {
+		first_name = { name = Selcuk }
+		father = tur_orhan
+		mother = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1325.1.1 #Unkown
+		culture = turkish_culture
+		religion = sunni
+		female = yes
+		tag = TUR
+	}
+
+	#Other Karasid heir that is in the Ottoman Court
+	krd_ali_karasid = {
+		first_name = { name = name_ali }	#Unknown son
+		father = krd_yakhshi
+		dynasty = karasids_dynasty
+		birth = balikesir
+		birth_date = 1316.1.1
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
 	
 	#Al 'Alī' - AAL
 

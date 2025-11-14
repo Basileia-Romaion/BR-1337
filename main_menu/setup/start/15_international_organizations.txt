@@ -428,15 +428,15 @@ international_organization_manager = {
 		members = { 
 			#Borjigid Faction
 
-			GRG MZN HDN QOM KSA ASR JKR SFR SBZ KHT
+			ERE MZN HDN QOM KSA ASR JKR SFR SBZ KHT
 			BDS #Baduspanids
 			KRT MRV KHF #Kartids
-			HLG #Huleguids
+			KAR #Huleguids
 
 			#Jalayirid Faction
 
-			JAL ARD ATZ DML ERE HBN HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
-			SUT BHT BIT DIL DMB DSN EGL HKK HZN HZR JLM MUS MZJ SOH ZRQ ZZR #Sutayids
+			TUR ARD ATZ DML ERE HBN HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
+			BHT BIT DIL DMB DSN EGL HKK HZN HZR JLM MUS MZJ SOH ZRQ ZZR #Sutayids
 
 			#Unaligned
 
@@ -452,7 +452,7 @@ international_organization_manager = {
 		}
 
 		ilkhan_claimant = {
-			JAL GRG HLG
+			TUR ERE KAR
 		}
 		ruler_term = { character = hulegu_khan_borjigin start_date = 1256.1.1 end_date = 1265.2.8 regnal_number = 1 }
 		ruler_term = { character = abaqa_khan_borjigin start_date = 1265.2.8 end_date = 1282.4.4 regnal_number = 1 }

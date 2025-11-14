@@ -1264,13 +1264,13 @@ building_manager = {
 	kurultai = { tag = CHG level = 1 location = almaty }
 	kurultai = { tag = CHG level = 1 location = balasagun }
 	
-	kurultai = { tag = GRG level = 1 location = gorgan }
+	kurultai = { tag = ERE level = 1 location = gorgan }
 	kurultai = { tag = JKR level = 1 location = nishapur }
-	kurultai = { tag = HLG level = 1 location = basra }
+	kurultai = { tag = KAR level = 1 location = basra }
 
-	kurultai = { tag = JAL level = 1 location = samarra }
-	kurultai = { tag = JAL level = 1 location = tabriz }
-	kurultai = { tag = JAL level = 1 location = baghdad }
+	kurultai = { tag = TUR level = 1 location = samarra }
+	kurultai = { tag = TUR level = 1 location = tabriz }
+	kurultai = { tag = TUR level = 1 location = baghdad }
 	kurultai = { tag = JUR level = 1 location = darab }
 	kurultai = { tag = UGH level = 1 location = qatruyeh }
 	kurultai = { tag = NGD level = 1 location = ghazni }
@@ -2241,7 +2241,6 @@ building_manager = {
 	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
 	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
 	cathedral	= { tag = BYZ level = 1	location = constantinople }
-	cathedral	= { tag = ARM level = 1	location = ani }
 
 	#Greece and Balkans #BR edited
 
@@ -3458,7 +3457,7 @@ building_manager = {
 	#temple = { tag = KAR level = 1 location = ermenek }
 	#madrasa = { tag = TUR level = 1 location = iznik }
 	#madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
-	#madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
+	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
 	#seljuk_mint = { tag = KAR level = 1 location = konya }
 	#seljuk_mint = { tag = ERE level = 1 location = sivas }
 	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
@@ -3473,18 +3472,6 @@ building_manager = {
 	stockade = { tag = BYZ level = 1 location = lazkiye }
 	stockade = { tag = BYZ level = 1 location = alasehir }
 	stockade = { tag = BYZ level = 1 location = manisa }
-	stockade = { tag = CYP level = 1 location = nicosia_cyp }
-	stockade = { tag = CRT level = 1 location = cania }
-	stockade = { tag = MOE level = 1 location = tripolitsa }
-	stockade = { tag = MOE level = 1 location = mystras }
-	stockade = { tag = THS level = 1 location = larissa }
-	stockade = { tag = EPI level = 1 location = ionnina }
-	stockade = { tag = EPI level = 1 location = durres }
-	stockade = { tag = ATH level = 1 location = athens }
-	stockade = { tag = ATH level = 1 location = corinth }
-	stockade = { tag = FEO level = 1 location = theodoro }
-	stockade = { tag = PAF level = 1 location = sinope }
-
 
 	stockade = { tag = CIL level = 1 location = alaiye }
 	stockade = { tag = CIL level = 1 location = kars_armenia }
@@ -3497,7 +3484,7 @@ building_manager = {
 
 	
 	#middle east
-	tar_kiln = { tag = SUT level = 1 location = sirnak } 
+	tar_kiln = { tag = TUR level = 1 location = sirnak } 
 	tar_kiln = { tag = HZP level = 1 location = izeh } 
 	tar_kiln = { tag = IHB level = 1 location = dulab } 
 	tar_kiln = { tag = MAM level = 1 location = deir_qamar } 
@@ -3928,19 +3915,19 @@ building_manager = {
 	stockade = { tag = LLS level = 1 location = jianchang_sichuan }
 	stockade = { tag = DIL level = 1 location = kozluk }
 	stockade = { tag = DUL level = 1 location = gerger }
-	stockade = { tag = MES level = 1 location = arapgir }
-	stockade = { tag = KOG level = 1 location = sebinkarahisar }
+	stockade = { tag = ERE level = 1 location = arapgir }
+	stockade = { tag = ERE level = 1 location = sebinkarahisar }
 	stockade = { tag = HSN level = 1 location = savur }
 	stockade = { tag = HSN level = 1 location = hasankeyf }
-	stockade = { tag = SUT level = 1 location = palu }
-	stockade = { tag = SUT level = 1 location = bargiri }
-	stockade = { tag = SUT level = 1 location = diyarbekir }
-	stockade = { tag = SUT level = 1 location = mosul }
+	stockade = { tag = TUR level = 1 location = palu }
+	stockade = { tag = TUR level = 1 location = bargiri }
+	stockade = { tag = TUR level = 1 location = diyarbekir }
+	stockade = { tag = TUR level = 1 location = mosul }
 	stockade = { tag = BHT level = 1 location = cizre }
-	stockade = { tag = DER level = 1 location = bingol }
+	stockade = { tag = BIN level = 1 location = bingol }
 	stockade = { tag = BIT level = 1 location = bitlis }
 	stockade = { tag = BIT level = 1 location = tatvan }
-	stockade = { tag = DER level = 1 location = cemisgezek }
+	stockade = { tag = CEM level = 1 location = cemisgezek }
 	stockade = { tag = DMB level = 1 location = akre }
 	stockade = { tag = DSN level = 1 location = duhok }
 	stockade = { tag = EGL level = 1 location = sivrice }

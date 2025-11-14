@@ -1,0 +1,9 @@
+﻿l_english:
+ #Ilkhanate
+ ilkhanate: "Khagan-i Oghuzistan"
+ ilkhanate_desc: "The $ilkhanate$, or Oghuz Khaganate, are the lands conquered by the Great Seljuk turks, and later governed by their descendants. As such, it is also known as the Saltanat-i Iran-i Bozorg."
+ ILKHANATE_LEADER_MALE: "Khagan"
+ ILKHANATE_LEADER_FEMALE: "Khagan"
+ ilkhan_claimant: "Claimant to the $ilkhanate$"
+ ilkhan_claimant_plural: "Claimants to the $ilkhanate$"
+ ilkhan_claimant_desc: "The one attempting to unify and lead the [GetUniqueInternationalOrganization('ilkhanate').GetName] under their banner."
