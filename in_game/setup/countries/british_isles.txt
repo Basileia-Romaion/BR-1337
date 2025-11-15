@@ -660,10 +660,18 @@ SMR = { # Somerset
 	religion_definition = catholic
 }
 
-WSX = {
+WSX = { # Wessex
 	color = rgb { 77 131 213 }
 	color2 = rgb { 16 41 202 }
 	
 	culture_definition = english
+	religion_definition = catholic
+}
+
+HBA = { # Hiberna
+	color = rgb { 117 230 144 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = irish
 	religion_definition = catholic
 }
