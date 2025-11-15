@@ -1,11 +1,11 @@
 diplomacy_manager = {
-	# England-France needs no introduction
-	rival = { first = FRA second = ENG }
-	rival = { first = ENG second = FRA }
+	# England-France replaced with Anglia-Normandy
+	rival = { first = AGL second = NRM }
+	rival = { first = NRM second = AGL }
 
-	# England-Scotland
-	rival = { first = SCO second = ENG }
-	rival = { first = ENG second = SCO }
+	# England-Scotland replaced with Anglia-Scotland
+	rival = { first = SCO second = AGL }
+	rival = { first = AGL second = SCO }
 	# Novgorod-Hansa
 	rival = { first = NOV second = HSA }
 	rival = { first = HSA second = NOV }
