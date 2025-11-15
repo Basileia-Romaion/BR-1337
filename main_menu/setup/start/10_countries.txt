@@ -14155,6 +14155,55 @@ countries = {
 				name_joseph = 1
 			}
 
+			privilege = {
+				#Nobles
+				elaborate_court_ceremonies
+				noble_sponsored_navy
+				ghazi_privilege
+
+				#Clergy
+				clergy_literacy_rights
+				clergy_enforced_unity
+				embellish_great_works_of_faith
+				clergy_literacy_rights
+				clergy_land_rights
+
+				#Burghers
+				formal_guilds
+				building_rights
+				market_fairs
+				shipwright_contracts
+				sponsor_maritime_contracts
+				land_of_commerce
+				
+				#Peasants
+				partial_yield
+				peasants_free_peasantry
+
+				#Dhimmi
+				dhimmi_land_rights
+				dhimmi_administrative_posts
+				dhimmi_abrahamic_communities
+				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
+
+			}
+
+			centralization_vs_decentralization = -30
+			aristocracy_vs_plutocracy = 40
+			serfdom_vs_free_subjects = 20
+			traditionalist_vs_innovative = 40
+			spiritualist_vs_humanist = 80
+			mercantilism_vs_free_trade = 25
+			offensive_vs_defensive = 40
+			land_vs_naval = -20
+			quality_vs_quantity = -30
+			belligerent_vs_conciliatory = 40
+			capital_economy_vs_traditional_economy = -60
+			individualism_vs_communalism = -20
+			outward_vs_inward = -60
+
 			reforms = {
 				the_jewel_of_alandalus_reform
 			}
