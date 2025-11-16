@@ -1612,6 +1612,7 @@ building_manager = {
 	university	= { tag = PLE level = 1	location = dublin }
 	university	= { tag = FLO level = 1	location = florence }
 	university	= { tag = BYZ level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
+	university	= { tag = ADU level = 1	location = cordoba }
 	
 	order_stronghold	= { tag = LIV level = 1	location = cesis } # Livonian Order
 	order_stronghold	= { tag = LIV level = 1	location = viljandi } # Livonian Order
@@ -1950,11 +1951,38 @@ building_manager = {
 	barcelona_royal_shipyard = { tag = ARA level = 1 location = barcelona }
 	
 		#Royal Atarazanas of Seville #Unique
-	royal_atarazanas_seville = { tag = ASU level = 1 location = sevilla }   #BR edit
+	royal_atarazanas_seville = { tag = ADU level = 1 location = sevilla }   #BR edit
 
 		#Granada Alhambra
-	alhambra = { tag = GRA level = 1 location = granada }	
-	funduq = { tag = GRA level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+	alhambra = { tag = ADU level = 1 location = granada }	
+	funduq = { tag = ADU level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+	royal_court = { tag = ADU level = 1 location = cordoba }
+	royal_garden = { tag = ADU level = 1 location =  cordoba } #Gardens of the Great Palace
+
+	marketplace	= { tag = ADU level = 10 location =  cordoba }
+	trading_hub = { tag = ADU level = 1 location =  cordoba }
+	entrepot = { tag = ADU level = 1 location =  cordoba }
+	market_warehouse = { tag = ADU level = 1 location =  cordoba }
+	
+	fine_cloth_guild = { tag = ADU level = 5 location =  cordoba }
+	saltpeter_guild = { tag = ADU level = 1 location =  cordoba }
+	tannery = { tag = ADU level = 4 location =  cordoba }
+	cloth_guild = { tag = ADU level = 5 location =  cordoba }
+	dyes_guild = { tag = ADU level = 2 location =  cordoba }
+	furniture_guild = { tag = ADU level = 4 location =  cordoba }
+	glass_guild = { tag = ADU level = 2 location =  cordoba }
+	paper_guild = { tag = ADU level = 2 location =  cordoba }
+	porcelain_guild = { tag = ADU level = 4 location =  cordoba }
+	pottery_guild = { tag = ADU level = 2 location =  cordoba }
+	tools_guild = { tag = ADU level = 2 location =  cordoba }
+	weapon_guild = { tag = ADU level = 2 location =  cordoba }
+	
+	scriptorium = { tag = ADU level = 6 location =  cordoba }
+	hospital = { tag = ADU level = 1 location =  cordoba }
+	library = { tag = ADU level = 1 location =  cordoba }
+	medical_school = { tag = ADU level = 1 location =  cordoba }
+
+	sergeantry = { tag = ADU level = 1 location =  cordoba }
 
 		#Brethren of the Marsh #Unique
 	brethren_marsh = { tag = ASU level = 1 location = bilbao }   #BR edit
@@ -2281,8 +2309,6 @@ building_manager = {
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
 	wharf = { tag = BYZ level = 1 location =  constantinople }
 	dock = { tag = BYZ level = 1 location = constantinople }
-	sergeantry = { tag = BYZ level = 1 location =  constantinople }
-	sergeantry = { tag = BYZ level = 1 location =  bursa }
 	protected_harbor = { tag = BYZ level = 1 location =  constantinople }
 	coastal_fort = { tag = BYZ level = 1 location =  constantinople }
 
@@ -2291,6 +2317,11 @@ building_manager = {
 	castle = { tag = SER level = 1 location =  kozelj }
 	castle = { tag = SER level = 1 location =  kucevo }
 	castle = { tag = SER level = 1 location =  trgoviste_SER }
+
+	sergeantry = { tag = BYZ level = 1 location =  constantinople }
+	sergeantry = { tag = BYZ level = 1 location =  bursa }
+	sergeantry = { tag = BYZ level = 1 location =  thessaloniki }
+	sergeantry = { tag = ADU level = 1 location =  cordoba }
 
 
 	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit

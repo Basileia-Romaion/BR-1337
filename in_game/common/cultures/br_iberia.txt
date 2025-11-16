@@ -1,0 +1,38 @@
+﻿andalusi = { 
+	language = maghrebi_dialect
+	
+	color = map_ADU
+	
+	tags = { andalusi_gfx maghrebi_gfx middle_east_gfx }
+	
+	opinions = {
+		castilian = enemy
+		moroccan = kindred	
+		algerian = positive
+		tunisian = positive
+		sephardi = positive
+	}
+	
+	culture_groups = {
+		iberian_group
+		maghrebi_group
+		arabic_group
+	}
+}
+
+mozarabic = { 
+	language = maghrebi_dialect
+	
+	color = rgb { 175 190 210 }
+	
+	tags = { catalan_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		andalusi = positive
+		sephardi = positive
+	}
+	
+	culture_groups = {
+		iberian_group
+	}
+}
