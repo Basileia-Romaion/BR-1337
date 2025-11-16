@@ -1592,17 +1592,17 @@ building_manager = {
 	university	= { tag = ENG level = 1	location = oxford }
 	university	= { tag = VER level = 1	location = vicenza }
 	university	= { tag = ENG level = 1	location = cambridge }
-	university	= { tag = ASU level = 1	location = salamanca }   #BR edit
+	university	= { tag = CAS level = 1	location = salamanca }   #BR edit
 	university	= { tag = PAD level = 1	location = padova }
 	university	= { tag = NAP level = 1	location = naples }
 	university	= { tag = FRA level = 1	location = toulouse }
 	university	= { tag = FRA level = 1	location = orleans }
 	university	= { tag = SIE level = 1	location = siena }
-	university	= { tag = ASU level = 1	location = valladolid }   #BR edit
+	university	= { tag = CAS level = 1	location = valladolid }   #BR edit
 	university	= { tag = MLL level = 1	location = montpellier }
 	university	= { tag = MTA level = 1	location = macerata }
 	university	= { tag = POR level = 1	location = coimbra }
-	university	= { tag = ASU level = 1	location = alcala_de_henares }   #BR edit
+	university	= { tag = CAS level = 1	location = alcala_de_henares }   #BR edit
 	university	= { tag = ARA level = 1	location = lleida }
 	university	= { tag = PAP level = 1	location = rome }
 	university	= { tag = PEA level = 1	location = perugia }
@@ -1623,19 +1623,19 @@ building_manager = {
 	order_stronghold	= { tag = TEU level = 1	location = tuchola } # Teutonic Order
 	
 
-	order_stronghold	= { tag = ASU level = 1	location = calatrava } # Order of Calatrava (la Nueva)   #BR edit
+	order_stronghold	= { tag = CAS level = 1	location = calatrava } # Order of Calatrava (la Nueva)   #BR edit
 	#order_stronghold	= { tag = CTV level = 1	location = martos } # Order of Calatrava
 	#order_stronghold	= { tag = CTV level = 1	location = manzanares } # Order of Calatrava (la Vieja)
-	order_stronghold	= { tag = ASU level = 1	location = huete } # Order of Santiago, Uclés   #BR edit
+	order_stronghold	= { tag = CAS level = 1	location = huete } # Order of Santiago, Uclés   #BR edit
 	#order_stronghold	= { tag = STO level = 1	location = segura_de_la_sierra } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = merida } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = llerena } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = monesterio } # Order of Santiago, Segura de León
 	order_stronghold	= { tag = POR level = 1	location = alcacer_do_sal } # Order of Santiago
 	order_stronghold	= { tag = POR level = 1	location = tavira } # Order of Santiago, Castro Marim
-	order_stronghold	= { tag = ASU level = 1	location = alcazar_de_san_juan } # Knights Hospitallar   #BR edit
+	order_stronghold	= { tag = CAS level = 1	location = alcazar_de_san_juan } # Knights Hospitallar   #BR edit
 	order_stronghold	= { tag = POR level = 1	location = crato } # Knights Hospitallar
-	order_stronghold	= { tag = ASU level = 1	location = alcantara } # Order of Alcantara   #BR edit
+	order_stronghold	= { tag = CAS level = 1	location = alcantara } # Order of Alcantara   #BR edit
 	#order_stronghold	= { tag = ACT level = 1	location = villanueva_de_la_serena } # Order of Alcantara
 	order_stronghold	= { tag = POR level = 1	location = avis } # Order Calatrava, Avis
 	#order_stronghold	= { tag = OPX level = 1	location = tomar } # Order of Christ
@@ -1765,19 +1765,19 @@ building_manager = {
 	#castle = { tag = NAV level = 1 location = tudela } #Castle of Cortes. Already implemented by the country template. Keeping for info.
 	castle = { tag = POR level = 1 location = viana_do_castelo } #Castle of Valença do Minho
 
-	cathedral 	= { tag = ASU level = 1 location = astorga } #Saint Mary Cathedral, established in 1069   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = avila } #Cathedral of the Saviour, established in 1091   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = badajoz } #Saint John Cathedral, established in 1276   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = barcelona } #Saint Eulalia and the Holy Cross Cathedral, established in 1058
 	cathedral 	= { tag = ARA level = 1 location = benabarre } #Saint Vincent Martyr Cathedral, established in 1030
-	cathedral 	= { tag = ASU level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = burgos } #Saint Mary Cathedral, established in 1260   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = burgos } #Saint Mary Cathedral, established in 1260   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160   #BR edit
 	cathedral 	= { tag = POR level = 1 location = coimbra } #Coimbra Cathedral, established in 1139
-	cathedral 	= { tag = ASU level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196   #BR edit
 	cathedral 	= { tag = POR level = 1 location = evora } #Évora Cathedral, established in 1204
 	cathedral 	= { tag = ARA level = 1 location = girona } #Saint Mary Cathedral, established in 1038
 	cathedral 	= { tag = POR level = 1 location = guarda } #Guarda Cathedral, established in 1199
@@ -1785,111 +1785,111 @@ building_manager = {
 	cathedral 	= { tag = ARA level = 1 location = huesca } #Cathedral of the Transfiguration of the Lord, established in 1098
 	cathedral 	= { tag = ARA level = 1 location = jaca } #Saint Peter Cathedral, established in 1063
 	cathedral 	= { tag = POR level = 1 location = lamego } #Lamego Cathedral, established in 1129
-	cathedral 	= { tag = ASU level = 1 location = leon } #Saint Mary Cathedral, established in 1303   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = leon } #Saint Mary Cathedral, established in 1303   #BR edit
 	cathedral 	= { tag = POR level = 1 location = lisbon } #Lisboa Cathedral, established in 1147
 	cathedral 	= { tag = ARA level = 1 location = lleida } #Saint Mary Cathedral, established in 1278
-	cathedral 	= { tag = ASU level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = ourense } #Saint Martin Cathedral, established in 1188   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = ourense } #Saint Martin Cathedral, established in 1188   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821   #BR edit
 	cathedral 	= { tag = MLL level = 1 location = palma } #Saint Mary Cathedral, established in 1229
 	cathedral 	= { tag = NAV level = 1 location = pamplona } #Saint Mary Cathedral, established in 1127
 	cathedral 	= { tag = POR level = 1 location = porto } #Porto Cathedral, established in 1110
-	cathedral 	= { tag = ASU level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = seu_durgell } #Saint Mary Cathedral, established in 1040
-	cathedral 	= { tag = ASU level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = tarazona } #Saint Mary of la Huerta Cathedral, established in 1235
 	cathedral 	= { tag = ARA level = 1 location = tarragona } #Saint Thecla Cathedral, established in 1331
 	cathedral 	= { tag = NAV level = 1 location = tudela } #Saint Mary Cathedral, established in 1270
-	cathedral 	= { tag = ASU level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = valencia } #Cathedral of the Assumption of our Lady, established in 1238
 	cathedral 	= { tag = POR level = 1 location = viseu } #Viseu Cathedral, established in 1109
-	cathedral 	= { tag = ASU level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200   #BR edit
-	cathedral 	= { tag = ASU level = 1 location = zamora } #Cathedral of the Saviour, established in 1174   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = zamora } #Cathedral of the Saviour, established in 1174   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
 	cathedral 	= { tag = MAM level = 1 location = alexandria } #Cathedral of the Saviour, established in 1318
 	
 	chancery = { tag = ARA level = 1 location = barcelona }
 	chancery = { tag = NAV level = 1 location = pamplona } #XI Century
-	chancery = { tag = ASU level = 1 location = valladolid}   #BR edit
+	chancery = { tag = CAS level = 1 location = valladolid}   #BR edit
 
 	charcoal_maker = { tag = NAV level = 1 location = elizondo } 
-	charcoal_maker = { tag = ASU level = 1 location = bilbao }   #BR edit
+	charcoal_maker = { tag = CAS level = 1 location = bilbao }   #BR edit
 	charcoal_maker = { tag = NAV level = 1 location = sanguesa }
-	charcoal_maker = { tag = ASU level = 1 location = san_sebastian }   #BR edit
-	charcoal_maker = { tag = ASU level = 1 location = valmaseda }   #BR edit
+	charcoal_maker = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	charcoal_maker = { tag = CAS level = 1 location = valmaseda }   #BR edit
 
 
 	dock = { tag = POR level = 1	location = lisbon }
 	dock = { tag = ARA level = 1	location = barcelona }
-	dock = { tag = ASU level = 1	location = sevilla }   #BR edit
+	dock = { tag = CAS level = 1	location = sevilla }   #BR edit
 	dock = { tag = GRA level = 1	location = malaga }
 
-	fishing_village = { tag = ASU level = 1 location = bilbao }   #BR edit
-	fishing_village = { tag = ASU level = 1 location = laredo }   #BR edit
-	fishing_village = { tag = ASU level = 1 location = san_vicente_barquera }   #BR edit
-	fishing_village = { tag = ASU level = 1 location = san_sebastian }   #BR edit
-	fishing_village = { tag = ASU level = 1 location = valmaseda }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = bilbao }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = laredo }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = san_vicente_barquera }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = valmaseda }   #BR edit
 
-	lumber_mill = { tag = ASU level = 1 location = bilbao }   #BR edit
+	lumber_mill = { tag = CAS level = 1 location = bilbao }   #BR edit
 	lumber_mill = { tag = NAV level = 1 location = sanguesa }
-	lumber_mill = { tag = ASU level = 1 location = san_sebastian }   #BR edit
-	lumber_mill = { tag = ASU level = 1 location = valmaseda }   #BR edit
+	lumber_mill = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	lumber_mill = { tag = CAS level = 1 location = valmaseda }   #BR edit
 	
-	market_village = { tag = ASU level = 1 location = bilbao }   #BR edit
+	market_village = { tag = CAS level = 1 location = bilbao }   #BR edit
 	market_village = { tag = NAV level = 1 location = estella }
 
-	monastery 	= { tag = ASU level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = aranda_de_duero } #Santo Domingo de Silos   #BR edit
+	monastery 	= { tag = CAS level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = aranda_de_duero } #Santo Domingo de Silos   #BR edit
 	monastery 	= { tag = ARA level = 1 location = barcelona } #Montserrat
 	monastery 	= { tag = POR level = 1 location = barcelos } #Rates
-	monastery 	= { tag = ASU level = 1 location = bilbao } #Ziortza   #BR edit
-	monastery 	= { tag = ASU level = 1 location = briviesca } #San Salvador (Oña)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = buitrago_de_lozoya } #Santa María de Bonaval   #BR edit
-	monastery 	= { tag = ASU level = 1 location = burgos } #Santa María de las Huelgas   #BR edit
+	monastery 	= { tag = CAS level = 1 location = bilbao } #Ziortza   #BR edit
+	monastery 	= { tag = CAS level = 1 location = briviesca } #San Salvador (Oña)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = buitrago_de_lozoya } #Santa María de Bonaval   #BR edit
+	monastery 	= { tag = CAS level = 1 location = burgos } #Santa María de las Huelgas   #BR edit
 	monastery 	= { tag = ARA level = 1 location = calatayud } #Santa María la Blanca (Monasterio de Piedra)
 	monastery 	= { tag = POR level = 1 location = coimbra } #Santa Cruz
 	monastery 	= { tag = POR level = 1 location = crato } #Flor da Rosa
 	monastery 	= { tag = POR level = 1 location = esgueira } #Arouca
 	monastery 	= { tag = NAV level = 1 location = estella } #Iratxe
 	monastery 	= { tag = POR level = 1 location = guimaraes } #São Martinho de Tibães/Santa Maria de Pombeiro/Santo Tirso
-	monastery 	= { tag = ASU level = 1 location = huelva } #La Rábida   #BR edit
+	monastery 	= { tag = CAS level = 1 location = huelva } #La Rábida   #BR edit
 	monastery 	= { tag = ARA level = 1 location = jaca } #San Juan de la Peña
 	monastery 	= { tag = POR level = 1 location = alcobaca } #Alcobaça
-	monastery 	= { tag = ASU level = 1 location = leon } #San Isidoro (León)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = lerma } #San Pedro de Arlanza   #BR edit
+	monastery 	= { tag = CAS level = 1 location = leon } #San Isidoro (León)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = lerma } #San Pedro de Arlanza   #BR edit
 	monastery 	= { tag = POR level = 1 location = lisbon } #São Dinis de Odivelas
-	monastery 	= { tag = ASU level = 1 location = najera } #San Millán de la Cogolla/Santo Domingo de la Calzada/Nájera   #BR edit
-	monastery 	= { tag = ASU level = 1 location = medinaceli } #Santa María de Huerta   #BR edit
-	monastery 	= { tag = ASU level = 1 location = monforte_de_lemos } #Santa María de Ferreira de Pantón   #BR edit
-	monastery 	= { tag = ASU level = 1 location = monzon_campos } #San Andrés de Arroyo   #BR edit
-	monastery 	= { tag = ASU level = 1 location = navia_de_suarna } #San Julián (Samos)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = ocana } #Uclés   #BR edit
-	monastery 	= { tag = ASU level = 1 location = ribadavia } #Santa María la Real (Osera)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = sahagun } #San Benito   #BR edit
-	monastery 	= { tag = ASU level = 1 location = salamanca } #San Esteban (Salamanca)   #BR edit
-	monastery 	= { tag = ASU level = 1 location = potes } #Santo Toribio de Liébana   #BR edit
-	monastery 	= { tag = ASU level = 1 location = salvatierra } #Barria   #BR edit
+	monastery 	= { tag = CAS level = 1 location = najera } #San Millán de la Cogolla/Santo Domingo de la Calzada/Nájera   #BR edit
+	monastery 	= { tag = CAS level = 1 location = medinaceli } #Santa María de Huerta   #BR edit
+	monastery 	= { tag = CAS level = 1 location = monforte_de_lemos } #Santa María de Ferreira de Pantón   #BR edit
+	monastery 	= { tag = CAS level = 1 location = monzon_campos } #San Andrés de Arroyo   #BR edit
+	monastery 	= { tag = CAS level = 1 location = navia_de_suarna } #San Julián (Samos)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = ocana } #Uclés   #BR edit
+	monastery 	= { tag = CAS level = 1 location = ribadavia } #Santa María la Real (Osera)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = sahagun } #San Benito   #BR edit
+	monastery 	= { tag = CAS level = 1 location = salamanca } #San Esteban (Salamanca)   #BR edit
+	monastery 	= { tag = CAS level = 1 location = potes } #Santo Toribio de Liébana   #BR edit
+	monastery 	= { tag = CAS level = 1 location = salvatierra } #Barria   #BR edit
 	monastery 	= { tag = NAV level = 1 location = sanguesa } #Leyre
 	monastery 	= { tag = ARA level = 1 location = montblanc } #Poblet/Santa María de Vallbona
 	monastery 	= { tag = POR level = 1 location = tomar } #Convent of Christ
 	monastery 	= { tag = NAV level = 1 location = tudela } #La Oliva/Fitero
 	monastery 	= { tag = ARA level = 1 location = ripoll } #Ripoll
-	monastery 	= { tag = ASU level = 1 location = villaviciosa } #Santa María de Valdediós   #BR edit
+	monastery 	= { tag = CAS level = 1 location = villaviciosa } #Santa María de Valdediós   #BR edit
 	monastery 	= { tag = POR level = 1 location = viseu } #Santa Maria de Maceira Dão
-	monastery 	= { tag = ASU level = 1 location = vitoria } #Estíbaliz   #BR edit
+	monastery 	= { tag = CAS level = 1 location = vitoria } #Estíbaliz   #BR edit
 
-	nobility_fortifications = { tag = ASU level = 1 location = anana } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = bilbao } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = durango } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = onate } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = salvatierra } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = san_sebastian } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = tolosa } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = valmaseda } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = ASU level = 1 location = vitoria } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = anana } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = bilbao } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = durango } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = onate } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = salvatierra } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = san_sebastian } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = tolosa } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = valmaseda } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = vitoria } # Tower Houses of the Banderizos   #BR edit
 
 	#order_commandery = { tag = CTV level = 1 location = calatrava }
 	#order_commandery = { tag = CTV level = 1 location = ciudad_real }
@@ -1927,9 +1927,9 @@ building_manager = {
 
 	sand_pit = { tag = NAV level = 1 location = olite } 
 
-	scriptorium = { tag = ASU level = 1 location = murcia } #Studium founded by King Alfonso X   #BR edit
+	scriptorium = { tag = CAS level = 1 location = murcia } #Studium founded by King Alfonso X   #BR edit
 
-	sergeantry	= { tag = ASU level = 1 location = valladolid } #Sergeants at arms   #BR edit
+	sergeantry	= { tag = CAS level = 1 location = valladolid } #Sergeants at arms   #BR edit
 	sergeantry	= { tag = ARA level = 1 location = barcelona } #Sergeants at arms
 	sergeantry	= { tag = POR level = 1 location = lisbon } #Sergeants at arms
 	sergeantry	= { tag = NAV level = 1 location = pamplona } #Sergeants at arms
@@ -1940,10 +1940,10 @@ building_manager = {
 
 
 	tar_kiln = { tag = NAV level = 1 location = elizondo } 
-	tar_kiln = { tag = ASU level = 1 location = bilbao }   #BR edit
-	tar_kiln = { tag = ASU level = 1 location = san_sebastian }   #BR edit
-	tar_kiln = { tag = ASU level = 1 location = beteta }   #BR edit
-	tar_kiln = { tag = ASU level = 1 location = segura_de_la_sierra }   #BR edit
+	tar_kiln = { tag = CAS level = 1 location = bilbao }   #BR edit
+	tar_kiln = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	tar_kiln = { tag = CAS level = 1 location = beteta }   #BR edit
+	tar_kiln = { tag = CAS level = 1 location = segura_de_la_sierra }   #BR edit
 	tar_kiln = { tag = MOR level = 1 location = ronda } 
 	tar_kiln = { tag = POR level = 1 location = chao_de_couce } 
 
@@ -1990,12 +1990,12 @@ building_manager = {
 	madrasa = { tag = ADU level = 1 location = toledo }
 
 		#Brethren of the Marsh #Unique
-	brethren_marsh = { tag = ASU level = 1 location = bilbao }   #BR edit
-	brethren_marsh = { tag = ASU level = 1 location = laredo }   #BR edit
-	brethren_marsh = { tag = ASU level = 1 location = san_vicente_barquera }   #BR edit
-	brethren_marsh = { tag = ASU level = 1 location = santander }   #BR edit
-	brethren_marsh = { tag = ASU level = 1 location = san_sebastian }   #BR edit
-	brethren_marsh = { tag = ASU level = 1 location = tolosa }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = bilbao }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = laredo }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = san_vicente_barquera }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = santander }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = tolosa }   #BR edit
 
 		#Aragonese Trade Offices
 	trade_office = { tag = ARA level = 1 location = genoa } #1233

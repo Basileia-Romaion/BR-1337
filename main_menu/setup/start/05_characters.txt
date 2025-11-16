@@ -9285,7 +9285,7 @@ character_db={
 		#mother = Marguerite de Provence
 		spouse = cas_fernando_lacerda
 		dynasty = capet_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# Line of the Dukes of Bourbon (HOUSE OF BOURBON)
@@ -11912,7 +11912,7 @@ character_db={
 		mother = por_isabel_arago
 		spouse = cas_fernando_iv_burgundy
 		dynasty = burgundy_portuguese_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# King of Portugal
@@ -11975,7 +11975,7 @@ character_db={
 		mother = por_beatriz_portugal
 		spouse = cas_alfonso_xi_burgundy
 		dynasty = burgundy_portuguese_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	fla_fernando_portugal = {	
@@ -12641,7 +12641,7 @@ character_db={
 		mother = lon_urraca_i_jimena
 		#spouse = Berenguela of Barcelona
 		dynasty = burgundy_castile_dynasty # Founder of the Castillan line of the House of Ivrea
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = greedy
 		ruler_trait = conqueror
 		ruler_trait = intricate_web_weaver
@@ -12660,7 +12660,7 @@ character_db={
 		#mother = Berenguera de Barcelona
 		#spouse = Blanche of Navarre
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = zealot
 	}
 	
@@ -12678,7 +12678,7 @@ character_db={
 		#mother = Blanca Garcés
 		#spouse = Eleanor of England
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = zealot
 		ruler_trait = conqueror
 		ruler_trait = bold_fighter
@@ -12698,7 +12698,7 @@ character_db={
 		#mother = Eleanor of England
 		spouse = lon_alfonso_ix_burgundy
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = intricate_web_weaver
 	}
 
@@ -12732,7 +12732,7 @@ character_db={
 		father = cas_alfonso_viii_burgundy
 		#mother = Eleanor of England
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 	
 	# Line of the Kings of León & Castile-León
@@ -12786,7 +12786,7 @@ character_db={
 		father = lon_alfonso_ix_burgundy
 		mother = cas_berenguela_i_burgundy
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = righteous
 		ruler_trait = conqueror
 		ruler_trait = charismatic_negotiator
@@ -12805,7 +12805,7 @@ character_db={
 		father = cas_fernando_iii_burgundy
 		mother = cas_beatrix_hohenstaufen
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = lawgiver
 		ruler_trait = just
 		ruler_trait = greedy
@@ -12860,7 +12860,7 @@ character_db={
 		father = cas_alfonso_x_burgundy
 		mother = cas_violant_arago
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	cas_alfonso_lacerda = {	
@@ -12876,7 +12876,7 @@ character_db={
 		father = cas_fernando_lacerda
 		mother = cas_blanche_capet
 		dynasty = cerda_dynasty # Founder of the House of La Cerda
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = craven
 	}
 
@@ -12935,7 +12935,7 @@ character_db={
 		mother = cas_mathilde_brienne
 		spouse = sto_alonso_melendez_guzman
 		dynasty = cerda_dynasty
-		tag = ASU #STO   #BR edit
+		tag = CAS #STO   #BR edit
 	}
 
 	cas_fernando_lacerda_jr = {	
@@ -12950,7 +12950,7 @@ character_db={
 		father = cas_fernando_lacerda
 		mother = cas_blanche_capet
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	cas_juana_nunez_lara = {
@@ -12968,7 +12968,7 @@ character_db={
 		#mother = cas_teresa_haro
 		spouse = cas_fernando_lacerda_jr 
 		#dynasty = lara_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# Countess Consort of Aumale
@@ -13001,7 +13001,7 @@ character_db={
 		father = cas_alfonso_x_burgundy
 		mother = cas_violant_arago
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = bold_fighter
 		ruler_trait = greedy
 	}
@@ -13020,7 +13020,7 @@ character_db={
 		#mother = cas_maria_molina
 		birth = sevilla
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = naive
 	}
 
@@ -13053,7 +13053,7 @@ character_db={
 		father = cas_fernando_iv_burgundy
 		mother = cas_constance_portugal
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = charismatic_negotiator
 	}
 
@@ -13068,7 +13068,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_leonor_guzman # Mistress
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		timed_modifier = {
 			modifier = "bastard"
 			start_date = 1331.12.1
@@ -13089,7 +13089,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_leonor_guzman # Mistress
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		child_trait = child_slow
 		timed_modifier = {
 			modifier = "bastard"
@@ -13111,7 +13111,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_leonor_guzman # Mistress
 		dynasty = trastamara_dynasty # Founder of the House of Trastamara
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		child_trait = child_ambitious
 		timed_modifier = {
 			modifier = "bastard"
@@ -13132,7 +13132,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_leonor_guzman # Mistress
 		dynasty = enriquez_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		child_trait = child_rowdy
 		timed_modifier = {
 			modifier = "bastard"
@@ -13153,7 +13153,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_maria_portugal
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		child_trait = child_rowdy
 	}
 
@@ -13168,7 +13168,7 @@ character_db={
 		father = cas_alfonso_xi_burgundy
 		mother = cas_leonor_guzman # Mistress
 		dynasty = burgundy_castile_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		timed_modifier = {
 			modifier = "bastard"
 			start_date = 1334.11.1
@@ -16818,7 +16818,7 @@ character_db={
 		mother = aum_beatrix_chatillon
 		spouse = cas_alfonso_lacerda
 		dynasty = de_brienne_dynasty # Should be dynasty = de_brienne_acre_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	aum_jean_iii_brienne = {	
@@ -44481,7 +44481,7 @@ adm = 31 dip = 34 mil = 24
 		birth = cuenca
 		#father = Garci Álvarez de Albornoz
 		#mother = Teresa de Luna
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# HOUSE OF ASTURIAS & LEON (Former Kings of León)
@@ -45146,7 +45146,7 @@ adm = 31 dip = 34 mil = 24
 		mother = ara_jolan_arpad
 		spouse = cas_alfonso_x_burgundy
 		dynasty = barcelona_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# Father of the King of Sicily & Former King of Aragon & King iure uxoris of Sicily
@@ -46154,7 +46154,7 @@ adm = 31 dip = 34 mil = 24
 		#father = cas_pedro_fernandez_castro
 		#mother = por_aldonca_lourenco_valadares # Mistress
 		#dynasty = castro_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		timed_modifier = {
 			modifier = "bastard"
 			start_date = 1320.1.1
@@ -46177,7 +46177,7 @@ adm = 31 dip = 34 mil = 24
 		#father = cas_pedro_fernandez_castro
 		#mother = cas_isabel_ponce_leon
 		#dynasty = castro_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		child_trait = child_gregarious
 	}
 
@@ -46195,7 +46195,7 @@ adm = 31 dip = 34 mil = 24
 		#father = cas_alvar_perez_guzman
 		#mother = María González Girón
 		dynasty = guzman_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# Succeded Vasco Rodríguez Cornado as Grandmaster of the Order of Santiago after Royal petition	
@@ -46210,7 +46210,7 @@ adm = 31 dip = 34 mil = 24
 		father = cas_pedro_nunez_guzman_ii
 		#mother = cas_juana_ponce_leon
 		dynasty = guzman_dynasty
-		tag = ASU #STO   #BR edit
+		tag = CAS #STO   #BR edit
 		ruler_trait = bold_fighter
 	}
 	
@@ -46228,7 +46228,7 @@ adm = 31 dip = 34 mil = 24
 		#mother = cas_juana_ponce_leon
 		#spouse = cas_alfonso_xi_burgundy #Mistress
 		dynasty = guzman_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# HOUSE ÍÑIGA OR ARISTA (Former Kings of Navarra)
@@ -46741,7 +46741,7 @@ adm = 31 dip = 34 mil = 24
 		father = lon_fernando_i_jimena
 		mother = lon_sancha_leon
 		dynasty = jimena_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 		ruler_trait = greedy
 	}
 	
@@ -46864,7 +46864,7 @@ adm = 31 dip = 34 mil = 24
 		#father = cas_manrique_perez_lara
 		#mother = Ermessende de Narbonne
 		dynasty = lara_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	# Line of the Viscounts of Narbonne
@@ -79073,7 +79073,7 @@ adm = 31 dip = 34 mil = 24
 		#mother = Eirene Angelos
 		spouse = cas_alfonso_x_burgundy
 		dynasty = hohenstaufen_dynasty
-		tag = ASU   #BR edit
+		tag = CAS   #BR edit
 	}
 
 	pal_konrad_hohenstaufen = {

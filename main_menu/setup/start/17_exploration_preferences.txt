@@ -59,7 +59,7 @@ exploration_manager = {
 
 	#Asturias #BR edit
 	add_exploration_preference = {
-		country = ASU
+		country = CAS
 		modifier = 3
 		continent = south_america
 		region = mesoamerica_region
@@ -80,7 +80,7 @@ exploration_manager = {
 	}
 
 	add_exploration_preference = {
-		country = ASU
+		country = CAS
 		modifier = 2.5
 
 		#area preference for staging colonies needed to extend range
@@ -90,7 +90,7 @@ exploration_manager = {
 
 	#adding brazil as a negative after adding south america as a positive will override what came before
 	add_exploration_preference = {
-		country = ASU
+		country = CAS
 		modifier = -0.5
 		region = brazil_region
 	}
