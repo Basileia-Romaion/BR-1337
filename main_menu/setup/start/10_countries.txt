@@ -9904,6 +9904,9 @@ countries = {
 			date = 1345.1.1
 			size = 1
 		}
+		currency_data = {
+			gold = 500
+		}
 	}
 
 	PRZ = {	#Peruzzi
@@ -10169,6 +10172,9 @@ countries = {
 		}
 
 		capital = genoa
+		currency_data = {
+			gold = 1500
+		}
 	}
 
 	GUB = {
@@ -10540,6 +10546,9 @@ countries = {
 		country_rank = rank_county
 		capital = milano
 		dynasty = visconti_dynasty
+		currency_data = {
+			gold = 500
+		}
 	}
 
 	MND = {
@@ -12080,7 +12089,7 @@ countries = {
 		#https://www.researchgate.net/publication/269643384_The_Venetian_Money_Market_Banks_Panics_and_the_Public_Debt_1200-1500
 		#https://www.jstor.org/stable/1882461
 		currency_data = {
-			gold = 500
+			gold = 2000
 		}
 	}
 
@@ -12279,34 +12288,14 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			ruler = ath_william
-			heir = sic_giovanni_sicily
-			designated_heir_reason = sibling_of_ruler
-
-			ruler_term = { character = ath_gautier_v_brienne start_date = 1308.10.5 end_date = 1311.3.15 regnal_number = 1 }
-
-			ruler_term = { character = ath_manfred start_date = 1312.1.1 end_date = 1317.11.9 regnal_number = 1 }
-			ruler_term = { character = ath_william start_date = 1317.11.9 regnal_number = 2 }
-
-			regnal_numbers = {
-				name_otto = 1
-				name_wido = 2
-				name_john = 1
-				name_william = 2
-				name_walter = 1
-				name_roger = 1
-				name_manfred = 1
-			}
+			ruler = random
 		}
 
 		tolerated_cultures = {
-			#greek_culture # Now primary
 		}
 
 		country_rank = rank_duchy
-		court_language = catalan_dialect
-		capital = thebes
+		capital = athens
 	}
 
 
@@ -12329,65 +12318,15 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			ruler = ach_catherine_valois
-
-			ruler_term = { character = ach_guillaume_i_champlitte start_date = 1205.1.1 end_date = 1209.1.1 regnal_number = 1 }
-
-			ruler_term = { character = nap_charles_i_anjou start_date = 1278.5.1 end_date = 1285.1.7 regnal_number = 1 }
-			ruler_term = { character = nap_carlo_ii_anjou start_date = 1285.1.7 end_date = 1289.9.16 regnal_number = 2 }
-			ruler_term = { character = ach_florent_avesnes start_date = 1289.9.16 end_date = 1297.1.23 regnal_number = 1 }
-			ruler_term = { character = sav_philippe_i_savoy_achaia start_date = 1301.2.12 end_date = 1307.1.1 regnal_number = 1 } #Marital Co-Ruler
-
-			ruler_term = { character = alb_filippo_i_taranto start_date = 1307.5.11 end_date = 1313.7.29 regnal_number = 2 }
-
-			ruler_term = {
-				character = ach_mathilde_avesnes start_date = 1313.7.29 end_date = 1315.6.1 regnal_number = 1
-				character = ach_louis_burgundy start_date = 1313.7.29 end_date = 1315.6.1 regnal_number = 1 # As Marital Co-Ruler
-			}
-
-			ruler_term = { character = mll_ferdinand_mallorca start_date = 1315.6.1 end_date = 1316.7.5 regnal_number = 1 }
-
-			ruler_term = {
-				character = ach_mathilde_avesnes start_date = 1316.7.5 end_date = 1316.8.2 regnal_number = 1 # Restored
-				character = ach_louis_burgundy start_date = 1316.7.5 end_date = 1316.8.2 regnal_number = 1 # Restored as Marital Co-Ruler
-			}
-			ruler_term = { character = ach_mathilde_avesnes start_date = 1316.8.2 end_date = 1318.1.1 regnal_number = 1 } # Restored
-			ruler_term = {
-				character = ach_mathilde_avesnes start_date = 1318.1.1 end_date = 1331.1.1 regnal_number = 1 # Restored
-				character = alb_john_gravina start_date = 1318.1.1 end_date = 1331.1.1 regnal_number = 1
-			}
-
-			ruler_term = { character = alb_john_gravina start_date = 1331.1.1 end_date = 1333.1.1 regnal_number = 1 }
-
-			ruler_term = { character = ach_catherine_valois start_date = 1333.1.1 regnal_number = 1 }
-			#ruler_term = { character = ach_robert_taranto start_date = 1333.1.1 regnal_number = 1 } # As Co-Ruler with his mother
-
-			regnal_numbers = {
-				name_william = 2
-				name_godfrey = 2
-				name_charles = 2
-				name_elizabeth = 1
-				name_florence = 1
-				name_philip = 2
-				name_ferdinand = 1
-				name_matilda = 1
-				name_louis = 1
-				name_catherine = 1
-				name_john = 1
-				name_robert = 0 # Should be 1 if Co-Rulers are added
-			}
+			ruler = random
 		}
 
 		tolerated_cultures = {
-			#greek_culture # Now primary
 		}
 
 		country_rank = rank_duchy
-		court_language = french_language
+		court_language = venetian_dialect
 		capital = andravida
-		dynasty = anjou_dynasty
-		#dynasty = anjou_taranto_dynasty
 	}
 
 	CEP = {
@@ -12405,37 +12344,13 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			ruler = ach_robert_taranto
-
-			ruler_term = { character = cep_riccardo_i_orsini start_date = 1194.1.1 end_date = 1197.1.1 regnal_number = 1 }
-			ruler_term = { character = cep_maio_i_orsini start_date = 1197.1.1 end_date = 1238.1.1 regnal_number = 1 }
-			ruler_term = { character = cep_maio_ii_orsini start_date = 1238.1.1 end_date = 1259.1.1 regnal_number = 2 }
-			ruler_term = { character = cep_riccardo_ii_orsini start_date = 1259.1.1 end_date = 1304.1.1 regnal_number = 2 }
-			ruler_term = { character = cep_giovanni_i_orsini start_date = 1304.1.1 end_date = 1317.1.1 regnal_number = 1 }
-			ruler_term = { character = epi_nikolaos_orsini start_date = 1317.1.1 end_date = 1323.1.1 regnal_number = 1 }
-			ruler_term = { character = cep_john_orsini start_date = 1323.1.1 end_date = 1324.1.1 regnal_number = 2 }
-
-			ruler_term = { character = alb_john_gravina start_date = 1324.1.1 end_date = 1336.4.5 regnal_number = 3 }
-			ruler_term = { character = ach_robert_taranto start_date = 1336.4.5 regnal_number = 1 }
-
-			regnal_numbers = {
-				#Margaritus = 1
-				name_matthew = 2
-				name_richard = 2
-				name_john = 3
-				name_charles = 1
-				name_robert = 1
-			}
+			ruler = random
 		}
 		
 		tolerated_cultures = {
-			#greek_culture # Now primary
 		}
 		capital = cephalonia
-		court_language = french_language
-		dynasty = anjou_dynasty
-		#dynasty = anjou_taranto_dynasty
+		court_language = venetian_dialect
 	}
 
 
@@ -12509,6 +12424,7 @@ countries = {
 		tolerated_cultures = {
 			#greek_culture # Now primary
 		}
+		court_language = venetian_dialect
 		country_rank = rank_duchy
 		capital = naxos
 		dynasty = sanudo_dynasty
@@ -12622,7 +12538,7 @@ countries = {
 	}
 
 	THS = { #BR EDITED
-	own_control_core = {
+		own_control_core = {
 			#BYZ
 			demetrias farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
 			
@@ -12685,7 +12601,7 @@ countries = {
 	}
 
 	MOE = { #BR ADDED
-	own_control_core = {
+		own_control_core = {
 			#BYZ
 			tripolitsa veligosti karytaina
 			monemvasia mystras oitylo leuktron astros
@@ -20121,7 +20037,7 @@ countries = {
 		}
 
 		currency_data = {
-			gold = 2500	#Mansa Mūsā's wealth
+			gold = 5000	#Mansa Mūsā's wealth
 			prestige = 50
 		}
 
@@ -21974,6 +21890,14 @@ countries = {
 
 				#Burghers
 				trade_monopolies
+
+				#Dhimmi #BR ADDED
+				dhimmi_land_rights
+				dhimmi_administrative_posts
+				dhimmi_abrahamic_communities
+				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
 			}
 
 			spiritualist_vs_humanist = -10
@@ -31340,7 +31264,13 @@ countries = {
 			ruler = atq_mahmud
 
 			privilege = {
+				#Dhimmi #BR ADDED
+				dhimmi_land_rights
+				dhimmi_administrative_posts
 				dhimmi_abrahamic_communities
+				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
 			}
 
 			laws = {
@@ -31557,7 +31487,13 @@ countries = {
 			ruler_term = {	 character = dul_karaca start_date = 1337.1.1 }
 			ruler = dul_karaca
 			privilege = {
+				#Dhimmi #BR ADDED
+				dhimmi_land_rights
+				dhimmi_administrative_posts
 				dhimmi_abrahamic_communities
+				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
 			}
 
 			laws = {
@@ -54867,6 +54803,9 @@ countries = {
 			sirjan  arzu  khabr saadatabad soghan
 			jiroft  baft dowlatabad_esfandaqeh rabor sarduiyeh zakht
 			bam fahraj_narmashir narmashir rayen rigan golashkerd
+			#BR ADDED
+			qatruyeh hajjiabad meshkan
+			darab jannat_shahr rostaq tarom
 		}
 
 		include = "expl_middle_east"
@@ -54889,34 +54828,7 @@ countries = {
 		dynasty = nikruzi_dynasty
 	}
 
-	UGH = { #Ughanids
-		type = army
-		own_control_core = {
-			qatruyeh hajjiabad meshkan
-		}
-
-		include = "expl_middle_east"
-		include = "expl_mongols"
-		starting_technology_level = 3
-		include = "eurasian_horde_no_muslim"
-		government = {
-			type = steppe_horde
-			heir_selection = tribal_oldest_male
-			ruler = random
-
-
-			reforms = {
-				legacy_of_genghis
-			}
-		}
-
-		tolerated_cultures = {
-			farsi_culture
-		}
-
-		capital = qatruyeh
-		dynasty = ughanid_dynasty
-	}
+	#UGH Removed
 
 	ERA = {	#Sasanian Empire / Eranshahr for Events
 		own_control_core = { }
@@ -55229,33 +55141,7 @@ countries = {
 		dynasty = shabankarai_dynasty
 	}
 
-	JUR = { #Jurmanids
-		type = army
-		own_control_core = {
-			darab jannat_shahr rostaq tarom
-		}
-
-		include = "expl_middle_east"
-		include = "expl_mongols"
-		starting_technology_level = 3
-		include = "eurasian_horde_no_muslim"
-		government = {
-			type = steppe_horde
-			heir_selection = tribal_oldest_male
-			ruler = random
-
-
-			reforms = {
-				legacy_of_genghis
-			}
-		}
-
-		tolerated_cultures = {
-			farsi_culture
-		}
-		capital = darab
-		dynasty = jurmanid_dynasty
-	}
+	#JUR BR REMOVED
 
 	HZP = { #Hazaraspids (Great Lorestan)
 	#Ruler Title: Atabegate (Atabeg)

@@ -1268,9 +1268,6 @@ building_manager = {
 	kurultai = { tag = JKR level = 1 location = nishapur }
 	kurultai = { tag = KAR level = 1 location = basra }
 
-	kurultai = { tag = TUR level = 1 location = samarra }
-	kurultai = { tag = TUR level = 1 location = tabriz }
-	kurultai = { tag = TUR level = 1 location = baghdad }
 	kurultai = { tag = JUR level = 1 location = darab }
 	kurultai = { tag = UGH level = 1 location = qatruyeh }
 	kurultai = { tag = NGD level = 1 location = ghazni }
@@ -1613,6 +1610,8 @@ building_manager = {
 	university	= { tag = FLO level = 1	location = florence }
 	university	= { tag = BYZ level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
 	university	= { tag = ADU level = 1	location = cordoba }
+	university	= { tag = TUR level = 1	location = baghdad }
+	university	= { tag = MAM level = 1	location = alexandria }
 	
 	order_stronghold	= { tag = LIV level = 1	location = cesis } # Livonian Order
 	order_stronghold	= { tag = LIV level = 1	location = viljandi } # Livonian Order
@@ -1810,6 +1809,7 @@ building_manager = {
 	cathedral 	= { tag = ASU level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200   #BR edit
 	cathedral 	= { tag = ASU level = 1 location = zamora } #Cathedral of the Saviour, established in 1174   #BR edit
 	cathedral 	= { tag = ARA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
+	cathedral 	= { tag = MAM level = 1 location = alexandria } #Cathedral of the Saviour, established in 1318
 	
 	chancery = { tag = ARA level = 1 location = barcelona }
 	chancery = { tag = NAV level = 1 location = pamplona } #XI Century
@@ -1956,6 +1956,7 @@ building_manager = {
 		#Granada Alhambra
 	alhambra = { tag = ADU level = 1 location = granada }	
 	funduq = { tag = ADU level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+
 	royal_court = { tag = ADU level = 1 location = cordoba }
 	royal_garden = { tag = ADU level = 1 location =  cordoba } #Gardens of the Great Palace
 
@@ -1983,6 +1984,10 @@ building_manager = {
 	medical_school = { tag = ADU level = 1 location =  cordoba }
 
 	sergeantry = { tag = ADU level = 1 location =  cordoba }
+	madrasa = { tag = ADU level = 1 location = cordoba }
+	madrasa = { tag = ADU level = 1 location = granada }
+	madrasa = { tag = ADU level = 1 location = sevilla }
+	madrasa = { tag = ADU level = 1 location = toledo }
 
 		#Brethren of the Marsh #Unique
 	brethren_marsh = { tag = ASU level = 1 location = bilbao }   #BR edit
@@ -2321,7 +2326,44 @@ building_manager = {
 	sergeantry = { tag = BYZ level = 1 location =  constantinople }
 	sergeantry = { tag = BYZ level = 1 location =  bursa }
 	sergeantry = { tag = BYZ level = 1 location =  thessaloniki }
-	sergeantry = { tag = ADU level = 1 location =  cordoba }
+
+	sergeantry = { tag = TUR level = 1 location =  tabriz }
+	kurultai = { tag = TUR level = 1 location =  mosul }
+	kurultai = { tag = TUR level = 1 location =  diyarbekir }
+	kurultai = { tag = TUR level = 1 location = samarra }
+	kurultai = { tag = TUR level = 1 location = tabriz }
+	kurultai = { tag = TUR level = 1 location = baghdad }
+	madrasa = { tag = TUR level = 1 location = baghdad }
+	madrasa = { tag = TUR level = 1 location = diyarbekir }
+	madrasa = { tag = TUR level = 1 location = mosul }
+	madrasa = { tag = TUR level = 1 location = tabriz }
+	seljuk_mint = { tag = TUR level = 1 location = mosul }
+	seljuk_mint = { tag = TUR level = 1 location = tabriz }
+	seljuk_mint = { tag = TUR level = 1 location = baghdad }
+	seljuk_mint = { tag = TUR level = 1 location = tabriz }
+
+	marketplace	= { tag = TUR level = 10 location = baghdad }
+	trading_hub = { tag = TUR level = 1 location = baghdad }
+	entrepot = { tag = TUR level = 1 location = baghdad }
+	market_warehouse = { tag = TUR level = 1 location = baghdad }
+	
+	fine_cloth_guild = { tag = TUR level = 5 location = baghdad }
+	saltpeter_guild = { tag = TUR level = 1 location = baghdad }
+	tannery = { tag = TUR level = 4 location = baghdad }
+	cloth_guild = { tag = TUR level = 5 location = baghdad }
+	dyes_guild = { tag = TUR level = 5 location = baghdad }
+	furniture_guild = { tag = TUR level = 4 location = baghdad }
+	glass_guild = { tag = TUR level = 2 location = baghdad }
+	paper_guild = { tag = TUR level = 2 location = baghdad }
+	porcelain_guild = { tag = TUR level = 4 location = baghdad }
+	pottery_guild = { tag = TUR level = 2 location = baghdad }
+	tools_guild = { tag = TUR level = 2 location = baghdad }
+	weapon_guild = { tag = TUR level = 2 location = baghdad }
+	
+	scriptorium = { tag = TUR level = 6 location = baghdad }
+	hospital = { tag = TUR level = 1 location = baghdad }
+	library = { tag = TUR level = 1 location = baghdad }
+	medical_school = { tag = TUR level = 1 location = baghdad }
 
 
 	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit
@@ -2363,6 +2405,7 @@ building_manager = {
 	miaphysite_monastery =  { tag = MED level = 1 location = keren } #Debre Sina 
 	miaphysite_monastery =  { tag = ARM level = 1 location = ani } #BR EDIT City of Churches
 	miaphysite_monastery =  { tag = ARM level = 1 location = yerevan } #BR EDIT
+	miaphysite_monastery =  { tag = MAM level = 1 location = alexandria } #BR EDIT
 
 	cawa_barracks = { tag = ETH level = 1 location = ankober }
 
@@ -3486,11 +3529,6 @@ building_manager = {
 	castle = { tag = BYZ level = 1 location = thessaloniki }
 	temple = { tag = BYZ level = 1 location = birgi }
 	#temple = { tag = KAR level = 1 location = ermenek }
-	#madrasa = { tag = TUR level = 1 location = iznik }
-	#madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
-	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
-	#seljuk_mint = { tag = KAR level = 1 location = konya }
-	#seljuk_mint = { tag = ERE level = 1 location = sivas }
 	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	stockade = { tag = BYZ level = 1 location = antalya }
 	stockade = { tag = BYZ level = 1 location = uluborlu }
