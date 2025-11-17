@@ -45,7 +45,7 @@ diplomacy_manager = {
     dependency = { first = NOR second = GRL subject_type = dominion }
     dependency = { first = NOR second = ORK subject_type = vassal }
 	dependency = { first = NOR second = DAN subject_type = dominion }
-#	dependency = { first = DAN second = SLV subject_type = vassal }
+	dependency = { first = DAN second = ZEA subject_type = vassal }
 	
     dependency = { first = TEU second = LIV subject_type = vassal }
     dependency = { first = LIV second = RIG subject_type = vassal }
