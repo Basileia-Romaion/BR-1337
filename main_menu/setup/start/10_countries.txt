@@ -162,31 +162,25 @@ countries = {
 
 		DAN = {
 			own_control_core = {
-				thisted skagen hjorring
-				kolding aarhus grindsted silkeborg kalo
-				bolling ringkobing holstebro_lundenes varde
-				randers viborg aalborg ars
-				ribe tonder
-				odense navskov assens svendborg
-				roskilde ringsted kalundborg helsingor hammershus
-				kobenhavn slagelse vordingborg falster
-
-				# own_control_integrated, but culture accepted
-				tallinn narva padise rakvere rapla toolse vasknarva
-
-				#still owned in skane
-				laholm asbo
-			}
-
-
+                aalborg ars randers viborg
+                thisted skagen hjorring
+                kolding aarhus grindsted silkeborg kalo
+                bolling ringkobing holstebro_lundenes varde
+                ribe tonder
+                odense navskov assens svendborg
+                hammershus
+            }
+            own_control_integrated = {
+                tallinn narva padise rakvere rapla toolse vasknarva
+            }
 			our_cores_conquered_by_others = {
 				varberg halmstad kungsbacka
 				ronneby bregne solvesborg
 				gladsax osby
-				helsingborg lund malmo
+				helsingborg lund malmo falster
 			}
 
-			capital = roskilde
+			capital = viborg
 			dynasty = estrid_dynasty
 			court_language = low_german_dialect
 
@@ -291,14 +285,34 @@ countries = {
 			tolerated_cultures = {
 				estonian
 			}
-
-			# severly in debt, and a regency and such..
-			currency_data = {
-				gold = -500
-				government_power = 25
-			}
-
 		}
+
+        ZEA = {
+            own_control_core = {
+                kobenhavn slagelse vordingborg  roskilde ringsted kalundborg helsingor
+            }
+            own_control_integrated = {
+                falster
+            }
+
+            capital = viborg
+            dynasty = estrid_dynasty
+            court_language = low_german_dialect
+
+            country_rank = rank_kingdom
+
+            include = "expl_scandinavia"
+            include = "catholic_monarchy"
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = random
+            }
+            tolerated_cultures = {
+                estonian
+            }
+        }
 
 		SKE = {
 			own_control_core = {
@@ -368,11 +382,13 @@ countries = {
 				#shetland orkney
 				torshavn
 			}
-
 			own_control_integrated = {
 				varanger alta
 				kirkenes
 			}
+            own_control_conquered = {
+                laholm asbo
+            }
 
 			accepted_cultures = {
 				norn_culture
@@ -4778,7 +4794,7 @@ countries = {
 		#### WALES
 		POS = {
 			own_control_core = {
-				aberystwyth harlech longtown ludlow machynlleth penllyn montgomery wigmore
+				aberystwyth ewyas harlech longtown ludlow machynlleth penllyn montgomery wigmore
 			}
 			
 			include = "expl_western_europe"
@@ -4797,10 +4813,9 @@ countries = {
 			country_rank = rank_kingdom
 			capital = aberystwyth
 		}
-		
 		GDD = {
 			own_control_core = {
-				anglesey caranarvon conway denbigh
+				anglesey carnarvon conwy denbigh
 			}
 			our_cores_conquered_by_others = {
 				flint harlech
@@ -4819,10 +4834,9 @@ countries = {
 			country_rank = rank_kingdom
 			capital = caranarvon
 		}
-		
 		AUD = {
 			own_control_core = {
-				flint oswestry wrexham
+				flint oswestry llangollen
 			}
 			
 			include = "expl_western_europe"
@@ -4836,9 +4850,8 @@ countries = {
 			
 			court_language = welsh_dialect
 			country_rank = rank_kingdom
-			capital = wrexham
+			capital = llangollen
 		}
-		
 		GWT = {
 			own_control_core = {
 				monmouth newport
@@ -4860,7 +4873,6 @@ countries = {
 			country_rank = rank_kingdom
 			capital = newport
 		}
-		
 		MWG = {
 			own_control_core = {
 				caerphilly cardiff neath swansea
@@ -4879,10 +4891,9 @@ countries = {
 			country_rank = rank_kingdom
 			capital = cardiff
 		}
-		
 		BCN = {
 			own_control_core = {
-				brenock builth radnor
+				brecknock builth radnor
 			}
 			
 			include = "expl_western_europe"
@@ -4896,9 +4907,8 @@ countries = {
 			
 			court_language = welsh_dialect
 			country_rank = rank_kingdom
-			capital = brenock
+			capital = brecknock
 		}
-		
 		PMB = {
 			own_control_core = {
 				pembroke
@@ -4920,7 +4930,6 @@ countries = {
 			country_rank = rank_kingdom
 			capital = pembroke
 		}
-		
 		DHB = {
 			own_control_core = {
 				cardigan carmarthen fishguard kidwelly
