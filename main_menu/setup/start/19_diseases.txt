@@ -35,16 +35,25 @@ disease_outbreak_manager = {
             italy_region
             carpathia_region
             baltic_region
-            caucasus_region
             steppes_region
             russian_region
 			ruthenia_region
             ural_region
-            balkan_region
             #Asia
             west_siberia_region
             khorasan_region
+        }
+    }
+
+    add_disease_resistance = {
+        type = bubonic_plague
+        resistance = 0.2
+        regions = {
+            #Europe
+            balkan_region
+            #Asia
             anatolia_region
+            caucasus_region
         }
     }
     
