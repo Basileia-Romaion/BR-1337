@@ -278,6 +278,7 @@ diplomacy_manager = {
     #------Byzantium--------
     #dependency = { first = BYZ second = EPI subject_type = vassal } #BR EDIT
     dependency = { first = BYZ second = FEO subject_type = vassal } #BR ADDED
+    dependency = { first = BYZ second = THE subject_type = fiefdom } #BR ADDED
 
     #-------Low Lands-------
     dependency = { first = HOL second = ZEE subject_type = fiefdom }
@@ -379,8 +380,6 @@ diplomacy_manager = {
     dependency = { first = TUR second = ZZR subject_type = vassal }
 
     #scripted_mutual = { first = BYZ second = TRE type = alliance }
-    scripted_mutual = { first = MAM second = CND type = alliance }
-    scripted_mutual = { first = MAM second = KAR type = alliance }
     scripted_mutual = { first = HBN second = KTW type = alliance }
     scripted_mutual = { first = MKW second = ZZR type = alliance }
 

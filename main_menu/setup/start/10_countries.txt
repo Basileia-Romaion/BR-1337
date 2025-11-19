@@ -4251,7 +4251,7 @@ countries = {
 			country_rank = rank_duchy
 			capital = theodoro
 
-			tolerated_cultures = {
+			accepted_cultures = {
 				pontic_greek_culture
 			}
 
@@ -11978,9 +11978,8 @@ countries = {
 			individualism_vs_communalism = -40
 			outward_vs_inward = -80
 		}
-
-		tolerated_cultures = {
-			#greek_culture # Now primary
+		accepted_cultures = {
+			latinoi
 		}
 
 		country_rank = rank_duchy
@@ -12108,6 +12107,7 @@ countries = {
 	ATH = {
 		own_control_core = {
 			athens megara thebes atalanti livadeia
+			corinth damala ermioni xylokastro
 		}
 
 		starting_technology_level = 3
@@ -12116,7 +12116,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -12133,12 +12133,13 @@ countries = {
 
 	ACH = { #https://en.wikipedia.org/wiki/Principality_of_Achaea
 		own_control_core = {
-			damala ermioni kalamata kyparissia
-			andritsaina pontikokastro andravida corinth
-			chalandritsa patras vostitsa kalavryta xylokastro
+			kalamata kyparissia
+			chalandritsa patras vostitsa kalavryta
+			andritsaina pontikokastro andravida 
 		}
 		our_cores_conquered_by_others = {
 			tripolitsa veligosti karytaina
+			corinth damala ermioni xylokastro
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -12146,14 +12147,15 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
+			latinoi
 		}
 
 		country_rank = rank_duchy
@@ -12172,19 +12174,19 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
+			latinoi
 		}
 		capital = cephalonia
 		court_language = venetian_dialect
 	}
-
 
 	LAT = { #The Latin Empire
 		starting_technology_level = 3
@@ -12253,8 +12255,8 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
-			#greek_culture # Now primary
+		accepted_cultures = {
+			latinoi
 		}
 		court_language = venetian_dialect
 		country_rank = rank_duchy
@@ -12326,6 +12328,7 @@ countries = {
 		}
 
 		tolerated_cultures = {
+			albanian
 			aromanian
 		}
 		
@@ -12336,16 +12339,27 @@ countries = {
 	}
 
 	THE = {
+		own_control_core = {
+			sporades servia kastoria hatera veria edessa kassandreia polygyros thessaloniki
+			kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama
+			ostrovo
+			grevena siatista
+		}
+		our_cores_conquered_by_others = {
+
+		}
+
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
+			ruler = random
 
 			ruler_term = { character = the_bonifacio_i_monferrato start_date = 1204.5.16 end_date = 1207.1.1 regnal_number = 1 }
 			ruler_term = { character = sic_demetrio_i_thessalonica start_date = 1207.1.1 end_date = 1224.12.1 regnal_number = 1 }
@@ -12363,6 +12377,10 @@ countries = {
 			}
 		}
 
+		tolerated_cultures = {
+			aromanian
+		}
+
 		country_rank = rank_kingdom
 		liturgical_language = greek_language
 
@@ -12372,7 +12390,7 @@ countries = {
 	THS = { #BR EDITED
 		own_control_core = {
 			#BYZ
-			demetrias farsala elassona larissa siatista stomio trikala tyrnavos karditsa grevena
+			demetrias farsala elassona larissa stomio trikala tyrnavos karditsa
 			
 			#NEO
 			neopatras zetounion
@@ -12384,7 +12402,7 @@ countries = {
 			gravia
 		}
 		our_cores_conquered_by_others = { 
-			loidoriki  
+			loidoriki grevena siatista
 		}
 
 		starting_technology_level = 3
@@ -12393,7 +12411,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -12426,6 +12444,10 @@ countries = {
 			}
 		}
 
+		tolerated_cultures = {
+			aromanian
+		}
+
 		country_rank = rank_duchy
 		liturgical_language = greek_language
 
@@ -12455,7 +12477,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
+		include = "eastern_european_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -12470,18 +12492,14 @@ countries = {
 
 	BYZ = {
 		own_control_core = {
-			sporades servia kastoria hatera veria edessa kassandreia polygyros thessaloniki
-			kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama xanthia komotini
-			traianopolis demotica lemnos imbros molyvos mitilene gallipoli kesan
+			lemnos imbros molyvos mitilene gallipoli kesan
 			edirne hayrabolu corlu
 			rodoscuk enez kiyikoy ahtopol constantinople silivri catalca luleburgaz kirklareli
 			malgara alasehir
-
-			ostrovo
-
 			uskudar silli biga eregli
 			chios vize
 			ormenio
+			traianopolis demotica xanthia komotini
 
 			#TUR
 			beypazari kibrus kizilca
@@ -12541,6 +12559,9 @@ countries = {
 			
 		}
 		our_cores_conquered_by_others = {
+			kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama xanthia komotini
+			sporades servia kastoria hatera veria edessa kassandreia polygyros thessaloniki
+
 			#Vardar Province - lost in 1285
 			kocani strumica
 
@@ -12594,11 +12615,27 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
+		include = "expl_indonesian_trade_route"
+		include = "expl_middle_east"
+		#	discovered_regions = {
+		#		egypt_region
+		#		khorasan_region
+		#		persia_region
+		#		ethiopia_region
+		#		nubia_region
+		#		arabia_region
+		#		western_india_region
+		#		hindustan_region
+		#		xinjiang_region
+		#	}
 		discovered_areas = {
 			red_sea_area
 			persian_gulf_sea_zones_area
 			upper_egypt_area
 			nubia_proper_area
+			amhara_province
+			argobba_province
+			begemder_province
 		}
 		include = "eastern_european_monarchy"
 		government = {
@@ -12725,8 +12762,8 @@ countries = {
 
 		tolerated_cultures = {
 			aromanian
-			#cappadocian_greek_culture
-			#pontic_greek_culture
+			anatolian_greek_culture
+			pontic_greek_culture
 		}
 
 		liturgical_language = greek_language
@@ -12780,7 +12817,7 @@ countries = {
 
 		country_rank = rank_kingdom
 		capital = durres
-		dynasty = anjou_dynasty
+		#dynasty = anjou_dynasty
 		#dynasty = anjou_durazzo_dynasty
 	}
 
@@ -17970,7 +18007,8 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
+			latinoi
 		}
 
 		court_language = venetian_dialect
@@ -18011,7 +18049,8 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
+			latinoi
 		}
 
 		court_language = french_language
@@ -18054,9 +18093,7 @@ countries = {
 
 		}
 
-		tolerated_cultures = {
-			greek_culture
-		}
+		accepted_cultures = { maltese }
 
 		capital = rodos
 		dynasty = villeneuve_dynasty
@@ -18106,8 +18143,8 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
-			#greek_culture # Now primary
+		accepted_cultures = {
+			latinoi
 		}
 
 		court_language = venetian_dialect
@@ -18144,7 +18181,8 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
+			latinoi
 		}
 
 		court_language = catalan_dialect
@@ -21675,10 +21713,10 @@ countries = {
 			matruh sallum tobruk
 			el_qoseir ras_gharib safaga
 			el_jundi faran nuweiba saint_katrine
-			ayntab dluk
 			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
 			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			damascus al_bab aleppo artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			damascus artah baniyas hama homs idlib jableh kafartab latakia masyaf nabek qusayr tartus
+			
 			umluj al_hawra al_manjur al_maramiyah
 			al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
 			duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
@@ -21751,7 +21789,7 @@ countries = {
 
 		tolerated_cultures = {
 			upper_egyptian_culture
-			coptic_culture mizrahi #else they be slaves
+			coptic_culture #else they be slaves
 			libyan_arabic_culture
 			bedouin_culture
 			eastern_amazigh
@@ -31079,10 +31117,14 @@ countries = {
 			dunaysir
 			araban hasakah makisin mardin tunanir
 			raqqa  busayrah jabar madinat_far
-			urfa  birecik harran suruc viransehir  siverek
+			urfa birecik harran suruc viransehir siverek
+			jabbul al_bab manbij maskanah dabiq aleppo zardana marrat
+			barqaid sinjar bara_iraq nusaybin ras_ayn
+			diyarbekir ergani
+			cermik
 		}
 		own_control_integrated = {
-			barqaid sinjar bara_iraq nusaybin ras_ayn
+			
 		}
 
 		starting_technology_level = 3
@@ -31115,6 +31157,7 @@ countries = {
 			iraqi_culture
 		}
 
+		country_rank = rank_kingdom
 		capital = mardin
 		religious_school = shafii_school
 		government = { mysticism_vs_jurisprudence = 20 }
@@ -31169,9 +31212,11 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
+		accepted_cultures = {
+			armenian_culture
+		}
 
 		tolerated_cultures = {
-			armenian_culture
 			syriac_culture
 		}
 
@@ -31197,8 +31242,8 @@ countries = {
             ruler = random
 		}
 
-		tolerated_cultures = {
-			#greek_culture # Now primary
+		accepted_cultures = {
+			latinoi
 		}
 
 		court_language = french_language
@@ -31303,12 +31348,12 @@ countries = {
 	DUL = {
 		own_control_core = {
 			gerger kahta samsat
-			besni elbistan enguzud goksun afsin
+			besni elbistan enguzud goksun afsin marash
 			kaysun
 			ulnia
+			ayntab dluk
 		}
 		own_control_integrated = {
-			marash
 		}
 
 		include = "expl_eastern_europe"
@@ -31805,6 +31850,8 @@ countries = {
 
 			#BFR
 			bafra gerze
+
+			rize khupati
 		}
 
 		own_control_integrated = {
@@ -31818,7 +31865,7 @@ countries = {
 		}
 
 		our_cores_conquered_by_others = {
-			khupati rize
+			khupati
 		}
 
 		starting_technology_level = 3
@@ -31888,8 +31935,6 @@ countries = {
 			bijar bashqurtaran dehgolan divandarreh ghorveh sohrevard yasukand
 			goroz shusha
 			julfa nakhchivan
-			diyarbekir ergani
-			cermik
 			mosul qayyarah tal_afar
 		}
 
@@ -32536,7 +32581,6 @@ countries = {
 		own_control_core = {
 			ithriya sukhnah taybah
 			khanaser qastal salamiyya
-			marrat
 			arak huwwarin qaryatayn tadmur
 		}
 
@@ -56240,7 +56284,6 @@ countries = {
 			telavi alaverdi dusheti gremi omalo rustavi shatili
 			gagi kayen khunani jariekhi
 			hereti balakan bodbe khornabuji qakh
-			panaskerti tortum
 		}
 
 		own_control_integrated = {
@@ -56360,8 +56403,8 @@ countries = {
 	SME = { #Samtskhe #BR EDIT
 		own_control_core = {
 			akhaltsikhe ardahan tmogvi
-			ispir khupati rize
 			artanuji khikhani oltu parkhali savsat
+			ispir panaskerti tortum
 		}
 
 		include = "expl_christian_caucasus"
