@@ -7,7 +7,7 @@
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive
+		greek_culture = kindred
 		griko_culture = positive
 		pontic_greek_culture = positive
 		gothic_culture = positive
@@ -47,7 +47,7 @@ griko_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive #BR EDIT
+		greek_culture = kindred #BR EDIT
 		cappadocian_greek_culture = positive
 		pontic_greek_culture = positive
 		gothic_culture = positive
@@ -69,7 +69,7 @@ pontic_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive
+		greek_culture = kindred
 		griko_culture = positive
 		cappadocian_greek_culture = positive
 		gothic_culture = positive
@@ -89,7 +89,7 @@ anatolian_greek_culture = { #BR addition
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive
+		greek_culture = kindred
 		griko_culture = positive
 		cappadocian_greek_culture = positive
 		gothic_culture = positive
@@ -111,7 +111,7 @@ gothic_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive
+		greek_culture = kindred
 		griko_culture = positive
 		cappadocian_greek_culture = positive
 		pontic_greek_culture = positive
@@ -121,4 +121,23 @@ gothic_culture = {
 	culture_groups = {
 		greek_group
 	}
+}
+
+varangian = {
+	language = greek_language
+	
+	color = rgb { 121 86 138 }
+	
+	tags = { norwegian_gfx western_european_gfx european_gfx }
+	
+	opinions = {
+		greek_culture = positive
+	}
+	
+	culture_groups = {
+		scandinavian_group greek_group
+	}
+	
+	use_patronym = yes
+	
 }
