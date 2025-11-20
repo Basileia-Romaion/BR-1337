@@ -1117,10 +1117,18 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.850	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	cheticamp = {
-		define_pop = {	type = tribesmen	size = 0.212	culture = mikmaq_culture	religion = midewiwin_religion }
+		define_pop = {	type = nobles		size = 0.041	culture = kathurlander		religion = norse }
+		define_pop = {	type = clergy		size = 0.53	culture = kathurlander		religion = norse }
+		define_pop = {	type = peasants		size = 0.864	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 2.106	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 2.806	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	ingonish = {
-		define_pop = {	type = tribesmen	size = 0.106	culture = mikmaq_culture	religion = midewiwin_religion }
+		define_pop = {	type = nobles		size = 0.081	culture = kathurlander		religion = norse }
+		define_pop = {	type = clergy		size = 0.103	culture = kathurlander		religion = norse }
+		define_pop = {	type = peasants		size = 2.764	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 5.106	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 4.106	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	qospemk = {
 		define_pop = {	type = tribesmen	size = 0.318	culture = mikmaq_culture	religion = midewiwin_religion }
@@ -1132,7 +1140,11 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.637	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	kluskapewiktuk = {
-		define_pop = {	type = tribesmen	size = 0.212	culture = mikmaq_culture	religion = midewiwin_religion }
+		define_pop = {	type = nobles		size = 0.051	culture = kathurlander		religion = norse }
+		define_pop = {	type = clergy		size = 0.074	culture = kathurlander		religion = norse }
+		define_pop = {	type = peasants		size = 1.164	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 2.566	culture = kathurlander		religion = norse }
+		define_pop = {	type = tribesmen	size = 3.712	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	bras_dor_lake = {
 	}
