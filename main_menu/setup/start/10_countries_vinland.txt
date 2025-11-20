@@ -1,0 +1,71 @@
+countries = {
+	countries = {
+		NRV = {
+			own_control_core = {
+				belle_isle
+				naskwotchu
+				wipetikil
+				red_bay
+			}
+			
+			capital = belle_isle
+			include = "vinlandic_foothold"
+			court_language = vinland_dialect
+			country_rank = rank_county
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			tolerated_cultures = {
+				beothuk_culture
+			}
+		}
+		
+		NRR = {
+			own_control_core = {
+				tessuialluk
+				tikigaksuagusik
+				aivitok
+			}
+			
+			capital = tikigaksuagusik
+			include = "vinlandic_foothold"
+			court_language = markland_dialect
+			country_rank = rank_county
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			tolerated_cultures = {
+				dorset_culture
+				innu_culture
+			}
+		}
+		
+		NRH = {
+			own_control_core = {
+				navchak
+				koroc
+				tupirvialuit
+			}
+			
+			capital = navchak
+			include = "vinlandic_foothold"
+			court_language = markland_dialect
+			country_rank = rank_county
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			tolerated_cultures = {
+				dorset_culture
+			}
+		}
+	}
+}
