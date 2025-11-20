@@ -377,6 +377,18 @@ disease_outbreak_manager = {
 			asia
 			africa
         }
+		regions = {
+			# Has already hit North America in our timeline
+			canada_region
+			caribbean_region
+			east_coast_region
+			great_plains_region
+			mesoamerica_region
+			central_america_region
+			aridoamerica_region
+			alaska_region
+			west_coast_region
+		}
     }
 
     add_disease_resistance = {
