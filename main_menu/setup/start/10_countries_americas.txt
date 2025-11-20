@@ -1,0 +1,9583 @@
+countries = {
+	countries = {
+		
+		#-------------------Canada-------------
+		#Taontaenrat - TRT
+		TRT = { #??
+			type = pop
+			
+			add_pops_from_locations = {
+				missinihe tkaronto tetioneshohon scanonaenrat
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Attignawantan - AGW
+		AGW = {#https://pueblosoriginarios.com/norte/bosques/huron/huron.html
+			type = pop
+			
+			add_pops_from_locations = {
+				garafraxa ossossane
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Arendaronon
+		ARN = { #https://en.wikipedia.org/wiki/Wyandotte_Nation
+			type = pop
+			
+			add_pops_from_locations = {
+				mazinaw skootamatta kamaniskeg kashagawigamog catchacoma kawartha cahiague
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Attigneenongnahac
+		ATG = {#https://pueblosoriginarios.com/norte/bosques/huron/huron.html
+			type = pop
+			
+			add_pops_from_locations = {
+				otonabee quinte ganneious ganaraska oshawa scugog haskaont ouentarionk
+			}
+			
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Ataronchoronon
+		ATC = {#https://pueblosoriginarios.com/norte/bosques/huron/huron.html
+			type = pop
+			
+			add_pops_from_locations = {
+				kaotia kahshe cognashene
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Aondironon
+		ADR = {#https://en.wikipedia.org/wiki/Neutral_Confederacy
+			type = pop
+			
+			add_pops_from_locations = {
+				nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		#Tionontate
+		TIO = {#https://en.wikipedia.org/wiki/Petun
+			type = pop
+			
+			add_pops_from_locations = {
+				etharita ehwae eramosa
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Maisouna
+		MAS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				wachilmezi wolinak nebesek masolian loigan_sibo yamachiche ekwentondie andawaohie
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Osheaga
+		OSG = { #??
+			type = pop
+			
+			add_pops_from_locations = {
+				kemoimenahan ahkwesasne otennienontant hochelaga makigotekw kahwenoke
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Stadacona
+		STD = {#https://en.wikipedia.org/wiki/Stadacona https://en.wikipedia.org/wiki/St._Lawrence_Iroquoians
+			type = pop
+			
+			add_pops_from_locations = {
+				kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Atikamekw
+		AKW = {#https://en.wikipedia.org/wiki/Atikamekw
+			type = pop
+			
+			add_pops_from_locations = {
+				shawinigan mekinac matawin opiticiwan oskelaneo minkaniciciw wemotaci maskotci metabeskega kokokachi cikakw_sipi kiskissink wayagamac
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Timiscaming
+		TMG = {#https://en.wikipedia.org/wiki/Algonquin_people
+			type = pop
+			
+			add_pops_from_locations = {
+				kakibonga cawassiemica kitcisakik kippawa temiscamingue winneway matachewan matabichuan
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Abitibi
+		ABT = {#https://es.wikipedia.org/wiki/Abitibi_(municipio_regional_de_condado)
+			type = pop
+			
+			add_pops_from_locations = {
+				kinojevis osisko wasakin harricana malartic obaska chicobi megiscane sessekinika kenogamissi mistango piscoutagami mattawasaga
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Nipissing
+		NPS = {#https://en.wikipedia.org/wiki/Nipissing_First_Nation
+			type = pop
+			
+			add_pops_from_locations = {
+				opimika nosbonsing nipissing powassan nemag temagami onaping wanapitei mattagami
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Mississage
+		MSG = { #https://en.wikipedia.org/wiki/Mississaugas
+			type = pop
+			
+			add_pops_from_locations = {
+				shawanaga magnetawan memesagamesing wemitigoj
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#-------------------------- Mesoamerica ----------------------------
+		
+		#P'urhipecherio (Tarascan Empire) - TAR https://en.wikipedia.org/wiki/Pur%C3%A9pecha_Empire
+		TAR = {
+			own_control_core = {
+				caracuaro puruaran tancitaro
+				guayangareo tiripetio tacambaro
+				tzintzuntzan tinguindin uruapan
+				huandacareo
+				zacapu tlazazalca xacona zula_michoacan angamacutiro yuririapundaro
+				erongaricuaro patzcuaro aguacana
+			}
+			
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				
+				ruler_term = { character = tar_pauacume_uanacaze start_date = 1250.1.1 end_date = 1270.1.1 regnal_number = 1	}
+				ruler_term = { character = tar_uapeani_uanacaze start_date = 1270.1.1 end_date = 1300.1.1 regnal_number = 1	}
+				ruler_term = { character = tar_curatame_uanacaze start_date = 1300.1.1 end_date = 1320.1.1 regnal_number = 1	}
+				ruler_term = { character = tar_pauacume_ii_uanacaze start_date = 1320.1.1 regnal_number = 2	}
+				ruler = tar_pauacume_ii_uanacaze
+			}
+			court_language = purepecha_language
+			capital = tzintzuntzan
+		}
+		
+		#Churumekua - CRK https://es.wikipedia.org/wiki/Churumuco_de_Morelos
+		CRK = {
+			own_control_core = {
+				churumekua
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = purepecha_language
+			capital = churumekua
+		}
+		
+		#Cuitzeo - CTE https://es.wikipedia.org/wiki/Municipio_de_Cuitzeo
+		CTE = {
+			own_control_core = {
+				cuitzeo
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = purepecha_language
+			capital = cuitzeo
+		}
+		
+		#Tuzantla - TUZ https://es.wikipedia.org/wiki/Tuzantla
+		TUZ = {
+			own_control_core = {
+				tuzantla
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = purepecha_language
+			capital = tuzantla
+		}
+		
+		#Tzitacuaro - TZI https://es.wikipedia.org/wiki/Zit%C3%A1cuaro
+		TZI = {
+			own_control_core = {
+				tzitacuaro
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = purepecha_language
+			capital = tzitacuaro
+		}
+		
+		#Taximaroa - TAX https://es.wikipedia.org/wiki/Ciudad_Hidalgo_(Michoac%C3%A1n)
+		TAX = {
+			own_control_core = {
+				taximaroa
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = purepecha_language
+			capital = taximaroa
+		}
+		
+		#Tenōchtitlan (Aztec Empire) - TNC - Vassal of Azcapozalco
+		TNC = {
+			own_control_core = {
+				tenochtitlan
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = azt_tenoch
+				
+				ruler_term = {	 character = azt_tenoch start_date = 1325.1.1 regnal_number = 1 }
+				
+				privilege = {
+					peasant_owns_their_food
+					peasants_allowed_weapons_privilege
+					warrior_tribunal
+				}
+				
+				centralization_vs_decentralization = 100
+				spiritualist_vs_humanist = -75
+				offensive_vs_defensive = -50
+				land_vs_naval = -100
+				quality_vs_quantity = -10
+				belligerent_vs_conciliatory = -100
+				outward_vs_inward = -60
+				
+				
+			}
+			
+			court_language = nahuatl_language
+			capital = tenochtitlan
+		}
+		
+		#Acolhuacan (Tetzcoco) - TTZ
+		TTZ = {
+			own_control_core = {
+				tetzcoco tehotihuacan zempoala apan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = ttz_quinatzin_chichimecayotl
+			}
+			court_language = nahuatl_language
+			capital = tetzcoco
+		}
+		
+		#Culhuacan - CUL
+		CUL = {
+			own_control_core = {
+				culhuacan
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = cul_achitomecatl_teomecatl_ii
+				
+				#ruler_term = {	 character = cul_coxcoxtli start_date = 1281.1.1 end_date = 1307.1.1 regnal_number = 1 }
+				ruler_term = {	 character = cul_huehue_acamapichtli start_date = 1323.1.1 end_date = 1336.1.1 regnal_number = 1 }
+				ruler_term = {	 character = cul_achitomecatl_teomecatl_ii start_date = 1336.1.1 regnal_number = 2 }
+			}
+			court_language = nahuatl_language
+			capital = culhuacan
+		}
+		
+		#Tepanecapan (Azcapotzalco) - TEP
+		TEP = {
+			own_control_core = {
+				azcapotzalco cuauhtitlan tollan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = tep_acolnahuacatl_tepanecatl
+			}
+			
+			tolerated_cultures = {
+				toltec_culture
+			}
+			court_language = nahuatl_language
+			capital = azcapotzalco
+		}
+		
+		#Tlacopan - TCP https://es.wikipedia.org/wiki/Tacuba
+		TCP = {
+			own_control_core = {
+				tlacopan
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			court_language = nahuatl_language
+			capital = tlacopan
+		}
+		
+		#Xaltocan - OTO
+		OTO = {
+			own_control_core = {
+				xaltocan pachyohcan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = oto_pantictzin
+			}
+			court_language = otopamean_language
+			capital = xaltocan
+		}
+		
+		#Axocopan - AXO
+		AXO = {
+			own_control_core = {
+				axocopan mixquiahuala tecozautla
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = oto_pantictzin
+			}
+			court_language = otopamean_language
+			capital = axocopan
+		}
+		
+		#Tollohcan - MAT
+		MAT = {#https://es.wikipedia.org/wiki/Calixtlahuaca#Periodos_de_Ocupaci%C3%B3n
+			own_control_core = {
+				ixtlahuaca tollohcan ninil teotenanco
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tollohcan
+		}
+		
+		#Malinalco - MLN
+		MLN = { #https://es.wikipedia.org/wiki/Malinalco
+			own_control_core = {
+				malinalco
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = malinalco
+		}
+		
+		#Tixtla - TLA
+		TLA = {#https://en.wikipedia.org/wiki/Tlapanec_language
+			own_control_core = {
+				tixtla
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tixtla
+		}
+		
+		#Yopitzinco - YPZ
+		YPZ = {
+			own_control_core = {
+				yopitzinco
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = yopitzinco
+		}
+		
+		#Chilapa - CLP
+		CLP = {
+			own_control_core = {
+				chilapa
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = chilapa
+		}
+		
+		#Oapan - OAP
+		OAP = {
+			own_control_core = {
+				oapan
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = oapan
+		}
+		
+		#Tlaxcallan - TLX (Stateless until 1348)
+		TLX = {
+			own_control_core = {
+				tepeticpac quiahuixtlan tizatlan ocotelolco
+			}
+			
+			discovered_regions = {
+				mesoamerica_region
+				aridoamerica_region
+			}
+			
+			include = "amerindian_advanced_republic_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = tlx_culhuatecuhtli
+			}
+			capital = tizatlan
+		}
+		
+		#Huexotzinco - HJZ
+		HJZ = {
+			own_control_core = {
+				huexotzinco
+			}
+			
+			discovered_regions = {
+				mesoamerica_region
+				aridoamerica_region
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = huexotzinco
+		}
+		
+		#Quauhquechollan - QLL
+		QLL = {
+			own_control_core = {
+				quauhquechollan
+			}
+			
+			discovered_regions = {
+				mesoamerica_region
+				aridoamerica_region
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = quauhquechollan
+		}
+		
+		#Zaachila - ZAP https://es.wikipedia.org/wiki/Zaachila
+		ZAP = {
+			own_control_core = {
+				yucucui zaachila  totolapan tlacolula
+				sosola
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = zap_ozomatli
+			}
+			
+			tolerated_cultures = {
+				mixtec_culture
+			}
+			court_language = otopamean_language
+			capital = zaachila
+		}
+		
+		#Teposcocula - TPL https://arqueologiamexicana.mx/mexico-antiguo/teposcolula-oaxaca
+		TPL = {
+			own_control_core = {
+				yucundaa
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = yucundaa
+		}
+		
+		#Ixtlan - IXL
+		IXL = {
+			own_control_core = {
+				ixtlan
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = ixtlan
+		}
+		
+		#Yodzocahi - YDZ https://arqueologiamexicana.mx/mexico-antiguo/un-palacio-real-en-la-mixteca-oaxaquena
+		YDZ = {
+			own_control_core = {
+				yodzocahi
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = yodzocahi
+		}
+		
+		#Yautepec - YAU https://es.wikipedia.org/wiki/Municipio_de_Yautepec
+		YAU = {
+			own_control_core = {
+				yautepec
+			}
+			
+			starting_technology_level = 1
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = zap_ozomatli
+			}
+			court_language = otopamean_language
+			capital = yautepec
+		}
+		
+		#Tehuantepec - THT https://es.wikipedia.org/wiki/Santo_Domingo_Tehuantepec
+		THT = {
+			own_control_core = {
+				tehuantepec guiigu_yudxi
+			}
+			
+			own_control_integrated = {
+				chimalapan zanatepec
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tehuantepec
+		}
+		
+		#Miahuatlan - MHT
+		MHT = {
+			own_control_core = {
+				miahuatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = miahuatlan
+		}
+		
+		#Yuhuitayu Yucu Dzaa - MIX
+		MIX = {
+			own_control_core = {
+				tututepec juchatengo   amoltepec
+				manialtepec tonameca huamelula comitlan
+			}
+			
+			own_control_integrated = {
+				cuauhtolco
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tututepec
+		}
+		
+		#Quiegoqui - QIG https://mediateca.inah.gob.mx/repositorio/islandora/object/tesis%3A3618
+		QIG = {
+			own_control_core = {
+				coatlan
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = coatlan
+		}
+		
+		#Teozacoalco - TZL https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-62212019000200011
+		TZL = {
+			own_control_core = {
+				nochixtlan jaltepec teozacualco
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = teozacualco
+		}
+		
+		#Juxtlahuaca - JUX
+		JUX = {
+			own_control_core = {
+				juxtlahuaca
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = juxtlahuaca
+		}
+		
+		#Tlachquiauhco - TCQ
+		TCQ = {
+			own_control_core = {
+				tlachquiauhco poctlan tillantonco
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tlachquiauhco
+		}
+		
+		#Yucu Chatula - YCH
+		YCH = {
+			own_control_core = {
+				jicayan zacatepec
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = zacatepec
+		}
+		
+		#�uu Ndiyi - NND
+		NND = {
+			own_control_core = {
+				mictlan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = mictlan
+		}
+		
+		#Yodzocoo - COI
+		COI = {
+			own_control_core = {
+				coixtlahuacan yucundeq
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = coixtlahuacan
+		}
+		
+		#Cuicatlan - CCN
+		CCN = {
+			own_control_core = {
+				cuicatlan
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = cuicatlan
+		}
+		
+		#Teotitlan - TEO
+		TEO = {
+			own_control_core = {
+				teotitlan tehuacan zongolica tecamachalco ahuilizapan
+			}
+			
+			own_control_integrated = {
+			
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			tolerated_cultures = {
+				nahua_culture
+			}
+			court_language = otopamean_language
+			capital = teotitlan
+		}
+		
+		#Coliman - CLM
+		CLM = {
+			own_control_core = {
+				coliman caxitlan coahuayana tochpan tlayolan chucutitlan
+			}
+			
+			own_control_integrated = {
+				apatzingan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = coliman
+		}
+		
+		#Quiahuiztlan - QHZ
+		QHZ = { #https://es.wikipedia.org/wiki/Quiahuiztl%C3%A1n
+			own_control_core = {
+				quiahuiztlan nauhtlan cuyuxquihui
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = tot_catoxcan
+			}
+			court_language = totozoquean_language
+			capital = quiahuiztlan
+		}
+		
+		#Papantla - PPT
+		PPT = {
+			own_control_core = {
+				papantla tuzapan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = tot_catoxcan
+			}
+			court_language = totozoquean_language
+			capital = papantla
+		}
+		
+		#Cempoala - TOT
+		TOT = {
+			own_control_core = {
+				cempoala
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = tot_catoxcan
+			}
+			court_language = totozoquean_language
+			capital = cempoala
+		}
+		
+		#Mizantla - MZT
+		MZT = {
+			own_control_core = {
+				mizantla
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = totozoquean_language
+			capital = mizantla
+		}
+		
+		#Teayotlan - HST
+		HST = {
+			own_control_core = {
+				teayotlan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = teayotlan
+		}
+		
+		#Tetzapotitlan - TZP
+		TZP = {
+			own_control_core = {
+				tetzapotitlan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tetzapotitlan
+		}
+		
+		#Tziuhcoac - TZH
+		TZH = {
+			own_control_core = {
+				tziuhcoac
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tziuhcoac
+		}
+		
+		#Oxtlipan - OXT
+		OXT = {
+			own_control_core = {
+				oxtlipan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = oxtlipan
+		}
+		
+		#Ozuluama - OZL
+		OZL = {
+			own_control_core = {
+				ozuluama
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = ozuluama
+		}
+		
+		#Tuxpan - TXP
+		TXP = {
+			own_control_core = {
+				tuxpan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tuxpan
+		}
+		
+		#Michuachapanco - MCC
+		MCC = {
+			own_control_core = {
+				panuco
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = panuco
+		}
+		
+		#Tamtoc - TTC
+		TTC = {
+			own_control_core = {
+				tamtoc
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tamtoc
+		}
+		
+		#Xalisco - XAL
+		XAL = {
+			own_control_core = {
+				xalisco hostoticpac amaxacotlan
+			}
+			
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = xalisco
+		}
+		
+		#Tlalpan - TAA
+		TAA = {
+			own_control_core = {
+				tlalpan
+			}
+			
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlalpan
+		}
+		
+		#Tzapotzingo - TZZ
+		TZZ = {
+			own_control_core = {
+				tzapotzingo
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tzapotzingo
+		}
+		
+		#Sentispac - SNT
+		SNT = {
+			own_control_core = {
+				sentispac
+			}
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = sentispac
+		}
+		
+		#Pame - PAM
+		PAM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				acambaro nat_tha_hi maravatio xiriquitzio
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tonala - TNL
+		TNL = {
+			own_control_core = {
+				tonala ixtlahuacan chapallan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = tonala
+		}
+		
+		#Mextiacan - MXT
+		MXT = {
+			own_control_core = {
+				mextiacan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = mextiacan
+		}
+		
+		#Yahualican - YAH
+		YAH = {
+			own_control_core = {
+				yahualican
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = yahualican
+		}
+		
+		#Tecpatitlan - TPN
+		TPN = {
+			own_control_core = {
+				tepactitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = tepactitlan
+		}
+		
+		#Mitic - MIT
+		MIT = {
+			own_control_core = {
+				mitic metzquititlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = mitic
+		}
+		
+		#Xalostotitlan - XLT
+		XLT = {
+			own_control_core = {
+				xalostotitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = xalostotitlan
+		}
+		
+		#Coinan - CON
+		CON = {
+			own_control_core = {
+				coinan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = coinan
+		}
+		
+		#Acatic - ACA
+		ACA = {
+			own_control_core = {
+				acatic
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = acatic
+		}
+		
+		#Tepecan - TPC
+		TPC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tepecan
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Teulinchan - TEL
+		TEL = {
+			own_control_core = {
+				teulinchan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = teulinchan
+		}
+		
+		#Xochipillan - XOC
+		XOC = {
+			own_control_core = {
+				nochistlan xochipillan
+			}
+			
+			
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = xochipillan
+		}
+		
+		#Zacatecah - ZAC
+		ZAC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tlacuitlapan yamanquex
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Zain - ZAI
+		ZAI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				zain papanton yuac
+				cuencame alamamas  irritila
+			}
+			
+			starting_technology_level = 1
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Guamar - GAM
+		GAM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pechichitane penlamu mo_o_ti cocomacan
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sauzas - SAU
+		SAU = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sauzas
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Guaxaban - GUX
+		GUX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guaxaban
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Iztachichimecah - IZT
+		IZT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				xiconaque cuxtaque copuz
+			}
+			
+			starting_technology_level = 0
+			include = "expl_mesoamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		#Extra Nahuatl Tags
+		
+		#Chalco - CLC
+		CLC = {
+			own_control_core = {
+				chalco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = chalco
+		}
+		
+		#Huaxtepec - HUX
+		HUX = {
+			own_control_core = {
+				huaxtepec
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = huaxtepec
+		}
+		
+		#Cuauhnahuac - CUU
+		CUU = {
+			own_control_core = {
+				cuauhnahuac
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuauhnahuac
+		}
+		
+		#Tlachco - TCH
+		TCH = {
+			own_control_core = {
+				tlachco
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlachco
+		}
+		
+		#Oztoman - OZT
+		OZT = {
+			own_control_core = {
+				oztoman
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = oztoman
+		}
+		
+		#Temascaltepec - TMS
+		TMS = {
+			own_control_core = {
+				temascaltepec
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = temascaltepec
+		}
+		
+		#Tepecoacuilco - TCC
+		TCC = {
+			own_control_core = {
+				tepecoacuilco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				chontal_culture
+			}
+			court_language = nahuatl_language
+			capital = tepecoacuilco
+		}
+		
+		#Chiautla - CTL
+		CTL = {
+			own_control_core = {
+				chiautla
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = chiautla
+		}
+		
+		#Tetellan - TLL
+		TLL = {
+			own_control_core = {
+				tetellan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tetellan
+		}
+		
+		#Zompanco - ZOM
+		ZOM = {
+			own_control_core = {
+				zompanco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = zompanco
+		}
+		
+		#Tlazcozauhtitlan - TLZ
+		TLZ = {
+			own_control_core = {
+				tlazcozauhtitlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlazcozauhtitlan
+		}
+		
+		#Cuauhteopan - UAU
+		UAU = {
+			own_control_core = {
+				cuauhteopan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuauhteopan
+		}
+		
+		#Yohualtepec - YOH
+		YOH = {
+			own_control_core = {
+				yohualtepec huajuapan silacayoapam
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = yohualtepec
+		}
+		
+		#Tecpantepec - TPT
+		TPT = {
+			own_control_core = {
+				tecpan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tecpan
+		}
+		
+		#Cihuatlan - CIH
+		CIH = {
+			own_control_core = {
+				cihuatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cihuatlan
+		}
+		
+		#Zacatollan - ZCT
+		ZCT = {
+			own_control_core = {
+				zacatollan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = zacatollan
+		}
+		
+		#Ajuchitlan - AJC
+		AJC = {
+			own_control_core = {
+				ajuchitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = cuitlatec_language
+			capital = ajuchitlan
+		}
+		
+		#Tlapan - TLP
+		TLP = {
+			own_control_core = {
+				tlapan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlapan
+		}
+		
+		#Ayotlan - AYO
+		AYO = {
+			own_control_core = {
+				tecoanapa
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tecoanapa
+		}
+		
+		#Ometepec - OMT
+		OMT = {
+			own_control_core = {
+				ometepec
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ometepec
+		}
+		
+		#Coatlicamac - CTC
+		CTC = {
+			own_control_core = {
+				coatlicamac suchilapan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = totozoquean_language
+			capital = coatlicamac
+		}
+		
+		#Coatzacoalco - CTZ
+		CTZ = {
+			own_control_core = {
+				coatzacoalco acayucan texistepec
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				mixe_culture
+				zoque_culture
+			}
+			court_language = nahuatl_language
+			capital = coatzacoalco
+		}
+		
+		#Tepeyacac - TPY
+		TPY = {
+			own_control_core = {
+				tepeyacac tecalco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tepeyacac
+		}
+		
+		#Cuetlaxtlan - CTX
+		CTX = {
+			own_control_core = {
+				cuetlaxtlan xamapan
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuetlaxtlan
+		}
+		
+		#Cholollan - CLL
+		CLL = {
+			own_control_core = {
+				cholollan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cholollan
+		}
+		
+		#Xochimilco - XCH
+		XCH = {
+			own_control_core = {
+				xochimilco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = xochimilco
+		}
+		
+		#Atocpan - ATO
+		ATO = {
+			own_control_core = {
+				atocpan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = atocpan
+		}
+		
+		#Tollantzinco - TZC
+		TZC = {
+			own_control_core = {
+				tollantzinco
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = tollantzinco
+		}
+		
+		#Metztitlan - MET
+		MET = {#https://es.wikipedia.org/wiki/Metztitl%C3%A1n
+			own_control_core = {
+				metztitlan ixmiquilpan zimapan cadereyta
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = metztitlan
+		}
+		
+		#Huayacocotla - HYC https://es.wikipedia.org/wiki/Huayacocotla
+		HYC = {
+			own_control_core = {
+				huayacocotla
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = huayacocotla
+		}
+		
+		#Tutotepec - TUT https://es.wikipedia.org/wiki/Tutotepec
+		TUT = {
+			own_control_core = {
+				tutotepec
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tutotepec
+		}
+		
+		#Xilotepec - XIL https://es.wikipedia.org/wiki/Se%C3%B1or%C3%ADo_de_Jilotepec
+		XIL = {
+			own_control_core = {
+				xilotepec ixtachichimecapan kerhiretarhu
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = xilotepec
+		}
+		
+		#Zinapecuaro - ZIN
+		ZIN = {
+			own_control_core = {
+				zinapecuaro
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = zinapecuaro
+		}
+		
+		#Ixtacamaxtitlan - IXT
+		IXT = {
+			own_control_core = {
+				ixtacamaxtitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ixtacamaxtitlan
+		}
+		
+		#Tetela - TEE
+		TEE = {
+			own_control_core = {
+				tetela
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tetela
+		}
+		
+		#Zacatlan - ZAT
+		ZAT = {
+			own_control_core = {
+				zacatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = zacatlan
+		}
+		
+		#Tlatlauquitepec - TLQ
+		TLQ = {
+			own_control_core = {
+				tlatlauquitepec teziutlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlatlauquitepec
+		}
+		
+		#Tlapacoyan - TCY
+		TCY = {
+			own_control_core = {
+				tlapacoyan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlapacoyan
+		}
+		
+		#Ahuacatlan - AHU
+		AHU = {
+			own_control_core = {
+				ahuacatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ahuacatlan
+		}
+		
+		#Cuauhchinanco - GCH
+		GCH = {
+			own_control_core = {
+				cuauhchinanco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuauhchinanco
+		}
+		
+		#Etzatlan - ETZ
+		ETZ = {
+			own_control_core = {
+				etzatlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = etzatlan
+		}
+		
+		#Xochitepec - XCT
+		XCT = {
+			own_control_core = {
+				xochitepec huaxtla
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				nahua_culture
+			}
+			court_language = nahuatl_language
+			capital = xochitepec
+		}
+		
+		#Ameca - AME
+		AME = {
+			own_control_core = {
+				ameca
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ameca
+		}
+		
+		#Tenamaxtlan - TNX
+		TNX = {
+			own_control_core = {
+				tenamaxtlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tenamaxtlan
+		}
+		
+		#Amollan - AML
+		AML = {
+			own_control_core = {
+				amollan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = amollan
+		}
+		
+		#Cuzalapa - CZL
+		CZL = {
+			own_control_core = {
+				cuzalapa
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuzalapa
+		}
+		
+		#Tomatlan - TMT
+		TMT = {
+			own_control_core = {
+				tomatlan zihuatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tomatlan
+		}
+		
+		#Melahuacan - MHC
+		MHC = {
+			own_control_core = {
+				melahuacan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = melahuacan
+		}
+		
+		#Xihutla - XIH
+		XIH = {
+			own_control_core = {
+				xihutla
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = xihutla
+		}
+		
+		#Autlan - ATL
+		ATL = {
+			own_control_core = {
+				autlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = autlan
+		}
+		
+		#Cocollan - CCL
+		CCL = {
+			own_control_core = {
+				cocollan cutzalan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cocollan
+		}
+		
+		#Huitzquilic - HTZ
+		HTZ = {
+			own_control_core = {
+				huitzquilic
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = huitzquilic
+		}
+		
+		#Aztatlan - AZL
+		AZL = {
+			own_control_core = {
+				aztatlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = aztatlan
+		}
+		
+		#Tlamazolan - TZM
+		TZM = {
+			own_control_core = {
+				tlamazolan xilotlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlamazolan
+		}
+		
+		#Tlapacoya - TLY
+		TLY = {
+			own_control_core = {
+				tlapacoya
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlapacoya
+		}
+		
+		#Cuautla - CAU
+		CAU = {
+			own_control_core = {
+				cuautla
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuautla
+		}
+		
+		#Amapila - AMP
+		AMP = {
+			own_control_core = {
+				tlacalahuastla
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlacalahuastla
+		}
+		
+		#Sayula - SAY
+		SAY = {
+			own_control_core = {
+				sayula
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = sayula
+		}
+		
+		#Pantepec - PTP
+		PTP = {
+			own_control_core = {
+				pantepec xicotepec
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = pantepec
+		}
+		
+		#Xalapa - XAP
+		XAP = {
+			own_control_core = {
+				xalapa xalacinco tepeyahualco
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = xalapa
+		}
+		
+		#Cuauhtochco - CUO
+		CUO = {
+			own_control_core = {
+				cuauhtochco otlaquiquixtla
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuauhtochco
+		}
+		
+		#Xicochimalco - XIC
+		XIC = {
+			own_control_core = {
+				xicochimalco itzcalpan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = xicochimalco
+		}
+		
+		#Tochtepec - TOH https://es.wikipedia.org/wiki/Municipio_de_Tochtepec
+		TOH = {
+			own_control_core = {
+				tochtepec chinantlan xicaltepec
+			}
+			own_control_integrated = {
+				mixtlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tochtepec
+		}
+		
+		#Teutila - TTA
+		TTA = {
+			own_control_core = {
+				teutila ixcatlan oxitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = teutila
+		}
+		
+		#Puctlan - PTL
+		PTL = {
+			own_control_core = {
+				puctlan nopiloa
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = puctlan
+		}
+		
+		#Cosamaloapan - CSM
+		CSM = {
+			own_control_core = {
+				cosamaloapan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cosamaloapan
+		}
+		
+		#Otatitlan - OTA
+		OTA = {
+			own_control_core = {
+				otatitlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = otatitlan
+		}
+		
+		#Tlacotlalpan - TLT
+		TLT = {
+			own_control_core = {
+				tlacotlalpan
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tlacotlalpan
+		}
+		
+		#Tozlan - TOZ
+		TOZ = {
+			own_control_core = {
+				tozlan atzaccan
+			}
+			include = "amerindian_advanced_monarchy"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				zoque_culture
+			}
+			court_language = nahuatl_language
+			capital = tozlan
+		}
+		
+		#Iztachacalapan - IZC
+		IZC = {
+			own_control_core = {
+				iztachacalapan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = iztachacalapan
+		}
+		
+		#Tesechoacan - TSE
+		TSE = {
+			own_control_core = {
+				tesechoacan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tesechoacan
+		}
+		
+		#Cuauhcuetzpaltepec - CCP
+		CCP = {
+			own_control_core = {
+				cuauhcuetzpaltepec
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = cuauhcuetzpaltepec
+		}
+		
+		#Ozumacin - OZU
+		OZU = {
+			own_control_core = {
+				ozumacin
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ozumacin
+		}
+		
+		#Atepec - ATP
+		ATP = {
+			own_control_core = {
+				atepec
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = atepec
+		}
+		
+		#Choapan - CPN
+		CPN = {
+			own_control_core = {
+				choapan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = choapan
+		}
+		
+		#Xochiapa - XCP
+		XCP = {
+			own_control_core = {
+				xochiapa
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = totozoquean_language
+			capital = xochiapa
+		}
+		
+		#Atitlan - ATT
+		ATT = {
+			own_control_core = {
+				atitlan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = atitlan
+		}
+		
+		#Ixtapan - IXA
+		IXA = {
+			own_control_core = {
+				ixtapan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = ixtapan
+		}
+		
+		#Cutzamala - CUZ
+		CUZ = {
+			own_control_core = {
+				cutzamala
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				cuitlatec_culture
+			}
+			court_language = nahuatl_language
+			capital = cutzamala
+		}
+		
+		#Teloloapan - TLO
+		TLO = {
+			own_control_core = {
+				teloloapan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				chontal_culture
+			}
+			court_language = nahuatl_language
+			capital = teloloapan
+		}
+		
+		#Amaticoztitlan - AMT
+		AMT = {
+			own_control_core = {
+				amaticoztitlan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = amaticoztitlan
+		}
+		
+		#Itzocan - IZO
+		IZO = {
+			own_control_core = {
+				itzocan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = itzocan
+		}
+		
+		#Axochiapan - AXC
+		AXC = {
+			own_control_core = {
+				axochiapan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = axochiapan
+		}
+		
+		#Tepexi - TPX
+		TPX = {
+			own_control_core = {
+				tepexi
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = tepexi
+		}
+		
+		#Zacazonapan - ZCZ
+		ZCZ = {
+			own_control_core = {
+				zacazonapan
+			}
+			include = "amerindian_advanced_monarchy_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = nahuatl_language
+			capital = zacazonapan
+		}
+		
+		#Itza - ITZ
+		ITZ = {
+			own_control_core = {
+				noh_peten yax_mutal pachan
+				namaan itzamkanac tatahuitalpan
+			}
+			own_control_integrated = {
+				nadzcaan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = itz_kan_ek
+			}
+			country_rank = rank_duchy
+			court_language = maya_language
+			capital = noh_peten
+			dynasty = itza_dynasty
+		}
+		
+		#Cocom - COC
+		COC = {
+			own_control_core = {
+				mayapan sotuta hocabail hunucma maxcanu motul
+				chichen_itza zaci tases kalotmul
+				jootsuuk tho
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = mayapan
+			dynasty = cocom_dynasty
+		}
+		
+		#Tutul-Xiu - XIU
+		XIU = {
+			own_control_core = {
+				mani dzibilnocac telantunich
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = mani
+			dynasty = xiu_dynasty
+		}
+		
+		#Ah Canul - CNL
+		CNL = {
+			own_control_core = {
+				calkini
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = calkini
+			dynasty = canul_dynasty
+		}
+		
+		#Chakan Putum - CKP
+		CKP = {
+			own_control_core = {
+				chakan_putum kaan_peech edzna hochob tixchel
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = chakan_putum
+			dynasty = canul_dynasty
+		}
+		
+		#Chel - HEL
+		HEL = {
+			own_control_core = {
+				dzilam titsimin ekab labcah zama coba
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = dzilam
+			dynasty = chel_dynasty
+		}
+		
+		#Uaymil - UAY
+		UAY = {
+			own_control_core = {
+				chakan_yucatan tixmul chacchoben
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = tixmul
+		}
+		
+		#Mopan - MOP
+		MOP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ixtutz wak_kabnal uxwitza xunantunich
+				altun_ha lamanai tzunuun nohmul colha ceibal pusilha
+			}
+			discovered_regions = {
+				mesoamerica_region
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cháak teʼ éemal - CTM
+		CTM = {
+			own_control_core = {
+				chactemal bakhalal
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = chactemal
+		}
+		
+		#Kowoj - KOW
+		KOW = {
+			own_control_core = {
+				chakanbakan xpaicheil dzibanche xpuhil
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = chakanbakan
+		}
+		
+		#Yoko t'aanob - YOK
+		YOK = {
+			own_control_core = {
+				tonala_coatzacoalco cupilco zahuatan
+			}
+			include = "amerindian_mesoamerican_tribe_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = cupilco
+		}
+		
+		#Chʼol - XOL
+		XOL = {
+			own_control_core = {
+				baak xicallanco tila ocosingo pochutla lakam_tun
+			}
+			include = "amerindian_mesoamerican_tribe_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = xicallanco
+		}
+		
+		#Qʼeqchiʼ - QEQ
+		QEQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chama
+			}
+			discovered_regions = {
+				mesoamerica_region
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kʼicheʼ - KIC
+		KIC = {
+			own_control_core = {
+				pismachi
+			}
+			own_control_integrated = {
+				otzoya tzunun_kaab huehuetan
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = kic_kokaib
+			}
+			court_language = maya_language
+			capital = pismachi
+		}
+		
+		#Chorti - CHT
+		CHT = {
+			own_control_core = {
+				metapan ocotepec opoa chiquimula
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				poqom_culture
+				pipil_culture
+			}
+			court_language = maya_language
+			capital = chiquimula
+		}
+		
+		#Sotz'leb - LAC
+		LAC = {
+			own_control_core = {
+				napinaica tenamitl
+			}
+			include = "amerindian_mesoamerican_tribe_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = napinaica
+		}
+		
+		#Kaqchikel - KAQ
+		KAQ = {
+			own_control_core = {
+				kakol_kiej xelahuh
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				mam_culture
+			}
+			court_language = maya_language
+			capital = kakol_kiej
+		}
+		
+		#Mam - MMM
+		MMM = {
+			own_control_core = {
+				chinabajul jaltenango
+			}
+			own_control_integrated = {
+				tonala_chiapas
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			tolerated_cultures = {
+				chiapanec_culture
+			}
+			court_language = maya_language
+			capital = chinabajul
+		}
+		
+		#Tojolabal - TOJ
+		TOJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				zapaluta
+			}
+			discovered_regions = {
+				mesoamerica_region
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			starting_technology_level = 0
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Tzeltal - TZE
+		TZE = {
+			own_control_core = {
+				quechula zinacantan
+			}
+			include = "amerindian_mesoamerican_tribe_not_nahuatl"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = quechula
+		}
+		
+		#Tz'utujil - TZU
+		TZU = {
+			own_control_core = {
+				atitlan_guatemala
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = atitlan_guatemala
+		}
+		
+		#Q'anjob'al - QAN
+		QAN = {
+			own_control_core = {
+				jolom_konob
+			}
+			include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
+			include = "expl_mesoamerica"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			court_language = maya_language
+			capital = jolom_konob
+		}
+		
+		#Toquegua - TOQ
+		TOQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				toquegua chinda naco
+			}
+			discovered_regions = {
+				mesoamerica_region
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			starting_technology_level = 0
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		#-------------------------- Central America ----------------------------
+		
+		
+		#Kuskatan - KUS https://en.wikipedia.org/wiki/Cuzcatlan
+		KUS = {
+			own_control_core = {
+				chalchuapa kuskatan cojutepeque nonualco
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = kuskatan
+		}
+		
+		#Cuauhtemallan - QUA
+		QUA = {
+			own_control_core = {
+				cuauhtemallan itzcuintlan
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_monarchy"
+			include = "expl_mesoamerica"
+			starting_technology_level = 1
+			government = {
+				ruler = random
+			}
+			court_language = maya_language
+			capital = cuauhtemallan
+		}
+		
+		#Lenca - LNC
+		LNC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tencoa comayagua talanga cururu maniani shalatenan
+				usulutan queiquin tecohtzincalpan gotera nacaome
+				xoxonal
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xinca - XIN
+		XIN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guazacapan
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Garabito - GAR
+		GAR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				garabito bocto
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = garabito
+		}
+		
+		#Guarco - GUO
+		GUO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				uxarraci
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = uxarraci
+		}
+		
+		#Pacaca - PAC
+		PAC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pacaca
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = pacaca
+		}
+		
+		#Nekok Yaotl - NEK
+		NEK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				nekokiaw orosi
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = otopamean_language
+			capital = nekokiaw
+		}
+		
+		#Coto - CTO
+		CTO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				coctu boruca quepos
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = coctu
+		}
+		
+		#Tariaca - TRC
+		TRC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tariaca
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cabecar - CBC
+		CBC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kabeka dererri
+			}
+			discovered_regions = {
+				central_america_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#-------------------------- Aridoamerica ----------------------------
+		
+		#Acaxee - ACX
+		ACX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				badiraguato tamazula otaez topia
+			}
+			
+			discovered_regions = {
+				mesoamerica_region
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cocopa - COP #Xawiƚƚ Kwñchawaay
+		COP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kwapa
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Guachichil - GUC #Cuauchichil
+		GUC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ma_tehua_llan mazatlpilli guanchenis
+				mazatepec miopacoas galeana guachichil
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Mayo (Yoreme) - YRM
+		YRM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ahome baborigame huatabampo chinipas
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Eudeve - EUD #Opata statelet
+		EUD = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cucurpe
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = cucurpe
+		}
+		
+		#Teg�is - TGU #Opata statelet
+		TGU = {
+			type = pop
+			
+			add_pops_from_locations = {
+				batuco
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = batuco
+		}
+		
+		#Jovas - JOV #Opata statelet
+		JOV = {
+			type = pop
+			
+			add_pops_from_locations = {
+				babicora papigochic cosihuiriachi sahuaripa
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = sahuaripa
+		}
+		
+		#Teg�ima - TEG #Opata statelet
+		TEG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aritpa aconchi corodehuachi#Corodêguachi
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = aritpa
+		}
+		
+		#Ca�inachis - CNH #Opata statelet
+		CNH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				oposura hue_hue_ri_gi_ta
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = oposura
+		}
+		
+		#Akimel o'odham (Upper Pima/River Pima) - PIM
+		PIM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				akimel_oodham kohatk
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			capital = akimel_oodham
+		}
+		
+		#Hohokam - HHK #https://en.wikipedia.org/wiki/Hohokam
+		HHK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				dzil_nchaa_sian tse_binestie guwevkabaya liinabaha nadah_dogalnine dzil_taadn dilzhee  jocome
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = hokan_language
+			capital = dzil_nchaa_sian
+		}
+		
+		#Sobaipuri (Upper Pima) - SOB
+		SOB = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sobaipuri
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			capital = sobaipuri
+		}
+		
+		#Tohono O'odham (Upper Pima/Desert Pima) - TOO #https://en.wikipedia.org/wiki/Tohono_O%CA%BCodham
+		TOO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				himuris koklolodi tohono_oodham
+				huhuhla totokwan
+				north_hia_ced_oodham south_hia_ced_oodham
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+			capital = akimel_oodham
+		}
+		
+		
+		#O'ob (Lower Pima) - OOB #https://www.gob.mx/inpi/es/articulos/etnografia-del-pueblo-pima-o-ob
+		OOB = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pitic ures soyopa matape
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = soyopa
+		}
+		
+		#Rar�muri - RAR
+		RAR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sainapuchi babonoyaba jae_aaya cocoyome gonogochi
+				nonoava mesquite guiaquitas cerocahui
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Yaqui (Yoreme) - YAQ
+		YAQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guaimas yoreme
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			capital = yoreme
+		}
+		
+		#Hopi - HOP https://en.wikipedia.org/wiki/Hopi
+		HOP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				walpi shungopavi
+				orayvi tu_dotlizh_ndee
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			capital = orayvi
+		}
+		
+		#Diné - DNE https://en.wikipedia.org/wiki/Navajo
+		DNE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chinili tse_bitai dinetah tselgaii moanunts winimuc to_aheedliinii
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = nadene_language
+			capital = dinetah
+		}
+		
+		#Zuni - ZNI
+		ZNI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kin_ligaai tsezhin_deezahi ni_alniigi halona_idiwana
+			}
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = zuni_language
+			capital = halona_idiwana
+		}
+		
+		#Teypana pueblo - TEY
+		TEY = {
+			own_control_core = {
+				teypana
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			tolerated_cultures = {
+				keres_culture
+			}
+			court_language = tanoan_language
+			capital = teypana
+		}
+		
+		#Isleta Pueblo (Shiewhibak) - ISL
+		ISL = {
+			own_control_core = {
+				shiewhibak
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = keres_language
+			capital = shiewhibak
+		}
+		
+		#Acoma Pueblo (�ak?u) - ACO
+		ACO = {
+			own_control_core = {
+				aaku
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = keres_language
+			capital = aaku
+		}
+		
+		#Zia Pueblo - KER
+		KER = {
+			own_control_core = {
+				tsiya
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = keres_language
+			capital = tsiya
+		}
+		
+		#Tano - TNN
+		TNN = {
+			own_control_core = {
+				than_u_ge #Tano Tribe
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = tanoan_language
+			capital = than_u_ge
+		}
+		
+		#Taos pueblo (Ia?oph�ybo) - TAO
+		TAO = {
+			own_control_core = {
+				ialophaybo
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = tanoan_language
+			capital = ialophaybo
+		}
+		
+		#Sandia Pueblo (Tuf Shur Tia) - TST
+		TST = {
+			own_control_core = {
+				tuf_shur_tia #Sandia Pueblo
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = tanoan_language
+			capital = tuf_shur_tia
+		}
+		
+		#Ohkwee �w�ngeh - OHK
+		OHK = {
+			own_control_core = {
+				ohkweeo_owingeh
+			}
+			include = "amerindian_tribe_settled_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			court_language = tanoan_language
+			capital = ohkweeo_owingeh
+		}
+		
+		#Totorame - TTR
+		TTR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chiametlan maloya mazatlan
+			}
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			capital = mazatlan
+		}
+		
+		#Xixime - XIX
+		XIX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guarisamey tayoltita
+			}
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			capital = guarisamey
+		}
+		
+		#Tahue - TAE
+		TAE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quetzalla piaxtla culiacan
+			}
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+			capital = culiacan
+		}
+		
+		#Guasave - GUV
+		GUV = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sinaloa
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tepehuan - TPH
+		TPH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				papasquiaro tepehuan canatlan coneto inde mapimi
+				guanacevi guajoquilla baopapas mezquital odam
+				nilapohuana
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xumanos - XUM
+		XUM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chinaitih patarabueye tseichi xumani tahuunde
+				suma east_hanos west_hanos manso
+				tsesh_ke_shende tcha_shka_ozhaye kwahada tucumcari natages
+				kanahatino sha_ia_nde kol_kuka teyas mashgalende
+				tchokana penatuka kwaaru paruhuya
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tamauliteco - TML
+		TML = {
+			type = pop
+			
+			add_pops_from_locations = {
+				atanagunypacam hualahuises pantlan mante tula
+				magueyes tamaulipeco maratine
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#K'itaish - KIH
+		KIH = { #https://en.wikipedia.org/wiki/Kichai_people
+			type = pop
+			
+			add_pops_from_locations = {
+				tawakoni tanimuu kitsai yscani tenawa taovaya
+			}
+			
+			discovered_regions = {
+				aridoamerica_region
+			}
+			
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#-------------------------- Colombia ----------------------------
+		
+		#Tairona - TAI
+		TAI = {
+			own_control_core = {
+				teyuna chayrama yaharo
+			}
+			starting_technology_level = 0
+			include = "amerindian_tribe_colombia"
+			government = {
+				ruler = random
+			}
+			court_language = tayrona_language
+			capital = teyuna
+		}
+		
+		#Muyquyta - ZIP
+		ZIP = {
+			own_control_core = {
+				funza chicaquicha choconta caqueza bosa_colombia
+			}
+			starting_technology_level = 0
+			include = "amerindian_tribe_colombia"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = funza
+		}
+		
+		#Chunsua - ZAQ
+		ZAQ = {
+			own_control_core = {
+				chunsua suamox boiaca duitama
+			}
+			starting_technology_level = 0
+			include = "amerindian_tribe_colombia"
+			government = {
+				ruler = random
+			}
+			court_language = chibchan_language
+			capital = chunsua
+		}
+		
+		#Zenú - ZEN https://en.wikipedia.org/wiki/Zen%C3%BA
+		ZEN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sinu upper_sinu zenues sincel one
+			}
+			include = "amerindian_tribe_colombia"
+			government = {
+				ruler = random
+			}
+			court_language = sinu_language
+			capital = sinu
+		}
+		
+		#Quimbaya - QBY
+		QBY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				otun umbra gorrones vijes
+			}
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Guayupe - GYP
+		GYP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guayupes upia humadea metica
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cumanagoto - CMG
+		CMG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cumanagoto cumana
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Pemon - PMN
+		PMN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kumarakapay tumeremo macuxi
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cuica - CUC
+		CUC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mukas barinas tampacal tapo
+				suripa tachira
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tatuy - TTY
+		TTY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				arapuey chama_venezuela
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tahamíes - THM
+		THM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tahamies yolombo aburra guarzo cocorna pantagoras
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nutabes - NUT
+		NUT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				noris mayaba ebejico sotachiro nechi
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Pijao - PIJ
+		PIJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				caloto tulua buga caly
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Coyaima - COY
+		COY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				coyaima quicuima
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tama - TAM
+		TAM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				otas
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Calima - CIM
+		CIM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				macaregua simiti
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Puben - PUB
+		PUB = {
+			type = pop
+			
+			add_pops_from_locations = {
+				yauto munchique
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chimila - CML
+		CML = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tamalameque ariguani sicarate
+			}
+			
+			include = "expl_southamerica"
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Magua
+		TNO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				magorix yaqui moca cotui
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Marien
+		MAE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				marien iguamuco
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Maguana
+		MGU = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cibao jarabacoa maguana banique
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Jaragua
+		JRG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				jaragua cahay yaguana
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Higuey
+		HGY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				yuma hicayagua cayacoa yamasa
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Guaynia
+		GAY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guaynia guama
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Ciboney
+		CBO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				yateras bayaquitiri mayari guantanamo baracoa sagua barajagua
+				maynoa yaguabo aguacadiba guaygata anaya oristan
+				bayamo macaca jiguani cueiba maguanes bani_cuba lora cayaguayo
+				south_camaguey camaguey mabuya guaimaro
+				cubanacan east_cubanacan magon ornofay guamuhaya east_sabaneque central_sabaneque sabana
+				habana batanabo guanimar macoriges west_sabaneneque hanabana jagua
+				guahaba baynoa
+				guacayakima haniguayagua
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Lucayan
+		LCY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				abacoa exuma guanima eleuthera
+				guanahani jumento inagua caycos bahama lucayoneque
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Macorix
+		MCX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cayguani baoruco yaquimo azua bani
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Ciguayo
+		CGY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				bohio samana cubao ciguayo bavaro boya
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Boriken
+		BRK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ayamaco arasibo guaynabo guaraca
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Igneri
+		IGR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				wadadli liamuiga walichi anegada ayay carucairi
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#Kalinago
+		KGN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				waitu_kubuli iguanacaera hewanorra youloumain ichirouganaim kamahuya alubera cairiani
+			}
+			include = "caribbean_tribe"
+		}
+		
+		#-------------------------- Andes ----------------------------
+		
+		
+		#Quito - QTO
+		#Very advanced Pop based, intertwined with the Caras to the point of being almost confederated
+		QTO = { #https://es.wikipedia.org/wiki/Reino_de_Quito
+			type = pop
+			
+			add_pops_from_locations = {
+				quito tacunga panzaleo
+			}
+			
+			discovered_areas = {
+				quitu_area
+				andes_sea_zones_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cara - CAX
+		#Very advanced Pop based, intertwined with Quito to the point of being almost confederated
+		CAX = { #https://es.wikipedia.org/wiki/Caranquis
+			type = pop
+			
+			add_pops_from_locations = {
+				mindu imbaguarbak otavalo
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chimu - CHM
+		CHM = { #https://es.wikipedia.org/wiki/Reino_Chim%C3%BA
+			own_control_core = {
+				chan_chan chimu chao paramonga
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quingnam_language
+			capital = chan_chan
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xllang - XLL
+		XLL = { #https://es.wikipedia.org/wiki/Reino_Sic%C3%A1n
+			own_control_core = {
+				xllang apurlec pakatnamu farfan sana
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = muchik_language
+			capital = xllang
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sacha-p-qulla - CYA
+		CYA = { #https://es.wikipedia.org/wiki/Cultura_chachapoyas
+			own_control_core = {
+				kuelap huancachaca karajia olan congona utkhupampa moyobamba
+				huamanpata lamas chatuza
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = cariban_language
+			capital = kuelap
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tallan - TLN
+		#Settled Pop based, but divided in multiple chieftains
+		TLN = { #https://es.wikipedia.org/wiki/Tall%C3%A1n
+			type = pop
+			
+			add_pops_from_locations = {
+				chira tumbes nariguala nunura
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ichma - ICM
+		ICM = { #https://es.wikipedia.org/wiki/Cultura_ychsma
+			own_control_core = {
+				ishma rimaq huarochiri
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = ishma
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Wanka - WAN
+		#Settled Pop based, but divided in multiple chieftains
+		WAN = { #https://es.wikipedia.org/wiki/Huanca
+			type = pop
+			
+			add_pops_from_locations = {
+				wari_willka willka_ulo ingapirca tunanmarca tarmatambo llampqui
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Hanan Chanka - HNK
+		HNK = { #https://es.wikipedia.org/wiki/Chanca
+			own_control_core = {
+				allpas tampu_machay churkampa llacsapallanca tayaccasa
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = allpas
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Urin Chanka - URC
+		URC = { #https://es.wikipedia.org/wiki/Chanca
+			own_control_core = {
+				huaman_karpa sondor challwanqa
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = huaman_karpa
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chincha - CIC
+		CIC = { #https://es.wikipedia.org/wiki/Cultura_chincha
+			own_control_core = {
+				chinchay puka_tampu ica
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = chinchay
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Qusqu - CSU
+		#Should ally Ayarmaca against the Charka
+		CSU = { #https://es.wikipedia.org/wiki/Curacazgo_incaico
+			own_control_core = {
+				qusqu quillarumiyoc
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			government = {
+				ruler = csu_qhapaq_yupanki
+				ruler_term = {	 character = csu_manco_qhapaq start_date = 1197.1.1 end_date = 1230.1.1 regnal_number = 1	}
+				ruler_term = {	 character = csu_sinchi_ruqa start_date = 1230.1.1 end_date = 1260.1.1 regnal_number = 1	}
+				ruler_term = {	 character = csu_lluqi_yupanki start_date = 1260.1.1 end_date = 1290.1.1 regnal_number = 1	}
+				ruler_term = {	 character = csu_mayta_qhapaq start_date = 1290.1.1 end_date = 1320.1.1 regnal_number = 1	}
+				ruler_term = {	 character = csu_tarco_huaman start_date = 1320.1.1 end_date = 1320.6.1 regnal_number = 1	}
+				ruler_term = {	 character = csu_qhapaq_yupanki start_date = 1320.6.1 regnal_number = 1	}
+				
+				regnal_numbers = {
+					name_manco = 1
+					name_sinchi = 1
+					name_lluqi = 1
+					name_mayta = 1
+					name_tarco = 1
+				}
+				
+				laws = {
+					cultural_traditions_law = martial_society
+				}
+			}
+			court_language = quechuan_language
+			tolerated_cultures = {
+				killke_culture
+			}
+			
+			capital = qusqu
+		}
+		
+		#Ayarmaca - AYA
+		AYA = { #https://es.wikipedia.org/wiki/Ayarmaca
+			own_control_core = {
+				yanatile ullantaytampu urupampa pisaq
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			government = {
+				ruler = aya_tocay_capac
+				ruler_term = {	 character = aya_tocay_capac start_date = 1305.1.1 regnal_number = 1	}
+				
+			}
+			court_language = quechuan_language
+			capital = pisaq
+		}
+		
+		#Pinagua - PIG
+		PIG = { #https://es.wikipedia.org/wiki/Ayarmaca
+			own_control_core = {
+				pikillaqta
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = pikillaqta
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Paka Jaqis - PCJ
+		PCJ = { #https://es.wikipedia.org/wiki/Se%C3%B1or%C3%ADo_pacajes
+			own_control_core = {
+				axawiri machaqa tiwanaku viacha calamarca chuqiyapu sicasica
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = axawiri
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Lupijaki - LUP
+		LUP = { #https://es.wikipedia.org/wiki/Lupaca
+			own_control_core = {
+				chucuito pomata contornasa
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = chucuito
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Charka - CRA
+		CRA = { #https://es.wikipedia.org/wiki/Pueblo_charca
+			own_control_core = {
+				charka colquechaca arque sachchaa_mukku sarkajpa
+			}
+			
+			include = "amerindian_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = charka
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kana - KNA
+		KNA = { #https://es.wikipedia.org/wiki/Aimaras
+			own_control_core = {
+				oruro ayaviri sausaya
+			}
+			
+			discovered_areas = {
+				puna_area acamama_area chala_area
+				qullaw_area yunga_area atacama_area
+				andes_sea_zones_area
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = ayaviri
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Karanka - KRK
+		KRK = { #https://es.wikipedia.org/wiki/Aimaras
+			own_control_core = {
+				karanka kori_bara_karaa_ancas matarjawira
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = karanka
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Qulla - QUL
+		QUL = { #https://es.wikipedia.org/wiki/Reino_colla
+			own_control_core = {
+				hatunqulla macaya wankani
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = hatunqulla
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sura - SUR
+		SUR = { #https://es.wikipedia.org/wiki/Reinos_aimaras
+			own_control_core = {
+				sura paititi ayopaya incarraqay
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = aymara_language
+			capital = sura
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Omaguaca - OMG
+		#knows agriculture, irrigation and terrace building
+		OMG = { #https://es.wikipedia.org/wiki/Omaguacas
+			type = pop
+			
+			add_pops_from_locations = {
+				omaguacas tilcara cochinoca salta toara jujuy
+			}
+			
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area cuyo_area
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Calva - CAV
+		CAV = { #https://es.wikipedia.org/wiki/Paltas
+			own_control_core = {
+				calvas
+			}
+			
+			discovered_areas = {
+				quitu_area
+				puna_area suni_area rupa_rupa_area chala_area
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = chicham_language
+			capital = calvas
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Malacato - MLT
+		MLT = { #https://es.wikipedia.org/wiki/Paltas
+			own_control_core = {
+				malacatos
+			}
+			
+			discovered_areas = {
+				quitu_area
+				puna_area suni_area rupa_rupa_area chala_area
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = chicham_language
+			capital = malacatos
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Garrochamba - GRR
+		GRR = { #https://es.wikipedia.org/wiki/Paltas
+			own_control_core = {
+				cangochamba
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = chicham_language
+			capital = cangochamba
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Manta - MNT
+		#Settled Pop based, but divided in multiple chieftains
+		MNT = { #https://es.wikipedia.org/wiki/Cultura_mante%C3%B1a
+			type = pop
+			
+			add_pops_from_locations = {
+				manta caran
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Guancavilca - GCV
+		#Settled Pop based, but divided in multiple chieftains
+		GCV = { #https://es.wikipedia.org/wiki/Cultura_Huancavilca
+			type = pop
+			
+			add_pops_from_locations = {
+				guancavilca guayaquil puna
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Baba - BBA
+		#Settled Pop based, but divided in multiple chieftains
+		BBA = { #https://es.wikipedia.org/wiki/Cultura_Huancavilca
+			type = pop
+			
+			add_pops_from_locations = {
+				baba babahuyu
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Shabalula - SLL
+		#shabalula and hatun_kanar, knows agriculture and terraces. Organized in a council of chiefs.
+		SLL = { #https://en.wikipedia.org/wiki/Ca%C3%B1ari
+			type = pop
+			
+			add_pops_from_locations = {
+				shabalula
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Hatun Kañar - HKR
+		#shabalula and hatun_kanar, knows agriculture and terraces. Organized in a council of chiefs.
+		HKR = { #https://en.wikipedia.org/wiki/Ca%C3%B1ari
+			type = pop
+			
+			add_pops_from_locations = {
+				hatun_kanar
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Puruhá - PUU
+		PUU = { #https://es.wikipedia.org/wiki/Puruh%C3%A1
+			type = pop
+			
+			add_pops_from_locations = {
+				liribamba alausi
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Pukamuru - PUK
+		PUK = { #https://es.wikipedia.org/wiki/Bracamoros
+			type = pop
+			
+			add_pops_from_locations = {
+				pukamuru namballe ingatambo
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Huancapampa - HPP
+		HPP = { #https://es.wikipedia.org/wiki/Intermedio_Tard%C3%ADo
+			type = pop
+			
+			add_pops_from_locations = {
+				huancapampa
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Huacrachuco - HCR
+		HCR = { #https://es.wikipedia.org/wiki/Intermedio_Tard%C3%ADo
+			type = pop
+			
+			add_pops_from_locations = {
+				huacrachuco
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Bagua - BAG
+		BAG = { #https://es.wikipedia.org/wiki/Bracamoros
+			type = pop
+			
+			add_pops_from_locations = {
+				bagua awajun
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Huamachuco - HCH
+		HCH = { #https://www.deperu.com/cultural/sitios-arqueologicos/complejo-arqueologico-markahuamachuco-2619 https://revistas.unife.edu.pe/index.php/consensus/article/download/404/361/1319
+			own_control_core = {
+				markahuamachuco
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = markahuamachuco
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cuismancu - CUI
+		CUI = { #https://revistas.pucp.edu.pe/index.php/boletindearqueologia/article/view/1847/1783
+			own_control_core = {
+				tantaricuy kaxa_marca illapa llucho
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = tantaricuy
+			government = {
+				ruler = random
+			}
+			tolerated_cultures = { xllang_culture }
+		}
+		
+		#Huaylas - HUA
+		#Settled Pop based, but divided in multiple chieftains
+		HUA = { #https://www.elincape.com/historia-de-ancash/nacion-huaylas-y-sus-limites/
+			type = pop
+			
+			add_pops_from_locations = {
+				choquerecuay waricoto willcahuain tumshukaiko
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xauxa - XAU
+		#Settled Pop based, but divided in multiple chieftains
+		XAU = { #http://blog.pucp.edu.pe/blog/sergionunez/2010/10/11/quienes-eran-los-xauxas/
+			type = pop
+			
+			add_pops_from_locations = {
+				hatun_xauxa
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Casma - CSA
+		#Very high level Pop base, already a confederation of tribes very close to centralising
+		CSA = { #https://es.wikipedia.org/wiki/Cultura_Casma
+			type = pop
+			
+			add_pops_from_locations = {
+				huacatambo manchan
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Collique - CLQ
+		CLQ = { #https://es.wikipedia.org/wiki/Cultura_Collique
+			own_control_core = {
+				collique
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			court_language = muchik_language
+			capital = collique
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Canta - NTA
+		NTA = { #https://www.arqueologiadelperu.com.ar/canta.htm
+			own_control_core = {
+				cantamarca
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			court_language = muchik_language
+			capital = cantamarca
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Huarco - HRC
+		HRC = {
+			own_control_core = {
+				huarco incahuasi chilca
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = huarco
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Atavillos - ATV
+		#Settled Pop based, but divided in multiple chieftains
+		ATV = { #https://revistasinvestigacion.unmsm.edu.pe/index.php/sociales/article/download/17481/14725/61112
+			type = pop
+			
+			add_pops_from_locations = {
+				chiprac
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Yawyu - YAW
+		#Settled Pop based, but divided in multiple chieftains
+		YAW = { #https://muniyauyoslima.gob.pe/ciudad/resena-historica/
+			type = pop
+			
+			add_pops_from_locations = {
+				naupahuasi pumaruri
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chancay - CCY
+		#Settled Pop based, but divided in multiple chieftains
+		CCY = { #https://muniyauyoslima.gob.pe/ciudad/resena-historica/
+			type = pop
+			
+			add_pops_from_locations = {
+				chancay quillahuaca
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sora - SRA
+		SRA = {
+			own_control_core = {
+				soras
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = soras
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Mayonmarka - MYM
+		#Settled Pop based, made into normal tag for balance
+		MYM = {
+			own_control_core = {
+				choccalpata paqwayranra
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+			capital = paqwayranra
+		}
+		
+		#Pocra - PCR
+		#Allied with the Hannan Charka
+		PCR = {
+			own_control_core = {
+				wari_peru pariahuanca
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = wari_peru
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Parinacocha - PCO
+		PCO = {
+			own_control_core = {
+				tucssa
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = tucssa
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Aruni - ANI
+		ANI = {
+			own_control_core = {
+				aruni
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = aruni
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Churajon - CHJ
+		CHJ = {
+			own_control_core = {
+				caraveli atico
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			court_language = aymara_language
+			capital = atico
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chiribaya - CBY
+		#Settled Pop based
+		CBY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				uyo_uyo tampo arequipa puquina ichuna yanque
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Canchi - CNC
+		CNC = {
+			own_control_core = {
+				waqrapukara
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			
+			court_language = quechuan_language
+			capital = waqrapukara
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Collagua - LLG
+		LLG = { #https://pueblosoriginarios.com/sur/andina/collagua/collagua.html
+			type = pop
+			
+			add_pops_from_locations = {
+				yanque arequipa
+			}
+			
+			include = "expl_southamerica"
+			include = "expl_andean"
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Camana - AMN
+		AMN = { #https://pueblosoriginarios.com/sur/andina/collagua/collagua.html
+			type = pop
+			
+			add_pops_from_locations = {
+				camana
+			}
+			
+			include = "andean_tribe"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Umasuyus - UMA
+		UMA = { #https://es.wikipedia.org/wiki/Achacachi
+			own_control_core = {
+				achacachi
+			}
+			
+			include = "andean_monarchy"
+			include = "expl_andean"
+			court_language = aymara_language
+			capital = achacachi
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Qhara Qhara - QQH
+		#Settled
+		QQH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				oronckota payacullo
+			}
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area cuyo_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ccantumarcani - CCT
+		#Settled https://es.wikipedia.org/wiki/Chichas
+		CCT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ccantumarcani thumilki
+			}
+			
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area cuyo_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tupiza - TUP
+		#Settled https://es.wikipedia.org/wiki/Chichas
+		TUP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chake tupiza camataqui tarija
+			}
+			
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area cuyo_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chuwi - CHW
+		CHW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chuwi takopaya mizque inka_llaqta
+			}
+			
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area cuyo_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kallawaya - KWY
+		KWY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kallawaya caupolican pumanota
+			}
+			discovered_areas = {
+				
+				puna_area suni_area rupa_rupa_area acamama_area chala_area
+				qullaw_area yunga_area atacama_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Killaka - KLL
+		#Already a federation of tribes
+		KLL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				uyuni hatun_killaka aullagas
+			}
+			
+			discovered_areas = {
+				qullaw_area yunga_area atacama_area
+			}
+			
+			include = "andean_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Killke - KKE
+		#Settled, NOTE transformed into normal tag for the sake of balance
+		KKE = {
+			own_control_core = {
+				willka_pampa auccapana yanahuara
+			}
+			discovered_areas = {
+				puna_area suni_area rupa_rupa_area acamama_area chala_area
+				qullaw_area
+			}
+			
+			include = "andean_tribe"
+			capital = yanahuara
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chono
+		CNO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chacayacu daule machala yaguachi yazne
+			}
+			
+			include = "andean_tribe_pops"
+			include = "expl_andean"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Bauré
+		BAU = {
+			type = pop
+			
+			add_pops_from_locations = {
+				baure
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				chaco_region brazil_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Allentiac
+		ALC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				jachal pivn_man_antu sankancete ullum zonda
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Millcayac
+		MYC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				angualasto huanacache guentota jaurua millcayac uco uspallata
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Picunche
+		PHE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pikumche cauquen kolchawwe kuruko mawlen rangkawe
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cuquimpu
+		CPU = {
+			type = pop
+			
+			add_pops_from_locations = {
+				elki limari liwen millapel
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Copayacu
+		CYC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				qupayapu chanaral huasco kellollampu tatal
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Calchaqui
+		CCH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				fiambalao guandacol tamberias
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Quimes
+		QIM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aconquija kilmes shincal tolombon yukkuman
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Quitor
+		QTR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ckara_ama loa tocopilla tulor
+			}
+			
+			include = "andean_tribe_pops"
+			discovered_regions = {
+				andes_region
+				la_plata_region
+			}
+			government = {
+				ruler = random
+			}
+		}
+		
+		############# Brazil ###############
+		
+		#Kuikuro
+		KUI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kuhikugu kukuro_kalapalo
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Marajoara
+		MRJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				marajoara pixipixi arari ananatuba
+				anajas curumu
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tupinamba - TPA
+		TPA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sauipe arakaiu itabaiana itaratim jiribatuba jucuru kururupu
+				rio_pardo salinas tapuitapera tapuy tupinambarana
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tupiniquim - TPQ
+		TPQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tupiniquim andarai ararayu_aba aruja cataguas coutins cunhambebe goana_para gohayo
+				guarapiri guaratingueta hahahae ita_atiaia ita_kua_y itaberaba itaitu itapemirim
+				jacarei jerubatuba jose_calcado kapiwary kiri_kere lorena mage mantiqueira marataiama
+				mogi_das_cruzes mogi_mirim mokaie nandu nheteroia nova_friburgo paraibuna parnaiba
+				piratininga piray sao_luis_do_paraitinga sao_roque sao_sebastiao tamoio tanhacu taubate
+				uaua y_uasu
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Carijó
+		CRJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				carijo apytere arroio iaguarauna karai_yo kariio kaxixo parnanguara sambaqui tubarao xokleng
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ñandeva
+		NDV = {
+			type = pop
+			
+			add_pops_from_locations = {
+				akaray canindeyu curuguaty kaaguy_jehasapa kaarendy kuarepoti kyyindy mbya nemby takuru_puku tsiripa ygana yguazu
+				agaes avaes itapua payubre taragui uruguay yapeyu
+				ibicui inhandui jeguakava nandeva
+				cacapava icabaqua tupancireta vacacai
+				jacui patos sao_leopoldo san_antonio_patrulha tapes
+				cangucu chuy jaguarao piratini piratinin
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kaiowá
+		KIO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kaiowa ayvu_pora chiripa kaiwa maracaju pai_tavytera
+			}
+			
+			discovered_regions = {
+				brazil_region
+				chaco_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ava
+		AVA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				bia_mbya guarayo huacareta mbia mrubicha muyupampa pomabamba samaipata tomina
+			}
+			
+			discovered_regions = {
+				brazil_region
+				chaco_region
+				andes_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xetá
+		XTA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				umuarama
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Goitacaz
+		GCZ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guaitaca
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Aimoré
+		AIM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aimore acoroazes aracuai borun caete_brasil caratinga conceicao ipueira irece itabira
+				itajui itanhomi jequitinhonha krenak malalis manhuacu mariana matipo mucuri mutum
+				nac_nanuk nanuque parnagua pecanha porte santa_barbara santa_luzia serro sete_lagoas urucu
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kiriri
+		KRR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kiriri caico itapicuru jucas kaimbe karapoto kariri paiaco pinheiro quincu telha yapuata
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Caeté
+		CAE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				caete caxanga iate ipojuca
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sucuru
+		SUC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				xukuru arerius quixara reriu tubiba
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Potiguara
+		POT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				potiguara kaaysara monxoro paraiba payaku poti utuva
+			}
+			
+			discovered_regions = {
+				brazil_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Coosa Paramount Chiefdom (De Soto)
+		COO = { #https://en.wikipedia.org/wiki/Coosa_chiefdom
+			type = pop
+			
+			add_pops_from_locations = {
+				coosa talimachusi ulibahali itaba utsutigway apica tuasi callamaco
+				ohatchee chatanugi ishtaboli hytop
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = coosa
+		}
+		
+		#Otali - OTL
+		OTL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hiwasee tellico chestowee chalahume satapo coste chiaha
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = cherokee_language
+		}
+		
+		#Coweta
+		COW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				etoho coweta kealedji pakanahuili tussahaw
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = coweta
+		}
+		#Tuckabatchee
+		TUC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tuckabutche tescuntee chatahoochee kasihta
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = coweta
+		}
+		#Eufaula Muscogee
+		EUF = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hitchauta eufaula omusee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = eufaula
+		}
+		#Capachequi Paramount Chiefdom (De Soto)
+		CPQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				capachequi alapaha sawokli
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = capachequi
+		}
+		#Toa Paramount Chiefdom (De Soto)
+		TOA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				toa hitchiti ocmulgee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = toa
+		}
+		#Ocute Paramount Chiefdom (De Soto)
+		OCT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ocute cofaqui ichisi altamaha oconee ohoopee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = ocute
+		}
+		#Hitchiti
+		HIT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pallachacola uzachile mikasuki alapahoochee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = mikasuki
+		}
+		#Alabama-Albaamaha
+		ALA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				apafalaya koasati apotaka_hacha
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = apafalaya
+		}
+		#Koasati-Cousshata
+		KST = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cussate chuwalee tullahoma choate cootcla bledsoe sequatchie
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = apafalaya
+		}
+		#Choctaw-Chatha
+		CHC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				taliepacana consha tombigbee escatawppa tohome okeloussa eiowane
+				eianamogola
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = taliepacana
+		}
+		#Chickasaw-Chickasha
+		CHS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hogehege napochi buddahatchie yaneka tchoukafala sacchuma
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = tchoukafala
+		}
+		#Muscogee/Tuscaloosa Paramount Chiefdom (De Soto)
+		#https://en.wikipedia.org/wiki/Muscogee
+		MCG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				atahachi piachi humati caxa mabila zabusta casiste talisi
+				abihka pakana wakokai uchee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+		}
+		
+		#Quigaltam Paramount Chiefdom (De Soto)
+		QGM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quigualtam tiou yazoo koroa
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = quigualtam
+		}
+		#Quizquiz Paramount Chiefdom (De Soto)
+		QUZ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quizquiz taposa chucalissa chatata ongoulastoga
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = chucalissa
+		}
+		#Natchez Paramount Chiefdom (De Soto)
+		NCZ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				natchez chittaloosa houma mosco chicksawhe capino caftacha
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = natchez
+		}
+		#Apalachee
+		APA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				apalachee anhayca azile
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = apalachee
+		}
+		#Guale
+		GUL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tacatacaru tamathli tybee ossabaw sapelo canoochee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = ossabaw
+		}
+		#Kaskinampo
+		KSK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				daguwanalahi aniyutsi spithota tombigby kaskinampo warioto
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = kaskinampo
+		}
+		#Kaw/Kanza/Angel Mound
+		KAW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				patoka gichthanne pawwikamsipi
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = dhegiha_language
+			capital = patoka
+		}
+		#Umoho/Omaha/Tolu
+		UMO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				lewekeomi tywhapita kuttawa aaboukingon
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = dhegiha_language
+			capital = kuttawa
+		}
+		#Wazhazhe/Osage/Wickliffe Site/Towosaghy
+		WZZ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				shawanoe charquis pennyrile cuttaway towosaghy cholohollay ni_okaska
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = dhegiha_language
+			capital = charquis
+		}
+		
+		PPK = {
+			type = pop
+			#Ppanka/Ponca, Kincaid Site https://en.wikipedia.org/wiki/Kincaid_Mounds_State_Historic_Site
+			
+			add_pops_from_locations = {
+				kaskaskia ochechiton mitchigamea chepoussa st_francois_mts
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = dhegiha_language
+			capital = kuttawa
+		}
+		#Ugaxhpa/Quapaw/Obion site
+		UGX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hatchie obion chewalla
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = dhegiha_language
+			capital = obion
+		}
+		#Guwahiyi/Keowee Lower Towns Cherokee
+		GWY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				italwa keowee oolenoy tugaloo nacoochee estatoe
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = cherokee_language
+			capital = keowee
+		}
+		#Giduwa/Kituwah Middle Town/Valley Town Cherokee
+		GDW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kituwa quanasee nikwasi guaxule tahkeeosteh
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = cherokee_language
+			capital = kituwa
+		}
+		#Tsoyaha-Yuchi
+		TSO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hogohega amoyeli_gunahita canasoga watauga wattogee mondongachate
+				pelisipi maniatique kallamuckee tsoyaha shawnee mosopeleacipi tazewell bland chiswell
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = maniatique
+		}
+		#Cofitachequi Paramount Chiefdom (De Soto)
+		CFQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cofitachequi talimeco hymahi ilasi winyah winnee pocotaligo etiwan wando santee congaree
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = tutelo_language
+			capital = cofitachequi
+		}
+		#Joara Paramount Chiefdom (De Soto)
+		JOA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				uwharrie waxhaw keyauwee joara iswa guaquili eswawpuddenah catawba pacolate amoyescheck
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = tutelo_language
+			capital = joara
+		}
+		#Powhatan Paramount Chiefdom/Tsenacommacah
+		TSN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				powhatan pamunkey weyanock appamatuck
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = powhatan_language
+			capital = powhatan
+		}
+		#Acolapissa
+		ACL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				biloxi pascagoula
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = pascagoula
+		}
+		#Mobile
+		MBL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				patsaliga mobile conecuh pensacola
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = mobile
+		}
+		#Chatot
+		CTT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chatot choctawhatchee watappo chootawatchee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = chatot
+		}
+		#Yamasee
+		YMS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kiokee wahachee kosalu selkehatchie ogeechee saluda generostee enoree
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = saluda
+		}
+		#Cusabo
+		CSB = {
+			type = pop
+			
+			add_pops_from_locations = {
+				combahee kiawah coosaw wimbee
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = muskogee_language
+			capital = coosaw
+		}
+		
+		#Hoocak/Ho-Chunk/Winnebago
+		HCK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sheboygan manitowoc millioke kenosha
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chiwere_language
+			capital = manitowoc
+		}
+		
+		#Baxoje-Iowa
+		BXJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				boojwiikwedong kakaling mendota
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chiwere_language
+			capital = mendota
+		}
+		
+		#Ofo-Mosopelea People
+		OFO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				olentangy chianouske scioto ethapetha hocking mineami pickawillany
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Taneks Siouan
+		TKS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				eskalapia nepepimmesipi kentucky eskippakaithiki cuttawba assereniet oheyandewa adena
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Moneton Siouan
+		MTN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				moneton mohetan kanawha ouasioto pocatalico chinquetana weotowe chattarawa chenoka xualae yuchi tsalagi anigiduwagi
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Monacan
+		#https://en.wikipedia.org/wiki/Monacan_Indian_Nation
+		MNC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mowhemencho appomattox rassawek massinacak monasukapanough monahassanugh tegninateo mahock torope
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tutelo
+		#https://en.wikipedia.org/wiki/Tutelo
+		TTL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pintahae saponi occaneechi nessoneick meherrin adshusheer eno alamance saura yadkin sissipahaw tutelo
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Waccamaw
+		#https://en.wikipedia.org/wiki/Waccamaw
+		WCM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				waccamaw necoes woccon peedee
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Timucua
+		#https://en.wikipedia.org/wiki/Timucua
+		TMC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				timucua mocama uriutina malapaz utina mayaca icafui acuera surruque jororo vicela itaraholata uqueten potano napituca
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Calusa
+		#https://en.wikipedia.org/wiki/Calusa
+		CLS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tequesta mayaimi guacata uriparacoxi caloosahatchee okeechobee tequemapo guarungube
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ais
+		#https://en.wikipedia.org/wiki/Ais_people
+		AIX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ais ho_bay
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tocobaga
+		#https://en.wikipedia.org/wiki/Tocobaga
+		TBG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tocaste guazoco mocozo ozita
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nottoway
+		NTT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cheroenhaka waqua wiccacon
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tuscarora/Skarure
+		SKR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cherohenaka_nc kehaukee pamticough gowtano nooherooka cohari dawhee sapponah
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Wenrohronon
+		WRO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tiotoren cattaraugus kanentaweron
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kentaientonga Erie
+		KEN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mahoning_oh ashtabula cuyahoga saucunk
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Erielhonan Erie
+		ERI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				erie shenango kittaning tionesta
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Honniasont Erie
+		HON = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quemahoning conemaugh punxsutawney loyalhanna
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Atrakwaye Susquehannock
+		AKY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				atrakwaye shamokin paxtang connatachequa conewago catoctin juniata
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Carantouan Susquehannock
+		CTN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				wappasening lackawaxen lackawanna scahentowanen wallenpaupack mahoning
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Onojutta Susquehannock
+		ONJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				onojutta mattawana tuckahoe tangasootack loyalsock lycoming massawomeck
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Mohawk/Kanien'kehaka
+		KKA = {
+			
+			own_control_core = {
+				canajoharie teionontatatie oneonta schenectady saratoga ticonderoga kawenote oronia tsiietsenhtha oskennonton itekiatonhniarikon
+			}
+			
+			starting_technology_level = 0
+			include = "haudenosaunee_tribe"
+			include = "expl_amerindian_east_coast"
+			government = {
+				ruler = random
+			}
+			capital = canajoharie
+			
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		
+		#Oneida/Onyotaaka
+		ONY = {
+			
+			own_control_core = {
+				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa
+			}
+			
+			starting_technology_level = 0
+			include = "haudenosaunee_tribe"
+			include = "expl_amerindian_east_coast"
+			government = {
+				ruler = random
+			}
+			capital = onenioteke
+			
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Onondaga/Onondagega
+		ONO = {
+			
+			own_control_core = {
+				tsikahiotsisto otsiningo oswego
+			}
+			
+			starting_technology_level = 0
+			include = "expl_amerindian_east_coast"
+			include = "haudenosaunee_tribe"
+			government = {
+				ruler = random
+			}
+			capital = tsikahiotsisto
+			
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Cayuga/Gayogohono
+		GYO = {
+			
+			own_control_core = {
+				skaniatares assorodus gahato
+			}
+			
+			starting_technology_level = 0
+			include = "expl_amerindian_east_coast"
+			include = "haudenosaunee_tribe"
+			government = {
+				ruler = random
+			}
+			capital = skaniatares
+			
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Seneca/Onondowaga
+		ONN = {
+			
+			own_control_core = {
+				canadaigua geneseo tsonentsiio irondequoit
+			}
+			
+			starting_technology_level = 0
+			include = "haudenosaunee_tribe"
+			include = "expl_amerindian_east_coast"
+			government = {
+				ruler = random
+			}
+			capital = canadaigua
+			
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Pamlico
+		PML = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pamlico neuse coree corani chicora
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		#Doeg
+		DOE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				doeg manassas patawomeck monocacy
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Nanticoke
+		#https://en.wikipedia.org/wiki/Nanticoke_people
+		NTK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				matapeake chicamacomico wicontiss attaock
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Piscataway
+		#https://en.wikipedia.org/wiki/Piscataway_people
+		PSC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				nentego patuxent anacostia potapoco
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Rappahannock
+		#https://en.wikipedia.org/wiki/Rappahannock_people
+		RPP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				rappahannock werowocomoco nanzatico wicocomico
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Croatan
+		#https://en.wikipedia.org/wiki/Croatan
+		CAA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				croatan chowanoke pocosin roanoke hatteras
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Nansemond
+		#https://en.wikipedia.org/wiki/Nansemond
+		NSM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kiskiack nansemond chesapeake
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Accomac-Accawmacke
+		#https://en.wikipedia.org/wiki/Accomac_people
+		ACW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				accomac wicomico
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Mamaceqtaw-Menominee
+		#https://en.wikipedia.org/wiki/Menominee
+		MMQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				menominee chicagon oconto peshtigo whaypaw muhwaosipi pokegama
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Osaakiiwaki-Sauk
+		#https://en.wikipedia.org/wiki/Sauk_people
+		OSK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				osaakiiwaki shebeon saginaw
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Meskawki-Fox
+		#https://en.wikipedia.org/wiki/Meskwaki
+		MSK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				waawiiyaataanong shiawasee wabenasibi
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Kiwigapawa-Kickapoo
+		#https://en.wikipedia.org/wiki/Kickapoo_people
+		KIW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				giwitatigweiasibi wapikisko maumee qusquasrundee sandusky shapoquate
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Fire Nation - Mascouten
+		#https://en.wikipedia.org/wiki/Mascouten
+		MCT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kalamazoo owashtanong sakiwasipi
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Chillicothe-Chalahgawtha Shawnee
+		#https://en.wikipedia.org/wiki/Chalahgawtha
+		CLG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				allegheny youghiogheny conococheague wihlink monongahela ashby
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Mekoche Shawnee
+		#https://en.wikipedia.org/wiki/Mekoche
+		MKC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				onimgohow calicua muskingum
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Kispoko Shawnee
+		#https://en.wikipedia.org/wiki/Kispoko
+		KPK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tuscarawas captina conotton kokosing
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Pekowi/Piqua Shawnee
+		#https://en.wikipedia.org/wiki/Pekowi
+		PKW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				onandagoa massanutten schinhandowi patna_us shenandoah
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Hathawekela Shawnee
+		#https://en.wikipedia.org/wiki/Hathawekela
+		HAT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				antietam opequon wapocomo wappacoma calicuas cacapon
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Bodewadomik-Potawatomi
+		#https://en.wikipedia.org/wiki/Potawatomi
+		BDK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				wequetong manistee mastigon onekama tittabawassee muskegon
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Tamarowa Illinois (also Moingwena, Coiracouentanon)
+		#https://en.wikipedia.org/wiki/Moingona
+		TMW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pisticoui waupecan
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Kahokiaki/Cahokia Illinois, not the city
+		#https://en.wikipedia.org/wiki/Cahokia_people
+		KHK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				peoria theakeiki matsigame
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Kaskankaham/Kaskaskia Illinois
+		#https://en.wikipedia.org/wiki/Kaskaskia
+		KKH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kaskankaham osanamon okaw
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Peoria/Peewareewa Illinois
+		#https://en.wikipedia.org/wiki/Peoria_people
+		PEO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kankakee checagou tiatiki
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Atchakangouen-Miami Proper
+		#https://en.wikipedia.org/wiki/Miami_people
+		AKG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mameiwasipi wapinippi mississinewa
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Piankeshaw Miami
+		#https://en.wikipedia.org/wiki/Piankeshaw
+		PIA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aankwaahsakwa agouasaque wapahani ambraw
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Pepikokia Miami
+		#https://en.wikipedia.org/wiki/Miami_people
+		PEP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kociihsasiipi tippecanoe micewehudehik kineepikwameekwa
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Wea Miami
+		#https://en.wikipedia.org/wiki/Wea
+		WEA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quiaghtena pakamik wabash
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Unami
+		#https://en.wikipedia.org/wiki/Unami_language
+		UNA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				shackamaxon wawassan assunpink wyomissing tohickon paunacussing lehigh cocalico tesinigh muscotnetcong
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Munsee
+		#https://en.wikipedia.org/wiki/Munsee
+		MNS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				raritan hackensack hopatcong piscopeek manhattan massapequa navisink tappan kitchawanc minisink
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Unalachtigo
+		#https://en.wikipedia.org/wiki/Unalachtigo_Lenape
+		UNL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tetamekanch cohansey kechemeche amintonck minguannan tappahanna assawoman
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Mahican
+		#https://en.wikipedia.org/wiki/Mohicans
+		MCN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mahicannituck esquatak horicon walloomsac mahaiwe pontoosuck pecunktuk scatacook poughkeepsie ponkhockie
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Quiripi
+		#https://en.wikipedia.org/wiki/Quinnipiac
+		QRP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quinnipiac rippowam montauk unquachog
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Pocumtuc
+		#https://en.wikipedia.org/wiki/Pocomtuc
+		PCT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pocumtuck weshacum monadnock wantastiquet
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Pequot
+		#https://en.wikipedia.org/wiki/Pequots
+		PQT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				willimantic siccanemos quinsigamond
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Narragansett
+		#https://en.wikipedia.org/wiki/Narragansett_people
+		NRG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				seekonk woonsocket pawcatuck
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Wampanoag
+		#https://en.wikipedia.org/wiki/Wampanoag
+		WMG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				assonet patuxet nauset nantucket
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Massachusett
+		#https://en.wikipedia.org/wiki/Massachusett
+		MSC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				assabet naumkeag shawmut
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Pennacook
+		#https://en.wikipedia.org/wiki/Pennacook
+		PCK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pennacook ossipee pemigewasset amoskeag nashua squamscott kennebunk casco pequawket ammoscongon
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Maliseet
+		#https://en.wikipedia.org/wiki/Wolastoqiyik
+		MLS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				rimouski kakouna molsemtekw temiscouata kamouraska kennebecasis mispec menahkwesk washademoak otnabog oromocto nashwaak meductic becaguimec
+				negoot madawaska welamooktook siegas asoqasqoq kcheeminpink pokiok maatawamkeag aroostook meduxnekeag allagash wolastoq mittaywanquam
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Androscoggin-Eastern Abenaki (formerly misnamed Penobscot)
+		#https://en.wikipedia.org/wiki/Abenaki#Eastern_Abenaki
+		PNS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				androscoggin onkobagag sartigan megantic maskikogamak kennebec sagadahoc messalonskee norridgewock anasagunticook caratunk kennebango nanrantsouak
+				
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+				
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sokoki
+		#https://en.wikipedia.org/wiki/Missiquoi
+		SOK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				coaticook nikitotegwak wigwomadenek wabanaki arthabaska alsigontekw yamaska wdpesek memphremagog wagowategok ottauquechee ompompanusooc passumpsic winooski gwenaska koes nitamibontegw umbagog sunapee coos ammonoosuc
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Agojuda
+		#https://muse.jhu.edu/pub/4/article/11612
+		AGJ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				toniato gananoque cataraqui opinicon napanee kaniatarahontsi ahkwesasne_ny
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Odawa
+		#https://en.wikipedia.org/wiki/Odawa
+		ODW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				dehskan_ziibi menesetung saugeen nochemoweniing manitoulin cheboygan asiniike saganing
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Ojibwe
+		#https://en.wikipedia.org/wiki/Ojibwe
+		OJI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				pogamasing eskimanetigon mississagi baawitigong batchawana agawa_superior mackinac tahquamenon manistique ishpeming keweenaw ontonagon gaamiskwaabikaang chequamegon
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Onghniaahra
+		#https://en.wikipedia.org/wiki/Neutral_Confederacy
+		ONG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				niagara kenhionatatie macassa thahnawate ahouenro
+			}
+			
+			discovered_regions = {
+				canada_region
+				east_coast_region
+				great_plains_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+		}
+		
+		#Caddo - CAD
+		#https://en.wikipedia.org/wiki/Caddo
+		CAD = {
+			type = pop
+			
+			add_pops_from_locations = {
+				nabiti aays lacane nadakuh
+				naconiche nisohone nacao nacogdoches ayish
+				haynay nacachau nabaydacu nakono
+			}
+			include = "amerindian_tribe"
+			include = "expl_aridoamerica"
+			government = {
+				ruler = random
+			}
+			court_language = caddoan_language
+			capital = naconiche
+		}
+		
+		#Cahokia Mississippian Site
+		#https://en.wikipedia.org/wiki/Cahokia
+		CHK = {
+			own_control_core = {
+				cahokia peewareewa sangamon amonokoa macoupin tamaroa wyaconda oahaha emasulia
+				chariton meramec pahatsi tanwakanwakaghe moingwena
+				kaskaskia kaskankaham chepoussa ochechiton st_francois_mts
+				nudarcha wimihsoorita nodaway
+				peoria
+			}
+			starting_technology_level = 1
+			
+			government = {
+				ruler = random
+				
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				centralization_vs_decentralization = 80
+				traditionalist_vs_innovative = -70
+				spiritualist_vs_humanist = -60
+				aristocracy_vs_plutocracy = -80
+				serfdom_vs_free_subjects = 50
+				mercantilism_vs_free_trade = 50
+				belligerent_vs_conciliatory = 100
+				quality_vs_quantity = -75
+				offensive_vs_defensive = 50
+				land_vs_naval = -90
+				capital_economy_vs_traditional_economy = 100
+				individualism_vs_communalism = 60
+				outward_vs_inward = 50
+				
+				parliament = {
+					parliament_type = assembly
+				}
+				
+				laws = {
+					marriage_law = polygyny
+					heir_religion_law = heir_same_religion
+				}
+				
+				reforms = {
+					agricultural_cultivation
+				}
+				privilege = {
+					#nobles
+					nobility_council
+					nobles_land_rights
+					tribal_autonomy
+					
+					#clergy
+					embellish_great_works_of_faith
+					
+					#burghers
+					urban_development_grants
+					market_fairs
+					
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					
+					tribes_tribal_levies
+					tribes_allow_gatherings
+				}
+			}
+			
+			discovered_areas = {
+				#east_coast_region
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+			}
+			
+			tolerated_cultures = {
+				tsawi_culture
+				ponca_culture
+				kaskankaham_culture
+				kahokiaki_culture
+			}
+			
+			currency_data = {
+				gold = 180
+				stability = 20
+				prestige = 5
+				tribal_cohesion = 80
+			}
+			
+			court_language = dhegiha_language
+			capital = cahokia
+		}
+		
+		#Waghtochtatta-Otoe
+		#https://en.wikipedia.org/wiki/Otoe
+		WGH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				meskousing aupuhkirakanewe kiwigapawa enookwasaneenah penaca moskwawakwa iowa kiosaquay pahotcha
+			}
+			starting_technology_level = 0
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chiwere_language
+			capital = enookwasaneenah
+		}
+		
+		HAA = { #Haani'nin/Gros Ventre
+			#https://en.wikipedia.org/wiki/Gros_Ventre
+			type = pop
+			
+			add_pops_from_locations = {
+				saakak_hukaahaanu metigoshe katepwewi hepa canuba_wakpa kamsack tootinaowaziibeeng kihi sihabi waskada
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		
+		ASH = { #Ashalaho/Mountain Crow
+			#https://en.wikipedia.org/wiki/Crow_people
+			type = pop
+			
+			add_pops_from_locations = {
+				moehe_yoe ihkowom_iyo_he mitsiadazi e_omita_i
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		ASP = { #Ashshipite/Black Lodges or River Crow - ASP
+			#https://en.wikipedia.org/wiki/Crow_people
+			type = pop
+			
+			add_pops_from_locations = {
+				chakadee_wakpa wahasah waahukaahaanu baliisshe_aashe minisose
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kitikitish/Wichita Proper - KTK
+		#https://en.wikipedia.org/wiki/Wichita_people
+		KTK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hawaastatkiicu nigitai kicpahat gulvau mah_hom oohkoi_yohe guichita
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Taovaya Wichita - TVY
+		#https://en.wikipedia.org/wiki/Taovaya_people
+		TVY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				etzanoa quivira ninescah pasukhdin tulsa chikaskia oktahutchee wewoka washita
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Pitahwarita/Pitahauerat Pawnee - PTW
+		#https://en.wikipedia.org/wiki/Pawnee_people
+		PTW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				utsehta pitahauerat kansas monecato kirarutah nepahalla neosho manhukdhintanwan
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kitkehaki/Republican Pawnee - KIA
+		#https://en.wikipedia.org/wiki/Pawnee_people
+		KIA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				mahohevahoe wasetihoge harahey wiskapella chitolah aahkawiraahkata panenetah kaiurskuta
+				ne_miskua kaw nanwacinahaana
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Skiri/Wolf Pawnee - SII
+		#https://en.wikipedia.org/wiki/Skidi
+		SII = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sicangu waziblo waha_tunga kickatari mnitanka minatare kanpeska kus_lecha kickatus ickari_kitsu nutanke wishkahuunu
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tsawi/Grand Pawnee - TSW
+		#https://en.wikipedia.org/wiki/Pawnee_people
+		TSW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				nodaway nudarcha wimihsoorita nishnabotna kits_ixta omaha nemaha nebraska ni_haunchi_to shuntaneshnanga
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sahnish/Arikara - SHH
+		#https://en.wikipedia.org/wiki/Arikara
+		SHH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				cerwecerna shichah wakmua_oin okobojo kaya_paha chagu niobrara
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nueta/Mandan - NUE
+		#https://en.wikipedia.org/wiki/Mandan
+		NUE = {
+			type = pop
+			
+			add_pops_from_locations = {
+				matootonha pabaska ruhptare marapa pocasse
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Hiraaca/Hidatsa - HIR
+		#https://en.wikipedia.org/wiki/Hidatsa
+		HIR = {
+			type = pop
+			
+			add_pops_from_locations = {
+				amahami manatara awatixa maanaagi_iixodagish adixoodagoorahareesh koostaaka
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Cayas - CYS
+		#https://archeology.uark.edu/indiansofarkansas/index.html?pageName=First%20Encounters
+		CYS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				satsukhdin unica nikhdhintanwan intapushe nanzewaspe headdhetanwan wakhakukdhin wahzhazhe
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chitimacha - CTI
+		#https://en.wikipedia.org/wiki/Chitimacha
+		CTI = {
+			type = pop
+			
+			add_pops_from_locations = {
+				bulbancha chawasha atchafalaya
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Bayagoula - BYG
+		#https://en.wikipedia.org/wiki/Bayogoula
+		BYG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				bogue_chitto tangipahoa itihumma opelousa
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Pacaha Mississippian - PCH
+		#https://en.wikipedia.org/wiki/Tunica_people
+		#https://en.wikipedia.org/wiki/Pacaha
+		PCH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				quigate pacaha
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = chickasaw_choctaw_language
+			capital = pacaha
+		}
+		
+		#Casqui Mississippian - CSQ
+		#https://en.wikipedia.org/wiki/Casqui
+		CSQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				casqui cayas
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = casqui
+		}
+		
+		#Anilco Mississippian - ANL
+		#https://en.wikipedia.org/wiki/Menard%E2%80%93Hodges_site
+		ANL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				guachoyo anilco ayays tutilpinco utiangue
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = anilco
+		}
+		
+		#Coligua Mississippian - COL
+		#https://en.wikipedia.org/wiki/Koroa
+		COL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				coligua calpista palisema
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = coligua
+		}
+		
+		#Nashitush - Natchitoches - NST
+		#https://en.wikipedia.org/wiki/Natchitoches_people
+		NST = {
+			type = pop
+			
+			add_pops_from_locations = {
+				calcasieu doustioni ya_ttaish naguatex nasoni
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = caddoan_language
+			capital = cahokia
+		}
+		
+		#Kadawdaachuh - Kaddohadacho/Caddo Proper - KDW
+		#https://en.wikipedia.org/wiki/Kadohadacho
+		KDW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ouachita catalte aguacay amaye chaguate kiamichi nanatsoho
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = caddoan_language
+			capital = catalte
+		}
+		
+		#Avoyel Mississippian - AVY
+		#https://en.wikipedia.org/wiki/Avoyel
+		AVY = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kisatchie catahoula tensas tunica
+			}
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+			court_language = natchez_language
+			capital = tensas
+		}
+		
+		#Tula Caddoan = TUA
+		#https://en.wikipedia.org/wiki/Tula_people
+		TUA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				tutilcoya anoixi tanico quipana tula_ark tawehash
+			}
+			
+			discovered_regions = {
+				canada_region
+				great_plains_region
+				east_coast_region
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kalapuya
+		KLP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kalapuya atfalati umpqua
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Chinook
+		CNK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chinook multnomah watlala
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tsamosa
+		TSA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chehalis chala_at klikitat stlpulmsh wishram
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Makah
+		MKH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				makah
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		
+		#S'Klallam
+		SKL = {
+			type = pop
+			
+			add_pops_from_locations = {
+				sklallam
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Twana
+		TWN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				twana
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Lushootseed
+		LHT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				duwamish nisqually puyallup skagit snohomish
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Lhaq'temish
+		LHQ = {
+			type = pop
+			
+			add_pops_from_locations = {
+				lhaq_temish
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Halkomelem
+		HLM = {
+			type = pop
+			
+			add_pops_from_locations = {
+				katzie nooksack sto_lo sts_ailes stz_uminus whonnock
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Squamish
+		SQH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				squamish
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#K'omoks
+		KMK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				k_omoks homalco klahoose pentlatch sechelt sliammon
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nootkah
+		NOO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ditidaht maaqtusiis ucluelet yuquot
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kwakiutl
+		KWA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ma_amtagila quawshelah tanakteuk tlatlasikwala
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Oowekyala
+		OOW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				oweekeno
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nuxalc
+		NUX = {
+			type = pop
+			
+			add_pops_from_locations = {
+				nuxalc kitasoo
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Heiltsuk
+		HLK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				heiltsuk
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Haisla
+		HLA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				haisla
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tsimishia
+		TMH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				gitxsanimaax k_alii_xkalaan nisga_a sm_algyax
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Xaayda
+		XDA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kiis_gwaay gwaay_haanas
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tlingit
+		TLG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aa_kw galyax gunaaxoo hinyaa jilkaat keex laaxaayik s_awdaan saanya shee_t_ika shtax_heen
+				t_aaku taant_a yaakwdaat yakataga xunaa xutsnoowu
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Hisatsinom
+		HTS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chlaande guhlkahende natahende nitahende
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nuwuvi
+		NUW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				amargosa kaibab kaiparowit parrusit quitchupah sebit uinkaret
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nuwuvu
+		NWV = {
+			type = pop
+			
+			add_pops_from_locations = {
+				havasu ivanpah moapa
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ishak
+		ISH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ishak caux han orcoquisac pachina toyal
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Quasmigdo
+		QMG = {
+			type = pop
+			
+			add_pops_from_locations = {
+				bidai deadose
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tawakoni
+		TWK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				melenudo nokoni waco
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Hinono'eino
+		HNO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hinyankaga histahayo iyawakagapi mistaiyohe neesihushaanu shanha skahuukaawiat wetarhoo
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nanwuine'nan
+		NWN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				he_sapa awaxaawi_ishiibisha e_ometaeso heviksnipahis hisiometaneo itkanaahtuusu mo_ohta_vo_honaaeva
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nakoda
+		NDA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				gawakomitigweia kinosota kiyuska maitomoni_ohe mekinock mihkwakamiwi_sipiy minnewaukan
+				mirixubaash mnisaton pembina sipiweske tchan_sansan winnipeg
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Lakota
+		LKT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aowa igmu kampeska mnihaha monona oyate_shisha shetek tchankasndata unkpatina
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ithanktunwanna
+		IKW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				chanshayapi kandiyohi mahkato mustinka tewaukon tipsinah
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Ithaktunwan
+		IUW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				inyanshashawatpa ocheyedan owatonna watonwan
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_northwestern_america"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Niuachi
+		NCH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ahsenisiipi coiracoentanon kishwaukee koshkonong pecatonica pecatonica_wi wapsipinicon
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Nakawe
+		NKW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				aguasabon kakabeka kaministiquia manitowik michipicoten minong neebing
+				nipigon pekatek saganaga
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Tsetsehesahese
+		TTS = {
+			type = pop
+			
+			add_pops_from_locations = {
+				gojijin kakagi kawishiwi kitchigumi koochiching makoua mesabi miskwaagamiiwi namakan
+				neemannee nemadji pikwedina pikwedina_sagaomam quetico wissakode
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#So'taeo'o
+		SOO = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ajawewesitagun bemidji kagiwigwan kimodakiwi manomin shingwako winnibigoshish
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Bdewekhantunwan
+		BKT = {
+			type = pop
+			
+			add_pops_from_locations = {
+				ginebig kayeskikan minnewawa misi_zaaga_igan wabezi
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Sisithunwan
+		STW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kinnickinnic mathoskabde minnetonka mishkwagokag odaawaa
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Wahpekhute
+		WKH = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hahatououadeba lahontan wapkawazioju
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Wahpetunwan
+		WPW = {
+			type = pop
+			
+			add_pops_from_locations = {
+				hahawakpa hokah sappah waumandee
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Mi'kmaq
+		MIK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				amqui anagance antigonish apaqtukowatek askataliank aspotogan canso caraquet cascapedia
+				causapscal chebogue cheticamp chicchoc chignecto chipoudy cobequid elsiktuk esekatik
+				gaspe ingonish jijkwtuk kekwapskuk kennetook kjipuktuk kluskapewiktuk kouchibouguac
+				maccan maleagit malpeque marsoui matane matapedia memramcook menageesenog miramichi mitis
+				muinawamek musquedoboit neguac nepisiguit nictaux nisiamk nmejuaqnek oqumkikiak paspebiac
+				petitcodiac pewjeg pictou pogomeg pukusamkek qospemk restigouche richibucto seeboosis shubenacadie sipuk
+				tapu_tuitn tatamagouche tignish tracadie wekwayik weljuik wetewatoqsik wikipoq
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Penobscot
+		PEN = {
+			type = pop
+			
+			add_pops_from_locations = {
+				penobscot katahdin kineo majabigwaduce millinocket passagassawkeag pemetic piscataquis
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Passamaquoddy
+		PQD = {
+			type = pop
+			
+			add_pops_from_locations = {
+				passamaquoddy chamcook grand_manan machias magaguadavic nicatous pocologan
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Weskarini
+		WSK = {
+			type = pop
+			
+			add_pops_from_locations = {
+				weskarini baskatong capimitchigama kanegaok kiamika kitigan_zibi kitchissippi
+				kiwetin_sipi mikiwam nagatinong okaisipi onontchataronon outaragasipi pasapkedjinawong
+				picanoc poigan tapani
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Kichesipirini
+		KSP = {
+			type = pop
+			
+			add_pops_from_locations = {
+				kinozhesipi maizinaazibi maganasipi mattawa matoueska nichabau petawawa pikwakanagan quyon
+			}
+			
+			include = "american_east_coast_tribe"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#############################
+		# Chaco
+		#############################
+		
+		
+		#Moxo - MOX
+		MOX = { #https://es.wikipedia.org/wiki/Moje%C3%B1os
+			type = pop
+			
+			add_pops_from_locations = {
+				moxos cayuvava
+			}
+			
+			discovered_areas = {
+				guapore_area
+				mamore_area
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#############################
+		# La Plata
+		#############################
+		
+		#Mapuche - MPC
+		MPC = {
+			type = pop
+			
+			add_pops_from_locations = {
+				lafkenmapu lelbunmapu wenteche inapiremapu pebuenmapu
+				cauquen pikumche uthan_uthatun chillan perquilauquen puchacay biobio
+				pikunwijimapu
+			}
+			
+			discovered_areas = {
+				ngulumapu_area
+				puelmapu_area
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+		
+		#Charrua - CUA
+		CUA = {
+			type = pop
+			
+			add_pops_from_locations = {
+				charrua araicuahita yi hum ombu
+			}
+			
+			discovered_areas = {
+				pampa_area
+			}
+			
+			include = "amerindian_tribe"
+			include = "expl_mesoamerica"
+			government = {
+				ruler = random
+			}
+		}
+	}
+}
