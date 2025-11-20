@@ -14,7 +14,7 @@ countries = {
 			capital = belle_isle
 			include = "vinlandic_foothold"
 			court_language = vinland_dialect
-			country_rank = rank_county
+			country_rank = rank_duchy
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
@@ -91,15 +91,33 @@ countries = {
 			include = "vinlandic_foothold"
 			court_language = vinland_dialect
 			country_rank = rank_county
-			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
-			}
 			
 			tolerated_cultures = {
 				dorset_culture
 			}
+			include = "expl_vinland"
+		}
+		
+		BEO = {
+			own_control_core = {
+				eimastukwek epwikek kutapuskuj pgotapesg upsukdaskooch wli_qospem
+				gosaoie nogamsig meelpaeg amasipukwek sibook
+				baie_verte walnaypek akilasiewakik
+				cape_spear bacalhieu mekwiskajk mollyhuajeck
+				placentia cape_race maqtewey nukamkiajijk miquelon
+			}
+			our_cores_conquered_by_others = {
+				belle_isle
+				naskwotchu
+				wipetikil
+				mekapisk
+				red_bay
+			}
+			
+			capital = maqtewey
+			include = "vinland_exposed_natives"
+			court_language = beothuk_dialect
+			
 			include = "expl_vinland"
 		}
 		
