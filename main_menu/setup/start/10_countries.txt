@@ -9905,11 +9905,13 @@ countries = {
 			alghero thiesi #Sardinia
 			samos ikaria foca #Aegean Sea
 			castelsardo #Sardinia
+			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli orosei terranova_pausania posada tempiopausania
+			sassari
 			amasra #Black Sea
 		}
 
 		our_cores_conquered_by_others = {
-			sassari bosa macomer bitti ozieri #Giudicato of Arborea in Sardinia
+			bosa macomer bitti ozieri #Giudicato of Arborea in Sardinia
 		}
 
 		starting_technology_level = 3
@@ -12191,6 +12193,11 @@ countries = {
 		own_control_core = {
 			athens megara thebes atalanti livadeia
 			corinth damala ermioni xylokastro
+			gravia
+			#BOD
+			bodonitsa
+			#SAO
+			salona
 		}
 
 		starting_technology_level = 3
@@ -12351,27 +12358,22 @@ countries = {
 		own_control_core = {
 			nafpaktos angelokastron vonitsa arta preveza parga ioannina kleisoura_epirus butrint
 			argyrokastro avlonya karpenisi konitsa
-
 			#MZK
 			berat ballsh
-
 			#MTR
 			kavaje
-
 			#ALB
 			durres
-
 			#BYZ
 			devol pyli
-
 			#SAO
-			salona loidoriki
-
-
+			loidoriki
 		}
 		our_cores_conquered_by_others = {
 			#CEP
 			zakynthos leukas cephalonia
+			#SAO
+			salona
 		}
 
 		starting_technology_level = 3
@@ -12474,18 +12476,12 @@ countries = {
 		own_control_core = {
 			#BYZ
 			demetrias farsala elassona larissa stomio trikala tyrnavos karditsa
-			
 			#NEO
 			neopatras zetounion
-
-			#BOD
-			bodonitsa
-
-			#ATH
-			gravia
 		}
 		our_cores_conquered_by_others = { 
 			loidoriki grevena siatista
+			bodonitsa gravia
 		}
 
 		starting_technology_level = 3
@@ -12525,6 +12521,7 @@ countries = {
 				name_stephen = 1
 				name_nikephoros = 1
 			}
+
 		}
 
 		tolerated_cultures = {
@@ -12625,7 +12622,7 @@ countries = {
 			karahisar_i_sahib sandikli suhut
 
 			#HMD
-			isparta burdur dinar egirdir uluborlu yalvac
+			isparta burdur dinar egirdir uluborlu
 			golhisar stefani
 
 			#TEK
@@ -12798,6 +12795,7 @@ countries = {
 				elaborate_court_ceremonies
 				noble_serfdom_rights
 				manorial_courts
+				noble_patronage_of_the_arts
 				#consolidated_corruption_of_the_nobles #BR EDIT
 
 				#Clergy
@@ -13068,9 +13066,14 @@ countries = {
 				zupa_districts
 				vlastele_krayishnik
 				feudal_mercenary_contracts
-
-				#Peasants
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
 				gradozadanje_and_gradobljudenlje_rights
+				peasants_allowed_weapons_privilege
 			}
 			laws = {
 				feudal_de_jure_law = by_tradition
@@ -13332,6 +13335,16 @@ countries = {
 				name_john.name_stephen = 1
 				name_john.name_alexander = 1
 			}
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		tolerated_cultures = {
@@ -13469,8 +13482,7 @@ countries = {
 		}
 
 		own_control_conquered = {
-			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli orosei terranova_pausania posada tempiopausania
-			sassari
+			
 		}
 
 		our_cores_conquered_by_others = {
@@ -31303,7 +31315,19 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
+		
 		accepted_cultures = {
 			armenian_culture
 		}
@@ -31992,6 +32016,16 @@ countries = {
 				name_george = 1
 				name_theodora = 1
 				name_basil = 1
+			}
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
 			}
 		}
 
@@ -56680,7 +56714,16 @@ countries = {
 			ruler_term = { character = arm_zakare_iv start_date = 1320.1.1 regnal_number = 4 }
 
 			ruler = arm_zakare_iv
-
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 		liturgical_language = armenian_language
 
@@ -59938,6 +59981,9 @@ countries = {
 			hacibektas
 			corum huseyinabad sungurlu
 			akdagmadeni aydincik koyulhisar sulusaray tokat zile
+
+			#HMD
+			yalvac
 		}
 
 		own_control_integrated = {
@@ -59953,6 +59999,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_kingdom
@@ -59985,6 +60042,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_duchy
@@ -60019,6 +60087,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_duchy
@@ -60054,6 +60133,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_duchy
@@ -60082,6 +60172,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_duchy
@@ -60111,6 +60212,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				#nobles
+				noble_armies
+				primacy_of_nobility
+				auxilium_et_consilium
+				joint_assembly_decrees
+				#burghers
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
 		}
 
 		country_rank = rank_duchy
