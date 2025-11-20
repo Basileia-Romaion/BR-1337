@@ -816,14 +816,18 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = naskapi_culture	religion = midewiwin_religion }
 	}
 	tupirvialuit = {
-		define_pop = {	type = tribesmen	size = 0.206	culture = dorset_culture	religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.112	culture = hellulander		religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.244	culture = hellulander		religion = norse }
+		define_pop = {	type = nobles		size = 0.011	culture = hellulander		religion = norse }
+		define_pop = {	type = clergy		size = 0.024	culture = hellulander		religion = norse }
+		define_pop = {	type = peasants		size = 0.244	culture = hellulander		religion = norse }
+		define_pop = {	type = tribesmen	size = 0.506	culture = dorset_culture	religion = totemism }
+		define_pop = {	type = tribesmen	size = 0.312	culture = hellulander		religion = totemism }
 	}
 	koroc = {
+		define_pop = {	type = nobles		size = 0.010	culture = hellulander		religion = norse }
+		define_pop = {	type = clergy		size = 0.032	culture = hellulander		religion = norse }
+		define_pop = {	type = peasants		size = 0.708	culture = hellulander		religion = norse }
+		define_pop = {	type = tribesmen	size = 0.211	culture = dorset_culture	religion = norse }
 		define_pop = {	type = tribesmen	size = 0.154	culture = dorset_culture	religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.111	culture = dorset_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 0.244	culture = hellulander		religion = norse }
 	}
 	quebec_torngats = {
 	}
@@ -833,10 +837,14 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
 	}
 	navchak = {
-		define_pop = {	type = tribesmen	size = 0.088	culture = dorset_culture	religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.211	culture = dorset_culture	religion = norse }
+		define_pop = {	type = nobles		size = 0.012	culture = hellulander		religion = norse }
+		define_pop = {	type = clergy		size = 0.042	culture = hellulander		religion = norse }
+		define_pop = {	type = peasants		size = 0.408	culture = hellulander		religion = norse }
+		define_pop = {	type = peasants		size = 0.211	culture = dorset_culture	religion = norse }
+		define_pop = {	type = tribesmen	size = 1.408	culture = hellulander		religion = norse }
 		define_pop = {	type = tribesmen	size = 0.196	culture = hellulander		religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.408	culture = hellulander		religion = norse }
+		define_pop = {	type = tribesmen	size = 0.088	culture = dorset_culture	religion = totemism }
+		
 	}
 	kingmirtok = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
@@ -863,11 +871,12 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
 	}
 	tessuialluk = {
-		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.444	culture = dorset_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 0.906	culture = marklander			religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.106	culture = marklander			religion = totemism }
-		define_pop = {	type = tribesmen	size = 0.204	culture = innu_culture		religion = midewiwin_religion }
+		define_pop = {	type = nobles		size = 0.026	culture = marklander		religion = norse }
+		define_pop = {	type = clergy		size = 0.088	culture = marklander		religion = norse }
+		define_pop = {	type = peasants		size = 0.406	culture = marklander		religion = norse }
+		define_pop = {	type = peasants		size = 0.444	culture = dorset_culture	religion = norse }
+		define_pop = {	type = peasants		size = 0.204	culture = innu_culture		religion = midewiwin_religion }
+		define_pop = {	type = tribesmen	size = 1.806	culture = marklander		religion = norse }
 	}
 	torngat_mountains = {
 	}
@@ -875,16 +884,24 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = innu_culture	religion = midewiwin_religion }
 	}
 	tikigaksuagusik = {
+		define_pop = {	type = nobles		size = 0.033	culture = marklander	religion = norse }
+		define_pop = {	type = clergy		size = 0.054	culture = marklander	religion = norse }
+		define_pop = {	type = peasants		size = 1.106	culture = marklander	religion = norse }
+		define_pop = {	type = peasants		size = 0.912	culture = innu_culture	religion = norse }
+		define_pop = {	type = tribesmen	size = 1.311	culture = marklander	religion = norse }
+		define_pop = {	type = tribesmen	size = 0.104	culture = marklander	religion = midewiwin_religion }
 		define_pop = {	type = tribesmen	size = 0.406	culture = innu_culture	religion = midewiwin_religion }
-		define_pop = {	type = tribesmen	size = 0.912	culture = innu_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 2.106	culture = marklander		religion = norse }
-		define_pop = {	type = tribesmen	size = 0.104	culture = marklander		religion = midewiwin_religion }
+		
 	}
 	aivitok = {
+		define_pop = {	type = nobles		size = 0.013	culture = marklander	religion = norse }
+		define_pop = {	type = clergy		size = 0.043	culture = marklander	religion = norse }
+		define_pop = {	type = peasants		size = 0.943	culture = marklander	religion = norse }
+		define_pop = {	type = peasants		size = 0.214	culture = innu_culture	religion = norse }
+		define_pop = {	type = peasants		size = 1.243	culture = marklander	religion = norse }
+		define_pop = {	type = tribesmen	size = 1.843	culture = marklander	religion = norse }
 		define_pop = {	type = tribesmen	size = 0.106	culture = innu_culture	religion = midewiwin_religion }
-		define_pop = {	type = tribesmen	size = 0.214	culture = innu_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 0.454	culture = marklander		religion = midewiwin_religion }
-		define_pop = {	type = tribesmen	size = 1.243	culture = marklander		religion = norse }
+		define_pop = {	type = tribesmen	size = 0.454	culture = marklander	religion = midewiwin_religion }
 	}
 	kenamu = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = innu_culture	religion = midewiwin_religion }
