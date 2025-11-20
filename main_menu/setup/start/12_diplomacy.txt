@@ -199,7 +199,6 @@ diplomacy_manager = {
     dependency = { first = BOU second = MRC subject_type = fiefdom }
 
     #-------Italy-------
-    dependency = { first = NAP second = ACH subject_type = vassal }
     dependency = { first = VEN second = NAX subject_type = vassal } #BR EDIT
     dependency = { first = VEN second = CYP subject_type = vassal } #BR ADDED
     dependency = { first = VEN second = NEG subject_type = vassal } #BR ADDED
@@ -279,6 +278,18 @@ diplomacy_manager = {
     #dependency = { first = BYZ second = EPI subject_type = vassal } #BR EDIT
     dependency = { first = BYZ second = FEO subject_type = vassal } #BR ADDED
     dependency = { first = BYZ second = THE subject_type = fiefdom } #BR ADDED
+    dependency = { first = THE second = THS subject_type = vassal } #BR ADDED
+    dependency = { first = BYZ second = ATH subject_type = fiefdom } #BR ADDED
+    dependency = { first = ATH second = MOE subject_type = vassal } #BR ADDED
+    dependency = { first = ATH second = ACH subject_type = vassal } #BR ADDED
+
+    #Anatolia
+    dependency = { first = TRE second = PAF subject_type = vassal } #BR ADDED
+    dependency = { first = ANA second = KAP subject_type = vassal } #BR ADDED
+    dependency = { first = ANA second = CIL subject_type = tributary } #BR ADDED
+    dependency = { first = ARM second = KOG subject_type = vassal } #BR ADDED
+    dependency = { first = ARM second = DER subject_type = vassal } #BR ADDED
+    dependency = { first = ARM second = MES subject_type = vassal } #BR ADDED
 
     #-------Low Lands-------
     dependency = { first = HOL second = ZEE subject_type = fiefdom }

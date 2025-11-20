@@ -30,6 +30,18 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = SER type = border_aggression }
 	opinion = { first = BUL second = BYZ type = border_aggression }
 	opinion = { first = BYZ second = BUL type = border_aggression }
+	opinion = { first = BYZ second = ANA type = recent_conflict_lost }
+	opinion = { first = BYZ second = PAF type = recent_conflict_lost }
+	opinion = { first = BYZ second = PAF type = border_aggression }
+	opinion = { first = ANA second = BYZ type = border_aggression }
+	opinion = { first = BYZ second = ANA type = border_aggression }
+	opinion = { first = CIL second = BYZ type = border_aggression }
+	opinion = { first = BYZ second = CIL type = border_aggression }
+	opinion = { first = THE second = BYZ type = opinion_tyrant_overlord }
+	opinion = { first = ATH second = BYZ type = opinion_tyrant_overlord }
+	opinion = { first = BYZ second = ANA type = opinion_angry }
+	opinion = { first = BYZ second = CIL type = opinion_angry }
+	opinion = { first = BYZ second = PAF type = opinion_angry }
 
 	#Venice
 	opinion = { first = VEN second = BYZ type = opinion_irritated }
