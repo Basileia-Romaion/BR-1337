@@ -33,8 +33,6 @@ CEP = {
 	religion_definition = orthodox
 }
 
-
-
 LAT = {
 	color = map_LAT
 	color2 = rgb { 200 15 5 } #new color
@@ -45,8 +43,6 @@ LAT = {
 	is_historic = yes
 }
 
-
-
 NAX = {
 	color = map_naxos
 	color2 = rgb { 42 55 197 } 
@@ -55,8 +51,6 @@ NAX = {
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
-
-
 
 EPI = {
 	color = map_epirus
@@ -88,8 +82,6 @@ THE = {
 
 	culture_definition = greek_culture
 	religion_definition = orthodox
-
-	is_historic = yes
 }
 
 THS = {
@@ -98,7 +90,6 @@ THS = {
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
-	
 
 SER = {
 	color = map_serbian

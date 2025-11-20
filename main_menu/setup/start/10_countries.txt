@@ -5040,6 +5040,7 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
+				ruler = random
 				
 				quality_vs_quantity = 25
 				offensive_vs_defensive = 75
@@ -5057,27 +5058,8 @@ countries = {
 					medieval_levy_law = longbow_competitions
 					feudal_de_jure_law = by_tradition
 				}
-				reforms = {
-					magna_carta_reform
-				}
-				
-				ruler_term = { character = eng_john_lackland start_date = 1177.1.1 end_date = 1216.10.19 regnal_number = 1 } # became Lord of Ireland before being King of England
-				ruler_term = { character = eng_henry_iii start_date = 1216.10.28 end_date = 1272.11.16 regnal_number = 3 }
-				ruler_term = { character = eng_edward_i start_date = 1272.11.20 end_date = 1307.7.8 regnal_number = 1 }
-				ruler_term = { character = eng_edward_ii start_date = 1307.7.8 end_date = 1327.1.20 regnal_number = 2 }
-				ruler_term = { character = eng_edward_iii start_date = 1327.1.25 regnal_number = 3 }
-				
-				# same numbering as England
-				regnal_numbers = {
-					name_william = 2
-					name_henry = 3
-					name_stephen = 1
-					name_richard = 2
-					name_john = 1
-					name_edward = 3
-				}
 			}
-			include = "catholic_monarchy_english_lordship"
+			include = "catholic_monarchy"
 			capital = dublin
 			accepted_cultures = { anglo_irish }
 			tolerated_cultures = { irish }
@@ -12411,6 +12393,7 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
+				ruler = random
 				
 				ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1239.1.1 end_date = 1241.1.1 regnal_number = 1 }
 				ruler_term = { character = epi_michael_ii_komnenos_doukas start_date = 1241.1.1 end_date = 1268.1.1 regnal_number = 1 }
@@ -32666,32 +32649,6 @@ countries = {
 			
 		}
 		
-		#Döger - DGE
-		DGE = {
-			own_control_core = {
-			
-			}
-			
-			starting_technology_level = 3
-			include = "expl_middle_east"
-			include = "muslim_monarchy_no_coast"
-			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
-			}
-			
-			capital = urfa
-			dynasty = doger_dynasty
-			
-			tolerated_cultures = {
-				syriac_culture
-				iraqi_culture
-			}
-			religious_school = hanafi_school
-			government = { mysticism_vs_jurisprudence = -15 }
-			
-		}
 		#-------------------------- Holy Roman Empire ----------------------------
 		
 		OGK = {	#old german Kingdom for Ruler History
