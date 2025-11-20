@@ -56,7 +56,6 @@ danish = {
 	use_patronym = yes
 }
 
-
 norwegian = {
 	language = norwegian_dialect
 	
@@ -77,7 +76,6 @@ norwegian = {
 	}
 	
 	use_patronym = yes
-
 }
 
 icelandic = {
@@ -99,7 +97,6 @@ icelandic = {
 	}
 	
 	use_patronym = yes
-
 }
 
 norn_culture = {
@@ -121,7 +118,6 @@ norn_culture = {
 	}
 	
 	use_patronym = yes
-
 }
 
 vinlander = {
@@ -136,6 +132,7 @@ vinlander = {
 		icelandic = positive
 		marklander = kindred
 		hellulander = kindred
+		kathurlander = kindred
 	}
 	
 	culture_groups = {
@@ -143,7 +140,6 @@ vinlander = {
 	}
 	
 	use_patronym = yes
-	
 }
 
 marklander = {
@@ -158,6 +154,7 @@ marklander = {
 		icelandic = positive
 		marklander = kindred
 		hellulander = kindred
+		kathurlander = positive
 	}
 	
 	culture_groups = {
@@ -165,7 +162,6 @@ marklander = {
 	}
 	
 	use_patronym = yes
-	
 }
 
 hellulander = {
@@ -180,6 +176,7 @@ hellulander = {
 		icelandic = positive
 		marklander = kindred
 		hellulander = kindred
+		kathurlander = positive
 	}
 	
 	culture_groups = {
@@ -187,5 +184,26 @@ hellulander = {
 	}
 	
 	use_patronym = yes
+}
+
+kathurlander = {
+	language = kathurland_dialect
 	
+	color = rgb { 71 138 98 }
+	
+	tags = { norwegian_gfx western_european_gfx european_gfx }
+	
+	opinions = {
+		norwegian = positive
+		icelandic = positive
+		vinlander = kindred
+		marklander = kindred
+		hellulander = kindred
+	}
+	
+	culture_groups = {
+		scandinavian_group
+	}
+	
+	use_patronym = yes
 }

@@ -10,7 +10,7 @@ NRR = { # Markland
 	color = rgb { 24 66 87 }
 	color2 = rgb{ 16 41 202 }
 	
-	culture_definition = vinlander
+	culture_definition = marklander
 	religion_definition = norse
 }
 
@@ -18,7 +18,15 @@ NRH = { # Helluland
 	color = rgb { 76 93 101 }
 	color2 = rgb{ 16 41 202 }
 	
-	culture_definition = vinlander
+	culture_definition = marklander
+	religion_definition = norse
+}
+
+NRC = { # Kathurland
+	color = rgb { 20 142 202 }
+	color2 = rgb{ 16 41 202 }
+	
+	culture_definition = kathurlander
 	religion_definition = norse
 }
 
