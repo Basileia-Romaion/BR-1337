@@ -94,6 +94,8 @@ diplomacy_manager = {
 	#Maghreb
 	opinion = { first = TUN second = TLE type = border_aggression }
 	opinion = { first = TLE second = MOR type = border_aggression }
+	opinion = { first = GRA second = MOR type = opinion_good_relations }
+	opinion = { first = MOR second = GRA type = opinion_good_relations }
 	
 	opinion = { first = LIT second = PSK type = opinion_supportive_monarch }
 	opinion = { first = PSK second = LIT type = opinion_supportive_monarch }
