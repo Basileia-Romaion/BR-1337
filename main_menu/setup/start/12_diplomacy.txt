@@ -255,6 +255,7 @@ diplomacy_manager = {
     dependency = { first = TUN second = GFS subject_type = vassal }
     dependency = { first = TUN second = TGT subject_type = vassal }
     dependency = { first = TUN second = TRP subject_type = vassal }
+	dependency = { first = TUN second = SIC subject_type = vassal }
     dependency = { first = TUN second = BTL subject_type = tributary }
     dependency = { first = TUN second = DJE subject_type = tributary }
     dependency = { first = TUN second = MZB subject_type = tributary }
