@@ -10532,8 +10532,6 @@ countries = {
     #Sikelanoi
     BR2 = {
 	own_control_core = {
-	catania messina mistretta nicosiasic patti piazza girgenti bivona caltanisetta cefalu sciacca termini
-			corleone mazara palermo salemi trapani caltagirone modica noto syracuse terranovasic
 			
 			cotrone gerace monteleone nicastro palmi reggiocal catanzaro
 			
@@ -10546,6 +10544,8 @@ countries = {
 			santarcangelo matera
 			
 			monopoli altamura bari
+			
+			catania messina mistretta nicosiasic patti piazza   caltagirone modica noto syracuse terranovasic
 			}
 	    starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -10554,7 +10554,90 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 		include = "catholic_monarchy"
+		
+		country_rank = rank_duchy
+		capital = lecce
 		}
+		
+		SIC = {
+		own_control_core = {
+		    girgenti bivona caltanisetta cefalu sciacca termini
+			corleone mazara palermo salemi trapani
+		}
+		our_cores_conquered_by_others = {
+			ajim
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = sic_federico_iii_sicily
+			consort = sic_eleonora_anjou
+			heir = sic_pietro_ii_sicily
+
+			ruler_term = { character = ogk_heinrich_vi_hohenstaufen start_date = 1194.12.25 end_date = 1197.9.28 regnal_number = 2 } # Marital Co-Ruler
+
+			ruler_term = { character = ogk_friedrich_ii_hohenstaufen start_date = 1198.9.3 end_date = 1212.3.1 regnal_number = 2 }
+			ruler_term = {
+				character = ogk_friedrich_ii_hohenstaufen start_date = 1212.3.1 end_date = 1217.1.1 regnal_number = 2
+				character = sic_heinrich_ii_hohenstaufen start_date = 1212.3.1 end_date = 1217.1.1 regnal_number = 2 # Minor Co-Ruler
+			}
+			ruler_term = { character = ogk_friedrich_ii_hohenstaufen start_date = 1217.1.1 end_date = 1250.12.13 regnal_number = 2 }
+			ruler_term = { character = ogk_konrad_iv_hohenstaufen start_date = 1250.12.13 end_date = 1254.5.21 regnal_number = 1 }
+			ruler_term = { character = sic_conradin_hohenstaufen start_date = 1254.5.21 end_date = 1258.8.10 regnal_number = 2 }
+
+			ruler_term = { character = sic_manfredi_i_sicilia start_date = 1258.8.10 end_date = 1266.1.6 regnal_number = 1 }
+			ruler_term = {
+				character = nap_charles_i_anjou start_date = 1266.1.6 end_date = 1266.2.26 regnal_number = 1
+				character = sic_manfredi_i_sicilia start_date = 1266.1.6 end_date = 1266.2.26 regnal_number = 1
+			}
+			
+			ruler_term = { character = nap_charles_i_anjou start_date = 1266.2.26 end_date = 1282.9.26 regnal_number = 1 }
+			
+			ruler_term = {
+				character = nap_charles_i_anjou start_date = 1282.9.26 end_date = 1282.11.26 regnal_number = 1
+				character = sic_costanza_ii_sicilia start_date = 1282.9.26 end_date = 1282.11.26 regnal_number = 2
+			}
+			ruler_term = {
+				character = sic_costanza_ii_sicilia start_date = 1282.11.26 end_date = 1285.11.11 regnal_number = 2
+				character = ara_pere_iii_arago start_date = 1282.11.26 end_date = 1285.11.11 regnal_number = 1 # Marital Co-Ruler
+			}
+			ruler_term = { character = ara_jaume_ii_arago start_date = 1285.11.11 end_date = 1295.12.11 regnal_number = 1 }
+			ruler_term = { character = sic_federico_iii_sicily start_date = 1295.12.11 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_roger = 3
+				name_simeon = 1
+				name_william = 3
+				Tancredi = 1
+				name_constance = 2
+				name_henry = 2
+				name_frederick = 3
+				name_conrad = 2
+				name_manfred = 1
+				name_charles = 1
+				name_james = 1
+				name_peter = 1
+			}
+		}
+
+		court_language = catalan_dialect
+		tolerated_cultures = {
+			maltese
+			catalan
+		}
+
+		country_rank = rank_kingdom
+		capital = palermo
+	}
 
 
 	#Naples
