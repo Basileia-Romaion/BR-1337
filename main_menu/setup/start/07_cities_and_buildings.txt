@@ -4180,37 +4180,20 @@ building_manager = {
 
 
 
-
-
-
-
-
-	#BR ADDED Buildings
+###BR### ADDED Buildings ###BR###
 
 	#Greece and Balkans #BR edited
-	market_village = { tag = THE level = 1 location = rentina }
-	market_village = { tag = BUL level = 1 location = sozopol }
-	forest_village = { tag = BUL level = 1 location = stanimaka }
-	market_village = { tag = SER level = 1 location = kotor }
-	market_village = { tag = SER level = 1 location = kucevo }
-	market_village = { tag = BOS level = 1 location = kozara }
-	market_village = { tag = CRO level = 1 location = senj }
-	market_village = { tag = ACH level = 1 location = chalandritsa }
-	
-
 	grand_palace = { tag = BYZ level = 1 location =  constantinople } #Great Palace(s) of Constantinople
 	royal_court = { tag = BYZ level = 1 location =  constantinople }
 	royal_garden = { tag = BYZ level = 1 location =  constantinople } #Gardens of the Great Palace
 	chancery = { tag = BYZ level = 1 location =  constantinople } #Senate
-	#constantinople_observatory = { tag = BYZ level = 1 location =  constantinople }
-
+	#constantinople_observatory = { tag = BYZ level = 1 location =  constantinople 
 	marketplace	= { tag = BYZ level = 25 location =  constantinople }
 	#merchants_quarters = { tag = BYZ level = 1 location =  constantinople }
 	#grand_marketplace = { tag = BYZ level = 1 location =  constantinople }
 	trading_hub = { tag = BYZ level = 1 location =  constantinople }
 	entrepot = { tag = BYZ level = 2 location =  constantinople }
 	market_warehouse = { tag = BYZ level = 2 location =  constantinople }
-	
 	fine_cloth_guild = { tag = BYZ level = 12 location =  constantinople }
 	brewery = { tag = BYZ level = 4 location =  constantinople }
 	saltpeter_guild = { tag = BYZ level = 1 location =  constantinople }
@@ -4225,12 +4208,10 @@ building_manager = {
 	pottery_guild = { tag = BYZ level = 4 location =  constantinople }
 	tools_guild = { tag = BYZ level = 4 location =  constantinople }
 	weapon_guild = { tag = BYZ level = 4 location =  constantinople }
-	
 	scriptorium = { tag = BYZ level = 8 location =  constantinople }
 	hospital = { tag = BYZ level = 1 location =  constantinople }
 	library = { tag = BYZ level = 1 location =  constantinople }
 	medical_school = { tag = BYZ level = 1 location =  constantinople }
-
 	castle = { tag = BYZ level = 1 location =  gallipoli }
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
 	wharf = { tag = BYZ level = 1 location =  constantinople }
@@ -4238,16 +4219,18 @@ building_manager = {
 	protected_harbor = { tag = BYZ level = 1 location =  constantinople }
 	coastal_fort = { tag = BYZ level = 1 location =  constantinople }
 	construction_center = { tag = BYZ level = 1 location =  constantinople }
-
-	
-	castle = { tag = KNI level = 1 location =  malta } #br edit
-	castle = { tag = SER level = 1 location =  kozelj }
-	castle = { tag = SER level = 1 location =  kucevo }
-	castle = { tag = SER level = 1 location =  trgoviste_SER }
-
+	dock = { tag = THE level = 1 location = thessaloniki }
+	wharf = { tag = THE level = 1 location = thessaloniki }
+	cathedral = { tag = THE level = 1 location = thessaloniki }
+	apothecary = { tag = ATH level = 1 location = athens }
 	sergeantry = { tag = BYZ level = 1 location =  constantinople }
 	sergeantry = { tag = ATH level = 1 location =  athens }
 	sergeantry = { tag = THE level = 1 location =  thessaloniki }
+
+	#Anatolia
+	dock = { tag = BYZ level = 1 location = smyrna }
+	wharf = { tag = BYZ level = 1 location = smyrna }
+	cathedral = { tag = BYZ level = 1 location = smyrna }
 	thema_headquarters = { tag = BYZ level = 1 location = iznik }
 	thema_headquarters = { tag = BYZ level = 1 location = smyrna }
 	thema_headquarters = { tag = BYZ level = 1 location = bursa }
@@ -4260,6 +4243,13 @@ building_manager = {
 	thema_headquarters = { tag = BYZ level = 1 location = milas }
 	thema_headquarters = { tag = BYZ level = 1 location = bergama }
 	thema_headquarters = { tag = BYZ level = 1 location = uluborlu }
+	bridge_infrastructure = { tag = BYZ level = 1 location = edirne }
+	bridge_infrastructure = { tag = BYZ level = 1 location = atpazari }
+	bridge_infrastructure = { tag = BYZ level = 1 location = goynuk }
+	bridge_infrastructure = { tag = BYZ level = 1 location = sogut }
+	bridge_infrastructure = { tag = BYZ level = 1 location = bursa }
+
+	#Mesopotamia
 
 	sergeantry = { tag = TUR level = 1 location =  tabriz }
 	kurultai = { tag = TUR level = 1 location =  mosul }
@@ -4275,12 +4265,10 @@ building_manager = {
 	seljuk_mint = { tag = TUR level = 1 location = tabriz }
 	seljuk_mint = { tag = TUR level = 1 location = baghdad }
 	seljuk_mint = { tag = TUR level = 1 location = tabriz }
-
 	marketplace	= { tag = TUR level = 10 location = baghdad }
 	trading_hub = { tag = TUR level = 1 location = baghdad }
 	entrepot = { tag = TUR level = 1 location = baghdad }
 	market_warehouse = { tag = TUR level = 1 location = baghdad }
-	
 	fine_cloth_guild = { tag = TUR level = 5 location = baghdad }
 	saltpeter_guild = { tag = TUR level = 1 location = baghdad }
 	tannery = { tag = TUR level = 4 location = baghdad }
@@ -4293,28 +4281,270 @@ building_manager = {
 	pottery_guild = { tag = TUR level = 2 location = baghdad }
 	tools_guild = { tag = TUR level = 2 location = baghdad }
 	weapon_guild = { tag = TUR level = 2 location = baghdad }
-	
 	scriptorium = { tag = TUR level = 6 location = baghdad }
 	hospital = { tag = TUR level = 1 location = baghdad }
 	library = { tag = TUR level = 1 location = baghdad }
 	medical_school = { tag = TUR level = 1 location = baghdad }
 
+	#IBERIA
+	royal_court = { tag = ADU level = 1 location = cordoba }
+	royal_garden = { tag = ADU level = 1 location =  cordoba } #Gardens of the Great Palace
+	fortress_granary = { tag = ADU level = 1 location = cordoba }
+	slave_market = { tag = ADU level = 2 location = cordoba }
+	funduq = { tag = ADU level = 1 location = cordoba }
+	marketplace	= { tag = ADU level = 10 location =  cordoba }
+	trading_hub = { tag = ADU level = 1 location =  cordoba }
+	entrepot = { tag = ADU level = 1 location =  cordoba }
+	market_warehouse = { tag = ADU level = 1 location =  cordoba }
+	fine_cloth_guild = { tag = ADU level = 5 location =  cordoba }
+	saltpeter_guild = { tag = ADU level = 1 location =  cordoba }
+	tannery = { tag = ADU level = 4 location =  cordoba }
+	cloth_guild = { tag = ADU level = 5 location =  cordoba }
+	dyes_guild = { tag = ADU level = 2 location =  cordoba }
+	furniture_guild = { tag = ADU level = 4 location =  cordoba }
+	glass_guild = { tag = ADU level = 2 location =  cordoba }
+	paper_guild = { tag = ADU level = 2 location =  cordoba }
+	porcelain_guild = { tag = ADU level = 4 location =  cordoba }
+	pottery_guild = { tag = ADU level = 2 location =  cordoba }
+	tools_guild = { tag = ADU level = 2 location =  cordoba }
+	weapon_guild = { tag = ADU level = 2 location =  cordoba }
+	scriptorium = { tag = ADU level = 6 location =  cordoba }
+	hospital = { tag = ADU level = 1 location =  cordoba }
+	library = { tag = ADU level = 1 location =  cordoba }
+	medical_school = { tag = ADU level = 1 location =  cordoba }
+	sergeantry = { tag = ADU level = 1 location =  cordoba }
+	great_madrasa = { tag = ADU level = 1 location = cordoba }
+	great_madrasa = { tag = MAM level = 1 location = cairo }
+	great_madrasa = { tag = TUR level = 1 location = baghdad }
+	madrasa = { tag = ADU level = 1 location = granada }
+	madrasa = { tag = ADU level = 1 location = sevilla }
+	fortress_granary = { tag = ADU level = 1 location = sevilla }
+	slave_market = { tag = ADU level = 2 location = sevilla }
+	funduq = { tag = ADU level = 1 location = sevilla }
+	madrasa = { tag = ADU level = 1 location = toledo }
+	fortress_granary = { tag = ADU level = 1 location = toledo }
+	slave_market = { tag = ADU level = 2 location = toledo }
+	funduq = { tag = ADU level = 1 location = toledo }
+	madrasa = { tag = ADU level = 1 location = malaga }
+	fortress_granary = { tag = ADU level = 1 location = malaga }
+	slave_market = { tag = ADU level = 2 location = malaga }
+	funduq = { tag = ADU level = 1 location = malaga }
+	madrasa = { tag = ADU level = 1 location = valencia }
+	fortress_granary = { tag = ADU level = 1 location = valencia }
+	slave_market = { tag = ADU level = 2 location = valencia }
+	funduq = { tag = ADU level = 1 location = valencia }
+	fortress_granary = { tag = ADU level = 1 location = granada }
+	slave_market = { tag = ADU level = 2 location = granada }
+	slave_market = { tag = ADU level = 1 location = jaen }
+	slave_market = { tag = ADU level = 1 location = almeria }
+	slave_market = { tag = ADU level = 1 location = faro }
+	slave_market = { tag = ADU level = 1 location = evora }
+	slave_market = { tag = ADU level = 1 location = badajoz }
+	slave_market = { tag = ADU level = 1 location = caceres }
+	slave_market = { tag = ADU level = 1 location = murcia }
+	slave_market = { tag = ADU level = 1 location = orihuela }
+	slave_market = { tag = ADU level = 1 location = jativa }
+	slave_market = { tag = ADU level = 1 location = santarem }
 
-	#BR added estate buildings
-	#Balkans	
+
+	# steppes 
+	kurultai = { tag = GLH level = 1 location = sarai_al_jadid }
+	slave_market = { tag = GLH level = 3 location = sarai_al_jadid }
+	caravanserai = { tag = GLH level = 1 location = sarai_al_jadid }
+	kurultai = { tag = GLH level = 1 location = dubovskoye }
+	caravanserai = { tag = GLH level = 1 location = dubovskoye }
+	kurultai = { tag = GLH level = 1 location = mavliberda }
+	caravanserai = { tag = GLH level = 1 location = mavliberda }
+	kurultai = { tag = GLH level = 1 location = astrakhan }
+	slave_market = { tag = GLH level = 5 location = astrakhan }
+	caravanserai = { tag = GLH level = 1 location = astrakhan }
+	kurultai = { tag = GLH level = 1 location = khosheutovo }
+	caravanserai = { tag = GLH level = 1 location = khosheutovo }
+	kurultai = { tag = GLH level = 1 location = saryadyn }
+	caravanserai = { tag = GLH level = 1 location = saryadyn }
+	kurultai = { tag = GLH level = 1 location = krasny_yar }
+	caravanserai = { tag = GLH level = 1 location = krasny_yar }
+	kurultai = { tag = GLH level = 1 location = posad }
+	caravanserai = { tag = GLH level = 1 location = posad }
+	kurultai = { tag = GLH level = 1 location = sloviansk }
+	caravanserai = { tag = GLH level = 1 location = sloviansk }
+	kurultai = { tag = GLH level = 1 location = sarayjuk }
+	slave_market = { tag = GLH level = 1 location = sarayjuk }
+	caravanserai = { tag = GLH level = 1 location = sarayjuk }
+	kurultai = { tag = GLH level = 1 location = mechet }
+	caravanserai = { tag = GLH level = 1 location = mechet }
+	kurultai = { tag = GLH level = 1 location = beljamen }
+	caravanserai = { tag = GLH level = 1 location = beljamen }
+	kurultai = { tag = GLH level = 1 location = zamyany }
+	caravanserai = { tag = GLH level = 1 location = zamyany }
+	kurultai = { tag = GLH level = 1 location = urgench }
+	caravanserai = { tag = GLH level = 1 location = urgench }
+	slave_market = { tag = GLH level = 2 location = urgench }
+	kurultai = { tag = GLH level = 1 location = simbirsk }
+	caravanserai = { tag = GLH level = 1 location = simbirsk }
+	kurultai = { tag = GLH level = 1 location = kumak }
+	caravanserai = { tag = GLH level = 1 location = kumak }
+	caravanserai = { tag = GLH level = 1 location = kumak }
+	kurultai = { tag = GLH level = 1 location = kazan }
+	slave_market = { tag = GLH level = 3 location = kazan }
+	caravanserai = { tag = GLH level = 1 location = kazan }
+	tannery = { tag = GLH level = 2 location =  sarai_al_jadid }
+	tannery = { tag = GLH level = 1 location =  astrakhan }
+	fine_cloth_guild = { tag = GLH level = 1 location =  astrakhan }
+	rural_clothmaker = { tag = GLH level = 1 location =  yenotayevka }
+	market_village = { tag = GLH level = 1 location =  yenotayevka }
+	rural_clothmaker = { tag = GLH level = 1 location =  zamyany }
+	market_village = { tag = GLH level = 1 location =  zamyany }
+	tar_kiln = { tag = GLH level = 1 location =  chimgi_tura }
+	jewelry_guild = { tag = GLH level = 1 location =  chimgi_tura }
+	tar_kiln = { tag = GLH level = 1 location =  umanske }
+	charcoal_maker = { tag = GLH level = 1 location = bykovo }
+
+
+#Villages
+	market_village = { tag = THE level = 1 location = rentina }
+	market_village = { tag = BUL level = 1 location = sozopol }
+	forest_village = { tag = BUL level = 1 location = stanimaka }
+	market_village = { tag = SER level = 1 location = kotor }
+	market_village = { tag = SER level = 1 location = kucevo }
+	market_village = { tag = BOS level = 1 location = kozara }
+	market_village = { tag = CRO level = 1 location = senj }
+	market_village = { tag = ACH level = 1 location = chalandritsa }
+	forest_village = { tag = SER level = 1 location = velbuzd }
+	market_village = { tag = SER level = 1 location = shkoder }
+	market_village = { tag = SER level = 1 location = smederevo }
+	forest_village = { tag = SER level = 1 location = podgorica }
+	market_village = { tag = SER level = 1 location = trebinje }
+	forest_village = { tag = SER level = 1 location = soko_grad }
+	forest_village = { tag = SER level = 1 location = uzice }
+	forest_village = { tag = SER level = 1 location = krupanj }
+	forest_village = { tag = SER level = 1 location = stalac }
+	market_village = { tag = BOS level = 1 location = zenica }
+	market_village = { tag = BOS level = 1 location = mostar }
+	market_village = { tag = BUL level = 1 location = nikopol }
+	market_village = { tag = BUL level = 1 location = pleven }
+	forest_village = { tag = BYZ level = 1 location = akyazi }
+	forest_village = { tag = BUL level = 1 location = melnik }
+	forest_village = { tag = BUL level = 1 location = melnik }
+	forest_village = { tag = CRO level = 1 location = bihac }
+	forest_village = { tag = BOS level = 1 location = kljuc }
+	forest_village = { tag = BOS level = 1 location = soli }
+	market_village = { tag = NAX level = 1 location = naxos }
+	market_village = { tag = BYZ level = 1 location = manavgat }
+	market_village = { tag = BYZ level = 1 location = ustra }
+	market_village = { tag = THE level = 1 location = edessa }
+	market_village = { tag = THE level = 1 location = kastoria }
+	market_village = { tag = THS level = 1 location = gravia }
+	market_village = { tag = EPI level = 1 location = arta }
+	market_village = { tag = EPI level = 1 location = angelokastron }
+	market_village = { tag = EPI level = 1 location = argyrokastro }
+	market_village = { tag = NEG level = 1 location = negroponte }
+	market_village = { tag = ATH level = 1 location = thebes }
+	market_village = { tag = ATH level = 1 location = megara }
+	market_village = { tag = MOE level = 1 location = tripolitsa }
+	market_village = { tag = MOE level = 1 location = mystras }
+	market_village = { tag = MOE level = 1 location = nafplio }
+	market_village = { tag = ACH level = 1 location = andravida }
+	market_village = { tag = BYZ level = 1 location = bozan }
+	market_village = { tag = BYZ level = 1 location = bandirma }
+	market_village = { tag = ANA level = 1 location = nigde }
+	market_village = { tag = CYP level = 1 location = limassol }
+	market_village = { tag = CYP level = 1 location = morphou }
+	market_village = { tag = CYP level = 1 location = famagusta }
+	market_village = { tag = ANA level = 1 location = zile }
+	market_village = { tag = CIL level = 2 location = sis }
+	market_village = { tag = CIL level = 2 location = adana }
+	market_village = { tag = CIL level = 1 location = silifke }
+	market_village = { tag = ANA level = 1 location = eregli_kar }
+	market_village = { tag = ANA level = 1 location = aksaray }
+	market_village = { tag = ANA level = 1 location = kirsehir }
+	market_village = { tag = ANA level = 1 location = sungurlu }
+	market_village = { tag = BYZ level = 1 location = yuksekkum }
+	market_village = { tag = TRE level = 1 location = taman }
+	market_village = { tag = TRE level = 1 location = lusta }
+	market_village = { tag = BYZ level = 1 location = bukelon }
+	market_village = { tag = BYZ level = 1 location = demotica }
+	market_village = { tag = BYZ level = 1 location = akcasehir }
+	market_village = { tag = BYZ level = 1 location = mengen }
+	forest_village = { tag = PAF level = 1 location = bayat }
+	market_village = { tag = CIL level = 1 location = iskenderun }
+	market_village = { tag = ANA level = 1 location = yalvac }
+	forest_village = { tag = ANA level = 1 location = beysehir }
+	market_village = { tag = MES level = 1 location = arguvan }
+	market_village = { tag = DER level = 1 location = palu }
+	market_village = { tag = ARM level = 1 location = ercis }
+	market_village = { tag = ARM level = 1 location = karakilise }
+	market_village = { tag = ARM level = 1 location = tercan }
+	market_village = { tag = ARM level = 1 location = surmali }
+	market_village = { tag = ARM level = 1 location = yerevan }
+	market_village = { tag = KCN level = 1 location = gandzasar }
+	market_village = { tag = SYU level = 1 location = kapan_armenia }
+	market_village = { tag = ATZ level = 1 location = maku }
+	market_village = { tag = AAI level = 1 location = akhalkalaki }
+	market_village = { tag = SME level = 1 location = akhaltsikhe }
+	market_village = { tag = GEO level = 1 location = bodbe }
+	market_village = { tag = GEO level = 1 location = surmali }
+	market_village = { tag = GEO level = 1 location = kutaisi }
+	market_village = { tag = GEO level = 1 location = anaklia }
+
+	#Italy
+	market_village = { tag = VEN level = 1 location = corfu }
+	market_village = { tag = CEP level = 1 location = cephalonia }
+	market_village = { tag = VEN level = 1 location = modon }
+	market_village = { tag = VEN level = 1 location = kythira }
+	market_village = { tag = VEN level = 1 location = andros }
+	market_village = { tag = VEN level = 1 location = karpathos }
+	market_village = { tag = GEN level = 1 location = samos }
+	market_village = { tag = GEN level = 1 location = chios }
+	market_village = { tag = GEN level = 1 location = foca }
+	market_village = { tag = GEN level = 1 location = amasra }
+	market_village = { tag = CRT level = 1 location = chania }
+	market_village = { tag = FAE level = 1 location = faenza }
+	market_village = { tag = GUB level = 1 location = gubbio }
+	market_village = { tag = CDC level = 1 location = cittacastello }
+	market_village = { tag = VEN level = 1 location = slano }
+	market_village = { tag = VEN level = 2 location = split }
+	market_village = { tag = VEN level = 1 location = brac }
+	market_village = { tag = VEN level = 2 location = zadar }
+	market_village = { tag = VEN level = 2 location = pag }
+	market_village = { tag = VEN level = 2 location = pola }
+	market_village = { tag = VEN level = 2 location = rovinj }
+	market_village = { tag = VEN level = 2 location = mestre }
+	market_village = { tag = CHX level = 1 location = chieri }
+	market_village = { tag = SAL level = 1 location = saluzzo }
+	market_village = { tag = CNV level = 2 location = ivrea }
+	market_village = { tag = TTN level = 1 location = tortona }
+	market_village = { tag = PTG level = 1 location = pitigliano }
+	market_village = { tag = COT level = 1 location = cortona }
+	market_village = { tag = PEA level = 1 location = sansepolcro }
+	market_village = { tag = MAN level = 1 location = mirandola }
+	market_village = { tag = URB level = 1 location = fabriano }
+	market_village = { tag = CMR level = 1 location = camerino }
+	market_village = { tag = FRM level = 1 location = fermo }
+	market_village = { tag = BR2 level = 1 location = cosenza }
+	market_village = { tag = BR2 level = 1 location = gallipoliita }
+	market_village = { tag = NAP level = 1 location = campagna }
+	market_village = { tag = CEP level = 1 location = leukas }
+	market_village = { tag = GEN level = 1 location = alghero }
+	market_village = { tag = GEN level = 1 location = bastia }
+	market_village = { tag = GEN level = 1 location = sartene }
+	market_village = { tag = GEN level = 1 location = lavagna }
+	market_village = { tag = GEN level = 1 location = sarzana }
+	market_village = { tag = MSP level = 1 location = fosdinovo }
+	market_village = { tag = GEN level = 1 location = albenga }
+	market_village = { tag = GEN level = 1 location = ventimiglia }
+	market_village = { tag = GEN level = 1 location = cairo_montenotte }
+	market_village = { tag = GEN level = 1 location = terranova_pausania }
+
+
+#BR added estate buildings
+	#Balkans and Anatolia
 	burgher_mansion = { tag = BYZ level = 5 location = constantinople }	
 	guild_hall = { tag = BYZ level = 2 location = constantinople }
 	merchants_guild = { tag = BYZ level = 2 location = constantinople }
 	artisan_guilds = { tag = BYZ level = 2 location = constantinople }
-
 	noble_villa = { tag = BYZ level = 1 location = silivri }
 	merchants_guild = { tag = BYZ level = 1 location = edirne }
-	bridge_infrastructure = { tag = BYZ level = 1 location = edirne }
-	bridge_infrastructure = { tag = BYZ level = 1 location = atpazari }
-	bridge_infrastructure = { tag = BYZ level = 1 location = goynuk }
-	bridge_infrastructure = { tag = BYZ level = 1 location = sogut }
-	bridge_infrastructure = { tag = BYZ level = 1 location = bursa }
-
 	noble_villa = { tag = ATH level = 1 location = gravia }
 	clerical_archives = { tag = ATH level = 1 location = athens }
 	noble_villa = { tag = THE level = 1 location = edessa }
@@ -4322,27 +4552,34 @@ building_manager = {
 	merchants_guild = { tag = THE level = 1 location = thessaloniki }
 	artisan_guilds = { tag = THE level = 1 location = thessaloniki }
 	nobles_recruitment_center = { tag = THE level = 1 location = thessaloniki }
-	apothecary = { tag = THE level = 1 location = thessaloniki }
+	nobility_fortifications = { tag = BYZ level = 1 location = manavgat }
+	nobility_fortifications = { tag = BYZ level = 1 location = ustra }
+	nobility_fortifications = { tag = THE level = 1 location = edessa }
+	nobility_fortifications = { tag = THE level = 1 location = kastoria }
+	nobility_fortifications = { tag = THS level = 1 location = gravia }
+	nobility_fortifications = { tag = EPI level = 1 location = arta }
+	nobility_fortifications = { tag = EPI level = 1 location = angelokastron }
+	nobility_fortifications = { tag = EPI level = 1 location = argyrokastro }
+	nobility_fortifications = { tag = NEG level = 1 location = negroponte }
+	local_markets = { tag = NEG level = 1 location = negroponte }
+	nobility_fortifications = { tag = NAX level = 1 location = naxos }
+	local_markets = { tag = NAX level = 1 location = naxos }
 	clerical_archives = { tag = CIL level = 1 location = antioch }
 	guild_hall = { tag = ATH level = 1 location = athens }
 	guild_hall = { tag = ATH level = 1 location = corinth }
 	guild_hall = { tag = THS level = 1 location = larissa }
-	apothecary = { tag = THS level = 1 location = larissa }
 	guild_hall = { tag = CRT level = 1 location = candia }
 	noble_villa = { tag = CEP level = 1 location = cephalonia }
 	guild_hall = { tag = EPI level = 1 location = durres }
 	guild_hall = { tag = CYP level = 1 location = larnaca }
 	merchants_guild = { tag = ATH level = 1 location = athens }
-	apothecary = { tag = ATH level = 1 location = athens }
 	merchants_guild = { tag = ATH level = 1 location = corinth }
-	apothecary = { tag = ATH level = 1 location = corinth }
 	merchants_guild = { tag = THS level = 1 location = larissa }
 	merchants_guild = { tag = CRT level = 1 location = candia }
 	merchants_guild = { tag = EPI level = 1 location = durres }
 	merchants_guild = { tag = CYP level = 1 location = larnaca }
 	nobles_recruitment_center = { tag = EPI level = 1 location = ioannina }
 	noble_villa = { tag = EPI level = 1 location = arta }
-
 	peasants_training_grounds = { tag = MOE level = 1 location = tripolitsa }
 	peasants_training_grounds = { tag = MOE level = 1 location = mystras }
 	peasants_training_grounds = { tag = ACH level = 1 location = kalamata }
@@ -4393,15 +4630,11 @@ building_manager = {
 	nobles_recruitment_center = { tag = BUL level = 1 location = stanimaka }
 	nobles_recruitment_center = { tag = BUL level = 1 location = melnik }
 	nobles_recruitment_center = { tag = BUL level = 1 location = lardeja }
-
-	#Anatolia
 	noble_villa = { tag = BYZ level = 1 location = uskudar }
 	noble_villa = { tag = BYZ level = 1 location = bilecik }
 	noble_villa = { tag = BYZ level = 1 location = akcasehir }
 	noble_villa = { tag = BYZ level = 1 location = bozan }
-	market_village = { tag = BYZ level = 1 location = bozan }
 	noble_villa = { tag = BYZ level = 1 location = bandirma }
-	market_village = { tag = BYZ level = 1 location = bandirma }
 	noble_villa = { tag = BYZ level = 1 location = yuksekkum }
 	noble_villa = { tag = BYZ level = 1 location = mengen }
 	noble_villa = { tag = PAF level = 1 location = bayat }
@@ -4410,7 +4643,6 @@ building_manager = {
 	noble_villa = { tag = ANA level = 1 location = eregli_kar }
 	noble_villa = { tag = ANA level = 1 location = yalvac }
 	noble_villa = { tag = ANA level = 1 location = nigde }
-	market_village = { tag = ANA level = 1 location = nigde }
 	noble_villa = { tag = ANA level = 1 location = kirsehir }
 	noble_villa = { tag = ANA level = 1 location = bozok }
 	noble_villa = { tag = ANA level = 1 location = sungurlu }
@@ -4419,13 +4651,10 @@ building_manager = {
 	noble_villa = { tag = CIL level = 1 location = adana }
 	noble_villa = { tag = CIL level = 1 location = sis }
 	noble_villa = { tag = CYP level = 1 location = limassol }
-	market_village = { tag = CYP level = 1 location = limassol }
 	local_markets = { tag = CYP level = 1 location = limassol }
 	noble_villa = { tag = CYP level = 1 location = morphou }
-	market_village = { tag = CYP level = 1 location = morphou }
 	local_markets = { tag = CYP level = 1 location = morphou }
 	noble_villa = { tag = CYP level = 1 location = famagusta }
-	market_village = { tag = CYP level = 1 location = famagusta }
 	local_markets = { tag = CYP level = 1 location = famagusta }
 	noble_villa = { tag = NAX level = 1 location = naxos }
 	guild_hall = { tag = BYZ level = 1 location = smyrna }
@@ -4477,7 +4706,6 @@ building_manager = {
 	nobles_recruitment_center = { tag = GEO level = 1 location = kutaisi }
 	nobles_recruitment_center = { tag = GEO level = 1 location = rustavi }
 	nobles_recruitment_center = { tag = GEO level = 1 location = dmanisi }
-
 	peasants_training_grounds = { tag = ARM level = 1 location = yerevan }
 	peasants_training_grounds = { tag = ARM level = 1 location = surmali }
 	peasants_training_grounds = { tag = ARM level = 1 location = kars }
@@ -4486,7 +4714,6 @@ building_manager = {
 	peasants_training_grounds = { tag = ARM level = 1 location = tercan }
 	peasants_training_grounds = { tag = DER level = 1 location = harput }
 	peasants_training_grounds = { tag = MES level = 1 location = arapgir }
-
 	guild_hall = { tag = CIL level = 1 location = antioch }
 	merchants_guild = { tag = CIL level = 1 location = antioch }
 	burgher_mansion = { tag = CIL level = 1 location = antioch }	
@@ -4508,187 +4735,44 @@ building_manager = {
 	guild_hall = { tag = ARM level = 1 location = ani }
 	merchants_guild = { tag = ARM level = 1 location = ani }	
 	artisan_guilds = { tag = ARM level = 1 location = ani }
-	
-	
-	dock = { tag = THE level = 1 location = thessaloniki }
-	wharf = { tag = THE level = 1 location = thessaloniki }
-	cathedral = { tag = THE level = 1 location = thessaloniki }
-	#anatolia
-	dock = { tag = BYZ level = 1 location = smyrna }
-	wharf = { tag = BYZ level = 1 location = smyrna }
-	cathedral = { tag = BYZ level = 1 location = smyrna }
-
-	nobility_fortifications = { tag = BYZ level = 1 location = manavgat }
-	market_village = { tag = BYZ level = 1 location = manavgat }
-	nobility_fortifications = { tag = BYZ level = 1 location = ustra }
-	market_village = { tag = BYZ level = 1 location = ustra }
-	nobility_fortifications = { tag = THE level = 1 location = edessa }
-	market_village = { tag = THE level = 1 location = edessa }
-	nobility_fortifications = { tag = THE level = 1 location = kastoria }
-	market_village = { tag = THE level = 1 location = kastoria }
-	nobility_fortifications = { tag = THS level = 1 location = gravia }
-	market_village = { tag = THS level = 1 location = gravia }
-	nobility_fortifications = { tag = EPI level = 1 location = arta }
-	market_village = { tag = EPI level = 1 location = arta }
-	nobility_fortifications = { tag = EPI level = 1 location = angelokastron }
-	market_village = { tag = EPI level = 1 location = angelokastron }
-	nobility_fortifications = { tag = EPI level = 1 location = argyrokastro }
-	market_village = { tag = EPI level = 1 location = argyrokastro }
-	nobility_fortifications = { tag = NEG level = 1 location = negroponte }
-	market_village = { tag = NEG level = 1 location = negroponte }
-	local_markets = { tag = NEG level = 1 location = negroponte }
-	nobility_fortifications = { tag = NAX level = 1 location = naxos }
-	market_village = { tag = NAX level = 1 location = naxos }
-	local_markets = { tag = NAX level = 1 location = naxos }
 	nobility_fortifications = { tag = CIL level = 1 location = sis }
-	market_village = { tag = CIL level = 2 location = sis }
-	nobility_fortifications = { tag = CIL level = 1 location = adana }
-	market_village = { tag = CIL level = 2 location = adana }
-	nobility_fortifications = { tag = CIL level = 1 location = silifke }
-	market_village = { tag = CIL level = 1 location = silifke }
-	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
-	market_village = { tag = ANA level = 1 location = eregli_kar }
-	nobility_fortifications = { tag = ANA level = 1 location = aksaray }
-	market_village = { tag = ANA level = 1 location = aksaray }
-	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
-	market_village = { tag = ANA level = 1 location = kirsehir }
-	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
-	market_village = { tag = ANA level = 1 location = sungurlu }
-	nobility_fortifications = { tag = ANA level = 1 location = zile }
-	market_village = { tag = ANA level = 1 location = zile }
-	market_village = { tag = ATH level = 1 location = thebes }
-	market_village = { tag = ATH level = 1 location = megara }
-	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
-	market_village = { tag = MOE level = 1 location = tripolitsa }
-	nobility_fortifications = { tag = MOE level = 1 location = mystras }
-	market_village = { tag = MOE level = 1 location = mystras }
-	market_village = { tag = MOE level = 1 location = nafplio }
-	nobility_fortifications = { tag = ACH level = 1 location = andravida }
-	market_village = { tag = ACH level = 1 location = andravida }
-	market_village = { tag = BYZ level = 1 location = yuksekkum }
-	market_village = { tag = TRE level = 1 location = taman }
-	market_village = { tag = TRE level = 1 location = lusta }
-	local_markets = { tag = TRE level = 1 location = lusta }
-	market_village = { tag = BYZ level = 1 location = bukelon }
-	market_village = { tag = BYZ level = 1 location = demotica }
-	market_village = { tag = BYZ level = 1 location = akcasehir }
-	market_village = { tag = BYZ level = 1 location = mengen }
-	forest_village = { tag = SER level = 1 location = velbuzd }
-	market_village = { tag = SER level = 1 location = shkoder }
-	market_village = { tag = SER level = 1 location = smederevo }
-	forest_village = { tag = SER level = 1 location = podgorica }
-	market_village = { tag = SER level = 1 location = trebinje }
-	forest_village = { tag = SER level = 1 location = soko_grad }
-	forest_village = { tag = SER level = 1 location = uzice }
-	forest_village = { tag = SER level = 1 location = krupanj }
-	forest_village = { tag = SER level = 1 location = stalac }
-	market_village = { tag = BOS level = 1 location = zenica }
-	market_village = { tag = BOS level = 1 location = mostar }
-	market_village = { tag = BUL level = 1 location = nikopol }
-	market_village = { tag = BUL level = 1 location = pleven }
-	forest_village = { tag = BYZ level = 1 location = akyazi }
-	forest_village = { tag = BUL level = 1 location = melnik }
-	forest_village = { tag = PAF level = 1 location = bayat }
-	forest_village = { tag = BUL level = 1 location = melnik }
-	forest_village = { tag = CRO level = 1 location = bihac }
-	forest_village = { tag = BOS level = 1 location = kljuc }
-	forest_village = { tag = BOS level = 1 location = soli }
-	market_village = { tag = CIL level = 1 location = iskenderun }
-	market_village = { tag = ANA level = 1 location = yalvac }
-	forest_village = { tag = ANA level = 1 location = beysehir }
-
-	#Italy
-	market_village = { tag = VEN level = 1 location = corfu }
-	local_markets = { tag = VEN level = 1 location = corfu }
-	market_village = { tag = CEP level = 1 location = cephalonia }
-	local_markets = { tag = CEP level = 1 location = cephalonia }
-	market_village = { tag = VEN level = 1 location = modon }
-	market_village = { tag = VEN level = 1 location = kythira }
-	market_village = { tag = VEN level = 1 location = andros }
-	market_village = { tag = VEN level = 1 location = karpathos }
-	market_village = { tag = GEN level = 1 location = samos }
-	market_village = { tag = GEN level = 1 location = chios }
-	market_village = { tag = GEN level = 1 location = foca }
-	market_village = { tag = GEN level = 1 location = amasra }
-	market_village = { tag = CRT level = 1 location = chania }
 	noble_villa = { tag = CRT level = 1 location = chania }
 	local_markets = { tag = CRT level = 1 location = chania }
-	market_village = { tag = FAE level = 1 location = faenza }
-	market_village = { tag = GUB level = 1 location = gubbio }
-	market_village = { tag = CDC level = 1 location = cittacastello }
-	market_village = { tag = VEN level = 1 location = slano }
-	market_village = { tag = VEN level = 2 location = split }
-	market_village = { tag = VEN level = 1 location = brac }
-	market_village = { tag = VEN level = 2 location = zadar }
-	market_village = { tag = VEN level = 2 location = pag }
-	market_village = { tag = VEN level = 2 location = pola }
-	market_village = { tag = VEN level = 2 location = rovinj }
-	market_village = { tag = VEN level = 2 location = mestre }
-	market_village = { tag = CHX level = 1 location = chieri }
-	market_village = { tag = SAL level = 1 location = saluzzo }
-	market_village = { tag = CNV level = 2 location = ivrea }
-	market_village = { tag = TTN level = 1 location = tortona }
-	market_village = { tag = PTG level = 1 location = pitigliano }
-	market_village = { tag = COT level = 1 location = cortona }
-	market_village = { tag = PEA level = 1 location = sansepolcro }
-	market_village = { tag = MAN level = 1 location = mirandola }
-	market_village = { tag = URB level = 1 location = fabriano }
-	market_village = { tag = CMR level = 1 location = camerino }
-	market_village = { tag = FRM level = 1 location = fermo }
-	market_village = { tag = BR2 level = 1 location = cosenza }
-	market_village = { tag = BR2 level = 1 location = gallipoliita }
-	market_village = { tag = NAP level = 1 location = campagna }
-	market_village = { tag = CEP level = 1 location = leukas }
-	market_village = { tag = GEN level = 1 location = alghero }
-	market_village = { tag = GEN level = 1 location = bastia }
-	market_village = { tag = GEN level = 1 location = sartene }
-	market_village = { tag = GEN level = 1 location = lavagna }
-	market_village = { tag = GEN level = 1 location = sarzana }
-	market_village = { tag = MSP level = 1 location = fosdinovo }
-	market_village = { tag = GEN level = 1 location = albenga }
-	market_village = { tag = GEN level = 1 location = ventimiglia }
-	market_village = { tag = GEN level = 1 location = cairo_montenotte }
-	market_village = { tag = GEN level = 1 location = terranova_pausania }
-
-	
-	
-
-
-
+	local_markets = { tag = VEN level = 1 location = corfu }
+	local_markets = { tag = CEP level = 1 location = cephalonia }
+	nobility_fortifications = { tag = CIL level = 1 location = adana }
+	nobility_fortifications = { tag = CIL level = 1 location = silifke }
+	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
+	nobility_fortifications = { tag = ANA level = 1 location = aksaray }
+	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
+	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
+	nobility_fortifications = { tag = ANA level = 1 location = zile }
+	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
+	nobility_fortifications = { tag = MOE level = 1 location = mystras }
+	nobility_fortifications = { tag = ACH level = 1 location = andravida }
+	local_markets = { tag = TRE level = 1 location = lusta }
 	nobility_fortifications = { tag = MES level = 1 location = arguvan }
-	market_village = { tag = MES level = 1 location = arguvan }
 	nobility_fortifications = { tag = DER level = 1 location = palu }
-	market_village = { tag = DER level = 1 location = palu }
 	nobility_fortifications = { tag = ARM level = 1 location = ercis }
-	market_village = { tag = ARM level = 1 location = ercis }
 	nobility_fortifications = { tag = ARM level = 1 location = karakilise }
-	market_village = { tag = ARM level = 1 location = karakilise }
 	nobility_fortifications = { tag = ARM level = 1 location = tercan }
-	market_village = { tag = ARM level = 1 location = tercan }
 	nobility_fortifications = { tag = ARM level = 1 location = surmali }
-	market_village = { tag = ARM level = 1 location = surmali }
 	nobility_fortifications = { tag = ARM level = 1 location = yerevan }
-	market_village = { tag = ARM level = 1 location = yerevan }
 	nobility_fortifications = { tag = KCN level = 1 location = gandzasar }
-	market_village = { tag = KCN level = 1 location = gandzasar }
 	nobility_fortifications = { tag = SYU level = 1 location = kapan_armenia }
-	market_village = { tag = SYU level = 1 location = kapan_armenia }
 	nobility_fortifications = { tag = ATZ level = 1 location = maku }
-	market_village = { tag = ATZ level = 1 location = maku }
 	nobility_fortifications = { tag = AAI level = 1 location = akhalkalaki }
-	market_village = { tag = AAI level = 1 location = akhalkalaki }
 	nobility_fortifications = { tag = SME level = 1 location = akhaltsikhe }
-	market_village = { tag = SME level = 1 location = akhaltsikhe }
 	nobility_fortifications = { tag = GEO level = 1 location = bodbe }
-	market_village = { tag = GEO level = 1 location = bodbe }
 	nobility_fortifications = { tag = GEO level = 1 location = surmali }
-	market_village = { tag = GEO level = 1 location = surmali }
 	nobility_fortifications = { tag = GEO level = 1 location = kutaisi }
-	market_village = { tag = GEO level = 1 location = kutaisi }
 	nobility_fortifications = { tag = GEO level = 1 location = anaklia }
-	market_village = { tag = GEO level = 1 location = anaklia }
-
-
+	
+#BR added fortifications
+	castle = { tag = KNI level = 1 location =  malta } #br edit
+	castle = { tag = SER level = 1 location =  kozelj }
+	castle = { tag = SER level = 1 location =  kucevo }
+	castle = { tag = SER level = 1 location =  trgoviste_SER }
 	castle = { tag = BYZ level = 1 location = thessaloniki }
 	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	stockade = { tag = BYZ level = 1 location = antalya }
@@ -4721,112 +4805,8 @@ building_manager = {
 	stockade = { tag = TRE level = 1 location = amasya }
 	stockade = { tag = TRE level = 1 location = niksar }
 
-	#IBERIA
 
-	royal_court = { tag = ADU level = 1 location = cordoba }
-	royal_garden = { tag = ADU level = 1 location =  cordoba } #Gardens of the Great Palace
-	fortress_granary = { tag = ADU level = 1 location = cordoba }
-	slave_market = { tag = ADU level = 2 location = cordoba }
-	funduq = { tag = ADU level = 1 location = cordoba }
-
-
-	marketplace	= { tag = ADU level = 10 location =  cordoba }
-	trading_hub = { tag = ADU level = 1 location =  cordoba }
-	entrepot = { tag = ADU level = 1 location =  cordoba }
-	market_warehouse = { tag = ADU level = 1 location =  cordoba }
-	
-	fine_cloth_guild = { tag = ADU level = 5 location =  cordoba }
-	saltpeter_guild = { tag = ADU level = 1 location =  cordoba }
-	tannery = { tag = ADU level = 4 location =  cordoba }
-	cloth_guild = { tag = ADU level = 5 location =  cordoba }
-	dyes_guild = { tag = ADU level = 2 location =  cordoba }
-	furniture_guild = { tag = ADU level = 4 location =  cordoba }
-	glass_guild = { tag = ADU level = 2 location =  cordoba }
-	paper_guild = { tag = ADU level = 2 location =  cordoba }
-	porcelain_guild = { tag = ADU level = 4 location =  cordoba }
-	pottery_guild = { tag = ADU level = 2 location =  cordoba }
-	tools_guild = { tag = ADU level = 2 location =  cordoba }
-	weapon_guild = { tag = ADU level = 2 location =  cordoba }
-	
-	scriptorium = { tag = ADU level = 6 location =  cordoba }
-	hospital = { tag = ADU level = 1 location =  cordoba }
-	library = { tag = ADU level = 1 location =  cordoba }
-	medical_school = { tag = ADU level = 1 location =  cordoba }
-	sergeantry = { tag = ADU level = 1 location =  cordoba }
-	great_madrasa = { tag = ADU level = 1 location = cordoba }
-	great_madrasa = { tag = MAM level = 1 location = cairo }
-	great_madrasa = { tag = TUR level = 1 location = baghdad }
-	madrasa = { tag = ADU level = 1 location = granada }
-	madrasa = { tag = ADU level = 1 location = sevilla }
-	fortress_granary = { tag = ADU level = 1 location = sevilla }
-	slave_market = { tag = ADU level = 2 location = sevilla }
-	funduq = { tag = ADU level = 1 location = sevilla }
-	madrasa = { tag = ADU level = 1 location = toledo }
-	fortress_granary = { tag = ADU level = 1 location = toledo }
-	slave_market = { tag = ADU level = 2 location = toledo }
-	funduq = { tag = ADU level = 1 location = toledo }
-	madrasa = { tag = ADU level = 1 location = malaga }
-	fortress_granary = { tag = ADU level = 1 location = malaga }
-	slave_market = { tag = ADU level = 2 location = malaga }
-	funduq = { tag = ADU level = 1 location = malaga }
-	madrasa = { tag = ADU level = 1 location = valencia }
-	fortress_granary = { tag = ADU level = 1 location = valencia }
-	slave_market = { tag = ADU level = 2 location = valencia }
-	funduq = { tag = ADU level = 1 location = valencia }
-	fortress_granary = { tag = ADU level = 1 location = granada }
-	slave_market = { tag = ADU level = 2 location = granada }
-	slave_market = { tag = ADU level = 1 location = jaen }
-	slave_market = { tag = ADU level = 1 location = almeria }
-	slave_market = { tag = ADU level = 1 location = faro }
-	slave_market = { tag = ADU level = 1 location = evora }
-	slave_market = { tag = ADU level = 1 location = badajoz }
-	slave_market = { tag = ADU level = 1 location = caceres }
-	slave_market = { tag = ADU level = 1 location = murcia }
-	slave_market = { tag = ADU level = 1 location = orihuela }
-	slave_market = { tag = ADU level = 1 location = jativa }
-	slave_market = { tag = ADU level = 1 location = santarem }
-
-
-	# steppes 
-	kurultai = { tag = GLH level = 1 location = sarai_al_jadid }
-	slave_market = { tag = GLH level = 3 location = sarai_al_jadid }
-	caravanserai = { tag = GLH level = 1 location = sarai_al_jadid }
-	kurultai = { tag = GLH level = 1 location = dubovskoye }
-	caravanserai = { tag = GLH level = 1 location = dubovskoye }
-	kurultai = { tag = GLH level = 1 location = mavliberda }
-	caravanserai = { tag = GLH level = 1 location = mavliberda }
-	kurultai = { tag = GLH level = 1 location = astrakhan }
-	slave_market = { tag = GLH level = 4 location = astrakhan }
-	caravanserai = { tag = GLH level = 1 location = astrakhan }
-	kurultai = { tag = GLH level = 1 location = khosheutovo }
-	caravanserai = { tag = GLH level = 1 location = khosheutovo }
-	kurultai = { tag = GLH level = 1 location = saryadyn }
-	caravanserai = { tag = GLH level = 1 location = saryadyn }
-	kurultai = { tag = GLH level = 1 location = krasny_yar }
-	caravanserai = { tag = GLH level = 1 location = krasny_yar }
-	kurultai = { tag = GLH level = 1 location = posad }
-	caravanserai = { tag = GLH level = 1 location = posad }
-	kurultai = { tag = GLH level = 1 location = sloviansk }
-	caravanserai = { tag = GLH level = 1 location = sloviansk }
-	kurultai = { tag = GLH level = 1 location = sarayjuk }
-	slave_market = { tag = GLH level = 1 location = sarayjuk }
-	caravanserai = { tag = GLH level = 1 location = sarayjuk }
-	kurultai = { tag = GLH level = 1 location = mechet }
-	caravanserai = { tag = GLH level = 1 location = mechet }
-	kurultai = { tag = GLH level = 1 location = beljamen }
-	caravanserai = { tag = GLH level = 1 location = beljamen }
-	kurultai = { tag = GLH level = 1 location = zamyany }
-	caravanserai = { tag = GLH level = 1 location = zamyany }
-	kurultai = { tag = GLH level = 1 location = urgench }
-	caravanserai = { tag = GLH level = 1 location = urgench }
-	slave_market = { tag = GLH level = 2 location = urgench }
-	kurultai = { tag = GLH level = 1 location = simbirsk }
-	caravanserai = { tag = GLH level = 1 location = simbirsk }
-	kurultai = { tag = GLH level = 1 location = kumak }
-	caravanserai = { tag = GLH level = 1 location = kumak }
-	caravanserai = { tag = GLH level = 1 location = kumak }
-
-
+#BR New World
 	#Elysium
 	tannery = { tag = NEM level = 1 location =  patapsco }
 	cloth_guild = { tag = NEM level = 1 location =  patapsco }
@@ -4841,17 +4821,14 @@ building_manager = {
 	mason = { tag = NEM level = 1 location =  patapsco }
 	slave_market  = { tag = NEM level = 1 location =  patapsco }
 	lumber_mill = { tag = NEM level = 1 location =  patapsco }
-
 	forest_village = { tag = NEM level = 1 location =  nentego }
 	forest_village = { tag = NEM level = 1 location =  wicontiss }
 	fishing_village = { tag = NEM level = 1 location =  patuxent }
 	fishing_village = { tag = NEM level = 1 location =  chicamacomico }
-
 	market_village = { tag = NEM level = 1 location =  matapeake }
 	rural_clothmaker = { tag = NEM level = 1 location =  matapeake }
 	tar_kiln = { tag = NEM level = 1 location =  matapeake }
 	clay_pit = { tag = NEM level = 1 location =  matapeake }
-
 	settlement_building = { tag = NEM level = 1 location =  matapeake }
 	settlement_building = { tag = NEM level = 1 location =  nentego }
 	settlement_building = { tag = NEM level = 1 location =  wicontiss }
