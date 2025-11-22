@@ -451,11 +451,12 @@ international_organization_manager = {
 
 			TUR ARD ATZ DML HBN HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
 			BHT BIT DIL DMB DSN EGL HKK HZN HZR JLM MUS MZJ SOH ZRQ ZZR #Sutayids
+			AIA
 
 			#Unaligned
 
-			ARM KCN SYU VDZ #Armenia
-			GEO AAI SKI SME #Georgia
+			#ARM KCN SYU VDZ #Armenia
+			#GEO AAI SKI SME #Georgia
 			INJ KHU #Injuids
 			MKR BMP BLA KLW #Makran
 			ORM FAL JSK #Ormus
@@ -468,16 +469,7 @@ international_organization_manager = {
 		ilkhan_claimant = {
 			TUR ERE KAR
 		}
-		ruler_term = { character = hulegu_khan_borjigin start_date = 1256.1.1 end_date = 1265.2.8 regnal_number = 1 }
-		ruler_term = { character = abaqa_khan_borjigin start_date = 1265.2.8 end_date = 1282.4.4 regnal_number = 1 }
-		ruler_term = { character = ahmed_tekuder_borjigin start_date = 1282.4.4 end_date = 1284.8.10 regnal_number = 1 }
-		ruler_term = { character = arghun_khan_borjigin start_date = 1284.8.10 end_date = 1291.3.10 regnal_number = 1 }
-		ruler_term = { character = gaykhatu_borjigin start_date = 1291.3.10 end_date = 1295.3.21 regnal_number = 1 }
-		ruler_term = { character = hlg_baydu start_date = 1295.3.21 end_date = 1295.10.4 regnal_number = 1 }
-		ruler_term = { character = mahmud_ghazan_borjigin start_date = 1295.10.4 end_date = 1304.5.11 regnal_number = 1 }
-		ruler_term = { character = oljaitu_borjigin start_date = 1304.5.11 end_date = 1316.12.16 regnal_number = 1 }
-		ruler_term = { character = abu_said_bahadur_borjigin start_date = 1316.12.16 end_date = 1335.12.1 regnal_number = 1 }
-		ruler_term = { character = arpa_keun_borjigin start_date = 1335.12.1 end_date = 1336.5.15 regnal_number = 1 }
+		ruler_term = {	 character = tur_orhan start_date = 1324.1.1 regnal_number = 1	}
 
 	}
 
