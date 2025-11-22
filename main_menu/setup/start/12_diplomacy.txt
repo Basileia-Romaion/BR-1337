@@ -393,6 +393,9 @@ diplomacy_manager = {
     dependency = { first = TUR second = SOH subject_type = vassal }
     dependency = { first = TUR second = ZRQ subject_type = vassal }
     dependency = { first = TUR second = ZZR subject_type = vassal }
+    dependency = { first = TUR second = ATQ subject_type = vassal }
+    dependency = { first = ATQ second = DUL subject_type = vassal }
+    dependency = { first = TUR second = AIA subject_type = vassal }
 
     #scripted_mutual = { first = BYZ second = TRE type = alliance }
     scripted_mutual = { first = HBN second = KTW type = alliance }

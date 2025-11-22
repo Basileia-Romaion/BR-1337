@@ -4103,16 +4103,34 @@ countries = {
 				ruler_term = { character = glh_giyas_al_din_mohammed_oz_beg_borjigin start_date = 1313.1.1 regnal_number = 1 }
 				
 				ruler = glh_giyas_al_din_mohammed_oz_beg_borjigin
+
+				centralization_vs_decentralization = 50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = -50
+				traditionalist_vs_innovative = -50
+				spiritualist_vs_humanist = 25
+				mercantilism_vs_free_trade = 25
+				offensive_vs_defensive = -75
+				land_vs_naval = -100
+				quality_vs_quantity = 50
+				belligerent_vs_conciliatory = -75
+				capital_economy_vs_traditional_economy = 80
+				individualism_vs_communalism = 25
+				outward_vs_inward = 25
 				
 				reforms = {
 					legacy_of_genghis
 				}
 				privilege = {
+					joint_assembly_decrees
+					ghazi_privilege
+
 					dhimmi_abrahamic_communities
 					urban_development_grants
 					dhimmi_military_service
 					dhimmi_traditions
 					dhimmi_administrative_posts
+					dharmic_dhimmi_communities
 
 					tribes_land_rights
 					tribes_pasture_access
@@ -13969,7 +13987,7 @@ countries = {
 			include = "expl_silk_road_center"
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
-			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			include = "muslim_monarchy"
 			
 			government = {
 				ruler = gra_yusuf_i_nasrid
@@ -13997,13 +14015,13 @@ countries = {
 					#Nobles
 					elaborate_court_ceremonies
 					noble_sponsored_navy
+					joint_assembly_decrees
 					ghazi_privilege
 					
 					#Clergy
 					clergy_literacy_rights
 					clergy_enforced_unity
 					embellish_great_works_of_faith
-					clergy_literacy_rights
 					clergy_land_rights
 					
 					#Burghers
@@ -14025,22 +14043,25 @@ countries = {
 					dhimmi_pact_of_umar
 					dhimmi_military_service
 					dhimmi_traditions
+					urban_development_grants
+					dharmic_dhimmi_communities
 					
 				}
 				
-				centralization_vs_decentralization = -30
-				aristocracy_vs_plutocracy = 40
-				serfdom_vs_free_subjects = 20
-				traditionalist_vs_innovative = 40
+				centralization_vs_decentralization = -50
+				aristocracy_vs_plutocracy = 50
+				serfdom_vs_free_subjects = 25
+				traditionalist_vs_innovative = 50
 				spiritualist_vs_humanist = 80
-				mercantilism_vs_free_trade = 25
-				offensive_vs_defensive = 40
+				mercantilism_vs_free_trade = 35
+				offensive_vs_defensive = 50
 				land_vs_naval = -20
 				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = 40
+				belligerent_vs_conciliatory = 50
 				capital_economy_vs_traditional_economy = -60
 				individualism_vs_communalism = -20
 				outward_vs_inward = -60
+				mysticism_vs_jurisprudence = 50
 				
 				reforms = {
 					the_jewel_of_alandalus_reform
@@ -14051,7 +14072,6 @@ countries = {
 			}
 			court_language = maghrebi_dialect
 			religious_school = maliki_school
-			government = { mysticism_vs_jurisprudence = -5 }
 			
 			country_rank = rank_empire  #BR edit
 			
@@ -21863,12 +21883,21 @@ countries = {
 					#Nobles
 					elaborate_court_ceremonies
 					banal_lordship
-					
+					joint_assembly_decrees
+					ghazi_privilege
+
 					#Ulama
 					waqf_payments
+					embellish_great_works_of_faith
 					
 					#Burghers
 					trade_monopolies
+					formal_guilds
+					building_rights
+					market_fairs
+					shipwright_contracts
+					sponsor_maritime_contracts
+					land_of_commerce
 					
 					#Dhimmi #BR ADDED
 					dhimmi_land_rights
@@ -21877,6 +21906,8 @@ countries = {
 					dhimmi_pact_of_umar
 					dhimmi_military_service
 					dhimmi_traditions
+					urban_development_grants
+					dharmic_dhimmi_communities
 				}
 				
 				spiritualist_vs_humanist = -10
@@ -21893,7 +21924,7 @@ countries = {
 				}
 			}
 			religious_school = shafii_school #While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
-			government = { mysticism_vs_jurisprudence = 20 }
+			government = { mysticism_vs_jurisprudence = 25 }
 			
 			
 			tolerated_cultures = {
@@ -32049,7 +32080,6 @@ countries = {
 		TUR = {
 			type = army
 			own_control_core = {
-				baghdad
 				balad_ruz baqubah khalis khanaqin mandali
 				samarra ar_rabb tikrit ukbara
 				al_sinn
@@ -32097,42 +32127,39 @@ countries = {
 				ruler = tur_orhan
 				
 				centralization_vs_decentralization = 10
-				aristocracy_vs_plutocracy = -30
+				aristocracy_vs_plutocracy = -50
 				serfdom_vs_free_subjects = 0
 				traditionalist_vs_innovative = 10
 				spiritualist_vs_humanist = 10
 				mercantilism_vs_free_trade = -25
 				offensive_vs_defensive = 0
-				land_vs_naval = -20
+				land_vs_naval = -75
 				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = -40
+				belligerent_vs_conciliatory = -75
 				capital_economy_vs_traditional_economy = 80
 				individualism_vs_communalism = -20
 				outward_vs_inward = -60
+				mysticism_vs_jurisprudence = -25
 				
 				privilege = {
 					#Nobles
 					elaborate_court_ceremonies
-					noble_sponsored_navy
 					ghazi_privilege
-					
+					joint_assembly_decrees
+
 					#Clergy
 					clergy_literacy_rights
 					clergy_enforced_unity
 					embellish_great_works_of_faith
-					clergy_literacy_rights
 					clergy_land_rights
 					
 					#Burghers
 					formal_guilds
 					building_rights
 					market_fairs
-					shipwright_contracts
-					sponsor_maritime_contracts
 					
 					#Peasants
-					partial_yield
-					peasants_free_peasantry
+					peasants_allowed_weapons_privilege
 					
 					#Dhimmi
 					dhimmi_land_rights
@@ -32141,10 +32168,14 @@ countries = {
 					dhimmi_pact_of_umar
 					dhimmi_military_service
 					dhimmi_traditions
+					dharmic_dhimmi_communities
 					
 					#Tribes
 					tribes_land_rights
 					tribes_pasture_access
+					tribes_tribal_registry
+					tribes_protected_faith
+					tribes_in_administration
 				}
 				
 				laws = {
@@ -46524,6 +46555,19 @@ countries = {
 				harat khabar shahr_e_babak
 				bavanat
 				saghand ribat_ushturan jondaq
+
+				#INJ
+				shiraz abadeh_tashk kherameh sarvestan zarqan
+				firuzabad bandar_deyr dehram kalameh khormoj riz
+				kazerun borazjan reyshahr farashband sar_mashhad
+				qala_safid bandar_deylam bandar_rig basht jannaba nurabad
+				deh_kord borujen samiram sisakht vanak yasuj
+				istakhr aspas beyza qaryat_al_bidh saadatshahr shahr_meyan
+				qumisha karkevand ramsheh sohrfiruzan yangabad yazdikhwast
+				isfahan dehagh dowlatabad komshecheh murcheh_khvort tudeshk
+				kavar
+				ardestan natanz
+				abadeh eqlid
 			}
 			
 			include = "expl_middle_east"
@@ -46536,6 +46580,33 @@ countries = {
 				ruler_term = { character = mzf_mubariz_al_din_muhammad start_date = 1314.1.1 regnal_number = 1 }
 				
 				ruler = mzf_mubariz_al_din_muhammad
+
+				privilege = {
+					#nobles
+					noble_armies
+					primacy_of_nobility
+					auxilium_et_consilium
+					joint_assembly_decrees
+					
+					#Clergy
+					clergy_literacy_rights
+					embellish_great_works_of_faith
+					clergy_land_rights
+					
+					#Burghers
+					formal_guilds
+					building_rights
+					market_fairs
+					land_of_commerce
+
+					#Peasants
+					peasants_allowed_weapons_privilege
+					
+					#Dhimmi
+					dhimmi_land_rights
+					dhimmi_military_service
+					urban_development_grants
+				}
 				
 			}
 			
@@ -46543,8 +46614,9 @@ countries = {
 				baloch_culture
 			}
 			
+			country_rank = rank_kingdom
 			religious_school = maturidi_school #Said to be predominant in Persia before the Safavids
-			capital = yazd
+			capital = shiraz
 		}
 		
 		KRM = { #Kerman https://en.wikipedia.org/wiki/Kerman
@@ -46632,6 +46704,9 @@ countries = {
 		
 		INJ = { #Injuids
 			own_control_core = {
+				
+			}
+			our_cores_conquered_by_others = {
 				shiraz abadeh_tashk kherameh sarvestan zarqan
 				firuzabad bandar_deyr dehram kalameh khormoj riz
 				kazerun borazjan reyshahr farashband sar_mashhad
@@ -50366,6 +50441,102 @@ countries = {
 				ruler = random
 			}
 		}
+
+		AIA = { #Abbasids 
+			own_control_core = {
+				baghdad
+			}
+			
+			our_cores_conquered_by_others = {
+				rahba anah abu_kemal haditha
+				al_anbar hit ayn_tamr karbala
+				kufa al_udayb qadisiyyah
+				dayr_aqul badra ilam
+				wasit abdanan al_tib arkvaz bakusaya dehloran meymeh
+				basra abadan abdas al_madar al_qatr zuwayr
+				an_nil nasiriyah numaniyyah rusafa
+				khalafabad machul quban
+				ahvaz dowraq hamidiyeh hoveyzeh mosharahat muhammerah
+				kazimah
+				hillah samawa suq_al_shuyukh
+				balad_ruz baqubah khalis khanaqin mandali
+				samarra ar_rabb tikrit ukbara
+				al_sinn
+				eyvan
+			}
+			
+			starting_technology_level = 3
+			include = "expl_middle_east"
+			include = "muslim_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+
+				centralization_vs_decentralization = -75
+				aristocracy_vs_plutocracy = -10
+				serfdom_vs_free_subjects = 25
+				traditionalist_vs_innovative = 25
+				spiritualist_vs_humanist = 25
+				mercantilism_vs_free_trade = 25
+				offensive_vs_defensive = 75
+				land_vs_naval = -75
+				quality_vs_quantity = 10
+				belligerent_vs_conciliatory = 75
+				capital_economy_vs_traditional_economy = 10
+				individualism_vs_communalism = 25
+				outward_vs_inward = -60
+				mysticism_vs_jurisprudence = 50
+				
+				privilege = {
+					#Nobles
+					elaborate_court_ceremonies
+					ghazi_privilege
+					auxilium_et_consilium
+					joint_assembly_decrees
+
+					#Clergy
+					clergy_literacy_rights
+					clergy_enforced_unity
+					embellish_great_works_of_faith
+					clergy_land_rights
+
+					#Peasants
+					peasants_allowed_weapons_privilege
+					
+					#Burghers
+					formal_guilds
+					building_rights
+					market_fairs
+					land_of_commerce
+					
+					#Dhimmi
+					dhimmi_land_rights
+					dhimmi_administrative_posts
+					dhimmi_abrahamic_communities
+					dhimmi_pact_of_umar
+					dhimmi_military_service
+					dhimmi_traditions
+					dharmic_dhimmi_communities
+					urban_development_grants
+
+				}
+				
+				laws = {
+					royal_court_customs_law = harem_policy
+				}
+			}
+			
+			capital = baghdad
+			country_rank = rank_empire #Caliphate 
+			tolerated_cultures = {
+				levantine_culture
+			}
+			religious_school = hanafi_school
+			
+		}
+
+		#New BR Tags
 		ANA = {
 			own_control_core = {
 				#KAR
@@ -50635,6 +50806,7 @@ countries = {
 			capital = arguvan
 		}
 	
+		#Change tag after ELY refactor
 		NEM = {
 			own_control_core = {
 				patapsco
@@ -50657,6 +50829,21 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
+
+				centralization_vs_decentralization = 50
+				aristocracy_vs_plutocracy = 50
+				serfdom_vs_free_subjects = 50
+				traditionalist_vs_innovative = 0
+				spiritualist_vs_humanist = 25
+				mercantilism_vs_free_trade = 25
+				offensive_vs_defensive = 50
+				land_vs_naval = -25
+				quality_vs_quantity = -25
+				belligerent_vs_conciliatory = 50
+				capital_economy_vs_traditional_economy = -50
+				individualism_vs_communalism = 25
+				outward_vs_inward = -25
+
 			}
 			
 			tolerated_cultures = {

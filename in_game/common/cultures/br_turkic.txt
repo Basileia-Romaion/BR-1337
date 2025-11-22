@@ -1,0 +1,22 @@
+﻿#Turkic ethnic group https://en.wikipedia.org/wiki/Turkic_peoples
+
+turkish_culture = { #https://en.wikipedia.org/wiki/Turkish_people
+	language = persian_language	# turkish_dialect #https://en.wikipedia.org/wiki/turkish_language
+	
+	color = color_culture_turkish
+	
+	tags = { turkish_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		greek_culture = negative
+	}	
+
+	culture_groups = {
+		turkic_group
+		iranian_group
+	}
+	
+	use_patronym = yes
+
+	dynasty_name_type = descendant	
+}

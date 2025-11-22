@@ -1603,7 +1603,7 @@ building_manager = {
 	university	= { tag = FLO level = 1	location = florence }
 	university	= { tag = BYZ level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
 	university	= { tag = ADU level = 1	location = cordoba }
-	university	= { tag = TUR level = 1	location = baghdad }
+	university	= { tag = AIA level = 1	location = baghdad }
 	university	= { tag = MAM level = 1	location = alexandria }
 	
 	order_stronghold	= { tag = LIV level = 1	location = cesis } # Livonian Order
@@ -4257,35 +4257,35 @@ building_manager = {
 	kurultai = { tag = TUR level = 1 location =  diyarbekir }
 	kurultai = { tag = TUR level = 1 location = samarra }
 	kurultai = { tag = TUR level = 1 location = tabriz }
-	kurultai = { tag = TUR level = 1 location = baghdad }
-	madrasa = { tag = TUR level = 1 location = baghdad }
+	kurultai = { tag = AIA level = 1 location = baghdad }
+	madrasa = { tag = AIA level = 1 location = baghdad }
 	madrasa = { tag = TUR level = 1 location = diyarbekir }
 	madrasa = { tag = TUR level = 1 location = mosul }
 	madrasa = { tag = TUR level = 1 location = tabriz }
 	seljuk_mint = { tag = TUR level = 1 location = mosul }
 	seljuk_mint = { tag = TUR level = 1 location = tabriz }
-	seljuk_mint = { tag = TUR level = 1 location = baghdad }
+	seljuk_mint = { tag = AIA level = 1 location = baghdad }
 	seljuk_mint = { tag = TUR level = 1 location = tabriz }
-	marketplace	= { tag = TUR level = 10 location = baghdad }
-	trading_hub = { tag = TUR level = 1 location = baghdad }
-	entrepot = { tag = TUR level = 1 location = baghdad }
-	market_warehouse = { tag = TUR level = 1 location = baghdad }
-	fine_cloth_guild = { tag = TUR level = 5 location = baghdad }
-	saltpeter_guild = { tag = TUR level = 1 location = baghdad }
-	tannery = { tag = TUR level = 4 location = baghdad }
-	cloth_guild = { tag = TUR level = 5 location = baghdad }
-	dyes_guild = { tag = TUR level = 5 location = baghdad }
-	furniture_guild = { tag = TUR level = 4 location = baghdad }
-	glass_guild = { tag = TUR level = 2 location = baghdad }
-	paper_guild = { tag = TUR level = 2 location = baghdad }
-	porcelain_guild = { tag = TUR level = 4 location = baghdad }
-	pottery_guild = { tag = TUR level = 2 location = baghdad }
-	tools_guild = { tag = TUR level = 2 location = baghdad }
-	weapon_guild = { tag = TUR level = 2 location = baghdad }
-	scriptorium = { tag = TUR level = 6 location = baghdad }
-	hospital = { tag = TUR level = 1 location = baghdad }
-	library = { tag = TUR level = 1 location = baghdad }
-	medical_school = { tag = TUR level = 1 location = baghdad }
+	marketplace	= { tag = AIA level = 10 location = baghdad }
+	trading_hub = { tag = AIA level = 1 location = baghdad }
+	entrepot = { tag = AIA level = 1 location = baghdad }
+	market_warehouse = { tag = AIA level = 1 location = baghdad }
+	fine_cloth_guild = { tag = AIA level = 5 location = baghdad }
+	saltpeter_guild = { tag = AIA level = 1 location = baghdad }
+	tannery = { tag = AIA level = 4 location = baghdad }
+	cloth_guild = { tag = AIA level = 5 location = baghdad }
+	dyes_guild = { tag = AIA level = 5 location = baghdad }
+	furniture_guild = { tag = AIA level = 4 location = baghdad }
+	glass_guild = { tag = AIA level = 2 location = baghdad }
+	paper_guild = { tag = AIA level = 2 location = baghdad }
+	porcelain_guild = { tag = AIA level = 4 location = baghdad }
+	pottery_guild = { tag = AIA level = 2 location = baghdad }
+	tools_guild = { tag = AIA level = 2 location = baghdad }
+	weapon_guild = { tag = AIA level = 2 location = baghdad }
+	scriptorium = { tag = AIA level = 6 location = baghdad }
+	hospital = { tag = AIA level = 1 location = baghdad }
+	library = { tag = AIA level = 1 location = baghdad }
+	medical_school = { tag = AIA level = 1 location = baghdad }
 
 	#IBERIA
 	royal_court = { tag = ADU level = 1 location = cordoba }
@@ -4316,7 +4316,7 @@ building_manager = {
 	sergeantry = { tag = ADU level = 1 location =  cordoba }
 	great_madrasa = { tag = ADU level = 1 location = cordoba }
 	great_madrasa = { tag = MAM level = 1 location = cairo }
-	great_madrasa = { tag = TUR level = 1 location = baghdad }
+	great_madrasa = { tag = AIA level = 1 location = baghdad }
 	madrasa = { tag = ADU level = 1 location = granada }
 	madrasa = { tag = ADU level = 1 location = sevilla }
 	fortress_granary = { tag = ADU level = 1 location = sevilla }
@@ -4354,7 +4354,7 @@ building_manager = {
 	jewish_district = { tag = VEN level = 1 location =  venice }
 	jewish_district = { tag = FLO level = 1 location = florence }
 	jewish_district = { tag = MLO level = 1 location =  milano }
-	jewish_district = { tag = TUR level = 1 location = baghdad }
+	jewish_district = { tag = AIA level = 1 location = baghdad }
 	jewish_district = { tag = MAM level = 1 location = cairo }
 	jewish_district = { tag = ADU level = 1 location = cordoba }
 
