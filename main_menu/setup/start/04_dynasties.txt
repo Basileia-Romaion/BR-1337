@@ -746,7 +746,7 @@ dynasty_manager = {
 	angelos_dynasty = { # Extinct
 		name = { name = angelos_dynasty }
 		#CoA: http://wappenwiki.org/index.php/File:Angelos.svg
-		home = iznik
+		home = smyrna #BR EDIT
 	}
 
 	apokaukos_dynasty = {
@@ -767,12 +767,12 @@ dynasty_manager = {
 
 	doukas_dynasty = { # Extinct
 		name = { name = doukas_dynasty }
-		home = constantinople
+		home = plovdiv #BR EDIT
 	}
 
 	glabas_dynasty = { # Extinct
 		name = { name = glabas_dynasty }
-		home = iznik
+		home = nicosia_cyp #BR EDIT
 	}
 
 	kantakouzenos_dynasty = {
@@ -788,18 +788,18 @@ dynasty_manager = {
 
 	komnenos_dynasty = { # Extinct
 		name = { name = komnenos_dynasty }
-		home = constantinople
+		home = kastamonu #BR EDIT
 	}
 
 	komnenos_doukas_dynasty = { # Extinct
 		name = { name = komnenos_doukas_dynasty }
 		#CoA: https://wappenwiki.org/index.php?title=File:Doukas.svg (Adopted from Doukas)
-		home = arta
+		home = tarnovo #BR EDIT
 	}
 
 	laskaris_dynasty = { # Extinct
 		name = { name = laskaris_dynasty }
-		home = constantinople
+		home = konya #BR EDIT
 	}
 
 	megas_komnenos_dynasty = {
@@ -849,7 +849,7 @@ dynasty_manager = {
 	vatatzes_dynasty = { # Extinct
 		name = { name = vatatzes_dynasty }
 		#CoA: http://wappenwiki.org/index.php/File:Batatzes.svg
-		home = iznik
+		home = kayseri #BR EDIT
 	}
 
 	arpad_dynasty = {
@@ -6806,68 +6806,10 @@ dynasty_manager = {
 	}
 
 	#Anatolia
+	#REmoved Turkic Dynasties from Anatolia.
 	artuqids_dynasty = {
 		name = { name = name_artuk }
 		home = mardin
-		dynasty_name_type = patronym
-	}
-
-	aydinids_dynasty = {
-		name = { name = name_aydin }
-		home = ayasuluk
-		dynasty_name_type = patronym
-	}
-
-	ayyubids_dynasty = {
-		name = { name = ayyubid_dynasty }
-		home = yerevan #Dvin
-	}
-
-	bafra_dynasty = {
-		name = { name = bafra }
-		home = bafra
-		dynasty_name_type = location
-	}
-
-	candarids_dynasty = {
-		name = { name = name_candar }
-		home = kastamonu
-		dynasty_name_type = patronym
-	}
-
-	dilmacids_dynasty = {
-		name = { name = name_dilmac }
-		home = bitlis
-		dynasty_name_type = patronym
-	}
-
-	dulkadirids_dynasty = {
-		name = { name = name_dulkadir }
-		home = elbistan
-		dynasty_name_type = patronym
-	}
-
-	eretnids_dynasty = {
-		name = { name = name_eretna }
-		home = sivas
-		dynasty_name_type = patronym
-	}
-
-	germiyanids_dynasty = {
-		name = { name = name_germiyan }
-		home = kutahya
-		dynasty_name_type = patronym
-	}
-
-	haciemirids_dynasty = {
-		name = { name = hacimierid_dynasty }
-		home = bayramlu
-		dynasty_name_type = patronym
-	}
-
-	hamidids_dynasty = {
-		name = { name = name_hamid }
-		home = uluborlu
 		dynasty_name_type = patronym
 	}
 
@@ -6888,75 +6830,20 @@ dynasty_manager = {
 		home = sis
 	}
 
-	inanjids_dynasty = {
-		name = { name = name_inanc }
-		home = lazkiye
-		dynasty_name_type = patronym
-	}
-
 	jalayirids_dynasty = {
 		name = { name = jalayirid_dynasty }
 		home = baghdad
 	}
 
-	karamanids_dynasty = {
-		name = { name = name_karaman }
-		home = konya
-		dynasty_name_type = patronym
-	}
-
-	karasids_dynasty = {
-		name = { name = karasid_dynasty }
-		home = balikesir
-	}
-
-	kubadids_dynasty = {
-		name = { name = name_kubad }
-		home = ladik_pontus
-		dynasty_name_type = patronym
-	}
-
-	mentese_dynasty = {
-		name = { name = mentese_dynasty }
-		home = milas
-	}
-
 	ottomans_dynasty = {
 		name = { name = name_osman }
-		home = sogut
+		home = tabriz #BR EDIT
 		dynasty_name_type = patronym
-	}
-
-	ramazanids_dynasty = {
-		name = { name = name_ramazan }
-		home = adana
-		dynasty_name_type = patronym
-	}
-
-	sahipataids_dynasty = {
-		name = { name = sahipataid_dynasty }
-		home = karahisar_i_sahib
-		dynasty_name_type = patronym
-	}
-
-	saruhanids_dynasty = {
-		name = { name = saruhanids_dynasty }
-		home = manisa
 	}
 
 	seljukids_dynasty = {
 		name = { name = seljukid_dynasty }
-		home = konya
-	}
-
-	sutayids_dynasty = {
-		name = { name = sutayid_dynasty }
-		home = diyarbekir
-	}
-
-	tadjeddinids_dynasty = {
-		name = { name = tacettinid_dynasty }
-		home = niksar
+		home = mosul #BR EDIT
 	}
 
 	#Kurdish Dynastyes
@@ -7488,8 +7375,9 @@ dynasty_manager = {
 		home = baku
 	}
 
-	zakarid_dynasty = {
-		name = { name = zakarid_dynasty }
+	#BR Edit
+	bagrationi_dynasty = {
+		name = { name = bagrationi_dynasty }
 		home = ani
 	}
 
