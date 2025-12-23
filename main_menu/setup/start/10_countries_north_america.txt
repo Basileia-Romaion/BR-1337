@@ -2999,7 +2999,140 @@ countries = {
 			court_language = zuni_language
 			capital = halona_idiwana
 		}
-		
+		S00 = {
+			#type = army
+			own_control_core = {
+				shuntaneshnanga kansas monecato kirarutah nepahalla
+				neosho manhukdhintanwan nanzewaspe wasetihoge
+				etzanoa quivira harahey ninescah ayadaldapa ne_shuta
+				ne_miskua kaw aahkawiraahkata panenetah kaiurskuta
+				headdhetanwan wakhakukdhin pasukhdin
+				tulsa tawehash chikaskia
+				guichita wewoka washita kiamichi
+				hawaastatkiicu nigitai kicpahat gulvau oktahutchee nixgu
+				niobrara aowa waha_tunga kits_ixta
+				kickatari mnitanka minatare
+				omaha nemaha nebraska ni_haunchi_to
+				kanpeska kus_lecha kickatus ickari_kitsu nutanke pitahauerat
+				hehvaitaneo meneeohe medicine_bow
+				wotapio so_taeo_o oevemanaho ohktouna hisse_yoyi_yoe hisiometaneo paiyo_he
+				niineniiniicie neenowuxoote_i ce_eiinox nih_iitkotousi_l
+				phankeska_wakpa ononio_he wasin_wakpa veoneohe mano_iyo_he
+				mutsisooni_yohe heeyoteyoo ponoeohe
+				wishkahuunu mahohevahoe beesowuunenno minii_yohe
+				wiskapella chitolah nanwacinahaana
+				hupenuu mah_hom oohkoi_yohe kuhtsutuuka
+				hoyu_ao_he atarque tinde
+				kiowa hotoanaohe wahin_wakpa apispaha
+				chinali honih_hiyo_he iriirakiicuhat
+				tsesh_ke_shende tcha_shka_ozhaye kwahada tucumcari natahende chlaande nitahende natages
+				marapa cerwecerna shichah
+				kaya_paha sicangu waziblo
+				wetarhoo hinyankaga
+				shanha mistaiyohe he_sapa awaxaawi_ishiibisha
+				histahayo neesihushaanu skahuukaawiat iyawakagapi matootonha
+				chakadee_wakpa wahasah waahukaahaanu wit_anowi_yohe moehe_yoe
+				ihkowom_iyo_he ksai_yohe mitsiadazi skaapirox buaxaxxaashe aahkawirahkata aashbiliihkupe iichiilikaaashaashe
+				itkanaahtuusu e_ometaeso heviksnipahis mo_ohta_vo_honaaeva notameohmeshehse
+				iisaxpuatahcheeaashe aashbikkaashee ishpiialawaache
+			    okobojo pocasse unkpatina chagu oyate_shisha wakmua_oin
+				igmu kampeska mnihaha  nishnabotna monona tchankasndata
+			}
+
+			own_core = {
+				shuntaneshnanga kansas monecato kirarutah nepahalla
+				neosho manhukdhintanwan nanzewaspe wasetihoge
+				etzanoa quivira harahey ninescah ayadaldapa ne_shuta
+				ne_miskua kaw aahkawiraahkata panenetah kaiurskuta
+				headdhetanwan wakhakukdhin pasukhdin
+				tulsa tawehash chikaskia
+				guichita wewoka washita kiamichi
+				hawaastatkiicu nigitai kicpahat gulvau oktahutchee nixgu
+				niobrara aowa waha_tunga kits_ixta
+				kickatari mnitanka minatare
+				omaha nemaha nebraska ni_haunchi_to
+				kanpeska kus_lecha kickatus ickari_kitsu nutanke pitahauerat
+				hehvaitaneo meneeohe medicine_bow
+				wotapio so_taeo_o oevemanaho ohktouna hisse_yoyi_yoe hisiometaneo paiyo_he
+				niineniiniicie neenowuxoote_i ce_eiinox nih_iitkotousi_l
+				phankeska_wakpa ononio_he wasin_wakpa veoneohe mano_iyo_he
+				mutsisooni_yohe heeyoteyoo ponoeohe
+				wishkahuunu mahohevahoe beesowuunenno minii_yohe
+				wiskapella chitolah nanwacinahaana
+				okobojo pocasse unkpatina chagu oyate_shisha wakmua_oin
+				igmu kampeska mnihaha  nishnabotna monona tchankasndata
+
+			}
+
+			#starting_technology_level = 3
+			include = "amerindian_tribe_northwestern"
+			include = "expl_northwestern_america"
+			country_rank = rank_duchy
+
+			government = {
+				type = steppe_horde
+				heir_selection = tribal_oldest_male
+
+
+
+				ruler = random
+
+				centralization_vs_decentralization = 75
+				aristocracy_vs_plutocracy = -75
+				serfdom_vs_free_subjects = -75
+				traditionalist_vs_innovative = -75
+				spiritualist_vs_humanist = 25
+				mercantilism_vs_free_trade = 25
+				offensive_vs_defensive = -75
+				land_vs_naval = -100
+				quality_vs_quantity = 50
+				belligerent_vs_conciliatory = -75
+				capital_economy_vs_traditional_economy = 80
+				individualism_vs_communalism = 45
+				outward_vs_inward = -25
+
+				reforms = {
+					legacy_of_genghis
+				}
+				privilege = {
+
+					tribal_host
+					tribal_autonomy
+					tribes_land_rights
+					tribes_pasture_access
+					tribes_tribal_registry
+					tribes_protected_faith
+					tribes_in_administration
+					tribes_respect_tribal_traditions
+					tribes_tribal_levies
+				}
+
+				laws = {
+
+				}
+			}
+			capital = wishkahuunu
+
+			court_language = dakota_language
+
+			currency_data = {
+				gold = 500
+				stability = 75
+				prestige = 50
+				army_tradition = 100
+			}
+
+			accepted_cultures = {
+				ithanktunwan_culture
+				ithanktunwanna_culture
+			}
+
+
+			tolerated_cultures = {
+
+			}
+
+		}
 		#Teypana pueblo - TEY
 		TEY = {
 			own_control_core = {
