@@ -41,6 +41,7 @@ southern_trade.1={
         }
     }
 }
+
 southern_trade.2={
 
     type=country_event
@@ -71,5 +72,39 @@ southern_trade.2={
         discover_area=area:canadian_atlantic_coast_area
         discover_area=area:newfoundland_area
         discover_area=area:acadia_area
+    }
+}
+
+southern_trade.3={
+    type=country_event
+    title=southern_trade.3.title
+    desc=southern_trade.3.desc
+    outcome=positive
+
+    trigger={
+
+    }
+
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV# tag that this event can fire for, can provide multiple
+        from =1350.1.1	# the earliest date at which this event can fire
+        to = 1341.1.1 		# the latest date at which this event can fire
+        monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = southern_trade.3.a
+        change_location_owner=location:shawmut
+        location:shawmut={
+            change_location_owner = c:NRV
+            add_core = c:NRV
+        }
     }
 }
