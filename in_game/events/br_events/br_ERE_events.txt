@@ -196,27 +196,9 @@ br_ere_events.1 = {
 			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 			revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
-			international_organization:roman_world = {
-				every_international_organization_member = {
-					limit = {
-						NOT = { root = this }
-						NOT = { is_subject_of = root }
-						NOT = { country_type = building }
-						culture ?= { has_culture_group = culture_group:greek_group }
-						OR = {
-							capital ?= { region = region:anatolia_region }
-							capital ?= { region = region:balkan_region }
-						}
-					}
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
-					#trigger_event_silently = { 
-					#	id = hre.101
-					#}
-				}
-			}
+	   	}
+		trigger_event_silently = { 
+			id = br_ere_events.3
 		}
 	}
 }
@@ -254,6 +236,135 @@ br_ere_events.2 = {
 			trigger_event_non_silently = { id = br_ere_events.2 }
 		}
 		
+	}
+}
+
+br_ere_events.3 = {
+	type = country_event
+	title = br_ere_events.3.title
+	desc = br_ere_events.3.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	#orphan = yes
+	trigger = {
+		tag = BYZ
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+	}
+
+	option = { #smaller state size subjects
+		high_reward_option = yes
+		name = br_ere_events.3.a
+
+		custom_tooltip = {
+			text = br_ere_events.3.att
+			international_organization:roman_world = {
+				every_international_organization_member = {
+					limit = {
+						NOT = { root = this }
+						NOT = { is_subject_of = root }
+						NOT = { country_type = building }
+						culture ?= { has_culture_group = culture_group:greek_group }
+						OR = {
+							capital ?= { region = region:anatolia_region }
+							capital ?= { region = region:balkan_region }
+						}
+					}
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
+				}
+			}
+		}
+	}
+	option = { #larger regional subjects
+		high_reward_option = yes
+		name = br_ere_events.3.b
+
+		custom_tooltip = {
+			text = br_ere_events.3.btt
+			c:ATH = {
+				annex_country = { country = c:ACH }
+				annex_country = { country = c:M0E }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:THE = {
+				annex_country = { country = c:THS }
+				annex_country = { country = c:B0R }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:AN8 = {
+				annex_country = { country = c:AN1 }
+				annex_country = { country = c:AN7 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:AN10 = {
+				annex_country = { country = c:AN3 }
+				annex_country = { country = c:AN2 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:AON = {
+				annex_country = { country = c:AN4 }
+				annex_country = { country = c:AN11 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:ICO = {
+				annex_country = { country = c:AN9 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:TRE = {
+				annex_country = { country = c:AN6 }
+				annex_country = { country = c:PAF }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:CIL = {
+				annex_country = { country = c:AN5 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:vassal
+				}
+			}
+			c:AOI = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:march
+				}
+			}
+			c:OHS = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:march
+				}
+			}
+		}
 	}
 }
 
