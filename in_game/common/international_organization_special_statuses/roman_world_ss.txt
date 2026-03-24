@@ -294,6 +294,8 @@ defiant_strategoi = {
 				type = special_status:imperial_loyalist
 				international_organization = scope:recipient
 			}
+			overlord ?= { this = scope:recipient.leader_country }
+			ruler_or_regent ?= { scope:recipient.leader_country.ruler ?= this }
 		}
 	}
 	
