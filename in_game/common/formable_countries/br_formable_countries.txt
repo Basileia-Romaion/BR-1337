@@ -283,7 +283,7 @@ REPLACE_OR_CREATE:ANA_f = {
 
 REPLACE_OR_CREATE:KAP_f = {
 	level = 3
-	required_locations_fraction = 0.66
+	required_locations_fraction = 0.59
 	rule = historical
 	
 	potential = {
@@ -308,14 +308,14 @@ REPLACE_OR_CREATE:KAP_f = {
 		aksaray_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
 
 REPLACE_OR_CREATE:AN0_f = {
 	level = 3
-	required_locations_fraction = 0.66
+	required_locations_fraction = 0.65
 	rule = historical
 	
 	potential = {
@@ -340,14 +340,14 @@ REPLACE_OR_CREATE:AN0_f = {
 		erzurum_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
 
 REPLACE_OR_CREATE:SY3_f = {
 	level = 3
-	required_locations_fraction = 0.66
+	required_locations_fraction = 0.65
 	rule = historical
 	
 	potential = {
@@ -488,7 +488,7 @@ REPLACE_OR_CREATE:P0N_f = {
 		trebizond_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -516,7 +516,7 @@ REPLACE_OR_CREATE:P1N_f = {
 		crimea_area
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
