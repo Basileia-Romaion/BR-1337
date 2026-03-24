@@ -1,9 +1,135 @@
 l_english:
 #Some of the names for the locations are taken from the mod third odyssey back to the motherland (for EU4) where a name already exists. The rest of the locations contain made up city names since EU4 had way less locations/ provinces than EU5 does therefore I had to come up with a few new names -davidmiltos
 
-#Region_East_Coast 
+#--------------------------------------------------
+#Bermuda Area
 #Province Bermuda
- bermuda.elysian_language: "Kauda Elpida" #IMPORTANT TRADE HUB
+bermuda.elysian_language: "Kauda Elpida" #IMPORTANT TRADE HUB
+
+
+#--------------------------------------------------
+#Cuba Area
+#Province Lucayas
+abacoa.elysian_language: "Abarion"
+bahama.elysian_language: "Bachames"
+lucayoneque.elysian_language: "Lykaion"
+eleuthera.elysian_language: "Eleuthera"
+guanima.elysian_language: "Nea Castrum Novum"
+exuma.elysian_language: "Exumia"
+guanahani.elysian_language: "Brasiai"
+jumento.elysian_language: "Lumenos"
+caycos.elysian_language: "Kaikos"
+inagua.elysian_language: "Antigoneia"
+
+#Province Baracoa
+yateras.elysian_language: "Iasonida"
+bayaquitiri.elysian_language: "Zerethis"
+mayari.elysian_language: "Gravion"
+guantanamo.elysian_language: "Nkouantanamon"
+baracoa.elysian_language: "Barakos"
+sagua.elysian_language: "Gryeis"
+barajagua.elysian_language: "Iagouáros"
+
+#Province Bayamo
+bayamo.elysian_language: "Akalos"
+macaca.elysian_language: "Ivros"
+jiguani.elysian_language: "Zyganis"
+cueiba.elysian_language: "Kybera"
+maguanes.elysian_language: "Magyros"
+banes.elysian_language: "Lana"
+lora.elysian_language: "Lyris"
+cayaguayo.elysian_language: "Katareon"
+
+#Province Camaguey
+south_camaguey.elysian_language: "Artorikos"
+camaguey.elysian_language: "Kamarion"
+mabuya.elysian_language: "Messapia"
+guaimaro.elysian_language: "Lantis"
+
+#Province Moron
+cubanacan.elysian_language: "Skambra"
+east_cubanacan.elysian_language: "Aigiroessa"
+magon.elysian_language: "Velkarion"
+oronfay.elysian_language: "Orphethis"
+east_sabaneque.elysian_language: "Aurethos"
+central_sabaneque.elysian_language: "Myrathis"
+sabana.elysian_language: "Elyndor"
+
+#Province Havana
+west_sabaneque.elysian_language: "Ioustios"
+habana.elysian_language: "Avana"
+batanabo.elysian_language: "Teukos"
+guanimar.elysian_language: "Thalmyra"
+marien.elysian_language: "Marianthe"
+siguanea.elysian_language: "Tousklon"
+guaniguanico.elysian_language: "Nkouan"
+guanamacabibes.elysian_language: "Kibyra"
+macoriges.elysian_language: "Korynthos"
+hanabana.elysian_language: "Anthera"
+jagua.elysian_language: "Panthera"
+
+#Province Xaymaca
+maynoa.elysian_language: "Zameika"
+yaguabo.elysian_language: "Lenros"
+aguacadiba.elysian_language: "Filoum"
+guaygata.elysian_language: "Gaiathos"
+anaya.elysian_language: "Anykleia"
+oristan.elysian_language: "Oristion"
+
+
+#--------------------------------------------------
+Hispaniola Area
+#Province Jaragua
+guacayakima.elysian_language: "Nea Syrakousai"
+jaragua.elysian_language: "Axima"
+cayguani.elysian_language: "Kygion"
+baoruco.elysian_language: "Barikos"
+guanabo.elysian_language: "Guanthis"
+cahay.elysian_language: "Iapygia"
+haniguayagua.elysian_language: "Sikeon"
+yaquimo.elysian_language: "Iakythos"
+yaguana.elysian_language: "Iagoneia"
+
+#Province Marien
+tortuga.elysian_language: "Nea Katani"
+marien.elysian_language: "Hekoube"
+iguamuco.elysian_language: "Oisyme"
+guahaba.elysian_language: "Thyreai"
+baynoa.elysian_language: "Bainoea"
+
+#Province Magua
+yaqui.elysian_language: "Propia"
+magorix.elysian_language: "Vetriakon"
+bohio.elysian_language: "Boeion"
+cubao.elysian_language: "Sheria"
+moca.elysian_language: "Mokyra"
+cotui.elysian_language: "Kutoi"
+ciguayo.elysian_language: "Chiarion"
+samana.elysian_language: "Samanthos"
+
+#Province Maguana
+maguana.elysian_language: "Megaria"
+jarabacoa.elysian_language: "Hierakoa"
+cibao.elysian_language: "Kabukos"
+azua.elysian_language: "Eryx"
+bani.elysian_language: "Pherai"
+banique.elysian_language: "Paephi"
+
+#Province Higüey
+bavaro.elysian_language: "Issos"
+yuma.elysian_language: "Imon"
+hicayagua.elysian_language: "Hireia"
+cayacoa.elysian_language: "Kipes"
+yamasa.elysian_language: "Iamassos"
+boya.elysian_language: "Boion"
+
+#Province Boriken
+guaynabo.elysian_language: "Metis"
+guaraca.elysian_language: "Iolkos"
+guaynia.elysian_language: "Gaia"
+guama.elysian_language: "Gamos"
+arasibo.elysian_language: "Araseon"
+ayamaco.elysian_language: "Amaxion"
 
 
 #--------------------------------------------------
@@ -479,3 +605,168 @@ watauga.elysian_language: "Remita"
 
 
 #--------------------------------------------------
+#South Carolina Area
+#Province Keowee
+keowee.elysian_language: ""
+oolenoy.elysian_language: ""
+generostee.elysian_language: ""
+
+#Province Catawba
+catawba.elysian_language: ""
+enoree.elysian_language: ""
+pacolate.elysian_language: ""
+amoyescheck.elysian_language: ""
+
+#Province Congaree
+selkehatchie.elysian_language: ""
+saluda.elysian_language: ""
+congaree.elysian_language: ""
+kosalu.elysian_language: ""
+
+#Province Cofitachequi
+cofitachequi.elysian_language: ""
+hymahi.elysian_language: ""
+talimeco.elysian_language: ""
+ilasi.elysian_language: ""
+
+#Province Waccamaw
+pocotaligo.elysian_language: ""
+waccamaw.elysian_language: ""
+winyah.elysian_language: ""
+winnee.elysian_language: ""
+peedee.elysian_language: ""
+
+#Province Santee
+coosaw.elysian_language: ""
+etiwan.elysian_language: ""
+wando.elysian_language: ""
+kiawah.elysian_language: ""
+combahee.elysian_language: ""
+wimbee.elysian_language: ""
+santee.elysian_language: ""
+
+
+#--------------------------------------------------
+#Georgia Area
+#Province Coosa
+coosa.elysian_language: ""
+ulibahali.elysian_language: ""
+apica.elysian_language: ""
+talimachusi.elysian_language: ""
+itaba.elysian_language: ""
+utsutigway.elysian_language: ""
+quanasee.elysian_language: ""
+
+#Province Tugaloo
+tugaloo.elysian_language: ""
+nacoochee.elysian_language: ""
+estatoe.elysian_language: ""
+etoho.elysian_language: ""
+
+#Province Tuckabutche
+tuckabutche.elysian_language: ""
+tescuntee.elysian_language: ""
+chatahoochee.elysian_language: ""
+
+#Province Coweta
+coweta.elysian_language: ""
+kealedji.elysian_language: ""
+pakanahuili.elysian_language: ""
+tussahaw.elysian_language: ""
+
+#Province Ocute
+ocute.elysian_language: ""
+ichisi.elysian_language: ""
+altamaha.elysian_language: ""
+cofaqui.elysian_language: ""
+
+#Province Kiokee
+kiokee.elysian_language: ""
+wahachee.elysian_language: ""
+ogeechee.elysian_language: ""
+ohoopee.elysian_language: ""
+
+#Province Chattahoochee
+kasihta.elysian_language: ""
+capachequi.elysian_language: ""
+toa.elysian_language: ""
+hitchauta.elysian_language: ""
+pallachacola.elysian_language: ""
+eufaula.elysian_language: ""
+
+#Province Hitchiti
+hitchiti.elysian_language: ""
+sawokli.elysian_language: ""
+alapaha.elysian_language: ""
+mikasuki.elysian_language: ""
+alapahoochee.elysian_language: ""
+ocmulgee.elysian_language: ""
+oconee.elysian_language: ""
+
+#Province Guale
+ossabaw.elysian_language: ""
+tybee.elysian_language: ""
+sapelo.elysian_language: ""
+canoochee.elysian_language: ""
+
+#Province Mocama
+tacatacaru.elysian_language: ""
+mocama.elysian_language: ""
+cascangue.elysian_language: ""
+icafui.elysian_language: ""
+
+
+#--------------------------------------------------
+#Florida Area
+#Province Pensacola
+chatot.elysian_language: ""
+pensacola.elysian_language: ""
+watappo.elysian_language: ""
+choctawhatchee.elysian_language: ""
+
+#Province Apalachee
+apalachee.elysian_language: ""
+anhayca.elysian_language: ""
+azile.elysian_language: ""
+uzachile.elysian_language: ""
+
+#Province Timucua
+napituca.elysian_language: ""
+timucua.elysian_language: ""
+malapaz.elysian_language: ""
+uriutina.elysian_language: ""
+
+#Province Potano
+vicela.elysian_language: ""
+potano.elysian_language: ""
+uqueten.elysian_language: ""
+
+#Province Mayaca
+itaraholata.elysian_language: ""
+mayaca.elysian_language: ""
+utina.elysian_language: ""
+
+#Province Jororo
+surruque.elysian_language: ""
+jororo.elysian_language: ""
+acuera.elysian_language: ""
+ho_bay.elysian_language: ""
+
+#Province Tampa
+mocozo.elysian_language: ""
+tocaste.elysian_language: ""
+guazoco.elysian_language: ""
+ozita.elysian_language: ""
+
+#Province Okeechobee
+tequemapo.elysian_language: ""
+okeechobee.elysian_language: ""
+caloosahatchee.elysian_language: ""
+uriparacoxi.elysian_language: ""
+
+#Province Mayaimi
+ais.elysian_language: ""
+mayaimi.elysian_language: ""
+guacata.elysian_language: ""
+tequesta.elysian_language: ""
+guarungube.elysian_language: ""
