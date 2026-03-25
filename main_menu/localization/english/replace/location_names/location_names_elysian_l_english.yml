@@ -2,11 +2,7 @@ l_english:
 #Some of the names for the locations are taken from the mod third odyssey back to the motherland (for EU4) where a name already exists. The rest of the locations contain made up city names since EU4 had way less locations/ provinces than EU5 does therefore I had to come up with a few new names -davidmiltos
 
 #--------------------------------------------------
-#Bermuda Area
-#Province Bermuda
-bermuda.elysian_language: "Kauda Elpida" #IMPORTANT TRADE HUB
-
-
+#Caribbean Region
 #--------------------------------------------------
 #Cuba Area
 #Province Lucayas
@@ -78,6 +74,8 @@ oristan.elysian_language: "Oristion"
 
 
 #--------------------------------------------------
+#East Coast Region
+#--------------------------------------------------
 Hispaniola Area
 #Province Jaragua
 guacayakima.elysian_language: "Nea Syrakousai"
@@ -130,6 +128,12 @@ guaynia.elysian_language: "Gaia"
 guama.elysian_language: "Gamos"
 arasibo.elysian_language: "Araseon"
 ayamaco.elysian_language: "Amaxion"
+
+
+#--------------------------------------------------
+#Bermuda Area
+#Province Bermuda
+bermuda.elysian_language: "Kauda Elpida" #IMPORTANT TRADE HUB
 
 
 #--------------------------------------------------
@@ -430,12 +434,12 @@ hopatcong.elysian_language: "Serenitas"
 
 
 #--------------------------------------------------
-#Maryland Area
+#Maryland Area # Elysia Area Rename
 #Province Patapsco
- patapsco.elysian_language: "Elyseia" #MOST IMPORTANT CITY #ELYSIAN ECUMENICAL PATRIARCH SEAT
+ patapsco.elysian_language: "Elyseia" #IMPORTANT CITY
  wicontiss.elysian_language: "Cleopatriae"
  nentego.elysian_language: "Nolia"
- patuxent.elysian_language: "Patrinium"
+ patuxent.elysian_language: "Nea Konstantinoupolis" #IMPORTANT CITY  |Central Aqueduct Network | #Citadel of St Michael
  
 #Province Potomac
  anacostia.elysian_language: "Nea Konstantinoupolis" #IMPORTANT CITY Theophilian Walls | #Hippodrome | Hagia Theotoke | Guardian Statues of the Elysian Bay |Central Aqueduct Network
@@ -507,7 +511,7 @@ pintahae.elysian_language: "Pintaion"
 meherrin.elysian_language: "Chrysorheuma"
 
 #Province Tutelo
-tutelo.elysian_language: "Terrae"
+tutelo.elysian_language: "Terrae" #Important City
 mahock.elysian_language: "Silvam"
 chiswell.elysian_language: "Chisvellum"
 torope.elysian_language: "Tropae Iulia"
@@ -587,7 +591,7 @@ waxhaw.elysian_language: "Vaxava"
 #Province Yadkin
 keyauwee.elysian_language: "Patrei"
 saura.elysian_language: "Dyme"
-alamance.elysian_language: "Amalai"
+alamance.elysian_language: "Amalai" #Important City
 yadkin.elysian_language: "Kelainai"
 
 #Province Joara
