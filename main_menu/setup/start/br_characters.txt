@@ -164,9 +164,8 @@ character_db={
 		culture = greek_culture
 		religion = orthodox
 		estate = clergy_estate
-		birth_date = 1301.1.1
+		birth_date = 1324.1.1
 		birth = constantinople
-		adm = 95 dip = 66 mil = 75
 		father = tre_michael_komnenos
 		#mother = 
 		dynasty = komnenos_dynasty
@@ -287,6 +286,171 @@ character_db={
 		dynasty = drogan_dynasty
 		tag = NSE
 		general_trait = glory_seeker
+	}
+
+ #argyros_dynasty
+	br_ere_rdm_character_20 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1281.1.1
+		birth = celtik
+		dynasty = argyros_dynasty
+		tag = AN12
+	}
+	br_ere_rdm_character_21 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1299.1.1
+		birth = celtik
+		father = br_ere_rdm_character_20
+		dynasty = argyros_dynasty
+		tag = AN12
+	}
+	br_ere_rdm_character_22 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1301.1.1
+		birth = celtik
+		father = br_ere_rdm_character_20
+		dynasty = argyros_dynasty
+		tag = AN12
+	}
+	br_ere_rdm_character_23 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1304.1.1
+		birth = celtik
+		father = br_ere_rdm_character_20
+		dynasty = argyros_dynasty
+		tag = AN12
+	}
+ #phokas_dynasty
+	br_ere_rdm_character_24 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1278.1.1
+		birth = kayseri
+		dynasty = phokas_dynasty
+		tag = AN8
+	}
+	br_ere_rdm_character_25 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1297.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_24
+		dynasty = phokas_dynasty
+		tag = AN8
+	}
+	br_ere_rdm_character_26 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1309.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_24
+		dynasty = phokas_dynasty
+		tag = AN8
+	}
+	br_ere_rdm_character_27 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1314.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_24
+		dynasty = phokas_dynasty
+		tag = AN8
+	}
+ #skleros_dynasty
+	br_ere_rdm_character_28 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1286.1.1
+		birth = tarsus
+		dynasty = skleros_dynasty
+		tag = CIL
+	}
+	br_ere_rdm_character_29 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1302.1.1
+		birth = tarsus
+		father = br_ere_rdm_character_28
+		dynasty = skleros_dynasty
+		tag = CIL
+	}
+	br_ere_rdm_character_30 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1311.1.1
+		birth = tarsus
+		father = br_ere_rdm_character_28
+		dynasty = skleros_dynasty
+		tag = CIL
+	}
+	br_ere_rdm_character_31 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1318.1.1
+		birth = tarsus
+		father = br_ere_rdm_character_28
+		dynasty = skleros_dynasty
+		tag = CIL
+	}
+ #kourkouas_dynasty
+	br_ere_rdm_character_32 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1289.1.1
+		birth = amasya
+		dynasty = kourkouas_dynasty
+		tag = AN10
+	}
+	br_ere_rdm_character_33 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1306.1.1
+		birth = amasya
+		father = br_ere_rdm_character_32
+		dynasty = kourkouas_dynasty
+		tag = AN10
+	}
+	br_ere_rdm_character_34 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1312.1.1
+		birth = amasya
+		father = br_ere_rdm_character_32
+		dynasty = kourkouas_dynasty
+		tag = AN10
+	}
+	br_ere_rdm_character_35 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1311.1.1
+		birth = amasya
+		father = br_ere_rdm_character_32
+		dynasty = kourkouas_dynasty
+		tag = AN10
 	}
 
 #Elysium
