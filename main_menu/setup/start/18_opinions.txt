@@ -67,6 +67,8 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = AN9 type = left_empire }
 	opinion = { first = BYZ second = AN10 type = left_empire }
 	opinion = { first = BYZ second = AN11 type = left_empire }
+	opinion = { first = BYZ second = AN12 type = left_empire }
+	opinion = { first = BYZ second = P2N type = left_empire }
 
 	#Disloyal
 	opinion = { first = THE second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }

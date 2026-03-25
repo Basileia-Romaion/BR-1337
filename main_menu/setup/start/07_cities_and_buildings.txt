@@ -940,6 +940,7 @@ locations={
 	trebizond = { rank = city 	town_setup = greek_city_port }
 	van = { rank = town 		town_setup = anatolian_town }
 	
+	amasra = { rank = town 		town_setup = greek_town_port }
 	bergama = { rank = town		town_setup = greek_town_port }
 	birgi = { rank = town		town_setup = anatolian_town }
 	iznik = { rank = town		town_setup = greek_town_port }
@@ -4386,6 +4387,8 @@ building_manager = {
 	br_pronoia_estate = { tag = PAF level = 1 location = gumus }
 	br_pronoia_estate = { tag = TRE level = 1 location = niksar }
 	br_pronoia_estate = { tag = ANA level = 1 location = beysehir }
+	br_pronoia_estate = { tag = BYZ level = 1 location = turgut }
+	br_pronoia_estate = { tag = BYZ level = 1 location = suluklu }
 
 	br_soldier_farmers = { tag = BYZ level = 1 location = rize }
 	br_soldier_farmers = { tag = BYZ level = 1 location = giresun }
@@ -4422,13 +4425,11 @@ building_manager = {
 	br_soldier_farmers = { tag = BYZ level = 1 location = larende }
 	br_soldier_farmers = { tag = BYZ level = 1 location = sariyahsi }
 	br_soldier_farmers = { tag = BYZ level = 1 location = kochisar }
-	br_soldier_farmers = { tag = BYZ level = 1 location = turgut }
+	br_soldier_farmers = { tag = BYZ level = 1 location = urgup }
 	br_soldier_farmers = { tag = BYZ level = 1 location = cubuk }
 	br_soldier_farmers = { tag = BYZ level = 1 location = taskopru }
-	br_soldier_farmers = { tag = BYZ level = 1 location = suluklu }
 	br_soldier_farmers = { tag = BYZ level = 1 location = cumra }
 	br_soldier_farmers = { tag = BYZ level = 1 location = ilgin }
-	br_soldier_farmers = { tag = BYZ level = 1 location = kochisar }
 	br_soldier_farmers = { tag = BYZ level = 1 location = seydisehir }
 
 	br_soldier_farmers = { tag = BYZ level = 1 location = hacibektas }
@@ -5830,8 +5831,6 @@ building_manager = {
 	market_village = { tag = GTC level = 1 location = foca }
 	fishing_village = { tag = GTC level = 2 location = foca }
 	tar_kiln= { tag = GTC level = 1 location = foca }
-	market_village = { tag = GTC level = 1 location = amasra }
-	fishing_village = { tag = GTC level = 2 location = amasra }
 	market_village = { tag = CRT level = 1 location = chania }
 	market_village = { tag = FAE level = 1 location = faenza }
 	market_village = { tag = GUB level = 1 location = gubbio }
@@ -6127,7 +6126,6 @@ building_manager = {
 	noble_villa = { tag = BYZ level = 1 location = sultanonu }
 	noble_villa = { tag = BYZ level = 2 location = balya }
 	noble_villa = { tag = BYZ level = 2 location = balikesir }
-
 	noble_villa = { tag = PAF level = 1 location = cankiri }
 	noble_villa = { tag = PAF level = 1 location = gumus }
 	noble_villa = { tag = TRE level = 1 location = gorele }
@@ -6142,6 +6140,20 @@ building_manager = {
 	noble_villa = { tag = CIL level = 1 location = adana }
 	noble_villa = { tag = CIL level = 1 location = sis }
 	noble_villa = { tag = CYP level = 1 location = limassol }
+	noble_villa = { tag = BYZ level = 1 location = suluklu }
+	noble_villa = { tag = BYZ level = 1 location = kulu_turkey }
+	noble_villa = { tag = BYZ level = 1 location = obruk }
+	noble_villa = { tag = BYZ level = 1 location = nevsehir }
+	noble_villa = { tag = BYZ level = 1 location = dinek_keskin }
+	noble_villa = { tag = BYZ level = 1 location = baliseyh }
+	noble_villa = { tag = BYZ level = 1 location = corum }
+	noble_villa = { tag = BYZ level = 1 location = merzifon }
+	noble_villa = { tag = BYZ level = 1 location = sonisa }
+	noble_villa = { tag = BYZ level = 1 location = safranbolu }
+	noble_villa = { tag = BYZ level = 1 location = bartin }
+	noble_villa = { tag = BYZ level = 1 location = karakecili }
+	noble_villa = { tag = BYZ level = 1 location = aydincik }
+
 	local_markets = { tag = CYP level = 1 location = limassol }
 	noble_villa = { tag = CYP level = 1 location = morphou }
 	local_markets = { tag = CYP level = 1 location = morphou }
@@ -6149,7 +6161,6 @@ building_manager = {
 	local_markets = { tag = CYP level = 1 location = famagusta }
 	noble_villa = { tag = NAX level = 1 location = naxos }
 	local_markets = { tag = BYZ level = 1 location = gerze }
-	local_markets = { tag = BYZ level = 1 location = amasra }
 	local_markets = { tag = BYZ level = 1 location = iskenderun}
 	local_markets = { tag = BYZ level = 1 location = limassol }
 	local_markets = { tag = BYZ level = 1 location = famagusta }

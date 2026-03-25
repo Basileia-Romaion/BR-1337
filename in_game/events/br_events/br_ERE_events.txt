@@ -160,6 +160,16 @@ br_ere_events.1 = {
 				type = casus_belli:cb_subjugation #cb_subject_broke_free
 				years = 150
 			}
+			add_casus_belli = {
+				target = c:AN12
+				type = casus_belli:cb_subjugation #cb_subject_broke_free
+				years = 150
+			}
+			add_casus_belli = {
+				target = c:P2N
+				type = casus_belli:cb_subjugation #cb_subject_broke_free
+				years = 150
+			}
 	   	}
 		
 	}
@@ -168,6 +178,9 @@ br_ere_events.1 = {
 		high_reward_option = yes
 		name = br_ere_events.1.b
 
+		ai_chance = {
+			factor = 10
+		}
 		custom_tooltip = {
 			text = br_ere_events.1.btt
 			add_legitimacy = 50
@@ -288,6 +301,9 @@ br_ere_events.3 = {
 		high_reward_option = yes
 		name = br_ere_events.3.b
 
+		ai_chance = {
+			factor = 10
+		}
 		custom_tooltip = {
 			text = br_ere_events.3.btt
 			c:ATH = {
@@ -332,6 +348,7 @@ br_ere_events.3 = {
 			}
 			c:ICO = {
 				annex_country = { country = c:AN9 }
+				annex_country = { country = c:AN12 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:vassal
@@ -339,7 +356,7 @@ br_ere_events.3 = {
 			}
 			c:TRE = {
 				annex_country = { country = c:AN6 }
-				annex_country = { country = c:PAF }
+				annex_country = { country = c:P2N }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:vassal
@@ -349,7 +366,7 @@ br_ere_events.3 = {
 				annex_country = { country = c:AN5 }
 				make_subject_of = {
 					target = c:BYZ
-					type = subject_type:vassal
+					type = subject_type:march
 				}
 			}
 			c:AOI = {

@@ -249,6 +249,13 @@ AN11 = {
 	religion_definition = orthodox
 }
 
+AN12 = {
+	color = rgb { 148 42 78 }
+
+	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
+}
+
 P0N = {
 	color = rgb { 96 88 148 }
 
@@ -258,6 +265,13 @@ P0N = {
 
 P1N = {
 	color = rgb { 88 98 128 }
+
+	culture_definition = pontic_greek_culture
+	religion_definition = orthodox
+}
+
+P2N = {
+	color = rgb { 72 98 124 }
 
 	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
@@ -376,37 +390,37 @@ N2P = { #Capua
 }
 
 N3P = { #Neápolis
-    color = rgb { 125 65 95 }
+    color = rgb { 135 65 95 }
     culture_definition = italiotai_culture
 	religion_definition = orthodox
 }
 
 S1C = { #Sikelanoi
-    color = rgb { 145 60 125 }
+    color = rgb { 155 60 125 }
     culture_definition = griko_culture
 	religion_definition = orthodox
 }
 
 S2C = { #Langobardia
-    color = rgb { 115 115 45 }
+    color = rgb { 155 115 45 }
     culture_definition = italiotai_culture
 	religion_definition = orthodox
 }
 
 S3C = { #Kalavrías
-    color = rgb { 105 35 135 }
+    color = rgb { 155 35 135 }
     culture_definition = italiotai_culture
 	religion_definition = orthodox
 }
 
 S4C = { #Ṣiqilliyya
-    color = rgb { 35 145 75 }
+    color = rgb { 35 155 75 }
     culture_definition = arab_sicilian
 	religion_definition = sunni
 }
 
 S5C = { #
-    color = rgb { 145 65 105 }
+    color = rgb { 155 65 105 }
     culture_definition = italiotai_culture
 	religion_definition = orthodox
 }

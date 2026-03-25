@@ -4176,8 +4176,11 @@ countries = {
 		
 		GAZ = {	# Gazaria
 			own_control_core = {
-				tana kaffa vosporo amasra
+				tana kaffa vosporo
 				taman
+			}
+			our_cores_conquered_by_others = {
+				amasra
 			}
 
 			starting_technology_level = 3
@@ -4193,7 +4196,7 @@ countries = {
 				pontic_greek_culture
 			}
 			currency_data = {
-				gold = 2200
+				gold = 2800
 			}
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -31936,7 +31939,8 @@ countries = {
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_28
+				ruler_term = { character = br_ere_rdm_character_28 start_date = 1297.5.20 }
 			}
 			
 			accepted_cultures = {
@@ -31947,6 +31951,7 @@ countries = {
 				syriac_culture
 			}
 			
+			dynasty = skleros_dynasty
 			court_language = kilikioi_dialect
 			liturgical_language = khoine_dialect
 			country_rank = rank_duchy
@@ -53693,10 +53698,6 @@ countries = {
 				beypazari kizilca
 				ankara cubuk haymana kalecik polatli karakecili
 			}
-			own_control_integrated = {
-				insuyu kulu_turkey
-				turgut suluklu celtik
-			}
 			our_cores_conquered_by_others = {
 				cankiri bayat cerkes kursunlu tosya sabanozu
 				kibrus mihaliccik sivrihisar bozan kaymaz
@@ -53730,16 +53731,18 @@ countries = {
 		
 		PAF = {
 			own_control_core = {
-				#CND
+				amasra
 				bartin
-				kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
+				kastamonu arac devrekani inebolu kure_i_mamure taskopru
 				safranbolu ulus yenicepazari
+				cerkes
 			}
 
 			our_cores_conquered_by_others = {
-				amasra mengen gerede
+				mengen gerede
 				iskilip gumus
-				cankiri bayat cerkes kursunlu tosya sabanozu
+				cankiri bayat kursunlu tosya sabanozu
+				boyabat sinop
 			}
 			
 			starting_technology_level = 3
@@ -53763,7 +53766,7 @@ countries = {
 			}
 			
 			liturgical_language = khoine_dialect
-			capital = sinop
+			capital = amasra
 		}
 		
 		K1B = {
@@ -54031,6 +54034,7 @@ countries = {
 				bozok candir dinek_keskin sorgun baliseyh
 				bogazliyan kirsehir hacibektas
 				huseyinabad sungurlu
+				corum
 			}
 
 			starting_technology_level = 3
@@ -54089,8 +54093,11 @@ countries = {
 		AN6 = {
 			own_control_core = {
 				unye
-				gerze bafra samsun terme akkus
-				gadegara ladik_pontus
+				bafra samsun terme akkus
+				ladik_pontus gadegara
+			}
+			our_cores_conquered_by_others = {
+				gerze
 			}
 
 			starting_technology_level = 3
@@ -54167,7 +54174,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_24
+				ruler_term = { character = br_ere_rdm_character_24 start_date = 1297.11.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54175,7 +54183,7 @@ countries = {
 				greek_culture
 				armenian_culture
 			}
-			
+			dynasty = phokas_dynasty
 			liturgical_language = khoine_dialect
 			capital = kayseri
 		}
@@ -54217,6 +54225,8 @@ countries = {
 				niksar
 				amasya merzifon sonisa
 				akdagmadeni aydincik
+			}
+			our_cores_conquered_by_others = {
 				corum
 			}
 
@@ -54229,7 +54239,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_32
+				ruler_term = { character = br_ere_rdm_character_32 start_date = 1299.11.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54244,8 +54255,11 @@ countries = {
 		
 		AN11 = {
 			own_control_core = {
-				cankiri bayat cerkes kursunlu tosya sabanozu iskilip
+				cankiri bayat kursunlu tosya sabanozu iskilip
 				gumus
+			}
+			our_cores_conquered_by_others = {
+				cerkes
 			}
 
 			starting_technology_level = 3
@@ -54268,6 +54282,70 @@ countries = {
 
 			liturgical_language = khoine_dialect
 			capital = cankiri
+		}
+
+		AN12 = {
+			own_control_core = {
+				insuyu kulu_turkey
+				turgut suluklu celtik
+			}
+			
+			starting_technology_level = 3
+			include = "expl_eastern_europe"
+			include = "br_pronoia_template"
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			government = {
+				ruler = br_ere_rdm_character_20
+				ruler_term = { character = br_ere_rdm_character_20 start_date = 1299.11.1 }
+			}
+			
+			country_rank = rank_county
+			accepted_cultures = {
+				greek_culture
+			}
+			tolerated_cultures = {
+				armenian_culture
+			}
+
+			dynasty = argyros_dynasty
+			liturgical_language = khoine_dialect
+			capital = celtik
+		}
+		
+		P2N = {
+			own_control_core = {
+				boyabat sinop gerze
+			}
+			our_cores_conquered_by_others = {
+				gadegara gumus
+			}
+			
+			starting_technology_level = 3
+			include = "expl_eastern_europe"
+			include = "br_pronoia_template"
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			government = {
+				ruler = random
+			}
+			
+			country_rank = rank_county
+			accepted_cultures = {
+				greek_culture
+			}
+			tolerated_cultures = {
+				armenian_culture
+			}
+
+			liturgical_language = khoine_dialect
+			capital = sinop
 		}
 		
 
