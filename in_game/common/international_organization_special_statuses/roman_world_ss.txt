@@ -173,10 +173,7 @@ imperial_loyalist = {
 	}
 
 	can_bestow_trigger = {
-	}
-
-	auto_bestowal_trigger = {
-		NOR = {
+	NOR = {
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
 				international_organization = scope:recipient
@@ -198,6 +195,10 @@ imperial_loyalist = {
 			overlord ?= { this = scope:recipient.leader_country }
 			ruler_or_regent ?= { scope:recipient.leader_country.ruler ?= this }
 		}
+	}
+
+	auto_bestowal_trigger = {
+		always = yes
 	}
 
 	auto_rescind_trigger = {
@@ -252,10 +253,7 @@ defiant_strategoi = {
 	}
 
 	can_bestow_trigger = {
-	}
-
-	auto_bestowal_trigger = {
-		culture ?= { has_culture_group = culture_group:greek_group }
+	culture ?= { has_culture_group = culture_group:greek_group }
 		NOR = {
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
@@ -274,6 +272,10 @@ defiant_strategoi = {
 				international_organization = scope:recipient
 			}
 		}
+	}
+
+	auto_bestowal_trigger = {
+		always = yes
 	}
 
 	auto_rescind_trigger = {
@@ -324,10 +326,7 @@ external_member = {
 	}
 
 	can_bestow_trigger = {
-	}
-
-	auto_bestowal_trigger = {
-		NOR = {
+	NOR = {
 			culture ?= { has_culture_group = culture_group:greek_group }
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
@@ -350,6 +349,10 @@ external_member = {
 				international_organization = scope:recipient
 			}
 		}
+	}
+
+	auto_bestowal_trigger = {
+		always = yes
 	}
 
 	auto_rescind_trigger = {
