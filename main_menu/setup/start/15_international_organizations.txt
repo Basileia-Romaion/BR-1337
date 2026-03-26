@@ -1775,11 +1775,15 @@ international_organization_manager = {
 		}
 
 		br_emperor = { BYZ }
-		domestikos_west = {  }
-		domestikos_east = {  }
+		domestikos_west = { THE }
+		domestikos_east = { AOI }
 		#br_military_order  = { OHS SGO RH0 } #likely will be moved to a reworked Patrachate IO
 		imperial_loyalist = { 
 			S1Y A1G K1B FEO
+		}
+
+		laws = {
+			br_romaiokratia_weak_policy
 		}
 
 		leader = BYZ

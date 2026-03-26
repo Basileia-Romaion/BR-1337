@@ -132,6 +132,7 @@ br_romaiokratia_law = {
 			monthly_roman_authority = 0.08
 		}
 		international_organization_modifier = {
+			cannot_declare_no_cb_wars_on_members = yes 
 		}
 		# How much the Emperor wants to propose a policy
 		wants_this_policy_bias = {
@@ -198,7 +199,7 @@ br_romaiokratia_law = {
 			government_size = 1
 		}
 		international_organization_modifier = {
-
+			enforced_internal_peace = yes
 		}
 		# How much the Emperor wants to propose a policy
 		wants_this_policy_bias = {
@@ -236,11 +237,11 @@ br_romaiokratia_law = {
 		}
 		on_pay_price = {
 			change_roman_authority = { value = -50 }
-			leader_country ?= {
-				trigger_event_non_silently = { 
-					id = br_ere_events.3
-				}
-			}
+			#leader_country ?= {
+			#	trigger_event_non_silently = { 
+			#		id = br_ere_events.4 
+			#	}
+			#}
 		}
 		location_modifier = {
 			potential_trigger = {
@@ -270,6 +271,7 @@ br_romaiokratia_law = {
 		}
 		international_organization_modifier = {
 			enforced_internal_peace = yes
+			#enable_annexation_of_members = yes #testing and feedback needed.
 		}
 		# How much the Emperor wants to propose a policy
 		wants_this_policy_bias = {
