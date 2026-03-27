@@ -23,7 +23,6 @@ INJECT:administrative_system = { #Version for ERE subjects/minors
 
 INJECT:distribution_of_power_law = {
 	br_roman_distribution_of_power_law = {
-		law_category = estates
 		potential = {
 			culture = { has_culture_group = culture_group:greek_group }
 		}
@@ -83,8 +82,7 @@ INJECT:royal_court_customs_law = {
 		years = 2
 	}
 	br_roman_court_customs = {
-		law_category = administrative
-
+		unique = yes
 	    allow = { 
 			OR = {
 				TAG = BYZ 
@@ -112,7 +110,7 @@ INJECT:royal_court_customs_law = {
 
 INJECT:cultural_traditions_law = { #balance still
 	br_roman_tradition = { 
-		law_category = socioeconomic
+		unique = yes
 	    potential = {
 			culture = { has_culture_group = culture_group:greek_group }
 		}
@@ -216,13 +214,14 @@ INJECT:piracy_law = {
 br_military_frontier = {
 	law_category = military
 	potential = {
-		has_unlocked_law_trigger = { type = br_military_frontier }
+		#has_unlocked_law_trigger = { type = br_military_frontier }
 	}
 
 	br_frontier_maintained = {
 		country_modifier = {
 			fort_maintenance_cost = 0.10
 			global_defensive = 0.1
+			global_hostile_attrition = 0.1
 		}
 		estate_preferences = {
 			peasants_estate
