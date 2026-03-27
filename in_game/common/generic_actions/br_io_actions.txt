@@ -1,0 +1,102 @@
+﻿br_romaiokratia_casus_belli = {
+    type = internationalorganization
+
+    ai_tick = monthly
+    ai_tick_frequency = 60
+
+    automation_tick = never
+    show_message_to_target = yes
+
+    potential = {
+        exists = international_organization:roman_world
+    }
+
+    allow = {
+		scope:actor = {
+            is_leader_of_international_organization = international_organization:roman_world
+			#modifier:country_can_use_br_romaiokratia_cb = yes
+		}
+    }
+
+    price = price:br_romaiokratia_casus_belli_price
+    cooldown = { type = br_romaiokratia_casus_belli years = 1 }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        source = actor
+        target_flag = recipient
+        name = "choose_international_organization"
+        column = { data = name }
+        visible = {
+            is_leader_of_international_organization = international_organization:roman_world
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = country
+        interaction_source_list = {
+            OR = {
+			    region:anatolia_region = {
+				    every_location_in_region = {
+				    	owner ?= {						
+				    		add_to_list = source
+				    	}
+			    	}
+			    }
+                region:balkan_region = {
+				    every_location_in_region = {
+				    	owner ?= {						
+				    		add_to_list = source
+				    	}
+			    	}
+			    }
+            }
+		}
+        target_flag = target
+        name = "choose_country"
+        column = { data = name }
+        visible = {
+			is_member_of_international_organization = international_organization:roman_world 
+			#international_organization:roman_world = {
+			#	country_has_special_status = {
+			#		type = special_status:defiant_strategoi
+			#		#country = root
+			#	}
+			#}
+			has_special_status_in_international_organization = {
+				type = special_status:defiant_strategoi
+				international_organization = international_organization:roman_world
+			}
+        }
+
+		enabled = {
+			is_neighbor_of = scope:actor
+		}
+    }
+
+    effect = {
+        if = {
+            limit = { exists = scope:target }
+            scope:actor = {
+                add_casus_belli = {
+                    type   = casus_belli:cb_subjugation
+                    target = scope:target
+                    years  = 5
+                }
+            }
+        }
+        #else = { custom_tooltip = br_romaiokratia_casus_belli }
+    }
+
+    # Keep AI from trying when there’s no bound target
+    ai_prerequisite = {
+        exists = scope:target
+    }
+
+    ai_will_do = {
+        add = {
+            desc = "game_concept_stability"
+            value = "scope:actor.currency_utility(stability|stability_mild_bonus)"
+        }
+    }
+}

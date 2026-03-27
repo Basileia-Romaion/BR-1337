@@ -4,3 +4,24 @@
 
  #Elysium
  STATIC_MODIFIER_NAME_br_elysium_formed: "Elysium Formed"
+
+
+ PERFORM_br_romaiokratia_casus_belli_ACTION_SETUP: "When a [member|e] of a [GetInternationalOrganizationType('roman_world').GetName] obtains a [ShowGenericActionNameWithNoTooltip('br_romaiokratia_casus_belli')]."
+ PERFORM_br_romaiokratia_casus_belli_ACTION_HEADER: "$MESSENGER$"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] has obtained a [ShowGenericActionNameWithNoTooltip('br_romaiokratia_casus_belli')] against [target.GetName]"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_EFFECTS: "$EFFECT$"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_LOG: "$PERFORM_br_romaiokratia_casus_belli_ACTION_TITLE$"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_BTN1: "OK"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_BTN2: "OK"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_BTN3: "$common_string_go_to$"
+ PERFORM_br_romaiokratia_casus_belli_ACTION_MAP: ""
+
+ MODIFIER_TYPE_NAME_country_can_use_br_romaiokratia_cb: "Can Use [GetUniqueInternationalOrganization('roman_world').GetNameWithNoTooltip] Casus Belli"
+ MODIFIER_TYPE_DESC_country_can_use_br_romaiokratia_cb: "This allows a country in the [GetUniqueInternationalOrganization('roman_world').GetName] to use the [ShowGenericActionName('br_romaiokratia_casus_belli')] to form a [ShowCasusBelliName('cb_subjugation')] [casus_belli|e]."
+
+ MODIFIER_TYPE_NAME_br_romaiokratia_casus_belli_cost_modifier: "[ShowGenericActionNameWithNoTooltip('br_romaiokratia_casus_belli')] Cost"
+ MODIFIER_TYPE_DESC_br_romaiokratia_casus_belli_cost_modifier: "This impacts the [costs|e] of [ShowGenericActionName('br_romaiokratia_casus_belli')] in the [GetUniqueInternationalOrganization('roman_world').GetNameWithNoTooltip]."
+
+ br_romaiokratia_casus_belli: "Enforce the Imperial Order"
+ br_romaiokratia_casus_belli_desc: "Those who stand within the Oikoumenē are bound by duty to the Basileus and the structures of Romaiokratía. When obedience falters, it falls upon the Empire to restore order and reaffirm the bonds that sustain the Roman world."
+ br_romaiokratia_casus_belli_price: "Issue Imperial Mandate"

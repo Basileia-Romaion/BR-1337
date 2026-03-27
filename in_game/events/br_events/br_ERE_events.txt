@@ -4,6 +4,8 @@
 	#	character:byz_andronikos_iii_palaiologos ?= {	is_alive = no	}
 	#}
 
+	#unlock_law_effect = { type = br_military_frontier }
+
 br_ere_events.1 = {
 	type = country_event
 	title = br_ere_events.1.title
@@ -269,6 +271,7 @@ br_ere_events.3 = {
 	}
 
 	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
 	}
 
 	option = { #smaller state size subjects
@@ -384,6 +387,40 @@ br_ere_events.3 = {
 		}
 	}
 }
+
+br_ere_events.4 = {
+	type = country_event
+	title = br_ere_events.4.title
+	desc = br_ere_events.4.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	orphan = yes
+	trigger = {
+		tag = BYZ
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		#event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_ere_events.4.a
+
+		annex_country = { country = c:S1Y }
+		annex_country = { country = c:A1G }
+		annex_country = { country = c:K1B }
+		annex_country = { country = c:FEO }
+		annex_country = { country = c:PAF }
+
+	}
+}
+
 
 br_ere_events.1002 = {
 	type = country_event

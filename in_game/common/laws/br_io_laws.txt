@@ -82,6 +82,7 @@ br_romaiokratia_law = {
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.06
+			#country_can_use_br_romaiokratia_cb = yes
 		}
 		# How much the Emperor wants to propose a policy
 		wants_this_policy_bias = {
@@ -130,6 +131,7 @@ br_romaiokratia_law = {
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.08
+			#country_can_use_br_romaiokratia_cb = yes
 		}
 		international_organization_modifier = {
 			cannot_declare_no_cb_wars_on_members = yes 
@@ -197,6 +199,7 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_weak_bonus
 			monthly_roman_authority = 0.1
 			government_size = 1
+			#country_can_use_br_romaiokratia_cb = yes
 		}
 		international_organization_modifier = {
 			enforced_internal_peace = yes
@@ -268,9 +271,16 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_mild_bonus
 			monthly_roman_authority = 0.15
 			government_size = 1
+			#country_can_use_br_romaiokratia_cb = yes
 		}
+		#country_modifier = {
+    	#	potential_trigger = {
+       	#		NOT = { is_leader_of_international_organization = scope:recipient }
+   		#	}
+		#}
 		international_organization_modifier = {
 			enforced_internal_peace = yes
+			#enabled_union_enforcement_actions = yes
 			#enable_annexation_of_members = yes #testing and feedback needed.
 		}
 		# How much the Emperor wants to propose a policy
