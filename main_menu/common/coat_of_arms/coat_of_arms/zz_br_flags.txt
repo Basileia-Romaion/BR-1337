@@ -40,6 +40,33 @@ E2Y = { # Elysium
         instance = { scale = { 1.0 1.0 } }
     }
 }
+BNK = { #bank tag
+    pattern = "pattern_solid.dds"
+    color1 = "green"
+
+    textured_emblem = {
+        texture = "BNK_flag.dds"
+        instance = { scale = { 1.0 1.0 } }
+    }
+}
+MKB = { #bank tag
+    pattern = "pattern_solid.dds"
+    color1 = "red"
+
+    textured_emblem = {
+        texture = "MKB_flag.dds"
+        instance = { scale = { 1.0 1.0 } }
+    }
+}
+CHY = { #bank tag
+    pattern = "pattern_solid.dds"
+    color1 = "purple"
+
+    textured_emblem = {
+        texture = "CHY_flag.dds"
+        instance = { scale = { 1.0 1.0 } }
+    }
+}
 
 HRE = { # Elysium
     pattern = "pattern_solid.dds"
