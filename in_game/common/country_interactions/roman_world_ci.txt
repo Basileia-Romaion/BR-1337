@@ -372,8 +372,10 @@ br_restore_roman_status = {
 			}
 		}
         enabled = {
-			#is_neighbor_of = scope:actor
-			"opinion(scope:actor)" > 100
+			has_special_status_in_international_organization = {
+                type = special_status:defiant_strategoi
+                international_organization = international_organization:roman_world
+            }
 		}
 	}
 
@@ -415,7 +417,7 @@ br_restore_roman_status = {
 		if = {
 			limit = {
 				exists = scope:recipient
-				scope:recipient = { has_cooldown = ai_spam_protection_bestow_imperial_loyalist_status }
+				scope:recipient = { has_cooldown = ai_spam_protection }
 			}
 			subtract = {
 				desc = "DIPLOREASON_ALREADY_DID_ACTION"
@@ -425,70 +427,56 @@ br_restore_roman_status = {
 	}
 
 	accept = {
-    # Base reluctance
-	subtract = {
-        desc = "VOTE_BASE_VALUE"
-       	value = 30
-   	}
-
-    if = {
-        limit = { scope:actor = { is_allied_with = scope:recipient } }
-        add = {
-            desc = "game_concept_alliance"
-            value = 15
-        }
-    }
-
-    if = {
-        limit = { scope:recipient = { is_rival_of = scope:actor } }
-        subtract = {
-            desc = "game_concept_rival"
-            value = 1000
-        }
-    }
-
-    if = {
-        limit = { scope:recipient = { is_enemy_of = scope:actor } }
-        subtract = {
-            desc = "game_concept_enemy"
-            value = 50
-        }
-    }
-
-    add = {
-        desc = "THEIR_OPINION_TOOLTIP"
-        value = "scope:recipient.opinion(scope:actor)"
-        divide = 10
-    }
-
-    add = {
-        desc = "IO_LEADER_DIP_REP"
-        scope:actor = {
-            value = modifier:diplomatic_reputation
-            multiply = 2
-        }
-    }
-
-    add = {
-        desc = "TRUST"
-        scope:recipient = {
-            value = "trust(scope:actor)"
-            divide = 10
-        }
-    }
-
-    if = {
-        limit = {
-            has_special_status_in_international_organization = {
-                type = special_status:defiant_strategoi
-                international_organization = international_organization:roman_world
-            }
-        }
-        #subtract = {
-        #   desc = "DEFIANT_STRATEGOI"
-        #    value = 20
-        #}
-   	}
+		subtract = {
+        	desc = "VOTE_BASE_VALUE"
+       		value = 30
+   		}
+    	if = {
+        	limit = { scope:actor = { is_allied_with = { target = scope:recipient } } }
+        	add = {
+            	desc = "game_concept_alliance"
+            	value = 15
+        	}
+    	}
+    	if = {
+        	limit = { scope:recipient = { is_rival_of = scope:actor } }
+        	subtract = {
+            	desc = "game_concept_rival"
+            	value = 1000
+        	}
+    	}
+    	if = {
+        	limit = { scope:recipient = { is_enemy_of = scope:actor } }
+        	subtract = {
+            	desc = "game_concept_enemy"
+            	value = 50
+        	}
+    	}
+    	add = {
+        	desc = "THEIR_OPINION_TOOLTIP"
+        	value = "scope:recipient.opinion(scope:actor)"
+        	divide = 10
+    	}
+   	 	add = {
+        	desc = "IO_LEADER_DIP_REP"
+        	scope:actor = {
+        	    value = modifier:diplomatic_reputation
+        	    #multiply = 2
+        	}
+    	}
+    	add = {
+       	 	desc = "game_concept_trust"
+			scope:recipient = {
+				value = "trust(scope:actor)"
+				divide = 10
+			}
+    	}
+		add = {
+			desc = "DISTANCE_FROM_ROMANLAND"
+			value = "scope:recipient.border_distance_to(scope:actor)"
+			multiply = -0.05
+			min = -1000
+		}
 	}
 
 	reject_effect = {
