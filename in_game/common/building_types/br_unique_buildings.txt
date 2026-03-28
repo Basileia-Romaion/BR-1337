@@ -23,7 +23,7 @@ br_great_palace_building = {
 		owns = location:constantinople
 	}
 
-	allow = { always = no }
+	#allow = { always = no }
 
 	expensive = yes
 
@@ -78,7 +78,7 @@ br_hagia_sophia_building = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 
 	build_time = large_religious_building_time
 
@@ -145,7 +145,7 @@ br_senaton_building = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 
 	modifier = {
 		local_upper_class_capacity_modifier = 1
@@ -210,7 +210,7 @@ br_constantinople_university = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 
 	#capital_country_modifier = {
 		#research_speed = 0.05
@@ -261,7 +261,7 @@ br_constantinople_shipyard = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 	
 	rural_settlement = no
 	town = no
@@ -324,7 +324,7 @@ br_hippodrome_building = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 	expensive = yes
 
 	build_time = cultural_building_time
@@ -394,7 +394,7 @@ br_constantinople_infrastructure = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 
 	unique_production_methods = {
 		br_constantinople_infrastructure_maintenance = {
@@ -574,7 +574,7 @@ br_agioi_apostoloi_building = {
 		owns = location:constantinople
 	}
 	
-	allow = { always = no }
+	#allow = { always = no }
 
 	build_time = large_religious_building_time
 
