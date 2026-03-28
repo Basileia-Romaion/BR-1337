@@ -280,7 +280,7 @@
 			}
 		}
 		add = {
-			desc = "EMPEROR_DIP_REPUTATION"
+			desc = "BR_EMPEROR_DIP_REPUTATION"
 			scope:recipient = {
 				value = leader_country.modifier:diplomatic_reputation
 				multiply = 2
