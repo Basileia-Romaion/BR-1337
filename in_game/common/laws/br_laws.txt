@@ -240,3 +240,30 @@ br_military_frontier = {
 	}
 }
 
+#INJECT:order_of_chivalry_law = {
+#	br_order_of_phoenix_policy = {
+#		potential = {
+#			culture = { has_culture_group = culture_group:greek_group }
+#		}
+#		country_modifier = {
+#			has_chivalric_order = yes
+#			nobles_estate_levy_size = 0.1
+#			cultural_tradition_modifier = 0.1
+#		}
+#		estate_preferences = {
+#			nobles_estate
+#		}
+#		years = 2
+#		on_activate = {
+#			hidden_effect = {
+#				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+#				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+#			}
+#		}
+#		on_deactivate = {
+#			hidden_effect = {
+#				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+#			}
+#		}
+#	}
+#}
