@@ -282,7 +282,8 @@ br_romaiokratia_law = {
 				is_leader_of_international_organization = scope:recipient
 			}
 			monthly_diplomats = 0.5
-			subject_loyalty = 15
+			subject_loyalty = 10
+			subject_opinions = 10
 			monthly_prestige = 0.2
 			diplomatic_reputation = diplomatic_reputation_mild_bonus
 			monthly_roman_authority = 0.15

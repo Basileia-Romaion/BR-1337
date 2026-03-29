@@ -326,6 +326,7 @@ br_latin_trade_naval_reliance = {
 		burghers_estate_allowed_in_cabinet = yes
 		expected_navy_size_modifier = -0.5
 		tolerance_heretic = 1
+		foreign_export_from_market_cost_modifier = -0.25
 		monthly_towards_plutocracy = societal_value_monthly_move
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 	}
