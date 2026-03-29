@@ -171,6 +171,7 @@ br_naval_theme_hq = {
 	}
 	capital_country_modifier = {
 		navy_galley_power = 0.05
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 	
 	unique_production_methods = {
@@ -223,6 +224,9 @@ br_varangian_camp = {
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 2
 	}
+	capital_country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
 	
 	possible_production_methods =  {
 		early_soldier_building_maintenance
@@ -266,6 +270,9 @@ br_tagmata_camp = {
 		local_manpower = 0.015
 		can_recruit_regiment_in_this_location = yes
 		local_unrest = -0.025
+	}
+	capital_country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 	
 	possible_production_methods =  {
@@ -582,6 +589,9 @@ br_varangian_barracks = {
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 4
 	}
+	capital_country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
 	
 	possible_production_methods =  {
 		soldier_building_maintenance
@@ -627,6 +637,9 @@ br_tagmata_barracks = {
 		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 		local_unrest = -0.05
+	}
+	capital_country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 	
 	possible_production_methods =  {
@@ -907,6 +920,9 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 		#local_unrest = -0.05
 		local_soldiers_desired_pop = 0.25
 		local_clergy_desired_pop = 0.25
+	}
+	capital_country_modifier = {
+		monthly_towards_bureaucratic = societal_value_min_scaling_monthly_move
 	}
 
 	unique_production_methods = {

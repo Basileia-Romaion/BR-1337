@@ -21,3 +21,21 @@ monthly_roman_authority={
 		category=all
 	}
 }
+
+monthly_towards_stratiotai={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+
+monthly_towards_bureaucratic={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}

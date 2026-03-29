@@ -84,6 +84,7 @@ br_dynatoi_magnates = {
 		monthly_towards_serfdom = societal_value_monthly_move
 		monthly_towards_aristocracy = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
+		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 	}
 	location_modifier = {
@@ -136,6 +137,7 @@ akritai_privilege = {
 	country_modifier = {
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		monthly_towards_stratiotai = societal_value_monthly_move
 		auto_slave_raid_different_religion = yes   # Frontier raiding (BR addition)
 		global_peasants_estate_power = 1
 		global_peasant_enfranchisment = 0.05
@@ -213,6 +215,7 @@ br_themata_peasant_privilege = {
 		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
 		monthly_towards_free_subjects = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
+		monthly_towards_stratiotai = societal_value_monthly_move
 		levy_combat_efficiency_modifier = 0.1
 		global_soldiers_desired_pop_scaled = 0.005 #Soldier Levies
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
@@ -378,6 +381,7 @@ br_bureaucrat_clergy = { #maybe split up
 		global_clergy_estate_power = 0.25
 		global_clergy_city_desired_pop_scaled = 0.01
 		monthly_towards_centralization = societal_value_minor_monthly_move
+		monthly_towards_bureaucratic = societal_value_monthly_move
 	}
 	#positive
 	country_modifier = {
@@ -417,6 +421,7 @@ br_roman_ecumenical_patriarch_privilege = {
 		global_clergy_estate_power = 0.25
 		monthly_towards_spiritualist = societal_value_monthly_move
 		maximum_religious_influence = 500
+		monthly_towards_bureaucratic = societal_value_minor_monthly_move
 	}
 	#country_modifier = {
 	#	potential_trigger = {  societal_value:individualism_vs_communalism >= 50}

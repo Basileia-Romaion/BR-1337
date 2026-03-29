@@ -40,6 +40,7 @@ br_imperial_administration = {
 		#set_cabinet_member_cost_modifier = -0.1
         #replace_cabinet_member_cost_modifier = -0.1
 		#global_nobles_estate_power = -0.1
+		monthly_towards_bureaucratic = societal_value_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { stability <= 25 }
@@ -72,6 +73,7 @@ br_sub_theme_subject = {
 		monthly_towards_defensive = societal_value_monthly_move
 		allow_thema_headquarters = yes
 		global_defensive = 0.1
+		monthly_towards_stratiotai = societal_value_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -113,6 +115,7 @@ br_sub_pronoia_subject = {
 		global_nobles_estate_power = 0.25
 		monthly_towards_aristocracy = societal_value_monthly_move
 		allow_thema_headquarters = yes
+		monthly_towards_stratiotai = societal_value_minor_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -155,6 +158,7 @@ br_sub_religious_subject = {
 		monthly_religious_influence = 1
 		tolerance_own = 5
 		global_clergy_estate_power = 1
+		monthly_towards_bureaucratic = societal_value_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -192,7 +196,7 @@ br_naval_akritai_reform = {
     country_modifier = {
 		#government_reform_slots = 1
         monthly_towards_naval = societal_value_monthly_move
-		monthly_towards_belligerent = societal_value_minor_monthly_move
+		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		allow_privateers_slave_raid = yes
         navy_galley_maintenance_cost_modifier = -0.5
         global_sailors_modifier = 0.5
