@@ -381,7 +381,7 @@ br_bureaucrat_clergy = { #maybe split up
 		global_clergy_estate_power = 0.25
 		global_clergy_city_desired_pop_scaled = 0.01
 		monthly_towards_centralization = societal_value_minor_monthly_move
-		monthly_towards_bureaucratic = societal_value_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_monthly_move
 	}
 	#positive
 	country_modifier = {
@@ -421,7 +421,7 @@ br_roman_ecumenical_patriarch_privilege = {
 		global_clergy_estate_power = 0.25
 		monthly_towards_spiritualist = societal_value_monthly_move
 		maximum_religious_influence = 500
-		monthly_towards_bureaucratic = societal_value_minor_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 	}
 	#country_modifier = {
 	#	potential_trigger = {  societal_value:individualism_vs_communalism >= 50}

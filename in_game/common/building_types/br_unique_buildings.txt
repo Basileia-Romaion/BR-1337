@@ -38,7 +38,7 @@ br_great_palace_building = {
 		monthly_prestige = 0.02
 		diplomatic_capacity_modifier = 0.25
 		diplomatic_reputation = diplomatic_reputation_mild_bonus
-		monthly_towards_bureaucratic = societal_value_tiny_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
 	}
 
 	possible_production_methods = {
@@ -159,7 +159,7 @@ br_senaton_building = {
 		global_estate_max_tax = 0.05
 		global_distance_from_capital_speed_propagation = 0.05
 		permanent_parliament_location = yes
-		monthly_towards_bureaucratic = societal_value_tiny_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
 	}
 	
 	unique_production_methods = {

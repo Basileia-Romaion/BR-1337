@@ -922,7 +922,7 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 		local_clergy_desired_pop = 0.25
 	}
 	capital_country_modifier = {
-		monthly_towards_bureaucratic = societal_value_min_scaling_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_min_scaling_monthly_move
 	}
 
 	unique_production_methods = {

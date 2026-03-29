@@ -31,7 +31,7 @@ INJECT:distribution_of_power_law = {
 			global_crown_estate_power = 0.25
 			government_size = 1
 			monthly_towards_centralization = societal_value_minor_monthly_move
-			monthly_towards_bureaucratic = societal_value_minor_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 			tax_income_efficiency = large_tax_income_efficiency_bonus
 		}
 		estate_preferences = {
@@ -101,7 +101,7 @@ INJECT:royal_court_customs_law = {
 			legislative_efficiency = 0.05
 			#monthly_legitimacy = 0.05
 			#monthly_prestige = 0.02
-			monthly_towards_bureaucratic = societal_value_minor_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 		}
 
 		estate_preferences = {
@@ -122,7 +122,7 @@ INJECT:cultural_traditions_law = { #balance still
 	    country_modifier = {
 			global_pop_assimilation_speed_modifier = 0.1
 			cultural_influence_modifier = 0.1
-			monthly_towards_bureaucratic = societal_value_minor_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 		}
 		estate_preferences = {
 			crown_estate
@@ -185,7 +185,7 @@ INJECT:legal_code_law = { #Version for ERE administative divisions.
 			government_reform_slots = 1
 			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
 			monthly_towards_centralization = societal_value_monthly_move
-			monthly_towards_bureaucratic = societal_value_minor_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 			global_distance_from_capital_speed_propagation = 0.05
 		}
 		estate_preferences = {
