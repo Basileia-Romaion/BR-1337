@@ -122,3 +122,118 @@ SGO = { #Brotherhood of Saint George
 		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
     }
 }
+
+P0N = TRE
+P1N = CRI
+
+M0E = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "black"
+	colored_emblem = {
+		texture = "ce_cross_moline.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.48 } scale = { 1.0 1.0 }  }
+	}
+}
+
+SY1 = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_block_02.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "ce_block_02.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.48 } scale = { 0.77 0.8 }  }
+	}
+	colored_emblem = {
+		texture = "ce_border_circle_fimbriated.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.48 } scale = { 0.85 0.85 }  }
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "black"
+		instance = { position = { 0.49 0.52 } scale = { 0.7 0.7 }  }
+	}
+	colored_emblem = {
+		texture = "ce_crown_small.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.42 0.29 } scale = { 0.16 0.16 }  }
+	}
+}
+
+SY3 = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.315 0.30 } scale = { 0.36 0.36 }  }
+		instance = { position = { 0.685 0.30 } scale = { 0.36 0.36 }  }
+		instance = { position = { 0.5 0.64 } scale = { 0.36 0.36 }  }
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.315 0.30 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.685 0.30 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.5 0.64 } scale = { 0.30 0.30 }  }
+	}
+	colored_emblem = {
+		texture = "ce_cross_patty.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.315 0.30 } scale = { 0.40 0.40 }  }
+		instance = { position = { 0.685 0.30 } scale = { 0.40 0.40 }  }
+		instance = { position = { 0.5 0.64 } scale = { 0.40 0.40 }  }
+	}
+}
+
+RIC = {
+	pattern = "pattern_solid.tga"
+	color1 = "purple"
+	color2 = "yellow"
+
+	textured_emblem = {
+		texture = "br_india_company.dds"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
+AGY = {
+	pattern = "pattern_solid.tga"
+	color1 = "purple"
+	color2 = "yellow"
+
+    textured_emblem = {
+		texture = "aegypt.dds"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
+AFK = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+
+    textured_emblem = {
+		texture = "afrika.dds"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
