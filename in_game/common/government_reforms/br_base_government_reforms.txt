@@ -149,7 +149,7 @@ REPLACE_OR_CREATE:theme_system = {
 		monthly_towards_quantity = societal_value_tiny_monthly_move
 		global_nobles_estate_power = 0.25
 		allow_thema_headquarters = yes
-
+		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		global_max_rural_control = -0.02
 	}
 	years = 2
@@ -169,6 +169,7 @@ REPLACE_OR_CREATE:modern_imperial_army = {
 		army_maintenance_cost = 0.1
 		monthly_towards_centralization = societal_value_minor_monthly_move
 		monthly_towards_quality = societal_value_tiny_monthly_move
+		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		government_reform_slots = 1
 		allow_thema_headquarters = yes
 		military_tactics = 0.1

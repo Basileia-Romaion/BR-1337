@@ -224,9 +224,9 @@ br_varangian_camp = {
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 2
 	}
-	capital_country_modifier = {
-		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
-	}
+	#capital_country_modifier = {
+	#	monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	#}
 	
 	possible_production_methods =  {
 		early_soldier_building_maintenance
@@ -589,9 +589,9 @@ br_varangian_barracks = {
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 4
 	}
-	capital_country_modifier = {
-		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
-	}
+	#capital_country_modifier = {
+	#	monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	#}
 	
 	possible_production_methods =  {
 		soldier_building_maintenance
