@@ -7,16 +7,20 @@ br_bureaucratic_vs_stratiotai = {
 
 	left_modifier = {
         nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+        global_crown_estate_power = 0.25
         global_clergy_estate_power = 0.5
         global_clergy_city_desired_pop_scaled = 0.01
+        global_burghers_city_desired_pop_scaled = 0.01
 		
         global_max_urban_control = 0.1
         country_cabinet_efficiency = 0.1
+        tax_income_efficiency = 0.1
 
         court_spending_cost  = 0.05
-        army_maintenance_cost = -0.15
+        army_maintenance_cost = -0.1
 
         discipline = -0.025
+        global_manpower_modifier = -0.1
 		
 		bias_for_scholar_policies = 25
         aggressiveness_modifier = -0.15
@@ -30,11 +34,14 @@ br_bureaucratic_vs_stratiotai = {
         global_soldiers_city_desired_pop_scaled = 0.01
 
         court_spending_cost  = -0.05
-        army_maintenance_cost = 0.15
+        army_maintenance_cost = 0.1
 
-        levy_combat_efficiency_modifier = 0.1
-		discipline = 0.025
-        land_morale_modifier = 0.05
+		discipline = 0.05
+        global_manpower_modifier = 0.2
+        subject_opinions = 10
+        #military_tactics = 0.25
+        #land_morale_modifier = 0.05
+        #levy_combat_efficiency_modifier = 0.1
 
 		bias_for_militarist_policies = 25
         aggressiveness_modifier = 0.15

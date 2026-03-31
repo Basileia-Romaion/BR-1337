@@ -21,8 +21,9 @@
  roman_tribute_price: "Phóros"
  roman_tribute_desc: "Phóros represents the regular payments and material contributions remitted to Constantinople by members of the Roman order. It reflects the fiscal obligations that sustain the imperial administration, court, and defenses of the empire. Steady Phóros ensures the effective functioning of Roman rule, while shortfalls strain the treasury and weaken the empire’s ability to project authority and maintain order."
 
+### Romaiokratía Special statuses
  br_emperor: "Basileus and Autokratōr"
- br_emperor_desc: "The Basileus and Autokratōr of the Romans, crowned in Constantinople, heir to the Caesars, and supreme ruler of the oikoumenē. It is his sacred charge to uphold the order of the Basileía and safeguard the Roman world."
+ br_emperor_desc: "The Basileus and Autokratōr of the Romans, crowned in Constantinople, heir to the Caesars, and supreme ruler of the Oikoumenē. It is his sacred charge to uphold the order of the Basileía and safeguard the Roman world."
 
  domestikos_west: "Domestikos tēs Dyseōs"
  domestikos_west_desc: "The Domestikos of the West commands the imperial tagmata and field armies of the European provinces, entrusted with the defense and authority of the western dominions in the name of the Basileus."
@@ -35,6 +36,9 @@
 
  defiant_strategoi: "Autonomoi Strategoi"
  defiant_strategoi_desc: "From ambitious strategoi to entrenched dynatoi, these provincial rulers govern in the Emperor’s name but heed his commands only when it suits them, exercising authority with growing independence as the reach of Constantinople falters."
+
+ external_member: "Symmachoi of the Oikoumenē"
+ external_member_desc: "Peoples and rulers beyond the core of the Romaíoi, yet bound to the imperial order through diplomacy, alliance, and shared interest. Though not counted among the Romans, they partake in the wider oikoumenē shaped by imperial influence."
 
  roman_world_bestow_domestikos_west: "Appoint Domestikos of the West"
  roman_world_bestow_domestikos_west_desc: "Grant the dignity of Domestikos of the West, entrusting the command of the Empire's western armies to a loyal servant of the Basileus."
@@ -49,10 +53,6 @@
 
  DISTANCE_FROM_ROMANLAND: "Distance from Romanía"
  ROMAN_WORLD_MEMBERS_AT_WAR: "Romaiokratía Wars"
-
- external_member: "Symmachoi of the Oikoumenē"
- external_member_desc: "Peoples and rulers beyond the core of the Romaíoi, yet bound to the imperial order through diplomacy, alliance, and shared interest. Though not counted among the Romans, they partake in the wider oikoumenē shaped by imperial influence."
-
  br_roman_location_bonus_tt: "The [locations|e] of the [GetUniqueInternationalOrganization('roman_world').GetName] get the following modifiers:"
 
  ADD_ROMAN_AUTHORITY: "Gains $VALUE|+$ #Y $roman_authority$#!"
@@ -68,6 +68,7 @@
  FIRST_PAST_SUBTRACT_ROMAN_AUTHORITY: "The [international_organization|e] lost $VALUE|-$ #Y $roman_authority$#!"
  THIRD_PAST_SUBTRACT_ROMAN_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] lost $VALUE|-$ #Y $roman_authority$#!"
 
+### Romaiokratía Laws
  br_romaiokratia_law: "Romaiokratía"
  br_romaiokratia_law_desc: "Romaiokratía defines the order through which the Basileus asserts authority across the Oikoumenē. Through it, lands and rulers are drawn into a hierarchy of obligation, service, and submission, binding the Roman world into a single imperial system of governance."
 
@@ -86,10 +87,10 @@
  br_romaiokratia_annex_policy: "Universal Dominion"
  br_romaiokratia_annex_policy_desc: "The Oikoumenē stands unified under the undisputed authority of the Basileus. Distinctions between subject and ally fade as all are drawn fully into the imperial order, securing peace and supremacy across the Roman world."
 
- br_restore_roman_status: "Restore Imperial Status"
- br_restore_roman_status_desc: "Within the Oikoumenē, all are bound by obligation to the Basileus and the order of Romaiokratía. Those who have strayed yet remain amenable to reconciliation may be peacefully restored to their proper place within the imperial hierarchy."
+ br_restore_roman_status: "Restore Imperial Order"
+ br_restore_roman_status_desc: "Those within the Oikoumenē who have drifted from their proper station may, through recognition of the Basileus and the authority of Romaiokratía, be restored peacefully to their rightful place within the imperial order."
 
- ### Not in use
+### Not in use
 
  #roman_world: "Romaiokratía"
  #roman_world_desc: "Romaiokratía is the system through which Roman supremacy is recognized and upheld. It encompasses all realms and authorities that acknowledge the Basileus as the ultimate source of legitimacy, whether directly ruled or bound by obligation. Each member strengthens imperial authority, while failure to honor duties weakens the cohesion of the Roman order."
