@@ -3,32 +3,30 @@
 
 ## International organizations
 ### Oikoumenē
-- Renamed the organization to Oikoumenē with Romaiokratía instead being the new main set of laws.
-- Added a new IO action to get a subjugaton CB against Disloyal strategos
-- Added a new dplomatic action for the Basileus to be able to subjutgate certain disloyal strategos
+- Renamed the organization to Oikoumenē, with Romaiokratía now serving as the primary law framework.
+- Added a new IO action granting a subjugation CB against disloyal Strategoi.
+- Added a new diplomatic action allowing the Basileus to subjugate certain disloyal Strategoi.
+
+- Added the first category of organization laws.
+- Began reworking the starting event, including an optional "easy" setup that grants all members as subjects.
 
 ## Society Values
 ### Logothetai vs. Stratiōtai
-- Added a set of society values to represent the struggle between the military and the bureaucracy. Most of BRs, reforms, laws, privileges and buildings give value towards one or the other.
-
-
-- Added the first category of organizations laws
-- Started re working the starting event to have an easy option that gives you all the members as subjects.
+- Added a set of society values to represent the internal struggle between the military and the bureaucracy. Most BR mechanics, including reforms, laws, privileges, and buildings, now contribute to one side or the other.
 
 ## Balance/Setup Changes
-- New familes in Anatolia
-- removed the free starting cbs as we know have a mechanic for Oikoumenē cbs
+- Added new families in Anatolia.
+- Removed free starting CBs, as they are now replaced by the Oikoumenē CB system.
 
 ## New starting countries
-- AN12: "Argyropronoitai" named after the family + pronoia
-- P2N: "Sinōpē" named after the town its centered on
+- AN12: "Argyropronoitai" — named after the ruling family and the pronoia system.
+- P2N: "Sinōpē" — named after the city it is centered on.
 
 ## GFX
-- Added a dozen or so custom flags for some of the countries that were relying on game generated ones.
+- Added a dozen custom flags, replacing several previously auto-generated ones.
 
 ## Fixes
-- fix the Constantinople buildings being removed when moving capital.
-
+- Fixed Constantinople buildings being removed when moving the capital.
 
 # 0.15
 
