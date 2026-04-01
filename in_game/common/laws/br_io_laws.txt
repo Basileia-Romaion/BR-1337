@@ -33,7 +33,8 @@ br_romaiokratia_law = {
 	br_romaiokratia_weak_policy = {
 		level = 1
 		allow = {
-			international_organization_has_law = law:br_romaiokratia_law
+			is_leader_of_international_organization = international_organization:roman_world
+			#international_organization_has_law = law:br_romaiokratia_law
 		}
 		on_pay_price = {
 		}

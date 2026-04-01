@@ -1,4 +1,6 @@
 
+
+
 # .16
 
 ## International organizations
@@ -27,6 +29,9 @@
 
 ## Fixes
 - Fixed Constantinople buildings being removed when moving the capital.
+
+## Localization
+- Expand Elysian language location names by @DavidMiltos
 
 # 0.15
 
