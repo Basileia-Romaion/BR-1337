@@ -4189,6 +4189,23 @@ countries = {
 				heir_selection = oligarchic_elective
 				ruler = random
 
+				privilege = {
+					feudal_mercenary_contracts
+					increased_civic_engagement
+					noble_sponsored_navy
+					nobles_protected_faith
+
+					peasants_protected_faith
+					peasants_autonomous_villages
+					br_latin_occupiers
+
+					urban_development_grants
+					#burghers
+					land_of_commerce
+					sponsor_maritime_contracts
+					shipwright_contracts
+				}
+
 			}
 			capital = tana
 
@@ -12275,6 +12292,23 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
+
+				privilege = {
+					feudal_mercenary_contracts
+					increased_civic_engagement
+					noble_sponsored_navy
+					nobles_protected_faith
+
+					peasants_protected_faith
+					peasants_autonomous_villages
+					br_latin_occupiers
+
+					urban_development_grants
+					#burghers
+					land_of_commerce
+					sponsor_maritime_contracts
+					shipwright_contracts
+				}
 			}
 			
 			accepted_cultures = {
@@ -12369,6 +12403,7 @@ countries = {
 
 					peasants_protected_faith
 					peasants_autonomous_villages
+					br_latin_occupiers
 
 					urban_development_grants
 					#burghers
@@ -18367,6 +18402,24 @@ countries = {
 					name_george = 1
 					name_bartholomew = 1
 				}
+
+				privilege = {
+					feudal_mercenary_contracts
+					increased_civic_engagement
+					noble_sponsored_navy
+					nobles_protected_faith
+
+					peasants_protected_faith
+					peasants_autonomous_villages
+					br_latin_occupiers
+
+					urban_development_grants
+					#burghers
+					land_of_commerce
+					sponsor_maritime_contracts
+					shipwright_contracts
+				}
+
 			}
 			
 			accepted_cultures = {

@@ -10,6 +10,8 @@
 #potential_trigger = {  societal_value:centralization_vs_decentralization >= -50}
 #monthly_pretender_rebel_growth  = 0.025
 #monthly_nationalist_rebel_growth = 0.025
+#subject_opinions = 50
+#subject_loyalty = 50
 
 #aggressiveness_modifier = 0.25
 #expected_warscore_modifier = 0.25
@@ -75,6 +77,7 @@ br_dynatoi_magnates = {
 	}
 	can_revoke = {
 		#has_law = br_thema_levies_upgraded
+		government_power > 75
 		societal_value:centralization_vs_decentralization <= -50
 		"estate_power(estate_type:nobles_estate)" <= 0.25
 	}
@@ -113,6 +116,29 @@ br_dynatoi_magnates = {
 		monthly_legitimacy = -0.02
 	}
 }
+
+br_latin_occupiers = {
+	estate = nobles_estate
+	icon = formalized_oath
+	potential = {
+		culture = culture:latinoi
+	}
+	can_revoke = {
+		culture = culture:greek_culture
+	}
+	country_modifier = {
+		global_nobles_estate_power = 0.25
+		# buffs
+		wrong_culture_levy_size = 0.75
+		tolerance_heretic = 2
+		cultures_capacity = 2
+		
+		#debuffs
+		global_pop_assimilation_speed_modifier = -0.75
+        global_pop_conversion_speed_modifier = -0.75
+	}
+}
+
 
 ### Peasants Privileges ###
 
