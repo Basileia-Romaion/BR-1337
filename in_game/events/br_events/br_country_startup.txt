@@ -503,6 +503,58 @@ br_country_startup.3 = { #cbs added
 				target = c:SME
 				type = casus_belli:cb_subjugation
 			}
+			add_casus_belli = {
+				target = c:GAN
+				type = casus_belli:cb_border_war
+			}
+		}
+		c:GLH = {
+			add_casus_belli = {
+				target = c:RH1
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:RH2
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:RH3
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:ZAZ
+				type = casus_belli:cb_border_war
+			}
+		}
+		c:TUR = {
+			add_casus_belli = {
+				target = c:ERE
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:KKL
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:SRV
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:DML
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:ATZ
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:SYU
+				type = casus_belli:cb_border_war
+			}
+			add_casus_belli = {
+				target = c:KCN
+				type = casus_belli:cb_border_war
+			}
 		}
 
 	}
