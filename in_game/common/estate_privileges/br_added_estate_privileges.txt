@@ -25,7 +25,11 @@ boyarski_voiski = {
 	estate = nobles_estate
 	icon = formalized_oath
 	potential = {
-		has_or_had_tag = BUL
+		OR = {
+			has_or_had_tag = BUL
+			culture = culture:bulgarian
+			culture = culture:boulgaroi
+		}
 	}
 	country_modifier = {
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -34,9 +38,27 @@ boyarski_voiski = {
 		nobles_estate_levy_size = 0.25
 		global_army_levy_size_modifier = 0.1
 		global_manpower_modifier = 0.1
-		wrong_culture_levy_size = 0.25
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_land = societal_value_minor_monthly_move
+	}
+}
+
+br_tsar_bulgars_romans = {
+	estate = nobles_estate
+	icon = dhimmi_in_administration
+	potential = {
+		OR = {
+			has_or_had_tag = BUL
+			culture = culture:bulgarian
+			culture = culture:boulgaroi
+		}
+	}
+	country_modifier = {
+		wrong_culture_levy_size = 0.5
+		cultures_capacity = 2
+		#debuffs
+		global_pop_assimilation_speed_modifier = -0.5
+		monthly_towards_humanist = societal_value_minor_monthly_move
 	}
 }
 
@@ -119,7 +141,7 @@ br_dynatoi_magnates = {
 
 br_latin_occupiers = {
 	estate = nobles_estate
-	icon = formalized_oath
+	icon = banal_lordship
 	potential = {
 		culture = culture:latinoi
 	}
