@@ -40,47 +40,6 @@ br_ere_events.1 = {
 	   	}
 		
 	}
-
-	option = {
-		high_reward_option = yes
-		name = br_ere_events.1.b
-
-		ai_chance = {
-			factor = 10
-		}
-		custom_tooltip = {
-			text = br_ere_events.1.btt
-			add_legitimacy = 50
-			add_prestige = 50
-			add_stability = 50
-			add_gold = 5000
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
-	   	}
-	}
-	option = {
-		high_reward_option = yes
-		name = br_ere_events.1.c
-
-		custom_tooltip = {
-			text = br_ere_events.1.ctt
-			add_legitimacy = 50
-			add_prestige = 50
-			add_stability = 50
-			add_gold = 5000
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
-	   	}
-		trigger_event_silently = { 
-			id = br_ere_events.3
-		}
-	}
 }
 
 br_ere_events.2 = {
@@ -282,7 +241,15 @@ br_ere_events.4 = {
 		annex_country = { country = c:K1B }
 		annex_country = { country = c:FEO }
 		annex_country = { country = c:PAF }
-
+		add_legitimacy = 50
+		add_prestige = 50
+		add_stability = 50
+		add_gold = 5000
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
 	}
 }
 
