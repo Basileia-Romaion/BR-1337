@@ -196,7 +196,7 @@ akritai_privilege = {
 	country_modifier = {
 		potential_trigger = { government_power >= 50 }
 		peasants_estate_target_satisfaction = small_privilege_target_satisfaction
-		global_levy_size_modifier = 0.1
+		global_army_levy_size_modifier = 0.1
 		levy_combat_efficiency_modifier = 0.1
 		amount_looted_modifier = 0.5
 	}
@@ -231,7 +231,7 @@ br_frontier_expansion_privilege = {
 		allow_rgo_slave_demand = yes
 		auto_slave_raid_different_religion = yes
 		global_peasant_enfranchisment = 0.05
-		global_levy_size_modifier = 0.1
+		global_army_levy_size_modifier = 0.1
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_belligerent = societal_value_minor_monthly_move
 		tribes_estate_target_satisfaction = -0.25

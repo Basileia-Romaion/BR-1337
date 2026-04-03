@@ -32,6 +32,15 @@
 #global_silk_output_modifier = 0.1
 #global_jewelry_output_modifier = 0.1
 
+#
+#global_max_literacy = 5
+#subject_loyalty = -10
+#monthly_legitimacy = -0.1
+#monthly_pretender_rebel_growth = 0.001
+#monthly_nobles_estate_rebel_growth = 0.001
+#peasants_estate_levy_size = -0.25
+
+
 ### cool icons ###
 #icon = ara_desperta_ferro
 #icon = administrative_leadership
@@ -388,7 +397,10 @@ br_greek_fire = {
 	potential = { has_or_had_tag = BYZ }
 	icon = alchemy_advance
 	siege_ability = 0.05 # siege ability
-	naval_damage_done = 0.1 #naval attack damage
+	navy_galley_power = 0.05
+	#naval_damage_done = 0.1 #naval attack damage
+	own_coast_naval_combat_bonus = 0.1
+	#unlock_unit = PEW PEW PEW
 	ai_weight = { add = 5 }
 }
 

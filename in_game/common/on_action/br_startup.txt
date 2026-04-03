@@ -131,6 +131,9 @@ br_on_game_start = {
 			research_advance = advance_type:chartered_companies
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:trade_companies_advance
+			research_advance = advance_type:guilds
 		}
 		c:VTC = {
 			research_advance = advance_type:unlock_barque_advance
@@ -144,6 +147,9 @@ br_on_game_start = {
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:trade_companies_advance
+			research_advance = advance_type:guilds
 		}
 		c:GTC = {
 			research_advance = advance_type:unlock_barque_advance
@@ -157,6 +163,44 @@ br_on_game_start = {
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:trade_companies_advance
+			research_advance = advance_type:guilds
+		}
+		c:NAX = {
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:unlock_men_at_arms_advance
+			research_advance = advance_type:unlock_crossbowmen_advance
+			add_gold = 500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+		c:CEP = {
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:unlock_men_at_arms_advance
+			research_advance = advance_type:unlock_crossbowmen_advance
+			add_gold = 500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+		c:GAZ = {
+			research_advance = advance_type:unlock_barque_advance
+			research_advance = advance_type:unlock_m_galley_advance
+			research_advance = advance_type:unlock_early_carrack_advance
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:unlock_men_at_arms_advance
+			research_advance = advance_type:unlock_crossbowmen_advance
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:trade_companies_advance
+			research_advance = advance_type:guilds
+			add_gold = 500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
 		c:VEN = {
 			research_advance = advance_type:merchants_and_trade
@@ -259,10 +303,16 @@ br_on_game_start = {
 			research_advance = advance_type:bashi_bazouks
 			research_advance = advance_type:there_shall_be_no_grass
 			research_advance = advance_type:akinji_cavalry
+			add_gold = 1000
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
 
 		c:LOT = {
 			research_advance = advance_type:aristocracy
+			add_gold = 1000
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
 
 		#Starting roads
