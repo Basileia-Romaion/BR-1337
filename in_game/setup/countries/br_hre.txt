@@ -29,6 +29,14 @@ REPLACE_OR_CREATE:LOT = {
 	difficulty = 3
 }
 
+INJECT:HRE = {
+	color = rgb { 66 66 175 }
+	
+	unit_color0 = rgb { 0 38 94 }
+	unit_color1 = rgb { 171 19 19 }
+	unit_color2 = rgb { 200 200 210 }
+}
+
 #Br edit new countries
 #Neustria
 #Austrasia

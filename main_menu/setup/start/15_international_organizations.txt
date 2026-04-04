@@ -10,7 +10,7 @@ international_organization_manager = {
 		type = hre
 		creation_date = 800.2.2 #In 800 Charlemagne was crowned emperor in Rome by Pope Leo III.
 
-		map_color = rgb { 20  50  190 }
+		map_color = rgb { 35  65  175 }
 
 		members = { LOT FRA UBV CRH LBV SLZ TIR BRC BAM PSS GRF FRE TNT CLI ORT PAL REG BRA AUG SWA MEI MAG HES MAI HAI ABA ASD ATI CEV CHX CNV MTB BLL BNT HBG
 		COT CRR FLO GEN LUC MAN MFA MLO MND MSP PAR PAV PIE PIS PRA SAL SAV GNV SIE PTG TTN VLT HOL BRB LUX LIE CHN LIM NAM LOO VBG HRN CJK BSC VER MOU DAU ORA FRT BXN
@@ -1752,6 +1752,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = roman_world
 		creation_date = 1.1.1
+		map_color = rgb { 150 11 146 }
 		members = { 
 			#Emperor
 			BYZ 
