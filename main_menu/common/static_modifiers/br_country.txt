@@ -18,3 +18,12 @@ br_elysium_formed = {
 	global_pop_assimilation_speed_modifier = 1
 	global_crown_estate_power = 0.10
 }
+
+varangian_custodianship = {
+	game_data = {
+		category = country
+	}
+	stability_cost = -0.25
+	land_morale_modifier = 0.1
+	country_cabinet_efficiency = -0.10
+}

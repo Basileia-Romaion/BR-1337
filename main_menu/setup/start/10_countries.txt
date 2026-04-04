@@ -31953,7 +31953,7 @@ countries = {
 					education_masses_law = basic_religious_education
 				}
 				timed_modifier = {
-					modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+					modifier = "br_levy_size_modifier"
 					start_date = 1333.1.1
 					date = 1395.1.1
 					size = 0.75
@@ -32213,7 +32213,7 @@ countries = {
 				}
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1395.1.1
 				size = 0.75
@@ -32739,7 +32739,7 @@ countries = {
 		
 		#Ottomans - https://en.wikipedia.org/wiki/Rise_of_the_Ottoman_Empire
 		TUR = {
-			type = army
+			#type = army
 			own_control_core = {
 				tabriz heris maragheh sarab tufarqan
 				beylagan lemberan 
@@ -32767,11 +32767,10 @@ countries = {
 			starting_technology_level = 3
 			include = "expl_middle_east"
 			include = "expl_mongols"
-			include = "eurasian_horde"
-			include = "turkish_beylik_no_coast_no_greek"
+			include = "turkish_beylik"
 			government = {
-				type = steppe_horde
-				heir_selection = tribal_oldest_male
+				#type = steppe_horde
+				#heir_selection = tribal_oldest_male
 				ruler_term = {	 character = tur_osman start_date = 1299.1.1 end_date = 1324.1.1 regnal_number = 1	}
 				ruler_term = {	 character = tur_orhan start_date = 1324.1.1 regnal_number = 1	}
 				
@@ -32827,15 +32826,18 @@ countries = {
 				}
 				
 				laws = {
-					royal_court_customs_law = harem_policy
-				}
+				royal_court_customs_law = harem_policy
+				slave_conversion = allow_slave_religion
+				sharia_law = hanafi_policy
+				harem_law = secluded_harem_policy
+			}
 			}
 			
 			country_rank = rank_kingdom
 			capital = tabriz
 			court_language = persian_language
 			currency_data = {
-				gold = 1000
+				gold = 4500
 				stability = 100
 				prestige = 50
 				army_tradition = 100
@@ -32845,7 +32847,7 @@ countries = {
 				adhari_culture
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1425.1.1
 				size = 2
@@ -40692,7 +40694,7 @@ countries = {
 				moldovan
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1338.1.1
 				size = 0.75
@@ -40764,7 +40766,7 @@ countries = {
 				polesian_culture
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1338.1.1
 				size = 0.75
@@ -41521,7 +41523,7 @@ countries = {
 				polesian_culture
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1338.1.1
 				size = 0.75
@@ -52952,7 +52954,7 @@ countries = {
 			}
 
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1340.1.1
 				size = 1
@@ -53402,7 +53404,7 @@ countries = {
 			capital = ulnia
 
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1340.1.1
 				size = 1
@@ -53442,7 +53444,7 @@ countries = {
 			capital = costa
 
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1365.1.1
 				size = 2
@@ -53502,7 +53504,7 @@ countries = {
 				}
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1338.1.1
 				size = 2
@@ -53557,7 +53559,7 @@ countries = {
 			capital = qirq_yer
 
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1365.1.1
 				size = 3
@@ -53663,7 +53665,7 @@ countries = {
 				}
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1338.1.1
 				size = 2
@@ -55516,7 +55518,7 @@ countries = {
 				government_power = 100
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1420.1.1
 				size = 2
@@ -55586,7 +55588,7 @@ countries = {
 				government_power = 100
 			}
 			timed_modifier = {
-				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				modifier = "br_levy_size_modifier"
 				start_date = 1333.1.1
 				date = 1420.1.1
 				size = 2
