@@ -39,3 +39,21 @@
  br_ere_events.3.att: "All Greek themata and pronoia in the Balkans and Anatolia will become direct vassals of the Basileus."
  br_ere_events.3.btt: "The Empire will be reorganized into a few large regional vassals. Several minor states will be annexed into stronger governors, who will become vassals or marches."
 
+ DEATH_REASON_killed_by_varangians: "[CHARACTER.GetSheHe|U] was murdered by the Varangian guard."
+ STATIC_MODIFIER_NAME_varangian_custodianship: "Varangian Custodianship"
+ varangian_revolt: "Varangian Revolt"
+
+ br_ere_events.2000.title: "The Reforms of [ambitious_ruler.GetName]"
+ br_ere_events.2000.desc: "Perceiving that the authority of the Basileus is no longer as absolute as it once was, [ambitious_ruler.GetName] grows increasingly restless. [ambitious_ruler.GetSheHe|U] laments the rising influence of powerful magnates, entrenched court officials, and provincial strategoi, all of whom now rival the throne in power and prestige.\n\nDetermined to restore the primacy of imperial authority, [ambitious_ruler.GetSheHe] seeks to enact sweeping reforms to strengthen the hand of the Basileus and reassert control over the Empire. Yet such measures threaten the delicate balance of the court and provinces alike, and many who benefit from the current order will not yield their power lightly."
+ #br_ere_events.2000.historical_info: ""
+ br_ere_events.2000.a: "The Basileus must reclaim his authority."
+ br_ere_events.2000.b: "Let [ambitious_ruler.GetHerHim] temper ambition with prudence."
+ br_ere_events.2000.c: "The Empire cannot risk such upheaval."
+
+ br_ere_events.2001.title: "The Wrath of the Varangians"
+ br_ere_events.2001.desc: "The reforms of [ambitious_ruler.GetName] have not gone unanswered. In seeking to curb entrenched power and restore imperial authority, [ambitious_ruler.GetSheHe] has alarmed those who stand as guardians of the established order.\n\nThe Varangian Guard, long sworn to defend the Basileus yet deeply tied to the balance of power within the Empire, now seethe with anger. Rumors spread that [ambitious_ruler.GetSheHe] intends to diminish their influence—or worse, replace them entirely. Allies among the nobility and court have already begun to whisper of action.\n\nUnless decisive steps are taken, the fate of the Basileus may soon be decided not in council, but in blood."
+ #br_ere_events.2001.historical_info: ""
+ br_ere_events.2001.a: "If they demand blood, let it be given."
+ br_ere_events.2001.b: "We will not bow to armed insolence."
+
+

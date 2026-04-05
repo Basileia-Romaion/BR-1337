@@ -290,3 +290,232 @@ br_ere_events.1002 = {
 	}
 }
 
+
+### Dynmaic events
+
+br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
+	type = country_event
+	title = br_ere_events.2000.title
+	desc = br_ere_events.2000.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1537.1.1
+		to = 1737.1.1
+		monthly_chance = 10
+	}
+
+	#historical_info = br_ere_events.2000.historical_info
+
+	trigger = {
+
+
+		has_ruler = yes
+
+		ruler = {
+			adm >= 50
+		}
+
+		OR = {
+			societal_value:centralization_vs_decentralization > 0
+			AND = {
+				societal_value:aristocracy_vs_plutocracy > 0
+				NOT = { societal_value:centralization_vs_decentralization < 70 }
+			}
+			AND = {
+				stability < 0
+				NOT = { societal_value:centralization_vs_decentralization < 70 }
+			}
+		}
+	}
+
+
+	immediate =  {
+
+		root.ruler = { save_scope_as = ambitious_ruler }
+
+		root.ruler = {
+			set_variable = ruler_at_time_of_br_ere_2000
+		}
+	}
+
+	option = {
+		name = br_ere_events.2000.a
+
+		historical_option = yes
+
+		random_list = {
+
+			40 = {
+				custom_tooltip = very_successful_coup.tt
+				change_societal_value = {
+    				type = centralization_vs_decentralization
+    				value = societal_value_large_move_to_left
+    			}
+    			add_prestige = prestige_mild_bonus
+    			add_stability = stability_mild_penalty
+			}
+			60 = {
+				custom_tooltip = somewhat_successful_coup.tt
+				change_societal_value = {
+    				type = centralization_vs_decentralization
+    				value = societal_value_minor_move_to_left
+    			}
+    			add_stability = stability_severe_penalty
+			}
+		}
+
+		add_government_power = government_power_weak_bonus
+
+		#change_societal_value = {
+    	#	type = aristocracy_vs_plutocracy
+    	#	value = societal_value_tiny_move_to_left
+    	#}
+
+    	if = {
+    		limit = {
+    			AND = {
+    				OR = {
+    					government_power < 50
+    					stability < 50
+    					estate_satisfaction:nobles_estate < 0.5
+    				}
+    				has_advance = br_discovery_varangians_advance
+    			}
+    		}
+			root = {
+				trigger_event_silently = {
+					id = br_ere_events.2001
+					days = { 100 200 }
+				}
+    		}
+    	}
+	}
+
+	option = {
+		name = br_ere_events.2000.b
+
+		add_stability = stability_mild_bonus
+
+		scope:ambitious_ruler = {
+			add_adm = 3
+		}
+	}
+
+	option = {
+		name = br_ere_events.2000.c
+
+		trigger = {
+			has_heir = yes
+		}
+
+		set_new_ruler = heir
+
+		add_stability = stability_mild_penalty
+	}
+}
+
+
+br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.2000
+	hide_portraits = yes
+
+	type = country_event
+	title = br_ere_events.2001.title
+	desc = br_ere_events.2001.desc
+
+	#historical_info = br_ere_events.2001.historical_info
+
+	trigger = {
+
+		has_ruler = yes
+
+		ruler = { has_variable = ruler_at_time_of_br_ere_2000 }
+	}
+
+	immediate =  {
+
+		root.ruler = { save_scope_as = ambitious_ruler }
+
+	}
+	option = {
+		name = br_ere_events.2001.a
+		historical_option = yes
+
+		kill_character = {
+			target = scope:ambitious_ruler
+			reason = DEATH_REASON_killed_by_varangians
+		}
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+
+		add_country_modifier = { modifier = varangian_custodianship years = 10 mode = add_and_extend }
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_large_move_to_right
+		}
+
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_right
+		}
+	}
+
+	option = {
+		name = br_ere_events.2001.b
+
+		add_stability = stability_severe_penalty
+
+		create_rebel = {
+			name = varangian_revolt
+			category = estate
+			estate = nobles_estate
+			save_scope_as = target_rebel
+		}
+		ordered_pop = {
+			limit = {
+				owner = root
+				location.region = root.capital.region
+				OR = {
+					pop_type = pop_type:soldiers
+					pop_type = pop_type:nobles
+				}
+				has_rebel = no
+			}
+			order_by = {
+				value = {
+					add = pop_size
+					if = {
+						limit = { pop_satisfaction > 0.05 }
+						divide = pop_satisfaction
+					}
+					else = { divide = 0.05 }
+				}
+			}
+			check_range_bounds = no
+			max = {
+				value = {
+					add = num_provinces
+					divide = 25
+				}
+				add = 3
+			}
+			add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			hidden_effect = {
+				change_pop_allegiance = scope:target_rebel
+			}
+		}
+	}
+
+	after = {
+
+		ruler_or_regent ?= {
+			if = {
+				limit = { has_variable = ruler_at_time_of_br_ere_2000 }
+				remove_variable = ruler_at_time_of_br_ere_2000
+			}
+		}
+	}
+}
+
