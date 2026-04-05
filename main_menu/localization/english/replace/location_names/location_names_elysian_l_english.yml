@@ -1,5 +1,7 @@
 l_english:
 #Some of the names for the locations are taken from the mod third odyssey back to the motherland (for EU4) where a name already exists. The rest of the locations contain made up city names since EU4 had way less locations/ provinces than EU5 does therefore I had to come up with a few new names -davidmiltos
+
+
 #--------------------------------------------------
 Canada Region
 #--------------------------------------------------
@@ -43,6 +45,7 @@ scugog.elysian_language: ""
 haskaont.elysian_language: ""
 missinihe.elysian_language: ""
 tetioneshohon.elysian_language: ""
+
 
 #--------------------------------------------------
 #Caribbean Region
@@ -479,10 +482,10 @@ hopatcong.elysian_language: "Serenitas"
 #--------------------------------------------------
 #Maryland Area # Elysia Area Rename
 #Province Patapsco
- patapsco.elysian_language: "Elyseia" #IMPORTANT CITY
+ patapsco.elysian_language: "Nea Konstantinoupolis" #IMPORTANT CITY |Central Aqueduct Network | #Citadel of St Michael
  wicontiss.elysian_language: "Cleopatriae"
  nentego.elysian_language: "Nolia"
- patuxent.elysian_language: "Nea Konstantinoupolis" #IMPORTANT CITY  |Central Aqueduct Network | #Citadel of St Michael
+ patuxent.elysian_language: "Elyseia" #IMPORTANT CITY
  
 #Province Potomac
  anacostia.elysian_language: "Elysium" #IMPORTANT CITY Theophilian Walls | 
@@ -512,7 +515,7 @@ antietam.elysian_language: "Antietamia"
  kiskiack.elysian_language: "Prosphorion"
  weyanock.elysian_language: "Viatalis"
  chesapeake.elysian_language: "Kepsoria"
- acoomac.elysian_language: "Acrivelia"
+ accomac.elysian_language: "Ilos"
 
 #Province Powhatan
  pamunkey.elysian_language: "Ioannike" #IMPORTANT CITY Central Aqueduct Network
@@ -1179,5 +1182,468 @@ pawwikamsipi.elysian_language: "Pavicia"
 
 
 #--------------------------------------------------
-#... Area
-#Province ...
+#Great Plains Region
+#--------------------------------------------------
+#Superior Area
+#Koochiching Province
+miskwaagamiiwi.elysian_language: "Phyliedes"
+koochiching.elysian_language: "Kallistron"
+mesabi.elysian_language: "Ferratum"
+onamanii.elysian_language: "Galeneia"
+kawishiwi.elysian_language: "Fluminum"
+
+#Nemadji Province
+makoua.elysian_language: "Mekone"
+nemadji.elysian_language: "Rubricum"
+kitchigumi.elysian_language: "Magnomare"
+wissakode.elysian_language: "Ignivallis"
+
+#Mathoskabde Province
+mathoskabde.elysian_language: "Mageias Limni"
+ginebig.elysian_language: "Neokastro"
+misi_zaaga_igan.elysian_language: "Megalimne"
+minnewawa.elysian_language: "Anemoria"
+
+
+#--------------------------------------------------
+#Red River Area
+#Pikwedina Province
+pikwedina.elysian_language: "Leiara"
+kimodakiwi.elysian_language: "Mylon"
+ajawewesitagun.elysian_language: "Valerium"
+manomin.elysian_language: "Caldunum"
+gawakomitigweia.elysian_language: "Pholegion"
+mustinka.elysian_language: "Dravium"
+
+#Tewaukon Province
+minnewaukan.elysian_language: "Ligakia"
+tewaukon.elysian_language: "Heraklontos"
+maitomoni_ohe.elysian_language: "Chrysomoros"
+mekinock.elysian_language: "Drymikos"
+pembina.elysian_language: "Fortunus"
+mirixubaash.elysian_language: "Nyxandros"
+
+#Saakak Hukaahaanu Province
+metigoshe.elysian_language: "Leukosia"
+saakak_hukaahaanu.elysian_language: "Elamos"
+itscheabine.elysian_language: "Virellum"
+
+
+#--------------------------------------------------
+#Iowa Area
+#Manatara Province
+manatara.elysian_language: "Mantárē"
+maanaagi_iixodagish.elysian_language: "Exor"
+ruhptare.elysian_language: "Euryptare"
+
+#Kiyuska Province
+pabaska.elysian_language: "Stelos"
+tchan_sansan.elysian_language: "Veronikeia"
+kiyuska.elysian_language: "Vescarum"
+
+#Okobojo
+pocasse.elysian_language: "Castellum"
+okobojo.elysian_language: "Tychion"
+unkpatina.elysian_language: "Aurelia Vallis"
+
+#Chagu Province
+oyate_shisha.elysian_language: "Civitas Alba"
+chagu.elysian_language: "Silarum"
+wakmua_oin.elysian_language: "Fluvium Magnus"
+
+#Igmu Province
+igmu.elysian_language: "Isaakia"
+kampeska.elysian_language: "Phleious"
+mnihaha.elysian_language: "Aquaflora"
+
+#Mahkato Province
+mahkato.elysian_language: "Rhogelion"
+watonwan.elysian_language: "Kylis"
+shetek.elysian_language: "Limne"
+chanshayapi.elysian_language: "Hylation"
+tipsinah.elysian_language: "Koilion"
+kandiyohi.elysian_language: "Georgion"
+
+#Minnetonka Province
+minnetonka.elysian_language: "Kaulon"
+wabezi.elysian_language: "Thourioi"
+kagiwigwan.elysian_language: "Mysteion"
+shingwako.elysian_language: "Aulon"
+winnibigoshish.elysian_language: "Anemolimne"
+bemidji.elysian_language: "Labeatia"
+
+#Hokah Province
+wapkawazioju.elysian_language: "Rhypai"
+hokah.elysian_language: "Kolophon"
+owatonna.elysian_language: "Chrysokoilon"
+hahawakpa.elysian_language: "Altamare"
+lahontan.elysian_language: "Hypsothalassa"
+
+#Ocheyedan Province
+penaca.elysian_language: "Eukratos"
+ocheydan.elysian_language: "Imperion"
+moskwakwa.elysian_language: "Therionis"
+
+#Nishabotna Province
+tchankasndata.elysian_language: "Xanthia"
+nishnabotna.elysian_language: "Sagraphos"
+monona.elysian_language: "Lucentum"
+
+#Iowa Province
+iowa.elysian_language: "Taras"
+kiosaquay.elysian_language: "Akanthos"
+inyanshashawtpa.elysian_language: "Petrospelaion"
+pahotcha.elysian_language: "Ventara"
+
+#Moingwena Province
+wapsipinicon.elysian_language: "Illyris"
+moingwena.elysian_language: "Epidamnos"
+coircacoentanon.elysian_language: "Regalium"
+
+
+#--------------------------------------------------
+#Upper Missouri Area
+#Province Aashishe
+aashishe.elysian_language: ""
+binmatshua.elysian_language: ""
+cutuhogwa.elysian_language: ""
+
+#Province Kinaksisahtai
+mahpahpahazhhah.elysian_language: ""
+kinaksisahtai.elysian_language: ""
+kyaiyesisahtai.elysian_language: ""
+onnikisisaahtaayi.elysian_language: ""
+nataeosueti.elysian_language: ""
+
+#Province Poyiitahtai
+wakpa_juk_ana.elysian_language: ""
+piyiitahtai.elysian_language: ""
+etzikom.elysian_language: ""
+
+#Province Eomitai
+e_omita_i.elysian_language: ""
+xuahceesh_annappiio.elysian_language: ""
+huupalikooche.elysian_language: ""
+aluutashe.elysian_language: ""
+baashalapache.elysian_language: ""
+
+
+#Province Skiiyohe
+ski_iyo_he.elysian_language: ""
+hoskitaga.elysian_language: ""
+kinusisuht.elysian_language: ""
+wase_wakapa.elysian_language: ""
+caba_wakapa.elysian_language: ""
+
+#Province Kwaskwuti
+kwaskwuti.elysian_language: ""
+cahe.elysian_language: ""
+canhewincasta.elysian_language: ""
+
+#Province Sutkogejaoipa
+suktogeja_o_ipa.elysian_language: ""
+patgasa_wakpa.elysian_language: ""
+baliisshe_aashe.elysian_language: ""
+minisose.elysian_language: ""
+
+#Province Awatixa
+amahami.elysian_language: ""
+awatixa.elysian_language: ""
+adixoodagoorahareesh.elysian_language: ""
+koostaaka.elysian_language: ""
+
+
+#--------------------------------------------------
+#Wyoming Area
+#Province Ihkowom Iyo He
+Aashbiliihkupe.elysian_language: ""
+Ihkowom_iyo_he.elysian_language: ""
+ksai_yohe.elysian_language: ""
+mitsiadazi.elysian_language: ""
+skaapirox.elysian_language: ""
+buaxaxxaashe.elysian_language: ""
+aahkawirahkata.elysian_language: ""
+iichiilikaashaashe.elysian_language: ""
+
+#Province Chakadee Wakpa
+wahasah.elysian_language: ""
+chakadee_wakpa.elysian_language: ""
+waahukaahaanu.elysian_language: ""
+wit_anowi_yohe.elysian_language: ""
+moehe_yohe.elysian_language: ""
+
+#Province Isaxpuatahcheeaashe
+ishpiialawaache.elysian_language: ""
+iisaxpuatahcheeaashe.elysian_language: ""
+aashbikkaashee.elysian_language: ""
+
+#Province Itkanaahtuusu
+iichiilikaashaashe.elysian_language: ""
+itkanaahtuusu.elysian_language: ""
+heviksnipahis.elysian_language: ""
+mo_ohta_vo_ohnaaeva.elysian_language: ""
+notameohmeshehse.elysian_language: ""
+
+#Province Shanha
+he_sapa.elysian_language: ""
+shanha.elysian_language: ""
+mistaiyohe.elysian_language: ""
+awaxaawi_ishiibisha.elysian_language: ""
+
+#Province Kaya Paha
+sicangu.elysian_language: ""
+kaya_paha.elysian_language: ""
+wazivlo.elysian_language: ""
+
+#Province Marapa
+cerwecerna.elysian_language: ""
+marapa.elysian_language: ""
+shichah.elysian_language: ""
+
+#Province Wetarhoo
+wetarhoo.elysian_language: ""
+hinyankaga.elysian_language: ""
+
+#Province Histayaho
+matootonha.elysian_language: ""
+histahayo.elysian_language: ""
+neesihushaanu.elysian_language: ""
+skahuukaawiat.elysian_language: ""
+iyawakagapi.elysian_language: ""
+
+
+#--------------------------------------------------
+#High Plains Area
+#Province Wotapio
+wotapio.elysian_language: ""
+so_taeo_o.elysian_language: ""
+oevemanaho.elysian_language: ""
+ohktouna.elysian_language: ""
+hisse_yoyi_yoe.elysian_language: ""
+hisiometaneo.elysian_language: ""
+paiyo_he.elysian_language: ""
+
+#Province Hehvaitaneo
+hehvaitaneo.elysian_language: ""
+meneeohe.elysian_language: ""
+medicine_bow.elysian_language: ""
+
+#Province Niineniiniicie
+niineniiniicie.elysian_language: ""
+neenowuxoote_i.elysian_language: ""
+ce_einox.elysian_language: ""
+nih_iitkotousi_l.elysian_language: ""
+
+#Province Heeyoteyoo
+mutsisooni_yohe.elysian_language: ""
+heeyoteyoo.elysian_language: ""
+ponoeohe.elysian_language: ""
+
+#Province Phankeska
+ononio_he.elysian_language: ""
+phakeska_wakpa.elysian_language: ""
+wasin_wakpa.elysian_language: ""
+veoneohe.elysian_language: ""
+mano_iyo_he.elysian_language: ""
+
+#Province Wiskapella
+wiskapella.elysian_language: ""
+chitolah.elysian_language: ""
+Nanwacinahaana.elysian_language: ""
+
+#Province Wishkahuunu
+mahohevahoe.elysian_language: ""
+wishkahuunu.elysian_language: ""
+beesowuunenno.elysian_language: ""
+minii_yohe.elysian_language: ""
+
+
+#--------------------------------------------------
+#Central Great Plains Area
+#Province Kickatari
+mnitaknka.elysian_language: ""
+kickatari.elysian_language: ""
+minatare.elysian_language: ""
+
+#Province Kanpeska
+pitahauerat.elysian_language: ""
+kanpeska.elysian_language: ""
+kus_lecha.elysian_language: ""
+kickatus.elysian_language: ""
+ickari_kitsu.elysian_language: ""
+nutanke.elysian_language: ""
+
+#Province Niobrara
+kits_ixta.elysian_language: ""
+niobrara.elysian_language: ""
+aowa.elysian_language: ""
+waha_tunga.elysian_language: ""
+
+#Province Omaha
+omaha.elysian_language: ""
+nemaha.elysian_language: ""
+nebraska.elysian_language: ""
+ni_haunchi_to.elysian_language: ""
+
+#Province Shuntaneshnanga
+kirarutah.elysian_language: ""
+shuntaneshnanga.elysian_language: ""
+kansas.elysian_language: ""
+monecato.elysian_language: ""
+nepahalla.elysian_language: ""
+
+#Province Aahkawiraahkata
+aahkawiraahkata.elysian_language: ""
+ne_miskua.elysian_language: ""
+kaw.elysian_language: ""
+panenetah.elysian_language: ""
+kaiurskuta.elysian_language: ""
+
+#Province Etzanoa
+ninescah.elysian_language: ""
+etzanoa.elysian_language: ""
+quivira.elysian_language: ""
+harahey.elysian_language: ""
+ayadaldapa.elysian_language: ""
+ne_shuta.elysian_language: ""
+
+#Province Neosho
+manhukdhitanwan.elysian_language: ""
+neosho.elysian_language: ""
+nanzewaspe.elysian_language: ""
+wasetihoge.elysian_language: ""
+
+#Province Heahdhetanwan
+pasukhdin.elysian_language: ""
+heahdhetanwan.elysian_language: ""
+wakhakukdhin.elysian_language: ""
+
+#Province Tulsa
+chikaskia.elysian_language: ""
+tulsa.elysian_language: ""
+tawehash.elysian_language: ""
+
+#Province Hawaastatkiicu
+nigitai.elysian_language: ""
+hawaastatkiicu.elysian_language: ""
+kicpahat.elysian_language: ""
+gulvau.elysian_language: ""
+oktahutchee.elysian_language: ""
+nixgu.elysian_language: ""
+
+#Province Wewoka
+kiamichi.elysian_language: ""
+guichita.elysian_language: ""
+wewoka.elysian_language: ""
+washita.elysian_language: ""
+
+
+#--------------------------------------------------
+#Missouri Area
+#Province Nodaway
+wimihsoorita.elysian_language: ""
+nodaway.elysian_language: ""
+nudarcha.elysian_language: ""
+
+#Province Tamaroa
+tamaroa.elysian_language: ""
+wyaconda.elysian_language: ""
+oahaha.elysian_language: ""
+emasulia.elysian_language: ""
+chariton.elysian_language: ""
+
+#Province Meramec
+maramec.elysian_language: ""
+pahatsi.elysian_language: ""
+tanwakanwakaghe.elysian_language: ""
+utsehta.elysian_language: ""
+nihkdintanwan.elysian_language: ""
+intapushe.elysian_language: ""
+ni_okaska.elysian_language: ""
+
+#Province wowosaghy
+towosaghy.elysian_language: ""
+chepoussa.elysian_language: ""
+cholohallay.elysian_language: ""
+st_francois_mts.elysian_language: ""
+
+
+#--------------------------------------------------
+#Arkansas Area
+#Province Cayas
+wahzhazhe.elysian_language: ""
+cayas.elysian_language: ""
+satsukhdin.elysian_language: ""
+unica.elysian_language: ""
+
+#Province Tanico
+quipana.elysian_language: ""
+tanico.elysian_language: ""
+tula_ark.elysian_language: ""
+
+#Province Utiangue
+utiangue.elysian_language: ""
+tutilcoya.elysian_language: ""
+anoixi.elysian_language: ""
+
+#Province Coligua
+coligua.elysian_language: ""
+calpista.elysian_language: ""
+palisema.elysian_language: ""
+
+#Province Pacaha
+pacaha.elysian_language: ""
+quigate.elysian_language: ""
+casqui.elysian_language: ""
+
+#Province Anilco
+tutilpinco.elysian_language: ""
+anilco.elysian_language: ""
+guachoyo.elysian_language: ""
+ayays.elysian_language: ""
+
+#Province Ouachita
+nanatsoho.elysian_language: ""
+naguatex.elysian_language: ""
+catalte.elysian_language: ""
+aguacay.elysian_language: ""
+amaye.elysian_language: ""
+chaguate.elysian_language: ""
+
+
+#--------------------------------------------------
+#Louisiana Area
+#Province Natchioches
+ouachita.elysian_language: ""
+ya_ttaish.elysian_language: ""
+calcasieu.elysian_language: ""
+doustioni.elysian_language: ""
+kisatchie .elysian_language: ""
+
+#Province Catahoula
+catahoula.elysian_language: ""
+tensas.elysian_language: ""
+tunica.elysian_language: ""
+
+#Province Ciwat
+otse.elysian_language: ""
+ciwat.elysian_language: ""
+tsikip.elysian_language: ""
+
+#Province Chawasha
+atchafalaya.elysian_language: ""
+chawasha.elysian_language: ""
+opelousa.elysian_language: ""
+
+#Province Bulbancha
+itihumma
+bulbancha
+bogue_chitto
+tangipahoa
+
+
+#--------------------------------------------------
+Aridoamerica Region
+#--------------------------------------------------
+#Texas Area
+#Province
