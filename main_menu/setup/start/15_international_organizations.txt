@@ -68,17 +68,22 @@ international_organization_manager = {
 		}
 		emperor = { LOT }
 		elector = { 
-				# The 4 secular
-				LOT	#Bohemia
-				AQN # Saxony-Wittenberg
-				BUR # Brandenburg
-				FRA # Palatinate
+				# The 7 secular
+				LOT	#
+				AQN # 
+				BUR # 
+				FRA # 
+				MLO
+				PRO
+				UBV
 		}
 		archbishop_elector = {
-				# The 3 bishops
-				SLZ	# Trier
-				KOL # Cologne
-				MAI # Mainz
+				# The 5 bishops
+				SLZ	# 
+				KOL # 
+				MAI # 
+				MUN
+				MAG
 		}
 		free_city = {
 			AAC BRM FRN GOS HAM KNZ MEM NUR REG ROT RVA ULM LUB DTM AGC KMP WTZ WRM BRN BSC ZUR CFC MUL

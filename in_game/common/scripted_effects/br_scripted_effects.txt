@@ -5,7 +5,7 @@ REPLACE_OR_CREATE:hre_setup_hre_variables = {
 		international_organization:hre = {
 			set_variable = { name = hre_imperial_religion value = religion:catholic }
 			set_variable = { name = hre_imperial_religion_group value = religion_group:christian }
-			add_policy_to_international_organization = policy:electorate_policy
+			add_policy_to_international_organization = policy:elector_council_policy #electorate_policy
 			add_policy_to_international_organization = policy:only_imperial_religion_policy
 			add_policy_to_international_organization = policy:hre_agnatic_succession_policy
 			add_policy_to_international_organization = policy:perpetual_diet_policy
