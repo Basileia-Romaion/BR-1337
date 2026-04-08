@@ -8,7 +8,11 @@
     show_message_to_target = yes
 
     potential = {
-        exists = international_organization:roman_world
+        scope:actor ?= {
+            exists = international_organization:roman_world
+            is_leader_of_international_organization = international_organization:roman_world
+			#modifier:country_can_use_br_romaiokratia_cb = yes
+		}
     }
 
     allow = {

@@ -18,44 +18,50 @@ br_indikes_events.1 = {
 	}
 
 	immediate = {
-		annex_country = { country = c:INK }
+		#annex_country = { country = c:INK }
 		#annex_country = { country = c:S0K }
-		location:goa = { save_scope_as = target_location }
+		#location:goa = { save_scope_as = target_location }
 	}
 
 	option = {
 		historical_option = yes
 		high_reward_option = yes
 		name = br_indikes_events.1.a
-		c:RIC = {
-			scope:target_location = {
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-			    create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-				create_sub_unit_of_category = sub_unit_category:navy_light_ship
-			}
-	    }
+		#c:RIC = {
+			#scope:target_location = {
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#	create_sub_unit_of_category = sub_unit_category:navy_light_ship
+			#}
+	    #}
 	}
 }
 
