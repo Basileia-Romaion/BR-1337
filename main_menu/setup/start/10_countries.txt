@@ -8845,9 +8845,14 @@ countries = {
 			capital = aquileia
 		}
 		
-		ARB = {
+		SAR = {
 			own_control_core = {
 				ales oristano sorgono terralba bosa macomer bitti isili seddori
+			}
+			own_core = {
+				cagliari tratalias villa_di_chiesa muravera tortoli
+				terranova_pausania orosei posada tempiopausania 
+				sassari alghero castelsardo ozieri thiesi
 			}
 			
 			starting_technology_level = 3
@@ -8856,11 +8861,10 @@ countries = {
 			include = "expl_silk_road_center"
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
-			include = "catholic_monarchy"
-			include = "feudal_europe"
+			include = "br_pronoia_template"
 			government = {
 				type = monarchy
-				heir_selection = judicial_election
+				#heir_selection = judicial_election
 				
 				ruler = arb_pietro_iii_arborea
 				consort = arb_constanza_saluzzo
@@ -8896,12 +8900,12 @@ countries = {
 				}
 				
 				reforms = {
-					judicate_reform
+					#judicate_reform
 				}
 			}
 			
 			tolerated_cultures = {
-				ligurian
+				greek_culture
 			}
 			
 			country_rank = rank_duchy
@@ -9936,10 +9940,6 @@ countries = {
 				tortoli
 				orosei terranova_pausania posada tempiopausania
 				sassari
-			}
-			
-			our_cores_conquered_by_others = {
-				bosa macomer bitti #Giudicato of Arborea in Sardinia
 			}
 			
 			starting_technology_level = 3
@@ -52549,7 +52549,24 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-				ruler = random
+				
+				ruler = tun_abu_yahya_abu_bakr_ii
+				
+				ruler_term = { character = tun_abu_l_baqa_khalid_an_nasr start_date = 1309.1.1 end_date = 1311.1.1 regnal_number = 1 }
+				ruler_term = { character = tun_abu_yahya_abu_bakr_ii start_date = 1318.1.1 regnal_number = 2 }
+				
+				regnal_numbers = {
+					Abd_al-Wahid = 1
+					name_abdullah = 1
+					name_john = 2
+					name_muhammad = 2
+					name_abraham = 1
+					name_abd_al_aziz = 1
+					name_omar = 1
+					Khalid = 1
+					name_zechariah = 1
+					Abu_Bakr = 1
+				}
 
 				
 				land_vs_naval = 50

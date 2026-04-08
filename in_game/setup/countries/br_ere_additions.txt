@@ -437,45 +437,43 @@ IT1 = { #
 	religion_definition = orthodox
 }
 
+SAR	= { #arborea
+	color = rgb { 132 78 57 }
+	culture_definition = sardinian
+	religion_definition = orthodox
+}
+
 #Africa
 AGY = {
 	color = rgb { 185 58 75 }
-
 	culture_definition = aegyptian_greek_culture
 	religion_definition = orthodox
-
 }
 
 AFK = {
 	color = rgb { 115 88 125 }
-
 	culture_definition = african_greek_culture
 	religion_definition = orthodox
-
 }
 
 #India
 
 RIC = {
 	color = rgb { 175 38 95 }
-
 	culture_definition = indikes_greek_culture
 	religion_definition = orthodox
-
 	description_category = administrative
 	difficulty = 3
 }
 
 INK = {
 	color = rgb { 175 75 95 }
-
 	culture_definition = indikes_greek_culture
 	religion_definition = nestorianism
 }
 
 S0K = {
 	color = rgb { 75 165 65 }
-
 	culture_definition = soqotri_culture
 	religion_definition = nestorianism
 }
@@ -483,28 +481,24 @@ S0K = {
 #Levant
 AOI = {
 	color = rgb { 205 38 50 }
-
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
 }
 
 SY0 = {
 	color = rgb { 105 58 70 }
-
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
 }
 
 SY1 = {
 	color = rgb { 105 78 50 }
-
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
 }
 
 SY3 = {
 	color = rgb { 145 88 40 }
-
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
 }
@@ -512,30 +506,24 @@ SY3 = {
 #Holy Orders
 OHS = {
 	color = rgb { 152 125 104 }
-
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
-
 	description_category = military
 	difficulty = 3
 }
 
 SGO = {
 	color = rgb { 162 105 134 }
-
 	culture_definition = georgian_culture
 	religion_definition = orthodox
-
 	description_category = military
 	difficulty = 3
 }
 #Rhōsíā
 RH0 = { 
 	color = rgb { 132 185 114 }
-
 	culture_definition = rhos_culture
 	religion_definition = orthodox
-
 	description_category = military
 	difficulty = 3
 }

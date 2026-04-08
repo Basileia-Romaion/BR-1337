@@ -566,3 +566,93 @@ br_country_startup.3 = { #cbs added
 
 	}
 }
+
+br_country_startup.4 = {
+	type = country_event
+	title = br_country_startup.4.title
+	desc = br_country_startup.4.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	#orphan = yes
+	trigger = {
+		tag = SAR
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		if = {
+			limit = { country_exists = c:GEN }
+			c:GEN = { save_scope_as = catholic_country }
+		}
+		if = {
+			limit = { country_exists = c:S4C }
+			c:S4C = { save_scope_as = sunni_country }
+		}
+		if = {
+			limit = { country_exists = c:S4C }
+			c:SAR = { save_scope_as = orthodox_country }
+		}
+		
+	}
+
+	option = { #Become subject of Genoa in exchange for return of your land
+		#historical_option = yes
+		name = br_country_startup.4.a
+		#province:cagliari_province = {	change_province_owner = c:SAR	}
+		#province:gallura_province = {	change_province_owner = c:SAR	}
+		#province:logudoro_province = {	change_province_owner = c:SAR	}
+		scope:orthodox_country = {
+			make_subject_of = {
+				target = c:GEN
+				type = subject_type:march
+			}
+		}
+		location:alghero = {
+			change_location_owner = c:SAR	
+		}
+		location:thiesi = {
+			change_location_owner = c:SAR	
+		}
+		location:castelsardo = {
+			change_location_owner = c:SAR	
+		}
+		location:ozieri = {
+			change_location_owner = c:SAR	
+		}
+		location:tortoli = {
+			change_location_owner = c:SAR	
+		}
+		location:orosei = {
+			change_location_owner = c:SAR	
+		}
+		location:terranova_pausania = {
+			change_location_owner = c:SAR	
+		}
+		location:posada = {
+			change_location_owner = c:SAR	
+		}
+		location:tempiopausania = {
+			change_location_owner = c:SAR	
+		}
+		location:sassari = {
+			change_location_owner = c:SAR	
+		}
+		add_truce_with = { target = scope:catholic_country }
+	}
+	option = {
+		name = br_country_startup.4.b
+
+		#todo
+	}
+	option = {
+		name = br_country_startup.4.c
+		#todo
+		
+		#add_truce_with = { target = scope:sunni_country }
+	}
+
+}

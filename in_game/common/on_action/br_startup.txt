@@ -9,8 +9,11 @@ br_on_game_start = {
         c:E1Y = {
             trigger_event_silently = br_startup.1 #resource changes
         }
-        c:RIC = {
+        #c:RIC = {
             #trigger_event_silently = br_indikes_events.1
+        #}
+		c:SAR = {
+            trigger_event_silently = br_country_startup.4
         }
         c:K1K = {
             trigger_event_silently = br_country_startup.1 #naval units

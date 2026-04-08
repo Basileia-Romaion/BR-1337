@@ -431,7 +431,7 @@ international_organization_manager = {
 			#BR ADDED
 			BNV SPL N1P N2P N3P
 			#Othodox side with Pope until we add a third option.
-			S1C S2C S3C S5C
+			S1C S2C S3C S5C SAR
 		}
 		leader = BNV
 	}
@@ -1695,7 +1695,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 431.1.1
-		members = { S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK }
+		members = { S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK SAR }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:rome
@@ -1749,7 +1749,7 @@ international_organization_manager = {
         map_color = rgb { 185 125 150 }
 
         members = {
-            S1C S2C S3C EPI DYR N3P #S5C
+            S1C S2C S3C EPI DYR N3P SAR #S5C
         }
         leader = EPI
     }
@@ -1768,7 +1768,7 @@ international_organization_manager = {
 			S1Y A1G K1B 
 			TRE CIL AON ICO PAF AOI 
 			AN1 AN2 AN3 AN4 AN5 AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N
-			S1C S2C S3C N3P S5C
+			S1C S2C S3C N3P S5C SAR
 
 			#ARM GEO SER
 			#KOG DER MES VAN VDZ
@@ -1802,7 +1802,7 @@ international_organization_manager = {
 			basilicata_area
 			campania_area
 			sicily_area
-
+			sardinia_area
 		}
 		provinces = { 
 			#antakya_province

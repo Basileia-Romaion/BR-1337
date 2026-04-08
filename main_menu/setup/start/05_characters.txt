@@ -26555,7 +26555,7 @@ character_db={
 	arb_filippo_del_vasto = {
 		first_name = { name = name_philip }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 73 dip = 73 mil = 58
 		birth_date = 1266.1.1
@@ -26564,7 +26564,7 @@ character_db={
 		father = sal_tommaso_i_del_vasto
 		mother = sal_luisa_di_ceva
 		dynasty = del_vasto_dynasty
-		tag = ARB		
+		tag = SAR
 	}
 	
 	arb_constanza_saluzzo = {
@@ -26579,7 +26579,7 @@ character_db={
 		mother = arb_sibilla_peralta
 		spouse = arb_pietro_iii_arborea
 		dynasty = del_vasto_dynasty
-		tag = ARB
+		tag = SAR
 	}
 	
 	eng_aloisia_del_vasto = {
@@ -39799,7 +39799,7 @@ character_db={
 		#father = Guillem de Peralta
 		spouse = arb_filippo_del_vasto
 		dynasty = peralta_dynasty
-		tag = ARB		
+		tag = SAR		
 	}
 	
 	sic_raimondo_peralta = {
@@ -40783,7 +40783,7 @@ character_db={
 	arb_ugone_i_arborea = {
 		first_name = { name = name_hugh }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		birth_date = 1178.1.1
 		death_date = 1211.1.1
@@ -40791,13 +40791,13 @@ character_db={
 		#father = Hugh Ponç de Cervera
 		#mother = Sinispella di Lacon-Serra
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 	}
 	
 	arb_pietro_ii_arborea = {
 		first_name = { name = name_peter }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		birth_date = 1203.1.1 # Unknown
 		death_date = 1241.1.1
@@ -40805,7 +40805,7 @@ character_db={
 		father = arb_ugone_i_arborea
 		#mother = Preziosa di Lacon-Massa
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 		ruler_trait = calm
 		ruler_trait = zealot
 	}
@@ -40813,7 +40813,7 @@ character_db={
 	arb_mariano_ii_arborea = {
 		first_name = { name = name_marianus }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 51 dip = 52 mil = 26
 		birth_date = 1230.1.1
@@ -40822,7 +40822,7 @@ character_db={
 		father = arb_pietro_ii_arborea
 		#mother = Sardinia
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 		ruler_trait = calm
 		ruler_trait = charismatic_negotiator
 	}
@@ -40830,7 +40830,7 @@ character_db={
 	arb_giovanni_arborea = {
 		first_name = { name = name_john }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		birth_date = 1265.1.1 # Unknown
 		death_date = 1304.3.23
@@ -40838,14 +40838,14 @@ character_db={
 		father = arb_mariano_ii_arborea
 		#mother = Anna Saraceno Caldera
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 		ruler_trait = craven
 	}
 	
 	arb_andreotto_arborea = {
 		first_name = { name = name_andrew } # Should be diminutive: Andreotto
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 41 dip = 49 mil = 24
 		birth_date = 1283.1.1 # Elder child
@@ -40854,13 +40854,13 @@ character_db={
 		father = arb_giovanni_arborea
 		#mother = Vera Cappai
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 	}
 	
 	arb_mariano_iii_arborea = {
 		first_name = { name = name_marianus }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 52 dip = 42 mil = 29
 		birth_date = 1285.1.1
@@ -40869,7 +40869,7 @@ character_db={
 		father = arb_giovanni_arborea
 		#mother = Vera Cappai
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 		ruler_trait = architectural_visionary
 		ruler_trait = calm
 	}
@@ -40877,7 +40877,7 @@ character_db={
 	arb_ugone_ii_arborea = { # Bastard
 		first_name = { name = name_hugh }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 39 dip = 60 mil = 77
 		birth_date = 1300.1.1
@@ -40886,7 +40886,7 @@ character_db={
 		father = arb_mariano_iii_arborea
 		#mother = Padulesa de Serra # Mistress
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 		ruler_trait = bold_fighter
 		timed_modifier = {
 			modifier = "bastard"
@@ -40899,19 +40899,19 @@ character_db={
 	arb_beneita = {
 		first_name = { name = name_benedicta }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		female = yes
 		birth_date = 1300.1.1
 		birth = oristano
 		#spouse = arb_ugone_ii_arborea
-		tag = ARB
+		tag = SAR
 	}
 	
 	arb_pietro_iii_arborea = {
 		first_name = { name = name_peter }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 39 dip = 66 mil = 39
 		birth_date = 1314.1.1
@@ -40919,14 +40919,14 @@ character_db={
 		father = arb_ugone_ii_arborea
 		mother = arb_beneita
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 	}
 	
 	arb_marianu_iv_arborea = {
 		first_name = { name = name_marianus }
 		nickname = { name = nick_the_great }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		adm = 76 dip = 69 mil = 81
 		birth_date = 1317.1.1
@@ -40954,7 +40954,7 @@ character_db={
 	arb_ugone_iii_arborea = {
 		first_name = { name = name_hugh }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		birth_date = 1337.1.1
 		birth = barcelona
@@ -40967,7 +40967,7 @@ character_db={
 	ara_francesco_arborea = { # A Cleric
 		first_name = { name = name_francis }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = clergy_estate
 		birth_date = 1319.1.1
 		birth = oristano
@@ -40980,7 +40980,7 @@ character_db={
 	arb_giovanni_arborea_ii = {
 		first_name = { name = name_john }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		birth_date = 1320.1.1
 		birth = oristano
@@ -41008,20 +41008,20 @@ character_db={
 	arb_nicola_arborea = {
 		first_name = { name = name_nicholas }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = clergy_estate
 		birth_date = 1322.1.1
 		birth = oristano
 		father = arb_ugone_ii_arborea
 		mother = arb_beneita
 		dynasty = serra_bas_dynasty
-		tag = ARB
+		tag = SAR
 	}
 	
 	arb_maria_arborea = {
 		first_name = { name = name_mary }
 		culture = sardinian
-		religion = catholic
+		religion = orthodox
 		estate = nobles_estate
 		female = yes
 		birth_date = 1326.1.1
@@ -41029,7 +41029,7 @@ character_db={
 		father = arb_ugone_ii_arborea
 		mother = arb_beneita
 		dynasty = serra_bas_dynasty
-		tag = ARB		
+		tag = SAR		
 	}
 
 	# Arborean Courtiers
@@ -41043,7 +41043,7 @@ character_db={
 		adm = 78 dip = 68 mil = 14
 		birth_date = 1289.1.1
 		birth = siena #unknown origin
-		tag = ARB		
+		tag = SAR		
 	}
 
 	# HOUSE VISCONTI DI GALLURA (Former Judges of Gallura)
