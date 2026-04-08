@@ -12497,7 +12497,7 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = byz_demetrios_palaiologos
 				
 				ruler_term = { character = the_bonifacio_i_monferrato start_date = 1204.5.16 end_date = 1207.1.1 regnal_number = 1 }
 				ruler_term = { character = sic_demetrio_i_thessalonica start_date = 1207.1.1 end_date = 1224.12.1 regnal_number = 1 }
@@ -12505,7 +12505,8 @@ countries = {
 				ruler_term = { character = the_theodoros_komnenos_doukas start_date = 1224.12.1 end_date = 1230.1.1 regnal_number = 1 }
 				ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1230.1.1 end_date = 1237.1.1 regnal_number = 1 }
 				ruler_term = { character = the_ioannes_komnenos_doukas start_date = 1237.1.1 end_date = 1244.9.25 regnal_number = 1 }
-				ruler_term = { character = the_demetrios_komnenos_doukas start_date = 1244.9.25 end_date = 1230.1.1 regnal_number = 2 }
+				#ruler_term = { character = the_demetrios_komnenos_doukas start_date = 1244.9.25 end_date = 1230.1.1 regnal_number = 2 }
+				ruler_term = { character = byz_demetrios_palaiologos start_date = 1329.9.25 regnal_number = 3 } 
 				
 				regnal_numbers = {
 					name_boniface = 1

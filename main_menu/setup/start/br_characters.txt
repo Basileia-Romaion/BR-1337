@@ -193,11 +193,11 @@ character_db={
 		#estate = clergy_estate
 		birth_date = 1315.1.1
 		birth = constantinople
-		adm = 55 dip = 66 mil = 100
+		adm = 55 dip = 66 mil = 66
 		father = byz_demetrios_palaiologos
 		#mother = 
 		dynasty = palaiologos_dynasty
-		tag = RH0
+		tag = THE
 		#ruler_trait = eunuch
 	}
 	br_ere_rdm_character_14 = {
@@ -451,6 +451,14 @@ character_db={
 		father = br_ere_rdm_character_32
 		dynasty = kourkouas_dynasty
 		tag = AN10
+	}
+	br_ere_rdm_character_36 = {
+		first_name = "Murloc"
+		culture = sardian
+		religion = orthodox
+		birth_date = 1309.1.1
+		birth = oristano
+		tag = SAR
 	}
 
 #Elysium
