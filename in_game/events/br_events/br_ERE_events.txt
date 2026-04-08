@@ -245,11 +245,21 @@ br_ere_events.4 = {
 		add_prestige = 50
 		add_stability = 50
 		add_gold = 5000
+		every_subject = {
+			limit = {  
+				has_opinion = { modifier = opinion_declined_to_recognize_monarchy_modifier target = c:BYZ }
+			}
+			remove_opinion = {
+				target = c:BYZ
+				modifier = opinion_declined_to_recognize_monarchy_modifier
+			}
+		}
+
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
 	}
 }
 
@@ -305,8 +315,6 @@ br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
 		to = 1737.1.1
 		monthly_chance = 10
 	}
-
-	#historical_info = br_ere_events.2000.historical_info
 
 	trigger = {
 
@@ -415,7 +423,6 @@ br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
 		add_stability = stability_mild_penalty
 	}
 }
-
 
 br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.2000
 	hide_portraits = yes
