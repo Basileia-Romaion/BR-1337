@@ -277,10 +277,11 @@
  INV_ADJ: "Innulåndic"
 
  ####---------- Tsenacommacah ----------####
- IMP: "IMPERIUM"
- IMP_ADJ: "Imperial" #Imperian
+ IMP: "Elysium"
+ IMP_ADJ: "Elysian"
+ country_name_construction_IMPERIUM_rank_name: "IMPERIUM"
  ELY_f: "$ELY$"
- IMP_f: "$IMP$"
+ IMP_f: "$country_name_construction_IMPERIUM_rank_name$"
  ANA_f: "$ANA$"
  KAP_f: "$KAP$"
  AN0_f: "$AN0$"

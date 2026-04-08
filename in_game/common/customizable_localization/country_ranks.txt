@@ -728,7 +728,15 @@
 			country_rank_is_empire = yes
 			culture = { has_culture_group = culture_group:greek_group }
 		}
-	}	
+	}
+	text = {
+		localization_key = rank_empire_IMPERIUM
+		trigger = {
+
+			country_rank_is_empire = yes
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
 
 	text = {
 		localization_key = rank_empire_turkish

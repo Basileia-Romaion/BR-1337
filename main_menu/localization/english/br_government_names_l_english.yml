@@ -9,6 +9,15 @@
  rank_empire_byzantine_ruler_male: "Basileus"
  rank_empire_byzantine_ruler_female: "Basilissa"
 
+ country_name_construction_IMPERIUM_rank_name: "$RANK$" # $NAME$
+ country_name_construction_IMPERIUM_rank_name_map: "$RANK$" # $NAME$
+ country_name_construction_IMPERIUM: "$country_name_construction_IMPERIUM_rank_name$"
+ country_name_construction_IMPERIUM_map: "$country_name_construction_IMPERIUM_rank_name_map$"
+
+ rank_empire_IMPERIUM: "IMPERIUM"
+ rank_empire_IMPERIUM_ruler_male: "Imperator"
+ rank_empire_IMPERIUM_ruler_female: "Imperatrix"
+
  country_rank_br_thema: "Thema"
  country_rank_br_thema_ADJ: "Thematikós"
  country_rank_br_thema_ruler_male: "Stratēgos"

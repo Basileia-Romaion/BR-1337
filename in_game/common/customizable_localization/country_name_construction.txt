@@ -8,6 +8,13 @@
 		}
 	}
 	text = {
+		localization_key = country_name_construction_IMPERIUM_rank_name
+		trigger = {
+			country_rank ?= country_rank:rank_empire
+			tag = IMP
+		}
+	}
+	text = {
 		localization_key = country_name_construction_name
 		trigger = {
 			OR = {
