@@ -48,6 +48,7 @@ br_romaiokratia_law = {
 			monthly_diplomats = 0.1
 			monthly_prestige = 0.05
 			monthly_roman_authority = 0.05
+			country_can_use_br_romaiokratia_cb = yes
 		}
 		wants_this_policy_bias = {
 			subtract = {
@@ -83,7 +84,7 @@ br_romaiokratia_law = {
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.06
-			#country_can_use_br_romaiokratia_cb = yes
+			country_can_use_br_romaiokratia_cb = yes
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -138,7 +139,7 @@ br_romaiokratia_law = {
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.08
-			#country_can_use_br_romaiokratia_cb = yes
+			country_can_use_br_romaiokratia_cb = yes
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -211,7 +212,7 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_weak_bonus
 			monthly_roman_authority = 0.1
 			government_size = 1
-			#country_can_use_br_romaiokratia_cb = yes
+			country_can_use_br_romaiokratia_cb = yes
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -289,7 +290,7 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_mild_bonus
 			monthly_roman_authority = 0.15
 			government_size = 1
-			#country_can_use_br_romaiokratia_cb = yes
+			country_can_use_br_romaiokratia_cb = yes
 		}
 		country_modifier = {
     		potential_trigger = {

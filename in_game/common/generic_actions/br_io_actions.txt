@@ -8,17 +8,13 @@
     show_message_to_target = yes
 
     potential = {
-        scope:actor ?= {
-            exists = international_organization:roman_world
-            is_leader_of_international_organization = international_organization:roman_world
-			#modifier:country_can_use_br_romaiokratia_cb = yes
-		}
+        exists = international_organization:roman_world
     }
 
     allow = {
 		scope:actor = {
-            is_leader_of_international_organization = international_organization:roman_world
-			#modifier:country_can_use_br_romaiokratia_cb = yes
+            #is_leader_of_international_organization = international_organization:roman_world
+			modifier:country_can_use_br_romaiokratia_cb = yes
 		}
     }
 
@@ -31,9 +27,7 @@
         target_flag = recipient
         name = "choose_international_organization"
         column = { data = name }
-        visible = {
-            is_leader_of_international_organization = international_organization:roman_world
-        }
+        visible = { international_organization_type = international_organization_type:roman_world }
     }
 
     select_trigger = {

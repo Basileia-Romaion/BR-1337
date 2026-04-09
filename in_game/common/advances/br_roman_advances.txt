@@ -231,17 +231,13 @@ br_tagmata_barracks_advance = { #loc
 	age = age_2_renaissance
 	icon = byz_modernized_strategikon
 	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
-		}
+		potential = { has_or_had_tag = BYZ }
 	}
 	requires = pike_square
 	global_manpower_modifier = 0.05
 	unlock_building = br_tagmata_barracks
 	ai_weight = { add = 5 }
 }
-
 
 
 # AGE 3 – Discovery
@@ -462,7 +458,12 @@ br_revolutions_varangians_advance = {
 
 br_age_2_kontaratoi_advance = {
 	age = age_2_renaissance
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
 	icon = byz_cataphracts_advance
 	requires = byz_shield_of_the_west
 	unlock_unit = br_age_2_kontaratoi
@@ -471,7 +472,12 @@ br_age_2_kontaratoi_advance = {
 
 br_age_3_lonchophoroi_advance = {
 	age = age_3_discovery
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
 	icon = byz_cataphracts_advance
 	requires = roman_thematic_recruitment
 	unlock_unit = br_age_3_lonchophoroi
@@ -480,7 +486,12 @@ br_age_3_lonchophoroi_advance = {
 	
 br_age_4_thorakophoroi_advance = {
 	age = age_4_reformation
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
 	icon = byz_cataphracts_advance
 	requires = flintlock_gun
 	unlock_unit = br_age_4_thorakophoroi
@@ -489,7 +500,12 @@ br_age_4_thorakophoroi_advance = {
 
 br_age_5_prokoursatores_advance = {
 	age = age_5_absolutism
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
 	icon = byz_cataphracts_advance
 	requires = byz_modernized_strategikon
 	unlock_unit = br_age_5_prokoursatores
@@ -498,7 +514,12 @@ br_age_5_prokoursatores_advance = {
 
 br_age_6_basilikoi_advance = {
 	age = age_6_revolutions
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
 	icon = byz_cataphracts_advance
 	requires = byz_the_new_imperial_army
 	unlock_unit = br_age_6_basilikoi

@@ -39,3 +39,10 @@ monthly_towards_br_bureaucratic={
 		is_societal_value_change = yes
 	}
 }
+
+country_can_use_br_romaiokratia_cb = {
+	game_data={
+		category=country
+	}
+	boolean=yes
+}
