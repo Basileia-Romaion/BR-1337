@@ -82,7 +82,7 @@ roman_romaioi_identity = {
 		OR = {
 			has_or_had_tag = BYZ
 			culture = culture:greek_culture
-			#culture = { has_culture_group = culture_group:greek_group }
+			#culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = state_administration_advance
@@ -100,7 +100,7 @@ roman_codified_custom = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = codified_laws
@@ -120,7 +120,7 @@ roman_pronoial_administration = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = roman_codified_custom
@@ -140,7 +140,7 @@ roman_akritic_reforms = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = roman_pronoial_administration
@@ -179,7 +179,7 @@ roman_scribal_administration = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = renaissance_advance
@@ -198,7 +198,7 @@ roman_court_and_office = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = vibrant_court_advance
@@ -215,7 +215,7 @@ br_stationes_advance = { #loc
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = maritime_advance_age_2
@@ -233,7 +233,7 @@ br_tagmata_barracks_advance = { #loc
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = pike_square
@@ -255,7 +255,7 @@ roman_thematic_recruitment = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = pike_square
@@ -275,7 +275,7 @@ roman_infrastructure = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = supply_depot_advance_age_3_discovery
@@ -298,7 +298,7 @@ roman_imperial_legitimacy = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = confessional_court
@@ -317,7 +317,7 @@ roman_civic_order = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = confessional_court
@@ -339,7 +339,7 @@ roman_centralized_command = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = regiment_reinforcement_speed_absolutism
@@ -357,7 +357,7 @@ roman_law_above_custom = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = war_score_absolutism_advance
@@ -377,7 +377,7 @@ roman_state_identity = {
 			#any_overlord_or_above = {
 			#	has_or_had_tag = BYZ
 			#}
-			#culture = { has_culture_group = culture_group:greek_group }
+			#culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = crown_power_advance_revolutions

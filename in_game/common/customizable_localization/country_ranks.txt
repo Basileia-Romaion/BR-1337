@@ -17,7 +17,7 @@
 			#	}
 			}
 			overlord ?= {
-				culture = { has_culture_group = culture_group:greek_group }
+				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
@@ -83,7 +83,7 @@
 		trigger = {
 			is_subject_type = tributary
 			overlord ?= {
-				culture = { has_culture_group = culture_group:greek_group }
+				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
@@ -93,7 +93,7 @@
 		trigger = {
 			is_subject_type = colonial_nation
 			overlord ?= {
-				culture = { has_culture_group = culture_group:greek_group }
+				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
@@ -116,7 +116,7 @@
 		trigger = {
 			is_subject_type = trade_company
 			overlord ?= {
-				culture = { has_culture_group = culture_group:greek_group }
+				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
@@ -147,7 +147,7 @@
 				tag = K1B
 			}
 			overlord ?= {
-				culture = { has_culture_group = culture_group:greek_group }
+				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
@@ -726,7 +726,7 @@
 		trigger = {
 
 			country_rank_is_empire = yes
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	text = {

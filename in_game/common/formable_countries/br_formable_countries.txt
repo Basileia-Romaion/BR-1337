@@ -251,7 +251,7 @@ REPLACE_OR_CREATE:ANA_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -287,7 +287,7 @@ REPLACE_OR_CREATE:KAP_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -319,7 +319,7 @@ REPLACE_OR_CREATE:AN0_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -351,7 +351,7 @@ REPLACE_OR_CREATE:SY3_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -386,7 +386,7 @@ REPLACE_OR_CREATE:AGY_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -423,7 +423,7 @@ REPLACE_OR_CREATE:AFK_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -488,7 +488,7 @@ REPLACE_OR_CREATE:P0N_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -520,7 +520,7 @@ REPLACE_OR_CREATE:P1N_f = {
 	rule = historical
 	
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -548,7 +548,7 @@ IT0_f = {
 	rule = historical
 	potential = {
 		not = { tag = ITA }
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -578,7 +578,7 @@ IT1_f = {
 	rule = historical
 	potential = {
 		not = { tag = ITA }
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {

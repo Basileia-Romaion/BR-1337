@@ -82,7 +82,7 @@ REPLACE_OR_CREATE:theme_system = {
 			any_overlord_or_above = {
 				has_or_had_tag = BYZ
 			}
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 		custom_tooltip = {
 			text = byz_theme_system_not_obselete_tt

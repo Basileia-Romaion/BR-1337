@@ -3,7 +3,7 @@ INJECT:administrative_system = { #Version for ERE subjects/minors
 	br_pronoia_system = {
 		unique = yes
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 			NOT = { has_or_had_tag = BYZ }
 		}
 		country_modifier = {
@@ -25,7 +25,7 @@ INJECT:administrative_system = { #Version for ERE subjects/minors
 INJECT:distribution_of_power_law = {
 	br_roman_distribution_of_power_law = {
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 		country_modifier = {
 			global_crown_estate_power = 0.25
@@ -46,7 +46,7 @@ INJECT:royal_court_customs_law = {
 	br_military_court_policy = { # Anatolian military elite, based on prussian court
 		unique = yes
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 			NOT = { has_or_had_tag = BYZ }
 		}
 	
@@ -66,7 +66,7 @@ INJECT:royal_court_customs_law = {
 	br_naval_court_policy = {
 		unique = yes
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 			NOT = { has_or_had_tag = BYZ }
 		}
 	
@@ -117,7 +117,7 @@ INJECT:cultural_traditions_law = { #balance still
 	br_roman_tradition = { 
 		unique = yes
 	    potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 	    country_modifier = {
 			global_pop_assimilation_speed_modifier = 0.1
@@ -143,7 +143,7 @@ INJECT:medieval_levy_law = {
 			monthly_towards_stratiotai = societal_value_minor_monthly_move
 		}
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 		
 		estate_preferences = {
@@ -161,7 +161,7 @@ INJECT:medieval_levy_law = {
 			monthly_towards_stratiotai = societal_value_minor_monthly_move
 		}
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 		
 		estate_preferences = {
@@ -175,7 +175,7 @@ INJECT:medieval_levy_law = {
 INJECT:legal_code_law = { #Version for ERE administative divisions. 
 	br_byzantine_law = {
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:roman_group }
 			NOT = { has_or_had_tag = BYZ }
 		}
 		allow = {
@@ -253,7 +253,7 @@ br_military_frontier = {
 #INJECT:order_of_chivalry_law = {
 #	br_order_of_phoenix_policy = {
 #		potential = {
-#			culture = { has_culture_group = culture_group:greek_group }
+#			culture = { has_culture_group = culture_group:roman_group }
 #		}
 #		country_modifier = {
 #			has_chivalric_order = yes

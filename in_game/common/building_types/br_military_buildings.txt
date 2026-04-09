@@ -156,7 +156,7 @@ br_naval_theme_hq = {
 		}
 	}
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	allow = {
 		has_reform = government_reform:br_naval_akritai_reform
@@ -214,7 +214,7 @@ br_varangian_camp = {
 		has_or_had_tag = BYZ
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 
 
@@ -262,7 +262,7 @@ br_tagmata_camp = {
 		has_or_had_tag = BYZ
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 
 	modifier = {
@@ -360,7 +360,7 @@ br_soldier_farmers = { #thema estates
 		has_estate_privilege = estate_privilege:br_themata_peasant_privilege
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	
 	modifier = {
@@ -413,7 +413,7 @@ br_pronoia_estate = { #pronoia estates
 		has_estate_privilege = estate_privilege:br_dynatoi_magnates
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	
 	modifier = {
@@ -455,7 +455,7 @@ br_pyrgoi = {#frontier watchtowers
 		}
 	}
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	unique_production_methods = {
 		br_pyrgoi_maintenance = {
@@ -480,7 +480,7 @@ br_pyrgoi = {#frontier watchtowers
 		propagating_zone_of_control = no
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	allow_wrong_startup = yes
 }
@@ -513,7 +513,7 @@ br_kleisourai = {#fortified mountain passes
 		#}
 	}
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	unique_production_methods = {
 		br_kleisourai_maintenance = {
@@ -537,7 +537,7 @@ br_kleisourai = {#fortified mountain passes
 		propagating_zone_of_control = no
 	}
 	#remove_if = {
-	#	NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+	#	NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	#}
 	allow_wrong_startup = yes
 }
@@ -579,7 +579,7 @@ br_varangian_barracks = {
 		has_or_had_tag = BYZ
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 
 
@@ -628,7 +628,7 @@ br_tagmata_barracks = {
 	}
 	allow = { is_province_capital = yes }
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 
 
@@ -728,7 +728,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 		# from advance
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	
 	modifier = {
@@ -783,7 +783,7 @@ br_kekhrismene_pronoia = { #pronoia estates
 		# from advance
 	}
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	
 	modifier = {
@@ -815,7 +815,7 @@ br_apothekai_building = {#Apothēkai – logistical depots
 	forbidden_for_estates = yes
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	
 	allow = {
@@ -862,7 +862,7 @@ br_stationes_building = { #Imperial road stations where officials and patrols ma
 	forbidden_for_estates = yes
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = {
 		#is_capital = no
@@ -901,7 +901,7 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 	forbidden_for_estates = yes
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	location_potential = {

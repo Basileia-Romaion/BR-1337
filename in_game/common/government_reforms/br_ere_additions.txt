@@ -53,7 +53,7 @@ br_sub_theme_subject = {
 	age = age_1_traditions
 	icon = theme_system
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
 	}
 	allow = {
@@ -95,7 +95,7 @@ br_sub_pronoia_subject = {
 	age = age_1_traditions
 	icon = theme_system
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
 	}
 	allow = {
@@ -137,7 +137,7 @@ br_sub_religious_subject = {
 	age = age_1_traditions
 	icon = primas_germaniae
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
 	}
 	allow = {

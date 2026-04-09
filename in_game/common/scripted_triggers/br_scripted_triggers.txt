@@ -3,7 +3,7 @@
 REPLACE_OR_CREATE:unit_akritai_location_trigger = {
 	dominant_culture ?= { has_culture_group = culture_group:greek_group }
 	owner ?= {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 		has_advance = byz_akritai_advance
 	}
 }
@@ -11,7 +11,7 @@ REPLACE_OR_CREATE:unit_akritai_location_trigger = {
 REPLACE_OR_CREATE:unit_byzantine_cataphracts_location_trigger = {
 	dominant_culture ?= { has_culture_group = culture_group:greek_group }
 	owner ?= {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 		has_advance = byz_cataphracts_advance
 	}
 }

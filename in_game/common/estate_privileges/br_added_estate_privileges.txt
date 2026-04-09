@@ -93,7 +93,7 @@ br_dynatoi_magnates = {
 	estate = nobles_estate
 	icon = banal_lordship #powerful_italian_families
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	allow = {
 	}
@@ -245,7 +245,7 @@ br_themata_peasant_privilege = {
 	estate = peasants_estate
 	icon = dhimmi_military_service #primacy_of_nobility
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	allow = {
 		OR = {
@@ -419,7 +419,7 @@ br_bureaucrat_clergy = { #maybe split up
 	estate = clergy_estate
 	icon = dhimmi_in_administration #clergy_in_administration
 	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 	can_revoke = {
 		"estate_power(estate_type:clergy_estate)" <= 0.2
