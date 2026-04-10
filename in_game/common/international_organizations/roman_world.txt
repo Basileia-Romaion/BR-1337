@@ -171,6 +171,7 @@
 		force_convert_created_subjects = yes
 
 		num_possible_artists = 1
+		power_projection = 10
 	}
 	
 	create_visible_trigger = {
@@ -250,6 +251,7 @@
 	#unqiue laws
 	laws = {
 		br_romaiokratia_law
+		#Military law
 	}
 
 

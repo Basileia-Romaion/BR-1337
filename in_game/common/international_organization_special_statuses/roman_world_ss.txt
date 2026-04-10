@@ -41,7 +41,10 @@ domestikos_west = {
 
 	can_bestow_trigger = {
 		capital = {
-			region = region:balkan_region
+			OR = {
+				region = region:balkan_region
+				region = region:italy_region
+			}
 		}
 		has_ruler = yes
 		has_regent = no
@@ -255,7 +258,7 @@ defiant_strategoi = {
 	}
 
 	can_bestow_trigger = {
-	culture ?= { has_culture_group = culture_group:greek_group }
+		culture ?= { has_culture_group = culture_group:greek_group }
 		NOR = {
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
@@ -328,7 +331,7 @@ external_member = {
 	}
 
 	can_bestow_trigger = {
-	NOR = {
+		NOR = {
 			culture ?= { has_culture_group = culture_group:greek_group }
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
