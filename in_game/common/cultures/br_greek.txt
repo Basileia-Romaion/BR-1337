@@ -34,7 +34,11 @@ REPLACE_OR_CREATE:greek_culture = {
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
 		armenikon_greek_culture = positive
-	}	
+	}
+	country_modifier = {
+		cultural_influence_modifier = 0.2
+		#stability_investment = small_stability_investment_penalty
+	}
 	
 	culture_groups = {
 		greek_group roman_group

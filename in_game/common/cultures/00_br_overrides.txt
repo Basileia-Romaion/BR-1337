@@ -19,6 +19,10 @@
 		teimani = kindred
 		greek_culture = positive
 	}
+
+	country_modifier = {
+		trade_efficiency = 0.1
+	}
 	
 	culture_groups = {
 		jewish_group
@@ -53,7 +57,12 @@ REPLACE_OR_CREATE:armenian_culture = { #https://en.wikipedia.org/wiki/Armenians
 	opinions = {
 		georgian_culture = positive
 		greek_culture = positive
-	}	
+	}
+
+	country_modifier = {
+		tolerance_own = 1
+		global_defensive = 0.1
+	}
 
 	culture_groups = {
 		caucasian_group roman_group
@@ -70,6 +79,11 @@ REPLACE_OR_CREATE:georgian_culture = { #https://en.wikipedia.org/wiki/Georgians
 	opinions = {
 		armenian_culture = kindred
 		greek_culture = positive
+	}
+
+	country_modifier = {
+		army_infantry_power = 0.05
+		global_defensive = 0.1
 	}
 
 	culture_groups = {
@@ -230,6 +244,10 @@ REPLACE_OR_CREATE:venetian = {
 		latinoi = kindred
 		greek_culture = positive
 	}
+
+	country_modifier = {
+		global_merchant_power = 0.1
+	}
 	
 	culture_groups = {
 		italian_group roman_group
@@ -246,6 +264,11 @@ REPLACE_OR_CREATE:sardinian = {
 	opinions = {
 		griko_culture = kindred
 		greek_culture = positive
+	}
+
+	country_modifier = {
+		global_defensive = 0.1
+		naval_morale_modifier = 0.1
 	}
 	
 	culture_groups = {
