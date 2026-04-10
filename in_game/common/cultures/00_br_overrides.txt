@@ -63,6 +63,9 @@ REPLACE_OR_CREATE:armenian_culture = { #https://en.wikipedia.org/wiki/Armenians
 		tolerance_own = 1
 		global_defensive = 0.1
 	}
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.5
+	}
 
 	culture_groups = {
 		caucasian_group roman_group
@@ -106,6 +109,9 @@ REPLACE_OR_CREATE:coptic_culture = {
 	}
 	culture_groups = {
 		egypt_group roman_group
+	}
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.5
 	}
 }
 
@@ -162,6 +168,10 @@ REPLACE_OR_CREATE:syriac_culture = {
 		greek_culture = positive
 		syrenikoi_greek_culture = kindred
 	}
+
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.5
+	}
 	
 	culture_groups = {
 		syria_group roman_group
@@ -216,6 +226,9 @@ REPLACE_OR_CREATE:aromanian = {
 	culture_groups = {
 		romanian_group roman_group
 	}
+	location_modifier = {
+		local_pop_assimilation_speed_modifier = -0.5
+	}
 }
 
 REPLACE_OR_CREATE:median = { 
@@ -246,7 +259,9 @@ REPLACE_OR_CREATE:venetian = {
 	}
 
 	country_modifier = {
-		global_merchant_power = 0.1
+		#global_merchant_power = 0.1
+		merchant_power_from_maritime_modifier = 0.1
+		global_burghers_city_desired_pop = 0.1
 	}
 	
 	culture_groups = {
@@ -263,29 +278,16 @@ REPLACE_OR_CREATE:sardinian = {
 
 	opinions = {
 		griko_culture = kindred
+		italiotai_culture = kindred
 		greek_culture = positive
 	}
 
 	country_modifier = {
 		global_defensive = 0.1
-		naval_morale_modifier = 0.1
+		global_hostile_attrition = 0.25
 	}
-	
-	culture_groups = {
-		italian_group roman_group
-	}
-}
-
-REPLACE_OR_CREATE:sicilian = { 
-	language = sicilian_dialect
-	
-	color = map_sicilian
-	
-	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
-
-	opinions = {
-		griko_culture = kindred
-		greek_culture = positive
+	location_modifier = {
+		local_separatism = 0.05
 	}
 	
 	culture_groups = {
@@ -303,6 +305,9 @@ REPLACE_OR_CREATE:neapolitan = {
 	opinions = {
 		griko_culture = kindred
 		greek_culture = positive
+	}
+	location_modifier = {
+		local_separatism = 0.05
 	}
 	
 	culture_groups = {

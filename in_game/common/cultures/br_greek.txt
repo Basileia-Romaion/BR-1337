@@ -1,4 +1,11 @@
 ﻿#BR edited Cultures
+# damage_done_versus_heathens_modifier
+# global_peasants_migration_allowed
+# nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+# experience_decay
+#global_production_efficiency = medium_production_efficiency_bonus
+#global_trade_protection_factor = 0.25
+#trade_efficiency = small_trade_efficiency_bonus
 REPLACE_OR_CREATE:cappadocian_greek_culture = {
 	language = cappadocian_dialect
 	color = rgb { 125 65 75 }
@@ -12,6 +19,13 @@ REPLACE_OR_CREATE:cappadocian_greek_culture = {
 		armenikon_greek_culture = positive
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
+	}
+	country_modifier = {
+		army_infantry_power = 0.1
+		global_hostile_attrition = 0.1
+	}
+	location_modifier = {
+		local_pop_join_rebel_threshold = 0.05
 	}
 	
 	culture_groups = {
@@ -36,7 +50,8 @@ REPLACE_OR_CREATE:greek_culture = {
 		armenikon_greek_culture = positive
 	}
 	country_modifier = {
-		cultural_influence_modifier = 0.2
+		cultural_influence_modifier = 0.1
+		cultural_tradition_modifier = 0.1
 		#stability_investment = small_stability_investment_penalty
 	}
 	
@@ -56,7 +71,12 @@ REPLACE_OR_CREATE:griko_culture = {
 		african_greek_culture = kindred
 		#sicilian = positive
 		neapolitan = positive
-	}	
+	}
+	country_modifier = {
+		global_sailors_modifier = 0.1
+		global_defensive = 0.1
+		#navy_repair_cost
+	}
 	
 	culture_groups = {
 		italian_group greek_group roman_group
@@ -74,7 +94,12 @@ italiotai_culture = {
 		griko_culture = kindred
 		#sicilian = positive
 		neapolitan = positive
-	}	
+	}
+
+	country_modifier = {
+		global_urban_build_buildings_cost = -0.1
+		global_peasant_enfranchisment = 0.05
+	}
 	
 	culture_groups = {
 		italian_group greek_group roman_group
@@ -96,6 +121,10 @@ REPLACE_OR_CREATE:pontic_greek_culture = {
 		laz_culture = positive
 		armenikon_greek_culture = positive
 	}
+	country_modifier = {
+		global_lumber_output_modifier = 0.25
+		expand_rgo_mining_cost_modifier = -0.1
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -113,6 +142,10 @@ REPLACE_OR_CREATE:gothic_culture = {
 		rhos_culture = kindred
 		pontic_greek_culture = kindred
 		anatolian_greek_culture = positive
+	}
+	country_modifier = {
+		army_infantry_power = 0.1
+		levy_combat_efficiency_modifier = 0.1
 	}
 	
 	culture_groups = {
@@ -136,6 +169,14 @@ anatolian_greek_culture = { #BR addition
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
 	}
+
+	country_modifier = {
+		army_cavalry_power = 0.1
+		nobles_estate_levy_size = 0.1
+	}
+	location_modifier = {
+		local_nobles_estate_power = 0.25
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -151,6 +192,11 @@ varangian = {
 	opinions = {
 		greek_culture = kindred
 		rhos_culture = kindred
+	}
+
+	country_modifier = {
+		army_infantry_power = 0.1
+		#land_morale_movement_cost 
 	}
 	
 	culture_groups = {
@@ -171,7 +217,13 @@ indikes_greek_culture = {
 		greek_culture = kindred
 		aegyptian_greek_culture = kindred
 		coptic_culture = kindred
-	}	
+	}
+	country_modifier = {
+		port_cost_distance_from_capital = -5
+		navy_repair_cost = -0.25
+		trade_range_modifier = 0.5
+		#unlock_casus_belli = cb_exploration
+	}
 	
 	culture_groups = {
 		greek_group indian_group roman_group
@@ -189,7 +241,12 @@ aegyptian_greek_culture = {
 		coptic_culture = kindred
 		african_greek_culture = kindred
 		indikes_greek_culture = kindred
-	}	
+	}
+	country_modifier = {
+		#food_consumption_modifier = -0.1
+		port_cost_distance_from_capital = -5
+		trade_range_modifier = 0.5
+	}
 	
 	culture_groups = {
 		greek_group egypt_group roman_group
@@ -208,6 +265,10 @@ syrenikoi_greek_culture = {
 		aegyptian_greek_culture = positive
 		cappadocian_greek_culture = positive
 		syriac_culture = kindred
+	}
+	country_modifier = {
+		global_trade_center_power = 0.05
+		army_logistics_distance_modifier = 0.1
 	}	
 	
 	culture_groups = {
@@ -225,7 +286,10 @@ african_greek_culture = {
 		greek_culture = kindred
 		aegyptian_greek_culture = kindred
 		griko_culture = kindred
-	}	
+	}
+	country_modifier = {
+		global_supply_limit_modifier = 0.1
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -243,7 +307,10 @@ illyrikoi_greek_culture = {
 		dalmatian = positive
 		aromanian = positive
 		albanian = positive
-	}	
+	}
+	country_modifier = {
+		
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -262,7 +329,13 @@ kilikioi_greek_culture = {
 		armenikon_greek_culture = positive
 		cappadocian_greek_culture = positive
 		anatolian_greek_culture = positive
-	}	
+	}
+	country_modifier = {
+		
+	}
+	location_modifier = {
+		local_separatism = 0.05
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -282,6 +355,11 @@ rhos_culture = {
 		varangian = kindred
 		ruthenian = positive
 		muscovite = positive
+	}
+
+	country_modifier = {
+		global_defensive = 0.1
+		army_infantry_power = 0.1
 	}
 	
 	culture_groups = {
@@ -303,6 +381,10 @@ boulgaroi = {
 		bulgarian = positive
 		greek_culture = kindred
 	}
+	country_modifier = {
+		global_max_rgo_size_modifier_in_rural = 0.1
+		fort_maintenance_cost = -0.10
+	}
 	culture_groups = {
 		roman_group
 		south_slavic_group
@@ -322,6 +404,12 @@ armenikon_greek_culture = { #BR addition
 		pontic_greek_culture = kindred
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
+	}
+	country_modifier = {
+		land_unit_attrition = -0.25
+	}
+	location_modifier = {
+		local_pop_join_rebel_threshold = 0.05
 	}
 	
 	culture_groups = {
