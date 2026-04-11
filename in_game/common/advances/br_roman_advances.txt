@@ -201,7 +201,7 @@ roman_court_and_office = {
 			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
-	requires = vibrant_court_advance
+	requires = roman_scribal_administration
 	#diplomatic_capacity = 1
 	monthly_diplomats = 0.1
 	global_monthly_control = 0.001
@@ -218,7 +218,7 @@ br_stationes_advance = { #loc
 			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
-	requires = maritime_advance_age_2
+	requires = roman_court_and_office
 	#army_auxiliary_power = 0.1
 	global_distance_from_capital_speed_propagation = 0.05
 	global_trade_through_owned_territory_cost_modifier = -0.05
@@ -279,6 +279,23 @@ roman_infrastructure = {
 	global_distance_from_capital_speed_propagation = 0.1
 	global_trade_through_owned_territory_cost_modifier = -0.1
 	trade_range_modifier = 0.1
+	ai_weight = { add = 5 }
+}
+
+br_apothekai_advance = {
+	age = age_3_discovery
+	icon = byz_crossroads_of_continents
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
+	requires = roman_infrastructure
+	supply_depot_capacity = 25
 	unlock_building = br_apothekai_building
 	ai_weight = { add = 5 }
 }
@@ -316,10 +333,26 @@ roman_civic_order = {
 			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
-	requires = confessional_court
+	requires = roman_imperial_legitimacy
 	tolerance_own = 1
 	global_urban_build_buildings_cost = -0.05
 	global_pop_promotion_speed_modifier = 0.1
+	ai_weight = { add = 5 }
+}
+
+br_kekhrismene_advance = {
+	age = age_4_reformation
+	icon = byz_modernized_strategikon
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
+	requires = roman_civic_order
 	unlock_building = br_kekhrismene_pronoia
 	ai_weight = { add = 5 }
 }
