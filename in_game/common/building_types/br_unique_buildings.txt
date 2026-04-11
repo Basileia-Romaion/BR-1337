@@ -406,9 +406,10 @@ br_constantinople_infrastructure = {
 
 	modifier = {
 		free_building_levels = 50
-		local_population_capacity = 250
+		local_population_capacity = 100
 		local_disease_resistance = 0.1
 		local_monthly_prosperity = 0.001
+		local_life_expectancy = 2
 	}
 }
 
