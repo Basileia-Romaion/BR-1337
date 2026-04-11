@@ -8907,6 +8907,12 @@ countries = {
 			tolerated_cultures = {
 				greek_culture
 			}
+			timed_modifier = {
+				modifier = "br_levy_size_modifier"
+				start_date = 1333.1.1
+				date = 1338.1.1
+				size = 2
+			}
 			
 			country_rank = rank_duchy
 			capital = oristano
@@ -12232,7 +12238,8 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = byz_demetrios_palaiologos
+				ruler_term = { character = byz_demetrios_palaiologos start_date = 1329.9.25 } 
 			}
 			
 			tolerated_cultures = {
@@ -12497,7 +12504,7 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = byz_demetrios_palaiologos
+				ruler = byz_konstantinos_palaiologos_angelos
 				
 				ruler_term = { character = the_bonifacio_i_monferrato start_date = 1204.5.16 end_date = 1207.1.1 regnal_number = 1 }
 				ruler_term = { character = sic_demetrio_i_thessalonica start_date = 1207.1.1 end_date = 1224.12.1 regnal_number = 1 }
@@ -12506,7 +12513,7 @@ countries = {
 				ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1230.1.1 end_date = 1237.1.1 regnal_number = 1 }
 				ruler_term = { character = the_ioannes_komnenos_doukas start_date = 1237.1.1 end_date = 1244.9.25 regnal_number = 1 }
 				#ruler_term = { character = the_demetrios_komnenos_doukas start_date = 1244.9.25 end_date = 1230.1.1 regnal_number = 2 }
-				ruler_term = { character = byz_demetrios_palaiologos start_date = 1329.9.25 regnal_number = 3 } 
+				ruler_term = { character = byz_konstantinos_palaiologos_angelos start_date = 1329.9.25 } 
 				
 				regnal_numbers = {
 					name_boniface = 1
@@ -12542,7 +12549,7 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = epi_nikephoros_ii_orsini
 				
 				ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1239.1.1 end_date = 1241.1.1 regnal_number = 1 }
 				ruler_term = { character = epi_michael_ii_komnenos_doukas start_date = 1241.1.1 end_date = 1268.1.1 regnal_number = 1 }
@@ -12605,7 +12612,8 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_13
+				ruler_term = { character = br_ere_rdm_character_13 start_date = 1331.9.25 } 
 			}
 			
 			country_rank = rank_duchy
@@ -53911,7 +53919,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_12
+				ruler_term = { character = br_ere_rdm_character_12 start_date = 1329.9.25 } 
 			}
 			
 			country_rank = rank_county
@@ -53945,7 +53954,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = byz_andronikos_palaiologos_angelos
+				ruler_term = { character = byz_andronikos_palaiologos_angelos start_date = 1329.9.25 } 
 			}
 			
 			country_rank = rank_county
@@ -54348,7 +54358,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = byz_andronikos_asen
+				ruler_term = { character = byz_andronikos_asen start_date = 1299.11.1 }
 			}
 			
 			country_rank = rank_county
