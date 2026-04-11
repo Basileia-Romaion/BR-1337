@@ -15,6 +15,9 @@ br_on_game_start = {
 		c:SAR = {
             trigger_event_silently = br_country_startup.4
         }
+		c:S1C = {
+            trigger_event_silently = br_country_startup.5
+        }
         c:K1K = {
             trigger_event_silently = br_country_startup.1 #naval units
         }

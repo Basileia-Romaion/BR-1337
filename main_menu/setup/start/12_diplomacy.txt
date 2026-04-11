@@ -266,6 +266,7 @@ diplomacy_manager = {
     dependency = { first = VEN second = VTC subject_type = trade_company }
     dependency = { first = GEN second = GTC subject_type = trade_company }
     #dependency = { first = GEN second = GAZ subject_type = colonial_nation }
+    scripted_mutual = { first = S1C second = SAR type = alliance }
 
     #Papal States
     dependency = { first = PAP second = SPL subject_type = vassal }
@@ -305,14 +306,15 @@ diplomacy_manager = {
 	
 	scripted_oneway = { first = ARA second = ANR type = guarantee }
     scripted_oneway = { first = ARA second = NAV type = guarantee }
-    scripted_oneway = { first = ARA second = KNI type = guarantee }
-    scripted_oneway = { first = PAP second = KNI type = guarantee }
     scripted_oneway = { first = LOT second = PAP type = guarantee }
 	scripted_oneway = { first = AQN second = ANR type = guarantee }
 	scripted_oneway = { first = TOU second = ANR type = guarantee }
     #dependency = { first = LON second = CAS subject_type = vassal }
     #dependency = { first = CAS second = AD0 subject_type = vassal }
     #dependency = { first = LON second = POR subject_type = vassal }
+    scripted_mutual = { first = PAP second = KNI type = alliance }
+    scripted_mutual = { first = ARA second = KNI type = alliance }
+    scripted_mutual = { first = GEN second = KNI type = alliance }
 	
 	#scripted_oneway = { first = CAS second = CTV type = military_sponsorship }   #BR edit
 	#scripted_oneway = { first = CAS second = STO type = military_sponsorship }   #BR edit
