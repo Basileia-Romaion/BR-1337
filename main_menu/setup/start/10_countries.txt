@@ -12269,14 +12269,15 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_41
+				ruler_term = { character = br_ere_rdm_character_41 start_date = 1329.9.25 } 
 			}
 			
 			accepted_cultures = {
 				latinoi
 			}
 			
-			country_rank = rank_duchy
+			country_rank = rank_county
 			court_language = achaean_dialect
 			liturgical_language = khoine_dialect
 			capital = andravida
@@ -13555,9 +13556,6 @@ countries = {
 				haskovo perperek smolyan stanimaka
 				burgas sozopol
 				dospat bansko krupnik melnik nevrokop beden
-				karvuna pangalia kaliakra
-				babadag cernavoda constanta enisala isaccea
-				tulcea harsova
 				ustra
 				bukelon ormenio
 			}
@@ -13570,6 +13568,9 @@ countries = {
 				vranje velbuzd 
 				ohrid bitola prilep florina kicevo tetovo
 				prosek shtip kocani strumica skopje kumanovo veles kratovo
+				karvuna pangalia kaliakra
+				babadag cernavoda constanta enisala isaccea
+				tulcea harsova
 			}
 			
 			starting_technology_level = 3
@@ -13624,7 +13625,7 @@ countries = {
 			court_language = boulgaroi_dialect
 			liturgical_language = church_slavonic_language
 			
-			capital = tarnovo
+			capital = sredets #tarnovo
 			dynasty = sratsimir_dynasty
 		}
 		
@@ -53043,7 +53044,36 @@ countries = {
 			capital = skopje
 		}
 		
-		
+		B0L = {
+			own_control_core = {
+				karvuna pangalia kaliakra
+				babadag cernavoda constanta enisala isaccea
+				tulcea harsova
+			}
+			
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "br_pronoia_template"
+			country_rank = rank_county
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = br_ere_rdm_character_21
+				ruler_term = { character = br_ere_rdm_character_21 start_date = 1329.9.25 } 
+			}
+			accepted_cultures = {
+				boulgaroi
+				greek_culture
+			}
+			tolerated_cultures = {
+				wallachian
+			}
+
+			liturgical_language = khoine_dialect
+			
+			capital = constanta
+		}
 
 		#Wallachia
 

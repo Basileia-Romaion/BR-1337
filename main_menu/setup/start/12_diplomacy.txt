@@ -609,6 +609,7 @@ diplomacy_manager = {
     #dependency = { first = BUL second = SE0 subject_type = vassal }
     #dependency = { first = BUL second = SE1 subject_type = vassal }
     #dependency = { first = BUL second = SE2 subject_type = vassal }
+    dependency = { first = BUL second = B0L subject_type = march }
 
     #dependency = { first = HUN second = SE3 subject_type = fiefdom }
 

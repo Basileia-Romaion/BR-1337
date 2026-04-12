@@ -208,32 +208,6 @@ countries = {
 			capital = shkoder
 		}
 
-		B0L = {
-			our_cores_conquered_by_others = {
-				karvuna pangalia kaliakra
-				babadag cernavoda constanta enisala isaccea
-				tulcea harsova
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "eastern_european_monarchy"
-			country_rank = rank_duchy
-			government = {
-			}
-			accepted_cultures = {
-				boulgaroi
-				greek_culture
-			}
-			tolerated_cultures = {
-				wallachian
-			}
-
-			liturgical_language = church_slavonic_language
-			
-			capital = constanta
-		}
-
 		B2L = {
 			our_cores_conquered_by_others = {
 				dospat bansko krupnik melnik nevrokop beden

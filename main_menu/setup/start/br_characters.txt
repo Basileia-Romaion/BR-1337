@@ -141,7 +141,7 @@ character_db={
 		birth_date = 1319.1.1
 		birth = constantinople
 		#adm = 60 dip = 60 mil = 95
-		father = ser_stefan_milutin
+		father = br_ere_rdm_character_42
 		#mother = nap_helen_anjou
 		dynasty = angelos_dynasty
 		tag = BYZ
@@ -152,9 +152,9 @@ character_db={
 		religion = orthodox
 		female = yes
 		birth_date = 1319.1.1
-		birth = constantinople
+		birth = constanta
 		#adm = 60 dip = 60 mil = 95
-		father = epi_thomas_i_komnenos_doukas
+		father = br_ere_rdm_character_39
 		#mother = 
 		dynasty = doukas_dynasty
 		tag = BYZ
@@ -459,6 +459,80 @@ character_db={
 		birth_date = 1309.1.1
 		birth = oristano
 		tag = SAR
+	}
+ #doukas
+	br_ere_rdm_character_37 = {
+		first_name = "random"
+		culture = boulgaroi
+		religion = orthodox
+		birth_date = 1257.1.1
+		birth = vidin
+		estate = nobles_estate
+		#father = 
+		#mother = 
+		dynasty = doukas_dynasty
+		tag = B0L
+	}
+	br_ere_rdm_character_38 = {
+		first_name = "random"
+		culture = boulgaroi
+		religion = orthodox
+		birth_date = 1278.1.1
+		birth = constanta
+		estate = nobles_estate
+		father = br_ere_rdm_character_37
+		#mother = 
+		dynasty = doukas_dynasty
+		tag = B0L
+	}
+	br_ere_rdm_character_39 = {
+		first_name = "random"
+		culture = boulgaroi
+		religion = orthodox
+		birth_date = 1299.1.1
+		birth = constanta
+		estate = nobles_estate
+		father = br_ere_rdm_character_38
+		#mother = 
+		dynasty = doukas_dynasty
+		tag = B0L
+	}
+ #Angelos
+	br_ere_rdm_character_40 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1256.1.1
+		birth = kalamata
+		estate = nobles_estate
+		#father = 
+		#mother = 
+		dynasty = angelos_dynasty
+		tag = ACH
+	}
+	br_ere_rdm_character_41 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1276.1.1
+		birth = kalamata
+		estate = nobles_estate
+		father = br_ere_rdm_character_40
+		#mother = 
+		dynasty = angelos_dynasty
+		tag = ACH
+	}
+	br_ere_rdm_character_42 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1297.1.1
+		birth = kalamata
+		estate = nobles_estate
+		father = br_ere_rdm_character_41
+		#mother = 
+		dynasty = angelos_dynasty
+		tag = ACH
 	}
 
 #Elysium
