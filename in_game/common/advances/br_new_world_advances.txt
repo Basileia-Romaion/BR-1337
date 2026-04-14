@@ -369,6 +369,22 @@ elysian_senatorial_tradition = {
 	global_crown_estate_power = 0.05
 }
 
+br_elysian_foederati = {
+	age = age_2_renaissance
+	icon = byz_shield_of_the_west
+	potential = {
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	requires = elysian_senatorial_tradition
+    wrong_culture_levy_size = 0.25
+	#tribal privilege
+	#tribal building
+}
+
 elysian_emporia_of_the_west = {
 	age = age_2_renaissance
 	icon = byz_crossroads_of_continents
