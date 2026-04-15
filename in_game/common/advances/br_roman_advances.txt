@@ -161,6 +161,7 @@ br_roman_ecumenical_patriarch_advance = {
 	global_clergy_city_desired_pop =  0.05
 	global_pop_conversion_speed_modifier = 0.25
 	#stability_investment = tiny_stability_investment
+	#orthodox_monastery_building_cost_modifier = -0.1
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	icon = church_councils
 		
@@ -238,6 +239,17 @@ br_tagmata_barracks_advance = { #loc
 	unlock_building = br_tagmata_barracks
 	ai_weight = { add = 5 }
 }
+
+#br_orthodox_missionary_work = {
+#	age = age_2_renaissance
+#	potential = {
+#		religion = religion:orthodox
+#	}
+#	building_missionary_effort_modifier = 0.25
+#	#TODO building unlock
+#	requires = greek_rite
+#}
+
 
 
 # AGE 3 – Discovery

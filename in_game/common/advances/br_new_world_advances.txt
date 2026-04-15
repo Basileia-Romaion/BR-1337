@@ -12,6 +12,8 @@
 #global_separatism = 0.1
 
 # to-do balance diversify icons
+
+#natives
 br_stone_weapons = {
 	age = age_1_traditions
 	starting_technology_level = 1
@@ -27,7 +29,9 @@ br_stone_weapons = {
 }
 
 
-#Vinland
+# Vinlander (Norse New World) Custom Advances
+
+# age_1_traditions
 br_vinland_naval_raiding = {
 	age = age_1_traditions
 	icon = slavery_before_death
@@ -48,7 +52,7 @@ br_vinland_naval_raiding = {
     requires = colonies
 }
 
-br_vinland_naval_tradition = {
+br_vinland_naval_tradition = { #todo break up a bit
 	age = age_1_traditions
 	icon = diplomatic_range_age_1
 
@@ -73,10 +77,6 @@ br_vinland_naval_tradition = {
 	global_naval_supplies_output_modifier = 0.1
     requires = ship_building_advance
 }
-
-# Vinlander (Norse New World) Custom Advances
-
-# age_1_traditions
 
 vinlander_thing_of_vinland = {
 	age = age_1_traditions
@@ -364,6 +364,7 @@ elysian_senatorial_tradition = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
+	#building unlock
 	requires = vibrant_court_advance
 	diplomatic_capacity = 1
 	global_crown_estate_power = 0.05
@@ -384,6 +385,20 @@ br_elysian_foederati_advance = {
 	unlock_estate_privilege = br_elysian_foederati
 	#TODO unlock tribal building
 }
+
+#br_elysian_missionary_advance = {
+#	age = age_2_renaissance #so hellenic can do missonaries in the new world.
+#	potential = {
+#		OR = {
+#			has_or_had_tag = E1Y			
+#			has_or_had_tag = E2Y
+#			culture = { has_culture_group = culture_group:elysian_group }
+#		}
+#	}
+#	building_missionary_effort_modifier = 0.25
+#	#TODO building unlock
+#	requires = elysian_senatorial_tradition
+#}
 
 elysian_emporia_of_the_west = {
 	age = age_2_renaissance
@@ -463,6 +478,21 @@ elysian_civic_faith = {
 	requires = gov_reform_reformation_a
 	monthly_religious_influence = 0.1
 }
+
+#br_elysian_praetor_advance = {
+#	age = age_4_reformation
+#	requires = supreme_court_advance
+#	potential = {
+#		OR = {
+#			has_or_had_tag = E1Y			
+#			has_or_had_tag = E2Y
+#			culture = { has_culture_group = culture_group:elysian_group }
+#		}
+#	}
+#	land_cost_on_distance_from_capital_speed_propagation = 0.1
+#	icon = city_building_advance
+	#TODO unlock_building = 
+#}
 
 # age_5_absolutism
 
