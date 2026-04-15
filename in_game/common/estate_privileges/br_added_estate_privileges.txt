@@ -561,15 +561,16 @@ br_roman_ecumenical_patriarch_privilege = {
 
 ### BR added tribal estate privileges ###
 
-br_elysian_foederati = {
+br_elysian_foederati_privilege = {
 	estate = tribes_estate
+	icon = tribal_autonomy
 	
-	potential = {
-		OR = {
-			has_or_had_tag = E1Y			
-			has_or_had_tag = E2Y
-			culture = { has_culture_group = culture_group:elysian_group }
-		}
+	potential = { #tech unlock
+		#OR = {
+		#	has_or_had_tag = E1Y			
+		#	has_or_had_tag = E2Y
+		#	culture = { has_culture_group = culture_group:elysian_group }
+		#}
 	}
 	country_modifier = {
 		global_tribes_estate_power = 0.5

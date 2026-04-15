@@ -369,7 +369,7 @@ elysian_senatorial_tradition = {
 	global_crown_estate_power = 0.05
 }
 
-br_elysian_foederati = {
+br_elysian_foederati_advance = {
 	age = age_2_renaissance
 	icon = byz_shield_of_the_west
 	potential = {
@@ -381,8 +381,8 @@ br_elysian_foederati = {
 	}
 	requires = elysian_senatorial_tradition
     wrong_culture_levy_size = 0.25
-	#tribal privilege
-	#tribal building
+	unlock_estate_privilege = br_elysian_foederati
+	#TODO unlock tribal building
 }
 
 elysian_emporia_of_the_west = {
