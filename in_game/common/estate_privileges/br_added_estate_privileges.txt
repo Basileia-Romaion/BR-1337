@@ -111,6 +111,7 @@ br_dynatoi_magnates = {
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		global_peasant_enfranchisment = -0.05
 	}
 	location_modifier = {
         potential_trigger = {
@@ -226,18 +227,21 @@ br_frontier_expansion_privilege = {
 	country_modifier = {
 		global_peasants_estate_power = 1
 		peasants_estate_target_satisfaction = small_privilege_target_satisfaction
-		allow_native_subjugation_cb = yes
-		enslave_tribals = yes
-		allow_rgo_slave_demand = yes
-		auto_slave_raid_different_religion = yes
-		global_peasant_enfranchisment = 0.05
-		global_army_levy_size_modifier = 0.1
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_belligerent = societal_value_minor_monthly_move
 		tribes_estate_target_satisfaction = -0.25
+		allow_rgo_slave_demand = yes
+		global_peasant_enfranchisment = 0.05
+		global_army_levy_size_modifier = 0.1
 		aggressiveness_modifier = 0.25
 		expected_warscore_modifier = 0.25
 		antagonism_tolerance = 10
+	}
+	country_modifier = {
+		potential_trigger = {  societal_value:belligerent_vs_conciliatory <= -25 }
+		enslave_tribals = yes
+		allow_native_subjugation_cb = yes
+		auto_slave_raid_different_religion = yes
 	}
 }
 

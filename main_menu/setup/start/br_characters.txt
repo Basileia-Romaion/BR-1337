@@ -538,6 +538,46 @@ character_db={
 #Elysium
 
 	#E1Y
+	br_e1y_character_1 = {
+		first_name = "Aurelian"
+		culture = aureliani
+		religion = hellenism_religion
+		birth_date = 1286.1.1
+		birth = patapsco
+		dynasty = galantius_dynasty
+		tag = E1Y
+	}
+	br_e1y_character_2 = {
+		first_name = "Aurelius"
+		culture = aureliani
+		religion = hellenism_religion
+		birth_date = 1304.1.1
+		birth = patapsco
+		father = br_e1y_character_1
+		dynasty = galantius_dynasty
+		tag = E1Y
+	}
+	br_e1y_character_3 = {
+		first_name = "Augustine"
+		culture = aureliani
+		religion = hellenism_religion
+		birth_date = 1324.1.1
+		birth = patapsco
+		father = br_e1y_character_2
+		dynasty = galantius_dynasty
+		tag = E1Y
+	}
+	br_e1y_character_4 = {
+		first_name = "Aurelia"
+		culture = aureliani
+		religion = hellenism_religion
+		birth_date = 1328.1.1
+		birth = patapsco
+		female = yes
+		father = br_e1y_character_2
+		dynasty = galantius_dynasty
+		tag = E1Y
+	}
 	br_ely_rdm_character_00 = {
 		first_name = "random"
 		culture = aureliani

@@ -769,7 +769,8 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = br_e1y_character_1
+				ruler_term = { character = br_e1y_character_1 start_date = 1308.5.24 }
 			}
 			
 			tolerated_cultures = {
