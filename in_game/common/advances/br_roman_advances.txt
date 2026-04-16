@@ -183,7 +183,7 @@ roman_scribal_administration = {
 			culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
-	requires = renaissance_advance
+	requires = renaissance_development
 	research_speed_modifier = 0.05
 	global_clergy_max_literacy = 5
 	global_books_output_modifier = 0.05
@@ -234,7 +234,7 @@ br_tagmata_barracks_advance = { #loc
 	potential = {
 		potential = { has_or_had_tag = BYZ }
 	}
-	requires = pike_square
+	requires = medieval_military
 	global_manpower_modifier = 0.05
 	unlock_building = br_tagmata_barracks
 	ai_weight = { add = 5 }
@@ -510,7 +510,7 @@ br_age_2_kontaratoi_advance = {
 		}
 	}
 	icon = byz_cataphracts_advance
-	requires = byz_shield_of_the_west
+	requires = army_initiative_ren
 	unlock_unit = br_age_2_kontaratoi
 	ai_weight = { add = 5 }
 }

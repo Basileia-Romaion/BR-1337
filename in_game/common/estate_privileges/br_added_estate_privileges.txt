@@ -233,15 +233,15 @@ br_frontier_expansion_privilege = {
 		allow_rgo_slave_demand = yes
 		global_peasant_enfranchisment = 0.05
 		global_army_levy_size_modifier = 0.1
-		aggressiveness_modifier = 0.25
-		expected_warscore_modifier = 0.25
-		antagonism_tolerance = 10
+		allow_native_subjugation_cb = yes
+		auto_slave_raid_different_religion = yes
 	}
 	country_modifier = {
 		potential_trigger = {  societal_value:belligerent_vs_conciliatory <= -25 }
 		enslave_tribals = yes
-		allow_native_subjugation_cb = yes
-		auto_slave_raid_different_religion = yes
+		aggressiveness_modifier = 0.25
+		expected_warscore_modifier = 0.25
+		antagonism_tolerance = 10
 	}
 }
 

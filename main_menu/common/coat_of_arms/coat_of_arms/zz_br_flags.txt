@@ -416,8 +416,9 @@ AN10 = {
 	color2 = "black"
 	colored_emblem = {
 		texture = "ce_bell_random_small.dds"
-		color1 = "black"
-		color2 = "black"
+		color1 = "white"
+		color2 = "white"
+		color3 = "black"
 		instance = { position = { 0.315 0.29 } scale = { 0.48 0.48 }  }
 		instance = { position = { 0.685 0.29 } scale = { 0.48 0.48 }  }
 		instance = { position = { 0.5 0.68 } scale = { 0.48 0.48 }  }
@@ -430,11 +431,11 @@ AN2 = {
 	color2 = "white"
 	colored_emblem = {
 		texture = "ce_chalice.dds"
-		color1 = "black"
-		color2 = "black"
-		instance = { position = { 0.33 0.25 } scale = { 0.6 0.6 }  }
-		instance = { position = { 0.68 0.25 } scale = { 0.6 0.6 }  }
-		instance = { position = { 0.5 0.67 } scale = { 0.6 0.6 }  }
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.33 0.25 } scale = { 0.45 0.45 }  }
+		instance = { position = { 0.68 0.25 } scale = { 0.45 0.45 }  }
+		instance = { position = { 0.5 0.67 } scale = { 0.45 0.45 }  }
 	}
 }
 
@@ -517,17 +518,7 @@ PAF = {
 	}
 }
 
-AON = {
-	pattern = "pattern_solid.dds"
-	color1 = "white"
-	color2 = "blue"
-	colored_emblem = {
-		texture = "ce_stripes_05_shield_center.dds"
-		color1 = "blue"
-		color2 = "white"
-		instance = { position = { 0.50 0.50 } scale = { 1.13 1.13 }  }
-	}
-}
+AON = ANA
 
 AOI = {
 	pattern = "pattern_solid.dds"

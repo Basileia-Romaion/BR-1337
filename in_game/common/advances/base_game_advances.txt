@@ -27,7 +27,7 @@ REPLACE_OR_CREATE:expand_varangian_guard_advance = {
 	potential = { has_or_had_tag = BYZ }
 	unlock_unit = br_renaissance_varangians
 	#num_of_varangian_units = 6
-	requires = gunpowder_advance
+	requires = medieval_military
 	ai_weight = { add = 5 }
 }
 

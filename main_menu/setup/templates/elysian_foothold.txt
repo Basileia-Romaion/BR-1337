@@ -6,18 +6,18 @@ government = {
 	ruler = random
 	
 	centralization_vs_decentralization = 50
-	aristocracy_vs_plutocracy = 50
+	aristocracy_vs_plutocracy = -25
 	serfdom_vs_free_subjects = 50
-	traditionalist_vs_innovative = 0
-	spiritualist_vs_humanist = 25
+	traditionalist_vs_innovative = -50
+	spiritualist_vs_humanist = -25
 	mercantilism_vs_free_trade = 25
-	offensive_vs_defensive = 50
-	land_vs_naval = -25
+	offensive_vs_defensive = -50
+	land_vs_naval = -50
 	quality_vs_quantity = -25
-	belligerent_vs_conciliatory = 50
-	capital_economy_vs_traditional_economy = -50
+	belligerent_vs_conciliatory = -50
+	capital_economy_vs_traditional_economy = 25
 	individualism_vs_communalism = 25
-	outward_vs_inward = -25
+	outward_vs_inward = 50
 
 	parliament = {
 		parliament_type = estate_parliament
@@ -50,10 +50,14 @@ government = {
 	}
 				
 	laws = {
-		#legal_code_law = byzantine_law
-		distribution_of_power_law = dop_favor_the_ruler
+		legal_code_law = byzantine_law
+		royal_court_customs_law = br_roman_court_customs
+		distribution_of_power_law = br_roman_distribution_of_power_law
+		#administrative_system = pronoia_system
+		medieval_levy_law = br_thema_levies
+		cultural_traditions_law = br_roman_tradition
+		br_military_frontier = br_frontier_maintained
 		feudal_de_jure_law = by_blood
-
 		censorship = limited_censorship
 		education_masses_law = basic_religious_education
 		administrative_system = central_councils
@@ -65,7 +69,6 @@ government = {
 		piracy_law = anti_piracy_policy
 		immigration_law = open_borders_law
 		mining_law = peasants_mining_law
-
 	}
 	
 }

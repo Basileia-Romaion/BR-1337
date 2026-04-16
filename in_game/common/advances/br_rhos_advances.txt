@@ -53,7 +53,7 @@ rhos_riverine_commerce = {
 			culture = culture:rhos_culture
 		}
 	}
-	requires = maritime_advance_age_2
+	requires = naval_morale_advance_1
 	trade_range_modifier = 0.15
 	ai_weight = { add = 5 }
 }
@@ -67,7 +67,7 @@ rhos_court_of_many_tongues = {
 			culture = culture:rhos_culture
 		}
 	}
-	requires = vibrant_court_advance
+	requires = renaissance_development
 	diplomatic_capacity = 1
 	ai_weight = { add = 5 }
 }

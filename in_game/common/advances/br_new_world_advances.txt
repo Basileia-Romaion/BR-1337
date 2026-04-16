@@ -365,7 +365,7 @@ elysian_senatorial_tradition = {
 		}
 	}
 	#building unlock
-	requires = vibrant_court_advance
+	requires = renaissance_development
 	diplomatic_capacity = 1
 	global_crown_estate_power = 0.05
 }
@@ -380,7 +380,7 @@ br_elysian_foederati_advance = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	requires = elysian_senatorial_tradition
+	requires = medieval_military
     wrong_culture_levy_size = 0.25
 	unlock_estate_privilege = br_elysian_foederati_privilege
 	#TODO unlock tribal building
@@ -410,7 +410,7 @@ elysian_emporia_of_the_west = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	requires = merchants_and_trade
+	requires = naval_morale_advance_1
 	merchant_power_from_maritime = 0.025
 }
 
