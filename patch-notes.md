@@ -1,5 +1,99 @@
 
 
+# Patch Notes
+
+.17
+
+## Estates & Privileges
+- Added **Latin Occupiers** estate privilege (`br_latin_occupiers`)
+  - Includes cultural requirements, buffs/debuffs, and revoke conditions
+  - Enabled for select countries at game start
+- Added **Tsar Bulgars & Romans** nobles privilege (`br_tsar_bulgars_romans`)
+  - Modifies levy size, culture capacity, assimilation, and humanist shift
+- Added **Elysian Foederati** advance and corresponding tribal estate privilege
+- Updated **Dynatoi Magnates**
+  - Now requires `government_power > 75` to revoke
+  - Added peasant enfranchisement modifier
+- Reworked **Frontier Expansion privilege**
+  - Separated coercive effects into conditional modifiers
+- Updated icons and localization across estate privileges
+
+## Events
+- Reworked **ERE Event Chain**
+  - Removed redundant high-reward options from `br_ere_events.1`
+  - Moved rewards to annexation event branch (`br_ere_events.4`)
+- Added **Varangian Reform Event Chain**
+  - Reform event with follow-up Varangian backlash
+  - Includes ruler risks, stability impact, revolt outcomes, and modifiers
+- Added **Sardinia startup event** and **Sicilian startup content**
+- Added **B0L (Doukai/Bulgarian) startup event**
+- Disabled problematic instant annexation and mass unit spawning in Indikes events
+- Fixed multiple event localization key mismatches and duplicates
+
+## Countries & Setup
+- Added new countries:
+  - **Sardinia (SAR)**
+  - **B0L (Doukai/Bulgarian state)**
+- Reworked **Ottoman (TUR) setup**
+  - Updated laws, removed steppe mechanics, increased starting gold
+- Assigned **historical rulers** instead of random ones across multiple countries
+- Adjusted country ranks, governments, and startup configurations
+- Expanded **HRE Elector system**
+  - Increased both secular and ecclesiastical electors
+- Added **border war CBs** for key regional conflicts at game start
+- Updated international organization memberships and diplomacy setups
+
+## Mechanics & Balance
+- Added **trade range modifiers** to infrastructure and advances
+- Introduced **Varangian Custodianship** country modifier
+- Replaced legacy modifiers with `br_levy_size_modifier` where applicable
+- Expanded **Roman world mechanics**
+  - Italy now counts toward Roman systems and ownership
+  - Added power projection to Roman world entity
+- Adjusted **Romaiokratia law**
+  - Now applies monthly complacency effects at the final tiers.
+
+## Cultures
+- Migrated content focus from `greek_group` → `roman_group`
+  - Elysians added to Roman group
+- Added and rebalanced **culture-specific modifiers**
+  - Military, economic, trade, and conversion bonuses
+- Enhanced **Greek culture modifiers**
+  - Expanded military, naval, economic, and infrastructure bonuses
+- Added **location-based modifiers**
+  - Assimilation, conversion, separatism, and regional effects
+- Removed redundant or duplicated culture entries (e.g., Sicilian merge)
+
+## Characters
+- Added new characters:
+  - Sardinian, Elysian, and Doukai-related figures
+- Updated tags, stats, and assignments for consistency
+- Fixed incorrect character-country mappings
+- Standardized ruler terms and start dates
+
+## Map, Flags & Visuals
+- Added extensive **new coat of arms definitions**
+  - Covers Italy, Anatolia, Balkans, and more
+- Updated existing **flag assets and layouts** for SY variants
+
+## Systems & Files
+- Moved `br_country` modifiers to proper directory and expanded functionality
+- Split **formable countries** into:
+  - Base definitions
+  - Mod-specific overrides
+- Updated **scripted effects** (HRE elector mechanics)
+- Cleaned up file structure, formatting, and redundant code
+
+## Localization
+- Added extensive English localization for:
+  - New privileges, events, countries, and modifiers
+- Fixed spacing, formatting, and duplicate keys across multiple files
+- Elysian namelist greatly expanded thanks to Davids continued effort.
+
+## Miscellaneous
+- Disabled unintended behaviors (instant annexation, unit spawning)
+- Improved consistency across triggers, scopes, and conditions
+- General cleanup and optimization across all modified files
 
 # .16
 
