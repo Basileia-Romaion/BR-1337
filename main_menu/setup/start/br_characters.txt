@@ -476,7 +476,7 @@ character_db={
 		birth = constanta
 		father = br_ere_rdm_character_37
 		dynasty = doukas_dynasty
-		tag = B0L
+		tag = WA2
 	}
 	br_ere_rdm_character_39 = {
 		first_name = "random"
@@ -850,7 +850,7 @@ character_db={
 		dynasty = botaneiates_dynasty
 		tag = BYZ
 	}
- #armenopoulos_dynasty
+ #Armenopoulos
 	br_ere_rdm_character_75 = {
 		first_name = "random"
 		culture = greek_culture
@@ -858,7 +858,7 @@ character_db={
 		birth_date = 1294.1.1
 		birth = kayseri
 		dynasty = armenopoulos_dynasty
-		tag = AN5
+		tag = AN3
 	}
 	br_ere_rdm_character_76 = {
 		first_name = "random"
@@ -868,7 +868,7 @@ character_db={
 		birth = kayseri
 		father = br_ere_rdm_character_75
 		dynasty = armenopoulos_dynasty
-		tag = AN5
+		tag = AN3
 	}
 	br_ere_rdm_character_77 = {
 		first_name = "random"
@@ -881,6 +881,123 @@ character_db={
 		dynasty = armenopoulos_dynasty
 		tag = BYZ
 	}
+ #Rangabes
+	br_ere_rdm_character_78 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = matera
+		dynasty = rangabes_dynasty
+		tag = S5C
+	}
+	br_ere_rdm_character_79 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = matera
+		father = br_ere_rdm_character_78
+		dynasty = rangabes_dynasty
+		tag = S5C
+	}
+	br_ere_rdm_character_80 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = matera
+		father = br_ere_rdm_character_78
+		dynasty = rangabes_dynasty
+		tag = BYZ
+	}
+ #Rogerios
+	br_ere_rdm_character_81 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = naples
+		dynasty = rogerios_dynasty
+		tag = N3P
+	}
+	br_ere_rdm_character_82 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = naples
+		father = br_ere_rdm_character_81
+		dynasty = rogerios_dynasty
+		tag = N3P
+	}
+	br_ere_rdm_character_83 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = naples
+		father = br_ere_rdm_character_81
+		dynasty = rogerios_dynasty
+		tag = N3P
+	}
+
+#Naples
+ #Hauteville
+	br_nap_rdm_character_1 = {
+		first_name = "random"
+		culture = neapolitan
+		religion = catholic
+		birth_date = 1294.1.1
+		birth = naples
+		dynasty = hauteville_dynasty
+		tag = BNV
+	}
+	br_nap_rdm_character_2 = {
+		first_name = "random"
+		culture = neapolitan
+		religion = catholic
+		birth_date = 1318.1.1
+		birth = naples
+		father = br_nap_rdm_character_1
+		dynasty = hauteville_dynasty
+		tag = N1P
+	}
+	br_nap_rdm_character_3 = {
+		first_name = "random"
+		culture = neapolitan
+		religion = catholic
+		birth_date = 1319.1.1
+		birth = naples
+		father = br_nap_rdm_character_1
+		dynasty = hauteville_dynasty
+		tag = N2P
+	}
+	br_nap_rdm_character_4 = {
+		first_name = "random"
+		female = yes
+		culture = neapolitan
+		religion = catholic
+		birth_date = 1320.1.1
+		birth = naples
+		father = br_nap_rdm_character_1
+		dynasty = hauteville_dynasty
+		tag = BNV
+	}
+	br_nap_rdm_character_5 = {
+		first_name = "random"
+		female = yes
+		culture = neapolitan
+		religion = catholic
+		birth_date = 1321.1.1
+		birth = naples
+		father = br_nap_rdm_character_1
+		dynasty = hauteville_dynasty
+		tag = BNV
+	}
+
 
 ####-Elysium-####
 

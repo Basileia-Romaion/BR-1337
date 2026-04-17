@@ -52305,7 +52305,8 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = salic_law
-				ruler = random
+				ruler = br_nap_rdm_character_1
+				ruler_term = { character = br_nap_rdm_character_1 start_date = 1335.1.1 }
 
 				centralization_vs_decentralization = 30
 				traditionalist_vs_innovative = -30
@@ -52341,7 +52342,8 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = salic_law
-				ruler = random
+				ruler = br_nap_rdm_character_2
+				ruler_term = { character = br_nap_rdm_character_2 start_date = 1335.1.1 }
 				
 				centralization_vs_decentralization = 30
 				traditionalist_vs_innovative = -30
@@ -52376,7 +52378,8 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = salic_law
-				ruler = random
+				ruler = br_nap_rdm_character_3
+				ruler_term = { character = br_nap_rdm_character_3 start_date = 1335.1.1 }
 				
 				centralization_vs_decentralization = 30
 				traditionalist_vs_innovative = -30
@@ -52408,7 +52411,8 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_81
+				ruler_term = { character = br_ere_rdm_character_81 start_date = 1335.1.1 }
 
 			}
 			capital = naples
@@ -52514,7 +52518,8 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_78
+				ruler_term = { character = br_ere_rdm_character_78 start_date = 1335.1.1 }
 			}
 			
 			accepted_cultures = {
@@ -54119,7 +54124,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_75
+				ruler_term = { character = br_ere_rdm_character_75 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_county

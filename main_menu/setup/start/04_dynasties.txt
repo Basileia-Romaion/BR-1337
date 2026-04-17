@@ -8700,18 +8700,33 @@ dynasty_manager = {
 	}
 
 	hexakionites_dynasty = { #BR addition
-		name = { name = Hexakionites  }
+		name = { name = Hexakionites }
 		home = bari
 	}
 
 	maniakes_dynasty = { #BR addition
-		name = { name = Maniakes  }
+		name = { name = Maniakes }
 		home = syracuse
 	}
 
 	boioannes_dynasty = { #BR addition
-		name = { name = Boioannes  }
+		name = { name = Boioannes }
 		home = catanzaro
+	}
+
+	rangabes_dynasty = { #BR addition
+		name = { name = Rangabes }
+		home = matera
+	}
+
+	rogerios_dynasty = { #BR addition
+		name = { name = Rogerios }
+		home = naples
+	}
+
+	hauteville_dynasty = { #BR addition
+		name = { name = Hauteville }
+		home = benevento
 	}
 
 }
