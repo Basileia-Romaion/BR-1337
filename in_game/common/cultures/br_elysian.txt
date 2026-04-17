@@ -11,6 +11,10 @@ aureliani = {
 		median = kindred
 		photianoi = kindred
 		elysian_culture = kindred
+	}
+	country_modifier = {
+		levy_combat_efficiency_modifier = 0.1
+		army_infantry_power = 0.1
 	}	
 	
 	culture_groups = {
@@ -30,6 +34,12 @@ photianoi = {
 		aureliani = kindred
 		elysian_culture = kindred
 	}
+	country_modifier = {
+		tolerance_own = 2
+	}
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.5
+	}
 	
 	culture_groups = {
 		elysian_group roman_group
@@ -46,6 +56,11 @@ elyrics_culture = {
 		photianoi = kindred
 		aureliani = kindred
 		elysian_culture = kindred
+	}
+
+	country_modifier = {
+		land_unit_attrition = -0.25
+		global_hostile_attrition = 0.1
 	}
 	
 	culture_groups = {
@@ -66,6 +81,9 @@ elysian_culture = {
 		photianoi = kindred
 		aureliani = kindred
 	}	
+	country_modifier = {
+		cultural_influence_modifier = 0.25
+	}
 	
 	culture_groups = {
 		elysian_group roman_group
@@ -83,6 +101,11 @@ kykladian_culture = {
 		elyrics_culture = positive
 		elysian_culture = positive
 		photianoi = kindred
+	}
+
+	country_modifier = {
+		trade_range_modifier = 0.5
+		global_sailors_modifier = 0.25
 	}
 	
 	culture_groups = {

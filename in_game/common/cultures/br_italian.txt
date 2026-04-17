@@ -8,6 +8,10 @@
 	opinions = {
 		greek_culture = positive
 	}
+	country_modifier = {
+		port_cost_distance_from_capital = -5
+		trade_range_modifier = 0.5
+	}
 	
 	culture_groups = {
 		italian_group
