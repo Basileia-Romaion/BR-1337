@@ -28,7 +28,7 @@ character_db={
 		father = byz_ioannes_synadenos
 		#mother = 
 		dynasty = synadenos_dynasty
-		tag = K1B
+		tag = DYR
 		admiral_trait = naval_showman
 	}
 
@@ -211,7 +211,7 @@ character_db={
 		father = tre_ioannes_ii_komnenos
 		mother = tre_eudokia_palaiologina
 		dynasty = komnenos_dynasty
-		tag = OHS
+		tag = AN6
 		#ruler_trait = eunuch
 	}
 	br_ere_rdm_character_15 = {
@@ -225,7 +225,7 @@ character_db={
 		father = br_ere_rdm_character_14
 		#mother = 
 		dynasty = komnenos_dynasty
-		tag = OHS
+		tag = P2N
 		#ruler_trait = eunuch
 	}
 	br_ere_rdm_character_16 = {
@@ -345,7 +345,7 @@ character_db={
 		birth = kayseri
 		father = br_ere_rdm_character_24
 		dynasty = phokas_dynasty
-		tag = AN8
+		tag = AN7
 	}
 	br_ere_rdm_character_26 = {
 		first_name = "random"
@@ -355,7 +355,7 @@ character_db={
 		birth = kayseri
 		father = br_ere_rdm_character_24
 		dynasty = phokas_dynasty
-		tag = AN8
+		tag = AN1
 	}
 	br_ere_rdm_character_27 = {
 		first_name = "random"
@@ -465,7 +465,6 @@ character_db={
 		religion = orthodox
 		birth_date = 1297.1.1
 		birth = vidin
-		estate = nobles_estate
 		dynasty = doukas_dynasty
 		tag = B0L
 	}
@@ -475,7 +474,6 @@ character_db={
 		religion = orthodox
 		birth_date = 1308.1.1
 		birth = constanta
-		estate = nobles_estate
 		father = br_ere_rdm_character_37
 		dynasty = doukas_dynasty
 		tag = B0L
@@ -486,7 +484,6 @@ character_db={
 		religion = orthodox
 		birth_date = 1309.1.1
 		birth = constanta
-		estate = nobles_estate
 		father = br_ere_rdm_character_38
 		dynasty = doukas_dynasty
 		tag = B0L
@@ -498,7 +495,6 @@ character_db={
 		religion = orthodox
 		birth_date = 1296.1.1
 		birth = kalamata
-		estate = nobles_estate
 		#father = 
 		#mother = 
 		dynasty = angelos_dynasty
@@ -510,7 +506,6 @@ character_db={
 		religion = orthodox
 		birth_date = 1306.1.1
 		birth = kalamata
-		estate = nobles_estate
 		father = br_ere_rdm_character_40
 		#mother = 
 		dynasty = angelos_dynasty
@@ -522,14 +517,372 @@ character_db={
 		religion = orthodox
 		birth_date = 1317.1.1
 		birth = kalamata
-		estate = nobles_estate
 		father = br_ere_rdm_character_41
 		#mother = 
 		dynasty = angelos_dynasty
 		tag = ACH
 	}
 
-#Elysium
+ #Maleinos
+	br_ere_rdm_character_43 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1296.1.1
+		birth = bozok
+		dynasty = maleinos_dynasty
+		tag = AN4
+	}
+	br_ere_rdm_character_44 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1313.1.1
+		birth = bozok
+		father = br_ere_rdm_character_43
+		dynasty = maleinos_dynasty
+		tag = AN4
+	}
+	br_ere_rdm_character_45 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1313.1.1
+		birth = bozok
+		father = br_ere_rdm_character_43
+		dynasty = maleinos_dynasty
+		tag = AN4
+	}
+	br_ere_rdm_character_46 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1327.1.1
+		birth = bozok
+		father = br_ere_rdm_character_44
+		dynasty = maleinos_dynasty
+		tag = AN4
+	}
+	br_ere_rdm_character_47 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1327.1.1
+		birth = bozok
+		father = br_ere_rdm_character_45
+		dynasty = maleinos_dynasty
+		tag = AN4
+	}
+ #Hexakionites
+	br_ere_rdm_character_48 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1296.1.1
+		birth = bari
+		dynasty = hexakionites_dynasty
+		tag = S2C
+	}
+	br_ere_rdm_character_49 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1313.1.1
+		birth = bari
+		father = br_ere_rdm_character_48
+		dynasty = hexakionites_dynasty
+		tag = S2C
+	}
+	br_ere_rdm_character_50 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1316.1.1
+		birth = bari
+		father = br_ere_rdm_character_48
+		dynasty = hexakionites_dynasty
+		tag = S2C
+	}
+ #Maniakes
+	br_ere_rdm_character_51 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1296.1.1
+		birth = syracuse
+		dynasty = maniakes_dynasty
+		tag = S1C
+	}
+	br_ere_rdm_character_52 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1313.1.1
+		birth = syracuse
+		father = br_ere_rdm_character_51
+		dynasty = maniakes_dynasty
+		tag = S1C
+	}
+	br_ere_rdm_character_53 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1316.1.1
+		birth = syracuse
+		father = br_ere_rdm_character_51
+		dynasty = maniakes_dynasty
+		tag = S1C
+	}
+ #Boioannes
+	br_ere_rdm_character_54 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = catanzaro
+		dynasty = boioannes_dynasty
+		tag = S3C
+	}
+	br_ere_rdm_character_55 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1312.1.1
+		birth = catanzaro
+		father = br_ere_rdm_character_54
+		dynasty = boioannes_dynasty
+		tag = S3C
+	}
+	br_ere_rdm_character_56 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = catanzaro
+		father = br_ere_rdm_character_54
+		dynasty = boioannes_dynasty
+		tag = S3C
+	}
+	br_ere_rdm_character_57 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = catanzaro
+		father = br_ere_rdm_character_54
+		dynasty = boioannes_dynasty
+		tag = S3C
+	}
+ #Vatatzes
+	br_ere_rdm_character_58 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = beysehir
+		dynasty = vatatzes_dynasty
+		tag = AN9
+	}
+	br_ere_rdm_character_59 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1312.1.1
+		birth = beysehir
+		father = br_ere_rdm_character_58
+		dynasty = vatatzes_dynasty
+		tag = AN9
+	}
+	br_ere_rdm_character_60 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = beysehir
+		father = br_ere_rdm_character_58
+		dynasty = vatatzes_dynasty
+		tag = AN9
+	}
+	br_ere_rdm_character_61 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = beysehir
+		father = br_ere_rdm_character_58
+		dynasty = vatatzes_dynasty
+		tag = AN9
+	}
+ #Laskaris
+	br_ere_rdm_character_62 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = konya
+		father = byz_ioannes_iv_laskaris
+		dynasty = laskaris_dynasty
+		tag = ICO
+	}
+	br_ere_rdm_character_63 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1312.1.1
+		birth = konya
+		father = br_ere_rdm_character_62
+		dynasty = laskaris_dynasty
+		tag = ICO
+	}
+	br_ere_rdm_character_64 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = konya
+		father = br_ere_rdm_character_62
+		dynasty = laskaris_dynasty
+		tag = ICO
+	}
+	br_ere_rdm_character_65 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = konya
+		father = br_ere_rdm_character_62
+		dynasty = laskaris_dynasty
+		tag = ICO
+	}
+ #Tornikios
+	br_ere_rdm_character_66 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = sivas
+		dynasty = tornikios_dynasty
+		tag = AN2
+	}
+	br_ere_rdm_character_67 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = sivas
+		father = br_ere_rdm_character_66
+		dynasty = tornikios_dynasty
+		tag = AN2
+	}
+	br_ere_rdm_character_68 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = sivas
+		father = br_ere_rdm_character_66
+		dynasty = tornikios_dynasty
+		tag = AN2
+	}
+ #Bryennios
+	br_ere_rdm_character_69 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = amasra
+		dynasty = bryennios_dynasty
+		tag = PAF
+	}
+	br_ere_rdm_character_70 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = amasra
+		father = br_ere_rdm_character_69
+		dynasty = bryennios_dynasty
+		tag = PAF
+	}
+	br_ere_rdm_character_71 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = amasra
+		father = br_ere_rdm_character_69
+		dynasty = bryennios_dynasty
+		tag = BYZ
+	}
+ #Botaneiates
+	br_ere_rdm_character_72 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = kayseri
+		dynasty = botaneiates_dynasty
+		tag = AN5
+	}
+	br_ere_rdm_character_73 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_72
+		dynasty = botaneiates_dynasty
+		tag = AN5
+	}
+	br_ere_rdm_character_74 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_72
+		dynasty = botaneiates_dynasty
+		tag = BYZ
+	}
+ #armenopoulos_dynasty
+	br_ere_rdm_character_75 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = kayseri
+		dynasty = armenopoulos_dynasty
+		tag = AN5
+	}
+	br_ere_rdm_character_76 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_75
+		dynasty = armenopoulos_dynasty
+		tag = AN5
+	}
+	br_ere_rdm_character_77 = {
+		first_name = "random"
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1318.1.1
+		birth = kayseri
+		father = br_ere_rdm_character_75
+		dynasty = armenopoulos_dynasty
+		tag = BYZ
+	}
+
+####-Elysium-####
 
 	#E1Y
 	br_e1y_character_1 = {

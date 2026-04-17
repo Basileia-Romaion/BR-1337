@@ -18763,7 +18763,6 @@ countries = {
 			religious_school = maliki_school
 			government = { mysticism_vs_jurisprudence = -5 }
 			
-			accepted_cultures = { arab_sicilian }
 			tolerated_cultures = {
 				algerian
 				kabyle
@@ -32035,19 +32034,16 @@ countries = {
 			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
-			include = "catholic_monarchy"
-			include = "feudal_europe"
+			include = "br_pronoia_template"
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = tre_ioannes_iii_komnenos
+				ruler_term = { character = tre_ioannes_iii_komnenos start_date = 1335.1.1 }
 			}
 			
 			accepted_cultures = {
 				latinoi
 			}
 			
-			court_language = venetian_dialect
 			liturgical_language = khoine_dialect
 			capital = nicosia_cyp
 			country_rank = rank_duchy
@@ -52437,14 +52433,12 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_51
+				ruler_term = { character = br_ere_rdm_character_51 start_date = 1297.11.1 }
 			}
 			
 			accepted_cultures = {
 				greek_culture
-			}
-			tolerated_cultures = {
-				sicilian
 			}
 			
 			country_rank = rank_duchy
@@ -52465,14 +52459,12 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_48
+				ruler_term = { character = br_ere_rdm_character_48 start_date = 1335.1.1 }
 			}
 			
 			accepted_cultures = {
 				greek_culture
-			}
-			tolerated_cultures = {
-				sicilian
 			}
 			
 			country_rank = rank_duchy
@@ -52494,14 +52486,12 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_54
+				ruler_term = { character = br_ere_rdm_character_54 start_date = 1297.11.1 }
 			}
 			
 			accepted_cultures = {
 				greek_culture
-			}
-			tolerated_cultures = {
-				sicilian
 			}
 			
 			country_rank = rank_duchy
@@ -52529,9 +52519,6 @@ countries = {
 			
 			accepted_cultures = {
 				greek_culture
-			}
-			tolerated_cultures = {
-				sicilian
 			}
 			
 			country_rank = rank_duchy
@@ -52627,9 +52614,8 @@ countries = {
 			religious_school = maliki_school
 			government = { mysticism_vs_jurisprudence = -5 }
 			
-			accepted_cultures = { arab_sicilian }
+			#accepted_cultures = { arab_sicilian }
 			tolerated_cultures = {
-				sicilian
 				griko_culture
 				sardinian
 			}
@@ -52934,7 +52920,8 @@ countries = {
 					heir_religion_law = heir_same_religion
 				}
 				
-				ruler = random
+				ruler = br_ere_rdm_character_45
+				ruler_term = { character = br_ere_rdm_character_45 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_county
@@ -52968,7 +52955,8 @@ countries = {
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_01
+				ruler_term = { character = br_ere_rdm_character_01 start_date = 1335.1.1 }
 			}
 			
 			tolerated_cultures = {
@@ -53088,9 +53076,8 @@ countries = {
 			include = "eastern_european_monarchy_no_coast"
 			
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = bul_ivan_sratsimir
+				ruler_term = { character = bul_ivan_sratsimir start_date = 1333.1.1 }
 				
 				centralization_vs_decentralization = 70
 				aristocracy_vs_plutocracy = -50
@@ -53129,9 +53116,8 @@ countries = {
 			include = "eastern_european_monarchy_no_coast"
 			
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = bul_michail_iv_asen
+				ruler_term = { character = bul_michail_iv_asen start_date = 1333.1.1 }
 				
 				centralization_vs_decentralization = 70
 				aristocracy_vs_plutocracy = -50
@@ -53170,9 +53156,8 @@ countries = {
 			include = "eastern_european_monarchy_no_coast"
 			
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = br_ere_rdm_character_39
+				ruler_term = { character = br_ere_rdm_character_39 start_date = 1333.1.1 }
 				
 				centralization_vs_decentralization = 70
 				aristocracy_vs_plutocracy = -50
@@ -53213,9 +53198,8 @@ countries = {
 			include = "eastern_european_monarchy"
 			country_rank = rank_duchy
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = bul_michail_sratsimir
+				ruler_term = { character = bul_michail_sratsimir start_date = 1333.1.1 }
 				
 				reforms = {
 					autocracy
@@ -53258,9 +53242,8 @@ countries = {
 			include = "eastern_european_monarchy"
 			country_rank = rank_duchy
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = bul_ivan_stefan
+				ruler_term = { character = bul_ivan_stefan start_date = 1333.1.1 }
 				
 				reforms = {
 					autocracy
@@ -53304,9 +53287,8 @@ countries = {
 			include = "eastern_european_monarchy"
 			country_rank = rank_duchy
 			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
+				ruler = bul_ivan_asen
+				ruler_term = { character = bul_ivan_asen start_date = 1333.1.1 }
 				
 				reforms = {
 					autocracy
@@ -53443,8 +53425,7 @@ countries = {
 			
 			government = {
 				type = theocracy
-				ruler = br_ere_rdm_character_14
-				ruler_term = { character = br_ere_rdm_character_14 start_date = 1332.1.1 }
+				ruler = random
 			}
 			
 			currency_data = {
@@ -53598,8 +53579,8 @@ countries = {
 			
 			government = {
 				type = theocracy
-				ruler = br_ere_rdm_character_13
-				ruler_term = { character = br_ere_rdm_character_13 start_date = 1332.1.1 }
+				ruler = random
+
 			}
 			
 			currency_data = {
@@ -53792,7 +53773,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_62
+				ruler_term = { character = br_ere_rdm_character_62 start_date = 1297.11.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -53828,7 +53810,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = byz_alexios_apokaukos
+				ruler_term = { character = byz_alexios_apokaukos start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -53869,7 +53852,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_69
+				ruler_term = { character = br_ere_rdm_character_69 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -53910,7 +53894,7 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-				ruler = br_ere_rdm_character_01
+				ruler = random
 			}
 			currency_data = {
 				gold = 1250
@@ -54063,7 +54047,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_26
+				ruler_term = { character = br_ere_rdm_character_26 start_date = 1297.11.1 }
 			}
 			
 			country_rank = rank_county
@@ -54098,7 +54083,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_66
+				ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54163,7 +54149,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_43
+				ruler_term = { character = br_ere_rdm_character_43 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54194,7 +54181,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_72
+				ruler_term = { character = br_ere_rdm_character_72 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_county
@@ -54226,7 +54214,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_14
+				ruler_term = { character = br_ere_rdm_character_14 start_date = 1332.1.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54259,7 +54248,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_25
+				ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
 			}
 			
 			country_rank = rank_duchy
@@ -54323,7 +54313,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_58
+				ruler_term = { character = br_ere_rdm_character_58 start_date = 1297.11.1 }
 			}
 			
 			country_rank = rank_county
@@ -54451,7 +54442,8 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-				ruler = random
+				ruler = br_ere_rdm_character_15
+				ruler_term = { character = br_ere_rdm_character_15 start_date = 1332.1.1 }
 			}
 			
 			country_rank = rank_county
