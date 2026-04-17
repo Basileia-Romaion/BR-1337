@@ -4,6 +4,8 @@
 
 .17
 
+# Patch Notes
+
 ## Estates & Privileges
 - Added **Latin Occupiers** estate privilege (`br_latin_occupiers`)
   - Includes cultural requirements, buffs/debuffs, and revoke conditions
@@ -15,7 +17,9 @@
   - Now requires `government_power > 75` to revoke
   - Added peasant enfranchisement modifier
 - Reworked **Frontier Expansion privilege**
-  - Separated coercive effects into conditional modifiers
+  - Reordered modifiers and separated conditional effects
+  - Enabled native subjugation and automatic slave raiding
+  - Moved aggressiveness and war-related modifiers into country scope
 - Updated icons and localization across estate privileges
 
 ## Events
@@ -37,13 +41,17 @@
 - Reworked **Ottoman (TUR) setup**
   - Updated laws, removed steppe mechanics, increased starting gold
 - Assigned **historical rulers** instead of random ones across multiple countries
-- Adjusted country ranks, governments, and startup configurations
+- Added and integrated **new dynasties** (Maleinos, Hexakionites, Maniakes, Boioannes, Vatatzes, Laskaris, Tornikios, Bryennios, Botaneiates, Armenopoulos, Rangabes, Rogerios, Hauteville)
 - Expanded **HRE Elector system**
   - Increased both secular and ecclesiastical electors
 - Added **border war CBs** for key regional conflicts at game start
 - Updated international organization memberships and diplomacy setups
+- Applied **pronoia template** and refined laws, court language, and culture setups
+- Ensured consistent starting rulers with fixed `ruler_term` dates (replacing random rulers)
 
 ## Mechanics & Balance
+- Reworked **advance progression paths**
+  - Updated prerequisites across Roman, Varangian, Elysian, and Rhos advances
 - Added **trade range modifiers** to infrastructure and advances
 - Introduced **Varangian Custodianship** country modifier
 - Replaced legacy modifiers with `br_levy_size_modifier` where applicable
@@ -51,30 +59,41 @@
   - Italy now counts toward Roman systems and ownership
   - Added power projection to Roman world entity
 - Adjusted **Romaiokratia law**
-  - Now applies monthly complacency effects at the final tiers.
+  - Now applies monthly complacency effects
+- Updated **Elysian foothold template**
+  - Rebalanced political axis (less centralized/belligerent)
+  - Enabled and adjusted multiple laws and societal presets
 
 ## Cultures
 - Migrated content focus from `greek_group` → `roman_group`
   - Elysians added to Roman group
 - Added and rebalanced **culture-specific modifiers**
-  - Military, economic, trade, and conversion bonuses
+  - Military, attrition, trade, and conversion bonuses across multiple cultures
 - Enhanced **Greek culture modifiers**
-  - Expanded military, naval, economic, and infrastructure bonuses
+  - Added negative relations with Sclavene and Bulgarian cultures
+- Updated **Italian and Elysian culture modifiers**
+  - Trade range, port cost scaling, sailors, and cultural influence
 - Added **location-based modifiers**
   - Assimilation, conversion, separatism, and regional effects
 - Removed redundant or duplicated culture entries (e.g., Sicilian merge)
 
 ## Characters
-- Added new characters:
-  - Sardinian, Elysian, and Doukai-related figures
-- Updated tags, stats, and assignments for consistency
-- Fixed incorrect character-country mappings
-- Standardized ruler terms and start dates
+- Added large sets of **new dynasties and characters**
+  - Includes Byzantine, Italian, and regional families
+- Updated **character data**
+  - Fixed birthdates, cultures, family links, and parent relationships
+- Adjusted **character tags and estate assignments**
+- Standardized **ruler assignments**
+  - Replaced random rulers with scripted historical characters
+  - Added consistent `ruler_term` start dates
 
-## Map, Flags & Visuals
+## Map, Pops & Visuals
+- Updated **coat of arms**
+  - Adjusted colors, scaling, and replaced redundant entries
+- Consolidated **North American population setup**
+  - Merged smaller pop groups and rebalanced sizes
 - Added extensive **new coat of arms definitions**
   - Covers Italy, Anatolia, Balkans, and more
-- Updated existing **flag assets and layouts** for SY variants
 
 ## Systems & Files
 - Moved `br_country` modifiers to proper directory and expanded functionality
@@ -86,9 +105,8 @@
 
 ## Localization
 - Added extensive English localization for:
-  - New privileges, events, countries, and modifiers
+  - New privileges, events, countries, dynasties, and modifiers
 - Fixed spacing, formatting, and duplicate keys across multiple files
-- Elysian namelist greatly expanded thanks to Davids continued effort.
 
 ## Miscellaneous
 - Disabled unintended behaviors (instant annexation, unit spawning)
