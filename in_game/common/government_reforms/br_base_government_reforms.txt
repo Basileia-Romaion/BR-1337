@@ -96,6 +96,7 @@ REPLACE_OR_CREATE:theme_system = {
 		allow_thema_headquarters = yes
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		global_max_rural_control = -0.02
+		levy_maintenance_modifier = -0.1
 	}
 	years = 2
 }
@@ -170,7 +171,7 @@ REPLACE_OR_CREATE:family_sagas_reform = {
 		may_explore = yes
 		cultural_tradition = 2
 		monthly_towards_naval = societal_value_tiny_monthly_move
-		tribes_estate_levy_size = 2
+		tribes_estate_levy_size = 1
 	}
 	years = 2
 }

@@ -37,7 +37,8 @@ boyarski_voiski = {
 		# Military boosts
 		nobles_estate_levy_size = 0.25
 		global_army_levy_size_modifier = 0.1
-		global_manpower_modifier = 0.1
+		levy_maintenance_modifier = -0.25
+		#global_manpower_modifier = 0.1
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_land = societal_value_minor_monthly_move
 	}
@@ -278,7 +279,8 @@ br_themata_peasant_privilege = {
 		#peasants_estate_max_tax = 0.05
 		monthly_experience_gain = 0.05
 		peasants_estate_levy_size = 0.1
-		army_maintenance_cost = -0.05
+		#army_maintenance_cost = -0.05
+		levy_maintenance_modifier = -0.25
 	}
 	#negative
 	country_modifier = {
@@ -312,6 +314,7 @@ br_arm_highland_villages = { #will break up and balance later.
 		global_max_control = -0.05
 		peasants_estate_levy_size = 0.1
 		fort_maintenance_cost = -0.1
+		levy_maintenance_modifier = -0.1
 	}
 }
 
@@ -581,6 +584,7 @@ br_elysian_foederati_privilege = {
 		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
 		tribes_estate_levy_size = 0.5
 		wrong_culture_levy_size = 0.1
+		levy_maintenance_modifier = -0.1
 		monthly_towards_free_subjects = societal_value_monthly_move
 	}
 }

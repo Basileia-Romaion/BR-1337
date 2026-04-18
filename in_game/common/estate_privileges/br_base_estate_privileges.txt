@@ -253,6 +253,7 @@ REPLACE_OR_CREATE:zupa_districts = {
 	country_modifier = {  #BR ADDED
 		potential_trigger = { "estate_power(estate_type:crown_estate)" >= 0.25 }
 		global_army_levy_size_modifier = 0.15
+		levy_maintenance_modifier = -0.15
 	}
 }
 

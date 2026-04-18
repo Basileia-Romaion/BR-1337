@@ -231,9 +231,7 @@ br_stationes_advance = { #loc
 br_tagmata_barracks_advance = { #loc
 	age = age_2_renaissance
 	icon = byz_modernized_strategikon
-	potential = {
-		potential = { has_or_had_tag = BYZ }
-	}
+	potential = { has_or_had_tag = BYZ }
 	requires = medieval_military
 	global_manpower_modifier = 0.05
 	unlock_building = br_tagmata_barracks
