@@ -75,3 +75,14 @@ REPLACE_OR_CREATE:LON = { # BR edit (repurposed as asturias)
 	}
 
 }
+
+INJECT:BYZ = {
+	flag_definition = {
+		coa = BR_ERE_FLAG
+		priority = 15
+		trigger = {
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+}
+

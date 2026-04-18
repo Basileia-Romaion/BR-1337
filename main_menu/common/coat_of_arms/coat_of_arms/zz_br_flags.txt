@@ -1,5 +1,17 @@
 ﻿#Start file name with zz_ because the file needs to load after the vanilla file to overwrite the flag definitions
 
+BR_ERE_FLAG = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+	color3 = "yellow"
+	
+	textured_emblem = {
+		texture = "br_ere_flag.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+
 ELY = { # Elysium
     pattern = "pattern_solid.dds"
     color1 = "purple"
