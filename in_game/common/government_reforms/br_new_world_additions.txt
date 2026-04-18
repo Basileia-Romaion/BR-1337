@@ -35,3 +35,29 @@
     }
     years = 2
 }
+
+br_elysium_spqe = {
+	age = age_1_traditions
+	icon = holy_imperial_monarchy_reform #placeholder
+	potential = {
+        OR = {
+            #Elysians
+            culture = culture:aureliani
+            culture = culture:photianoi
+            culture = culture:elysian_culture
+        }
+    }
+	country_modifier = {
+        #posative
+        monthly_towards_centralization = societal_value_monthly_move
+        #monthly_towards_br_bureaucratic = societal_value_monthly_move
+		global_crown_estate_power = 0.1
+		country_cabinet_efficiency = 0.1
+		government_reform_slots = 1
+		parliament_base_support = 0.1
+        #negatives
+        court_spending_cost  = 0.02
+	}
+
+	years = 2
+}
