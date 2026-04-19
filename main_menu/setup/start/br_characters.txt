@@ -943,6 +943,106 @@ character_db={
 		dynasty = rogerios_dynasty
 		tag = N3P
 	}
+ #Makrembolites
+	br_ere_rdm_character_84 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = constantinople
+		dynasty = makrembolites_dynasty
+		tag = MKB
+	}
+	br_ere_rdm_character_85 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_84
+		dynasty = makrembolites_dynasty
+		tag = MKB
+	}
+	br_ere_rdm_character_86 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1319.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_84
+		dynasty = makrembolites_dynasty
+		tag = MKB
+	}
+	br_ere_rdm_character_87 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_84
+		dynasty = makrembolites_dynasty
+		tag = MKB
+	}
+	br_ere_rdm_character_88 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1328.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_84
+		dynasty = makrembolites_dynasty
+		tag = MKB
+	}
+ #Notaras
+	br_ere_rdm_character_89 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1294.1.1
+		birth = constantinople
+		dynasty = notaras_dynasty
+		tag = CHY
+	}
+	br_ere_rdm_character_90 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1317.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_89
+		dynasty = notaras_dynasty
+		tag = CHY
+	}
+	br_ere_rdm_character_91 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1319.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_89
+		dynasty = notaras_dynasty
+		tag = CHY
+	}
+	br_ere_rdm_character_92 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_89
+		dynasty = notaras_dynasty
+		tag = CHY
+	}
+	br_ere_rdm_character_93 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1328.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_89
+		dynasty = notaras_dynasty
+		tag = CHY
+	}
 
 #Naples
  #Hauteville

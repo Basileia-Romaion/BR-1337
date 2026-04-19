@@ -58,6 +58,9 @@ REPLACE_OR_CREATE:greek_culture = {
 		cultural_tradition_modifier = 0.1
 		#stability_investment = small_stability_investment_penalty
 	}
+	location_modifier = {
+		local_pop_join_rebel_threshold = 0.05
+	}
 	
 	culture_groups = {
 		greek_group roman_group
@@ -80,6 +83,9 @@ REPLACE_OR_CREATE:griko_culture = {
 		global_sailors_modifier = 0.1
 		global_defensive = 0.1
 		#navy_repair_cost
+	}
+	location_modifier = {
+		local_pop_assimilation_speed_modifier = -0.5
 	}
 	
 	culture_groups = {
@@ -126,8 +132,10 @@ REPLACE_OR_CREATE:pontic_greek_culture = {
 		armenikon_greek_culture = positive
 	}
 	country_modifier = {
-		global_lumber_output_modifier = 0.25
 		expand_rgo_mining_cost_modifier = -0.1
+	}
+	location_modifier = {
+		local_lumber_output_modifier = 0.25
 	}
 	
 	culture_groups = {
@@ -180,6 +188,7 @@ anatolian_greek_culture = { #BR addition
 	}
 	location_modifier = {
 		local_nobles_estate_power = 0.25
+		local_unrest = 0.05
 	}
 	
 	culture_groups = {
@@ -228,6 +237,7 @@ indikes_greek_culture = {
 		trade_range_modifier = 0.5
 		#unlock_casus_belli = cb_exploration
 	}
+
 	
 	culture_groups = {
 		greek_group indian_group roman_group

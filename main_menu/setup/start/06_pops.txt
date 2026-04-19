@@ -82358,7 +82358,9 @@ tuba = {
 	define_pop = {	type = tribesmen	size = 8.071	culture = tenda_culture	religion = nhaala_religion }
 }
 bissagos = {
-	define_pop = {	type = tribesmen	size = 2.879	culture = manjak	religion = nhaala_religion }
+	define_pop = {	type = peasants	size = 0.524	culture = andalusi	religion = sunni }
+	define_pop = {	type = slaves	size = 0.879	culture = manjak	religion = nhaala_religion }
+	define_pop = {	type = tribesmen	size = 1.979	culture = manjak	religion = nhaala_religion }
 }
 rio_grande = {
 	define_pop = {	type = tribesmen	size = 19.596	culture = balanta	religion = nhaala_religion }

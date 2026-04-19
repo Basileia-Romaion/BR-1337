@@ -14253,6 +14253,7 @@ countries = {
 				teguise
 				funchal
 				ponta_delgada
+				bissagos
 			}
 			
 			starting_technology_level = 3
@@ -52860,6 +52861,7 @@ countries = {
 				type = republic
 				heir_selection = bank_selection
 				reforms = {	banking_country }
+				ruler = br_ere_rdm_character_84
 				
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = 70
@@ -52878,8 +52880,7 @@ countries = {
 					marriage_law = monogamous_marriage
 					heir_religion_law = heir_same_religion
 				}
-				
-				ruler = random
+
 			}
 			
 			country_rank = rank_county
@@ -52900,12 +52901,14 @@ countries = {
 			type = building
 			starting_technology_level = 3
 			include = "catholic_republic_not_present"
+			ruler = br_ere_rdm_character_89 #br_ere_rdm_character_45
 			
 			capital = constantinople
 			government = {
 				type = republic
 				heir_selection = bank_selection
 				reforms = {	banking_country }
+				ruler = br_ere_rdm_character_89 #br_ere_rdm_character_45
 				
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = 70
@@ -52924,9 +52927,6 @@ countries = {
 					marriage_law = monogamous_marriage
 					heir_religion_law = heir_same_religion
 				}
-				
-				ruler = br_ere_rdm_character_45
-				ruler_term = { character = br_ere_rdm_character_45 start_date = 1335.1.1 }
 			}
 			
 			country_rank = rank_county

@@ -12,6 +12,9 @@
 		port_cost_distance_from_capital = -5
 		trade_range_modifier = 0.5
 	}
+	location_modifier = {
+		local_burghers_estate_power = 0.25
+	}
 	
 	culture_groups = {
 		italian_group

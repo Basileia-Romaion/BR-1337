@@ -86,6 +86,7 @@ roman_romaioi_identity = {
 		}
 	}
 	requires = state_administration_advance
+	global_pop_assimilation_speed = 0.001
 	global_pop_assimilation_speed_modifier = 0.25
 	cultural_influence_modifier = 0.25
 	unlock_policy = br_roman_tradition

@@ -32,6 +32,10 @@ mozarabic = {
 		andalusi = positive
 		sephardi = positive
 	}
+
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.5
+	}
 	
 	culture_groups = {
 		iberian_group

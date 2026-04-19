@@ -335,7 +335,8 @@ elysian_civic_syncretism = {
 	}
 	requires = feudalism_advance
 	cultures_capacity_modifier = 0.5
-	global_pop_assimilation_speed_modifier = 0.5
+	global_pop_assimilation_speed = 0.001
+	global_pop_assimilation_speed_modifier = 0.25
 }
 
 elysian_colonial_charters = {
