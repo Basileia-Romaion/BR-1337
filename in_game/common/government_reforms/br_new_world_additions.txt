@@ -36,7 +36,7 @@
     years = 2
 }
 
-br_elysium_spqe = {
+br_spqe_reform = {
 	age = age_1_traditions
 	icon = holy_imperial_monarchy_reform #placeholder
 	potential = {
@@ -51,12 +51,12 @@ br_elysium_spqe = {
         #posative
         monthly_towards_centralization = societal_value_monthly_move
         #monthly_towards_br_bureaucratic = societal_value_monthly_move
-		global_crown_estate_power = 0.1
+		#global_crown_estate_power = 0.1
 		country_cabinet_efficiency = 0.1
 		government_reform_slots = 1
 		parliament_base_support = 0.1
         #negatives
-        court_spending_cost  = 0.02
+        #court_spending_cost  = 0.02
 	}
 
 	years = 2
