@@ -1,37 +1,37 @@
-﻿mesh_list = 
-{
-    name = "monuments_hagia_sophia_01_mesh"
-    scale_settings_large = { bias = 0 min = 0.5 max = 0.8 }
-    should_spawn_flags = no
-    building_monument_hagia_sophia_01_mesh = 1
-}
-
-template unique_buildings
-{
-    code =
-    [[
-        A03_hagia_sophia = {
-            only_in_location = constantinople
-            order = 0
-            size = large
-            mesh_list = monuments_hagia_sophia_01_mesh
-            contributors =
-            {
-                has_building_with_at_least_one_level:br_hagia_sophia_building = 1.0
-            }
-            filter_func = closest_to_position
-            weight_func = close_to_center_weights
-
-            filter_data = { 9005.33500 2.00000 5703.03500 }
-
-            allow_demote = no
-
-            link_tooltip =
-            {
-                type = work_of_art
-                data = hagia_sophia
-            }
-        }
-
-    ]]
-}
+﻿#mesh_list = 
+#{
+    #name = "monuments_hagia_sophia_01_mesh"
+    #scale_settings_large = { bias = 0 min = 0.5 max = 0.8 }
+    #should_spawn_flags = no
+    #building_monument_hagia_sophia_01_mesh = 1
+#}
+#
+#template unique_buildings
+#{
+    #code =
+    #[[
+        #A03_hagia_sophia = {
+            #only_in_location = constantinople
+            #order = 0
+            #size = large
+            #mesh_list = monuments_hagia_sophia_01_mesh
+            #contributors =
+            #{
+                #has_building_with_at_least_one_level:br_hagia_sophia_building = 1.0
+            #}
+            #filter_func = closest_to_position
+            #weight_func = close_to_center_weights
+#
+            #filter_data = { 9005.33500 2.00000 5703.03500 }
+#
+            #allow_demote = no
+#
+            #link_tooltip =
+            #{
+                #type = work_of_art
+                #data = hagia_sophia
+            #}
+        #}
+#
+    #]]
+#}
