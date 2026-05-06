@@ -1,11 +1,11 @@
-### Hashed out modifiers are just ones I think are cool to make use of in the future.
+﻿### Hashed out modifiers are just ones I think are cool to make use of in the future.
 #global_devastation_recovery = 0.005
-#trade_land_movement_cost_modifier = -0.33
+#trade_land_efficiency = -0.33
 #global_pop_promotion_speed_modifier = 0.1
 #global_construction_speed = 0.1
 #monthly_diplomats = 0.1
 #government_size = 1
-#army_infantry_power = 0.02
+#army_heavy_infantry_power = 0.02
 #global_pop_conversion_speed = 0.01
 #minting_income_factor = 0.10
 #global_distance_from_capital_speed_propagation = 0.05
@@ -87,7 +87,7 @@ roman_romaioi_identity = {
 	}
 	requires = state_administration_advance
 	global_pop_assimilation_speed = 0.001
-	global_pop_assimilation_speed_modifier = 0.25
+	#global_pop_assimilation_speed_modifier = 0.25
 	cultural_influence_modifier = 0.25
 	unlock_policy = br_roman_tradition
 }
@@ -106,7 +106,6 @@ roman_codified_custom = {
 	}
 	requires = codified_laws
 	global_crown_estate_power = 0.05
-	monthly_legitimacy = 0.02
 	unlock_policy = br_roman_court_customs
 	unlock_policy = br_byzantine_law
 	diplomatic_reputation = diplomatic_reputation_mild_bonus
@@ -161,8 +160,6 @@ br_roman_ecumenical_patriarch_advance = {
 	religious_icon_power_modifier = 0.25
 	global_clergy_city_desired_pop =  0.05
 	global_pop_conversion_speed_modifier = 0.25
-	#stability_investment = tiny_stability_investment
-	#orthodox_monastery_building_cost_modifier = -0.1
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	icon = church_councils
 		
@@ -250,7 +247,6 @@ br_tagmata_barracks_advance = { #loc
 #}
 
 
-
 # AGE 3 – Discovery
 
 roman_thematic_recruitment = {
@@ -289,7 +285,6 @@ roman_infrastructure = {
 	global_road_building_time = -0.1
 	global_distance_from_capital_speed_propagation = 0.1
 	global_trade_through_owned_territory_cost_modifier = -0.1
-	trade_range_modifier = 0.1
 	ai_weight = { add = 5 }
 }
 
