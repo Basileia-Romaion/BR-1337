@@ -1,9 +1,9 @@
-﻿INJECT:trade_company_harbor = {
-	modifier = {
-		max_ships_built_at_same_time = 1
-		building_owner_maritime_presence = 0.14
-		local_sailors = 0.025
-		can_build_ships_in_this_location = yes
-		local_repair_speed = 0.02
-	}
-}
+﻿#INJECT:trade_company_harbor = {
+	#modifier = {
+		#max_ships_built_at_same_time = 1
+		#building_owner_maritime_presence = 0.14
+		#local_sailors = 0.025
+		#can_build_ships_in_this_location = yes
+		#local_repair_speed = 0.02
+	#}
+#}
