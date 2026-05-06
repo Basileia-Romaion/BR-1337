@@ -744,12 +744,85 @@ dynasty_manager = {
 		home = hereford
 	}
 
+	# Roman and Early Byzantine Imperial Dynasties
+
+	julio_claudian_dynasty = {
+		name = { name = julio_claudian_dynasty }
+		home = rome
+	}
+
+	flavian_dynasty = {
+		name = { name = flavian_dynasty }
+		home = rome
+	}
+
+	nerva_antonine_dynasty = {
+		name = { name = nerva_antonine_dynasty }
+		home = rome
+	}
+
+	severan_dynasty = { 
+		name = { name = severan_dynasty }
+		home = rome
+	}
+
+	constantinian_dynasty = {
+		name = { name = constantinian_dynasty }
+		home = constantinople
+	}
+
+	theodosian_dynasty = { 
+		name = { name = theodosian_dynasty }
+		home = constantinople
+	}
+
+	leonid_dynasty = { 
+		name = { name = leonid_dynasty }
+		home = constantinople
+	}
+
+	justinianic_dynasty = { 
+		name = { name = justinianic_dynasty }
+		home = constantinople
+	}
+
+	heraclian_dynasty = { 
+		name = { name = heraclian_dynasty }
+		home = constantinople
+	}
+
+	isaurian_dynasty = { 
+		name = { name = isaurian_dynasty }
+		home = constantinople
+	}
+
+	nikephorian_dynasty = { 
+		name = { name = nikephorian_dynasty }
+		home = constantinople
+	}
+
+	amorian_dynasty = {
+		name = { name = amorian_dynasty }
+		home = constantinople
+	}
+
+	macedonian_dynasty = { 
+		name = { name = macedonian_dynasty }
+		home = constantinople
+		male_names = {
+			name_basil name_constantine name_leon name_michael name_romanos name_alexander
+		}
+		female_names = {
+			name_zoe name_theodora name_irene name_anna
+		}
+	}
+
 	#Balkans
-	
+
 	angelos_dynasty = { # Extinct
 		name = { name = angelos_dynasty }
 		#CoA: http://wappenwiki.org/index.php/File:Angelos.svg
-		home = athens #BR EDIT
+		home = iznik
 	}
 
 	apokaukos_dynasty = {
@@ -770,12 +843,12 @@ dynasty_manager = {
 
 	doukas_dynasty = { # Extinct
 		name = { name = doukas_dynasty }
-		home = thessaloniki #BR EDIT
+		home = constantinople
 	}
 
 	glabas_dynasty = { # Extinct
 		name = { name = glabas_dynasty }
-		home = nicosia_cyp #BR EDIT
+		home = iznik
 	}
 
 	kantakouzenos_dynasty = {
@@ -791,18 +864,18 @@ dynasty_manager = {
 
 	komnenos_dynasty = { # Extinct
 		name = { name = komnenos_dynasty }
-		home = constantinople #BR EDIT
+		home = constantinople
 	}
 
 	komnenos_doukas_dynasty = { # Extinct
 		name = { name = komnenos_doukas_dynasty }
 		#CoA: https://wappenwiki.org/index.php?title=File:Doukas.svg (Adopted from Doukas)
-		home = kastamonu #BR EDIT
+		home = arta
 	}
 
 	laskaris_dynasty = { # Extinct
 		name = { name = laskaris_dynasty }
-		home = konya #BR EDIT
+		home = constantinople
 	}
 
 	megas_komnenos_dynasty = {
@@ -852,7 +925,7 @@ dynasty_manager = {
 	vatatzes_dynasty = { # Extinct
 		name = { name = vatatzes_dynasty }
 		#CoA: http://wappenwiki.org/index.php/File:Batatzes.svg
-		home = beysehir #BR EDIT
+		home = iznik
 	}
 
 	arpad_dynasty = {
@@ -869,6 +942,16 @@ dynasty_manager = {
 	nemanjic_dynasty = {
 		name = { name = nemanjic_dynasty }
 		home = prizren
+	}
+	
+	balsic_dynasty = {
+		name = { name = balsic_dynasty }
+		home = bar_cg
+	}
+
+	ohmucevic_dynasty = {
+		name = { name = ohmucevic_dynasty }
+		home = strumica
 	}
 
 	sratsimir_dynasty = {
@@ -898,7 +981,7 @@ dynasty_manager = {
 
 	lambron_dynasty = {
 		name = { name = lambron_dynasty }
-		home = ani
+		home = sis
 	}
 
 	terter_dynasty = {
@@ -983,6 +1066,17 @@ dynasty_manager = {
 		}
 		female_names = {
 			name_catherine name_hedwig name_joanna name_margaret name_mary
+		}
+	}
+
+	anjou_jerusalem_dynasty = { #https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem
+		name = { name = anjou_jerusalem_dynasty }
+		home = jerusalem
+		male_names = {
+			name_amalric name_baldwin name_fulk name_godfrey
+		}
+		female_names = {
+			name_sybil name_melisende name_margaret
 		}
 	}
 
@@ -1366,7 +1460,7 @@ dynasty_manager = {
 
 	fadrique_dynasty = {
 		name = { name = name_frederick }
-		home = lucera #br edit
+		home = salona
 		male_names = {
 			name_alphonse name_boniface name_james name_john name_louis name_peter name_william
 		}
@@ -1443,6 +1537,11 @@ dynasty_manager = {
 	foscari_dynasty = {
 		name = { name = foscari_dynasty }
 		home = venice
+	}
+
+	frangipani_dynasty = {
+		name = { name = frangipani_dynasty }
+		home = rome
 	}
 
 	fregoso_dynasty = {
@@ -2313,10 +2412,27 @@ dynasty_manager = {
 		important = yes
 
 		male_names = {
-			name_albert name_charles name_ferdinand name_leopold name_maximilian name_philip
+			name_albert
+			name_charles
+			name_ernest
+			name_ferdinand name_frederick name_francis name_francis.name_joseph name_francis.name_frederick
+			name_joseph
+			name_leopold
+			name_maximilian name_matthias
+			name_philip
+			name_rudolf
+			name_sigmund
+			name_vladislav
 		}
 		female_names = {
-			name_anna name_caroline name_catherine name_elizabeth name_margaret name_mary name_mary.name_anna name_theresa
+			name_anna
+			name_blanche name_barbara
+			name_caroline name_catherine name_christine
+			name_dorothy
+			name_elizabeth
+			name_joanna
+			name_margaret name_mary name_mary.name_anna name_mary.name_theresa name_mary.name_elizabeth name_mary.name_madeleine
+			name_theresa
 		}
 	}
 
@@ -2357,10 +2473,24 @@ dynasty_manager = {
 
 		dynasty_name_type = location
 		male_names = {
-			name_charles name_eitel.name_frederick name_frederick
+			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
+			name_christian name_christian.name_william
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_anna name_frances name_joanna name_maximiliane name_mary.name_anna name_theresa
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -2369,10 +2499,24 @@ dynasty_manager = {
 		home = berlin
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_frederick name_frederick.name_william name_john
+			name_albert name_albert.name_achilles
+			name_charles
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_anna name_dorothy name_eleanor name_elizabeth name_louise name_madeleine name_sophia
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -2381,10 +2525,24 @@ dynasty_manager = {
 		home = nuremberg
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_berthold name_frederick name_john
+			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
+			name_christian name_christian.name_william
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_adelaide name_agnes name_anna name_beatrix name_catherine name_elizabeth name_helen name_margaret
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -2463,10 +2621,30 @@ dynasty_manager = {
 		home = munich
 		dynasty_name_type = location
 		male_names = {
-			name_charles name_frederick name_john name_louis name_robert
+			name_albert name_adolf
+			name_charles name_charles.name_albert name_charles.name_theodore name_clemence.name_august name_charles.name_louis name_christopher
+			name_ernest
+			name_frederick name_ferdinand.name_mary
+			name_henry
+			name_john name_joseph name_joseph.name_clemence
+			name_louis name_leopold
+			name_maximilian name_maximilian.name_emmanuel name_maximilian.name_joseph name_maximilian.name_henry
+			name_otto name_otto.name_henry
+			name_philip
+			name_robert name_rudolf
+			name_stephen name_sigmund
+			name_william name_wolfgang name_wolfgang.name_william
 		}
 		female_names = {
-			name_anna name_elizabeth name_margaret name_mary.name_anna
+			name_anna name_anna.name_caroline name_agnes
+			name_beatrix
+			name_christine
+			name_elizabeth name_eleanor name_eleanor.name_madeleine
+			name_frances
+			name_joanna name_jacqueline
+			name_margaret
+			name_mary.name_anna name_mary name_mary.name_madeleine name_madeleine name_margaret name_matilda
+			name_ulrike.name_eleanor
 		}
 	}
 
@@ -2995,6 +3173,29 @@ dynasty_manager = {
 	wettin_dynasty = {
 		name = { name = wettin_dynasty }
 		home = halle_an_der_saale #Wettin
+		male_names = {
+			name_albert name_august name_anthony
+			name_balthazar
+			name_christian
+			name_ernest
+			name_frederick name_ferdinand name_frederick.name_august name_frederick.name_christian
+			name_george
+			name_henry
+			name_john name_john.name_frederick name_john.name_george
+			name_louis
+			name_maurice
+			name_otto
+			name_william
+		}
+		female_names = {
+			name_agnes name_anna name_anna.name_caroline name_augusta.name_anna
+			name_beatrix
+			name_catherine name_claire name_caroline
+			name_elizabeth
+			name_frederica.name_alexandra
+			name_joanna name_josephine
+			name_mary name_mary.name_amelia name_mary.name_josephine name_margaret name_matilda
+		}
 		dynasty_name_type = location
 	}
 
@@ -5320,7 +5521,7 @@ dynasty_manager = {
 
 	ibelin_armenia_dynasty = {
 		name = { name = ibelin_dynasty }
-		home = van
+		home = sis
 		male_names = {
 			name_leon name_oshin name_theodore
 		}
@@ -7490,11 +7691,6 @@ dynasty_manager = {
 		home = tbilisi
 	}
 
-	bagratuni_dynasty = {
-		name = { name = bagratuni_dynasty }
-		home = ani
-	}
-
 	fadlawayhid_dynasty = {
 		name = { name = fadlawayhid_dynasty }
 		home = ij_iran
@@ -8364,11 +8560,6 @@ dynasty_manager = {
 		home = milano
 	}
 
-	jagiellon_dynasty = {
-		name = { name = jagiellon_dynasty }
-		home = krakow
-	}
-
 	drutsky_dynasty = {
 		name = { name = drutsky_dynasty }
 		home = drutsk
@@ -8417,6 +8608,11 @@ dynasty_manager = {
 	
 	naryshkin_dynasty = {
 		name = { name = naryshkin_dynasty }
+		home = moscow
+	}
+
+	lvov_dynasty = {
+		name = { name = lvov_dynasty }
 		home = moscow
 	}
 
@@ -8737,6 +8933,11 @@ dynasty_manager = {
 	notaras_dynasty = { #BR addition
 		name = { name = Notaras }
 		home = constantinople
+	}
+	
+	bagratuni_dynasty = {
+		name = { name = bagratuni_dynasty }
+		home = ani
 	}
 
 }
