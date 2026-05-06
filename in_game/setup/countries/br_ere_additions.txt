@@ -1,11 +1,11 @@
 ﻿###-BR ADDED-###
 #Balkans
-M0E = {
-	color = rgb { 95 75 125 }
-
-	culture_definition = greek_culture
-	religion_definition = orthodox
-}
+#M0E = {
+	#color = rgb { 95 75 125 }
+#
+	#culture_definition = greek_culture
+	#religion_definition = orthodox
+#}
 
 DYR = {
 	color = rgb { 185 125 150 }
@@ -353,7 +353,7 @@ CHY = { #Chrysotrapeziōtai
 
 #Italia
 VTC = { #Venetian Trade Company
-	color = map_venice
+	color = rgb { 52 147 166 }
 
 	culture_definition = latinoi
 	religion_definition = catholic
@@ -480,7 +480,7 @@ S0K = {
 
 #Levant
 AOI = {
-	color = rgb { 205 38 50 }
+	color = rgb { 195 44 65 }
 	culture_definition = syrenikoi_greek_culture
 	religion_definition = orthodox
 }
