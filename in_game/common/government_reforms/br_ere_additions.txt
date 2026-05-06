@@ -29,7 +29,7 @@ br_imperial_administration = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		court_spending_cost  = 0.04
+		court_spending_cost_modifier  = 0.04
 		#chancery_cap_level = 1
 	}
 	country_modifier = {
@@ -41,6 +41,7 @@ br_imperial_administration = {
         #replace_cabinet_member_cost_modifier = -0.1
 		#global_nobles_estate_power = -0.1
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
+		#allow_bureaucracy = yes
 	}
 	country_modifier = {
 		potential_trigger = { stability <= 25 }
@@ -74,6 +75,8 @@ br_sub_theme_subject = {
 		allow_thema_headquarters = yes
 		global_defensive = 0.1
 		monthly_towards_stratiotai = societal_value_monthly_move
+		#allow_bureaucracy = yes
+		#global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -116,6 +119,8 @@ br_sub_pronoia_subject = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 		allow_thema_headquarters = yes
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
+		#allow_bureaucracy = yes
+		#global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -159,6 +164,8 @@ br_sub_religious_subject = {
 		tolerance_own = 5
 		global_clergy_estate_power = 1
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
+		#allow_bureaucracy = yes
+		#global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -205,6 +212,7 @@ br_naval_akritai_reform = {
 		global_navy_levy_size_modifier = 1.0
 		allow_thema_headquarters = yes
 		#global_port_build_buildings_cost = -0.2
+		#global_max_bureaucracy_slots = 1
     }
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -250,7 +258,7 @@ br_naval_akritai_reform = {
 #		expected_army_size = 5
 #		aggressiveness_modifier = 0.25
 #		expected_warscore_modifier = 0.25
-#		antagonism_tolerance = 10
+#		coalition_strength_tolerance = 10
 #	}
 
 #	years = 2
