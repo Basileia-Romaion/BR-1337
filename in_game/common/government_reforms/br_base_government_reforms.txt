@@ -29,7 +29,7 @@ REPLACE_OR_CREATE:military_order_reform = {
 		expected_army_size_modifier = 1.0
 		aggressiveness_modifier = 0.25
 		expected_warscore_modifier = 0.25
-		antagonism_tolerance = 10
+		coalition_strength_tolerance = 10
 	}
 
 	years = 2
@@ -61,12 +61,12 @@ REPLACE_OR_CREATE:crusade_sea_reform = {
 		army_disembark_speed = 0.1
 		navy_galley_build_cost_modifier = -0.5
 		allow_privateers_slave_raid = yes
-		navy_maintenance_cost = -0.25 #BR added
+		navy_maintenance_efficiency = 0.25 #BR added
 		expected_navy_size = 10 #BR added
 		global_navy_levy_size_modifier = 0.5
 		aggressiveness_modifier = 0.25
 		expected_warscore_modifier = 0.25
-		antagonism_tolerance = 10
+		coalition_strength_tolerance = 10
 	}
 	years = 2
 }
@@ -75,6 +75,7 @@ REPLACE_OR_CREATE:crusade_sea_reform = {
 #byzantine_court_ceremonies_reform
 #ERE
 REPLACE_OR_CREATE:theme_system = {
+	content_priority = 200
 	age = age_1_traditions
 	potential = {
 		OR = {
@@ -84,10 +85,9 @@ REPLACE_OR_CREATE:theme_system = {
 			}
 			culture = { has_culture_group = culture_group:roman_group }
 		}
-		custom_tooltip = {
-			text = byz_theme_system_not_obselete_tt
-			NOT = { has_variable = unlocked_modern_byzantine_army }
-		}
+	}
+	allow = {
+		NOT = { has_reform = government_reform:modern_imperial_army }
 	}
 	country_modifier = {
 		monthly_towards_decentralization = societal_value_minor_monthly_move
@@ -96,7 +96,7 @@ REPLACE_OR_CREATE:theme_system = {
 		allow_thema_headquarters = yes
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		global_max_rural_control = -0.02
-		levy_maintenance_modifier = -0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
 	years = 2
 }
@@ -105,21 +105,21 @@ REPLACE_OR_CREATE:modern_imperial_army = {
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = BYZ
-		custom_tooltip = {
-			text = byz_reformed_imperial_army_tt
-			has_variable = unlocked_modern_byzantine_army
-		}
+		has_unlocked_government_reform_trigger = { type = modern_imperial_army }
+	}
+	allow = {
+		NOT = { has_reform = government_reform:theme_system }
 	}
 	country_modifier = {
-		global_crown_estate_power = 0.1
-		army_maintenance_cost = 0.1
 		monthly_towards_centralization = societal_value_minor_monthly_move
 		monthly_towards_quality = societal_value_tiny_monthly_move
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
-		government_reform_slots = 1
 		allow_thema_headquarters = yes
-		military_tactics = 0.1
-		monthly_army_tradition = 0.1
+		global_crown_estate_power = 0.1
+
+		army_maintenance_efficiency = 0.1
+		government_reform_slots = 1
+		discipline = 0.05
 	}
 	years = 2
 }
@@ -242,8 +242,8 @@ REPLACE_OR_CREATE:legacy_of_genghis = {
 
 	
 	country_modifier = {
-		army_cavalry_maintenance_cost_modifier = -0.1
-		court_spending_cost = -0.02
+		army_light_cavalry_maintenance_cost_modifier = -0.1
+		court_spending_cost_modifier = -0.02
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_horde_unity = 0.1
 		tribes_estate_levy_size = 1
