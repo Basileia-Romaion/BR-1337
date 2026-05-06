@@ -49,7 +49,7 @@ REPLACE_OR_CREATE:clergy_military_orders = {
 		potential_trigger = {
 			receiving_scripted_relation_of_type = relation_type:military_sponsorship
 		}
-		army_maintenance_cost = -0.15
+		army_maintenance_efficiency = 0.15
 	}
 }
 
@@ -233,7 +233,7 @@ REPLACE_OR_CREATE:bashtinas_and_pronijas_grants = {
 	country_modifier = {  #BR ADDED
 		potential_trigger = { "estate_power(estate_type:crown_estate)" >= 0.25 }
 		nobles_estate_levy_size = 0.5
-		army_maintenance_cost = -0.15
+		army_maintenance_efficiency = 0.15
 	}
 }
 
