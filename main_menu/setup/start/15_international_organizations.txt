@@ -4,7 +4,7 @@ international_organization_manager = {
 	#################################################################
 
 	#################################################################
-	# 					Holy Roman Empire							#
+	# 				Holy Roman Empire								#
 	#################################################################
 	add_international_organization = {
 		type = hre
@@ -14,13 +14,13 @@ international_organization_manager = {
 
 		members = { LOT FRA UBV CRH LBV SLZ TIR BRC BAM PSS GRF FRE TNT CLI ORT PAL REG BRA AUG SWA MEI MAG HES MAI HAI ABA ASD ATI CEV CHX CNV MTB BLL BNT HBG
 		COT CRR FLO GEN LUC MAN MFA MLO MND MSP PAR PAV PIE PIS PRA SAL SAV GNV SIE PTG TTN VLT HOL BRB LUX LIE CHN LIM NAM LOO VBG HRN CJK BSC VER MOU DAU ORA FRT BXN
-		UTR FRI DIT HSA LUB LBB THU BRE BRM BRG SAA STE SPY PLN GLA SOR SPB SWB RUP HVB SWR WRN MKL RZB GSW WOL KMM LAU HAM HBS BBG ANH BNB MFE MRB NMB QUB WMA SWZ SCL AQU PRO
+		UTR FRI DIT HSA LUB LBB THU BRE BRM BRG STE SPY PLN GLA SOR SPB SWB RUP HVB SWR WRN MKL RZB GSW WOL KMM LAU HAM HBS BBG ANH BNB MFE MRB NMB QUB WMA SWZ SCL AQU PRO
 		FLD SHS NHS MLH ERF HSF PDB ZIG HNA BUD WTZ DIE FRN ERB WRM SYN KOL DUN APR AAC JUL GEL ZUT GMK WTG DTM ESS MRS KLE ANB LPP HOX RVB MDN OSN TCK MUN
 		SAX GBH HDH GOS SCB HOY NIE DPH VRD RTB OLD AGC WER MBZ MFK BCH STG ZUR SYZ LCA URI OBW LCU SIT BRN SLT NEU BAS LSA KYB TRN ANS PAD
 		EIC WEI NUR FKN RIE MSB UFF ROT DNB MEM KMP ULM KNZ OET SWH HBR BDE WDB RVA BIB UBL HHB FBG OFB WLD PRZ BRD LDB GOR FCB ALL ZEE CAM STV HTR HPL NWG 
-		VUD BMS BLB HSP BSK MSO WGO BHL GLN AOS RBG FLK RDL NID MDS TGG GRY PSZ CFC MUR MUL LIC WDE NSH 
+		VUD BMS BLB HSP BSK MSO WGO BHL GLN AOS RBG FLK RDL NID MDS TGG GRY PSZ CFC MUR MUL WDE 
 		BLM DIS EVS FUR GRK HAC JEV SAB THD WIE ELL HEH HLF HOH KIR NEL TUB KTZ NSA LEU PST
-		MOD BLG FER ARZ
+		MOD BLG FER
 		# From France
 		PRC MIE AQN MDM MRC BRR TOU POI
 		BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR ETA NRM ANJ ARS ANG BRI FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON MON AUM ROU FLA NEV RET NRB VNT RCC CLT
@@ -91,7 +91,7 @@ international_organization_manager = {
 			# MLH BIB NHS OFB SWH WDB WEI SLT
 			ERF 
 			#BR Added Italian Free cities
-			ATI ASD PST VLT PRA PAV PAR PAD LUC MOD ARZ FER BLG
+			ATI ASD PST VLT PRA PAV PAR PAD LUC MOD FER BLG
 		}
 		imperial_peasant_republic = {
 			FRI
@@ -108,7 +108,7 @@ international_organization_manager = {
 			RVB TCK SAX GBH SCB HOY NIE DPH RTB OLD WER MBZ MFK
 			KYB TRN ANS RIE MSB UFF DNB OET HBR BDE HHB FBG BSK AOS
 			PRZ BRD LDB GOR FCB ALL ZEE HTR HPL NWG VUD HSP WGO BHL
-			RBG FLK NSA RDL NID MDS TGG GRY PSZ WDE MSO NSH BLM DIS EVS FUR GRK HAC JEV SAB THD WIE
+			RBG FLK NSA RDL NID MDS TGG GRY PSZ WDE MSO BLM DIS EVS FUR GRK HAC JEV SAB THD WIE
 			ELL HEH HLF HOH KIR NEL TUB LEU 
 			MOD
 			# From France
@@ -121,6 +121,7 @@ international_organization_manager = {
 		laws = {
 			hre_religion_catholic
 			only_imperial_religion_policy
+			princely_bishopric_electorate_policy
 			golden_bull_policy #no_golden_bull_policy #BR required for the other laws.
 
 			#Set by effect at game start
@@ -177,7 +178,7 @@ international_organization_manager = {
 		#Great Interregnum will continue until Charles IV secures Succession for his son
 
 		variables = { 
-			imperial_authority = 0 #Set by effect at game start
+			imperial_authority = 100 #Set by effect at game start
 		}
 	}
 	
@@ -251,11 +252,15 @@ international_organization_manager = {
 		}
 
 		ruler_term = { character = kublai_khan start_date = 1271.12.18 end_date = 1294.2.18 }
-		#Missing ruler(s)	
+		ruler_term = { character = temur_oljeyitu_borjigin start_date = 1294.4.10 end_date = 1307.2.10 regnal_name = name_oljeytu }
 		ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
-		#Missing ruler(s)
+		ruler_term = { character = ayurbarwada_buyantu_borjigin start_date = 1311.4.7 end_date = 1320.3.1 regnal_name = name_buyantu }
+		ruler_term = { character = shidibala_gegeen_borjigin start_date = 1320.4.19 end_date = 1323.9.4 regnal_name = name_gegeen }
+		ruler_term = { character = yesun_temur_borjigin start_date = 1323.10.4 end_date = 1328.8.15 }
+		ruler_term = { character = ragibagh_borjigin start_date = 1328.10.1 end_date = 1328.10.16 } #Technically until his death, but Jayaatu launched a coup in October and otherwise the error log complains if they overlap
+		ruler_term = { character = tugh_temur_jayaatu_borjigin start_date = 1328.10.16 end_date = 1329.2.26 regnal_name = name_jayaatu }
 		ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
-		#Missing ruler(s)
+		ruler_term = { character = tugh_temur_jayaatu_borjigin start_date = 1329.10.8 end_date = 1332.10.2 regnal_name = name_jayaatu }
 		ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
 		ruler_term = { character = yua_togon_temur start_date = 1333.7.19 }
 
@@ -271,6 +276,7 @@ international_organization_manager = {
 
 		variables = { 
 			celestial_authority = 75
+			num_of_celestial_governors = 1
 		}
 	}
 	
@@ -286,7 +292,7 @@ international_organization_manager = {
 		members = { 
 			#PLE
 			#
-		 	CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY CNN HYM ANN KEE IVG IMA TGH FCL EIL CVN AMH
+		 	CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY CNN HYM ANN KEE IVG IMA TGH FCL CVN AMH
 		}
 		regions = { ireland_region }
 		areas = { }
@@ -320,11 +326,13 @@ international_organization_manager = {
 		ruler_term = { character = tyr_brian_chatha_an_duna_o_neill start_date = 1258.1.1 end_date = 1260.5.14 regnal_number = 0 }
 		ruler_term = { character = sco_edward_bruce start_date = 1315.1.1 end_date = 1318.10.14 regnal_number = 0 }
 
-		variables = { 
+		variables = {
 			high_kingship_region = region:ireland_region
+			high_kingship_dormant = 1
 		}
 	}
 
+	#BR remove, replace or rework
 	add_international_organization = {
 		type = lordship_of_ireland
 		creation_date = 1177.1.1
@@ -338,7 +346,7 @@ international_organization_manager = {
 			# bishop
 			AMA
 			# gaelic			
-		 	#CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY ARD CNN HYM ANN KEE IVG IMA TGH FCL EIL CVN AMH
+		 	#CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY ARD CNN HYM ANN KEE IVG IMA TGH FCL CVN AMH
 		}
 		lord_of_ireland = { HBA }
 		lieutenant = {  } # was not one of the Earls in 1337
@@ -461,8 +469,8 @@ international_organization_manager = {
 
 			#Jalayirid Faction
 
-			TUR ARD ATZ DML HBN HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
-			BHT BIT DIL DMB DSN EGL HKK HZN HZR JLM MZJ SOH ZRQ ZZR #Sutayids
+			TUR ARD ATZ DML HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
+			BHT BIT DIL DMB DSN EGL HKK HZN HZR MZJ SOH ZRQ ZZR #Sutayids
 			AIA SYU KCN GAN
 			A0A A2A
 
@@ -564,8 +572,8 @@ international_organization_manager = {
 			FEO	
 			#BR ADDED
 			ICO AON S1Y B0R A1G K1B
-			M0E THS PAF	THE ATH ACH
-			BNK MKB CHY
+			MOE THS PAF	THE ATH ACH
+			MKB CHY #BNK
 			AN1 AN2 AN3 AN4 AN5
 			ZAZ RH1 RH2 RH3
 			AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N
@@ -582,6 +590,9 @@ international_organization_manager = {
 			accept_person_tenet
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			caesaropapism_tenet
 		}
 	}
 
@@ -601,6 +612,9 @@ international_organization_manager = {
 			accept_person_tenet
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -620,6 +634,9 @@ international_organization_manager = {
 			accept_person_tenet
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -639,6 +656,9 @@ international_organization_manager = {
 			accept_person_tenet
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -659,6 +679,8 @@ international_organization_manager = {
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
 			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -679,6 +701,8 @@ international_organization_manager = {
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
 			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -699,6 +723,8 @@ international_organization_manager = {
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
 			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -719,6 +745,8 @@ international_organization_manager = {
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
 			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -739,6 +767,8 @@ international_organization_manager = {
 			accept_prosopon_tenet
 			allow_christological_debates_tenet
 			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
 		}
 	}
 
@@ -1609,7 +1639,7 @@ international_organization_manager = {
 		creation_date = 1.1.1
 		members = {
 			#Clearly shaivism
-			CHA MAJ SUN KRP ALU ORI GOA JFN KSH
+			CHA MAJ SUN KRP ALU ORI JFN KSH
 			#Probably shaivism
 			SNG SMV TNK RDY KPL BGK GHR BAD PNC CBH
 			#Not clear ones
@@ -1650,185 +1680,6 @@ international_organization_manager = {
 			smartism
 		}
 		icon = smartism
-	}
-	#BR Added
-	#BR ADDED
-	add_international_organization = {
-		type = autocephalous_patriarchate
-		creation_date = 519.1.1
-		members = { OHS AOI CIL }
-		variables = { 
-			religion = religion:orthodox
-			seat = location:antioch
-		}
-		laws = {
-			composite_nature
-			high_christology
-			local_traditions_and_rites
-			accept_essence_tenet
-			accept_person_tenet
-			accept_prosopon_tenet
-			allow_christological_debates_tenet
-			allow_double_sabbath_tenet
-		}
-	}
-
-	add_international_organization = {
-		type = autocephalous_patriarchate
-		creation_date = 451.1.1
-		members = { RIC } #AGY
-		variables = { 
-			religion = religion:orthodox
-			seat = location:alexandria
-		}
-		laws = {
-			composite_nature
-			high_christology
-			local_traditions_and_rites
-			accept_essence_tenet
-			accept_person_tenet
-			accept_prosopon_tenet
-			allow_christological_debates_tenet
-			allow_double_sabbath_tenet
-		}
-	}
-	add_international_organization = {
-		type = autocephalous_patriarchate
-		creation_date = 431.1.1
-		members = { S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK SAR }
-		variables = { 
-			religion = religion:orthodox
-			seat = location:rome
-		}
-		laws = {
-			dual_nature
-			high_christology
-			catholic_influenced_rites
-			accept_essence_tenet
-			accept_person_tenet
-			accept_prosopon_tenet
-			allow_christological_debates_tenet
-		}
-	}
-
-	#BR Added Elysian Orthodox
-	add_international_organization = {
-		type = autocephalous_patriarchate
-		creation_date = 431.1.1
-		members = { E2Y E4Y }
-		variables = { 
-			religion = religion:orthodox
-			seat = location:nansemond
-		}
-		laws = {
-			dual_nature
-			high_christology
-			catholic_influenced_rites
-			accept_essence_tenet
-			accept_person_tenet
-			accept_prosopon_tenet
-			allow_christological_debates_tenet
-		}
-	}
-	add_international_organization = {
-        type = defensive_league
-        creation_date = 1211.2.3
-
-        map_color = rgb { 140 36 36 }
-
-        members = {
-            POS GDD MWG BCN PMB
-        }
-        leader = POS
-    }
-	#Southern Italy/ Ionian Sea 
-	add_international_organization = {
-        type = defensive_league
-        creation_date = 1311.2.3
-
-        map_color = rgb { 185 125 150 }
-
-        members = {
-            S1C S2C S3C EPI DYR N3P SAR #S5C
-        }
-        leader = EPI
-    }
-
-	add_international_organization = {
-		type = roman_world
-		creation_date = 1.1.1
-		map_color = rgb { 150 11 146 }
-		members = { 
-			#Emperor
-			BYZ 
-			#Members
-			EPI DYR FEO
-			THE B0R THS 
-			ATH M0E ACH
-			S1Y A1G K1B 
-			TRE CIL AON ICO PAF AOI 
-			AN1 AN2 AN3 AN4 AN5 AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N
-			S1C S2C S3C N3P S5C SAR
-
-			#ARM GEO SER
-			#KOG DER MES VAN VDZ
-			OHS SGO RH0 #RIC
-			BNK MKB CHY
-			VTC GTC
-
-			#VEN NEG CRT CYP NAX CEP GAZ RAG
-
-		}
-
-		br_emperor = { BYZ }
-		domestikos_west = { THE }
-		domestikos_east = { AOI }
-		#br_military_order  = { OHS SGO RH0 } #likely will be moved to a reworked Patrachate IO
-		imperial_loyalist = { 
-			S1Y A1G K1B FEO
-		}
-
-		laws = {
-			br_romaiokratia_weak_policy
-		}
-
-		leader = BYZ
-		regions = { 
-			anatolia_region 
-			balkan_region
-		}
-		areas = { 
-			apulia_area
-			basilicata_area
-			campania_area
-			sicily_area
-			sardinia_area
-		}
-		provinces = { 
-			#antakya_province
-			erzurum_province
-			gothia_province
-			cafa_province
-		}
-		locations = { 
-			venice
-			trapessac
-			antioch
-			arsuz
-		}
-
-		ruler_term = { character = byz_michael_viii_palaiologos start_date = 1261.12.25 end_date = 1282.12.1 regnal_number = 8 }
-		ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1282.12.11 end_date = 1294.5.21 regnal_number = 2 }
-		ruler_term = {
-			character = byz_andronikos_ii_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 2
-			character = byz_michael_ix_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 9 # Junior Co-Emperor
-		}
-		ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1320.10.12 end_date = 1328.5.24 regnal_number = 2 }
-		ruler_term = { character = byz_andronikos_iii_palaiologos start_date = 1328.5.24 regnal_number = 3 }
-
-		variables = {
-			roman_authority = 75
-		}
 	}
 	
 }
