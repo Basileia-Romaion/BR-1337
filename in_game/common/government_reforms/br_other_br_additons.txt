@@ -1,0 +1,71 @@
+﻿#theocracy 
+patriarchate = {
+	major = yes
+	unique = yes
+	potential = {
+		tag = POH
+	}
+	allow = {
+	}
+	country_modifier = {
+		monthly_religious_influence = 0.5
+		monthly_devotion = 0.1
+		monthly_towards_traditionalist = societal_value_monthly_move
+		blocked_from_conversion = yes
+		blocked_from_forming_countries = yes
+		ruler_name_in_court_language = yes
+		#can_create_autocephalous_patriarchate = yes #idk, leave it for now, set country_rank to kingdom to allow it
+		
+		government_reform_slots = 1
+	}
+
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = patriarchate
+		}
+	}
+
+	block_for_rebel = yes
+	
+
+	years = 2
+}
+
+#Republic
+br_special_merchant_republic = {
+	potential = {
+		OR = {
+			has_or_had_tag = GTC
+			has_or_had_tag = VTC
+			has_or_had_tag = RIC
+		}
+	}
+	allow = {
+		OR = {
+			has_or_had_tag = GTC
+			has_or_had_tag = VTC
+			has_or_had_tag = RIC
+		}
+	}
+	major = yes
+	government = republic
+	country_modifier = {
+		global_merchant_capacity_modifier = 0.75
+		trade_income = 0.5
+		global_foreign_build_buildings_cost = -0.75
+		merchant_maintenance_efficiency = 0.50
+		navy_maintenance_efficiency = 0.25
+		expected_navy_size = 25
+		global_navy_levy_size_modifier = 0.5
+		max_diplomats = 1
+		
+	}
+	locked = {
+		always = yes
+	}
+	years = 2
+}
+
+#Country specific
+#byzantine_court_ceremonies_reform
