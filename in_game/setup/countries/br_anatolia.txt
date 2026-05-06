@@ -56,3 +56,164 @@ INJECT:CIL = {
 	culture_definition = kilikioi_greek_culture
 	religion_definition = orthodox
 }
+
+# REMOVED TAGS
+
+INJECT:AHI = {
+	is_historic = yes
+}
+
+INJECT:ALY = {
+	is_historic = yes
+}
+
+INJECT:AYD = {
+	is_historic = yes
+}
+
+INJECT:BFR = {
+	is_historic = yes
+}
+
+INJECT:CND = {
+	is_historic = yes
+}
+
+INJECT:GRM = {
+	is_historic = yes
+}
+
+INJECT:HMD = {
+	is_historic = yes
+}
+
+INJECT:HCI = {
+	is_historic = yes
+}
+
+INJECT:INA = {
+	is_historic = yes
+}
+
+INJECT:KBD = {
+	is_historic = yes
+}
+
+INJECT:KRD = {
+	is_historic = yes
+}
+
+INJECT:MEN = {
+	is_historic = yes
+}
+
+INJECT:SHP = {
+	is_historic = yes
+}
+
+INJECT:SRU = {
+	is_historic = yes
+}
+
+INJECT:SUT = {
+	is_historic = yes
+}
+
+INJECT:TDJ = {
+	is_historic = yes
+}
+
+INJECT:TEK = {
+	is_historic = yes
+}
+
+INJECT:TVS = {
+	is_historic = yes
+}
+
+INJECT:BIN = {
+	is_historic = yes
+}
+
+INJECT:CEM = {
+	is_historic = yes
+}
+
+INJECT:JAL = {
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:UGH = { #Ughanids
+	is_historic = yes
+}
+
+INJECT:JUR = { #Jurmanids
+	is_historic = yes
+	culture_definition = turkmen_culture
+}
+
+INJECT:GRG = { #Gurgan  (Togha Temur)
+	is_historic = yes
+	culture_definition = turkmen_culture
+}
+
+INJECT:HLG = { #Huleguids
+	is_historic = yes
+	culture_definition = turkoman_culture
+}
+
+INJECT:NGD = { #Neguderi
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:QUN = { #Qara'unas
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:BSD = { #Besüd
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:ART = { #Arlat
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:APD = { #Apardi
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:SLD = { #Suldus
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:BRL = { #Barlas
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:YSU = { #Yasa'uri
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:KTT = { #Khuttal
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:JLY = { #Jalayirs
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:JKR = { #Jauni Kurban
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
