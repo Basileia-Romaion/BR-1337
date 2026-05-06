@@ -19,7 +19,7 @@ INJECT:order_stronghold = {
 		local_garrison_size = 0.1 #br added
 	}
 	raw_modifier = {
-		fort_level = 1
+		minimum_fort_level = 1
 		propagating_zone_of_control = no
 	}
 }
@@ -30,10 +30,12 @@ REPLACE_OR_CREATE:venetian_quarter = {
 	
 	need_good_relation = yes
 	employment_size = huge_foreign_trade_employment
+	pop_size_created = large_foreign_trade_employment
 	max_levels = italian_merchant_quarters_max_level
 	category = trade_category
 	town = yes
 	city = yes
+	megalopolis = yes
 	country_potential = {
 		tag = VEN
 	}
@@ -69,10 +71,12 @@ REPLACE_OR_CREATE:galata = {
 	need_good_relation = yes
 	pop_type = burghers
 	employment_size = huge_foreign_trade_employment
+	pop_size_created = large_foreign_trade_employment
 	max_levels = italian_merchant_quarters_max_level
 	category = trade_category
 	town = yes
 	city = yes
+	megalopolis = yes
 	country_potential = {
 		tag = GEN
 	}
@@ -104,49 +108,3 @@ REPLACE_OR_CREATE:galata = {
 	construction_demand = market_center_building_construction
 }
 
-REPLACE_OR_CREATE:theodosian_walls = {
-	is_foreign = no
-	pop_type = soldiers
-	max_levels = theodosian_walls_max_level
-	
-	employment_size = theodosian_walls
-	category = defense_category
-	
-	
-	rural_settlement = no
-	town = no
-	city = yes
-
-	is_indestructible = yes
-	
-	build_time = huge_unique_build_time
-
-	location_potential = {
-		this = location:constantinople
-	}
-	
-	country_potential = {
-		owns = location:constantinople
-	}
-
-	expensive = yes
-	possible_production_methods = {
-		basic_castle_maintenance
-	}
-	construction_demand = castle_construction
-
-	modifier = {
-		local_garrison_size = 2.0
-		local_defensive = 0.5
-		blocks_vision_from_land = yes
-		blocks_vision_from_sea = yes
-	}
-	
-	raw_modifier = {
-		local_war_score_cost = 2
-		fort_level = 3 #2
-		propagating_zone_of_control = no
-		#local_fort_maintenance_cost = -1 #added
-		#local_army_levy_size_modifier = -1
-	}
-}
