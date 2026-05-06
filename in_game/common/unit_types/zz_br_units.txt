@@ -2,8 +2,10 @@
 
 REPLACE_OR_CREATE:a_byzantine_cataphracts = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_1_traditions_heavy_cavalry
+
+	upgrades_to_only = br_age_2_kontaratoi
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -16,9 +18,10 @@ REPLACE_OR_CREATE:a_byzantine_cataphracts = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -26,20 +29,18 @@ REPLACE_OR_CREATE:a_byzantine_cataphracts = {
 	}
 
 	gfx_tags = { 
-		cataphract_tag 
+		cataphract_tag
+		spear_tag
 		heavy_tag 
 	}
 }
 
 REPLACE_OR_CREATE:a_akritai = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_light_infantry
 
 	build_time_modifier = 0.25 #br edited from 0.5
 
-	#maintenance_demand =  br_tagmata_akritai_maintenance
-	#construction_demand = br_tagmata_akritai_construction
 
 	initiative = 2
 	morale_damage_taken = -0.1
@@ -54,13 +55,10 @@ REPLACE_OR_CREATE:a_akritai = {
 
 REPLACE_OR_CREATE:a_varangians = {
 	is_special = yes
-	category = army_infantry
+	copy_from = a_age_1_traditions_heavy_infantry
 
-	copy_from = a_age_1_traditions_infantry
+	upgrades_to_only = br_renaissance_varangians
 
-	#maintenance_demand =  br_tagmata_varangian_maintenance
-	#construction_demand = br_tagmata_skoutatoi_construction
-	
 	strength_damage_done = 0.35 #br increased from 0.2
 	morale_damage_done = 0.35 #br increased from 0.2
 
@@ -80,7 +78,6 @@ REPLACE_OR_CREATE:a_varangians = {
 
 	limit = br_varangian_unit_limit
 
-	upgrades_to_only = a_renaissance_varangians
 
 	gfx_tags = { axe_tag heavy_tag }
 }
@@ -90,8 +87,7 @@ REPLACE_OR_CREATE:a_varangians = {
 #Heavy Infantry
 br_tagmata_skoutatoi = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_heavy_infantry
 
 	build_time_modifier = 0.50
 	morale_damage_taken = -0.05
@@ -99,11 +95,6 @@ br_tagmata_skoutatoi = {
 	buildable = yes
 	
 	age = "age_1_traditions"
-
-	maintenance_demand =  early_heavy_infantry_maintenance
-	construction_demand = early_heavy_infantry_construction
-	#maintenance_demand =  br_tagmata_skoutatoi_maintenance
-	#construction_demand = br_tagmata_skoutatoi_construction
 
 	location_potential = {
 		unit_akritai_location_trigger = yes
@@ -115,9 +106,7 @@ br_tagmata_skoutatoi = {
 
 br_tagmata_toxotai = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
-	light = yes
+	copy_from = a_age_1_traditions_light_infantry
 
 	initiative = 5
 	strength_damage_done = -0.20
@@ -128,9 +117,6 @@ br_tagmata_toxotai = {
 	location_potential = {
 		unit_akritai_location_trigger = yes
 	}
-
-	maintenance_demand =  archer_infantry_maintenance
-	construction_demand = archer_infantry_construction
 
 	mercenaries_per_location = {
 		pop_type = peasants
@@ -203,8 +189,7 @@ br_unit_trebuchet = {
 
 br_renaissance_varangians = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
 
 	upgrades_to_only = br_discovery_varangians
 
@@ -223,8 +208,10 @@ br_renaissance_varangians = {
 
 br_age_2_kontaratoi = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_2_renaissance_cavalry
+	copy_from = a_age_2_renaissance_heavy_cavalry
+
+	upgrades_to_only = br_age_3_lonchophoroi
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -237,9 +224,10 @@ br_age_2_kontaratoi = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -248,6 +236,7 @@ br_age_2_kontaratoi = {
 
 	gfx_tags = { 
 		cataphract_tag 
+		spear_tag
 		heavy_tag 
 	}
 }
@@ -256,8 +245,7 @@ br_age_2_kontaratoi = {
 
 br_discovery_varangians = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_3_discovery_infantry
+	copy_from = a_age_3_discovery_heavy_infantry
 
 	upgrades_to_only = br_reformation_varangians
 
@@ -274,8 +262,10 @@ br_discovery_varangians = {
 
 br_age_3_lonchophoroi = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_3_discovery_cavalry
+	copy_from = a_age_3_discovery_heavy_cavalry
+
+	upgrades_to_only = br_age_4_thorakophoroi
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -288,9 +278,10 @@ br_age_3_lonchophoroi = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -298,7 +289,8 @@ br_age_3_lonchophoroi = {
 	}
 
 	gfx_tags = { 
-		cataphract_tag 
+		cataphract_tag
+		spear_tag
 		heavy_tag 
 	}
 }
@@ -307,8 +299,7 @@ br_age_3_lonchophoroi = {
 
 br_reformation_varangians = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_4_reformation_infantry
+	copy_from = a_age_4_reformation_heavy_infantry
 
 	upgrades_to_only = br_absolutism_varangians
 
@@ -327,8 +318,10 @@ br_reformation_varangians = {
 
 br_age_4_thorakophoroi = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_4_reformation_cavalry
+	copy_from = a_age_4_reformation_heavy_cavalry
+
+	upgrades_to_only = br_age_5_prokoursatores
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -341,9 +334,10 @@ br_age_4_thorakophoroi = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -351,8 +345,9 @@ br_age_4_thorakophoroi = {
 	}
 
 	gfx_tags = { 
-		cataphract_tag 
-		heavy_tag 
+		cataphract_tag
+		spear_tag
+		heavy_tag
 	}
 }
 
@@ -360,8 +355,7 @@ br_age_4_thorakophoroi = {
 
 br_absolutism_varangians = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_5_absolutism_infantry
+	copy_from = a_age_5_absolutism_heavy_infantry
 
 	upgrades_to_only = br_revolutions_varangians
 
@@ -380,8 +374,10 @@ br_absolutism_varangians = {
 
 br_age_5_prokoursatores = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_5_absolutism_cavalry
+	copy_from = a_byzantine_cataphracts_6
+
+	upgrades_to_only = br_age_6_basilikoi
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -394,9 +390,10 @@ br_age_5_prokoursatores = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -404,8 +401,9 @@ br_age_5_prokoursatores = {
 	}
 
 	gfx_tags = { 
-		cataphract_tag 
-		heavy_tag 
+		cataphract_tag
+		spear_tag
+		heavy_tag
 	}
 }
 
@@ -413,8 +411,7 @@ br_age_5_prokoursatores = {
 
 br_revolutions_varangians = {
 	is_special = yes
-	category = army_infantry
-	copy_from = a_age_6_revolutions_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
 
 	strength_damage_taken = -0.10
 	morale_damage_taken = -0.10
@@ -431,8 +428,9 @@ br_revolutions_varangians = {
 
 br_age_6_basilikoi = {
 	is_special = yes
-	category = army_cavalry
-	copy_from = a_age_6_revolutions_cavalry
+	copy_from = a_age_6_revolutions_heavy_cavalry
+
+	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
 	
@@ -445,9 +443,10 @@ br_age_6_basilikoi = {
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
-	combat = { 
-		grasslands = 0.2
-		wetlands = -0.10
+	combat = {
+		wetlands = -0.1
+		hills = -0.1
+		mountains = -0.15
 	}
 
 	location_potential = {
@@ -455,8 +454,9 @@ br_age_6_basilikoi = {
 	}
 
 	gfx_tags = { 
-		cataphract_tag 
-		heavy_tag 
+		cataphract_tag
+		spear_tag
+		heavy_tag
 	}
 }
 
