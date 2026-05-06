@@ -77,7 +77,7 @@ locations={
 	durres = { rank = town 			town_setup = greek_town_port }
 	
 	# turkey (modern day)
-	constantinople = { rank = city 	town_setup = greek_city_port }
+	constantinople = { rank = megalopolis 	town_setup = greek_city_port }
 	edirne = { rank = town 			town_setup = balkan_town }
 	gallipoli = { rank = town 		town_setup = greek_town_port }
 	canakkale = { rank = town 		town_setup = greek_town_port }
@@ -101,7 +101,7 @@ locations={
 	ohrid = { rank = town 			town_setup = balkan_town }	
 	prizren = { rank = town 		town_setup = balkan_town }	
 	skopje = { rank = town 			town_setup = balkan_town }	
-	dubrovnik = { rank = town 		town_setup = italian_coastal_city }	
+	dubrovnik = { rank = city 		town_setup = dubrovnik_city }	
 	split = { rank = town 			town_setup = italian_coastal_town }	
 	rijeka = { rank = town 			town_setup = balkan_town }	
 	zagreb = { rank = town 			town_setup = balkan_town }	
@@ -114,13 +114,13 @@ locations={
 	brescia = { rank = city 		town_setup = italian_city }
 	cremona = { rank = city 		town_setup = italian_city }
 	ferrara = { rank = city 		town_setup = italian_city }
-	florence = { rank = city 		town_setup = italian_city }
-	genoa = { rank = city 			town_setup = italian_trading_capital }
+	florence = { rank = city 		town_setup = florence_city }
+	genoa = { rank = city 			town_setup = genoa_city }
 	lucca = { rank = city 			town_setup = italian_coastal_city }
 	mantova = { rank = city 		town_setup = italian_city }
 	syracuse = { rank = city 		town_setup = italian_coastal_city }
-	milano = { rank = city 			town_setup = italian_city }
-	naples = { rank = city 			town_setup = italian_coastal_city }
+	milano = { rank = city 			town_setup = milan_city }
+	naples = { rank = city 			town_setup = italian_trading_capital }
 	padova = { rank = city 			town_setup = italian_city }
 	palermo = { rank = city 		town_setup = italian_coastal_city }
 	parma = { rank = city 			town_setup = italian_city }
@@ -129,7 +129,7 @@ locations={
 	pisa = { rank = city 			town_setup = italian_trading_capital }
 	rome = { rank = city 			town_setup = italian_coastal_city }
 	siena = { rank = city 			town_setup = italian_city }
-	venice = { rank = city 			town_setup = italian_trading_capital }
+	venice = { rank = city 			town_setup = venice_city }
 	verona = { rank = city 			town_setup = italian_city }
 	
 	alessandria = { rank = town 	town_setup = italian_town }
@@ -197,17 +197,17 @@ locations={
 	#France
 	angers = { rank = city 		town_setup = french_city }
 	arras = { rank = city 		town_setup = french_city }
-	bordeaux = { rank = city 	town_setup = french_city }
+	bordeaux = { rank = city 	town_setup = bordeaux_city }
 	marseille = { rank = city 	town_setup = french_city }
 	metz = { rank = city 		town_setup = french_city }
 	montpellier = { rank = city town_setup = french_city }
 	narbonne = { rank = city 	town_setup = french_city }
-	paris = { rank = city 		town_setup = french_city }
+	paris = { rank = city 		town_setup = paris_city }
 	rouen = { rank = city 		town_setup = french_city }
 	saint_omer = { rank = town 	town_setup = french_town }
 	toulouse = { rank = city 	town_setup = french_city }
 	tours = { rank = city 		town_setup = french_city }
-	troyes = { rank = city 		town_setup = french_city }
+	troyes = { rank = city 		town_setup = troyes_city }
 	
 	agen = { rank = town 			town_setup = french_town }
 	aix_en_provence = { rank = town town_setup = french_town }
@@ -260,13 +260,13 @@ locations={
 	la_rochelle = { rank = town town_setup = french_town }
 
 	#Germany
-	lubeck = { rank = city town_setup = german_coastal_city }
+	lubeck = { rank = city town_setup = lubeck_city }
 	erfurt = { rank = city town_setup = german_city }
-	cologne = { rank = city town_setup = german_city }
-	speyer = { rank = town town_setup = german_town }
+	cologne = { rank = city town_setup = cologne_city }
+	speyer = { rank = city town_setup = german_city }
 	mainz = { rank = city town_setup = german_city }
 	augsburg = { rank = city town_setup = german_city }
-	prague = { rank = city town_setup = german_city }
+	prague = { rank = city town_setup = prague_city }
 	vienna = { rank = city town_setup = german_city }
 	
 	aachen = { rank = town town_setup = german_town }
@@ -293,7 +293,7 @@ locations={
 	munich = { rank = town town_setup = german_town }
 	munster = { rank = town town_setup = german_town }
 	oettingen = { rank = town town_setup = german_town }
-	nuremberg = { rank = town town_setup = german_town }
+	nuremberg = { rank = town town_setup = nuremberg_town }
 	osnabruck = { rank = town town_setup = german_town }
 	paderborn = { rank = town town_setup = german_town }
 	regensburg = { rank = town town_setup = german_town }
@@ -316,7 +316,7 @@ locations={
 	wittenberg = { rank = town town_setup = german_town }
 
 	wolgast = { rank = town town_setup = german_coastal_town } #Greifswald
-	hamburg = { rank = city town_setup = german_coastal_city }
+	hamburg = { rank = city town_setup = hamburg_city }
 	kiel = { rank = town town_setup = german_coastal_town }
 	rostock = { rank = town town_setup = german_coastal_town }
 	stralsund = { rank = town town_setup = german_coastal_town }
@@ -339,9 +339,9 @@ locations={
 	salzburg = { rank = town town_setup = german_town }
 
 	#Low Countries	
-	bruges = { rank = city 				town_setup = lowlands_coastal_city }
-	ghent = { rank = city 				town_setup = lowlands_city }
-	ypres = { rank = town 				town_setup = lowlands_town }
+	bruges = { rank = city 				town_setup = bruges_city }
+	ghent = { rank = city 				town_setup = ghent_city }
+	ypres = { rank = town 				town_setup = ypres_town }
 
 	antwerp = { rank = town 			town_setup = lowlands_costal_town }
 	the_hague = { rank = town 			town_setup = lowlands_costal_town }
@@ -399,7 +399,7 @@ locations={
 
 	# Russia city
 	moscow = { rank = city 			town_setup = russian_city }
-	novgorod = { rank = city 		town_setup = russian_city }
+	novgorod = { rank = city 		town_setup = novgorod_city }
 	pskov = { rank = city 			town_setup = russian_city }
 	smolensk = { rank = city 		town_setup = russian_city }
 	tver = { rank = city 			town_setup = russian_city }
@@ -426,7 +426,7 @@ locations={
 	rabat = { rank = city 	town_setup = maghreb_coastal_city }
 	annaba = { rank = city 		town_setup = maghreb_coastal_city }
 	bejaia = { rank = city 	town_setup = maghreb_coastal_city }
-	fez = { rank = city 		town_setup = maghreb_city }
+	fez = { rank = city 		town_setup = fez_city }
 	meknes = { rank = city 		town_setup = maghreb_city }
 	constantine_ALG = { rank = city town_setup = maghreb_city }
 	sijilmasa = { rank = city 	town_setup = maghreb_city }
@@ -464,7 +464,7 @@ locations={
 	targoviste = { rank = town 			town_setup = carpathian_town }
 	
 	# Iberia
-	barcelona = { rank = city 	town_setup = iberian_city_port }
+	barcelona = { rank = city 	town_setup = barcelona_city }
 	cordoba = { rank = city town_setup = iberian_city }
 	granada = { rank = city town_setup = iberian_city }
 	lisbon = { rank = town town_setup = iberian_town_port }
@@ -539,7 +539,7 @@ locations={
 	walata = { rank = town 	town_setup = sahel_town  }
 	djenne = { rank = town town_setup = sahel_town  }
 	segou = { rank = town town_setup = sahel_town  }
-	timbuktu = { rank = town town_setup = sahel_town  }
+	timbuktu = { rank = city town_setup = timbuktu_city }
 	gao = { rank = town 	town_setup = sahel_town  }
 	njimi = { rank = town town_setup = sahel_town  }
 	alkalawa = { rank = town town_setup = sahel_town  }
@@ -568,7 +568,7 @@ locations={
 	# Egypt and Libya
 	alexandria = { rank = city 	town_setup	 = egyptian_city }
 	asyut = { rank = city 		town_setup	 = egyptian_city }
-	cairo = { rank = city 		town_setup	 = egyptian_city  }
+	cairo = { rank = megalopolis 		town_setup = cairo_city }
 	damietta = { rank = city 	town_setup	 = egyptian_city }
 	mansoura = { rank = city 	town_setup	 = egyptian_city }
 	qus = { rank = city 		town_setup	 = egyptian_city }
@@ -596,19 +596,19 @@ locations={
 	
 	# China
 	anyang = { rank = city town_setup = chinese_city }
-	dadu = { rank = city town_setup = chinese_city }
+	dadu = { rank = megalopolis town_setup = chinese_city }
 	changsha = { rank = city town_setup = chinese_city }
 	chengdu = { rank = city town_setup = chinese_city }
 	baxian = { rank = city town_setup = chinese_city }
 	taihe_dali = { rank = city town_setup = south_east_asia_town }
 	datong_datong = { rank = city town_setup = chinese_city }
 	gengma = { rank = city town_setup = chinese_city }
-	fuliang = { rank = city town_setup = chinese_city } #Jingdezhen
+	fuliang = { rank = city town_setup = jingdezhen_city } #Jingdezhen
 	minxian = { rank = city town_setup = chinese_coastal_city }
 	ganzhou = { rank = city town_setup = chinese_city }
-	guangzhou = { rank = city town_setup = chinese_city }
+	guangzhou = { rank = city town_setup = guangzhou_city }
 	handan = { rank = city town_setup = chinese_city }
-	hangzhou = { rank = city town_setup = chinese_coastal_city }
+	hangzhou = { rank = city town_setup = hangzhou_city }
 	jiangdu = { rank = city town_setup = chinese_city } #Yangzhou
 	jiangling = { rank = city town_setup = chinese_city }
 	kaifeng = { rank = city town_setup = chinese_city }
@@ -922,53 +922,53 @@ locations={
 	gowa = { rank = town town_setup = south_east_asia_port_town }
 
 	# Anatolia city
-	amasya = { rank = city		town_setup = anatolian_city }
-	ankara = { rank = city 		town_setup = anatolian_city }
+	amasya = { rank = city		town_setup = christian_anatolian_city }
+	ankara = { rank = city 		town_setup = christian_anatolian_city }
 	antioch = { rank = city	 	town_setup = greek_city_port }
 	bursa = { rank = town 		town_setup = greek_town_port}
-	diyarbekir = { rank = city 	town_setup = anatolian_city }
+	diyarbekir = { rank = city 	town_setup = christian_anatolian_city }
 	izmit = { rank = city 		town_setup = greek_city_port }
-	kayseri = { rank = city 	town_setup = anatolian_city }
-	konya = { rank = city 		town_setup = anatolian_city }
+	kayseri = { rank = city 	town_setup = christian_anatolian_city }
+	konya = { rank = city 		town_setup = christian_anatolian_city }
 	larnaca = { rank = town 	town_setup = greek_town }
-	malatya = { rank = city 	town_setup = anatolian_city }
+	malatya = { rank = city 	town_setup = christian_anatolian_city }
 	nicosia_cyp = { rank = town town_setup = greek_town }
-	urfa = { rank = city 	town_setup = anatolian_city }
-	sivas = { rank = city 		town_setup = anatolian_city }
+	urfa = { rank = city 	town_setup = christian_anatolian_city }
+	sivas = { rank = city 		town_setup = christian_anatolian_city }
 	smyrna = { rank = city 		town_setup = greek_city_port }
 	tarsus = { rank = town 		town_setup = greek_town_port}
 	trebizond = { rank = city 	town_setup = greek_city_port }
-	van = { rank = town 		town_setup = anatolian_town }
+	van = { rank = town 		town_setup = christian_anatolian_town }
 	
 	amasra = { rank = town 		town_setup = greek_town_port }
 	bergama = { rank = town		town_setup = greek_town_port }
-	birgi = { rank = town		town_setup = anatolian_town }
+	birgi = { rank = town		town_setup = christian_anatolian_town }
 	iznik = { rank = town		town_setup = greek_town_port }
 	silifke = { rank = town		town_setup = greek_town_port }
-	mardin = { rank = town		town_setup = anatolian_town }
-	samsun = { rank = town		town_setup = anatolian_town }
-	#kastamonu = { rank = town		town_setup = anatolian_town }
+	mardin = { rank = town		town_setup = christian_anatolian_town }
+	samsun = { rank = town		town_setup = christian_anatolian_town }
+	#kastamonu = { rank = town		town_setup = christian_anatolian_town }
 	sinop = { rank = town		town_setup = greek_town_port } #BR EDIT
-	#kozluk = { rank = town		town_setup = anatolian_town }
-	#elbistan = { rank = town		town_setup = anatolian_town }
-	kutahya = { rank = town		town_setup = anatolian_town }
-	#uluborlu = { rank = town		town_setup = anatolian_town }
-	#bayramlu = { rank = town		town_setup = anatolian_town }
-	lazkiye = { rank = town		town_setup = anatolian_town }
-	#ladik_pontus = { rank = town		town_setup = anatolian_town }
-	#balikesir = { rank = town		town_setup = anatolian_town }
+	#kozluk = { rank = town		town_setup = christian_anatolian_town }
+	#elbistan = { rank = town		town_setup = christian_anatolian_town }
+	kutahya = { rank = town		town_setup = christian_anatolian_town }
+	#uluborlu = { rank = town		town_setup = christian_anatolian_town }
+	#bayramlu = { rank = town		town_setup = christian_anatolian_town }
+	lazkiye = { rank = town		town_setup = christian_anatolian_town }
+	#ladik_pontus = { rank = town		town_setup = christian_anatolian_town }
+	#balikesir = { rank = town		town_setup = christian_anatolian_town }
 	milas = { rank = town		town_setup = greek_town_port }
-	karahisar_i_sahib = { rank = town		town_setup = anatolian_town }
-	#manisa = { rank = town		town_setup = anatolian_town }
-	#niksar = { rank = town		town_setup = anatolian_town }
+	karahisar_i_sahib = { rank = town		town_setup = christian_anatolian_town }
+	#manisa = { rank = town		town_setup = christian_anatolian_town }
+	#niksar = { rank = town		town_setup = christian_anatolian_town }
 	antalya = { rank = town		town_setup = greek_town_port }
-	alasehir = { rank = town		town_setup = anatolian_town }
+	alasehir = { rank = town		town_setup = christian_anatolian_town }
 
-	sebinkarahisar = { rank = town		town_setup = anatolian_town }
-	mus = { rank = town		town_setup = anatolian_town }
-	erzurum = { rank = town		town_setup = anatolian_town }
-	aksaray = { rank = town		town_setup = anatolian_town }
-	inonu = { rank = town		town_setup = anatolian_town }
+	sebinkarahisar = { rank = town		town_setup = christian_anatolian_town }
+	mus = { rank = town		town_setup = christian_anatolian_town }
+	erzurum = { rank = town		town_setup = christian_anatolian_town }
+	aksaray = { rank = town		town_setup = christian_anatolian_town }
+	inonu = { rank = town		town_setup = christian_anatolian_town }
 
 	#Central Asia
 	bukhara = { rank = city town_setup = central_asian_city }
@@ -982,8 +982,8 @@ locations={
 	balkh = { rank = city town_setup = levant_city }
 	ghazni = { rank = city town_setup = levant_city }
 	hamadan = { rank = city town_setup = levant_city }
-	herat = { rank = city town_setup = levant_city }
-	hormuz = { rank = city town_setup = levant_city }
+	herat = { rank = city town_setup = herat_city }
+	hormuz = { rank = city town_setup = hormuz_city }
 	isfahan = { rank = city town_setup = levant_city }
 	kermanshah = { rank = city town_setup = levant_city }
 	nishapur = { rank = city town_setup = levant_city }
@@ -992,20 +992,20 @@ locations={
 	shiraz = { rank = city town_setup = levant_city }
 	soltaniyeh = { rank = city town_setup = levant_city }
 	tabriz = { rank = city town_setup = levant_city }
-	tbilisi = { rank = city 	town_setup = anatolian_city }
-	gladzor = { rank = town town_setup = anatolian_city }
+	tbilisi = { rank = city 	town_setup = christian_anatolian_city }
+	gladzor = { rank = town town_setup = christian_anatolian_city }
 	yazd = { rank = city town_setup = levant_city }
 
 	zaranj = { rank = town town_setup = levant_city }
 	kabul = { rank = town town_setup = levant_city }
 
 	ganja = { rank = town town_setup = levant_city }
-	ani = { rank = city town_setup = anatolian_city } #BR edit
+	ani = { rank = city town_setup = christian_anatolian_city } #BR edit
 	astarabad = { rank = town town_setup = levant_city }
 	siraf = { rank = town town_setup = levant_city }
 	rasht = { rank = town town_setup = levant_city }
 	al_qatif = { rank = town town_setup = levant_town }
-	ar_rabadha = { rank = town town_setup = levant_town }
+	ar_rabadha = { rank = town town_setup = tiny_levant_town }
 	taizz = { rank = town town_setup = levant_city }
 	jeddah = { rank = town town_setup = levant_city }
 	quetta = { rank = town town_setup = levant_city }
@@ -1013,9 +1013,9 @@ locations={
 	# Crescent and Arabia
 	acre = { rank = city 		town_setup = levant_city }
 	aleppo = { rank = city 		town_setup = levant_city }
-	baghdad = { rank = city 	town_setup = levant_city }
+	baghdad = { rank = megalopolis 	town_setup = baghdad_city }
 	basra = { rank = city 		town_setup = levant_city }
-	damascus = { rank = city 	town_setup = levant_city }
+	damascus = { rank = city 	town_setup = damascus_city }
 	jerusalem = { rank = city 	town_setup = levant_city }
 	mosul = { rank = city 		town_setup = levant_city }
 	nusaybin = { rank = city 	town_setup = levant_city }
@@ -1030,7 +1030,7 @@ locations={
 	samarra = { rank = town 	town_setup = levant_city }
 
 	# Crimea
-	kaffa = { rank = town town_setup = greek_town_port } #br edit
+	kaffa = { rank = city town_setup = kaffa_city } #br edit
 	#soldaia = { rank = town town_setup = greek_town }
 	tana = { rank = town town_setup = greek_town_port }
 	theodoro = { rank = city town_setup = greek_city_port }
@@ -1075,7 +1075,7 @@ locations={
 	mathura = { rank = town town_setup = indian_town }
 	bombay = { rank = city  town_setup = indian_sultanate_coastal_city }
 	monghyr = { rank = town town_setup = indian_town }
-	pazhaverkadu = { rank = town town_setup = indian_town }
+	pazhaverkadu = { rank = city town_setup = pazhaverkadu_city }
 	mysore = { rank = city  town_setup = indian_sultanate_city }
 	sargadwari = { rank = town town_setup = indian_town }
 	
@@ -1094,7 +1094,7 @@ locations={
 	vijayanagar = { rank = city  town_setup = indian_city }
 	sonargaon = { rank = city  town_setup = indian_city }
 
-	chittagong = { rank = town town_setup = indian_town }
+	chittagong = { rank = city town_setup = chittagong_city }
 	kotte = { rank = town town_setup = indian_town }
 	bangalore = { rank = town town_setup = indian_town }
 	dharmapuri = { rank = town town_setup = indian_town }
@@ -1192,6 +1192,18 @@ building_manager = {
 	tar_kiln = { tag = SWE level = 1 location = handbord }
 	tar_kiln = { tag = SWE level = 1 location = ekenas }
 	tar_kiln = { tag = SWE level = 1 location = poytis }
+	tar_kiln = { tag = SWE level = 1 location = hudiksvall }  # Hälsingland — historically the core tar region
+	tar_kiln = { tag = SWE level = 2 location = soderala }    # Hälsingland
+	tar_kiln = { tag = SWE level = 3 location = gefle }       # Gästrikland, major export port for tar
+	tar_kiln = { tag = SWE level = 1 location = mora }        # Dalarna
+	tar_kiln = { tag = SWE level = 1 location = bjorneborg }  # Ostrobothnia (Pori) — Finnish tar export hub
+	#tar_kiln = { tag = SWE level = 2 location = uleaborg }    # Northern Ostrobothnia (Oulu) — major tar port
+
+	tar_kiln = { tag = NOR level = 4 location = bragernes }
+	tar_kiln = { tag = NOR level = 1 location = roros }
+	tar_kiln = { tag = NOR level = 1 location = elverum }
+	tar_kiln = { tag = NOR level = 2 location = ringerike }
+	tar_kiln = { tag = NOR level = 1 location = lillehammer }
 	
 	weapon_guild = { tag = SWE level = 3 location = stockholm }
 	wharf = { tag = SWE level = 1 location = stockholm }
@@ -1213,8 +1225,9 @@ building_manager = {
 	
 	cathedral = { tag = TEU level = 1 location = konigsberg }
 	
-	tar_kiln = { tag = BIO level = 1 location = lihula } 
-	tar_kiln = { tag = LIV level = 1 location = kandava } 
+	tar_kiln = { tag = BIO level = 3 location = lihula }
+	tar_kiln = { tag = LIV level = 3 location = kandava }
+	tar_kiln = { tag = ORE level = 1 location = vyborg }
 
 
 	stockade	= { tag = ORE level = 1 location = korela }
@@ -1222,15 +1235,24 @@ building_manager = {
 
 
 	# steppes 
+	kurultai = { tag = GLH level = 1 location = sarai_al_jadid }
+	kurultai = { tag = GLH level = 1 location = astrakhan }
+	kurultai = { tag = GLH level = 1 location = chimgi_tura }
+	kurultai = { tag = GLH level = 1 location = kazan }
+	kurultai = { tag = GLH level = 1 location = majar }
+	kurultai = { tag = GLH level = 1 location = sarayjuk }
 	
 	kurultai = { tag = CHG level = 1 location = almaliq }
 	kurultai = { tag = CHG level = 1 location = almaty }
 	kurultai = { tag = CHG level = 1 location = balasagun }
 	
-	kurultai = { tag = ERE level = 1 location = gorgan }
-	kurultai = { tag = ERE level = 1 location = nishapur }
-	kurultai = { tag = KAR level = 1 location = basra }
+	kurultai = { tag = GRG level = 1 location = gorgan }
+	kurultai = { tag = JKR level = 1 location = nishapur }
+	kurultai = { tag = HLG level = 1 location = basra }
 
+	kurultai = { tag = JAL level = 1 location = samarra }
+	kurultai = { tag = JAL level = 1 location = tabriz }
+	kurultai = { tag = JAL level = 1 location = baghdad }
 	kurultai = { tag = JUR level = 1 location = darab }
 	kurultai = { tag = UGH level = 1 location = qatruyeh }
 	kurultai = { tag = NGD level = 1 location = ghazni }
@@ -1243,8 +1265,20 @@ building_manager = {
 	kurultai = { tag = YSU level = 1 location = samarkand }
 	kurultai = { tag = KTT level = 1 location = vakhs }
 	kurultai = { tag = JLY level = 1 location = khujand }
+	kurultai = { tag = DGH level = 1 location = kashgar }
+	kurultai = { tag = BAT level = 1 location = naomao }
+	kurultai = { tag = CRS level = 1 location = khar_balgas }
+	kurultai = { tag = KHD level = 1 location = zavkhan }
+	kurultai = { tag = TRH level = 1 location = bulgan }
+	kurultai = { tag = BGT level = 1 location = balj }
+	market_village = { tag = BGT level = 1 location = balj } #To get market access for the kurultai to work
+	kurultai = { tag = HCN level = 1 location = qingzhou_mongol }
+	kurultai = { tag = OTC level = 1 location = taizhou_jurchen }
+	kurultai = { tag = QAS level = 1 location = boorj }
+	market_village = { tag = QAS level = 1 location = boorj } #To get market access for the kurultai to work
+	kurultai = { tag = OGE level = 1 location = kurchum }
 	
-	
+	caravanserai = { tag = GLH level = 1 location = sarai_al_jadid }
 	caravanserai = { tag = CHG level = 1 location = almaliq }
 	caravanserai = { tag = GRG level = 1 location = gorgan }
 
@@ -1327,6 +1361,9 @@ building_manager = {
 	#Hanseatic Town Hall
 	hanseatic_town_hall = { tag = HSA level = 1 location = lubeck }
 
+	#Merchant Guild Chapel
+	merchant_guild_chapel = { tag = HSA level = 1 location = lubeck }
+
 	#Banking families
 	banking_office = { tag = PRZ level = 1 location = florence }
 	banking_office = { tag = PRZ level = 1 location = london }
@@ -1349,6 +1386,11 @@ building_manager = {
 	banking_office = { tag = BRD level = 1 location = smyrna }
 	banking_office = { tag = BRD level = 1 location = nicosia_cyp }
 	banking_office = { tag = BRD level = 1 location = jerusalem }
+
+	banking_office = { tag = ACC level = 1 location = florence }
+	banking_office = { tag = ACC level = 1 location = naples }
+	banking_office = { tag = ACC level = 1 location = rodos }
+	banking_office = { tag = ACC level = 1 location = avignon }
 
 	
 	
@@ -1398,8 +1440,15 @@ building_manager = {
 	cathedral 	= { tag = SCO level = 1 location = inverary } # lismore
 	cathedral 	= { tag = SCO level = 1 location = dundee } #brechin
 	cathedral 	= { tag = SBL level = 1 location = perth } #dunkeld
-	cathedral 	= { tag = SCO level = 1 location = dornoch } 
+	cathedral 	= { tag = SCO level = 1 location = dornoch }
 	cathedral 	= { tag = ORK level = 1 location = orkney } # kirkwall
+
+	tar_kiln = { tag = ENG level = 3 location = hereford }
+	tar_kiln = { tag = ENG level = 4 location = kidderminster }
+	tar_kiln = { tag = ENG level = 4 location = shrewsbury }
+	tar_kiln = { tag = ENG level = 4 location = stafford }
+
+	tar_kiln = { tag = SCO level = 3 location = inverary }
 
 
 	# Wales had the highest castle per area in the world. It was totally locked down.
@@ -1493,6 +1542,7 @@ building_manager = {
 	monastery 	= { tag = ENG level = 1 location = skipton } # Bolton Priory
 	stockade 	= { tag = DHM level = 1 location = durham }
 	
+	cathedral 	= { tag = ENG level = 1 location = london } # Old St Paul's Cathedral
 	cathedral 	= { tag = ENG level = 1 location = york } # York Minster
 	cathedral 	= { tag = ENG level = 1 location = canterbury } # Canterbury Cathedral
 	cathedral 	= { tag = ENG level = 1 location = wells } # Wells Cathedral
@@ -1820,7 +1870,7 @@ building_manager = {
 	monastery 	= { tag = POR level = 1 location = alcobaca } #Alcobaça
 	monastery 	= { tag = CAS level = 1 location = leon } #San Isidoro (León)   #BR edit
 	monastery 	= { tag = CAS level = 1 location = lerma } #San Pedro de Arlanza   #BR edit
-	monastery 	= { tag = POR level = 1 location = lisbon } #São Dinis de Odivelas
+	monastery 	= { tag = POR level = 1 location = porto } #São Dinis de Odivelas
 	monastery 	= { tag = CAS level = 1 location = najera } #San Millán de la Cogolla/Santo Domingo de la Calzada/Nájera   #BR edit
 	monastery 	= { tag = CAS level = 1 location = medinaceli } #Santa María de Huerta   #BR edit
 	monastery 	= { tag = CAS level = 1 location = monforte_de_lemos } #Santa María de Ferreira de Pantón   #BR edit
@@ -1891,7 +1941,7 @@ building_manager = {
 
 	sergeantry	= { tag = CAS level = 1 location = valladolid } #Sergeants at arms   #BR edit
 	sergeantry	= { tag = ARA level = 1 location = barcelona } #Sergeants at arms
-	sergeantry	= { tag = POR level = 1 location = lisbon } #Sergeants at arms
+	sergeantry	= { tag = POR level = 1 location = porto } #Sergeants at arms
 	sergeantry	= { tag = NAV level = 1 location = pamplona } #Sergeants at arms
 	
 	fine_cloth_guild = { tag = ARA level = 1 location = barcelona }
@@ -1899,13 +1949,13 @@ building_manager = {
 	fine_cloth_guild = { tag = ADU level = 1 location = valencia }
 
 
-	tar_kiln = { tag = NAV level = 1 location = elizondo } 
-	tar_kiln = { tag = CAS level = 1 location = bilbao }   #BR edit
-	tar_kiln = { tag = CAS level = 1 location = san_sebastian }   #BR edit
-	tar_kiln = { tag = CAS level = 1 location = beteta }   #BR edit
-	tar_kiln = { tag = CAS level = 1 location = segura_de_la_sierra }   #BR edit
-	tar_kiln = { tag = MOR level = 1 location = ronda } 
-	tar_kiln = { tag = POR level = 1 location = chao_de_couce } 
+	tar_kiln = { tag = NAV level = 4 location = elizondo } 
+	tar_kiln = { tag = CAS level = 4 location = bilbao } 
+	tar_kiln = { tag = CAS level = 4 location = san_sebastian } 
+	tar_kiln = { tag = CAS level = 4 location = beteta } 
+	tar_kiln = { tag = CAS level = 3 location = segura_de_la_sierra } 
+	tar_kiln = { tag = MOR level = 4 location = ronda } 
+	tar_kiln = { tag = POR level = 4 location = chao_de_couce } 
 
 		#Barcelona Royal Shipyard #Unique
 	barcelona_royal_shipyard = { tag = ARA level = 1 location = barcelona }
@@ -1927,15 +1977,15 @@ building_manager = {
 
 
 
-	tar_kiln = { tag = HUN level = 1 location = cuhea } 
+	tar_kiln = { tag = HUN level = 3 location = cuhea } 
 	cathedral 	= { tag = HUN level = 1 location = fehervar } 
 	
-	tar_kiln = { tag = BUL level = 1 location = razgrad } 
-	tar_kiln = { tag = BUL level = 1 location = sozopol } 
-	tar_kiln = { tag = ORT level = 1 location = kocevje } 
-	tar_kiln = { tag = LUC level = 1 location = massa } 
-	tar_kiln = { tag = BYZ level = 1 location = polygyros } 
-	tar_kiln = { tag = BYZ level = 1 location = soma } 
+	tar_kiln = { tag = BUL level = 4 location = razgrad } 
+	tar_kiln = { tag = BUL level = 4 location = sozopol } 
+	tar_kiln = { tag = ORT level = 4 location = kocevje } 
+	tar_kiln = { tag = LUC level = 4 location = massa } 
+	tar_kiln = { tag = BYZ level = 4 location = polygyros } 
+	tar_kiln = { tag = SRU level = 3 location = soma } 
 
 	
 
@@ -1994,12 +2044,16 @@ building_manager = {
 	stockade = { tag = TEU level = 1 location = insterburg }
 
 
-	tar_kiln = { tag = LIT level = 1 location = kraziai } 
-	tar_kiln = { tag = LIT level = 1 location = vilkmerge } 
-	tar_kiln = { tag = LIT level = 1 location = lida } 
+	tar_kiln = { tag = LIT level = 3 location = kraziai } 
+	tar_kiln = { tag = LIT level = 4 location = vilkmerge } 
+	tar_kiln = { tag = LIT level = 4 location = lida } 
 
-	tar_kiln = { tag = TEU level = 1 location = tuchola } 
-	tar_kiln = { tag = BRA level = 1 location = drawsko } 
+	tar_kiln = { tag = TEU level = 4 location = tuchola }
+	tar_kiln = { tag = BRA level = 4 location = drawsko }
+
+	tar_kiln = { tag = POL level = 4 location = kielce }
+	tar_kiln = { tag = POL level = 4 location = lodz }
+	tar_kiln = { tag = POL level = 4 location = leczyca }
 
 	#Low Countries
 	#castle = { tag = FLA level = 1 location = ghent } #Gravensteen
@@ -2036,8 +2090,8 @@ building_manager = {
 	monastery 	= { tag = MEI level = 1 location = meissen } # Altzella 
 
 
-	tar_kiln = { tag = MAI level = 1 location = miltenberg } 
-	tar_kiln = { tag = FKN level = 1 location = saalfeld } 
+	tar_kiln = { tag = MAI level = 4 location = miltenberg } 
+	tar_kiln = { tag = HNB level = 4 location = saalfeld } 
 
 	#Switzerland
 
@@ -2100,6 +2154,25 @@ building_manager = {
 	cathedral 	= { tag = MOS level = 1 location = vladimir } #Dormition Cathedral, established in 1214		
 	cathedral 	= { tag = TVE level = 1 location = tver } #Resurrection Cathedral, established in 1271
 
+	orthodox_monastery	= { tag = NOV level = 1 location = novgorod } #Yuriev Monastery, c.1030
+	orthodox_monastery	= { tag = NOV level = 1 location = novgorod } #Khutyn Monastery, 1192
+	orthodox_monastery	= { tag = PSK level = 1 location = pskov } #Mirozhsky Monastery, 1156
+	orthodox_monastery	= { tag = MOS level = 1 location = moscow } #Danilov Monastery, 1282
+	orthodox_monastery	= { tag = BRY level = 1 location = bryansk } #Svensky Monastery, 1288
+	orthodox_monastery	= { tag = KOS level = 1 location = kostroma } #Ipatiev Monastery, c.1330
+	orthodox_monastery	= { tag = NZH level = 1 location = nizhny_novgorod } #Pechersky Ascension Monastery, c.1328
+
+	tar_kiln = { tag = NOV level = 1 location = tikhvin }
+	tar_kiln = { tag = NOV level = 3 location = beloozero }
+	tar_kiln = { tag = NOV level = 2 location = kargopol }
+	tar_kiln = { tag = NOV level = 2 location = veliky_ustyug }
+	tar_kiln = { tag = NOV level = 1 location = yarensk }
+
+	tar_kiln = { tag = MOS level = 4 location = vologda }
+	tar_kiln = { tag = MOS level = 4 location = galich }
+	tar_kiln = { tag = MOS level = 3 location = vyatka }
+	tar_kiln = { tag = MOS level = 3 location = varnavino }
+	tar_kiln = { tag = MOS level = 2 location = sudai }
 
 	#Ruthenia
 	castle = { tag = KIE level = 1 location = myrhorod }
@@ -2118,15 +2191,29 @@ building_manager = {
 	cathedral 	= { tag = KIE level = 1 location = kyiv } #Saint Sophia Cathedral, established in 1012
 	cathedral 	= { tag = POK level = 1 location = polotsk } #Saint Sophia Cathedral, established in 992
 	cathedral 	= { tag = HAL level = 1 location = halych } #Assumption Cathedral, established in 1303
+	cathedral	= { tag = CHR level = 1 location = chernihiv } #Transfiguration Cathedral, established in 1032
+	cathedral	= { tag = VOL level = 1 location = volodymyr } #Dormition Cathedral, established in 1160
+	cathedral	= { tag = PNK level = 1 location = pinsk } #Eparchy centre
+	cathedral	= { tag = NRK level = 1 location = novogrudok } #Eparchy centre
+
+	orthodox_monastery	= { tag = VOL level = 1 location = volodymyr } #Zymnenskyi Monastery, 992
+	orthodox_monastery	= { tag = VOL level = 1 location = lutsk } #Zhydychyn Monastery, 1227
+	orthodox_monastery	= { tag = HAL level = 1 location = lviv } #Univ Monastery
+	orthodox_monastery	= { tag = HAL level = 1 location = sambir } #Onufriy Monastery, 1292
+	orthodox_monastery	= { tag = NVS level = 1 location = novhorod_siverskyi } #Spaso-Preobrazhenskyi Monastery, 1013
+	orthodox_monastery	= { tag = CHR level = 1 location = chernihiv } #Yeletskyi Monastery, 1060
+	orthodox_monastery	= { tag = POK level = 1 location = polotsk } #Yefrosinia Monastery, 1125
+	orthodox_monastery	= { tag = TUV level = 1 location = turov } #Boryso-Hlebski Monastery, 11th c.
+	orthodox_monastery	= { tag = NRK level = 1 location = novogrudok } #Lawryshawski Monastery, 1260
 
 	#France
 	#castle = { tag = ALS level = 1 location = strasbourg }
 	royal_court = { tag = FRA level = 1 location = paris }
 	sergeantry	= { tag = FRA level = 1 location = paris } #Sergeants at arms
 	
-	tar_kiln = { tag = FRA level = 1 location = mende } 
-	tar_kiln = { tag = VNT level = 1 location = ventadour } 
-	tar_kiln = { tag = BRI level = 1 location = josselin } 
+	tar_kiln = { tag = FRA level = 4 location = mende } 
+	tar_kiln = { tag = VNT level = 4 location = ventadour } 
+	tar_kiln = { tag = BRI level = 4 location = josselin } 
 
 	cathedral 	= { tag = FRA level = 1 location = agde } #Saint-Étienne d'Agde Cathedral, established in 1173
 	cathedral 	= { tag = FRA level = 1 location = agen } #Saint-Caprais d'Agen Cathedral
@@ -2153,7 +2240,7 @@ building_manager = {
 
 
 	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit
-	brethren_marsh = { tag = KNI level = 1 location = malta } #BR edit
+	#brethren_marsh = { tag = KNI level = 1 location = malta } #BR edit
 	nobility_fortifications = { tag = KNI level = 1 location = malta } #BR edit
 	nobles_recruitment_center = { tag = KNI level = 1 location = malta } #BR edit
 
@@ -3332,18 +3419,18 @@ building_manager = {
 	#temple = { tag = KAR level = 1 location = ermenek }
 
 	#middle east
-	tar_kiln = { tag = TUR level = 1 location = sirnak } 
-	tar_kiln = { tag = HZP level = 1 location = izeh } 
-	tar_kiln = { tag = IHB level = 1 location = dulab } 
-	tar_kiln = { tag = MAM level = 1 location = deir_qamar } 
+	tar_kiln = { tag = SUT level = 4 location = sirnak } 
+	tar_kiln = { tag = HZP level = 3 location = izeh } 
+	tar_kiln = { tag = IHB level = 4 location = dulab } 
+	tar_kiln = { tag = MAM level = 4 location = deir_qamar } 
 	
 	#india
 	#Tar Kiln
-	tar_kiln = { tag = DLH level = 1 location = nasik } 
-	tar_kiln = { tag = DLH level = 1 location = bir } 
-	tar_kiln = { tag = DLH level = 1 location = chakan } 
-	tar_kiln = { tag = ORI level = 1 location = asika } 
-	tar_kiln = { tag = LWA level = 1 location = phakphok } 
+	tar_kiln = { tag = DLH level = 4 location = nasik } 
+	tar_kiln = { tag = DLH level = 4 location = bir } 
+	tar_kiln = { tag = DLH level = 4 location = chakan } 
+	tar_kiln = { tag = ORI level = 4 location = asika } 
+	tar_kiln = { tag = LWA level = 4 location = phakphok } 
 
 	royal_court = { tag = DLH level = 1 location = sargadwari }
 
@@ -3377,9 +3464,9 @@ building_manager = {
 
 	
 	#se asia
-	tar_kiln = { tag = SUK level = 1 location = nakhon_sawan } 
-	tar_kiln = { tag = SPN level = 1 location = chaisri } 
-	tar_kiln = { tag = MUA level = 1 location = kut_ling } 
+	tar_kiln = { tag = SUK level = 4 location = nakhon_sawan } 
+	tar_kiln = { tag = SPN level = 4 location = chaisri } 
+	tar_kiln = { tag = MUA level = 4 location = kut_ling } 
 	
 	stockade = { tag = BEI level = 1 location = berune }
 
@@ -3433,6 +3520,66 @@ building_manager = {
 	ruined_great_wall_of_china = { tag = CHI level = 1 location = naiman }
 	ruined_great_wall_of_china = { tag = CHI level = 1 location = yizhou_jurchen }
 	ruined_great_wall_of_china = { tag = CHI level = 1 location = kaicheng }
+
+	#Chinese Fruit Orchards
+	# Level 4 — historically premier fruit regions, famous across China
+	fruit_orchard = { tag = CHI level = 4 location = guangzhou }       # Pearl River delta — lychee capital since Han dynasty; "to eat lychee, go to Lingnan"
+	fruit_orchard = { tag = CHI level = 4 location = hangzhou }        # West Lake region — plum, peach and longan; Song dynasty imperial gardens
+	fruit_orchard = { tag = CHI level = 4 location = chengdu }         # Sichuan "land of plenty" — citrus, peach, loquat since antiquity
+	fruit_orchard = { tag = CHI level = 4 location = nanchang }        # Jiangxi tangerine and mandarin heartland
+	fruit_orchard = { tag = CHI level = 4 location = changsha }        # Hunan subtropical citrus belt
+	fruit_orchard = { tag = CHI level = 4 location = zigui }           # Hubei — home of the Zigui navel orange, famed since Tang dynasty
+
+	# Level 3 — major regional producers
+	fruit_orchard = { tag = CHI level = 3 location = shangyuan }       # Nanjing/Jiangnan — prime Yangtze delta farmland
+	fruit_orchard = { tag = CHI level = 3 location = wuxian }          # Suzhou — Jiangnan heartland, famous gardens and plum orchards
+	fruit_orchard = { tag = CHI level = 3 location = shaoxing }        # Zhejiang — plum wine (huangjiu) region; famous plum and peach orchards
+	fruit_orchard = { tag = CHI level = 3 location = nanhai }          # Pearl River delta — lychee, longan, banana
+	fruit_orchard = { tag = CHI level = 3 location = xinyi_gaozhou }   # Western Guangdong — tropical fruit belt
+	fruit_orchard = { tag = CHI level = 3 location = shilong }         # Eastern Guangdong — tropical hill orchards
+	fruit_orchard = { tag = CHI level = 3 location = qixia }           # Shandong — Qixia apple district, premier pear and apple region
+	fruit_orchard = { tag = CHI level = 3 location = hengyang }        # Hunan — navel orange and citrus zone
+	fruit_orchard = { tag = CHI level = 3 location = shangrao }        # Jiangxi — tangerine and mandarin production area
+	fruit_orchard = { tag = CHI level = 3 location = xingguo }         # Jiangxi — subtropical hillside orchards
+	fruit_orchard = { tag = CHI level = 3 location = jiangdu }         # Yangzhou — famous Yangzhou pears along the Grand Canal
+	fruit_orchard = { tag = CHI level = 3 location = rangxian }        # Henan — jujube heartland; Chinese dates exported across empire
+	fruit_orchard = { tag = CHI level = 3 location = jingzhao }        # Xi'an region — pomegranate and persimmon, historically celebrated
+	fruit_orchard = { tag = CHI level = 3 location = jiangxia }        # Hubei — citrus and persimmon along middle Yangtze
+
+	# Level 2 — established local producers
+	fruit_orchard = { tag = CHI level = 2 location = kunming }         # Yunnan — highland subtropical fruit
+	fruit_orchard = { tag = CHI level = 2 location = yiyang }          # Hunan — subtropical mixed fruit
+	fruit_orchard = { tag = CHI level = 2 location = shipai }          # Hubei — Three Gorges terraced orchards
+	fruit_orchard = { tag = CHI level = 2 location = fuzhou_sichuan }  # Sichuan — citrus and grapefruit
+	fruit_orchard = { tag = CHI level = 2 location = handan }          # Hebei — pear and jujube orchards
+	fruit_orchard = { tag = CHI level = 2 location = qufu }            # Shandong — apple and pear country
+	fruit_orchard = { tag = CHI level = 2 location = macheng }         # Hubei — chestnut and persimmon
+	fruit_orchard = { tag = CHI level = 2 location = linan }           # Southern Zhejiang — mountain orchards
+	fruit_orchard = { tag = CHI level = 2 location = bozhou }          # Anhui — peach and medicinal fruit
+	fruit_orchard = { tag = CHI level = 2 location = dingxing }        # Hebei — pear orchards south of Beijing
+	fruit_orchard = { tag = CHI level = 2 location = mengcheng }       # Anhui — peach and plum belt
+	fruit_orchard = { tag = CHI level = 2 location = pingjin }         # Jiangsu — Yangtze delta orchards
+	fruit_orchard = { tag = CHI level = 2 location = huaining }        # Anhui — subtropical mixed fruit
+	fruit_orchard = { tag = CHI level = 2 location = dongliu }         # Anhui — Yangtze bank orchards
+	fruit_orchard = { tag = CHI level = 2 location = wuan }            # Hebei — walnut and chestnut hills
+	fruit_orchard = { tag = CHI level = 2 location = liaocheng }       # Shandong — pear orchards on the plain
+	fruit_orchard = { tag = CHI level = 2 location = yizhang }         # Hunan south — subtropical hillside
+	fruit_orchard = { tag = CHI level = 2 location = luoyang }         # Henan — historic peach orchards
+	fruit_orchard = { tag = CHI level = 2 location = kaifeng }         # Henan plain — pear and jujube
+
+	# Level 1 — minor local orchards
+	fruit_orchard = { tag = CHI level = 1 location = gaoyou }          # Jiangsu — general farmland, minor fruit
+	fruit_orchard = { tag = CHI level = 1 location = guancheng_zhengzhou } # Henan — general agricultural plain
+	fruit_orchard = { tag = CHI level = 1 location = hezhong }         # Shanxi — date and persimmon valley
+	fruit_orchard = { tag = CHI level = 1 location = tangxian }        # Hebei — chestnut foothills
+	fruit_orchard = { tag = CHI level = 1 location = ningpu }          # Jiangsu coast — persimmon
+	fruit_orchard = { tag = CHI level = 1 location = yongcheng }       # Henan — apple and pear plain
+	fruit_orchard = { tag = CHI level = 1 location = zhaoxin }         # Hebei — jujube and pear, minor
+	fruit_orchard = { tag = CHI level = 1 location = shizhao }         # Shandong — orchard grasslands
+	fruit_orchard = { tag = CHI level = 1 location = guangde }         # Southern Anhui — hillside fruit plots
+	fruit_orchard = { tag = CHI level = 1 location = dadu }            # Northern plain — minor pear and jujube
+	fruit_orchard = { tag = CHI level = 1 location = chuqiu }          # Henan — apricot and plum, minor
+	fruit_orchard = { tag = CHI level = 1 location = xiangyang }       # Hubei — minor orchard along Han River
 
 	#Egypt
 
@@ -3504,7 +3651,7 @@ building_manager = {
 
 	sand_pit = { tag = KHM level = 2 location = srey_sarchhor }
 
-	tar_kiln = { tag = KHM level = 1 location = peam }
+	tar_kiln = { tag = KHM level = 4 location = peam }
 
 	market_village = { tag = KHM level = 1 location = kampong_saom }
 	market_village = { tag = KHM level = 1 location = phsar_dek }
@@ -3573,7 +3720,28 @@ building_manager = {
 	cathedral = { tag = NAP level = 1 location = salerno }
 	cathedral = { tag = NAP level = 1 location = reggiocal }
 	cathedral = { tag = SIC level = 1 location = palermo }
-	cathedral = { tag = ARM level = 1	location = ani }
+
+	# City walls built after 1137 and longer than 2km
+	city_walls = { tag = FLA level = 1 location = ghent } # 13 km
+	city_walls = { tag = FLO level = 1 location = florence } # 8.5 km
+	city_walls = { tag = KOL level = 1 location = cologne } # 8.0 km
+	city_walls = { tag = BLG level = 1 location = bologna } # 7.6 km
+	city_walls = { tag = PIS level = 1 location = pisa } # 7.0 km
+	city_walls = { tag = FLA level = 1 location = bruges } # 6.8 km
+	city_walls = { tag = MLO level = 1 location = milano } # 6.5 km
+	city_walls = { tag = BRB level = 1 location = antwerp } # 6.0 km
+	city_walls = { tag = FRA level = 1 location = paris } # 5.4 km
+	city_walls = { tag = NUR level = 1 location = nuremberg } # 5.0 km
+	city_walls = { tag = LUB level = 1 location = lubeck } # 5.0 km
+	city_walls = { tag = GEN level = 1 location = genoa } # 4.5 km
+	city_walls = { tag = ENG level = 1 location = norwich } # 4.0 km
+	city_walls = { tag = KNI level = 1 location = rodos } # 4.0 km
+	city_walls = { tag = SWE level = 1 location = visby } # 3.5 km
+	city_walls = { tag = POL level = 1 location = krakow } # 3.4 km
+	city_walls = { tag = ENG level = 1 location = york } # 3.4 km
+	city_walls = { tag = FRA level = 1 location = carcassonne } # 3.0 km
+	city_walls = { tag = RIG level = 1 location = riga } # 2.2 km
+	city_walls = { tag = RAG level = 1 location = dubrovnik } # 1.9 km ok close enough
 
 	#Stockades on Tribal and bordering Tribal/Hordes
 	stockade = { tag = GLM level = 1 location = kologriv }
@@ -3630,7 +3798,7 @@ building_manager = {
 	stockade = { tag = BFN level = 1 location = dromahair }
 	stockade = { tag = CVN level = 1 location = cavan }
 	stockade = { tag = HYM level = 1 location = kilconnell }
-	stockade = { tag = EIL level = 1 location = moycarn }
+	stockade = { tag = HBA level = 1 location = moycarn }
 	stockade = { tag = CLR level = 1 location = galway }
 	stockade = { tag = CWM level = 1 location = castleconnell }
 	stockade = { tag = ULS level = 1 location = carrickfergus }
@@ -3821,9 +3989,9 @@ building_manager = {
 	stockade = { tag = IHB level = 1 location = astara }
 	stockade = { tag = ARD level = 1 location = sanandaj }
 	stockade = { tag = DML level = 1 location = khoy }
-	stockade = { tag = HBN level = 1 location = hashtrud }
-	stockade = { tag = HBN level = 1 location = malekan }
-	stockade = { tag = HBN level = 1 location = ujan }
+	stockade = { tag = TUR level = 1 location = hashtrud }
+	stockade = { tag = TUR level = 1 location = malekan }
+	stockade = { tag = TUR level = 1 location = ujan }
 	stockade = { tag = HDR level = 1 location = sulaymaniyah }
 	stockade = { tag = HNY level = 1 location = sahrazur }
 	stockade = { tag = KLR level = 1 location = gilan_gharb }
@@ -4103,6 +4271,12 @@ building_manager = {
 	stockade = { tag = ZIB level = 1 location = madin_bani_sulaym }
 	stockade = { tag = ZIB level = 1 location = al_ghrabah }
 
+	#Aqueducts
+
+	aqueduct_system = { tag = BYZ level = 1 location = constantinople }
+	aqueduct_system = { tag = PAP level = 1 location = rome }
+	aqueduct_system = { tag = PAP level = 1 location = avignon }
+	aqueduct_system = { tag = CAS level = 1 location = segovia }
 
 
 ###BR### ADDED Buildings ###BR###
@@ -4137,6 +4311,7 @@ building_manager = {
 	cathedral	= { tag = KAP level = 1	location = sivas }
 	cathedral	= { tag = BYZ level = 1	location = lazkiye }
 	cathedral	= { tag = TRE level = 1	location = amasya }
+	cathedral = { tag = ARM level = 1	location = ani }
 
 	#Levant
 	#local_governor	= { tag = MAM level = 1	location = damascus }
@@ -4436,7 +4611,7 @@ building_manager = {
 	br_soldier_farmers = { tag = BYZ level = 1 location = bogazliyan }
 	br_soldier_farmers = { tag = BYZ level = 1 location = sorgun }
 	br_soldier_farmers = { tag = BYZ level = 1 location = eskil }
-	br_soldier_farmers = { tag = M0E level = 1 location = tripolitsa }
+	br_soldier_farmers = { tag = MOE level = 1 location = tripolitsa }
 	br_soldier_farmers = { tag = ACH level = 1 location = kalamata }
 	br_soldier_farmers = { tag = ACH level = 1 location = chalandritsa }
 
@@ -4524,7 +4699,7 @@ building_manager = {
 	nobles_recruitment_center = { tag = BNV level = 1 location = benevento }
 	nobles_recruitment_center = { tag = BNV level = 1 location = potenza }
 
-	thema_headquarters	= { tag = S2C level = 1 location = lecce } #Sergeants at arms
+	thema_headquarters	= { tag = S2C level = 1 location = bari } #Sergeants at arms
 	br_pronoia_estate = { tag = S2C level = 1 location = bari }
 	br_pronoia_estate = { tag = S3C level = 1 location = cosenza }
 	br_pronoia_estate = { tag = S1C level = 1 location = messina }
@@ -4905,7 +5080,7 @@ building_manager = {
 
 	#IBERIA
 	#local_governor	= { tag = ADU level = 1	location = toledo }
-	naval_governor	= { tag = ADU level = 1	location = valencia }
+	#naval_governor	= { tag = ADU level = 1	location = valencia }
 	royal_court = { tag = ADU level = 1 location = cordoba }
 	royal_garden = { tag = ADU level = 1 location =  cordoba } #Gardens of the Great Palace
 	fortress_granary = { tag = ADU level = 1 location = cordoba }
@@ -5570,9 +5745,9 @@ building_manager = {
 	market_village = { tag = ATH level = 2 location = megara }
 	farming_village = { tag = ATH level = 1 location = megara }
 	farming_village = { tag = BYZ level = 1 location = uskudar }
-	market_village = { tag = M0E level = 1 location = tripolitsa }
-	#market_village = { tag = M0E level = 1 location = mystras }
-	market_village = { tag = M0E level = 1 location = nafplio }
+	market_village = { tag = MOE level = 1 location = tripolitsa }
+	#market_village = { tag = MOE level = 1 location = mystras }
+	market_village = { tag = MOE level = 1 location = nafplio }
 	market_village = { tag = ACH level = 1 location = andravida }
 	market_village = { tag = BYZ level = 1 location = bozan }
 	market_village = { tag = BYZ level = 1 location = bandirma }
@@ -5882,13 +6057,10 @@ building_manager = {
 	market_village = { tag = GEN level = 1 location = ventimiglia }
 	fishing_village = { tag = GEN level = 2 location = ventimiglia }
 	market_village = { tag = GEN level = 1 location = cairo_montenotte }
-	fishing_village = { tag = GEN level = 2 location = cairo_montenotte }
 	market_village = { tag = GEN level = 1 location = terranova_pausania }
 	fishing_village = { tag = GEN level = 2 location = terranova_pausania }
 	fishing_village = { tag = KNI level = 4 location = malta }
 	market_village = { tag = KNI level = 2 location = malta }
-	tar_kiln = { tag = KNI level = 1 location = malta }
-	lumber_mill = { tag = KNI level = 1 location = malta }
 	fishing_village = { tag = BQA level = 2 location = derna }
 	wharf = { tag = BQA level = 1 location = benghazi }
 	fishing_village = { tag = MAM level = 2 location = tobruk }
@@ -6005,7 +6177,7 @@ building_manager = {
 	guild_hall = { tag = ATH level = 1 location = corinth }
 	guild_hall = { tag = THS level = 1 location = larissa }
 	guild_hall = { tag = CRT level = 1 location = candia }
-	noble_villa = { tag = CEP level = 1 location = cephalonia }
+	local_estates = { tag = CEP level = 1 location = cephalonia }
 	guild_hall = { tag = DYR level = 1 location = durres }
 	guild_hall = { tag = CYP level = 1 location = larnaca }
 	merchants_guild = { tag = ATH level = 1 location = athens }
@@ -6014,11 +6186,11 @@ building_manager = {
 	merchants_guild = { tag = CRT level = 1 location = candia }
 	merchants_guild = { tag = DYR level = 1 location = durres }
 	merchants_guild = { tag = CYP level = 1 location = larnaca }
-	noble_villa = { tag = EPI level = 1 location = ioannina }
-	parish_church = { tag = M0E level = 1 location = mystras }
-	parish_church = { tag = M0E level = 1 location = tripolitsa }
+	local_estates = { tag = EPI level = 1 location = ioannina }
+	parish_church = { tag = MOE level = 1 location = mystras }
+	parish_church = { tag = MOE level = 1 location = tripolitsa }
 	parish_church = { tag = ACH level = 1 location = kalamata }
-	peasants_hunting_grounds  = { tag = M0E level = 1 location = karytaina }
+	peasants_hunting_grounds  = { tag = MOE level = 1 location = karytaina }
 	peasants_hunting_grounds  = { tag = EPI level = 1 location = pyli }
 	local_schools  = { tag = ATH level = 1 location = corinth }
 	local_schools  = { tag = ACH level = 1 location = mystras }
@@ -6037,129 +6209,129 @@ building_manager = {
 	burgher_mansion = { tag = CYP level = 1 location = larnaca }
 	burgher_mansion = { tag = GAZ level = 1 location = amasra }
 	burgher_mansion = { tag = CEP level = 1 location = cephalonia }
-	noble_villa = { tag = BYZ level = 1 location = enez }
-	noble_villa = { tag = BYZ level = 1 location = kesan }
-	noble_villa = { tag = BYZ level = 1 location = rodoscuk }
-	noble_villa = { tag = BYZ level = 1 location = corlu }
-	noble_villa = { tag = BYZ level = 2 location = catalca }
-	noble_villa = { tag = BYZ level = 1 location = kiyikoy }
-	noble_villa = { tag = BYZ level = 2 location = silivri }
-	noble_villa = { tag = ATH level = 1 location = gravia }
-	noble_villa = { tag = THE level = 1 location = edessa }
-	noble_villa = { tag = BYZ level = 1 location = silli }
-	noble_villa = { tag = BYZ level = 1 location = atpazari }
-	noble_villa = { tag = BYZ level = 2 location = biga }
-	noble_villa = { tag = BYZ level = 2 location = seyhli }
-	noble_villa = { tag = BYZ level = 2 location = usak }
-	noble_villa = { tag = BYZ level = 2 location = gediz }
-	noble_villa = { tag = BYZ level = 1 location = sandikli }
-	noble_villa = { tag = BYZ level = 2 location = kula }
-	noble_villa = { tag = BYZ level = 1 location = cesme }
-	noble_villa = { tag = BYZ level = 4 location = uskudar }
-	noble_villa = { tag = BYZ level = 2 location = bilecik }
-	noble_villa = { tag = BYZ level = 1 location = akcasehir }
-	noble_villa = { tag = BYZ level = 1 location = bozan }
-	noble_villa = { tag = BYZ level = 2 location = bandirma }
-	noble_villa = { tag = BYZ level = 1 location = yuksekkum }
-	noble_villa = { tag = BYZ level = 1 location = mengen }
-	noble_villa = { tag = BYZ level = 1 location = eregli }
-	noble_villa = { tag = BYZ level = 2 location = vize }
-	noble_villa = { tag = BYZ level = 2 location = luleburgaz }
-	noble_villa = { tag = BYZ level = 2 location = gonen }
-	noble_villa = { tag = BYZ level = 1 location = edremit }
-	noble_villa = { tag = BYZ level = 1 location = emirdag }
-	noble_villa = { tag = BYZ level = 1 location = honaz }
-	noble_villa = { tag = BYZ level = 2 location = uluborlu }
-	noble_villa = { tag = BYZ level = 2 location = tavas }
-	noble_villa = { tag = BYZ level = 3 location = nazilli }
-	noble_villa = { tag = BYZ level = 2 location = guzelhisar }
-	noble_villa = { tag = BYZ level = 1 location = ayasuluk }
-	noble_villa = { tag = BYZ level = 1 location = menemen }
-	noble_villa = { tag = BYZ level = 1 location = edremit }
-	noble_villa = { tag = BYZ level = 1 location = susurluk }
-	noble_villa = { tag = BYZ level = 1 location = lapseki}
-	noble_villa = { tag = BYZ level = 1 location = mitilene }
-	noble_villa = { tag = BYZ level = 1 location = lemnos }
-	noble_villa = { tag = BYZ level = 1 location = chios }
-	noble_villa = { tag = BYZ level = 1 location = samos }
-	noble_villa = { tag = BYZ level = 1 location = negroponte }
-	noble_villa = { tag = BYZ level = 1 location = livadeia }
-	noble_villa = { tag = BYZ level = 1 location = megara }
-	noble_villa = { tag = BYZ level = 1 location = andravida }
-	noble_villa = { tag = BYZ level = 1 location = tripolitsa }
-	noble_villa = { tag = BYZ level = 1 location = angelokastron }
-	noble_villa = { tag = BYZ level = 1 location = demetrias }
-	noble_villa = { tag = BYZ level = 1 location = manavgat }
-	noble_villa = { tag = BYZ level = 1 location = finike }
-	noble_villa = { tag = BYZ level = 1 location = celtik }
-	noble_villa = { tag = BYZ level = 1 location = kastamonu }
-	noble_villa = { tag = BYZ level = 1 location = boyabat }
-	noble_villa = { tag = BYZ level = 1 location = gerze }
-	noble_villa = { tag = BYZ level = 1 location = terme }
-	noble_villa = { tag = BYZ level = 1 location = bogazliyan }
-	noble_villa = { tag = BYZ level = 1 location = kalecik }
-	noble_villa = { tag = BYZ level = 2 location = goynuk }
-	noble_villa = { tag = BYZ level = 1 location = sogut }
-	noble_villa = { tag = BYZ level = 1 location = mugla }
-	noble_villa = { tag = BYZ level = 1 location = cine }
-	noble_villa = { tag = BYZ level = 1 location = tire }
-	noble_villa = { tag = BYZ level = 3 location = manisa }
-	noble_villa = { tag = BYZ level = 1 location = akhisar }
-	noble_villa = { tag = BYZ level = 1 location = gordes }
-	noble_villa = { tag = BYZ level = 1 location = stefani }
-	noble_villa = { tag = BYZ level = 1 location = dinar }
-	noble_villa = { tag = BYZ level = 1 location = burdur }
-	noble_villa = { tag = BYZ level = 1 location = isparta }
-	noble_villa = { tag = BYZ level = 1 location = soma }
-	noble_villa = { tag = BYZ level = 1 location = can }
-	noble_villa = { tag = BYZ level = 1 location = manyas }
-	noble_villa = { tag = BYZ level = 1 location = mihalic }
-	noble_villa = { tag = BYZ level = 1 location = eynegol }
-	noble_villa = { tag = BYZ level = 1 location = kaymaz }
-	noble_villa = { tag = BYZ level = 1 location = seyitgazi }
-	noble_villa = { tag = BYZ level = 1 location = sivrihisar }
-	noble_villa = { tag = BYZ level = 1 location = mihaliccik }
-	noble_villa = { tag = BYZ level = 1 location = beypazari }
-	noble_villa = { tag = BYZ level = 1 location = banaz }
-	noble_villa = { tag = BYZ level = 1 location = altintas }
-	noble_villa = { tag = BYZ level = 1 location = aslanapa }
-	noble_villa = { tag = BYZ level = 1 location = sultanonu }
-	noble_villa = { tag = BYZ level = 2 location = balya }
-	noble_villa = { tag = BYZ level = 2 location = balikesir }
-	noble_villa = { tag = PAF level = 1 location = cankiri }
-	noble_villa = { tag = PAF level = 1 location = gumus }
-	noble_villa = { tag = TRE level = 1 location = gorele }
-	noble_villa = { tag = ANA level = 1 location = eregli_kar }
-	noble_villa = { tag = ANA level = 1 location = yalvac }
-	noble_villa = { tag = ANA level = 1 location = nigde }
-	noble_villa = { tag = ANA level = 1 location = kirsehir }
-	noble_villa = { tag = ANA level = 1 location = bozok }
-	noble_villa = { tag = ANA level = 1 location = sungurlu }
-	noble_villa = { tag = ANA level = 1 location = zile }
-	noble_villa = { tag = CIL level = 1 location = alaiye }
-	noble_villa = { tag = CIL level = 1 location = adana }
-	noble_villa = { tag = CIL level = 1 location = sis }
-	noble_villa = { tag = CYP level = 1 location = limassol }
-	noble_villa = { tag = BYZ level = 1 location = suluklu }
-	noble_villa = { tag = BYZ level = 1 location = kulu_turkey }
-	noble_villa = { tag = BYZ level = 1 location = obruk }
-	noble_villa = { tag = BYZ level = 1 location = nevsehir }
-	noble_villa = { tag = BYZ level = 1 location = dinek_keskin }
-	noble_villa = { tag = BYZ level = 1 location = baliseyh }
-	noble_villa = { tag = BYZ level = 1 location = corum }
-	noble_villa = { tag = BYZ level = 1 location = merzifon }
-	noble_villa = { tag = BYZ level = 1 location = sonisa }
-	noble_villa = { tag = BYZ level = 1 location = safranbolu }
-	noble_villa = { tag = BYZ level = 1 location = bartin }
-	noble_villa = { tag = BYZ level = 1 location = karakecili }
-	noble_villa = { tag = BYZ level = 1 location = aydincik }
+	local_estates = { tag = BYZ level = 1 location = enez }
+	local_estates = { tag = BYZ level = 1 location = kesan }
+	local_estates = { tag = BYZ level = 1 location = rodoscuk }
+	local_estates = { tag = BYZ level = 1 location = corlu }
+	local_estates = { tag = BYZ level = 2 location = catalca }
+	local_estates = { tag = BYZ level = 1 location = kiyikoy }
+	local_estates = { tag = BYZ level = 2 location = silivri }
+	local_estates = { tag = ATH level = 1 location = gravia }
+	local_estates = { tag = THE level = 1 location = edessa }
+	local_estates = { tag = BYZ level = 1 location = silli }
+	local_estates = { tag = BYZ level = 1 location = atpazari }
+	local_estates = { tag = BYZ level = 2 location = biga }
+	local_estates = { tag = BYZ level = 2 location = seyhli }
+	local_estates = { tag = BYZ level = 2 location = usak }
+	local_estates = { tag = BYZ level = 2 location = gediz }
+	local_estates = { tag = BYZ level = 1 location = sandikli }
+	local_estates = { tag = BYZ level = 2 location = kula }
+	local_estates = { tag = BYZ level = 1 location = cesme }
+	local_estates = { tag = BYZ level = 4 location = uskudar }
+	local_estates = { tag = BYZ level = 2 location = bilecik }
+	local_estates = { tag = BYZ level = 1 location = akcasehir }
+	local_estates = { tag = BYZ level = 1 location = bozan }
+	local_estates = { tag = BYZ level = 2 location = bandirma }
+	local_estates = { tag = BYZ level = 1 location = yuksekkum }
+	local_estates = { tag = BYZ level = 1 location = mengen }
+	local_estates = { tag = BYZ level = 1 location = eregli }
+	local_estates = { tag = BYZ level = 2 location = vize }
+	local_estates = { tag = BYZ level = 2 location = luleburgaz }
+	local_estates = { tag = BYZ level = 2 location = gonen }
+	local_estates = { tag = BYZ level = 1 location = edremit }
+	local_estates = { tag = BYZ level = 1 location = emirdag }
+	local_estates = { tag = BYZ level = 1 location = honaz }
+	local_estates = { tag = BYZ level = 2 location = uluborlu }
+	local_estates = { tag = BYZ level = 2 location = tavas }
+	local_estates = { tag = BYZ level = 3 location = nazilli }
+	local_estates = { tag = BYZ level = 2 location = guzelhisar }
+	local_estates = { tag = BYZ level = 1 location = ayasuluk }
+	local_estates = { tag = BYZ level = 1 location = menemen }
+	local_estates = { tag = BYZ level = 1 location = edremit }
+	local_estates = { tag = BYZ level = 1 location = susurluk }
+	local_estates = { tag = BYZ level = 1 location = lapseki}
+	local_estates = { tag = BYZ level = 1 location = mitilene }
+	local_estates = { tag = BYZ level = 1 location = lemnos }
+	local_estates = { tag = BYZ level = 1 location = chios }
+	local_estates = { tag = BYZ level = 1 location = samos }
+	local_estates = { tag = BYZ level = 1 location = negroponte }
+	local_estates = { tag = BYZ level = 1 location = livadeia }
+	local_estates = { tag = BYZ level = 1 location = megara }
+	local_estates = { tag = BYZ level = 1 location = andravida }
+	local_estates = { tag = BYZ level = 1 location = tripolitsa }
+	local_estates = { tag = BYZ level = 1 location = angelokastron }
+	local_estates = { tag = BYZ level = 1 location = demetrias }
+	local_estates = { tag = BYZ level = 1 location = manavgat }
+	local_estates = { tag = BYZ level = 1 location = finike }
+	local_estates = { tag = BYZ level = 1 location = celtik }
+	local_estates = { tag = BYZ level = 1 location = kastamonu }
+	local_estates = { tag = BYZ level = 1 location = boyabat }
+	local_estates = { tag = BYZ level = 1 location = gerze }
+	local_estates = { tag = BYZ level = 1 location = terme }
+	local_estates = { tag = BYZ level = 1 location = bogazliyan }
+	local_estates = { tag = BYZ level = 1 location = kalecik }
+	local_estates = { tag = BYZ level = 2 location = goynuk }
+	local_estates = { tag = BYZ level = 1 location = sogut }
+	local_estates = { tag = BYZ level = 1 location = mugla }
+	local_estates = { tag = BYZ level = 1 location = cine }
+	local_estates = { tag = BYZ level = 1 location = tire }
+	local_estates = { tag = BYZ level = 3 location = manisa }
+	local_estates = { tag = BYZ level = 1 location = akhisar }
+	local_estates = { tag = BYZ level = 1 location = gordes }
+	local_estates = { tag = BYZ level = 1 location = stefani }
+	local_estates = { tag = BYZ level = 1 location = dinar }
+	local_estates = { tag = BYZ level = 1 location = burdur }
+	local_estates = { tag = BYZ level = 1 location = isparta }
+	local_estates = { tag = BYZ level = 1 location = soma }
+	local_estates = { tag = BYZ level = 1 location = can }
+	local_estates = { tag = BYZ level = 1 location = manyas }
+	local_estates = { tag = BYZ level = 1 location = mihalic }
+	local_estates = { tag = BYZ level = 1 location = eynegol }
+	local_estates = { tag = BYZ level = 1 location = kaymaz }
+	local_estates = { tag = BYZ level = 1 location = seyitgazi }
+	local_estates = { tag = BYZ level = 1 location = sivrihisar }
+	local_estates = { tag = BYZ level = 1 location = mihaliccik }
+	local_estates = { tag = BYZ level = 1 location = beypazari }
+	local_estates = { tag = BYZ level = 1 location = banaz }
+	local_estates = { tag = BYZ level = 1 location = altintas }
+	local_estates = { tag = BYZ level = 1 location = aslanapa }
+	local_estates = { tag = BYZ level = 1 location = sultanonu }
+	local_estates = { tag = BYZ level = 2 location = balya }
+	local_estates = { tag = BYZ level = 2 location = balikesir }
+	local_estates = { tag = PAF level = 1 location = cankiri }
+	local_estates = { tag = PAF level = 1 location = gumus }
+	local_estates = { tag = TRE level = 1 location = gorele }
+	local_estates = { tag = ANA level = 1 location = eregli_kar }
+	local_estates = { tag = ANA level = 1 location = yalvac }
+	local_estates = { tag = ANA level = 1 location = nigde }
+	local_estates = { tag = ANA level = 1 location = kirsehir }
+	local_estates = { tag = ANA level = 1 location = bozok }
+	local_estates = { tag = ANA level = 1 location = sungurlu }
+	local_estates = { tag = ANA level = 1 location = zile }
+	local_estates = { tag = CIL level = 1 location = alaiye }
+	local_estates = { tag = CIL level = 1 location = adana }
+	local_estates = { tag = CIL level = 1 location = sis }
+	local_estates = { tag = CYP level = 1 location = limassol }
+	local_estates = { tag = BYZ level = 1 location = suluklu }
+	local_estates = { tag = BYZ level = 1 location = kulu_turkey }
+	local_estates = { tag = BYZ level = 1 location = obruk }
+	local_estates = { tag = BYZ level = 1 location = nevsehir }
+	local_estates = { tag = BYZ level = 1 location = dinek_keskin }
+	local_estates = { tag = BYZ level = 1 location = baliseyh }
+	local_estates = { tag = BYZ level = 1 location = corum }
+	local_estates = { tag = BYZ level = 1 location = merzifon }
+	local_estates = { tag = BYZ level = 1 location = sonisa }
+	local_estates = { tag = BYZ level = 1 location = safranbolu }
+	local_estates = { tag = BYZ level = 1 location = bartin }
+	local_estates = { tag = BYZ level = 1 location = karakecili }
+	local_estates = { tag = BYZ level = 1 location = aydincik }
 
 	local_markets = { tag = CYP level = 1 location = limassol }
-	noble_villa = { tag = CYP level = 1 location = morphou }
+	local_estates = { tag = CYP level = 1 location = morphou }
 	local_markets = { tag = CYP level = 1 location = morphou }
-	noble_villa = { tag = CYP level = 1 location = famagusta }
+	local_estates = { tag = CYP level = 1 location = famagusta }
 	local_markets = { tag = CYP level = 1 location = famagusta }
-	noble_villa = { tag = NAX level = 1 location = naxos }
+	local_estates = { tag = NAX level = 1 location = naxos }
 	local_markets = { tag = BYZ level = 1 location = gerze }
 	local_markets = { tag = BYZ level = 1 location = iskenderun}
 	local_markets = { tag = BYZ level = 1 location = limassol }
@@ -6305,7 +6477,7 @@ building_manager = {
 
 
 	nobility_fortifications = { tag = CIL level = 1 location = sis }
-	noble_villa = { tag = CRT level = 1 location = chania }
+	local_estates = { tag = CRT level = 1 location = chania }
 	local_markets = { tag = CRT level = 1 location = chania }
 	local_markets = { tag = VTC level = 1 location = corfu }
 	local_markets = { tag = CEP level = 1 location = cephalonia }
@@ -6316,22 +6488,22 @@ building_manager = {
 	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
 	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
 	nobility_fortifications = { tag = ANA level = 1 location = zile }
-	nobility_fortifications = { tag = M0E level = 1 location = tripolitsa }
-	nobility_fortifications = { tag = M0E level = 1 location = mystras }
+	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
+	nobility_fortifications = { tag = MOE level = 1 location = mystras }
 	nobility_fortifications = { tag = ACH level = 1 location = andravida }
 
 	nobility_fortifications = { tag = BUL level = 1 location = branicevo }
-	noble_villa = { tag = BUL level = 1 location = branicevo }
+	local_estates = { tag = BUL level = 1 location = branicevo }
 	nobility_fortifications = { tag = BUL level = 1 location = nikopol }
-	noble_villa = { tag = BUL level = 1 location = nikopol }
+	local_estates = { tag = BUL level = 1 location = nikopol }
 	nobility_fortifications = { tag = SER level = 1 location = smederevo }
-	noble_villa = { tag = SER level = 1 location = smederevo }
+	local_estates = { tag = SER level = 1 location = smederevo }
 	nobility_fortifications = { tag = SER level = 1 location = uzice }
-	noble_villa = { tag = SER level = 1 location = uzice }
+	local_estates = { tag = SER level = 1 location = uzice }
 	nobility_fortifications = { tag = SER level = 1 location = soko_grad }
-	noble_villa = { tag = SER level = 1 location = soko_grad }
+	local_estates = { tag = SER level = 1 location = soko_grad }
 	nobility_fortifications = { tag = SER level = 1 location = smederevo }
-	noble_villa = { tag = SER level = 1 location = smederevo }
+	local_estates = { tag = SER level = 1 location = smederevo }
 	
 
 	local_markets = { tag = TRE level = 1 location = lusta }
@@ -6416,8 +6588,8 @@ building_manager = {
 	stockade = { tag = BYZ level = 1 location = manisa }
 	stockade = { tag = CYP level = 1 location = nicosia_cyp }
 	stockade = { tag = CRT level = 1 location = candia }
-	stockade = { tag = M0E level = 1 location = tripolitsa }
-	stockade = { tag = M0E level = 1 location = mystras }
+	stockade = { tag = MOE level = 1 location = tripolitsa }
+	stockade = { tag = MOE level = 1 location = mystras }
 	stockade = { tag = THS level = 1 location = larissa }
 	stockade = { tag = EPI level = 1 location = ioannina }
 	stockade = { tag = DYR level = 1 location = durres }
