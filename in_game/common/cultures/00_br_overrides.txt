@@ -21,7 +21,7 @@
 	}
 
 	country_modifier = {
-		trade_efficiency = 0.1
+		export_efficiency = 0.1
 	}
 	
 	culture_groups = {
@@ -85,7 +85,7 @@ REPLACE_OR_CREATE:georgian_culture = { #https://en.wikipedia.org/wiki/Georgians
 	}
 
 	country_modifier = {
-		army_infantry_power = 0.05
+		army_heavy_infantry_power = 0.1
 		global_defensive = 0.1
 	}
 
