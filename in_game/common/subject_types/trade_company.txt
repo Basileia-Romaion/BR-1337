@@ -2,6 +2,7 @@
 	type = building
 	color = subject_trade_company
 	level = 1
+	annullment_favours_required = 10
 	subject_pays = subject_pays_trade_company
 	
 	join_defensive_wars_always = {
@@ -42,7 +43,7 @@
 	
 	subject_modifier = {
 		loyalty_to_overlord = 30 #added
-		trade_efficiency = tiny_trade_efficiency_bonus
+		export_efficiency = tiny_trade_efficiency_bonus
 	}
 
 	creation_visible = {
@@ -52,15 +53,8 @@
 	visible_through_diplomacy = {
 		always = no
 	}
-
 	visible_through_treaty = {
 		always = no
-	}
-
-	on_enable = {
-	}
-
-	on_disable = {
 	}
 }
 
