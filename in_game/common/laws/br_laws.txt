@@ -10,8 +10,8 @@ INJECT:administrative_system = { #Version for ERE subjects/minors
 			global_nobles_city_desired_pop = 0.005
 			nobles_estate_max_tax = -0.05
 			nobles_estate_levy_size = 0.25
-			army_infantry_maintenance_cost_modifier = -0.1
-			army_cavalry_maintenance_cost_modifier = -0.1
+			army_heavy_infantry_maintenance_cost_modifier = -0.1
+			army_heavy_cavalry_maintenance_cost_modifier = -0.1
 			monthly_towards_stratiotai = societal_value_minor_monthly_move
 		}
 		estate_preferences = {
@@ -51,7 +51,7 @@ INJECT:royal_court_customs_law = {
 		}
 	
 		country_modifier = {
-			court_spending_cost  = -0.02
+			court_spending_cost_modifier  = -0.02
 			monthly_towards_land = societal_value_monthly_move
 			army_tradition_decay = -0.002
 			global_army_levy_size_modifier = 0.1
@@ -71,12 +71,12 @@ INJECT:royal_court_customs_law = {
 		}
 	
 		country_modifier = {
-			court_spending_cost  = -0.02
+			court_spending_cost_modifier  = -0.02
 			monthly_towards_naval = societal_value_minor_monthly_move
 			navy_tradition_decay = -0.002
 			global_sailors_modifier = 0.2
 			burghers_estate_levy_size = 0.2
-			trade_sea_movement_cost_modifier = -0.2
+			trade_sea_efficiency = 0.2
 			monthly_towards_stratiotai = societal_value_minor_monthly_move
 		}
 		estate_preferences = {
@@ -88,14 +88,11 @@ INJECT:royal_court_customs_law = {
 	br_roman_court_customs = {
 		unique = yes
 	    allow = { 
-			OR = {
-				TAG = BYZ 
-			    was_tag = BYZ
-			}
-			is_capital = location:constantinople 
+			culture = { has_culture_group = culture_group:roman_group }
+			country_rank = country_rank:rank_empire
 	    }
 	    country_modifier = {
-			court_spending_cost  = 0.02
+			court_spending_cost_modifier  = 0.02
 			cultural_influence_modifier = 0.1
 			country_cabinet_efficiency = 0.05
 			legislative_efficiency = 0.05
