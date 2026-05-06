@@ -1,0 +1,140 @@
+﻿
+INJECT:CLR = {
+	culture_definition = norse_gael
+}
+
+INJECT:CWM = {
+	culture_definition = norse_gael
+}
+
+INJECT:ULS = {
+	culture_definition = norse_gael
+}
+
+INJECT:ORD = { # Ormond
+	culture_definition = norse_gael
+}
+
+INJECT:DMS = { # Desmond
+	culture_definition = norse_gael
+}
+
+INJECT:KID = { # Kildare
+	culture_definition = norse_gael
+}
+
+INJECT:PLE = {
+	#culture_definition = norse_gael
+	is_historic = yes
+}
+
+INJECT:WLS = {
+	#culture_definition = norse_gael
+	is_historic = yes
+}
+
+INJECT:DCI = {
+	culture_definition = norse_gael
+}
+
+EIL = { # Ely
+	color = hsv360 { 105 43 51 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = irish
+	religion_definition = catholic
+}
+
+INJECT:MYO = {
+	culture_definition = norse_gael
+}
+
+INJECT:AUD = {
+	culture_definition = welsh
+}
+
+INJECT:BRO = {
+	culture_definition = welsh
+}
+
+INJECT:POS = {
+	culture_definition = welsh
+}
+
+INJECT:PMB = {
+	culture_definition = welsh
+}
+
+
+## BR Additions ##
+AGL = { # Anglia
+	color = rgb { 242 55 48 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = anglo_norse_culture
+	religion_definition = catholic
+}
+
+DST = { # Dorset
+	color = rgb { 69 177 223 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = english
+	religion_definition = catholic
+}
+
+EAG = { # East Anglia
+	color = rgb { 143 21 17 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = anglo_norse_culture
+	religion_definition = catholic
+}
+
+KAT = { # Kent
+	color = rgb { 96 48 242 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = english
+	religion_definition = catholic
+}
+
+LSY = { # Lindsey/Lindon
+	color = rgb { 242 106 48 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = anglo_norse_culture
+	religion_definition = catholic
+}
+
+MCA = { # Mercia
+	color = rgb { 239 36 28 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = english
+	religion_definition = catholic
+}
+
+SMR = { # Somerset
+	color = rgb { 97 76 232 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = english
+	religion_definition = catholic
+}
+
+WSX = { # Wessex
+	color = rgb { 77 131 213 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = english
+	religion_definition = catholic
+}
+
+HBA = { # Hiberna
+	color = rgb { 117 230 144 }
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = norse_gael
+	religion_definition = catholic
+}
