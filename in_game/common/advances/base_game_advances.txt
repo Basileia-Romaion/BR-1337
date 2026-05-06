@@ -1,4 +1,5 @@
 ﻿##############################-Edited Base Game Advances-##############################
+
 REPLACE_OR_CREATE:byz_cataphracts_advance = {
 	potential = {
 		OR = {
@@ -30,6 +31,23 @@ REPLACE_OR_CREATE:expand_varangian_guard_advance = {
 	requires = medieval_military
 	ai_weight = { add = 5 }
 }
+
+REPLACE_OR_CREATE:byz_bureaucracy_advance = {
+	content_priority = 600
+	potential = { 
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+		has_dlc = "d008_fate_of_the_phoenix"
+	}
+	age = age_1_traditions
+	icon = library_advance
+	global_max_bureaucracy_slots = 2
+	allow_bureaucracy = yes
+	requires = medieval_administration
+}
+
 
 ##############################-Colonial-##############################
 REPLACE_OR_CREATE:colonial_tradition = {
@@ -86,7 +104,8 @@ REPLACE_OR_CREATE:founding_fathers = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	monthly_republican_tradition = 0.05 #change this
+	monthly_republican_tradition = 0.05
+	monthly_legitimacy = 0.05 #br added
 }
 REPLACE_OR_CREATE:colonial_militia = {
 	age = age_2_renaissance
@@ -284,7 +303,7 @@ REPLACE_OR_CREATE:gra_muttavia_armies = {
 		has_or_had_tag = ADU
 	}
 	hire_mercenary_premium_cost_modifier  = -0.10
-	mercenary_maintenance_cost = -0.10
+	mercenary_maintenance_efficiency = 0.10
 	
 	requires = regiment_reinforcement_speed_discovery
 }
@@ -304,8 +323,8 @@ REPLACE_OR_CREATE:gra_adaptative_trade = {
 	potential = {
 		has_or_had_tag = ADU
 	}
-	merchant_maintenance_cost  = -0.10
-	trade_efficiency = small_trade_efficiency_bonus
+	merchant_maintenance_efficiency  = 0.10
+	export_efficiency = small_trade_efficiency_bonus
 	
 	requires = global_trade_routes_advance
 }
@@ -689,7 +708,7 @@ REPLACE_OR_CREATE:nor_merchant_tradition = {
 			has_or_had_tag = NRC
 		}
 	}
-	merchant_maintenance_cost  = -0.1
+	merchant_maintenance_efficiency  = 0.1
 }
 ##############################-Danmark-##############################
 REPLACE_OR_CREATE:dan_levy_recruitment = {
@@ -750,7 +769,7 @@ REPLACE_OR_CREATE:dan_reliance_mercenaries = {
 			has_or_had_tag = NSE
 		}
 	}
-	mercenary_maintenance_cost = -0.15
+	mercenary_maintenance_efficiency = 0.15
 	
 	requires = gunpowder_advance
 }
@@ -857,7 +876,7 @@ REPLACE_OR_CREATE:dan_royal_life_guards = {
 			has_or_had_tag = NSE
 		}
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 
 	requires = war_score_absolutism_advance
 }
@@ -873,7 +892,7 @@ REPLACE_OR_CREATE:dan_scanian_regiment = {
 		}
 	}
 	peasants_estate_target_satisfaction = small_permanent_target_satisfaction
-	army_infantry_build_cost_modifier = -0.1
+	army_heavy_infantry_build_cost_modifier = -0.1
 
 	requires = regiment_reinforcement_speed_absolutism
 }
@@ -889,7 +908,7 @@ REPLACE_OR_CREATE:dan_admiralty_college = {
 		}
 	}
 	own_coast_naval_combat_bonus = 0.1
-	navy_maintenance_cost = -0.1
+	navy_maintenance_efficiency = 0.1
 
 	requires = recruitment_improvements_revolutions
 }
@@ -927,7 +946,7 @@ REPLACE_OR_CREATE:english_tradition = {
 			has_or_had_tag = NSE
 		}
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 	
 	requires = feudalism_advance
 }
@@ -1138,7 +1157,7 @@ REPLACE_OR_CREATE:sick_and_hurt_board = {
 			has_or_had_tag = NSE
 		}
 	}
-	navy_maintenance_cost = -0.1
+	navy_maintenance_efficiency = 0.1
 }
 
 REPLACE_OR_CREATE:british_bill_of_rights = {
@@ -1182,7 +1201,7 @@ REPLACE_OR_CREATE:navigation_acts = {
 			has_or_had_tag = NSE
 		}
 	}
-	trade_efficiency = small_trade_efficiency_bonus
+	export_efficiency = small_trade_efficiency_bonus
 }
 
 REPLACE_OR_CREATE:inigo_architecture = {
@@ -1429,8 +1448,8 @@ REPLACE_OR_CREATE:fra_gendarmes = {
 			has_or_had_tag = LOT
 		}
 	}
-	army_cavalry_power = 0.1
-	army_maintenance_cost = -0.05
+	army_light_cavalry_power = 0.1
+	army_maintenance_efficiency = 0.05
 }
 REPLACE_OR_CREATE:fra_integration_of_new_territories = {
 	age = age_3_discovery
@@ -1611,8 +1630,8 @@ REPLACE_OR_CREATE:horse_lords = {
 	age = age_1_traditions
 	government = steppe_horde
 	requires = horse_riding_advance
-	army_cavalry_reinforce_cost_modifier = -0.33
-	army_cavalry_maintenance_cost_modifier = -0.33
+	army_light_cavalry_reinforce_cost_modifier = -0.33
+	army_light_cavalry_maintenance_cost_modifier = -0.33
 	global_distance_from_capital_speed_propagation = 0.05 #BR Added
 	always_allow_army_levies = yes
 	unlock_unit = a_steppe_horse_archers
@@ -1679,7 +1698,7 @@ REPLACE_OR_CREATE:ilk_descendants_of_genghis_khan = {
 	}
 	requires = pike_and_shot_advance
 	icon = successors_of_genghis_khan
-	army_cavalry_power = 0.2
+	army_light_cavalry_power = 0.2
 }
 REPLACE_OR_CREATE:ilk_new_roots = {	#They move away from being horde-like to a more reformed state, more stable and robust
 	age = age_4_reformation
@@ -1726,7 +1745,7 @@ br_armenian_mountain_strongholds = {
 	requires = feudalism_advance
 
 	global_hostile_attrition = 0.25
-	trade_land_movement_cost_modifier = -0.15
+	trade_land_efficiency = 0.15
 }
 ##############################-Wallachia-##############################
 
@@ -1932,7 +1951,7 @@ REPLACE_OR_CREATE:home_of_hussars = {
 			has_or_had_tag = SE3
 		}
 	}
-	army_cavalry_power = 0.10
+	army_light_cavalry_power = 0.10
 	unlock_unit = a_serbian_hussars
 	
 	requires = mimic_the_phoenix
@@ -2077,7 +2096,8 @@ REPLACE_OR_CREATE:military_modernization = {
 			has_or_had_tag = SE3
 		}
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
+	army_light_infantry_power = 0.1
 	
 	requires = recruitment_improvements_revolutions
 }
@@ -2265,7 +2285,7 @@ REPLACE_OR_CREATE:mercantile_spirit = {
 			has_or_had_tag = IT1
 		}
 	}
-	trade_efficiency = small_trade_efficiency_bonus
+	export_efficiency = small_trade_efficiency_bonus
 	
 	requires = trade_advance_age_of_trad
 }
@@ -2490,7 +2510,7 @@ REPLACE_OR_CREATE:neapolitan_army_reforms = {
 			has_or_had_tag = IT1
 		}
 	}
-	army_infantry_power = 0.10
+	army_heavy_infantry_power = 0.10
 	
 	requires = levee_en_masse_advance
 }
@@ -2557,6 +2577,26 @@ REPLACE_OR_CREATE:italian_condottieri = {
 	requires = trade_envoys
 }
 
+INJECT:ven_venetian_thalassocracy = {
+	unlock_subject_type = trade_company
+	unlock_building = trade_company_headquarters
+	unlock_building = trade_company_governance
+	unlock_building = trade_company_garrison
+	unlock_building = trade_company_harbor
+	unlock_building = trade_company_local_venture
+	unlock_building = trade_company_foreign_influence
+}
+
+INJECT:genoese_maritime_diplomacy = {
+	unlock_subject_type = trade_company
+	unlock_building = trade_company_headquarters
+	unlock_building = trade_company_governance
+	unlock_building = trade_company_garrison
+	unlock_building = trade_company_harbor
+	unlock_building = trade_company_local_venture
+	unlock_building = trade_company_foreign_influence
+}
+
 ##Roman
 
 REPLACE_OR_CREATE:rom_spqr = {
@@ -2602,7 +2642,7 @@ REPLACE_OR_CREATE:rom_restore_the_legions = {
 
 	icon = teu_crusader_discipline
 
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 	discipline = 0.025
 }
 
