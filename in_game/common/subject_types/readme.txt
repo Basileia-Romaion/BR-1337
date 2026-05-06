@@ -1,9 +1,11 @@
 ﻿# SUBJECT TYPES
 #
-# visible_through_diplomacy = <trigger> is this subject type visible through diplomacy in general. root = overlord, target = subject
-# enabled_through_diplomacy = <trigger> is this subject type enabled through diplomacy. root = overlord, target = potential subject
-# visible_through_treaty = (optional) <trigger> is this subject type visible to be offered in a peace treaty. root = overlord, target = subject, recipient = peace offer recipient, war = current war
-# enabled_through_treaty = (optional) <trigger> is this subject type enabled in a peace treaty. root = overlord, target = potential subject, recipient = peace offer recipient, war = current war
+# visible = <trigger> is this subject type visible at all. root = overlord, target = subject
+# enabled = <trigger> is this subject type enabled at all. root = overlord, target = potential subject
+# visible_through_diplomacy = <trigger> is this subject type visible through diplomacy in general (additional to visible). root = overlord, target = subject
+# enabled_through_diplomacy = <trigger> is this subject type enabled through diplomacy (additional to enabled). root = overlord, target = potential subject
+# visible_through_treaty = (optional) <trigger> is this subject type visible to be offered in a peace treaty (additional to visible). root = overlord, target = subject, recipient = peace offer recipient, war = current war
+# enabled_through_treaty = (optional) <trigger> is this subject type enabled in a peace treaty (additional to enabled). root = overlord, target = potential subject, recipient = peace offer recipient, war = current war
 # creation_visible = <trigger> can this subject type be created in general. root = overlord
 # subject_creation_enabled = <trigger> can a new province or building subject be released with this subject type. root = overlord, target_province = potential geography for location- or region- based subject types
 # release_country_enabled = <trigger> can the potential overlord create released countries as this subject type. root = overlord, target = potential subject
