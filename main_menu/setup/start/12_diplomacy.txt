@@ -472,7 +472,7 @@ diplomacy_manager = {
     # state_bank
 
     #Sub dependencies
-    #dependency = { first = ATH second = M0E subject_type = vassal } # Pronoïakon Ktéma
+    #dependency = { first = ATH second = MOE subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = ATH second = ACH subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
@@ -618,7 +618,6 @@ diplomacy_manager = {
     #dependency = { first = TUR second = A2A subject_type = vassal }
     #dependency = { first = TUR second = ARD subject_type = vassal }
     #dependency = { first = TUR second = DML subject_type = vassal }
-    #dependency = { first = TUR second = HBN subject_type = vassal }
     #dependency = { first = TUR second = HDR subject_type = vassal }
     #dependency = { first = TUR second = IHB subject_type = vassal }
     #dependency = { first = TUR second = KEL subject_type = vassal }
@@ -657,7 +656,6 @@ diplomacy_manager = {
     #dependency = { first = ATQ second = BHT subject_type = vassal }
     #dependency = { first = ATQ second = HZN subject_type = vassal }
 
-    scripted_mutual = { first = HBN second = KTW type = alliance }
     scripted_mutual = { first = MKW second = ZZR type = alliance }
 
     #dependency = { first = FDL second = HLL subject_type = vassal }
