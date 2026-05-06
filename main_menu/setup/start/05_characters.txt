@@ -5746,6 +5746,1414 @@ character_db={
 	
 	# BYZ - Byzantine Empire
 
+	# Julio-Claudian Dynasty
+	byz_caligula = {
+		first_name = { name = name_gaius }
+		last_name = { name = name_julius }
+		nickname = { name = Caligula }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 20 dip = 20 mil = 20
+		birth_date = 12.8.31
+		death_date = 41.1.24
+		birth = rome # born in Antium
+		dynasty = julio_claudian_dynasty
+		tag = BYZ
+		ruler_trait = malevolent
+	}
+
+
+	byz_nero = {
+		first_name = { name = name_nero }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 30 dip = 40 mil = 20
+		birth_date = 37.12.15
+		death_date = 68.6.9
+		birth = rome # born in Antium
+		dynasty = julio_claudian_dynasty
+		tag = BYZ
+		ruler_trait = sinner
+	}
+
+	# Year of the Four Emperors
+
+
+	byz_otho = {
+		first_name = { name = name_otho }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 35 dip = 50 mil = 45
+		birth_date = 32.4.28
+		death_date = 69.4.16
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_vitellius = {
+		first_name = { name = name_vitellius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 20 dip = 30 mil = 30
+		birth_date = 15.9.7
+		death_date = 69.12.22
+		birth = rome
+		tag = BYZ
+		ruler_trait = drunkard
+	}
+
+	# Flavian Dynasty
+
+	byz_vespasian = {
+		first_name = { name = name_vespasian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 70 dip = 60 mil = 70
+		birth_date = 9.11.17
+		death_date = 79.6.23
+		birth = rome
+		dynasty = flavian_dynasty
+		tag = BYZ
+		ruler_trait = midas_touched
+	}
+
+	byz_titus = {
+		first_name = { name = name_titus }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 60 dip = 70 mil = 70
+		birth_date = 39.12.30
+		death_date = 81.9.13
+		birth = rome
+		father = byz_vespasian
+		dynasty = flavian_dynasty
+		tag = BYZ
+		ruler_trait = kind_hearted
+	}
+
+	byz_domitian = {
+		first_name = { name = name_domitian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 35 mil = 60
+		birth_date = 51.10.24
+		death_date = 96.9.18
+		birth = rome
+		father = byz_vespasian
+		dynasty = flavian_dynasty
+		tag = BYZ
+		ruler_trait = cruel
+	}
+
+	# Nerva-Antonine Dynasty
+
+	byz_nerva = {
+		first_name = { name = name_nerva }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 70 mil = 30
+		birth_date = 30.11.8
+		death_date = 98.1.25
+		birth = rome
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = well_advised
+	}
+
+	byz_trajan = {
+		first_name = { name = name_trajan }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 65 dip = 65 mil = 80
+		birth_date = 53.9.18
+		death_date = 117.8.9
+		birth = toledo # born in Italica, Hispania
+		father = byz_nerva # by adoption
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_hadrian = {
+		first_name = { name = name_adrian }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 75 dip = 70 mil = 60
+		birth_date = 76.1.24
+		death_date = 138.7.10
+		birth = toledo # born in Italica, Hispania
+		father = byz_trajan # by adoption
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = architectural_visionary
+	}
+
+	byz_antoninus_pius = {
+		first_name = { name = name_antoninus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 75 dip = 70 mil = 40
+		birth_date = 86.9.19
+		death_date = 161.3.7
+		birth = rome
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = benevolent
+	}
+
+	byz_marcus_aurelius = {
+		first_name = { name = name_marcus }
+		last_name = { name = name_aurelius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 65 dip = 70 mil = 60
+		birth_date = 121.4.26
+		death_date = 180.3.17
+		birth = rome
+		father = byz_antoninus_pius # by adoption
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = righteous
+	}
+
+	byz_lucius_verus = {
+		first_name = { name = name_lucius }
+		last_name = { name = name_aurelius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 40 dip = 50 mil = 55
+		birth_date = 130.12.15
+		death_date = 169.2.1
+		birth = rome
+		father = byz_antoninus_pius # by adoption
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+	}
+
+	byz_commodus = {
+		first_name = { name = name_commodus }
+		last_name = { name = name_aurelius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 20 dip = 20 mil = 30
+		birth_date = 161.8.31
+		death_date = 192.12.31
+		birth = rome
+		father = byz_marcus_aurelius
+		dynasty = nerva_antonine_dynasty
+		tag = BYZ
+		ruler_trait = malevolent
+	}
+
+	# Year of the Five Emperors
+
+	byz_pertinax = {
+		first_name = { name = name_pertinax }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 45 mil = 60
+		birth_date = 126.8.1
+		death_date = 193.3.28
+		birth = rome
+		tag = BYZ
+		ruler_trait = strict
+	}
+
+	byz_didius_julianus = {
+		first_name = { name = name_didius }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 35 dip = 35 mil = 35
+		birth_date = 133.1.30
+		death_date = 193.6.1
+		birth = milano
+		tag = BYZ
+	}
+
+	# Severan Dynasty
+
+	byz_septimius_severus = {
+		first_name = { name = name_septimius }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 60 dip = 50 mil = 80
+		birth_date = 145.4.11
+		death_date = 211.2.4
+		birth = tunis # born in Leptis Magna, North Africa
+		dynasty = severan_dynasty
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_caracalla = {
+		first_name = { name = name_antoninus }
+		last_name = { name = name_julius }
+		nickname = { name = Caracalla }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 25 dip = 30 mil = 60
+		birth_date = 188.4.4
+		death_date = 217.4.8
+		birth = lyon # born in Lugdunum
+		father = byz_septimius_severus
+		dynasty = severan_dynasty
+		tag = BYZ
+		ruler_trait = cruel
+	}
+
+	byz_geta = {
+		first_name = { name = name_geta }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 40 dip = 45 mil = 35
+		birth_date = 189.3.7
+		death_date = 211.12.26
+		birth = rome
+		father = byz_septimius_severus
+		dynasty = severan_dynasty
+		tag = BYZ
+	}
+
+	byz_macrinus = {
+		first_name = { name = name_macrinus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 45 dip = 50 mil = 50
+		birth_date = 165.1.1
+		death_date = 218.6.8
+		birth = tunis # born in Caesarea Mauretaniae
+		tag = BYZ
+	}
+
+	byz_elagabalus = {
+		first_name = { name = name_elagabalus }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 10 dip = 20 mil = 10
+		birth_date = 204.1.1
+		death_date = 222.3.11
+		birth = antioch # born in Emesa, Syria
+		dynasty = severan_dynasty
+		tag = BYZ
+		ruler_trait = sinner
+	}
+
+	byz_alexander_severus = {
+		first_name = { name = name_alexander }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 60 mil = 40
+		birth_date = 208.10.1
+		death_date = 235.3.19
+		birth = antioch # born in Arca Caesarea, Syria
+		dynasty = severan_dynasty
+		tag = BYZ
+		ruler_trait = well_advised
+	}
+
+	# Crisis of the Third Century
+
+	byz_maximinus_thrax = {
+		first_name = { name = name_maximinus }
+		last_name = { name = name_julius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 30 dip = 20 mil = 65
+		birth_date = 173.1.1
+		death_date = 238.4.1
+		birth = edirne # born in Thrace
+		tag = BYZ
+		ruler_trait = strict
+	}
+
+	byz_gordian_i = {
+		first_name = { name = name_gordian }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 55 mil = 45
+		birth_date = 159.1.1
+		death_date = 238.4.12
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_gordian_ii = {
+		first_name = { name = name_gordian }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 45 dip = 45 mil = 50
+		birth_date = 192.1.1
+		death_date = 238.4.12
+		birth = rome
+		father = byz_gordian_i
+		tag = BYZ
+	}
+
+	byz_pupienus = {
+		first_name = { name = name_pupienus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 55 mil = 60
+		birth_date = 164.1.1
+		death_date = 238.7.29
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_balbinus = {
+		first_name = { name = name_balbinus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 60 mil = 40
+		birth_date = 166.1.1
+		death_date = 238.7.29
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_gordian_iii = {
+		first_name = { name = name_gordian }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 35 dip = 40 mil = 45
+		birth_date = 225.1.20
+		death_date = 244.2.25
+		birth = rome
+		# grandson of Gordian I through his daughter
+		tag = BYZ
+	}
+
+	byz_philip_the_arab = {
+		first_name = { name = name_philip }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 55 mil = 55
+		birth_date = 204.1.1
+		death_date = 249.9.1
+		birth = antioch # born in Philippopolis, Arabia
+		tag = BYZ
+	}
+
+	byz_decius = {
+		first_name = { name = name_decius }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 45 mil = 60
+		birth_date = 201.1.1
+		death_date = 251.7.1
+		birth = aquileia # born in Budalia, Pannonia
+		tag = BYZ
+		ruler_trait = strict
+	}
+
+	byz_trebonianus_gallus = {
+		first_name = { name = name_trebonianus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 45 dip = 40 mil = 50
+		birth_date = 206.1.1
+		death_date = 253.8.1
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_valerian = {
+		first_name = { name = name_valerian }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 45 mil = 55
+		birth_date = 200.1.1
+		death_date = 264.1.1 # died in Persian captivity
+		birth = rome
+		tag = BYZ
+	}
+
+	byz_gallienus = {
+		first_name = { name = name_gallienus }
+		last_name = { name = name_aurelius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 55 mil = 65
+		birth_date = 218.1.1
+		death_date = 268.9.1
+		birth = rome
+		father = byz_valerian
+		tag = BYZ
+		ruler_trait = free_thinker
+	}
+
+	byz_claudius_gothicus = {
+		first_name = { name = name_claude }
+		last_name = { name = name_aurelius }
+		nickname = { name = Gothicus }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 45 mil = 70
+		birth_date = 214.5.10
+		death_date = 270.1.1
+		birth = thessaloniki # born near Naissus, Moesia
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_aurelian = {
+		first_name = { name = name_aurelian }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 40 mil = 80
+		birth_date = 214.9.9
+		death_date = 275.9.25
+		birth = thessaloniki # born near Sirmium, Pannonia
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_probus = {
+		first_name = { name = name_probus }
+		last_name = { name = name_aurelius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 45 mil = 70
+		birth_date = 232.8.19
+		death_date = 282.10.1
+		birth = thessaloniki # born in Sirmium, Pannonia
+		tag = BYZ
+		ruler_trait = industrious
+	}
+
+	# Tetrarchy and Constantinian Dynasty
+
+	byz_diocletian = {
+		first_name = { name = name_diocletian }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 80 dip = 70 mil = 70
+		birth_date = 244.12.22
+		death_date = 311.12.3
+		birth = aquileia # born in Salona (Split), Dalmatia
+		tag = BYZ
+		ruler_trait = lawgiver
+	}
+
+	byz_galerius = {
+		first_name = { name = name_galerius }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 50 dip = 40 mil = 70
+		birth_date = 258.1.1
+		death_date = 311.5.1
+		birth = thessaloniki # born near Felix Romuliana, Moesia
+		tag = BYZ
+	}
+
+	byz_licinius = {
+		first_name = { name = name_licinius }
+		last_name = { name = name_valerius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 45 dip = 40 mil = 60
+		birth_date = 263.1.1
+		death_date = 325.3.1
+		birth = thessaloniki # born in Moesia
+		tag = BYZ
+	}
+
+	byz_constantius_i = { # Constantius Chlorus — parent of Constantine I
+		first_name = { name = name_constantius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = hellenism_religion
+		adm = 55 dip = 50 mil = 65
+		birth_date = 250.3.31
+		death_date = 306.7.25
+		birth = york # died in Eboracum; born near Naissus
+		dynasty = constantinian_dynasty
+		tag = BYZ
+	}
+
+	byz_constantine_i = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		nickname = { name = nick_the_great }
+		culture = roman_culture
+		religion = orthodox # converted after Battle of Milvian Bridge, 312
+		adm = 70 dip = 65 mil = 75
+		birth_date = 272.2.27
+		death_date = 337.5.22
+		birth = york # born in Naissus, Moesia; proclaimed at Eboracum
+		father = byz_constantius_i
+		dynasty = constantinian_dynasty
+		tag = BYZ
+		ruler_trait = righteous
+	}
+
+	byz_constantine_ii = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 40 dip = 35 mil = 55
+		birth_date = 316.2.17
+		death_date = 340.4.1
+		birth = arles # born in Arelate, Gaul
+		father = byz_constantine_i
+		dynasty = constantinian_dynasty
+		tag = BYZ
+	}
+
+	byz_constantius_ii = {
+		first_name = { name = name_constantius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 55 dip = 50 mil = 55
+		birth_date = 317.8.7
+		death_date = 361.11.3
+		birth = thessaloniki # born in Sirmium
+		father = byz_constantine_i
+		dynasty = constantinian_dynasty
+		tag = BYZ
+	}
+
+	byz_constans_i = {
+		first_name = { name = name_constans }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 45 dip = 40 mil = 50
+		birth_date = 323.1.1
+		death_date = 350.1.18
+		birth = rome
+		father = byz_constantine_i
+		dynasty = constantinian_dynasty
+		tag = BYZ
+	}
+
+	byz_julian_apostate = {
+		first_name = { name = name_julian }
+		last_name = { name = name_flavius }
+		nickname = { name = the_apostate }
+		culture = roman_culture
+		religion = hellenism_religion # reverted to Roman paganism
+		adm = 65 dip = 70 mil = 70
+		birth_date = 331.11.6
+		death_date = 363.6.26
+		birth = constantinople
+		dynasty = constantinian_dynasty
+		tag = BYZ
+		ruler_trait = scholar
+	}
+
+	# Post-Constantinian Emperors
+
+	byz_jovian = {
+		first_name = { name = name_jovian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 40 dip = 45 mil = 50
+		birth_date = 331.1.1
+		death_date = 364.2.17
+		birth = thessaloniki # born in Singidunum
+		tag = BYZ
+	}
+
+	byz_valentinian_i = {
+		first_name = { name = name_valentinian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 55 dip = 50 mil = 65
+		birth_date = 321.7.3
+		death_date = 375.11.17
+		birth = aquileia # born in Cibalae, Pannonia
+		tag = BYZ
+		ruler_trait = strict
+	}
+
+	# Theodosian Dynasty
+
+	byz_valens = {
+		first_name = { name = name_valens }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 45 dip = 40 mil = 50
+		birth_date = 328.1.1
+		death_date = 378.8.9 # killed at Battle of Adrianople
+		birth = aquileia # born in Cibalae, Pannonia
+		dynasty = theodosian_dynasty
+		tag = BYZ
+	}
+
+	byz_theodosius_i = {
+		first_name = { name = name_theodosius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 65 dip = 70 mil = 65
+		birth_date = 347.1.11
+		death_date = 395.1.17
+		birth = toledo # born in Cauca, Hispania
+		dynasty = theodosian_dynasty
+		tag = BYZ
+		ruler_trait = righteous
+	}
+
+	byz_arcadius = {
+		first_name = { name = name_arcadius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 40 dip = 40 mil = 20
+		birth_date = 377.1.1
+		death_date = 408.5.1
+		birth = toledo # born in Hispania
+		father = byz_theodosius_i
+		dynasty = theodosian_dynasty
+		tag = BYZ
+		ruler_trait = naive
+	}
+
+	byz_theodosius_ii = {
+		first_name = { name = name_theodosius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 55 dip = 55 mil = 30
+		birth_date = 401.4.10
+		death_date = 450.7.28
+		birth = constantinople
+		father = byz_arcadius
+		dynasty = theodosian_dynasty
+		tag = BYZ
+		ruler_trait = scholar
+	}
+
+	# Leonid Dynasty
+
+	byz_marcian = {
+		first_name = { name = name_marcian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 60 dip = 65 mil = 60
+		birth_date = 396.1.1
+		death_date = 457.1.26
+		birth = edirne # born in Illyricum
+		dynasty = leonid_dynasty
+		tag = BYZ
+		ruler_trait = careful
+	}
+
+	byz_leo_i = {
+		first_name = { name = name_leon }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 55 dip = 60 mil = 45
+		birth_date = 401.1.1
+		death_date = 474.2.3
+		birth = edirne # born in Bessa, Thrace
+		dynasty = leonid_dynasty
+		tag = BYZ
+	}
+
+	byz_zeno = {
+		first_name = { name = name_zeno }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 50 dip = 65 mil = 45
+		birth_date = 425.1.1
+		death_date = 491.4.9
+		birth = sivas # born in Isauria
+		dynasty = leonid_dynasty
+		tag = BYZ
+	}
+
+	byz_leo_ii = {
+		first_name = { name = name_leon }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		birth_date = 467.1.1
+		death_date = 474.11.17
+		birth = constantinople
+		father = byz_zeno
+		dynasty = leonid_dynasty
+		tag = BYZ
+	}
+
+	# Anastasian / Justinianic Emperors
+
+	byz_anastasius_i = {
+		first_name = { name = name_anastasius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 75 dip = 70 mil = 50
+		birth_date = 430.1.1
+		death_date = 518.7.9
+		birth = durres # born in Dyrrachium
+		dynasty = leonid_dynasty
+		tag = BYZ
+		ruler_trait = midas_touched
+	}
+
+	byz_justin_i = {
+		first_name = { name = name_justin }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 50 dip = 60 mil = 60
+		birth_date = 450.1.1
+		death_date = 527.8.1
+		birth = thessaloniki # born near Scupi, Macedonia
+		dynasty = justinianic_dynasty
+		tag = BYZ
+	}
+
+	byz_justinian_i = {
+		first_name = { name = name_justinian }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 80 dip = 75 mil = 70
+		birth_date = 482.5.11
+		death_date = 565.11.14
+		birth = thessaloniki # born in Tauresium, Macedonia
+		father = byz_justin_i # by adoption
+		dynasty = justinianic_dynasty
+		tag = BYZ
+		ruler_trait = lawgiver
+	}
+
+	byz_justin_ii = {
+		first_name = { name = name_justin }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 45 dip = 50 mil = 40
+		birth_date = 520.1.1
+		death_date = 578.10.5
+		birth = constantinople
+		dynasty = justinianic_dynasty
+		tag = BYZ
+	}
+
+	byz_tiberius_ii = {
+		first_name = { name = name_tiberius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 55 dip = 55 mil = 60
+		birth_date = 535.1.1
+		death_date = 582.8.14
+		birth = edirne # born in Thrace
+		father = byz_justin_ii # by adoption
+		dynasty = justinianic_dynasty
+		tag = BYZ
+	}
+
+	byz_maurice = {
+		first_name = { name = name_maurice }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 65 dip = 55 mil = 65
+		birth_date = 539.8.1
+		death_date = 602.11.27
+		birth = sivas # born in Arabissus, Cappadocia
+		dynasty = justinianic_dynasty
+		tag = BYZ
+		ruler_trait = expansionist
+	}
+
+	byz_phocas = {
+		first_name = { name = name_phocas }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = orthodox
+		adm = 20 dip = 20 mil = 40
+		birth_date = 547.1.1
+		death_date = 610.10.5
+		birth = edirne # born in Thrace
+		tag = BYZ
+		ruler_trait = cruel
+	}
+
+	# Heraclian Dynasty
+
+	byz_heraclius = {
+		first_name = { name = name_heraclius }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 60 dip = 65 mil = 75
+		birth_date = 575.1.1
+		death_date = 641.2.11
+		birth = sivas # born in Cappadocia
+		dynasty = heraclian_dynasty
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_constantine_iii = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 45 dip = 40 mil = 55
+		birth_date = 612.5.3
+		death_date = 641.5.24
+		birth = constantinople
+		father = byz_heraclius
+		dynasty = heraclian_dynasty
+		tag = BYZ
+	}
+
+	byz_heraklonas = {
+		first_name = { name = name_heraklonas }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 25 dip = 30 mil = 25
+		birth_date = 626.1.1
+		death_date = 642.1.1
+		birth = constantinople
+		father = byz_heraclius
+		dynasty = heraclian_dynasty
+		tag = BYZ
+	}
+
+	byz_constans_ii = {
+		first_name = { name = name_constans }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 55 dip = 50 mil = 60
+		birth_date = 630.11.7
+		death_date = 668.9.15
+		birth = constantinople
+		father = byz_constantine_iii
+		dynasty = heraclian_dynasty
+		tag = BYZ
+		ruler_trait = strict
+	}
+
+	byz_constantine_iv = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 60 dip = 60 mil = 65
+		birth_date = 652.1.1
+		death_date = 685.9.14
+		birth = constantinople
+		father = byz_constans_ii
+		dynasty = heraclian_dynasty
+		tag = BYZ
+		ruler_trait = righteous
+	}
+
+	byz_justinian_ii = {
+		first_name = { name = name_justinian }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 30 mil = 50
+		birth_date = 668.1.1
+		death_date = 711.12.4
+		birth = constantinople
+		father = byz_constantine_iv
+		dynasty = heraclian_dynasty
+		tag = BYZ
+		ruler_trait = cruel
+	}
+
+	# Interregnum Emperors (695–717)
+
+	byz_leontios = {
+		first_name = { name = name_leontios }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 35 mil = 55
+		birth_date = 660.1.1
+		death_date = 706.2.1
+		birth = sivas # born in Isauria
+		tag = BYZ
+	}
+
+	byz_tiberius_iii = {
+		first_name = { name = name_tiberius }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 45 dip = 40 mil = 55
+		birth_date = 665.1.1
+		death_date = 706.2.15
+		birth = edirne # born in Thrace
+		tag = BYZ
+	}
+
+	byz_philippicus = {
+		first_name = { name = name_philippicus }
+		culture = greek_culture
+		religion = orthodox
+		adm = 35 dip = 30 mil = 50
+		birth_date = 670.1.1
+		death_date = 713.6.3
+		birth = izmit # born in Pergamon
+		tag = BYZ
+	}
+
+	byz_anastasius_ii = {
+		first_name = { name = name_anastasius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 50 dip = 50 mil = 45
+		birth_date = 680.1.1
+		death_date = 721.6.1
+		birth = constantinople
+		tag = BYZ
+	}
+
+	byz_theodosius_iii = {
+		first_name = { name = name_theodosius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 45 mil = 40
+		birth_date = 690.1.1
+		death_date = 754.1.1 # abdicated; became a monk
+		birth = edirne # born in Thrace
+		tag = BYZ
+	}
+
+	# Isaurian Dynasty
+
+	byz_leo_iii = {
+		first_name = { name = name_leon }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 65 dip = 60 mil = 70
+		birth_date = 685.1.1
+		death_date = 741.6.18
+		birth = antioch # born in Germanicea, Syria
+		dynasty = isaurian_dynasty
+		tag = BYZ
+		ruler_trait = expansionist
+	}
+
+	byz_constantine_v = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 60 dip = 50 mil = 75
+		birth_date = 718.7.1
+		death_date = 775.9.14
+		birth = constantinople
+		father = byz_leo_iii
+		dynasty = isaurian_dynasty
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_leo_iv = {
+		first_name = { name = name_leon }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 50 dip = 55 mil = 55
+		birth_date = 750.1.25
+		death_date = 780.9.8
+		birth = constantinople
+		father = byz_constantine_v
+		dynasty = isaurian_dynasty
+		tag = BYZ
+	}
+
+	byz_constantine_vi = {
+		first_name = { name = name_constantine }
+		last_name = { name = name_flavius }
+		culture = greek_culture
+		religion = orthodox
+		adm = 25 dip = 30 mil = 30
+		birth_date = 771.1.14
+		death_date = 805.1.1 # blinded and deposed
+		birth = constantinople
+		father = byz_leo_iv
+		dynasty = isaurian_dynasty
+		tag = BYZ
+		ruler_trait = naive
+		health_trait = blind
+	}
+
+	byz_irene = {
+		first_name = { name = name_irene }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		adm = 50 dip = 60 mil = 30
+		birth_date = 752.1.1
+		death_date = 803.8.9
+		birth = athens
+		spouse = byz_leo_iv
+		dynasty = isaurian_dynasty
+		tag = BYZ
+		ruler_trait = intricate_web_weaver
+	}
+
+	# Nikephorian Dynasty
+
+	byz_nikephoros_i = {
+		first_name = { name = name_nikephoros }
+		culture = greek_culture
+		religion = orthodox
+		adm = 65 dip = 50 mil = 55
+		birth_date = 760.1.1
+		death_date = 811.7.26 # killed at Battle of Pliska
+		birth = thessaloniki # born in Seleucia, Pisidia
+		dynasty = nikephorian_dynasty
+		tag = BYZ
+		ruler_trait = midas_touched
+	}
+
+	byz_staurakios = {
+		first_name = { name = name_staurakios }
+		culture = greek_culture
+		religion = orthodox
+		adm = 30 dip = 30 mil = 35
+		birth_date = 778.1.1
+		death_date = 812.1.1 # deposed; became a monk
+		birth = constantinople
+		father = byz_nikephoros_i
+		dynasty = nikephorian_dynasty
+		tag = BYZ
+	}
+
+	byz_michael_i_rangabe = {
+		first_name = { name = name_michael }
+		last_name = { name = Rangabe }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 50 mil = 35
+		birth_date = 780.1.1
+		death_date = 843.1.1 # abdicated; became a monk
+		birth = constantinople
+		dynasty = nikephorian_dynasty
+		tag = BYZ
+		ruler_trait = pious
+	}
+
+	# Amorian Dynasty
+
+	byz_leo_v = {
+		first_name = { name = name_leon }
+		last_name = { name = the_armenian }
+		culture = greek_culture
+		religion = orthodox
+		adm = 55 dip = 50 mil = 65
+		birth_date = 775.1.1
+		death_date = 820.12.24 # murdered in the Hagia Sophia
+		birth = sivas # born in Phrygia or Armenia
+		tag = BYZ
+		ruler_trait = bold_fighter
+	}
+
+	byz_michael_ii = {
+		first_name = { name = name_michael }
+		last_name = { name = the_amorian }
+		culture = greek_culture
+		religion = orthodox
+		adm = 55 dip = 50 mil = 60
+		birth_date = 770.1.1
+		death_date = 829.10.2
+		birth = izmit # born in Amorion, Phrygia
+		dynasty = amorian_dynasty
+		tag = BYZ
+	}
+
+	byz_theophilos = {
+		first_name = { name = name_theophilos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 65 dip = 60 mil = 55
+		birth_date = 813.1.1
+		death_date = 842.1.20
+		birth = constantinople
+		father = byz_michael_ii
+		dynasty = amorian_dynasty
+		tag = BYZ
+		ruler_trait = lawgiver
+	}
+
+	byz_michael_iii = {
+		first_name = { name = name_michael }
+		culture = greek_culture
+		religion = orthodox
+		adm = 30 dip = 40 mil = 35
+		birth_date = 840.1.9
+		death_date = 867.9.24 # murdered by Basil I
+		birth = constantinople
+		father = byz_theophilos
+		dynasty = amorian_dynasty
+		tag = BYZ
+		ruler_trait = drunkard
+	}
+
+	# Macedonian Dynasty
+
+	byz_basil_i = {
+		first_name = { name = name_basil }
+		culture = greek_culture
+		religion = orthodox
+		adm = 55 dip = 60 mil = 65
+		birth_date = 830.1.1
+		death_date = 886.8.29
+		birth = edirne # born in Macedonia (Thrace)
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = expansionist
+	}
+
+	byz_leo_vi = {
+		first_name = { name = name_leon }
+		culture = greek_culture
+		religion = orthodox
+		adm = 60 dip = 65 mil = 40
+		birth_date = 866.9.19
+		death_date = 912.5.11
+		birth = constantinople
+		father = byz_basil_i
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = lawgiver
+	}
+
+	byz_alexander_ii = {
+		first_name = { name = name_alexander }
+		culture = greek_culture
+		religion = orthodox
+		adm = 30 dip = 35 mil = 35
+		birth_date = 870.5.1
+		death_date = 913.6.6
+		birth = constantinople
+		father = byz_basil_i
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = drunkard
+	}
+
+	byz_constantine_vii = {
+		first_name = { name = name_constantine }
+		nickname = { name = Porphyrogennetos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 70 dip = 65 mil = 40
+		birth_date = 905.9.2
+		death_date = 959.11.9
+		birth = constantinople
+		father = byz_leo_vi
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = scholar
+	}
+
+	byz_romanos_i_lekapenos = {
+		first_name = { name = name_romanos }
+		last_name = { name = Lekapenos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 60 dip = 65 mil = 60
+		birth_date = 870.1.1
+		death_date = 948.6.15
+		birth = thessaloniki # born in Lakape, Armenia
+		tag = BYZ
+		ruler_trait = intricate_web_weaver
+	}
+
+	byz_romanos_ii = {
+		first_name = { name = name_romanos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 35 dip = 45 mil = 40
+		birth_date = 938.3.1
+		death_date = 963.3.15
+		birth = constantinople
+		father = byz_constantine_vii
+		dynasty = macedonian_dynasty
+		tag = BYZ
+	}
+
+	byz_nikephoros_ii_phokas = {
+		first_name = { name = name_nikephoros }
+		last_name = { name = Phokas }
+		culture = greek_culture
+		religion = orthodox
+		adm = 50 dip = 40 mil = 80
+		birth_date = 912.1.1
+		death_date = 969.12.11 # murdered
+		birth = sivas # born in Cappadocia
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_john_i_tzimiskes = {
+		first_name = { name = name_john }
+		last_name = { name = Tzimiskes }
+		culture = greek_culture
+		religion = orthodox
+		adm = 55 dip = 55 mil = 80
+		birth_date = 925.1.1
+		death_date = 976.1.10
+		birth = izmit # born in Chozanon, Armenia
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_basil_ii = {
+		first_name = { name = name_basil }
+		nickname = { name = Bulgaroktonos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 65 dip = 55 mil = 80
+		birth_date = 958.1.1
+		death_date = 1025.12.15
+		birth = constantinople
+		father = byz_romanos_ii
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = conqueror
+	}
+
+	byz_constantine_viii = {
+		first_name = { name = name_constantine }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 45 mil = 35
+		birth_date = 960.1.1
+		death_date = 1028.11.11
+		birth = constantinople
+		father = byz_romanos_ii
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = naive
+	}
+
+	byz_zoe = {
+		first_name = { name = name_zoe }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		adm = 35 dip = 50 mil = 20
+		birth_date = 978.1.1
+		death_date = 1050.6.1
+		birth = constantinople
+		father = byz_constantine_viii
+		dynasty = macedonian_dynasty
+		tag = BYZ
+	}
+
+	byz_theodora_ii = {
+		first_name = { name = name_theodora }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		adm = 50 dip = 55 mil = 30
+		birth_date = 980.1.1
+		death_date = 1056.9.11
+		birth = constantinople
+		father = byz_constantine_viii
+		dynasty = macedonian_dynasty
+		tag = BYZ
+		ruler_trait = righteous
+	}
+
+	byz_romanos_iii_argyros = {
+		first_name = { name = name_romanos }
+		last_name = { name = Argyros }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 55 mil = 35
+		birth_date = 968.1.1
+		death_date = 1034.4.11 # drowned
+		birth = constantinople
+		tag = BYZ
+		ruler_trait = scholar
+	}
+
+	byz_michael_iv = {
+		first_name = { name = name_michael }
+		last_name = { name = the_paphlagonian }
+		culture = greek_culture
+		religion = orthodox
+		adm = 45 dip = 50 mil = 50
+		birth_date = 1010.1.1
+		death_date = 1041.12.10
+		birth = sivas # born in Paphlagonia
+		tag = BYZ
+		ruler_trait = pious
+	}
+
+	byz_michael_v_kalaphates = {
+		first_name = { name = name_michael }
+		last_name = { name = Kalaphates }
+		culture = greek_culture
+		religion = orthodox
+		adm = 20 dip = 30 mil = 25
+		birth_date = 1015.1.1
+		death_date = 1042.8.24 # blinded and exiled
+		birth = constantinople
+		tag = BYZ
+		ruler_trait = unsuited_for_country_ruling
+		health_trait = blind
+	}
+
+	byz_constantine_ix_monomachos = {
+		first_name = { name = name_constantine }
+		last_name = { name = Monomachos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 45 dip = 55 mil = 30
+		birth_date = 1000.1.1
+		death_date = 1055.1.11
+		birth = constantinople
+		tag = BYZ
+		ruler_trait = free_thinker
+	}
+
+	byz_michael_vi_stratiotikos = {
+		first_name = { name = name_michael }
+		last_name = { name = Stratiotikos }
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 45 mil = 35
+		birth_date = 995.1.1
+		death_date = 1059.1.1 # deposed; retired
+		birth = constantinople
+		tag = BYZ
+		ruler_trait = careful
+	}
+
 	# Doukas Family (Former Emperors of the Eastern Roman Empire)
 	
 	byz_andronikos_doukas = {
@@ -5964,6 +7372,7 @@ character_db={
 		dynasty = angelos_dynasty
 		tag = BYZ
 		ruler_trait = malevolent
+		health_trait = blind
 	}
 	
 	byz_alexios_iv_angelos = {
@@ -6020,7 +7429,8 @@ character_db={
 	}
 	
 	byz_angelina_vatatzes = {
-		first_name = "random" # Name Unknown
+		 # Name Unknown
+		first_name = { name = name_alexandra }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -6169,6 +7579,7 @@ character_db={
 		#mother = Elena of Bulgaria
 		dynasty = laskaris_dynasty
 		tag = BYZ
+		health_trait = blind
 	}
 
 	# Palaiologos Family
@@ -6319,6 +7730,17 @@ character_db={
 		ruler_trait = embezzler
 	}
 
+	# Mother of Anna Árpád, Ladislaus IV & Maria of Hungary
+	hun_elizabeth_cuman = { #https://en.wikipedia.org/wiki/Elizabeth_the_Cuman
+		first_name = { name = name_elizabeth }
+		culture = cuman_culture
+		religion = catholic
+		female = yes
+		birth_date = 1244.1.1
+		death_date = 1290.1.1
+		tag = HUN
+	}
+
 	#Ruler's Grandfather's first spouse
 	byz_anna_arpad = {
 		first_name = { name = name_anna }
@@ -6329,8 +7751,8 @@ character_db={
 		death_date = 1281.1.1
 		birth = buda
 		father = hun_stephen_v_arpad
-		#mother = elizabeth_cuman https://en.wikipedia.org/wiki/Elizabeth_the_Cuman
-		spouse = byz_andronikos_ii_palaiologos	
+		mother = hun_elizabeth_cuman
+		spouse = byz_andronikos_ii_palaiologos
 		dynasty = arpad_dynasty
 		tag = BYZ
 	}
@@ -6380,12 +7802,7 @@ character_db={
 		dynasty = palaiologos_dynasty
 		tag = BYZ
 		ruler_trait = greedy
-		timed_modifier = { #Chronic Malaria
-			modifier = "sickly_character"
-			start_date = 1330.1.1
-			date = 9999.1.1
-			size = 0.5
-		}
+		health_trait = sickly
 	}
 	
 	#Heir
@@ -6400,7 +7817,7 @@ character_db={
 		mother = byz_anna_of_savoy
 		dynasty = palaiologos_dynasty
 		tag = BYZ
-		child_trait = child_slow #child_idiot #bit much eh? 
+		child_trait = child_idiot
 	}
 	
 	#Heir's Brother
@@ -6467,7 +7884,7 @@ character_db={
 		religion = orthodox
 		birth_date = 1295.1.1
 		birth = constantinople
-		father = byz_michael_ix_palaiologos
+		father = byz_andronikos_ii_palaiologos
 		mother = byz_eirene_di_monferrato
 		dynasty = palaiologos_dynasty
 		tag = ATH
@@ -6742,6 +8159,13 @@ character_db={
 		spouse = byz_irene_asen
 		dynasty = kantakouzenos_dynasty
 		tag = BYZ
+		health_trait = healthy
+		timed_modifier = { # he lived to be 91 thats insane
+			modifier = "is_byz_john_kantakouzenos"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 	
 	byz_irene_asen = { #https://en.wikipedia.org/wiki/Irene_Asanina
@@ -7031,6 +8455,29 @@ character_db={
 		tag = BYZ
 	}
 
+	# Father of Gregory Palamas; senator at the court of Andronikos II (attested in Philotheos Kokkinos, Life of Gregory Palamas)
+	byz_constantine_palamas = { #https://en.wikipedia.org/wiki/Gregory_Palamas
+		first_name = { name = name_constantine }
+		last_name = { name = name_palamas }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1255.1.1
+		death_date = 1303.1.1
+		tag = BYZ
+	}
+
+	# Mother of Gregory Palamas (attested in Philotheos Kokkinos, Life of Gregory Palamas)
+	byz_kalloni_palamas = {
+		first_name = { name = name_kallone }
+		last_name = { name = name_palamas }
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1260.1.1
+		birth = constantinople
+		tag = BYZ
+	}
+
 	byz_gregory_palamas = { #https://en.wikipedia.org/wiki/Gregory_Palamas
 		first_name = { name = name_gregory }
 		last_name = { name = name_palamas }
@@ -7040,6 +8487,8 @@ character_db={
 		adm = 74 dip = 77 mil = 15
 		birth_date = 1296.1.1
 		birth = constantinople
+		father = byz_constantine_palamas
+		mother = byz_kalloni_palamas
 		tag = BYZ
 	}
 
@@ -7381,6 +8830,17 @@ character_db={
 		dynasty = sratsimir_dynasty
 		tag = BUL
 	}
+
+	bul_theodosius = { #Patriarch of Tardovo
+		first_name = { name = name_theodosius }
+		last_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		birth_date = 1280.1.1 #Unknown
+		estate = clergy_estate
+		birth = tarnovo
+		tag = BUL
+	}
 		
 	ser_stefan = { #Stefan Uroš I https://en.wikipedia.org/wiki/Stefan_Uro%C5%A1_I
 		first_name = { name = name_stephen.name_uros }
@@ -7442,7 +8902,7 @@ character_db={
 
 	ser_stefan_milutin = { #Stefan Uroš II https://en.wikipedia.org/wiki/Stefan_Milutin
 		first_name = { name = name_stephen.name_uros }
-		nickname = { name = milutin }
+		nickname = { name = Milutin }
 		culture = serbian
 		religion = orthodox
 		adm = 83 dip = 66 mil = 83
@@ -7538,6 +8998,17 @@ character_db={
 		dynasty = nemanjic_dynasty
 		tag = SER
 	}
+
+	ser_hrelja = { #Stefan Hrelja Ohmucevic 
+		first_name = { name = name_hrelja.name_stephen }
+		culture = serbian
+		religion = orthodox
+		adm = 56 dip = 73 mil = 45
+		birth_date = 1290.1.1
+		birth = prizren #Unknown
+		dynasty = ohmucevic_dynasty
+		tag = SMC
+	}
 	
 	ser_simeon_uros = {
 		first_name = { name = Simeon_Uros }
@@ -7597,7 +9068,7 @@ character_db={
 	thp_tanush_thopia = {
 		first_name = { name = name_tanush }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 58 dip = 44 mil = 51
 		birth_date = 1280.1.1 #Unknown
 		birth = kruje
@@ -7608,7 +9079,7 @@ character_db={
 	thp_andrea_thopia = {
 		first_name = { name = name_andrew }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 44 dip = 55 mil = 51
 		birth_date = 1313.1.1 #Circa
 		birth = kruje
@@ -7620,7 +9091,7 @@ character_db={
 	thp_karl_thopia = {
 		first_name = { name = name_charles }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 66 dip = 67 mil = 78
 		birth_date = 1331.1.1
 		birth = kruje
@@ -7634,7 +9105,7 @@ character_db={
 	mzk_andrea_ii_muzaka = {
 		first_name = { name = name_andrew }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 46 dip = 55 mil = 65
 		birth_date = 1318.1.1
 		birth = berat
@@ -7645,7 +9116,7 @@ character_db={
 	mzk_efimia_mataranga = {
 		first_name = { name = name_euphemia }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 59 dip = 40 mil = 55
 		female = yes
 		birth_date = 1320.1.1 #Unknown
@@ -7659,7 +9130,7 @@ character_db={
 	mzk_gjin_muzaka = {
 		first_name = { name = name_john }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 42 dip = 56 mil = 47
 		birth_date = 1337.1.1
 		birth = berat
@@ -7673,7 +9144,7 @@ character_db={
 	ant_golem_arianiti = {
 		first_name = { name = name_william }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 60 dip = 56 mil = 61
 		birth_date = 1298.1.1 #Unknown
 		birth = elbasan
@@ -7685,7 +9156,7 @@ character_db={
 	mtr_pal_mataranga = {
 		first_name = { name = name_paul }
 		culture = albanian
-		religion = catholic
+		religion = orthodox
 		adm = 51 dip = 44 mil = 60
 		birth_date = 1280.1.1 #Unknown
 		birth = kavaje
@@ -10307,6 +11778,17 @@ character_db={
 		}
 	}
 
+	pat_guglielmo_frangipani = {	
+		first_name = { name = name_william }
+		culture = median
+		religion = catholic
+		estate = clergy_estate
+		birth_date = 1277.1.1 #Unknown
+		birth = rome
+		dynasty = frangipani_dynasty 
+		tag = PAT
+	}
+
 	# Grandmother of the King of Aragon & Sister of the King of Naples
 	ara_blanche_anjou = {
 		first_name = { name = name_blanche }
@@ -10772,7 +12254,6 @@ character_db={
 		#mother = eng_beatrix_plantagenet
 		dynasty = dreux_dynasty # Should be dynasty = dreux_bretagne_dynasty
 		tag = BRI
-		ruler_trait = claim
 	}
 
 	# Duke of Brittany
@@ -11552,6 +13033,7 @@ character_db={
 		dynasty = burgundy_dynasty
 		tag = FRA
 		ruler_trait = well_connected
+		health_trait = maimed
 	}
 
 	# Brother of the Duke of Burgundy and Previous Duke
@@ -14383,7 +15865,7 @@ character_db={
 	# Son & Heir of the Count of Armagnac
 	amg_jean_ii_armagnac = {
 		first_name = { name = name_john }
-		nickname = { name = Hunchback }
+		nickname = { name = nick_hunchback }
 		culture = gascon
 		religion = catholic
 		estate = nobles_estate
@@ -14395,6 +15877,7 @@ character_db={
 		dynasty = armagnac_dynasty
 		tag = AMG
 		child_trait = child_gallant
+		health_trait = hunchback
 	}
 
 	# Son of the Count of Armagnac
@@ -21231,7 +22714,42 @@ character_db={
 		ruler_trait = zealot
 	}
 
-	# Wife of Konstandin II of Armenia
+	# Cuman megas domestikos under Andronikos II; father of Syrgiannes Palaiologos (attested in ODB s.v. "Syrgiannes")
+	byz_elder_syrgiannes = {
+		first_name = { name = name_syrgiannes }
+		culture = cuman_culture
+		religion = orthodox
+		birth_date = 1245.1.1
+		death_date = 1295.1.1
+		tag = BYZ
+	}
+
+	# Niece of Michael VIII Palaiologos; mother of Syrgiannes Palaiologos (attested in Wikipedia, Syrgiannes Palaiologos)
+	byz_eugenia_palaiologina_syrgiannaina = {
+		first_name = { name = name_eugenie }
+		culture = greek_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1255.1.1
+		death_date = 1310.1.1
+		dynasty = palaiologos_dynasty
+		tag = BYZ
+	}
+
+	byz_syrgiannes_palaiologos = { #https://en.wikipedia.org/wiki/Syrgiannes_Palaiologos
+		first_name = { name = name_syrgiannes }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1282.1.1
+		death_date = 1334.1.1
+		birth = constantinople
+		father = byz_elder_syrgiannes
+		mother = byz_eugenia_palaiologina_syrgiannaina
+		dynasty = palaiologos_dynasty
+		tag = BYZ
+	}
+
+	# Wife of Konstandin II of Armenia; daughter of Syrgiannes Palaiologos (attested in ODB s.v. "Syrgiannes")
 	byz_theodora_syrgiannaina = {
 		first_name = { name = name_theodora }
 		last_name = { name = Syrgiannos }
@@ -21241,7 +22759,7 @@ character_db={
 		female = yes
 		birth_date = 1310.1.1 # Unknown
 		birth = constantinople
-		#father = Syrgiannes Palaiologos Philantropenos
+		father = byz_syrgiannes_palaiologos
 		#mother = Maria Syrgiannaina
 		spouse = cil_konstandin_ii_lusignan
 		tag = BYZ
@@ -24522,7 +26040,7 @@ character_db={
 		mother = vud_jeanne_montfort
 		spouse = saa_simon_saarbrucken
 		dynasty = savoy_dynasty # Should be dynasty = savoie_vaud_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	sav_joanna_savoy_vaud = {
@@ -24742,6 +26260,7 @@ character_db={
 		tag = BAR
 		ruler_trait = zealot
 		ruler_trait = just
+		health_trait = one_eyed
 	}
 
 	bar_renaud_ii_scarpone = {
@@ -25927,21 +27446,6 @@ character_db={
 		tag = NAP
 	}
 	
-	nap_giovanni_boccaccio = {
-		first_name = { name = name_john }
-		last_name = { name = Boccaccio }
-		culture = tuscan
-		religion = catholic
-		estate = burghers_estate
-		adm = 79 dip = 74 mil = 25
-		birth_date = 1313.6.16
-		birth = florence
-		tag = NAP
-		artist = writer
-		artist_skill = 0.85
-		artist_trait = prominent
-	}
-
 	# Neapolitan Popes (Urban VI & Innocent VII )
 
 	pap_innocenzo_vii = {	
@@ -27562,6 +29066,67 @@ character_db={
 		general_trait = glory_seeker
 	}
 
+	koj_fulk_v_jerusalem = { #https://en.wikipedia.org/wiki/Fulk_of_Jerusalem
+		first_name = { name = name_fulk }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 55 dip = 62 mil = 65
+		birth_date = 1092.1.1
+		death_date = 1143.11.13
+		birth = angers
+		dynasty = anjou_jerusalem_dynasty
+		tag = KOJ
+	}
+
+	koj_amalrico_i_jerusalem = { #https://en.wikipedia.org/wiki/Amalric_I_of_Jerusalem
+		first_name = { name = name_amalric }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 55 dip = 45 mil = 58
+		birth_date = 1136.1.1
+		death_date = 1174.7.11
+		birth = jerusalem
+		father = koj_fulk_v_jerusalem
+		dynasty = anjou_jerusalem_dynasty
+		tag = KOJ
+	}
+
+	koj_baldovino_iv_jerusalem = { #https://en.wikipedia.org/wiki/Baldwin_IV_of_Jerusalem
+		first_name = { name = name_baldwin }
+		nickname = { name = nick_the_leper }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 45 dip = 51 mil = 54
+		birth_date = 1161.1.1
+		death_date = 1185.5.16
+		birth = jerusalem
+		father = koj_amalrico_i_jerusalem
+		#mother = Agnes de Courtenay
+		dynasty = anjou_jerusalem_dynasty
+		tag = KOJ
+		health_trait = disfigured
+		health_trait = sickly
+	}
+
+	koj_sibilla_jerusalem = { #https://en.wikipedia.org/wiki/Sibylla_of_Jerusalem
+		first_name = { name = name_sybil }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1159.1.1
+		death_date = 1190.7.25
+		birth = jerusalem
+		father = koj_amalrico_i_jerusalem
+		#mother = Agnes de Courtenay
+		spouse = koj_guglielmo_spadalunga
+		dynasty = anjou_jerusalem_dynasty
+		tag = KOJ
+	}
+
 	koj_baldovino_v_jerusalem = {
 		first_name = { name = name_baldwin }
 		culture = piedmontese
@@ -27572,7 +29137,7 @@ character_db={
 		death_date = 1186.8.1
 		birth = casale
 		father = koj_guglielmo_spadalunga
-		#mother = Sybilla of Jerusalem
+		mother = koj_sibilla_jerusalem
 		dynasty = aleramici_dynasty
 		tag = KOJ
 	}
@@ -43282,7 +44847,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1239.10.18
 		death_date = 1272.08.06
 		birth = pest #??
-		#spouse = elizabeth_cuman https://en.wikipedia.org/wiki/Elizabeth_the_Cuman
+		spouse = hun_elizabeth_cuman
 		father = hun_bela_iv_arpad
 		mother = hun_maria_laskarina
 		dynasty = arpad_dynasty
@@ -43299,7 +44864,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1323.3.25
 		birth = visegrad
 		father = hun_stephen_v_arpad
-		#mother = Elisabeth of the Cumans
+		mother = hun_elizabeth_cuman
 		spouse = nap_carlo_ii_anjou
 		dynasty = arpad_dynasty
 		tag = NAP
@@ -43318,10 +44883,10 @@ adm = 31 dip = 34 mil = 24
 		birth = pest
 		#spouse = elizabeth_sicily
 		father = hun_stephen_v_arpad
-		#mother = elizabeth_cuman
+		mother = hun_elizabeth_cuman
 		dynasty = arpad_dynasty
 		tag = HUN
-	}	
+	}
 
 	ara_jolan_arpad = {
 		first_name = { name = name_yolande }
@@ -44212,12 +45777,7 @@ adm = 31 dip = 34 mil = 24
 		dip = 100
 		mil = 82
 		tag = DLH
-		timed_modifier = {
-			modifier = "healthy_character"
-			start_date = 1330.1.1
-			date = 9999.1.1
-			size = 1
-		}
+		health_trait = healthy
 	}
 
 	#Zayyanids
@@ -44915,11 +46475,12 @@ adm = 31 dip = 34 mil = 24
 		dynasty = asturleonesa_dynasty
 		tag = LON
 		ruler_trait = calm
+		health_trait = sickly
 	}
 	
 	lon_alfonso_froilaz = { #https://en.wikipedia.org/wiki/Alfonso_Fr%C3%B3ilaz
 		first_name = { name = name_alphonse }
-		nickname = { name = Hunchback }
+		nickname = { name = nick_hunchback }
 		culture = leonese
 		religion = catholic
 		estate = nobles_estate
@@ -44930,6 +46491,7 @@ adm = 31 dip = 34 mil = 24
 		#mother = Jimena Muñoz
 		dynasty = asturleonesa_dynasty
 		tag = LON
+		health_trait = hunchback
 	}
 
 	# HOUSE OF BARCELONA-ARAGON (Kings of Aragon, Kings of Mallorca, Kings of Sicily, Dukes of Athens & Neopatras, Counts of Barcelona & Counts of Provence)
@@ -45038,7 +46600,7 @@ adm = 31 dip = 34 mil = 24
 
 	cat_berenguer_ramon_i_barcelona = {
 		first_name = { name = name_berengar.name_raymond }
-		nickname = { name = Hunchback }
+		nickname = { name = nick_hunchback }
 		culture = catalan
 		religion = catholic
 		estate = nobles_estate
@@ -45051,6 +46613,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = barcelona_dynasty
 		tag = CAT
 		ruler_trait = calm
+		health_trait = hunchback
 	}
 
 	cat_ramon_berenguer_i_barcelona = {
@@ -46039,7 +47602,8 @@ adm = 31 dip = 34 mil = 24
 		spouse = nap_robert_i_anjou
 		dynasty = barcelona_dynasty
 		tag = NAP
-	}	
+		ruler_trait = pious
+	}
 
 	# Uncle of the King of Mallorca & Neapolitan Fraticelli Leader
 	nap_felip_mallorca = {
@@ -46055,6 +47619,20 @@ adm = 31 dip = 34 mil = 24
 		dynasty = barcelona_dynasty
 		tag = NAP
 		ruler_trait = righteous
+	}
+
+	# Nursemaid of Joanna I, future regent of Naples after Robert's death
+	nap_filippa_catanese = {
+		first_name = { name = name_philippa }
+		last_name = { name = Catanese }
+		culture = sicilian
+		religion = catholic
+		estate = burghers_estate
+		female = yes
+		birth_date = 1280.1.1
+		death_date = 1345.1.1
+		birth = catania
+		tag = NAP
 	}
 
 	fra_elisabet_arago = {
@@ -48651,6 +50229,18 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		tag = MAM
 	}
+
+	mam_benjamin_ii_alexandria = { #coptic patriarch of Alexandria https://en.wikipedia.org/wiki/Pope_Benjamin_II_of_Alexandria
+		first_name = { name = name_benjamin }
+		last_name = "random"
+		birth = aswan #in Demicrat at the south of Egypt
+		birth_date = 1275.1.1 #Unknown
+		culture = coptic_culture
+		religion = miaphysite
+		estate = clergy_estate
+		tag = MAM
+	}
+
 	
 	#-------------------------- East Africa ----------------------------
 	
@@ -70079,7 +71669,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	bgt_cherik_temur_borjigin = {
-		first_name = { name = name_cherik.name_temur }
+		first_name = { name = name_cherik.name_timur }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tengri
@@ -70102,7 +71692,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	bgt_temur_buqa_borjigin = {
-		first_name = { name = name_temur.name_buqa  }
+		first_name = { name = name_timur.name_buqa  }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tengri
@@ -70221,7 +71811,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	qas_orug_temur_borjigin = { #Also known as Yuelu Temur
-		first_name = { name = name_orug.name_temur }
+		first_name = { name = name_orug.name_timur }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tengri
@@ -70352,42 +71942,7 @@ adm = 31 dip = 34 mil = 24
 
 	#-------------------------- Anatolia and Crescent ----------------------------
 		
-	#Alaiye - ALY
-	
-	#Ruler
-	aly_yusuf = {
-		first_name = { name = name_joseph }
-		dynasty = karamanids_dynasty
-		birth = alaiye
-		birth_date = 1262.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = kar_karaman_bey
-		tag = ALY
-	}
-	
-	#Heir
-	aly_alaeddin = {
-		first_name = { name = Alaeddin }
-		father = aly_yusuf
-		dynasty = karamanids_dynasty
-		birth = alaiye
-		birth_date = 1296.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = ALY
-	}
-	
-	aly_husameedin_mahmud = {
-		first_name = { name = name_muhammad }
-		father = aly_alaeddin
-		dynasty = karamanids_dynasty
-		birth = alaiye
-		birth_date = 1328.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = ALY
-	}
+	#Alaiye - ALY #BR removed
 
 	#Artuqids - ATQ
 	
@@ -70440,45 +71995,7 @@ adm = 31 dip = 34 mil = 24
 		tag = ATQ
 	}
 	
-	#Aydinids - AYD
-	
-	#Father of the Ruler
-	ayd_muhammad = {
-		first_name = { name = name_muhammad }
-		dynasty = aydinids_dynasty
-		birth = smyrna
-		birth_date = 1270.1.1
-		death_date = 1334.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = AYD
-	}
-
-	#Ruler
-	ayd_umur = { #https://en.wikipedia.org/wiki/Umur
-		first_name = { name = Umur }
-		nickname = { name = Ghazi }
-		father = ayd_muhammad
-		dynasty = aydinids_dynasty
-		birth = smyrna
-		birth_date = 1309.1.1
-		culture = turkish_culture
-		religion = sunni
-		ruler_trait = bold_fighter
-		tag = AYD
-	}
-
-	#Heir
-	ayd_khidr = {
-		first_name = { name = Khidr }
-		father = ayd_umur
-		dynasty = aydinids_dynasty
-		birth = smyrna
-		birth_date = 1330.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = AYD
-	}
+	#Aydinids - AYD #BR removed
 
 	# HOUSE HETHUMID (Kings of Cilicia)
 
@@ -70913,109 +72430,9 @@ adm = 31 dip = 34 mil = 24
 		ruler_trait = calm
 	}
 	
-	#Candarids - CND
+	#Candarids - CND #BR removed
 	
-	#Father of the Ruler
-	cnd_yaman = { #https://en.wikipedia.org/wiki/Yaman_Candar
-		first_name = { name = Yaman }
-		dynasty = candarids_dynasty
-		birth = kastamonu
-		birth_date = 1230.1.1
-		death_date = 1309.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = CND
-	}
-
-	#Ruler
-	cnd_suleyman = {
-		first_name = { name = name_salomon }
-		father = cnd_yaman
-		dynasty = candarids_dynasty
-		birth = kastamonu
-		birth_date = 1261.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = CND
-	}
-	
-	#Son of the Ruler
-	cnd_ibrahim = {
-		first_name = { name = name_abraham }
-		father = cnd_suleyman
-		dynasty = candarids_dynasty
-		birth = kastamonu
-		birth_date = 1289.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = CND
-	}
-
-	#Son of the Ruler
-	cnd_ali = {
-		first_name = { name = name_ali }
-		father = cnd_suleyman
-		dynasty = candarids_dynasty
-		birth = kastamonu
-		birth_date = 1292.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = CND
-	}
-	
-	#Dilmaçids - DIL
-	
-	#GranGrandfather of the Ruler ?
-	dil_salih = {
-		first_name = { name = Salih }
-		dynasty = dilmacids_dynasty
-		birth = siirt
-		birth_date = 1230.1.1
-		death_date = 1319.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = DIL
-	}
-
-	#Grandfather of the Ruler ?
-	dil_imadeddin = {
-		first_name = { name = Imadeddin }
-		last_name = { name = Devletshah }
-		father = dil_salih
-		dynasty = dilmacids_dynasty
-		birth = siirt
-		birth_date = 1250.1.1
-		death_date = 1330.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = DIL
-	}
-
-	#Father of the Ruler ?
-	dil_izzeddin = {
-		first_name = { name = Izzeddin }
-		last_name = { name = name_muhammad }
-		father = dil_imadeddin
-		dynasty = dilmacids_dynasty
-		birth = siirt
-		birth_date = 1270.1.1
-		death_date = 1334.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = DIL
-	}
-
-	#Ruler
-	dil_jalaleddin = {
-		first_name = { name = name_jalal.name_al_din }
-		father = dil_izzeddin
-		dynasty = dilmacids_dynasty
-		birth = siirt
-		birth_date = 1290.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = DIL
-	}
+	#Dilmaçids - DIL #BR removed
 
 	#Dulkadirids - DUL
 	
@@ -71045,7 +72462,7 @@ adm = 31 dip = 34 mil = 24
 	
 	#Ruler
 	ere_eretna = { #https://en.wikipedia.org/wiki/Eretna
-		first_name = { name = Alaeddin }
+		first_name = { name = name_ala.name_al_din }
 		last_name = { name = Eretna }
 		dynasty = eretnids_dynasty
 		birth = elbistan
@@ -71275,29 +72692,7 @@ adm = 31 dip = 34 mil = 24
 		tag = HMD
 	}
 	
-	#Haciemirids - HCI
-	
-	#Ruler
-	hci_bayram = {
-		first_name = { name = Bayram }
-		dynasty = haciemirids_dynasty
-		birth = bayramlu
-		birth_date = 1285.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = HCI
-	}
-	
-	hci_haji = {
-		first_name = { name = Haji }
-		father = hci_bayram
-		dynasty = haciemirids_dynasty
-		birth = bayramlu
-		birth_date = 1312.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = HCI
-	}
+	#Haciemirids - HCI #BR removed
 	
 	#Ayyubids - HSN
 	
@@ -71314,7 +72709,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	hsn_salih_ebubekir_khalil = {
-		first_name = { name = Salih }
+		first_name = { name = name_salih }
 		nickname = { name = nick_abu_bakr_khalil }
 		father = hsn_adil_shahabeddin
 		dynasty = ayyubids_dynasty
@@ -71325,29 +72720,7 @@ adm = 31 dip = 34 mil = 24
 		tag = HSN
 	}
 	
-	#Inanjids - INA
-	
-	#Ruler
-	ina_murad_arslan = {
-		first_name = { name = name_murad.name_arslan }
-		dynasty = inanjids_dynasty
-		birth = lazkiye
-		birth_date = 1297.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = INA
-	}
-	
-	ina_ishak = {
-		first_name = { name = Ishak }
-		father = ina_murad_arslan
-		dynasty = inanjids_dynasty
-		birth = lazkiye
-		birth_date = 1332.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = INA
-	}
+	#Inanjids - INA #BR removed
 	
 	#Karamanids - KAR
 	kar_karaman_bey = { 
@@ -71399,7 +72772,7 @@ adm = 31 dip = 34 mil = 24
 
 	#Ruler
 	kar_alaeddin_halil_mirza = { #https://en.wikipedia.org/wiki/Halil_of_Karaman
-		first_name = { name = name_ala_ad_din.name_khalil }
+		first_name = { name = name_ala.name_al_din.name_khalil }
 		nickname = { name = name_mirza }
 		father = kar_mahmut
 		dynasty = karamanids_dynasty
@@ -71458,456 +72831,19 @@ adm = 31 dip = 34 mil = 24
 		tag = KAR
 	}
 	
-	#Kubadids - KBD
+	#Kubadids - KBD #BR removed
 	
-	#Ruler
-	kbd_taceddin_altunbas = {
-		first_name = { name = Taceddin }
-		nickname = { name = nick_altunbas }
-		dynasty = seljukids_dynasty
-		birth = tabriz
-		birth_date = 1282.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = TUR
-	}
-	
-	kbd_keykubad = {
-		first_name = { name = name_keyqobad }
-		father = kbd_taceddin_altunbas
-		dynasty = kubadids_dynasty
-		birth = tabriz
-		birth_date = 1315.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = TUR
-	}
-	
-	#Karasids - KRD
-	
-	#Father of the Ruler
-	krd_karesi = {
-		first_name = { name = Karesi }
-		dynasty = karasids_dynasty
-		birth = konya
-		birth_date = 1252.1.1
-		death_date = 1328.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = KRD
-	}
+	#Karasids - KRD #BR removed
 		
-	#Unlce of the Ruler
-	krd_demir = {
-		first_name = { name = Demir }
-		father = krd_karesi
-		dynasty = karasids_dynasty
-		birth = balikesir
-		birth_date = 1282.1.1
-		death_date = 1332.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = KRD
-	}
+	#Tavas - TVS #BR removed
 	
-	#Ruler
-	krd_yakhshi = {
-		first_name = { name = Yakhshi }
-		father = krd_karesi
-		dynasty = karasids_dynasty
-		birth = balikesir
-		birth_date = 1288.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = KRD
-	}
-	
-	#Heir
-	krd_ajlan = {
-		first_name = { name = Ajlan }
-		father = krd_yakhshi
-		dynasty = karasids_dynasty
-		birth = balikesir
-		birth_date = 1315.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = KRD
-	}
+	#Mentese - MEN #BR removed
+
+	#Sahipataids - SHP #BR removed
 		
-	#Tavas - TVS
-	
-	#Ruler
-	tvs_ilyas_bey = {
-		first_name = { name = name_elias }
-		dynasty = mentese_dynasty #Unknown
-		birth = tavas
-		birth_date = 1300.1.1 #unknown
-		culture = turkish_culture
-		religion = sunni
-		father = men_mesut #Unknown but there seems to be some connection
-		tag = TVS
-	}
-
-	#Mentese - MEN
-	
-	#Grandfather of the Ruler
-	men_mentese = {
-		first_name = { name = Mentese }
-		dynasty = mentese_dynasty
-		birth = milas
-		birth_date = 1225.1.1
-		death_date = 1282.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = MEN
-	}
-	
-	#Father of the Ruler
-	men_mesut = { #https://en.wikipedia.org/wiki/Mesut_of_Menteshe
-		first_name = { name = Mesut }
-		dynasty = mentese_dynasty
-		birth = milas
-		birth_date = 1258.1.1
-		death_date = 1319.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = men_mentese
-		tag = MEN
-	}
-
-	#Ruler
-	men_orkhan = {
-		first_name = { name = Orkhan }
-		dynasty = mentese_dynasty
-		birth = milas
-		birth_date = 1286.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = men_mesut
-		tag = MEN
-	}
-
-	#Heir
-	men_ibrahim = {
-		first_name = { name = name_abraham }
-		father = men_orkhan
-		dynasty = mentese_dynasty
-		birth = milas
-		birth_date = 1310.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = MEN
-	}
+	#Saruhanids - SRU #BR removed
 		
-	#Grandson of the Ruler
-	men_musa = {
-		first_name = { name = name_moses }
-		father = men_ibrahim
-		dynasty = mentese_dynasty
-		birth = balikesir
-		birth_date = 1333.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = MEN
-	}
-	
-	#Grandson of the Ruler
-	men_mehmed = {
-		first_name = { name = name_muhammad }
-		father = men_ibrahim
-		dynasty = mentese_dynasty
-		birth = balikesir
-		birth_date = 1335.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = MEN
-	}
-	
-	#Grandson of the Ruler
-	men_ahmed = {
-		first_name = { name = name_ahmad }
-		father = men_ibrahim
-		dynasty = mentese_dynasty
-		birth = balikesir
-		birth_date = 1337.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = MEN
-	}
-
-	#Sahipataids - SHP
-	shp_sahib_ata = {
-		first_name = { name = name_ali }
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1214.1.1
-		death_date = 1288.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-
-	#Granduncle of the Ruler
-	shp_hussein = {
-		first_name = { name = Hussein }
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1236.1.1
-		death_date = 1272.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = shp_sahib_ata
-		tag = SHP
-	}
-
-	#Grandfather of the Ruler
-	shp_hassan = {
-		first_name = { name = name_hasan }
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1234.1.1
-		death_date = 1277.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = shp_sahib_ata
-		tag = SHP
-	}
-
-	#Father of the Ruler
-	shp_mehmed = {
-		first_name = { name = name_muhammad }
-		father = shp_hassan
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1254.1.1
-		death_date = 1287.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-
-	#Ruler
-	shp_nusreddin_ahmed = {
-		first_name = { name = Nusreddin }
-		last_name = { name = name_ahmad }
-		father = shp_mehmed
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1272.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-
-	#Brother of the Ruler
-	shp_muzaferuddin = {
-		first_name = { name = Muzaeruddin }
-		father = shp_mehmed
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1278.1.1
-		death_date = 1333.10.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-	
-	#Nephew of the Ruler
-	shp_isa = {
-		first_name = { name = name_jesus }
-		father = shp_muzaferuddin
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1300.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-	
-	#Nephew of the Ruler
-	shp_ali = {
-		first_name = { name = name_ali }
-		father = shp_muzaferuddin
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1302.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-	
-	#Nephew of the Ruler
-	shp_hamza = {
-		first_name = { name = Hamza }
-		father = shp_muzaferuddin
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1305.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-	
-	#Nephew of the Ruler
-	shp_hasan = {
-		first_name = { name = name_hasan }
-		father = shp_muzaferuddin
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1308.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-	
-	#Nephew of the Ruler
-	shp_Mahmoud = {
-		first_name = { name = name_mahmud }
-		father = shp_muzaferuddin
-		dynasty = sahipataids_dynasty
-		birth = karahisar_i_sahib
-		birth_date = 1310.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SHP
-	}
-		
-	#Saruhanids - SRU
-	
-	#Ruler
-	sru_saruhan = {
-		first_name = { name = Saruhan }
-		dynasty = saruhanids_dynasty
-		birth = konya
-		birth_date = 1273.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-
-	sru_suleyman = {
-		first_name = { name = name_salomon }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1304.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_ilyas = {
-		first_name = { name = name_elias }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1306.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_orhan = {
-		first_name = { name = name_orhan }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1309.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_devlet_khan = {
-		first_name = { name = Devlet_Khan }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1313.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_timurshah = {
-		first_name = { name = Timurshah }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1315.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_idris = {
-		first_name = { name = name_idris }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1318.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_atmaz_khan = {
-		first_name = { name = Atmaz_Khan }
-		father = sru_saruhan
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1320.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-	
-	sru_iskhak = {
-		first_name = { name = Iskhak }
-		father = sru_ilyas
-		dynasty = saruhanids_dynasty
-		birth = manisa
-		birth_date = 1331.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = SRU
-	}
-		
-	#Sutayids - SUT
-	
-	sut_sutay = { #https://en.wikipedia.org/wiki/Sutay
-		first_name = { name = Sutay }
-		dynasty = sutayids_dynasty
-		birth = diyarbekir
-		birth_date = 1254.1.1
-		death_date = 1332.1.1
-		culture = mongolian_culture
-		religion = sunni
-		tag = SUT
-	}
-
-	#Ruler
-	sut_hajji_taghay = {
-		first_name = { name = Hajji_Taghay }
-		father = sut_sutay
-		dynasty = sutayids_dynasty
-		birth = diyarbekir
-		birth_date = 1288.1.1
-		culture = mongolian_culture
-		religion = sunni
-		tag = SUT
-	}
-	
-	sut_ibrahim_sah = {
-		first_name = { name = Ibrahim_Sah }
-		father = sut_hajji_taghay
-		dynasty = sutayids_dynasty
-		birth = diyarbekir
-		birth_date = 1319.1.1
-		culture = mongolian_culture
-		religion = sunni
-		tag = SUT
-	}
+	#Sutayids - SUT #BR removed
 			
 	#Tadjeddinids - TDJ
 	
@@ -71922,57 +72858,7 @@ adm = 31 dip = 34 mil = 24
 		tag = ERE
 	}
 		
-	#Teke - TEK
-		
-	#GrandGrandfather of the Ruler
-	tek_yunus = {
-		first_name = { name = Yunus }
-		father = ham_ilyas
-		dynasty = hamidids_dynasty
-		birth = antalya
-		birth_date = 1250.1.1
-		death_date = 1324.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = TEK
-	}
-	
-	#Grandfather of the Ruler
-	tek_muhammad = {
-		first_name = { name = name_muhammad }
-		dynasty = hamidids_dynasty
-		birth = antalya
-		birth_date = 1270.1.1
-		death_date = 1328.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = tek_yunus
-		tag = TEK
-	}
-
-	#Ruler
-	tek_sinanuddin_hizir = {
-		first_name = { name = Sinanuddin }
-		nickname = { name = nick_hizir }
-		dynasty = hamidids_dynasty
-		birth = antalya
-		birth_date = 1288.1.1
-		culture = turkish_culture
-		religion = sunni
-		father = tek_yunus
-		tag = TEK
-	}
-
-	tek_dadi = {
-		first_name = { name = Dadi }
-		father = tek_sinanuddin_hizir
-		dynasty = hamidids_dynasty
-		birth = antalya
-		birth_date = 1314.1.1
-		culture = turkish_culture
-		religion = sunni
-		tag = TEK
-	}
+	#Teke - TEK #BR removed
 	
 	#Trebizond - TRE
 
@@ -72533,12 +73419,7 @@ adm = 31 dip = 34 mil = 24
 		ruler_trait = conqueror
 		ruler_trait = inspiring_leader
 		general_trait = master_of_arms
-		timed_modifier = {
-			modifier = "healthy_character"
-			start_date = 1330.1.1
-			date = 9999.1.1
-			size = 2
-		}
+		health_trait = healthy
 	}
 
 	#Mother of the Brother of the Ruler
@@ -73153,7 +74034,7 @@ adm = 31 dip = 34 mil = 24
 	#Concubine of the Ruler
 	tur_nilufer = { #https://en.wikipedia.org/wiki/Nil%C3%BCfer_Hatun
 
-		first_name = { name = name_nilufer }
+		first_name = { name = name_niloufar }
 		nickname = { name = Khatun }
 		birth = bilecik
 		birth_date = 1283.1.1
@@ -73175,7 +74056,32 @@ adm = 31 dip = 34 mil = 24
 		religion = sunni
 		tag = TUR
 	}
-	
+
+	#Son of the Ruler
+	tur_kasim = { #https://en.wikipedia.org/wiki/Orhan#Children
+		first_name = { name = name_qasim }
+		father = tur_orhan
+		mother = tur_asporcha
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1327.1.1 #Unknown, after Murad per Inalcik/Uzuncarsili birth order
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
+	#Son of the Ruler
+	tur_halil = { #https://en.wikipedia.org/wiki/Orhan#Children
+		first_name = { name = name_khalil }
+		father = tur_orhan
+		dynasty = ottomans_dynasty
+		birth = bursa
+		birth_date = 1334.1.1 #Unknown, after Serefullah; mother disputed
+		culture = turkish_culture
+		religion = sunni
+		tag = TUR
+	}
+
 	#Spouse of the Ruler
 	tur_asporcha = { #https://en.wikipedia.org/wiki/Aspor%C3%A7a_Hatun
 		first_name = { name = name_asporcha }
@@ -73486,7 +74392,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	bkz_rukn_al_din_al_husayn = {	
-		first_name = { name = Husayn }
+		first_name = { name = name_husayn }
 		culture = bedouin_culture
 		religion = shia
 		female = yes
@@ -73617,7 +74523,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	jal_mongke_temur = {
-		first_name = { name = name_mongke.name_temur }
+		first_name = { name = name_mongke.name_timur }
 		culture = mongolian_culture
 		religion = tengri
 		birth_date = 1256.10.23
@@ -73641,7 +74547,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	jal_esen_temur = {
-		first_name = { name = name_esen.name_temur }
+		first_name = { name = name_esen.name_timur }
 		culture = mongolian_culture
 		religion = sunni
 		birth_date = 1290.1.1 #Unknown
@@ -73732,7 +74638,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1300.1.1 #Unknown
 		birth = ujan
 		dynasty = hasbani_dynasty
-		tag = HBN
+		tag = A2A
 	}
 
 	hdr_taj_al_din_hadhur_bin_suleyman = {
@@ -73766,7 +74672,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	ktw_sayf_al_din_abu_bakr = {
-		first_name = { name = sayf.name_al_din.Abu_Bakr }
+		first_name = { name = name_sayf.name_al_din.Abu_Bakr }
 		culture = kurdish_culture
 		religion = sunni
 		birth_date = 1280.1.1 #Unknown
@@ -75023,7 +75929,7 @@ adm = 31 dip = 34 mil = 24
 		birth = lichtenberg
 		death_date = 1252.1.1
 		dynasty = lichtenberg_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_heinrich_ii_von_lichtenberg = { # Son of Ludwig I
@@ -75035,7 +75941,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1269.1.1
 		father = lic_ludwig_i_von_lichtenberg
 		dynasty = lichtenberg_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_ludwig_ii_von_lichtenberg = { # Ruler, son of Heinrich II
@@ -75048,7 +75954,7 @@ adm = 31 dip = 34 mil = 24
 		father = lic_ludwig_i_von_lichtenberg
 		spouse = lic_elisabeth_von_baden
 		dynasty = lichtenberg_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_elisabeth_von_baden = { # Wife of Ludwig II
@@ -75062,7 +75968,7 @@ adm = 31 dip = 34 mil = 24
 		spouse = lic_ludwig_ii_von_lichtenberg
 		father = bde_herman_v_baden
 		dynasty = baden_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_johann_i_von_lichtenberg = { # Son of Ludwig II
@@ -75074,7 +75980,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1315.8.22
 		father = lic_ludwig_ii_von_lichtenberg
 		dynasty = lichtenberg_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_johann_ii_von_lichtenberg = { # Ruler in 1337
@@ -75086,7 +75992,7 @@ adm = 31 dip = 34 mil = 24
 		father = lic_johann_i_von_lichtenberg
 		spouse = lic_johanna_von_leiningen
 		dynasty = lichtenberg_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	lic_johanna_von_leiningen = { # Wife of Johann II
@@ -75099,7 +76005,7 @@ adm = 31 dip = 34 mil = 24
 		father = lnn_friedrich_iv_leiningen
 		spouse = lic_johann_ii_von_lichtenberg
 		dynasty = leiningen_dynasty
-		tag = LIC
+		tag = LOT
 	}
 
 	#Salzbug
@@ -77410,7 +78316,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	kyb_egon_kyburg = { #Son of Ruler
-		first_name = { name = name_everard }
+		first_name = { name = Egon }
 		culture = high_alemannic
 		religion = catholic
 		birth_date = 1330.1.1
@@ -77422,7 +78328,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	kyb_hartmann_iii_kyburg = { #Son of Ruler
-		first_name = { name = name_everard }
+		first_name = { name = name_hartmann }
 		culture = high_alemannic
 		religion = catholic
 		birth_date = 1333.1.1
@@ -77434,7 +78340,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	kyb_margaretha_kyburg = { #Daughter of Ruler
-		first_name = { name = name_everard }
+		first_name = { name = name_margaret }
 		culture = high_alemannic
 		religion = catholic
 		female = yes
@@ -77447,7 +78353,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	wer_katharina_kyburg = { #Sister of Ruler
-		first_name = { name = Katharina }
+		first_name = { name = name_catherine }
 		culture = high_alemannic
 		religion = catholic
 		female = yes
@@ -77788,6 +78694,7 @@ adm = 31 dip = 34 mil = 24
 		mother = mei_margaret_hohenstaufen
 		dynasty = wettin_dynasty
 		tag = MEI
+		health_trait = scarred
 	}
 
 	mei_elisabeth_von_lobdeburg_arnshaugk = { #Mother of Ruler
@@ -78158,7 +79065,7 @@ adm = 31 dip = 34 mil = 24
 		birth = saarbrucken
 		death_date = 1308.1.1
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 	
 	saa_johann_i_saarbrucken = { #Ruler
@@ -78169,7 +79076,7 @@ adm = 31 dip = 34 mil = 24
 		birth = saarbrucken
 		father = saa_simon_iv_saarbrucken
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	saa_simon_saarbrucken = { #Ruler's Dead Son
@@ -78181,7 +79088,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1325.1.1
 		father = saa_johann_i_saarbrucken
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	saa_johann_ii_saarbrucken = { #Ruler's Grandson
@@ -78193,7 +79100,7 @@ adm = 31 dip = 34 mil = 24
 		father = saa_simon_saarbrucken
 		mother = saa_marguerite_savoy_vaud
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	saa_johanna_saarbrucken = { #Ruler's Granddaughter
@@ -78207,7 +79114,7 @@ adm = 31 dip = 34 mil = 24
 		father = saa_simon_saarbrucken
 		mother = saa_marguerite_savoy_vaud
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	slm_mathilde_saarbrucken = { #Ruler's Granddaughter
@@ -78236,7 +79143,7 @@ adm = 31 dip = 34 mil = 24
 		father = saa_simon_saarbrucken
 		mother = saa_marguerite_savoy_vaud
 		dynasty = commercy_dynasty
-		tag = SAA
+		tag = SAV
 	}
 
 	saa_johann_saarbrucken = { #Ruler's Son
@@ -79284,6 +80191,7 @@ adm = 31 dip = 34 mil = 24
 		tag = BOH
 		ruler_trait = bold_fighter
 		ruler_trait = embezzler
+		health_trait = blind
 	}	
 	
 	# Duchess Consort of Lower Bavaria & Daughter of the King of Bohemia & Count of Luxembourg
@@ -83517,12 +84425,7 @@ adm = 31 dip = 34 mil = 24
 		tag = UBV
 		ruler_trait = righteous
 		ruler_trait = zealot
-		timed_modifier = {
-			modifier = "healthy_character"
-			start_date = 1330.1.1
-			date = 9999.1.1
-			size = 1
-		}
+		health_trait = healthy
 	}
 
 	ubv_william_ockham = { #https://en.wikipedia.org/wiki/William_of_Ockham
@@ -83881,9 +84784,10 @@ adm = 31 dip = 34 mil = 24
 		dynasty = wittelsbach_dynasty # Should be dynasty = wittelsbach_niederbayern_dynasty
 		tag = LBV
 		ruler_trait = zealot
-		timed_modifier = { #had leprosy
-			modifier = "sickly_character"
-			start_date = 1330.1.1
+		health_trait = sickly #Leprosy
+		timed_modifier = { # died in 1339
+			modifier = "is_lbv_heinrich_xiv_wittelsbach"
+			start_date = 1337.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -84089,7 +84993,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	bnb_katharina_bernburg = { #Daughter of Ruler
-		first_name = { name = Katharina }
+		first_name = { name = name_catherine }
 		culture = saxon
 		religion = catholic
 		female = yes
@@ -85436,7 +86340,7 @@ adm = 31 dip = 34 mil = 24
 
 	#Sponheim
 	spo_johann_i_sponheim_kreuznach = { #Father of Ruler
-		first_name = { name = name_john } 
+		first_name = { name = name_john }
 		nickname = { name = "Lame" }
 		culture = westphalian
 		religion = catholic
@@ -85445,6 +86349,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1290.1.1
 		dynasty = sponheim_dynasty
 		tag = SPO
+		health_trait = maimed
 	}
 	spo_johann_ii_sponheim_kreuznach = { #Ruler
 		first_name = { name = name_john } 
@@ -85928,7 +86833,7 @@ adm = 31 dip = 34 mil = 24
 
 	#Essen
 	ess_katharina_von_der_mark = { #Ruler
-		first_name = { name = Katharina }
+		first_name = { name = name_catherine }
 		culture = westphalian
 		religion = catholic
 		female = yes
@@ -91141,7 +92046,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	lcz_wladyslaw_i_piast = { #Ruler
 		first_name = { name = name_vladislav }
-		nickname = { name = Hunchback }
+		nickname = { name = nick_hunchback }
 		culture = mazovian
 		religion = catholic
 		birth_date = 1305.1.1
@@ -91149,6 +92054,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = piast_dynasty
 		father = lcz_siemowit_i_piast
 		tag = LCZ
+		health_trait = hunchback
 	}
 
 	#Piast Galicia–Volhynia
@@ -92071,7 +92977,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chg_buqa_temur_borjigin = {
-		first_name = { name = name_buqa.name_temur }
+		first_name = { name = name_buqa.name_timur }
 		culture = mongolian_culture
 		religion = tengri
 		birth_date = 1252.1.1 #Unknown but starts ruling in 1272
@@ -92143,7 +93049,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	chg_duwa_temur_borjigin = {
-		first_name = { name = name_duwa.name_temur }
+		first_name = { name = name_duwa.name_timur }
 		culture = mongolian_culture
 		religion = sunni
 		birth_date = 1283.1.1 #Unknown
@@ -92203,7 +93109,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chg_yesun_temur = {
-		first_name = { name = name_yesun.name_temur }
+		first_name = { name = name_yesun.name_timur }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tengri
@@ -92226,7 +93132,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chg_timur_lame_borjigin = {
-		first_name = { name = name_temur }
+		first_name = { name = name_timur }
 		culture = khorezmian_culture
 		religion = sunni
 		birth_date = 1336.4.8
@@ -92238,7 +93144,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chg_shah_temur_borjigin = {
-		first_name = { name = name_shah.name_temur }
+		first_name = { name = name_shah.name_timur }
 		culture = khorezmian_culture
 		religion = sunni
 		birth_date = 1330.1.1 #Unknown
@@ -92271,7 +93177,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chg_tughluq_temur_borjigin = {
-		first_name = { name = name_tughluq.name_temur }
+		first_name = { name = name_tughluq.name_timur }
 		culture = khorezmian_culture
 		religion = sunni
 		birth_date = 1312.1.1 #Exact date Unknown
@@ -92293,7 +93199,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	chg_orug_temur_borjigin = {
-		first_name = { name = name_orug.name_temur }
+		first_name = { name = name_orug.name_timur }
 		culture = mongolian_culture
 		religion = sunni
 		birth_date = 1275.1.1 #Unknown
@@ -94563,12 +95469,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1290.1.1
 		birth = trowulan
 		tag = MAJ
-		timed_modifier = {
-			modifier = "healthy_character"
-			start_date = 1330.1.1
-			date = 9999.1.1
-			size = 2
-		}
+		health_trait = healthy
 	}
 
 	maj_dara_petak = {
@@ -94981,7 +95882,7 @@ adm = 31 dip = 34 mil = 24
 	#Theodoro
 	feo_demetrios_gabras = {	#Ruler
 		first_name = { name = name_demetrius }
-		culture = gothic_culture
+		culture = pontic_greek_culture
 		religion = orthodox
 		adm = 41 dip = 41 mil = 37
 		birth_date = 1307.1.1
@@ -94991,7 +95892,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	feo_maria_gabras = {	#Consort of Ruler
 		first_name = { name = name_mary }
-		culture = gothic_culture
+		culture = pontic_greek_culture
 		religion = orthodox
 		female = yes
 		spouse = feo_demetrios_gabras
@@ -95001,7 +95902,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	feo_basilios_gabras = {	#Son of Ruler
 		first_name = { name = name_basil }
-		culture = gothic_culture
+		culture = pontic_greek_culture
 		religion = orthodox
 		adm = 55 dip = 32 mil = 55
 		father = feo_demetrios_gabras
@@ -95114,7 +96015,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	chb_timurtash = { #Father of the ruler
-		first_name = { name = name_temur.name_tash }
+		first_name = { name = name_timur.name_tash }
 		culture = mongolian_culture
 		religion = shia
 		birth_date = 1298.1.1 #Unknown
@@ -95261,7 +96162,7 @@ adm = 31 dip = 34 mil = 24
 
 	#Gurgan
 	grg_togha_temur = {
-		first_name = { name = name_togha.name_temur }
+		first_name = { name = name_togha.name_timur }
 		culture = mongolian_culture
 		religion = sunni
 		adm = 35 dip = 40 mil = 65
@@ -95360,7 +96261,7 @@ adm = 31 dip = 34 mil = 24
 
 	#Sabzevar
 	sbz_ala_ad_din_muhammad = {
-		first_name = { name = name_ala_ad_din.name_muhammad }
+		first_name = { name = name_ala.name_al_din.name_muhammad }
 		culture = khorasani_culture
 		religion = sunni
 		birth_date = 1300.1.1 #Unknown
@@ -95793,6 +96694,17 @@ adm = 31 dip = 34 mil = 24
 		tag = GEO
 	}
 
+	geo_basil_v = { #patriarch https://ka.wikipedia.org/wiki/%E1%83%91%E1%83%90%E1%83%A1%E1%83%98%E1%83%9A%E1%83%98_V
+		first_name = { name = name_basil }
+		last_name = "random"
+		culture = georgian_culture
+		religion = orthodox
+		birth_date = 1285.1.1 #Unknown
+		birth = tbilisi
+		estate = clergy_estate
+		tag = GEO
+	}
+
 	#Samtskhe
 	sme_sargis_i = {
 		first_name = { name = name_sergius }
@@ -96198,9 +97110,20 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1318.1.1 #Unknown
 		birth = ani
 		father = arm_zakare_iv
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = bagratuni_dynasty = ARM
+	}
+
+	arm_jacob_ii_of_cilicia = { #patriarch https://en.wikipedia.org/wiki/Jacob_II_of_Cilicia
+		first_name = { name = name_james }
+		last_name = "random"
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1275.1.1 #Unknown
+		birth = ani
+		estate = clergy_estate
 		tag = ARM
 	}
+
 
 	#Tabaristan
 	mzn_hasan = {
@@ -96933,6 +97856,18 @@ adm = 31 dip = 34 mil = 24
 		tag = CHI
 	}
 
+	temur_oljeyitu_borjigin = {
+		first_name = { name = name_temur }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = tibetan_buddhism
+		birth_date = 1265.10.15
+		birth = dadu
+		death_date = 1307.2.10
+		father = zhenjin_borjigin
+		tag = CHI
+	}
+
 	kulug_borjigin = {
 		first_name = { name = Kulug }
 		dynasty = borjigin_dynasty
@@ -96942,6 +97877,42 @@ adm = 31 dip = 34 mil = 24
 		birth = dadu
 		death_date = 1311.1.27
 		father = darmabala_borjigin
+		tag = CHI
+	}
+
+	ayurbarwada_buyantu_borjigin = {
+		first_name = { name = name_ayurbarwada }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = sanjiao
+		birth_date = 1285.4.9
+		birth = dadu
+		death_date = 1320.3.1
+		father = darmabala_borjigin
+		tag = CHI
+	}
+
+	shidibala_gegeen_borjigin = {
+		first_name = { name = name_shidibala }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = tibetan_buddhism
+		birth_date = 1302.2.22
+		birth = dadu
+		death_date = 1323.9.4
+		father = ayurbarwada_buyantu_borjigin
+		tag = CHI
+	}
+
+	tugh_temur_jayaatu_borjigin = {
+		first_name = { name = name_tugh.name_temur }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = tibetan_buddhism
+		birth_date = 1304.2.16
+		birth = dadu
+		death_date = 1332.9.2
+		father = kulug_borjigin
 		tag = CHI
 	}
 
@@ -97018,7 +97989,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	mongke_temur_borjigin = {
-		first_name = { name = name_mongke.name_temur }
+		first_name = { name = name_mongke.name_timur }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tengri
@@ -97210,11 +98181,11 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	agrugchi_borjigin = {
-		first_name = { name = Agrugchi }
+		first_name = { name = name_aqruqchi }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tibetan_buddhism
-		birth_date = 1240.1.1 #Unknown
+		birth_date = 1260.1.1 #Unknown
 		birth = dadu
 		death_date = 1306.11.1
 		father = kublai_khan
@@ -97226,7 +98197,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tibetan_buddhism
-		birth_date = 1260.1.1 #Unknown
+		birth_date = 1280.1.1 #Unknown
 		birth = dadu
 		death_date = 1310.1.1 #unknown
 		father = agrugchi_borjigin
@@ -97238,7 +98209,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tibetan_buddhism
-		birth_date = 1280.1.1 #Unknown
+		birth_date = 1300.1.1 #Unknown
 		birth = dadu
 		death_date = 1330.1.1 #Unknown
 		father = temur_buqa_borjigin
@@ -97267,6 +98238,30 @@ adm = 31 dip = 34 mil = 24
 		birth = dadu
 		death_date = 1320.1.1
 		father = gammala_borjigin
+		tag = CHI
+	}
+
+	yesun_temur_borjigin = {
+		first_name = { name = name_yesun.name_temur }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = tibetan_buddhism
+		birth_date = 1293.1.1 #Exact date unknown
+		birth = dadu
+		death_date = 1328.8.15
+		father = gammala_borjigin
+		tag = CHI
+	}
+
+	ragibagh_borjigin = {
+		first_name = { name = name_ragibagh }
+		dynasty = borjigin_dynasty
+		culture = mongolian_culture
+		religion = tibetan_buddhism
+		birth_date = 1320.1.1 #Exact date unknown
+		birth = shangdu
+		death_date = 1328.11.14
+		father = yesun_temur_borjigin
 		tag = CHI
 	}
 
@@ -97416,7 +98411,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	malik_timur_borjigin = {
-		first_name = { name = name_malik.name_temur }
+		first_name = { name = name_malik.name_timur }
 		culture = mongolian_culture
 		religion = sunni
 		birth_date = 1240.1.1 #Unknown
@@ -97477,7 +98472,7 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	esen_temur_borjigin = { #https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BB%E3%83%B3%E3%83%BB%E3%83%86%E3%83%A0%E3%83%AB
-		first_name = { name = name_esen.name_temur }
+		first_name = { name = name_esen.name_timur }
 		dynasty = borjigin_dynasty
 		culture = mongolian_culture
 		religion = tibetan_buddhism
@@ -99236,7 +100231,7 @@ adm = 31 dip = 34 mil = 24
 		birth = honnavara
 		birth_date = 1300.1.1
 		dynasty = kadamba_dynasty
-		tag = GOA
+		tag = INK
 	}
 
 	#MSN - Musuniri
