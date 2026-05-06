@@ -71,10 +71,10 @@ br_vinland_naval_tradition = { #todo break up a bit
     #can_recruit_explorer = yes
     #may_explore = yes
     exploration_maintenance_cost = -0.25
-    navy_maintenance_cost = -0.25
+    navy_maintenance_efficiency = 0.25
     global_maritime_presence_modifier = 0.1
 	#merchant_power_from_maritime_modifier = 0.2
-	#trade_sea_movement_cost_modifier = -0.2
+	#trade_sea_efficiency = -0.2
 	global_naval_supplies_output_modifier = 0.1
     requires = ship_building_advance
 }
@@ -93,6 +93,7 @@ vinlander_thing_of_vinland = {
 	requires = legalism_advance
 	government = republic
 	unlock_heir_selection = veche_selection
+	allow_tributary_subject = yes
 }
 
 vinlander_woodland_warfare = {
@@ -308,9 +309,9 @@ br_kykladian_naval_tradition = {
 	can_hire_privateers = yes
     auto_slave_raid_different_religion = yes
 	trade_range_modifier = 0.25
-	trade_sea_movement_cost_modifier = -0.25
+	trade_sea_efficiency = 0.25
     global_sailors_modifier = 0.5
-    navy_maintenance_cost = -0.25
+    navy_maintenance_efficiency = 0.25
 	navy_light_ship_maintenance_cost_modifier = -0.25
 	naval_range_modifier = 0.25
     global_maritime_presence_modifier = 0.25
