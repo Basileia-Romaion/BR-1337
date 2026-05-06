@@ -259,7 +259,7 @@ diplomacy_manager = {
 	dependency = { first = VEN second = CEP subject_type = vassal }
 	dependency = { first = VEN second = TTE subject_type = vassal start_date = 1202.10.9 } #Trieste and Muggia swear loyalty to Dux Enrico Dandolo
 	dependency = { first = VEN second = CRT subject_type = vassal }
-    dependency = { first = VEN second = CYP subject_type = tributary } #BR ADDED
+    #dependency = { first = VEN second = CYP subject_type = tributary } #BR ADDED
 	dependency = { first = VEN second = RAG subject_type = vassal }
 
     dependency = { first = VEN second = VTC subject_type = trade_company }
