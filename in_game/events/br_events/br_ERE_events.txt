@@ -135,7 +135,7 @@ br_ere_events.3 = {
 			text = br_ere_events.3.btt
 			c:ATH = {
 				annex_country = { country = c:ACH }
-				annex_country = { country = c:M0E }
+				annex_country = { country = c:MOE }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:vassal
@@ -236,6 +236,10 @@ br_ere_events.4 = {
 		high_reward_option = yes
 		name = br_ere_events.4.a
 
+		international_organization:roman_world = {
+			remove_law_from_international_organization = policy:br_romaiokratia_weak_policy
+			add_policy_to_international_organization = policy:br_romaiokratia_high_policy
+		}
 		annex_country = { country = c:S1Y }
 		annex_country = { country = c:A1G }
 		annex_country = { country = c:K1B }
@@ -303,6 +307,7 @@ br_ere_events.1002 = {
 
 ### Dynmaic events
 
+#reforms and varangians 2000-2100
 br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
 	type = country_event
 	title = br_ere_events.2000.title
@@ -525,4 +530,62 @@ br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.
 		}
 	}
 }
+
+
+#
+#br_ere_events.2100 = {
+	#type = country_event
+	#title = br_ere_events.2100.title
+	#desc = br_ere_events.2100.desc
+#
+	#dynamic_historical_event = {
+		#tag = BYZ
+		#from = 1350.4.1
+		#to = 1800.1.1
+		#monthly_chance = 1
+	#}
+#
+	#fire_only_once = yes
+	#illustration_tags = {
+		#10 = angry
+		#10 = exterior
+	#}
+#	
+	#trigger = {
+		#societal_value:br_bureaucratic_vs_stratiotai > -75
+	#}
+	#immediate = {}
+#
+	#option = {
+		#name = br_ere_events.2100.a
+		#add_estate_satisfaction = {
+			#type = estate_type:nobles_estate
+			#value = estate_satisfaction_mild_bonus
+		#}
+		#add_stability = {
+			#value = stability_weak_penalty
+			#add = {
+				#value = societal_value:centralization_vs_decentralization
+				#divide = 10
+				#multiply = -1
+			#}
+		#}
+		#add_gold = {
+			#value = root.monthly_income_trade_and_tax
+			#divide = {
+				#value = ruler_or_regent.mil
+				#divide = 10
+			#}
+			#multiply = -25
+		#}
+#
+	#}
+#
+	#option = {
+		#name = br_ere_events.2100.b
+		#add_prestige = prestige_weak_penalty
+		#add_legitimacy = legitimacy_mild_penalty
+	#}
+#
+#}
 
