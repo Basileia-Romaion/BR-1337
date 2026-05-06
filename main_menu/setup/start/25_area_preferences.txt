@@ -1,0 +1,81 @@
+
+countries = {
+	countries = {
+
+		NSE = {
+			area_preferences = {
+				england_explore_usa england_explore_india
+				england_conquer_britain
+			}
+		}
+
+		FRA = {
+			area_preferences = {
+				portugal_explore_asia portugal_explore_middle_east portugal_explore_brazil
+			}
+		}
+
+		ADU = {
+			area_preferences = {
+				castile_explore_america castile_explore_staging castile_explore_brazil
+				castile_conquer_spain
+			}
+		}
+
+		SWE = {
+			area_preferences = {
+				sweden_colonize_finland sweden_colonize_norrland
+			}
+		}
+
+		NOR = {
+			area_preferences = {
+				norway_colonize_nord_norge
+			}
+		}
+
+		S1C = {
+			area_preferences = {
+				naples_conquer_siciliy
+			}
+		}
+
+		S2C = {
+			area_preferences = {
+				siciliy_conquer_naples
+			}
+		}
+
+
+		LIT = {
+			area_preferences = {
+				lithuania_conquer_livonia lithuania_conquer_ruthenia
+			}
+		}
+
+		POL = {
+			area_preferences = {
+				poland_conquer_prussia poland_conquer_ruthenia
+			}
+		}
+
+		SCO = {
+			area_preferences = {
+				scotland_conquer_scotland
+			}
+		}
+
+		PLE = {
+			area_preferences = {
+				pale_conquer_ireland
+			}
+		}
+
+		BYZ = {
+			area_preferences = {
+				byzantium_conquer_anatolia byzantium_conquer_balkans byzantium_conquer_italy
+			}
+		}
+
+	}
+}
