@@ -7,9 +7,10 @@ INJECT:nobility_fortifications = {
 	}
 	#br added tiny fort
 	raw_modifier = {
-		fort_level = 1
+		minimum_fort_level = 1
 		propagating_zone_of_control = no
 	}
+
 }
 
 INJECT:toll_castle = {
@@ -23,7 +24,7 @@ INJECT:toll_castle = {
 # Not estate buildings, but edited here for convenience
 INJECT:fortress_church = {
 	raw_modifier = {
-		fort_level = 1 #br added small fort
+		minimum_fort_level = 1
 		propagating_zone_of_control = no
 		local_soldiers_desired_pop = 0.01
 	}
@@ -36,7 +37,7 @@ INJECT:fortress_church = {
 
 INJECT:peasants_training_grounds = {
 	modifier = {
-		local_manpower = 0.004 #increased from 0.001
+		local_manpower = 0.002 #increased from 0.001
 		local_max_control = -0.05 #br added
 	}
 }
