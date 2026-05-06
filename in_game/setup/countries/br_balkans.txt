@@ -1,0 +1,178 @@
+﻿
+REPLACE_OR_CREATE:ACH = {
+	color = map_achaian
+	color2 = rgb { 157 87 123 } #new color
+
+	#BR EDIT
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:ATH = {
+	color = map_athenian
+	color2 = rgb { 41 188 84 } #new color
+
+	#BR EDIT
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:CEP = {
+	color = map_cephalonian
+	color2 = rgb { 41 188 84 } #new color
+
+	#BR EDIT
+	culture_definition = latinoi
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:LAT = {
+	color = map_LAT
+	color2 = rgb { 200 15 5 } #new color
+
+	culture_definition = latinoi
+	religion_definition = catholic
+
+	is_historic = yes
+}
+
+REPLACE_OR_CREATE:NAX = {
+	color = map_naxos
+	color2 = rgb { 42 55 197 } 
+
+	#BR EDIT
+	culture_definition = latinoi
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:EPI = {
+	color = map_epirus
+	color2 = rgb { 13 111 189 } #new color
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:BYZ = {
+	color = map_BYZ
+	color2 = rgb { 150 11 146 } #new color
+
+	culture_definition = greek_culture
+	religion_definition = orthodox
+
+	description_category = military
+	difficulty = 4
+
+	unit_color0 = hsv360 { 350 77 53 }
+	unit_color1 = yellow
+	unit_color2 = map_BYZ	
+
+	
+}
+
+REPLACE_OR_CREATE:THE = {
+	color = rgb { 110 136 115 }
+
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:THS = {
+	color = rgb { 95 120 140 }
+
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:ALB = {
+	color = map_albanian
+	color2 = rgb { 60 60 60 }
+
+	culture_definition = albanian
+	religion_definition = orthodox 
+
+}
+
+REPLACE_OR_CREATE:THP = {
+	color = rgb { 83 184 221 }
+	color2 = rgb { 83 184 221 }
+
+	culture_definition = albanian
+	religion_definition = orthodox 
+
+}
+
+REPLACE_OR_CREATE:MZK = {
+	color = rgb { 150 99 22 }
+
+	culture_definition = albanian
+	religion_definition = orthodox 
+
+}
+
+REPLACE_OR_CREATE:ANT = {
+	color = rgb { 8 86 149 }
+	color2 = rgb { 8 86 149 }
+
+	culture_definition = albanian
+	religion_definition = orthodox 
+
+}
+
+REPLACE_OR_CREATE:MTR = {
+	color = rgb { 75 110 50 }
+	color2 = rgb { 75 110 50 }
+
+	culture_definition = albanian
+	religion_definition = orthodox 
+
+}
+
+REPLACE_OR_CREATE:BUL = {
+	color = rgb { 66  113  69 }
+
+	culture_definition = bulgarian
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:CRT = {
+	color = rgb { 138  110  130 }
+	
+	#BR EDIT
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:NEG = {
+	color = rgb { 95 105 100 }
+	
+	#BR EDIT
+	culture_definition = latinoi
+	religion_definition = catholic
+}
+
+# REMOVED TAGS
+
+INJECT:NEO = {
+	is_historic = yes
+	culture_definition = latinoi
+}
+
+INJECT:BOD = {
+	is_historic = yes
+	culture_definition = latinoi
+}
+
+INJECT:ARG = {
+	is_historic = yes
+	culture_definition = latinoi
+}
+
+INJECT:SAO = {
+	is_historic = yes
+	culture_definition = latinoi
+}
+
+INJECT:PAT = {
+	is_historic = yes
+	culture_definition = latinoi
+}
