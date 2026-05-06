@@ -41865,6 +41865,10 @@ countries = {
 			lakhva
 			lelchytsy zhytkavichy
 		}
+		own_control_integrated = {
+			mazyr buinovichi kalinkavichy pietrykaw rudobelka
+			olevsk kopyshche viry yemilchyne
+		}
 
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
@@ -53693,8 +53697,8 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 
-			ruler_term = { character = br_ere_rdm_character_21 start_date = 1329.9.25 } 
-			ruler = br_ere_rdm_character_21
+			ruler_term = { character = br_ere_rdm_character_37 start_date = 1329.9.25 } 
+			ruler = br_ere_rdm_character_37
 		}
 
 		tolerated_cultures = {
@@ -54263,7 +54267,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = random
+			ruler = rya_ivan_ii_korotopol_rurikovich
+			ruler_term = { character = rya_ivan_ii_korotopol_rurikovich start_date = 1327.1.1 regnal_number = 2 }
 		}
 		
 		liturgical_language = church_slavonic_language
@@ -54290,7 +54295,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = random
+			ruler = bry_gleb_svyatoslavich_rurikovich
+			ruler_term = { character = bry_gleb_svyatoslavich_rurikovich start_date = 1333.1.1 regnal_number = 1 }
 		}
 		
 		liturgical_language = church_slavonic_language

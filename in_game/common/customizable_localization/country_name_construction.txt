@@ -3,10 +3,7 @@
 	text = {
 		localization_key = country_name_construction_basileia_rank_name
 		trigger = {
-			OR = {
-				NOT = { has_game_rule = byz_name_greek }
-				NOT = { has_game_rule = byz_name_ere }
-			}
+			NOT = { has_game_rule = byz_name_greek }
 			country_rank ?= country_rank:rank_empire
 			tag = BYZ
 		}
