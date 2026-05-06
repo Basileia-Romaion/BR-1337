@@ -239,8 +239,8 @@ br_on_game_start = {
 			research_advance = advance_type:safe_exploration_techniques_advance
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
-			add_policy = policy:pirate_elective
-			add_policy = policy:benefits_for_privateers
+			#add_policy = policy:pirate_elective
+			#add_policy = policy:benefits_for_privateers
 		}
 		c:ADU = {
             research_advance = advance_type:meritocracy_advance
@@ -256,7 +256,7 @@ br_on_game_start = {
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
 		}
-		c:A1A = {
+		c:AIA = {
             research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
