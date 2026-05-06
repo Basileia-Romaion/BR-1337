@@ -3,6 +3,10 @@
 	text = {
 		localization_key = country_name_construction_basileia_rank_name
 		trigger = {
+			OR = {
+				NOT = { has_game_rule = byz_name_greek }
+				NOT = { has_game_rule = byz_name_ere }
+			}
 			country_rank ?= country_rank:rank_empire
 			tag = BYZ
 		}
@@ -12,6 +16,37 @@
 		trigger = {
 			country_rank ?= country_rank:rank_empire
 			tag = IMP
+		}
+	}
+	text = {
+		localization_key = country_name_construction_ROM_republic # Senatus Populusque Romanus
+		trigger = {
+			tag = ROM
+			government_type = government_type:republic
+
+			OR = {
+				court_language ?= language:latin_language
+				culture.language = language:latin_language
+			}
+		}
+	}
+	text = {
+		localization_key = country_name_construction_BYZ_greek # Basileía Rhōmaíōn
+		trigger = {
+			has_game_rule = byz_name_greek
+
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+
+			country_rank = country_rank:rank_empire
+			government_type = government_type:monarchy
+
+			OR = {
+				court_language ?= language:greek_language
+				culture.language = language:greek_language
+			}
 		}
 	}
 	text = {
