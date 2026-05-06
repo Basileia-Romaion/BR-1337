@@ -1,0 +1,12 @@
+﻿
+#INJECT:themata_bureaucracy = {
+#
+#	potential = {
+#		has_dlc = "d008_fate_of_the_phoenix"
+#		OR = {
+#			has_or_had_tag = BYZ
+#			has_or_had_tag = TRE
+#			culture = { has_culture_group = culture_group:roman_group }
+#		}
+#	}
+#}
