@@ -2,15 +2,14 @@
 
 
 #Context event that explains to the player what is in store for them
-northern_trade.1={
 
+northern_trade.1={
     type=country_event
     title=northern_trade.1.title
     desc=northern_trade.1.desc
     outcome=neutral
 
     trigger={
-
     }
 
     illustration_tags = {
@@ -29,17 +28,17 @@ northern_trade.1={
 
     option = {
         name = northern_trade.1.a
-        }
     }
-northern_trade.2={
 
+}
+
+northern_trade.2={
     type=country_event
     title=northern_trade.2.title
     desc=northern_trade.2.desc
     outcome=negative
 
     trigger={
-
     }
 
     image = "gfx/interface/illustrations/situation/black_death.dds"
@@ -70,11 +69,55 @@ northern_trade.2={
     }
 }
 
-northern_trade.2a= {
+northern_trade.3 = {
+    type = country_event
+    title = northern_trade.3.title
+    desc = northern_trade.3.desc
+    outcome = positive
+
+    trigger = {
+
+    }
+
+    image = "gfx/interface/illustrations/institutions/professional_armies.dds"
+
+    fire_only_once = yes
+
+    dynamic_historical_event = {
+        # Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from = 1370.1.1    # the earliest date at which this event can fire
+        to = 1380.1.1        # the latest date at which this event can fire
+        monthly_chance = 1    # monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = northern_trade.3.a
+        capital = {
+            change_institution_progress = {
+                type = institution:professional_armies
+                value = 100
+            }
+        }
+        create_character = {
+            age = 34
+            add_trait = trait:glory_seeker
+            estate = estate_type:nobles_estate
+            adm = 84
+            dip = 37
+            mil = 95
+            culture = culture:danish
+            religion = religion:catholic
+
+        }
+    }
+}
+
+northern_trade.4= {
     orphan=yes
     type = country_event
-    title = northern_trade.2a.title
-    desc = northern_trade.2a.desc
+    title = northern_trade.4.title
+    desc = northern_trade.4.desc
     outcome = negative
 
 
@@ -96,47 +139,3 @@ northern_trade.2a= {
         }
     }
 }
-        northern_trade.3 = {
-
-            type = country_event
-            title = northern_trade.3.title
-            desc = northern_trade.3.desc
-            outcome = positive
-
-            trigger = {
-
-            }
-
-            image = "gfx/interface/illustrations/institutions/professional_armies.dds"
-
-            fire_only_once = yes
-
-            dynamic_historical_event = {
-                # Used to make the event fire for the right tags
-                tag = NRV # tag that this event can fire for, can provide multiple
-                from = 1370.1.1    # the earliest date at which this event can fire
-                to = 1380.1.1        # the latest date at which this event can fire
-                monthly_chance = 1    # monthly chance to fire the event (10 = 10%)
-            }
-
-            option = {
-                name = northern_trade.3.a
-                capital = {
-                    change_institution_progress = {
-                        type = institution:professional_armies
-                        value = 100
-                    }
-                }
-                create_character = {
-                    age = 34
-                    add_trait = trait:glory_seeker
-                    estate = estate_type:nobles_estate
-                    adm = 84
-                    dip = 37
-                    mil = 95
-                    culture = culture:danish
-                    religion = religion:catholic
-
-                }
-            }
-        }
