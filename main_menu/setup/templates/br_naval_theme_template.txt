@@ -61,7 +61,7 @@ government = {
 		peasants_free_peasantry
 		#peasants_autonomous_villages
 		communal_lands
-		peasants_yeomanry
+		#peasants_yeomanry
 		peasants_allowed_weapons_privilege
 	}
 
@@ -83,5 +83,12 @@ government = {
 		maritime_law = navy_audits
 		br_military_frontier = br_frontier_not_maintained
 	}
+
+	#bureaucracies = {
+	#	{ type = themata_bureaucracy	date = 1204.4.1 entrenchment = 20 }
+	#}
+
+	#liturgical_language = koine_dialect
+	
 }
 
