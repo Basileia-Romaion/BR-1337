@@ -1,0 +1,156 @@
+townrights_manager = {
+	#Magdeburg Rights
+	magdeburg = magdeburg_rights_town_rights
+	leipzig = magdeburg_rights_town_rights
+	berlin = magdeburg_rights_town_rights
+	stettin = magdeburg_rights_town_rights
+	halle_an_der_saale = magdeburg_rights_town_rights
+
+	#Nuremberg Rights
+	nuremberg = nuremberg_rights_town_rights
+	vienna = nuremberg_rights_town_rights
+	linz = nuremberg_rights_town_rights
+	klagenfurt = nuremberg_rights_town_rights
+
+
+	#Lubeck Rights
+	lubeck = lubeck_town_rights
+	wismar = lubeck_town_rights
+	rostock = lubeck_town_rights
+	stralsund = lubeck_town_rights
+	gdansk = lubeck_town_rights
+	kiel = lubeck_town_rights
+	wolgast = lubeck_town_rights
+
+	#Upper Bergregal
+	freiberg = upper_bergregal
+	goslar = upper_bergregal
+
+	#Lower Bergregal
+	innsbruck = lower_bergregal
+	salzburg = lower_bergregal
+
+	#Imperial Free City Staple Rights
+	frankfurt = stapelrecht_town_rights
+	mainz = stapelrecht_town_rights
+	cologne = stapelrecht_town_rights
+
+	#Kulm Rights
+	torun = kulm_town_rights
+	konigsberg = kulm_town_rights
+	plock = kulm_town_rights
+
+	#Novi Fori Rights
+	poznan = novi_fori_town_rights
+	krakow = novi_fori_town_rights
+
+	#Royal Free Cities Hungary
+	zagreb = royal_free_cities_town_rights
+	bratislava = royal_free_cities_town_rights
+	sopron = royal_free_cities_town_rights
+
+	#Bohemian Royal Cities
+	prague = bohemian_royal_cities_town_rights
+	brno = bohemian_royal_cities_town_rights
+	olomouc = bohemian_royal_cities_town_rights
+	kutna_hora = bohemian_royal_cities_town_rights
+	plzen = bohemian_royal_cities_town_rights
+
+	#Swedish City Rights
+
+	#Norwegian City Rights
+	bergen = norwegian_city_rights
+
+	#Borough Custumals
+
+	#Foros Extensos
+	lisbon = foros_extensos_town_rights
+	faro = foros_extensos_town_rights
+	evora = foros_extensos_town_rights
+	santarem = foros_extensos_town_rights
+	coimbra = foros_extensos_town_rights
+	viseu = foros_extensos_town_rights
+	porto = foros_extensos_town_rights
+
+	#Fuero Juzgo
+	santiago_compostela = fuero_juzgo_town_rights
+	oviedo = fuero_juzgo_town_rights
+	leon = fuero_juzgo_town_rights
+	zamora = fuero_juzgo_town_rights
+	salamanca = fuero_juzgo_town_rights
+	ciudad_rodrigo = fuero_juzgo_town_rights
+	caceres = fuero_juzgo_town_rights
+	badajoz = fuero_juzgo_town_rights
+	cordoba = fuero_juzgo_town_rights
+	ecija = fuero_juzgo_town_rights
+	sevilla = fuero_juzgo_town_rights
+	jerez_de_la_frontera = fuero_juzgo_town_rights
+	jaen = fuero_juzgo_town_rights
+	toledo = fuero_juzgo_town_rights
+	murcia = fuero_juzgo_town_rights
+
+	#Fuero Real
+	cuenca = fuero_real_town_rights
+	alcala_de_henares = fuero_real_town_rights
+	segovia = fuero_real_town_rights
+	medina_del_campo = fuero_real_town_rights
+	valladolid = fuero_real_town_rights
+	burgos = fuero_real_town_rights
+	santander = fuero_real_town_rights
+
+	#Fuero General
+	pamplona = fuero_general_town_rights
+	tudela = fuero_general_town_rights
+
+	#Fuero de Aragon
+	calatayud = fuero_de_aragon_town_rights
+	zaragoza = fuero_de_aragon_town_rights
+	huesca = fuero_de_aragon_town_rights
+	teruel = fuero_de_aragon_town_rights
+
+	#Usatges de Barcelona
+	lleida = usatges_de_barcelona_town_rights
+	tortosa = usatges_de_barcelona_town_rights
+	tarragona = usatges_de_barcelona_town_rights
+	barcelona = usatges_de_barcelona_town_rights
+	cervera = usatges_de_barcelona_town_rights
+	girona = usatges_de_barcelona_town_rights
+	palma = usatges_de_barcelona_town_rights
+
+	#Furs de Valencia
+	morella = furs_de_valencia_town_rights
+	castellon_de_la_plana = furs_de_valencia_town_rights
+	valencia = furs_de_valencia_town_rights
+	jativa = furs_de_valencia_town_rights
+	orihuela = furs_de_valencia_town_rights
+
+	#Flemish Cloth Industries
+	bruges = flemish_cloth_industries_right
+	ghent = flemish_cloth_industries_right
+
+
+
+
+	
+	#BR Additions
+	constantinople = constantinopolitan_silk_monopoly_rights
+	constantinople = scholai_literacy_rights
+	#constantinople = staple_port
+	thessaloniki = imperial_breadbasket_rights
+
+	durres = staple_port
+	canakkale = staple_port
+	antalya = staple_port
+	candia = staple_port
+	smyrna = staple_port
+	trebizond = staple_port
+	sinop = staple_port
+	theodoro = staple_port
+	tana = staple_port
+	kaffa = staple_port
+	bari = staple_port
+	syracuse = staple_port
+
+	thebes = granary_town
+	athens = scholai_literacy_rights
+}
