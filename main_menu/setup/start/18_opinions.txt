@@ -48,7 +48,7 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = B0R type = left_empire }
 	opinion = { first = BYZ second = THS type = left_empire }
 	opinion = { first = BYZ second = ACH type = left_empire }
-	opinion = { first = BYZ second = M0E type = left_empire }
+	opinion = { first = BYZ second = MOE type = left_empire }
 
 	## Anatolia
 	opinion = { first = BYZ second = AON type = left_empire }
@@ -76,7 +76,7 @@ diplomacy_manager = {
 	opinion = { first = B0R second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
 	opinion = { first = THS second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
 	opinion = { first = ACH second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = M0E second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
+	opinion = { first = MOE second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
 	opinion = { first = AON second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
 	opinion = { first = PAF second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
 	opinion = { first = ICO second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
@@ -98,7 +98,7 @@ diplomacy_manager = {
 	opinion = { first = B0R second = BYZ type = opinion_low_legitimacy }
 	opinion = { first = THS second = BYZ type = opinion_low_legitimacy }
 	opinion = { first = ACH second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = M0E second = BYZ type = opinion_low_legitimacy }
+	opinion = { first = MOE second = BYZ type = opinion_low_legitimacy }
 	opinion = { first = AON second = BYZ type = opinion_low_legitimacy }
 	opinion = { first = PAF second = BYZ type = opinion_low_legitimacy }
 	opinion = { first = ICO second = BYZ type = opinion_low_legitimacy }
@@ -130,7 +130,7 @@ diplomacy_manager = {
 	opinion = { first = GEO second = TUR type = border_aggression }
 	opinion = { first = ARM second = BYZ type = opinion_military_aid }
 	opinion = { first = GEO second = BYZ type = opinion_military_aid }
-	opinion = { first = SG0 second = GEO type = opinion_military_aid }
+	opinion = { first = SGO second = GEO type = opinion_military_aid }
 
 	#opinion = { first = THE second = BYZ type = united_empire }
 	#opinion = { first = ATH second = BYZ type = united_empire }
@@ -160,9 +160,9 @@ diplomacy_manager = {
 
 	#Bulgaria
 	opinion = { first = BUL second = BYZ type = border_aggression }
-	opinion = { first = MA0 second = BUL type = opinion_tyrant_overlord }
-	opinion = { first = MA1 second = BUL type = opinion_tyrant_overlord }
-	opinion = { first = MA2 second = BUL type = opinion_tyrant_overlord }
+	opinion = { first = WA0 second = BUL type = opinion_tyrant_overlord }
+	opinion = { first = WA1 second = BUL type = opinion_tyrant_overlord }
+	opinion = { first = WA2 second = BUL type = opinion_tyrant_overlord }
 	opinion = { first = SE0 second = BUL type = opinion_tyrant_overlord }
 	opinion = { first = SE1 second = BUL type = opinion_tyrant_overlord }
 	opinion = { first = SE2 second = BUL type = opinion_tyrant_overlord }
