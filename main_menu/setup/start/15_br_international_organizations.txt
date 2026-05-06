@@ -1,0 +1,196 @@
+international_organization_manager = {
+	#################################################################
+	# 			BR Unique International Organizations				#
+	#################################################################
+		
+	#BR Added
+	#BR ADDED
+	add_international_organization = {
+		type = autocephalous_patriarchate
+		creation_date = 519.1.1
+		members = { OHS AOI CIL }
+		variables = { 
+			religion = religion:orthodox
+			seat = location:antioch
+		}
+		laws = {
+			composite_nature
+			high_christology
+			local_traditions_and_rites
+			accept_essence_tenet
+			accept_person_tenet
+			accept_prosopon_tenet
+			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
+		}
+	}
+
+	add_international_organization = {
+		type = autocephalous_patriarchate
+		creation_date = 451.1.1
+		members = { RIC } #AGY
+		variables = { 
+			religion = religion:orthodox
+			seat = location:alexandria
+		}
+		laws = {
+			composite_nature
+			high_christology
+			local_traditions_and_rites
+			accept_essence_tenet
+			accept_person_tenet
+			accept_prosopon_tenet
+			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
+		}
+	}
+	add_international_organization = {
+		type = autocephalous_patriarchate
+		creation_date = 431.1.1
+		members = { S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK SAR }
+		variables = { 
+			religion = religion:orthodox
+			seat = location:rome
+		}
+		laws = {
+			dual_nature
+			high_christology
+			catholic_influenced_rites
+			accept_essence_tenet
+			accept_person_tenet
+			accept_prosopon_tenet
+			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			cooperation_between_patriarchs_tenet
+			independent_authorities_tenet
+		}
+	}
+
+	#BR Added Elysian Orthodox
+	add_international_organization = {
+		type = autocephalous_patriarchate
+		creation_date = 431.1.1
+		members = { E2Y E4Y }
+		variables = { 
+			religion = religion:orthodox
+			seat = location:nansemond
+		}
+		laws = {
+			dual_nature
+			high_christology
+			catholic_influenced_rites
+			accept_essence_tenet
+			accept_person_tenet
+			accept_prosopon_tenet
+			allow_christological_debates_tenet
+			allow_double_sabbath_tenet
+			independent_acting_patriarchs_tenet
+			independent_authorities_tenet
+		}
+	}
+	add_international_organization = {
+        type = defensive_league
+        creation_date = 1211.2.3
+
+        map_color = rgb { 140 36 36 }
+
+        members = {
+            POS GDD MWG BCN PMB
+        }
+        leader = POS
+    }
+	#Southern Italy/ Ionian Sea 
+	add_international_organization = {
+        type = defensive_league
+        creation_date = 1311.2.3
+
+        map_color = rgb { 185 125 150 }
+
+        members = {
+            S1C S2C S3C EPI DYR N3P SAR #S5C
+        }
+        leader = EPI
+    }
+
+	add_international_organization = {
+		type = roman_world
+		creation_date = 1.1.1
+		map_color = rgb { 150 11 146 }
+		members = { 
+			#Emperor
+			BYZ 
+			#Members
+			EPI DYR FEO
+			B0R 
+			ATH ACH
+			S1Y K1B 
+			TRE CIL AON ICO PAF AOI 
+			AN1 AN2 AN3 AN4 AN5 AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N
+			S1C S2C S3C N3P S5C SAR
+
+			#ARM GEO SER
+			#KOG DER MES VAN VDZ
+			OHS SGO RH0 #RIC
+			BNK MKB CHY
+			VTC GTC
+
+			#VEN NEG CRT CYP NAX CEP GAZ RAG
+
+		}
+
+		br_emperor = { BYZ }
+		domestikos_west = { THE }
+		domestikos_east = { AOI }
+		#br_military_order  = { OHS SGO RH0 } #likely will be moved to a reworked Patrachate IO
+		imperial_loyalist = { 
+			S1Y A1G K1B FEO
+		}
+
+		laws = {
+			br_romaiokratia_weak_policy
+		}
+
+		leader = BYZ
+		regions = { 
+			anatolia_region 
+			balkan_region
+		}
+		areas = { 
+			apulia_area
+			basilicata_area
+			campania_area
+			sicily_area
+			sardinia_area
+		}
+		provinces = { 
+			#antakya_province
+			erzurum_province
+			gothia_province
+			cafa_province
+		}
+		locations = { 
+			venice
+			trapessac
+			antioch
+			arsuz
+		}
+
+		ruler_term = { character = byz_michael_viii_palaiologos start_date = 1261.12.25 end_date = 1282.12.1 regnal_number = 8 }
+		ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1282.12.11 end_date = 1294.5.21 regnal_number = 2 }
+		ruler_term = {
+			character = byz_andronikos_ii_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 2
+			character = byz_michael_ix_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 9 # Junior Co-Emperor
+		}
+		ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1320.10.12 end_date = 1328.5.24 regnal_number = 2 }
+		ruler_term = { character = byz_andronikos_iii_palaiologos start_date = 1328.5.24 regnal_number = 3 }
+
+		variables = {
+			roman_authority = 75
+		}
+	}
+
+}
