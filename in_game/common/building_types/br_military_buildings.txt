@@ -3,7 +3,7 @@
 orthodox_order_commandery = {
 	is_foreign = yes
 	stronger_power_projection = no
-	need_good_relation = no
+	need_good_relation = yes
 	pop_type = clergy
 	
 	category = religious_category
@@ -14,6 +14,7 @@ orthodox_order_commandery = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	allow_wrong_startup = yes
 	
@@ -84,7 +85,7 @@ br_varangian_recruitment_building = {
 	is_special = yes
 	is_foreign = yes
 	stronger_power_projection = no
-	need_good_relation = no
+	need_good_relation = yes
 	pop_type = soldiers
 	#icon = seljuk_mint
 	
@@ -96,6 +97,7 @@ br_varangian_recruitment_building = {
 	rural_settlement = no
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	allow_wrong_startup = yes
 	
@@ -139,6 +141,7 @@ br_naval_theme_hq = {
 	rural_settlement = no
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	ai_forbid_shutdown = yes
 	build_time = large_port_building_time
@@ -157,9 +160,7 @@ br_naval_theme_hq = {
 	}
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
-	}
-	allow = {
-		has_reform = government_reform:br_naval_akritai_reform
+		#has_reform = government_reform:br_naval_akritai_reform
 	}
 
 	modifier = {
@@ -200,6 +201,7 @@ br_varangian_camp = {
 
 	town = yes
 	city = yes
+	megalopolis = yes
 	build_time = soldier_building
 	
 	forbidden_for_estates = yes
@@ -210,9 +212,7 @@ br_varangian_camp = {
 	country_potential = {
 		has_or_had_tag = BYZ
 	}
-	allow = {
-		has_or_had_tag = BYZ
-	}
+
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
@@ -247,6 +247,7 @@ br_tagmata_camp = {
 
 	town = yes
 	city = yes
+	megalopolis = yes
 	build_time = soldier_building
 	
 	forbidden_for_estates = yes
@@ -258,9 +259,7 @@ br_tagmata_camp = {
 	country_potential = {
 		has_or_had_tag = BYZ
 	}
-	allow = {
-		has_or_had_tag = BYZ
-	}
+
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
@@ -315,7 +314,7 @@ br_soldier_farmers = { #thema estates
 
 	allow_wrong_startup = yes
 	rural_settlement = yes
-	town = no
+	town = setup_only
 	city = no
 
 	build_time = village_build_time
@@ -388,7 +387,7 @@ br_pronoia_estate = { #pronoia estates
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
-	town = no
+	town = setup_only
 	city = no
 
 	location_potential = {
@@ -562,6 +561,7 @@ br_varangian_barracks = {
 
 	town = yes
 	city = yes
+	megalopolis = yes
 	ai_forbid_shutdown = yes
 	build_time = soldier_building
 	
@@ -575,9 +575,7 @@ br_varangian_barracks = {
 	country_potential = {
 		has_or_had_tag = BYZ
 	}
-	allow = {
-		has_or_had_tag = BYZ
-	}
+
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
@@ -612,6 +610,7 @@ br_tagmata_barracks = {
 
 	town = yes
 	city = yes
+	megalopolis = yes
 	ai_forbid_shutdown = yes
 	build_time = soldier_building
 	
@@ -683,7 +682,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 
 	allow_wrong_startup = yes
 	rural_settlement = yes
-	town = no
+	town = setup_only
 	city = no
 
 	build_time = village_build_time
@@ -757,7 +756,7 @@ br_kekhrismene_pronoia = { #pronoia estates
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
-	town = no
+	town = setup_only
 	city = no
 
 	location_potential = {
@@ -806,9 +805,10 @@ br_apothekai_building = {#Apothēkai – logistical depots
 	pop_type = burghers
 	category = trade_category
 	employment_size = trade_employment
-	rural_settlement = yes
+	rural_settlement = setup_only
 	town = yes
 	city = yes
+	megalopolis = yes
 	icon = customs_house #janissary_barracks
 	
 	build_time = infrastructure_build_time
@@ -893,8 +893,9 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 	category = government_category
 	employment_size = 0.15
 	rural_settlement = no
-	town = no
+	town = setup_only
 	city = yes
+	megalopolis = yes
 	icon = papal_archives
 
 	ai_forbid_shutdown = yes
@@ -937,7 +938,7 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 			category = building_maintenance
 		}
 	}
-	construction_demand = army_infrastructure_construction
+	construction_demand = important_building_construction
 	build_time = infrastructure_build_time
 	allow_wrong_startup = yes
 }
