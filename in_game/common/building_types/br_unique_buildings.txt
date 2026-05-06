@@ -12,6 +12,8 @@ br_great_palace_building = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
+	
 
 	is_indestructible = yes
 	ai_forbid_shutdown = yes
@@ -65,6 +67,7 @@ br_hagia_sophia_building = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	ai_forbid_shutdown = yes
 	is_indestructible = yes
@@ -130,6 +133,7 @@ br_senaton_building = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	is_indestructible = yes
 	
@@ -197,6 +201,7 @@ br_constantinople_university = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	is_indestructible = yes
 
@@ -250,7 +255,7 @@ br_constantinople_shipyard = {
 	pop_type = soldiers
 	category = naval_category
 	
-	obsolete = shipyard
+	#obsolete = shipyard
 	
 	employment_size = shipyard_employment
 
@@ -267,6 +272,7 @@ br_constantinople_shipyard = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	is_indestructible = yes
 	
@@ -314,6 +320,7 @@ br_hippodrome_building = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	is_indestructible = yes
 
@@ -380,13 +387,14 @@ br_constantinople_infrastructure = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	ai_forbid_shutdown = yes
 	is_indestructible = yes
 
 	expensive = yes
 
-	build_time = large_infrastructure_building_time
+	build_time = cultural_building_time
 
 	location_potential = {
 		this = location:constantinople
@@ -409,7 +417,7 @@ br_constantinople_infrastructure = {
 		local_population_capacity = 100
 		local_disease_resistance = 0.1
 		local_monthly_prosperity = 0.001
-		local_life_expectancy = 2
+		#local_life_expectancy = 2
 	}
 }
 
@@ -431,6 +439,7 @@ orthodox_missionary_building = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	country_potential = {
 		has_reform = government_reform:patriarchate
@@ -468,6 +477,7 @@ patriarchate_seat = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 
 	category = religious_category
 	
@@ -563,6 +573,7 @@ br_agioi_apostoloi_building = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 
 	ai_forbid_shutdown = yes
 	is_indestructible = yes
@@ -621,7 +632,7 @@ br_bandits_building = {
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes
-	town = no
+	town = setup_only
 	city = no
 	
 	estate = peasants_estate
@@ -670,7 +681,8 @@ br_latin_trading_post = {
 	pop_type = burghers
 	icon = fondaco #trade_office #overseas_trading_post por_feitoria
 
-	stronger_power_projection = no	
+	stronger_power_projection = no
+	international_organization_link = roman_world	
 	
 	category = trade_category
 
@@ -678,9 +690,10 @@ br_latin_trading_post = {
 	
 	pop_size_created = foreign_trade_employment
 	
-	rural_settlement = yes
+	rural_settlement = setup_only
 	town = yes
 	city = yes
+	megalopolis = yes
 
 
 	country_potential = {
