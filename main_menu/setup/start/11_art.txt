@@ -1,6 +1,8 @@
 work_of_art_manager = {
 	#Normandy - NRM
 	painting = { location = bayeux origin = canterbury quality = 75 creation_date = 1077.1.1 key = bayeux_tapestry_key }
+	#Ireland
+	scripture = { location = kells origin = mull quality = 70 creation_date = 800.1.1 key = book_of_kells } # origin = iona
 	#England - ENG
 	regalia = { location = london origin = perth quality = 45 creation_date = 498.1.1 key = stone_of_scone}
 	regalia = { location = london origin = anglesey quality = 25 creation_date = 1200.1.1 key = llywelyns_coronet}
@@ -88,6 +90,7 @@ work_of_art_manager = {
 	treatise = { artist = byz_nikephoros_kallistos_xanthopoulos location = constantinople origin = constantinople  quality = 51 creation_date = 1317.1.1  key = ecclesiastica_historia } #https://en.wikipedia.org/wiki/Nikephoros_Kallistos_Xanthopoulos
 	poem = { location = constantinople origin = constantinople quality = 46 creation_date = 1012.1.1 key = song_of_armouris } #https://en.wikipedia.org/wiki/Song_of_Armouris
 	treatise = { location = constantinople origin = constantinople quality = 50 creation_date = 1256.6.1 key = apoheteftiko_systhma_byzantio }
+	regalia = { location = constantinople origin = constantinople quality = 65 creation_date = 1261.6.1 key = byzantine_crown_jewels }
 	icon = { location = constantinople origin = constantinople quality = 69 creation_date = 1000.1.1 key = two_icons_of_archangel_michael }
 	#Poland - POL
 	chronicle = { artist = pol_wincenty_kadlubek location = krakow origin = krakow quality = 53 creation_date = 1208.6.1 key = historia_polonica } #https://en.wikipedia.org/wiki/Chronica_seu_originale_regum_et_principum_Poloniae
@@ -184,4 +187,10 @@ work_of_art_manager = {
 	treatise = { location = dadu origin = dadu quality = 72 creation_date = -300.1.1 key = kaogongji }
 	monument = { location = jincheng origin = jincheng quality = 72 creation_date = 1195.1.1 key = pagoda_of_fogong_temple }
 	monument = { location = jingzhao origin = jingzhao quality = 72 creation_date = 652.1.1 key = giant_wild_goose_pagoda }
+	#Orthodox WoAs added for 1.2
+	monument = { location = dupnitsa origin = dupnitsa quality = 85 creation_date = 927.1.1 key = rila_monastery_art }
+	icon = { location = sredets origin = sredets quality = 80 creation_date = 1259.1.1 key = boyana_church_frescoes }
+	scripture = { location = dubrovnik origin = dubrovnik quality = 75 creation_date = 950.1.1 key = kiev_missal }
+	monument = { location = rovinj origin = rovinj quality = 80 creation_date = 553.1.1 key = euphrasian_basilica }
+	monument = { location = fagaras origin = fagaras quality = 70 creation_date = 1206.1.1 key = carta_monastery }
 }
