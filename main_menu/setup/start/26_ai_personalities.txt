@@ -1,0 +1,62 @@
+
+
+
+countries = {
+	countries = {
+
+		# Aggressive: militarist nations that pursue wars without hesitation
+		TUR = { ai_personality = ai_aggressive }  # Ottoman Empire
+		SWE = { ai_personality = ai_aggressive }  # Sweden
+		AQQ = { ai_personality = ai_aggressive }  # Aq Qoyunlu (Persia)
+		NOG = { ai_personality = ai_aggressive }  # Nogai Horde
+		GLH = { ai_personality = ai_aggressive }  # Golden Horde
+		CRI = { ai_personality = ai_aggressive }  # Crimean Khanate
+		SIB = { ai_personality = ai_aggressive }  # Siberian Khanate
+
+		# Expansionist: nations with clear territorial ambitions but follow casus belli
+		FRA = { ai_personality = ai_expansionist }  # France
+		LOT = { ai_personality = ai_expansionist }  # France
+		MOS = { ai_personality = ai_expansionist }  # Muscovy / Russia
+		ADU = { ai_personality = ai_expansionist }  # Castile
+		ENG = { ai_personality = ai_expansionist }  # England
+		DAN = { ai_personality = ai_expansionist }  # Denmark
+		BRA = { ai_personality = ai_expansionist }  # Brandenburg
+		HUN = { ai_personality = ai_expansionist }  # Hungary
+
+		# Defensive: nations content to hold their ground
+		BYZ = { ai_personality = ai_defensive }  # Byzantium
+		POL = { ai_personality = ai_defensive }  # Poland
+		LIT = { ai_personality = ai_defensive }  # Lithuania
+		MAM = { ai_personality = ai_defensive }  # Mamluk Sultanate
+		BOH = { ai_personality = ai_defensive }  # Bohemia
+		MAR = { ai_personality = ai_defensive }  # Marinids
+		ETH = { ai_personality = ai_defensive }  # Ethiopia
+
+		# Cautious: risk-averse, prefer safe diplomacy over war
+		HAB = { ai_personality = ai_cautious }  # Austria / Habsburgs
+		VEN = { ai_personality = ai_cautious }  # Venice
+		GEN = { ai_personality = ai_cautious }  # Genoa
+		SWI = { ai_personality = ai_cautious }  # Swiss Confederation
+		KNI = { ai_personality = ai_cautious }  # Knights Hospitaller
+		TEU = { ai_personality = ai_cautious }  # Teutonic Order
+
+		# Opportunistic: exploit others' weaknesses; trade-focused
+		POR = { ai_personality = ai_opportunistic }  # Portugal
+		NAP = { ai_personality = ai_opportunistic }  # Naples
+		SCO = { ai_personality = ai_opportunistic }  # Scotland
+		MLO = { ai_personality = ai_opportunistic }  # Milan
+
+		# Isolationist: internally focused, avoid foreign entanglement
+		MNG = { ai_personality = ai_isolationist }  # Ming China
+		SHO = { ai_personality = ai_isolationist }  # Ashikaga Shogunate
+		KOR = { ai_personality = ai_isolationist }  # Korea
+		MLI = { ai_personality = ai_isolationist }  # Mali
+		SON = { ai_personality = ai_isolationist }  # Songhai
+
+		# Friendly: diplomacy-first, build alliances and accept fair peace
+		PAP = { ai_personality = ai_friendly }  # Papal States
+		FLO = { ai_personality = ai_friendly }  # Florence
+		BUR = { ai_personality = ai_friendly }  # Burgundy
+
+	}
+}
