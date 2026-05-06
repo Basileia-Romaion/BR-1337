@@ -5,7 +5,7 @@
 # experience_decay
 #global_production_efficiency = medium_production_efficiency_bonus
 #global_trade_protection_factor = 0.25
-#trade_efficiency = small_trade_efficiency_bonus
+#export_efficiency = small_trade_efficiency_bonus
 REPLACE_OR_CREATE:cappadocian_greek_culture = {
 	language = cappadocian_dialect
 	color = rgb { 125 65 75 }
@@ -21,7 +21,7 @@ REPLACE_OR_CREATE:cappadocian_greek_culture = {
 		syrenikoi_greek_culture = positive
 	}
 	country_modifier = {
-		army_infantry_power = 0.1
+		army_heavy_infantry_power = 0.1
 		global_hostile_attrition = 0.1
 	}
 	location_modifier = {
@@ -156,7 +156,7 @@ REPLACE_OR_CREATE:gothic_culture = {
 		anatolian_greek_culture = positive
 	}
 	country_modifier = {
-		army_infantry_power = 0.1
+		army_heavy_infantry_power = 0.1
 		levy_combat_efficiency_modifier = 0.1
 	}
 	
@@ -183,7 +183,7 @@ anatolian_greek_culture = { #BR addition
 	}
 
 	country_modifier = {
-		army_cavalry_power = 0.1
+		army_heavy_cavalry_power = 0.1
 		nobles_estate_levy_size = 0.1
 	}
 	location_modifier = {
@@ -208,7 +208,7 @@ varangian = {
 	}
 
 	country_modifier = {
-		army_infantry_power = 0.1
+		army_heavy_infantry_power = 0.1
 		#land_morale_movement_cost 
 	}
 	
@@ -373,7 +373,7 @@ rhos_culture = {
 
 	country_modifier = {
 		global_defensive = 0.1
-		army_infantry_power = 0.1
+		army_heavy_infantry_power = 0.1
 	}
 	
 	culture_groups = {
