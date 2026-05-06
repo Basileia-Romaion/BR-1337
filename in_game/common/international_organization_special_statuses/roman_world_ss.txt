@@ -28,13 +28,13 @@ domestikos_west = {
 	modifier = {
 		loyalty_to_overlord = 10
 		monthly_legitimacy = 0.1
-		army_maintenance_cost = -0.25
+		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
 		global_manpower_modifier = 0.1
 	}
 
 	leader_modifier = {
-		court_spending_cost = 0.01
+		court_spending_cost_modifier = 0.01
 		government_size = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
@@ -101,13 +101,13 @@ domestikos_east = {
 	modifier = {
 		loyalty_to_overlord = 10
 		monthly_legitimacy = 0.1
-		army_maintenance_cost = -0.25
+		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
 		global_manpower_modifier = 0.1
 	}
 
 	leader_modifier = {
-		court_spending_cost = 0.01
+		court_spending_cost_modifier = 0.01
 		num_local_governors = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
