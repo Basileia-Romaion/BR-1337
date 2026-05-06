@@ -8,36 +8,43 @@
 		Publius Postumus Proculus Quintus Secundus Septimus Servius name_sextus Spurius Tertius name_titus Tiberius Volero Volumnius name_octavius
 		Statius Tullus Volesus Vopiscus Caeso Paullus Hostus Numerius Sertor Potitus Vibius Cossus Arruns Camillus name_august
 		#Greek
-		name_adrian Akakios name_alexander name_alexis name_anastasius Anatolios
-		name_andrew name_andronikos Anthemios Anthimos Antiochos name_anthony Apollonios Argyros
-		name_arsenios name_artemios name_athanasius Bardas
-		name_bartholomew name_basil Belisarios Boethios Bosporios
-		name_christopher Chrysogonos name_damian name_nicodemus
-		name_dorotheos Eirenaios Eudoxios Eustratios
-		Euphemios Eusebios name_eustathius Evangelos name_gabriel Gennadios
-		Gerasimos name_germanus name_gregory Hektorios name_elias
-		Herakleios Hierotheos Himerios Lykos
-		name_george name_constantine name_paul Aineias name_ambrose
-		Chrysanthos name_demetrius Diogenes name_dennis Elpidios Herakles
-		name_castor name_matthew name_nestor Nikomedes name_orestes Palaemon Pelagios name_peter Philemon name_philip
-		Skantarios name_stephen name_theodore name_thomas Prokopios name_john Iason
+		name_adrian name_aeneas name_akakios name_alexander name_alexis name_ambrose name_anastasius name_anatoly name_andrew name_andronikos Anthemios name_anthimos name_antiocos name_anthony Apollonios Argyros name_arsenios name_artemios name_athanasius 
+		Bardas name_bartholomew name_basil name_belisarius Boethios Bosporios 
+		name_castor name_christopher name_chrysanthos name_chrysogonos name_constantine name_cyriacus
+		name_damian name_demetrius name_dennis Diogenes name_dorotheos 
+		name_elias name_elpidius Eudoxios Euphemios name_eusebius name_eustathius Eustratios name_evangelos 
+		name_gabriel name_gennadius name_george name_gerasimos name_germanus name_gregory
+		Hektorios name_heraclius name_hercules Hierotheos Himerios
+		name_irenaeus
+		name_jason name_john
+		name_lycus
+		name_matthew
+		name_nestor name_nicodemus name_nikomedes
+		name_onesim name_orestes
+		Palaemon name_paul name_pelagius name_peter name_philemon name_philip name_prokop
+		Skantarios name_stephen   
+		name_theodore name_thomas  
 	}
 	female_names = {
 		name_agrippina Appia Aula Caesula Decima name_fausta Gaia Gnaea Hosta name_lucia Maio Mamerca Mania Marcia Maxima Mettia Mino Nona Numeria
 		Octavia Paulla Postuma Prima Procula Publia Quarta Quinta Secunda Septima Servia Sexta Spuria Statia Tertia Titia
 		Tiberia Tulla Vibia Volusa Vopisca
 		# Greek
-		name_alexandra name_adriana name_agatha name_agnes name_anastasia
-		name_anna Anthe Anthousa Antipatra name_antonia name_apollonia Athanasia name_barbara Basillike
-		Chrysogone Damiane Demetra Dionysia name_dorothy Aigidia name_irene Elaiodora Epiphania
-		name_eudokia name_eudoxia name_eugenie Eulalia Eunike name_euphemia name_euphrasia name_euphrosyne
-		Eupraxia name_eustathia Evanthia Garyphallia Gregoria name_helen
-		name_joanna Kale Konstantia
-		name_constance Kyra Kyriake Hypatia name_zoe
-		name_paraskevi
+		name_adriana name_agatha name_agnes name_alexandra name_anastasia name_anna Anthe Anthousa Antipatra name_antonia name_apollonia name_athanasia 
+		name_barbara Basillike
+		Chrysogone name_caroline name_constance name_constantina name_cyriaca
+		Damiane name_daphne Demetra name_denise name_dorothy
+		Elaiodora name_epifania name_eudokia name_eudoxia name_eugenie name_eulalia name_eunice name_euphemia name_euphrasia name_euphrosyne name_eupraxia name_eustathia Evanthia
+		Garyphallia name_gillette name_gregoria
+		name_helen Hypatia
+		name_irene  
+		name_joanna    
+		Kale name_kyra    
+		name_paraskevi  
+		name_zoe
 	}
 	dynasty_names = {
-		name_helios name_anthony name_cassius	name_claude name_cornelius Fabius Flavius name_julius name_livius	name_marius name_octavius	Pompeius Sempronius Valerius
+		name_helios name_anthony name_cassius name_claude name_cornelius Fabius Flavius name_julius name_livius	name_marius name_octavius Pompeius Sempronius Valerius
 	}
 	lowborn = {
 		Vorenius Pullo
@@ -53,8 +60,7 @@
 		Sergius	Sertorius Servilius	Sestius Sextius Sextilius Sicinius Silius Sulpicius Titius Tremulus Tullius Ulpius
 		Verginius Veturius Vesuvius Villius Viridius Volumnius
 		# Greek
-		Nikolaos Adamos Chloros Galatas Halkias name_papadopoulos Mallas Samaras Karagiannis Vlahos Ioannidis
-		Economou Papageorgiou Makris Konstantinidis Dimopoulos Georgiadis Vasiliou Kameniatis
+		Adamos Chloros Dimopoulos Economou Galatas Georgiadis Halkias Ioannidis Kameniatis Karagiannis Konstantinidis Makris Mallas name_papadopoulos Nikolaos Papageorgiou Samaras Vasiliou Vlahos
 	}
 
 	patronym_prefix_son = "patronym_prefix_latin_son"
