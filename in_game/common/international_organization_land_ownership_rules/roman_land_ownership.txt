@@ -14,10 +14,6 @@
 		always = no  #
 	}
 
-	can_add_trigger = {
-		always = yes
-	}
-
 	# root = location, recipient = international organization
 	can_add_location_trigger = {
 		OR = {
