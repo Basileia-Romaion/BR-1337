@@ -138,17 +138,17 @@ SGO = { #Brotherhood of Saint George
 P0N = TRE
 P1N = FEO
 
-M0E = {
-	pattern = "pattern_solid.dds"
-	color1 = "yellow"
-	color2 = "black"
-	colored_emblem = {
-		texture = "ce_cross_moline.dds"
-		color1 = "black"
-		color2 = "black"
-		instance = { position = { 0.5 0.48 } scale = { 1.0 1.0 }  }
-	}
-}
+#M0E = {
+	#pattern = "pattern_solid.dds"
+	#color1 = "yellow"
+	#color2 = "black"
+	#colored_emblem = {
+		#texture = "ce_cross_moline.dds"
+		#color1 = "black"
+		#color2 = "black"
+		#instance = { position = { 0.5 0.48 } scale = { 1.0 1.0 }  }
+	#}
+#}
 
 SY1 = {
 	pattern = "pattern_solid.dds"
