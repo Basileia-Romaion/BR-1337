@@ -58,7 +58,7 @@ government = {
 		peasants_free_peasantry
 		#peasants_autonomous_villages
 		communal_lands
-		peasants_yeomanry
+		#peasants_yeomanry
 		peasants_allowed_weapons_privilege
 		br_themata_peasant_privilege
 	}
@@ -80,5 +80,12 @@ government = {
 		mining_law = nobles_mining_law
 		br_military_frontier = br_frontier_maintained
 	}
+
+	#bureaucracies = {
+	#	{ type = themata_bureaucracy	date = 1204.4.1 entrenchment = 20 }
+	#}
+
+	#liturgical_language = koine_dialect
+	
 }
 
