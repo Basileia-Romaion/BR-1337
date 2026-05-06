@@ -1,0 +1,24 @@
+﻿
+REPLACE_OR_CREATE:estate_parliament = {
+	type = country
+	potential = {
+		#modifier:allow_estate_parliament = yes
+	}
+	allow = {
+		NOT = { has_country_modifier = supreme_authority_modifier }
+		OR = {
+			parliament_type = parliament_type:estate_parliament
+			AND = {
+				"estate_power(estate_type:burghers_estate)" >= 0.2
+				"estate(estate_type:burghers_estate)" = {
+					num_privileges >= 3
+				}
+			}
+		}
+	}
+	modifier = {
+		has_a_parliamentary_system = yes
+		clergy_estate_can_participate_in_parliament = yes
+		burghers_estate_can_participate_in_parliament = yes
+	}
+}
