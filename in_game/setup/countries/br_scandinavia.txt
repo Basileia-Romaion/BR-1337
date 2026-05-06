@@ -1,0 +1,101 @@
+﻿REPLACE_OR_CREATE:SWE = {
+	color = map_swedish
+	color2 = rgb { 208 9 9 }
+	
+	unit_color0 = hsv360 {	216 89 54	} 
+	unit_color1 = hsv360 {	47	91	78	} 
+	unit_color2 = hsv360 { 0 0 50 }
+
+	culture_definition = swedish
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 2
+}
+
+REPLACE_OR_CREATE:DAN = {
+	color = map_danish
+	color2 = rgb { 255 223 0 }
+
+	unit_color0 = rgb {	202 28 46 }
+	unit_color1 = rgb {	60 132 197 }
+	unit_color2 = rgb {	252 230 11 }
+
+	culture_definition = danish
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+REPLACE_OR_CREATE:ZEA = {
+    color = rgb { 190 112 70 }
+    color2 = rgb { 255 223 0 }
+
+    culture_definition = danish
+    religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:SKE = {
+	color = map_skane
+	color2 = rgb { 255 223 0 }
+
+	culture_definition = danish
+	religion_definition = catholic
+}
+
+
+REPLACE_OR_CREATE:NOR = {
+	color = map_norwegian
+	color2 = rgb { 208 9 9 }
+
+	culture_definition = norwegian
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 3
+}
+
+REPLACE_OR_CREATE:FIN = {
+	color = map_finnish
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = swedish
+	religion_definition = catholic
+	
+	unit_color0 = hsv360 {	0	0	50	} 
+	unit_color1 = hsv360 {	216	75	35	} 
+	unit_color2 = hsv360 	{	30	80	85	}
+}
+
+# 117 165 188
+REPLACE_OR_CREATE:NSE = {
+	color = rgb { 117 165 188 }
+	culture_definition = anglo_norse_culture #norwegian
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:N0R = {
+	color = rgb { 97 155 178 }
+	culture_definition = norwegian
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:N1R = {
+	color = rgb { 117 125 188 }
+	culture_definition = norwegian
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:N2R = {
+	color = rgb { 97 135 188 }
+	culture_definition = norwegian
+	religion_definition = catholic
+}
+
+REPLACE_OR_CREATE:N3R = {
+	color = rgb { 107 195 108 }
+	culture_definition = norwegian
+	religion_definition = catholic
+}
+
