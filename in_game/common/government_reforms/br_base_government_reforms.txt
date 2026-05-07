@@ -124,6 +124,33 @@ REPLACE_OR_CREATE:modern_imperial_army = {
 	years = 2
 }
 
+REPLACE_OR_CREATE:katepanata = {
+	potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = BYZ			
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
+	country_modifier = {
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_defensive = societal_value_monthly_move
+		global_integration_speed_modifier = 0.1
+		government_reform_slots = 1
+	}
+
+	country_modifier = {
+		potential_trigger = {
+			custom_tooltip = {
+				text = has_completed_fate_of_the_phoenix_disaster
+				has_variable = won_fate_of_the_phoenix_disaster_variable
+			}
+		}
+		global_integration_speed_modifier = 0.1
+	}
+	years = 1
+}
+
 #Andalusia
 REPLACE_OR_CREATE:the_jewel_of_alandalus_reform = {
 	#major = yes

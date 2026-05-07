@@ -13243,6 +13243,10 @@ countries = {
 				#Commoners
 				access_to_royal_and_ecclesiastical_courts
 				br_themata_peasant_privilege
+				peasants_free_peasantry
+				peasants_fewer_levies
+
+				tribes_tribal_levies
 			}
 			reforms = {
 				br_imperial_administration
@@ -13258,8 +13262,9 @@ countries = {
 				{ type = imperial_senate_bureaucracy             date = 330.5.11 entrenchment = 75 	}   # Constantinople founded, Senate formalized
 				{ type = honorary_titles_bureaucracy             date = 500.6.1  entrenchment = 50  }   # Mature late Roman / early Byzantine dignities
 				{ type = sixty_books_of_the_basilika_bureaucracy date = 892.6.1  entrenchment = 25  }   # Leo VI promulgates the Basilika
+				{ type = ritualistic_court_bureaucracy           date = 330.5.11 entrenchment = 30  }
+				{ type = court_eunuchs_bureaucracy           	 date = 700.5.11 entrenchment = 25 	}
 			}
-
 
 			laws = {
 				legal_code_law = byzantine_law
@@ -13282,7 +13287,7 @@ countries = {
 			government_power = -10
 			inflation = 0.1
 			war_exhaustion = 10
-			complacency = 40
+			complacency = 25
 		}
 
 		accepted_cultures = {

@@ -82,9 +82,9 @@ government = {
 		br_military_frontier = br_frontier_not_maintained
 	}
 
-	#bureaucracies = {
-	#	{ type = themata_bureaucracy	date = 1204.4.1 entrenchment = 20 }
-	#}
+	bureaucracies = {
+		{ type = themata_bureaucracy	date = 1204.4.1 entrenchment = 80 }
+	}
 
 	#liturgical_language = koine_dialect
 }

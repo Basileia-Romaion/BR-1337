@@ -29,23 +29,26 @@ br_imperial_administration = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		court_spending_cost_modifier  = 0.04
+		court_spending_cost_modifier  = 0.1
 		#chancery_cap_level = 1
 	}
 	country_modifier = {
 		potential_trigger = { government_power >= 50 }
 		monthly_towards_centralization = societal_value_monthly_move
 		global_crown_estate_power = 0.25
-		country_cabinet_efficiency = 0.1
-		#set_cabinet_member_cost_modifier = -0.1
-        #replace_cabinet_member_cost_modifier = -0.1
-		#global_nobles_estate_power = -0.1
+		country_cabinet_efficiency = 0.05
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
-		#allow_bureaucracy = yes
+	}
+	country_modifier = {
+		potential_trigger = { 
+			has_dlc = "d008_fate_of_the_phoenix"
+		}
+		global_max_bureaucracy_slots = 2
 	}
 	country_modifier = {
 		potential_trigger = { stability <= 25 }
 		nobles_estate_target_satisfaction = larger_permanent_target_satisfaction_penalty
+		global_estate_satisfaction_from_legitimacy = -0.1
 	}
 	years = 2
 }
@@ -75,8 +78,12 @@ br_sub_theme_subject = {
 		allow_thema_headquarters = yes
 		global_defensive = 0.1
 		monthly_towards_stratiotai = societal_value_monthly_move
-		#allow_bureaucracy = yes
-		#global_max_bureaucracy_slots = 1
+	}
+	country_modifier = {
+		potential_trigger = { 
+			has_dlc = "d008_fate_of_the_phoenix"
+		}
+		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -119,8 +126,12 @@ br_sub_pronoia_subject = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 		allow_thema_headquarters = yes
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
-		#allow_bureaucracy = yes
-		#global_max_bureaucracy_slots = 1
+	}
+	country_modifier = {
+		potential_trigger = { 
+			has_dlc = "d008_fate_of_the_phoenix"
+		}
+		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
@@ -138,50 +149,50 @@ br_sub_pronoia_subject = {
 	years = 2
 }
 
-br_sub_religious_subject = {
-	age = age_1_traditions
-	icon = primas_germaniae
-	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
-		NOT = { has_or_had_tag = BYZ }
-	}
-	allow = {
-		OR = {
-			is_subject_of = c:BYZ
-			is_member_of_international_organization = international_organization:roman_world
-		}
-	}
-	locked = {
-		OR = {
-			is_subject_of = c:BYZ
-			is_member_of_international_organization = international_organization:roman_world
-		}
-	}
-	country_modifier = {
-		monthly_towards_spiritualist = societal_value_monthly_move
-		maximum_religious_influence = 500
-		monthly_religious_influence = 1
-		tolerance_own = 5
-		global_clergy_estate_power = 1
-		monthly_towards_br_bureaucratic = societal_value_monthly_move
-		#allow_bureaucracy = yes
-		#global_max_bureaucracy_slots = 1
-	}
-	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
-		loyalty_to_overlord = 10
-    }
-	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		hostile_diplomatic_annexation_cost = -0.5
-    }
-	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
-		loyalty_to_overlord = -25
-		hostile_diplomatic_annexation_cost = 0.5
-    }
-	years = 2
-}
+#br_sub_religious_subject = {
+	#age = age_1_traditions
+	#icon = primas_germaniae
+	#potential = {
+		#culture = { has_culture_group = culture_group:roman_group }
+		#NOT = { has_or_had_tag = BYZ }
+	#}
+	#allow = {
+		#OR = {
+			#is_subject_of = c:BYZ
+			#is_member_of_international_organization = international_organization:roman_world
+		#}
+	#}
+	#locked = {
+		#OR = {
+			#is_subject_of = c:BYZ
+			#is_member_of_international_organization = international_organization:roman_world
+		#}
+	#}
+	#country_modifier = {
+		#monthly_towards_spiritualist = societal_value_monthly_move
+		#maximum_religious_influence = 500
+		#monthly_religious_influence = 1
+		#tolerance_own = 5
+		#global_clergy_estate_power = 1
+		#monthly_towards_br_bureaucratic = societal_value_monthly_move
+		##allow_bureaucracy = yes
+		##global_max_bureaucracy_slots = 1
+	#}
+	#country_modifier = {
+		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
+		#loyalty_to_overlord = 10
+    #}
+	#country_modifier = {
+		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
+		#hostile_diplomatic_annexation_cost = -0.5
+    #}
+	#country_modifier = {
+		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
+		#loyalty_to_overlord = -25
+		#hostile_diplomatic_annexation_cost = 0.5
+    #}
+	#years = 2
+#}
 
 br_naval_akritai_reform = {
     age = age_1_traditions
@@ -214,6 +225,12 @@ br_naval_akritai_reform = {
 		#global_port_build_buildings_cost = -0.2
 		#global_max_bureaucracy_slots = 1
     }
+	country_modifier = {
+		potential_trigger = { 
+			has_dlc = "d008_fate_of_the_phoenix"
+		}
+		global_max_bureaucracy_slots = 1
+	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
 		loyalty_to_overlord = 10

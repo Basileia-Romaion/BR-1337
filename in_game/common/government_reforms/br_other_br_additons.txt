@@ -51,15 +51,12 @@ br_special_merchant_republic = {
 	major = yes
 	government = republic
 	country_modifier = {
-		global_merchant_capacity_modifier = 0.75
+		global_merchant_capacity_modifier = 0.5
 		trade_income = 0.5
-		global_foreign_build_buildings_cost = -0.75
+		global_foreign_build_buildings_cost = -0.5
 		merchant_maintenance_efficiency = 0.50
 		navy_maintenance_efficiency = 0.25
-		expected_navy_size = 25
-		global_navy_levy_size_modifier = 0.5
-		max_diplomats = 1
-		
+		trade_range_modifier = 0.25
 	}
 	locked = {
 		always = yes
