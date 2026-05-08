@@ -1033,16 +1033,31 @@ character_db={
 		dynasty = notaras_dynasty
 		tag = CHY
 	}
-	br_ere_rdm_character_93 = {
+	br_ere_rdm_character_94 = {
 		first_name = "random"
 		culture = greek_culture
 		religion = orthodox
-		birth_date = 1328.1.1
+		birth_date = 1301.1.1
+		artist = scientist
+		artist_skill = 0.95
+		artist_trait = adept # Added to silence error
 		birth = constantinople
-		father = br_ere_rdm_character_89
-		dynasty = notaras_dynasty
-		tag = CHY
+		estate = burghers_estate
+		tag = BYZ
 	}
+	br_ere_rdm_character_95 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1296.1.1
+		artist = philosopher
+		artist_skill = 0.85
+		artist_trait = prominent # Added to silence error
+		birth = constantinople
+		estate = clergy_estate
+		tag = BYZ
+	}
+
 
 #Naples
  #Hauteville
