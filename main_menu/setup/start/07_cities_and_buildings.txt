@@ -81,6 +81,10 @@ locations={
 	edirne = { rank = town 			town_setup = balkan_town }
 	gallipoli = { rank = town 		town_setup = greek_town_port }
 	canakkale = { rank = town 		town_setup = greek_town_port }
+
+	karystos = { rank = town 		town_setup = br_tiny_latinoi_town }
+	#cephalonia = { rank = town 	town_setup = br_tiny_latinoi_town }
+	marmaris = { rank = town 		town_setup = br_tiny_latinoi_town }
 	
 	# bulgaria
 	tarnovo = { rank = town 		town_setup = balkan_town }
@@ -6944,14 +6948,17 @@ building_manager = {
 	overseas_trading_post = { tag = VEN level = 1 location = zenica }
 
 	#Agean Trade League 
-	trade_company_headquarters = { tag = VTC level = 1 location = athens }
+	trade_company_headquarters = { tag = VTC level = 1 location = candia }
 	trade_company_harbor = { tag = VTC level = 2 location = athens }
-	trade_company_garrison = { tag = VTC level = 1 location = athens }
-	trade_company_governance = { tag = VTC level = 2 location = venice }
 	trade_company_harbor = { tag = VTC level = 2 location = thessaloniki }
 	trade_company_harbor = { tag = VTC level = 2 location = alexandria }
 	trade_company_governance = { tag = VTC level = 1 location = split }
-	trade_company_governance = { tag = VTC level = 1 location = athens }
+	trade_company_governance = { tag = VTC level = 2 location = venice }
+	trade_company_governance = { tag = VTC level = 1 location = candia }
+	trade_company_governance = { tag = VTC level = 1 location = larnaca }
+	trade_company_garrison = { tag = VTC level = 1 location = karystos }
+	trade_company_garrison = { tag = VTC level = 1 location = naxos }
+	trade_company_garrison = { tag = VTC level = 1 location = samos }
 	fondaco = { tag = VTC level = 2 location = alexandria }
 
 	trade_office = { tag = VTC level = 4 location = acre }
@@ -6961,10 +6968,11 @@ building_manager = {
 	overseas_trading_post = { tag = VTC level = 4 location = beirut }
 
 	br_latin_trading_post = { tag = VTC level = 1 location = kalamata }
+	br_latin_trading_post = { tag = VTC level = 1 location = karystos }
 	br_latin_trading_post = { tag = VTC level = 2 location = thessaloniki }
 	br_latin_trading_post = { tag = VTC level = 2 location = gallipoli }
-	br_latin_trading_post = { tag = VTC level = 1 location = larnaca }
-	br_latin_trading_post = { tag = VTC level = 1 location = candia }
+	br_latin_trading_post = { tag = VTC level = 2 location = larnaca }
+	br_latin_trading_post = { tag = VTC level = 2 location = candia }
 	br_latin_trading_post = { tag = VTC level = 1 location = tarsus }
 	br_latin_trading_post = { tag = VTC level = 1 location = athens }
 	br_latin_trading_post = { tag = VTC level = 2 location = thebes }
