@@ -348,7 +348,7 @@ br_special_trade_companies = {
 		global_estate_max_tax = 0.2
 		global_trades_per_burgher = 1
 		expected_navy_size = 25
-		payment_to_overlord_modifier = -0.75
+		payment_to_overlord_modifier = -0.25
 		trade_sea_efficiency = 0.5
 	}
 	country_modifier = {
@@ -514,6 +514,7 @@ br_roman_ecumenical_patriarch_privilege = {
 	country_modifier = {
 		potential_trigger = { owns = location:constantinople }
 		diplomatic_reputation = 2
+		unlock_interaction = commission_art
 	}
 	country_modifier = {
 		potential_trigger = { owns = location:antioch }
@@ -526,6 +527,7 @@ br_roman_ecumenical_patriarch_privilege = {
 	country_modifier = {
 		potential_trigger = { owns = location:jerusalem }
 		tolerance_own = 1
+		unlock_casus_belli = cb_deus_vult
 	}
 }
 

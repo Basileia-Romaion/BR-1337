@@ -26,6 +26,13 @@ war_manager = {
 				reason = Instigator
 			}
 		}
+		attacker = {
+			country = EPI
+			request = {
+				caller = DYR
+				reason = Subject
+			}
+		}
 
 		defender = {
 			country = THP

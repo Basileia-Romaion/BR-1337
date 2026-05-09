@@ -440,6 +440,7 @@ orthodox_missionary_building = {
 	town = yes
 	city = yes
 	megalopolis = yes
+	conversion_religion = orthodox
 	
 	country_potential = {
 		has_reform = government_reform:patriarchate
@@ -459,7 +460,7 @@ orthodox_missionary_building = {
 	build_time = colonise_build_time
 	
 	modifier = {
-		building_missionary_effort = 0.1
+		building_missionary_effort = 0.05
 		local_tribal_promotion = 0.5
 		local_disease_resistance = 0.05
 		local_max_literacy = 5
@@ -677,7 +678,7 @@ br_latin_trading_post = {
 	is_foreign = yes
 	need_good_relation = no
 	in_empty = any
-	max_levels = guild_max_level
+	max_levels = trade_company_building_max_level
 	pop_type = burghers
 	icon = fondaco #trade_office #overseas_trading_post por_feitoria
 
@@ -686,19 +687,22 @@ br_latin_trading_post = {
 	
 	category = trade_category
 
-	employment_size = foreign_trade_employment
+	employment_size = large_foreign_trade_employment
 	
-	pop_size_created = foreign_trade_employment
+	pop_size_created = large_foreign_trade_employment
 	
 	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
 
+	increase_per_level_cost = 0.5
+	#conversion_religion = catholic
+
 
 	country_potential = {
 		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:merchant_republic
+		has_reform = government_reform:br_special_merchant_republic
 	}
 	location_potential = {
 		OR = {
@@ -715,21 +719,22 @@ br_latin_trading_post = {
 	
 	unique_production_methods = {
 		br_latin_trading_post_maintenance = {
-			paper = 0.05
+			paper = 0.1
 			masonry = 0.05
-			naval_supplies = 0.1
+			naval_supplies = 0.2
 			category = building_maintenance
 		}
 	}
 	
 	modifier = {
-		#building_owner_overlord_maritime_presence = 0.05
-		#building_owner_maritime_presence = 0.02
+		building_owner_overlord_maritime_presence = 0.05
 		merchant_capacity_from_building = 0.5
 		merchant_power_from_building = 0.5
 		#Italian merchants settle in the new location
 		local_migration_attraction = 0.05
 		sailors_to_building_owner = 0.001
+		local_marketplace_building_levels = 2
+		#building_missionary_effort = 0.001
 	}
 	allow_wrong_startup = yes
 }

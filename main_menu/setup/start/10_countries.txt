@@ -12294,7 +12294,24 @@ countries = {
 			}
 			reforms = {
 				merchant_republic
-				#partitio_reform
+				partitio_reform
+			}
+			privilege = {
+				lat_latin_crusader_elite
+				feudal_mercenary_contracts
+				increased_civic_engagement
+				noble_sponsored_navy
+				nobles_protected_faith
+
+				peasants_protected_faith
+				peasants_autonomous_villages
+				br_latin_occupiers
+
+				urban_development_grants
+				#burghers
+				land_of_commerce
+				sponsor_maritime_contracts
+				shipwright_contracts
 			}
 
 			centralization_vs_decentralization = -30
@@ -12311,8 +12328,15 @@ countries = {
 			individualism_vs_communalism = -40
 			outward_vs_inward = -80
 		}
+
+		culture = latinoi
+		religion = catholic
 		accepted_cultures = {
-			latinoi
+			greek_culture
+		}
+
+		currency_data = {
+			gold = 1250
 		}
 
 		country_rank = rank_duchy
@@ -12559,13 +12583,11 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = random
 
-			#reforms = {
-			#	partitio_reform
-			#}
-			#privilege = {
-			#	lat_latin_crusader_elite
-			#}
+			reforms = {
+				partitio_reform
+			}
 			privilege = {
+				lat_latin_crusader_elite
 				feudal_mercenary_contracts
 				increased_civic_engagement
 				noble_sponsored_navy
@@ -12586,6 +12608,10 @@ countries = {
 			}
 		}
 		
+		currency_data = {
+			gold = 1250
+		}
+		culture = latinoi
 		accepted_cultures = {
 			greek_culture
 		}
@@ -12676,11 +12702,11 @@ countries = {
 				piracy_law = br_state_piracy_policy
 				legal_code_law = assizes_of_romania_policy
 			}
-			#reforms = {
-			#	partitio_reform
-			#}
+			reforms = {
+				partitio_reform
+			}
 			privilege = {
-				#lat_latin_crusader_elite
+				lat_latin_crusader_elite
 
 				feudal_mercenary_contracts
 				increased_civic_engagement
@@ -12700,6 +12726,9 @@ countries = {
 			}
 		}
 
+		currency_data = {
+			gold = 1500
+		}
 		accepted_cultures = {
 			greek_culture
 		}
@@ -12947,7 +12976,6 @@ countries = {
 			damala ermioni kalamata kyparissia
 			andritsaina pontikokastro andravida corinth
 			chalandritsa patras vostitsa kalavryta xylokastro
-			#NEG
 			negroponte kleisoura karystos kymi oreos eretreia
 			#TRE
 			trebizond giresun gorele gumushane surmene
@@ -18968,6 +18996,7 @@ countries = {
 
 		}
 
+		culture = latinoi
 		accepted_cultures = { maltese }
 		
 		capital = malta
@@ -19020,12 +19049,12 @@ countries = {
 				name_bartholomew = 1
 			}
 
-			#reforms = {
-			#	partitio_reform
-			#}
-			#laws = {
-			#	legal_code_law = assizes_of_romania_policy
-			#}
+			reforms = {
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
 
 			privilege = {
 				feudal_mercenary_contracts
@@ -19042,7 +19071,7 @@ countries = {
 				land_of_commerce
 				sponsor_maritime_contracts
 				shipwright_contracts
-				#lat_latin_crusader_elite
+				lat_latin_crusader_elite
 			}
 
 		}
@@ -19054,7 +19083,7 @@ countries = {
 			gold = 1500
 		}
 		court_language = venetian_dialect
-		capital = negroponte
+		capital = karystos
 	}
 
 	SAO = { #Salona #removed
@@ -53131,7 +53160,7 @@ countries = {
 		
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
-		capital = lecce
+		capital = bari
 	}
 
 	#Kalavrías
@@ -53373,7 +53402,7 @@ countries = {
 		type = building
 		starting_technology_level = 3
 		
-		capital = thessaloniki
+		capital = candia
 
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"

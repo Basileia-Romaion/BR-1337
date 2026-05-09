@@ -48,7 +48,7 @@ br_imperial_administration = {
 	country_modifier = {
 		potential_trigger = { stability <= 25 }
 		nobles_estate_target_satisfaction = larger_permanent_target_satisfaction_penalty
-		global_estate_satisfaction_from_legitimacy = -0.1
+		#global_estate_satisfaction_from_legitimacy = -0.1
 	}
 	years = 2
 }

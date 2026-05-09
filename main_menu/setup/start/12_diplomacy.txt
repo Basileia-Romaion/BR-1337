@@ -256,9 +256,9 @@ diplomacy_manager = {
 	#-------Italy-------
 	dependency = { first = VTC second = NAX subject_type = vassal } #BR EDIT
 	dependency = { first = VTC second = NEG subject_type = vassal } #BR ADDED
-	dependency = { first = VEN second = CEP subject_type = vassal }
+	dependency = { first = VTC second = CEP subject_type = vassal }
 	dependency = { first = VEN second = TTE subject_type = vassal start_date = 1202.10.9 } #Trieste and Muggia swear loyalty to Dux Enrico Dandolo
-	dependency = { first = VEN second = CRT subject_type = vassal }
+	dependency = { first = VTC second = CRT subject_type = vassal }
     #dependency = { first = VEN second = CYP subject_type = tributary } #BR ADDED
 	dependency = { first = VEN second = RAG subject_type = vassal }
 
@@ -439,6 +439,9 @@ diplomacy_manager = {
 
 
     #------ERE/"Byzantium"-------- ###
+    scripted_mutual = { first = BYZ second = ATH type = alliance }
+    scripted_mutual = { first = BYZ second = THE type = alliance }
+
     dependency = { first = BYZ second = FEO subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = ATH subject_type = vassal } # Pronoïakon Ktéma
@@ -515,7 +518,7 @@ diplomacy_manager = {
     #dependency = { first = ARM second = DER subject_type = vassal } #BR ADDED
     #dependency = { first = ARM second = MES subject_type = vassal } #BR ADDED
     #dependency = { first = ARM second = VAN subject_type = vassal } #BR ADDED
-    #dependency = { first = ARM second = VDZ subject_type = vassal }
+    dependency = { first = ARM second = VDZ subject_type = vassal }
     scripted_mutual = { first = GEO second = ARM type = alliance }
     #dependency = { first = GEO second = SGO subject_type = march }
     scripted_oneway = { first = GEO second = SGO type = guarantee }
