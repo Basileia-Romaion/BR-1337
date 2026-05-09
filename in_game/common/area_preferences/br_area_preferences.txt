@@ -1,0 +1,40 @@
+﻿# area preference definitions - pure data, no country or allowed fields.
+# Use add_area_preference = <key> in on_game_start, missions, or events to assign them.
+#
+# example = {
+#	preference_type = exploration / conquest
+#	modifier = 2 (can be below 1 to reduce desire)
+#	area = atlantic_north_atlantic_current_area
+#	region = east_coast_region
+#	continent = bla_bla
+#	sub_continent = bla
+#}
+
+
+##################
+##### CONQUEST ###
+##################
+
+br_conquer_persia = {
+	preference_type = conquest
+	modifier = 10.0
+
+	region = persia_region
+	region = crescent_region
+	region = caucasus_region
+}
+
+br_conquer_hre = {
+	preference_type = conquest
+	modifier = 10.0
+
+	region = france_region
+	region = north_german_region
+	region = south_german_region
+}
+
+br_conquer_balkans = {
+	preference_type = conquest
+	modifier = 10.0
+	region = balkan_region
+}

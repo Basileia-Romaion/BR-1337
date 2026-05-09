@@ -2,16 +2,22 @@
 countries = {
 	countries = {
 
-		NSE = {
+		NSE ?= {
 			area_preferences = {
 				england_explore_usa england_explore_india
 				england_conquer_britain
 			}
 		}
 
-		FRA = {
+		FRA ?= {
 			area_preferences = {
-				portugal_explore_asia portugal_explore_middle_east portugal_explore_brazil
+				br_conquer_hre portugal_explore_brazil
+			}
+		}
+
+		LOT ?= {
+			area_preferences = {
+				br_conquer_hre
 			}
 		}
 
@@ -55,7 +61,7 @@ countries = {
 
 		POL = {
 			area_preferences = {
-				poland_conquer_prussia poland_conquer_ruthenia
+				poland_conquer_ruthenia
 			}
 		}
 
@@ -65,7 +71,7 @@ countries = {
 			}
 		}
 
-		PLE = {
+		HBA = {
 			area_preferences = {
 				pale_conquer_ireland
 			}
@@ -74,6 +80,24 @@ countries = {
 		BYZ = {
 			area_preferences = {
 				byzantium_conquer_anatolia byzantium_conquer_balkans byzantium_conquer_italy
+			}
+		}
+
+		BUL ?= {
+			area_preferences = {
+				br_conquer_balkans
+			}
+		}
+
+		TUR ?= {
+			area_preferences = {
+				br_conquer_persia
+			}
+		}
+
+		MZF ?= {
+			area_preferences = {
+				br_conquer_persia
 			}
 		}
 
