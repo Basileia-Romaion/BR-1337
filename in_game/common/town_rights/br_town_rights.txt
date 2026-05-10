@@ -1,0 +1,64 @@
+﻿#######################################
+#   Production Generic Rights    ######
+#######################################
+
+### The aim to increase City specialization. They increase the efficiency of a specific Good, but decrease the efficiency of all others.
+
+br_naval_theme_rights = {
+
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+	}
+	allow = {
+		is_province_capital = yes
+		scope:target = {
+			is_port = yes
+			NOT = {
+				has_town_rights = town_rights_type:br_land_theme_rights
+			}
+		}
+	}
+	location_modifier = {
+		#local_sailors_modifier = 0.1
+		harbor_suitability = 0.2
+		local_maritime_presence = 0.1
+		local_soldiers_desired_pop = 0.1
+		local_nobles_estate_power = 0.5
+		local_naval_supplies_output_modifier = 0.2
+		local_tar_output_modifier = 0.1
+	}
+	
+	color = goods_naval_supplies
+}
+
+br_land_theme_rights = {
+
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+	}
+	allow = {
+		is_province_capital = yes
+		scope:target = {
+			NOT = {
+				has_town_rights = town_rights_type:br_naval_theme_rights
+			}
+		}
+	}
+	location_modifier = {
+		#local_manpower_modifier = 0.1
+		local_levy_size_modifier = 0.1
+		local_soldiers_desired_pop = 0.1
+		local_nobles_estate_power = 0.5
+		local_weaponry_output_modifier = 0.2
+		local_firearms_output_modifier = 0.1
+		local_cannons_output_modifier = 0.1
+	}
+	
+	color = red
+}
