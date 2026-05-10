@@ -721,19 +721,20 @@ br_latin_trading_post = {
 		br_latin_trading_post_maintenance = {
 			paper = 0.1
 			masonry = 0.05
-			naval_supplies = 0.2
+			naval_supplies = 0.25
 			category = building_maintenance
 		}
 	}
 	
 	modifier = {
-		building_owner_overlord_maritime_presence = 0.05
+		building_owner_overlord_maritime_presence = 0.1
 		merchant_capacity_from_building = 0.5
 		merchant_power_from_building = 0.5
 		#Italian merchants settle in the new location
 		local_migration_attraction = 0.05
 		sailors_to_building_owner = 0.001
 		local_marketplace_building_levels = 2
+		local_market_access = 0.05
 		#building_missionary_effort = 0.001
 	}
 	allow_wrong_startup = yes
