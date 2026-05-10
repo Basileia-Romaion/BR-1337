@@ -1,5 +1,8 @@
 # Ideas and stuff to do.
 
+is_adjacent_to_owned_or_subject_owns = yes
+is_owned_by_target_or_subject
+
 ## International organization for E.R.E & N.S.E.
 Similar to HRE or Illkanate Middle Kingdom etc. 
 

@@ -32626,7 +32626,7 @@ countries = {
 		capital = urfa
 		religious_school = shafii_school
 		government = { mysticism_vs_jurisprudence = 20 }
-		
+	
 	}
 
 	#Aydinids - AYD https://en.wikipedia.org/wiki/Aydinids
@@ -32639,32 +32639,70 @@ countries = {
 	#Cilicia - CIL https://en.wikipedia.org/wiki/Armenian_Kingdom_of_Cilicia
 	CIL = {
 		own_control_core = {
-			adana ayas kars_armenia
+			kars_armenia
 			anavarza sis caxud
-			tarsus corycus candir_cil molevon
+			comana_cil hargan
 		}
-		
+
 		our_cores_conquered_by_others = {
-			hargan iskenderun
+			ayas 
+			corycus candir_cil molevon
+			adana
+			tarsus
+			kapan
+			silifke anamur ermenek mut
+			selinti
+			nigde bor_tur
+			develi
+			ayntab
+			kilis trapessac
+			iskenderun
 		}
-		
+
 		starting_technology_level = 3
-		include = "expl_eastern_europe"
-		include = "br_thema_template"
+		include = "expl_christian_caucasus"
+		include = "eastern_european_monarchy"
 		government = {
-			ruler = br_ere_rdm_character_28
-			ruler_term = { character = br_ere_rdm_character_28 start_date = 1297.5.20 }
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = cil_leo_iv
+
+			ruler_term = { character = cil_levon_i_roupenid start_date = 1198.1.6 end_date = 1219.5.2 regnal_number = 1 }
+			ruler_term = { character = cil_zabel_i_roupenid start_date = 1219.5.2 end_date = 1226.1.1 regnal_number = 1 }
+			ruler_term = {
+				character = cil_zabel_i_roupenid start_date = 1226.1.1 end_date = 1252.1.23 regnal_number = 1
+				character = cil_hethum_i_hethumid start_date = 1226.1.1 end_date = 1252.1.23 regnal_number = 1
+			}
+			ruler_term = { character = cil_hethum_i_hethumid start_date = 1252.1.23 end_date = 1269.1.1 regnal_number = 1 }
+			ruler_term = { character = cil_leo_ii_hetumid start_date = 1269.1.1 end_date = 1289.1.1 regnal_number = 2 }
+			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1289.1.1 end_date = 1293.1.1 regnal_number = 2 }
+			ruler_term = { character = cil_thoros_iii_hetumid start_date = 1293.1.1 end_date = 1295.1.1 regnal_number = 1 }
+			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1295.1.1 end_date = 1296.1.1 regnal_number = 2 }
+			ruler_term = { character = cil_smbat_hetumid start_date = 1296.1.1 end_date = 1298.1.1 regnal_number = 1 }
+			ruler_term = { character = cil_kostandin_i_hetumid start_date = 1298.1.1 end_date = 1299.1.1 regnal_number = 1 }
+			ruler_term = { character = cil_hethum_ii_hetumid start_date = 1299.1.1 end_date = 1305.5.1 regnal_number = 2 }
+			ruler_term = { character = cil_leo_iii_hetumid start_date = 1305.5.1 end_date = 1307.11.17 regnal_number = 3 }
+			ruler_term = { character = cil_oshin_hetumid start_date = 1307.11.17 end_date = 1320.7.20 regnal_number = 1 }
+			ruler_term = { character = cil_leo_iv start_date = 1320.7.20 regnal_number = 4 }
+
+			regnal_numbers = {
+				name_leon = 4
+				name_elizabeth = 1
+				name_philip = 1
+				name_hethum = 2
+				name_theodore = 1
+				name_simbad = 1
+				name_constantine = 1
+				name_oshin = 1
+			}
 		}
 
 		tolerated_cultures = {
-			armenian_culture
+			syriac_culture
 		}
 
-		dynasty = skleros_dynasty
-		court_language = kilikioi_dialect
-		liturgical_language = koine_dialect
 		country_rank = rank_duchy
-		capital = tarsus
+		capital = sis
 	}
 
 	#Candarids - CND https://en.wikipedia.org/wiki/Candar_dynasty
@@ -54718,11 +54756,10 @@ countries = {
 
 	AN1 = {
 		own_control_core = {
-			comana_cil
 			elbistan goksun afsin
-			hargan
 		}
 		our_cores_conquered_by_others = {
+			comana_cil hargan
 			enguzud kapan ulnia
 			darende gurun
 		}
@@ -55108,6 +55145,40 @@ countries = {
 		liturgical_language = koine_dialect
 		capital = celtik
 	}
+
+	AN13 = {
+		own_control_core = {
+			adana 
+			tarsus
+			ayas 
+			corycus candir_cil molevon
+		}
+		
+		our_cores_conquered_by_others = {
+			kars_armenia
+			anavarza sis caxud
+			hargan iskenderun
+		}
+		
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "br_thema_template"
+		government = {
+			ruler = br_ere_rdm_character_28
+			ruler_term = { character = br_ere_rdm_character_28 start_date = 1297.5.20 }
+		}
+
+		tolerated_cultures = {
+			armenian_culture
+		}
+
+		dynasty = skleros_dynasty
+		court_language = kilikioi_dialect
+		liturgical_language = koine_dialect
+		country_rank = rank_duchy
+		capital = tarsus
+	}
+
 	
 	P2N = {
 		own_control_core = {

@@ -456,7 +456,7 @@ diplomacy_manager = {
     #dependency = { first = BYZ second = AN10 subject_type = march } # Thema
 
     #dependency = { first = BYZ second = AOI subject_type = march } # Thema
-    #dependency = { first = BYZ second = CIL subject_type = vassal } # Kleisoura
+    #dependency = { first = BYZ second = AN12 subject_type = vassal } # Kleisoura
     #dependency = { first = BYZ second = TRE subject_type = march } # Thema
     #dependency = { first = BYZ second = AN10 subject_type = march } # Kleisoura
     #dependency = { first = BYZ second = AN3 subject_type = march } # Kleisoura
@@ -479,11 +479,12 @@ diplomacy_manager = {
     dependency = { first = TRE second = P2N subject_type = vassal } # Thema
     dependency = { first = AON second = AN11 subject_type = vassal } # Thema
     dependency = { first = AON second = AN12 subject_type = vassal } # Thema
-    dependency = { first = CIL second = AN5 subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = AN13 second = AN5 subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = vassal } # Thema
 
-
+    scripted_mutual = { first = AN8 second = AN13 type = alliance }
 
     
 
