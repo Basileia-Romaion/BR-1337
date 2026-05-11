@@ -176,10 +176,10 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit_of_category = sub_unit_category:navy_transport
 				create_sub_unit_of_category = sub_unit_category:navy_transport
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
+				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
 			}
 		}
 		c:A1G = {
@@ -284,12 +284,9 @@ br_country_startup.2 = { #units added
 	immediate = {
 		c:RH0 = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
@@ -297,31 +294,47 @@ br_country_startup.2 = { #units added
 		}
 		c:BUL = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+			}
+		}
+		c:HUN = {
+			capital = {
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+			}
+		}
+		c:ARA = {
+			capital = {
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:ARA = {
+		c:CAS = {
 			capital = {
-				create_sub_unit = unit_type:br_unit_trebuchet
-				create_sub_unit = unit_type:br_unit_trebuchet
-				create_sub_unit_of_category = sub_unit_category:army_auxiliary
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 			}
 		}
 
 		c:OHS = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit = unit_type:br_tagmata_ballistai
@@ -330,9 +343,9 @@ br_country_startup.2 = { #units added
 		}
 		c:SGO = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_infantry
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit = unit_type:br_tagmata_ballistai
@@ -341,9 +354,9 @@ br_country_startup.2 = { #units added
 		}
 		c:ARM = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
@@ -351,9 +364,9 @@ br_country_startup.2 = { #units added
 		}
 		c:GEO = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
@@ -361,14 +374,14 @@ br_country_startup.2 = { #units added
 		}
 		c:LOT = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
@@ -377,10 +390,10 @@ br_country_startup.2 = { #units added
 		}
 		c:FRA = {
 			capital = {
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
-				#create_sub_unit_of_category = sub_unit_category:army_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
@@ -391,14 +404,30 @@ br_country_startup.2 = { #units added
 				create_sub_unit = unit_type:a_varangians
 				create_sub_unit = unit_type:a_varangians
 				create_sub_unit = unit_type:a_varangians
-				create_sub_unit = unit_type:a_supply_carts
-				create_sub_unit = unit_type:a_supply_carts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				create_sub_unit = unit_type:a_byzantine_cataphracts
+				#create_sub_unit = unit_type:a_supply_carts
+				#create_sub_unit = unit_type:a_supply_carts
 			}
 		}
 		c:DYR = {
 			capital = {
+				create_sub_unit = unit_type:a_byzantine_cataphracts
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
+			}
+		}
+		c:AOI = {
+			capital = {
+				create_sub_unit = unit_type:a_akritai
+				create_sub_unit = unit_type:a_akritai
+				create_sub_unit = unit_type:a_akritai
+				create_sub_unit = unit_type:a_akritai
+				create_sub_unit = unit_type:a_byzantine_cataphracts
 			}
 		}
 
@@ -572,7 +601,7 @@ br_country_startup.4 = {
 	title = br_country_startup.4.title
 	desc = br_country_startup.4.desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_byzantium.dds"
 	#orphan = yes
 	trigger = {
 		tag = SAR
