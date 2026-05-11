@@ -130,6 +130,10 @@ development = {
 
 
 	# areas
+	marmara_area = 4
+	west_anatolia_area = 3
+	central_anatolia_area = -3
+	cappadocia_area = -4
 	#scandinavia
 	svealand_area = 4
 	gotaland_area = 3
@@ -139,8 +143,8 @@ development = {
 	karelia_area = -5
 	kola_area = -5
 	#balkan region
-	thrace_area = 6
-	morea_area = 4
+	thrace_area = 2
+	morea_area = 1
 	slovenia_area = 5
 	#great britain
 	home_counties_area = 5
@@ -378,6 +382,13 @@ development = {
 
 	marash_province = -10
 	ayntab_province = -10
+	hasankeyf_province = -10
+	diyarbekir_province = -10
+	ar_ruha_province = -10
+	malatya_province = -10
+	antakya_province = -10
+	adana_province = -5
+	sis_province = -5
 
 	#BR New World
 
@@ -408,7 +419,7 @@ development = {
 	milano = 26
 	florence = 18
 	genoa = 16
-	antioch = 8
+	antioch = 15
 	aleppo = 10
 	cairo = 20
 	alexandria = 5
@@ -457,9 +468,13 @@ development = {
 	thessaloniki = 15
 	thebes = 5
 	athens = -5
-	smyrna = 10
+	smyrna = 5
 	iznik = 8
 	ani = 5
+	malatya = 10
+	urfa = 5
+	van = 6
+	kayseri = 6
 	theodoro = 12
 	kaffa = 5
 	tana = 12
