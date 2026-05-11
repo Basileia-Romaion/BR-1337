@@ -13,8 +13,8 @@ br_naval_theme_rights = {
 		}
 	}
 	allow = {
-		is_province_capital = yes
 		scope:target = {
+			is_province_capital = yes
 			is_port = yes
 			NOT = {
 				has_town_rights = town_rights_type:br_land_theme_rights
@@ -43,8 +43,8 @@ br_land_theme_rights = {
 		}
 	}
 	allow = {
-		is_province_capital = yes
 		scope:target = {
+			is_province_capital = yes
 			NOT = {
 				has_town_rights = town_rights_type:br_naval_theme_rights
 			}
