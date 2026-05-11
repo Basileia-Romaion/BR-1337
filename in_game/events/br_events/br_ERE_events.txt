@@ -11,7 +11,7 @@ br_ere_events.1 = {
 	title = br_ere_events.1.title
 	desc = br_ere_events.1.desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
 	#orphan = yes
 	trigger = {
 		tag = BYZ
@@ -38,6 +38,35 @@ br_ere_events.1 = {
 			text = br_ere_events.1.att
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
 	   	}
+		if = {
+			limit = {
+				has_dlc = "d008_fate_of_the_phoenix"
+			}
+			c:A1G = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+			}
+			c:S1Y = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+			}
+			c:K1B = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+			}
+			c:FEO = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+			}
+		}
 		
 	}
 }
@@ -83,7 +112,7 @@ br_ere_events.3 = {
 	title = br_ere_events.3.title
 	desc = br_ere_events.3.desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
 	#orphan = yes
 	trigger = {
 		tag = BYZ
@@ -116,10 +145,24 @@ br_ere_events.3 = {
 							capital ?= { region = region:balkan_region }
 						}
 					}
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
+					if = {
+						limit = {
+							has_dlc = "d008_fate_of_the_phoenix"
+						}
+						make_subject_of = {
+							target = c:BYZ
+							type = subject_type:pronoia
+						}
 					}
+					else_if = {
+						limit = {
+							NOT = { has_dlc = "d008_fate_of_the_phoenix" }
+						}
+						make_subject_of = {
+							target = c:BYZ
+							type = subject_type:vassal
+						}
+					}	
 				}
 			}
 		}
@@ -133,79 +176,164 @@ br_ere_events.3 = {
 		}
 		custom_tooltip = {
 			text = br_ere_events.3.btt
-			c:ATH = {
-				annex_country = { country = c:ACH }
-				annex_country = { country = c:MOE }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+			if = {
+				limit = {
+					has_dlc = "d008_fate_of_the_phoenix"
+				}
+				c:ATH = {
+					annex_country = { country = c:ACH }
+					annex_country = { country = c:MOE }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:THE = {
+					annex_country = { country = c:THS }
+					annex_country = { country = c:B0R }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:AN8 = {
+					annex_country = { country = c:AN1 }
+					annex_country = { country = c:AN7 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:AN10 = {
+					annex_country = { country = c:AN3 }
+					annex_country = { country = c:AN2 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:AON = {
+					annex_country = { country = c:AN4 }
+					annex_country = { country = c:AN11 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:ICO = {
+					annex_country = { country = c:AN9 }
+					annex_country = { country = c:AN12 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:TRE = {
+					annex_country = { country = c:AN6 }
+					annex_country = { country = c:P2N }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+				c:AN13 = {
+					annex_country = { country = c:AN5 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
+				}
+				c:AOI = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
+				}
+				c:OHS = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
 				}
 			}
-			c:THE = {
-				annex_country = { country = c:THS }
-				annex_country = { country = c:B0R }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+			else_if = {
+				limit = {
+					NOT = { has_dlc = "d008_fate_of_the_phoenix" }
 				}
-			}
-			c:AN8 = {
-				annex_country = { country = c:AN1 }
-				annex_country = { country = c:AN7 }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+				c:ATH = {
+					annex_country = { country = c:ACH }
+					annex_country = { country = c:MOE }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:AN10 = {
-				annex_country = { country = c:AN3 }
-				annex_country = { country = c:AN2 }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+				c:THE = {
+					annex_country = { country = c:THS }
+					annex_country = { country = c:B0R }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:AON = {
-				annex_country = { country = c:AN4 }
-				annex_country = { country = c:AN11 }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+				c:AN8 = {
+					annex_country = { country = c:AN1 }
+					annex_country = { country = c:AN7 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:ICO = {
-				annex_country = { country = c:AN9 }
-				annex_country = { country = c:AN12 }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+				c:AN10 = {
+					annex_country = { country = c:AN3 }
+					annex_country = { country = c:AN2 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:TRE = {
-				annex_country = { country = c:AN6 }
-				annex_country = { country = c:P2N }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:vassal
+				c:AON = {
+					annex_country = { country = c:AN4 }
+					annex_country = { country = c:AN11 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:CIL = {
-				annex_country = { country = c:AN5 }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:march
+				c:ICO = {
+					annex_country = { country = c:AN9 }
+					annex_country = { country = c:AN12 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:AOI = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:march
+				c:TRE = {
+					annex_country = { country = c:AN6 }
+					annex_country = { country = c:P2N }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:vassal
+					}
 				}
-			}
-			c:OHS = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:march
+				c:AN13 = {
+					annex_country = { country = c:AN5 }
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
+				}
+				c:AOI = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
+				}
+				c:OHS = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:march
+					}
 				}
 			}
 		}
@@ -217,7 +345,7 @@ br_ere_events.4 = {
 	title = br_ere_events.4.title
 	desc = br_ere_events.4.desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
 	orphan = yes
 	trigger = {
 		tag = BYZ
