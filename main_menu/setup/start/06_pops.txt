@@ -3077,7 +3077,7 @@ arlon = {
 	define_pop = {	type = peasants	size = 3.414	culture = walloon	religion = catholic }
 }
 thionville = {
-	define_pop = {	type = clergy	size = 0.003	culture = ripuarian_franconian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.003	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 3.956	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.697	culture = lorrain	religion = catholic }
 }
@@ -3187,7 +3187,7 @@ montmedy = {
 	define_pop = {	type = peasants	size = 3.213	culture = lorrain	religion = catholic }
 }
 neufchateau_luxembourg = {
-	define_pop = {	type = clergy	size = 0.004	culture = walloon	religion = catholic }
+	define_pop = {	type = clergy	size = 0.004	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 4.568	culture = walloon	religion = catholic }
 	define_pop = {	type = peasants	size = 0.760	culture = ripuarian_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.283	culture = lorrain	religion = catholic }
@@ -3620,9 +3620,12 @@ aachen = {
 	define_pop = {	type = nobles	size = 0.106	culture = westphalian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.068	culture = westphalian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.977	culture = ripuarian_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 23.069	culture = ripuarian_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 28.069	culture = ripuarian_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.805	culture = low_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.252	culture = ashkenazi	religion = judaism }
+	define_pop = {	type = nobles	size = 0.129	culture = lorrain	religion = catholic }
+	define_pop = {	type = clergy	size = 0.119	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 5.976	culture = lorrain	religion = catholic }
 }
 heinsberg = {
 	define_pop = {	type = clergy	size = 0.007	culture = low_franconian	religion = catholic }
@@ -8626,7 +8629,7 @@ st_pierre_de_moutier = {
 	define_pop = {	type = peasants	size = 28.349	culture = burgundian	religion = catholic }
 }
 chaumont = {
-	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
+	define_pop = {	type = clergy	size = 0.009	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 40.569	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 15.522	culture = lorrain	religion = catholic }
 }
@@ -8647,7 +8650,7 @@ langres = {
 	define_pop = {	type = peasants	size = 23.345	culture = champenais	religion = catholic }
 }
 vaucouleurs = {
-	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
+	define_pop = {	type = clergy	size = 0.009	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 19.048	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 7.016	culture = lorrain	religion = catholic }
 }
@@ -8697,7 +8700,7 @@ vitry_en_pertois = {
 	define_pop = {	type = peasants	size = 0.441	culture = ashkenazi	religion = judaism }
 }
 joinville = {
-	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
+	define_pop = {	type = clergy	size = 0.009	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 14.929	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 6.691	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 0.147	culture = ashkenazi	religion = judaism }
@@ -8727,7 +8730,7 @@ epernay = {
 	define_pop = {	type = peasants	size = 42.797	culture = champenais	religion = catholic }
 }
 menehould = {
-	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
+	define_pop = {	type = clergy	size = 0.009	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 16.464	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 4.879	culture = lorrain	religion = catholic }
 }
@@ -9452,7 +9455,7 @@ metz = {
 	define_pop = {	type = nobles	size = 0.092	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.416	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 5.424	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 50.104	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 65.104	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 12.026	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 4.001	culture = ashkenazi	religion = judaism }
 }
@@ -9505,7 +9508,7 @@ saarwerden = {
 	define_pop = {	type = peasants	size = 20.409	culture = rhine_franconian	religion = catholic }
 }
 sarrebourg = {
-	define_pop = {	type = clergy	size = 0.017	culture = ripuarian_franconian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.017	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 15.457	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.387	culture = lorrain	religion = catholic }
 }
