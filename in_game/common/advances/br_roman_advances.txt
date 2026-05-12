@@ -378,7 +378,8 @@ roman_centralized_command = {
 		}
 	}
 	requires = regiment_reinforcement_speed_absolutism
-	tax_income_efficiency = medium_tax_income_efficiency_bonus
+	tax_income_efficiency = small_tax_income_efficiency_bonus
+	unlock_building = br_dioikesis_building
 	discipline = 0.02
 	ai_weight = { add = 5 }
 }
@@ -495,6 +496,19 @@ br_revolutions_varangians_advance = {
 
 # Tagmata
 
+br_katapanate_building_advance = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
+	#icon = 
+	requires = army_initiative_ren
+	unlock_building = br_katapanate_building
+	ai_weight = { add = 5 }
+}
 br_age_2_kontaratoi_advance = {
 	age = age_2_renaissance
 	potential = {
@@ -504,11 +518,24 @@ br_age_2_kontaratoi_advance = {
 		}
 	}
 	icon = byz_cataphracts_advance
-	requires = army_initiative_ren
+	requires = br_katapanate_building_advance
 	unlock_unit = br_age_2_kontaratoi
 	ai_weight = { add = 5 }
 }
 
+br_despotate_building_advance = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
+	}
+	#icon = 
+	requires = roman_thematic_recruitment
+	unlock_building = br_katapanate_building
+	ai_weight = { add = 5 }
+}
 br_age_3_lonchophoroi_advance = {
 	age = age_3_discovery
 	potential = {
@@ -518,7 +545,7 @@ br_age_3_lonchophoroi_advance = {
 		}
 	}
 	icon = byz_cataphracts_advance
-	requires = roman_thematic_recruitment
+	requires = br_despotate_building_advance
 	unlock_unit = br_age_3_lonchophoroi
 	ai_weight = { add = 5 }
 }

@@ -57,8 +57,7 @@ br_spqe_reform = {
 		parliament_base_support = 0.1
         #negatives
         #court_spending_cost_modifier  = 0.02
-        #allow_bureaucracy = yes
-        #global_max_bureaucracy_slots = 1
+        unlock_building = br_doukate_building
 	}
     country_modifier = {
 		potential_trigger = { 

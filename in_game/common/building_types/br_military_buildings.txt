@@ -943,3 +943,236 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 	allow_wrong_startup = yes
 }
 
+# military admin inspired by PM but simplfied and combined into a thema hq upgrade path.
+
+br_doukate_building = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	icon = grand_apartment
+
+	category = government_category
+	employment_size = stockade_employment
+	rural_settlement = setup_only
+	town = setup_only
+	city = yes
+	megalopolis = yes
+	
+	build_time = big_soldier_building
+	expensive = yes
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	location_potential = { 
+		is_capital = no 
+		is_province_capital = yes
+		NOR = { 
+			has_building = building_type:br_tagmata_barracks
+			has_building = building_type:thema_headquarters
+		}
+	}
+	allow = { is_province_capital = yes }
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+
+	possible_production_methods = {
+		early_soldier_building_maintenance
+	}
+	construction_demand = castle_construction
+	
+	modifier = {
+		local_manpower = 0.015
+		can_recruit_regiment_in_this_location = yes
+		local_garrison_size = 0.2
+		local_nobles_estate_power = 0.50
+		local_proximity_source = 25
+    }
+	
+	raw_modifier = {
+		minimum_fort_level = 2
+		propagating_zone_of_control = no
+		local_nobles_desired_pop = 0.05
+		local_clergy_desired_pop = 0.05
+	}
+	country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
+}
+
+br_katapanate_building = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	icon = bodrum_castle
+
+	category = government_category
+	obsolete = br_doukate_building
+	employment_size = castle_employment
+	rural_settlement = yes
+	town = setup_only
+	city = yes
+    megalopolis = yes
+	
+	build_time = big_soldier_building
+	expensive = yes
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	location_potential = { 
+		is_capital = no 
+		is_province_capital = yes
+		NOR = { 
+			has_building = building_type:br_tagmata_barracks
+			has_building = building_type:thema_headquarters
+		}
+	}
+	allow = { is_province_capital = yes }
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods = {
+		early_soldier_building_maintenance
+	}
+	construction_demand = castle_construction
+
+	modifier = {
+		local_manpower = 0.02
+		can_recruit_regiment_in_this_location = yes
+		local_garrison_size = 0.4
+		local_nobles_estate_power = 0.35
+		local_proximity_source = 30
+    }
+	
+	raw_modifier = {
+		minimum_fort_level = 2
+		propagating_zone_of_control = no
+		local_nobles_desired_pop = 0.1
+		local_clergy_desired_pop = 0.1
+	}
+	country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
+}
+
+br_despotate_building = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	icon = bastion
+
+	category = government_category
+	obsolete = br_katapanate_building
+	employment_size = castle_employment
+	rural_settlement = no
+	town = setup_only
+	city = yes
+	megalopolis = yes
+	
+	
+	build_time = big_soldier_building
+	expensive = yes
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	location_potential = { 
+		is_capital = no 
+		is_province_capital = yes
+		NOR = { 
+			has_building = building_type:br_tagmata_barracks
+			has_building = building_type:thema_headquarters
+		}
+	}
+	allow = { is_province_capital = yes }
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods =  {
+		soldier_building_maintenance
+	}
+	construction_demand = castle_construction
+
+	modifier = {
+		local_manpower = 0.03
+		can_recruit_regiment_in_this_location = yes
+		local_garrison_size = 0.6
+		local_nobles_estate_power = 0.25
+		local_proximity_source = 35
+    }
+	
+	raw_modifier = {
+		minimum_fort_level = 3
+		propagating_zone_of_control = no
+		local_nobles_desired_pop = 0.15
+		local_clergy_desired_pop = 0.15
+	}
+	country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
+}
+
+br_dioikesis_building = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	icon = fortress
+
+	category = government_category
+	obsolete = br_despotate_building
+	employment_size = castle_employment
+	rural_settlement = no
+	town = setup_only
+	city = yes
+	megalopolis = yes
+	
+	build_time = big_soldier_building
+	expensive = yes
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	location_potential = { 
+		is_capital = no 
+		is_province_capital = yes
+		NOR = { 
+			has_building = building_type:br_tagmata_barracks
+			has_building = building_type:thema_headquarters
+		}
+	}
+	allow = { is_province_capital = yes }
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods =  {
+		soldier_building_maintenance
+	}
+	construction_demand = castle_construction
+
+	modifier = {
+		local_manpower = 0.045
+		can_recruit_regiment_in_this_location = yes
+		local_garrison_size = 1.0
+		#local_nobles_estate_power = 0.50
+		local_proximity_source = 45
+    }
+	
+	raw_modifier = {
+		minimum_fort_level = 4
+		propagating_zone_of_control = no
+		local_nobles_desired_pop = 0.25
+		local_clergy_desired_pop = 0.25
+	}
+	country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
+}
