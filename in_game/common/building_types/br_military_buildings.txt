@@ -475,7 +475,7 @@ br_pyrgoi = {#frontier watchtowers
 	}
 	
 	raw_modifier = {
-		fort_level = 1
+		minimum_fort_level = 1
 		propagating_zone_of_control = no
 	}
 	remove_if = {
@@ -532,7 +532,7 @@ br_kleisourai = {#fortified mountain passes
 	}
 	
 	raw_modifier = {
-		fort_level = 1
+		minimum_fort_level = 1
 		propagating_zone_of_control = no
 	}
 	#remove_if = {

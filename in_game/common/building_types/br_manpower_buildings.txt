@@ -47,7 +47,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 	modifier = {
 		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
-		local_crown_estate_power = -0.1
+		local_nobles_estate_power = 0.5 #local_crown_estate_power = -0.1
 		local_garrison_size = 0.1
 		local_proximity_source = 20
 	}
@@ -57,7 +57,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 		propagating_zone_of_control = no
 		local_nobles_desired_pop = 0.01
 	}
-	capital_country_modifier = {
+	country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 
