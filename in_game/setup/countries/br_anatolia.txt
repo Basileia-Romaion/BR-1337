@@ -116,6 +116,7 @@ INJECT:SRU = {
 }
 
 INJECT:SUT = {
+	culture_definition = turkoman_culture
 	is_historic = yes
 }
 
@@ -145,12 +146,13 @@ INJECT:JAL = {
 }
 
 INJECT:UGH = { #Ughanids
+	culture_definition = turkoman_culture
 	is_historic = yes
 }
 
 INJECT:JUR = { #Jurmanids
 	is_historic = yes
-	culture_definition = turkmen_culture
+	culture_definition = turkoman_culture
 }
 
 INJECT:GRG = { #Gurgan  (Togha Temur)
@@ -164,12 +166,12 @@ INJECT:HLG = { #Huleguids
 }
 
 INJECT:NGD = { #Neguderi
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
 INJECT:QUN = { #Qara'unas
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
@@ -179,17 +181,17 @@ INJECT:BSD = { #Besüd
 }
 
 INJECT:ART = { #Arlat
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
 INJECT:APD = { #Apardi
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
 INJECT:SLD = { #Suldus
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
@@ -204,7 +206,7 @@ INJECT:YSU = { #Yasa'uri
 }
 
 INJECT:KTT = { #Khuttal
-	culture_definition = turkoman_culture
+	culture_definition = turkmen_culture
 	is_historic = yes
 }
 
