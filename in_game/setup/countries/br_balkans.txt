@@ -83,14 +83,7 @@ REPLACE_OR_CREATE:THS = {
 	religion_definition = orthodox
 }
 
-REPLACE_OR_CREATE:ALB = {
-	color = map_albanian
-	color2 = rgb { 60 60 60 }
 
-	culture_definition = albanian
-	religion_definition = orthodox 
-
-}
 
 REPLACE_OR_CREATE:THP = {
 	color = rgb { 83 184 221 }
@@ -148,6 +141,11 @@ REPLACE_OR_CREATE:NEG = {
 	#BR EDIT
 	culture_definition = latinoi
 	religion_definition = catholic
+}
+
+INJECT:KNI = {
+	is_historic = yes
+	culture_definition = latinoi
 }
 
 # REMOVED TAGS
