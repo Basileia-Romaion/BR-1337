@@ -604,7 +604,6 @@ diplomacy_manager = {
     scripted_mutual = { first = EPI second = S2C type = alliance }
     #Bulgaria
     dependency = { first = BUL second = B1L subject_type = vassal }
-    dependency = { first = B1L second = SMC subject_type = vassal }
     #dependency = { first = B1L second = MZK subject_type = vassal }
     #dependency = { first = B1L second = ANT subject_type = vassal }
     #dependency = { first = B1L second = THP subject_type = vassal }

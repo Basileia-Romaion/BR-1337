@@ -2200,6 +2200,7 @@ building_manager = {
 	cathedral	= { tag = PNK level = 1 location = pinsk } #Eparchy centre
 	cathedral	= { tag = NRK level = 1 location = novogrudok } #Eparchy centre
 
+	orthodox_monastery	= { tag = KIE level = 1 location = kyiv } #Kyiv Pechersk Lavra, 1051
 	orthodox_monastery	= { tag = VOL level = 1 location = volodymyr } #Zymnenskyi Monastery, 992
 	orthodox_monastery	= { tag = VOL level = 1 location = lutsk } #Zhydychyn Monastery, 1227
 	orthodox_monastery	= { tag = HAL level = 1 location = lviv } #Univ Monastery
@@ -4279,7 +4280,7 @@ building_manager = {
 	aqueduct_system = { tag = BYZ level = 1 location = constantinople }
 	aqueduct_system = { tag = PAP level = 1 location = rome }
 	aqueduct_system = { tag = PAP level = 1 location = avignon }
-	aqueduct_system = { tag = CAS level = 1 location = segovia }
+	#aqueduct_system = { tag = CAS level = 1 location = segovia }
 
 
 ###BR### ADDED Buildings ###BR###
@@ -4328,7 +4329,6 @@ building_manager = {
 	orthodox_monastery = { tag = MAM level = 1 location =  saint_katrine }
 	local_shrine = { tag = MAM level = 1 location =  saint_katrine }
 	parish_church = { tag = MAM level = 1 location =  saint_katrine }
-	local_shrine = { tag = MAM level = 1 location =  alexandria }
 	scriptorium = { tag = MAM level = 4 location = alexandria }
 
 	br_mount_athos_building = { tag = BYZ level = 1 location = mount_athos }
@@ -4340,8 +4340,8 @@ building_manager = {
 	clerical_archives = { tag = PAP level = 1 location = rome }
 	clerical_archives = { tag = MAM level = 1 location = alexandria }
 
-	missionary_building = { tag = TRE level = 1 location = sarai_al_jadid }
-	missionary_building = { tag = AIA level = 1 location = astrakhan }
+	#missionary_building = { tag = TRE level = 1 location = sarai_al_jadid }
+	#missionary_building = { tag = AIA level = 1 location = astrakhan }
 
 	#HRE
 	royal_court = { tag = FRA level = 1 location = metz }
@@ -4725,8 +4725,8 @@ building_manager = {
 	#Italy
 	sergeantry	= { tag = N1P level = 1 location = salerno } #Sergeants at arms
 	sergeantry	= { tag = BNV level = 1 location = lucera } #Sergeants at arms
-	nobles_recruitment_center = { tag = BNV level = 1 location = benevento }
-	nobles_recruitment_center = { tag = BNV level = 1 location = potenza }
+	sergeantry = { tag = BNV level = 1 location = benevento }
+	sergeantry = { tag = BNV level = 1 location = potenza }
 
 	br_katapanate_building	= { tag = S2C level = 1 location = bari } #Sergeants at arms
 	br_pronoia_estate = { tag = S2C level = 1 location = bari }
@@ -4736,13 +4736,11 @@ building_manager = {
 	#Estate Manpower buildings
 	
 
-	nobles_recruitment_center = { tag = CRO level = 1 location = zagreb }
-	nobles_recruitment_center = { tag = ARM level = 1 location = ani }
-	nobles_recruitment_center = { tag = ARM level = 1 location = yerevan }
-	nobles_recruitment_center = { tag = GEO level = 1 location = tbilisi }
-	
+	sergeantry = { tag = CRO level = 1 location = zagreb }
+	sergeantry = { tag = ARM level = 1 location = ani }
+	sergeantry = { tag = GEO level = 1 location = tbilisi }
 	nobles_recruitment_center = { tag = MES level = 1 location = arguvan }
-	nobles_recruitment_center = { tag = MES level = 1 location = malatya }
+	sergeantry = { tag = MES level = 1 location = malatya }
 	nobles_recruitment_center = { tag = DER level = 1 location = palu }
 	nobles_recruitment_center = { tag = GEO level = 1 location = anaklia }
 	nobles_recruitment_center = { tag = GEO level = 1 location = kutaisi }
@@ -4756,21 +4754,16 @@ building_manager = {
 	peasants_training_grounds = { tag = ARM level = 1 location = tercan }
 	peasants_training_grounds = { tag = DER level = 1 location = harput }
 	peasants_training_grounds = { tag = MES level = 1 location = arapgir }
-	nobles_recruitment_center = { tag = BUL level = 1 location = tarnovo }
-	nobles_recruitment_center = { tag = BUL level = 1 location = sredets }
-	nobles_recruitment_center = { tag = BUL level = 1 location = vidin }
-	nobles_recruitment_center = { tag = BUL level = 1 location = sliven }
-	nobles_recruitment_center = { tag = BUL level = 1 location = targoviste_BUL }
-	nobles_recruitment_center = { tag = BUL level = 1 location = drastar }
+
+	sergeantry = { tag = BUL level = 1 location = sredets }
 	nobles_recruitment_center = { tag = BUL level = 1 location = pleven }
 	peasants_training_grounds = { tag = BUL level = 1 location = ruse }
 	peasants_training_grounds = { tag = BUL level = 1 location = cherven }
 	peasants_training_grounds = { tag = BUL level = 1 location = stanimaka }
 	peasants_training_grounds = { tag = BUL level = 1 location = shumen }
-	nobles_recruitment_center = { tag = SER level = 1 location = prizren }
-	nobles_recruitment_center = { tag = SER level = 1 location = ohrid }
-	nobles_recruitment_center = { tag = SER level = 1 location = skopje }
-	nobles_recruitment_center = { tag = SER level = 1 location = nis }
+	sergeantry = { tag = SER level = 1 location = prizren }
+	sergeantry = { tag = SER level = 1 location = skopje }
+	sergeantry = { tag = SER level = 1 location = nis }
 	nobles_recruitment_center = { tag = SER level = 1 location = smederevo }
 	nobles_recruitment_center = { tag = SER level = 1 location = uzice }
 	nobles_recruitment_center = { tag = SER level = 1 location = soko_grad }
@@ -4788,8 +4781,7 @@ building_manager = {
 	nobles_recruitment_center = { tag = SER level = 1 location = trgoviste_SER }
 	nobles_recruitment_center = { tag = SER level = 1 location = krupanj }
 	nobles_recruitment_center = { tag = BUL level = 1 location = sozopol }
-	nobles_recruitment_center = { tag = BUL level = 1 location = varna }
-	nobles_recruitment_center = { tag = BUL level = 1 location = constanta }
+	sergeantry = { tag = BUL level = 1 location = constanta }
 	nobles_recruitment_center = { tag = BUL level = 1 location = stanimaka }
 	nobles_recruitment_center = { tag = BUL level = 1 location = melnik }
 	nobles_recruitment_center = { tag = BUL level = 1 location = lardeja }
@@ -6967,7 +6959,7 @@ building_manager = {
 	trade_company_governance = { tag = VTC level = 1 location = larnaca }
 	trade_company_garrison = { tag = VTC level = 1 location = karystos }
 	trade_company_garrison = { tag = VTC level = 1 location = naxos }
-	trade_company_garrison = { tag = VTC level = 1 location = samos }
+	trade_company_garrison = { tag = GTC level = 1 location = samos }
 	fondaco = { tag = VTC level = 2 location = alexandria }
 
 	trade_office = { tag = VTC level = 4 location = acre }
@@ -7028,20 +7020,15 @@ building_manager = {
 
 	#BYZ & Subjects
 	trade_office = { tag = BYZ level = 4 location = theodoro }
-	trade_office = { tag = FEO level = 4 location = kyiv }
-	trade_office = { tag = FEO level = 2 location = moscow }
 	trade_office = { tag = FEO level = 1 location = iasi }
 	trade_office = { tag = FEO level = 2 location = lviv }
 	trade_office = { tag = FEO level = 2 location = sarai_al_jadid }
 	trade_office = { tag = FEO level = 2 location = astrakhan }
-	trade_office = { tag = TRE level = 2 location = tbilisi }
 	trade_office = { tag = TRE level = 2 location = ani }
 	trade_office = { tag = TRE level = 1 location = van }
-	trade_office = { tag = TRE level = 1 location = astrakhan }
 	trade_office = { tag = BYZ level = 1 location = bucharest }
 	trade_office = { tag = DYR level = 1 location = prizren }
 	trade_office = { tag = DYR level = 1 location = dubrovnik }
-	trade_office = { tag = BYZ level = 4 location = antioch }
 	trade_office = { tag = AOI level = 2 location = aleppo }
 	trade_office = { tag = AOI level = 2 location = urfa }
 	trade_office = { tag = AOI level = 1 location = acre }
