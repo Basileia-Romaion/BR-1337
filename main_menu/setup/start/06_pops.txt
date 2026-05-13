@@ -32143,11 +32143,11 @@ bursa = {
 	define_pop = {	type = burghers	size = 3.591	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = burghers	size = 0.670	culture = romanyoti	religion = judaism }
 	define_pop = {	type = burghers	size = 1.375	culture = latinoi	religion = catholic }
-	define_pop = {	type = peasants	size = 42.634	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 38.634	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.867	culture = romanyoti	religion = judaism }
 	define_pop = {	type = soldiers	size = 0.297	culture = varangian	religion = orthodox }
 	define_pop = {	type = clergy	size = 0.018	culture = latinoi	religion = catholic }
-	define_pop = {	type = peasants	size = 0.839	culture = latinoi	religion = catholic }
+	define_pop = {	type = peasants	size = 2.839	culture = latinoi	religion = catholic }
 }
 adranos = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
@@ -32161,7 +32161,13 @@ harmancik = {
 	define_pop = {	type = peasants	size = 20.943	culture = greek_culture	religion = orthodox }
 }
 iznik = {
-	define_pop = {	type = peasants	size = 46.375	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = nobles	size = 0.627	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = clergy	size = 2.153	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = burghers	size = 3.591	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 56.375	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = burghers	size = 0.670	culture = romanyoti	religion = judaism }
+	define_pop = {	type = burghers	size = 0.375	culture = latinoi	religion = catholic }
+	define_pop = {	type = peasants	size = 3.167	culture = romanyoti	religion = judaism }
 	define_pop = {	type = soldiers	size = 0.397	culture = varangian	religion = orthodox }
 }
 lake_iznik = {
@@ -32226,7 +32232,7 @@ izmit = {
 	define_pop = {	type = burghers	size = 3.591	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = burghers	size = 1.870	culture = romanyoti	religion = judaism }
 	define_pop = {	type = burghers	size = 1.975	culture = latinoi	religion = catholic }
-	define_pop = {	type = peasants	size = 66.934	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 50.934	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.688	culture = romanyoti	religion = judaism }
 	define_pop = {	type = soldiers	size = 0.297	culture = varangian	religion = orthodox }
 	define_pop = {	type = clergy	size = 0.018	culture = latinoi	religion = catholic }

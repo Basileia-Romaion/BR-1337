@@ -54,8 +54,9 @@ REPLACE_OR_CREATE:a_akritai = {
 }
 
 REPLACE_OR_CREATE:a_varangians = {
-	is_special = yes
+	content_priority = 500
 	copy_from = a_age_1_traditions_heavy_infantry
+	is_special = yes
 
 	upgrades_to_only = br_renaissance_varangians
 

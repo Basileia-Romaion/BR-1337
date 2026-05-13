@@ -383,7 +383,7 @@ br_restore_roman_status = {
 		scope:recipient = {
 			make_subject_of = {
 				target = scope:actor
-				type = subject_type:vassal
+				type = subject_type:br_thema_subject
 			}
 		}
 	}
