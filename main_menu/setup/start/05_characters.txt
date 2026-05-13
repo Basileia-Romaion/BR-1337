@@ -84232,7 +84232,7 @@ adm = 31 dip = 34 mil = 24
 		culture = danube_bavarian
 		religion = catholic
 		estate = nobles_estate
-		adm = 43 dip = 41 adm = 31
+		adm = 43 dip = 41 mil = 31
 		birth_date = 1274.10.4
 		death_date = 1319.8.12
 		birth = basel
@@ -97110,7 +97110,8 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1318.1.1 #Unknown
 		birth = ani
 		father = arm_zakare_iv
-		dynasty = bagratuni_dynasty = ARM
+		dynasty = bagratuni_dynasty 
+		tag = ARM
 	}
 
 	arm_jacob_ii_of_cilicia = { #patriarch https://en.wikipedia.org/wiki/Jacob_II_of_Cilicia

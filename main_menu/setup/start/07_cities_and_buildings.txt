@@ -3961,7 +3961,6 @@ building_manager = {
 	stockade = { tag = LLS level = 1 location = jianchang_sichuan }
 	stockade = { tag = DIL level = 1 location = kozluk }
 	stockade = { tag = MES level = 1 location = arapgir }
-	stockade = { tag = KOG level = 1 location = sebinkarahisar }
 	stockade = { tag = HSN level = 1 location = savur }
 	stockade = { tag = HSN level = 1 location = hasankeyf }
 	stockade = { tag = TUR level = 1 location = palu }
@@ -4507,7 +4506,6 @@ building_manager = {
 	farming_village = { tag = AON level = 1 location = cubuk }
 	farming_village = { tag = THE level = 1 location = giannitsa }
 
-	fishing_village = { tag = K1B level = 1 location = marmaris }
 	fishing_village = { tag = K1B level = 1 location = kos }
 	fishing_village = { tag = K1B level = 1 location = alaiye }
 	forest_village = { tag = K1B level = 1 location = selinti }
@@ -4708,10 +4706,13 @@ building_manager = {
 	br_doukate_building = { tag = TRE level = 1 location = trebizond }
 	thema_headquarters = { tag = CYP level = 1 location = nicosia_cyp }
 	thema_headquarters = { tag = KAP level = 1 location = sivas }
+	thema_headquarters = { tag = AN3 level = 1 location = sebinkarahisar }
+	thema_headquarters = { tag = CIL level = 1 location = silifke }
 
 	
 
 	#Balkans
+	br_doukate_building = { tag = MOE level = 1 location = mystras }
 	br_doukate_building = { tag = DYR level = 1 location = durres }
 	br_doukate_building = { tag = EPI level = 1 location = arta }
 	br_doukate_building = { tag = THE level = 1 location = thessaloniki }
@@ -4739,7 +4740,7 @@ building_manager = {
 	nobles_recruitment_center = { tag = ARM level = 1 location = ani }
 	nobles_recruitment_center = { tag = ARM level = 1 location = yerevan }
 	nobles_recruitment_center = { tag = GEO level = 1 location = tbilisi }
-	nobles_recruitment_center = { tag = KOG level = 1 location = sebinkarahisar }
+	
 	nobles_recruitment_center = { tag = MES level = 1 location = arguvan }
 	nobles_recruitment_center = { tag = MES level = 1 location = malatya }
 	nobles_recruitment_center = { tag = DER level = 1 location = palu }
@@ -5712,7 +5713,6 @@ building_manager = {
 	farming_village = { tag = BYZ level = 1 location = guzelhisar }
 	farming_village = { tag = BYZ level = 1 location = seyhli }
 	farming_village = { tag = BYZ level = 1 location = kula }
-	farming_village = { tag = BYZ level = 1 location = marmaris }
 	farming_village = { tag = BYZ level = 1 location = gerze }
 	farming_village = { tag = BYZ level = 1 location = nigde }
 	farming_village = { tag = BYZ level = 1 location = lapseki }
@@ -6201,13 +6201,7 @@ building_manager = {
 	nobility_fortifications = { tag = NAX level = 1 location = naxos }
 	local_markets = { tag = NAX level = 1 location = naxos }
 	clerical_archives = { tag = AOI level = 1 location = antioch }
-	guild_hall = { tag = ATH level = 1 location = athens }
-	guild_hall = { tag = ATH level = 1 location = corinth }
-	guild_hall = { tag = THS level = 1 location = larissa }
-	guild_hall = { tag = CRT level = 1 location = candia }
 	local_estates = { tag = CEP level = 1 location = cephalonia }
-	guild_hall = { tag = DYR level = 1 location = durres }
-	guild_hall = { tag = CYP level = 1 location = larnaca }
 	merchants_guild = { tag = ATH level = 1 location = athens }
 	merchants_guild = { tag = ATH level = 1 location = corinth }
 	merchants_guild = { tag = THS level = 1 location = larissa }
@@ -6367,7 +6361,6 @@ building_manager = {
 	local_markets = { tag = BYZ level = 1 location = alaiye }
 	local_markets = { tag = BYZ level = 1 location = kas }
 	local_markets = { tag = BYZ level = 1 location = megri }
-	local_markets = { tag = BYZ level = 1 location = marmaris }
 	local_markets = { tag = BYZ level = 1 location = samos }
 	local_markets = { tag = BYZ level = 1 location = bodrum }
 	local_markets = { tag = BYZ level = 1 location = foca }
@@ -6441,9 +6434,7 @@ building_manager = {
 	guild_hall = { tag = BYZ level = 1 location = smyrna }
 	merchants_guild = { tag = BYZ level = 1 location = smyrna }
 	burgher_mansion = { tag = BYZ level = 1 location = smyrna }
-	guild_hall = { tag = BYZ level = 1 location = bursa }
 	merchants_guild = { tag = BYZ level = 1 location = bursa }
-	guild_hall = { tag = BYZ level = 1 location = iznik }
 	merchants_guild = { tag = BYZ level = 1 location = iznik }
 	guild_hall = { tag = BYZ level = 1 location = izmit }
 	merchants_guild = { tag = BYZ level = 1 location = izmit }
@@ -6460,7 +6451,6 @@ building_manager = {
 	merchants_guild = { tag = TRE level = 1 location = kaffa }
 	burgher_mansion = { tag = TRE level = 1 location = kaffa }	
 	artisan_guilds = { tag = TRE level = 1 location = kaffa }
-	guild_hall = { tag = GTC level = 1 location = tana }
 	merchants_guild = { tag = GTC level = 1 location = tana }
 	burgher_mansion = { tag = GTC level = 1 location = tana }	
 	artisan_guilds = { tag = GTC level = 1 location = tana }
@@ -6510,14 +6500,11 @@ building_manager = {
 	local_markets = { tag = VTC level = 1 location = corfu }
 	local_markets = { tag = CEP level = 1 location = cephalonia }
 	nobility_fortifications = { tag = CIL level = 1 location = adana }
-	nobility_fortifications = { tag = CIL level = 1 location = silifke }
 	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
-	nobility_fortifications = { tag = ANA level = 1 location = aksaray }
 	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
 	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
 	nobility_fortifications = { tag = ANA level = 1 location = zile }
 	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
-	nobility_fortifications = { tag = MOE level = 1 location = mystras }
 	nobility_fortifications = { tag = ACH level = 1 location = andravida }
 
 	nobility_fortifications = { tag = BUL level = 1 location = branicevo }
@@ -6617,7 +6604,6 @@ building_manager = {
 	stockade = { tag = CYP level = 1 location = nicosia_cyp }
 	stockade = { tag = CRT level = 1 location = candia }
 	stockade = { tag = MOE level = 1 location = tripolitsa }
-	stockade = { tag = MOE level = 1 location = mystras }
 	stockade = { tag = THS level = 1 location = larissa }
 	stockade = { tag = EPI level = 1 location = ioannina }
 	stockade = { tag = DYR level = 1 location = durres }
@@ -6946,7 +6932,6 @@ building_manager = {
 	overseas_trading_post = { tag = GTC level = 1 location = eregli }
 	overseas_trading_post = { tag = GTC level = 1 location = burgas }
 	overseas_trading_post = { tag = GTC level = 1 location = tripoli_syria }
-	overseas_trading_post = { tag = GTC level = 1 location = marmaris }
 	trade_office = { tag = GTC level = 2 location = tbilisi }
 	trade_office = { tag = GTC level = 2 location = astrakhan }
 	trade_office = { tag = GTC level = 2 location = sarai_al_jadid }

@@ -1002,7 +1002,7 @@ br_doukate_building = {
 		local_nobles_desired_pop = 0.05
 		local_clergy_desired_pop = 0.05
 	}
-	country_modifier = {
+	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 }
@@ -1065,7 +1065,7 @@ br_katapanate_building = {
 		local_nobles_desired_pop = 0.1
 		local_clergy_desired_pop = 0.1
 	}
-	country_modifier = {
+	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 }
@@ -1129,7 +1129,7 @@ br_despotate_building = {
 		local_nobles_desired_pop = 0.15
 		local_clergy_desired_pop = 0.15
 	}
-	country_modifier = {
+	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 }
@@ -1192,7 +1192,7 @@ br_dioikesis_building = {
 		local_nobles_desired_pop = 0.25
 		local_clergy_desired_pop = 0.25
 	}
-	country_modifier = {
+	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 }

@@ -255,63 +255,115 @@
 	}
 
 
-	ai_desire_to_join = {
-		add = {
-			desc = "OPINION_OF_ROMAN_EMPEROR"
-			value = {
-				scope:recipient = {
-					leader_country = {
-						root = {
-							value = this_opinion_of_prev
-							multiply = 0.2
-						}
+    ai_desire_to_join = {
+		if = {
+			limit = { country_rank_level > 1 }
+			subtract = {
+				desc = "game_concept_country_rank"
+				value = {
+					value = country_rank_level
+					multiply = 100
+				}
+			}
+		}
+		subtract = {
+			desc = "game_concept_tax_base"
+			value = country_tax_base
+		}
+		if = {
+			limit = { exists = scope:recipient }
+			#we only check countries which have a cb on the potential joinder - any more countries would be a curse to performance
+			every_casus_belli_on_us = {
+				if = {
+					limit = { is_member_of_international_organization = scope:recipient }
+					subtract = {
+						desc = "THREATENED_BY_IO_MEMBERS"
+						value = "threat_level_to(root)"
+					}
+				}
+				else = {
+					add = {
+						desc = "THREATENED_BY_NON_IO_MEMBERS"
+						value = "threat_level_to(root)"
+						divide = 2	#outside forces must be horrifying before we consider joining hre
 					}
 				}
 			}
 		}
+		add = {
+			desc = "game_concept_diplomatic_reputation"
+			value = {
+				value = "scope:actor.modifier:diplomatic_reputation"
+				multiply = 0.5  # +0.5 reasons per 1 diprep
+			}
+		}
 		if = {
 			limit = {
-				opinion = {
-					target = scope:recipient.leader_country
-					value < -20
+				OR = {
+					has_ruler = yes
+					AND = {
+						has_regent = yes
+						has_heir = yes
+					}
+				}
+				ruler_or_heir_if_regent ?= {
+					has_dynasty = yes
+					dynasty ?= {
+						dynasty_home ?= {
+							is_owned_by_international_organization = root
+						}
+					}
 				}
 			}
 			add = {
-				desc = "POOR_RELATIONS"
-				value = -1000
-			}
-		}
-		add = {
-			desc = "BR_EMPEROR_DIP_REPUTATION"
-			scope:recipient = {
-				value = leader_country.modifier:diplomatic_reputation
-				multiply = 2
+				desc = "SEAT_OF_DYNASTY_IN_IO"
+				value = 50
 			}
 		}
 		if = {
 			limit = {
-				NOT = { within_diplomatic_range = scope:recipient.leader_country }
+				exists = scope:actor
+				OR = {
+					culture ?= scope:actor.culture
+					ruler ?= {
+						culture ?= scope:actor.culture
+					}
+				}
 			}
 			add = {
-				desc = "OUTSIDE_OF_DIP_RANGE"
-				value = -1000
+				desc = "PRIMARY_OR_RULER_CULTURE_EQUAL_TO_LEADER_CULTURE"
+				value = 25
 			}
-		}
-		add = {
-			desc = "DISTANCE_FROM_ROMANLAND"
-			value = "border_distance_to(scope:recipient.leader_country)"
-			multiply = -0.05
-			min = -1000
 		}
 		if = {
-			limit = { at_war = yes }
+			limit = {
+				exists = scope:actor
+				exists = scope:recipient
+				any_neighbor_country = {
+					is_threat_to = root
+					NOT = { is_member_of_international_organization = scope:recipient }
+					OR = {
+						is_rival_of = scope:actor
+						is_enemy_of = scope:actor
+					}
+				}
+			}
 			add = {
+				desc = "THREATENED_BY_LEADER_RIVALS_OR_ENEMIES"
+				value = 25
+			}
+		}
+		if = {
+			limit = {
+				at_war = yes
+			}
+			subtract = {
 				desc = "IS_AT_WAR"
-				value = -1000
+				value = 1000
 			}
 		}
 	}
-	
+
 	ai_desire_to_allow_new_member = {
 		add = {
 			desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"

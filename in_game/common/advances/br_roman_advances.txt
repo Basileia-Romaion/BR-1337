@@ -488,7 +488,7 @@ br_absolutism_varangians_advance = {
 br_revolutions_varangians_advance = {
 	age = age_6_revolutions
 	potential = { has_or_had_tag = BYZ }
-	requires = byz_the_new_imperial_army
+	requires = recruitment_improvements_revolutions
 	unlock_unit = br_revolutions_varangians
 	icon = expand_varangian_guard_advance
 	#num_of_varangian_units = 14
@@ -574,7 +574,7 @@ br_age_5_prokoursatores_advance = {
 		}
 	}
 	icon = byz_cataphracts_advance
-	requires = byz_modernized_strategikon
+	requires = roman_centralized_command
 	unlock_unit = br_age_5_prokoursatores
 	ai_weight = { add = 5 }
 }
@@ -588,7 +588,7 @@ br_age_6_basilikoi_advance = {
 		}
 	}
 	icon = byz_cataphracts_advance
-	requires = byz_the_new_imperial_army
+	requires = recruitment_improvements_revolutions
 	unlock_unit = br_age_6_basilikoi
 	ai_weight = { add = 5 }
 }

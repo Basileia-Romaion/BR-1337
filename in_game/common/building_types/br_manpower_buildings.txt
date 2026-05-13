@@ -62,7 +62,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 		propagating_zone_of_control = no
 		local_nobles_desired_pop = 0.01
 	}
-	country_modifier = {
+	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
 

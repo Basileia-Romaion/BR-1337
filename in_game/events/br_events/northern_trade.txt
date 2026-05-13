@@ -61,10 +61,10 @@ northern_trade.2={
             }
         }
         c:E1Y= {
-            trigger_event_silently = northern_trade.2a
+            trigger_event_silently = northern_trade.4
         }
         c:E2Y= {
-            trigger_event_silently = northern_trade.2a
+            trigger_event_silently = northern_trade.4
         }
     }
 }
@@ -114,7 +114,6 @@ northern_trade.3 = {
 }
 
 northern_trade.4= {
-    orphan=yes
     type = country_event
     title = northern_trade.4.title
     desc = northern_trade.4.desc

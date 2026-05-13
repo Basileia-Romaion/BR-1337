@@ -21,6 +21,30 @@ government = {
 	parliament = {
 		parliament_type = estate_parliament
 	}
+
+	laws = {
+		censorship = strict_censorship
+		theocratic_leadership = monastic_order
+		holy_mission_law = mission_of_protection_policy
+		divine_cause_law = safeguard_holy_sites_policy
+		education_masses_law = theocratic_education
+		administrative_system = central_councils
+		marriage_law = celibacy
+		heir_religion_law = heir_special_succession
+		cultural_traditions_law = martial_society
+		foreign_cultural_law = blood_tax_of_foreigners
+		language_of_pleading = language_of_pleading_court
+		legal_code_law = civil_law_policy
+		maritime_law = protect_trade_routes
+		piracy_law = anti_piracy_policy
+		distribution_of_power_law = dop_favor_the_clergy
+		immigration_law = open_borders_law
+		mining_law = nobles_mining_law
+		coin_laws = gold_and_silver_coins
+		legal_code_law = byzantine_law
+		feudal_de_jure_law = by_blood
+		patriarchate_law = state_patriarchate_policy
+	}
 	
 	privilege = {
 		#Nobles
@@ -50,29 +74,6 @@ government = {
 	}
 	reforms = {
 		military_order_reform #br_military_order_reform
-	}
-	laws = {
-		censorship = strict_censorship
-		theocratic_leadership = monastic_order
-		holy_mission_law = mission_of_protection_policy
-		divine_cause_law = safeguard_holy_sites_policy
-		education_masses_law = theocratic_education
-		administrative_system = central_councils
-		marriage_law = celibacy
-		heir_religion_law = heir_special_succession
-		cultural_traditions_law = martial_society
-		foreign_cultural_law = blood_tax_of_foreigners
-		language_of_pleading = language_of_pleading_court
-		legal_code_law = civil_law_policy
-		maritime_law = protect_trade_routes
-		piracy_law = anti_piracy_policy
-		distribution_of_power_law = dop_favor_the_clergy
-		immigration_law = open_borders_law
-		mining_law = nobles_mining_law
-		coin_laws = gold_and_silver_coins
-		legal_code_law = byzantine_law
-		feudal_de_jure_law = by_blood
-		patriarchate_law = state_patriarchate_policy
 	}
 }
 

@@ -156,7 +156,16 @@
 	}
 
 	on_enable = {
-		add_reform = government_reform:br_sub_pronoia_subject #br added
+		if = {
+			limit = {
+				NOR ={
+            		has_reform = government_reform:br_sub_pronoia_subject
+            		has_reform = government_reform:br_sub_theme_subject
+           			has_reform = government_reform:br_naval_akritai_reform
+        		}
+			}
+			add_reform = government_reform:br_sub_pronoia_subject #br added
+		}
 		change_heir_selection = heir_selection:dynastic_elective_succession #br added
 	}
 
@@ -387,7 +396,16 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	}
 
 	on_enable = {
-		add_reform = government_reform:br_sub_theme_subject
+		if = {
+			limit = {
+				NOR ={
+            		has_reform = government_reform:br_sub_pronoia_subject
+            		has_reform = government_reform:br_sub_theme_subject
+           			has_reform = government_reform:br_naval_akritai_reform
+        		}
+			}
+			add_reform = government_reform:br_sub_theme_subject
+		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
 	}
 
@@ -548,7 +566,16 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	}
 
 	on_enable = {
-		add_reform = government_reform:br_naval_akritai_reform
+		if = {
+			limit = {
+				NOR ={
+            		has_reform = government_reform:br_sub_pronoia_subject
+            		has_reform = government_reform:br_sub_theme_subject
+           			has_reform = government_reform:br_naval_akritai_reform
+        		}
+			}
+			add_reform = government_reform:br_naval_akritai_reform
+		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
 	}
 

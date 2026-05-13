@@ -23,6 +23,26 @@ government = {
 		parliament_type = estate_parliament
 	}
 
+	laws = {
+		legal_code_law = byzantine_law
+		royal_court_customs_law = br_roman_court_customs
+		distribution_of_power_law = br_roman_distribution_of_power_law
+		#administrative_system = pronoia_system
+		medieval_levy_law = br_thema_levies
+		cultural_traditions_law = br_roman_tradition
+		br_military_frontier = br_frontier_maintained
+		feudal_de_jure_law = by_blood
+		censorship = limited_censorship
+		education_masses_law = basic_religious_education
+		administrative_system = central_councils
+		marriage_law = monogamous_marriage
+		heir_religion_law = heir_same_religion
+		maritime_law = protect_trade_routes
+		piracy_law = anti_piracy_policy
+		immigration_law = open_borders_law
+		mining_law = peasants_mining_law
+	}
+
 	privilege = {
 		#nobles
 		nobles_land_rights
@@ -47,27 +67,7 @@ government = {
 
 	reforms = {
 		br_new_world_colonial_reform
-		br_elysium_spqe
-	}
-				
-	laws = {
-		legal_code_law = byzantine_law
-		royal_court_customs_law = br_roman_court_customs
-		distribution_of_power_law = br_roman_distribution_of_power_law
-		#administrative_system = pronoia_system
-		medieval_levy_law = br_thema_levies
-		cultural_traditions_law = br_roman_tradition
-		br_military_frontier = br_frontier_maintained
-		feudal_de_jure_law = by_blood
-		censorship = limited_censorship
-		education_masses_law = basic_religious_education
-		administrative_system = central_councils
-		marriage_law = monogamous_marriage
-		heir_religion_law = heir_same_religion
-		maritime_law = protect_trade_routes
-		piracy_law = anti_piracy_policy
-		immigration_law = open_borders_law
-		mining_law = peasants_mining_law
+		br_spqe_reform
 	}
 	
 }

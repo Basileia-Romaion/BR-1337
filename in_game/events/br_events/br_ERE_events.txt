@@ -1,4 +1,6 @@
-﻿namespace = br_ere_events
+﻿#hidden_effect = {
+
+namespace = br_ere_events
 
 	#trigger = {
 	#	character:byz_andronikos_iii_palaiologos ?= {	is_alive = no	}
@@ -12,7 +14,6 @@ br_ere_events.1 = {
 	desc = br_ere_events.1.desc
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
-	#orphan = yes
 	trigger = {
 		tag = BYZ
 	}
@@ -23,13 +24,7 @@ br_ere_events.1 = {
 	}
 
 	immediate = {
-		#c:BYZ = {
-		#	international_organization:roman_world = {
-				#add_policy_to_international_organization = policy:br_romaiokratia_weak_policy
-		#	}
-		#}
 	}
-
 	option = {
 		historical_option = yes
 		name = br_ere_events.1.a
@@ -38,36 +33,6 @@ br_ere_events.1 = {
 			text = br_ere_events.1.att
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
 	   	}
-		if = {
-			limit = {
-				has_dlc = "d008_fate_of_the_phoenix"
-			}
-			c:A1G = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:pronoia
-				}
-			}
-			c:S1Y = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:pronoia
-				}
-			}
-			c:K1B = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:pronoia
-				}
-			}
-			c:FEO = {
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:pronoia
-				}
-			}
-		}
-		
 	}
 }
 
@@ -76,9 +41,7 @@ br_ere_events.2 = {
 	title = br_ere_events.2.title
 	desc = br_ere_events.2.desc
 	fire_only_once = yes
-	orphan = yes
 	trigger = {
-		#tag = BYZ
 	}
 	
 	illustration_tags = {
@@ -87,23 +50,14 @@ br_ere_events.2 = {
 	}
 
 	immediate = {
-		#if = {
-		#	limit = {
-		#		NOT = { is_at_war_with = c:NAX }
-		#	}
-		#	declare_war_with_cb = {  target = c:NAX type = casus_belli:cb_annex }
-		#}
 	}
 
 	option = {
 		historical_option = yes
-		#high_reward_option = yes
 		name = br_ere_events.2.a
-
 		c:A1G = {
 			trigger_event_non_silently = { id = br_ere_events.2 }
 		}
-		
 	}
 }
 
@@ -145,23 +99,9 @@ br_ere_events.3 = {
 							capital ?= { region = region:balkan_region }
 						}
 					}
-					if = {
-						limit = {
-							has_dlc = "d008_fate_of_the_phoenix"
-						}
-						make_subject_of = {
-							target = c:BYZ
-							type = subject_type:pronoia
-						}
-					}
-					else_if = {
-						limit = {
-							NOT = { has_dlc = "d008_fate_of_the_phoenix" }
-						}
-						make_subject_of = {
-							target = c:BYZ
-							type = subject_type:vassal
-						}
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:br_thema_subject
 					}	
 				}
 			}
@@ -176,164 +116,79 @@ br_ere_events.3 = {
 		}
 		custom_tooltip = {
 			text = br_ere_events.3.btt
-			if = {
-				limit = {
-					has_dlc = "d008_fate_of_the_phoenix"
-				}
-				c:ATH = {
-					annex_country = { country = c:ACH }
-					annex_country = { country = c:MOE }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:THE = {
-					annex_country = { country = c:THS }
-					annex_country = { country = c:B0R }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:AN8 = {
-					annex_country = { country = c:AN1 }
-					annex_country = { country = c:AN7 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:AN10 = {
-					annex_country = { country = c:AN3 }
-					annex_country = { country = c:AN2 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:AON = {
-					annex_country = { country = c:AN4 }
-					annex_country = { country = c:AN11 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:ICO = {
-					annex_country = { country = c:AN9 }
-					annex_country = { country = c:AN12 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:TRE = {
-					annex_country = { country = c:AN6 }
-					annex_country = { country = c:P2N }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:pronoia
-					}
-				}
-				c:AN13 = {
-					annex_country = { country = c:AN5 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
-				}
-				c:AOI = {
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
-				}
-				c:OHS = {
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
+			c:ATH = {
+				annex_country = { country = c:ACH }
+				annex_country = { country = c:MOE }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_dlc = "d008_fate_of_the_phoenix" }
+			c:THE = {
+				annex_country = { country = c:THS }
+				annex_country = { country = c:B0R }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:ATH = {
-					annex_country = { country = c:ACH }
-					annex_country = { country = c:MOE }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:AN8 = {
+				annex_country = { country = c:AN1 }
+				annex_country = { country = c:AN7 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:THE = {
-					annex_country = { country = c:THS }
-					annex_country = { country = c:B0R }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:AN10 = {
+				annex_country = { country = c:AN3 }
+				annex_country = { country = c:AN2 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:AN8 = {
-					annex_country = { country = c:AN1 }
-					annex_country = { country = c:AN7 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:AON = {
+				annex_country = { country = c:AN4 }
+				annex_country = { country = c:AN11 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:AN10 = {
-					annex_country = { country = c:AN3 }
-					annex_country = { country = c:AN2 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:ICO = {
+				annex_country = { country = c:AN9 }
+				annex_country = { country = c:AN12 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:AON = {
-					annex_country = { country = c:AN4 }
-					annex_country = { country = c:AN11 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:TRE = {
+				annex_country = { country = c:AN6 }
+				annex_country = { country = c:P2N }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:ICO = {
-					annex_country = { country = c:AN9 }
-					annex_country = { country = c:AN12 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:AN13 = {
+				annex_country = { country = c:AN5 }
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:TRE = {
-					annex_country = { country = c:AN6 }
-					annex_country = { country = c:P2N }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:vassal
-					}
+			}
+			c:AOI = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:br_thema_subject
 				}
-				c:AN13 = {
-					annex_country = { country = c:AN5 }
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
-				}
-				c:AOI = {
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
-				}
-				c:OHS = {
-					make_subject_of = {
-						target = c:BYZ
-						type = subject_type:march
-					}
+			}
+			c:OHS = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:march
 				}
 			}
 		}
@@ -365,7 +220,7 @@ br_ere_events.4 = {
 		name = br_ere_events.4.a
 
 		international_organization:roman_world = {
-			remove_law_from_international_organization = policy:br_romaiokratia_weak_policy
+			#remove_law_from_international_organization = policy:br_romaiokratia_weak_policy
 			add_policy_to_international_organization = policy:br_romaiokratia_high_policy
 		}
 		annex_country = { country = c:S1Y }
@@ -450,10 +305,7 @@ br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
 	}
 
 	trigger = {
-
-
 		has_ruler = yes
-
 		ruler = {
 			adm >= 50
 		}
@@ -471,11 +323,8 @@ br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
 		}
 	}
 
-
 	immediate =  {
-
 		root.ruler = { save_scope_as = ambitious_ruler }
-
 		root.ruler = {
 			set_variable = ruler_at_time_of_br_ere_2000
 		}
@@ -567,16 +416,12 @@ br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.
 	#historical_info = br_ere_events.2001.historical_info
 
 	trigger = {
-
 		has_ruler = yes
-
 		ruler = { has_variable = ruler_at_time_of_br_ere_2000 }
 	}
 
 	immediate =  {
-
 		root.ruler = { save_scope_as = ambitious_ruler }
-
 	}
 	option = {
 		name = br_ere_events.2001.a
@@ -588,14 +433,12 @@ br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.
 		}
 
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
-
 		add_country_modifier = { modifier = varangian_custodianship years = 10 mode = add_and_extend }
 
 		change_societal_value = {
 			type = centralization_vs_decentralization
 			value = societal_value_large_move_to_right
 		}
-
 		change_societal_value = {
 			type = belligerent_vs_conciliatory
 			value = societal_value_minor_move_to_right
