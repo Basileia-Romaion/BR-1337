@@ -4686,14 +4686,14 @@ building_manager = {
 
 	#Anatolia
 	thema_headquarters = { tag = BYZ level = 1 location = iznik }
-	thema_headquarters = { tag = BYZ level = 1 location = smyrna }
+	br_doukate_building = { tag = BYZ level = 1 location = smyrna }
 	#thema_headquarters = { tag = BYZ level = 1 location = bursa }
 	#thema_headquarters = { tag = BYZ level = 1 location = izmit }
-	thema_headquarters = { tag = BYZ level = 1 location = edirne }
+	br_doukate_building = { tag = BYZ level = 1 location = edirne }
 	thema_headquarters = { tag = BYZ level = 1 location = kutahya }
 	thema_headquarters = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	thema_headquarters = { tag = BYZ level = 1 location = lazkiye }
-	thema_headquarters = { tag = BYZ level = 1 location = antalya }
+	br_doukate_building = { tag = BYZ level = 1 location = antalya }
 	thema_headquarters = { tag = BYZ level = 1 location = milas }
 	thema_headquarters = { tag = BYZ level = 1 location = bergama }
 	thema_headquarters = { tag = AON level = 1 location = ankara }
@@ -4701,20 +4701,20 @@ building_manager = {
 	thema_headquarters = { tag = ICO level = 1 location = konya }
 	thema_headquarters = { tag = ICO level = 1 location = aksaray }
 	thema_headquarters = { tag = AN6 level = 1 location = samsun }
-	thema_headquarters = { tag = KAP level = 1 location = kayseri }
+	br_doukate_building = { tag = KAP level = 1 location = kayseri }
 	thema_headquarters = { tag = CIL level = 1 location = tarsus }
-	thema_headquarters = { tag = AOI level = 1 location = antioch }
+	br_katapanate_building = { tag = AOI level = 1 location = antioch }
 	thema_headquarters = { tag = PAF level = 1 location = sinop}
-	thema_headquarters = { tag = TRE level = 1 location = trebizond }
+	br_doukate_building = { tag = TRE level = 1 location = trebizond }
 	thema_headquarters = { tag = CYP level = 1 location = nicosia_cyp }
 	thema_headquarters = { tag = KAP level = 1 location = sivas }
 
 	
 
 	#Balkans
-	thema_headquarters = { tag = DYR level = 1 location = durres }
-	thema_headquarters = { tag = EPI level = 1 location = arta }
-	thema_headquarters = { tag = THE level = 1 location = thessaloniki }
+	br_doukate_building = { tag = DYR level = 1 location = durres }
+	br_doukate_building = { tag = EPI level = 1 location = arta }
+	br_doukate_building = { tag = THE level = 1 location = thessaloniki }
 	thema_headquarters = { tag = THS level = 1 location = larissa }
 	thema_headquarters = { tag = ATH level = 1 location = thebes }
 	thema_headquarters = { tag = ATH level = 1 location = corinth }
@@ -4727,7 +4727,7 @@ building_manager = {
 	nobles_recruitment_center = { tag = BNV level = 1 location = benevento }
 	nobles_recruitment_center = { tag = BNV level = 1 location = potenza }
 
-	thema_headquarters	= { tag = S2C level = 1 location = bari } #Sergeants at arms
+	br_katapanate_building	= { tag = S2C level = 1 location = bari } #Sergeants at arms
 	br_pronoia_estate = { tag = S2C level = 1 location = bari }
 	br_pronoia_estate = { tag = S3C level = 1 location = cosenza }
 	br_pronoia_estate = { tag = S1C level = 1 location = messina }
@@ -6642,7 +6642,7 @@ building_manager = {
 	castle = { tag = VEN level = 1 location =  novigrad }
 	castle = { tag = VEN level = 1 location = split }
 	castle = { tag = VEN level = 1 location = dubrovnik }
-	castle = { tag = AOI level = 1 location = antioch }
+	#castle = { tag = AOI level = 1 location = antioch }
 
 	#Varangian Recruitment
 	br_varangian_recruitment_building = { tag = BYZ level = 1 location = stockholm }

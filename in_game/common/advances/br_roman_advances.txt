@@ -150,6 +150,7 @@ roman_akritic_reforms = {
 	unlock_policy = br_military_court_policy 
 	unlock_policy = br_naval_court_policy
 	unlock_building = br_soldier_farmers
+	unlock_building = br_doukate_building
 	army_logistics_distance_modifier = 0.1
 }
 
@@ -533,7 +534,7 @@ br_despotate_building_advance = {
 	}
 	#icon = 
 	requires = roman_thematic_recruitment
-	unlock_building = br_katapanate_building
+	unlock_building = br_despotate_building
 	ai_weight = { add = 5 }
 }
 br_age_3_lonchophoroi_advance = {

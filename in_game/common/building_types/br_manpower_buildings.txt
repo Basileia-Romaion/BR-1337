@@ -10,6 +10,11 @@ INJECT:city_guard = {
 		local_unrest = -0.025  #br added
 	}
 }
+TRY_INJECT:nobles_recruitment_center = {
+	modifier = {
+		local_manpower = 0.002
+	}
+}
 
 REPLACE_OR_CREATE:thema_headquarters = {
 	is_foreign = no

@@ -133,9 +133,9 @@ br_dynatoi_magnates = {
 	#negative modifiers
 	country_modifier = {
 		potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
-		nobles_estate_levy_size = -0.25
-		food_purchase_cost = 0.25
+		nobles_estate_levy_size = -0.1
 		stability_cost = 0.1
+		global_max_rural_control = -0.02
 	}
 	country_modifier = {
 		potential_trigger = { stability <= 50 }
@@ -291,6 +291,11 @@ br_themata_peasant_privilege = {
 		#levy_maintenance_modifier = -0.1
 	}
 	#negative
+	country_modifier = {
+		potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
+		peasants_estate_max_tax = -0.02
+		global_max_rural_control = -0.02
+	}
 	country_modifier = {
 		potential_trigger = { stability <= 50 }
 		monthly_legitimacy = -0.05

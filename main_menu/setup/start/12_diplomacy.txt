@@ -441,14 +441,14 @@ diplomacy_manager = {
     scripted_mutual = { first = BYZ second = ATH type = alliance }
     scripted_mutual = { first = BYZ second = THE type = alliance }
 
-    dependency = { first = BYZ second = FEO subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = FEO subject_type = br_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = ATH subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = BYZ second = S1Y subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = S1Y subject_type = br_thema_subject } # Pronoïakon Ktéma
 
     #dependency = { first = BYZ second = AN4 subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = BYZ second = A1G subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = BYZ second = K1B subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = A1G subject_type = br_naval_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = K1B subject_type = br_naval_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = ICO subject_type = vassal } # Thema
     #dependency = { first = BYZ second = AON subject_type = vassal } # Thema
     #dependency = { first = BYZ second = PAF subject_type = vassal } # Thema

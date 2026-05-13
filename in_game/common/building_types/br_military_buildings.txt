@@ -966,7 +966,12 @@ br_doukate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		is_capital = no 
+		OR = {
+			local_control < 0.5
+			NOT = {
+				integration_level = core
+			}
+		}
 		is_province_capital = yes
 		NOR = { 
 			has_building = building_type:br_tagmata_barracks
@@ -1024,7 +1029,12 @@ br_katapanate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		is_capital = no 
+		OR = {
+			local_control < 0.5
+			NOT = {
+				integration_level = core
+			}
+		}
 		is_province_capital = yes
 		NOR = { 
 			has_building = building_type:br_tagmata_barracks
@@ -1083,7 +1093,12 @@ br_despotate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		is_capital = no 
+		OR = {
+			local_control < 0.5
+			NOT = {
+				integration_level = core
+			}
+		}
 		is_province_capital = yes
 		NOR = { 
 			has_building = building_type:br_tagmata_barracks
@@ -1141,7 +1156,12 @@ br_dioikesis_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		is_capital = no 
+		OR = {
+			local_control < 0.5
+			NOT = {
+				integration_level = core
+			}
+		}
 		is_province_capital = yes
 		NOR = { 
 			has_building = building_type:br_tagmata_barracks

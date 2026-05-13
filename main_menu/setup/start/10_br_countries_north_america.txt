@@ -869,7 +869,7 @@ countries = {
 			#type = navy
 			government = {
 				type = republic
-				heir_selection = heir_selection:pirate_elective
+				#heir_selection = heir_selection:pirate_elective
 				ruler = random
 
 				centralization_vs_decentralization = 100

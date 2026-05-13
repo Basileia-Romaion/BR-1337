@@ -3973,14 +3973,13 @@ countries = {
 
 			ukek teshevka voronezh oskol rovenki valuyki
 			karkaraly
-			zaysan
 			kaynar_atbai
 
 			bratslav balta bershad karabul savran
 			torhovytsia teplyk tsybuliv uman zavallia
 			vinnytsia sokilets
 			armavir
-			qarasuvbazar solkhat
+			qarasuvbazar
 			ismail
 		}
 		starting_technology_level = 3
@@ -12789,7 +12788,7 @@ countries = {
 			aromanian 
 		}
 		tolerated_cultures = {
-			arvanite latinoi
+			latinoi
 		}
 
 		liturgical_language = koine_dialect
@@ -13701,32 +13700,32 @@ countries = {
 		dynasty = nemanjic_dynasty
 	}
 
-	SMC = { #Strumica - Hrelja's domain
- 		own_control_core = {
-			kocani strumica shtip
-		}
+	#SMC = { #Strumica - Hrelja's domain
+ 		#own_control_core = {
+			#kocani strumica shtip
+		#}
 
-		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
-		country_rank = rank_county
+		#include = "expl_mediterranean"
+		#include = "eastern_european_monarchy"
+		#country_rank = rank_county
 
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
+		#government = {
+			#type = monarchy
+			#heir_selection = cognatic_primogeniture
 
-			ruler = ser_hrelja
-		}
+			#ruler = ser_hrelja
+		#}
 
-		tolerated_cultures = {
-			serbian
-		}
+		#tolerated_cultures = {
+			#serbian
+		#}
 
 		
-		liturgical_language = church_slavonic_language
+		#liturgical_language = church_slavonic_language
 
-		capital = strumica
-		dynasty = ohmucevic_dynasty
-	}
+		#capital = strumica
+		#dynasty = ohmucevic_dynasty
+	#}
 
 	BOS = {
 		own_control_core = {
@@ -18892,7 +18891,7 @@ countries = {
 		}
 
 		accepted_cultures = {
-			latinoi
+			greek_culture
 		}
 
 		court_language = venetian_dialect
@@ -18944,7 +18943,7 @@ countries = {
 		}
 
 		accepted_cultures = {
-			latinoi
+			greek_culture
 		}
 
 		court_language = french_language
@@ -19125,7 +19124,7 @@ countries = {
 		}
 
 		accepted_cultures = {
-			latinoi
+			greek_culture
 		}
 
 		court_language = catalan_dialect
@@ -32609,12 +32608,12 @@ countries = {
 				sharia_law = shafii_policy
 				education_masses_law = basic_religious_education
 			}
-			timed_modifier = {
-				modifier = "br_levy_size_modifier"
-				start_date = 1333.1.1
-				date = 1395.1.1
-				size = 1
-			}
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1395.1.1
+			size = 1
 		}
 
 		tolerated_cultures = {
@@ -32819,11 +32818,11 @@ countries = {
 		include = "turkish_beylik_no_coast"
 
 		government = {
-			ruler_term = {	 character = dil_salih start_date = 1310.1.1 end_date = 1319.1.1}
-			ruler_term = {	 character = dil_imadeddin start_date = 1319.1.1 end_date = 1330.1.1}
-			ruler_term = {	 character = dil_izzeddin start_date = 1330.1.1 end_date = 1334.1.1}
-			ruler_term = {	 character = dil_jalaleddin start_date = 1334.1.1 }
-			ruler = dil_jalaleddin
+			#ruler_term = {	 character = dil_salih start_date = 1310.1.1 end_date = 1319.1.1}
+			#ruler_term = {	 character = dil_imadeddin start_date = 1319.1.1 end_date = 1330.1.1}
+			#ruler_term = {	 character = dil_izzeddin start_date = 1330.1.1 end_date = 1334.1.1}
+			#ruler_term = {	 character = dil_jalaleddin start_date = 1334.1.1 }
+			ruler = random #dil_jalaleddin
 		}
 
 		tolerated_cultures = { kurdish_culture }
@@ -37537,7 +37536,7 @@ countries = {
 	SWB = { #Saxe-Wittenberg
 		own_control_core = {
 			wittenberg belzig schweinitz bitterfeld torgau liebenwerda
-			juterbog halle_an_der_saale
+			#juterbog halle_an_der_saale
 		}
 
 		starting_technology_level = 3
@@ -49933,7 +49932,6 @@ countries = {
 
 		tolerated_cultures = {
 			khorasani_culture
-			turkmen_culture
 		}
 
 		religious_school = shafii_school
@@ -53705,9 +53703,10 @@ countries = {
 			ohrid bitola prilep florina kicevo tetovo
 			prosek skopje kumanovo veles kratovo
 			velbuzd
+			kocani strumica shtip
 		}
 		our_cores_conquered_by_others = {
-			shtip kocani strumica vranje
+			vranje
 		}
 		
 		starting_technology_level = 3
@@ -54702,9 +54701,6 @@ countries = {
 		country_rank = rank_county
 		accepted_cultures = {
 			aromanian
-		}
-		tolerated_cultures = {
-			arvanite
 		}
 		
 		liturgical_language = koine_dialect
