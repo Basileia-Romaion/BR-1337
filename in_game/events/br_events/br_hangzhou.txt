@@ -4,6 +4,7 @@ hangzhou.1 = { #Receiving petition to send bishop
 	type = country_event
 	title = hangzhou.1.title
 	desc = hangzhou.1.desc
+	outcome = neutral
 	
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -33,6 +34,7 @@ hangzhou.2 = { #Bishop arrives in Hangzhou
 	type = country_event
 	title = hangzhou.2.title
 	desc = hangzhou.2.desc
+	outcome = neutral
 	
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -182,6 +184,7 @@ hangzhou.3 = {
 	type = country_event
 	title = hangzhou.3.title
 	desc = hangzhou.3.desc
+	outcome = neutral
 	
 	fire_only_once = yes
 	trigger = {

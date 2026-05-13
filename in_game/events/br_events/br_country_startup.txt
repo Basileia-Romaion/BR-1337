@@ -4,6 +4,7 @@ br_country_startup.1 = { #naval units added
 	type = country_event
 	title = br_country_startup.1.title
 	desc = br_country_startup.1.desc
+	outcome = neutral
 
 	#orphan = yes
 
@@ -272,6 +273,7 @@ br_country_startup.2 = { #units added
 	type = country_event
 	title = br_country_startup.2.title
 	desc = br_country_startup.2.desc
+	outcome = neutral
 
 	#orphan = yes
 
@@ -445,6 +447,7 @@ br_country_startup.3 = { #cbs added
 	type = country_event
 	title = br_country_startup.2.title
 	desc = br_country_startup.2.desc
+	outcome = neutral
 
 	#orphan = yes
 
@@ -600,6 +603,7 @@ br_country_startup.4 = {
 	type = country_event
 	title = br_country_startup.4.title
 	desc = br_country_startup.4.desc
+	outcome = neutral
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_byzantium.dds"
 	#orphan = yes
@@ -746,6 +750,7 @@ br_country_startup.5 = {
 	type = country_event
 	title = br_country_startup.5.title
 	desc = br_country_startup.5.desc
+	outcome = neutral
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_syrian.dds"
 	#orphan = yes
@@ -800,6 +805,7 @@ br_country_startup.6 = {
 	type = country_event
 	title = br_country_startup.6.title
 	desc = br_country_startup.6.desc
+	outcome = neutral
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_syrian.dds"
 	#orphan = yes

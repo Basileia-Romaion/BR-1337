@@ -3,6 +3,7 @@ br_startup.1 = {
 	type = country_event
 	title = br_startup.1.title
 	desc = br_startup.1.desc
+	outcome = neutral
 	trigger = {
 		tag = E1Y
 	}

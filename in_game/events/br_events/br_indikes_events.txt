@@ -6,6 +6,7 @@ br_indikes_events.1 = {
 	type = country_event
 	title = br_indikes_events.1.title
 	desc = br_indikes_events.1.desc
+	outcome = neutral
 	fire_only_once = yes
 	orphan = yes
 	trigger = {
@@ -71,6 +72,7 @@ br_indikes_events.2 = {
 	type = country_event
 	title = br_indikes_events.2.title
 	desc = br_indikes_events.2.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
