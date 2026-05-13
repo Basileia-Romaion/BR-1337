@@ -48,6 +48,7 @@ townrights_manager = {
 	zagreb = royal_free_cities_town_rights
 	bratislava = royal_free_cities_town_rights
 	sopron = royal_free_cities_town_rights
+	buda = royal_free_cities_town_rights
 
 	#Bohemian Royal Cities
 	prague = bohemian_royal_cities_town_rights
@@ -57,11 +58,32 @@ townrights_manager = {
 	plzen = bohemian_royal_cities_town_rights
 
 	#Swedish City Rights
+	visby = swedish_city_rights
 
 	#Norwegian City Rights
 	bergen = norwegian_city_rights
+	oslo = norwegian_city_rights
+	tonsberg = norwegian_city_rights
+	nidaros = norwegian_city_rights
+
+	#Scandinavian Fishing Privileges
+	stavanger = scandinavian_fishing_privileges
+	abo = scandinavian_fishing_privileges
+
+	#Scandinavian Bergslag Privileges
+	# falun and sala exist as locations but are not urban at 1337 start
 
 	#Borough Custumals
+	norwich = borough_customals
+	oxford = borough_customals
+	cambridge = borough_customals
+	colchester = borough_customals
+	edinburgh = borough_customals
+	aberdeen = borough_customals
+	perth = borough_customals
+
+	#Manorial Custumals
+	salisbury = manorial_customals
 
 	#Foros Extensos
 	lisbon = foros_extensos_town_rights
@@ -127,46 +149,39 @@ townrights_manager = {
 	#Flemish Cloth Industries
 	bruges = flemish_cloth_industries_right
 	ghent = flemish_cloth_industries_right
+	ypres = flemish_cloth_industries_right
+	arras = flemish_cloth_industries_right
 
+	#Villes Franches
+	paris = ville_franche_town_rights
+	rouen = ville_franche_town_rights
+	lyon = ville_franche_town_rights
+	toulouse = ville_franche_town_rights
+	bordeaux = ville_franche_town_rights
+	montpellier = ville_franche_town_rights
+	nantes = ville_franche_town_rights
+	marseille = ville_franche_town_rights
+	reims = ville_franche_town_rights
+	amiens = ville_franche_town_rights
+	poitiers = ville_franche_town_rights
+	tours = ville_franche_town_rights
+	orleans = ville_franche_town_rights
 
+	#Borgo Franco
+	florence = borgo_franco_town_rights
+	venice = borgo_franco_town_rights
+	genoa = borgo_franco_town_rights
+	milano = borgo_franco_town_rights
+	bologna = borgo_franco_town_rights
+	siena = borgo_franco_town_rights
+	pisa = borgo_franco_town_rights
+	verona = borgo_franco_town_rights
+	padova = borgo_franco_town_rights
+	ferrara = borgo_franco_town_rights
+	mantova = borgo_franco_town_rights
+	perugia = borgo_franco_town_rights
+	lucca = borgo_franco_town_rights
 
-
-	
-	#BR Additions
+	#Constantinopolitan Silk Monopoly
 	constantinople = constantinopolitan_silk_monopoly_rights
-	constantinople = scholai_literacy_rights
-	#constantinople = staple_port
-	thessaloniki = imperial_breadbasket_rights
-	athens = scholai_literacy_rights
-	izmit = scholai_literacy_rights
-
-	tana = staple_port
-	kaffa = staple_port
-	durres = br_naval_theme_rights
-	canakkale = br_naval_theme_rights
-	antalya = br_naval_theme_rights
-	candia = br_naval_theme_rights
-	smyrna = br_naval_theme_rights
-	trebizond = br_naval_theme_rights
-	sinop = br_naval_theme_rights
-	theodoro = br_naval_theme_rights
-	amasra = br_naval_theme_rights
-	bari = br_naval_theme_rights
-	syracuse = br_naval_theme_rights
-	marmaris = br_naval_theme_rights
-	rodos = br_naval_theme_rights
-	milas = br_naval_theme_rights
-	bergama = br_naval_theme_rights
-
-	silifke = br_land_theme_rights #br_naval_theme_rights
-	tarsus = br_land_theme_rights #br_naval_theme_rights
-	antoch = br_land_theme_rights #br_naval_theme_rights
-	thebes = br_land_theme_rights
-	ankara = br_land_theme_rights
-	konya = br_land_theme_rights
-	kayseri = br_land_theme_rights
-	aksaray = br_land_theme_rights
-	amasya = br_land_theme_rights
-	sivas = br_land_theme_rights
-	arta = br_land_theme_rights
 }
