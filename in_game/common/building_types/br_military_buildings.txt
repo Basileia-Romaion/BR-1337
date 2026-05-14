@@ -157,6 +157,9 @@ br_naval_theme_hq = {
 			this = location:trebizond
 			this = location:candia
 		}
+		NOT = { 
+			has_building = building_type:thema_headquarters
+		}
 	}
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
@@ -164,6 +167,7 @@ br_naval_theme_hq = {
 	}
 
 	modifier = {
+		local_proximity_source = 15
 		max_ships_built_at_same_time = 2
 		local_sailors = 0.05
 		can_build_ships_in_this_location = yes
@@ -383,7 +387,7 @@ br_pronoia_estate = { #pronoia estates
 	category = village_category
 	estate = nobles_estate
 
-	employment_size = 0.1
+	employment_size = 0.025
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
@@ -419,9 +423,8 @@ br_pronoia_estate = { #pronoia estates
 		local_peasant_enfranchisment = -0.02
 		local_army_levy_size_modifier = 0.15
 		local_nobles_estate_power = 1
-		local_nobles_desired_pop = 0.1
+		local_nobles_desired_pop = 0.025
 		local_soldiers_desired_pop = 0.1
-		local_nobles_food_consumption = 1
     }
 }
 
@@ -752,7 +755,7 @@ br_kekhrismene_pronoia = { #pronoia estates
 	category = village_category
 	obsolete = br_pronoia_estate
 
-	employment_size = 0.15
+	employment_size = 0.05
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
@@ -788,9 +791,8 @@ br_kekhrismene_pronoia = { #pronoia estates
 	modifier = {
 		local_army_levy_size_modifier = 0.2
 		local_nobles_estate_power = 0.75
-		local_nobles_desired_pop = 0.15
+		local_nobles_desired_pop = 0.05
 		local_soldiers_desired_pop = 0.25
-		local_nobles_food_consumption = 1
 		local_manpower = 0.002
 		#local_pop_assimilation_speed = 0.001
     }
@@ -992,8 +994,8 @@ br_doukate_building = {
 		local_manpower = 0.015
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.2
-		local_nobles_estate_power = 0.50
-		local_proximity_source = 25
+		local_nobles_estate_power = 0.5
+		local_proximity_source = 20
     }
 	
 	raw_modifier = {
@@ -1056,7 +1058,7 @@ br_katapanate_building = {
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.4
 		local_nobles_estate_power = 0.35
-		local_proximity_source = 30
+		local_proximity_source = 25
     }
 	
 	raw_modifier = {

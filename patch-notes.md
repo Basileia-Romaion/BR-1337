@@ -1,6 +1,56 @@
 
 
 # Patch Notes
+0.19
+
+# Update 19
+- Updated Compatibly to 1.2.2
+
+## New content
+  ### Subject types
+  - Includes two new unique subject types for the romans
+    - Théma, created via regular dipo and also via the unique enforce authority diploaction for the emperor.
+    - Nautikē Théma is a naval version currently only available at start for the two naval themes.
+
+  ### Buildings
+  - Includes four new military/admin building the roman world, which is kinda like an upgrade path for Thema HQs (give increased benefit and decreased malus at each tier) also added new techs for unlocking.
+    - Doukate
+    - Katapanate
+    - Despotate
+    - Dioikesis
+
+  ### Cultures
+  - new cultures for the unique banks in the roman world.
+    -  Bankariotai
+    -  Makrembolitai
+    -  Chrysotrapeziōtai
+
+  ### Reforms and Privileges
+  - New Government reform and Noble estate privilege for Carolingian tags.
+    - Carolingian Heritage government reform.
+    - The estate privilage is a unique version of noble armies just for the LOT tag
+
+  ### Town rights
+  - These can only be place in provencial capitals and give unique bonuses but empower the nobility.
+    - Naval Theme Rights
+    - Land Theme Rights
+
+## Balance changes
+  - edited the DLC Pronoia to give much less free legitimacy and a slight stability decay malus
+  - most themes and pronoia as well as new ones when created changed to dynastic_elective_succession let me know how this is working in your games.
+  - rebalanced the population of anatolia to be lower in the east/north and higher in the west.
+  - changed development to make frontiers like eastern anatolia/armenia more devastated and western anatolia more developed being the safest portion of the empire generally.
+  - HRE starts with Foreign Imperial armories thoughout the cities of the HRE
+  - re-added most subject relationships so more larger regional powers form by mid game because I need some big guys to fight as the ERE.
+
+
+## Bug fixes
+  - Should now be able to correctly invite into the roman organization
+- Balance and fixes
+- 100s of bug fixes
+
+
+
 
 .17
 

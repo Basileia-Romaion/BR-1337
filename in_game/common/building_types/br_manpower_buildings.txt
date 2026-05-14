@@ -40,8 +40,14 @@ REPLACE_OR_CREATE:thema_headquarters = {
 	location_potential = { 
 		is_capital = no 
 		is_province_capital = yes
-		NOT = { 
+		NOR = { 
+			has_building = building_type:br_tagmata_camp
 			has_building = building_type:br_tagmata_barracks
+			has_building = building_type:br_naval_theme_hq
+			has_building = building_type:br_doukate_building
+			has_building = building_type:br_katapanate_building
+			has_building = building_type:br_despotate_building
+			has_building = building_type:br_dioikesis_building
 		}
 	}
 
@@ -54,7 +60,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 		can_recruit_regiment_in_this_location = yes
 		local_nobles_estate_power = 0.5 #local_crown_estate_power = -0.1
 		local_garrison_size = 0.1
-		local_proximity_source = 20
+		local_proximity_source = 10 #was 20 seemed too strong
 	}
 	
 	raw_modifier = {

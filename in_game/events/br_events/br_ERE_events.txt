@@ -25,6 +25,61 @@ br_ere_events.1 = {
 	}
 
 	immediate = {
+		if = {
+			limit = {
+				has_dlc = "d008_fate_of_the_phoenix"
+			}
+			#Europe Pronoia
+			c:S1Y = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+			}
+			c:B0R = {
+				make_subject_of = {
+					target = c:THE
+					type = subject_type:pronoia
+				}
+			}
+			c:THS = {
+				make_subject_of = {
+					target = c:THE
+					type = subject_type:pronoia
+				}
+			}
+			c:ACH = {
+				make_subject_of = {
+					target = c:ATH
+					type = subject_type:pronoia
+				}
+			}
+			c:MOE = {
+				make_subject_of = {
+					target = c:ATH
+					type = subject_type:pronoia
+				}
+			}
+			#Anatolia Pronoia
+			c:AN12 = {
+				make_subject_of = {
+					target = c:AON
+					type = subject_type:pronoia
+				}
+			}
+			c:AN11 = {
+				make_subject_of = {
+					target = c:AON
+					type = subject_type:pronoia
+				}
+			}
+			c:P2N = {
+				make_subject_of = {
+					target = c:TRE
+					type = subject_type:pronoia
+				}
+			}
+		}
 	}
 	option = {
 		historical_option = yes

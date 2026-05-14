@@ -468,20 +468,20 @@ diplomacy_manager = {
     # state_bank
 
     #Sub dependencies
-    dependency = { first = ATH second = MOE subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = ATH second = ACH subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = ATH second = MOE subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = ATH second = ACH subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = THE second = B0R subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = THE second = THS subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = EPI second = DYR subject_type = march } # Thema
 
-    dependency = { first = TRE second = AN6 subject_type = vassal } # Thema
-    dependency = { first = TRE second = P2N subject_type = vassal } # Thema
-    dependency = { first = AON second = AN11 subject_type = vassal } # Thema
-    dependency = { first = AON second = AN12 subject_type = vassal } # Thema
-    dependency = { first = AN13 second = AN5 subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = TRE second = AN6 subject_type = br_thema_subject } # Thema
+    dependency = { first = TRE second = P2N subject_type = br_thema_subject } # Thema
+    dependency = { first = AON second = AN11 subject_type = br_thema_subject } # Thema
+    dependency = { first = AON second = AN12 subject_type = br_thema_subject } # Thema
+    dependency = { first = AN13 second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
-    dependency = { first = AN8 second = AN7 subject_type = vassal } # Thema
+    dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
 
     scripted_mutual = { first = AN8 second = AN13 type = alliance }
 

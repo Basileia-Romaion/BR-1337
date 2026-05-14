@@ -40,6 +40,7 @@ INJECT:ruthenian_town = {
 	nobles_recruitment_center = 1 #BR added estate building
 	nobility_fortifications = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:british_town = {
@@ -59,6 +60,7 @@ INJECT:iberian_town = {
 	nobles_recruitment_center = 1 #BR added estate building
 	nobility_fortifications = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:iberian_town_port = {
@@ -72,7 +74,6 @@ INJECT:iberian_city = {
 	nobles_recruitment_center = 1 #BR added estate building
 	nobility_fortifications = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
-	#funduq = 1 #BR added
 }
 
 INJECT:iberian_city_port = {
@@ -86,6 +87,7 @@ INJECT:lowlands_town = {
 	artisan_guilds = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
 	peasants_training_grounds = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:lowlands_costal_town = {
@@ -113,6 +115,7 @@ INJECT:lowlands_coastal_city = {
 INJECT:french_town = {
 	nobility_fortifications = 1 #BR added estate building
 	nobles_recruitment_center = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:french_city = {
@@ -125,6 +128,7 @@ INJECT:german_town = {
 	nobles_recruitment_center = 1 #BR added estate building
 	nobility_fortifications = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:german_coastal_town = {
@@ -176,12 +180,14 @@ INJECT:balkan_town = {
 INJECT:carpathian_town = {
 	nobles_recruitment_center = 1 #BR added estate building
 	nobility_fortifications = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 
 INJECT:maghreb_town = {
 	artisan_guilds = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:maghreb_city = {
@@ -193,22 +199,22 @@ INJECT:egyptian_city = {
 	parish_church = 1 #BR added estate building
 }
 
-INJECT:anatolian_city = {
+INJECT:christian_anatolian_city = {
 	scriptorium = 1 #br add
-	nobility_fortifications = 1 #BR added estate building
 	artisan_guilds = 1 #BR added estate building
-
+	horse_breeders = 1
 }
 
-INJECT:anatolian_town = {
-	nobility_fortifications = 1 #BR added estate building
+INJECT:christian_anatolian_town = {
 	stockade = 1 # BR ADDED
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:levant_town = {
 	artisan_guilds = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 
@@ -220,6 +226,7 @@ INJECT:levant_city = {
 
 INJECT:central_asian_city = {
 	artisan_guilds = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 INJECT:italian_town = {
