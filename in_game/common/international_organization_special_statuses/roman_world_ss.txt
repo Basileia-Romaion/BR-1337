@@ -276,6 +276,9 @@ defiant_strategoi = {
 				type = special_status:imperial_loyalist
 				international_organization = scope:recipient
 			}
+			scope:recipient = {
+				has_reform = government_reform:banking_country
+			}
 		}
 	}
 

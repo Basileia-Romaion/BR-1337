@@ -66,3 +66,51 @@ br_special_merchant_republic = {
 
 #Country specific
 #byzantine_court_ceremonies_reform
+
+br_alandalus_reform = {
+	major = yes
+	unique = yes
+	age = age_1_traditions
+	government = monarchy
+    icon = the_jewel_of_alandalus_reform
+	potential = {
+		has_or_had_tag = ADU
+	}
+	allow = {
+		has_embraced_institution = institution:legalism
+	}
+	country_modifier = {
+		monthly_towards_humanist = societal_value_monthly_move
+		global_dhimmi_estate_power = 2
+        tolerance_heathen = 4
+        global_pop_conversion_speed_modifier = -0.75
+		dhimmi_estate_levy_size = 0.5
+	}
+	years = 2
+}
+
+
+br_carolingian_heritage = {
+	unique = yes
+	icon = holy_imperial_monarchy_reform
+	potential = {
+		OR = {
+			has_or_had_tag = LOT
+			has_or_had_tag = FRA
+			has_or_had_tag = AQN
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		diplomatic_capacity = 1
+		global_peasant_enfranchisment = -0.10
+	}
+	country_modifier = {
+		potential_trigger = { government_power >= 50 }
+		monthly_towards_centralization = societal_value_monthly_move
+		global_crown_estate_power = 0.25
+		nobles_estate_max_tax = 0.25
+		power_projection = 5
+	}
+	years = 2
+}

@@ -48,6 +48,7 @@ br_on_game_start = {
 			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:byz_historiography_advance
 			research_advance = advance_type:bureaucracy_law_advance
+			#research_advance = advance_type:unlock_supply_carts
 			add_policy = policy:centralized_bureaucracy_policy
 			research_advance = advance_type:br_roman_ecumenical_patriarch_advance
 			grant_estate_privilege = estate_privilege:br_roman_ecumenical_patriarch_privilege
@@ -290,20 +291,6 @@ br_on_game_start = {
 			research_advance = advance_type:unlock_hulk_advance
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 		}
-     #	c:E1Y = {
-	#		research_advance = advance_type:colonial_tradition
-	#		research_advance = advance_type:colonial_heritage
-	#		research_advance = advance_type:founding_fathers
-	#		research_advance = advance_type:colonial_militia
-	#		research_advance = advance_type:new_frontiers
-	#	}
-	#	c:E2Y = {
-	#		research_advance = advance_type:colonial_tradition
-	#		research_advance = advance_type:colonial_heritage
-	#		research_advance = advance_type:founding_fathers
-	#		research_advance = advance_type:colonial_militia
-	#		research_advance = advance_type:new_frontiers
-	#	}
 
 		c:TUR = {
 			research_advance = advance_type:seljuk_roots
@@ -319,6 +306,8 @@ br_on_game_start = {
 
 		c:LOT = {
 			research_advance = advance_type:aristocracy
+			research_advance = advance_type:unlock_cavalry_advance
+			research_advance = advance_type:unlock_heavy_cavalry_advance
 			add_gold = 1000
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }

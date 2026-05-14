@@ -430,3 +430,72 @@ armenikon_greek_culture = { #BR addition
 		greek_group caucasian_group roman_group
 	}
 }
+
+#bank cultures 100% fictional
+bankariotai_culture = {
+	language = romanyoti_dialect
+	color = rgb { 75 175 125 }
+	
+	tags = { jewish_gfx greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+
+	opinions = {
+		romanyoti = kindred
+		italki = kindred
+		greek_culture = positive
+		makrembolitai_culture = negative
+		chrysotrapeziotai_culture = negative
+	}
+	country_modifier = {
+		import_efficiency = 0.2
+		global_foreign_build_buildings_cost = -0.1
+	}
+	
+	culture_groups = {
+		jewish_group
+		roman_group
+	}
+}
+
+makrembolitai_culture = {
+	language = trapezuntine_dialect
+	color = rgb { 175 125 95 }
+	
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		greek_culture = kindred
+		bankariotai_culture = negative
+		chrysotrapeziotai_culture = negative
+	}
+	country_modifier = {
+		import_efficiency = 0.2
+		#estate_enrichment = -0.1
+		global_foreign_build_buildings_cost = -0.1
+	}
+	
+	culture_groups = {
+		roman_group
+	}
+}
+
+chrysotrapeziotai_culture = {
+	language = cappadocian_dialect
+	color = rgb { 75 125 175 }
+	
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		greek_culture = kindred
+		makrembolitai_culture = negative
+		bankariotai_culture = negative
+	}
+	country_modifier = {
+		import_efficiency = 0.2
+		#estate_enrichment = -0.1
+		global_foreign_build_buildings_cost = -0.1
+	}
+	
+	culture_groups = {
+		roman_group
+	}
+}

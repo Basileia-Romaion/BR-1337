@@ -18,12 +18,9 @@
 #ERE
 br_imperial_administration = {
 	age = age_1_traditions
-	icon = holy_imperial_monarchy_reform
+	icon = holy_imperial_monarchy_reform #placeholder icon
 	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			capital = location:constantinople
-		}
+		has_or_had_tag = BYZ
 	}
 	locked = {
 		capital = location:constantinople
@@ -217,9 +214,9 @@ br_naval_akritai_reform = {
         monthly_towards_naval = societal_value_monthly_move
 		monthly_towards_stratiotai = societal_value_minor_monthly_move
 		allow_privateers_slave_raid = yes
-        navy_galley_maintenance_cost_modifier = -0.5
-        global_sailors_modifier = 0.5
-		navy_galley_build_cost_modifier = -0.5
+        navy_galley_maintenance_cost_modifier = -0.25
+        global_sailors_modifier = 0.25
+		navy_galley_build_cost_modifier = -0.25
 		expected_navy_size = 10
 		global_navy_levy_size_modifier = 1.0
 		allow_thema_headquarters = yes
@@ -233,17 +230,12 @@ br_naval_akritai_reform = {
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
-		loyalty_to_overlord = 10
-    }
-	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		hostile_diplomatic_annexation_cost = -0.5
+		loyalty_to_overlord = 10
     }
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
 		loyalty_to_overlord = -25
-		hostile_diplomatic_annexation_cost = 0.5
     }
     years = 2
 }
@@ -297,27 +289,5 @@ br_mongol_tolerance = {
         wrong_culture_levy_size = 0.25
 	}
 	unique = yes
-	years = 2
-}
-
-REPLACE_OR_CREATE:br_alandalus_reform = {
-	major = yes
-	unique = yes
-	age = age_1_traditions
-	government = monarchy
-    icon = the_jewel_of_alandalus_reform
-	potential = {
-		has_or_had_tag = ADU
-	}
-	allow = {
-		has_embraced_institution = institution:legalism
-	}
-	country_modifier = {
-		monthly_towards_humanist = societal_value_monthly_move
-		global_dhimmi_estate_power = 2
-        tolerance_heathen = 4
-        global_pop_conversion_speed_modifier = -0.75
-		dhimmi_estate_levy_size = 0.5
-	}
 	years = 2
 }

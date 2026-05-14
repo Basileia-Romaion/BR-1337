@@ -57,26 +57,22 @@ REPLACE_OR_CREATE:clergy_military_orders = {
 
 # special privileges
 ## Nobles
-REPLACE_OR_CREATE:noble_armies = { 
+br_noble_armies = { 
 	estate = nobles_estate
-
+	icon = noble_armies
 	potential = {
-		OR = {
-			tag = FRA
-			tag = LOT #BR added
-			tag = KOR
-		}
+		has_or_had_tag = LOT
 	}
-
 	country_modifier = {
 		nobles_estate_levy_size = 1
-		peasants_estate_levy_size = -0.1
+		wrong_culture_levy_size = 0.1
 		monthly_towards_aristocracy = societal_value_monthly_move
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 0.50
-
+		global_nobles_rural_desired_pop_scaled = 0.01
+		global_soldiers_rural_desired_pop_scaled = 0.01
 		nobles_estate_satisfaction_decay = 0.02
-
+		army_heavy_cavalry_power = 0.1
 	}
 }
 REPLACE_OR_CREATE:chancellor_nobles = { 
@@ -111,7 +107,7 @@ REPLACE_OR_CREATE:great_offices_of_the_crown_of_france = {
 		global_nobles_city_desired_pop_scaled = 0.01
 		government_size = 1
 		nobles_estate_target_satisfaction = small_privilege_target_satisfaction
-		global_nobles_estate_power = 2
+		global_nobles_estate_power = 1
 	}
 }
 

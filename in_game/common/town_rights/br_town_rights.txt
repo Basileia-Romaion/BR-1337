@@ -5,7 +5,7 @@
 ### The aim to increase City specialization. They increase the efficiency of a specific Good, but decrease the efficiency of all others.
 
 br_naval_theme_rights = {
-
+	icon = constantinopolitan_silk_monopoly_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
@@ -35,7 +35,7 @@ br_naval_theme_rights = {
 }
 
 br_land_theme_rights = {
-
+	icon = constantinopolitan_silk_monopoly_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ

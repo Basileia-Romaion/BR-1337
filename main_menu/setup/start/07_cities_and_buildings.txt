@@ -947,7 +947,7 @@ locations={
 	amasra = { rank = town 		town_setup = greek_town_port }
 	bergama = { rank = town		town_setup = greek_town_port }
 	birgi = { rank = town		town_setup = christian_anatolian_town }
-	iznik = { rank = town		town_setup = greek_town_port }
+	iznik = { rank = city		town_setup = greek_city_port }
 	silifke = { rank = town		town_setup = greek_town_port }
 	mardin = { rank = town		town_setup = christian_anatolian_town }
 	samsun = { rank = town		town_setup = christian_anatolian_town }
@@ -4300,6 +4300,7 @@ building_manager = {
 	orthodox_monastery = { tag = BYZ level = 1 location =  bursa } #Monē tou Olýmpou Bythynías
 	orthodox_monastery = { tag = BYZ level = 1 location =  uskudar } #Monē Pelekḗtēs
 	orthodox_monastery = { tag = CIL level = 1 location =  mut } #Monē Alachān
+	orthodox_monastery = { tag = BYZ level = 1 location =  iznik }
 
 	cathedral	= { tag = BYZ level = 1	location = iznik }
 	cathedral	= { tag = BYZ level = 1	location = izmit }
@@ -4420,6 +4421,7 @@ building_manager = {
 	br_tagmata_camp = { tag = BYZ level = 1 location =  constantinople }
 	br_varangian_camp = { tag = BYZ level = 1 location =  constantinople }
 	br_tagmata_camp = { tag = BYZ level = 1 location =  izmit }
+	br_tagmata_camp = { tag = BYZ level = 1 location =  iznik }
 	#hexamilion_wall = { tag = ATH level = 1 location =  corinth }
 
 	#Anatolia
@@ -4671,17 +4673,17 @@ building_manager = {
 	#hre_imperial_armory_own = { tag = LOT level = 1 location = trier }
 	#hre_imperial_armory_own = { tag = LOT level = 1 location = strasbourg }
 
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = brussels }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = mainz }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = cologne }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = vienna }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = aachen }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = milano }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = verona }
-	#hre_imperial_armory_foreign = { tag = LOT level = 1 location = florence }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = brussels }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = mainz }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = cologne }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = vienna }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = aachen }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = milano }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = verona }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = florence }
 
 	#Anatolia
-	thema_headquarters = { tag = BYZ level = 1 location = iznik }
+	#thema_headquarters = { tag = BYZ level = 1 location = iznik }
 	br_doukate_building = { tag = BYZ level = 1 location = smyrna }
 	#thema_headquarters = { tag = BYZ level = 1 location = bursa }
 	#thema_headquarters = { tag = BYZ level = 1 location = izmit }
@@ -6579,9 +6581,7 @@ building_manager = {
 	stockade = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	stockade = { tag = BYZ level = 1 location = antalya }
 	nobility_fortifications = { tag = BYZ level = 1 location = uluborlu }
-	stockade = { tag = BYZ level = 1 location = iznik }
 	stockade = { tag = BYZ level = 1 location = bursa }
-	stockade = { tag = BYZ level = 1 location = izmit }
 	stockade = { tag = BYZ level = 1 location = rodos }
 	stockade = { tag = BYZ level = 1 location = bozan }
 	stockade = { tag = BYZ level = 1 location = akcasehir }

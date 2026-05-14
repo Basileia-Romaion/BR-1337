@@ -55802,6 +55802,7 @@ countries = {
 			outward_vs_inward = -50
 
 			reforms = {
+				br_carolingian_heritage
 				autocracy
 				#french_feudal_nobility
 				#ancient_french_taxation
@@ -55819,9 +55820,9 @@ countries = {
 				clergy_literacy_rights
 				auxilium_et_consilium
 				nobles_land_rights
-				noble_leaders_only
+				#noble_leaders_only
 				primacy_of_nobility
-				noble_armies
+				br_noble_armies
 				chancellor_nobles
 				villes_franches
 				great_offices_of_the_crown_of_france
@@ -55839,7 +55840,7 @@ countries = {
 		capital = metz
 		currency_data = {
 			gold = 2250
-			prestige = 75
+			prestige = 100
 			stability = 75
 			government_power = 75
 		}

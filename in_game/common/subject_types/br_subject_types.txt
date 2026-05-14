@@ -144,7 +144,7 @@
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0005 #br added
+		stability_decay = 0.0002 #br added
 		monthly_legitimacy = 0.01 #BR EDIT from 0.1
 		monthly_towards_aristocracy = societal_value_tiny_monthly_move #br changed from decentralizaton
 	}
@@ -248,7 +248,15 @@ REPLACE_OR_CREATE:br_thema_subject = {
 				is_subject_type = br_thema_subject
 			}
 		}
-		scope:target = { subject_type_is_not_locked = yes }
+		scope:target = { 
+			is_member_of_international_organization = international_organization:roman_world 
+			subject_type_is_not_locked = yes
+		}
+		NOT = {
+			scope:target = {
+				has_reform = government_reform:banking_country
+			}
+		}
 
 		#Japanese Imperial Courts Exception
 		trigger_if = {
@@ -380,7 +388,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0005
+		stability_decay = 0.0002
 		monthly_legitimacy = 0.01
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
@@ -552,7 +560,7 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0005
+		stability_decay = 0.0002
 		monthly_legitimacy = 0.01
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
