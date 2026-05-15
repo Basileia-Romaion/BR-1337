@@ -31,11 +31,16 @@ br_imperial_administration = {
 		#chancery_cap_level = 1
 	}
 	country_modifier = {
-		potential_trigger = { government_power >= 50 }
+		potential_trigger = { legitimacy > 0 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
 		monthly_towards_centralization = societal_value_monthly_move
-		global_crown_estate_power = 0.25
-		country_cabinet_efficiency = 0.05
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
+		global_crown_estate_power = 0.25
+		#country_cabinet_efficiency = 0.05
 	}
 	country_modifier = {
 		potential_trigger = { 
@@ -44,7 +49,12 @@ br_imperial_administration = {
 		global_max_bureaucracy_slots = 2
 	}
 	country_modifier = {
-		potential_trigger = { stability <= 25 }
+		potential_trigger = { stability < 100 }
+		scale = {
+			value = stability
+			multiply = -0.01
+			add = 1
+		}
 		nobles_estate_target_satisfaction = larger_permanent_target_satisfaction_penalty
 		#global_estate_satisfaction_from_legitimacy = -0.1
 	}
@@ -84,17 +94,13 @@ br_sub_theme_subject = {
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
+		hostile_diplomatic_annexation_cost = -0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		hostile_diplomatic_annexation_cost = -0.5
-    }
-	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 75 } }
 		loyalty_to_overlord = -25
-		hostile_diplomatic_annexation_cost = 0.5
     }
 	years = 2
 }
@@ -132,17 +138,13 @@ br_sub_pronoia_subject = {
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
+		hostile_diplomatic_annexation_cost = -0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		hostile_diplomatic_annexation_cost = -0.5
-    }
-	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 75 } }
 		loyalty_to_overlord = -25
-		hostile_diplomatic_annexation_cost = 0.5
     }
 	years = 2
 }
@@ -220,8 +222,6 @@ br_naval_akritai_reform = {
 		expected_navy_size = 10
 		global_navy_levy_size_modifier = 1.0
 		allow_thema_headquarters = yes
-		#global_port_build_buildings_cost = -0.2
-		#global_max_bureaucracy_slots = 1
     }
 	country_modifier = {
 		potential_trigger = { 
@@ -230,11 +230,12 @@ br_naval_akritai_reform = {
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
+		hostile_diplomatic_annexation_cost = -0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
-		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 75 } }
 		loyalty_to_overlord = -25
     }
     years = 2

@@ -190,28 +190,122 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_nobles = {
 	can_revoke = {
 		government_power > 95
 	}
-	
+
 	country_modifier = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_serfdom = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		global_nobles_estate_power = 0.5
-		estate_enrichment = 0.25
+		#estate_enrichment = 0.25
 	}
 	country_modifier = {
-		potential_trigger = { stability <= 50 }
-		nobles_estate_levy_size = -0.5
-	}
-	country_modifier = {
-		potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
 		nobles_estate_max_tax = -0.1
-	}
-	country_modifier = {
-		potential_trigger = { government_power <= 75 }
+		nobles_estate_levy_size = -0.1
 		subject_loyalty = -25
 	}
 }
 
+REPLACE_OR_CREATE:consolidated_corruption_of_the_burghers = {
+	estate = burghers_estate
+	
+	potential = {
+		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers
+	}
+	
+	can_revoke = {
+		government_power > 95
+	}
+
+	
+	country_modifier = {
+		import_efficiency = medium_trade_efficiency_penalty
+		export_efficiency = medium_trade_efficiency_penalty
+		global_burghers_estate_power = 0.5
+	}
+
+	country_modifier = {
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
+		burghers_estate_max_tax = -0.1
+	}
+
+	country_modifier = {
+		display_trigger = {
+			custom_description = {
+				text = fate_of_the_phoenix_disaster_active_trigger_text
+				any_active_disaster = {
+					disaster_type = disaster_type:fate_of_the_phoenix
+				}
+			}
+		}
+		trade_income = -0.1
+	}
+}
+
+REPLACE_OR_CREATE:consolidated_corruption_of_the_clergy = {
+	estate = clergy_estate
+	
+	potential = {
+		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
+	}
+
+	can_revoke = { government_power > 95 }
+	
+	country_modifier = {
+		global_clergy_estate_power = 0.5
+	}
+
+	country_modifier = {
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
+		tolerance_own = -2
+		clergy_estate_max_tax = -0.1
+		#clergy_estate_agenda_impact = -0.2
+	}
+
+}
+
+REPLACE_OR_CREATE:consolidated_corruption_of_the_peasants = {
+	estate = peasants_estate
+	
+	potential = { 
+		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_peasants
+	}
+	can_revoke = {
+		government_power > 95
+	}
+	
+	country_modifier = {
+		global_production_efficiency = small_production_efficiency_penalty
+		global_peasants_estate_power = 0.5
+	}
+
+	country_modifier = {
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
+		peasants_estate_target_satisfaction = -0.1
+		global_manpower_modifier = -0.1
+		peasants_estate_levy_size = -0.1
+	}
+}
 
 REPLACE_OR_CREATE:bashtinas_and_pronijas_grants = {
 	estate = nobles_estate

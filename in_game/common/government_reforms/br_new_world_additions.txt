@@ -48,13 +48,9 @@ br_spqe_reform = {
 	country_modifier = {
         #posative
         monthly_towards_centralization = societal_value_monthly_move
-        #monthly_towards_br_bureaucratic = societal_value_monthly_move
-		#global_crown_estate_power = 0.1
 		country_cabinet_efficiency = 0.1
 		government_reform_slots = 1
 		parliament_base_support = 0.1
-        #negatives
-        #court_spending_cost_modifier  = 0.02
 	}
     country_modifier = {
 		potential_trigger = { 

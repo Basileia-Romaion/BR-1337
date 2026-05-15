@@ -12929,91 +12929,29 @@ countries = {
 		}
 
 		our_cores_conquered_by_others = {
+			#update 20 reduced most of the starting cores for better balance.
+			#S1Y
+			kavala drama serres
+			xanthia
 			komotini
-			lapseki bayramic ayvacik
-			alaiye selinti
+			#THE
+			hatera veria edessa kassandreia polygyros thessaloniki
+			kilkis giannitsa gynaikokastro mount_athos rentina
+			#A1G
 			canakkale
 			thasos sporades lemnos imbros molyvos mitilene
-			marmaris  
+			lapseki bayramic ayvacik
+			chios cesme
+			#K1B
+			marmaris
 			antalya elmali karahisar_i_teke kas istanoz
 			manavgat finike
-			rodos kos karpathos
-			#ANA
-			aksaray kochisar insuyu
-			kirsehir nevsehir sariyahsi
-			konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
-			bekarlar bor_tur nigde
-			beysehir aksehir bolvadin sarkikaraagac seydisehir
-			ilgin turgut suluklu kulu_turkey obruk altinekin cumra
-			ankara cubuk haymana kalecik polatli karakecili
-			bozok baliseyh candir dinek_keskin sorgun
-			hacibektas
-			corum huseyinabad sungurlu
-			akdagmadeni aydincik koyulhisar sulusaray tokat zile
-			yalvac
-			beypazari kizilca
-			#THE
-			sporades servia kastoria hatera veria edessa kassandreia polygyros thessaloniki
-			kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama
-			ostrovo
-			grevena siatista
-			xanthia
-			#THS
-			demetrias farsala elassona larissa stomio trikala tyrnavos karditsa
-			neopatras zetounion
-			#ATH
-			athens megara thebes atalanti livadeia
-			corinth damala ermioni xylokastro
-			gravia
-			bodonitsa
-			salona
-			#M0E
-			tripolitsa veligosti karytaina
-			monemvasia mystras oitylo leuktron astros
-			argos nafplio
-			#ACH
-			damala ermioni kalamata kyparissia
-			andritsaina pontikokastro andravida corinth
-			chalandritsa patras vostitsa kalavryta xylokastro
-			negroponte kleisoura karystos kymi oreos eretreia
-			#TRE
-			trebizond giresun gorele gumushane surmene
-			bayramlu unye
-			mesudiye
-			amasya niksar sonisa
-			akkus terme
-			gadegara ladik_pontus merzifon
-			samsun
-			bafra gerze
-			rize khupati
-			#PAF
-			bartin
-			kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
-			cankiri bayat cerkes kursunlu tosya
-			safranbolu iskilip sabanozu ulus yenicepazari
-			gumus
-			#CRT
-			chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
-			#CYP
-			nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos
-			#GEN
-			samos ikaria foca #Aegean Sea
-			amasra #Black Sea
-			#VEN
-			corfu modon kythira andros mykonos amorgos karpathos
+			rodos kos
+			alaiye selinti
 			#NAX
 			naxos kythnos milos
-			#CEP
-			zakynthos leukas cephalonia
-			#CIL
-			adana ayas kars_armenia iskenderun
-			anavarza sis caxud hargan comana_cil
-			tarsus corycus candir_cil molevon
-			kapan
-			silifke anamur mut ermenek
-			alaiye selinti
-			antioch arsuz
-			bukelon ormenio
+			andros mykonos amorgos
+			samos ikaria foca
 		}
 		
 		starting_technology_level = 3
@@ -13257,6 +13195,7 @@ countries = {
 				reduced_from_military_obligations
 				#br_roman_ecumenical_patriarch_privilege
 				br_bureaucrat_clergy
+				consolidated_corruption_of_the_clergy
 
 				#Burghers
 				formal_guilds
@@ -13266,12 +13205,14 @@ countries = {
 				control_over_monetary_policy
 				control_over_the_coinage
 				br_latin_trade_naval_reliance
+				consolidated_corruption_of_the_burghers
 
 				#Commoners
 				access_to_royal_and_ecclesiastical_courts
 				br_themata_peasant_privilege
 				peasants_free_peasantry
 				peasants_fewer_levies
+				consolidated_corruption_of_the_peasants
 
 				tribes_tribal_levies
 			}
