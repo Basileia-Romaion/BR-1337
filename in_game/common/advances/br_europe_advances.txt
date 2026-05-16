@@ -1,0 +1,184 @@
+﻿##############################-Iberia-##############################
+br_adu_banu_nasr = {
+	age = age_1_traditions
+	icon = gra_banu_nasr
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_manpower_modifier = 0.1
+	requires = legalism_advance
+}
+br_adu_nasrid_art = {
+	age = age_1_traditions
+	icon = gra_nasrid_art
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_build_buildings_cost = -0.1
+	global_monthly_art_start_chance = 0.1
+	requires = feudalism_advance
+}
+br_adu_skillful_envoys = {
+	age = age_2_renaissance
+	icon = gra_skillful_envoys
+	potential = {
+		has_or_had_tag = ADU
+	}
+	diplomatic_range_modifier = 0.25
+	monthly_diplomats = 0.1
+	requires = power_projection_advance_2
+}
+br_adu_razzias = {
+	age = age_2_renaissance
+	icon = gra_razzias
+	potential = {
+		has_or_had_tag = ADU
+	}
+	army_movement_speed = 0.1
+	requires = drill_army_advance
+}
+br_adu_muttavia_armies = {
+	age = age_3_discovery
+	icon = gra_muttavia_armies
+	potential = {
+		has_or_had_tag = ADU
+	}
+	hire_mercenary_premium_cost_modifier  = -0.10
+	mercenary_maintenance_efficiency = 0.10
+	requires = regiment_reinforcement_speed_discovery
+}
+br_adu_expand_qanahs = {
+	age = age_3_discovery
+	icon = gra_expand_qanahs
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_monthly_food_modifier = 0.2
+	requires = formalized_relations
+}
+br_adu_adaptative_trade = {
+	age = age_4_reformation
+	icon = gra_adaptative_trade
+	potential = {
+		has_or_had_tag = ADU
+	}
+	merchant_maintenance_efficiency  = 0.10
+	export_efficiency = small_trade_efficiency_bonus
+	requires = global_trade_routes_advance
+}
+br_adu_expand_the_frontier = {
+	age = age_4_reformation
+	icon = gra_expand_the_frontier
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_integration_speed_modifier = 0.2
+	requires = regiment_reinforcement_speed_reformation
+}
+br_adu_a_strong_rule = {
+	age = age_5_absolutism
+	icon = gra_a_strong_rule
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_crown_estate_power = 0.10
+	requires = the_constitution
+}
+br_adu_modernized_economy = {
+	age = age_5_absolutism
+	icon = gra_modernized_economy
+	potential = {
+		has_or_had_tag = ADU
+	}
+	global_raw_material_output = 0.2
+	requires = construction_speed_absolutism
+}
+br_adu_ghazawat = {
+	age = age_6_revolutions
+	icon = gra_ghazawat
+	potential = {
+		has_or_had_tag = ADU
+	}
+	land_morale_modifier = 0.15
+	requires = corps_organisation
+}
+br_adu_a_new_golden_era = {
+	age = age_6_revolutions
+	icon = gra_a_new_golden_era
+	potential = {
+		has_or_had_tag = ADU
+	}
+    global_max_literacy = 10
+    global_monthly_literacy = 0.02
+	requires = government_size_revolutions
+}
+
+##############################-Italy-##############################
+br_italian_universities = {
+	age = age_1_traditions
+	icon = scholasticism
+
+	potential = {
+		OR = { #copy for north italians
+			culture = culture:lombard
+			culture = culture:ligurian
+			culture = culture:piedmontese
+			culture = culture:tuscan
+			culture = culture:venetian
+		}
+	}
+	global_nobles_max_literacy = 5
+	global_burghers_max_literacy = 5
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+	requires = guilds
+}
+br_italy_great_families = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+	potential = {
+		OR = { #copy for north italians
+			culture = culture:lombard
+			culture = culture:ligurian
+			culture = culture:piedmontese
+			culture = culture:tuscan
+			culture = culture:venetian
+		}
+	}
+	monthly_prestige = 0.1
+	diplomatic_capacity_modifier = 0.1
+	requires = distribution_of_power_advance
+}
+br_italian_innovativeness = {
+	age = age_1_traditions
+	icon = genoese_banking_traditions
+
+	potential = {
+		OR = { #copy for north italians
+			culture = culture:lombard
+			culture = culture:ligurian
+			culture = culture:piedmontese
+			culture = culture:tuscan
+			culture = culture:venetian
+		}
+	}
+	embrace_institution_cost_modifier = -0.25
+	requires = italian_universities
+}
+br_italian_condottieri = {
+	age = age_1_traditions
+	icon = glorious_arms
+
+	potential = {
+		OR = { #copy for north italians
+			culture = culture:lombard
+			culture = culture:ligurian
+			culture = culture:piedmontese
+			culture = culture:tuscan
+			culture = culture:venetian
+		}
+	}
+	hire_mercenary_premium_cost_modifier = -0.2
+	hire_mercenary_leader_cost_modifier = -0.2
+	requires = feudalism_advance
+}

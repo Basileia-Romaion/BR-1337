@@ -560,3 +560,185 @@ elysian_army_of_the_new_roman_world = {
 	global_manpower_modifier = 0.1
 	discipline = 0.02
 }
+
+#generic ones
+##############################-Colonial copies-##############################
+br_colonial_tradition = {
+	age = age_1_traditions
+	icon = colonial_tradition
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_population_growth = 0.002
+}
+br_colonial_heritage = {
+	age = age_1_traditions
+	icon = colonial_heritage
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_monthly_development = 0.005
+}
+br_founding_fathers = {
+	age = age_2_renaissance
+	icon = founding_fathers
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	monthly_republican_tradition = 0.05
+	monthly_legitimacy = 0.05 #br added
+}
+br_colonial_militia = {
+	age = age_2_renaissance
+	icon = colonial_militia
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_levy_size_modifier = 0.1
+}
+br_new_frontiers = {
+	age = age_3_discovery
+	icon = new_frontiers
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	colonial_migration_size_modifier = 0.15
+}
+br_continental_trade = {
+	age = age_3_discovery
+	icon = continental_trade
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_trade_protection_factor = 0.25
+}
+br_free_thinkers = {
+	age = age_4_reformation
+	icon = free_thinkers
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_max_literacy = 5
+}
+br_manufacturing_center = {
+	age = age_4_reformation
+	icon = manufacturing_center
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	global_production_efficiency = medium_production_efficiency_bonus
+}
+br_colonial_assembly = {
+	age = age_5_absolutism
+	icon = colonial_assembly
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	government_size = 1
+}
+br_liberty_heroes = {
+	age = age_5_absolutism
+	icon = liberty_heroes
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	combat_speed_modifier = 0.2
+}
+br_colonial_ambition = {
+	age = age_6_revolutions
+	icon = colonial_ambition
+	potential = {
+		OR = {
+			culture = culture:vinlander
+			culture = culture:marklander
+			culture = culture:hellulander
+			culture = culture:kathurlander
+			culture = culture:innulander
+			culture = culture:skraeling_culture
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	land_morale_modifier = 0.1
+}
+
+
