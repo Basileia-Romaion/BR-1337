@@ -1,7 +1,7 @@
 
 
 # Patch Notes
-0.19
+0.19.1
 
 # Update 19
 - Updated Compatibly to 1.2.2
@@ -42,12 +42,11 @@
   - changed development to make frontiers like eastern anatolia/armenia more devastated and western anatolia more developed being the safest portion of the empire generally.
   - HRE starts with Foreign Imperial armories thoughout the cities of the HRE
   - re-added most subject relationships so more larger regional powers form by mid game because I need some big guys to fight as the ERE.
-
+  - lots of smaller tweaks to try and balance the ERE down a tad.
 
 ## Bug fixes
   - Should now be able to correctly invite into the roman organization
-- Balance and fixes
-- 100s of bug fixes
+  - 100s of bug fixes
 
 
 

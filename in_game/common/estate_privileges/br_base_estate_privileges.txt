@@ -186,7 +186,6 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_nobles = {
 	potential = {
 		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
 	}
-	
 	can_revoke = {
 		government_power > 95
 	}
@@ -196,7 +195,15 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_nobles = {
 		monthly_towards_serfdom = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		global_nobles_estate_power = 0.5
-		#estate_enrichment = 0.25
+	}
+	country_modifier = {
+		potential_trigger = { stability < 100 }
+		scale = {
+			value = stability
+			multiply = -0.01
+			add = 1
+		}
+		nobles_estate_levy_size = -0.15
 	}
 	country_modifier = {
 		potential_trigger = { legitimacy < 100 }
@@ -206,7 +213,6 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_nobles = {
 			add = 1
 		}
 		nobles_estate_max_tax = -0.1
-		nobles_estate_levy_size = -0.1
 		subject_loyalty = -25
 	}
 }
@@ -217,16 +223,24 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_burghers = {
 	potential = {
 		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers
 	}
-	
 	can_revoke = {
 		government_power > 95
 	}
 
-	
 	country_modifier = {
+		monthly_towards_individualism = societal_value_minor_monthly_move
+		global_burghers_estate_power = 0.5
+	}
+	country_modifier = {
+		potential_trigger = { stability < 100 }
+		scale = {
+			value = stability
+			multiply = -0.01
+			add = 1
+		}
 		import_efficiency = medium_trade_efficiency_penalty
 		export_efficiency = medium_trade_efficiency_penalty
-		global_burghers_estate_power = 0.5
+		trade_income = -0.1
 	}
 
 	country_modifier = {
@@ -238,18 +252,6 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_burghers = {
 		}
 		burghers_estate_max_tax = -0.1
 	}
-
-	country_modifier = {
-		display_trigger = {
-			custom_description = {
-				text = fate_of_the_phoenix_disaster_active_trigger_text
-				any_active_disaster = {
-					disaster_type = disaster_type:fate_of_the_phoenix
-				}
-			}
-		}
-		trade_income = -0.1
-	}
 }
 
 REPLACE_OR_CREATE:consolidated_corruption_of_the_clergy = {
@@ -258,13 +260,21 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_clergy = {
 	potential = {
 		has_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
 	}
-
 	can_revoke = { government_power > 95 }
-	
+
 	country_modifier = {
+		monthly_towards_spiritualist = societal_value_minor_monthly_move
 		global_clergy_estate_power = 0.5
 	}
-
+	country_modifier = {
+		potential_trigger = { stability < 100 }
+		scale = {
+			value = stability
+			multiply = -0.01
+			add = 1
+		}
+		tolerance_own = -2
+	}
 	country_modifier = {
 		potential_trigger = { legitimacy < 100 }
 		scale = {
@@ -272,7 +282,6 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_clergy = {
 			multiply = -0.01
 			add = 1
 		}
-		tolerance_own = -2
 		clergy_estate_max_tax = -0.1
 		#clergy_estate_agenda_impact = -0.2
 	}
@@ -290,20 +299,40 @@ REPLACE_OR_CREATE:consolidated_corruption_of_the_peasants = {
 	}
 	
 	country_modifier = {
-		global_production_efficiency = small_production_efficiency_penalty
 		global_peasants_estate_power = 0.5
 	}
 
 	country_modifier = {
-		potential_trigger = { legitimacy < 100 }
+		potential_trigger = { stability < 100 }
 		scale = {
-			value = legitimacy
+			value = stability
 			multiply = -0.01
 			add = 1
 		}
+		global_production_efficiency = medium_production_efficiency_penalty
+		global_manpower_modifier = -0.15
+		peasants_estate_levy_size = -0.15
+	}
+	country_modifier = {
+		display_trigger = {
+			custom_description = {
+				text = has_sixty_books_of_the_basilika_trigger_text
+				has_bureaucracy_of_type = bureaucracy_type:sixty_books_of_the_basilika_bureaucracy
+			}
+		}
+		scale = {
+			value = {
+				value = 1
+				if = {
+					limit = { has_variable = sixty_books_basilika_maintenance }
+					value = var:sixty_books_basilika_maintenance
+				}
+			}
+			multiply = -1.5
+			add = 2
+		}
 		peasants_estate_target_satisfaction = -0.1
-		global_manpower_modifier = -0.1
-		peasants_estate_levy_size = -0.1
+		pure_tooltip_entry = sixty_books_basilika_satisfaction_scale_tt
 	}
 }
 

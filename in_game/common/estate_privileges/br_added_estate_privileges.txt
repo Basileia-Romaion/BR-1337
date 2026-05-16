@@ -12,10 +12,25 @@
 #monthly_nationalist_rebel_growth = 0.005
 #subject_opinions = 50
 #subject_loyalty = 50
+#global_non_rural_monthly_prosperity = 0.002
 
 #aggressiveness_modifier = 0.25
 #expected_warscore_modifier = 0.25
 #coalition_strength_tolerance = 10
+
+#local_tribesmen_assimilation_blocked
+#local_pop_join_rebel_threshold
+#local_separatism
+#local_nobles_estate_unrest
+#local_levy_size_modifier
+#local_max_literacy
+#local_monthly_literacy
+#local_monthly_control_decline
+#local_pop_assimilation_speed_modifier
+#local_heathen_pop_conversion_speed_modifier
+#local_heretic_pop_conversion_speed_modifier
+#local_crown_estate_power
+
 
 #Senate
 
@@ -101,47 +116,50 @@ br_dynatoi_magnates = {
 	allow = {
 	}
 	can_revoke = {
-		#has_law = br_thema_levies_upgraded
 		government_power > 75
 		societal_value:centralization_vs_decentralization <= -75
 		"estate_power(estate_type:nobles_estate)" <= 0.25
 	}
 	country_modifier = {
-		global_nobles_estate_power = 1
+		global_nobles_estate_power = 0.5
 		allow_rgo_slave_demand = yes
+		global_max_rgo_size_modifier_in_rural = 0.25
 		nobles_estate_target_satisfaction = small_privilege_target_satisfaction
-		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 		monthly_towards_serfdom = societal_value_monthly_move
 		monthly_towards_aristocracy = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_stratiotai = societal_value_minor_monthly_move	
 	}
+	#positive modifiers
+	country_modifier = {
+		potential_trigger = { stability > 0 }
+		scale = {
+			value = stability
+			multiply = 0.01
+		}
+		nobles_estate_levy_size = 0.25
+		levy_maintenance_modifier = -0.25
+	}
+	#negative modifiers
 	location_modifier = {
         potential_trigger = {
 			local_control < 0.5
         }
-        local_nobles_estate_power = 0.25
-		local_nobles_desired_pop_scaled = 0.005 #5 per 1000 pops
+        local_nobles_estate_power = 0.5
+		local_nobles_desired_pop_scaled = 0.002 #1 per 1000 pops
 		local_peasant_enfranchisment = -0.1
+		local_pop_join_rebel_threshold = 0.05
     }
-	#positive modifiers
 	country_modifier = {
-		potential_trigger = { government_power >= 75 }
-		global_rural_build_buildings_cost = -0.2
-		levy_maintenance_modifier = -0.2
-	}
-	#negative modifiers
-	country_modifier = {
-		potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
-		nobles_estate_levy_size = -0.1
-		stability_cost = 0.1
+		#potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
+		subject_opinions = -25
 		global_max_rural_control = -0.05
-	}
-	country_modifier = {
-		potential_trigger = { stability <= 50 }
-		monthly_peasants_estate_rebel_growth = 0.001
-		peasants_estate_levy_size = -0.25
-		monthly_legitimacy = -0.05
 	}
 }
 
@@ -169,20 +187,20 @@ br_latin_occupiers = {
 
 ### Peasants Privileges ###
 
-akritai_privilege = {
+akritai_privilege = { #u20 updated
 	estate = peasants_estate
 	icon = ghazi_privilege #control_of_the_borderlands
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
 			religion ?= religion:orthodox
 		}
 	}
 	allow = {
-		has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		OR = {
+			has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			has_estate_privilege = estate_privilege:peasants_allowed_weapons_privilege
+		}
 	}
 	can_revoke = {
 		government_power > 75
@@ -200,22 +218,21 @@ akritai_privilege = {
 		aggressiveness_modifier = 0.25
 	}
 	country_modifier = {
-		potential_trigger = { government_power >= 50 }
+		potential_trigger = { legitimacy > 0 }
+		scale = {
+			value = legitimacy
+			multiply = 0.01
+		}
 		peasants_estate_target_satisfaction = small_privilege_target_satisfaction
 		global_army_levy_size_modifier = 0.1
 		levy_combat_efficiency_modifier = 0.1
 		amount_looted_modifier = 0.5
 	}
 	country_modifier = {
-		potential_trigger = {  societal_value:spiritualist_vs_humanist <= -50 }
+		potential_trigger = { societal_value:spiritualist_vs_humanist <= -25 }
 		damage_done_versus_heathens_modifier = 0.1
 		antagonism_religion_influence = 0.5
 		tolerance_heretic = -1
-	}
-	country_modifier = {
-		potential_trigger = {  societal_value:spiritualist_vs_humanist >= 25 }
-		monthly_legitimacy = -0.1
-		#stability_cost = 0.05
 	}
 		
 }
@@ -256,22 +273,25 @@ br_frontier_expansion_privilege = {
 	}
 }
 
-br_themata_peasant_privilege = {
+br_themata_peasant_privilege = { #u20 updated
 	estate = peasants_estate
 	icon = dhimmi_military_service #primacy_of_nobility
 	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}	
 	}
 	allow = {
-		#OR = {
-		#	has_law = br_thema_levies_upgraded
-		#	has_estate_privilege = estate_privilege:br_themata_peasant_privilege
-		#}
+		OR = {
+			societal_value:serfdom_vs_free_subjects >= 25
+			has_estate_privilege = estate_privilege:br_themata_peasant_privilege #So it won't drop off if you fall below 25 free subject value
+		}
 	}
 	can_revoke = {
 		government_power > 75
 		"estate_power(estate_type:peasants_estate)" <= 0.1
-		societal_value:centralization_vs_decentralization > -75
+		societal_value:centralization_vs_decentralization > -50
 	}
 	country_modifier = {
 		global_peasants_estate_power = 1
@@ -280,28 +300,38 @@ br_themata_peasant_privilege = {
 		monthly_towards_free_subjects = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		monthly_towards_stratiotai = societal_value_monthly_move
-		global_soldiers_desired_pop_scaled = 0.005 #Soldier Levies
+		global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 	}
 	#positive
 	country_modifier = {
-		potential_trigger = { government_power >= 75 }
+		potential_trigger = { stability > 0 }
+		scale = {
+			value = stability
+			multiply = 0.01
+		}
 		monthly_experience_gain = 0.05
-		peasants_estate_levy_size = 0.1
+		global_army_levy_size_modifier = 0.1
 		levy_combat_efficiency_modifier = 0.1
-		#levy_maintenance_modifier = -0.1
 	}
 	#negative
 	country_modifier = {
-		potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
-		peasants_estate_max_tax = -0.02
-		global_max_rural_control = -0.02
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
+		peasants_estate_max_tax = -0.05
 	}
 	country_modifier = {
-		potential_trigger = { stability <= 50 }
-		monthly_legitimacy = -0.05
-		global_monthly_food_modifier = -0.1
-		monthly_nobles_estate_rebel_growth = 0.001
+		potential_trigger = { stability < 100 }
+		scale = {
+			value = stability
+			multiply = -0.01
+			add = 1
+		}
+		global_max_rural_control = -0.05
 	}
 }
 
@@ -387,7 +417,10 @@ br_latin_trade_naval_reliance = {
 	estate = burghers_estate
 	#icon = sponsor_maritime_contracts
 	potential = {
-		has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+		OR = {
+			has_or_had_tag = BYZ
+			has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+		}
 	}
 	can_revoke = {
 		societal_value:centralization_vs_decentralization > -50
@@ -403,9 +436,13 @@ br_latin_trade_naval_reliance = {
 		monthly_towards_plutocracy = societal_value_monthly_move
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 	}
-	#posative
+	#positive
 	country_modifier = {
-		potential_trigger = { stability >= 50 }
+		potential_trigger = { stability > 0 }
+		scale = {
+			value = stability
+			multiply = 0.01
+		}
 		trade_sea_efficiency = 0.25
 		sea_cost_on_distance_from_capital_when_maritime = -0.5
 	}
@@ -418,19 +455,23 @@ br_latin_trade_naval_reliance = {
 	}
 	#negative modifiers
 	country_modifier = {
-		potential_trigger = { government_power <= 50 }
-		navy_maintenance_efficiency = -0.25
-		ship_build_speed = -0.25
-	}
-	country_modifier = {
-		potential_trigger = { stability <= 50 }
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
 		global_navy_levy_size_modifier = -0.5
-		global_maritime_presence_modifier = -0.1
+		navy_maintenance_efficiency = -0.25
 	}
 	country_modifier = {
-		potential_trigger = { prestige <= 50 }
+		potential_trigger = { prestige < 100 }
+		scale = {
+			value = prestige
+			multiply = -0.01
+			add = 1
+		}
 		global_sailors_modifier = -0.5
-		monthly_legitimacy = -0.1
 	}
 }
 
@@ -440,22 +481,29 @@ br_bureaucrat_clergy = { #maybe split up
 	estate = clergy_estate
 	icon = dhimmi_in_administration #clergy_in_administration
 	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:roman_group }
+		}
 	}
 	can_revoke = {
 		government_power > 75
 		"estate_power(estate_type:clergy_estate)" <= 0.2
-		societal_value:spiritualist_vs_humanist > 75
+		societal_value:spiritualist_vs_humanist > 50
 	}
 	country_modifier = {
 		global_clergy_estate_power = 0.25
-		global_clergy_city_desired_pop_scaled = 0.01
+		global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000
 		monthly_towards_centralization = societal_value_minor_monthly_move
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
 	}
 	#positive
 	country_modifier = {
-		potential_trigger = { government_power >= 50 }
+		potential_trigger = { stability > 0 }
+		scale = {
+			value = stability
+			multiply = 0.01
+		}
 		clergy_estate_target_satisfaction = small_privilege_target_satisfaction
 		country_cabinet_efficiency = 0.1
 	}
@@ -472,23 +520,22 @@ br_bureaucrat_clergy = { #maybe split up
 		global_clergy_max_literacy = 5
 		global_pop_promotion_speed_modifier = 0.10
 	}
-	country_modifier = {
-		potential_trigger = {  societal_value:spiritualist_vs_humanist >= 50 }
-		monthly_legitimacy = -0.1
-		stability_cost = 0.1
-	}
 }
 
 br_roman_ecumenical_patriarch_privilege = {
 	estate = clergy_estate
 	icon = clergy_religious_state
 	potential = {
-		has_or_had_tag = BYZ
+		OR = {
+			has_or_had_tag = BYZ
+			owns = location:constantinople
+		}
 	}
 	allow = {
+		religion ?= religion:orthodox
 	}
 	can_revoke = {
-		"estate_power(estate_type:crown_estate)" >= 0.5
+		"estate_power(estate_type:crown_estate)" >= 0.35
 		societal_value:spiritualist_vs_humanist > 75
 	}
 	country_modifier = {
@@ -501,13 +548,20 @@ br_roman_ecumenical_patriarch_privilege = {
 	#	global_pop_conversion_speed_modifier = 0.25
 	#}
 	country_modifier = {
-		potential_trigger = { government_power >= 50 }
+		potential_trigger = { stability > 0 }
+		scale = {
+			value = stability
+			multiply = 0.01
+		}
 		clergy_estate_target_satisfaction = small_privilege_target_satisfaction
-		country_cabinet_efficiency = 0.1
-		global_pop_conversion_speed_modifier = 0.1
 	}
 	country_modifier = {
-		potential_trigger = { government_power <= 75 }
+		potential_trigger = { legitimacy < 100 }
+		scale = {
+			value = legitimacy
+			multiply = -0.01
+			add = 1
+		}
 		clergy_estate_max_tax = -0.1
 	}
 	#positive
@@ -519,7 +573,6 @@ br_roman_ecumenical_patriarch_privilege = {
 	country_modifier = {
 		potential_trigger = { owns = location:constantinople }
 		diplomatic_reputation = 2
-		#unlock_interaction = commission_art
 	}
 	country_modifier = {
 		potential_trigger = { owns = location:antioch }
@@ -527,12 +580,11 @@ br_roman_ecumenical_patriarch_privilege = {
 	}
 	country_modifier = {
 		potential_trigger = { owns = location:rome }
-		maximum_religious_influence = 250
+		global_pop_conversion_speed_modifier = 0.25
 	}
 	country_modifier = {
 		potential_trigger = { owns = location:jerusalem }
 		tolerance_own = 1
-		#unlock_casus_belli = cb_deus_vult
 	}
 }
 
@@ -606,5 +658,27 @@ br_elysian_foederati_privilege = {
 		wrong_culture_levy_size = 0.1
 		levy_maintenance_modifier = -0.1
 		monthly_towards_free_subjects = societal_value_monthly_move
+		global_tribal_promotion = -0.1
+	}
+}
+br_ere_foederati_privilege = {
+	estate = tribes_estate
+	icon = tribal_autonomy
+	
+	potential = { #tech unlock
+		#OR = {
+		#	has_or_had_tag = E1Y			
+		#	has_or_had_tag = E2Y
+		#	culture = { has_culture_group = culture_group:elysian_group }
+		#}
+	}
+	country_modifier = {
+		global_tribes_estate_power = 0.5
+		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+		tribes_estate_levy_size = 0.5
+		wrong_culture_levy_size = 0.1
+		levy_maintenance_modifier = -0.1
+		monthly_towards_free_subjects = societal_value_monthly_move
+		global_tribal_promotion = -0.1
 	}
 }

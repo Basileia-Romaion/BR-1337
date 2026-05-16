@@ -28,19 +28,16 @@ br_imperial_administration = {
 	country_modifier = {
 		government_reform_slots = 1
 		court_spending_cost_modifier  = 0.1
-		#chancery_cap_level = 1
 	}
 	country_modifier = {
-		potential_trigger = { legitimacy > 0 }
+		potential_trigger = { stability > 0 }
 		scale = {
-			value = legitimacy
-			multiply = -0.01
-			add = 1
+			value = stability
+			multiply = 0.01
 		}
 		monthly_towards_centralization = societal_value_monthly_move
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
 		global_crown_estate_power = 0.25
-		#country_cabinet_efficiency = 0.05
 	}
 	country_modifier = {
 		potential_trigger = { 
@@ -49,14 +46,13 @@ br_imperial_administration = {
 		global_max_bureaucracy_slots = 2
 	}
 	country_modifier = {
-		potential_trigger = { stability < 100 }
+		potential_trigger = { legitimacy < 100 }
 		scale = {
-			value = stability
+			value = legitimacy
 			multiply = -0.01
 			add = 1
 		}
 		nobles_estate_target_satisfaction = larger_permanent_target_satisfaction_penalty
-		#global_estate_satisfaction_from_legitimacy = -0.1
 	}
 	years = 2
 }

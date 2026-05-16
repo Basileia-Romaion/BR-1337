@@ -13202,8 +13202,8 @@ countries = {
 				land_of_commerce
 				market_fairs
 				sponsor_maritime_contracts
-				control_over_monetary_policy
-				control_over_the_coinage
+				#control_over_monetary_policy
+				#control_over_the_coinage
 				br_latin_trade_naval_reliance
 				consolidated_corruption_of_the_burghers
 
@@ -54560,7 +54560,6 @@ countries = {
 		include = "expl_indian_trade_route"
 		government = {
 			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
 		currency_data = {
@@ -54674,7 +54673,6 @@ countries = {
 		include = "expl_indian_trade_route"
 		government = {
 			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = br_ere_rdm_character_00
 			ruler_term = { character = br_ere_rdm_character_00 start_date = 1333.1.1 }
 		}

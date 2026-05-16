@@ -478,10 +478,13 @@ diplomacy_manager = {
     dependency = { first = TRE second = P2N subject_type = br_thema_subject } # Thema
     dependency = { first = AON second = AN11 subject_type = br_thema_subject } # Thema
     dependency = { first = AON second = AN12 subject_type = br_thema_subject } # Thema
+    dependency = { first = AON second = AN4 subject_type = br_thema_subject } # Thema
     dependency = { first = AN13 second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
+    dependency = { first = AN10 second = AN2 subject_type = br_thema_subject } # Thema
+    dependency = { first = AN10 second = AN3 subject_type = br_thema_subject } # Thema
 
     scripted_mutual = { first = AN8 second = AN13 type = alliance }
 

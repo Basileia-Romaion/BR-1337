@@ -5907,6 +5907,7 @@ building_manager = {
 	nobility_fortifications = { tag = ARM level = 1 location = malazgirt }
 
 	#Italy
+	art_school = { tag = RAV level = 1 location = ravenna }
 	library = { tag = RAV level = 1 location = ravenna }
 	city_guard = { tag = RAV level = 1 location = ravenna }
 	paper_guild = { tag = RAV level = 2 location = ravenna }
@@ -5918,6 +5919,7 @@ building_manager = {
 	castle = { tag = RAV level = 1 location = ravenna }
 
 	local_governor = { tag = PAP level = 1 location = rome }
+	art_school = { tag = PAP level = 1 location = rome }
 	library = { tag = PAP level = 1 location = rome }
 	scriptorium = { tag = PAP level = 5 location = rome }
 	paper_guild = { tag = PAP level = 3 location = rome }
@@ -5925,6 +5927,7 @@ building_manager = {
 	tannery = { tag = PAP level = 1 location = rome }
 	cloth_guild = { tag = PAP level = 4 location = rome }
 	jewelry_guild = { tag = PAP level = 1 location = rome }
+	art_school = { tag = VEN level = 1 location = venice }
 	library = { tag = VEN level = 1 location = venice }
 	scriptorium = { tag = VEN level = 2 location = venice }
 	paper_guild = { tag = VEN level = 3 location = venice }
@@ -5935,6 +5938,7 @@ building_manager = {
 	distillers_guild = { tag = VEN level = 4 location = venice }
 	tools_guild = { tag = VEN level = 4 location = venice }
 	jewelry_guild = { tag = VEN level = 3 location = venice }
+	art_school = { tag = MLO level = 1 location = milano }
 	library = { tag = MLO level = 1 location = milano }
 	scriptorium = { tag = MLO level = 2 location = milano }
 	paper_guild = { tag = MLO level = 3 location = milano }
@@ -5944,6 +5948,7 @@ building_manager = {
 	distillers_guild = { tag = MLO level = 5 location = milano }
 	tools_guild = { tag = MLO level = 5 location = milano }
 	jewelry_guild = { tag = MLO level = 3 location = milano }
+	art_school = { tag = GEN level = 1 location = genoa }
 	library = { tag = GEN level = 1 location = genoa }
 	scriptorium = { tag = GEN level = 2 location = genoa }
 	paper_guild = { tag = GEN level = 4 location = genoa }
@@ -5952,6 +5957,7 @@ building_manager = {
 	cloth_guild = { tag = GEN level = 5 location = genoa }
 	saltpeter_guild = { tag = GEN level = 1 location = genoa }
 	jewelry_guild = { tag = GEN level = 3 location = genoa }
+	art_school = { tag = FLO level = 1 location = florence }
 	library = { tag = FLO level = 1 location = florence }
 	scriptorium = { tag = FLO level = 2 location = florence }
 	paper_guild = { tag = FLO level = 3 location = florence }
