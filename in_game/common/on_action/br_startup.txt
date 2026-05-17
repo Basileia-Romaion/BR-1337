@@ -122,10 +122,11 @@ br_on_game_start = {
 			research_advance = advance_type:unlock_hulk_advance
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
-			research_advance = advance_type:italian_universities
-			research_advance = advance_type:italy_great_families
-			research_advance = advance_type:italian_innovativeness
-			research_advance = advance_type:italian_condottieri
+			#research_advance = advance_type:italian_universities
+			#research_advance = advance_type:italy_great_families
+			#research_advance = advance_type:italian_innovativeness
+			#research_advance = advance_type:italian_condottieri
+			research_advance = advance_type:talented_traders
         }
 		c:RIC = {
 			research_advance = advance_type:unlock_barque_advance
@@ -144,6 +145,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
 		}
 		c:VTC = {
 			research_advance = advance_type:unlock_barque_advance
@@ -160,6 +162,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
 		}
 		c:GTC = {
 			research_advance = advance_type:unlock_barque_advance
@@ -176,6 +179,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
 		}
 		c:NAX = {
 			research_advance = advance_type:unlock_hulk_advance
@@ -249,6 +253,9 @@ br_on_game_start = {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
 		}
 		c:MAM = {
             research_advance = advance_type:meritocracy_advance
@@ -256,6 +263,9 @@ br_on_game_start = {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+            research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
 		}
 		c:AIA = {
             research_advance = advance_type:meritocracy_advance
@@ -263,6 +273,9 @@ br_on_game_start = {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
 		}
 		c:A0A = {
             research_advance = advance_type:meritocracy_advance
@@ -299,7 +312,12 @@ br_on_game_start = {
 			research_advance = advance_type:bashi_bazouks
 			research_advance = advance_type:there_shall_be_no_grass
 			research_advance = advance_type:akinji_cavalry
-			add_gold = 1000
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			add_gold = 2500
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
@@ -308,7 +326,12 @@ br_on_game_start = {
 			research_advance = advance_type:aristocracy
 			research_advance = advance_type:unlock_cavalry_advance
 			research_advance = advance_type:unlock_heavy_cavalry_advance
-			add_gold = 1000
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			add_gold = 2500
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}

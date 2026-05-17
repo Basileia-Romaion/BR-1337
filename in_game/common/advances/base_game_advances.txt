@@ -48,8 +48,6 @@ REPLACE_OR_CREATE:byz_bureaucracy_advance = {
 	requires = medieval_administration
 }
 
-
-
 ##############################-Iberia-##############################
 REPLACE_OR_CREATE:cas_repoblaciones = {
 	age = age_1_traditions
@@ -62,10 +60,8 @@ REPLACE_OR_CREATE:cas_repoblaciones = {
 	}
 	global_monthly_prosperity = 0.001
 	global_migration_speed_modifier = 0.1
-
 	requires = legalism_advance
 }
-
 REPLACE_OR_CREATE:cas_the_reconquista = {
 	age = age_1_traditions
 	potential = {
@@ -76,10 +72,8 @@ REPLACE_OR_CREATE:cas_the_reconquista = {
 		}
 	}
 	land_morale_modifier = 0.15
-
 	requires = feudalism_advance
 }
-
 REPLACE_OR_CREATE:cas_castilian_navy = {
 	age = age_2_renaissance
 	potential = {
@@ -91,10 +85,8 @@ REPLACE_OR_CREATE:cas_castilian_navy = {
 	}
 	global_maritime_presence_modifier = 0.1
 	navy_heavy_ship_power = 0.15
-
 	requires = dock_advance
 }
-
 REPLACE_OR_CREATE:cas_cronicas_reales = {
 	age = age_2_renaissance
 	potential = {
@@ -106,10 +98,8 @@ REPLACE_OR_CREATE:cas_cronicas_reales = {
 	}
 	cultural_tradition_modifier = 0.1
 	monthly_prestige = 0.1
-
 	requires = renaissance_court
 }
-
 REPLACE_OR_CREATE:cas_masters_of_the_orders = {
 	age = age_3_discovery
 	potential = {
@@ -120,10 +110,8 @@ REPLACE_OR_CREATE:cas_masters_of_the_orders = {
 		}
 	}
 	monthly_army_tradition = 0.05
-
 	requires = pike_square
 }
-
 REPLACE_OR_CREATE:cas_new_world = {
 	age = age_3_discovery
 	potential = {
@@ -134,13 +122,10 @@ REPLACE_OR_CREATE:cas_new_world = {
 			is_castilian_spain = yes
 		}
 	}
-
 	colonial_migration_size_modifier = 0.25
 	colonial_range_modifier = 0.25
-
 	requires = open_sea_exploration
 }
-
 REPLACE_OR_CREATE:cas_reform_of_millones = {
 	age = age_4_reformation
 	potential = {
@@ -151,10 +136,8 @@ REPLACE_OR_CREATE:cas_reform_of_millones = {
 		}
 	}
 	tax_income_efficiency = large_tax_income_efficiency_bonus
-
 	requires = imperial_ambitions
 }
-
 REPLACE_OR_CREATE:cas_marine_infantry = {
 	age = age_4_reformation
 	potential = {
@@ -166,10 +149,8 @@ REPLACE_OR_CREATE:cas_marine_infantry = {
 	}
 	army_disembark_speed = 0.25
 	naval_morale_modifier = 0.10
-
 	requires = mercenaries_reformation_advance
 }
-
 REPLACE_OR_CREATE:cas_pasos = {
 	age = age_5_absolutism
 	potential = {
@@ -180,10 +161,8 @@ REPLACE_OR_CREATE:cas_pasos = {
 		}
 	}
 	tolerance_own = 1
-
 	requires = absolute_rulership
 }
-
 REPLACE_OR_CREATE:cas_real_academia_espanola = {
 	age = age_5_absolutism
 	potential = {
@@ -194,7 +173,6 @@ REPLACE_OR_CREATE:cas_real_academia_espanola = {
 		}
 	}
 	global_monthly_literacy = 0.02
-	
 	requires = the_constitution
 }
 
@@ -208,7 +186,6 @@ REPLACE_OR_CREATE:cas_canal_de_castilla = {
 		}
 	}
 	global_monthly_food_modifier = 0.2
-
 	requires = enlightened_court
 }
 
@@ -223,7 +200,6 @@ REPLACE_OR_CREATE:cas_royal_factories = {
 		}
 	}
 	global_production_efficiency = large_production_efficiency_bonus
-
 	requires = revolutions_subject_opinions_advance
 }
 
@@ -246,7 +222,7 @@ REPLACE_OR_CREATE:nor_seaborn_country = {
 	}
 	naval_damage_taken = -0.05
 	sea_cost_on_distance_from_capital_when_maritime = -0.5
-	
+
 	requires = feudalism_advance
 }
 REPLACE_OR_CREATE:nor_bounties_of_the_sea = {
@@ -265,7 +241,6 @@ REPLACE_OR_CREATE:nor_bounties_of_the_sea = {
 			has_or_had_tag = NRC
 		}
 	}
-	
 	global_fish_output_modifier = 0.20
 	requires = nor_seaborn_country
 }
@@ -343,7 +318,6 @@ REPLACE_OR_CREATE:nor_shipbuilding = {
 	}
 	ship_build_speed = 0.1
 }
-
 REPLACE_OR_CREATE:write_new_sagas = {
 	age = age_5_absolutism
 	potential = {
@@ -392,12 +366,10 @@ REPLACE_OR_CREATE:dan_levy_recruitment = {
 			has_or_had_tag = NSE
 		}
 	}
-	global_levy_size_modifier = 0.1
-	levy_recovery_modifier = 0.1 
-	
+	global_levy_size_modifier = 0.15
+	levy_recovery_modifier = 0.15
 	requires = feudalism_advance
 }
-
 REPLACE_OR_CREATE:dan_old_naval_traditions = {
 	age = age_1_traditions
 	potential = {
@@ -410,10 +382,8 @@ REPLACE_OR_CREATE:dan_old_naval_traditions = {
 	}
 	global_maritime_presence_modifier = 0.25
 	sea_cost_on_distance_from_capital_when_maritime = -0.5
-	
 	requires = dan_levy_recruitment
 }
-
 REPLACE_OR_CREATE:dan_rulers_of_the_north = {
 	age = age_2_renaissance
 	potential = {
@@ -426,10 +396,8 @@ REPLACE_OR_CREATE:dan_rulers_of_the_north = {
 	}
 	diplomatic_capacity = 1
 	monthly_legitimacy = 0.1
-	
 	requires = crown_power_advance_renaissance
 }
-
 REPLACE_OR_CREATE:dan_reliance_mercenaries = {
 	age = age_2_renaissance
 	potential = {
@@ -441,10 +409,8 @@ REPLACE_OR_CREATE:dan_reliance_mercenaries = {
 		}
 	}
 	mercenary_maintenance_efficiency = 0.15
-	
 	requires = gunpowder_advance
 }
-
 REPLACE_OR_CREATE:dan_rentekammer_advance = {
 	age = age_3_discovery
 	potential = {
@@ -456,10 +422,8 @@ REPLACE_OR_CREATE:dan_rentekammer_advance = {
 		}
 	}
 	country_cabinet_efficiency = 0.1
-
 	requires = diplomatic_training
 }
-
 REPLACE_OR_CREATE:dan_royal_danish_navy = {
 	age = age_3_discovery
 	potential = {
@@ -472,10 +436,8 @@ REPLACE_OR_CREATE:dan_royal_danish_navy = {
 	}
 	global_sailors_modifier = 0.2
 	navy_galley_power = 0.1
-
 	requires = supply_depot_advance_age_3_discovery
 }
-
 REPLACE_OR_CREATE:dan_danish_orthodoxy = {
 	age = age_4_reformation
 	potential = {
@@ -488,10 +450,8 @@ REPLACE_OR_CREATE:dan_danish_orthodoxy = {
 	}
 	tolerance_own = 1
 	monthly_religious_influence = 0.1
-
 	requires = artists_advance_reformations
 }
-
 REPLACE_OR_CREATE:dan_expanded_dockyards = {
 	age = age_4_reformation
 	potential = {
@@ -504,7 +464,6 @@ REPLACE_OR_CREATE:dan_expanded_dockyards = {
 	}
 	unlock_building = copenhagen_dockyard
 	global_naval_supplies_output_modifier = 0.2
-
 	requires = maritime_advance_age_4
 }
 REPLACE_OR_CREATE:dan_danish_legislation = {
@@ -518,10 +477,8 @@ REPLACE_OR_CREATE:dan_danish_legislation = {
 		}
 	}
 	global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-
 	requires = the_constitution
 }
-
 REPLACE_OR_CREATE:dan_danish_agriculture = {
 	age = age_5_absolutism
 	potential = {
@@ -533,10 +490,8 @@ REPLACE_OR_CREATE:dan_danish_agriculture = {
 		}
 	}
 	global_monthly_food_modifier = 0.2
-
 	requires = pop_promotion_speed_age_5
 }
-
 REPLACE_OR_CREATE:dan_royal_life_guards = {
 	age = age_5_absolutism
 	potential = {
@@ -548,10 +503,8 @@ REPLACE_OR_CREATE:dan_royal_life_guards = {
 		}
 	}
 	army_heavy_infantry_power = 0.1
-
 	requires = war_score_absolutism_advance
 }
-
 REPLACE_OR_CREATE:dan_scanian_regiment = {
 	age = age_5_absolutism
 	potential = {
@@ -564,10 +517,8 @@ REPLACE_OR_CREATE:dan_scanian_regiment = {
 	}
 	peasants_estate_target_satisfaction = small_permanent_target_satisfaction
 	army_heavy_infantry_build_cost_modifier = -0.1
-
 	requires = regiment_reinforcement_speed_absolutism
 }
-
 REPLACE_OR_CREATE:dan_admiralty_college = {
 	age = age_6_revolutions
 	potential = {
@@ -580,10 +531,8 @@ REPLACE_OR_CREATE:dan_admiralty_college = {
 	}
 	own_coast_naval_combat_bonus = 0.1
 	navy_maintenance_efficiency = 0.1
-
 	requires = recruitment_improvements_revolutions
 }
-
 REPLACE_OR_CREATE:dan_trading_economy = {
 	age = age_6_revolutions
 	potential = {
@@ -595,7 +544,6 @@ REPLACE_OR_CREATE:dan_trading_economy = {
 		}
 	}
 	global_merchant_capacity_modifier = 0.25
-
 	requires = urbanization
 }
 ##############################-Angland-##############################
@@ -618,7 +566,6 @@ REPLACE_OR_CREATE:english_tradition = {
 		}
 	}
 	army_heavy_infantry_power = 0.1
-	
 	requires = feudalism_advance
 }
 REPLACE_OR_CREATE:english_heritage = {
@@ -1054,270 +1001,13 @@ REPLACE_OR_CREATE:water_frame = {
 }
 
 
-
-##############################-France HRE-##############################
-REPLACE_OR_CREATE:french_tradition = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
-	diplomatic_capacity = 1
-	
-	requires = feudalism_advance
-}
-REPLACE_OR_CREATE:french_heritage = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	nobles_estate_levy_size = 1.0
-	
-	requires = french_tradition
-}
-REPLACE_OR_CREATE:french_language_in_all_courts = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	cultural_influence_modifier = 0.2
-}
-REPLACE_OR_CREATE:elan = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	land_morale_modifier = 0.2
-}
-REPLACE_OR_CREATE:estates_general = {
-	age = age_3_discovery
-	country_cabinet_efficiency = 0.1
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-}
-REPLACE_OR_CREATE:fra_gendarmes = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	army_light_cavalry_power = 0.1
-	army_maintenance_efficiency = 0.05
-}
-REPLACE_OR_CREATE:fra_integration_of_new_territories = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	global_integration_speed_modifier = 0.2
-}
-REPLACE_OR_CREATE:fra_reliance_on_privateers = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	hire_privateer_cost_modifier = -0.1
-	privateer_maintenance_cost_modifier = -0.1
-}
-REPLACE_OR_CREATE:fra_reformation_of_taxation = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	tax_income_efficiency = medium_tax_income_efficiency_bonus
-}
-REPLACE_OR_CREATE:fra_school_of_fontainebleau = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	invite_artist_cost_modifier = -0.25
-	num_possible_artists = 1
-}
-REPLACE_OR_CREATE:vauban_fortifications = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	fort_limit_modifier = 0.2
-}
-REPLACE_OR_CREATE:the_philosophes = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	research_speed_modifier = 0.05
-}
-REPLACE_OR_CREATE:fra_expansion_of_france = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	casus_belli_creation_speed_modifier = 0.25
-}
-REPLACE_OR_CREATE:liberty_egalite_fraternity = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-		is_revolutionary = yes
-	}
-	tolerance_heretic = 1
-	tolerance_heathen = 1
-
-	allow_children = no
-}
-REPLACE_OR_CREATE:fra_code_civil = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	legislative_efficiency = 0.2
-}
-REPLACE_OR_CREATE:french_ambition = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	discipline = 0.05
-}
-#From BOH
-REPLACE_OR_CREATE:students_of_foreign_courts = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = BOH
-			has_or_had_tag = FRA
-			has_or_had_tag = LOT
-		}
-	}
-	
-	country_child_education = 0.1
-	global_nobles_max_literacy = 5
-	requires = chancery_advance
-}
-#From HAB
-REPLACE_OR_CREATE:edict_of_restitution = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = HAB
-			has_or_had_tag = LOT
-		}
-	}
-	global_pop_conversion_speed_modifier = 0.10
-
-	requires = crown_power_advance_reformation
-}
-REPLACE_OR_CREATE:austrian_ambition = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = HAB
-			has_or_had_tag = LOT
-		}
-	}
-	country_child_education = 0.4
-	skill_of_new_artists = 0.2
-
-	requires = enlightened_court
-}
-REPLACE_OR_CREATE:austrian_state_industrialization = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = HAB
-			has_or_had_tag = LOT
-		}
-	}
-	global_production_efficiency = large_production_efficiency_bonus
-
-	requires = joint_stock_companies
-}
-REPLACE_OR_CREATE:imperial_artillery = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = HAB
-			has_or_had_tag = LOT
-		}
-	}
-	army_artillery_power = 0.1
-	army_artillery_build_cost_modifier = -0.1
-
-	requires = the_gold_standard
-}
-
-
 ###-Horde-
-REPLACE_OR_CREATE:horse_lords = {
-	age = age_1_traditions
-	government = steppe_horde
-	requires = horse_riding_advance
-	army_light_cavalry_reinforce_cost_modifier = -0.33
-	army_light_cavalry_maintenance_cost_modifier = -0.33
-	global_distance_from_capital_speed_propagation = 0.05 #BR Added
-	always_allow_army_levies = yes
-	unlock_unit = a_steppe_horse_archers
-	unlock_unit = a_a_urughs
+INJECT:horse_lords = {
+	global_distance_from_capital_speed_propagation = 0.2
 }
-REPLACE_OR_CREATE:glh_kipchak_khanate = {
-	age = age_1_traditions
-	potential = {
-		has_or_had_tag = GLH
-	}
-	requires = horse_riding_advance
-	global_manpower_modifier = 0.1
-	cultures_capacity_modifier = 0.5
+INJECT:glh_kipchak_khanate = {
 	wrong_culture_levy_size = 0.25 #br added
-	global_distance_from_capital_speed_propagation = 0.05 #br added
+	global_distance_from_capital_speed_propagation = 0.2
 }
 REPLACE_OR_CREATE:ilk_restore_yam = {	#Restore the Yäm
 	age = age_2_renaissance
@@ -1388,91 +1078,11 @@ REPLACE_OR_CREATE:ilk_new_roots = {	#They move away from being horde-like to a m
 	allow_children = no
 	
 }
-###
-REPLACE_OR_CREATE:geo_bagrationi_dynasty = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = GEO
-			has_or_had_tag = ARM
-		}
-	}
 
-	requires = distribution_of_power_advance
-
-	monthly_legitimacy = 0.05
-}
-br_armenian_mountain_strongholds = {
-	age = age_1_traditions
-	icon = hun_castle_warriors
-	potential = {
-		OR = {
-			has_or_had_tag = ARM
-			has_or_had_tag = GEO
-			culture = culture:armenian_culture
-		}
-	}
-
-	requires = feudalism_advance
-
-	global_hostile_attrition = 0.25
-	trade_land_efficiency = 0.15
-}
 ##############################-Wallachia-##############################
+### removed 
 
-REPLACE_OR_CREATE:wallachian_tradition = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = WAL
-			has_or_had_tag = WA0
-			has_or_had_tag = WA1
-			has_or_had_tag = WA2
-		}
-	}
-	global_defensive = 0.2
-	requires = feudalism_advance
-}
-REPLACE_OR_CREATE:wallachian_heritage = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = WAL
-			has_or_had_tag = WA0
-			has_or_had_tag = WA1
-			has_or_had_tag = WA2
-		}
-	}
-	discipline = 0.05
-	requires = wallachian_tradition
-}
-REPLACE_OR_CREATE:cunning_diplomacy = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = WAL
-			has_or_had_tag = WA0
-			has_or_had_tag = WA1
-			has_or_had_tag = WA2
-		}
-	}
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
-}
-REPLACE_OR_CREATE:boyar_regime = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = WAL
-			has_or_had_tag = WA0
-			has_or_had_tag = WA1
-			has_or_had_tag = WA2
-		}
-	}
-	monthly_legitimacy = 0.1
-	nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
-}
 ##############################-Bulgaria-##############################
-
 REPLACE_OR_CREATE:legacy_of_ivan_asen_ii = {
 	age = age_1_traditions
 	potential = { 
@@ -1484,10 +1094,8 @@ REPLACE_OR_CREATE:legacy_of_ivan_asen_ii = {
 	}
 	icon = crown_power_advance_renaissance
 	requires = feudalism_advance
-
 	global_crown_estate_power = 0.1
 }
-
 REPLACE_OR_CREATE:bulgarian_orthodox_patriarchate = {
 	age = age_1_traditions
 	potential = {
@@ -1499,52 +1107,11 @@ REPLACE_OR_CREATE:bulgarian_orthodox_patriarchate = {
 		religion = religion:orthodox
 	}
 	icon = patriarchate_of_lithuania
-
 	tolerance_own = 1
-
 	requires = legalism_advance
 }
-
-REPLACE_OR_CREATE:expansionist_ambitions = {
-	age = age_2_renaissance
-
-	potential = {
-		OR = {
-			has_or_had_tag = BUL
-			has_or_had_tag = SER
-			culture = culture:bulgarian
-			culture = culture:boulgaroi
-		}
-	}
-	icon = imperial_ambitions
-
-	global_integration_speed_modifier = 0.1
-	
-	requires = gunpowder_advance
-}
-
-REPLACE_OR_CREATE:fortress_of_the_balkans = {
-	age = age_2_renaissance
-
-	potential = { 
-		OR = {
-			has_or_had_tag = BUL
-			culture = culture:bulgarian
-			culture = culture:boulgaroi
-		}
-	}
-
-	icon = hun_castle_warriors
-
-	requires = drill_army_advance
-
-	global_defensive = 0.1
-	fort_limit_modifier = 0.25
-}
-
 REPLACE_OR_CREATE:revival_of_the_literary_schools = {
 	age = age_3_discovery
-
 	potential = {
 		OR = {
 			has_or_had_tag = BUL
@@ -1552,29 +1119,10 @@ REPLACE_OR_CREATE:revival_of_the_literary_schools = {
 			culture = culture:boulgaroi
 		}
 	}
-
 	icon = protestant_sunday_schools
 	requires = printing_press_advance
-
 	cultural_tradition_modifier = 0.2
 	global_max_literacy = 3
-}
-
-REPLACE_OR_CREATE:reformation_of_the_bulgarian_patriarchate = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = BUL
-			culture = culture:bulgarian
-			culture = culture:boulgaroi
-		}
-	}
-	icon = the_rebirth_of_the_patriarchate
-
-	requires = confessionalism_advance
-
-	maximum_religious_influence = 20
-	monthly_religious_influence = 0.15
 }
 
 ##############################-Serbia-##############################
@@ -1591,7 +1139,6 @@ REPLACE_OR_CREATE:serbian_mining = {
 		}
 	}
 	expand_rgo_mining_cost_modifier = -0.1
-	
 	requires = city_building_advance
 }
 
@@ -1607,27 +1154,8 @@ REPLACE_OR_CREATE:mimic_the_phoenix = {
 		}
 	}
 	country_cabinet_efficiency = 0.05
-	
 	requires = government_size_renaissance
 }
-
-REPLACE_OR_CREATE:home_of_hussars = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = SER
-			has_or_had_tag = SE0
-			has_or_had_tag = SE1
-			has_or_had_tag = SE2
-			has_or_had_tag = SE3
-		}
-	}
-	army_light_cavalry_power = 0.10
-	unlock_unit = a_serbian_hussars
-	
-	requires = mimic_the_phoenix
-}
-
 REPLACE_OR_CREATE:rallying_the_troops = {
 	age = age_2_renaissance 
 	potential = {
@@ -1640,10 +1168,8 @@ REPLACE_OR_CREATE:rallying_the_troops = {
 		}
 	}
 	regiment_reinforcement_speed = 0.1
-	
 	requires = drill_army_advance
 }
-
 REPLACE_OR_CREATE:keepers_of_the_gate  = {
 	age = age_3_discovery 
 	potential = {
@@ -1656,24 +1182,7 @@ REPLACE_OR_CREATE:keepers_of_the_gate  = {
 		}
 	}
 	fort_maintenance_cost = -0.2
-	
 	requires = supply_depot_advance_age_3_discovery
-}
-
-REPLACE_OR_CREATE:poklisars = {
-	age = age_3_discovery 
-	potential = {
-		OR = {
-			has_or_had_tag = SER
-			has_or_had_tag = SE0
-			has_or_had_tag = SE1
-			has_or_had_tag = SE2
-			has_or_had_tag = SE3
-		}
-	}
-	monthly_diplomats = 0.1
-	
-	requires = improved_book_binding
 }
 
 REPLACE_OR_CREATE:the_rebirth_of_the_patriarchate = {
@@ -1688,7 +1197,6 @@ REPLACE_OR_CREATE:the_rebirth_of_the_patriarchate = {
 		}
 	}
 	clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
-	
 	requires = power_projection_advance_3
 }
 
@@ -1704,24 +1212,7 @@ REPLACE_OR_CREATE:reform_the_ecclesiastical_authorities = {
 		}
 	}
 	monthly_religious_influence = 0.2
-	
 	requires = leader_recruit_cost_advance
-}
-
-REPLACE_OR_CREATE:balkan_hajduks = {
-	age = age_5_absolutism 
-	potential = {
-		OR = {
-			has_or_had_tag = SER
-			has_or_had_tag = SE0
-			has_or_had_tag = SE1
-			has_or_had_tag = SE2
-			has_or_had_tag = SE3
-		}
-	}
-	land_morale_modifier = 0.1
-	
-	requires = supply_depot_advance_age_5_absolutism
 }
 
 REPLACE_OR_CREATE:foreign_relations_bureau = {
@@ -1736,24 +1227,7 @@ REPLACE_OR_CREATE:foreign_relations_bureau = {
 		}
 	}	
 	diplomatic_capacity = 1
-	
 	requires = power_projection_advance_5
-}
-
-REPLACE_OR_CREATE:serbian_enlightenment = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = SER
-			has_or_had_tag = SE0
-			has_or_had_tag = SE1
-			has_or_had_tag = SE2
-			has_or_had_tag = SE3
-		}
-	}
-	cultural_influence_modifier = 0.1
-	
-	requires = enlightened_court
 }
 
 REPLACE_OR_CREATE:military_modernization = {
@@ -1769,7 +1243,6 @@ REPLACE_OR_CREATE:military_modernization = {
 	}
 	army_heavy_infantry_power = 0.1
 	army_light_infantry_power = 0.1
-	
 	requires = recruitment_improvements_revolutions
 }
 ##############################-Armenia-##############################
@@ -1789,152 +1262,91 @@ REPLACE_OR_CREATE:legacy_of_the_normans = {
 	icon = glorious_arms
 	potential = {
 		OR = {
-			has_or_had_tag = TWS
-			has_or_had_tag = SIC
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	land_morale_modifier = 0.1
 	cultures_capacity_modifier = 0.1
 }
-
 REPLACE_OR_CREATE:sic_constitions_of_melfi = {
 	age = age_1_traditions
 	icon = laws
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = TWS
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
 	global_estate_target_satisfaction = small_permanent_target_satisfaction
 	tolerance_heretic = 0.5
 	tolerance_heathen = 0.5
 }
-
 REPLACE_OR_CREATE:sic_studium_generale = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
-
 	icon = students_of_foreign_courts
 	research_speed_modifier = 0.05
 }
-
 REPLACE_OR_CREATE:sic_naval_vigilance = {
 	age = age_3_discovery
 	icon = maritime_advance_age_2
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
 	navy_galley_power = 0.1
-	
 	fort_limit_modifier = 0.10
 }
-
 REPLACE_OR_CREATE:sic_sicilian_silk = {
 	age = age_4_reformation
 	icon = fla_cloth
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = TWS
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
 	global_silk_output_modifier = 0.1
 }
-
 REPLACE_OR_CREATE:sic_sicilian_enlightenment = {
 	age = age_5_absolutism
 	icon = scientific_revolution_advance
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
 	cultural_influence_modifier = 0.1
 }
-
 REPLACE_OR_CREATE:sic_sicilian_reforms = {
 	age = age_6_revolutions
 	icon = court_accounting
 	potential = {
 		OR = {
-			has_or_had_tag = SIC
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:arab_sicilian
+			culture = culture:griko_culture
 		}
 	}
 	legislative_efficiency = 0.2
 }
-
 REPLACE_OR_CREATE:university_naples = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	global_institution_growth_modifier = 0.2
-	
 	requires = library_advance
 }
 REPLACE_OR_CREATE:mercantile_spirit = {
@@ -1942,22 +1354,11 @@ REPLACE_OR_CREATE:mercantile_spirit = {
 	icon = a_central_power
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	export_efficiency = small_trade_efficiency_bonus
-	
 	requires = trade_advance_age_of_trad
 }
 REPLACE_OR_CREATE:consolidate_the_royal_domain = {
@@ -1965,66 +1366,34 @@ REPLACE_OR_CREATE:consolidate_the_royal_domain = {
 	icon = court_accounting
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	global_crown_estate_power = 0.1
-	
 	requires = renaissance_thought
 }
 REPLACE_OR_CREATE:academia_pontaniana = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	global_max_literacy  = 5
-	
 	requires = university_advance
 }
 REPLACE_OR_CREATE:encouraged_city_living = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	non_rural_migration_attraction = 0.2
 	global_burghers_city_desired_pop = 0.5
-	
 	requires = printing_press_advance
 }
 REPLACE_OR_CREATE:crush_the_barons = {
@@ -2032,66 +1401,34 @@ REPLACE_OR_CREATE:crush_the_barons = {
 	icon = hsa_exchange_of_ideas
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	global_nobles_estate_power = -0.2
-	
 	requires = crown_power_advance_discovery
 }
 REPLACE_OR_CREATE:expanded_arsenale = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	ship_build_speed = 0.1
-	
 	requires = maritime_advance_age_4
 }
 REPLACE_OR_CREATE:city_of_artists = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	skill_of_new_artists = 0.1
 	invite_artist_cost_modifier = -0.25
-	
 	requires = artists_advance_reformations
 }
 REPLACE_OR_CREATE:institutional_reorganization = {
@@ -2099,22 +1436,11 @@ REPLACE_OR_CREATE:institutional_reorganization = {
 	icon = consolidate_the_royal_domain
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	government_reform_slots = 1
-	
 	requires = absolutist_court
 }
 REPLACE_OR_CREATE:a_central_power = {
@@ -2122,22 +1448,11 @@ REPLACE_OR_CREATE:a_central_power = {
 	icon = diplomatic_range_age_1
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	max_diplomats = 2
-	
 	requires = relations_absolutism_advance
 }
 REPLACE_OR_CREATE:neapolitan_industrialization = {
@@ -2145,21 +1460,11 @@ REPLACE_OR_CREATE:neapolitan_industrialization = {
 	icon = industrialization_advance
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	global_raw_material_output = 0.1
-	
 	requires = industrialization_advance
 }
 REPLACE_OR_CREATE:neapolitan_army_reforms = {
@@ -2167,27 +1472,15 @@ REPLACE_OR_CREATE:neapolitan_army_reforms = {
 	icon = levee_en_masse_advance
 	potential = {
 		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = TWS
-			has_or_had_tag = BNV
-			has_or_had_tag = N1P
-			has_or_had_tag = N2P
-			has_or_had_tag = S1C
-			has_or_had_tag = S2C
-			has_or_had_tag = S3C
-			has_or_had_tag = S4C
-			has_or_had_tag = N3P
-			has_or_had_tag = IT0
-			has_or_had_tag = IT1
+			culture = culture:neapolitan
+			culture = culture:italiotai_culture
 		}
 	}
 	army_heavy_infantry_power = 0.10
-	
 	requires = levee_en_masse_advance
 }
 
-##Roman
-
+##############################-Roman-##############################
 REPLACE_OR_CREATE:rom_spqr = {
 	age = age_1_traditions
 	potential = {
@@ -2197,12 +1490,9 @@ REPLACE_OR_CREATE:rom_spqr = {
 		}
 	}
 	requires = distribution_of_power_advance
-
 	icon = crown_power_advance_renaissance
-	
 	parliament_base_support = 0.2
 }
-
 REPLACE_OR_CREATE:rom_pax_romana = {
 	age = age_1_traditions
 	potential = {
@@ -2212,13 +1502,10 @@ REPLACE_OR_CREATE:rom_pax_romana = {
 		}
 	}
 	requires = subjects_advance
-
 	icon = gel_healthy_economy
-	
 	stability_cost = -0.1
 	global_monthly_prosperity = 0.002
 }
-
 REPLACE_OR_CREATE:rom_restore_the_legions = {
 	age = age_2_renaissance
 	potential = {
@@ -2228,13 +1515,10 @@ REPLACE_OR_CREATE:rom_restore_the_legions = {
 		}
 	}
 	requires = professional_armies_advance
-
 	icon = teu_crusader_discipline
-
 	army_heavy_infantry_power = 0.1
 	discipline = 0.025
 }
-
 REPLACE_OR_CREATE:rom_revival_of_arts_and_culture = {
 	age = age_2_renaissance
 	potential = {
@@ -2244,150 +1528,105 @@ REPLACE_OR_CREATE:rom_revival_of_arts_and_culture = {
 		}
 	}
 	requires = patron_of_art
-
 	icon = patron_of_art
-	
 	skill_of_new_artists = 0.1
 }
-
 REPLACE_OR_CREATE:rom_new_corpus_juris_civilis = {
 	age = age_3_discovery
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = printing_press_advance
-	
 	icon = legalism_advance
-
 	unlock_policy = new_corpus_juris_civilis
 }
-
 REPLACE_OR_CREATE:rom_bread_and_circuses = {
 	age = age_3_discovery
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = crown_power_advance_discovery
-	
 	icon = pun_breadbasket_of_india
-
 	global_estate_target_satisfaction = small_permanent_target_satisfaction
 
 }
-
 REPLACE_OR_CREATE:rom_citizenship = {
 	age = age_4_reformation
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = confessionalism_advance
-	
 	icon = cultural_acceptance_advance
-
 	cultures_capacity_modifier = 0.2
 }
-
 REPLACE_OR_CREATE:rom_all_roads_lead_to_rome = {
 	age = age_4_reformation
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = road_advance_1
-	
 	icon = glory_of_rome
-
 	road_cost_on_distance_from_capital = -5
 }
-
 REPLACE_OR_CREATE:rom_provincial_governors = {
 	age = age_5_absolutism
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = absolutist_court
-
 	icon = modern_road_advance
-
-
 	global_distance_from_capital_speed_propagation = 0.1
 }
-
 REPLACE_OR_CREATE:rom_imperium_sine_fine = {
 	age = age_5_absolutism
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = absolute_rulership
-
 	icon = expansionism
-
 	global_integration_speed_modifier = 0.1
 	global_separatism = -0.05
 }
-
 REPLACE_OR_CREATE:rom_triumphs = {
 	age = age_5_absolutism
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = national_sovereignty
-
 	icon = colonial_militia
-
-
 	army_tradition_decay = -0.001
 }
-
 REPLACE_OR_CREATE:rom_roman_architecture = {
 	age = age_6_revolutions
-
 	potential = {
 		OR = {
 			has_or_had_tag = ROM
 			has_or_had_tag = IMP
 		}
 	}
-
 	requires = industrialization_advance
-
 	icon = efficient_construction_plans
-
-
 	building_upkeep_costs = -0.15
 }
 

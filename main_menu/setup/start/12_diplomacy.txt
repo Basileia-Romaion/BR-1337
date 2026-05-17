@@ -485,6 +485,7 @@ diplomacy_manager = {
     dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
     dependency = { first = AN10 second = AN2 subject_type = br_thema_subject } # Thema
     dependency = { first = AN10 second = AN3 subject_type = br_thema_subject } # Thema
+    dependency = { first = ICO second = AN9 subject_type = br_thema_subject } # Pronoïakon Ktéma
 
     scripted_mutual = { first = AN8 second = AN13 type = alliance }
 
