@@ -1,0 +1,19 @@
+﻿TRY_INJECT:assimilate_area = {
+	country_modifier = {
+		monthly_nationalist_rebel_growth = 0.005 # +0.5% nationalist rebel growth while active
+	}
+}
+
+TRY_INJECT:promote_culture = {
+	country_modifier = {
+		monthly_nationalist_rebel_growth = 0.0025 # +0.25% nationalist rebel growth while active
+	}
+}
+
+TRY_INJECT:promote_religion = {
+	country_modifier = {
+		monthly_religious_rebel_growth = 0.0025 # +0.25% religious rebel growth while active
+	}
+}
+
+

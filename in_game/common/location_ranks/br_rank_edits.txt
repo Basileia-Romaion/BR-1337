@@ -1,0 +1,10 @@
+﻿#Note:  logic assumes that anything below a rank in the list is worse
+
+TRY_INJECT:rural_settlement = {
+	rank_modifier = {
+		local_pop_assimilation_speed_modifier = -0.15 #br added
+		local_pop_conversion_speed_modifier = -0.15 #br added
+		local_tribal_promotion = -0.15 #br added
+	}
+
+}

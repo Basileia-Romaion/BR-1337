@@ -12,42 +12,70 @@ br_bureaucratic_vs_stratiotai = {
         nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
         global_crown_estate_power = 0.25
         global_clergy_estate_power = 0.5
-        global_clergy_city_desired_pop_scaled = 0.01
-        global_burghers_city_desired_pop_scaled = 0.01
+        global_clergy_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
+        global_burghers_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
 		
-        global_max_urban_control = 0.1
-        country_cabinet_efficiency = 0.1
-        tax_income_efficiency = 0.1
-        court_spending_cost_modifier = 0.1
+        #positives
+        global_max_urban_control = 0.1 #+
+        #country_cabinet_efficiency = 0.1 #+
+        tax_income_efficiency = 0.1 #+
 
-        army_maintenance_efficiency = 0.1
-        discipline = -0.05
-        global_manpower_modifier = -0.25
+        #negatives
+        court_spending_cost_modifier = 0.1 #- more money spent on court and titles.
+        land_morale_modifier = -0.05 #- less morale
+        global_manpower_modifier = -0.25 #- less manpower
 		
+        #AI
 		bias_for_scholar_policies = 25
-        aggressiveness_modifier = -0.15
         diplomacy_importance_modifier = 0.1
 	}
 
     right_modifier = {
         clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
         global_nobles_estate_power = 0.5
-        global_nobles_city_desired_pop_scaled = 0.005
-        global_soldiers_city_desired_pop_scaled = 0.01
+        global_nobles_city_desired_pop_scaled = 0.002 #2 per 1000 pops.
+        global_soldiers_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
 
-        court_spending_cost_modifier = -0.1
-        army_maintenance_efficiency = -0.1
-
-		discipline = 0.05
-        global_manpower_modifier = 0.25
-        subject_opinions = 10
+        #positives
+		discipline = 0.05 #+
+        subject_opinions = 10 #+
+        global_army_levy_size_modifier = 0.1 #+
         #military_tactics = 0.25
         #land_morale_modifier = 0.05
         #levy_combat_efficiency_modifier = 0.1
 
+        #negatives
+        army_maintenance_efficiency = -0.1 #- more money for the armies and generals.
+
+        #AI
 		bias_for_militarist_policies = 25
-        aggressiveness_modifier = 0.15
         control_importance_modifier = -0.1
 	}
 
+}
+
+
+##############-Base-Injects-##############
+INJECT:serfdom_vs_free_subjects = {
+	left_modifier = {
+		global_peasants_max_literacy = -5
+        global_slaves_max_literacy = -5
+	}
+	right_modifier = {
+	}
+}
+
+INJECT:aristocracy_vs_plutocracy = {
+	left_modifier = {
+	}
+	right_modifier = {
+		global_burghers_max_literacy = 5
+	}
+}
+INJECT:capital_economy_vs_traditional_economy = {
+	left_modifier = {
+		global_burghers_max_literacy = 5
+	}
+	right_modifier = {
+	}
 }
