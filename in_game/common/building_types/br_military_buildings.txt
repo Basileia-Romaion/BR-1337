@@ -968,11 +968,21 @@ br_doukate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		OR = {
-			local_control < 0.5
-			NOT = {
-				integration_level = core
-			}
+		OR = { #one per region the historic capitals of katapanates and despotates.
+			this = location:kayseri #Kappadokia capital
+			this = location:ankara #Anatolia capital
+			this = location:edirne #Thrace capital
+			this = location:thessaloniki #Macedonia capital
+			this = location:thebes #Hellas capital
+			this = location:durres #Illyricum capital
+			this = location:antioch #Syria capital
+			this = location:bari #Italia capital
+			this = location:syracuse #Sicilia capital
+			this = location:alexandria #Aegyptus capital
+			this = location:tunis #Africa capital
+			this = location:amasya #Armenikon capital
+			this = location:trebizond #Pontus capital
+			this = location:theodoro #Cherson capital
 		}
 		is_province_capital = yes
 		NOR = { 
@@ -1031,11 +1041,21 @@ br_katapanate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		OR = {
-			local_control < 0.5
-			NOT = {
-				integration_level = core
-			}
+		OR = { #one per region the historic capitals of katapanates and despotates.
+			this = location:kayseri #Kappadokia capital
+			this = location:ankara #Anatolia capital
+			this = location:edirne #Thrace capital
+			this = location:thessaloniki #Macedonia capital
+			this = location:thebes #Hellas capital
+			this = location:durres #Illyricum capital
+			this = location:antioch #Syria capital
+			this = location:bari #Italia capital
+			this = location:syracuse #Sicilia capital
+			this = location:alexandria #Aegyptus capital
+			this = location:tunis #Africa capital
+			this = location:amasya #Armenikon capital
+			this = location:trebizond #Pontus capital
+			this = location:theodoro #Cherson capital
 		}
 		is_province_capital = yes
 		NOR = { 
@@ -1095,11 +1115,21 @@ br_despotate_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		OR = {
-			local_control < 0.5
-			NOT = {
-				integration_level = core
-			}
+		OR = { #one per region the historic capitals of katapanates and despotates.
+			this = location:kayseri #Kappadokia capital
+			this = location:ankara #Anatolia capital
+			this = location:edirne #Thrace capital
+			this = location:thessaloniki #Macedonia capital
+			this = location:thebes #Hellas capital
+			this = location:durres #Illyricum capital
+			this = location:antioch #Syria capital
+			this = location:bari #Italia capital
+			this = location:syracuse #Sicilia capital
+			this = location:alexandria #Aegyptus capital
+			this = location:tunis #Africa capital
+			this = location:amasya #Armenikon capital
+			this = location:trebizond #Pontus capital
+			this = location:theodoro #Cherson capital
 		}
 		is_province_capital = yes
 		NOR = { 
@@ -1118,7 +1148,7 @@ br_despotate_building = {
 	construction_demand = castle_construction
 
 	modifier = {
-		local_manpower = 0.03
+		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.6
 		local_nobles_estate_power = 0.25
@@ -1158,11 +1188,21 @@ br_dioikesis_building = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	location_potential = { 
-		OR = {
-			local_control < 0.5
-			NOT = {
-				integration_level = core
-			}
+		OR = { #one per region the historic capitals of katapanates and despotates.
+			this = location:kayseri #Kappadokia capital
+			this = location:ankara #Anatolia capital
+			this = location:edirne #Thrace capital
+			this = location:thessaloniki #Macedonia capital
+			this = location:thebes #Hellas capital
+			this = location:durres #Illyricum capital
+			this = location:antioch #Syria capital
+			this = location:bari #Italia capital
+			this = location:syracuse #Sicilia capital
+			this = location:alexandria #Aegyptus capital
+			this = location:tunis #Africa capital
+			this = location:amasya #Armenikon capital
+			this = location:trebizond #Pontus capital
+			this = location:theodoro #Cherson capital
 		}
 		is_province_capital = yes
 		NOR = { 
@@ -1181,7 +1221,7 @@ br_dioikesis_building = {
 	construction_demand = castle_construction
 
 	modifier = {
-		local_manpower = 0.045
+		local_manpower = 0.035
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 1.0
 		#local_nobles_estate_power = 0.50
