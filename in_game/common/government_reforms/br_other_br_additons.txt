@@ -81,10 +81,14 @@ br_alandalus_reform = {
 	}
 	country_modifier = {
 		monthly_towards_humanist = societal_value_monthly_move
-		global_dhimmi_estate_power = 2
-        tolerance_heathen = 4
-        global_pop_conversion_speed_modifier = -0.75
+		global_dhimmi_estate_power = 5
 		dhimmi_estate_levy_size = 0.5
+		tolerance_heathen = 4
+		cultures_capacity = 1
+		
+		#debuffs
+		global_pop_assimilation_speed_modifier = -0.5
+        global_pop_conversion_speed_modifier = -0.5
 	}
 	years = 2
 }

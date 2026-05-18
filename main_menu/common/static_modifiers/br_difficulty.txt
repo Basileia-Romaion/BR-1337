@@ -6,7 +6,7 @@
 TRY_INJECT:difficulty_ai_normal = {
 	cultures_capacity = 1
 	wrong_culture_levy_size = 0.15
-	global_crown_estate_power = 0.25
+	global_crown_estate_power = 0.15
 	subject_loyalty = 10
 	levy_maintenance_modifier = -0.25
 }
@@ -16,7 +16,7 @@ TRY_INJECT:difficulty_ai_hard = {
 	wrong_culture_levy_size = 0.25
 	global_crown_estate_power = 0.35
 	subject_loyalty = 15
-	levy_maintenance_modifier = 0.35
+	levy_maintenance_modifier = -0.35
 }
 
 TRY_INJECT:difficulty_ai_very_hard = {

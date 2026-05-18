@@ -56,26 +56,37 @@ br_bureaucratic_vs_stratiotai = {
 
 
 ##############-Base-Injects-##############
-INJECT:serfdom_vs_free_subjects = {
+TRY_INJECT:serfdom_vs_free_subjects = {
 	left_modifier = {
 		global_peasants_max_literacy = -5
         global_slaves_max_literacy = -5
+        global_nobles_estate_power = 0.5
+	}
+	right_modifier = {
+        global_peasants_estate_power = 0.5
+	}
+}
+
+TRY_INJECT:aristocracy_vs_plutocracy = {
+	left_modifier = {
+	}
+	right_modifier = {
+		global_burghers_max_literacy = 5
+	}
+}
+TRY_INJECT:capital_economy_vs_traditional_economy = {
+	left_modifier = {
+		global_burghers_max_literacy = 5
 	}
 	right_modifier = {
 	}
 }
 
-INJECT:aristocracy_vs_plutocracy = {
+TRY_INJECT:centralization_vs_decentralization = {
 	left_modifier = {
+		tribes_estate_levy_size = -0.5
 	}
 	right_modifier = {
-		global_burghers_max_literacy = 5
-	}
-}
-INJECT:capital_economy_vs_traditional_economy = {
-	left_modifier = {
-		global_burghers_max_literacy = 5
-	}
-	right_modifier = {
+		global_tribes_estate_power = 0.5
 	}
 }

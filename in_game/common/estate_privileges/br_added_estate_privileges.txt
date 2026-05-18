@@ -1,4 +1,4 @@
-﻿#parliament_base_support = 0.2
+#parliament_base_support = 0.2
 #global_pop_conversion_speed_modifier = -0.1
 #monthly_army_tradition = 0.05
 # BR added Nobles Estate Privileges
@@ -21,7 +21,6 @@
 #local_tribesmen_assimilation_blocked
 #local_pop_join_rebel_threshold
 #local_separatism
-#local_nobles_estate_unrest
 #local_levy_size_modifier
 #local_max_literacy
 #local_monthly_literacy
@@ -30,6 +29,7 @@
 #local_heathen_pop_conversion_speed_modifier
 #local_heretic_pop_conversion_speed_modifier
 #local_crown_estate_power
+#local_nobles_estate_unrest = 0.5
 
 
 #Senate
@@ -149,6 +149,7 @@ br_dynatoi_magnates = {
 		local_nobles_desired_pop_scaled = 0.002 #1 per 1000 pops
 		local_peasant_enfranchisment = -0.1
 		local_pop_join_rebel_threshold = 0.05
+		#local_peasants_estate_unrest = 0.1
     }
 	country_modifier = {
 		#potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
@@ -180,8 +181,9 @@ br_latin_occupiers = {
 		cultures_capacity = 2
 		
 		#debuffs
-		global_pop_assimilation_speed_modifier = -0.75
-        global_pop_conversion_speed_modifier = -0.75
+		global_pop_assimilation_speed_modifier = -0.5
+        global_pop_conversion_speed_modifier = -0.5
+		mercenary_units_preference_modifier = 0.25
 	}
 }
 
@@ -386,6 +388,7 @@ br_special_trade_companies = {
 		expected_navy_size = 25
 		payment_to_overlord_modifier = -0.25
 		trade_sea_efficiency = 0.5
+		mercenary_units_preference_modifier = 0.25
 	}
 	country_modifier = {
 		potential_trigger = {  societal_value:land_vs_naval >= 45 }

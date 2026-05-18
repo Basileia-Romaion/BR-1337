@@ -2,6 +2,14 @@
 # Hardcoded
 ###################################
 
+TRY_INJECT:average_literacy = {
+	stability_investment = large_stability_investment_penalty
+}
+
+TRY_INJECT:average_development = {
+	tribes_estate_target_satisfaction = -1 #Tribals like less development
+}
+
 #BR added modifiers
 br_levy_size_modifier = {
 	game_data = {
@@ -16,7 +24,7 @@ br_elysium_formed = {
 	game_data = {
 		category = country
 	}
-	global_pop_assimilation_speed = 0.01
+	global_pop_assimilation_speed = 0.02
 	global_pop_assimilation_speed_modifier = 1
 	global_crown_estate_power = 0.10
 }

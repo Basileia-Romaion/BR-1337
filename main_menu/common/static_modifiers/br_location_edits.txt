@@ -5,9 +5,9 @@
 
 #negative because inject doesn't replace is adds or subtracts
 TRY_INJECT:inverse_control = {
-	game_data = {
-		category = location
-	}
+	local_sailors_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
+	local_manpower_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
+	local_levy_size_modifier = 0.25 #br addition so total wll be -0.75 instead of -1.0.
 	local_tribal_promotion = -1.0 #br added
 	local_separatism = 0.2 #BR added
 }

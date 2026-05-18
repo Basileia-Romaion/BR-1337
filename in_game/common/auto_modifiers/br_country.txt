@@ -1,0 +1,22 @@
+﻿## Not hardcoded
+# Modifiers in this file will automatically be applied to all countries
+#	- Tooltips will also be generated
+#	- The AI will also understand them
+
+#negative because inject doesn't replace is adds or subtracts
+TRY_INJECT:country_base_values = {
+	stability_investment = stability_investment_penalty #br addition
+}
+
+TRY_INJECT:war_exhaustion_impact = {
+	stability_decay = 0.0001 #br addition
+	monthly_legitimacy = -0.01 #br addition
+}
+
+TRY_INJECT:positive_stability_impact = {
+	global_monthly_prosperity = 0.001 #br addition
+}
+
+TRY_INJECT:negative_stability_impact = {
+	global_monthly_prosperity = -0.001 #br addition
+}
