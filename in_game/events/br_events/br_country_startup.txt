@@ -587,6 +587,10 @@ br_country_startup.3 = { #cbs added
 				target = c:KCN
 				type = casus_belli:cb_border_war
 			}
+			add_casus_belli = {
+				target = c:OHS
+				type = casus_belli:cb_jihad
+			}
 		}
 
 	}
