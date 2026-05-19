@@ -5,7 +5,9 @@
 
 #negative because inject doesn't replace is adds or subtracts
 TRY_INJECT:country_base_values = {
-	stability_investment = stability_investment_penalty #br addition
+	#monthly_legitimacy = -0.25 #an additional -0.25
+	stability_decay = 0.001 #an additional 0.001 for 0.006 total
+	#stability_investment = stability_investment_penalty #br addition
 }
 
 TRY_INJECT:war_exhaustion_impact = {
