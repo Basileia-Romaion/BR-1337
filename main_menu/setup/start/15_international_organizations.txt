@@ -456,7 +456,7 @@ international_organization_manager = {
 	# 				Seljuks										#
 	#################################################################
 	add_international_organization = {
-		type = ilkhanate
+		type = ilkhanate #do a proper rework into something more interesting
 		creation_date = 1066.1.1 #somewhere around there
 		map_color = rgb { 60 150 230 }
 		members = { 
@@ -488,7 +488,7 @@ international_organization_manager = {
 		}
 
 		ilkhan_claimant = {
-			TUR ERE KAR ATQ A0A A2A
+			TUR ERE KAR ATQ
 		}
 		#ruler_term = {	 character = tur_orhan start_date = 1324.1.1 regnal_number = 1	}
 
