@@ -326,7 +326,8 @@ br_french_heritage = {
 	}
 	nobles_estate_levy_size = 1.0
 	army_heavy_cavalry_power = 0.1
-	great_power_score_modifier = 0.1
+	army_heavy_cavalry_maintenance_cost_modifier = -0.1
+	great_power_score_exempt_from_forfeit = 10
 	requires = br_french_tradition
 }
 br_carolingian_relatinization = { #unique loc needed
@@ -342,8 +343,30 @@ br_carolingian_relatinization = { #unique loc needed
 	}
 	global_nobles_max_literacy = 10
 	global_clergy_max_literacy = 10
+	global_max_literacy = 2
 	global_monthly_literacy = 0.01
+	global_pop_assimilation_speed_modifier = 0.1
 	requires = library_advance
+}
+br_papal_protector = { #unique loc needed
+	age = age_1_traditions
+	potential = { has_or_had_tag = LOT }
+	requires = br_carolingian_relatinization
+	icon = pap_the_word_of_the_lord
+
+	papal_relations = 50
+	monthly_religious_influence = 0.1
+	global_pop_conversion_speed_modifier = 0.1
+}
+br_carolingian_centralization = { #unique loc needed
+	age = age_1_traditions
+	potential = { has_or_had_tag = LOT }
+	requires = br_papal_protector
+	icon = local_nobility
+	
+	num_local_governors = 1
+	tax_income_efficiency = large_tax_income_efficiency_bonus
+	global_distance_from_capital_speed_propagation = 0.1
 }
 br_french_language_in_all_courts = {
 	age = age_2_renaissance
@@ -463,6 +486,7 @@ br_students_of_foreign_courts = {
 	global_nobles_max_literacy = 5
 	requires = chancery_advance
 }
+
 
 ##############################-Armenia-##############################
 br_arm_bagrationi_dynasty = {
