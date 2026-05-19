@@ -256,6 +256,8 @@ br_on_game_start = {
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
+			research_advance = advance_type:muslim_caravans
+			research_advance = advance_type:indian_sea_trade
 		}
 		c:MAM = {
             research_advance = advance_type:meritocracy_advance
@@ -266,6 +268,11 @@ br_on_game_start = {
             research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
+			research_advance = advance_type:red_sea_trade
+			research_advance = advance_type:masters_of_the_nile
+			research_advance = advance_type:indian_networks
+			research_advance = advance_type:port_customs
+			research_advance = advance_type:indian_sea_trade
 		}
 		c:AIA = {
             research_advance = advance_type:meritocracy_advance
@@ -276,6 +283,8 @@ br_on_game_start = {
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
+			research_advance = advance_type:muslim_caravans
+			research_advance = advance_type:indian_sea_trade
 		}
 		c:A0A = {
             research_advance = advance_type:meritocracy_advance
@@ -283,6 +292,8 @@ br_on_game_start = {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:muslim_caravans
+			research_advance = advance_type:indian_sea_trade
 		}
 		c:A2A = {
             research_advance = advance_type:meritocracy_advance
@@ -290,6 +301,8 @@ br_on_game_start = {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:muslim_caravans
+			research_advance = advance_type:indian_sea_trade
 		}
 		c:A1G = {
 			trigger_event_silently = br_ere_events.1002
@@ -312,11 +325,21 @@ br_on_game_start = {
 			research_advance = advance_type:bashi_bazouks
 			research_advance = advance_type:there_shall_be_no_grass
 			research_advance = advance_type:akinji_cavalry
+			research_advance = advance_type:heirs_of_rum
+			research_advance = advance_type:uc_bey_advance
+			research_advance = advance_type:fratricide_succesion_advance
+			research_advance = advance_type:persian_in_the_court
+			research_advance = advance_type:crossroads_of_commerce
+			research_advance = advance_type:millets
+			research_advance = advance_type:timariots
+			research_advance = advance_type:autonomous_pashas
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:muslim_caravans
+			research_advance = advance_type:indian_sea_trade
 			add_gold = 2500
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
