@@ -4370,9 +4370,9 @@ building_manager = {
 	market_warehouse = { tag = BYZ level = 4 location =  constantinople }
 	fine_cloth_guild = { tag = BYZ level = 12 location =  constantinople }
 	brewery = { tag = BYZ level = 4 location =  constantinople }
-	lacquerware_guild = { tag = BYZ level = 5 location =  constantinople }
-	tannery = { tag = BYZ level = 8 location =  constantinople }
-	cloth_guild = { tag = BYZ level = 10 location =  constantinople }
+	#lacquerware_guild = { tag = BYZ level = 5 location =  constantinople }
+	tannery = { tag = BYZ level = 5 location =  constantinople }
+	cloth_guild = { tag = BYZ level = 12 location =  constantinople }
 	dyes_guild = { tag = BYZ level = 5 location =  constantinople }
 	furniture_guild = { tag = BYZ level = 5 location =  constantinople }
 	glass_guild = { tag = BYZ level = 5 location =  constantinople }
@@ -5065,10 +5065,25 @@ building_manager = {
 	bridge_infrastructure = { tag = TUR level = 1 location =  mosul }
 	bridge_infrastructure = { tag = TUR level = 1 location =  samarra }
 	sergeantry = { tag = TUR level = 1 location =  tabriz }
-	kurultai = { tag = TUR level = 1 location =  mosul }
-	kurultai = { tag = TUR level = 1 location =  diyarbekir }
-	kurultai = { tag = TUR level = 1 location = samarra }
-	kurultai = { tag = TUR level = 1 location = tabriz }
+	bey_fortress = { tag = TUR level = 1 location =  mosul }
+	bey_fortress = { tag = TUR level = 1 location =  diyarbekir }
+	bey_fortress = { tag = TUR level = 1 location = samarra }
+	bey_fortress = { tag = TUR level = 1 location = tabriz }
+	bey_fortress = { tag = TUR level = 1 location = rey }
+	bey_fortress = { tag = TUR level = 1 location = soltaniyeh }
+	bey_fortress = { tag = DUL level = 1 location = aleppo }
+	bey_fortress = { tag = DUL level = 1 location = urfa }
+	bey_fortress = { tag = DUL level = 1 location = nusaybin }
+	seljuk_mint = { tag = TUR level = 2 location = nusaybin }
+	seljuk_mint = { tag = TUR level = 2 location = soltaniyeh }
+	seljuk_mint = { tag = TUR level = 4 location = rey }
+	sufi_lodge = { tag = TUR level = 1 location = tabriz }
+	sufi_lodge = { tag = TUR level = 1 location = rey }
+	sufi_lodge = { tag = TUR level = 1 location = soltaniyeh }
+	funduq = { tag = TUR level = 1 location = tabriz }
+	funduq = { tag = TUR level = 1 location = rey }
+	funduq = { tag = TUR level = 1 location = soltaniyeh }
+	#rahdar = { tag = TUR level = 1 location = location }
 	sergeantry = { tag = AIA level = 1 location = baghdad }
 	madrasa = { tag = AIA level = 1 location = baghdad }
 	madrasa = { tag = TUR level = 1 location = diyarbekir }
@@ -5079,8 +5094,8 @@ building_manager = {
 	counting_house = { tag = TUR level = 1 location = mosul }
 	funduq = { tag = TUR level = 1 location = mosul }
 	seljuk_mint = { tag = TUR level = 2 location = tabriz }
-	seljuk_mint = { tag = AIA level = 2 location = baghdad }
-	marketplace	= { tag = AIA level = 15 location = baghdad }
+	seljuk_mint = { tag = AIA level = 2 location = samarra }
+	marketplace	= { tag = AIA level = 20 location = baghdad }
 	trading_hub = { tag = AIA level = 1 location = baghdad }
 	entrepot = { tag = AIA level = 1 location = baghdad }
 	market_warehouse = { tag = AIA level = 4 location = baghdad }
@@ -5118,7 +5133,7 @@ building_manager = {
 	fortress_granary = { tag = ADU level = 1 location = cordoba }
 	slave_market = { tag = ADU level = 2 location = cordoba }
 	funduq = { tag = ADU level = 1 location = cordoba }
-	marketplace	= { tag = ADU level = 15 location =  cordoba }
+	marketplace	= { tag = ADU level = 20 location =  cordoba }
 	trading_hub = { tag = ADU level = 1 location =  cordoba }
 	entrepot = { tag = ADU level = 1 location =  cordoba }
 	market_warehouse = { tag = ADU level = 3 location =  cordoba }
@@ -6785,22 +6800,24 @@ building_manager = {
 	######Trade Buildings######
 
 	#Major and Important Trade locations
-	marketplace	= { tag = MAM level = 10 location = cairo }
+	marketplace	= { tag = MAM level = 15 location = cairo }
 	entrepot = { tag = MAM level = 1 location =  cairo }
 	funduq = { tag = MAM level = 1 location =  cairo }
 	library = { tag = MAM level = 1 location =  cairo }
-	marketplace	= { tag = MAM level = 10 location = alexandria }
+	marketplace	= { tag = MAM level = 15 location = alexandria }
 	entrepot = { tag = MAM level = 1 location =  alexandria }
 	funduq = { tag = MAM level = 1 location =  alexandria }
 	library = { tag = MAM level = 1 location =  alexandria }
-	marketplace	= { tag = MAM level = 8 location = damascus }
+	marketplace	= { tag = MAM level = 15 location = damascus }
+	marketplace	= { tag = MAM level = 12 location = aleppo }
+	marketplace	= { tag = TUR level = 8 location = rey }
 	entrepot = { tag = MAM level = 1 location =  damascus }
 	funduq = { tag = MAM level = 1 location =  damascus }
 	library = { tag = MAM level = 1 location =  damascus }
-	marketplace	= { tag = TUN level = 8 location = tunis }
+	marketplace	= { tag = TUN level = 15 location = tunis }
 	entrepot = { tag = TUN level = 1 location =  tunis }
 	funduq = { tag = TUN level = 1 location =  tunis }
-	marketplace	= { tag = TUN level = 5 location = palermo }
+	marketplace	= { tag = TUN level = 8 location = palermo }
 	funduq = { tag = TUN level = 1 location =  palermo }
 	marketplace	= { tag = GAZ level = 3 location = kaffa }
 	slave_market = { tag = GAZ level = 1 location = kaffa }
@@ -6823,9 +6840,9 @@ building_manager = {
 	entrepot = { tag = GEN level = 1 location =  genoa }
 	trading_hub = { tag = GEN level = 1 location =  genoa }
 	slave_market = { tag = GEN level = 1 location = genoa }
-	marketplace	= { tag = TUR level = 6 location = tabriz }
-	marketplace	= { tag = MZF level = 6 location = isfahan }
-	marketplace	= { tag = FRA level = 5 location =  metz }
+	marketplace	= { tag = TUR level = 12 location = tabriz }
+	marketplace	= { tag = MZF level = 12 location = isfahan }
+	marketplace	= { tag = FRA level = 8 location =  metz }
 	marketplace	= { tag = ADU level = 6 location =  sevilla }
 	marketplace	= { tag = ADU level = 5 location =  malaga }
 	marketplace	= { tag = ADU level = 5 location =  murcia }
@@ -7098,7 +7115,7 @@ building_manager = {
 	medical_school = { tag = DLH level = 1 location =  delhi }
 	sergeantry = { tag = DLH level = 1 location =  delhi }
 	great_madrasa = { tag = DLH level = 1 location = delhi }
-	marketplace	= { tag = DLH level = 10 location =  delhi }
+	marketplace	= { tag = DLH level = 25 location =  delhi }
 	entrepot = { tag = DLH level = 1 location =  delhi }
 
 	marketplace	= { tag = INK level = 10 location =  goa }
