@@ -208,6 +208,14 @@ diplomacy_manager = {
 	opinion = { first = RIM second = CES type = opinion_supportive_monarch }
 
 	#HRE
+	opinion = { first = BUR second = LOT type = opinion_good_relations }
+	opinion = { first = AQN second = LOT type = opinion_good_relations }
+	opinion = { first = TOU second = LOT type = opinion_good_relations }
+	opinion = { first = PRO second = LOT type = opinion_good_relations }
+	opinion = { first = LOT second = MLO type = opinion_good_relations }
+	opinion = { first = MLO second = LOT type = opinion_good_relations }
+	opinion = { first = LOT second = PAP type = opinion_good_relations }
+	opinion = { first = PAP second = LOT type = opinion_good_relations }
 	#Bavaria
 
 	#Wittelsbacher Good House Relations
