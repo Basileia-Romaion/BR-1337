@@ -99,8 +99,10 @@ br_carolingian_heritage = {
 	potential = {
 		OR = {
 			has_or_had_tag = LOT
-			has_or_had_tag = FRA
-			has_or_had_tag = AQN
+			ruler ?= { 
+				has_dynasty = yes
+				dynasty ?= dynasty:carolingian_dynasty
+			}
 		}
 	}
 	country_modifier = {
