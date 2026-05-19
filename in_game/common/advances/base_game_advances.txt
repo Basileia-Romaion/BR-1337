@@ -1630,3 +1630,93 @@ REPLACE_OR_CREATE:rom_roman_architecture = {
 	building_upkeep_costs = -0.15
 }
 
+##############################-Turkic-##############################
+
+REPLACE_OR_CREATE:seljuk_heritage = {
+	age = age_1_traditions
+	icon = seljuk_roots
+	potential = {
+		has_or_had_tag = TUR
+	}
+	
+	global_integration_speed_modifier = 0.33
+	great_power_score_exempt_from_forfeit = 10
+	subject_income_modifier = 0.2
+	global_crown_estate_power = 0.2
+	
+	requires = feudalism_advance
+}
+
+REPLACE_OR_CREATE:turkic_traditions = {
+	age = age_1_traditions
+	icon = turco_mongol_tradition
+	potential = {
+		has_or_had_tag = TUR
+	}
+	discipline = 0.05
+	army_light_cavalry_build_cost_modifier = -0.2
+	army_light_cavalry_maintenance_cost_modifier = -0.1
+	army_light_cavalry_power = 0.1
+	levy_maintenance_modifier = -0.1
+	requires = seljuk_heritage
+	
+}
+
+REPLACE_OR_CREATE:ghazi = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = TUR
+	}
+	nobles_estate_levy_size = 0.25
+	slave_raid_efficiency = 0.1
+	prestige_from_land_battle = 0.5
+	army_tradition_from_battle = 0.5
+	unlock_estate_privilege = ghazi_privilege
+	levy_maintenance_modifier = -0.1
+
+	requires = seljuk_heritage
+}
+
+REPLACE_OR_CREATE:azeb_irregulars = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = TUR
+	}
+	global_manpower_modifier = 0.10
+	army_maintenance_efficiency = 0.1
+	levy_maintenance_modifier = -0.25
+
+	requires = seljuk_heritage
+}
+
+REPLACE_OR_CREATE:heirs_of_rum = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = TUR
+			has_reform = government_reform:anatolian_beylik
+		}
+	}
+
+	requires = medieval_military
+	global_integration_speed_modifier = 0.1
+	monthly_prestige = 0.1
+	subject_income_modifier = 0.1
+	great_power_score_exempt_from_forfeit = 10
+	global_crown_estate_power = 0.2
+}
+
+REPLACE_OR_CREATE:seljuk_roots = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = TUR
+			has_reform = government_reform:anatolian_beylik
+		}
+	}
+	discipline = 0.05
+	requires = regiment_reinforcement_speed_renaissance
+	army_light_cavalry_maintenance_cost_modifier = -0.2
+	global_manpower_modifier = 0.1
+	army_maintenance_efficiency = 0.1
+}
