@@ -6110,10 +6110,10 @@ countries = {
 			ruler_term = { character = dlh_ghiyasuddin_tughlaq start_date = 1320.9.8 end_date = 1325.1.2 regnal_number = 0 }
 			ruler_term = { character = dlh_muhammad_bin_tughluq start_date = 1325.1.2 regnal_number = 0 }
 			ruler = dlh_muhammad_bin_tughluq
-			nobles_estate = { satisfaction = 0.3 }
-			clergy_estate = { satisfaction = 0.25 }
-			burghers_estate = { satisfaction = 0.25 }
-			spiritualist_vs_humanist = 50
+			#nobles_estate = { satisfaction = 0.3 }
+			#clergy_estate = { satisfaction = 0.25 }
+			#burghers_estate = { satisfaction = 0.25 }
+			spiritualist_vs_humanist = 100
 			reforms = {
 				taluqdar_nobility
 				indian_sultanate_reform
@@ -6122,9 +6122,35 @@ countries = {
 				iqta_law = lenient_taxation
 			}
 			privilege = {
+				#Clergy
+				clergy_enforced_unity
+				embellish_great_works_of_faith
+				freedom_of_interpretation
+
+				#Burghers
+				formal_guilds
+				building_rights
+				urban_development_grants
+				commercial_advisory_council
+				burghers_protected_faith
+				
+				#Peasants
 				peasants_fewer_levies
-				peasants_free_peasantry
 				peasants_protected_faith
+				peasants_free_peasantry
+
+				#Dhimmi
+				dhimmi_land_rights
+				dhimmi_administrative_posts
+				dhimmi_abrahamic_communities
+				dhimmi_pact_of_umar
+				dhimmi_military_service
+				dhimmi_traditions
+				dhimmi_promote_tolerance
+				dhimmi_legal_autonomy
+				dhimmi_promote_dhimmi_hierarchy
+				dhimmi_mazalim_court
+				dhimmi_in_administration
 			}
 
 		}
@@ -6139,8 +6165,8 @@ countries = {
 
 		#Delhi Setup to accurately portray the starting situation
 		currency_data = {
-			stability = -15
-			prestige = 75
+			stability = 15
+			prestige = 100
 			government_power = 40
 			inflation = 0.5
 		}
@@ -10617,6 +10643,12 @@ countries = {
 		tolerated_cultures = {
 			emilian
 		}
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		capital = milano
 		dynasty = visconti_dynasty
 		country_rank = rank_duchy
@@ -13636,7 +13668,12 @@ countries = {
 		}
 
 		liturgical_language = church_slavonic_language
-
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		capital = trgoviste_SER
 		dynasty = nemanjic_dynasty
 	}
@@ -19351,7 +19388,12 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
-
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		tolerated_cultures = {
 			algerian
 			kabyle
@@ -30124,13 +30166,13 @@ countries = {
 			modifier = "chi_administration_in_disarray"
 			start_date = 1328.1.1
 			date = 1368.1.1
-			size = 1
+			size = 0.75
 		}
 		timed_modifier = {
 			modifier = "chi_yuan_religious_stability"
 			start_date = 1337.1.1
 			date = 1368.1.1
-			size = 1
+			size = 0.75
 		}
 
 		currency_data = {
@@ -30171,6 +30213,12 @@ countries = {
 		}
 		court_language = southern_mandarin_dialect
 		liturgical_language = classical_chinese_language
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1450.1.1
+			size = 0.5
+		}
 		country_rank = rank_kingdom
 		capital = shangyuan
 	}
@@ -33381,6 +33429,11 @@ countries = {
 	#Ottomans - https://en.wikipedia.org/wiki/Rise_of_the_Ottoman_Empire
 	TUR = { #type = army
 		own_control_core = {
+			baghdad
+			mosul qayyarah tal_afar al_sinn
+			samarra ar_rabb tikrit ukbara
+			balad_ruz baqubah khalis khanaqin mandali
+			eyvan
 			tabriz heris maragheh sarab tufarqan
 			beylagan lemberan 
 			mughan baciravan bilasuvar germi salyan varsan
@@ -33431,10 +33484,10 @@ countries = {
 			outward_vs_inward = -60
 			mysticism_vs_jurisprudence = -25
 
-			#reforms = {
-			#	legacy_of_osman
-			#	basic_timariot_system
-			#}
+			reforms = {
+				legacy_of_osman
+				basic_timariot_system
+			}
 
 			privilege = {
 				#Nobles
@@ -33466,15 +33519,18 @@ countries = {
 			}
 			
 			laws = {
-			royal_court_customs_law = harem_policy
-			slave_conversion = allow_slave_religion
-			sharia_law = hanafi_policy
-			harem_law = secluded_harem_policy
-		}
+				royal_court_customs_law = harem_policy
+				slave_conversion = allow_slave_religion
+				sharia_law = hanafi_policy
+				harem_law = secluded_harem_policy
+				medieval_levy_law = all_cultures #noble_levies
+				distribution_of_power_law = dop_favor_the_ruler
+				education_masses_law = basic_religious_education
+			}
 		}
 		
 		country_rank = rank_kingdom
-		capital = tabriz
+		capital = baghdad #tabriz
 		ai_advance_preference_tags = {
 			warfare = 1
 		}
@@ -33494,6 +33550,12 @@ countries = {
 			start_date = 1333.1.1
 			date = 1425.1.1
 			size = 2
+		}
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 1
 		}
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 	}
@@ -40974,6 +41036,12 @@ countries = {
 			date = 1342.1.1
 			size = 1
 		}
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 
 		accepted_cultures = {
 			greater_polish
@@ -40987,7 +41055,7 @@ countries = {
 
 		#Setup to accurately portray the starting situation
 		currency_data = {
-			war_exhaustion = 5
+			#war_exhaustion = 5
 		}
 
 	}
@@ -42536,6 +42604,12 @@ countries = {
 
 				#Commoners
 			}
+		}
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1475.1.1
+			size = 1
 		}
 		court_language = karluk_language
 		liturgical_language = classical_arabic_dialect
@@ -48818,7 +48892,12 @@ countries = {
 		tolerated_cultures = {
 			baloch_culture
 		}
-
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		country_rank = rank_kingdom
 		religious_school = maturidi_school #Said to be predominant in Persia before the Safavids
 		capital = isfahan
@@ -55774,7 +55853,12 @@ countries = {
 		tolerated_cultures = {
 			champenais
 		}
-
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.5
+		}
 		country_rank = rank_kingdom
 		capital = metz
 		currency_data = {
@@ -56196,11 +56280,8 @@ countries = {
 
   #Middle East
 	AIA = { #Abbasids 
-		own_control_core = {
-			baghdad
-		}
-		
 		our_cores_conquered_by_others = {
+			baghdad
 			#Should be at least all of Iraq
 			rahba anah abu_kemal haditha
 			al_anbar hit ayn_tamr karbala
@@ -56298,22 +56379,23 @@ countries = {
 	}
 
 	A0A = { #Samarra 
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			samarra ar_rabb tikrit ukbara
 			balad_ruz baqubah khalis khanaqin mandali
 			eyvan
-		}
-		our_cores_conquered_by_others = {
 			altun_kupri chamchamal daquq kirkuk tuz_khurma
 			akre
 			duhok balad
+			samarra ar_rabb tikrit ukbara
+			balad_ruz baqubah khalis khanaqin mandali
+			eyvan
 		}
 		
 		starting_technology_level = 3
 		include = "expl_middle_east"
 		include = "turkish_beylik_no_coast_no_greek"
 		government = {
-			ruler = tur_ibrahim
+			#ruler = tur_ibrahim
 
 			privilege = {
 				#Nobles
@@ -56375,7 +56457,7 @@ countries = {
 	}
 	
 	A2A = { #Mosul 
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			mosul qayyarah tal_afar al_sinn
 		}
 		

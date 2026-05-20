@@ -18,6 +18,7 @@ br_levy_size_modifier = {
 	global_levy_recruitment_speed_modifier = 0.25
 	levy_maintenance_modifier = -0.25
 	global_levy_size_modifier = 1
+	levy_recovery_modifier = 1
 }
 
 br_elysium_formed = {
@@ -36,4 +37,89 @@ varangian_custodianship = {
 	stability_cost = -0.25
 	land_morale_modifier = 0.1
 	country_cabinet_efficiency = -0.10
+}
+
+br_crisis_of_legitimacy = {
+	game_data = {
+		category = country
+	}
+	
+	monthly_legitimacy = -0.25
+	land_morale_modifier = -0.1
+}
+
+br_imperial_instability = {
+	game_data = {
+		category = country
+	}
+	stability_investment = stability_investment_penalty
+	global_max_control = -0.1
+}
+
+#lucky country buff can be scaled 0.25 lucky - 1 super lucky.
+br_lucky_country_buff = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = 0.5
+	antagonism_received_modifier = -0.5
+	monthly_legitimacy = 0.5
+	stability_investment = 0.5
+	global_integration_speed_modifier = 0.5
+	annexation_speed_modifier = 0.5
+	land_morale_modifier = 0.25
+	expected_army_size_modifier = 1
+	subject_loyalty = 25
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+}
+
+#replace vanilla for better balance
+
+REPLACE_OR_CREATE:restored_the_imperial_capital_modifier = {
+	game_data = { category = country }
+	monthly_legitimacy = 0.05 #0.3
+	global_estate_target_satisfaction = small_permanent_target_satisfaction #large_permanent_target_satisfaction
+}
+
+REPLACE_OR_CREATE:despot_modifier = {
+	game_data = {
+		category = character
+	}
+	character_cabinet_efficiency = 0.15
+	monthly_prestige = 0.05 #0.1
+	monthly_legitimacy = 0.02 #0.1
+}
+
+REPLACE_OR_CREATE:byzantine_market_dominance_modifier = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	selling_efficiency = small_trade_efficiency_bonus #medium_trade_efficiency_bonus
+}
+
+REPLACE_OR_CREATE:byz_reliance_on_italian_navies = {
+	game_data = {
+		category = country 
+	}
+	ship_build_speed = 0.1
+	navy_galley_build_cost_modifier = -0.1
+	monthly_legitimacy = -0.1 #-0.05
+	import_efficiency = tiny_trade_efficiency_penalty
+}
+
+REPLACE_OR_CREATE:byz_mercantile_self_reliance_modifier = {
+	game_data = {
+		category = country 
+	}
+	selling_efficiency = tiny_trade_efficiency_bonus
+	monthly_legitimacy = 0.1
+}
+
+REPLACE_OR_CREATE:BYZ_cracking_down_on_nobility = {
+	game_data = {
+		category = country
+	}
+	global_nobles_estate_power = -0.5
+	stability_investment = stability_investment_penalty
 }

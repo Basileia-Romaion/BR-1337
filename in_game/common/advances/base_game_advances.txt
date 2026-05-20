@@ -1640,9 +1640,9 @@ REPLACE_OR_CREATE:seljuk_heritage = {
 	}
 	
 	global_integration_speed_modifier = 0.33
-	great_power_score_exempt_from_forfeit = 10
-	subject_income_modifier = 0.2
-	global_crown_estate_power = 0.2
+	great_power_score_exempt_from_forfeit = 5
+	subject_income_modifier = 0.1
+	global_crown_estate_power = 0.1
 	
 	requires = feudalism_advance
 }

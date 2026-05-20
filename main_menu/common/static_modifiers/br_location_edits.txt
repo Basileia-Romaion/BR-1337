@@ -9,8 +9,44 @@ TRY_INJECT:inverse_control = {
 	local_manpower_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
 	local_levy_size_modifier = 0.25 #br addition so total wll be -0.75 instead of -1.0.
 	local_tribal_promotion = -1.0 #br added
-	local_separatism = 0.2 #BR added
+	local_separatism = 0.25 #BR added
 }
 TRY_INJECT:is_occupied = {
 	local_food_capacity_modifier = -0.5 #br added
+}
+
+TRY_INJECT:capital = {
+	local_garrison_size = 0.2
+	local_nobles_max_literacy = 5
+	local_monthly_prosperity = 0.001
+	local_marketplace_building_levels = 2
+}
+
+TRY_INJECT:province_capital = {
+	local_garrison_size = 0.1
+	local_max_control = 0.02
+	local_nobles_max_literacy = 2
+	local_marketplace_building_levels = 1
+}
+
+TRY_INJECT:market_center = {
+	local_burghers_max_literacy = 5
+	local_marketplace_building_levels = 5
+}
+
+TRY_INJECT:looted = {
+	local_population_growth = -0.005 #additonal 0.005 for -0.01 total
+	local_prosperity_decay = 0.05 #additonal -0.05 for -0.15 total
+	local_monthly_development_modifier = -0.05 #additonal 0.05 for 0.3 total
+}
+
+TRY_INJECT:raised_levies = {
+	local_raw_material_output = -0.1 #additional -0.1 for -0.3 total
+	local_monthly_food_modifier = -0.1 #additonal -0.1 for -0.3 total
+}
+
+# from rebel system
+TRY_INJECT:minor_rebel_uprising = {
+	local_monthly_prosperity = -0.005 # additional -0.005 for 0.01 total
+	local_monthly_control = -0.005 # additional -0.005 for 0.01 total
 }

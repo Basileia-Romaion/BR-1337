@@ -88,6 +88,25 @@ br_ere_events.1 = {
 		custom_tooltip = {
 			text = br_ere_events.1.att
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
+			add_country_modifier = {
+				modifier = br_crisis_of_legitimacy
+				years = 100
+				mode = add_and_extend
+			}
+			add_country_modifier = {
+				modifier = br_imperial_instability
+				years = 100
+				mode = add_and_extend
+			}
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:anatolian_greek_culture
+						#pop_type = pop_type:burghers
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
 	   	}
 	}
 }
