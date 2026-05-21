@@ -330,148 +330,44 @@ REPLACE_OR_CREATE:dalmatian = {
 	}
 	
 	culture_groups = {
-		italian_group roman_group
+		italian_group roman_group illyrian_group
 	}
 }
 
-REPLACE_OR_CREATE:wu_culture = { #吳
-	language = wu_dialect
+albanian = {
+	language = albanian_language
 
-	color = map_wu
+	color = map_albanian
 
-	tags = { east_asian_gfx }
+	tags = { east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
+		#arvanite = kindred
+		greek_culture = negative
+		venetian = positive
+		bulgarian = positive
+		serbian = negative
+	}
+
+	goods_demand_modifier = {
+		olives = 1.2
 	}
 	culture_groups = {
-		chinese_group
-		confucian_group
+		illyrian_group
 	}
 }
 
-REPLACE_OR_CREATE:yue_wu_culture = { #越
-	language = wu_dialect
-
-	color = map_yue_wu
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:xuanzhou_culture = { #宣州
-	language = wu_dialect
-
-	color = map_xuanzhou
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:wuzhou_culture = { #婺州
-	language = wu_dialect
-
-	color = map_wuzhou
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:quzhou_culture = { #衢州
-	language = wu_dialect
-
-	color = map_quzhou
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:chuzhou_culture = { #滁州
-	language = wu_dialect
-
-	color = map_chuzhou
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:jiangshan_culture = { #江山
-	language = wu_dialect
-
-	color = map_jiangshan
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:taizhou_wu_culture = { #台州
-	language = wu_dialect
-
-	color = map_taizhou_wu
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-REPLACE_OR_CREATE:ouhai_culture = { #瓯海
-	language = wu_dialect
-
-	color = map_ouhai
-
-	tags = { east_asian_gfx }
-
-	opinions = {
-	}
-	culture_groups = {
-		chinese_group
-		confucian_group
-	}
-}
-
-
-
-
-
+#arvanite = {
+#	language = albanian_language
+#	
+#	color = map_arvanite
+#	
+#	tags = { east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+#
+#	opinions = {
+#		albanian = kindred
+#		greek_culture = positive
+#	}
+#}
 
 
