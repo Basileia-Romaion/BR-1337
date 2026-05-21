@@ -6897,17 +6897,19 @@ building_manager = {
 
 	#Black Sea Company
 	trade_company_governance = { tag = GTC level = 2 location = genoa }
-	trade_company_harbor = { tag = GTC level = 2 location = trebizond }
+	br_latin_harbor = { tag = GTC level = 1 location = trebizond }
 	trade_company_headquarters = { tag = GTC level = 1 location = kaffa }
 	trade_company_governance = { tag = GTC level = 2 location = tana }
 	trade_company_garrison = { tag = GTC level = 1 location = kaffa }
 	trade_company_garrison = { tag = GTC level = 1 location = tana }
-	trade_company_harbor = { tag = GTC level = 2 location = tana }
+	br_latin_harbor = { tag = GTC level = 1 location = tana }
 
 	#Aegean/East Med
+	br_latin_chapel = { tag = GTC level = 1 location = foca }
+	br_latin_chapel = { tag = GTC level = 1 location = samos }
 	trade_office = { tag = GTC level = 2 location = tripoli }
-	trade_company_harbor = { tag = GTC level = 2 location = izmit }
-	trade_company_harbor = { tag = GTC level = 2 location = smyrna }
+	br_latin_harbor = { tag = GTC level = 1 location = izmit }
+	br_latin_harbor = { tag = GTC level = 1 location = smyrna }
 	br_latin_trading_post = { tag = GTC level = 2 location = smyrna }
 	br_latin_trading_post = { tag = GTC level = 2 location = izmit }
 	br_latin_trading_post = { tag = GTC level = 2 location = antioch }
@@ -6932,13 +6934,15 @@ building_manager = {
 	br_latin_trading_post = { tag = GTC level = 1 location = molyvos }
 
 	#Black Sea
-	trade_company_harbor = { tag = GTC level = 1 location = kaffa }
-	trade_company_harbor = { tag = GTC level = 1 location = trebizond }
-	trade_company_harbor = { tag = GTC level = 1 location = sinop }
+	br_latin_chapel = { tag = GTC level = 1 location = tana }
+	br_latin_chapel = { tag = GTC level = 1 location = kaffa }
+	br_latin_chapel = { tag = GTC level = 1 location = amasra }
+	br_latin_harbor = { tag = GTC level = 1 location = kaffa }
+	br_latin_harbor = { tag = GTC level = 1 location = sinop }
 	br_latin_trading_post = { tag = GTC level = 1 location = soldaia }
 	br_latin_trading_post = { tag = GTC level = 1 location = vosporo }
 	br_latin_trading_post = { tag = GTC level = 1 location = ismail }
-	br_latin_trading_post = { tag = GTC level = 2 location = tana }	
+	br_latin_trading_post = { tag = GTC level = 2 location = tana }
 	br_latin_trading_post = { tag = GTC level = 2 location = trebizond }
 	br_latin_trading_post = { tag = GTC level = 2 location = sinop }
 	br_latin_trading_post = { tag = GTC level = 1 location = samsun }
@@ -6981,10 +6985,18 @@ building_manager = {
 	overseas_trading_post = { tag = VEN level = 1 location = zenica }
 
 	#Agean Trade League 
+	br_latin_chapel = { tag = VTC level = 1 location = candia }
+	br_latin_chapel = { tag = VTC level = 1 location = naxos }
+	br_latin_chapel = { tag = VTC level = 1 location = larnaca }
+	br_latin_chapel = { tag = VTC level = 1 location = karystos }
+	br_latin_chapel = { tag = VTC level = 1 location = acre }
+	br_latin_chapel = { tag = VTC level = 1 location = beirut }
+
+
 	trade_company_headquarters = { tag = VTC level = 1 location = candia }
-	trade_company_harbor = { tag = VTC level = 2 location = athens }
-	trade_company_harbor = { tag = VTC level = 2 location = thessaloniki }
-	trade_company_harbor = { tag = VTC level = 2 location = alexandria }
+	br_latin_harbor = { tag = VTC level = 1 location = athens }
+	br_latin_harbor = { tag = VTC level = 1 location = thessaloniki }
+	br_latin_harbor = { tag = VTC level = 1 location = alexandria }
 	trade_company_governance = { tag = VTC level = 1 location = split }
 	trade_company_governance = { tag = VTC level = 2 location = venice }
 	trade_company_governance = { tag = VTC level = 1 location = candia }
@@ -7074,8 +7086,9 @@ building_manager = {
 
 	#Trade Company RIC
 	trade_company_headquarters = { tag = RIC level = 1 location = goa }
-	trade_company_harbor = { tag = RIC level = 2 location = goa }
+	br_latin_harbor = { tag = RIC level = 2 location = goa }
 	trade_company_governance = { tag = RIC level = 1 location = goa }
+	br_indike_quarters = { tag = RIC level = 1 location = goa }
 	#trade_company_garrison = { tag = RIC level = 1 location = alexandria }
 	#trade_company_harbor = { tag = RIC level = 1 location = alexandria }
 
@@ -7092,8 +7105,8 @@ building_manager = {
 
 	#Red Sea
 	trade_company_governance = { tag = RIC level = 1 location = axum }
-	trade_company_harbor = { tag = RIC level = 1 location = suez }
-	trade_company_harbor = { tag = RIC level = 1 location = zula }
+	br_latin_harbor = { tag = RIC level = 1 location = suez }
+	br_latin_harbor = { tag = RIC level = 1 location = zula }
 	trade_office = { tag = RIC level = 2 location = suez }
 	overseas_trading_post = { tag = RIC level = 1 location = zula }
 	overseas_trading_post = { tag = RIC level = 1 location = aydhab }
@@ -7135,14 +7148,14 @@ building_manager = {
 	trade_company_garrison = { tag = RIC level = 2 location = goa }
 	trade_office = { tag = RIC level = 12 location = goa }
 
-	trade_company_harbor = { tag = RIC level = 2 location = bombay }
+	br_latin_harbor = { tag = RIC level = 2 location = bombay }
 	trade_office = { tag = RIC level = 8 location = bombay }
 	trade_company_governance = { tag = RIC level = 2 location = bombay }
-	trade_company_harbor = { tag = RIC level = 1 location = kozhikode }
+	br_latin_harbor = { tag = RIC level = 1 location = kozhikode }
 	trade_office = { tag = RIC level = 4 location = kozhikode }
 	trade_company_governance = { tag = RIC level = 1 location = kozhikode }
 	trade_company_garrison = { tag = RIC level = 1 location = kozhikode }
-	trade_company_harbor = { tag = RIC level = 1 location = kayal }
+	br_latin_harbor = { tag = RIC level = 1 location = kayal }
 	trade_office = { tag = RIC level = 4 location = kayal }
 	trade_company_governance = { tag = RIC level = 1 location = kayal }
 	trade_company_garrison = { tag = RIC level = 1 location = kayal }

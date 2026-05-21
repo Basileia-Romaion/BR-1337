@@ -1,0 +1,192 @@
+﻿#INJECT:trade_company_harbor = {
+	#modifier = {
+		#max_ships_built_at_same_time = 1
+		#building_owner_maritime_presence = 0.14
+		#local_sailors = 0.025
+		#can_build_ships_in_this_location = yes
+		#local_repair_speed = 0.02
+	#}
+#}
+
+br_latin_harbor = {
+	is_foreign = yes
+	max_levels = trade_company_building_max_level
+	pop_type = burghers
+	own_or_overlord_relation_needed = trade_access
+	category = trade_category
+	employment_size = large_foreign_trade_employment
+	pop_size_created = large_foreign_trade_employment
+	icon = trade_company_harbor 
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = trade_company_build_time
+	possible_production_methods = {
+		satellite_trade_building_requirements
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+
+	custom_tags = { trade_company_building satellite_trade_building }
+	modifier = {
+		max_ships_built_at_same_time = 1
+		building_owner_maritime_presence = 0.1
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.02
+	}
+}
+
+br_latin_trading_post = {
+	is_special = yes
+	is_foreign = yes
+	need_good_relation = no
+	in_empty = any
+	max_levels = trade_company_building_max_level
+	pop_type = burghers
+	icon = fondaco #trade_office #overseas_trading_post por_feitoria
+
+	stronger_power_projection = no
+	#own_or_overlord_relation_needed = trade_access
+	#international_organization_link = roman_world	
+	
+	category = trade_category
+
+	employment_size = large_foreign_trade_employment
+	
+	pop_size_created = large_foreign_trade_employment
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	increase_per_level_cost = 0.5
+	#conversion_religion = catholic
+
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_special_trade_companies
+		has_reform = government_reform:br_special_merchant_republic
+	}
+	location_potential = {
+		OR = {
+			is_coastal = yes
+			is_port = yes
+		}
+		dominant_culture = { has_culture_group = culture_group:greek_group }
+	}
+	allow = {
+		within_naval_range_of = scope:actor
+	}
+	
+	build_time = trade_post_build_time
+	
+	unique_production_methods = {
+		br_latin_trading_post_maintenance = {
+			paper = 0.1
+			masonry = 0.05
+			naval_supplies = 0.25
+			category = building_maintenance
+		}
+	}
+	
+	modifier = {
+		building_owner_overlord_maritime_presence = 0.1
+		merchant_capacity_from_building = 0.5
+		merchant_power_from_building = 0.5
+		#Italian merchants settle in the new location
+		local_migration_attraction = 0.05
+		sailors_to_building_owner = 0.001
+		local_marketplace_building_levels = 2
+		local_market_access = 0.02
+		#building_missionary_effort = 0.001
+	}
+	allow_wrong_startup = yes
+}
+
+br_latin_chapel = {
+	is_foreign = yes
+	need_good_relation = yes
+	want_foreign_pop_created = no
+	pop_type = clergy
+	icon = merchant_guild_chapel
+
+	max_levels = 1
+	expensive = yes
+	category = colonial_category
+
+	employment_size = religious_building_employment
+	
+	pop_size_created = religious_building_employment
+
+	price = merchant_guild_chapel_price
+	
+	rural_settlement = setup_only
+	town = setup_only
+	city = yes
+	megalopolis = yes
+	conversion_religion = catholic
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_special_trade_companies
+		has_reform = government_reform:br_special_merchant_republic
+	}
+	
+	possible_production_methods = { merchant_guild_chapel_requirements }
+	construction_demand = merchant_guild_chapel_construction
+
+	
+	build_time = generic_town_build_time
+	
+	modifier = {
+		local_max_literacy = 2
+		building_missionary_effort = 0.005
+	}
+
+	capital_country_modifier = {
+		monthly_religious_influence = 0.2
+	}
+}
+
+br_indike_quarters = {
+	is_special = yes
+	is_foreign = yes
+	pop_type = burghers
+	employment_size = foreign_trade_employment
+	pop_size_created = foreign_trade_employment
+	max_levels = 1
+	category = trade_category
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	need_good_relation = yes
+	
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	
+	expensive = yes
+	build_time = trade_post_build_time
+	modifier = {
+		building_owner_maritime_presence = 0.05
+		local_max_rgo_size = 3
+		local_rgo_build_time = -0.25
+		#local_build_buildings_efficiency = 0.3
+	}
+	possible_production_methods = {
+		ori_portuguese_quarters_maintenance
+	}
+	construction_demand = market_center_building_construction
+}
