@@ -274,36 +274,36 @@ br_on_game_start = {
 			research_advance = advance_type:port_customs
 			research_advance = advance_type:indian_sea_trade
 		}
-		c:AIA = {
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:ledgers_double_checking
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			research_advance = advance_type:power_projection_advance_1
-            research_advance = advance_type:non_inheritable_offices
-			research_advance = advance_type:province_governors
-			research_advance = advance_type:muslim_caravans
-			research_advance = advance_type:indian_sea_trade
-		}
-		c:A0A = {
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:ledgers_double_checking
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			research_advance = advance_type:muslim_caravans
-			research_advance = advance_type:indian_sea_trade
-		}
-		c:A2A = {
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:ledgers_double_checking
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			research_advance = advance_type:muslim_caravans
-			research_advance = advance_type:indian_sea_trade
-		}
+		#c:AIA = {
+            #research_advance = advance_type:meritocracy_advance
+			#research_advance = advance_type:abacus_advance
+			#research_advance = advance_type:ledgers_double_checking
+			#research_advance = advance_type:organized_religion
+			#research_advance = advance_type:scholasticism
+			#research_advance = advance_type:power_projection_advance_1
+            #research_advance = advance_type:non_inheritable_offices
+			#research_advance = advance_type:province_governors
+			#research_advance = advance_type:muslim_caravans
+			#research_advance = advance_type:indian_sea_trade
+		#}
+		#c:A0A = {
+            #research_advance = advance_type:meritocracy_advance
+			#research_advance = advance_type:abacus_advance
+			#research_advance = advance_type:ledgers_double_checking
+			#research_advance = advance_type:organized_religion
+			#research_advance = advance_type:scholasticism
+			#research_advance = advance_type:muslim_caravans
+			#research_advance = advance_type:indian_sea_trade
+		#}
+		#c:A2A = {
+            #research_advance = advance_type:meritocracy_advance
+			#research_advance = advance_type:abacus_advance
+			#research_advance = advance_type:ledgers_double_checking
+			#research_advance = advance_type:organized_religion
+			#research_advance = advance_type:scholasticism
+			#research_advance = advance_type:muslim_caravans
+			#research_advance = advance_type:indian_sea_trade
+		#}
 		c:A1G = {
 			trigger_event_silently = br_ere_events.1002
 			research_advance = advance_type:unlock_barque_advance

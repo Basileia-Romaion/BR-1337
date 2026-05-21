@@ -2996,7 +2996,7 @@ countries = {
 		}
 
 		liturgical_language = church_slavonic_language
-
+		
 		capital = moscow
 		include = "russian_principality_no_coast"
 		include = "expl_novgorod"
@@ -8972,8 +8972,8 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1338.1.1
-			size = 2
+			date = 1345.1.1
+			size = 1
 		}
 		
 		country_rank = rank_duchy
@@ -9791,6 +9791,12 @@ countries = {
 			date = 1345.1.1
 			size = 1
 		}
+		timed_modifier = {
+			modifier = "br_lucky_republic_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 1500
@@ -10118,7 +10124,12 @@ countries = {
 		tolerated_cultures = {
 			corsican
 		}
-
+		timed_modifier = {
+			modifier = "br_lucky_republic_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
 		capital = genoa
 		currency_data = {
 			gold = 2250
@@ -10644,7 +10655,7 @@ countries = {
 			emilian
 		}
 		timed_modifier = {
-			modifier = "br_lucky_country_buff"
+			modifier = "br_lucky_republic_buff"
 			start_date = 1333.1.1
 			date = 1425.1.1
 			size = 0.25
@@ -12276,6 +12287,12 @@ countries = {
 					}
 				}
 			}
+		}
+		timed_modifier = {
+			modifier = "br_lucky_republic_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
 		}
 		#https://www.researchgate.net/publication/269643384_The_Venetian_Money_Market_Banks_Panics_and_the_Public_Debt_1200-1500
 		#https://www.jstor.org/stable/1882461
@@ -14742,7 +14759,18 @@ countries = {
 
 		country_rank = rank_kingdom
 		capital = leon
-		
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1385.1.1
+			size = 0.25
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1420.1.1
+			size = 0.25
+		}
 		ai_advance_preference_tags = {
 			exploration = 5
 		}
@@ -33541,15 +33569,17 @@ countries = {
 			prestige = 50
 			army_tradition = 100
 		}
-		accepted_cultures = { turkoman_culture }
-		tolerated_cultures = {
+		accepted_cultures = { 
+			turkoman_culture
+			farsi_culture
 			adhari_culture
+			iraqi_culture
 		}
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 2
+			date = 1395.1.1
+			size = 1
 		}
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
@@ -41623,7 +41653,18 @@ countries = {
 		capital = vilnius
 		dynasty = gediminid_dynasty
 		court_language = belarusian_dialect
-
+		timed_modifier = {
+			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1375.1.1
+			size = 0.25
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1375.1.1
+			size = 0.33
+		}
 		country_rank = rank_duchy
 		#Setup to accurately portray the starting situation
 		currency_data = {
@@ -42608,7 +42649,13 @@ countries = {
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
-			date = 1475.1.1
+			date = 1425.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1400.1.1
 			size = 1
 		}
 		court_language = karluk_language
@@ -48896,6 +48943,12 @@ countries = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
 			date = 1425.1.1
+			size = 0.25
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1420.1.1
 			size = 0.25
 		}
 		country_rank = rank_kingdom
@@ -55859,6 +55912,12 @@ countries = {
 			date = 1425.1.1
 			size = 0.5
 		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1350.1.1
+			size = 0.25
+		}
 		country_rank = rank_kingdom
 		capital = metz
 		currency_data = {
@@ -56440,18 +56499,6 @@ countries = {
 			turkoman_culture
 			iraqi_culture
 		}
-		currency_data = {
-			gold = 2250
-			prestige = 75
-			stability = 100
-			government_power = 100
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1420.1.1
-			size = 2
-		}
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 		
 	}
@@ -56509,18 +56556,6 @@ countries = {
 		tolerated_cultures = {
 			turkoman_culture
 			iraqi_culture
-		}
-		currency_data = {
-			gold = 2250
-			prestige = 75
-			stability = 100
-			government_power = 100
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1420.1.1
-			size = 2
 		}
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 		

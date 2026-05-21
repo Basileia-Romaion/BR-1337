@@ -61,16 +61,35 @@ br_lucky_country_buff = {
 	game_data = {
 		category = country
 	}
-	global_crown_estate_power = 0.5
-	antagonism_received_modifier = -0.5
-	monthly_legitimacy = 0.5
-	stability_investment = 0.5
+	global_crown_estate_power = 0.25
+	antagonism_received_modifier = -0.25
+	monthly_legitimacy = 0.25
+	stability_investment = 0.25
 	global_integration_speed_modifier = 0.5
 	annexation_speed_modifier = 0.5
 	land_morale_modifier = 0.25
 	expected_army_size_modifier = 1
 	subject_loyalty = 25
 	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	aggressiveness_modifier = 1.0
+}
+
+br_lucky_republic_buff = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = 0.25
+	antagonism_received_modifier = -0.25
+	monthly_republican_tradition = 0.25
+	stability_investment = 0.25
+	global_integration_speed_modifier = 0.5
+	annexation_speed_modifier = 0.5
+	land_morale_modifier = 0.25
+	naval_morale_modifier = 0.25
+	trade_income = 0.25
+	mercenary_units_preference_modifier = 0.25
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	aggressiveness_modifier = 0.5
 }
 
 #replace vanilla for better balance
@@ -113,7 +132,7 @@ REPLACE_OR_CREATE:byz_mercantile_self_reliance_modifier = {
 		category = country 
 	}
 	selling_efficiency = tiny_trade_efficiency_bonus
-	monthly_legitimacy = 0.1
+	monthly_legitimacy = 0.02 #0.1
 }
 
 REPLACE_OR_CREATE:BYZ_cracking_down_on_nobility = {

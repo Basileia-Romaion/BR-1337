@@ -216,6 +216,12 @@ diplomacy_manager = {
 	opinion = { first = MLO second = LOT type = opinion_good_relations }
 	opinion = { first = LOT second = PAP type = opinion_good_relations }
 	opinion = { first = PAP second = LOT type = opinion_good_relations }
+
+	opinion = { first = AQN second = LON type = opinion_good_relations }
+	opinion = { first = AQN second = NAV type = opinion_good_relations }
+	opinion = { first = TOU second = ARA type = opinion_good_relations }
+	opinion = { first = PRO second = ARA type = opinion_good_relations }
+	opinion = { first = KNI second = ARA type = opinion_good_relations }
 	#Bavaria
 
 	#Wittelsbacher Good House Relations
