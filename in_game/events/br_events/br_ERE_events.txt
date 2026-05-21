@@ -191,64 +191,46 @@ br_ere_events.3 = {
 		}
 		custom_tooltip = {
 			text = br_ere_events.3.btt
+			annex_country = { country = c:THE }
+			annex_country = { country = c:MOE }
+
 			c:ATH = {
-				annex_country = { country = c:ACH }
-				annex_country = { country = c:MOE }
-				make_subject_of = {
-					target = c:BYZ
-					type = subject_type:br_thema_subject
-				}
-			}
-			c:THE = {
-				annex_country = { country = c:THS }
-				annex_country = { country = c:B0R }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:AN8 = {
-				annex_country = { country = c:AN1 }
-				annex_country = { country = c:AN7 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:AN10 = {
-				annex_country = { country = c:AN3 }
-				annex_country = { country = c:AN2 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:AON = {
-				annex_country = { country = c:AN4 }
-				annex_country = { country = c:AN11 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:ICO = {
-				annex_country = { country = c:AN9 }
-				annex_country = { country = c:AN12 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:TRE = {
-				annex_country = { country = c:AN6 }
-				annex_country = { country = c:P2N }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
 			c:AN13 = {
-				annex_country = { country = c:AN5 }
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
@@ -319,6 +301,9 @@ br_ere_events.4 = {
 		}
 
 		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_peasants
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
