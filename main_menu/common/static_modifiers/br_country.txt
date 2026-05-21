@@ -17,8 +17,8 @@ br_levy_size_modifier = {
 	}
 	global_levy_recruitment_speed_modifier = 0.25
 	levy_maintenance_modifier = -0.25
-	global_levy_size_modifier = 1
-	levy_recovery_modifier = 1
+	global_levy_size_modifier = 0.5
+	levy_recovery_modifier = 0.5
 }
 
 br_elysium_formed = {

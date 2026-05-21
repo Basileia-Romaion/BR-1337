@@ -144,6 +144,7 @@ br_naval_theme_hq = {
 	megalopolis = yes
 	
 	ai_forbid_shutdown = yes
+	important_for_AI = yes
 	build_time = large_port_building_time
 
 	forbidden_for_estates = yes
@@ -963,6 +964,8 @@ br_doukate_building = {
 	
 	build_time = big_soldier_building
 	expensive = yes
+	ai_forbid_shutdown = yes
+	important_for_AI = yes
 	
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
@@ -1036,6 +1039,8 @@ br_katapanate_building = {
 	
 	build_time = big_soldier_building
 	expensive = yes
+	ai_forbid_shutdown = yes
+	important_for_AI = yes
 	
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
@@ -1110,6 +1115,8 @@ br_despotate_building = {
 	
 	build_time = big_soldier_building
 	expensive = yes
+	ai_forbid_shutdown = yes
+	important_for_AI = yes
 	
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
@@ -1183,6 +1190,8 @@ br_dioikesis_building = {
 	
 	build_time = big_soldier_building
 	expensive = yes
+	ai_forbid_shutdown = yes
+	important_for_AI = yes
 	
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }

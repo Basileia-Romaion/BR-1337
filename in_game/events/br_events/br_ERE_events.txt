@@ -2,10 +2,6 @@
 
 namespace = br_ere_events
 
-	#trigger = {
-	#	character:byz_andronikos_iii_palaiologos ?= {	is_alive = no	}
-	#}
-
 	#unlock_law_effect = { type = br_military_frontier }
 
 br_ere_events.1 = {
@@ -25,6 +21,18 @@ br_ere_events.1 = {
 	}
 
 	immediate = {
+		add_country_modifier = {
+			modifier = br_crisis_of_legitimacy
+			years = 25
+			mode = add_and_extend
+			size = 0.5
+		}
+		add_country_modifier = {
+			modifier = br_imperial_instability
+			years = 25
+			mode = add_and_extend
+			size = 0.5
+		}
 		if = {
 			limit = {
 				has_dlc = "d008_fate_of_the_phoenix"
@@ -88,16 +96,6 @@ br_ere_events.1 = {
 		custom_tooltip = {
 			text = br_ere_events.1.att
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
-			add_country_modifier = {
-				modifier = br_crisis_of_legitimacy
-				years = 100
-				mode = add_and_extend
-			}
-			add_country_modifier = {
-				modifier = br_imperial_instability
-				years = 100
-				mode = add_and_extend
-			}
 			every_owned_location = {
 				every_pop = {
 					limit = {
@@ -327,6 +325,103 @@ br_ere_events.4 = {
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 	}
 }
+
+br_ere_events.5 = {
+	type = country_event
+	title = br_ere_events.5.title
+	desc = br_ere_events.5.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
+	trigger = {
+		character:byz_andronikos_iii_palaiologos ?= {	is_alive = no	}
+	}
+	
+	dynamic_historical_event = {
+  		tag = BYZ
+ 		from = 1336.1.1
+ 		to = 1500.1.1
+ 		monthly_chance = 100
+ 	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+	}
+	option = {
+		historical_option = yes
+		name = br_ere_events.5.a
+
+		add_country_modifier = {
+			modifier = br_crisis_of_legitimacy
+			years = 15
+			mode = replace
+			size = 1
+		}
+		add_country_modifier = {
+			modifier = br_imperial_instability
+			years = 15
+			mode = replace
+			size = 1
+		}
+		hidden_effect = {
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:anatolian_greek_culture
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_penalty }
+		}
+		
+	}
+}
+
+br_ere_events.6 = {
+	type = country_event
+	title = br_ere_events.6.title
+	desc = br_ere_events.6.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
+	trigger = {
+		character:byz_andronikos_iii_palaiologos ?= { is_alive = no }
+		has_ruler = yes
+	}
+	
+	dynamic_historical_event = {
+  		tag = BYZ
+ 		from = 1336.1.1
+ 		to = 1500.1.1
+ 		monthly_chance = 100
+ 	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+	}
+	option = {
+		historical_option = yes
+		name = br_ere_events.6.a
+
+		if = {
+			limit = { has_country_modifier = br_crisis_of_legitimacy  }
+			remove_country_modifier = br_crisis_of_legitimacy
+		}
+		if = {
+			limit = { has_country_modifier = br_imperial_instability  }
+			remove_country_modifier = br_imperial_instability
+		}
+
+	}
+}
+
 
 
 br_ere_events.1002 = {

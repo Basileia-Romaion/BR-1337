@@ -1,7 +1,7 @@
 ﻿l_english:
 
  br_ere_events.1.title: "The Empire in Peril"
-
+ br_ere_events.1.entry: "$br_ere_events.1.title$"
  br_ere_events.1.desc: "Once the Basileía Romaíon stood unrivaled. From the mountains of Armenia to the shores of the Adriatic, all trembled before the majesty of the Roman Empire. Those days are now but a fading memory.\n\nThe Empire has fractured under the weight of corruption, ambition, and neglect. Across the provinces, the themata no longer heed the commands of Constantinople. Strategoi and provincial magnates rule their lands as petty lords, while the dynatoi and pronoia holders enrich themselves as imperial authority fades beyond the capital's walls.\n\nEven now, the Basileus grows weak and infirm. Physicians whisper that his days are numbered, and that the purple will soon pass to a child whose talents are... uncertain. When the Emperor dies, rival claimants and ambitious generals will surely descend upon the throne.\n\nYet the Roman Empire has endured darker trials than these. If the rebellious provinces can be brought again beneath the imperial eagle, if the authority of the throne is restored and the themes returned to obedience, then the Empire may yet rise again. The dream of a united Roman world has not yet died."
  br_ere_events.1.a: "The Empire Shall Rise Again"
  br_ere_events.1.att: "The Basileía stands on the brink. Only a handful of Strategoi remain loyal, while factions within the Empire prepare to rise in open revolt."
@@ -38,6 +38,16 @@
 
  br_ere_events.3.att: "All Greek themata and pronoia in the Balkans and Anatolia will become direct vassals of the Basileus."
  br_ere_events.3.btt: "The Empire will be reorganized into a few large regional vassals. Several minor states will be annexed into stronger governors, who will become vassals or marches."
+
+ br_ere_events.5.title: "The Death of [GetCharacter('byz_andronikos_iii_palaiologos').GetName]"
+ br_ere_events.5.entry: "$br_ere_events.5.title$"
+ br_ere_events.5.desc: "With the passing of [GetCharacter('byz_andronikos_iii_palaiologos').GetName], the [ROOT.GetCountry.GetFlavorRank] enters a period of mourning. Though his reign was marked by civil strife, dynastic intrigue, and the continued erosion of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] authority in Anatolia, he will nonetheless be remembered for restoring imperial influence across the Greek lands and preserving the realm against its many rivals.\n\nThroughout Constantinople, long processions clad in black silk wind through the avenues toward the Mausoleum of the Holy Apostles, where the emperor is to be laid among his forebears. In the forums, harbors, and taverns, whispers spread of what his death may mean for the future of the empire.\n\nAs embassies, magnates, and provincial governors send lavish funerary offerings to the capital, one question hangs heavily over the realm; what fate now awaits the Roman state and its people?"
+ br_ere_events.5.a: "We must prepare for the trials ahead"
+
+ br_ere_events.6.title: "The Coronation of the New Basileus"
+ br_ere_events.6.entry: "$br_ere_events.6.title$"
+ br_ere_events.6.desc: "The new [ROOT.GetCountry.GetGovernment.GetRulerTitle], having now ascended the imperial throne, is crowned amidst great ceremony beneath the glittering mosaics of Hagia Sophia. Envoys from distant courts arrive bearing silks, relics, spices, and jeweled gifts, each seeking favor within the halls of the imperial palace.\n\nAmong the court, optimism mingles with quiet suspicion as senators, generals, and bureaucrats weigh the character of the empire’s new ruler. Across the provinces, governors and magnates cautiously reaffirm their loyalties, knowing that the stability of the [ROOT.GetCountry.GetName] now rests upon the judgment of an untested sovereign.\n\nAll eyes turn toward Constantinople, awaiting the first decrees of the new Basileus, for within them may lie either the promise of renewal or the seeds of future turmoil."
+ br_ere_events.6.a: "Long live the Basileus!"
 
  DEATH_REASON_killed_by_varangians: "[CHARACTER.GetSheHe|U] was murdered by the Varangian guard."
  STATIC_MODIFIER_NAME_varangian_custodianship: "Varangian Custodianship"

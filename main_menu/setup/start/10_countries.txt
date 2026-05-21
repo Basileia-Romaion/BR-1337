@@ -2996,6 +2996,12 @@ countries = {
 		}
 
 		liturgical_language = church_slavonic_language
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1420.1.1
+			size = 0.25
+		}
 		
 		capital = moscow
 		include = "russian_principality_no_coast"
@@ -13687,6 +13693,12 @@ countries = {
 		liturgical_language = church_slavonic_language
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.25
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
 			date = 1425.1.1
 			size = 0.25
