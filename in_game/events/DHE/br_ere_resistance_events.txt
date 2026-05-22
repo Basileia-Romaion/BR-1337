@@ -1,0 +1,1160 @@
+﻿namespace = br_ere_resistance_events
+
+# based on The Holy League
+br_ere_resistance_events.1 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.1.title
+	desc = br_ere_resistance_events.1.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	dynamic_historical_event = {
+		tag = PAP
+		from = 1356.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_ruler = yes
+		at_war = no
+		country_exists = c:BYZ
+		c:BYZ = {
+			owns = location:rome
+			has_ruler = yes
+			at_war = no
+			NOT = {
+				has_truce_with = ROOT
+			}
+		}
+		religion = religion:catholic
+		crusade_potential_trigger = yes
+		crusade_allow_trigger = yes
+	}
+
+	immediate = {
+		c:BYZ = {
+			save_scope_as = crusade_target
+			ruler = {
+				save_scope_as = roman_ruler
+			}
+		}
+		c:GEN ?= {
+			add_to_list = holy_league_list
+		}
+		c:VEN ?= {
+			add_to_list = holy_league_list
+		}
+		c:LOT ?= {
+			add_to_list = holy_league_list
+		}
+		c:FRA ?= {
+			add_to_list = holy_league_list
+		}
+		c:AQN ?= {
+			add_to_list = holy_league_list
+		}
+		c:TOU ?= {
+			add_to_list = holy_league_list
+		}
+		c:PRO ?= {
+			add_to_list = holy_league_list
+		}
+		c:KNI ?= {
+			add_to_list = holy_league_list
+		}
+		c:BNV ?= {
+			add_to_list = holy_league_list
+		}
+		c:TUS ?= {
+			add_to_list = holy_league_list
+		}
+		c:PAR ?= {
+			add_to_list = holy_league_list
+		}
+		c:SAV ?= {
+			add_to_list = holy_league_list
+		}
+		ruler = {
+			save_scope_as = pope_ruler
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.1.a
+		historical_option = yes
+		set_global_variable = {
+			name = crusade_location_target
+			value = location:rome
+		}
+		create_international_organization = {
+			type = international_organization_type:crusade
+			target = scope:crusade_target
+			hidden_effect = {
+				add_country_to_international_organization = prev
+				set_leader_country = prev
+				save_scope_as = target_crusade
+			}
+		}
+
+		hidden_effect = {
+			scope:crusade_target = {
+				random_current_war = {
+					limit = {
+						OR = {
+							attacker_leader = ROOT
+							defender_leader = ROOT
+						}
+					}
+					save_scope_as = holy_league_crusade_war
+				}
+			}
+			scope:target_crusade = {
+				set_variable = holy_league_renaming
+			}
+			if = {
+				limit = { exists = scope:holy_league_crusade_war }
+				scope:holy_league_crusade_war = {
+					set_variable = holy_league_crusade
+				}
+			}
+		}
+
+		every_in_list = {
+			list = holy_league_list
+			trigger_event_silently = br_ere_resistance_events.2
+			custom_tooltip = br_ere_resistance_events.1.a.tt
+		}
+		
+		c:BYZ ?= {
+			trigger_event_non_silently = br_ere_resistance_events.8
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.1.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Call of the Crusade
+br_ere_resistance_events.2 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.2.title
+	desc = br_ere_resistance_events.2.desc
+	outcome = neutral
+	
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:burghers_estate }
+		save_scope_as = target_country
+		ruler_or_regent = {
+			save_scope_as = target_ruler
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.2.a
+
+		historical_option = yes
+		
+		join_war_as_attacker = { war = scope:holy_league_crusade_war }
+
+		add_prestige = prestige_mild_bonus
+		
+		c:PAP = {
+			trigger_event_non_silently = br_ere_resistance_events.3
+			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_allied_with = { target = c:BYZ }
+			}
+			modifier = {
+				factor = 0
+				c:PAP = { is_rival_of = root }
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.2.b
+	
+		add_prestige = prestige_severe_penalty
+		
+		c:PAP = {
+			trigger_event_non_silently = br_ere_resistance_events.4
+			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+		}
+	}
+}
+
+br_ere_resistance_events.3 = { #Country Accepted the Call
+	type = country_event
+	title = br_ere_resistance_events.3.title
+	desc = br_ere_resistance_events.3.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:clergy background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.3.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+				join_war_as_attacker = { war = scope:holy_league_crusade_war }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.4 = { #Country Refused the Call
+	type = country_event
+	title = br_ere_resistance_events.4.title
+	desc = br_ere_resistance_events.4.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.4.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.5 = { #Holy League Victorious
+	type = country_event
+	title = br_ere_resistance_events.5.title
+	desc = br_ere_resistance_events.5.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.5.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.6 = { #Holy League Defeated
+	type = country_event
+	title = br_ere_resistance_events.6.title
+	desc = br_ere_resistance_events.6.desc
+	outcome = neutral
+	
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.6.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+br_ere_resistance_events.7 = { #Based on Battle of Lepanto
+	type = country_event
+	title = br_ere_resistance_events.7.title
+	desc = br_ere_resistance_events.7.desc
+	outcome = neutral
+
+
+	fire_only_once = yes
+	
+	trigger = {
+		exists = scope:actor
+		scope:actor = {
+			owner = root
+			unit_location = location:gulf_patras
+		}
+		exists = scope:target
+		scope:target = { owner = { tag = BYZ } } #Enemy tag
+	}
+	
+	immediate = {
+		scope:actor = {
+			unit_location = { save_scope_as = target_location }
+		}
+	}
+	
+	option = {
+		name = br_ere_resistance_events.7.a
+		add_navy_tradition = navy_tradition_extreme_bonus
+	}
+}
+
+br_ere_resistance_events.8 = { #Roman Informative Event about the Holy League
+	type = country_event
+	title = br_ere_resistance_events.8.title
+	desc = br_ere_resistance_events.8.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes	
+	}
+
+
+	option = {
+		name = br_ere_resistance_events.8.a
+		show_as_tooltip = {
+			create_international_organization = {
+				type = international_organization_type:crusade
+				target = scope:crusade_target
+			}
+			every_in_list = {
+				list = holy_league_list
+				trigger_event_silently = br_ere_resistance_events.2
+				custom_tooltip = br_ere_resistance_events.1.a.tt
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.9 = { #Romans Victorious
+	type = country_event
+	title = br_ere_resistance_events.9.title
+	desc = br_ere_resistance_events.9.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.9.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.10 = { #Romans Defeated
+	type = country_event
+	title = br_ere_resistance_events.10.title
+	desc = br_ere_resistance_events.10.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.10.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+
+##########################################################
+
+#Roman-Polish Tension
+br_ere_resistance_events.20 = {
+	type = country_event
+	title = br_ere_resistance_events.20.title
+	desc = br_ere_resistance_events.20.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = POL
+		tag = PLC
+		from = 1400.1.1
+		to = 1700.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		religion = religion:catholic
+		country_exists = c:BYZ
+		is_neighbor_of = c:BYZ
+		can_declare_war_on = c:BYZ
+		c:BYZ = {
+			NOT = { religion = religion:catholic }
+		}
+		monthly_manpower > 0.2
+		is_during_bankruptcy = no
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.20.a
+		add_manpower = { value = root.monthly_manpower multiply = 10 }
+		add_casus_belli = { target = c:BYZ type = casus_belli:cb_crusade years = 15 }
+	}
+}
+
+# Rise of Romans
+br_ere_resistance_events.21 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = br_ere_resistance_events.21.title
+	desc = br_ere_resistance_events.21.desc
+	outcome = neutral
+
+	trigger = {
+		tag = POL
+		country_exists = c:BYZ
+		c:BYZ = {
+			is_neighbor_of = ROOT
+		}
+		NOT = { has_casus_belli_on = c:BYZ }
+		religion = religion:catholic
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		c:BYZ = {
+			save_scope_as = POL_TUR_tag
+		}
+		random_owned_location = {
+			limit = {
+				any_neighbor_location = {
+					owner ?= c:BYZ
+				}
+			}
+			random_neighbor_location = {
+				limit = { owner ?= c:BYZ }
+				save_scope_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.21.a
+
+		historical_option = yes
+
+		add_casus_belli =  { type = casus_belli:cb_conquer_province target = c:BYZ province = scope:target_province.province }
+	}
+}
+
+
+##############################
+
+br_ere_resistance_events.31 = { #Enemy at the Gates
+	type = country_event
+	title = br_ere_resistance_events.31.title
+	desc = br_ere_resistance_events.31.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = RAG
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 1
+	}
+	
+	immediate = {
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		c:BYZ = {
+			ruler ?= {
+				save_scope_as = roman_ruler
+			}
+		}
+	}
+
+	trigger = {
+		is_subject = no
+		country_exists = c:BYZ
+		any_neighbor_country = {
+			tag = BYZ
+		}
+		c:BYZ = {
+			NOT = { is_allied_with = { target = root } }
+			is_great_power = yes
+			country_economical_base > c:RAG.country_economical_base
+		}
+	}
+	
+	option = {
+		name = br_ere_resistance_events.31.a
+		historical_option = yes
+		add_prestige = prestige_severe_penalty
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_right
+		}
+		c:BYZ = {
+			trigger_event_non_silently = br_ere_resistance_events.32
+		}
+	}
+	
+	option = {
+		name = br_ere_resistance_events.31.b
+		add_prestige = prestige_mild_bonus
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_left
+		}
+	}
+}
+
+br_ere_resistance_events.32 = { #An Offer from Ragusa
+	type = country_event
+	title = br_ere_resistance_events.32.title
+	desc = br_ere_resistance_events.32.desc
+	outcome = neutral
+
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	
+	major = yes
+	major_trigger = { 
+		tag = RAG
+	}
+	
+	option = {
+		name = br_ere_resistance_events.32.a
+		historical_option = yes
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_right
+		}
+		c:RAG = {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:tributary
+			}
+		}
+		add_opinion = {
+			modifier = opinion_rag_ottoman_partnership
+			target = c:RAG
+		}
+	}
+	
+	option = {
+		name = br_ere_resistance_events.32.b
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_left
+		}
+		add_casus_belli = {
+			target = c:RAG
+			type = casus_belli:cb_annex
+		}
+	}
+}
+
+
+###################################
+
+
+br_ere_resistance_events.40 = {
+	type = country_event
+	title = br_ere_resistance_events.40.title
+	desc = br_ere_resistance_events.40.desc
+	outcome = neutral
+
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1340.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		country_exists = c:LOT
+		has_truce_with = c:BYZ
+		international_organization:hre.leader_country = c:LOT
+
+		c:LOT.num_of_non_rural > num_of_non_rural
+
+		num_of_non_rural < 5
+
+		c:BYZ = {
+			any_owned_location = {
+				previous_owner = c:HUN
+				region = region:carpathia_region
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:BYZ = { save_scope_as = target_country }
+	}
+
+	option = {
+		name = br_ere_resistance_events.40.a
+
+		every_owned_location = {
+			limit = {
+				NOT = { is_core_of = c:LOT }
+			}
+			add_core = c:LOT
+		}
+	}
+}
+
+br_ere_resistance_events.41 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = br_ere_resistance_events.41.title
+	desc = br_ere_resistance_events.41.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1340.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		owns = location:belgrad
+		is_neighbor_of = c:BYZ
+		num_of_non_rural < c:BYZ.num_of_non_rural
+		location:belgrad = {
+			modifier:fort_level > 0
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		hidden_effect = {
+			if = {
+				limit = {
+					any_neighbor_country = {
+						tag = BYZ
+						num_of_non_rural >= root.num_of_non_rural
+					}
+				}
+
+			}
+			c:BYZ = {
+					save_scope_as = threat_to_hungary
+			}
+			location:belgrad = {
+				save_scope_as = belgrade_localized
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.41.a
+		unlock_law_effect = { type = hun_frontier_fortresses }
+		add_policy = policy:vegvar_system
+	}
+	option = {
+		name = br_ere_resistance_events.41.b
+		unlock_law_effect = { type = hun_frontier_fortresses }
+		add_policy = policy:not_maintained
+	}
+}
+
+br_ere_resistance_events.42 = {
+	type = country_event
+	title = br_ere_resistance_events.42.title
+	desc = br_ere_resistance_events.42.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1337.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		religion = religion:catholic
+		owns = location:belgrad
+		NOT = {	country_exists = c:SER }
+		NOT = {	is_allied_with = { target = c:BYZ } }
+		location:belgrad = {
+			dominant_culture = culture:serbian
+		}
+		c:BYZ = {
+			any_owned_location = {
+				dominant_culture = culture:serbian
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:belgrad = {
+			save_scope_as = belgrade_localized
+		}
+		c:BYZ = {
+			ordered_owned_location = {
+				limit = {
+					dominant_culture = culture:serbian
+				}
+				order_by = population
+
+				max = 1
+				province_definition = {
+					save_scope_as = origin_province
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.42.a
+		add_migration = {
+			owner = root
+			from = scope:origin_province
+			to = location:belgrad.province_definition
+			culture = culture:serbian
+			amount = 0.200
+			months = 240
+		}
+	}
+}
+
+br_ere_resistance_events.43 = {
+	type = country_event
+	fire_only_once = yes
+	title = br_ere_resistance_events.43.title
+	desc = br_ere_resistance_events.43.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1300.1.1
+		to = 1700.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		is_neighbor_of = c:BYZ
+		country_exists = c:BYZ
+		NOT = {	is_subject_of = c:BYZ }
+		num_of_non_rural < c:BYZ.num_of_non_rural
+		NOT = {	is_allied_with = { target = c:BYZ } }
+		c:BYZ = {
+			OR = {
+				own_entire_area = area:wallachia_area
+				own_entire_area = area:moldavia_area
+			}
+		}
+
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		c:BYZ = {
+			ordered_owned_location = {
+				limit = {
+					dominant_religion.group = religion_group:christian
+					OR = {
+						area = area:wallachia_area
+						area = area:moldavia_area
+					}
+				}
+				order_by = population
+
+				max = 1
+				province_definition = {
+					save_scope_as = origin_province
+				}
+				dominant_religion = {
+					save_scope_as = origin_religion
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.43.a
+		add_migration = {
+			owner = root
+			from = scope:origin_province
+			to = capital.province_definition
+			religion = scope:origin_religion
+			amount = 0.100
+			months = 360
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.43.b
+		add_stability = stability_mild_bonus
+	}
+}
+
+br_ere_resistance_events.44 = { #Evacuation of the Capital
+	type = country_event
+	title = br_ere_resistance_events.44.title
+	desc = br_ere_resistance_events.44.desc
+	outcome = neutral
+	fire_only_once = yes
+	
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1336.1.1
+		to = 1700.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		location:buda = {
+			owner = ROOT
+			is_capital = yes
+			controller = ROOT
+			is_core_of = ROOT
+		}
+		location:buda = {
+			any_neighbor_location = {
+				owner = c:BYZ
+			}
+		}
+		location:bratislava = {
+			owner = ROOT
+			is_capital = no
+			controller = ROOT
+			is_core_of = ROOT
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.44.a
+		historical_option = yes
+		set_capital = location:bratislava
+		location:bratislava = {
+			if = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_location_rank = location_rank:town
+			}
+			else = {
+				location:bratislava = {
+					change_development = development_mild_bonus
+					change_prosperity = prosperity_severe_bonus
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.44.b
+		add_stability = stability_weak_bonus
+		capital = {
+			change_development = development_mild_bonus
+			change_prosperity = prosperity_severe_bonus
+		}
+	}
+}
+
+
+################################################
+
+### Persia-Roman Events ###
+#Roman-Persian Tension
+br_ere_resistance_events.50 = {
+	type = country_event
+	title = br_ere_resistance_events.50.title
+	desc = br_ere_resistance_events.50.desc
+	outcome = neutral
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = IRA
+		tag = TUR
+		from = 1300.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	trigger = {
+		has_ruler = yes
+		c:BYZ = {
+			has_ruler = yes
+			is_neighbor_of = ROOT
+			is_free_or_tributary_trigger = yes
+			NOT = { is_allied_with = { target = ROOT } }
+			NOT = { is_at_war_with = ROOT }
+			OR = {
+				is_rival_of = ROOT
+				is_enemy_of = ROOT
+				country_rank_level > 2
+			}
+		}
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		save_scope_as = root_country
+		c:BYZ = { save_scope_as = target_country }
+		ruler ?= { save_scope_as = root_character }
+		scope:target_country = { ruler ?= { save_scope_as = target_character } }
+	}
+
+	option = {
+		name = br_ere_resistance_events.50.a
+		historical_option = yes
+		add_historical_rival_scripted = {
+			target = scope:target_country
+			trigger_recipient_event = no
+		}
+		custom_tooltip = br_ere_resistance_events.50.a.tt
+		add_effect_scaling_with_societal_value = {
+			societal_value = belligerent_vs_conciliatory
+			effect = stability
+			operator = divide
+			value = 10
+		}
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_large_move_to_left }
+
+		scope:target_country = {
+			show_as_tooltip = {
+				add_historical_rival_scripted = {
+					target = scope:root_country
+			trigger_recipient_event = no
+				}
+			}
+			trigger_event_silently = br_ere_resistance_events.51
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.50.b
+		add_effect_scaling_with_societal_value = {
+			societal_value = belligerent_vs_conciliatory
+			effect = stability
+			operator = divide
+			value = -5
+		}
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_large_move_to_right }
+	}
+}
+br_ere_resistance_events.51 = {
+	type = country_event
+	title = br_ere_resistance_events.51.title
+	desc = br_ere_resistance_events.51.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.51.a
+		add_historical_rival_scripted = {
+			target = scope:root_country
+			trigger_recipient_event = no
+		}
+	}
+}
+
+### Fatamid-Roman Events ###
+br_ere_resistance_events.60 = {
+	type = country_event
+	title = br_ere_resistance_events.60.title
+	desc = br_ere_resistance_events.60.desc
+	outcome = neutral
+
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = MAM
+		from = 1350.1.1
+		to = 1600.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	trigger = {
+		country_exists = c:BYZ
+		c:BYZ.expected_army_size > expected_army_size
+		c:BYZ = {
+			owns = location:constantinople
+		}
+		any_known_country = {
+			religion = religion:catholic
+			country_rank_level >= 2
+			capital = {
+				OR = {
+					region = region:france_region
+					region = region:italy_region
+				}
+			}
+		}
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+	}
+
+	option = {
+		name = br_ere_resistance_events.60.a
+
+		ordered_known_country = {
+			limit = {
+				religion = religion:catholic
+				country_rank_level >= 2
+				capital = {
+				OR = {
+					region = region:france_region
+					region = region:italy_region
+				}
+			}
+			}
+			order_by = expected_army_size
+			max = 8
+			add_opinion = { target = root modifier = mam_anti_ottoman_friends }
+			trigger_event_silently = { id = br_ere_resistance_events.61 }
+		}
+	}
+}
+
+br_ere_resistance_events.61 = {
+	type = country_event
+	title = br_ere_resistance_events.61.title
+	desc = br_ere_resistance_events.61.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+	}
+
+	option = {
+		name = br_ere_resistance_events.61.a
+		c:MAM = {
+			add_opinion = { target = root modifier = mam_anti_ottoman_friends }
+		}
+	}
+}
+
