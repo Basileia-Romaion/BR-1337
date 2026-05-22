@@ -44,12 +44,32 @@ br_ere_resistance_events.1 = {
 				save_scope_as = roman_ruler
 			}
 		}
+		#Italy
 		c:GEN ?= {
 			add_to_list = holy_league_list
 		}
 		c:VEN ?= {
 			add_to_list = holy_league_list
 		}
+		c:KNI ?= {
+			add_to_list = holy_league_list
+		}
+		c:BNV ?= {
+			add_to_list = holy_league_list
+		}
+		c:TUS ?= {
+			add_to_list = holy_league_list
+		}
+		c:PAR ?= {
+			add_to_list = holy_league_list
+		}
+		c:MLO ?= {
+			add_to_list = holy_league_list
+		}
+		c:SAV ?= {
+			add_to_list = holy_league_list
+		}
+		#West HRE
 		c:LOT ?= {
 			add_to_list = holy_league_list
 		}
@@ -65,21 +85,10 @@ br_ere_resistance_events.1 = {
 		c:PRO ?= {
 			add_to_list = holy_league_list
 		}
-		c:KNI ?= {
+		c:BUR ?= {
 			add_to_list = holy_league_list
 		}
-		c:BNV ?= {
-			add_to_list = holy_league_list
-		}
-		c:TUS ?= {
-			add_to_list = holy_league_list
-		}
-		c:PAR ?= {
-			add_to_list = holy_league_list
-		}
-		c:SAV ?= {
-			add_to_list = holy_league_list
-		}
+		
 		ruler = {
 			save_scope_as = pope_ruler
 		}
@@ -487,7 +496,7 @@ br_ere_resistance_events.21 = {
 	immediate = {
 		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
 		c:BYZ = {
-			save_scope_as = POL_TUR_tag
+			save_scope_as = POL_BYZ_tag
 		}
 		random_owned_location = {
 			limit = {
@@ -768,7 +777,7 @@ br_ere_resistance_events.42 = {
 	trigger = {
 		religion = religion:catholic
 		owns = location:belgrad
-		NOT = {	country_exists = c:SER }
+		NOT = {	country_exists = c:HUN }
 		NOT = {	is_allied_with = { target = c:BYZ } }
 		location:belgrad = {
 			dominant_culture = culture:serbian
@@ -966,6 +975,416 @@ br_ere_resistance_events.44 = { #Evacuation of the Capital
 	}
 }
 
+##TODO
+br_ere_resistance_events.45 = { #Shield of West
+	type = country_event
+	title = br_ere_resistance_events.45.title
+	desc = br_ere_resistance_events.45.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1375.1.1
+		to = 1453.6.1
+		monthly_chance = 1
+	}
+
+	trigger = {
+		war_score_versus = {
+			target = c:BYZ
+			value <= -0.25
+		}
+		c:BYZ = { is_great_power = yes }
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:nobles background = pop_type:soldiers }
+		religion:catholic = {
+			ordered_country_in_religion = {
+				order_by = total_population
+				max = 1
+
+				limit = {
+					NOT = { has_truce_with = ROOT }
+					NOT = { tag = HUN }
+					NOT = { is_enemy_of = ROOT }
+					NOT = { is_rival_of = ROOT }
+					NOT = { has_truce_with = ROOT }
+					capital = { region = region:carpathia_region }
+				}
+				save_scope_as = target_country
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.45.a
+	
+		trigger = {
+			c:PAP = {
+				is_subject = no
+				is_during_bankruptcy = no
+				at_war = no
+			}
+		}
+
+		add_religious_influence_if_valid = { VALUE = -20 }
+		add_prestige = prestige_extreme_penalty
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_radical_penalty
+		}
+		c:PAP = { trigger_event_non_silently = br_ere_resistance_events.46 }
+	}
+
+	option = {
+		name = br_ere_resistance_events.45.b
+
+		trigger = {
+			exists = scope:target_country
+		}
+		scope:target_country = {
+			trigger_event_non_silently = br_ere_resistance_events.47
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.45.c
+
+		add_war_exhaustion = war_exhaustion_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+br_ere_resistance_events.46 = {
+	type = country_event
+	title = br_ere_resistance_events.46.title
+	desc = br_ere_resistance_events.46.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = { #Start Crusade
+		name = br_ere_resistance_events.46.a
+
+		trigger = {
+			is_subject = no
+			is_during_bankruptcy = no
+			at_war = no
+		}
+
+		create_relation = {
+			first = this
+			second = c:HUN
+			type = relation_type:alliance
+		}
+		change_gold_effect = { scale = -12 }
+		c:HUN = {
+			add_gold = {
+				value = c:PAP.monthly_income_total
+				multiply = 12
+			}
+			set_variable = received_cash_and_alliance_variable
+		}
+		add_prestige = prestige_extreme_bonus
+	}
+
+	option = { #Send Men
+		name = br_ere_resistance_events.46.b
+
+		add_army_tradition = army_tradition_ultimate_penalty
+		c:HUN = { set_variable = hun_men_variable }
+	}
+
+	option = { #Send Coin
+		name = br_ere_resistance_events.46.c
+
+		change_gold_effect = { scale = -12 }
+		c:HUN = { set_variable = hun_coin_variable }
+	}
+
+	option = { #Send Nothing
+		name = br_ere_resistance_events.46.d
+
+		c:HUN = { set_variable = hun_nothing_variable }	
+	}
+	after = {
+		c:HUN = {
+			trigger_event_non_silently = br_ere_resistance_events.48
+		}
+	}
+}
+
+br_ere_resistance_events.47 = {
+	type = country_event
+	title = br_ere_resistance_events.47.title
+	desc = br_ere_resistance_events.47.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/government/diplomacy_illustration.dds"
+
+	option = { #Start Crusade
+		name = br_ere_resistance_events.47.a
+
+		create_relation = {
+			first = this
+			second = c:HUN
+			type = relation_type:alliance
+		}
+		c:HUN = { set_variable = hun_alliance_variable }
+	
+	}
+
+	option = { #Send Men
+		name = br_ere_resistance_events.47.b
+
+		add_army_tradition = army_tradition_ultimate_penalty
+		c:HUN = { set_variable = hun_men_variable }
+	}
+
+	option = { #Send Coin
+		name = br_ere_resistance_events.47.c
+	
+		change_gold_effect = { scale = -12	}
+		c:HUN = { set_variable = hun_coin_variable }
+	}
+
+	option = { #Send Nothing
+		name = br_ere_resistance_events.47.d
+
+		c:HUN = { set_variable = hun_nothing_variable }	
+	}
+	after = {
+		c:HUN = {
+			trigger_event_silently = br_ere_resistance_events.49
+		}
+	}
+}
+
+br_ere_resistance_events.48 = {
+	type = country_event
+	title = br_ere_resistance_events.48.title
+	desc = br_ere_resistance_events.48.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/government/throne_rooms/papal_authority.dds"
+
+	option = {
+		name = br_ere_resistance_events.48.a
+
+		trigger = {
+			has_variable = received_cash_and_alliance_variable
+		}
+
+		add_war_exhaustion = war_exhaustion_extreme_bonus
+
+		show_as_tooltip = {
+			create_relation = {
+				first = c:PAP
+				second = root
+				type = relation_type:alliance
+			}
+			add_gold = {
+				value = c:PAP.monthly_income_total
+				multiply = 12
+			}
+		}
+		hidden_effect = { remove_variable = received_cash_and_alliance_variable }
+	}
+
+	option = {
+		name = br_ere_resistance_events.48.b
+
+		trigger = {
+			has_variable = hun_men_variable
+		}
+
+		add_army_tradition = army_tradition_extreme_bonus
+		capital = {
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_light_infantry
+		}
+		remove_variable =  hun_men_variable
+	}
+
+	option = {
+		name = br_ere_resistance_events.48.c
+
+		trigger = {
+			has_variable = hun_coin_variable
+		}
+
+		add_gold = {
+			value = c:PAP.monthly_income_trade_and_tax
+			multiply = 12
+		}
+		remove_variable = hun_coin_variable
+	}
+
+	option = {
+		name = br_ere_resistance_events.48.d
+
+		trigger = {
+			has_variable = hun_nothing_variable
+		}
+
+		add_prestige = prestige_mild_penalty
+		remove_variable = hun_nothing_variable
+	}
+}
+
+br_ere_resistance_events.49 = {
+	type = country_event
+	title = br_ere_resistance_events.49.title
+	desc = br_ere_resistance_events.49.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/government/diplomacy_illustration.dds"
+
+	option = {
+		name = br_ere_resistance_events.49.a
+
+		trigger = {
+			has_variable = hun_alliance_variable
+		}
+
+		add_war_exhaustion = war_exhaustion_extreme_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+		remove_variable = hun_alliance_variable
+	}
+
+	option = {
+		name = br_ere_resistance_events.49.b
+
+		trigger = {
+			has_variable = hun_men_variable
+		}
+
+		add_army_tradition = army_tradition_extreme_bonus
+		capital = {
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+			create_sub_unit_of_category = sub_unit_category:army_light_infantry
+		}
+		remove_variable = hun_men_variable
+	}
+
+	option = {
+		name = br_ere_resistance_events.49.c
+
+		trigger = {
+			has_variable = hun_coin_variable
+		}
+
+		add_gold = {
+			value = scope:target_country.monthly_income_trade_and_tax
+			multiply = 12
+		}
+		remove_variable = hun_coin_variable
+	}
+
+	option = {
+		name = br_ere_resistance_events.49.d
+
+		trigger = {
+			has_variable = hun_nothing_variable
+		}
+
+		add_prestige = prestige_mild_penalty
+		remove_variable = hun_nothing_variable
+	}
+}
+
+br_ere_resistance_events.33 = { #Populating the Military Frontier
+	type = country_event
+	title = br_ere_resistance_events.33.title
+	desc = br_ere_resistance_events.33.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = HUN
+		from = 1350.1.1
+		to = 1700.1.1
+		monthly_chance = 1
+	}
+
+	immediate = {
+		random_owned_location = {
+			limit = {
+				any_neighbor_location = { owner ?= c:BYZ  }
+			}
+			save_scope_as = target_location_1
+		}
+		random_owned_location = {
+			limit = {
+				any_neighbor_location = { owner ?= c:BYZ  }
+				NOT = { this = scope:target_location_1 }
+			}
+			save_scope_as = target_location_2
+		}
+		capital = {
+			save_scope_as = capital_location
+		}
+	}
+
+	trigger = {
+		at_war = no
+		is_neighbor_of = c:BYZ
+		any_owned_location = {
+			is_capital = no
+			any_neighbor_location = {
+				owner ?= c:BYZ
+			}
+			count > 4
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.33.a
+		add_migration = {
+			owner = root
+			from = scope:capital_location.province_definition
+			to = scope:target_location_1.province_definition
+			culture = root.culture
+			amount = 0.100
+			months = 60
+			type = pop_type:peasants
+		}
+		add_migration = {
+			owner = root
+			from = scope:capital_location.province_definition
+			to = scope:target_location_2.province_definition
+			culture = root.culture
+			amount = 0.100
+			months = 60
+			type = pop_type:peasants
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.33.b
+		add_army_tradition = army_tradition_mild_penalty
+	}
+}
+
+
 
 ################################################
 
@@ -979,7 +1398,7 @@ br_ere_resistance_events.50 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = IRA
-		tag = TUR
+		tag = BYZ
 		from = 1300.1.1
 		to = 1700.1.1
 		monthly_chance = 5
@@ -1158,3 +1577,71 @@ br_ere_resistance_events.61 = {
 	}
 }
 
+
+##BUL
+br_ere_resistance_events.70 = { #Bulgarian-Roman Wars
+	type = country_event
+	title = br_ere_resistance_events.70.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_local_variable = bul_won_against_ottomans
+				}
+				desc = br_ere_resistance_events.70.desc_victory
+			}
+			triggered_desc = {
+				trigger = {
+					has_local_variable = bul_lost_against_ottomans
+				}
+				desc = br_ere_resistance_events.70.desc_defeat
+			}
+		}
+	}
+	outcome = neutral
+
+	fire_only_once = yes
+
+
+	trigger = {
+		has_ruler = yes
+		country_exists = c:BYZ
+		c:BYZ = {
+			has_ruler = yes
+			any_owned_location = {
+				region = region:balkan_region
+			}
+		}
+	}
+	
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler = {
+			save_scope_as = target_ruler
+		}
+		c:BYZ = {
+			ruler = {
+				save_scope_as = roman_ruler
+			}
+		}
+	}
+	
+	option = {
+		name = br_ere_resistance_events.70.a
+		historical_option = yes
+		change_societal_value = { type = offensive_vs_defensive value = societal_value_move_to_right }
+	}
+	
+	option = {
+		name = br_ere_resistance_events.70.b
+		change_societal_value = { type = offensive_vs_defensive value = societal_value_move_to_left }
+	}
+}
+
+
+#HRE
