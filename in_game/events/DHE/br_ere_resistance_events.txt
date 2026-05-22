@@ -1586,13 +1586,13 @@ br_ere_resistance_events.70 = { #Bulgarian-Roman Wars
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					has_local_variable = bul_won_against_ottomans
+					has_local_variable = bul_won_against_romans
 				}
 				desc = br_ere_resistance_events.70.desc_victory
 			}
 			triggered_desc = {
 				trigger = {
-					has_local_variable = bul_lost_against_ottomans
+					has_local_variable = bul_lost_against_romans
 				}
 				desc = br_ere_resistance_events.70.desc_defeat
 			}
@@ -1606,6 +1606,7 @@ br_ere_resistance_events.70 = { #Bulgarian-Roman Wars
 	trigger = {
 		has_ruler = yes
 		country_exists = c:BYZ
+		is_neighbor_of = c:BYZ
 		c:BYZ = {
 			has_ruler = yes
 			any_owned_location = {
