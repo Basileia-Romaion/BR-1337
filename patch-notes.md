@@ -1,6 +1,15 @@
 
 
 # Patch Notes
+
+# Update 20
+- 0.20
+## Balance
+This update has been entirely focused on balance and polishing both the content and overall difficulty. Since the ERE is the main tag the mod focuses on, it is the benchmark all other powers are measured against. If they become too strong and their potential rivals too weak, campaigns can start to feel boring after the first 100 years.
+
+I have changed many things to make the ERE in particular a more challenging playthrough, including reintroducing BR-edited versions of the corruption privileges for estates, now dynamically scaling with stability and legitimacy, alongside starting modifiers that worsen during succession crises. Other powers, such as the Turks and the HRE, have also been greatly improved through various privileges, reforms, and a new scaled modifier somewhat similar to lucky nations in EUIV.
+
+
 0.19.1
 
 # Update 19

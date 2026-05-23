@@ -17,3 +17,24 @@
  br_country_startup.6.a: "We are loyal servants of our new realm."
  #br_country_startup.6.b: "The frontier is ours to rule."
  #br_country_startup.6.c: "We have not forgotten who we are."
+
+ br_indikes_events.1.title: "The Founding of the Hetaireía Indikēs"
+ br_indikes_events.1.desc: "With imperial sanction and merchant capital, plans long discussed in the halls of power are set into motion. The Hetaireía Indikēs is proclaimed, a chartered association charged with opening and securing the sea routes to the riches of the East. From select ports, ships are fitted out and crews assembled, bound for distant markets where Roman banners have rarely flown. Trade, profit, and influence now sail together into the Indian Ocean."
+ br_indikes_events.1.a: "Let the fleets be launched"
+
+ br_indikes_events.2.title: "Subjugation of Hetaireía Indikēs"
+ br_indikes_events.2.desc: "With control of the Suez, the opportunity arises to assert dominance over the traders of Hetaireía Indikēs. This move could expand influence and secure crucial trade routes in the East."
+ br_indikes_events.2.a: "Subjugate Hetaireía Indikēs and make it a trade company subject."
+ br_indikes_events.2.b: "Leave Hetaireía Indikēs independent for now."
+
+ br_country_startup.1.title: "A Fleet Takes Shape"
+ br_country_startup.1.desc: "With authority secured and the harbors prepared, the foundations of the realm’s naval strength are laid. Ships are commissioned at the capital, crews gathered from the coast, and banners raised above newly launched hulls. Though modest in number, this fleet marks the beginning of our presence upon the seas and the promise of power yet to come."
+ br_country_startup.1.a: "To the oars and sails"
+
+ br_ere_succession_crisis.1.title: "The Question of Succession"
+ br_ere_succession_crisis.1.desc: "The death of the Emperor has cast a long shadow over the Empire. With no undisputed heir to command universal loyalty, the great houses whisper, governors hesitate, and oaths once sworn grow uncertain. From the capital to the provinces, power is weighed anew, and those who sense weakness move quickly to secure their own advantage. The unity of the [GetUniqueInternationalOrganization('roman_world').GetName] now hangs upon the resolution of the succession."
+ br_ere_succession_crisis.1.a: "The bonds of loyalty are tested"
+
+ br_country_startup.2.title: "Raising the Host"
+ br_country_startup.2.desc: "With sovereignty secured, the foundations of military power must be laid at once. Infantry are mustered from loyal households, cavalry assembled from trusted retainers, and auxiliary forces organized to support the core host. Though modest in size, this army represents the first assertion of authority and the promise of defense in the years ahead."
+ br_country_startup.2.a: "The banners are raised."

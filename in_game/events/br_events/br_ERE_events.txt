@@ -407,6 +407,84 @@ br_ere_events.6 = {
 	}
 }
 
+br_ere_events.7 = { #loc needed
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.7.title
+	desc = br_ere_events.7.desc
+	outcome = neutral
+
+	historical_info = br_ere_events.7.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1500.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
+
+
+	trigger = {
+		has_reform = government_reform:br_imperial_administration
+		"estate_power(estate_type:nobles_estate)" > 0.4
+		num_estate_privileges:nobles_estate > 2
+	}
+
+	immediate = {
+		random_estate_privilege = {
+			limit = {
+				estate_type = estate_type:nobles_estate
+			}
+			save_scope_as = target_privilege
+		}
+	}
+
+
+	option = {
+		name = br_ere_events.7.a
+		historical_option = yes
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		change_societal_value = { type = aristocracy_vs_plutocracy value = societal_value_move_to_right }
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_right }
+
+	}
+	option = {
+		name = br_ere_events.7.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+		add_government_power = government_power_mild_penalty
+	}
+	option = {
+		name = br_ere_events.7.c
+		trigger = {
+			exists = scope:target_privilege
+		}
+
+		revoke_estate_privilege =  scope:target_privilege
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
+		add_stability = {
+			value = stability_ultimate_penalty
+			if = {
+				limit = {
+					modifier:revoke_privilege_cost_modifier > 0
+				}
+				add = {
+					value = stability_ultimate_penalty
+					multiply = modifier:revoke_privilege_cost_modifier
+				}
+			}
+			else_if = {
+				limit = {
+					modifier:revoke_privilege_cost_modifier < 0
+				}
+				add = {
+					value = stability_ultimate_bonus
+					multiply = modifier:revoke_privilege_cost_modifier
+				}
+			}
+		}
+	}
+}
 
 
 br_ere_events.1002 = {

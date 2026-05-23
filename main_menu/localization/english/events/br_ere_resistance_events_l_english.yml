@@ -1,0 +1,151 @@
+﻿l_english:
+
+######################-ERE Resistance Events-######################
+ br_ere_resistance_events.1.title: "The Greek Occupation of Rome"
+ br_ere_resistance_events.1.desc: "Word has reached the Holy See that the so-called Roman Emperor, [SCOPE.sCountry('crusade_target').GetName], has seized the Eternal City and cast his shadow over the sacred seat of Saint Peter. Across the courts and cathedrals of [ShowReligionName('catholic')], this outrage has stirred fear and indignation alike.\n\nMany among the clergy proclaim that the [ShowCultureName('greek_culture')] have revealed their true ambition: not merely the restoration of their empire, but dominion over all [ShowReligionGroupName('christian')] itself. Pilgrims whisper that the bells of [ShowLocationName('rome')] now toll beneath schismatic [ShowReligionAdjective('orthodox')] banners, while fiery sermons call upon the faithful to reclaim the Holy City from the hands of the eastern usurpers.\n\nThe princes of the Catholic world now look to His Holiness, [SCOPE.sCharacter('pope_ruler').GetName], awaiting a sacred decree. Shall a great crusade be proclaimed against the Empire of the Greeks?"
+ br_ere_resistance_events.1.a: "Catholicism must unite against the Greeks!"
+ br_ere_resistance_events.1.a.tt: "The Catholic powers shall be called to join a Holy League against the Greeks."
+ br_ere_resistance_events.1.b: "We cannot risk such a conflict."
+
+ br_ere_resistance_events.2.title: "The Call to Crusade"
+ br_ere_resistance_events.2.desc: "Messengers bearing the seal of His Holiness have arrived at our court with grave news from [ShowLocationName('rome')]. The schismatic [ShowReligionAdjective('orthodox')] of [SCOPE.sCountry('crusade_target').GetName] now occupy the Eternal City itself, and the Pope has proclaimed a holy crusade to restore Saint Peter's throne to [ShowReligionAdjective('catholic')] hands.\n\nPriests thunder from their pulpits that this is not merely a war for territory, but a sacred struggle for the soul of Christendom. Already, nobles, merchants, and knights gather beneath the banner of the Latin Cross, preparing to march against the Greeks.\n\nWill we answer the Pope's call and join the Holy League?"
+ br_ere_resistance_events.2.a: "Take up the Cross against the Greeks!"
+ br_ere_resistance_events.2.b: "Crusade, against [ShowReligionGroupAdjective('christian')]? Madness!"
+
+ br_ere_resistance_events.3.title: "A Prince Joins the Holy League"
+ br_ere_resistance_events.3.desc: "[SCOPE.sCountry('target_country').GetName] has answered the call of His Holiness and pledged its banners, fleets, and soldiers to the Holy League against the so called Romans. Across the Catholic world, the faithful celebrate this declaration as another step toward the liberation of [ShowLocationName('rome')].\n\nChurch bells ring in triumph while preachers proclaim that [ShowReligionName('catholic')] stands united against the [ShowReligionAdjective('orthodox')] schismatics."
+ br_ere_resistance_events.3.a: "May God favor their cause."
+
+ br_ere_resistance_events.4.title: "A Prince Refuses the Crusade"
+ br_ere_resistance_events.4.desc: "[SCOPE.sCountry('target_country').GetName] has refused to answer the Pope's summons against the [ShowCultureName('greek_culture')]. The decision has shocked many among the clergy, who condemn the rulers of [SCOPE.sCountry('target_country').GetName] for abandoning [ShowReligionName('catholic')] in its hour of need.\n\nWhispers of cowardice, greed, and even sympathy for the Greeks spread through the courts of Europe."
+ br_ere_resistance_events.4.a: "A shameful betrayal of the faith."
+
+ br_ere_resistance_events.5.title: "Victory of the Holy League"
+ br_ere_resistance_events.5.desc: "The armies and fleets of the Holy League have emerged victorious against the [ShowCultureName('greek_culture')]. Across [ShowReligionAdjective('catholic')] Europe, great celebrations erupt as priests proclaim divine favor upon the crusading cause.\n\nThe banners of the League have carried the will of [ShowReligionName('catholic')] against the [ShowReligionAdjective('orthodox')] schismatics, and the prestige of the Papacy now stands renewed before all the faithful."
+ br_ere_resistance_events.5.a: "God has granted us victory!"
+
+ br_ere_resistance_events.6.title: "Defeat of the Holy League"
+ br_ere_resistance_events.6.desc: "The Holy League has suffered a disastrous defeat at the hands of the [ShowCultureName('greek_culture')]. The armies raised in defense of [ShowReligionName('catholic')] have been broken, their fleets scattered, and their banners cast down.\n\nAcross the Catholic world, despair spreads among the faithful as critics question the strength of the Papacy and the unity of the crusading princes."
+ br_ere_resistance_events.6.a: "A dark day for Catholicism."
+
+ br_ere_resistance_events.7.title: "Battle of Lepanto"
+ br_ere_resistance_events.7.desc: "In the waters near [SCOPE.sLocation('target_location').GetName], the fleets of [ShowReligionName('catholic')] met the Greek navy in a mighty clash of oars, cannon, and flame. Priests aboard the ships carried relics and icons into battle while sailors and marines fought beneath the banner of the Cross.\n\nThe victory won here shall surely be remembered alongside the greatest naval triumphs of the faithful, a testament to the courage of those who stood against the Greek menace upon the sea."
+ br_ere_resistance_events.7.a: "The seas belong to the Latins!"
+
+ br_ere_resistance_events.8.title: "The Holy League Against Us"
+ br_ere_resistance_events.8.desc: "Our occupation of [ShowLocationName('rome')] has shaken the Latin world to its core. The Pope has denounced our rule over the Eternal City as an intolerable outrage and has called upon the [ShowReligionAdjective('catholic')] princes of Europe to unite against us in a great crusade.\n\nAlready, western fleets gather in their ports while priests stir the masses with promises of holy war. The Latins would sooner see Rome burned than accept its return to the hands of .\n\nOnce more, the Empire stands surrounded by enemies both old and new."
+ br_ere_resistance_events.8.a: "Let them come."
+
+ br_ere_resistance_events.9.title: "Triumph Over the Holy League"
+ br_ere_resistance_events.9.desc: "Against all odds, the Empire has prevailed over the crusading coalition assembled by the Pope and the Latin princes. The armies of the west have been humbled, their fleets shattered, and their grand crusade reduced to ruin.\n\nThroughout the Empire, the victory is hailed as proof that divine favor rests with the Roman state. Even among our enemies, some now whisper that the restoration of Roman greatness cannot be denied."
+ br_ere_resistance_events.9.a: "The Empire endures."
+
+ br_ere_resistance_events.10.title: "Defeat Before the Holy League"
+ br_ere_resistance_events.10.desc: "The armies of the Holy League have triumphed over us. The combined might of the Latin princes, united beneath the authority of the Pope, has broken our resistance and cast shame upon the Empire.\n\nAcross the realm, mournful prayers are offered for the fallen while our enemies proclaim the crusade a victory for [ShowReligionName('catholic')] against the [ShowCultureName('greek_culture')]."
+ br_ere_resistance_events.10.a: "A bitter humiliation."
+
+ br_ere_resistance_events.20.title: "Roman Encroachment"
+ br_ere_resistance_events.20.desc: "The expansion of the Romans has brought their borders ever closer to our own realm. Yet these are not the Christian emperors of old spoken of in western chronicles, but a strange and unsettling power whose court and customs have drifted far from the traditions of Christendom.\n\nAmong the nobility and clergy alike, fears grow that the Romans seek domination over all the east, perhaps even beyond. Priests warn that their empire has become corrupted by foreign influences and alien beliefs, while many in the Sejm argue that Poland must prepare itself before the Roman threat grows too powerful to contain.\n\nThe frontier now stands uneasy, and calls for vigilance grow louder with each passing year."
+ br_ere_resistance_events.20.a: "We must prepare for what is to come."
+
+ br_ere_resistance_events.21.title: "The Rise of the Romans"
+ br_ere_resistance_events.21.desc: "The power of the Romans has risen steadily upon our frontier. Once confined to the south, their armies and influence now press ever closer to the lands of Poland, unsettling both nobles and clergy throughout the realm.\n\nMany among the court fear that a restored Roman Empire may one day seek hegemony over eastern Europe itself. Though some admire their strength and ancient legacy, others see only ambition beneath the imperial purple.\n\nIf we are to preserve the balance of power in the region, we may soon have to confront the Romans directly."
+ br_ere_resistance_events.21.a: "We shall not allow them to grow unchecked."
+
+ br_ere_resistance_events.31.title: "The Romans at Our Gates"
+ br_ere_resistance_events.31.desc: "The growing power of the Romans has cast a long shadow across the Adriatic. Once distant rulers of the east, they now stand upon our very frontier, their armies and diplomats pressing ever closer to Ragusa.\n\nMany among the patricians fear that our republic cannot hope to resist such a mighty empire should its gaze turn fully toward our city. Others argue that survival lies not in defiance, but in accommodation — that it is better for Ragusa to prosper beneath Roman favor than perish resisting it.\n\nThe Senate must now decide how the republic shall respond to the rising power on our doorstep."
+ br_ere_resistance_events.31.a: "We should seek terms with the Romans."
+ br_ere_resistance_events.31.b: "Ragusa shall remain free."
+
+ br_ere_resistance_events.32.title: "An Offer from Ragusa"
+ br_ere_resistance_events.32.desc: "Envoys from Ragusa have arrived bearing gifts, tribute, and proposals of friendship. Fearing the growing might of the Empire, the republic seeks the protection of Constantinople rather than risking destruction through resistance.\n\nSome within our court see this as a wise arrangement: Ragusa's merchants and ports would enrich the Empire while securing Roman influence along the Adriatic. Others argue that the city is weak and vulnerable, and that outright annexation would better serve imperial interests."
+ br_ere_resistance_events.32.a: "Let them submit willingly."
+ br_ere_resistance_events.32.b: "The city should belong to the Empire directly."
+
+ br_ere_resistance_events.40.title: "The Loss of the Southern Marches"
+ br_ere_resistance_events.40.desc: "The advance of the Romans into the lands south of the kingdom has shattered Hungary's authority across the old frontier. Fortresses and settlements once tied to the Crown of Saint Stephen now lie beneath imperial banners, while nobles displaced by the wars demand action from the royal court.\n\nMany among the aristocracy argue that Hungary alone can no longer resist the growing might of the Empire. Instead, they call for closer alignment with the western powers of the Empire and the Latin world, hoping foreign support may preserve what remains of Hungarian influence in the Carpathian Basin."
+ br_ere_resistance_events.40.a: "We must seek support from the west."
+
+ br_ere_resistance_events.41.title: "The Frontier Fortresses"
+ br_ere_resistance_events.41.desc: "The growing power of the Romans beyond our southern frontier has forced the Crown to reconsider the defenses of the kingdom. With Belgrade standing as the great gate into Hungary, many generals and nobles warn that the frontier must be strengthened before the Empire turns its attention northward.\n\nMilitary advisors propose the expansion of a fortified border system, garrisoned by loyal soldiers and supported by local magnates. Others, however, argue that the cost of maintaining such defenses would place an unbearable burden upon the realm."
+ br_ere_resistance_events.41.a: "Strengthen the southern frontier."
+ br_ere_resistance_events.41.b: "The treasury cannot sustain such efforts."
+
+ br_ere_resistance_events.42.title: "The Serbian Frontier"
+ br_ere_resistance_events.42.desc: "With the collapse of Serbia and the continued expansion of Roman authority throughout the Balkans, increasing numbers of Serbian settlers, soldiers, and refugees have crossed into Hungarian lands around Belgrade.\n\nMany flee imperial rule and the endless wars of the south, while others seek opportunity and protection beneath the Crown of Saint Stephen. Some among the nobility welcome these settlers as valuable defenders of the frontier, though others fear the growing influence of foreign peoples within the kingdom."
+ br_ere_resistance_events.42.a: "Settle them along the frontier."
+
+ br_ere_resistance_events.43.title: "Refugees from the South"
+ br_ere_resistance_events.43.desc: "The expansion of Roman authority across Wallachia and Moldavia has driven many Vlachs northward into Hungary. Peasants, clergy, merchants, and lesser nobles alike arrive in growing numbers, carrying tales of imperial governors, military levies, and the steady consolidation of Roman power along the Danube.\n\nSome within the court believe these refugees could strengthen the kingdom and replenish the population of the frontier. Others warn that accepting too many outsiders may bring instability and strain the resources of the realm."
+ br_ere_resistance_events.43.a: "Permit them to settle within Hungary."
+ br_ere_resistance_events.43.b: "We cannot bear this burden."
+
+ br_ere_resistance_events.44.title: "The Evacuation of Buda"
+ br_ere_resistance_events.44.desc: "The Roman frontier now stands dangerously close to Buda itself. As imperial influence spreads ever deeper into the Balkans and along the Danube, many within the royal court fear that the capital is no longer secure.\n\nSome nobles urge the Crown to relocate the seat of government to Bratislava, farther from the frontier and better positioned for the defense of the kingdom. Others insist that abandoning Buda would be seen throughout Europe as a humiliating admission of weakness before the Romans."
+ br_ere_resistance_events.44.a: "The court shall withdraw to Bratislava."
+ br_ere_resistance_events.44.b: "We shall remain in Buda."
+
+ br_ere_resistance_events.45.title: "The Shield of the West"
+ br_ere_resistance_events.45.desc: "The armies of Hungary have suffered greatly before the might of the Romans. Across the kingdom, nobles lament the devastation of the southern marches while priests proclaim that Hungary now stands as the final shield guarding western Christendom from imperial expansion.\n\nThe Crown cannot continue this struggle alone. Some urge that aid be sought from the Pope himself, framing the war as a sacred defense of the Catholic world. Others argue that support should instead be requested from the neighboring kingdoms of the west, whose own security may soon depend upon the survival of Hungary."
+ br_ere_resistance_events.45.a: "Appeal to the Holy Father for aid."
+ br_ere_resistance_events.45.b: "Seek support from our western neighbors."
+ br_ere_resistance_events.45.c: "Hungary shall stand alone."
+
+ br_ere_resistance_events.46.title: "Hungary Calls for Aid"
+ br_ere_resistance_events.46.desc: "Envoys from Hungary have arrived in Rome bearing desperate appeals for assistance against the advancing Romans. Their messengers speak of devastated borderlands, exhausted armies, and the growing fear that Hungary may soon collapse beneath imperial pressure.\n\nMany within the Curia argue that the defense of Hungary is inseparable from the defense of Catholic Christendom itself. Others caution that the Papacy cannot overextend its resources in distant wars."
+ br_ere_resistance_events.46.a: "We shall support Hungary fully."
+ br_ere_resistance_events.46.b: "Send soldiers to aid them."
+ br_ere_resistance_events.46.c: "Provide them with financial support."
+ br_ere_resistance_events.46.d: "Rome cannot intervene."
+
+ br_ere_resistance_events.47.title: "A Plea from Hungary"
+ br_ere_resistance_events.47.desc: "Messengers from Hungary have arrived at our court requesting aid against the Romans. They warn that if Hungary falls, the balance of power in central Europe may collapse alongside it.\n\nSome advisers argue that supporting Hungary now may prevent a far greater threat later, while others insist that the kingdom's struggle is not our concern."
+ br_ere_resistance_events.47.a: "Forge an alliance with Hungary."
+ br_ere_resistance_events.47.b: "Send troops to strengthen their armies."
+ br_ere_resistance_events.47.c: "Offer financial assistance."
+ br_ere_resistance_events.47.d: "We shall not involve ourselves."
+
+ br_ere_resistance_events.48.title: "Aid from Rome"
+ br_ere_resistance_events.48.desc: "The Pope has answered Hungary's pleas for assistance. Whether through gold, soldiers, or formal alliance, Rome has chosen to aid the kingdom in its struggle against the Romans.\n\nThroughout the realm, this support is hailed as proof that Hungary does not stand alone in defense of Christendom."
+ br_ere_resistance_events.48.a: "Christendom still stands with us."
+ br_ere_resistance_events.48.b: "Fresh soldiers march to our banners."
+ br_ere_resistance_events.48.c: "The treasury breathes easier."
+ br_ere_resistance_events.48.d: "We have been abandoned."
+
+ br_ere_resistance_events.49.title: "Foreign Aid Arrives"
+ br_ere_resistance_events.49.desc: "Our appeals to the western courts have not gone unanswered. Though few are eager to confront the Romans directly, some rulers have agreed to provide assistance in hopes of preserving Hungary as a buffer against imperial expansion.\n\nWhether through alliances, coin, or soldiers, this support may prove vital in the difficult years ahead."
+ br_ere_resistance_events.49.a: "Their alliance strengthens our resolve."
+ br_ere_resistance_events.49.b: "Additional troops join our armies."
+ br_ere_resistance_events.49.c: "Their gold shall sustain the war effort."
+ br_ere_resistance_events.49.d: "So little aid for so grave a threat."
+
+ br_ere_resistance_events.33.title: "Populating the Military Frontier"
+ br_ere_resistance_events.33.desc: "The continued expansion of the Romans along the southern frontier has left many border regions dangerously exposed. Royal advisers now propose the organized settlement of loyal Hungarian peasants along the frontier lands in order to strengthen local defenses and ensure a permanent population capable of supporting military garrisons.\n\nSupporters of the plan argue that a populated frontier will provide both security and economic development. Critics, however, warn that relocating settlers into lands so close to the Romans risks exposing them to raids and future wars."
+ br_ere_resistance_events.33.a: "Strengthen the frontier through settlement."
+ br_ere_resistance_events.33.b: "The army alone will guard the border."
+
+ br_ere_resistance_events.50.title: "The Roman Menace"
+ br_ere_resistance_events.50.desc: "For centuries, the rulers of Persia and the Romans have stood as rivals for dominion over the lands between east and west. Though dynasties have risen and fallen, the ancient contest endures.\n\nNow the Roman Empire once again expands toward our frontiers, its armies gathering strength and its emperors dreaming of universal rule. Courtiers and generals alike warn that coexistence with such a power may prove impossible. The old balance of the region is fading, and many believe another great struggle between Persia and Rome is inevitable."
+ br_ere_resistance_events.50.a: "The Romans shall remain our eternal rivals."
+ br_ere_resistance_events.50.a.tt: "A lasting rivalry shall emerge between our realms."
+ br_ere_resistance_events.50.b: "We should avoid provoking them."
+
+ br_ere_resistance_events.51.title: "The Persian Threat"
+ br_ere_resistance_events.51.desc: "The rulers of Persia have once more begun to regard the Empire with suspicion and hostility. Along the eastern frontier, old fears awaken as memories of the ancient wars between Rome and Persia are invoked by generals, scholars, and statesmen alike.\n\nMany within the imperial court argue that conflict between the two great powers of the east is not a matter of if, but when. Though centuries have passed since the fall of the old Persian dynasties, a new rival now rises to challenge Roman authority in Asia."
+ br_ere_resistance_events.51.a: "The east remembers its old rivalries."
+
+ br_ere_resistance_events.60.title: "Enemies of Our Enemy"
+ br_ere_resistance_events.60.desc: "The continued strength of the Romans has become an increasing concern for the rulers of Egypt and Syria. From Constantinople, the emperors project their influence across the eastern Mediterranean, fielding armies that rival the greatest powers of the age.\n\nSome among the court now argue that pragmatic diplomacy is necessary to contain Roman expansion. Though relations with the [ShowReligionAdjective('catholic')] kingdoms of the west have long been marked by rivalry and distrust, shared fear of Roman power may provide the basis for cooperation.\n\nEnvoys have therefore proposed opening closer ties with certain western courts opposed to the Empire."
+ br_ere_resistance_events.60.a: "We shall seek common cause against the Romans."
+
+ br_ere_resistance_events.61.title: "Envoys from Egypt"
+ br_ere_resistance_events.61.desc: "Diplomatic envoys from Egypt have arrived at our court bearing gifts and proposals of friendship. Though differences of faith and past conflicts remain, their rulers speak openly of the growing threat posed by the Roman Empire and the need to preserve the balance of power in the eastern Mediterranean.\n\nSome at court view this outreach with suspicion, while others argue that cooperation with Egypt may prove useful in containing Roman ambitions."
+ br_ere_resistance_events.61.a: "Strange times make for strange alliances."
+
+ br_ere_resistance_events.70.title: "The Bulgarian-Roman Struggle"
+ br_ere_resistance_events.70.desc_victory: "The long struggle between Bulgaria and the Romans has once again entered the minds of the people and nobility alike. Tales of past victories against the Empire are celebrated throughout the realm, and many look back proudly upon the days when Bulgarian rulers humbled the emperors of Constantinople.\n\nThough the Romans remain powerful, confidence grows within the kingdom that Bulgaria can once again defend its independence and challenge imperial ambitions in the Balkans."
+ br_ere_resistance_events.70.desc_defeat: "The shadow of the Roman Empire once more looms over Bulgaria. Memories of past defeats and lost wars against Constantinople continue to haunt the kingdom, while many fear that the Romans still seek to dominate the Balkans as they once did.\n\nAmong the nobility and military alike, fierce debate has emerged over how Bulgaria should confront the growing imperial threat."
+ br_ere_resistance_events.70.a: "Bulgaria must stand strong against the Romans."
+ br_ere_resistance_events.70.b: "We should avoid provoking the Empire."
+
+

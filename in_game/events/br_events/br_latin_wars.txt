@@ -1,0 +1,789 @@
+﻿namespace = br_latin_wars
+
+############-Iberia-Crusade-############
+# Catalan Crusade Announced
+br_latin_wars.1 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_latin_wars.1.title
+	desc = br_latin_wars.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = PAP
+		from = 1337.1.1
+		to = 1370.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		location:zaragoza = {
+			owner.religion.group != ROOT.religion.group
+		}
+		religion = religion:catholic
+		country_exists = c:ARA
+		crusade_potential_trigger = yes
+		crusade_allow_trigger = yes
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		location:zaragoza.owner = {
+			save_scope_as = crusade_target
+		}
+		c:ARA = {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		c:KNI ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		c:TOU ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		c:PRO ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		save_scope_as = papal_state
+	}
+
+	option = {
+		name = br_latin_wars.1.a
+		
+		set_global_variable = {
+			name = crusade_location_target
+			value = location:zaragoza
+		}
+		crusade_effect = { target = scope:crusade_target }
+
+		c:ARA = {
+			set_variable = receive_additional_benefits
+		}
+
+		hidden_effect = {
+			scope:crusade_target = {
+				random_current_war = {
+					limit = {
+						OR = {
+							attacker_leader = ROOT
+							defender_leader = ROOT
+						}
+					}
+					save_scope_as = crusade_war
+				}
+			}
+		}
+
+		every_in_list = {
+			list = list_of_nations_to_invite_to_crusade
+			trigger_event_non_silently = br_latin_wars.2
+		}
+		scope:crusade_target = {
+			trigger_event_non_silently = br_latin_wars.3
+		}
+		hidden_effect = {
+			scope:crusade_war = {
+				set_variable = is_smyrniote_crusade
+			}
+		}
+	}
+
+	option = {
+		name = br_latin_wars.1.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Catalan Crusade - Call to Arms
+br_latin_wars.2 = {
+	type = country_event
+	title = br_latin_wars.2.title
+	desc = br_latin_wars.2.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		if = {
+			limit = {
+				has_variable = receive_additional_benefits
+			}
+			set_local_variable = {
+				name = nobles_going_to_war
+				value = 0
+			}
+			religion:catholic = {
+				every_country_in_religion = {
+					limit = {
+						capital = { continent = continent:europe }
+					}
+					every_pop = {
+						limit = {
+							religion = religion:catholic
+							pop_type = pop_type:nobles
+						}
+						change_local_variable = {
+							name = nobles_going_to_war
+							add = pop_size
+						}
+					}		
+				}
+			}
+			change_local_variable = {
+				name = nobles_going_to_war
+				multiply = 0.02
+			}
+		}
+	}
+
+	option = {
+		name = br_latin_wars.2.a
+
+		historical_option = yes
+		
+		join_war_as_attacker = { war = scope:crusade_war }
+		if = {
+			limit = {
+				has_variable = receive_additional_benefits
+			}
+			remove_variable = receive_additional_benefits
+			add_manpower = local_var:nobles_going_to_war
+			add_gold = {
+				value = local_var:nobles_going_to_war
+				multiply = 5
+			}
+		}
+		add_country_modifier = {
+			modifier = kni_smyrniote_crusade
+			years = 5
+		}
+		add_opinion_mutual_effect = {
+			target = c:PAP
+			modifier = kni_joined_crusade
+		}
+		if = {
+			limit = {
+				this = c:ARA
+			}
+			set_variable = participated_in_smyrniote_crusade
+		}
+	}
+
+	option = {
+		name = br_latin_wars.2.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Catalan Crusade - event for Aydin
+br_latin_wars.3 = {
+	type = country_event
+	title = br_latin_wars.3.title
+	desc = br_latin_wars.3.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	option = {
+		name = br_latin_wars.3.a
+		
+		add_religious_influence_if_valid = {
+			VALUE = 20
+		}
+
+		add_prestige = prestige_mild_bonus
+
+		add_army_tradition = army_tradition_mild_bonus
+	}
+}
+
+#Cession of Catalan Acquisitions to the Aragonese
+br_latin_wars.4 = { 
+	hide_portraits = yes
+	type = country_event
+	title = br_latin_wars.4.title
+	desc = br_latin_wars.4.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		set_variable = flavor_kni_pap_4_lock
+		c:ARA = {
+			save_scope_as = target_country
+		}
+		save_scope_as = the_from
+	}
+
+	trigger = {
+		NOT = { has_variable = flavor_kni_pap_4_lock }
+		c:ARA = {
+			has_variable = participated_in_smyrniote_crusade
+		}
+	}
+
+	option = {
+		name = br_latin_wars.4.a
+		
+		historical_option = yes
+
+		add_country_modifier = {
+			modifier = kni_cession_of_anatolia_to_holy_order
+			years = 40
+		}
+		show_as_tooltip = {
+			every_province = {
+				limit = {
+					area = area:aragon_area
+				}
+				change_province_owner = scope:target_country
+			}
+		}
+		scope:target_country = {
+			trigger_event_non_silently = br_latin_wars.5
+		}
+	}
+
+	option = {
+		name = br_latin_wars.4.b
+		
+		add_prestige = prestige_mild_bonus
+	}
+	after = {
+		remove_variable = flavor_kni_pap_4_lock
+	}
+}
+
+# Aragonese choose whether to accept or deny
+br_latin_wars.5 = { 
+	type = country_event
+	title = br_latin_wars.5.title
+	desc = br_latin_wars.5.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_latin_wars.5.a
+		
+		historical_option = yes
+
+		scope:the_from = {
+			set_variable = kni_accept
+			every_province = {
+				limit = {
+					area = area:aragon_area
+				}
+				change_province_owner = ROOT
+			}
+		}
+	}
+	option = {
+		name = br_latin_wars.5.b
+		
+		add_prestige = prestige_mild_penalty
+		scope:the_from = {
+			set_variable = kni_deny
+		}
+	}
+
+	after = {
+		scope:the_from = { trigger_event_non_silently = br_latin_wars.6 }
+	}
+}
+
+# Information about Aragonese response
+br_latin_wars.6 = { 
+	type = country_event
+	title = br_latin_wars.6.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = br_latin_wars.6.desc_accept
+		
+				trigger = {
+					has_variable = kni_accept
+				}
+			}
+			triggered_desc = {
+				desc = br_latin_wars.6.desc_deny
+		
+				trigger = {
+					has_variable = kni_deny
+				}
+			}
+		}
+	}
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_latin_wars.6.a
+
+		trigger = {
+			has_variable = kni_accept
+		}
+
+		add_religious_influence_if_valid = { 
+			VALUE = 10
+		}
+		add_army_tradition = army_tradition_mild_bonus
+	}
+	option = {
+		name = br_latin_wars.6.b
+
+		trigger = {
+			has_variable = kni_deny
+		}
+
+		add_prestige = prestige_mild_penalty
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_variable = kni_accept
+			}
+			remove_variable = kni_accept
+		}
+		if = {
+			limit = {
+				has_variable = kni_deny
+			}
+			remove_variable = kni_deny
+		}
+	}
+}
+
+############-Venice-VTC-############
+
+# Illyria War
+br_latin_wars.20 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_latin_wars.20.title
+	desc = br_latin_wars.20.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = VEN
+		tag = VTC
+		from = 1400.1.1
+		to = 1551.1.1
+		monthly_chance = 5
+	}
+		
+	trigger = {
+		location:constantinople.owner = {
+			owns = location:durres
+			is_subject = no
+			NOT = { is_allied_with = { target = ROOT } }
+			NOT = {	is_at_war_with = ROOT }
+		}
+		NOT = {
+			has_global_variable = byz_started_durres
+		}
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		root = {
+			save_scope_as = origin_tag
+		}
+		location:constantinople.owner = {
+			save_scope_as = rising_power
+		}
+	}
+
+	option = {
+		name = br_latin_wars.20.a
+		historical_option = yes
+		scope:rising_power = { 
+			trigger_event_silently = { id = br_latin_wars.21 }	
+		}
+	}
+
+	option = {
+		name = br_latin_wars.20.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_latin_wars.21 = {
+	type = country_event
+	title = br_latin_wars.21.title
+	desc = br_latin_wars.21.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = br_latin_wars.21.a
+		historical_option = yes
+		c:VEN = {
+			custom_tooltip = VEN_will_get_a_cb
+			add_opinion = { target = root modifier = trade_conflict }
+			trigger_event_silently = { id = br_latin_wars.22 }
+		}
+	}
+
+	option = {
+		name = br_latin_wars.21.b
+		location:durres = {
+			change_location_owner = c:VEN
+		}
+		c:VEN = {
+			add_opinion = { target = root modifier = ceded_alexandria }
+			trigger_event_silently = { id = br_latin_wars.23 }
+		}
+	}
+}
+
+br_latin_wars.22 = {
+	type = country_event
+	title = br_latin_wars.22.title
+	desc = br_latin_wars.22.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = br_latin_wars.22.a
+		add_casus_belli =  { 
+			type = casus_belli:cb_conquer_province 
+			target = location:durres.owner 
+			province = location:durres.province 
+		}
+	}
+}
+
+br_latin_wars.23 = {
+	type = country_event
+	title = br_latin_wars.23.title
+	desc = br_latin_wars.23.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = happy
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = br_latin_wars.23.a
+		add_prestige = prestige_extreme_bonus
+	}
+}
+
+# Morea War
+br_latin_wars.24 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_latin_wars.24.title
+	desc = br_latin_wars.24.desc
+	outcome = neutral
+
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = VEN
+		tag = VTC
+		from = 1300.1.1
+		to = 1500.1.1
+		monthly_chance = 10
+	}
+	
+
+	trigger = {
+		country_exists = c:BYZ
+		area:morea_area = {
+			any_location_in_area = {
+				owner = c:BYZ
+			}
+		}
+	}
+	
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		root = {
+			save_scope_as = origin_tag
+		}
+		c:BYZ = { save_scope_as = rising_power }
+		scope:rising_power = {
+			ordered_owned_location = {
+				limit = {
+					area = area:morea_area
+				}
+				order_by = population
+				max = 1
+				
+				save_scope_as = morea_target
+			}
+		}
+	}
+	
+
+	option = {
+		name = br_latin_wars.24.a
+		historical_option = yes
+		scope:rising_power = {
+			add_opinion = { target = root modifier = ven_opinion_morean_confrontation }
+		}
+		add_casus_belli =  { type = casus_belli:cb_conquer_province target = scope:morea_target.owner province = scope:morea_target.province }
+		hidden_effect = {
+			scope:rising_power = {
+				trigger_event_silently = { id = br_latin_wars.25 }
+			}
+		}
+	}
+	
+	option = {
+		name = br_latin_wars.24.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_latin_wars.25 = {
+	type = country_event
+	title = br_latin_wars.25.title
+	desc = br_latin_wars.25.desc
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_latin_wars.25.a
+		add_casus_belli = {	target = scope:origin_tag	type = casus_belli:cb_insulted_us	}
+	}
+}
+
+
+############-Genoa-GTC-############
+br_latin_wars.30 = {
+	type = country_event
+	title = br_latin_wars.30.title
+	desc = br_latin_wars.30.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = GEN
+		tag = GTC
+		from = 1337.1.1
+		to = 1550.1.1
+		monthly_chance = 5
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	
+	trigger = {
+		has_reform = government_reform:merchant_republic
+		country_exists = c:BYZ
+		location:constantinople = {
+			owner = c:BYZ
+		}
+		
+		any_market_with_merchants = {
+			location.area = area:crimea_area
+		}
+		
+		NOT = {
+			capital.area = area:crimea_area
+		}
+	}
+
+	option = {
+		name = br_latin_wars.30.a
+		historical_option = yes
+		custom_tooltip = br_latin_wars.30.a.tt
+
+		c:BYZ = {
+			trigger_event_silently = { id = br_latin_wars.31 days = 23 }
+		}
+	}
+	option = {
+		name = br_latin_wars.30.b
+		add_prestige = prestige_extreme_penalty
+	}
+}
+
+#Demands from Genoa
+br_latin_wars.31 = {
+	type = country_event
+	title = br_latin_wars.31.title
+	desc = br_latin_wars.31.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:GEN = {
+			random_owned_location = {
+				limit = {
+					area = area:crimea_area
+				}
+				save_scope_as = target_location
+			}
+		}
+	}
+	
+	option = {
+		name = br_latin_wars.31.a
+		historical_option = yes
+		c:GEN = {
+			add_opinion = { target = root modifier = gen_trade_access_denied }
+			hidden_effect = {
+				trigger_event_silently = { id = br_latin_wars.32 days = 32 }
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:target_location
+			}
+			add_casus_belli =  { type = casus_belli:cb_conquer_province province = scope:target_location.province target = c:GEN }
+		}
+	}
+	option = {
+		name = br_latin_wars.31.b
+		custom_tooltip = br_latin_wars.31.b.tt
+		c:GEN = {
+			add_opinion = { target = root modifier = gen_trade_given }
+			trigger_event_silently = { id = br_latin_wars.33 days = 32 }
+		}
+	}
+}
+
+#The Romans refuse!
+br_latin_wars.32 = {
+	type = country_event
+	title = br_latin_wars.32.title
+	desc = br_latin_wars.32.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = { 
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	option = {
+		name = br_latin_wars.32.a
+		c:BYZ = {
+			add_opinion = { target = root modifier = gen_trade_access_denied }
+		}
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+#Privileged Trade Granted!
+br_latin_wars.33 = {
+	type = country_event
+	title = br_latin_wars.33.title
+	desc = br_latin_wars.33.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	option = {
+		name = br_latin_wars.33.a
+		create_relation = {
+			first = this
+			second = c:BYZ
+			type = relation_type:sound_toll_exemption
+		}
+	}
+}
