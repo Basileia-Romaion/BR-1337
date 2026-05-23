@@ -407,14 +407,15 @@ br_ere_events.6 = {
 	}
 }
 
-br_ere_events.7 = { #loc needed
+
+### Dynmaic events
+#below need loc and testing
+br_ere_events.7 = {
 	hide_portraits = yes
 	type = country_event
 	title = br_ere_events.7.title
 	desc = br_ere_events.7.desc
 	outcome = neutral
-
-	historical_info = br_ere_events.7.historical_info
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -423,7 +424,6 @@ br_ere_events.7 = { #loc needed
 		to = 1700.1.1
 		monthly_chance = 5
 	}
-
 
 	trigger = {
 		has_reform = government_reform:br_imperial_administration
@@ -439,7 +439,6 @@ br_ere_events.7 = { #loc needed
 			save_scope_as = target_privilege
 		}
 	}
-
 
 	option = {
 		name = br_ere_events.7.a
@@ -459,7 +458,6 @@ br_ere_events.7 = { #loc needed
 		trigger = {
 			exists = scope:target_privilege
 		}
-
 		revoke_estate_privilege =  scope:target_privilege
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
 		add_stability = {
@@ -486,7 +484,1370 @@ br_ere_events.7 = { #loc needed
 	}
 }
 
+br_ere_events.8 = {
+	type = country_event
+	title = br_ere_events.8.title
+	desc = br_ere_events.8.desc
+	outcome = neutral
 
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1450.1.1
+		to = 1550.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		ruler ?= { mil > 50 }
+		war_exhaustion > 10
+		at_war = no
+		has_estate_privilege = estate_privilege:akritai_privilege
+	}
+
+	option = {
+		name = br_ere_events.8.a
+		historical_option = yes
+		change_societal_value = { type = quality_vs_quantity value = societal_value_move_to_left }
+		change_societal_value = { type = land_vs_naval value = societal_value_minor_move_to_left }
+		change_societal_value = { type = traditionalist_vs_innovative value = societal_value_minor_move_to_right }
+		add_army_tradition = army_tradition_ultimate_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_penalty }
+		add_stability = stability_weak_penalty
+	}
+	option = {
+		name = br_ere_events.8.b
+		change_societal_value = { type = quality_vs_quantity value = societal_value_minor_move_to_left }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+	}
+	option = {
+		name = br_ere_events.8.c
+		change_societal_value = { type = land_vs_naval value = societal_value_move_to_right }
+		add_navy_tradition = navy_tradition_ultimate_bonus
+	}
+}
+
+br_ere_events.9 = { #Mil Academy
+	type = country_event
+	title = br_ere_events.9.title
+	desc = br_ere_events.9.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1525.1.1
+		to = 1625.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		has_advance = roman_thematic_recruitment
+		owns = location:constantinople
+		has_ruler = yes
+	}
+
+	option = {
+		name = br_ere_events.9.a
+		historical_option = yes
+		location:constantinople = {
+			construct_building = {
+				building_type = building_type:br_constantinople_military_academy
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.9.b
+		trigger = {
+			NOT = {
+				has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			}
+		}
+		set_variable = { name = expanded_timariot_system value = 1 } #keep ?
+		if = {
+			limit = {
+				has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			}
+			revoke_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		}
+		add_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
+	}
+}
+
+br_ere_events.10 = {
+	type = country_event
+	title = br_ere_events.10.title
+	desc = br_ere_events.10.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1500.1.1
+		to = 1600.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		has_advance = roman_thematic_recruitment
+		NOT = {
+			has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		}
+	}
+
+	option = {
+		name = br_ere_events.10.a
+		historical_option = yes
+		change_societal_value = { type = centralization_vs_decentralization value = -5 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.25 }
+		set_variable = { name = expanded_timariot_system value = 1 }
+		if = {
+			limit = {
+				has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			}
+			revoke_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		}
+		add_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
+		add_stability = -10
+		hidden_effect = {
+			root = {
+				trigger_event_silently = {
+					id = flavor_tur.66
+					years = { 1 10 }
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.10.b
+		change_societal_value = { type = centralization_vs_decentralization value = 5 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.10 }
+		change_societal_value = { type = mysticism_vs_jurisprudence value = societal_value_move_to_right }
+	}
+}
+
+br_ere_events.11 = {
+	type = country_event
+	title = br_ere_events.11.title
+	desc = br_ere_events.11.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1500.1.1
+		to = 1600.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		tag = BYZ
+		owns = location:constantinople
+	}
+
+	option = {
+		name = br_ere_events.11.a
+		historical_option = yes
+		location:constantinople = {
+			destroy_building = {
+				building_type = building_type:br_constantinople_shipyard
+			}
+			construct_building = {
+				building_type = building_type:br_constantinople_shipyard_improved
+			}
+			change_building_level_in_location = {
+				building = building_type:naval_supplies_guild
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				location:constantinople = {
+					has_building_with_at_least_one_level = naval_supplies_guild
+				}
+			}
+			location:constantinople = {
+				change_building_level_in_location = {
+					building = building_type:naval_supplies_guild
+					value = 1
+				}
+			}
+		}
+		else = {
+			location:constantinople = {
+				construct_building = {
+					building_type = building_type:naval_supplies_guild
+					cost_multiplier = 0.5
+					cost_multiplier_reason = "military_cheap_sponsorship"
+				}
+			}
+		}
+		change_societal_value = { type = land_vs_naval value = 5 }
+	}
+
+	option = {
+		name = br_ere_events.11.b
+		change_societal_value = { type = land_vs_naval value = 2 }
+		capital.market = {
+			add_temporary_demand = {
+				type = demand:galley_construction
+				months = 48
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.11.c
+		change_societal_value = { type = land_vs_naval value = societal_value_move_to_left }
+	}
+}
+
+#rebellions
+br_ere_events.100 = { #armenian rebellion
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.100.title
+	desc = br_ere_events.100.desc
+	outcome = neutral
+
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1450.1.1
+		to = 1736.1.1
+		monthly_chance = 15
+	}
+
+
+	trigger = {
+		"religion_percentage_in_country(religion:miaphysite)" > 0
+		any_owned_location = {
+			region = region:anatolia_region
+			dominant_religion = religion:miaphysite
+		}
+
+	}
+
+	immediate = {
+		create_rebel = {
+			category = religious
+			religion = religion:miaphysite
+			name = armenian_uprising
+			save_scope_as = armenian_uprising
+		}
+
+		create_character = {
+			first_name = random
+			adm = 30
+			dip = 80
+			mil = 65
+			female = no
+			culture = culture:armenian_culture
+			religion = religion:miaphysite
+			estate = estate_type:clergy_estate
+			birth_location = location:bozok
+			birth_date = 1475
+			add_trait = trait:scholar
+			script = br_armenian_scholar
+			save_scope_as = armenian_uprising_leader
+		}
+
+	}
+
+	option = {
+		name = br_ere_events.100.a
+		historical_option = yes
+		custom_tooltip = {
+			text = celali_uprising_joining #make loc
+			every_owned_location = {
+				limit = {
+					region = region:anatolia_region
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:miaphysite
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+					change_pop_allegiance = scope:armenian_uprising
+				}
+			}
+		}
+		add_stability = stability_extreme_penalty
+		hidden_effect = {
+   			kill_character_silently = scope:armenian_uprising_leader
+  		}
+	}
+	option = {
+		custom_tooltip = celal_available.tt #make loc
+		name = br_ere_events.100.b
+		destroy_rebel = scope:armenian_uprising
+		add_government_power = government_power_weak_penalty
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_move_to_right }
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_right }
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_move_to_right }
+
+	}
+}
+
+br_ere_events.101 = { #afrika tunis sunni rebellion
+	type = country_event
+	title = br_ere_events.101.title
+	desc = br_ere_events.101.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1550.1.1
+		to = 1837.1.1
+		monthly_chance = 5
+	}
+
+
+	trigger = {
+		"religion_percentage_in_country(religion:sunni)" > 0
+		any_owned_location = {
+			area = area:tunis_area
+			dominant_religion = religion:sunni
+		}
+		has_advance = roman_thematic_recruitment
+		societal_value:centralization_vs_decentralization >= -50
+		NOT = {
+			societal_value:centralization_vs_decentralization >= 75
+		}
+	}
+
+	option = {
+		name = br_ere_events.101.a
+		custom_tooltip = {
+			text = tunisian_uprising
+			every_owned_location = {
+				limit = {
+					area = area:tunis_area
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:sunni
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_events.101.b
+		change_gold_effect = { scale = -3 }
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_large_move_to_right }
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_ere_events.102 = { #afrika tripolitan sunni revolt
+	type = country_event
+	title = br_ere_events.102.title
+	desc = br_ere_events.102.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1550.1.1
+		to = 1850.1.1
+		monthly_chance = 2
+	}
+
+	trigger = {
+		"religion_percentage_in_country(religion:sunni)" > 0
+		any_owned_location = {
+			area = area:tripolitania_area
+			dominant_religion = religion:sunni
+		}
+		NOT = {
+			societal_value:centralization_vs_decentralization >= 75
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = br_ere_events.102.a
+		historical_option = yes
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_large_move_to_right
+		}
+		change_societal_value = {
+			type = belligerent_vs_conciliatory
+			value = societal_value_minor_move_to_right
+		}
+		add_prestige = prestige_mild_penalty
+	}
+
+	option = {
+		name = br_ere_events.102.b
+		custom_tooltip = {
+			text = tripolitan_uprising
+			every_owned_location = {
+				limit = {
+					area = area:tripolitania_area
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:sunni
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+				}
+			}
+		}
+	}
+}
+
+br_ere_events.103 = { # egypt revolt
+	type = country_event
+	title = br_ere_events.103.title
+	desc = br_ere_events.103.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1550.1.1
+		to = 1837.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		"religion_percentage_in_country(religion:sunni)" > 0
+		any_owned_location = {
+			region = region:egypt_region
+			dominant_religion = religion:sunni
+		}
+	}
+	immediate = {
+	}
+
+	option = {
+		name = br_ere_events.103.a
+		custom_tooltip = {
+			text = egyptian_uprising
+			every_owned_location = {
+				limit = {
+					region = region:egypt_region
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:sunni
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+				}
+			}
+		}
+		add_prestige = prestige_severe_penalty
+	}
+
+	option = {
+		name = br_ere_events.103.c
+		historical_option = yes
+		custom_tooltip = {
+			text = egyptian_discontent
+			every_owned_location = {
+				limit = {
+					region = region:egypt_region
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:sunni
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
+		}
+		add_prestige = prestige_severe_penalty
+	}
+
+	option = {
+		name = br_ere_events.103.b
+		custom_tooltip = {
+			text = egyptian_uprising
+			every_owned_location = {
+				limit = {
+					region = region:egypt_region
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						culture = culture:lower_egyptian_culture
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+				}
+			}
+		}
+	}
+}
+
+br_ere_events.104 = { #Anatolian Brigands
+	type = country_event
+	title = br_ere_events.104.title
+	desc = br_ere_events.104.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1500.1.1
+		to = 1737.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		any_owned_location = {
+			region = region:anatolia_region
+			location_rank = location_rank:rural_settlement
+			count >= 3
+		}
+ 		OR = {
+			stability < 60
+			government_power < 50
+			in_civil_war = yes
+		}
+	}
+	immediate = {
+		ordered_owned_location = {
+			order_by = { #Get the least controlled ones
+                value = local_control
+                multiply = -1
+            }
+			limit = {
+				region = region:anatolia_region
+				location_rank = location_rank:rural_settlement
+			}
+			max = 3
+			change_prosperity = prosperity_extreme_penalty
+		}
+	}
+
+	option = {
+		name = br_ere_events.104.a
+		historical_option = yes
+		trigger = { has_reform = government_reform:br_themata_reformed_privilege }
+		add_manpower = { value = root.monthly_manpower multiply = 12 }
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_minor_move_to_right }
+		custom_tooltip = {
+			text = anatolian_brigands_maybe_more_problems.tt
+			random = {
+				chance = 60
+				root = {
+					trigger_event_silently = {
+						id = br_ere_events.105
+						years = { 1 3 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.104.c
+		trigger = { has_advance = byz_shield_of_the_west }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_penalty }
+		add_country_modifier = { modifier = terrified_peasants_modifier years = 15 mode = add_and_extend }
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_minor_move_to_left }
+		custom_tooltip = {
+			text = anatolian_brigands_no_more_problems.tt
+			random = {
+				chance = 33
+				root = {
+					trigger_event_silently = {
+						id = br_ere_events.105
+						years = { 1 3 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.104.d
+		add_stability = stability_weak_bonus
+		custom_tooltip = {
+			text = anatolian_brigands_certainly_more_problems.tt
+			random = {
+				chance = 95
+				root = {
+					trigger_event_silently = {
+						id = br_ere_events.105
+						years = { 1 3 }
+					}
+				}
+			}
+		}
+	}
+}
+
+br_ere_events.105 = { #Disarming Anatolia, triggered by #br_ere_events.104
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.105.title
+	desc = br_ere_events.105.desc
+	outcome = neutral
+
+	trigger = {
+		region:anatolia_region = {
+			any_location_in_region = {
+				owner ?= root
+				location_rank = location_rank:rural_settlement
+				count >= 3
+			}
+		}
+	}
+
+	immediate = {
+		region:anatolia_region = {
+			ordered_location_in_region = {
+				order_by = { #Get the least controlled ones
+                	value = local_control
+               	 	multiply = -1
+            	}
+				limit = {
+					owner ?= root
+					location_rank = location_rank:rural_settlement
+				}
+				max = 3
+				change_prosperity = prosperity_extreme_penalty
+			}
+		}
+		create_rebel = {
+			name = peasant_revolt
+			category = estate
+			estate = peasants_estate
+			save_scope_as = target_rebel
+		}
+	}
+
+	option = {
+		name = br_ere_events.105.a
+		historical_option = yes
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_large_move_to_left }
+		add_stability = stability_severe_bonus
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_penalty }
+		random_list = {
+			25 = {
+				ordered_pop = {
+					limit = {
+						owner = root
+						location.region = region:anatolia_region
+						has_rebel = no
+					}
+					order_by = {
+						value = {
+							add = pop_size
+							if = {
+								limit = { pop_satisfaction > 0.05 }
+								divide = pop_satisfaction
+							}
+							else = { divide = 0.05 }
+						}
+					}
+					check_range_bounds = no
+					max = {
+						value = {
+							add = num_provinces
+							divide = 25
+						}
+						add = 3
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+					change_pop_allegiance = scope:target_rebel
+				}
+			}
+			75 = { custom_tooltip = rebellion_dies_down_tt }
+		}
+	}
+	option = {
+		name = br_ere_events.105.b
+		change_gold_effect = { scale = -4 }
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_minor_move_to_left }
+		add_stability = stability_mild_bonus
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+	}
+
+	option = {
+		name = br_ere_events.105.c
+		add_army_tradition = army_tradition_weak_bonus
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_tiny_move_to_right }
+	}
+}
+
+br_ere_events.106 = { #The Power of Printing
+	type = country_event
+	title = br_ere_events.106.title
+	desc = br_ere_events.106.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1600.1.1
+		to = 1745.1.1
+		monthly_chance = 15
+	}
+	trigger = {
+		has_advance = printing_press_advance
+		OR = {
+			culture.language = language:greek_language
+			culture.language = language:latin_language
+		}
+	}
+	immediate = {
+		capital = {
+			save_scope_as = capital_location
+		}
+	}
+
+	option = {
+		name = br_ere_events.106.a
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+		add_country_modifier = { modifier = printing_boom years = 25 mode = add_and_extend }
+		change_societal_value = { type = spiritualist_vs_humanist value = societal_value_large_move_to_right }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_penalty }
+		if = {
+			limit = {
+				has_policy = strict_censorship
+			}
+			add_policy = policy:limited_censorship
+		}
+		hidden_effect = {
+			root = {
+				trigger_event_silently = {
+					id = br_ere_events.107
+					years = { 10 20 }
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.106.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_bonus }
+		change_societal_value = { type = spiritualist_vs_humanist value = societal_value_tiny_move_to_left }
+	}
+}
+
+br_ere_events.107 = { #The Grievance of Scribes, triggered by #br_ere_events.106
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.107.title
+	desc = br_ere_events.107.desc
+	outcome = neutral
+
+	trigger = {
+		has_country_modifier = printing_boom
+	}
+
+	option = {
+		name = br_ere_events.107.a
+		historical_option = yes
+		add_stability = stability_severe_bonus
+		remove_country_modifier = printing_boom
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		change_societal_value = { type = traditionalist_vs_innovative value = societal_value_large_move_to_left }
+	}
+	option = {
+		name = br_ere_events.107.b
+		add_prestige = prestige_mild_bonus
+		random_list = {
+			50 = {
+				create_rebel = {
+					name = varangian_revolt
+					category = estate
+					estate = nobles_estate
+					save_scope_as = target_rebel
+				}
+				ordered_pop = {
+					limit = {
+						owner = root
+						location.region = root.capital.region
+						OR = {
+							pop_type = pop_type:soldiers
+							pop_type = pop_type:nobles
+						}
+						has_rebel = no
+					}
+					order_by = {
+						value = {
+							add = pop_size
+							if = {
+								limit = { pop_satisfaction > 0.05 }
+								divide = pop_satisfaction
+							}
+							else = { divide = 0.05 }
+						}
+					}
+					check_range_bounds = no
+					max = {
+						value = {
+							add = num_provinces
+							divide = 10
+						}
+						add = 3
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+					hidden_effect = {
+						change_pop_allegiance = scope:target_rebel
+					}
+				}
+			}
+			50 = { add_stability = stability_mild_penalty }
+		}
+	}
+}
+
+br_ere_events.108 = { #The Grievances of Bulgaria
+	type = country_event
+	title = br_ere_events.108.title
+	desc = br_ere_events.108.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1550.1.1
+		to = 1837.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		has_advance = br_despotate_building_advance
+		NAND = {
+			societal_value:centralization_vs_decentralization >= 50
+			societal_value:serfdom_vs_free_subjects >= 50
+		}
+		"culture_percentage_in_country(culture:bulgarian)" > 0
+		any_owned_location = {
+			region = region:balkan_region
+			dominant_culture = culture:bulgarian
+			any_pop = {
+				culture = culture:greek_culture
+			}
+		}
+	}
+	immediate = {
+		random_owned_location = {
+			limit = {
+				region = region:balkan_region
+				dominant_culture = culture:bulgarian
+				any_pop = {
+					culture = culture:greek_culture
+				}
+			}
+			save_scope_as = uprising_location
+		}
+		scope:uprising_location = {
+			random_pop = {
+				limit = { culture = culture:greek_culture }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.5
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.108.a
+		historical_option = yes
+		every_owned_location = {
+			limit = {
+				region = region:balkan_region
+			}
+			every_pop = {
+				limit = {
+					owner = root
+					culture = culture:bulgarian
+				}
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		trigger_event_silently = {
+			id = br_ere_events.109
+			days = { 20 40 }
+		}
+	}
+	option = {
+		name = br_ere_events.108.b
+		every_owned_location = {
+			limit = {
+				region = region:balkan_region
+			}
+			every_pop = {
+				limit = {
+					owner = root
+					culture = culture:bulgarian
+				}
+				add_pop_satisfaction = pop_satisfaction_mild_penalty
+			}
+		}
+		add_prestige = prestige_severe_penalty
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_large_move_to_right }
+		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_large_move_to_right }
+	}
+	option = {
+		name = br_ere_events.108.c
+		every_owned_location = {
+			limit = {
+				region = region:balkan_region
+			}
+			every_pop = {
+				limit = {
+					owner = root
+					culture = culture:bulgarian
+				}
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			}
+		}
+		add_government_power = government_power_mild_penalty
+	}
+}
+
+br_ere_events.109 = { #The Bulgarian Massacre
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.109.title
+	desc = br_ere_events.109.desc
+	outcome = neutral
+
+	trigger = {
+		"culture_percentage_in_country(culture:bulgarian)" > 0
+		any_owned_location = {
+			region = region:balkan_region
+			dominant_culture = culture:bulgarian
+		}
+
+		any_owned_location = {
+			OR = {
+				region = region:anatolia_region
+				area = area:thrace_area
+			}
+			dominant_culture = culture:greek_culture
+			any_pop = {
+				culture = culture:bulgarian
+				count >= 2
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				location:constantinople = {
+					dominant_culture = culture:greek_culture
+					any_pop = {
+						culture = culture:bulgarian
+						count >= 2
+					}
+				}
+			}
+			location:constantinople = {
+				save_scope_as = massacre_location
+			}
+		}
+		else = {
+			ordered_owned_location = {
+				order_by = root.total_population
+				limit = {
+					OR = {
+						region = region:anatolia_region
+						area = area:thrace_area
+					}
+					dominant_culture = culture:greek_culture
+					any_pop = {
+						culture = culture:bulgarian
+						count >= 2
+					}
+				}
+				max = 1
+				save_scope_as = massacre_location
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.109.a
+		historical_option = yes
+		change_gold_effect = { scale = 3 }
+		add_government_power = government_power_mild_bonus
+		add_prestige = prestige_weak_penalty
+		scope:massacre_location = {
+			random_pop = {
+				limit = { culture = culture:bulgarian }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.5
+				}
+				save_scope_as = pop1
+			}
+			random_pop = {
+				limit = {
+					AND = {
+						culture = culture:bulgarian
+						NOT = { this = scope:pop1 }
+					}
+				}
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.5
+				}
+			}
+		}
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					owner = root
+					culture = culture:bulgarian
+					religion = religion:orthodox
+				}
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			}
+		}
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_minor_move_to_left }
+	}
+	option = {
+		name = br_ere_events.109.b
+		add_government_power = government_power_severe_penalty
+	}
+}
+
+#Serb Uprising
+br_ere_events.110 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.110.title
+	desc = br_ere_events.110.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1550.1.1
+		to = 1750.1.1
+		monthly_chance = 2
+	}
+	fire_only_once = yes
+	trigger = {
+		own_entire_province = province_definition:toplica_province
+		own_entire_province = province_definition:sumadija_province
+		own_entire_province = province_definition:branicevo_province
+		province:toplica_province = {
+			"culture_percentage_in_country(culture:serbian)" > 0.25
+		}
+		province:sumadija_province = {
+			"culture_percentage_in_country(culture:serbian)" > 0.25
+		}
+		province:branicevo_province = {
+			"culture_percentage_in_country(culture:serbian)" > 0.25
+		}
+	}
+	immediate = {
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+		create_rebel = {
+			category = nationalist
+			religion = religion:orthodox
+			name = serb_uprising
+			save_scope_as = serb_uprising
+		}
+	}
+
+	option = {
+		name = br_ere_events.110.a
+		custom_tooltip = {
+			text = tur_all_of_specified_locations_join_rebellion_tt
+			province_definition:toplica_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					every_pop = {
+						limit = {
+							owner ?= root
+						}
+						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						change_pop_allegiance = scope:serb_uprising
+					}
+				}
+			}
+			province_definition:sumadija_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					every_pop = {
+						limit = {
+							owner ?= root
+						}
+						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						change_pop_allegiance = scope:serb_uprising
+					}
+				}
+			}
+			province_definition:branicevo_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					every_pop = {
+						limit = {
+							owner ?= root
+						}
+						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						change_pop_allegiance = scope:serb_uprising
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = br_ere_events.110.b
+		custom_tooltip = {
+			text = tur_all_specified_locations_lose_control
+			province_definition:toplica_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					change_control = control_ultimate_penalty
+				}
+			}
+			province_definition:sumadija_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					change_control = control_ultimate_penalty
+				}
+			}
+			province_definition:branicevo_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner ?= root
+					}
+					change_control = control_ultimate_penalty
+				}
+			}
+		}
+	}
+}
+
+
+#others
+
+br_ere_events.200 = { #The Matter of the Nile
+	type = country_event
+	title = br_ere_events.200.title
+	desc = br_ere_events.200.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1437.1.1
+		to = 1737.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		exists = capital
+		"culture_percentage_in_country(culture:lower_egyptian_culture)" > 0.05
+		any_owned_location = {
+			region = region:egypt_region
+			dominant_culture = culture:lower_egyptian_culture
+		}
+
+		any_owned_location = {
+			region = region:egypt_region
+			is_capital = no
+		}
+		any_owned_location = { this = location:alexandria }
+		any_owned_location = { this = location:cairo }
+		any_owned_location = { this = location:faiyum }
+		any_owned_location = { this = location:aswan }
+	}
+
+	immediate = {
+		capital = {
+			save_scope_as = capital_location
+		}
+	}
+
+	option = {
+		name = br_ere_events.200.a
+		historical_option = yes
+		change_gold_effect = { scale = -4 }
+		capital.market = {
+			add_temporary_demand = {
+				type = demand:wood_for_egypt
+				months = 120
+			}
+		}
+
+		scope:capital_location = {
+			change_prosperity = prosperity_mild_bonus
+			change_development = development_mild_bonus
+		}
+		location:cairo = {
+			change_development = development_mild_bonus
+		}
+		location:faiyum = {
+			change_development = development_mild_bonus
+		}
+		location:aswan = {
+			change_development = development_mild_bonus
+		}
+
+		custom_tooltip = egyptians_displeased_tooltip
+		hidden_effect = {
+			region:egypt_region = {
+				every_location_in_region = {
+					limit = {
+						owner = root
+					}
+					every_pop = {
+						limit = {
+							owner = root
+							culture = culture:lower_egyptian_culture
+						}
+						add_pop_satisfaction = pop_satisfaction_severe_penalty
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_events.200.b
+
+		change_societal_value = { type = centralization_vs_decentralization value = 10 }
+
+		custom_tooltip = egyptians_pleased_tooltip
+		hidden_effect = {
+			region:egypt_region = {
+				every_location_in_region = {
+					limit = {
+						owner = root
+					}
+					every_pop = {
+						limit = {
+							owner = root
+							culture = culture:lower_egyptian_culture
+						}
+						add_pop_satisfaction = pop_satisfaction_extreme_bonus
+					}
+				}
+			}
+		}
+	}
+}
+
+br_ere_events.201 = { #The Art of Italy
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.201.title
+	desc = br_ere_events.201.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1437.1.1
+		to = 1537.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+
+		has_ruler = yes
+
+		NOT = {
+			has_presence_in = region:italy_region
+		}
+
+		any_known_country = {
+			culture = { has_culture_group = culture_group:italian_group }
+			capital = {
+				region = region:italy_region
+			}
+		}
+	}
+
+	immediate = {
+
+		ruler = {save_scope_as = target_character}
+
+		ordered_known_country = {
+			limit = {
+				culture = { has_culture_group = culture_group:italian_group }
+				capital = { region = region:italy_region }
+			}
+			order_by = {
+  				value = expected_navy_size
+  				multiply = "opinion(root)"
+			}
+			max = 1
+
+			save_scope_as = target_country
+		}
+
+		create_character = {
+			artist_skill = 0.8
+			artist = painter
+			estate = estate_type:burghers_estate
+			culture = scope:target_country.culture
+			religion = scope:target_country.religion
+			save_scope_as = artist_character
+			create_in_limbo = yes
+		}
+	}
+
+	option = {
+		name = br_ere_events.201.a
+		historical_option = yes
+
+		scope:artist_character = {
+			move_country = root
+		}
+
+		scope:target_country = {
+			add_prestige = prestige_mild_bonus
+			culture = {
+				add_cultural_influence = cultural_influence_weak_bonus
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_events.201.b
+
+		culture = {
+			add_cultural_influence = cultural_influence_weak_bonus
+		}
+
+		hidden_effect = {
+   			kill_character_silently = scope:artist_character
+  		}
+	}
+}
+
+
+
+
+
+
+
+
+
+###ere subject events
 br_ere_events.1002 = {
 	type = country_event
 	title = br_ere_events.2.title
@@ -523,9 +1884,6 @@ br_ere_events.1002 = {
 		
 	}
 }
-
-
-### Dynmaic events
 
 #reforms and varangians 2000-2100
 br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
@@ -651,8 +2009,6 @@ br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.
 	title = br_ere_events.2001.title
 	desc = br_ere_events.2001.desc
 	outcome = negative
-
-	#historical_info = br_ere_events.2001.historical_info
 
 	trigger = {
 		has_ruler = yes

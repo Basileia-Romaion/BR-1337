@@ -38,6 +38,135 @@
  br_ere_events.6.desc: "The new [ROOT.GetCountry.GetGovernment.GetRulerTitle], having ascended the imperial throne, is crowned amidst sacred ceremony beneath the radiant mosaics of [ShowBuildingTypeName('br_hagia_sophia_building')]. Incense fills the great cathedral as the Patriarch bestows the imperial diadem upon the sovereign, while the gathered court proclaims his reign before God and the Roman people.\n\nFrom distant courts and subject realms come envoys bearing silks, relics, spices, and gilded treasures, each seeking favor within the halls of the [ShowBuildingTypeName('br_great_palace_building')]. Yet within the capital, hope mingles with quiet suspicion as senators, generals, eunuchs, and bureaucrats weigh the character of the Empire’s new master.\n\nAcross the provinces, governors and magnates renew their oaths with cautious reverence, for the strength of the [ROOT.GetCountry.GetName] now rests upon the wisdom and resolve of an untested ruler. All eyes turn toward [ShowLocationName('constantinople')], awaiting the first decrees of the new Basileus, for within them may lie either the restoration of Roman glory or the seeds of future calamity."
  br_ere_events.6.a: "Long live the [ShowSpecialStatusName('br_emperor')]!"
 
+ ### The Ascendancy of the Dynatoi ###
+ br_ere_events.7.title: "The Ascendancy of the Dynatoi"
+ br_ere_events.7.desc: "The great aristocratic houses of the Empire have grown immensely powerful through grants of land, court influence, and military patronage. Many among the Dynatoi now regard themselves less as servants of the Basileus and more as hereditary magnates whose privileges are beyond challenge. Ministers warn that unless their ambitions are curbed, the authority of Constantinople may steadily erode."
+ br_ere_events.7.a: "The aristocracy remains the pillar of the Empire."
+ br_ere_events.7.b: "Attempt to balance their influence carefully."
+ br_ere_events.7.c: "Revoke their privileges and restore imperial authority."
+
+ ### The Legacy of the Akritai ###
+ br_ere_events.8.title: "The Legacy of the Akritai"
+ br_ere_events.8.desc: "The frontier warriors of the Empire, the Akritai, have long defended the borders of Rhomania through discipline, local knowledge, and martial tradition. Following years of exhausting warfare, many commanders argue that the Empire must reform its military institutions to preserve the strength of the thematic armies. Others instead favor naval expansion or a more cautious approach."
+ br_ere_events.8.a: "Reform and strengthen the frontier armies."
+ br_ere_events.8.b: "Maintain the current order."
+ br_ere_events.8.c: "The future of the Empire lies at sea."
+
+ ### The Military Academy of Constantinople ###
+ br_ere_events.9.title: "The Military Academy of Constantinople"
+ br_ere_events.9.desc: "Imperial strategoi and scholars have proposed the establishment of a grand military academy within Constantinople itself. Such an institution would gather the finest tacticians, engineers, and officers of the Empire to codify the art of war and train future commanders in the Roman military tradition. Others argue instead for reforming the thematic system directly, expanding the obligations of military landholders."
+ br_ere_events.9.a: "Found the Imperial Military Academy."
+ br_ere_events.9.b: "Reform and expand the thematic system instead."
+
+ ### Reforming the Themata ###
+ br_ere_events.10.title: "Reforming the Themata"
+ br_ere_events.10.desc: "The old thematic system that once secured the Empire’s frontiers has increasingly come under strain. Some officials advocate sweeping reforms to centralize military obligations and strengthen imperial authority over the provinces, while others warn that excessive interference may provoke unrest among local elites and frontier communities."
+ br_ere_events.10.a: "Expand and reform the thematic system."
+ br_ere_events.10.b: "Preserve the traditional provincial order."
+
+ ### Expansion of the Imperial Shipyards ###
+ br_ere_events.11.title: "Expansion of the Imperial Shipyards"
+ br_ere_events.11.desc: "The shipyards of Constantinople have long stood among the greatest naval facilities in the world, supplying the fleets that guard the Bosporus and project Roman power across the seas. Admirals and merchants alike now petition the court for further expansion and modernization, arguing that mastery of the sea will determine the Empire’s future."
+ br_ere_events.11.a: "Expand and modernize the imperial dockyards."
+ br_ere_events.11.b: "Increase naval construction without major expansion."
+ br_ere_events.11.c: "Our strength lies upon the land, not the sea."
+
+ ### Armenian Rebellion ###
+ br_ere_events.100.title: "The Armenian Revolt"
+ br_ere_events.100.desc: "Discontent has spread among the Miaphysite Armenians of Anatolia, where resentment against imperial governors and religious oversight has steadily deepened. Local clergy and scholars denounce the encroachment of Constantinople upon their ancient traditions, while whispers of rebellion echo through the highlands. Armed bands now gather beneath banners of defiance, threatening to ignite all of eastern Anatolia."
+ br_ere_events.100.a: "The Armenians rise in open revolt!"
+ br_ere_events.100.b: "Attempt to reconcile the provinces."
+ celali_uprising_joining: "Miaphysite populations across Anatolia will rally behind the Armenian uprising."
+ celal_available.tt: "The revolt will be suppressed before it can fully erupt."
+
+ ### Tunisian Revolt ###
+ br_ere_events.101.title: "Unrest in Tunis"
+ br_ere_events.101.desc: "The Sunni populations of Ifriqiya have grown increasingly resentful of imperial centralization and the expanding authority of Constantinople. Provincial notables condemn the erosion of local autonomy, while veterans and tribal leaders speak openly of resistance. Reports from Tunis suggest that the situation may soon spiral into outright rebellion."
+ br_ere_events.101.a: "The unrest spreads throughout Tunis."
+ br_ere_events.101.b: "Grant concessions to the local elites."
+ tunisian_uprising: "Sunni populations throughout Tunis will grow deeply dissatisfied."
+
+ ### Tripolitanian Revolt ###
+ br_ere_events.102.title: "The Tribes of Tripolitania"
+ br_ere_events.102.desc: "The distant provinces of Tripolitania remain difficult to govern. Tribal confederations and Sunni notables alike resent the demands of Constantinople, viewing imperial rule as both distant and oppressive. Armed raiders and dissidents have begun to gather in the countryside, threatening the fragile peace of the region."
+ br_ere_events.102.a: "Tighten imperial authority."
+ br_ere_events.102.b: "The region erupts into disorder."
+ tripolitan_uprising: "Sunni populations across Tripolitania will become severely discontented."
+
+ ### Egyptian Revolt ###
+ br_ere_events.103.title: "Discontent Along the Nile"
+ br_ere_events.103.desc: "Egypt remains one of the richest yet most volatile provinces of the Empire. Sunni scholars, local magnates, and the common people alike increasingly resent imperial taxation and foreign administration. Rumors of unrest spread from Alexandria to Cairo, and many fear that Egypt may once again become the center of a great rebellion."
+ br_ere_events.103.a: "Suppress the unrest with force."
+ br_ere_events.103.b: "The Egyptians must be pacified."
+ br_ere_events.103.c: "Placate the local elites."
+ egyptian_uprising: "The Sunni populations of Egypt will become dangerously rebellious."
+ egyptian_discontent: "The people of Egypt will remain discontent, though open revolt may yet be avoided."
+
+ ### Anatolian Brigands ###
+ br_ere_events.104.title: "Anatolian Brigands"
+ br_ere_events.104.desc: "Banditry and lawlessness have spread across the Anatolian countryside. Displaced peasants, deserters, and opportunistic warlords prey upon isolated settlements while imperial authority weakens beyond the major cities. Unless decisive measures are taken, the brigands may evolve into a far greater threat."
+ br_ere_events.104.a: "Mobilize the thematic militias."
+ br_ere_events.104.c: "Crush them without mercy."
+ br_ere_events.104.d: "We can endure this nuisance."
+ anatolian_brigands_maybe_more_problems.tt: "This may only be the beginning of wider unrest in Anatolia."
+ anatolian_brigands_no_more_problems.tt: "Harsh measures may restore order, though resentment will linger."
+ anatolian_brigands_certainly_more_problems.tt: "Ignoring the brigands will almost certainly worsen the situation."
+
+ ### Disarming Anatolia ###
+ br_ere_events.105.title: "Disarming Anatolia"
+ br_ere_events.105.desc: "Imperial officials argue that the countryside must be pacified through force and disarmament, yet many peasants regard these measures as tyranny. Villages resist confiscation efforts, and rumors spread that entire districts may rise against the state if the policy continues."
+ br_ere_events.105.a: "Disarm the countryside by force."
+ br_ere_events.105.b: "Offer compensation and limited concessions."
+ br_ere_events.105.c: "Allow local militias to police the region."
+ rebellion_dies_down_tt: "The unrest gradually fades before erupting into open revolt."
+
+ ### The Power of Printing ###
+ br_ere_events.106.title: "The Power of Printing"
+ br_ere_events.106.desc: "The spread of the printing press has transformed intellectual life throughout the Empire. Books, pamphlets, and theological treatises circulate with unprecedented speed, empowering scholars and merchants while alarming traditional authorities. Many hail this new age of learning, though the clergy warn that unchecked printing may undermine faith and order alike."
+ br_ere_events.106.a: "Encourage the spread of learning."
+ br_ere_events.106.b: "Printing must remain carefully controlled."
+
+ ### The Grievance of Scribes ###
+ br_ere_events.107.title: "The Grievance of the Scribes"
+ br_ere_events.107.desc: "The rapid spread of printing has displaced countless scribes, copyists, and traditional scholars whose livelihoods once depended upon the laborious reproduction of manuscripts. Many denounce the presses as vulgar machines that cheapen knowledge and undermine ancient customs. Their anger now threatens to spill into unrest."
+ br_ere_events.107.a: "Restrict the presses and restore order."
+ br_ere_events.107.b: "Progress cannot be halted."
+
+ ### Bulgarian Grievances ###
+ br_ere_events.108.title: "The Grievances of Bulgaria"
+ br_ere_events.108.desc: "In the Bulgarian provinces, resentment against imperial authority has steadily intensified. Greek settlers and administrators are increasingly viewed as instruments of domination, while Bulgarian communities accuse Constantinople of exploitation and neglect. Violent clashes have erupted in several towns, raising fears of a broader uprising."
+ br_ere_events.108.a: "Crush the agitators."
+ br_ere_events.108.b: "Reassert tighter imperial administration."
+ br_ere_events.108.c: "Attempt to calm the situation."
+
+ ### Bulgarian Massacre ###
+ br_ere_events.109.title: "The Bulgarian Massacre"
+ br_ere_events.109.desc: "Mob violence has erupted against Bulgarian communities within the Empire. Inflamed by fear, vengeance, and years of ethnic tension, armed crowds have attacked Bulgarian quarters in several cities. Reports of killings and expulsions spread rapidly, threatening to deepen divisions throughout the Balkans."
+ br_ere_events.109.a: "Permit reprisals against the Bulgarians."
+ br_ere_events.109.b: "Restore order before matters worsen."
+
+ ### Serbian Uprising ###
+ br_ere_events.110.title: "The Serbian Uprising"
+ br_ere_events.110.desc: "Serbian resistance has erupted across the central Balkans. Local nobles, clergy, and villagers alike denounce imperial taxation and administration, rallying beneath banners of rebellion. Armed insurgents now gather in Toplica, Šumadija, and Braničevo, threatening to ignite a wider revolt throughout the region."
+ br_ere_events.110.a: "The Serbs rise against us!"
+ br_ere_events.110.b: "Contain the uprising through military occupation."
+ tur_all_of_specified_locations_join_rebellion_tt: "The populations of the affected Serbian provinces will rally behind the uprising."
+ tur_all_specified_locations_lose_control: "Imperial control in the affected Serbian provinces will collapse."
+
+ ### The Matter of the Nile ###
+ br_ere_events.200.title: "The Matter of the Nile"
+ br_ere_events.200.desc: "The fertile lands of Egypt remain among the greatest treasures of the Empire, yet the Nile demands constant labor and investment to sustain its prosperity. Imperial officials propose ambitious irrigation and flood-control works to increase agricultural output and enrich the treasury, though many local Egyptians resent further interference from Constantinople. The question before the court is whether the Nile shall primarily serve imperial ambition or the well-being of Egypt itself."
+ br_ere_events.200.a: "Expand the Nile works for the glory of the Empire."
+ br_ere_events.200.b: "Prioritize the prosperity of the Egyptian people."
+ egyptians_displeased_tooltip: "The Egyptian population will resent the increased imperial exploitation of the Nile."
+ egyptians_pleased_tooltip: "The Egyptian population will welcome the Empire’s support and investment."
+
+ ### The Art of Italy ###
+ br_ere_events.201.title: "The Art of Italy"
+ br_ere_events.201.desc: "The flourishing courts and republics of Italy have become renowned throughout the world for their painters, sculptors, and architects. Though the Empire possesses its own ancient artistic traditions, many within Constantinople admire the innovations emerging from the Latin West. Foreign artists now seek patronage abroad, and some among the court propose inviting Italian masters to adorn the Empire with their talents."
+ br_ere_events.201.a: "Invite the Italian artist to our court."
+ br_ere_events.201.b: "Roman art requires no foreign influence."
+
  DEATH_REASON_killed_by_varangians: "[CHARACTER.GetSheHe|U] was murdered by the Varangian guard."
  STATIC_MODIFIER_NAME_varangian_custodianship: "Varangian Custodianship"
  varangian_revolt: "Varangian Revolt"
