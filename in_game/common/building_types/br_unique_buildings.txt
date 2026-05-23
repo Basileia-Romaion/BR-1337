@@ -247,6 +247,56 @@ br_constantinople_university = {
 	construction_demand = university_construction
 }
 
+br_constantinople_military_academy = {
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	icon = enderun_academy
+	
+	category = military_category
+	
+	employment_size = manpower_100_employment
+	
+	rural_settlement = yes
+	
+	build_time = soldier_building
+
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	
+	modifier = {
+		local_manpower = 0.02
+		can_recruit_regiment_in_this_location = yes
+	}
+	capital_country_modifier = {
+		military_tactics = 0.1
+		army_initiative = 0.1
+	}
+	
+	
+	unique_production_methods = {
+		br_constantinople_military_academy_maintenance = {
+			firearms = 0.5
+			leather = 0.5
+			cloth = 0.25
+			paper = 0.5
+			weaponry = 0.5
+			fine_cloth = 0.5
+			
+			category = building_maintenance
+		}
+
+	}
+	construction_demand = soldier_building_construction
+
+}
+
 br_constantinople_shipyard = {
 	is_special = yes
 	is_foreign = no
@@ -275,35 +325,78 @@ br_constantinople_shipyard = {
 
 	is_indestructible = yes
 	
-	
 	build_time = large_port_building_time
 
-	
 	unique_production_methods = {
 		br_constantinople_shipyard_maintenance = {
 			tar = 1.25
 			naval_supplies = 0.75
-			tools = 1.25
-			lumber = 1.5
+			tools = 0.75
+			lumber = 1.25
 			category = building_maintenance
 		}
 
 	}
 
-
 	construction_demand = port_building_construction
 	
+	modifier = {
+		max_ships_built_at_same_time = 2
+		local_sailors = 0.02
+		can_build_ships_in_this_location = yes
+		harbor_suitability = 0.25
+		local_trade_embark_disembark_cost_modifier = -0.25
+		local_repair_speed = 0.02
+	}
+}
+
+br_constantinople_shipyard_improved = {
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	icon = imperial_halic_shipyards
+	
+	max_levels = 1
+	employment_size = shipyard_employment
+	
+	category = military_category
+	
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	
+	build_time = large_port_building_time
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
 
 	modifier = {
 		max_ships_built_at_same_time = 5
 		local_sailors = 0.05
 		can_build_ships_in_this_location = yes
 		harbor_suitability = 0.25
-		#hostile_fleet_attrition = 1
-		#blocks_privateer_raids = yes
-		#local_maritime_presence = 0.15
 		local_trade_embark_disembark_cost_modifier = -0.25
+		local_repair_speed = 0.05
 	}
+	
+	unique_production_methods = {
+		br_constantinople_shipyard_improved_maintenance = {
+			cannons = 0.1
+			tar = 1.5
+			naval_supplies = 1.25
+			tools = 1.25
+			lumber = 1.5
+			stone = 0.24
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = port_building_construction
 }
 
 br_hippodrome_building = {
