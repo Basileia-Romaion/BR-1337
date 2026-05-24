@@ -68,11 +68,11 @@ br_latin_trading_post = {
 	city = yes
 	megalopolis = yes
 
-	increase_per_level_cost = 0.5
-	#conversion_religion = catholic
+	increase_per_level_cost = 1
 
 
 	country_potential = {
+		religion = religion:catholic
 		has_estate_privilege = estate_privilege:br_special_trade_companies
 		has_reform = government_reform:br_special_merchant_republic
 	}
@@ -136,8 +136,10 @@ br_latin_chapel = {
 	conversion_religion = catholic
 
 	country_potential = {
-		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:br_special_merchant_republic
+		AND = {
+			religion = religion:catholic
+			has_reform = government_reform:br_special_merchant_republic
+		}
 	}
 	
 	possible_production_methods = { merchant_guild_chapel_requirements }
@@ -148,12 +150,13 @@ br_latin_chapel = {
 	
 	modifier = {
 		local_max_literacy = 2
-		building_missionary_effort = 0.005
+		building_missionary_effort = 0.002
 	}
 
 	capital_country_modifier = {
 		monthly_religious_influence = 0.2
 	}
+	allow_wrong_startup = yes
 }
 
 br_indike_quarters = {
@@ -162,6 +165,8 @@ br_indike_quarters = {
 	pop_type = burghers
 	employment_size = foreign_trade_employment
 	pop_size_created = foreign_trade_employment
+	icon = ori_portuguese_quarters
+
 	max_levels = 1
 	category = trade_category
 	town = yes
@@ -189,4 +194,5 @@ br_indike_quarters = {
 		ori_portuguese_quarters_maintenance
 	}
 	construction_demand = market_center_building_construction
+	allow_wrong_startup = yes
 }

@@ -261,7 +261,7 @@ br_ere_events.4 = {
 	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
 	orphan = yes
 	trigger = {
-		tag = BYZ
+		#tag = BYZ console only
 	}
 	
 	illustration_tags = {
@@ -424,13 +424,11 @@ br_ere_events.7 = {
 		to = 1700.1.1
 		monthly_chance = 5
 	}
-
 	trigger = {
 		has_reform = government_reform:br_imperial_administration
 		"estate_power(estate_type:nobles_estate)" > 0.4
 		num_estate_privileges:nobles_estate > 2
 	}
-
 	immediate = {
 		random_estate_privilege = {
 			limit = {
@@ -709,7 +707,6 @@ br_ere_events.100 = { #armenian rebellion
 	desc = br_ere_events.100.desc
 	outcome = neutral
 
-
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = BYZ
@@ -717,8 +714,6 @@ br_ere_events.100 = { #armenian rebellion
 		to = 1736.1.1
 		monthly_chance = 15
 	}
-
-
 	trigger = {
 		"religion_percentage_in_country(religion:miaphysite)" > 0
 		any_owned_location = {
@@ -727,7 +722,6 @@ br_ere_events.100 = { #armenian rebellion
 		}
 
 	}
-
 	immediate = {
 		create_rebel = {
 			category = religious
@@ -803,8 +797,6 @@ br_ere_events.101 = { #afrika tunis sunni rebellion
 		to = 1837.1.1
 		monthly_chance = 5
 	}
-
-
 	trigger = {
 		"religion_percentage_in_country(religion:sunni)" > 0
 		any_owned_location = {
@@ -858,7 +850,6 @@ br_ere_events.102 = { #afrika tripolitan sunni revolt
 		to = 1850.1.1
 		monthly_chance = 2
 	}
-
 	trigger = {
 		"religion_percentage_in_country(religion:sunni)" > 0
 		any_owned_location = {
@@ -869,7 +860,6 @@ br_ere_events.102 = { #afrika tripolitan sunni revolt
 			societal_value:centralization_vs_decentralization >= 75
 		}
 	}
-
 	immediate = {
 	}
 
@@ -921,7 +911,6 @@ br_ere_events.103 = { # egypt revolt
 		to = 1837.1.1
 		monthly_chance = 5
 	}
-
 	trigger = {
 		"religion_percentage_in_country(religion:sunni)" > 0
 		any_owned_location = {
