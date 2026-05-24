@@ -1,5 +1,6 @@
 ﻿namespace = br_ere_resistance_events
 
+############################## Papal ##############################
 # based on The Holy League
 br_ere_resistance_events.1 = {
 	hide_portraits = yes
@@ -423,7 +424,7 @@ br_ere_resistance_events.10 = { #Romans Defeated
 }
 
 
-##########################################################
+############################## Poland ##############################
 
 #Roman-Polish Tension
 br_ere_resistance_events.20 = {
@@ -520,8 +521,7 @@ br_ere_resistance_events.21 = {
 	}
 }
 
-
-##############################
+############################## Ragusta ##############################
 
 br_ere_resistance_events.31 = { #Enemy at the Gates
 	type = country_event
@@ -640,8 +640,7 @@ br_ere_resistance_events.32 = { #An Offer from Ragusa
 }
 
 
-###################################
-
+############################## Hungary ##############################
 
 br_ere_resistance_events.40 = {
 	type = country_event
@@ -1384,10 +1383,7 @@ br_ere_resistance_events.33 = { #Populating the Military Frontier
 }
 
 
-
-################################################
-
-### Persia-Roman Events ###
+############################## Persia-Roman Events ##############################
 #Roman-Persian Tension
 br_ere_resistance_events.50 = {
 	type = country_event
@@ -1397,7 +1393,7 @@ br_ere_resistance_events.50 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = IRA
-		tag = BYZ
+		tag = TUR
 		from = 1300.1.1
 		to = 1700.1.1
 		monthly_chance = 5
@@ -1488,7 +1484,8 @@ br_ere_resistance_events.51 = {
 	}
 }
 
-### Fatamid-Roman Events ###
+############################## Fatamid-Roman Events ##############################
+
 br_ere_resistance_events.60 = {
 	type = country_event
 	title = br_ere_resistance_events.60.title
@@ -1576,24 +1573,1131 @@ br_ere_resistance_events.61 = {
 	}
 }
 
-################################################
-##BUL
-br_ere_resistance_events.70 = { #Bulgarian-Roman Wars
+
+################ Jihad for Jerusalem ################
+
+br_ere_resistance_events.62 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.62.title
+	desc = br_ere_resistance_events.62.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	dynamic_historical_event = {
+		tag = MAM
+		tag = MEC
+		from = 1356.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_ruler = yes
+		at_war = no
+		country_exists = c:BYZ
+		c:BYZ = {
+			owns = location:jerusalem
+			has_ruler = yes
+			at_war = no
+			NOT = {
+				has_truce_with = ROOT
+			}
+		}
+		religion = religion:sunni
+		is_valid_target_for_jihad = yes
+	}
+	immediate = {
+		c:BYZ = {
+			save_scope_as = jihad_target
+			ruler = {
+				save_scope_as = roman_ruler
+			}
+		}
+		c:MEC ?= {
+			add_to_list = jihad_list
+		}
+		c:MDA ?= {
+			add_to_list = jihad_list
+		}
+		c:YEM ?= {
+			add_to_list = jihad_list
+		}
+		c:JRW ?= {
+			add_to_list = jihad_list
+		}
+		c:MAK ?= {
+			add_to_list = jihad_list
+		}
+		c:ORM ?= {
+			add_to_list = jihad_list
+		}
+		c:FDL ?= {
+			add_to_list = jihad_list
+		}
+		c:TUR ?= {
+			add_to_list = jihad_list
+		}
+		c:MZF ?= {
+			add_to_list = jihad_list
+		}
+		c:KAR ?= {
+			add_to_list = jihad_list
+		}
+		c:BQA ?= {
+			add_to_list = jihad_list
+		}
+		c:TUN ?= {
+			add_to_list = jihad_list
+		}
+		c:TLE ?= {
+			add_to_list = jihad_list
+		}
+		c:MOR ?= {
+			add_to_list = jihad_list
+		}
+		
+		ruler = {
+			save_scope_as = jihad_leader
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.62.a
+		historical_option = yes
+		set_global_variable = {
+			name = crusade_location_target
+			value = location:jerusalem
+		}
+		create_international_organization = {
+			type = international_organization_type:jihad
+			target = scope:jihad_target
+			hidden_effect = {
+				add_country_to_international_organization = prev
+				set_leader_country = prev
+				save_scope_as = target_jihad
+			}
+		}
+
+		hidden_effect = {
+			scope:jihad_target = {
+				random_current_war = {
+					limit = {
+						OR = {
+							attacker_leader = ROOT
+							defender_leader = ROOT
+						}
+					}
+					save_scope_as = jihad_war
+				}
+			}
+			scope:target_jihad = {
+				set_variable = holy_league_renaming
+			}
+			if = {
+				limit = { exists = scope:jihad_war }
+				scope:jihad_war = {
+					set_variable = jihad_war_jerusalem
+				}
+			}
+		}
+
+		every_in_list = {
+			list = jihad_list
+			trigger_event_silently = br_ere_resistance_events.2
+			custom_tooltip = br_ere_resistance_events.62.a.tt
+		}
+		
+		c:BYZ ?= {
+			trigger_event_non_silently = br_ere_resistance_events.8
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.62.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Call of the Jihad
+br_ere_resistance_events.63 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.63.title
+	desc = br_ere_resistance_events.63.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:burghers_estate }
+		save_scope_as = target_country
+		ruler_or_regent = {
+			save_scope_as = target_ruler
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.63.a
+		historical_option = yes
+		join_war_as_attacker = { war = scope:jihad_war }
+		add_prestige = prestige_mild_bonus
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.3
+			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_allied_with = { target = c:BYZ }
+			}
+			modifier = {
+				factor = 0
+				c:MAM = { is_rival_of = root }
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.63.b
+	
+		add_prestige = prestige_severe_penalty
+		
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.4
+			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+		}
+	}
+}
+
+br_ere_resistance_events.64 = { #Country Accepted the Call
+	type = country_event
+	title = br_ere_resistance_events.64.title
+	desc = br_ere_resistance_events.64.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:clergy background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.64.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+				join_war_as_attacker = { war = scope:jihad_war }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.65 = { #Country Refused the Call
+	type = country_event
+	title = br_ere_resistance_events.65.title
+	desc = br_ere_resistance_events.65.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.65.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.66 = { #Jihad Victorious
+	type = country_event
+	title = br_ere_resistance_events.66.title
+	desc = br_ere_resistance_events.66.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.66.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.67 = { #Jihad Defeated
+	type = country_event
+	title = br_ere_resistance_events.67.title
+	desc = br_ere_resistance_events.67.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.67.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+br_ere_resistance_events.68 = { #Roman Informative Event about the Jihad
+	type = country_event
+	title = br_ere_resistance_events.68.title
+	desc = br_ere_resistance_events.68.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+	immediate = {
+		event_illustration_government_estate_effect = yes	
+	}
+
+	option = {
+		name = br_ere_resistance_events.68.a
+		show_as_tooltip = {
+			create_international_organization = {
+				type = international_organization_type:crusade
+				target = scope:jihad_target
+			}
+			every_in_list = {
+				list = jihad_list
+				trigger_event_silently = br_ere_resistance_events.63
+				custom_tooltip = br_ere_resistance_events.62.a.tt
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.69 = { #Romans Victorious
+	type = country_event
+	title = br_ere_resistance_events.69.title
+	desc = br_ere_resistance_events.69.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.69.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.70 = { #Romans Defeated
 	type = country_event
 	title = br_ere_resistance_events.70.title
+	desc = br_ere_resistance_events.70.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.70.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+
+################ Jihad for Alexandria ################
+
+br_ere_resistance_events.71 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.71.title
+	desc = br_ere_resistance_events.71.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	dynamic_historical_event = {
+		tag = MAM
+		tag = MEC
+		from = 1356.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_ruler = yes
+		at_war = no
+		country_exists = c:BYZ
+		c:BYZ = {
+			owns = location:alexandria
+			has_ruler = yes
+			at_war = no
+			NOT = {
+				has_truce_with = ROOT
+			}
+		}
+		religion = religion:sunni
+		is_valid_target_for_jihad = yes
+	}
+	immediate = {
+		c:BYZ = {
+			save_scope_as = jihad_target
+			ruler = {
+				save_scope_as = roman_ruler
+			}
+		}
+		c:MEC ?= {
+			add_to_list = jihad_list
+		}
+		c:MDA ?= {
+			add_to_list = jihad_list
+		}
+		c:YEM ?= {
+			add_to_list = jihad_list
+		}
+		c:JRW ?= {
+			add_to_list = jihad_list
+		}
+		c:MAK ?= {
+			add_to_list = jihad_list
+		}
+		c:ORM ?= {
+			add_to_list = jihad_list
+		}
+		c:FDL ?= {
+			add_to_list = jihad_list
+		}
+		c:TUR ?= {
+			add_to_list = jihad_list
+		}
+		c:MZF ?= {
+			add_to_list = jihad_list
+		}
+		c:KAR ?= {
+			add_to_list = jihad_list
+		}
+		c:BQA ?= {
+			add_to_list = jihad_list
+		}
+		c:TUN ?= {
+			add_to_list = jihad_list
+		}
+		c:TLE ?= {
+			add_to_list = jihad_list
+		}
+		c:MOR ?= {
+			add_to_list = jihad_list
+		}
+		
+		ruler = {
+			save_scope_as = jihad_leader
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.71.a
+		historical_option = yes
+		set_global_variable = {
+			name = crusade_location_target
+			value = location:alexandria
+		}
+		create_international_organization = {
+			type = international_organization_type:jihad
+			target = scope:jihad_target
+			hidden_effect = {
+				add_country_to_international_organization = prev
+				set_leader_country = prev
+				save_scope_as = target_jihad
+			}
+		}
+
+		hidden_effect = {
+			scope:jihad_target = {
+				random_current_war = {
+					limit = {
+						OR = {
+							attacker_leader = ROOT
+							defender_leader = ROOT
+						}
+					}
+					save_scope_as = jihad_war
+				}
+			}
+			scope:target_jihad = {
+				set_variable = holy_league_renaming
+			}
+			if = {
+				limit = { exists = scope:jihad_war }
+				scope:jihad_war = {
+					set_variable = jihad_war_jerusalem
+				}
+			}
+		}
+
+		every_in_list = {
+			list = jihad_list
+			trigger_event_silently = br_ere_resistance_events.2
+			custom_tooltip = br_ere_resistance_events.71.a.tt
+		}
+		
+		c:BYZ ?= {
+			trigger_event_non_silently = br_ere_resistance_events.8
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.71.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Call of the Jihad
+br_ere_resistance_events.72 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.72.title
+	desc = br_ere_resistance_events.72.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:burghers_estate }
+		save_scope_as = target_country
+		ruler_or_regent = {
+			save_scope_as = target_ruler
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.72.a
+		historical_option = yes
+		join_war_as_attacker = { war = scope:jihad_war }
+		add_prestige = prestige_mild_bonus
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.3
+			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_allied_with = { target = c:BYZ }
+			}
+			modifier = {
+				factor = 0
+				c:MAM = { is_rival_of = root }
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.72.b
+	
+		add_prestige = prestige_severe_penalty
+		
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.4
+			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+		}
+	}
+}
+
+br_ere_resistance_events.73 = { #Country Accepted the Call
+	type = country_event
+	title = br_ere_resistance_events.73.title
+	desc = br_ere_resistance_events.73.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:clergy background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.73.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+				join_war_as_attacker = { war = scope:jihad_war }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.74 = { #Country Refused the Call
+	type = country_event
+	title = br_ere_resistance_events.74.title
+	desc = br_ere_resistance_events.74.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.74.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.75 = { #Jihad Victorious
+	type = country_event
+	title = br_ere_resistance_events.75.title
+	desc = br_ere_resistance_events.75.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.75.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.76 = { #Jihad Defeated
+	type = country_event
+	title = br_ere_resistance_events.76.title
+	desc = br_ere_resistance_events.76.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.76.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+br_ere_resistance_events.77 = { #Roman Informative Event about the Jihad
+	type = country_event
+	title = br_ere_resistance_events.77.title
+	desc = br_ere_resistance_events.77.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+	immediate = {
+		event_illustration_government_estate_effect = yes	
+	}
+
+	option = {
+		name = br_ere_resistance_events.77.a
+		show_as_tooltip = {
+			create_international_organization = {
+				type = international_organization_type:crusade
+				target = scope:jihad_target
+			}
+			every_in_list = {
+				list = jihad_list
+				trigger_event_silently = br_ere_resistance_events.72
+				custom_tooltip = br_ere_resistance_events.71.a.tt
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.78 = { #Romans Victorious
+	type = country_event
+	title = br_ere_resistance_events.78.title
+	desc = br_ere_resistance_events.78.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.78.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.79 = { #Romans Defeated
+	type = country_event
+	title = br_ere_resistance_events.79.title
+	desc = br_ere_resistance_events.79.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.79.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+
+
+################ Jihad for Tunis ################
+
+br_ere_resistance_events.80 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.80.title
+	desc = br_ere_resistance_events.80.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	dynamic_historical_event = {
+		tag = TUN
+		tag = MOR
+		tag = ADU
+		from = 1356.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_ruler = yes
+		at_war = no
+		country_exists = c:BYZ
+		c:BYZ = {
+			owns = location:tunis
+			has_ruler = yes
+			at_war = no
+			NOT = {
+				has_truce_with = ROOT
+			}
+		}
+		religion = religion:sunni
+		is_valid_target_for_jihad = yes
+	}
+	immediate = {
+		c:BYZ = {
+			save_scope_as = jihad_target
+			ruler = {
+				save_scope_as = roman_ruler
+			}
+		}
+		c:TUN ?= {
+			add_to_list = jihad_list
+		}
+		c:ADU ?= {
+			add_to_list = jihad_list
+		}
+		c:MOR ?= {
+			add_to_list = jihad_list
+		}
+		c:TLE ?= {
+			add_to_list = jihad_list
+		}
+		c:MAL ?= {
+			add_to_list = jihad_list
+		}
+		c:KBO ?= {
+			add_to_list = jihad_list
+		}
+		c:MAM ?= {
+			add_to_list = jihad_list
+		}
+		c:BQA ?= {
+			add_to_list = jihad_list
+		}
+		
+		ruler = {
+			save_scope_as = jihad_leader
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.80.a
+		historical_option = yes
+		set_global_variable = {
+			name = crusade_location_target
+			value = location:tunis
+		}
+		create_international_organization = {
+			type = international_organization_type:jihad
+			target = scope:jihad_target
+			hidden_effect = {
+				add_country_to_international_organization = prev
+				set_leader_country = prev
+				save_scope_as = target_jihad
+			}
+		}
+
+		hidden_effect = {
+			scope:jihad_target = {
+				random_current_war = {
+					limit = {
+						OR = {
+							attacker_leader = ROOT
+							defender_leader = ROOT
+						}
+					}
+					save_scope_as = jihad_war
+				}
+			}
+			scope:target_jihad = {
+				set_variable = holy_league_renaming
+			}
+			if = {
+				limit = { exists = scope:jihad_war }
+				scope:jihad_war = {
+					set_variable = jihad_war_jerusalem
+				}
+			}
+		}
+
+		every_in_list = {
+			list = jihad_list
+			trigger_event_silently = br_ere_resistance_events.2
+			custom_tooltip = br_ere_resistance_events.80.a.tt
+		}
+		
+		c:BYZ ?= {
+			trigger_event_non_silently = br_ere_resistance_events.8
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.80.b
+	
+		add_prestige = prestige_severe_penalty
+	}
+}
+
+# Call of the Jihad
+br_ere_resistance_events.81 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.81.title
+	desc = br_ere_resistance_events.81.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:burghers_estate }
+		save_scope_as = target_country
+		ruler_or_regent = {
+			save_scope_as = target_ruler
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.81.a
+		historical_option = yes
+		join_war_as_attacker = { war = scope:jihad_war }
+		add_prestige = prestige_mild_bonus
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.3
+			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_allied_with = { target = c:BYZ }
+			}
+			modifier = {
+				factor = 0
+				c:MAM = { is_rival_of = root }
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.81.b
+	
+		add_prestige = prestige_severe_penalty
+		
+		c:MAM = {
+			trigger_event_non_silently = br_ere_resistance_events.4
+			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+		}
+	}
+}
+
+br_ere_resistance_events.82 = { #Country Accepted the Call
+	type = country_event
+	title = br_ere_resistance_events.82.title
+	desc = br_ere_resistance_events.82.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:clergy background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.82.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
+				join_war_as_attacker = { war = scope:jihad_war }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.83 = { #Country Refused the Call
+	type = country_event
+	title = br_ere_resistance_events.83.title
+	desc = br_ere_resistance_events.83.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.83.a
+		show_as_tooltip = {
+			scope:target_country = {
+				add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.84 = { #Jihad Victorious
+	type = country_event
+	title = br_ere_resistance_events.84.title
+	desc = br_ere_resistance_events.84.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.84.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.85 = { #Jihad Defeated
+	type = country_event
+	title = br_ere_resistance_events.85.title
+	desc = br_ere_resistance_events.85.desc
+	outcome = neutral
+	
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.85.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+br_ere_resistance_events.86 = { #Roman Informative Event about the Jihad
+	type = country_event
+	title = br_ere_resistance_events.86.title
+	desc = br_ere_resistance_events.86.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+	immediate = {
+		event_illustration_government_estate_effect = yes	
+	}
+
+	option = {
+		name = br_ere_resistance_events.86.a
+		show_as_tooltip = {
+			create_international_organization = {
+				type = international_organization_type:crusade
+				target = scope:jihad_target
+			}
+			every_in_list = {
+				list = jihad_list
+				trigger_event_silently = br_ere_resistance_events.81
+				custom_tooltip = br_ere_resistance_events.80.a.tt
+			}
+		}
+	}
+}
+
+br_ere_resistance_events.87 = { #Romans Victorious
+	type = country_event
+	title = br_ere_resistance_events.87.title
+	desc = br_ere_resistance_events.87.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.87.a
+		add_prestige = prestige_severe_bonus
+		add_army_tradition = army_tradition_severe_bonus
+	}
+}
+
+br_ere_resistance_events.88 = { #Romans Defeated
+	type = country_event
+	title = br_ere_resistance_events.88.title
+	desc = br_ere_resistance_events.88.desc
+	outcome = neutral
+	
+	fire_only_once = yes
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_ere_resistance_events.88.a
+		add_prestige = prestige_severe_penalty
+		add_army_tradition = army_tradition_severe_penalty
+	}
+}
+
+
+############################## Balkans ##############################
+
+br_ere_resistance_events.100 = { #Bulgarian-Roman Wars
+	type = country_event
+	title = br_ere_resistance_events.100.title
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					has_local_variable = bul_won_against_romans
 				}
-				desc = br_ere_resistance_events.70.desc_victory
+				desc = br_ere_resistance_events.100.desc_victory
 			}
 			triggered_desc = {
 				trigger = {
 					has_local_variable = bul_lost_against_romans
 				}
-				desc = br_ere_resistance_events.70.desc_defeat
+				desc = br_ere_resistance_events.100.desc_defeat
 			}
 		}
 	}
@@ -1632,13 +2736,13 @@ br_ere_resistance_events.70 = { #Bulgarian-Roman Wars
 	}
 	
 	option = {
-		name = br_ere_resistance_events.70.a
+		name = br_ere_resistance_events.100.a
 		historical_option = yes
 		change_societal_value = { type = offensive_vs_defensive value = societal_value_move_to_right }
 	}
 	
 	option = {
-		name = br_ere_resistance_events.70.b
+		name = br_ere_resistance_events.100.b
 		change_societal_value = { type = offensive_vs_defensive value = societal_value_move_to_left }
 	}
 }

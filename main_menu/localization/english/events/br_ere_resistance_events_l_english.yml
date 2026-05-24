@@ -142,10 +142,137 @@
  br_ere_resistance_events.61.desc: "Diplomatic envoys from Egypt have arrived at our court bearing gifts and proposals of friendship. Though differences of faith and past conflicts remain, their rulers speak openly of the growing threat posed by the Roman Empire and the need to preserve the balance of power in the eastern Mediterranean.\n\nSome at court view this outreach with suspicion, while others argue that cooperation with Egypt may prove useful in containing Roman ambitions."
  br_ere_resistance_events.61.a: "Strange times make for strange alliances."
 
- br_ere_resistance_events.70.title: "The Bulgarian-Roman Struggle"
- br_ere_resistance_events.70.desc_victory: "The long struggle between Bulgaria and the Romans has once again entered the minds of the people and nobility alike. Tales of past victories against the Empire are celebrated throughout the realm, and many look back proudly upon the days when Bulgarian rulers humbled the emperors of Constantinople.\n\nThough the Romans remain powerful, confidence grows within the kingdom that Bulgaria can once again defend its independence and challenge imperial ambitions in the Balkans."
- br_ere_resistance_events.70.desc_defeat: "The shadow of the Roman Empire once more looms over Bulgaria. Memories of past defeats and lost wars against Constantinople continue to haunt the kingdom, while many fear that the Romans still seek to dominate the Balkans as they once did.\n\nAmong the nobility and military alike, fierce debate has emerged over how Bulgaria should confront the growing imperial threat."
- br_ere_resistance_events.70.a: "Bulgaria must stand strong against the Romans."
- br_ere_resistance_events.70.b: "We should avoid provoking the Empire."
+ ################ Jihad for Jerusalem ################
+
+ br_ere_resistance_events.62.title: "A Call for Jihad"
+ br_ere_resistance_events.62.desc: "News of the fall of al-Quds to the Romans has spread across the lands of Islam like wildfire. The banners of the Cross now fly over Jerusalem, and the faithful cry out for vengeance and liberation. The ulema proclaim that it is the sacred duty of every righteous ruler to take up arms against the Roman occupiers and restore the Holy City to Muslim rule.\n\nFrom Cairo to Anatolia, from Arabia to the Maghreb, messengers carry the summons for a great jihad. Should we answer the call and lead the faithful against the Romans?"
+ br_ere_resistance_events.62.a: "We shall lead the Jihad for Jerusalem!"
+ br_ere_resistance_events.62.a.tt: "The Islamic world shall be summoned to war against the Romans."
+ br_ere_resistance_events.62.b: "We cannot commit to such a struggle."
+
+ br_ere_resistance_events.63.title: "The Call of Jihad"
+ br_ere_resistance_events.63.desc: "Messengers bearing solemn proclamations have arrived from [SCOPE.sCharacter('jihad_leader').GetName], calling upon the rulers of Islam to unite in a great jihad for the liberation of Jerusalem. The Holy City has fallen under Roman domination, and the ulema denounce this humiliation as an affront to the entire Ummah.\n\nThe faithful gather in mosques to hear fiery sermons demanding action, while warriors and volunteers flock beneath banners promising glory and divine favor. Shall we answer the call and join the struggle?"
+ br_ere_resistance_events.63.a: "Jerusalem must be liberated!"
+ br_ere_resistance_events.63.b: "This is not our war."
+
+ br_ere_resistance_events.64.title: "The Faithful Rally to the Cause"
+ br_ere_resistance_events.64.desc: "[SCOPE.sCountry('target_country').GetName] has answered our summons and pledged its strength to the liberation of Jerusalem. Across their lands, imams proclaim the righteousness of the struggle while soldiers and volunteers gather beneath the banners of jihad.\n\nThe unity of the faithful grows stronger with every realm that joins our cause."
+ br_ere_resistance_events.64.a: "Together, we shall reclaim the Holy City."
+
+ br_ere_resistance_events.65.title: "A Shameful Refusal"
+ br_ere_resistance_events.65.desc: "[SCOPE.sCountry('target_country').GetName] has refused our call to jihad. Though Jerusalem remains in the hands of the Romans, their rulers have chosen caution and comfort over sacred duty.\n\nMany among the faithful denounce this cowardice, and whispers spread that they have abandoned the cause of Islam in its hour of need."
+ br_ere_resistance_events.65.a: "They shall be remembered for their weakness."
+
+ br_ere_resistance_events.66.title: "Jerusalem Liberated"
+ br_ere_resistance_events.66.desc: "Praise be to God! The armies of jihad have triumphed, and Jerusalem has been wrested from Roman hands. The banners of Islam once again fly above the Holy City as the faithful rejoice across the Muslim world.\n\nMosques resound with prayers of thanksgiving, and our victory shall be remembered as a glorious triumph for the Ummah."
+ br_ere_resistance_events.66.a: "God has granted us victory!"
+
+ br_ere_resistance_events.67.title: "The Jihad Defeated"
+ br_ere_resistance_events.67.desc: "The campaign to liberate Jerusalem has ended in bitter defeat. The armies of Islam have been scattered, and the Romans remain entrenched within the Holy City.\n\nAcross the Muslim world, sorrow and outrage spread among the faithful. Many question how such a sacred struggle could have failed, while others call for renewed efforts in the future."
+ br_ere_resistance_events.67.a: "A dark day for the faithful."
+
+ br_ere_resistance_events.68.title: "The Islamic World Declares Jihad"
+ br_ere_resistance_events.68.desc: "Word has reached the Imperial Court that the Muslim rulers have proclaimed a great jihad for the recovery of Jerusalem. Fiery sermons denouncing Roman rule over the Holy City echo throughout their realms, and armies gather beneath green banners in preparation for war.\n\nThe possession of Jerusalem has elevated the prestige of the Empire, but it has also united the faithful of Islam against us."
+ br_ere_resistance_events.68.a: "Then let them come."
+
+ br_ere_resistance_events.69.title: "The Romans Triumphant"
+ br_ere_resistance_events.69.desc: "Against the combined might of the Islamic world, the Empire has emerged victorious. The jihad has been broken, its armies scattered before Roman steel and resolve.\n\nJerusalem remains firmly under Imperial rule, and throughout Christendom the triumph is hailed as proof of divine favor toward the Roman Empire."
+ br_ere_resistance_events.69.a: "The Holy City remains ours."
+
+ br_ere_resistance_events.70.title: "Jerusalem Lost"
+ br_ere_resistance_events.70.desc: "Despite the valor of our armies, the jihad has succeeded in its purpose. Jerusalem has fallen from Roman hands, and the banners of Islam once again rise above the Holy City.\n\nThe loss has shaken the prestige of the Empire and emboldened our enemies, while many within the court lament that God has withdrawn His favor from our cause."
+ br_ere_resistance_events.70.a: "A grievous humiliation."
+ 
+ ################ Jihad for Alexandria ################
+
+ br_ere_resistance_events.71.title: "A Call for Jihad"
+ br_ere_resistance_events.71.desc: "The fall of Alexandria to the Romans has sent shockwaves throughout the Muslim world. Once among the greatest centers of Islamic learning and trade, the city now stands beneath the banners of the Empire. The ulema proclaim that such a humiliation cannot be tolerated, and calls for jihad echo from mosque to mosque.\n\nRulers across the lands of Islam are urged to unite their strength and cast the Romans from Egypt before they entrench themselves further along the Nile. Shall we lead the faithful in this sacred struggle?"
+ br_ere_resistance_events.71.a: "We shall lead the Jihad for Alexandria!"
+ br_ere_resistance_events.71.a.tt: "The Islamic world shall be summoned to war against the Romans."
+ br_ere_resistance_events.71.b: "We cannot commit to such a struggle."
+
+ br_ere_resistance_events.72.title: "The Call of Jihad"
+ br_ere_resistance_events.72.desc: "Envoys from [SCOPE.sCharacter('jihad_leader').GetName] have arrived bearing a solemn declaration of jihad against the Romans. Alexandria, jewel of Egypt and one of the great cities of Islam, has fallen under Imperial occupation.\n\nThe ulema denounce the loss as an outrage against the faithful, while volunteers flock to the mosques and barracks to prepare for holy war. The call has gone out across the Islamic world for every righteous ruler to take up arms against the invaders."
+ br_ere_resistance_events.72.a: "Alexandria shall be liberated!"
+ br_ere_resistance_events.72.b: "We shall not join this war."
+
+ br_ere_resistance_events.73.title: "The Faithful Answer the Call"
+ br_ere_resistance_events.73.desc: "[SCOPE.sCountry('target_country').GetName] has pledged its banners to the jihad for Alexandria. Their rulers have declared that the city must not remain in Roman hands, and preparations for war are already underway.\n\nThe unity of the faithful strengthens as more realms rally to the liberation of Egypt."
+ br_ere_resistance_events.73.a: "Together, we shall drive out the Romans."
+
+ br_ere_resistance_events.74.title: "A Failure of Faith"
+ br_ere_resistance_events.74.desc: "[SCOPE.sCountry('target_country').GetName] has refused to join the jihad for Alexandria. Though Egypt lies threatened beneath Roman domination, they have chosen inaction over solidarity with the faithful.\n\nTheir refusal has provoked outrage among many clerics and warriors, who condemn their cowardice and indifference."
+ br_ere_resistance_events.74.a: "Their hesitation dishonors them."
+
+ br_ere_resistance_events.75.title: "Alexandria Restored to Islam"
+ br_ere_resistance_events.75.desc: "Victory belongs to the faithful! The armies of jihad have triumphed, and Alexandria has been liberated from Roman rule. Across the Islamic world, celebrations erupt as scholars, clerics, and common believers alike rejoice at the restoration of one of Islam’s great cities.\n\nThe triumph is hailed as proof that the faithful, united in purpose, can overcome even the might of the Roman Empire."
+ br_ere_resistance_events.75.a: "God has granted us victory!"
+
+ br_ere_resistance_events.76.title: "The Jihad Broken"
+ br_ere_resistance_events.76.desc: "The jihad for Alexandria has ended in defeat. Despite the efforts of the faithful, the Roman armies have held firm and crushed the coalition assembled against them.\n\nThe loss has cast a shadow across the Muslim world, where many mourn the failure to reclaim one of Islam’s greatest cities from Imperial occupation."
+ br_ere_resistance_events.76.a: "A bitter defeat."
+
+ br_ere_resistance_events.77.title: "The Islamic World Declares Jihad"
+ br_ere_resistance_events.77.desc: "Reports from across the Muslim world confirm that the rulers of Islam have proclaimed a great jihad against the Empire for the recovery of Alexandria. The city’s capture has inflamed passions from Arabia to the Maghreb, with clerics denouncing Roman rule over Egypt as an intolerable humiliation.\n\nArmies gather beneath green banners as the faithful prepare for a great struggle against Imperial authority in the East."
+ br_ere_resistance_events.77.a: "Then they shall learn the strength of Rome."
+
+ br_ere_resistance_events.78.title: "The Romans Triumphant"
+ br_ere_resistance_events.78.desc: "The jihad for Alexandria has failed. The armies of Islam have been repelled, and the Empire stands victorious against all who sought to cast it from Egypt.\n\nAlexandria remains firmly under Roman control, and throughout the Empire the triumph is celebrated as proof of Roman endurance and divine favor."
+ br_ere_resistance_events.78.a: "Egypt remains under Imperial rule."
+
+ br_ere_resistance_events.79.title: "Alexandria Lost"
+ br_ere_resistance_events.79.desc: "The jihad has succeeded where our armies failed. Alexandria has been lost, and the banners of Islam once more fly above the great city.\n\nThe defeat has dealt a severe blow to Imperial prestige and shattered Roman authority in Egypt, while our enemies rejoice at the reversal of our fortunes."
+ br_ere_resistance_events.79.a: "A grave humiliation for the Empire."
+
+ ################ Jihad for Tunis ################
+
+ br_ere_resistance_events.80.title: "A Call for Jihad"
+ br_ere_resistance_events.80.desc: "The conquest of Tunis by the Romans has shaken the western lands of Islam. Once a great stronghold of Muslim power in Ifriqiya, the city now lies beneath Imperial banners, threatening both the Maghreb and the sea lanes of the western Mediterranean.\n\nThe ulema proclaim that the faithful must unite to expel the Romans before they tighten their grip upon North Africa. From al-Andalus to Morocco and beyond, rulers are urged to answer the summons for jihad."
+ br_ere_resistance_events.80.a: "We shall lead the Jihad for Tunis!"
+ br_ere_resistance_events.80.a.tt: "The Islamic world shall be summoned to war against the Romans."
+ br_ere_resistance_events.80.b: "We cannot commit to such a struggle."
+
+ br_ere_resistance_events.81.title: "The Call of Jihad"
+ br_ere_resistance_events.81.desc: "Messengers from [SCOPE.sCharacter('jihad_leader').GetName] have arrived with a proclamation calling the faithful to jihad against the Romans. Tunis, one of the great cities of Ifriqiya and a vital bastion of Islam in the west, has fallen under Imperial occupation.\n\nClerics and warriors alike demand action, warning that Roman domination in North Africa threatens all Muslim realms along the western Mediterranean. Shall we answer the call?"
+ br_ere_resistance_events.81.a: "The Romans must be driven from Ifriqiya!"
+ br_ere_resistance_events.81.b: "We shall not join this struggle."
+
+ br_ere_resistance_events.82.title: "The Faithful Unite"
+ br_ere_resistance_events.82.desc: "[SCOPE.sCountry('target_country').GetName] has pledged its support to the jihad for Tunis. Their rulers have vowed to stand beside the faithful against Roman expansion into North Africa.\n\nWith every new ally, the armies assembled for the liberation of Ifriqiya grow larger and more determined."
+ br_ere_resistance_events.82.a: "Together, we shall cast them out."
+
+ br_ere_resistance_events.83.title: "A Shameful Refusal"
+ br_ere_resistance_events.83.desc: "[SCOPE.sCountry('target_country').GetName] has refused to answer the summons for jihad. Though Tunis remains under Roman occupation, they have chosen caution over solidarity with the faithful.\n\nTheir refusal has sparked anger among clerics and soldiers alike, many of whom denounce them for abandoning the cause of Islam in the west."
+ br_ere_resistance_events.83.a: "They have failed the faithful."
+
+ br_ere_resistance_events.84.title: "Tunis Liberated"
+ br_ere_resistance_events.84.desc: "The armies of jihad have triumphed, and Tunis has been reclaimed from Roman rule. Across the Maghreb and beyond, celebrations erupt as the faithful rejoice at the liberation of one of North Africa’s greatest cities.\n\nThe victory is hailed as a great triumph for Islam and a crushing blow against Roman ambitions in the western Mediterranean."
+ br_ere_resistance_events.84.a: "God has granted us victory!"
+
+ br_ere_resistance_events.85.title: "The Jihad Defeated"
+ br_ere_resistance_events.85.desc: "The campaign to liberate Tunis has ended in defeat. Despite the efforts of the faithful, the Roman armies have held firm and crushed the coalition assembled against them.\n\nThe loss has weakened Muslim influence in North Africa and emboldened the Empire’s position in the western Mediterranean."
+ br_ere_resistance_events.85.a: "A bitter humiliation."
+
+ br_ere_resistance_events.86.title: "The Islamic World Declares Jihad"
+ br_ere_resistance_events.86.desc: "The rulers of the Muslim world have proclaimed a great jihad against the Empire for the recovery of Tunis. The loss of the city has inflamed passions across the Maghreb and al-Andalus, where clerics denounce Roman expansion into North Africa as a grave threat to Islam.\n\nArmies gather across the western Islamic world, preparing for war against the Empire and its growing ambitions in the Mediterranean."
+ br_ere_resistance_events.86.a: "The Empire shall endure."
+
+ br_ere_resistance_events.87.title: "The Romans Triumphant"
+ br_ere_resistance_events.87.desc: "The jihad for Tunis has failed. The armies of Islam have been defeated, and the Empire has secured its hold over Ifriqiya.\n\nThroughout the Roman world, the victory is celebrated as proof that Imperial strength can withstand even the combined might of the western Muslim realms."
+ br_ere_resistance_events.87.a: "North Africa remains ours."
+
+ br_ere_resistance_events.88.title: "Tunis Lost"
+ br_ere_resistance_events.88.desc: "The jihad has succeeded in its purpose. Tunis has fallen from Roman control, and the banners of Islam once more rise above the city.\n\nThe defeat has shattered Roman ambitions in the western Mediterranean and greatly weakened Imperial authority in North Africa."
+ br_ere_resistance_events.88.a: "A grievous setback for the Empire."
+
+
+
+
+
+ br_ere_resistance_events.100.title: "The Bulgarian-Roman Struggle"
+ br_ere_resistance_events.100.desc_victory: "The long struggle between Bulgaria and the Romans has once again entered the minds of the people and nobility alike. Tales of past victories against the Empire are celebrated throughout the realm, and many look back proudly upon the days when Bulgarian rulers humbled the emperors of Constantinople.\n\nThough the Romans remain powerful, confidence grows within the kingdom that Bulgaria can once again defend its independence and challenge imperial ambitions in the Balkans."
+ br_ere_resistance_events.100.desc_defeat: "The shadow of the Roman Empire once more looms over Bulgaria. Memories of past defeats and lost wars against Constantinople continue to haunt the kingdom, while many fear that the Romans still seek to dominate the Balkans as they once did.\n\nAmong the nobility and military alike, fierce debate has emerged over how Bulgaria should confront the growing imperial threat."
+ br_ere_resistance_events.100.a: "Bulgaria must stand strong against the Romans."
+ br_ere_resistance_events.100.b: "We should avoid provoking the Empire."
 
 

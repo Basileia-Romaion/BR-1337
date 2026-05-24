@@ -61,6 +61,24 @@ br_latin_wars.1 = {
 				add_to_list = list_of_nations_to_invite_to_crusade
 			}
 		}
+		c:AQN ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		c:GEN ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
+		c:NAV ?= {
+			if = {
+				limit = { religion = religion:catholic }
+				add_to_list = list_of_nations_to_invite_to_crusade
+			}
+		}
 		save_scope_as = papal_state
 	}
 
