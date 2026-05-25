@@ -13,12 +13,13 @@ REPLACE_OR_CREATE:cappadocian_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		pontic_greek_culture = positive
 		anatolian_greek_culture = positive #BR EDIT
 		armenikon_greek_culture = positive
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
+		armenian_culture = positive
 	}
 	country_modifier = {
 		army_heavy_infantry_power = 0.1
@@ -49,6 +50,9 @@ REPLACE_OR_CREATE:greek_culture = {
 		syrenikoi_greek_culture = positive
 		armenikon_greek_culture = positive
 
+		romanyoti = positive
+		armenian_culture = positive
+
 		sclavene = negative
 		bulgarian = negative
 
@@ -74,7 +78,7 @@ REPLACE_OR_CREATE:griko_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred #BR EDIT
+		greek_culture = positive
 		african_greek_culture = kindred
 		italiotai_culture = kindred
 		neapolitan = positive
@@ -100,7 +104,7 @@ italiotai_culture = {
 	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		griko_culture = kindred
 		#sicilian = positive
 		neapolitan = positive
@@ -123,8 +127,8 @@ REPLACE_OR_CREATE:pontic_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
-		rhos_culture = kindred
+		greek_culture = positive
+		rhos_culture = positive
 		cappadocian_greek_culture = positive
 		anatolian_greek_culture = positive
 		gothic_culture = positive
@@ -150,9 +154,9 @@ REPLACE_OR_CREATE:gothic_culture = {
 	tags = { german_gfx east_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		rhos_culture = kindred
-		pontic_greek_culture = kindred
+		pontic_greek_culture = positive
 		anatolian_greek_culture = positive
 	}
 	country_modifier = {
@@ -180,6 +184,7 @@ anatolian_greek_culture = { #BR addition
 		pontic_greek_culture = positive
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
+		armenian_culture = positive
 	}
 
 	country_modifier = {
@@ -203,7 +208,7 @@ varangian = {
 	tags = { norwegian_gfx east_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 	
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		rhos_culture = kindred
 	}
 
@@ -227,7 +232,7 @@ indikes_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx middle_east_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		aegyptian_greek_culture = kindred
 		coptic_culture = kindred
 	}
@@ -251,7 +256,7 @@ aegyptian_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx middle_east_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		coptic_culture = kindred
 		african_greek_culture = kindred
 		indikes_greek_culture = kindred
@@ -274,7 +279,7 @@ syrenikoi_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx middle_east_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		kilikioi_greek_culture = kindred
 		aegyptian_greek_culture = positive
 		cappadocian_greek_culture = positive
@@ -297,7 +302,7 @@ african_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx middle_east_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		aegyptian_greek_culture = kindred
 		griko_culture = kindred
 	}
@@ -317,7 +322,7 @@ illyrikoi_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		dalmatian = positive
 		aromanian = positive
 		albanian = positive
@@ -338,11 +343,12 @@ kilikioi_greek_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		syrenikoi_greek_culture = kindred
 		armenikon_greek_culture = positive
 		cappadocian_greek_culture = positive
 		anatolian_greek_culture = positive
+		armenian_culture = positive
 	}
 	country_modifier = {
 		
@@ -363,9 +369,9 @@ rhos_culture = {
 	tags = { greek_gfx russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
 	
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		gothic_culture = kindred
-		pontic_greek_culture = kindred
+		pontic_greek_culture = positive
 		varangian = kindred
 		ruthenian = positive
 		muscovite = positive
@@ -393,7 +399,7 @@ boulgaroi = {
 
 	opinions = {
 		bulgarian = positive
-		greek_culture = kindred
+		greek_culture = positive
 	}
 	country_modifier = {
 		global_max_rgo_size_modifier_in_rural = 0.1
@@ -412,12 +418,13 @@ armenikon_greek_culture = { #BR addition
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = kindred
+		greek_culture = positive
 		cappadocian_greek_culture = kindred
 		anatolian_greek_culture = kindred
 		pontic_greek_culture = kindred
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
+		armenian_culture = positive
 	}
 	country_modifier = {
 		land_unit_attrition = -0.25

@@ -31,6 +31,8 @@ mozarabic = {
 	opinions = {
 		andalusi = positive
 		sephardi = positive
+		castilian = positive
+		aragonese = positive
 	}
 
 	location_modifier = {
@@ -50,8 +52,8 @@ arab_sicilian = {
 	tags = { maghrebi_gfx middle_east_gfx west_mediterranean_gfx mediterranean_gfx }
 
 	opinions = {
+		tunisian = positive
 		andalusi = positive
-		maghrebi = kindred
 	}
 	
 	culture_groups = {

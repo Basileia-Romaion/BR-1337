@@ -21,6 +21,14 @@ REPLACE_OR_CREATE:turkish_culture = { #https://en.wikipedia.org/wiki/Turkish_peo
 		global_levy_size_modifier = 0.1
 	}
 	
+	goods_demand_modifier = {
+		tea = 2
+		saffron = 1.5
+		legumes = 1.2
+		livestock = 1.5
+		olives = 1.2
+	}
+	
 	use_patronym = yes
 
 	dynasty_name_type = descendant	
