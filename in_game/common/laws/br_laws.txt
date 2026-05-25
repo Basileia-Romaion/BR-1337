@@ -220,6 +220,7 @@ INJECT:piracy_law = {
 br_military_frontier = {
 	law_category = military
 	potential = {
+		culture = { has_culture_group = culture_group:roman_group }
 		#has_unlocked_law_trigger = { type = br_military_frontier }
 	}
 
