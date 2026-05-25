@@ -92,6 +92,14 @@ br_lucky_republic_buff = {
 	aggressiveness_modifier = 0.5
 }
 
+br_assimilation_culture_buff = {
+	game_data = {
+		category = country
+	}
+	global_pop_assimilation_speed = 0.01 #10
+	global_pop_assimilation_speed_modifier = 0.5
+}
+
 #replace vanilla for better balance
 
 REPLACE_OR_CREATE:restored_the_imperial_capital_modifier = {
