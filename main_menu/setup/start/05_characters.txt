@@ -1232,6 +1232,7 @@ character_db={
 		ruler_trait = "righteous"
 		fertility = 80
 		adm = 80 dip = 66 mil = 85
+		health_trait = healthy
 	}
 	
 	eng_edward_the_black_prince = {		
@@ -1284,6 +1285,7 @@ character_db={
 		birth = london
 		dynasty = plantagenet_dynasty
 		tag = NSE #ENG
+		child_trait = child_intelligent
 	}
 
 	eng_thomas_of_brotherton = {
@@ -1381,6 +1383,7 @@ character_db={
 		dynasty = plantagenet_dynasty
 		father = eng_edmund_of_woodstock
 		tag = NSE #ENG
+		child_trait = child_ambitious
 	}
 
 	eng_john_of_kent = {
@@ -4554,7 +4557,7 @@ character_db={
 		tag = TRY
 	}
 	try_connor_o_donnell_wife = {
-		first_name = { name = name_joanna } # unknown
+		first_name = { name = "random" } # unknown
 		culture = irish
 		religion = catholic
 		father = try_hugh_o_donnell
@@ -4636,7 +4639,7 @@ character_db={
 		tag = CNN
 	}
 	cnn_toirdelbach_o_conchobair_wife = {
-		first_name = { name = name_finnuala }
+		first_name = { name = "random" }
 		culture = irish
 		religion = catholic
 		birth_date = 1297.1.1 # unknown
@@ -4681,7 +4684,7 @@ character_db={
 	}
 	
 	cma_joyce_1 = {
-		first_name = { name = name_thomas }
+		first_name = { name = "random" }
 		culture = anglo_irish
 		religion = catholic
 		birth_date = 1300.1.1 # unknown
@@ -4690,7 +4693,7 @@ character_db={
 		tag = CMA
 	}
 	cma_joyce_2 = {
-		first_name = { name = name_james }
+		first_name = { name = "random" }
 		culture = anglo_irish
 		religion = catholic
 		father = cma_joyce_1
@@ -5753,6 +5756,7 @@ character_db={
 		nickname = { name = Caligula }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 20 dip = 20 mil = 20
 		birth_date = 12.8.31
 		death_date = 41.1.24
@@ -5768,6 +5772,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 30 dip = 40 mil = 20
 		birth_date = 37.12.15
 		death_date = 68.6.9
@@ -5781,9 +5786,10 @@ character_db={
 
 
 	byz_otho = {
-		first_name = { name = name_otho }
+		first_name = { name = name_otto }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 35 dip = 50 mil = 45
 		birth_date = 32.4.28
 		death_date = 69.4.16
@@ -5795,6 +5801,7 @@ character_db={
 		first_name = { name = name_vitellius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 20 dip = 30 mil = 30
 		birth_date = 15.9.7
 		death_date = 69.12.22
@@ -5810,6 +5817,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 70 dip = 60 mil = 70
 		birth_date = 9.11.17
 		death_date = 79.6.23
@@ -5824,6 +5832,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 60 dip = 70 mil = 70
 		birth_date = 39.12.30
 		death_date = 81.9.13
@@ -5839,6 +5848,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 35 mil = 60
 		birth_date = 51.10.24
 		death_date = 96.9.18
@@ -5855,6 +5865,7 @@ character_db={
 		first_name = { name = name_nerva }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 70 mil = 30
 		birth_date = 30.11.8
 		death_date = 98.1.25
@@ -5869,6 +5880,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 65 dip = 65 mil = 80
 		birth_date = 53.9.18
 		death_date = 117.8.9
@@ -5884,6 +5896,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 75 dip = 70 mil = 60
 		birth_date = 76.1.24
 		death_date = 138.7.10
@@ -5898,6 +5911,7 @@ character_db={
 		first_name = { name = name_antoninus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 75 dip = 70 mil = 40
 		birth_date = 86.9.19
 		death_date = 161.3.7
@@ -5908,10 +5922,10 @@ character_db={
 	}
 
 	byz_marcus_aurelius = {
-		first_name = { name = name_marcus }
-		last_name = { name = name_aurelius }
+		first_name = { name = name_mark.name_aurelius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 65 dip = 70 mil = 60
 		birth_date = 121.4.26
 		death_date = 180.3.17
@@ -5927,6 +5941,7 @@ character_db={
 		last_name = { name = name_aurelius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 40 dip = 50 mil = 55
 		birth_date = 130.12.15
 		death_date = 169.2.1
@@ -5941,6 +5956,7 @@ character_db={
 		last_name = { name = name_aurelius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 20 dip = 20 mil = 30
 		birth_date = 161.8.31
 		death_date = 192.12.31
@@ -5957,6 +5973,7 @@ character_db={
 		first_name = { name = name_pertinax }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 45 mil = 60
 		birth_date = 126.8.1
 		death_date = 193.3.28
@@ -5970,6 +5987,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 35 dip = 35 mil = 35
 		birth_date = 133.1.30
 		death_date = 193.6.1
@@ -5984,6 +6002,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 60 dip = 50 mil = 80
 		birth_date = 145.4.11
 		death_date = 211.2.4
@@ -5999,6 +6018,7 @@ character_db={
 		nickname = { name = Caracalla }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 25 dip = 30 mil = 60
 		birth_date = 188.4.4
 		death_date = 217.4.8
@@ -6014,6 +6034,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 40 dip = 45 mil = 35
 		birth_date = 189.3.7
 		death_date = 211.12.26
@@ -6027,6 +6048,7 @@ character_db={
 		first_name = { name = name_macrinus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 45 dip = 50 mil = 50
 		birth_date = 165.1.1
 		death_date = 218.6.8
@@ -6039,6 +6061,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 10 dip = 20 mil = 10
 		birth_date = 204.1.1
 		death_date = 222.3.11
@@ -6053,6 +6076,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 60 mil = 40
 		birth_date = 208.10.1
 		death_date = 235.3.19
@@ -6069,6 +6093,7 @@ character_db={
 		last_name = { name = name_julius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 30 dip = 20 mil = 65
 		birth_date = 173.1.1
 		death_date = 238.4.1
@@ -6081,6 +6106,7 @@ character_db={
 		first_name = { name = name_gordian }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 55 mil = 45
 		birth_date = 159.1.1
 		death_date = 238.4.12
@@ -6092,6 +6118,7 @@ character_db={
 		first_name = { name = name_gordian }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 45 dip = 45 mil = 50
 		birth_date = 192.1.1
 		death_date = 238.4.12
@@ -6104,6 +6131,7 @@ character_db={
 		first_name = { name = name_pupienus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 55 mil = 60
 		birth_date = 164.1.1
 		death_date = 238.7.29
@@ -6115,6 +6143,7 @@ character_db={
 		first_name = { name = name_balbinus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 60 mil = 40
 		birth_date = 166.1.1
 		death_date = 238.7.29
@@ -6126,6 +6155,7 @@ character_db={
 		first_name = { name = name_gordian }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 35 dip = 40 mil = 45
 		birth_date = 225.1.20
 		death_date = 244.2.25
@@ -6138,6 +6168,7 @@ character_db={
 		first_name = { name = name_philip }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 55 mil = 55
 		birth_date = 204.1.1
 		death_date = 249.9.1
@@ -6150,6 +6181,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 45 mil = 60
 		birth_date = 201.1.1
 		death_date = 251.7.1
@@ -6162,6 +6194,7 @@ character_db={
 		first_name = { name = name_trebonianus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 50
 		birth_date = 206.1.1
 		death_date = 253.8.1
@@ -6174,6 +6207,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 45 mil = 55
 		birth_date = 200.1.1
 		death_date = 264.1.1 # died in Persian captivity
@@ -6186,6 +6220,7 @@ character_db={
 		last_name = { name = name_aurelius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 55 mil = 65
 		birth_date = 218.1.1
 		death_date = 268.9.1
@@ -6201,6 +6236,7 @@ character_db={
 		nickname = { name = Gothicus }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 45 mil = 70
 		birth_date = 214.5.10
 		death_date = 270.1.1
@@ -6214,6 +6250,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 40 mil = 80
 		birth_date = 214.9.9
 		death_date = 275.9.25
@@ -6227,6 +6264,7 @@ character_db={
 		last_name = { name = name_aurelius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 45 mil = 70
 		birth_date = 232.8.19
 		death_date = 282.10.1
@@ -6242,6 +6280,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 80 dip = 70 mil = 70
 		birth_date = 244.12.22
 		death_date = 311.12.3
@@ -6255,6 +6294,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 50 dip = 40 mil = 70
 		birth_date = 258.1.1
 		death_date = 311.5.1
@@ -6267,6 +6307,7 @@ character_db={
 		last_name = { name = name_valerius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 60
 		birth_date = 263.1.1
 		death_date = 325.3.1
@@ -6279,6 +6320,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = hellenism_religion
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 65
 		birth_date = 250.3.31
 		death_date = 306.7.25
@@ -6293,6 +6335,7 @@ character_db={
 		nickname = { name = nick_the_great }
 		culture = roman_culture
 		religion = orthodox # converted after Battle of Milvian Bridge, 312
+		estate = nobles_estate
 		adm = 70 dip = 65 mil = 75
 		birth_date = 272.2.27
 		death_date = 337.5.22
@@ -6308,6 +6351,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 35 mil = 55
 		birth_date = 316.2.17
 		death_date = 340.4.1
@@ -6322,6 +6366,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 55
 		birth_date = 317.8.7
 		death_date = 361.11.3
@@ -6336,6 +6381,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 50
 		birth_date = 323.1.1
 		death_date = 350.1.18
@@ -6351,6 +6397,7 @@ character_db={
 		nickname = { name = the_apostate }
 		culture = roman_culture
 		religion = hellenism_religion # reverted to Roman paganism
+		estate = nobles_estate
 		adm = 65 dip = 70 mil = 70
 		birth_date = 331.11.6
 		death_date = 363.6.26
@@ -6367,6 +6414,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 45 mil = 50
 		birth_date = 331.1.1
 		death_date = 364.2.17
@@ -6379,6 +6427,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 65
 		birth_date = 321.7.3
 		death_date = 375.11.17
@@ -6394,6 +6443,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 50
 		birth_date = 328.1.1
 		death_date = 378.8.9 # killed at Battle of Adrianople
@@ -6407,6 +6457,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 70 mil = 65
 		birth_date = 347.1.11
 		death_date = 395.1.17
@@ -6421,6 +6472,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 40 mil = 20
 		birth_date = 377.1.1
 		death_date = 408.5.1
@@ -6436,6 +6488,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 55 mil = 30
 		birth_date = 401.4.10
 		death_date = 450.7.28
@@ -6453,6 +6506,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 65 mil = 60
 		birth_date = 396.1.1
 		death_date = 457.1.26
@@ -6467,6 +6521,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 60 mil = 45
 		birth_date = 401.1.1
 		death_date = 474.2.3
@@ -6480,6 +6535,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 65 mil = 45
 		birth_date = 425.1.1
 		death_date = 491.4.9
@@ -6493,6 +6549,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		birth_date = 467.1.1
 		death_date = 474.11.17
 		birth = constantinople
@@ -6508,6 +6565,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 75 dip = 70 mil = 50
 		birth_date = 430.1.1
 		death_date = 518.7.9
@@ -6522,6 +6580,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 60 mil = 60
 		birth_date = 450.1.1
 		death_date = 527.8.1
@@ -6535,6 +6594,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 80 dip = 75 mil = 70
 		birth_date = 482.5.11
 		death_date = 565.11.14
@@ -6550,6 +6610,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 50 mil = 40
 		birth_date = 520.1.1
 		death_date = 578.10.5
@@ -6563,6 +6624,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 55 mil = 60
 		birth_date = 535.1.1
 		death_date = 582.8.14
@@ -6577,6 +6639,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 55 mil = 65
 		birth_date = 539.8.1
 		death_date = 602.11.27
@@ -6591,6 +6654,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = roman_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 20 dip = 20 mil = 40
 		birth_date = 547.1.1
 		death_date = 610.10.5
@@ -6606,6 +6670,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 65 mil = 75
 		birth_date = 575.1.1
 		death_date = 641.2.11
@@ -6620,6 +6685,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 55
 		birth_date = 612.5.3
 		death_date = 641.5.24
@@ -6634,6 +6700,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 25 dip = 30 mil = 25
 		birth_date = 626.1.1
 		death_date = 642.1.1
@@ -6648,6 +6715,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 60
 		birth_date = 630.11.7
 		death_date = 668.9.15
@@ -6663,6 +6731,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 60 mil = 65
 		birth_date = 652.1.1
 		death_date = 685.9.14
@@ -6678,6 +6747,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 30 mil = 50
 		birth_date = 668.1.1
 		death_date = 711.12.4
@@ -6694,6 +6764,7 @@ character_db={
 		first_name = { name = name_leontios }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 35 mil = 55
 		birth_date = 660.1.1
 		death_date = 706.2.1
@@ -6706,6 +6777,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 40 mil = 55
 		birth_date = 665.1.1
 		death_date = 706.2.15
@@ -6717,6 +6789,7 @@ character_db={
 		first_name = { name = name_philippicus }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 35 dip = 30 mil = 50
 		birth_date = 670.1.1
 		death_date = 713.6.3
@@ -6728,6 +6801,7 @@ character_db={
 		first_name = { name = name_anastasius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 50 mil = 45
 		birth_date = 680.1.1
 		death_date = 721.6.1
@@ -6739,6 +6813,7 @@ character_db={
 		first_name = { name = name_theodosius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 45 mil = 40
 		birth_date = 690.1.1
 		death_date = 754.1.1 # abdicated; became a monk
@@ -6753,6 +6828,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 60 mil = 70
 		birth_date = 685.1.1
 		death_date = 741.6.18
@@ -6767,6 +6843,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 50 mil = 75
 		birth_date = 718.7.1
 		death_date = 775.9.14
@@ -6782,6 +6859,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 55 mil = 55
 		birth_date = 750.1.25
 		death_date = 780.9.8
@@ -6796,6 +6874,7 @@ character_db={
 		last_name = { name = name_flavius }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 25 dip = 30 mil = 30
 		birth_date = 771.1.14
 		death_date = 805.1.1 # blinded and deposed
@@ -6812,6 +6891,7 @@ character_db={
 		female = yes
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 60 mil = 30
 		birth_date = 752.1.1
 		death_date = 803.8.9
@@ -6828,6 +6908,7 @@ character_db={
 		first_name = { name = name_nikephoros }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 50 mil = 55
 		birth_date = 760.1.1
 		death_date = 811.7.26 # killed at Battle of Pliska
@@ -6841,6 +6922,7 @@ character_db={
 		first_name = { name = name_staurakios }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 30 dip = 30 mil = 35
 		birth_date = 778.1.1
 		death_date = 812.1.1 # deposed; became a monk
@@ -6855,6 +6937,7 @@ character_db={
 		last_name = { name = Rangabe }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 50 mil = 35
 		birth_date = 780.1.1
 		death_date = 843.1.1 # abdicated; became a monk
@@ -6871,6 +6954,7 @@ character_db={
 		last_name = { name = the_armenian }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 65
 		birth_date = 775.1.1
 		death_date = 820.12.24 # murdered in the Hagia Sophia
@@ -6884,6 +6968,7 @@ character_db={
 		last_name = { name = the_amorian }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 50 mil = 60
 		birth_date = 770.1.1
 		death_date = 829.10.2
@@ -6896,6 +6981,7 @@ character_db={
 		first_name = { name = name_theophilos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 60 mil = 55
 		birth_date = 813.1.1
 		death_date = 842.1.20
@@ -6910,6 +6996,7 @@ character_db={
 		first_name = { name = name_michael }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 30 dip = 40 mil = 35
 		birth_date = 840.1.9
 		death_date = 867.9.24 # murdered by Basil I
@@ -6926,6 +7013,7 @@ character_db={
 		first_name = { name = name_basil }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 60 mil = 65
 		birth_date = 830.1.1
 		death_date = 886.8.29
@@ -6939,6 +7027,7 @@ character_db={
 		first_name = { name = name_leon }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 65 mil = 40
 		birth_date = 866.9.19
 		death_date = 912.5.11
@@ -6953,6 +7042,7 @@ character_db={
 		first_name = { name = name_alexander }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 30 dip = 35 mil = 35
 		birth_date = 870.5.1
 		death_date = 913.6.6
@@ -6968,6 +7058,7 @@ character_db={
 		nickname = { name = Porphyrogennetos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 70 dip = 65 mil = 40
 		birth_date = 905.9.2
 		death_date = 959.11.9
@@ -6979,10 +7070,11 @@ character_db={
 	}
 
 	byz_romanos_i_lekapenos = {
-		first_name = { name = name_romanos }
+		first_name = { name = name_roman }
 		last_name = { name = Lekapenos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 60 dip = 65 mil = 60
 		birth_date = 870.1.1
 		death_date = 948.6.15
@@ -6992,9 +7084,10 @@ character_db={
 	}
 
 	byz_romanos_ii = {
-		first_name = { name = name_romanos }
+		first_name = { name = name_roman }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 35 dip = 45 mil = 40
 		birth_date = 938.3.1
 		death_date = 963.3.15
@@ -7009,6 +7102,7 @@ character_db={
 		last_name = { name = Phokas }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 40 mil = 80
 		birth_date = 912.1.1
 		death_date = 969.12.11 # murdered
@@ -7022,6 +7116,7 @@ character_db={
 		last_name = { name = Tzimiskes }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 55 dip = 55 mil = 80
 		birth_date = 925.1.1
 		death_date = 976.1.10
@@ -7035,6 +7130,7 @@ character_db={
 		nickname = { name = Bulgaroktonos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 65 dip = 55 mil = 80
 		birth_date = 958.1.1
 		death_date = 1025.12.15
@@ -7049,6 +7145,7 @@ character_db={
 		first_name = { name = name_constantine }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 45 mil = 35
 		birth_date = 960.1.1
 		death_date = 1028.11.11
@@ -7064,6 +7161,7 @@ character_db={
 		female = yes
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 35 dip = 50 mil = 20
 		birth_date = 978.1.1
 		death_date = 1050.6.1
@@ -7078,6 +7176,7 @@ character_db={
 		female = yes
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 50 dip = 55 mil = 30
 		birth_date = 980.1.1
 		death_date = 1056.9.11
@@ -7089,10 +7188,11 @@ character_db={
 	}
 
 	byz_romanos_iii_argyros = {
-		first_name = { name = name_romanos }
+		first_name = { name = name_roman }
 		last_name = { name = Argyros }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 55 mil = 35
 		birth_date = 968.1.1
 		death_date = 1034.4.11 # drowned
@@ -7106,6 +7206,7 @@ character_db={
 		last_name = { name = the_paphlagonian }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 50 mil = 50
 		birth_date = 1010.1.1
 		death_date = 1041.12.10
@@ -7119,6 +7220,7 @@ character_db={
 		last_name = { name = Kalaphates }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 20 dip = 30 mil = 25
 		birth_date = 1015.1.1
 		death_date = 1042.8.24 # blinded and exiled
@@ -7133,6 +7235,7 @@ character_db={
 		last_name = { name = Monomachos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 45 dip = 55 mil = 30
 		birth_date = 1000.1.1
 		death_date = 1055.1.11
@@ -7146,6 +7249,7 @@ character_db={
 		last_name = { name = Stratiotikos }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		adm = 40 dip = 45 mil = 35
 		birth_date = 995.1.1
 		death_date = 1059.1.1 # deposed; retired
