@@ -177,7 +177,7 @@ br_latin_occupiers = {
 		global_nobles_estate_power = 0.25
 		# buffs
 		wrong_culture_levy_size = 0.5
-		tolerance_heretic = 2
+		tolerance_heretic = 1
 		cultures_capacity = 2
 		
 		#debuffs
@@ -678,7 +678,8 @@ br_ere_foederati_privilege = {
 		tribes_estate_levy_size = 0.25
 		wrong_culture_levy_size = 0.1
 		monthly_towards_free_subjects = societal_value_monthly_move
-		global_tribal_promotion = -0.15
+		monthly_towards_decentralization = societal_value_minor_monthly_move
+		global_tribal_promotion = -0.25
 	}
 }
 
@@ -735,7 +736,7 @@ br_ottoman_dhimmi_levies = {
 		local_unrest = -0.1
 	}
 	country_modifier = {
-		tolerance_heathen = 1
+		#tolerance_heathen = 1
 		clergy_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
 		dhimmi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_dhimmi_estate_power = 1
