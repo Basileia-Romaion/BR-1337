@@ -175,7 +175,7 @@ dynasty_manager = {
 			name_arthur name_goronwy name_henry name_edmond name_edward name_theodore
 		}
 		female_names = {
-			name_catherine name_elizabeth name_margaret name_mary Morfydd
+			name_catherine name_elizabeth name_margaret name_mary name_morfydd
 		}
 	}
 
@@ -810,7 +810,7 @@ dynasty_manager = {
 		name = { name = macedonian_dynasty }
 		home = constantinople
 		male_names = {
-			name_basil name_constantine name_leon name_michael name_romanos name_alexander
+			name_basil name_constantine name_leon name_michael name_roman name_alexander
 		}
 		female_names = {
 			name_zoe name_theodora name_irene name_anna
@@ -831,14 +831,151 @@ dynasty_manager = {
 		male_names = {
 			name_alexis name_emmanuel name_john name_nikephoros
 		}
+	}
+
+	argyropoulos_dynasty = {
+		name = { name = argyropoulos_dynasty }
+		home = constantinople
+		male_names = {
+			name_emmanuel name_george name_james name_john name_lucas name_pericles
+		}
 		female_names = {
-			name_anna name_irene name_mary
+			name_alexandra name_chariklia name_esmeralda name_helen name_sebastia
+		}
+	}
+
+	arianiti_dynasty = {
+		name = { name = arianiti_dynasty }
+		home = elbasan
+		male_names = {
+			name_aranit name_caesar name_constantine name_george name_komin name_moses name_muzaka name_thomas name_vlad
+		}
+		female_names = {
+			name_andronica name_angelina name_catherine name_countess name_despoina name_dianira name_helen name_hippolyte name_kyra.name_anna name_mary name_penthesilea name_theodora name_voislava
 		}
 	}
 
 	asen_dynasty = { #https://en.wikipedia.org/wiki/asen_dynasty
 		name = { name = asen_dynasty }
 		home = tarnovo
+		male_names = {
+			name_andronikos name_constantine name_demetrius name_john name_john.name_asen
+		}
+		female_names = {
+			name_helen name_irene name_mary name_theodora
+		}
+	}
+
+	babonic_dynasty = {
+		name = { name = babonic_dynasty }
+		home = karlovac
+		male_names = {
+			name_dennis name_henry name_paul name_stephen
+		}
+	}
+
+	bakic_dynasty = {
+		name = { name = bakic_dynasty }
+		home = smederevo
+		male_names = {
+			name_demetrius name_emmanuel name_kalman name_komin name_michael name_paul name_peter
+			# name_michael should be name_michael.diminutive: "Miho"
+		}
+		female_names = {
+			name_angelica name_anna name_margaret
+		}
+	}
+
+	balsic_dynasty = {
+		name = { name = balsic_dynasty }
+		home = shkoder
+		male_names = {
+			name_balsa name_george name_stephen
+		}
+		female_names = {
+			name_elizabeth name_eudokia name_helen name_rudjina name_theodora name_voislava
+			# name_voislava should be name_voislava.alternative: "Voislava"
+		}
+	}
+
+	blagajski_dynasty = {
+		name = { name = blagajski_dynasty }
+		home = novigrad
+		male_names = {
+			name_anthony name_john name_john.name_nepomuk name_stephen
+		}
+		female_names = {
+			name_anna name_catherine name_claire name_eleanor name_elizabeth name_eve name_felicitas name_hyacintha name_kyburga name_madeleine name_mary name_mary.name_anna
+		}
+	}
+
+	berislavic_grabarje_dynasty = {
+		name = { name = berislavic_dynasty }
+		home = pozega
+		male_names = {
+			name_bartholomew name_benedict name_francis name_john name_martin name_nicholas name_peter name_stephen
+		}
+	}
+
+	bogoridi_dynasty = {
+		name = { name = bogoridi_dynasty }
+		home = sliven
+		male_names = {
+			name_alexander name_eustathius name_nicholas name_tsonko name_stephen
+		}
+		female_names = {
+			name_anna name_eve name_esmeralda name_mary
+		}
+	}
+
+	brankovic_dynasty = {
+		name = { name = brankovic_dynasty }
+		home = pozega
+		male_names = {
+			name_george name_gregory name_john name_lazarus name_lupus name_stephen
+		}
+		female_names = {
+			name_anna name_catherine name_elizabeth name_helen name_irene name_mary name_precious_f name_theodora
+			# name_irene should be name_irene.alternative: "Jerina"
+		}
+	}
+
+	celjiski_dynasty = {
+		name = { name = celjiski_dynasty }
+		home = celje
+		male_names = {
+			name_frederick name_herman name_john name_ulrick name_william
+		}
+		female_names = {
+			name_anna name_barbara name_catherine name_elizabeth name_walburga
+		}
+	}
+
+	celnik_dynasty = {
+		name = { name = celnik_dynasty }
+		home = vukovar
+		male_names = {
+			name_krasimir name_paul name_radoslav
+		}
+	}
+
+	crnojevic_dynasty = {
+		name = { name = crnojevic_dynasty }
+		home = shkoder
+		male_names = {
+			name_george name_john name_stephen
+		}
+		female_names = {
+			name_anna name_antonia name_catherine
+		}
+	}
+
+	crnovic_dynasty = {
+		name = { name = crnovic_dynasty }
+		home = lipova
+		male_names = {
+			name_john.name_nenad name_peter name_stephen
+		}
 	}
 
 	doukas_dynasty = { # Extinct
@@ -846,9 +983,128 @@ dynasty_manager = {
 		home = constantinople
 	}
 
+	dragas_dynasty = { # Dejanović, better known as Dragaš
+		name = { name = dragas_dynasty }
+		home = constantinople
+		male_names = {
+			name_constantine name_dejan name_john
+		}
+		female_names = {
+			name_helen name_theodora
+		}
+	}
+
+	dukagjini_dynasty = {
+		name = { name = dukagjini_dynasty }
+		home = dukagjini
+		male_names = {
+			name_alexander name_athanasius name_nicholas name_paul name_progon
+		}
+		female_names = {
+			name_bozha
+		}
+	}
+
+	dushmani_dynasty = {
+		name = { name = dushmani_dynasty }
+		home = koman
+		male_names = {
+			name_alexander name_damian name_goran name_nenad name_paul
+		}
+		female_names = {
+			name_irene
+		}
+	}
+
+	frankopan_dynasty = {
+		name = { name = frankopan_dynasty }
+		home = krk
+		male_names = {
+			name_bartholomew name_christ name_dujam name_george name_john name_lupus name_nicholas name_stephen
+		}
+		female_names = {
+			name_anna name_beatrix name_catherine name_claire name_elizabeth name_julianne name_madeleine name_margaret name_ursula
+		}
+	}
+
 	glabas_dynasty = { # Extinct
 		name = { name = glabas_dynasty }
 		home = iznik
+	}
+
+	gabras_dynasty = {
+		name = { name = gabras_dynasty }
+		home = theodoro
+		male_names = {
+			name_alexander name_alexis name_basil name_demetrius name_isaac name_john name_stephen
+		}
+		female_names = {
+			name_mary
+		}
+	}
+
+	gjonima_dynasty = {
+		name = { name = gjonima_dynasty }
+		home = kruje
+		male_names = {
+			name_aurus name_demetrius name_george name_marinus name_paul name_peter name_stephen name_vitus
+		}
+	}
+
+	grcinic_dynasty = {
+		name = { name = grcinic_dynasty }
+		home = vranje
+		male_names = {
+			name_dabizhiv name_damian name_john.name_oliver name_krajmir name_oliver name_rusyn name_vidoslav
+			# name_krajmir should be name_krajmir.diminutive: "Krajko"
+		}
+		female_names = {
+			name_danica
+		}
+	}
+
+	gropa_dynasty = {
+		name = { name = gropa_dynasty }
+		home = ohrid
+		male_names = {
+			name_andrew name_aydin name_paul name_zechariah
+		}
+	}
+
+	hangerli_dynasty = {
+		name = { name = hangerli_dynasty }
+		home = theodoro
+		male_names = {
+			name_alexander name_constantine name_george name_gregory name_michael name_telemachus
+			# name_alexander should be name_alexander.alternative: "Skantarios"
+		}
+		female_names = {
+			name_catherine name_esmeralda name_helen name_mary
+		}
+	}
+
+	hrvatinic_dynasty = {
+		name = { name = hrvatinic_dynasty }
+		home = kotor
+		male_names = {
+			name_balsa name_dragan name_george name_john name_lupus name_mark name_matthew name_paul name_peter name_voislav
+			# name_dragan should be name_dragan.alternative: "Dragiša"
+			# name_john should be name_john.diminutive: "Ivaniš"
+		}
+		female_names = {
+			name_catherine name_helen name_resa
+		}
+	}
+
+	jurjevic_dynasty = {
+		name = { name = jurjevic_dynasty }
+		home = drijeva
+		male_names = {
+			name_george name_nicholas name_paul name_peter name_thomas name_vlad
+		}
+		female_names = {
+			name_vladica
+		}
 	}
 
 	kantakouzenos_dynasty = {
@@ -862,6 +1118,28 @@ dynasty_manager = {
 		}
 	}
 
+	karadjordjevic_dynasty = {
+		name = { name = karadjordjevic_dynasty }
+		home = rudnik
+		male_names = {
+			name_alexander name_alexis name_george name_peter
+		}
+		female_names = {
+			name_cleopatra name_sara
+		}
+	}
+
+	kastrioti_dynasty = {
+		name = { name = kastrioti_dynasty }
+		home = elbasan
+		male_names = {
+			name_alphonse name_constantine name_ferdinand name_george name_john name_paul
+		}
+		female_names = {
+			name_helen name_irene name_mamica name_mary name_vlajka
+		}
+	}
+
 	komnenos_dynasty = { # Extinct
 		name = { name = komnenos_dynasty }
 		home = constantinople
@@ -869,13 +1147,123 @@ dynasty_manager = {
 
 	komnenos_doukas_dynasty = { # Extinct
 		name = { name = komnenos_doukas_dynasty }
-		#CoA: https://wappenwiki.org/index.php?title=File:Doukas.svg (Adopted from Doukas)
 		home = arta
+	}
+
+	komnenos_asen_dynasty = {
+		name = { name = komnenos_asen_dynasty }
+		home = kavaje
+		male_names = {
+			name_alexander name_john name_michael
+		}
+		female_names = {
+			name_kominia
+		}
+	}
+
+	kontostephanos_dynasty = {
+		name = { name = kontostephanos_dynasty }
+		home = constantinople
+		male_names = {
+			name_john name_stephen name_theodore
+		}
+		female_names = {
+			name_anna name_eudokia name_irene
+		}
+	}
+
+	kosaca_dynasty = {
+		name = { name = kosaca_dynasty }
+		home = nevesinje
+		male_names = {
+			name_lupus name_stephen name_vlad name_vladislav
+		}
+		female_names = {
+			name_catherine name_mary name_theodora
+		}
+	}
+
+	kotromanic_dynasty = {
+		name = { name = kotromanic_dynasty }
+		home = zenica
+		male_names = {
+			name_dabisha name_lupus name_ostoja name_stephen name_thomas name_tvrtko
+		}
+		female_names = {
+			name_catherine name_elizabeth name_helen name_stanislava
+			# name_stanislava should be name_stanislava.diminutive: "Stana"
+		}
 	}
 
 	laskaris_dynasty = { # Extinct
 		name = { name = laskaris_dynasty }
 		home = constantinople
+	}
+
+	lazarevic_dynasty = {
+		name = { name = lazarevic_dynasty }
+		home = novo_brdo
+		male_names = {
+			name_dobrovoj name_lazarus name_lupus name_pribac name_stephen
+		}
+		female_names = {
+			name_dragana name_helen name_mary name_olivera name_ratoslava name_theodora
+			# name_mary should be name_mary.diminutive: "Mara"
+		}
+	}
+
+	levidis_dynasty = {
+		name = { name = levidis_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexander name_angel name_constantine name_demetrius name_george name_nicholas name_panteleimon name_pericles name_stamatios
+		}
+	}
+
+	losha_dynasty = {
+		name = { name = losha_dynasty }
+		home = arta
+		male_names = {
+			name_john name_paul name_peter
+			# name_john should be name_john.alternative: "Gjin"
+		}
+	}
+
+	mataranga_dynasty = {
+		name = { name = mataranga_dynasty }
+		home = kavaje
+		male_names = {
+			name_blaise name_john name_paul
+		}
+		female_names = {
+			name_euphemia
+		}
+	}
+
+	mavrogenis_dynasty = {
+		name = { name = mavrogenis_dynasty }
+		home = karystos
+		male_names = {
+			name_alexander name_constantine name_demetrius name_emmanuel name_george name_john name_joseph name_nicholas name_peter name_spyridon name_stephen
+		}
+		female_names = {
+			name_diamond_f name_esmeralda name_euphrosyne name_flora name_helen name_madeleine name_raluca name_roxana name_sultana
+			# name_diamond_f should be name_diamond_f.diminutive: "Mantó"
+			# name_raluca should be name_raluca.diminutive: "Ralú"
+		}
+	}
+
+	mavrokordatos_dynasty = {
+		name = { name = mavrokordatos_dynasty }
+		home = chios
+		male_names = {
+			name_alexander name_constantine name_john name_nicholas
+		}
+		female_names = {
+			name_kokona name_mary name_zoe
+			#name_mary should be name_mary.alternative: "Mariora"
+			#name_zoe should be name_zoe.alternative: "Zoïtsa"
+		}
 	}
 
 	megas_komnenos_dynasty = {
@@ -889,6 +1277,108 @@ dynasty_manager = {
 		}
 	}
 
+	metochites_dynasty = {
+		name = { name = metochites_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexis name_demetrius name_michael name_nikephoros
+		}
+		female_names = {
+			name_irene
+		}
+	}
+
+	mourouzis_dynasty = {
+		name = { name = mourouzis_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexander name_constantine name_demetrius name_george name_panagiotis
+		}
+		female_names = {
+			name_anastasia name_catherine name_esmeralda name_euphrosyne name_helen name_mary name_raluca name_roxana name_sultana name_zoe
+			# name_catherine should be name_catherine.alternative: "Aikaterine"
+			# name_raluca should be name_raluca.diminutive: "Ralú"
+		}
+	}
+
+	mrnjavcevic_dynasty = {
+		name = { name = mrnjavcevic_dynasty }
+		home = prilep
+		male_names = {
+			name_andrew name_demetrius name_john name_john.name_ugljesha name_mark name_tvrtko name_ugljesha name_vukasin
+		}
+		female_names = {
+			name_eupraxia name_helen name_olivera name_precious_f
+		}
+	}
+
+	music_dynasty = {
+		name = { name = music_dynasty }
+		home = drijeva
+		male_names = {
+			name_john name_lazarus name_moses name_stephen
+			# name_moses should be name_moses.alternative: "Musa"
+		}
+	}
+
+	muzakajt_dynasty = {
+		name = { name = muzakajt_dynasty }
+		home = berat
+		male_names = {
+			name_andrew name_john name_matarango name_stojan name_theodore
+		}
+		female_names = {
+			name_countess name_helen name_kyra.name_anna name_mary name_porphyda name_suina name_theodora
+		}
+	}
+
+	nelipic_dynasty = {
+		name = { name = nelipic_dynasty }
+		home = sibenik
+		male_names = {
+			name_constantine name_george name_john
+		}
+		female_names = {
+			name_catherine name_helen name_margaret
+		}
+	}
+
+	nemanjic_dynasty = {
+		name = { name = nemanjic_dynasty }
+		home = prizren
+		male_names = {
+			name_john.name_uros name_stephen.name_constantine name_stephen.name_uros name_simeon.name_uros
+		}
+		female_names = {
+			name_asanina name_helen name_irene name_mary name_theodora
+		}
+	}
+
+	obrenovic_dynasty = {
+		name = { name = obrenovic_dynasty }
+		home = pozega
+		male_names = {
+			name_christopher name_ephraim name_james name_john name_michael name_milano name_milos name_obren name_theodore
+			# name_theodore should be name_theodore.alternative: "Todor"
+		}
+		female_names = {
+			name_elizabeth name_mary name_petra name_stanislava name_visnja
+			# name_stanislava should be name_stanislava.diminutive: "Stana"
+		}
+	}
+
+	ohmucevic_dynasty = {
+		name = { name = ohmucevic_dynasty }
+		home = strumica
+		male_names = {
+			name_gregory name_hrelja name_john name_peter
+		}
+		female_names = {
+			name_aurelia name_helen name_joy name_zlata
+			# name_zlata should be name_zlata.alternative: "Zlatka"
+		}
+	}
+
 	palaiologos_dynasty = {
 		name = { name = palaiologos_dynasty }
 		home = constantinople
@@ -897,6 +1387,204 @@ dynasty_manager = {
 		}
 		female_names = {
 			name_anna name_helen name_irene name_mary name_theodora name_zoe
+		}
+	}
+
+	paskacic_dynasty = {
+		name = { name = paskacic_dynasty }
+		home = vranje
+		male_names = {
+			name_paskach name_stephen name_ugljesha name_uros name_vlad
+		}
+	}
+
+	pavlovic_dynasty = {
+		name = { name = pavlovic_dynasty }
+		home = borac
+		male_names = {
+			name_john name_joy_male name_nicholas name_paul name_peter name_radoslav
+			# name_john should be name_john.alternative.diminutive: "Ivaniš"
+			# name_joy_male should be name_joy_male.alternative: "Radin"
+			# name_radoslav should be name_radoslav.alternative: "Radislav"
+		}
+		female_names = {
+			name_kujava name_petra
+		}
+	}
+
+	petrovic_njegos_dynasty = {
+		name = { name = petrovic_njegos_dynasty }
+		home = zenica
+		male_names = {
+			name_basil name_daniel name_george name_john name_peter name_radu name_sabbas
+			# name_george should be name_george.diminutive: "Đuro"
+			# name_john should be name_john.alternative: "Ivan"
+		}
+		female_names = {
+			name_joanna name_mashica name_mary
+		}
+	}
+
+	philantropenos_dynasty = {
+		name = { name = philantropenos_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexis name_emmanuel name_george name_michael
+		}
+		female_names = {
+			name_anna name_irene name_theodora
+		}
+	}
+
+	preljubic_dynasty = {
+		name = { name = preljubic_dynasty }
+		home = drijeva
+		male_names = {
+			name_gregory name_preljub name_thomas
+		}
+		female_names = {
+			name_helen
+		}
+	}
+
+	radivojevic_dynasty = {
+		name = { name = radivojevic_dynasty }
+		home = drijeva
+		male_names = {
+			name_alexis name_bogavac name_george name_lupus name_mrdeza name_nicholas name_radivoj
+			# name_alexis should be name_alexis.alternative.diminutive: "Aljin"
+			# name_lupus should be name_lupus.diminutive: "Vukić"
+		}
+		female_names = {
+			name_vladica
+		}
+	}
+
+	rallis_dynasty = {
+		name = { name = rallis_dynasty }
+		home = chios
+		male_names = {
+			name_alexis name_constantine name_demetrius name_emmanuel name_george name_john name_lucas name_thomas
+		}
+		female_names = {
+			name_irene name_mary name_theodora
+		}
+	}
+
+	rastislalic_dynasty = {
+		name = { name = rastislalic_dynasty }
+		home = branicevo
+		male_names = {
+			name_brajko name_branko name_joy_male name_radoslav name_rastislav
+		}
+	}
+
+	rodokanakis_dynasty = {
+		name = { name = rodokanakis_dynasty }
+		home = chios
+		male_names = {
+			name_constantine name_demetrius name_john 
+		}
+		female_names = {
+			name_flora name_mary
+			# name_flora should be name_flora.alternative: "Loula"
+		}
+	}
+
+	rosetti_dynasty = {
+		name = { name = rosetti_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexander name_anthony name_athanasius name_constantine name_george name_john name_laskaris name_matthew name_michael name_nicholas name_scarlat
+		}
+		female_names = {
+			name_euphrosyne name_helen name_mary name_venetiana name_zephyra
+		}
+	}
+
+	sankovici_dynasty = {
+		name = { name = sankovici_dynasty }
+		home = konjic
+		male_names = {
+			name_alexander name_bianco name_budelja name_castro name_grato name_joy_male
+			# name_alexander should be name_alexander.diminutive: "Šanko"
+		}
+		female_names = {
+			name_dragana name_joy
+			# name_joy should be name_joy.diminutive: "Radača"
+		}
+	}
+
+	shishman_dynasty = {
+		name = { name = shishman_dynasty }
+		home = vidin
+		male_names = {
+			name_john.name_stephen name_joseph name_louis name_michael name_shishman
+		}
+		female_names = {
+			name_keratsa
+		}
+	}
+
+	smilets_dynasty = { # Extinct in male line
+		name = { name = smilets_dynasty }
+		home = elhovo
+	}
+
+	soutzos_dynasty = { 
+		name = { name = soutzos_dynasty }
+		home = chios
+		male_names = {
+			name_alexander name_constantine name_demetrius name_george name_gregory name_john name_michael name_nicholas
+		}
+		female_names = {
+			name_cassandra name_catherine name_helen name_mary name_raluca name_roxana name_zephyra
+			# name_raluca should be name_raluca.diminutive: "Ralú"
+		}
+	}
+
+	spani_dynasty = {
+		name = { name = spani_dynasty }
+		home = shkoder
+		male_names = {
+			name_alexis name_brajko name_marinus name_nicholas name_peter name_skurra name_stephen
+		}
+		female_names = {
+			name_dominica name_lucia
+		}
+	}
+
+	spata_dynasty = {
+		name = { name = spata_dynasty }
+		home = vonitsa
+		male_names = {
+			name_james name_john name_maurice name_paul name_peter
+		}
+		female_names = {
+			name_ester name_irene name_petronilla
+			# name_ester should be name_esther.diminutive: "Esterina"
+		}
+	}
+
+	sratsimir_dynasty = {
+		name = { name = sratsimir_dynasty }
+		home = lovech
+		male_names = {
+			name_alexander name_constantine name_john.name_alexander name_john.name_asen name_john.name_shishman name_john.name_sracimir name_michael
+		}
+		female_names = {
+			name_desislava name_dorothy name_helen name_keratsa name_tamara name_vasilisa
+		}
+	}
+
+	subic_dynasty = {
+		name = { name = subic_dynasty }
+		home = crikvenica
+		male_names = {
+			name_adeodatus name_bianco name_gregory name_joy_male name_mladen name_paul name_senko
+		}
+		female_names = {
+			name_catherine name_helen name_stanislava
 		}
 	}
 
@@ -922,10 +1610,140 @@ dynasty_manager = {
 		}
 	}
 
+	terter_dynasty = {
+		name = { name = terter_dynasty }
+		home = kaliakra
+		male_names = {
+			name_george name_john name_theodore.name_svyatoslav
+		}
+		female_names = {
+			name_anna name_helen
+		}
+	}
+
+	thopia_dynasty = {
+		name = { name = thopia_dynasty }
+		home = kruje
+		male_names = {
+			name_andrew name_athanasius name_charles name_george name_nicetas
+		}
+		female_names = {
+			name_gojslava name_helen name_mary name_seraphina name_yela
+		}
+	}
+
+	tih_dynasty = { # Extinct
+		name = { name = tih_dynasty }
+		home = skopje
+	}
+
+	tornikes_dynasty = {
+		name = { name = tornikios_dynasty }
+		home = constantinople
+		male_names = {
+			name_andronikos name_demetrius name_isaac
+		}
+		female_names = {
+			name_anna name_irene
+		}
+	}
+
 	vatatzes_dynasty = { # Extinct
 		name = { name = vatatzes_dynasty }
-		#CoA: http://wappenwiki.org/index.php/File:Batatzes.svg
 		home = iznik
+	}
+
+	vlatkovic_dynasty = {
+		name = { name = vlatkovic_dynasty }
+		home = drijeva
+		male_names = {
+			name_george name_john name_mark name_novak name_radoje name_vlad
+			# name_john should be name_john.alternative.diminutive: "Ivaniš"
+		}
+		female_names = {
+		}
+	}
+
+	vojinovic_dynasty = {
+		name = { name = vojinovic_dynasty }
+		home = mostar
+		male_names = {
+			name_altman name_dobrovoj name_hrvatin name_mercenary name_milos name_nicholas name_stephen name_voislav
+			# name_dobrovoj should be name_dobrovoj.alternative: "Dobrivoj"
+			# name_mercenary should be name_mercenary.alternative: "Vojin"
+		}
+		female_names = {
+			name_voislava
+		}
+	}
+
+	vovbrzani_dynasty = {
+		name = { name = vovbrzani_dynasty }
+		home = celje
+	}
+
+	ypsilantis_dynasty = {
+		name = { name = ypsilantis_dynasty }
+		home = constantinople
+		male_names = {
+			name_alexander name_constantine name_demetrius name_george name_gregory name_nicholas
+		}
+		female_names = {
+			name_catherine name_helen name_mary
+			#name_catherine should be name_catherine.alternative: "Aikateríne"
+		}
+	}
+
+	zaharia_dynasty = {
+		name = { name = name_zechariah }
+		home = kotor		
+		male_names = {
+			name_alexander name_gojcin name_nicholas
+		}
+		female_names = {
+			name_bolja name_bozha
+		}
+	}
+
+	zarkovic_dynasty = {
+		name = { name = zarkovic_dynasty }
+		home = shkoder
+		male_names = {
+			name_dejan name_mrksha name_zharko
+		}
+	}
+
+	zenevisi_dynasty = {
+		name = { name = zenevisi_dynasty }
+		home = argyrokastro		
+		male_names = {
+			name_alexander name_alphonse name_john name_philip name_simeon name_thopia
+		}
+		female_names = {
+			name_kyra.name_anna name_mary
+		}
+	}
+	
+	zovneski_dynasty = {
+		name = { name = zovneski_dynasty }
+		home = celje
+		male_names = {
+			name_conrad name_gebhard name_ulrick
+		}
+		female_names = {
+			name_anna name_gertrude name_sophia
+		}
+	}
+
+	zrinski_dynasty = {
+		name = { name = zrinski_dynasty }
+		home = sisak
+		male_names = {
+			name_george name_john name_nicholas name_paul name_peter
+		}
+		female_names = {
+			name_anna name_barbara name_catherine name_elizabeth name_helen name_margaret
+		}
 	}
 
 	arpad_dynasty = {
@@ -934,59 +1752,27 @@ dynasty_manager = {
 		home = pest #Unknown
 	}
 
+	caradja_dynasty = {
+		name = { name = caradja_dynasty }
+		home = constantinople
+		male_names = {
+			name_constantine name_demetrius name_george name_john name_john.name_george name_nicholas name_scarlat
+			# name_demetrius should be name_demetrius.diminutive: "Dimitrescu"
+		}
+		female_names = {
+			name_asanina name_blasia name_cassandra name_constance name_esmeralda name_helen name_kokona name_margaret name_raluca name_roxana name_zephyra name_zoe
+			# name_raluca should be name_raluca.diminutive: "Ralú"
+		}
+	}
+
 	hunyadi_dynasty = {
 		name = { name = hunyadi_dynasty }
 		home = buda
 	}
 
-	nemanjic_dynasty = {
-		name = { name = nemanjic_dynasty }
-		home = prizren
-	}
-	
-	balsic_dynasty = {
-		name = { name = balsic_dynasty }
-		home = bar_cg
-	}
-
-	ohmucevic_dynasty = {
-		name = { name = ohmucevic_dynasty }
-		home = strumica
-	}
-
-	sratsimir_dynasty = {
-		name = { name = sratsimir_dynasty }
-		home = tarnovo
-	}
-
-	shishman_dynasty = {
-		name = { name = shishman_dynasty }
-		home = vidin
-	}
-
-	smilets_dynasty = {
-		name = { name = smilets_dynasty }
-		home = kran
-	}
-
-	kotromanic_dynasty = {
-		name = { name = kotromanic_dynasty }
-		home = zenica
-	}
-
-	subic_dynasty = {
-		name = { name = subic_dynasty }
-		home = crikvenica
-	}
-
 	lambron_dynasty = {
 		name = { name = lambron_dynasty }
 		home = sis
-	}
-
-	terter_dynasty = {
-		name = { name = terter_dynasty }
-		home = kaliakra
 	}
 
 	monomachos_dynasty = {
@@ -999,8 +1785,13 @@ dynasty_manager = {
 		name = { name = acciaioli_dynasty }
 		home = florence
 		male_names = {
+			name_angel name_anthony name_donato name_francis name_james name_nicholas name_rayner name_robert
+			# name_james should be name_james.alternative: "Jacopo"
+			# name_rayner should be name_rayner.diminutive: "Neri"
 		}
 		female_names = {
+			name_andrea name_bartholomea name_catherine name_julie name_laudomia name_margaret
+			# name_andrea shoulde be name_andrea.diminutive: "Andreina"
 		}
 	}
 	
@@ -1060,7 +1851,7 @@ dynasty_manager = {
 
 	anjou_dynasty = {
 		name = { name = anjou_dynasty }
-		home = angers
+		home = naples
 		male_names = {
 			name_charles name_louis name_philip name_robert name_vladislav
 		}
@@ -1070,7 +1861,7 @@ dynasty_manager = {
 	}
 
 	anjou_jerusalem_dynasty = { #https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem
-		name = { name = anjou_jerusalem_dynasty }
+		name = { name = anjou_dynasty }
 		home = jerusalem
 		male_names = {
 			name_amalric name_baldwin name_fulk name_godfrey
@@ -1189,15 +1980,27 @@ dynasty_manager = {
 		home = urbino
 	}
 
-	caetani_dynasty = {
-		name = { name = gaetani_aquila_dynasty }
-		#CoA: https://wappenwiki.org/index.php?title=File:Gaetani_dell%27Aquila.svg
-		home = aquila
+	cabanni_dynasty = {
+		name = { name = cabanni_dynasty }
+		home = naples
 		male_names = {
-			name_alphonse name_anthony name_francis Onorato Scipione
+			name_anthony name_charles name_raymond name_robert
 		}
 		female_names = {
-			name_catherine Giovannella name_lucrece
+			name_catherine name_joanna name_sancha
+			# name_joanna should be name_joanna_diminutive: "Giovannella"
+		}
+	}
+
+	caetani_dynasty = {
+		name = { name = gaetani_aquila_dynasty }
+		home = aquila
+		male_names = {
+			name_alphonse name_anthony name_francis name_honoratus name_scipio
+		}
+		female_names = {
+			name_catherine name_joanna name_lucrece
+			# name_joanna should be name_joanna_diminutive: "Giovannella"
 		}
 	}
 
@@ -1450,8 +2253,7 @@ dynasty_manager = {
 		home = ferrara
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_aldebrand name_alphonse name_hercules name_nicholas name_obizzo name_reginald	
-			# name_aldebrand should be name_aldebrand.diminutive: Aldobrandino
+			name_albert name_aldobrandino name_alphonse name_hercules name_nicholas name_obizzo name_reginald
 		}
 		female_names = {
 			name_beatrix name_eleanor name_lucrece name_margaret name_verde
@@ -1540,7 +2342,7 @@ dynasty_manager = {
 	}
 
 	frangipani_dynasty = {
-		name = { name = frangipani_dynasty }
+		name = { name = frankopan_dynasty }
 		home = rome
 	}
 
@@ -1890,12 +2692,11 @@ dynasty_manager = {
 		name = { name = orsini_dynasty }
 		home = pitigliano
 		male_names = {
-			name_aldebrand name_alexander name_berthold name_gentilis name_john.name_francis name_louis name_nicholas name_wido
-			# name_aldebrand should be name_aldebrand.diminutive: Aldobrandino
+			name_aldobrandino name_alexander name_berthold name_gentilis name_john.name_francis name_louis name_nicholas name_wido
 			# name_louis should be name_louis.alternative: Ludovico
 		}
 		female_names = {
-			name_aldebranda name_elizabeth name_hieronyma
+			name_aldobrandesca name_elizabeth name_hieronyma
 		}
 	}
 		
@@ -1999,8 +2800,7 @@ dynasty_manager = {
 		name = { name = polenta_dynasty }
 		home = cesena
 		male_names = {
-			name_aldebrand name_azzo name_bernardinus name_lambert name_obizzo name_ostasio name_pandulf name_peter name_wido
-			# name_aldebrand should be name_aldebrand.diminutive: Aldobrandino
+			name_aldobrandino name_azzo name_bernardinus name_lambert name_obizzo name_ostasio name_pandulf name_peter name_wido
 		}
 		female_names = {
 			name_alda name_beatrix name_catherine name_constance name_eletta name_frances name_joanna name_licinia name_lieta name_polentesia name_samaritan_f
@@ -2269,8 +3069,7 @@ dynasty_manager = {
 
 	zaccaria_dynasty = {
 		name = { name = name_zechariah }
-		home = chalandritsa
-		dynasty_name_type = patronym		
+		home = chalandritsa		
 		male_names = {
 			name_andronikos.name_asen name_benedict name_centurion name_erhard name_john name_john.name_asen name_martin name_stephen
 		}
@@ -2310,12 +3109,6 @@ dynasty_manager = {
 	de_la_tour_du_pin_dynasty = {
 		name = { name = de_la_tour_du_pin_dynasty }
 		home = la_tour_du_pin
-		dynasty_name_type = location
-	}
-
-	gorz_dynasty = {	#Meinhardiner
-		name = { name = gorz_dynasty }
-		home = gorizia
 		dynasty_name_type = location
 	}
 
@@ -2388,6 +3181,18 @@ dynasty_manager = {
 		dynasty_name_type = location
 	}
 
+	gorz_dynasty = {	#Meinhardiner
+		name = { name = gorz_dynasty }
+		home = gorizia
+		dynasty_name_type = location
+		male_names = {
+			name_albert name_henry name_john name_leonard name_meinhard
+		}
+		female_names = {
+			name_anna name_catherine name_elizabeth name_margaret
+		}
+	}
+
 	grandson_dynasty = { #https://fr.wikipedia.org/wiki/Famille_de_Grandson
 		name = { name = grandson_dynasty }
 		home = delemont
@@ -2410,29 +3215,11 @@ dynasty_manager = {
 		home = vienna
 		dynasty_name_type = location
 		important = yes
-
 		male_names = {
-			name_albert
-			name_charles
-			name_ernest
-			name_ferdinand name_frederick name_francis name_francis.name_joseph name_francis.name_frederick
-			name_joseph
-			name_leopold
-			name_maximilian name_matthias
-			name_philip
-			name_rudolf
-			name_sigmund
-			name_vladislav
+			name_albert name_charles name_ferdinand name_leopold name_maximilian name_philip
 		}
 		female_names = {
-			name_anna
-			name_blanche name_barbara
-			name_caroline name_catherine name_christine
-			name_dorothy
-			name_elizabeth
-			name_joanna
-			name_margaret name_mary name_mary.name_anna name_mary.name_theresa name_mary.name_elizabeth name_mary.name_madeleine
-			name_theresa
+			name_anna name_caroline name_catherine name_elizabeth name_margaret name_mary name_mary.name_anna name_theresa
 		}
 	}
 
@@ -2470,27 +3257,12 @@ dynasty_manager = {
 		name = { name = hohenzollern_dynasty }
 		home = riedlingen
 		important = yes
-
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
-			name_christian name_christian.name_william
-			name_eitel.name_frederick name_ernest
-			name_frederick name_frederick.name_william
-			name_george.name_william
-			name_john name_joachim name_john.name_george name_john.name_sigmund
-			name_william
+			name_charles name_eitel.name_frederick name_frederick
 		}
 		female_names = {
-			name_anna name_anna.name_catherine name_anna.name_sophia
-			name_barbara name_barbara.name_sophia
-			name_catherine
-			name_frances
-			name_joanna
-			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
-			name_sophia
-			name_theresa
-			name_victoria
+			name_anna name_frances name_joanna name_maximiliane name_mary.name_anna name_theresa
 		}
 	}
 
@@ -2499,24 +3271,10 @@ dynasty_manager = {
 		home = berlin
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_albert.name_achilles
-			name_charles
-			name_eitel.name_frederick name_ernest
-			name_frederick name_frederick.name_william
-			name_george.name_william
-			name_john name_joachim name_john.name_george name_john.name_sigmund
-			name_william
+			name_albert name_frederick name_frederick.name_william name_john
 		}
 		female_names = {
-			name_anna name_anna.name_catherine name_anna.name_sophia
-			name_barbara name_barbara.name_sophia
-			name_catherine
-			name_frances
-			name_joanna
-			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
-			name_sophia
-			name_theresa
-			name_victoria
+			name_anna name_dorothy name_eleanor name_elizabeth name_louise name_madeleine name_sophia
 		}
 	}
 
@@ -2525,24 +3283,10 @@ dynasty_manager = {
 		home = nuremberg
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
-			name_christian name_christian.name_william
-			name_eitel.name_frederick name_ernest
-			name_frederick name_frederick.name_william
-			name_george.name_william
-			name_john name_joachim name_john.name_george name_john.name_sigmund
-			name_william
+			name_albert name_berthold name_frederick name_john
 		}
 		female_names = {
-			name_anna name_anna.name_catherine name_anna.name_sophia
-			name_barbara name_barbara.name_sophia
-			name_catherine
-			name_frances
-			name_joanna
-			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
-			name_sophia
-			name_theresa
-			name_victoria
+			name_adelaide name_agnes name_anna name_beatrix name_catherine name_elizabeth name_helen name_margaret
 		}
 	}
 
@@ -2551,7 +3295,7 @@ dynasty_manager = {
 		home = hoya
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_eric name_gerard name_henry name_jobst name_john name_otto
+			name_albert name_eric name_gerard name_henry name_john name_justus name_otto
 		}
 	}
 
@@ -2572,7 +3316,7 @@ dynasty_manager = {
 		home = olomouc
 		dynasty_name_type = location
 		male_names = {
-			name_jobst name_john.name_henry name_john.name_sobeslav name_prokop
+			name_john.name_henry name_john.name_sobeslav name_justus name_prokop
 		}
 		female_names = {
 			name_anna name_catherine name_elizabeth
@@ -2604,6 +3348,18 @@ dynasty_manager = {
 		}
 	}
 
+	walsee_dynasty = { # Walsee-Graz line
+		name = { name = walsee_dynasty }
+		home = waldsee
+		male_names = {
+			name_everard name_frederick name_john name_ulrick
+			# name_john should be name_john.diminutive: "Hans"
+		}
+		female_names = {
+			name_agnes name_diemoth name_gertrude
+		}
+	}
+
 	welfen_dynasty = {
 		name = { name = welfen_dynasty }
 		home = brunswick
@@ -2621,30 +3377,10 @@ dynasty_manager = {
 		home = munich
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_adolf
-			name_charles name_charles.name_albert name_charles.name_theodore name_clemence.name_august name_charles.name_louis name_christopher
-			name_ernest
-			name_frederick name_ferdinand.name_mary
-			name_henry
-			name_john name_joseph name_joseph.name_clemence
-			name_louis name_leopold
-			name_maximilian name_maximilian.name_emmanuel name_maximilian.name_joseph name_maximilian.name_henry
-			name_otto name_otto.name_henry
-			name_philip
-			name_robert name_rudolf
-			name_stephen name_sigmund
-			name_william name_wolfgang name_wolfgang.name_william
+			name_charles name_frederick name_john name_louis name_robert
 		}
 		female_names = {
-			name_anna name_anna.name_caroline name_agnes
-			name_beatrix
-			name_christine
-			name_elizabeth name_eleanor name_eleanor.name_madeleine
-			name_frances
-			name_joanna name_jacqueline
-			name_margaret
-			name_mary.name_anna name_mary name_mary.name_madeleine name_madeleine name_margaret name_matilda
-			name_ulrike.name_eleanor
+			name_anna name_elizabeth name_margaret name_mary.name_anna
 		}
 	}
 
@@ -3291,64 +4027,6 @@ dynasty_manager = {
 	alseniskiai_dynasty = {
 		name = { name = alseniskiai_dynasty }
 		home = ashmyany
-	}
-
-	#Balkans
-	
-	zovneski_dynasty = {
-		name = { name = zovneski_dynasty }
-		home = celje
-	}
-
-	vovbrzani_dynasty = {
-		name = { name = vovbrzani_dynasty }
-		home = celje
-	}
-
-	celjiski_dynasty = {
-		name = { name = celjiski_dynasty }
-		home = celje
-	}
-
-	walsee_dynasty = {
-		name = { name = walsee_dynasty }
-		home = waldsee
-	}
-
-	arianiti_dynasty = {
-		name = { name = arianiti_dynasty }
-		home = elbasan
-	}
-
-	gropa_dynasty = {
-		name = { name = gropa_dynasty }
-		home = ohrid
-	}
-
-	thopia_dynasty = {
-		name = { name = thopia_dynasty }
-		home = kruje
-	}
-
-	muzakajt_dynasty = {
-		name = { name = muzakajt_dynasty }
-		home = berat
-	}
-
-	kastrioti_dynasty = {
-		name = { name = kastrioti_dynasty }
-		home = elbasan
-	}
-
-	mataranga_dynasty = {
-		name = { name = mataranga_dynasty }
-		home = kavaje
-	}
-
-	villeneuve_dynasty = {
-		name = { name = villeneuve_dynasty }
-		home = frejus # Trans
-		dynasty_name_type = location
 	}
 
 	#Spain	
@@ -4079,10 +4757,10 @@ dynasty_manager = {
 		home = huesca
 		dynasty_name_type = location
 		male_names = {
-			Ferrer name_francis name_john name_joseph name_martin name_martin.name_baptiste name_peter
+			name_ferrer name_francis name_john name_joseph name_martin name_martin.name_baptiste name_peter
 		}
 		female_names = {
-			name_anna name_dianira name_elizabeth Griselda name_martina name_mary name_sancha
+			name_anna name_dianira name_elizabeth name_griselda name_martina name_mary name_sancha
 		}
 	}
 
@@ -4217,7 +4895,7 @@ dynasty_manager = {
 			name_alvar name_james name_john name_michael name_peter
 		}
 		female_names = {
-			name_anna Damiana name_frances name_mary name_theresa
+			name_anna name_damiana name_frances name_mary name_theresa
 		}
 	}
 
@@ -4905,11 +5583,6 @@ dynasty_manager = {
 		dynasty_name_type = location
 	}
 
-	sankovici_dynasty = {
-		name = { name = sankovici_dynasty }
-		home = mostar
-	}
-
 	gundulic_dynasty = {
 		name = { name = gundulic_dynasty }
 		home = dubrovnik
@@ -5139,7 +5812,6 @@ dynasty_manager = {
 	baux_dynasty = {
 		name = { name = baux_dynasty }
 		home = arles
-		dynasty_name_type = location
 		male_names = {
 			name_bertrand name_francis name_james name_raymond name_william
 		}
@@ -5489,10 +6161,10 @@ dynasty_manager = {
 		home = foix
 		dynasty_name_type = location
 		male_names = {
-			name_francis name_gaston name_john name_matthew name_peter name_roger.name_bernard
+			name_gaston name_robert name_roger name_roger.name_bernard
 		}
 		female_names = {
-			name_blanche name_catherine name_elizabeth name_germana name_joanna name_margaret
+			name_blanche name_joanna name_margaret
 		}
 	}
 
@@ -5719,7 +6391,7 @@ dynasty_manager = {
 		}
 	}
 
-	de_orleans_dynasty = { # Dukes of Orleans & King of the Frenche
+	de_orleans_dynasty = { # Dukes of Orleans & King of the French
 		name = { name = de_orleans_dynasty }
 		home = paris
 		dynasty_name_type = location
@@ -5899,6 +6571,19 @@ dynasty_manager = {
 			name_blanche name_joanna name_margaret
 		}
 	}
+
+	valois_anjou_dynasty = {
+		name = { name = anjou_dynasty }
+		home = angers
+		dynasty_name_type = location
+	}
+
+	villeneuve_dynasty = {
+		name = { name = villeneuve_dynasty }
+		home = frejus # Trans
+		dynasty_name_type = location
+	}
+
 	carolingian_dynasty = { #Extinct
 		name = { name = carolingian_dynasty }
 		home = aachen
@@ -7138,6 +7823,12 @@ dynasty_manager = {
 		name = { name = name_osman }
 		home = tabriz #BR EDIT
 		dynasty_name_type = patronym
+		male_names = {
+			name_ahmad name_muhammad name_murad name_mustafa name_salim name_salomon
+		}
+		female_names = {
+			name_aisha name_fatima name_khadija
+		}
 	}
 
 	ramazanids_dynasty = {
@@ -7544,11 +8235,6 @@ dynasty_manager = {
 	launggyet_dynasty = {
 		name = { name = launggyet_dynasty }
 		home = launggyet
-	}
-
-	gabras_dynasty = {
-		name = { name = gabras_dynasty }
-		home = theodoro
 	}
 
 
@@ -8560,6 +9246,11 @@ dynasty_manager = {
 		home = milano
 	}
 
+	jagiellon_dynasty = {
+		name = { name = jagiellon_dynasty }
+		home = krakow
+	}
+
 	drutsky_dynasty = {
 		name = { name = drutsky_dynasty }
 		home = drutsk
@@ -8742,6 +9433,48 @@ dynasty_manager = {
 		name = { name = torghut_dynasty }
 		home = bulgan
 	}
+
+	cane_dynasty = {
+		name = { name = cane_dynasty }
+		home = casale
+	}
+
+	morozov_dynasty = {
+		name = { name = morozov_dynasty }
+		home = moscow
+	}
+
+	dolgorukiy_dynasty = {
+		name = { name = dolgorukiy_dynasty }
+		home = moscow
+	}
+
+	golitzin_dynasty = {
+		name = { name = golitzin_dynasty }
+		home = moscow
+	}
+
+	rtr_ming_ma_dynasty = { #MNG consort
+		name = { name = name_ma }
+		home = shangyuan
+	}
+
+	dejanovic_dynasty = { # Dejanović, better known as Dragaš
+		name = { name = dragas_dynasty }
+		home = constantinople
+		male_names = {
+			name_constantine name_dejan name_john
+		}
+		female_names = {
+			name_anna name_helen name_theodora
+		}
+	}
+
+	berenberg_dynasty = {
+		name = { name = berenberg_dynasty }
+		home = antwerp
+	}
+
 	
 	### BR added Dynasties ###
 
