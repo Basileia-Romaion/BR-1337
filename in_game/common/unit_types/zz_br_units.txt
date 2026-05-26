@@ -60,8 +60,12 @@ REPLACE_OR_CREATE:a_varangians = {
 
 	upgrades_to_only = br_renaissance_varangians
 
-	strength_damage_done = 0.35 #br increased from 0.2
-	morale_damage_done = 0.35 #br increased from 0.2
+	combat = {
+		coastal = 0.10
+		river = 0.15
+	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
 
 	location_potential = {
 		is_capital = yes
@@ -194,8 +198,13 @@ br_renaissance_varangians = {
 
 	upgrades_to_only = br_discovery_varangians
 
-	strength_damage_taken = -0.10
-	morale_damage_taken = -0.10
+	combat = {
+		coastal = 0.10
+		river = 0.15
+	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
+
 
 	#limit = {
 	#	value = 1
@@ -250,13 +259,20 @@ br_discovery_varangians = {
 
 	upgrades_to_only = br_reformation_varangians
 
-	strength_damage_taken = -0.10
-	morale_damage_taken = -0.10
-
-	limit = {
-		value = 4 #increased from 1
-		add = modifier:num_of_varangian_units
+	combat = {
+		coastal = 0.10
+		river = 0.15
 	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
+
+
+	#limit = {
+	#	value = 1
+	#	add = modifier:num_of_varangian_units
+	#}
+
+	limit = br_varangian_unit_limit
 
 	gfx_tags = { medium_tag musket_tag }
 }
@@ -304,8 +320,13 @@ br_reformation_varangians = {
 
 	upgrades_to_only = br_absolutism_varangians
 
-	strength_damage_taken = -0.10
-	morale_damage_taken = -0.10
+	combat = {
+		coastal = 0.10
+		river = 0.15
+	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
+
 
 	#limit = {
 	#	value = 1
@@ -360,8 +381,13 @@ br_absolutism_varangians = {
 
 	upgrades_to_only = br_revolutions_varangians
 
-	strength_damage_taken = -0.10
-	morale_damage_taken = -0.10
+	combat = {
+		coastal = 0.10
+		river = 0.15
+	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
+
 
 	#limit = {
 	#	value = 1
@@ -414,8 +440,13 @@ br_revolutions_varangians = {
 	is_special = yes
 	copy_from = a_age_6_revolutions_heavy_infantry
 
-	strength_damage_taken = -0.10
-	morale_damage_taken = -0.10
+	combat = {
+		coastal = 0.10
+		river = 0.15
+	}
+	strength_damage_done = 0.25 #br increased from 0.2
+	morale_damage_done = 0.25 #br increased from 0.2
+
 
 	#limit = {
 	#	value = 1
