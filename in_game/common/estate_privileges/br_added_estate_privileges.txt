@@ -667,22 +667,83 @@ br_elysian_foederati_privilege = {
 
 br_ere_foederati_privilege = {
 	estate = tribes_estate
-	icon = tribal_autonomy
+	icon = tribes_tribal_levies
 	
-	potential = { #tech unlock
-		#OR = {
-		#	has_or_had_tag = E1Y			
-		#	has_or_had_tag = E2Y
-		#	culture = { has_culture_group = culture_group:elysian_group }
-		#}
+	potential = {
+		culture = { has_culture_group = culture_group:greek_group }
 	}
 	country_modifier = {
-		global_tribes_estate_power = 0.5
+		global_tribes_estate_power = 1
+		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+		tribes_estate_levy_size = 0.25
+		wrong_culture_levy_size = 0.1
+		monthly_towards_free_subjects = societal_value_monthly_move
+		global_tribal_promotion = -0.15
+	}
+}
+
+br_turkoman_privilege = {
+	estate = tribes_estate
+	icon = tribes_tribal_levies
+	
+	potential = {
+		religion ?= { group ?= religion_group:muslim }
+		any_pop = { 
+			OR = {
+				culture = { has_culture_group = culture_group:turkic_group }
+			}
+		}
+	}
+	country_modifier = {
+		global_tribes_estate_power = 1.0
 		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
 		tribes_estate_levy_size = 0.5
-		wrong_culture_levy_size = 0.1
 		levy_maintenance_modifier = -0.1
 		monthly_towards_free_subjects = societal_value_monthly_move
 		global_tribal_promotion = -0.1
+	}
+}
+
+br_ottoman_dhimmi_levies = {
+	estate = dhimmi_estate
+	icon = dhimmi_military_service
+	potential = {
+		religion ?= {
+			group ?= religion_group:muslim
+		}
+		culture = { has_culture_group = culture_group:turkic_group }
+		any_non_state_religion_location = {
+			dominant_religion ?= { 
+				OR = {
+					group = religion_group:christian
+					group = religion_group:israelite_group
+				}
+			}
+		}
+	}
+	allow = {}
+	location_modifier = {
+		potential_trigger = {
+			dominant_religion ?= { 
+				OR = {
+					group = religion_group:christian
+					group = religion_group:israelite_group
+				}
+			}
+		}
+		local_pop_conversion_speed_modifier = -0.25
+		local_unrest = -0.1
+	}
+	country_modifier = {
+		tolerance_heathen = 1
+		clergy_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+		dhimmi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_dhimmi_estate_power = 1
+		wrong_culture_levy_size = 0.1
+		dhimmi_estate_levy_size = 0.2
+	}
+
+	ai_weight = {
+		add = 25
 	}
 }
