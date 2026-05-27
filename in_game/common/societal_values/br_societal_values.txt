@@ -21,7 +21,7 @@ br_bureaucratic_vs_stratiotai = {
         tax_income_efficiency = 0.1 #+
 
         #negatives
-        court_spending_cost_modifier = 0.1 #- more money spent on court and titles.
+        court_spending_efficiency = -0.1 #- more money spent on court and titles.
         land_morale_modifier = -0.05 #- less morale
         global_manpower_modifier = -0.25 #- less manpower
 		

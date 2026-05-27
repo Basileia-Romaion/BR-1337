@@ -111,7 +111,7 @@ italiotai_culture = {
 	}
 
 	country_modifier = {
-		global_urban_build_buildings_cost = -0.1
+		global_urban_build_buildings_efficiency = 0.1
 		global_peasant_enfranchisment = 0.05
 	}
 	
@@ -403,7 +403,7 @@ boulgaroi = {
 	}
 	country_modifier = {
 		global_max_rgo_size_modifier_in_rural = 0.1
-		fort_maintenance_cost = -0.10
+		fort_maintenance_efficiency = 0.10
 	}
 	culture_groups = {
 		roman_group
@@ -454,7 +454,7 @@ bankariotai_culture = {
 	}
 	country_modifier = {
 		import_efficiency = 0.2
-		global_foreign_build_buildings_cost = -0.1
+		global_foreign_build_buildings_efficiency = 0.1
 	}
 	
 	culture_groups = {
@@ -477,7 +477,7 @@ makrembolitai_culture = {
 	country_modifier = {
 		import_efficiency = 0.2
 		#estate_enrichment = -0.1
-		global_foreign_build_buildings_cost = -0.1
+		global_foreign_build_buildings_efficiency = 0.1
 	}
 	
 	culture_groups = {
@@ -499,7 +499,7 @@ chrysotrapeziotai_culture = {
 	country_modifier = {
 		import_efficiency = 0.2
 		#estate_enrichment = -0.1
-		global_foreign_build_buildings_cost = -0.1
+		global_foreign_build_buildings_efficiency = 0.1
 	}
 	
 	culture_groups = {

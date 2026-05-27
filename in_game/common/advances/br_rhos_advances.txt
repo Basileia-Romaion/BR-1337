@@ -1,5 +1,5 @@
 ﻿#unlock_cabinet_action = settle_the_frontier
-#colonial_maintenance_cost = -0.2
+
 #colonial_migration_size_modifier = 0.5
 #create_colonial_charter_cost_modifier = -0.2
 #unlock_law = colonial_policy
@@ -85,7 +85,7 @@ rhos_ostrogs_and_kastra = {
 		}
 	}
 	requires = pike_and_shot_advance
-	fort_maintenance_cost = -0.15
+	fort_maintenance_efficiency = 0.15
 	global_garrison_size_modifier = 0.1
 	ai_weight = { add = 5 }
 }

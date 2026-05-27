@@ -144,8 +144,8 @@
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0002 #br added
-		monthly_legitimacy = 0.01 #BR EDIT from 0.1
+		stability_cost_efficiency = -0.01
+		court_spending_efficiency = -0.01
 		monthly_towards_aristocracy = societal_value_tiny_monthly_move #br changed from decentralizaton
 	}
 
@@ -388,8 +388,8 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0002
-		monthly_legitimacy = 0.01
+		stability_cost_efficiency = -0.01
+		court_spending_efficiency = -0.01
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -397,7 +397,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 		global_manpower_modifier = 0.1
 		global_army_levy_size_modifier = 0.1 #br added
 		global_defensive = 0.1
-		fort_maintenance_cost = -0.1
+		fort_maintenance_efficiency = 0.2
 		fort_limit = 1
 		monthly_towards_land = societal_value_large_monthly_move
 		army_maintenance_efficiency = 0.1
@@ -560,8 +560,8 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_decay = 0.0002
-		monthly_legitimacy = 0.01
+		stability_cost_efficiency = -0.01
+		court_spending_efficiency = -0.01
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -570,7 +570,7 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 		global_navy_levy_size_modifier = 0.2
 		always_allow_navy_levies = yes
 		monthly_towards_naval = societal_value_large_monthly_move
-		navy_maintenance_efficiency = 0.1
+		navy_maintenance_efficiency = 0.2
 	}
 
 	on_enable = {

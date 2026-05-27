@@ -359,7 +359,7 @@ br_arm_highland_villages = { #will break up and balance later.
 		global_defensive = 0.1
 		global_max_rural_control = -0.05
 		peasants_estate_levy_size = 0.1
-		fort_maintenance_cost = -0.1
+		fort_maintenance_efficiency = 0.1
 		levy_maintenance_modifier = -0.1
 	}
 }
@@ -406,8 +406,8 @@ br_special_trade_companies = {
 		potential_trigger = { stability >= 25 }
 		export_efficiency = large_trade_efficiency_bonus
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_port_build_buildings_cost = -0.25
-		global_foreign_build_buildings_cost = -0.25
+		global_port_build_buildings_efficiency = 0.25
+		global_foreign_build_buildings_efficiency = 0.25
 	}
 	country_modifier = {
 		potential_trigger = { "estate_power(estate_type:burghers_estate)" >= 0.5 }
@@ -435,7 +435,7 @@ br_latin_trade_naval_reliance = {
 		burghers_estate_allowed_in_cabinet = yes
 		expected_navy_size_modifier = -0.5
 		tolerance_heretic = 1
-		foreign_export_from_market_cost_modifier = -0.25
+		foreign_export_from_market_efficiency = 0.25 #1.3 check
 		monthly_towards_plutocracy = societal_value_monthly_move
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 	}
@@ -514,7 +514,7 @@ br_bureaucrat_clergy = { #maybe split up
 		potential_trigger = { 
 			has_dlc = "d008_fate_of_the_phoenix"
 		}
-		global_bureaucracy_maintenance_cost_modifier = -0.1
+		global_bureaucracy_maintenance_efficiency = 0.1
 	}
 	country_modifier = {
 		potential_trigger = { 

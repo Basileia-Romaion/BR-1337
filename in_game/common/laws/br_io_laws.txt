@@ -85,8 +85,6 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.06
 			country_can_use_br_romaiokratia_cb = yes
-			#global_max_bureaucracy_slots = 1
-			#global_bureaucracy_maintenance_cost_modifier = -0.01
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -142,8 +140,7 @@ br_romaiokratia_law = {
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 			monthly_roman_authority = 0.08
 			country_can_use_br_romaiokratia_cb = yes
-			#global_max_bureaucracy_slots = 2
-			#global_bureaucracy_maintenance_cost_modifier = -0.02
+			global_max_bureaucracy_slots = 1
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -218,8 +215,7 @@ br_romaiokratia_law = {
 			government_size = 1
 			country_can_use_br_romaiokratia_cb = yes
 			monthly_complacency = 0.03
-			#global_max_bureaucracy_slots = 3
-			#global_bureaucracy_maintenance_cost_modifier = -0.03
+			global_max_bureaucracy_slots = 2
 		}
 		country_modifier = {
     		potential_trigger = {
@@ -283,7 +279,7 @@ br_romaiokratia_law = {
 		}
 		country_modifier = {
 			#benefits for all members
-			stability_cost = -0.2
+			stability_cost_efficiency = 0.2
 		}
 		country_modifier = {
 			potential_trigger = {
@@ -299,8 +295,7 @@ br_romaiokratia_law = {
 			government_size = 1
 			country_can_use_br_romaiokratia_cb = yes
 			monthly_complacency = 0.05
-			#global_max_bureaucracy_slots = 4
-			#global_bureaucracy_maintenance_cost_modifier = -0.04
+			global_max_bureaucracy_slots = 3
 		}
 		country_modifier = {
     		potential_trigger = {

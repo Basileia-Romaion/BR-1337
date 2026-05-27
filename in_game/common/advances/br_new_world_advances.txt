@@ -1,5 +1,4 @@
 ﻿#unlock_cabinet_action = settle_the_frontier
-#colonial_maintenance_cost = -0.2
 #colonial_migration_size_modifier = 0.5
 #create_colonial_charter_cost_modifier = -0.2
 #unlock_law = colonial_policy
@@ -70,7 +69,7 @@ br_vinland_naval_tradition = { #todo break up a bit
     global_fish_output_modifier = 0.1
     #can_recruit_explorer = yes
     #may_explore = yes
-    exploration_maintenance_cost = -0.25
+    exploration_maintenance_efficiency = 0.25
     navy_maintenance_efficiency = 0.25
     global_maritime_presence_modifier = 0.1
 	#merchant_power_from_maritime_modifier = 0.2
@@ -176,7 +175,7 @@ vinlander_pathfinders = {
 	}
 	requires = vinlander_longhouse_settlement
 	create_colonial_charter_cost_modifier = -0.1
-	colonial_maintenance_cost = -0.1
+	colonial_maintenance_efficiency = 0.1
 }
 
 # age_4_reformation
@@ -435,7 +434,7 @@ elysian_urban_foundations = {
 	requires = pike_square
 	non_rural_migration_attraction = 0.1
 	global_monthly_development = 0.001
-	global_urban_build_buildings_cost = -0.1
+	global_urban_build_buildings_efficiency = 0.1
 	global_pop_promotion_speed_modifier = 0.1
 }
 

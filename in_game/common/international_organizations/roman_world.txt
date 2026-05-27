@@ -75,7 +75,7 @@
 
 	non_leader_modifier = {	
 		#positive modifiers
-		fort_maintenance_cost = -0.1
+		fort_maintenance_efficiency = 0.1
 	
 		#negative modifiers
 		block_from_change_to_empire_rank = yes
@@ -162,7 +162,7 @@
 	leader_modifier = {
 		diplomatic_capacity = 2
 		max_diplomats = 2
-		court_spending_cost_modifier = 0.1
+		court_spending_efficiency = -0.1
 		
 		allowed_intervene_in_war = yes
 		allowed_enforce_peace = yes

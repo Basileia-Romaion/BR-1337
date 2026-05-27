@@ -845,7 +845,7 @@ REPLACE_OR_CREATE:inigo_architecture = {
 	allow_children = no
 	
 	cultural_tradition_modifier = 0.2
-	global_urban_build_buildings_cost = -0.025
+	global_urban_build_buildings_efficiency = 0.025
 }
 REPLACE_OR_CREATE:sailing_and_fighting_instructions = {
 	age = age_5_absolutism
@@ -1033,7 +1033,7 @@ REPLACE_OR_CREATE:ilk_ilkhanate_resurgent = {
 	requires = ilk_restore_yam
 	icon = horde_ardor
 
-	great_power_score_modifier = 0.1
+	#great_power_score_modifier = 0.1
 	monthly_prestige = 0.1
 }
 REPLACE_OR_CREATE:ilk_persian_arts_and_architecture = {
@@ -1047,7 +1047,7 @@ REPLACE_OR_CREATE:ilk_persian_arts_and_architecture = {
 	requires = hire_artist_cost_modifier_advance_disc
 	icon = ira_spread_of_persian_influence
 	research_speed_modifier = 0.1
-	global_urban_build_buildings_cost = -0.05
+	global_urban_build_buildings_efficiency = 0.05
 }
 REPLACE_OR_CREATE:ilk_descendants_of_genghis_khan = {
 	age = age_3_discovery
@@ -1181,7 +1181,7 @@ REPLACE_OR_CREATE:keepers_of_the_gate  = {
 			has_or_had_tag = SE3
 		}
 	}
-	fort_maintenance_cost = -0.2
+	fort_maintenance_efficiency = 0.2
 	requires = supply_depot_advance_age_3_discovery
 }
 
@@ -1503,7 +1503,7 @@ REPLACE_OR_CREATE:rom_pax_romana = {
 	}
 	requires = subjects_advance
 	icon = gel_healthy_economy
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.1
 	global_monthly_prosperity = 0.002
 }
 REPLACE_OR_CREATE:rom_restore_the_legions = {
@@ -1627,7 +1627,7 @@ REPLACE_OR_CREATE:rom_roman_architecture = {
 	}
 	requires = industrialization_advance
 	icon = efficient_construction_plans
-	building_upkeep_costs = -0.15
+	building_upkeep_efficiency = 0.15
 }
 
 ##############################-Turkic-##############################
@@ -1640,7 +1640,7 @@ REPLACE_OR_CREATE:seljuk_heritage = {
 	}
 	
 	global_integration_speed_modifier = 0.33
-	great_power_score_exempt_from_forfeit = 5
+	#great_power_score_exempt_from_forfeit = 5
 	subject_income_modifier = 0.1
 	global_crown_estate_power = 0.1
 	
@@ -1702,7 +1702,7 @@ REPLACE_OR_CREATE:heirs_of_rum = {
 	global_integration_speed_modifier = 0.1
 	monthly_prestige = 0.1
 	subject_income_modifier = 0.1
-	great_power_score_exempt_from_forfeit = 10
+	#great_power_score_exempt_from_forfeit = 10
 	global_crown_estate_power = 0.2
 }
 

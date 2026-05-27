@@ -25,8 +25,8 @@
     country_modifier = {
         can_recruit_explorer = yes
         may_explore = yes
-        exploration_maintenance_cost = -0.25
-        colonial_maintenance_cost = -0.25
+        exploration_maintenance_efficiency = 0.25
+        colonial_maintenance_efficiency = 0.25
         government_reform_slots = 1
         can_invite_settlers = yes
         global_population_growth = 0.001

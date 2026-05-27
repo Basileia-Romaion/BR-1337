@@ -51,7 +51,7 @@ INJECT:royal_court_customs_law = {
 		}
 	
 		country_modifier = {
-			court_spending_cost_modifier  = -0.02
+			court_spending_efficiency  = 0.05
 			monthly_towards_land = societal_value_monthly_move
 			army_tradition_decay = -0.002
 			global_army_levy_size_modifier = 0.1
@@ -71,7 +71,7 @@ INJECT:royal_court_customs_law = {
 		}
 	
 		country_modifier = {
-			court_spending_cost_modifier  = -0.02
+			court_spending_efficiency  = 0.05
 			monthly_towards_naval = societal_value_minor_monthly_move
 			navy_tradition_decay = -0.002
 			global_sailors_modifier = 0.2
@@ -92,7 +92,7 @@ INJECT:royal_court_customs_law = {
 			country_rank = country_rank:rank_empire
 	    }
 	    country_modifier = {
-			court_spending_cost_modifier  = 0.02
+			court_spending_efficiency  = -0.05
 			cultural_influence_modifier = 0.1
 			country_cabinet_efficiency = 0.05
 			legislative_efficiency = 0.05
@@ -226,7 +226,7 @@ br_military_frontier = {
 
 	br_frontier_maintained = {
 		country_modifier = {
-			fort_maintenance_cost = 0.10
+			fort_maintenance_efficiency = -0.10
 			global_defensive = 0.1
 			global_garrison_size_modifier = 0.1
 			monthly_towards_stratiotai = societal_value_minor_monthly_move
@@ -238,7 +238,7 @@ br_military_frontier = {
 	}
 	br_frontier_not_maintained = {
 		country_modifier = {
-			fort_maintenance_cost = -0.10
+			fort_maintenance_efficiency = 0.10
 			global_defensive = -0.10
 		}
 		estate_preferences = {

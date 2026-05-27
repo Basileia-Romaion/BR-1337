@@ -30,7 +30,7 @@ br_imperial_administration = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		court_spending_cost_modifier  = 0.1
+		court_spending_efficiency  = -0.1
 	}
 	country_modifier = {
 		potential_trigger = { stability > 0 }
@@ -94,7 +94,7 @@ br_sub_theme_subject = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_cost = -0.25
+		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
@@ -138,7 +138,7 @@ br_sub_pronoia_subject = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_cost = -0.25
+		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
@@ -183,12 +183,12 @@ br_sub_pronoia_subject = {
     #}
 	#country_modifier = {
 		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		#hostile_diplomatic_annexation_cost = -0.5
+		#hostile_diplomatic_annexation_efficiency = 0.5
     #}
 	#country_modifier = {
 		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
 		#loyalty_to_overlord = -25
-		#hostile_diplomatic_annexation_cost = 0.5
+		#hostile_diplomatic_annexation_efficiency = -0.5
     #}
 	#years = 2
 #}
@@ -230,7 +230,7 @@ br_naval_akritai_reform = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_cost = -0.25
+		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {

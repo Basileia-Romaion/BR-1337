@@ -14,7 +14,7 @@ br_adu_nasrid_art = {
 	potential = {
 		has_or_had_tag = ADU
 	}
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	global_monthly_art_start_chance = 0.1
 	requires = feudalism_advance
 }
@@ -328,7 +328,7 @@ br_french_heritage = {
 	nobles_estate_levy_size = 1.0
 	army_heavy_cavalry_power = 0.1
 	army_heavy_cavalry_maintenance_cost_modifier = -0.1
-	great_power_score_exempt_from_forfeit = 10
+	#great_power_score_exempt_from_forfeit = 10
 	requires = br_french_tradition
 }
 br_carolingian_relatinization = { #unique loc needed

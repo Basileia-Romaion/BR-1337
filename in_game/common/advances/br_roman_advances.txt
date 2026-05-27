@@ -10,7 +10,6 @@
 #minting_income_factor = 0.10
 #global_distance_from_capital_speed_propagation = 0.05
 #global_monthly_development = 0.001
-#global_build_buildings_cost = -0.05
 #build_gravel_road_cost_modifier = -0.1
 #build_paved_road_cost_modifier = -0.1
 #tolerance_own = 1
@@ -20,18 +19,15 @@
 # global_nobles_desired_pop_scaled = 0.002
 # land_cost_on_distance_from_capital_modifier
 # sea_cost_on_distance_from_capital_when_maritime
-# diplomatic_upkeep_modifier = -0.05
 # naval_damage_done = 0.2
 # navy_galley_power = 0.1
 # artillery_bonus_vs_fort = 1
 # assault_ability = 0.1
 # siege_ability = 0.05
-# global_trade_through_owned_territory_cost_modifier = -0.2
 # prestige_decay = -0.001
 # spy_network_construction = 0.2
 #global_silk_output_modifier = 0.1
 #global_jewelry_output_modifier = 0.1
-#global_trade_through_owned_territory_cost_modifier = -0.1
 
 #
 #global_max_literacy = 5
@@ -128,7 +124,7 @@ roman_pronoial_administration = {
 	unlock_policy = br_pronoia_system
 	unlock_building = br_pronoia_estate
 	subject_loyalty = 5
-	diplomatic_annexation_cost = -0.05
+	diplomatic_annexation_efficiency = 0.05
 }
 
 roman_akritic_reforms = {
@@ -221,7 +217,7 @@ br_stationes_advance = { #loc
 	requires = roman_court_and_office
 	#army_auxiliary_power = 0.1
 	global_distance_from_capital_speed_propagation = 0.05
-	global_trade_through_owned_territory_cost_modifier = -0.05
+	global_trade_through_owned_territory_efficiency = 0.05
 	trade_range_modifier = 0.05
 	unlock_building = br_stationes_building
 	ai_weight = { add = 5 }
@@ -285,7 +281,7 @@ roman_infrastructure = {
 	requires = supply_depot_advance_age_3_discovery
 	global_road_building_time = -0.1
 	global_distance_from_capital_speed_propagation = 0.1
-	global_trade_through_owned_territory_cost_modifier = -0.1
+	global_trade_through_owned_territory_efficiency = 0.1
 	ai_weight = { add = 5 }
 }
 
@@ -342,7 +338,7 @@ roman_civic_order = {
 	}
 	requires = roman_imperial_legitimacy
 	tolerance_own = 1
-	global_urban_build_buildings_cost = -0.05
+	global_urban_build_buildings_efficiency = 0.05
 	global_pop_promotion_speed_modifier = 0.1
 	ai_weight = { add = 5 }
 }
@@ -419,7 +415,7 @@ roman_state_identity = {
 	}
 	requires = crown_power_advance_revolutions
 	monthly_legitimacy = 0.1
-	diplomatic_annexation_cost = -0.1
+	diplomatic_annexation_efficiency = 0.1
 	ai_weight = { add = 5 }
 }
 

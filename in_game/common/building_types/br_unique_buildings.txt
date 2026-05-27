@@ -345,7 +345,7 @@ br_constantinople_shipyard = {
 		local_sailors = 0.02
 		can_build_ships_in_this_location = yes
 		harbor_suitability = 0.25
-		local_trade_embark_disembark_cost_modifier = -0.25
+		local_trade_embark_disembark_efficiency = 0.15
 		local_repair_speed = 0.02
 	}
 }
@@ -354,7 +354,7 @@ br_constantinople_shipyard_improved = {
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
-	icon = imperial_halic_shipyards
+	icon = br_constantinople_shipyard #imperial_halic_shipyards
 	
 	max_levels = 1
 	employment_size = shipyard_employment
@@ -380,7 +380,7 @@ br_constantinople_shipyard_improved = {
 		local_sailors = 0.05
 		can_build_ships_in_this_location = yes
 		harbor_suitability = 0.25
-		local_trade_embark_disembark_cost_modifier = -0.25
+		local_trade_embark_disembark_efficiency = -0.25
 		local_repair_speed = 0.05
 	}
 	

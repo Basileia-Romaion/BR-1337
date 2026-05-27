@@ -34,7 +34,7 @@ domestikos_west = {
 	}
 
 	leader_modifier = {
-		court_spending_cost_modifier = 0.02
+		court_spending_efficiency = -0.02
 		government_size = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
@@ -107,7 +107,7 @@ domestikos_east = {
 	}
 
 	leader_modifier = {
-		court_spending_cost_modifier = 0.02
+		court_spending_efficiency = -0.02
 		num_local_governors = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
