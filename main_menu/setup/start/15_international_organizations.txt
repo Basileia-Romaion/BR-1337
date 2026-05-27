@@ -1,7 +1,9 @@
+#################################################################
+# 				Unique International Organizations				#
+#################################################################
+	
+	
 international_organization_manager = {
-	#################################################################
-	# 				Unique International Organizations				#
-	#################################################################
 
 	#################################################################
 	# 				Holy Roman Empire								#
@@ -177,6 +179,14 @@ international_organization_manager = {
 		ruler_term = { character = fra_philip_vi_valois start_date = 1328.4.1 regnal_number = 6 }
 		#Great Interregnum will continue until Charles IV secures Succession for his son
 
+		regnal_numbers = {
+			name_charles = 3
+			name_lothar = 2
+			name_wido = 1
+			name_lambert = 1
+			name_arnulf = 1
+			name_berengar = 1
+		}
 		variables = { 
 			imperial_authority = 100 #Set by effect at game start
 		}
@@ -1495,7 +1505,7 @@ international_organization_manager = {
 		creation_date = 1073.1.1
 		members = {
 			#Clear
-			TIB CHI GUG MGG LGT
+			TIB CHI GUG MGG LGT LNG
 
 			#Unclear
 			KTU #Newar Buddhism
@@ -1680,5 +1690,4 @@ international_organization_manager = {
 		}
 		icon = smartism
 	}
-	
 }
