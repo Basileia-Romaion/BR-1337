@@ -1040,7 +1040,7 @@ character_db={
 		birth_date = 1301.1.1
 		artist = scientist
 		artist_skill = 0.95
-		artist_trait = adept # Added to silence error
+		artist_trait = adept
 		birth = constantinople
 		estate = burghers_estate
 		tag = BYZ
@@ -1052,11 +1052,140 @@ character_db={
 		birth_date = 1296.1.1
 		artist = philosopher
 		artist_skill = 0.85
-		artist_trait = prominent # Added to silence error
+		artist_trait = prominent
 		birth = constantinople
 		estate = clergy_estate
 		tag = BYZ
 	}
+	br_ere_rdm_character_96 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1297.1.1
+		birth = constantinople
+		father = byz_andronikos_ii_palaiologos
+		mother = byz_eirene_di_monferrato
+		dynasty = palaiologos_dynasty
+		tag = ATH
+	}
+	br_ere_rdm_character_97 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		adm = 45 dip = 77 mil = 80
+		birth_date = 1297.1.1 # Unknown
+		birth = izmit # Somewhere in Bithynia
+		dynasty = apokaukos_dynasty
+		tag = AON
+	}
+	br_ere_rdm_character_98 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1284.1.1
+		birth = constantinople
+		father = bul_ivan_iii_asen
+		mother = bul_irene_palaiologina
+		dynasty = asen_dynasty
+		tag = AN11
+	}
+	br_ere_rdm_character_99 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		adm = 40 dip = 36 mil = 45
+		birth_date = 1288.1.1
+		birth = thessaloniki
+		father = byz_demetrios_koutroules
+		mother = byz_anna_komnene_palaiologina
+		dynasty = palaiologos_dynasty
+		tag = THE
+	}
+	br_ere_rdm_character_100 = {
+		first_name = "random"
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1 # Married 1341
+		birth = thessaloniki
+		father = byz_konstantinos_palaiologos_angelos
+		#mother = Unknown
+		dynasty = palaiologos_dynasty
+		tag = B0R
+	}
+
+
+#Balkans	
+	br_balkan_rdm_character_1 = {
+		first_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		adm = 28 dip = 17 mil = 22
+		birth_date = 1304.1.1
+		birth = vidin
+		father = bul_michael_shishman
+		mother = ser_ana_neda
+		dynasty = shishman_dynasty
+		tag = SE1
+	}
+	br_balkan_rdm_character_2 = {
+		first_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		birth_date = 1323.1.1
+		birth = lovech
+		father = bul_ivan_alexander
+		mother = bul_teodora_of_wallachia
+		dynasty = sratsimir_dynasty
+		tag = WA1
+	}
+	br_balkan_rdm_character_3 = {
+		first_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		birth_date = 1325.1.1
+		birth = lovech
+		father = bul_ivan_alexander
+		mother = bul_teodora_of_wallachia
+		dynasty = sratsimir_dynasty
+		tag = WA0
+	}
+	br_balkan_rdm_character_4 = {
+		first_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		birth_date = 1327.1.1
+		birth = lovech
+		father = bul_ivan_alexander
+		mother = bul_teodora_of_wallachia
+		dynasty = sratsimir_dynasty
+		tag = SE2
+	}
+	br_balkan_rdm_character_5 = {
+		first_name = "random"
+		last_name = { name = Komnin_Asen }
+		culture = bulgarian
+		religion = orthodox
+		adm = 61 dip = 71 mil = 41
+		birth_date = 1307.1.1
+		birth = kran
+		father = bul_sracimir_of_kran
+		mother = bul_keratsa_petritsa
+		dynasty = sratsimir_dynasty
+		tag = B1L
+	}
+	
+	br_balkan_rdm_character_6 = {
+		first_name = "random"
+		culture = bulgarian
+		religion = orthodox
+		birth_date = 1312.1.1
+		birth = kran
+		father = bul_sracimir_of_kran
+		mother = bul_keratsa_petritsa
+		dynasty = sratsimir_dynasty
+		tag = SE0
+	}
+
 
 
 #Naples

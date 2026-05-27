@@ -12535,8 +12535,8 @@ countries = {
 		include = "expl_indian_trade_route"
 		include = "br_pronoia_template"
 		government = {
-			ruler = byz_demetrios_palaiologos
-			ruler_term = { character = byz_demetrios_palaiologos start_date = 1329.9.25 } 
+			ruler = br_ere_rdm_character_96
+			ruler_term = { character = br_ere_rdm_character_96 start_date = 1329.9.25 } 
 		}
 
 		tolerated_cultures = {
@@ -12866,7 +12866,7 @@ countries = {
 		include = "expl_indian_trade_route"
 		include = "br_pronoia_template"
 		government = {
-			ruler = byz_konstantinos_palaiologos_angelos
+			ruler = br_ere_rdm_character_99
 			
 			ruler_term = { character = the_bonifacio_i_monferrato start_date = 1204.5.16 end_date = 1207.1.1 regnal_number = 1 }
 			ruler_term = { character = sic_demetrio_i_thessalonica start_date = 1207.1.1 end_date = 1224.12.1 regnal_number = 1 }
@@ -12875,7 +12875,7 @@ countries = {
 			ruler_term = { character = ths_manuel_komnenos_doukas start_date = 1230.1.1 end_date = 1237.1.1 regnal_number = 1 }
 			ruler_term = { character = the_ioannes_komnenos_doukas start_date = 1237.1.1 end_date = 1244.9.25 regnal_number = 1 }
 			#ruler_term = { character = the_demetrios_komnenos_doukas start_date = 1244.9.25 end_date = 1230.1.1 regnal_number = 2 }
-			ruler_term = { character = byz_konstantinos_palaiologos_angelos start_date = 1329.9.25 } 
+			ruler_term = { character = br_ere_rdm_character_99 start_date = 1329.9.25 } 
 			regnal_numbers = {
 				name_boniface = 1
 				name_demetrius = 2
@@ -53801,8 +53801,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
-			ruler = ser_yoan_komnin_asen
+			ruler_term = { character = br_balkan_rdm_character_5 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_5
 			
 			regnal_numbers = {
 				name_peter = 2
@@ -53880,8 +53880,8 @@ countries = {
 		
 		government = {
 			
-			ruler_term = { character = bul_ivan_sratsimir start_date = 1333.1.1 }
-			ruler = bul_ivan_sratsimir
+			ruler_term = { character = br_balkan_rdm_character_3 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_3
 			
 			centralization_vs_decentralization = 70
 			aristocracy_vs_plutocracy = -50
@@ -53921,8 +53921,8 @@ countries = {
 		
 		government = {
 			
-			ruler_term = { character = bul_michail_iv_asen start_date = 1333.1.1 }
-			ruler = bul_michail_iv_asen
+			ruler_term = { character = br_balkan_rdm_character_2 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_2
 			
 			centralization_vs_decentralization = 70
 			aristocracy_vs_plutocracy = -50
@@ -54005,8 +54005,8 @@ countries = {
 		country_rank = rank_duchy
 		government = {
 			
-			ruler_term = { character = bul_michail_sratsimir start_date = 1333.1.1 }
-			ruler = bul_michail_sratsimir
+			ruler_term = { character = br_balkan_rdm_character_6 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_6
 			
 			reforms = {
 				autocracy
@@ -54050,8 +54050,8 @@ countries = {
 		country_rank = rank_duchy
 		government = {
 			
-			ruler_term = { character = bul_ivan_stefan start_date = 1333.1.1 }
-			ruler = bul_ivan_stefan
+			ruler_term = { character = br_balkan_rdm_character_1 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_1
 			
 			reforms = {
 				autocracy
@@ -54096,8 +54096,8 @@ countries = {
 		country_rank = rank_duchy
 		government = {
 			
-			ruler_term = { character = bul_ivan_asen start_date = 1333.1.1 }
-			ruler = bul_ivan_asen
+			ruler_term = { character = br_balkan_rdm_character_4 start_date = 1333.1.1 }
+			ruler = br_balkan_rdm_character_4
 			
 			reforms = {
 				autocracy
@@ -54620,9 +54620,8 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 		government = {
-			
-			ruler_term = { character = byz_alexios_apokaukos start_date = 1335.1.1 }
-			ruler = byz_alexios_apokaukos
+			ruler_term = { character = br_ere_rdm_character_97 start_date = 1335.1.1 }
+			ruler = br_ere_rdm_character_97
 		}
 		
 		country_rank = rank_duchy
@@ -54778,8 +54777,8 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 		government = {
-			ruler = byz_andronikos_palaiologos_angelos
-			ruler_term = { character = byz_andronikos_palaiologos_angelos start_date = 1329.9.25 } 
+			ruler = br_ere_rdm_character_100
+			ruler_term = { character = br_ere_rdm_character_100 start_date = 1329.9.25 } 
 		}
 		
 		country_rank = rank_county
@@ -55179,8 +55178,8 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 		government = {
-			ruler = byz_andronikos_asen
-			ruler_term = { character = byz_andronikos_asen start_date = 1299.11.1 }
+			ruler = br_ere_rdm_character_98
+			ruler_term = { character = br_ere_rdm_character_98 start_date = 1299.11.1 }
 		}
 		
 		country_rank = rank_county
