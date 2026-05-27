@@ -98,7 +98,7 @@ development = {
 	south_china_region = 27
 	tibet_region = 10
 	west_china_region = 28
-	xinjiang_region = 7
+	xinjiang_region = 9
 	hindustan_region = 28
 	bengal_region = 30
 	western_india_region = 23
@@ -130,10 +130,10 @@ development = {
 
 
 	# areas
-	marmara_area = 3
-	west_anatolia_area = 2
-	central_anatolia_area = -2
-	cappadocia_area = -3
+	marmara_area = 2
+	west_anatolia_area = 1
+	central_anatolia_area = -1
+	cappadocia_area = -1
 	#scandinavia
 	svealand_area = 4
 	gotaland_area = 3
@@ -143,8 +143,8 @@ development = {
 	karelia_area = -5
 	kola_area = -5
 	#balkan region
-	thrace_area = 2
-	morea_area = 1
+	thrace_area = 3
+	morea_area = 2
 	slovenia_area = 5
 	#great britain
 	home_counties_area = 5
@@ -257,7 +257,7 @@ development = {
 	#Manchuria
 	liaodong_area = 5
 	#Xinjiang
-	tarim_area = 3
+	tarim_area = 5
 	#Japan
 	ou_area = -5
 	ezo_area = -25
@@ -293,10 +293,8 @@ development = {
 	monyul_area = -10
 	#Hindustan
 	upper_indus_area = -7
-
 	#Anatolia
 	armenian_highlands_area = -3
-
 	#Cresent
 	levant_area = 2
 	#Indonesia
