@@ -590,8 +590,9 @@ br_ere_events.11 = {
 		name = br_ere_events.11.a
 		historical_option = yes
 		location:constantinople = {
-			destroy_building = {
-				building_type = building_type:br_constantinople_shipyard
+			if = {
+				limit = { has_building = building_type:br_constantinople_shipyard }
+				hidden_effect = { destroy_building = "building(building_type:br_constantinople_shipyard|owner)" }
 			}
 			construct_building = {
 				building_type = building_type:br_constantinople_shipyard_improved
