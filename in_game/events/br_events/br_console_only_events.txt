@@ -61,7 +61,7 @@ br_console_only_events.1 = {
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
 	}
 }
-
+#br vanilla map cheat event for testing purposes only. 
 br_console_only_events.2 = {
 	type = country_event
 	title = br_console_only_events.2.title
@@ -97,9 +97,10 @@ br_console_only_events.2 = {
 				type = subject_type:pronoia
 			}
 			add_reform = government_reform:br_sub_pronoia_subject
-			add_estate_privilege = estate_privilege:br_bureaucrat_clergy
-			add_estate_privilege = estate_privilege:br_dynatoi_magnates
-			add_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
 			add_policy = policy:br_thema_levies
 			add_policy = policy:br_pronoia_system
 			add_policy = policy:br_roman_tradition
@@ -114,38 +115,41 @@ br_console_only_events.2 = {
 				type = subject_type:pronoia
 			}
 			add_reform = government_reform:br_sub_pronoia_subject
-			add_estate_privilege = estate_privilege:br_bureaucrat_clergy
-			add_estate_privilege = estate_privilege:br_dynatoi_magnates
-			add_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
 			add_policy = policy:br_thema_levies
 			add_policy = policy:br_pronoia_system
 			add_policy = policy:br_roman_tradition
 			add_policy = policy:br_byzantine_law
 			add_policy = policy:br_roman_distribution_of_power_law
 			add_bureaucracy = bureaucracy_type:themata_bureaucracy
-			br_military_frontier = br_frontier_maintained
+			add_policy = policy:br_frontier_maintained
 		}
 		c:TRE = {
 			make_subject_of = {
 				target = c:BYZ
 				type = subject_type:tributary
 			}
-			add_reform = government_reform:br_imperial_administration
-			add_estate_privilege = estate_privilege:br_bureaucrat_clergy
-			add_estate_privilege = estate_privilege:br_dynatoi_magnates
-			add_estate_privilege = estate_privilege:akritai_privilege
+			add_reform = government_reform:br_sub_theme_subject
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			grant_estate_privilege = estate_privilege:akritai_privilege
+
 			add_policy = policy:br_thema_levies
 			add_policy = policy:br_pronoia_system
 			add_policy = policy:br_roman_tradition
 			add_policy = policy:br_byzantine_law
 			add_policy = policy:br_roman_distribution_of_power_law
-			br_military_frontier = br_frontier_maintained
+			add_policy = policy:br_frontier_maintained
 		}
 		add_legitimacy = 50
 		add_prestige = 50
 		add_stability = 50
 		add_gold = 5000
-		add_estate_privilege = estate_privilege:akritai_privilege
+		grant_estate_privilege = estate_privilege:akritai_privilege
 		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
 		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
 		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers

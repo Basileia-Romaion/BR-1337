@@ -511,7 +511,7 @@ br_ere_events.9 = { #Mil Academy
 			}
 			revoke_estate_privilege = estate_privilege:br_themata_peasant_privilege
 		}
-		add_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
+		grant_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
 	}
 }
 
@@ -548,7 +548,7 @@ br_ere_events.10 = {
 			}
 			revoke_estate_privilege = estate_privilege:br_themata_peasant_privilege
 		}
-		add_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
+		grant_estate_privilege = estate_privilege:br_themata_reformed_privilege #create
 		add_stability = -10
 		hidden_effect = {
 			root = {
