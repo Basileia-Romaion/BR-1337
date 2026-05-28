@@ -21,63 +21,63 @@ countries = {
 			}
 		}
 
-		ADU = {
+		ADU ?= {
 			area_preferences = {
 				castile_explore_america castile_explore_staging castile_explore_brazil
 				castile_conquer_spain
 			}
 		}
 
-		SWE = {
+		SWE ?= {
 			area_preferences = {
 				sweden_colonize_finland sweden_colonize_norrland
 			}
 		}
 
-		NOR = {
+		NOR ?= {
 			area_preferences = {
 				norway_colonize_nord_norge
 			}
 		}
 
-		S1C = {
+		S1C ?= {
 			area_preferences = {
 				naples_conquer_siciliy
 			}
 		}
 
-		S2C = {
+		S2C ?= {
 			area_preferences = {
 				siciliy_conquer_naples
 			}
 		}
 
 
-		LIT = {
+		LIT ?= {
 			area_preferences = {
 				lithuania_conquer_ruthenia
 			}
 		}
 
-		POL = {
+		POL ?= {
 			area_preferences = {
 				poland_conquer_ruthenia
 			}
 		}
 
-		SCO = {
+		SCO ?= {
 			area_preferences = {
 				scotland_conquer_scotland
 			}
 		}
 
-		HBA = {
+		HBA ?= {
 			area_preferences = {
 				pale_conquer_ireland
 			}
 		}
 
-		BYZ = {
+		BYZ ?= {
 			area_preferences = {
 				byzantium_conquer_anatolia byzantium_conquer_balkans byzantium_conquer_italy
 			}
@@ -91,13 +91,1576 @@ countries = {
 
 		TUR ?= {
 			area_preferences = {
-				br_conquer_persia
+				br_conquer_persia generic_conquer_home_region
 			}
 		}
 
 		MZF ?= {
 			area_preferences = {
-				br_conquer_persia
+				br_conquer_persia generic_conquer_home_region
+			}
+		}
+
+		NAP ?= {
+			area_preferences = {
+				naples_conquer_siciliy
+			}
+		}
+
+		SIC ?= {
+			area_preferences = {
+				siciliy_conquer_naples
+			}
+		}
+
+		#British Isles
+		ENG ?= {
+			area_preferences = {
+				england_explore_usa england_explore_india
+				england_conquer_britain england_conquer_france
+			}
+		}
+
+		#Germany
+		BOH ?= {
+			area_preferences = {
+				bohemia_core_region
+			}
+		}
+
+		#Iberia
+		POR ?= {
+			area_preferences = {
+				portugal_explore_asia portugal_explore_middle_east portugal_explore_brazil
+			}
+		}
+
+		CAS ?= {
+			area_preferences = {
+				castile_explore_america castile_explore_staging castile_explore_brazil
+				castile_conquer_spain
+			}
+		}
+
+		ARA ?= {
+			area_preferences = {
+				aragon_conquer_mediterranean_islands
+			}
+		}
+
+		#Anatolian Thunderdome
+		AHI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ALY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		AYD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BFR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CIL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CND ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CYP ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DUL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ERE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GRM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HCI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HMD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		INA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KAR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KBD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KRD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MEN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SHP ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SRU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TDJ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TEK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TRE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TVS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#Persian unification
+		KRM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ABL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ARD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ASR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ATZ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BDS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BLA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BMP ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BSD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CHB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DML ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ERA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FAL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FMN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GRG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HBN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HDN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HDR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HNY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HZP ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		IHB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		INJ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		JSK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		JUR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KEL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KHF ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KHN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KHT ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KHU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KHZ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KKL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KLA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KLW ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KRI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KSA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KTW ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LCK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LHJ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LST ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MIH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MKR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MKW ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MZN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NGD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ORM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		QOM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		QUN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RKL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RNK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RSH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SHB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SLI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TLM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		UGH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#Russian unification
+		MOS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BLO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DMI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FMB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GLM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GRS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KAS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KCH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KLM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KLN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KOS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KZK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MOG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MRM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NOV ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NSL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NZH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ORE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		PRK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		PSK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		PZL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RSO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RYA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RZH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SKY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SMO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SZL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TPS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TRS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TVE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		UGL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		VLR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		VYA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YAR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YRV ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ZUB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#Manchu unification
+		MRE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		AAR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		AID ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ASU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BAY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CNA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DLA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DNG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		EJI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FLN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FUT ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FUY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GIL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HCN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HDA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HIJ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HLN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HNC ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HNE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HOI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HOT ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HRO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HUI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HUR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ILU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		IMN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ITU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		JEC ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		JHT ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		JUS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LAL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LEF ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LLU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MAH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MIC ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MUH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MUU ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NAL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NEM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NEY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		NRO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		OTC ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SHI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SIR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SMN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SNC ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SSH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SUI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SYG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TAS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TOD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TOX ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ULA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		USS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		WEJ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		WEK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		WGG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		WNL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		WUY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YAL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YEH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YIM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YOO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YRN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#West african unification
+		MAL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BBK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BMR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BSM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DAA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DFN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GHA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GOB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GUR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GWI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KAN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KBO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KBR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KEB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KTS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LIP ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		OUA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		RAN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SGH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SON ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TEN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TFK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TMB ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TMK ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		YAT ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ZAM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ZGH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ZZZ ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#Irish unification
+		PLE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		AMA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		AMH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ANN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BEA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		BFN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CLA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CLR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CMA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CNN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CVN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		CWM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DCI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		DMS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ELY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FCL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FLY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		FMA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		GLS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		HYM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		IMA ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		INI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		IVG ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KEE ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		KID ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		LEI ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MCM ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MTH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		MYO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		OIL ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ORD ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		OSS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		SLN ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TGH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		THO ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TRY ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		TYR ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		ULS ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		UMH ?= {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+		#Dutch unification
+		HOL ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+		BRB ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+		GEL ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+		UTR ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+
+		#SEA conquests
+		PIN ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+		TNG ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+		BPR ?= {
+			area_preferences = {
+				dutch_conquest
+			}
+		}
+
+		#Austria
+		HAB ?= {
+			area_preferences = {
+				austria_minor_conquest austria_swiss_intention
 			}
 		}
 
