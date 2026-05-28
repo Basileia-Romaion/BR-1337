@@ -976,7 +976,7 @@ locations={
 
 	#Central Asia
 	bukhara = { rank = city town_setup = central_asian_city }
-	samarkand = { rank = city town_setup = central_asian_city }
+	samarkand = { rank = city town_setup = samarkand_city }
 	almaty = { rank = town town_setup = central_asian_town }
 	balasagun = { rank = town town_setup = central_asian_town }
 	chach = { rank = town town_setup = central_asian_town }
@@ -995,9 +995,9 @@ locations={
 	rey = { rank = city town_setup = levant_city }
 	shiraz = { rank = city town_setup = levant_city }
 	soltaniyeh = { rank = city town_setup = levant_city }
-	tabriz = { rank = city town_setup = levant_city }
+	tabriz = { rank = city town_setup = tabriz_city }
 	tbilisi = { rank = city 	town_setup = christian_anatolian_city }
-	gladzor = { rank = town town_setup = christian_anatolian_city }
+	gladzor = { rank = town town_setup = christian_anatolian_town }
 	yazd = { rank = city town_setup = levant_city }
 
 	zaranj = { rank = town town_setup = levant_city }
@@ -1189,13 +1189,13 @@ building_manager = {
 	parish_church	= { tag = ICE level = 1 location = holar }
 	
 	
-	tar_kiln = { tag = SWE level = 1 location = arboga }
-	tar_kiln = { tag = SWE level = 1 location = vasteras }
-	tar_kiln = { tag = SWE level = 1 location = riseberga }
-	tar_kiln = { tag = SWE level = 1 location = kinda }
-	tar_kiln = { tag = SWE level = 1 location = handbord }
-	tar_kiln = { tag = SWE level = 1 location = ekenas }
-	tar_kiln = { tag = SWE level = 1 location = poytis }
+	tar_kiln = { tag = SWE level = 3 location = arboga }
+	tar_kiln = { tag = SWE level = 3 location = vasteras }
+	tar_kiln = { tag = SWE level = 3 location = riseberga }
+	tar_kiln = { tag = SWE level = 3 location = kinda }
+	tar_kiln = { tag = SWE level = 3 location = handbord }
+	tar_kiln = { tag = SWE level = 3 location = ekenas }
+	tar_kiln = { tag = SWE level = 2 location = poytis }
 	tar_kiln = { tag = SWE level = 1 location = hudiksvall }  # Hälsingland — historically the core tar region
 	tar_kiln = { tag = SWE level = 2 location = soderala }    # Hälsingland
 	tar_kiln = { tag = SWE level = 3 location = gefle }       # Gästrikland, major export port for tar
@@ -1550,7 +1550,7 @@ building_manager = {
 	cathedral 	= { tag = ENG level = 1 location = york } # York Minster
 	cathedral 	= { tag = ENG level = 1 location = canterbury } # Canterbury Cathedral
 	cathedral 	= { tag = ENG level = 1 location = wells } # Wells Cathedral
-	cathedral 	= { tag = ENG level = 1 location = stafford } # Lichfield Cathedral
+	cathedral 	= { tag = ENG level = 1 location = tamworth } # Lichfield Cathedral
 	cathedral 	= { tag = ENG level = 1 location = lincoln } # Lincoln Cathedral
 	cathedral 	= { tag = PLE level = 1 location = dublin } # St Patricks and Christ Church Cathedrals
 	cathedral 	= { tag = ENG level = 1 location = chichester } # Chichester Cathedral
@@ -1781,19 +1781,19 @@ building_manager = {
 	#castle = { tag = NAV level = 1 location = tudela } #Castle of Cortes. Already implemented by the country template. Keeping for info.
 	castle = { tag = POR level = 1 location = viana_do_castelo } #Castle of Valença do Minho
 
-	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069
+	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091
+	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276
+	cathedral 	= { tag = CAS level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227
 	cathedral 	= { tag = ARA level = 1 location = barcelona } #Saint Eulalia and the Holy Cross Cathedral, established in 1058
 	cathedral 	= { tag = ARA level = 1 location = benabarre } #Saint Vincent Martyr Cathedral, established in 1030
-	cathedral 	= { tag = CAS level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = burgos } #Saint Mary Cathedral, established in 1260   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272
+	cathedral 	= { tag = CAS level = 1 location = burgos } #Saint Mary Cathedral, established in 1260
+	cathedral 	= { tag = CAS level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250
+	cathedral 	= { tag = CAS level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160
 	cathedral 	= { tag = POR level = 1 location = coimbra } #Coimbra Cathedral, established in 1139
-	cathedral 	= { tag = CAS level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236
+	cathedral 	= { tag = CAS level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196
 	cathedral 	= { tag = POR level = 1 location = evora } #Évora Cathedral, established in 1204
 	cathedral 	= { tag = ARA level = 1 location = girona } #Saint Mary Cathedral, established in 1038
 	cathedral 	= { tag = POR level = 1 location = guarda } #Guarda Cathedral, established in 1199
@@ -1801,41 +1801,41 @@ building_manager = {
 	cathedral 	= { tag = ARA level = 1 location = huesca } #Cathedral of the Transfiguration of the Lord, established in 1098
 	cathedral 	= { tag = ARA level = 1 location = jaca } #Saint Peter Cathedral, established in 1063
 	cathedral 	= { tag = POR level = 1 location = lamego } #Lamego Cathedral, established in 1129
-	cathedral 	= { tag = CAS level = 1 location = leon } #Saint Mary Cathedral, established in 1303   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = leon } #Saint Mary Cathedral, established in 1303
 	cathedral 	= { tag = POR level = 1 location = lisbon } #Lisboa Cathedral, established in 1147
 	cathedral 	= { tag = ARA level = 1 location = lleida } #Saint Mary Cathedral, established in 1278
-	cathedral 	= { tag = CAS level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = ourense } #Saint Martin Cathedral, established in 1188   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232
+	cathedral 	= { tag = CAS level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273
+	cathedral 	= { tag = CAS level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246
+	cathedral 	= { tag = CAS level = 1 location = ourense } #Saint Martin Cathedral, established in 1188
+	cathedral 	= { tag = CAS level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821
 	cathedral 	= { tag = AD2 level = 1 location = palma } #Saint Mary Cathedral, established in 1229
 	cathedral 	= { tag = NAV level = 1 location = pamplona } #Saint Mary Cathedral, established in 1127
 	cathedral 	= { tag = POR level = 1 location = porto } #Porto Cathedral, established in 1110
-	cathedral 	= { tag = CAS level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236
+	cathedral 	= { tag = CAS level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211
 	cathedral 	= { tag = ARA level = 1 location = seu_durgell } #Saint Mary Cathedral, established in 1040
-	cathedral 	= { tag = CAS level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169
 	cathedral 	= { tag = ARA level = 1 location = tarazona } #Saint Mary of la Huerta Cathedral, established in 1235
 	cathedral 	= { tag = ARA level = 1 location = tarragona } #Saint Thecla Cathedral, established in 1331
 	cathedral 	= { tag = NAV level = 1 location = tudela } #Saint Mary Cathedral, established in 1270
-	cathedral 	= { tag = CAS level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225
 	cathedral 	= { tag = ARA level = 1 location = valencia } #Cathedral of the Assumption of our Lady, established in 1238
 	cathedral 	= { tag = POR level = 1 location = viseu } #Viseu Cathedral, established in 1109
-	cathedral 	= { tag = CAS level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200   #BR edit
-	cathedral 	= { tag = CAS level = 1 location = zamora } #Cathedral of the Saviour, established in 1174   #BR edit
+	cathedral 	= { tag = CAS level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200
+	cathedral 	= { tag = CAS level = 1 location = zamora } #Cathedral of the Saviour, established in 1174
 	cathedral 	= { tag = ARA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
 	cathedral 	= { tag = MAM level = 1 location = alexandria } #Cathedral of the Saviour, established in 1318
 	
 	chancery = { tag = ARA level = 1 location = barcelona }
 	chancery = { tag = NAV level = 1 location = pamplona } #XI Century
-	chancery = { tag = CAS level = 1 location = valladolid}   #BR edit
+	chancery = { tag = CAS level = 1 location = valladolid}
 
 	charcoal_maker = { tag = NAV level = 1 location = elizondo } 
-	charcoal_maker = { tag = CAS level = 1 location = bilbao }   #BR edit
+	charcoal_maker = { tag = CAS level = 1 location = bilbao } 
 	charcoal_maker = { tag = NAV level = 1 location = sanguesa }
-	charcoal_maker = { tag = CAS level = 1 location = san_sebastian }   #BR edit
-	charcoal_maker = { tag = CAS level = 1 location = valmaseda }   #BR edit
+	charcoal_maker = { tag = CAS level = 1 location = san_sebastian } 
+	charcoal_maker = { tag = CAS level = 1 location = valmaseda } 
 
 
 	dock = { tag = ADU level = 1	location = lisbon }
@@ -1895,15 +1895,15 @@ building_manager = {
 	monastery 	= { tag = POR level = 1 location = viseu } #Santa Maria de Maceira Dão
 	monastery 	= { tag = CAS level = 1 location = vitoria } #Estíbaliz   #BR edit
 
-	nobility_fortifications = { tag = CAS level = 1 location = anana } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = bilbao } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = durango } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = onate } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = salvatierra } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = san_sebastian } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = tolosa } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = valmaseda } # Tower Houses of the Banderizos   #BR edit
-	nobility_fortifications = { tag = CAS level = 1 location = vitoria } # Tower Houses of the Banderizos   #BR edit
+	nobility_fortifications = { tag = CAS level = 1 location = anana } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = bilbao } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = durango } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = onate } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = salvatierra } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = san_sebastian } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = tolosa } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = valmaseda } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = CAS level = 1 location = vitoria } # Tower Houses of the Banderizos
 
 	#order_commandery = { tag = CTV level = 1 location = calatrava }
 	#order_commandery = { tag = CTV level = 1 location = ciudad_real }
@@ -1941,9 +1941,9 @@ building_manager = {
 
 	sand_pit = { tag = NAV level = 1 location = olite } 
 
-	scriptorium = { tag = CAS level = 1 location = murcia } #Studium founded by King Alfonso X   #BR edit
+	scriptorium = { tag = CAS level = 1 location = murcia } #Studium founded by King Alfonso X
 
-	sergeantry	= { tag = CAS level = 1 location = valladolid } #Sergeants at arms   #BR edit
+	sergeantry	= { tag = CAS level = 1 location = valladolid } #Sergeants at arms
 	sergeantry	= { tag = ARA level = 1 location = barcelona } #Sergeants at arms
 	sergeantry	= { tag = POR level = 1 location = porto } #Sergeants at arms
 	sergeantry	= { tag = NAV level = 1 location = pamplona } #Sergeants at arms
@@ -2148,7 +2148,7 @@ building_manager = {
 	marketplace	= { tag = NOV level = 1 location = staraya_ladoga }
 	market_village	= { tag = NOV level = 1 location = kargopol }
 
-	scriptorium	= { tag = NOV level = 2	location = novgorod }
+	scriptorium	= { tag = NOV level = 2	location = novgorod}
 
 	cathedral 	= { tag = NOV level = 1 location = novgorod } #Saint Sophia Cathedral, established in 992
 	cathedral 	= { tag = SMO level = 1 location = smolensk } #Dormition Cathedral, established in 1137
@@ -2242,6 +2242,15 @@ building_manager = {
 	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
 	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
 	#cathedral	= { tag = BYZ level = 1	location = constantinople } #Gven unique Hagia Sophia
+	cathedral = { tag = BYZ level = 1 location = constantinople } #Hagia Sophia, established in 537
+	cathedral = { tag = BYZ level = 1 location = thessaloniki } #Hagia Sophia of Thessaloniki, 5th century metropolitan see
+	cathedral = { tag = BYZ level = 1 location = edirne } #Metropolitan of Adrianopolis
+	cathedral = { tag = BYZ level = 1 location = monemvasia } #Metropolitan of Monemvasia
+	cathedral = { tag = BYZ level = 1 location = mystras } #Metropolitan of Lacedaemon
+	cathedral = { tag = BYZ level = 1 location = larissa } #Metropolitan of Larissa
+	cathedral = { tag = BYZ level = 1 location = mitilene } #Metropolitan of Mytilene
+	cathedral = { tag = BYZ level = 1 location = chios } #Metropolitan of Chios
+	cathedral = { tag = BYZ level = 1 location = lemnos } #Bishop of Lemnos
 
 
 	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit
@@ -2265,6 +2274,17 @@ building_manager = {
 	orthodox_monastery = { tag = SER level = 1 location =  zica }
 	orthodox_monastery = { tag = ATH level = 1 location =  livadeia } #https://en.wikipedia.org/wiki/Hosios_Loukas
 	orthodox_monastery = { tag = BYZ level = 1 location =  mount_athos }
+	cathedral = { tag = BUL level = 1 location = tarnovo } #Patriarchal Cathedral of the Holy Ascension, Bulgarian Patriarchate established in 1235
+	cathedral = { tag = BUL level = 1 location = plovdiv } #Metropolitan of Philippopolis
+	cathedral = { tag = BUL level = 1 location = drastar } #Bishop of Dristra/Dorostol
+	cathedral = { tag = BUL level = 1 location = varna } #Bishop of Varna/Odessus
+	cathedral = { tag = BUL level = 1 location = sredets } #Bishop of Sofia/Triaditza
+	cathedral = { tag = BUL level = 1 location = vidin } #Bishop of Bdin/Vidin
+	cathedral = { tag = SER level = 1 location = ohrid } #Cathedral of Hagia Sophia, Archbishopric of Ohrid since 886
+	cathedral = { tag = SER level = 1 location = peja } #Church of the Holy Apostles, Serbian Archbishopric seat since 1253
+	cathedral = { tag = SER level = 1 location = prizren } #Bishop of Prizren
+	cathedral = { tag = SER level = 1 location = skopje } #Bishop of Skoplje
+	cathedral = { tag = TRE level = 1 location = trebizond } #Metropolitan see of Trebizond
 
 	#BR added Monesteries and Cathedrals
 
@@ -3727,26 +3747,52 @@ building_manager = {
 	cathedral = { tag = SIC level = 1 location = palermo }
 
 	# City walls built after 1137 and longer than 2km
+	city_walls = { tag = CHI level = 1 location = dadu } # 30 km – Khanbaliq, Yuan capital
+	city_walls = { tag = DAI level = 1 location = thang_long } # 24 km outer wall (middle ~3 km)
+	city_walls = { tag = PAP level = 1 location = rome } # 20 km – Aurelian + Leonine walls
+	city_walls = { tag = CHI level = 1 location = hangzhou } # 16.8 km
+	city_walls = { tag = CHI level = 1 location = jingzhao } # 14 km – Chang'an / Xi'an
+	city_walls = { tag = CHI level = 1 location = kaifeng } # 14 km
 	city_walls = { tag = FLA level = 1 location = ghent } # 13 km
+	city_walls = { tag = KAN level = 1 location = kano } # 12 km, completed mid-14th c.
+	city_walls = { tag = KHM level = 1 location = angkor } # 12 km – Angkor Thom, 10 m tall, wide moat
+	city_walls = { tag = COC level = 1 location = mayapan } # 9.1 km, 12 gates
 	city_walls = { tag = FLO level = 1 location = florence } # 8.5 km
+	city_walls = { tag = YSU level = 1 location = samarkand } # 8 km (pre-Timur)
 	city_walls = { tag = KOL level = 1 location = cologne } # 8.0 km
 	city_walls = { tag = BLG level = 1 location = bologna } # 7.6 km
+	city_walls = { tag = JAL level = 1 location = tabriz } # 7.6 km – Ghazan Khan's walls
 	city_walls = { tag = PIS level = 1 location = pisa } # 7.0 km
+	city_walls = { tag = CAS level = 1 location = sevilla } # 7 km
+	city_walls = { tag = CHI level = 1 location = xiangyang } # 7 km
 	city_walls = { tag = FLA level = 1 location = bruges } # 6.8 km
 	city_walls = { tag = MLO level = 1 location = milano } # 6.5 km
+	city_walls = { tag = SUK level = 1 location = sukhothai } # 6.5 km earthen walls + moats
 	city_walls = { tag = BRB level = 1 location = antwerp } # 6.0 km
+	city_walls = { tag = KRT level = 1 location = herat } # 6 km rectangular walls
 	city_walls = { tag = FRA level = 1 location = paris } # 5.4 km
 	city_walls = { tag = NUR level = 1 location = nuremberg } # 5.0 km
 	city_walls = { tag = LUB level = 1 location = lubeck } # 5.0 km
+	city_walls = { tag = HUN level = 1 location = buda } # 5 km castle + lower town
 	city_walls = { tag = GEN level = 1 location = genoa } # 4.5 km
+	city_walls = { tag = HAB level = 1 location = vienna } # 4.5 km, walled since 13th c.
+	city_walls = { tag = NAP level = 1 location = naples } # 4.5 km
 	city_walls = { tag = ENG level = 1 location = norwich } # 4.0 km
 	city_walls = { tag = KNI level = 1 location = rodos } # 4.0 km
+	city_walls = { tag = MZF level = 1 location = yazd } # 4 km, renovated 1346
 	city_walls = { tag = SWE level = 1 location = visby } # 3.5 km
 	city_walls = { tag = POL level = 1 location = krakow } # 3.4 km
 	city_walls = { tag = ENG level = 1 location = york } # 3.4 km
 	city_walls = { tag = FRA level = 1 location = carcassonne } # 3.0 km
+	city_walls = { tag = BUL level = 1 location = tarnovo } # 3 km – Tsarevets + Trapezitsa
+	city_walls = { tag = ORM level = 1 location = hormuz } # 3 km
+	city_walls = { tag = PLE level = 1 location = waterford } # 2.7 km – best-preserved medieval walls in Ireland
 	city_walls = { tag = RIG level = 1 location = riga } # 2.2 km
+	city_walls = { tag = HUN level = 1 location = sopron } # 2 km, 3 concentric walls
+	city_walls = { tag = PLE level = 1 location = limerick } # 2 km – King's Island
 	city_walls = { tag = RAG level = 1 location = dubrovnik } # 1.9 km ok close enough
+	city_walls = { tag = PLE level = 1 location = dublin } # 1.7 km – capital of the Lordship of Ireland
+	city_walls = { tag = PLE level = 1 location = cork } # 1.6 km – Anglo-Norman walled city on the Lee marshes
 
 	#Stockades on Tribal and bordering Tribal/Hordes
 	stockade = { tag = GLM level = 1 location = kologriv }
@@ -3772,7 +3818,7 @@ building_manager = {
 	stockade = { tag = PRM level = 1 location = kilmez }
 	stockade = { tag = PRM level = 1 location = saygatsky }
 	stockade = { tag = FEO level = 1 location = theodoro }
-	stockade = { tag = TRE level = 1 location = kaffa }
+	stockade = { tag = GAZ level = 1 location = kaffa }
 	stockade = { tag = CLA level = 1 location = belfast }
 	stockade = { tag = CLA level = 1 location = newtownards }
 	stockade = { tag = MCM level = 1 location = killarney }

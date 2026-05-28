@@ -321,6 +321,7 @@ br_soldier_farmers = { #thema estates
 	rural_settlement = yes
 	town = setup_only
 	city = no
+	megalopolis = no
 
 	build_time = village_build_time
 	
@@ -394,6 +395,7 @@ br_pronoia_estate = { #pronoia estates
 	rural_settlement = yes
 	town = setup_only
 	city = no
+	megalopolis = no
 
 	location_potential = {
 		local_control < 0.75
@@ -429,6 +431,93 @@ br_pronoia_estate = { #pronoia estates
     }
 }
 
+br_foederati_grant = { #Foederati Settlements
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = tribesmen
+	icon = kastellet
+
+	category = village_category
+	estate = peasants_estate
+
+	employment_size = 0.500
+	
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_ere_foederati_privilege
+	}
+	location_potential = {
+		local_control < 0.75
+		NOR = { 
+			has_building = building_type:br_pronoia_estate
+			has_building = building_type:br_soldier_farmers
+		}
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
+
+	allow_wrong_startup = yes
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+
+	build_time = village_build_time
+	
+	#unique_production_methods = {
+		#br_soldier_farmers_cattle_maintenance = {
+			#tools = 0.025
+			#clay = 1.0
+			#output = 0.5
+			#produced = livestock
+			#debug_max_profit = 0.6
+			#category = building_maintenance
+		#}
+
+		#br_soldier_farmers_wool_maintenance = {
+			#tools = 0.025
+			#clay = 1.0
+			#output = 0.25
+			#produced = wool
+			#debug_max_profit = 0.6
+			#category = building_maintenance
+		#}
+
+		#br_soldier_farmers_sturdy_crops_maintenance = { 
+			#produced = millet
+			#output = 1
+			#tools = 0.1
+			#debug_max_profit = 0.6
+			#category = building_maintenance
+		#}
+
+		#br_soldier_farmers_horses_maintenance = {
+			#produced = horses
+			#output = 0.5
+			#millet = 0.5
+			#debug_max_profit = 0.6
+			#category = building_maintenance
+		#}
+	#}
+
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	modifier = {
+		local_tribes_estate_power = 1
+		local_tribesmen_desired_pop = 0.5
+		local_tribal_promotion = -0.5
+		local_food_capacity = 100
+		local_monthly_food_modifier = 0.1
+		local_manpower = 0.002
+		local_army_levy_size_modifier = 0.5
+	}
+}
+
+
 br_pyrgoi = {#frontier watchtowers
 	is_special = yes
 	max_levels = 1
@@ -441,6 +530,7 @@ br_pyrgoi = {#frontier watchtowers
 	rural_settlement = yes
 	town = no
 	city = no
+	megalopolis = no
 
 	ai_forbid_shutdown = yes
 	build_time = small_fort_building
@@ -500,6 +590,7 @@ br_kleisourai = {#fortified mountain passes
 	rural_settlement = yes
 	town = no
 	city = no
+	megalopolis = no
 
 	ai_forbid_shutdown = yes
 	#is_indestructible = yes

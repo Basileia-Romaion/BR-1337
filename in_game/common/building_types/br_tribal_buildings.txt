@@ -51,6 +51,7 @@
 		local_monthly_food_modifier = 0.04
 		local_tribes_estate_power = 0.25
 		local_tribal_promotion = -0.25
+		local_tribesmen_desired_pop = 1
 	}
 }
 
@@ -130,6 +131,7 @@ tribal_market_villages = {
 		local_food_capacity = 50
 		local_tribes_estate_power = 0.25
 		local_tribal_promotion = -0.25
+		local_tribesmen_desired_pop = 1
 	}
 }
 
@@ -166,9 +168,10 @@ tribal_war_camp = {
 
 	modifier = {
 		local_army_levy_size_modifier = 0.5
-		manpower_to_building_owner = 0.01
+		local_manpower = 0.002
 		local_tribes_estate_power = 1
 		local_tribal_promotion = -0.25
+		local_tribesmen_desired_pop = 1
 	}
 
 }
@@ -224,6 +227,7 @@ tribal_hunting_lodge = {
 		local_monthly_food = 1.0
 		local_tribes_estate_power = 0.25
 		local_tribal_promotion = -0.25
+		local_tribesmen_desired_pop = 1
 	}
 	
 	
