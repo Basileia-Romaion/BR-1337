@@ -4579,6 +4579,9 @@ building_manager = {
 	br_pronoia_estate = { tag = THE level = 1 location = veria }
 	br_pronoia_estate = { tag = BYZ level = 1 location = vize }
 	br_pronoia_estate = { tag = BYZ level = 1 location = catalca }
+	br_pronoia_estate = { tag = BYZ level = 1 location = serres }
+	br_pronoia_estate = { tag = BYZ level = 1 location = demotica }
+
 
 	br_pronoia_estate = { tag = BYZ level = 1 location = manisa }
 	br_pronoia_estate = { tag = BYZ level = 1 location = nazilli }
@@ -4774,7 +4777,7 @@ building_manager = {
 	br_doukate_building = { tag = EPI level = 1 location = arta }
 	br_doukate_building = { tag = THE level = 1 location = thessaloniki }
 	thema_headquarters = { tag = THS level = 1 location = larissa }
-	thema_headquarters = { tag = ATH level = 1 location = thebes }
+	br_doukate_building = { tag = ATH level = 1 location = thebes }
 	thema_headquarters = { tag = ATH level = 1 location = corinth }
 	thema_headquarters = { tag = BUL level = 1 location = plovdiv }
 	sergeantry = { tag = BUL level = 1 location = tarnovo }
@@ -6449,7 +6452,6 @@ building_manager = {
 	local_markets = { tag = BYZ level = 1 location = afsin }
 	peasants_training_grounds = { tag = BYZ level = 1 location = tokat }
 	peasants_training_grounds = { tag = BYZ level = 1 location = urgup }
-	br_pronoia_estate = { tag = BYZ level = 1 location = serres }
 	peasants_hunting_grounds = { tag = BYZ level = 1 location = mengen }
 	peasants_hunting_grounds = { tag = BYZ level = 1 location = golhisar }
 	peasants_hunting_grounds = { tag = BYZ level = 1 location = dursunbey }
