@@ -166,7 +166,16 @@
 			}
 			add_reform = government_reform:br_sub_pronoia_subject #br added
 		}
-		change_heir_selection = heir_selection:dynastic_elective_succession #br added
+		#change_heir_selection = heir_selection:dynastic_elective_succession #br added
+		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+		grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		add_policy = policy:br_thema_levies
+		add_policy = policy:br_pronoia_system
+		add_policy = policy:br_roman_tradition
+		add_policy = policy:br_byzantine_law
+		add_policy = policy:br_roman_distribution_of_power_law
+		add_bureaucracy = bureaucracy_type:themata_bureaucracy
 	}
 
 	on_disable = {
@@ -415,6 +424,17 @@ REPLACE_OR_CREATE:br_thema_subject = {
 			add_reform = government_reform:br_sub_theme_subject
 		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
+		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+		grant_estate_privilege = estate_privilege:akritai_privilege
+		grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		add_policy = policy:br_thema_levies
+		add_policy = policy:br_pronoia_system
+		add_policy = policy:br_roman_tradition
+		add_policy = policy:br_byzantine_law
+		add_policy = policy:br_roman_distribution_of_power_law
+		add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		br_military_frontier = br_frontier_maintained
 	}
 
 	on_disable = {
@@ -585,6 +605,17 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 			add_reform = government_reform:br_naval_akritai_reform
 		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
+		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+		grant_estate_privilege = estate_privilege:akritai_privilege
+		grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		add_policy = policy:br_thema_levies
+		add_policy = policy:br_pronoia_system
+		add_policy = policy:br_roman_tradition
+		add_policy = policy:br_byzantine_law
+		add_policy = policy:br_roman_distribution_of_power_law
+		add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		br_military_frontier = br_frontier_maintained
 	}
 
 	on_disable = {
