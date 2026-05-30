@@ -44,8 +44,11 @@
  br_noble_armies: "$noble_armies$"
  br_noble_armies_desc: "$noble_armies_desc$"
 
- br_ere_foederati_privilege: "Foederati Settlements"
- br_ere_foederati_privilege_desc: "By granting frontier lands and privileges to allied tribal communities, the state secures a steady source of hardy warriors bound to the Empire through obligation and reward. Though such arrangements strengthen the levies of the realm and aid in integrating foreign peoples into imperial service, they also empower tribal elites and preserve their distinct customs."
+ br_ere_foederati_privilege: "Foideratoi" #Foederati
+ br_ere_foederati_privilege_desc: "Lands upon the imperial frontiers have been granted to the Foideratoi, [ROOT.GetCountry.GetGovernment.GetEstateName('tribes_estate')] allies bound by oath to the service of the Basileus. These federate tribes guard the marches and furnish warriors to the armies of [ROOT.GetCountry.GetName], preserving the strength of the themes in troubled regions. Yet their chieftains retain considerable authority, and the customs of foreign peoples endure within the Empire."
+
+ br_ere_varangian_privilege: "Várangoi Hetaireía"
+ br_ere_varangian_privilege_desc: "The Várangoi of the Imperial Hetaireía stand among the most trusted warriors of the Basileus, bound by oath, gold, and glory to the service of [ROOT.GetCountry.GetName]. Drawn from the northern seas and settled throughout the Themes, these axe-bearing foreigners strengthen the Tagmata and furnish seasoned captains to the armies of the Empire. Yet their communities remain apart from the Rhōmaioi, preserving the customs and tongue of their distant homelands."
 
  br_turkoman_privilege: "Türkmen Frontier Privileges"
  br_turkoman_privilege_desc: "The Türkmen tribes are granted wide autonomy across the marches in exchange for military service and loyalty to the state. Their horsemen swell the armies of the realm at little expense, yet their growing influence entrenches tribal traditions and slows the transition toward a more settled society."
