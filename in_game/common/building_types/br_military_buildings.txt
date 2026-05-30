@@ -439,7 +439,7 @@ br_foederati_grant = { #Foederati Settlements
 	icon = kastellet
 
 	category = village_category
-	estate = peasants_estate
+	#estate = peasants_estate
 
 	employment_size = 0.500
 	
@@ -466,41 +466,41 @@ br_foederati_grant = { #Foederati Settlements
 
 	build_time = village_build_time
 	
-	#unique_production_methods = {
-		#br_soldier_farmers_cattle_maintenance = {
-			#tools = 0.025
-			#clay = 1.0
-			#output = 0.5
-			#produced = livestock
-			#debug_max_profit = 0.6
-			#category = building_maintenance
-		#}
+	unique_production_methods = {
+		br_soldier_farmers_cattle_maintenance = {
+			tools = 0.025
+			clay = 1.0
+			output = 0.5
+			produced = livestock
+			debug_max_profit = 0.6
+			category = building_maintenance
+		}
 
-		#br_soldier_farmers_wool_maintenance = {
-			#tools = 0.025
-			#clay = 1.0
-			#output = 0.25
-			#produced = wool
-			#debug_max_profit = 0.6
-			#category = building_maintenance
-		#}
+		br_soldier_farmers_wool_maintenance = {
+			tools = 0.025
+			clay = 1.0
+			output = 0.25
+			produced = wool
+			debug_max_profit = 0.6
+			category = building_maintenance
+		}
 
-		#br_soldier_farmers_sturdy_crops_maintenance = { 
-			#produced = millet
-			#output = 1
-			#tools = 0.1
-			#debug_max_profit = 0.6
-			#category = building_maintenance
-		#}
+		br_soldier_farmers_sturdy_crops_maintenance = { 
+			produced = millet
+			output = 1
+			tools = 0.1
+			debug_max_profit = 0.6
+			category = building_maintenance
+		}
 
-		#br_soldier_farmers_horses_maintenance = {
-			#produced = horses
-			#output = 0.5
-			#millet = 0.5
-			#debug_max_profit = 0.6
-			#category = building_maintenance
-		#}
-	#}
+		br_soldier_farmers_horses_maintenance = {
+			produced = horses
+			output = 0.5
+			millet = 0.5
+			debug_max_profit = 0.6
+			category = building_maintenance
+		}
+	}
 
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
@@ -514,6 +514,7 @@ br_foederati_grant = { #Foederati Settlements
 		local_monthly_food_modifier = 0.1
 		local_manpower = 0.002
 		local_army_levy_size_modifier = 0.5
+		local_tribesmen_assimilation_blocked = yes
 	}
 }
 
