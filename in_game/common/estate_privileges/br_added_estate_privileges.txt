@@ -366,7 +366,7 @@ br_arm_highland_villages = { #will break up and balance later.
 
 ### BR added burgher estate privileges ###
 
-br_special_trade_companies = {
+br_special_trade_companies = { #break into multiple
 	estate = burghers_estate
 	 icon = sponsor_maritime_contracts
 
@@ -416,7 +416,7 @@ br_special_trade_companies = {
 	}	
 }
 
-br_latin_trade_naval_reliance = {
+br_latin_trade_naval_reliance = { #split into two 
 	estate = burghers_estate
 	#icon = sponsor_maritime_contracts
 	potential = {
@@ -665,7 +665,7 @@ br_elysian_foederati_privilege = {
 	}
 }
 
-br_ere_foederati_privilege = {
+br_ere_foederati_privilege = { #not done
 	estate = tribes_estate
 	icon = tribes_tribal_levies
 	
@@ -676,10 +676,28 @@ br_ere_foederati_privilege = {
 		global_tribes_estate_power = 1
 		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
 		tribes_estate_levy_size = 0.25
-		wrong_culture_levy_size = 0.1
-		monthly_towards_free_subjects = societal_value_monthly_move
+		wrong_culture_levy_size = 0.05
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
 		monthly_towards_decentralization = societal_value_minor_monthly_move
-		global_tribal_promotion = -0.25
+	}
+}
+br_ere_varangian_privilege = { #not done
+	estate = tribes_estate
+	icon = tribes_tribal_levies
+	
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			owns = location:constantinople
+		}
+	}
+	country_modifier = {
+		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+		global_tribes_estate_power = 1
+		mercenary_units_preference_modifier = 0.25
+		global_mercenaries_modifier = 0.1
+		hire_mercenary_premium_cost_modifier  = -0.1
+		mercenary_maintenance_efficiency = 0.1
 	}
 }
 
@@ -701,7 +719,7 @@ br_turkoman_privilege = {
 		tribes_estate_levy_size = 0.5
 		levy_maintenance_modifier = -0.1
 		monthly_towards_free_subjects = societal_value_monthly_move
-		global_tribal_promotion = -0.1
+		global_tribal_promotion = -0.25
 	}
 }
 
