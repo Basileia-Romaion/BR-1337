@@ -553,10 +553,10 @@ br_pyrgoi = {#frontier watchtowers
 	}
 	unique_production_methods = {
 		br_pyrgoi_maintenance = {
-			lumber = 0.02
-			stone = 0.04
-			weaponry = 0.005
-			tar = 0.005
+			lumber = 0.05
+			stone = 0.05
+			weaponry = 0.01
+			tar = 0.01
 			category = building_maintenance
 		}
 	}
@@ -612,10 +612,10 @@ br_kleisourai = {#fortified mountain passes
 	}
 	unique_production_methods = {
 		br_kleisourai_maintenance = {
-			lumber = 0.02
-			stone = 0.04
+			lumber = 0.05
+			stone = 0.05
 			weaponry = 0.01
-			tar = 0.005
+			tar = 0.01
 			category = building_maintenance
 		}
 	}
