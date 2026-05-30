@@ -15,6 +15,7 @@ REPLACE_OR_CREATE:a_byzantine_cataphracts = {
 	buildable = yes
 
 	#movement_speed = -0.5
+	max_strength = 0.05 #extra 50
 	strength_damage_taken = -0.25
 	morale_damage_done = 0.35
 	initiative = 4
@@ -41,7 +42,7 @@ REPLACE_OR_CREATE:a_akritai = {
 
 	build_time_modifier = 0.25 #br edited from 0.5
 
-
+	max_strength = 0.1 #extra 100
 	initiative = 2
 	morale_damage_taken = -0.1
 	buildable = yes
@@ -64,6 +65,7 @@ REPLACE_OR_CREATE:a_varangians = {
 		coastal = 0.10
 		river = 0.15
 	}
+	max_strength = 0.1 #extra 100
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
@@ -94,6 +96,7 @@ br_tagmata_skoutatoi = {
 	is_special = yes
 	copy_from = a_age_1_traditions_heavy_infantry
 
+	max_strength = 0.1 #extra 100
 	build_time_modifier = 0.50
 	morale_damage_taken = -0.05
 	strength_damage_taken = -0.08
@@ -114,9 +117,7 @@ br_tagmata_toxotai = {
 	copy_from = a_age_1_traditions_light_infantry
 
 	initiative = 5
-	strength_damage_done = -0.20
-	strength_damage_taken = 0.10
-	morale_damage_taken = 0.175
+	max_strength = 0.1 #extra 100
 	
 	buildable = yes
 	location_potential = {
