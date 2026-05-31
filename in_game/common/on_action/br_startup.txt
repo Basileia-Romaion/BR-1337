@@ -358,6 +358,16 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
+		c:FRA = {
+			research_advance = advance_type:aristocracy
+			research_advance = advance_type:unlock_cavalry_advance
+			research_advance = advance_type:unlock_heavy_cavalry_advance
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+		}
 
 		#Starting roads
 		#Thrace
