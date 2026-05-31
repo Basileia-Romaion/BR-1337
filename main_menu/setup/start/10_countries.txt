@@ -13669,6 +13669,7 @@ countries = {
 			trgoviste_SER sjenica 
 			arilje brvenik
 			koman has dukagjini lezha
+			kocani strumica shtip
 		}
 
 		our_cores_conquered_by_others = {
@@ -13687,7 +13688,8 @@ countries = {
 			borac
 			velbuzd
 			ohrid bitola prilep florina kicevo tetovo
-			prosek shtip kocani strumica skopje kumanovo veles kratovo
+			prosek skopje kumanovo veles kratovo
+
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -13796,38 +13798,38 @@ countries = {
 		dynasty = nemanjic_dynasty
 	}
 
-	SMC = { #Strumica - Hrelja's domain
- 		our_cores_conquered_by_others = {
-			kocani strumica shtip
-		}
+	#SMC = { #Strumica - Hrelja's domain
+ 		#our_cores_conquered_by_others = {
+			#kocani strumica shtip
+		#}
 
-		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
-		country_rank = rank_county
+		#include = "expl_mediterranean"
+		#include = "eastern_european_monarchy"
+		#country_rank = rank_county
 
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
+		#government = {
+			#type = monarchy
+			#heir_selection = cognatic_primogeniture
 
-			ruler = smc_hrelja
+			#ruler = smc_hrelja
 
-			ruler_term = { character = smc_hrelja start_date = 1334.1.1 regnal_number = 1 }
+			#ruler_term = { character = smc_hrelja start_date = 1334.1.1 regnal_number = 1 }
 
-			regnal_numbers = {
-				name_hrelja = 1
-			}
-		}
+			#regnal_numbers = {
+				#name_hrelja = 1
+			#}
+		#}
 
-		tolerated_cultures = {
-			serbian
-		}
+		#tolerated_cultures = {
+			#serbian
+		#}
 
 		
-		liturgical_language = church_slavonic_language
+		#liturgical_language = church_slavonic_language
 
-		capital = strumica
-		dynasty = ohmucevic_dynasty
-	}
+		#capital = strumica
+		#dynasty = ohmucevic_dynasty
+	#}
 
 	BOS = {
 		own_control_core = {
