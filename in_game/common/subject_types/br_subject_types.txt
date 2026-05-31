@@ -145,7 +145,7 @@
 	
 	overlord_modifier = {
 		stability_cost_efficiency = -0.01
-		court_spending_efficiency = -0.01
+		#court_spending_efficiency = -0.01 #salaries of the titles
 		monthly_towards_aristocracy = societal_value_tiny_monthly_move #br changed from decentralizaton
 	}
 
@@ -166,6 +166,14 @@
 			}
 			add_reform = government_reform:br_sub_pronoia_subject #br added
 		}
+		if = {
+			limit = {
+				NOT ={
+            		has_bureaucracy_of_type = bureaucracy_type:themata_bureaucracy
+        		}
+			}
+			add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		}
 		#change_heir_selection = heir_selection:dynastic_elective_succession #br added
 		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
 		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
@@ -175,7 +183,7 @@
 		add_policy = policy:br_roman_tradition
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
-		add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		
 	}
 
 	on_disable = {
@@ -397,8 +405,8 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_cost_efficiency = -0.01
-		court_spending_efficiency = -0.01
+		#stability_cost_efficiency = -0.01
+		court_spending_efficiency = -0.01 #salaries of the titles
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -423,6 +431,14 @@ REPLACE_OR_CREATE:br_thema_subject = {
 			}
 			add_reform = government_reform:br_sub_theme_subject
 		}
+		if = {
+			limit = {
+				NOT ={
+            		has_bureaucracy_of_type = bureaucracy_type:themata_bureaucracy
+        		}
+			}
+			add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
 		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
 		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
@@ -433,7 +449,6 @@ REPLACE_OR_CREATE:br_thema_subject = {
 		add_policy = policy:br_roman_tradition
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
-		add_bureaucracy = bureaucracy_type:themata_bureaucracy
 		br_military_frontier = br_frontier_maintained
 	}
 
@@ -580,8 +595,8 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	institution_spread_to_subject = monthly_institution_spread_mild
 	
 	overlord_modifier = {
-		stability_cost_efficiency = -0.01
-		court_spending_efficiency = -0.01
+		#stability_cost_efficiency = -0.01
+		court_spending_efficiency = -0.01 #salaries of the titles
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -604,6 +619,14 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 			}
 			add_reform = government_reform:br_naval_akritai_reform
 		}
+		if = {
+			limit = {
+				NOT ={
+            		has_bureaucracy_of_type = bureaucracy_type:themata_bureaucracy
+        		}
+			}
+			add_bureaucracy = bureaucracy_type:themata_bureaucracy
+		}
 		change_heir_selection = heir_selection:dynastic_elective_succession
 		grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
 		grant_estate_privilege = estate_privilege:br_dynatoi_magnates
@@ -614,7 +637,6 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 		add_policy = policy:br_roman_tradition
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
-		add_bureaucracy = bureaucracy_type:themata_bureaucracy
 		br_military_frontier = br_frontier_maintained
 	}
 
