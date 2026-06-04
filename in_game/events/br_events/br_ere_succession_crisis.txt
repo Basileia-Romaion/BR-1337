@@ -21,7 +21,7 @@ br_ere_succession_crisis.1 = {
 	option = {
 		name = br_ere_succession_crisis.1.a
 		c:BYZ = {
-			cancel_subject = c:ATH
+			cancel_subject = c:HE1
 			cancel_subject = c:THE
 			#every_subject = {
 			#	overlord = { cancel_subject = PREV }
@@ -36,7 +36,7 @@ br_ere_succession_crisis.1 = {
 				#}
 			#}
 			add_casus_belli =  {
-				target = c:ATH
+				target = c:HE1
 				type = casus_belli:cb_subject_broke_free #cb_subjugation
 				years = 15
 			}
@@ -50,11 +50,11 @@ br_ere_succession_crisis.1 = {
 	option = {
 		name = br_ere_succession_crisis.1.b
 		c:BYZ = {
-			cancel_subject = c:ATH
+			cancel_subject = c:HE1
 			cancel_subject = c:THE
 
 			add_casus_belli =  {
-				target = c:ATH
+				target = c:HE1
 				type = casus_belli:cb_subject_broke_free #cb_subjugation
 				years = 15
 			}

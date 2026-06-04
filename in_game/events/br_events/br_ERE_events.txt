@@ -58,13 +58,13 @@ br_ere_events.1 = {
 			#}
 			#c:ACH = {
 				#make_subject_of = {
-					#target = c:ATH
+					#target = c:HE1
 					#type = subject_type:pronoia
 				#}
 			#}
 			#c:MOE = {
 				#make_subject_of = {
-					#target = c:ATH
+					#target = c:HE1
 					#type = subject_type:pronoia
 				#}
 			#}
@@ -194,7 +194,7 @@ br_ere_events.3 = {
 			annex_country = { country = c:THE }
 			annex_country = { country = c:MOE }
 
-			c:ATH = {
+			c:HE1 = {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
@@ -1817,6 +1817,55 @@ br_ere_events.1002 = {
 		
 	}
 }
+
+br_ere_events.1003 = {
+	type = country_event
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
+	orphan = yes
+	trigger = {
+		#tag = BYZ console only
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		capital = {
+            save_scope_as = target_location
+        }
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_ere_events.1003.a
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		if = {
+            limit = {
+                NOT = {
+                    scope:target_location = { has_building = building_type:thema_headquarters }
+                }
+            }
+            scope:target_location = {
+                change_development = development_mild_bonus
+                construct_building = {
+                    building_type = building_type:thema_headquarters
+                    cost_multiplier = 0
+                    cost_multiplier_reason = "game_concept_event"
+                }
+            }
+        }
+
+	}
+}
+
 
 #reforms and varangians 2000-2100
 br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]
