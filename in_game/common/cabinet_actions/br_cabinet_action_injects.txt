@@ -139,11 +139,11 @@ REPLACE_OR_CREATE:assimilate_area = {
 	}
 
 	country_modifier = {
-		monthly_nationalist_rebel_growth = 0.006 # +0.6% nationalist rebel growth while active
+		monthly_nationalist_rebel_growth = 0.003 # +0.3% nationalist rebel growth while active
 	}
 	location_modifier = {
 		local_pop_assimilation_speed = 0.02
-		local_migration_attraction = -0.2
+		local_migration_attraction = -0.15
 	}
 
 
@@ -309,11 +309,11 @@ REPLACE_OR_CREATE:promote_culture = {
 	}
 
 	country_modifier = {
-		monthly_nationalist_rebel_growth = 0.0035 # +0.35% nationalist rebel growth while active
+		monthly_nationalist_rebel_growth = 0.0015 # +0.15% nationalist rebel growth while active
 	}
 	location_modifier = {
 		local_pop_assimilation_speed = 0.04
-		local_migration_attraction = -0.15
+		local_migration_attraction = -0.1
 	}
 
 	progress = {
@@ -462,12 +462,12 @@ REPLACE_OR_CREATE:promote_religion = {
 		}
 	}
 	country_modifier = {
-		monthly_religious_rebel_growth = 0.0035 # +0.35% religious rebel growth while active
+		monthly_religious_rebel_growth = 0.0015 # +0.15% religious rebel growth while active
 	}
 
 	location_modifier = {
 		local_pop_conversion_speed = 0.04
-		local_migration_attraction = -0.15
+		local_migration_attraction = -0.1
 	}
 
 	progress = {
