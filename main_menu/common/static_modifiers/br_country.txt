@@ -14,6 +14,7 @@ TRY_INJECT:average_development = {
 br_levy_size_modifier = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	global_levy_recruitment_speed_modifier = 0.25
 	levy_maintenance_modifier = -0.25
@@ -42,6 +43,7 @@ varangian_custodianship = {
 br_crisis_of_legitimacy = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	
 	monthly_legitimacy = -0.25
@@ -51,6 +53,7 @@ br_crisis_of_legitimacy = {
 br_imperial_instability = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	stability_investment = stability_investment_penalty
 	global_max_control = -0.1
@@ -60,6 +63,7 @@ br_imperial_instability = {
 br_lucky_country_buff = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	global_crown_estate_power = 0.25
 	antagonism_received_modifier = -0.25
@@ -77,6 +81,7 @@ br_lucky_country_buff = {
 br_lucky_republic_buff = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	global_crown_estate_power = 0.25
 	antagonism_received_modifier = -0.25
@@ -95,6 +100,7 @@ br_lucky_republic_buff = {
 br_assimilation_culture_buff = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	global_pop_assimilation_speed = 0.01 #10
 	global_pop_assimilation_speed_modifier = 0.5
