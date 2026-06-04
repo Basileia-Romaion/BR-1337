@@ -1,0 +1,18 @@
+﻿#br_slavic_religion = {
+    #color = rgb{ 0.7 0.6 0.3 }
+    #group = folk_european_group
+
+	#religious_aspects = 1
+
+    #definition_modifier = {
+		#global_defensive = 0.1
+		#global_pop_food_consumption = -0.1
+    #}
+
+    #opinions = {
+    #}
+
+	#tags = {
+		#folk_european_gfx pagan_gfx
+	#}
+#}
