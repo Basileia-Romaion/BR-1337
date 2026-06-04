@@ -8,7 +8,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 519.1.1
-		members = { OHS AOI AN12 }
+		members = { }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:antioch
@@ -30,7 +30,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 451.1.1
-		members = { RIC } #AGY
+		members = { } #AGY
 		variables = { 
 			religion = religion:orthodox
 			seat = location:alexandria
@@ -51,7 +51,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 431.1.1
-		members = { S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK SAR }
+		members = {  }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:rome
@@ -92,17 +92,7 @@ international_organization_manager = {
 			independent_authorities_tenet
 		}
 	}
-	add_international_organization = {
-        type = defensive_league
-        creation_date = 1211.2.3
 
-        map_color = rgb { 140 36 36 }
-
-        members = {
-            POS GDD MWG BCN PMB
-        }
-        leader = POS
-    }
 	#Southern Italy/ Ionian Sea 
 	add_international_organization = {
         type = defensive_league
@@ -126,7 +116,7 @@ international_organization_manager = {
 			#Members
 			EPI DYR FEO
 			B0R 
-			ATH ACH
+			HE1 ACH
 			THE THS MOE
 			S1Y K1B 
 			TRE AN13 AON ICO PAF AOI CIL
@@ -138,7 +128,7 @@ international_organization_manager = {
 			#KOG DER MES VAN VDZ
 			OHS SGO RH0 #RIC
 			BNK MKB CHY
-			VTC GTC CYP
+			VTC GTC KYP
 
 			#VEN NEG CRT NAX CEP GAZ RAG
 
