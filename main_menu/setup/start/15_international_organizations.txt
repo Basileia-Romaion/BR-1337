@@ -581,7 +581,7 @@ international_organization_manager = {
 			FEO	
 			#BR ADDED
 			ICO AON S1Y B0R A1G K1B
-			MOE THS PAF	THE ATH ACH
+			MOE THS PAF	THE HE1 ACH
 			MKB CHY #BNK
 			AN1 AN2 AN3 AN4 AN5
 			ZAZ RH1 RH2 RH3
@@ -652,7 +652,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 431.1.1
-		members = { CYP } #BR EDT
+		members = { }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:nicosia_cyp

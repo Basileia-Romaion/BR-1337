@@ -438,12 +438,12 @@ diplomacy_manager = {
 
 
     #------ERE/"Byzantium"-------- ###
-    scripted_mutual = { first = BYZ second = ATH type = alliance }
+    scripted_mutual = { first = BYZ second = HE1 type = alliance }
     scripted_mutual = { first = BYZ second = THE type = alliance }
 
     dependency = { first = BYZ second = FEO subject_type = br_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
-    #dependency = { first = BYZ second = ATH subject_type = vassal } # Pronoïakon Ktéma
+    #dependency = { first = BYZ second = HE1 subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = BYZ second = S1Y subject_type = br_thema_subject } # Pronoïakon Ktéma
 
     #dependency = { first = BYZ second = AN4 subject_type = vassal } # Pronoïakon Ktéma
@@ -468,8 +468,8 @@ diplomacy_manager = {
     # state_bank
 
     #Sub dependencies
-    dependency = { first = ATH second = MOE subject_type = br_thema_subject } # Pronoïakon Ktéma
-    dependency = { first = ATH second = ACH subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = HE1 second = MOE subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = HE1 second = ACH subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = THE second = B0R subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = THE second = THS subject_type = br_thema_subject } # Pronoïakon Ktéma
     dependency = { first = EPI second = DYR subject_type = march } # Thema
@@ -480,7 +480,7 @@ diplomacy_manager = {
     dependency = { first = AON second = AN12 subject_type = br_thema_subject } # Thema
     dependency = { first = AON second = AN4 subject_type = br_thema_subject } # Thema
     dependency = { first = AN13 second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
-    dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
+    #dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
     dependency = { first = AN10 second = AN2 subject_type = br_thema_subject } # Thema
@@ -510,7 +510,7 @@ diplomacy_manager = {
     scripted_mutual = { first = MAM second = RIC type = trade_access }
     #scripted_oneway = { first = BYZ second = FEO type = divert_trade }
     #scripted_oneway = { first = BYZ second = THE type = divert_trade }
-    #scripted_oneway = { first = BYZ second = ATH type = divert_trade }
+    #scripted_oneway = { first = BYZ second = HE1 type = divert_trade }
     #scripted_oneway = { first = BYZ second = AOI type = divert_trade }
 
     scripted_mutual = { first = VIJ second = RIC type = alliance } #DON'T KILL ME PLZ
@@ -530,14 +530,14 @@ diplomacy_manager = {
 	scripted_oneway = { first = AON second = OHS type = military_sponsorship }
     scripted_oneway = { first = ICO second = OHS type = military_sponsorship }
 	scripted_oneway = { first = AN10 second = OHS type = military_sponsorship }
-	scripted_oneway = { first = CIL second = OHS type = military_sponsorship }
-	scripted_oneway = { first = CYP second = OHS type = military_sponsorship }
+	scripted_oneway = { first = AN13 second = OHS type = military_sponsorship }
+	scripted_oneway = { first = KYP second = OHS type = military_sponsorship }
     scripted_oneway = { first = TRE second = SGO type = military_sponsorship }
 	scripted_oneway = { first = GEO second = SGO type = military_sponsorship }
 	scripted_oneway = { first = PAF second = OHS type = military_sponsorship }
 	scripted_oneway = { first = BYZ second = OHS type = military_sponsorship }
 	scripted_oneway = { first = THE second = OHS type = military_sponsorship }
-    scripted_oneway = { first = ATH second = OHS type = military_sponsorship }
+    scripted_oneway = { first = HE1 second = OHS type = military_sponsorship }
 	scripted_oneway = { first = SER second = OHS type = military_sponsorship }
 
     scripted_oneway = { first = KIE second = RH0 type = military_sponsorship }

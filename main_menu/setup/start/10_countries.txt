@@ -12517,8 +12517,38 @@ countries = {
 	}
 
 	#Balkans
+	HE0 = {
+		our_cores_conquered_by_others = {
+			chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
+			karpathos
+		}
 
-	ATH = {
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_indian_trade_route"
+		include = "br_pronoia_template"
+		government = {
+			privilege = {
+				#burghers
+				sponsor_maritime_contracts
+				shipwright_contracts
+			}
+
+			land_vs_naval = 75
+		}
+
+		tolerated_cultures = {
+			latinoi
+		}
+
+		country_rank = rank_duchy
+		liturgical_language = koine_dialect
+		capital = candia
+	}
+
+	HE1 = {
 		own_control_core = {
 			athens megara thebes atalanti livadeia
 			corinth damala ermioni xylokastro
@@ -12578,6 +12608,8 @@ countries = {
 			latinoi
 		}
 		
+		culture = greek_culture
+		religion = orthodox
 		country_rank = rank_county
 		court_language = achaean_dialect
 		liturgical_language = koine_dialect
@@ -13326,6 +13358,7 @@ countries = {
 				consolidated_corruption_of_the_peasants
 
 				br_ere_foederati_privilege
+				br_ere_varangian_privilege
 			}
 			reforms = {
 				br_imperial_administration
@@ -32944,6 +32977,7 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
 		include = "eastern_european_monarchy"
+		rebellion_demand = default_nationalist_demand
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -32978,7 +33012,7 @@ countries = {
 				name_oshin = 1
 			}
 		}
-
+		revolt = yes
 		tolerated_cultures = {
 			syriac_culture
 		}
@@ -32991,7 +33025,7 @@ countries = {
 	#BR REMOVED
 	
 	#Cyprus - CYP
-	CYP = {
+	KYP = {
 		own_control_core = {
 			nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos
 		}
@@ -55511,7 +55545,6 @@ countries = {
 		capital = tarsus
 	}
 
-	
 	P2N = {
 		own_control_core = {
 			boyabat sinop gerze

@@ -32,7 +32,7 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = NEG type = left_empire }
 	opinion = { first = BYZ second = NAX type = left_empire }
 	opinion = { first = BYZ second = CRT type = left_empire }
-	opinion = { first = BYZ second = CYP type = left_empire }
+	opinion = { first = BYZ second = KYP type = left_empire }
 	opinion = { first = BYZ second = GAZ type = left_empire }
 	opinion = { first = BYZ second = S1C type = left_empire }
 	opinion = { first = BYZ second = S2C type = left_empire }
@@ -128,7 +128,7 @@ diplomacy_manager = {
 	opinion = { first = SGO second = GEO type = opinion_military_aid }
 
 	#opinion = { first = THE second = BYZ type = united_empire }
-	#opinion = { first = ATH second = BYZ type = united_empire }
+	#opinion = { first = HE1 second = BYZ type = united_empire }
 	#opinion = { first = SER second = BYZ type = opinion_emperors_genorisity }
 
 	opinion = { first = DYR second = THP type = left_empire }
@@ -136,12 +136,12 @@ diplomacy_manager = {
 	opinion = { first = DYR second = MTR type = left_empire }
 	opinion = { first = DYR second = MZK type = left_empire }
 	opinion = { first = S1C second = S4C type = left_empire }
-	opinion = { first = ATH second = NEG type = left_empire }
+	opinion = { first = HE1 second = NEG type = left_empire }
 	opinion = { first = A1G second = NEG type = left_empire }
 	opinion = { first = A1G second = NAX type = left_empire }
 	opinion = { first = K1B second = NAX type = left_empire }
-	opinion = { first = ATH second = VEN type = ven_opinion_morean_confrontation }
-	opinion = { first = VEN second = ATH type = ven_opinion_morean_confrontation }
+	opinion = { first = HE1 second = VEN type = ven_opinion_morean_confrontation }
+	opinion = { first = VEN second = HE1 type = ven_opinion_morean_confrontation }
 
 	#Serbia
 	opinion = { first = SER second = BYZ type = opinion_dynastic_allies }
@@ -176,7 +176,7 @@ diplomacy_manager = {
 	
 
 	opinion = { first = NAX second = VEN type = opinion_military_aid }
-	opinion = { first = CYP second = VEN type = opinion_military_aid }
+	opinion = { first = KYP second = VEN type = opinion_military_aid }
 	opinion = { first = NEG second = VEN type = opinion_military_aid }
 	opinion = { first = NEG second = VEN type = opinion_military_aid }
 	opinion = { first = CEP second = VEN type = opinion_military_aid }
