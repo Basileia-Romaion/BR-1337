@@ -194,7 +194,7 @@ br_naval_theme_hq = {
 br_varangian_camp = {
 	is_special = yes
 	is_foreign = no
-	pop_type = soldiers
+	pop_type = soldiers #tribesmen
 	max_levels = 1
 	icon = seljuk_mint #tur_kodjabashi_office
 	
@@ -221,7 +221,7 @@ br_varangian_camp = {
 
 
 	modifier = {
-		local_crown_estate_power = 0.25
+		local_tribes_estate_power = 0.5
 		local_manpower = 0.015
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 2
@@ -647,7 +647,7 @@ br_kleisourai = {#fortified mountain passes
 br_varangian_barracks = {
 	is_special = yes
 	is_foreign = no
-	pop_type = soldiers
+	pop_type = soldiers #tribesmen
 	max_levels = 1
 	icon = the_bock_fortifications
 	
@@ -677,7 +677,7 @@ br_varangian_barracks = {
 
 
 	modifier = {
-		local_crown_estate_power = 0.33
+		local_tribes_estate_power = 0.5
 		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 4
