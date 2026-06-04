@@ -183,7 +183,7 @@
 		add_policy = policy:br_roman_tradition
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
-		
+		trigger_event_non_silently = br_ere_events.1003
 	}
 
 	on_disable = {
@@ -450,6 +450,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
 		br_military_frontier = br_frontier_maintained
+		trigger_event_non_silently = br_ere_events.1003
 	}
 
 	on_disable = {
