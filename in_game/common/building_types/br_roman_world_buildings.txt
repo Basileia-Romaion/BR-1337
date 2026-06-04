@@ -196,3 +196,183 @@ br_indike_quarters = {
 	construction_demand = market_center_building_construction
 	allow_wrong_startup = yes
 }
+
+br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively integrate local populations.
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
+	icon = nobled_sponsored_temple
+	
+	employment_size = estate_clergy_employment
+	category = cultural_category
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = cultural_building_time
+	graphical_tags = { small_religious }
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+	}
+	allow = { is_province_capital = yes }
+	
+	location_potential = {
+		is_province_capital = yes
+	}
+	remove_if = {
+		NOT = { owner = { religion = religion:orthodox } }
+	}
+	
+	possible_production_methods = {
+		temple_maintenance
+	}
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_pop_conversion_speed_modifier = 0.1
+		local_clergy_estate_power = 0.5
+		local_clergy_pop_growth = 0.1
+	}
+	capital_country_modifier = {
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+	}
+}
+
+br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doctrine.
+	audio_tier = 1
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
+	icon = local_shrine
+	
+	employment_size = estate_clergy_employment
+	category = cultural_category
+
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = cultural_building_time
+	graphical_tags = { small_religious }
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+	}
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods = {
+		library_maintenance
+	}
+	construction_demand = town_building_construction
+	
+	modifier = {
+		local_pop_assimilation_speed_modifier = 0.1
+		local_pop_conversion_speed_modifier = 0.1
+		local_clergy_estate_power = 0.25
+		local_max_literacy = 2.5
+		local_monthly_literacy = 0.05
+	}
+	capital_country_modifier = {
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+	}
+}
+
+br_nomophylakeion = { #Archive and office of legal scholars and judges.
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
+	icon = clerical_archives
+	
+	employment_size = estate_clergy_employment
+	category = cultural_category
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = cultural_building_time
+	graphical_tags = { small_religious }
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+	}
+	allow = { is_province_capital = yes }
+	
+	location_potential = {
+		is_province_capital = yes
+	}
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods = {
+		library_maintenance
+	}
+	construction_demand = town_building_construction
+		
+	
+	modifier = {
+		local_max_urban_control = 0.025
+		local_pop_assimilation_speed_modifier = 0.05
+		local_clergy_estate_power = 0.25
+		local_clergy_max_literacy = 2.5
+		local_nobles_max_literacy = 2.5
+	}
+	capital_country_modifier = {
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+	}
+}
+
+br_dikasterion = { #Provincial court administering Roman law.
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
+	icon = bulgarian_administration_center
+	
+	employment_size = estate_clergy_employment
+	category = cultural_category
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = cultural_building_time
+	graphical_tags = { small_religious }
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+	}
+	allow = { is_province_capital = yes }
+	
+	location_potential = {
+		is_province_capital = yes
+	}
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	
+	possible_production_methods = {
+		temple_maintenance
+	}
+	construction_demand = town_building_construction
+		
+	
+	modifier = {
+		local_max_urban_control = 0.05
+		local_pop_assimilation_speed_modifier = 0.1
+	}
+	capital_country_modifier = {
+		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+	}
+}
