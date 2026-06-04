@@ -1,10 +1,10 @@
-﻿INJECT:sergeantry = {
+﻿TRY_INJECT:sergeantry = {
 	capital_modifier = {
 		local_unrest = -0.025 #br added
 	}
 }
 
-INJECT:city_guard = {
+TRY_INJECT:city_guard = {
 	capital_modifier = {
 		local_garrison_size = 0.025 #br added
 		local_unrest = -0.025  #br added
@@ -25,6 +25,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 	
 	employment_size = manpower_employment
 	
+	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
@@ -35,7 +36,10 @@ REPLACE_OR_CREATE:thema_headquarters = {
 		modifier:allow_thema_headquarters = yes
 	}
 
-	allow = { is_province_capital = yes }
+	allow = { 
+		is_province_capital = yes 
+		owner = { modifier:allow_thema_headquarters = yes }
+	}
 	
 	location_potential = { 
 		is_capital = no 
@@ -43,19 +47,19 @@ REPLACE_OR_CREATE:thema_headquarters = {
 		NOR = { 
 			has_building = building_type:br_tagmata_camp
 			has_building = building_type:br_tagmata_barracks
-			has_building = building_type:br_naval_theme_hq
+			#has_building = building_type:br_naval_theme_hq
 			has_building = building_type:br_doukate_building
 			has_building = building_type:br_katapanate_building
 			has_building = building_type:br_despotate_building
 			has_building = building_type:br_dioikesis_building
 		}
 	}
-
 	remove_if = {
-		NOT = { owner = { has_primary_or_accepted_culture = prev.location.dominant_culture } }
+		root.owner = { modifier:allow_thema_headquarters = no }
 	}
-	
+
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.05
 		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 		local_nobles_estate_power = 0.5 #local_crown_estate_power = -0.1
@@ -78,3 +82,10 @@ REPLACE_OR_CREATE:thema_headquarters = {
 	construction_demand = early_soldier_building_construction
 }
 
+TRY_INJECT:temple = {
+	modifier = {
+		#local_pop_assimilation_speed_modifier = 0.1
+		local_pop_conversion_speed_modifier = 0.05
+	}
+
+}
