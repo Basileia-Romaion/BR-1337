@@ -15,9 +15,7 @@ orthodox_order_commandery = {
 	town = yes
 	city = yes
 	megalopolis = yes
-	
 	allow_wrong_startup = yes
-	
 	
 	location_potential = {
 		custom_tooltip = {
@@ -30,7 +28,6 @@ orthodox_order_commandery = {
 			}
 		}
 	}
-	
 	
 	country_potential = {
 		modifier:target_of_military_sponsorships = yes
@@ -58,7 +55,6 @@ orthodox_order_commandery = {
 		}
 	}
 
-
 	on_built = {
 		if = {
 			limit = {
@@ -71,6 +67,7 @@ orthodox_order_commandery = {
 	}
 
 	modifier = {
+		local_pop_conversion_speed_modifier = 0.05
 		gold_to_building_owner = 0.15
 		manpower_to_building_owner = 0.01
 	}
@@ -369,6 +366,7 @@ br_soldier_farmers = { #thema estates
 	}
 	
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.05
 		local_peasant_enfranchisment = 0.1
 		local_food_capacity = 100
 		local_monthly_food_modifier = 0.1
@@ -428,6 +426,7 @@ br_pronoia_estate = { #pronoia estates
 		local_nobles_estate_power = 1
 		local_nobles_desired_pop = 0.025
 		local_soldiers_desired_pop = 0.1
+		local_manpower = 0.001
     }
 }
 
@@ -827,6 +826,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 	}
 	
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.1
 		local_peasant_enfranchisment = 0.1
 		local_food_capacity = 150
 		local_monthly_food_modifier = 0.2
@@ -965,6 +965,7 @@ br_stationes_building = { #Imperial road stations where officials and patrols ma
 	}
 
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.02
 		local_merchant_power = 0.5
 		local_merchant_capacity = 0.1
 		local_monthly_control = 0.001
@@ -1010,10 +1011,9 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 	}
 
 	modifier = {
-		local_crown_estate_power = 0.15
-		local_max_urban_control = 0.15
-		#local_proximity_source = 5
-		#local_unrest = -0.05
+		local_pop_assimilation_speed_modifier = 0.1
+		local_crown_estate_power = 0.1
+		local_max_urban_control = 0.1
 		local_soldiers_desired_pop = 0.25
 		local_clergy_desired_pop = 0.25
 	}
@@ -1086,9 +1086,9 @@ br_doukate_building = {
 		}
 	}
 	allow = { is_province_capital = yes }
-	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	}
+	#remove_if = {
+	#	NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	#}
 
 	possible_production_methods = {
 		early_soldier_building_maintenance
@@ -1096,6 +1096,7 @@ br_doukate_building = {
 	construction_demand = castle_construction
 	
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.1
 		local_manpower = 0.015
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.2
@@ -1161,9 +1162,9 @@ br_katapanate_building = {
 		}
 	}
 	allow = { is_province_capital = yes }
-	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	}
+	#remove_if = {
+	#	NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	#}
 	
 	possible_production_methods = {
 		early_soldier_building_maintenance
@@ -1171,6 +1172,7 @@ br_katapanate_building = {
 	construction_demand = castle_construction
 
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.15
 		local_manpower = 0.02
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.4
@@ -1247,6 +1249,7 @@ br_despotate_building = {
 	construction_demand = castle_construction
 
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.25
 		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 0.6
@@ -1322,6 +1325,7 @@ br_dioikesis_building = {
 	construction_demand = castle_construction
 
 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.35
 		local_manpower = 0.035
 		can_recruit_regiment_in_this_location = yes
 		local_garrison_size = 1.0
