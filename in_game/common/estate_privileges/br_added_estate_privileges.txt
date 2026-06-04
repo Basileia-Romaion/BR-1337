@@ -739,19 +739,35 @@
 				has_or_had_tag = BYZ
 				owns = location:constantinople
 			}
-			any_pop = { 
-				pop_type = pop_type:tribesmen 
-				pop_size > 1
+		}
+		country_modifier = {
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			global_tribes_estate_power = 1
+			mercenary_units_preference_modifier = 0.33
+			global_mercenaries_modifier = 0.1
+			hire_mercenary_premium_cost_modifier  = -0.1
+			mercenary_maintenance_efficiency = 0.1
+			tribes_estate_allowed_leading_military = yes
+		}
+	}
+
+	br_ere_varangian_privateers = { #not done
+		estate = tribes_estate
+		icon = tribes_tribal_levies #needed
+		
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				owns = location:constantinople
 			}
 		}
 		country_modifier = {
 			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
 			global_tribes_estate_power = 1
-			mercenary_units_preference_modifier = 0.25
-			global_mercenaries_modifier = 0.1
-			hire_mercenary_premium_cost_modifier  = -0.1
-			mercenary_maintenance_efficiency = 0.1
-			tribes_estate_allowed_leading_military = yes
+
+			hire_privateer_cost_modifier = -0.1
+			privateer_maintenance_cost_modifier = -0.1
+			privateer_durability = 0.01
 		}
 	}
 
