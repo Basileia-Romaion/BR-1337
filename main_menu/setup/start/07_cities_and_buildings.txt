@@ -2253,6 +2253,7 @@ building_manager = {
 	cathedral = { tag = BYZ level = 1 location = lemnos } #Bishop of Lemnos
 
 
+
 	order_headquarters = { tag = KNI level = 1 location =  malta } #br edit
 	#brethren_marsh = { tag = KNI level = 1 location = malta } #BR edit
 	nobility_fortifications = { tag = KNI level = 1 location = malta } #BR edit
@@ -2272,7 +2273,7 @@ building_manager = {
 	orthodox_monastery = { tag = SER level = 1 location =  visesav }
 	orthodox_monastery = { tag = SER level = 1 location =  vranje }
 	orthodox_monastery = { tag = SER level = 1 location =  zica }
-	orthodox_monastery = { tag = ATH level = 1 location =  livadeia } #https://en.wikipedia.org/wiki/Hosios_Loukas
+	orthodox_monastery = { tag = HE1 level = 1 location =  livadeia } #https://en.wikipedia.org/wiki/Hosios_Loukas
 	orthodox_monastery = { tag = BYZ level = 1 location =  mount_athos }
 	cathedral = { tag = BUL level = 1 location = tarnovo } #Patriarchal Cathedral of the Holy Ascension, Bulgarian Patriarchate established in 1235
 	cathedral = { tag = BUL level = 1 location = plovdiv } #Metropolitan of Philippopolis
@@ -2297,7 +2298,7 @@ building_manager = {
 	orthodox_monastery = { tag = BUL level = 1 location =  ohrid } #Saint Naum Monastery
 	orthodox_monastery = { tag = BUL level = 1 location =  skopje } #Monastery of Saint Panteleimon
 	orthodox_monastery = { tag = THS level = 1 location =  trikala } #Meteora Monasteries
-	orthodox_monastery = { tag = ATH level = 1 location =  athens } #Daphni Monastery
+	orthodox_monastery = { tag = HE1 level = 1 location =  athens } #Daphni Monastery
 	orthodox_monastery = { tag = THS level = 1 location =  larissa } #Great Lavra of Olympus
 	orthodox_monastery = { tag = SER level = 1 location =  brskovo } #Ostrog Monastery
 	orthodox_monastery = { tag = EPI level = 1 location =  avlonya } # Apollonia Monastery & Ardenica Monastery
@@ -4364,13 +4365,54 @@ building_manager = {
 	cathedral	= { tag = TRE level = 1	location = amasya }
 	cathedral = { tag = ARM level = 1	location = ani }
 
+	br_episkopeion = { tag = BYZ level = 1 location = constantinople }
+	br_episkopeion = { tag = BYZ level = 1 location = thessaloniki }
+	br_episkopeion = { tag = BYZ level = 1 location = iznik }
+	br_episkopeion = { tag = BYZ level = 1 location = thebes }
+	br_episkopeion = { tag = BYZ level = 1 location = corinth }
+	br_episkopeion = { tag = BYZ level = 1 location = trebizond }
+	br_episkopeion = { tag = BYZ level = 1 location = kayseri }
+	br_episkopeion = { tag = BYZ level = 1 location = ankara }
+	br_episkopeion = { tag = BYZ level = 1 location = smyrna }
+	br_episkopeion = { tag = AOI level = 1 location = antioch }
+
+	br_dikasterion = { tag = BYZ level = 1 location = constantinople }
+	br_dikasterion = { tag = BYZ level = 1 location = thessaloniki }
+	br_dikasterion = { tag = BYZ level = 1 location = iznik }
+	br_dikasterion = { tag = BYZ level = 1 location = thebes }
+	br_dikasterion = { tag = BYZ level = 1 location = corinth }
+	br_dikasterion = { tag = BYZ level = 1 location = trebizond }
+	br_dikasterion = { tag = BYZ level = 1 location = kayseri }
+	br_dikasterion = { tag = BYZ level = 1 location = ankara }
+	br_dikasterion = { tag = BYZ level = 1 location = smyrna }
+	br_dikasterion = { tag = AOI level = 1 location = antioch }
+
+	br_didaskaleion = { tag = BYZ level = 1 location = constantinople }
+	br_didaskaleion = { tag = BYZ level = 1 location = thessaloniki }
+	br_didaskaleion = { tag = BYZ level = 1 location = iznik }
+	br_didaskaleion = { tag = BYZ level = 1 location = athens }
+	br_didaskaleion = { tag = BYZ level = 1 location = trebizond }
+	br_didaskaleion = { tag = BYZ level = 1 location = smyrna }
+	br_didaskaleion = { tag = AOI level = 1 location = antioch }
+
+	br_nomophylakeion = { tag = BYZ level = 1 location = constantinople }
+	br_nomophylakeion = { tag = BYZ level = 1 location = thessaloniki }
+	br_nomophylakeion = { tag = BYZ level = 1 location = iznik }
+	br_nomophylakeion = { tag = BYZ level = 1 location = thebes }
+	br_nomophylakeion = { tag = BYZ level = 1 location = corinth }
+	br_nomophylakeion = { tag = BYZ level = 1 location = trebizond }
+	br_nomophylakeion = { tag = BYZ level = 1 location = kayseri }
+	br_nomophylakeion = { tag = BYZ level = 1 location = ankara }
+	br_nomophylakeion = { tag = BYZ level = 1 location = smyrna }
+	br_nomophylakeion = { tag = AOI level = 1 location = antioch }
+
 	#Levant
 	#local_governor	= { tag = MAM level = 1	location = damascus }
 	#local_governor	= { tag = TUR level = 1	location = samarra }
 	#local_governor	= { tag = TUR level = 1	location = rey }
 
-	cathedral	= { tag = AOI level = 1	location = antioch }
-	cathedral	= { tag = MAM level = 1	location = jerusalem }
+	cathedral = { tag = AOI level = 1	location = antioch }
+	cathedral = { tag = MAM level = 1	location = jerusalem }
 	orthodox_monastery	= { tag = AOI level = 1	location = antioch }
 	orthodox_monastery	= { tag = MAM level = 1	location = jerusalem }
 	orthodox_monastery = { tag = MAM level = 1 location =  saint_katrine }
@@ -4470,7 +4512,7 @@ building_manager = {
 	br_varangian_camp = { tag = BYZ level = 1 location =  constantinople }
 	br_tagmata_camp = { tag = BYZ level = 1 location =  izmit }
 	br_tagmata_camp = { tag = BYZ level = 1 location =  iznik }
-	#hexamilion_wall = { tag = ATH level = 1 location =  corinth }
+	#hexamilion_wall = { tag = HE1 level = 1 location =  corinth }
 
 	#Anatolia
 	dock = { tag = BYZ level = 1 location = smyrna }
@@ -4573,7 +4615,7 @@ building_manager = {
 	br_pronoia_estate = { tag = EPI level = 1 location = avlonya }
 	br_pronoia_estate = { tag = DYR level = 1 location = ballsh }
 	br_pronoia_estate = { tag = DYR level = 1 location = berat }
-	br_pronoia_estate = { tag = ATH level = 1 location = neopatras }
+	br_pronoia_estate = { tag = HE1 level = 1 location = neopatras }
 	br_pronoia_estate = { tag = THE level = 1 location = rentina }
 	br_pronoia_estate = { tag = THE level = 1 location = kavala }
 	br_pronoia_estate = { tag = THE level = 1 location = veria }
@@ -4604,8 +4646,6 @@ building_manager = {
 	br_pronoia_estate = { tag = BYZ level = 1 location = bartin }
 	br_pronoia_estate = { tag = BYZ level = 1 location = safranbolu }
 	br_pronoia_estate = { tag = EPI level = 1 location = ioannina }
-	br_pronoia_estate = { tag = ACH level = 1 location = andravida }
-	br_pronoia_estate = { tag = ACH level = 1 location = kalamata }
 	br_pronoia_estate = { tag = CIL level = 1 location = adana }
 	br_pronoia_estate = { tag = ANA level = 1 location = kirsehir }
 	br_pronoia_estate = { tag = ANA level = 1 location = bozok }
@@ -4619,12 +4659,16 @@ building_manager = {
 	br_pronoia_estate = { tag = BYZ level = 1 location = suluklu }
 
 	#Latins
+	br_pronoia_estate = { tag = ACH level = 1 location = andravida }
+	br_pronoia_estate = { tag = ACH level = 1 location = kalamata }
 	br_pronoia_estate = { tag = NAX level = 1 location = naxos }
 	br_pronoia_estate = { tag = NAX level = 1 location = samos }
 	br_pronoia_estate = { tag = CEP level = 1 location = cephalonia }
 	br_pronoia_estate = { tag = CEP level = 1 location = corfu }
 	br_pronoia_estate = { tag = CRT level = 1 location = chania }
 	br_pronoia_estate = { tag = NEG level = 1 location = negroponte }
+	br_pronoia_estate = { tag = BYZ level = 1 location = chios }
+	br_pronoia_estate = { tag = BYZ level = 1 location = lemnos }
 
 	br_soldier_farmers = { tag = BYZ level = 1 location = rize }
 	br_soldier_farmers = { tag = BYZ level = 1 location = giresun }
@@ -4698,7 +4742,7 @@ building_manager = {
 	br_bandits_building = { tag = EPI level = 1 location = kleisoura_epirus }
 	br_bandits_building = { tag = EPI level = 1 location = pyli }
 	br_bandits_building = { tag = EPI level = 1 location = karpenisi }
-	br_bandits_building = { tag = ATH level = 1 location = loidoriki }
+	br_bandits_building = { tag = HE1 level = 1 location = loidoriki }
 	br_bandits_building = { tag = ACH level = 1 location = kalavryta }
 	br_bandits_building = { tag = VTC level = 1 location = modon }
 	br_bandits_building = { tag = ACH level = 1 location = kalamata }
@@ -4769,16 +4813,14 @@ building_manager = {
 	thema_headquarters = { tag = AN3 level = 1 location = sebinkarahisar }
 	thema_headquarters = { tag = CIL level = 1 location = silifke }
 
-	
-
 	#Balkans
 	br_doukate_building = { tag = MOE level = 1 location = mystras }
 	br_doukate_building = { tag = DYR level = 1 location = durres }
 	br_doukate_building = { tag = EPI level = 1 location = arta }
 	br_doukate_building = { tag = THE level = 1 location = thessaloniki }
 	thema_headquarters = { tag = THS level = 1 location = larissa }
-	br_doukate_building = { tag = ATH level = 1 location = thebes }
-	thema_headquarters = { tag = ATH level = 1 location = corinth }
+	br_doukate_building = { tag = HE1 level = 1 location = thebes }
+	thema_headquarters = { tag = HE1 level = 1 location = corinth }
 	thema_headquarters = { tag = BUL level = 1 location = plovdiv }
 	sergeantry = { tag = BUL level = 1 location = tarnovo }
 
@@ -5038,7 +5080,7 @@ building_manager = {
 	lazaretto = { tag = BYZ level = 1 location = izmit }
 	irrigation_systems = { tag = BYZ level = 1 location = bursa }
 	irrigation_systems = { tag = BYZ level = 1 location = iznik }
-	irrigation_systems = { tag = ATH level = 1 location = thebes }
+	irrigation_systems = { tag = HE1 level = 1 location = thebes }
 	irrigation_systems = { tag = AO1 level = 1 location = antioch }
 	irrigation_systems = { tag = PAP level = 2 location = rome }
 	lazaretto = { tag = BYZ level = 1 location = bursa }
@@ -5703,6 +5745,8 @@ building_manager = {
 	market_village = { tag = BOS level = 1 location = kozara }
 	market_village = { tag = CRO level = 1 location = senj }
 	market_village = { tag = ACH level = 1 location = chalandritsa }
+	market_village = { tag = ACH level = 1 location = nafpaktos }
+	forest_village = { tag = ACH level = 1 location = nafpaktos }
 	forest_village = { tag = SER level = 1 location = velbuzd }
 	market_village = { tag = SER level = 1 location = shkoder }
 	market_village = { tag = SER level = 2 location = trgoviste_SER }
@@ -5837,8 +5881,8 @@ building_manager = {
 	tar_kiln = { tag = NEG level = 1 location = negroponte }
 	rural_clothmaker = { tag = NEG level = 1 location = negroponte }
 	sand_pit = { tag = NEG level = 1 location = negroponte }
-	market_village = { tag = ATH level = 2 location = megara }
-	farming_village = { tag = ATH level = 1 location = megara }
+	market_village = { tag = HE1 level = 2 location = megara }
+	farming_village = { tag = HE1 level = 1 location = megara }
 	farming_village = { tag = BYZ level = 1 location = uskudar }
 	market_village = { tag = MOE level = 1 location = tripolitsa }
 	#market_village = { tag = MOE level = 1 location = mystras }
@@ -5961,8 +6005,8 @@ building_manager = {
 	fruit_orchard = { tag = AON level = 1 location = ankara }
 	fruit_orchard = { tag = CIL level = 1 location = adana }
 	fruit_orchard = { tag = THS level = 1 location = larissa }
-	fruit_orchard = { tag = ATH level = 1 location = thebes }
-	fruit_orchard = { tag = ATH level = 1 location = megara }
+	fruit_orchard = { tag = HE1 level = 1 location = thebes }
+	fruit_orchard = { tag = HE1 level = 1 location = megara }
 	market_village = { tag = AN1 level = 1 location = elbistan }
 	market_village = { tag = AN1 level = 2 location = afsin }
 	farming_village = { tag = AN1 level = 1 location = elbistan }
@@ -6275,8 +6319,8 @@ building_manager = {
 	local_markets = { tag = NAX level = 1 location = naxos }
 	clerical_archives = { tag = AOI level = 1 location = antioch }
 	local_estates = { tag = CEP level = 1 location = cephalonia }
-	merchants_guild = { tag = ATH level = 1 location = athens }
-	merchants_guild = { tag = ATH level = 1 location = corinth }
+	merchants_guild = { tag = HE1 level = 1 location = athens }
+	merchants_guild = { tag = HE1 level = 1 location = corinth }
 	merchants_guild = { tag = THS level = 1 location = larissa }
 	merchants_guild = { tag = CRT level = 1 location = candia }
 	merchants_guild = { tag = DYR level = 1 location = durres }
@@ -6287,9 +6331,9 @@ building_manager = {
 	parish_church = { tag = ACH level = 1 location = kalamata }
 	peasants_hunting_grounds  = { tag = MOE level = 1 location = karytaina }
 	peasants_hunting_grounds  = { tag = EPI level = 1 location = pyli }
-	local_schools  = { tag = ATH level = 1 location = corinth }
-	local_schools  = { tag = ACH level = 1 location = mystras }
-	local_schools  = { tag = ATH level = 1 location = athens }
+	local_schools  = { tag = HE1 level = 1 location = corinth }
+	local_schools  = { tag = MOE level = 1 location = mystras }
+	local_schools  = { tag = HE1 level = 1 location = athens }
 	guild_hall = { tag = BUL level = 1 location = plovdiv }
 	merchants_guild = { tag = BUL level = 1 location = plovdiv }
 	burgher_mansion = { tag = BUL level = 1 location = plovdiv }	
@@ -6311,7 +6355,7 @@ building_manager = {
 	local_estates = { tag = BYZ level = 2 location = catalca }
 	local_estates = { tag = BYZ level = 1 location = kiyikoy }
 	local_estates = { tag = BYZ level = 2 location = silivri }
-	local_estates = { tag = ATH level = 1 location = gravia }
+	local_estates = { tag = HE1 level = 1 location = gravia }
 	local_estates = { tag = THE level = 1 location = edessa }
 	local_estates = { tag = BYZ level = 1 location = silli }
 	local_estates = { tag = BYZ level = 1 location = atpazari }
@@ -6670,7 +6714,7 @@ building_manager = {
 	stockade = { tag = CRT level = 1 location = candia }
 	stockade = { tag = MOE level = 1 location = tripolitsa }
 	stockade = { tag = EPI level = 1 location = ioannina }
-	stockade = { tag = ATH level = 1 location = athens }
+	stockade = { tag = HE1 level = 1 location = athens }
 	nobility_fortifications = { tag = CIL level = 1 location = alaiye }
 	stockade = { tag = CIL level = 1 location = kars_armenia }
 	nobility_fortifications = { tag = TRE level = 1 location = kastamonu }
