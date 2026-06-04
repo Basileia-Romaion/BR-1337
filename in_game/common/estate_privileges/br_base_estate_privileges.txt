@@ -21,7 +21,9 @@ REPLACE_OR_CREATE:clergy_military_orders = {
 	}
 	
 	country_modifier = {
-		global_clergy_estate_power = 0.25
+		allow_warrior_monks_training_grounds = yes
+		allow_military_order_units = yes
+		global_clergy_estate_power = 0.5
 		nobles_estate_levy_size = 0.25 #Added 
 		clergy_estate_levy_size = 1 #Added 
 		expected_army_size_modifier = 0.5 #BR added
@@ -57,24 +59,6 @@ REPLACE_OR_CREATE:clergy_military_orders = {
 
 # special privileges
 ## Nobles
-br_noble_armies = { 
-	estate = nobles_estate
-	icon = noble_armies
-	potential = {
-		has_or_had_tag = LOT
-	}
-	country_modifier = {
-		nobles_estate_levy_size = 1
-		wrong_culture_levy_size = 0.1
-		monthly_towards_aristocracy = societal_value_monthly_move
-		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_nobles_estate_power = 0.50
-		global_nobles_rural_desired_pop_scaled = 0.002
-		global_soldiers_rural_desired_pop_scaled = 0.01
-		nobles_estate_satisfaction_decay = 0.02
-		army_heavy_cavalry_power = 0.1
-	}
-}
 REPLACE_OR_CREATE:chancellor_nobles = { 
 	estate = nobles_estate
 

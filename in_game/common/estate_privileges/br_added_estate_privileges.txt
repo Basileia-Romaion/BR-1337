@@ -7,7 +7,7 @@
 #monthly_complacency = 0.05
 #artist_salary_modifier = 1
 #global_monthly_control = 0.005
-#potential_trigger = {  societal_value:centralization_vs_decentralization >= -50}
+#potential_trigger = {  societal_value:br_bureaucratic_vs_stratiotai >= 50 }
 #monthly_pretender_rebel_growth  = 0.005
 #monthly_nationalist_rebel_growth = 0.005
 #subject_opinions = 50
@@ -30,566 +30,611 @@
 #local_heretic_pop_conversion_speed_modifier
 #local_crown_estate_power
 #local_nobles_estate_unrest = 0.5
+#is_member_of_international_organization = international_organization:middle_kingdom
+
+#allow_slaves_of_same_group = yes
+
+
+#to-add
+#Slavic Oppression
+#Muslim Oppression
+#Romaíon Cultural Supremacy
+#Tagmata
 
 
 #Senate
 
 ### Noble Privileges ###
 
-boyarski_voiski = {
-	estate = nobles_estate
-	icon = formalized_oath
-	potential = {
-		OR = {
-			has_or_had_tag = BUL
-			culture = culture:bulgarian
-			culture = culture:boulgaroi
+	boyarski_voiski = {
+		estate = nobles_estate
+		icon = formalized_oath
+		potential = {
+			OR = {
+				has_or_had_tag = BUL
+				culture = culture:bulgarian
+				culture = culture:boulgaroi
+			}
+		}
+		can_revoke = {
+			average_control_in_home_region >= 0.5
+			estate_satisfaction:nobles_estate > 0.75
+		}
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_nobles_estate_power = 0.5
+			# Military boosts
+			nobles_estate_levy_size = 0.25
+			global_army_levy_size_modifier = 0.1
+			levy_maintenance_modifier = -0.25
+			#global_manpower_modifier = 0.1
+			monthly_towards_aristocracy = societal_value_monthly_move
+			monthly_towards_land = societal_value_monthly_move
 		}
 	}
-	country_modifier = {
-		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_nobles_estate_power = 0.5
-		# Military boosts
-		nobles_estate_levy_size = 0.25
-		global_army_levy_size_modifier = 0.1
-		levy_maintenance_modifier = -0.25
-		#global_manpower_modifier = 0.1
-		monthly_towards_aristocracy = societal_value_monthly_move
-		monthly_towards_land = societal_value_minor_monthly_move
-	}
-}
 
-br_tsar_bulgars_romans = {
-	estate = nobles_estate
-	icon = dhimmi_in_administration
-	potential = {
-		OR = {
-			has_or_had_tag = BUL
-			culture = culture:bulgarian
-			culture = culture:boulgaroi
+	br_tsar_bulgars_romans = {
+		estate = nobles_estate
+		icon = dhimmi_in_administration
+		potential = {
+			OR = {
+				has_or_had_tag = BUL
+				culture = culture:bulgarian
+				#culture = culture:boulgaroi
+			}
+		}
+		can_revoke = {
+			average_control_in_home_region >= 0.5
+			estate_satisfaction:nobles_estate > 0.75
+		}
+		country_modifier = {
+			global_nobles_estate_power = 0.25
+			wrong_culture_levy_size = 0.5
+			levy_combat_efficiency_modifier = 0.1
+			cultures_capacity = 2
+			#debuffs
+			global_pop_assimilation_speed_modifier = -0.5
+			monthly_towards_humanist = societal_value_minor_monthly_move
 		}
 	}
-	country_modifier = {
-		global_nobles_estate_power = 0.25
-		wrong_culture_levy_size = 0.5
-		levy_combat_efficiency_modifier = 0.1
-		cultures_capacity = 2
-		#debuffs
-		global_pop_assimilation_speed_modifier = -0.5
-		monthly_towards_humanist = societal_value_minor_monthly_move
-	}
-}
 
-br_arm_nakharars = { #will break up and balance later.
-	estate = nobles_estate
-	icon = formalized_oath
-	potential = {
-		OR = {
-			has_or_had_tag = ARM
-			culture = { has_culture_group = culture_group:caucasian_group } #May split up Armenian Culture later and make Armenian group.
+	br_arm_nakharars = { #will break up and balance later.
+		estate = nobles_estate
+		icon = formalized_oath
+		potential = {
+			OR = {
+				has_or_had_tag = ARM
+				culture = { has_culture_group = culture_group:caucasian_group } #May split up Armenian Culture later and make Armenian group.
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization <= -50
+			"estate_power(estate_type:nobles_estate)" <= 0.25
+		}
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+			monthly_towards_land = societal_value_monthly_move
+			monthly_towards_defensive = societal_value_monthly_move
+			monthly_towards_aristocracy = societal_value_monthly_move
+			global_nobles_estate_power = 0.5
+			# Military boosts
+			nobles_estate_levy_size = 1
+			global_defensive = 0.1
+			army_maintenance_efficiency = 0.1
+			global_max_rural_control = -0.05
 		}
 	}
-	can_revoke = {
-		societal_value:centralization_vs_decentralization <= -50
-		"estate_power(estate_type:nobles_estate)" <= 0.25
-	}
-	country_modifier = {
-		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
-		monthly_towards_land = societal_value_minor_monthly_move
-		monthly_towards_defensive = societal_value_minor_monthly_move
-		monthly_towards_aristocracy = societal_value_monthly_move
-		global_nobles_estate_power = 0.5
-		# Military boosts
-		nobles_estate_levy_size = 1
-		global_defensive = 0.1
-		army_maintenance_efficiency = 0.1
-		global_max_rural_control = -0.05
-	}
-}
 
-br_dynatoi_magnates = {
-	estate = nobles_estate
-	icon = banal_lordship #powerful_italian_families
-	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
-	}
-	allow = {
-	}
-	can_revoke = {
-		government_power > 75
-		societal_value:centralization_vs_decentralization <= -75
-		"estate_power(estate_type:nobles_estate)" <= 0.25
-	}
-	country_modifier = {
-		global_nobles_estate_power = 0.5
-		allow_rgo_slave_demand = yes
-		global_max_rgo_size_modifier_in_rural = 0.25
-		nobles_estate_target_satisfaction = small_privilege_target_satisfaction
-		monthly_towards_serfdom = societal_value_monthly_move
-		monthly_towards_aristocracy = societal_value_minor_monthly_move
-		monthly_towards_decentralization = societal_value_minor_monthly_move
-		monthly_towards_stratiotai = societal_value_minor_monthly_move	
-	}
-	#positive modifiers
-	country_modifier = {
-		potential_trigger = { stability > 0 }
-		scale = {
-			value = stability
-			multiply = 0.01
+	br_dynatoi_magnates = {
+		estate = nobles_estate
+		icon = banal_lordship #powerful_italian_families
+		potential = {
+			culture = { has_culture_group = culture_group:roman_group }
 		}
-		nobles_estate_levy_size = 0.25
-		levy_maintenance_modifier = -0.25
-	}
-	#negative modifiers
-	location_modifier = {
-        potential_trigger = {
-			local_control < 0.5
-        }
-        local_nobles_estate_power = 0.5
-		local_nobles_desired_pop_scaled = 0.002 #1 per 1000 pops
-		local_peasant_enfranchisment = -0.1
-		local_pop_join_rebel_threshold = 0.05
-		#local_peasants_estate_unrest = 0.1
-    }
-	country_modifier = {
-		#potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
-		potential_trigger = { legitimacy < 100 }
-		scale = {
-			value = legitimacy
-			multiply = -0.01
-			add = 1
+		allow = {
+			OR = {
+				societal_value:br_bureaucratic_vs_stratiotai >= 0
+				has_estate_privilege = estate_privilege:br_dynatoi_magnates #So it won't drop off if you fall below 25 value
+			}
 		}
-		subject_opinions = -25
-		global_max_rural_control = -0.05
+		can_revoke = {
+			government_power > 75
+			societal_value:centralization_vs_decentralization <= -75
+			"estate_power(estate_type:nobles_estate)" <= 0.25
+		}
+		country_modifier = {
+			global_nobles_estate_power = 0.5
+			allow_rgo_slave_demand = yes
+			global_max_rgo_size_modifier_in_rural = 0.25
+			nobles_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_serfdom = societal_value_monthly_move
+			monthly_towards_aristocracy = societal_value_monthly_move
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_stratiotai = societal_value_minor_monthly_move	
+		}
+		#positive modifiers
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			nobles_estate_levy_size = 0.25
+			levy_maintenance_modifier = -0.25
+		}
+		#negative modifiers
+		location_modifier = { #Anatolian Aristocracy
+			potential_trigger = {
+				local_control < 0.5
+			}
+			local_nobles_estate_power = 0.5
+			local_nobles_desired_pop_scaled = 0.002 #1 per 1000 pops
+			local_peasant_enfranchisment = -0.1
+			local_pop_join_rebel_threshold = 0.05
+			#local_peasants_estate_unrest = 0.1
+		}
+		country_modifier = {
+			#potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
+			potential_trigger = { legitimacy < 100 }
+			scale = {
+				value = legitimacy
+				multiply = -0.01
+				add = 1
+			}
+			subject_opinions = -25
+			global_max_rural_control = -0.05
+		}
 	}
-}
 
-br_latin_occupiers = {
-	estate = nobles_estate
-	icon = banal_lordship
-	potential = {
-		culture = culture:latinoi
+	br_latin_occupiers = {
+		estate = nobles_estate
+		icon = banal_lordship
+		potential = {
+			culture = culture:latinoi
+			any_pop = { 
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+				}
+			}
+		}
+		can_revoke = {
+			culture = culture:greek_culture
+		}
+		country_modifier = {
+			global_nobles_estate_power = 0.25
+			# buffs
+			wrong_culture_levy_size = 0.5
+			tolerance_heretic = 1
+			cultures_capacity = 2
+			
+			#debuffs
+			global_pop_assimilation_speed_modifier = -0.5
+			global_pop_conversion_speed_modifier = -0.5
+			mercenary_units_preference_modifier = 0.25
+		}
 	}
-	can_revoke = {
-		culture = culture:greek_culture
-	}
-	country_modifier = {
-		global_nobles_estate_power = 0.25
-		# buffs
-		wrong_culture_levy_size = 0.5
-		tolerance_heretic = 1
-		cultures_capacity = 2
-		
-		#debuffs
-		global_pop_assimilation_speed_modifier = -0.5
-        global_pop_conversion_speed_modifier = -0.5
-		mercenary_units_preference_modifier = 0.25
-	}
-}
 
+	br_noble_armies = { 
+		estate = nobles_estate
+		icon = noble_armies
+		potential = {
+			has_or_had_tag = LOT
+		}
+		country_modifier = {
+			nobles_estate_levy_size = 1
+			wrong_culture_levy_size = 0.1
+			monthly_towards_aristocracy = societal_value_monthly_move
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_nobles_estate_power = 0.50
+			global_nobles_rural_desired_pop_scaled = 0.001
+			global_soldiers_rural_desired_pop_scaled = 0.01
+			nobles_estate_satisfaction_decay = 0.02
+			army_heavy_cavalry_power = 0.1
+		}
+	}
 ### Peasants Privileges ###
 
-akritai_privilege = { #u20 updated
-	estate = peasants_estate
-	icon = ghazi_privilege #control_of_the_borderlands
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			religion ?= religion:orthodox
+	akritai_privilege = { #u20 updated
+		estate = peasants_estate
+		icon = ghazi_privilege #control_of_the_borderlands
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				religion ?= religion:orthodox
+			}
 		}
-	}
-	allow = {
-		OR = {
-			has_estate_privilege = estate_privilege:br_themata_peasant_privilege
-			has_estate_privilege = estate_privilege:peasants_allowed_weapons_privilege
+		allow = {
+			OR = {
+				any_neighbor_country = { NOT = { religion.group = root.religion.group } }
+				has_estate_privilege = estate_privilege:akritai_privilege
+			}
 		}
-	}
-	can_revoke = {
-		government_power > 75
-		"estate_power(estate_type:peasants_estate)" <= 0.1
-		societal_value:centralization_vs_decentralization > -50
-	}
-	country_modifier = {
-		monthly_towards_decentralization = societal_value_minor_monthly_move
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		monthly_towards_stratiotai = societal_value_monthly_move
-		auto_slave_raid_different_religion = yes
-		global_peasants_estate_power = 1
-		global_peasant_enfranchisment = 0.05
-		nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
-		aggressiveness_modifier = 0.25
-	}
-	country_modifier = {
-		potential_trigger = { legitimacy > 0 }
-		scale = {
-			value = legitimacy
-			multiply = 0.01
+		can_revoke = {
+			government_power > 75
+			"estate_power(estate_type:peasants_estate)" <= 0.1
+			societal_value:centralization_vs_decentralization > -50
 		}
-		peasants_estate_target_satisfaction = small_privilege_target_satisfaction
-		global_army_levy_size_modifier = 0.1
-		levy_combat_efficiency_modifier = 0.1
-		amount_looted_modifier = 0.5
+		country_modifier = {
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_free_subjects = societal_value_minor_monthly_move
+			monthly_towards_stratiotai = societal_value_monthly_move
+			auto_slave_raid_different_religion = yes
+			global_peasants_estate_power = 1
+			global_peasant_enfranchisment = 0.05
+			nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+			aggressiveness_modifier = 0.25
+		}
+		country_modifier = {
+			potential_trigger = { legitimacy > 0 }
+			scale = {
+				value = legitimacy
+				multiply = 0.01
+			}
+			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
+			global_army_levy_size_modifier = 0.1
+			levy_combat_efficiency_modifier = 0.1
+			amount_looted_modifier = 0.5
+		}
+		country_modifier = {
+			potential_trigger = { any_neighbor_country = { NOT = { religion.group = root.religion.group } } }
+			damage_done_versus_heathens_modifier = 0.1
+			antagonism_religion_influence = 0.5
+			tolerance_heretic = -1
+		}
+			
 	}
-	country_modifier = {
-		potential_trigger = { societal_value:spiritualist_vs_humanist <= -25 }
-		damage_done_versus_heathens_modifier = 0.1
-		antagonism_religion_influence = 0.5
-		tolerance_heretic = -1
-	}
-		
-}
 
-br_frontier_expansion_privilege = {
-	estate = peasants_estate
-	icon = control_of_the_borderlands
-	potential = {
-		OR = {
-			has_or_had_tag = E1Y			
-			has_or_had_tag = E2Y
-			culture = { has_culture_group = culture_group:elysian_group }
+	br_frontier_expansion_privilege = {
+		estate = peasants_estate
+		icon = control_of_the_borderlands
+		potential = {
+			OR = {
+				has_or_had_tag = E1Y			
+				has_or_had_tag = E2Y
+				culture = { has_culture_group = culture_group:elysian_group }
+			}
+		}
+		allow = {
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization > -25
+		}
+		country_modifier = {
+			global_peasants_estate_power = 1
+			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_belligerent = societal_value_minor_monthly_move
+			tribes_estate_target_satisfaction = -0.25
+			allow_rgo_slave_demand = yes
+			global_peasant_enfranchisment = 0.05
+			global_army_levy_size_modifier = 0.1
+			allow_native_subjugation_cb = yes
+			auto_slave_raid_different_religion = yes
+		}
+		country_modifier = {
+			potential_trigger = {  societal_value:belligerent_vs_conciliatory <= -25 }
+			enslave_tribals = yes
+			aggressiveness_modifier = 0.25
+			expected_warscore_modifier = 0.25
+			coalition_strength_tolerance = 10
 		}
 	}
-	allow = {
-	}
-	can_revoke = {
-		societal_value:centralization_vs_decentralization > -25
-	}
-	country_modifier = {
-		global_peasants_estate_power = 1
-		peasants_estate_target_satisfaction = small_privilege_target_satisfaction
-		monthly_towards_decentralization = societal_value_minor_monthly_move
-		monthly_towards_belligerent = societal_value_minor_monthly_move
-		tribes_estate_target_satisfaction = -0.25
-		allow_rgo_slave_demand = yes
-		global_peasant_enfranchisment = 0.05
-		global_army_levy_size_modifier = 0.1
-		allow_native_subjugation_cb = yes
-		auto_slave_raid_different_religion = yes
-	}
-	country_modifier = {
-		potential_trigger = {  societal_value:belligerent_vs_conciliatory <= -25 }
-		enslave_tribals = yes
-		aggressiveness_modifier = 0.25
-		expected_warscore_modifier = 0.25
-		coalition_strength_tolerance = 10
-	}
-}
 
-br_themata_peasant_privilege = { #u20 updated
-	estate = peasants_estate
-	icon = dhimmi_military_service #primacy_of_nobility
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+	br_themata_peasant_privilege = { #u20 updated
+		estate = peasants_estate
+		icon = dhimmi_military_service #primacy_of_nobility
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				culture = { has_culture_group = culture_group:roman_group }
+			}	
+		}
+		allow = {
+			OR = {
+				societal_value:br_bureaucratic_vs_stratiotai >= 25
+				has_estate_privilege = estate_privilege:br_themata_peasant_privilege #So it won't drop off if you fall below 25 value
+			}
+		}
+		can_revoke = {
+			government_power > 75
+			"estate_power(estate_type:peasants_estate)" <= 0.1
+			societal_value:centralization_vs_decentralization > -50
+		}
+		country_modifier = {
+			global_peasants_estate_power = 1
+			global_peasant_enfranchisment = 0.1
+			peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+			monthly_towards_free_subjects = societal_value_minor_monthly_move
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_stratiotai = societal_value_monthly_move
+			global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			monthly_experience_gain = 0.05
+			global_army_levy_size_modifier = 0.1
+			levy_combat_efficiency_modifier = 0.1
+		}
+		#negative
+		country_modifier = {
+			potential_trigger = { legitimacy < 100 }
+			scale = {
+				value = legitimacy
+				multiply = -0.01
+				add = 1
+			}
+			peasants_estate_max_tax = -0.05
+		}
+		country_modifier = {
+			potential_trigger = { stability < 100 }
+			scale = {
+				value = stability
+				multiply = -0.01
+				add = 1
+			}
+			global_max_rural_control = -0.05
+		}
+	}
+
+	br_arm_highland_villages = { #will break up and balance later.
+		estate = peasants_estate
+		icon = dhimmi_military_service
+		potential = {
+			OR = {
+				has_or_had_tag = ARM
+				culture = { has_culture_group = culture_group:caucasian_group } #May split up Armenian Culture later and make Armenian group.
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization <= -50
+		}
+		country_modifier = {
+			global_peasants_estate_power = 1
+			global_peasant_enfranchisment = 0.05
+			monthly_towards_land = societal_value_minor_monthly_move
+			monthly_towards_defensive = societal_value_minor_monthly_move
+			peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_hostile_attrition = 0.25
+			global_defensive = 0.1
+			global_max_rural_control = -0.05
+			peasants_estate_levy_size = 0.1
+			fort_maintenance_efficiency = 0.1
+			levy_maintenance_modifier = -0.1
+		}
+	}
+
+### Burgher Privileges ###
+
+	br_special_trade_companies = { #break into multiple
+		estate = burghers_estate
+		icon = sponsor_maritime_contracts
+
+		potential = {
+			OR = {
+				has_or_had_tag = GTC
+				has_or_had_tag = VTC
+				has_or_had_tag = RIC
+			}
+		}
+		allow = {
+			country_type = building
+		}
+		country_modifier = {
+			global_crown_estate_power = 0.5
+			global_burghers_estate_power = 0.5
+			global_estate_max_tax = 0.2
+			global_trades_per_burgher = 1
+			expected_navy_size = 25
+			payment_to_overlord_modifier = -0.25
+			trade_sea_efficiency = 0.5
+			mercenary_units_preference_modifier = 0.25
+		}
+		country_modifier = {
+			potential_trigger = {  societal_value:land_vs_naval >= 45 }
+			sea_cost_on_distance_from_capital_when_maritime = -1
+		}
+		country_modifier = {
+			potential_trigger = { government_power >= 25 }
+			hire_mercenary_premium_cost_modifier = -0.5
+			mercenary_maintenance_efficiency = 0.5
+			global_navy_levy_size_modifier = 1
+			estate_enrichment = -0.25
+			subject_loyalty = 25
+		}
+		country_modifier = {
+			potential_trigger = { stability >= 25 }
+			export_efficiency = large_trade_efficiency_bonus
+			burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_port_build_buildings_efficiency = 0.25
+			global_foreign_build_buildings_efficiency = 0.25
+		}
+		country_modifier = {
+			potential_trigger = { "estate_power(estate_type:burghers_estate)" >= 0.5 }
+			navy_maintenance_efficiency = 0.25
+			navy_light_ship_maintenance_cost_modifier = -0.25
 		}	
 	}
-	allow = {
-		OR = {
-			societal_value:serfdom_vs_free_subjects >= 25
-			has_estate_privilege = estate_privilege:br_themata_peasant_privilege #So it won't drop off if you fall below 25 free subject value
-		}
-	}
-	can_revoke = {
-		government_power > 75
-		"estate_power(estate_type:peasants_estate)" <= 0.1
-		societal_value:centralization_vs_decentralization > -50
-	}
-	country_modifier = {
-		global_peasants_estate_power = 1
-		global_peasant_enfranchisment = 0.1
-		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		monthly_towards_decentralization = societal_value_minor_monthly_move
-		monthly_towards_stratiotai = societal_value_monthly_move
-		global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
-		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
-	}
-	#positive
-	country_modifier = {
-		potential_trigger = { stability > 0 }
-		scale = {
-			value = stability
-			multiply = 0.01
-		}
-		monthly_experience_gain = 0.05
-		global_army_levy_size_modifier = 0.1
-		levy_combat_efficiency_modifier = 0.1
-	}
-	#negative
-	country_modifier = {
-		potential_trigger = { legitimacy < 100 }
-		scale = {
-			value = legitimacy
-			multiply = -0.01
-			add = 1
-		}
-		peasants_estate_max_tax = -0.05
-	}
-	country_modifier = {
-		potential_trigger = { stability < 100 }
-		scale = {
-			value = stability
-			multiply = -0.01
-			add = 1
-		}
-		global_max_rural_control = -0.05
-	}
-}
 
-br_arm_highland_villages = { #will break up and balance later.
-	estate = peasants_estate
-	icon = dhimmi_military_service
-	potential = {
-		OR = {
-			has_or_had_tag = ARM
-			culture = { has_culture_group = culture_group:caucasian_group } #May split up Armenian Culture later and make Armenian group.
+	br_latin_trade_naval_reliance = { #split into two 
+		estate = burghers_estate
+		#icon = sponsor_maritime_contracts
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization > -50
+			government_power > 95
+		}
+		country_modifier = {
+			global_burghers_estate_power = 0.25
+			global_burghers_conversion_blocked = yes
+			burghers_estate_allowed_in_cabinet = yes
+			expected_navy_size_modifier = -0.5
+			tolerance_heretic = 1
+			foreign_export_from_market_efficiency = 0.25 #1.3 check
+			monthly_towards_plutocracy = societal_value_monthly_move
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			trade_sea_efficiency = 0.25
+			sea_cost_on_distance_from_capital_when_maritime = -0.5
+		}
+		location_modifier = {
+			potential_trigger = {
+				root = location:constantinople
+			}
+			local_marketplace_building_levels = 25
+			local_monthly_prosperity = 0.001
+		}
+		#negative modifiers
+		country_modifier = {
+			potential_trigger = { legitimacy < 100 }
+			scale = {
+				value = legitimacy
+				multiply = -0.01
+				add = 1
+			}
+			global_navy_levy_size_modifier = -0.5
+			navy_maintenance_efficiency = -0.25
+		}
+		country_modifier = {
+			potential_trigger = { prestige < 100 }
+			scale = {
+				value = prestige
+				multiply = -0.01
+				add = 1
+			}
+			global_sailors_modifier = -0.5
 		}
 	}
-	can_revoke = {
-		societal_value:centralization_vs_decentralization <= -50
-	}
-	country_modifier = {
-		global_peasants_estate_power = 1
-		global_peasant_enfranchisment = 0.05
-		monthly_towards_land = societal_value_minor_monthly_move
-		monthly_towards_defensive = societal_value_minor_monthly_move
-		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_hostile_attrition = 0.25
-		global_defensive = 0.1
-		global_max_rural_control = -0.05
-		peasants_estate_levy_size = 0.1
-		fort_maintenance_efficiency = 0.1
-		levy_maintenance_modifier = -0.1
-	}
-}
 
-### BR added burgher estate privileges ###
+### Clergy Privileges ###
 
-br_special_trade_companies = { #break into multiple
-	estate = burghers_estate
-	 icon = sponsor_maritime_contracts
+	br_bureaucrat_clergy = { #maybe split up
+		estate = clergy_estate
+		icon = dhimmi_in_administration #clergy_in_administration
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				culture = { has_culture_group = culture_group:roman_group }
+			}
+		}
+		can_revoke = {
+			government_power > 75
+			"estate_power(estate_type:clergy_estate)" <= 0.2
+			societal_value:spiritualist_vs_humanist > 50
+		}
+		country_modifier = {
+			global_clergy_estate_power = 0.25
+			global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000
+			monthly_towards_centralization = societal_value_minor_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_monthly_move
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			country_cabinet_efficiency = 0.1
+		}
+		country_modifier = {
+			potential_trigger = { 
+				has_dlc = "d008_fate_of_the_phoenix"
+			}
+			global_bureaucracy_maintenance_efficiency = 0.1
+		}
+		country_modifier = {
+			potential_trigger = { 
+				has_advance = roman_scribal_administration
+			}
+			global_clergy_max_literacy = 5
+			global_pop_promotion_speed_modifier = 0.10
+		}
+	}
 
-	potential = {
-		OR = {
-			has_or_had_tag = GTC
-			has_or_had_tag = VTC
-			has_or_had_tag = RIC
+	br_roman_ecumenical_patriarch_privilege = {
+		estate = clergy_estate
+		icon = clergy_religious_state
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				owns = location:constantinople
+			}
+		}
+		allow = {
+			religion ?= religion:orthodox
+		}
+		can_revoke = {
+			"estate_power(estate_type:crown_estate)" >= 0.35
+			societal_value:spiritualist_vs_humanist > 75
+		}
+		country_modifier = {
+			global_clergy_estate_power = 0.25
+			monthly_towards_spiritualist = societal_value_monthly_move
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
+		}
+		#country_modifier = {
+		#	potential_trigger = {  societal_value:individualism_vs_communalism >= 50}
+		#	global_pop_conversion_speed_modifier = 0.25
+		#}
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+		}
+		country_modifier = {
+			potential_trigger = { legitimacy < 100 }
+			scale = {
+				value = legitimacy
+				multiply = -0.01
+				add = 1
+			}
+			clergy_estate_max_tax = -0.1
+		}
+		#positive
+		##May split these off or replace name/description.
+		country_modifier = {
+			potential_trigger = { owns = location:alexandria }
+			orthodox_synod_cost_modifier = -0.25
+		}
+		country_modifier = {
+			potential_trigger = { owns = location:constantinople }
+			diplomatic_reputation = 2
+		}
+		country_modifier = {
+			potential_trigger = { owns = location:antioch }
+			monthly_religious_influence = 0.1
+		}
+		country_modifier = {
+			potential_trigger = { owns = location:rome }
+			global_pop_conversion_speed_modifier = 0.25
+		}
+		country_modifier = {
+			potential_trigger = { owns = location:jerusalem }
+			tolerance_own = 1
 		}
 	}
-	allow = {
-		country_type = building
-	}
-	country_modifier = {
-		global_crown_estate_power = 0.5
-		global_burghers_estate_power = 0.5
-		global_estate_max_tax = 0.2
-		global_trades_per_burgher = 1
-		expected_navy_size = 25
-		payment_to_overlord_modifier = -0.25
-		trade_sea_efficiency = 0.5
-		mercenary_units_preference_modifier = 0.25
-	}
-	country_modifier = {
-		potential_trigger = {  societal_value:land_vs_naval >= 45 }
-		sea_cost_on_distance_from_capital_when_maritime = -1
-	}
-	country_modifier = {
-		potential_trigger = { government_power >= 25 }
-		hire_mercenary_premium_cost_modifier = -0.5
-		mercenary_maintenance_efficiency = 0.5
-		global_navy_levy_size_modifier = 1
-		estate_enrichment = -0.25
-		subject_loyalty = 25
-	}
-	country_modifier = {
-		potential_trigger = { stability >= 25 }
-		export_efficiency = large_trade_efficiency_bonus
-		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_port_build_buildings_efficiency = 0.25
-		global_foreign_build_buildings_efficiency = 0.25
-	}
-	country_modifier = {
-		potential_trigger = { "estate_power(estate_type:burghers_estate)" >= 0.5 }
-		navy_maintenance_efficiency = 0.25
-		navy_light_ship_maintenance_cost_modifier = -0.25
-	}	
-}
-
-br_latin_trade_naval_reliance = { #split into two 
-	estate = burghers_estate
-	#icon = sponsor_maritime_contracts
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
-		}
-	}
-	can_revoke = {
-		societal_value:centralization_vs_decentralization > -50
-		government_power > 95
-	}
-	country_modifier = {
-		global_burghers_estate_power = 0.25
-		global_burghers_conversion_blocked = yes
-		burghers_estate_allowed_in_cabinet = yes
-		expected_navy_size_modifier = -0.5
-		tolerance_heretic = 1
-		foreign_export_from_market_efficiency = 0.25 #1.3 check
-		monthly_towards_plutocracy = societal_value_monthly_move
-		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
-	}
-	#positive
-	country_modifier = {
-		potential_trigger = { stability > 0 }
-		scale = {
-			value = stability
-			multiply = 0.01
-		}
-		trade_sea_efficiency = 0.25
-		sea_cost_on_distance_from_capital_when_maritime = -0.5
-	}
-	location_modifier = {
-		potential_trigger = {
-			root = location:constantinople
-		}
-		local_marketplace_building_levels = 25
-		local_monthly_prosperity = 0.001
-	}
-	#negative modifiers
-	country_modifier = {
-		potential_trigger = { legitimacy < 100 }
-		scale = {
-			value = legitimacy
-			multiply = -0.01
-			add = 1
-		}
-		global_navy_levy_size_modifier = -0.5
-		navy_maintenance_efficiency = -0.25
-	}
-	country_modifier = {
-		potential_trigger = { prestige < 100 }
-		scale = {
-			value = prestige
-			multiply = -0.01
-			add = 1
-		}
-		global_sailors_modifier = -0.5
-	}
-}
-
-### BR added clergy estate privileges ###
-
-br_bureaucrat_clergy = { #maybe split up
-	estate = clergy_estate
-	icon = dhimmi_in_administration #clergy_in_administration
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
-		}
-	}
-	can_revoke = {
-		government_power > 75
-		"estate_power(estate_type:clergy_estate)" <= 0.2
-		societal_value:spiritualist_vs_humanist > 50
-	}
-	country_modifier = {
-		global_clergy_estate_power = 0.25
-		global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000
-		monthly_towards_centralization = societal_value_minor_monthly_move
-		monthly_towards_br_bureaucratic = societal_value_monthly_move
-	}
-	#positive
-	country_modifier = {
-		potential_trigger = { stability > 0 }
-		scale = {
-			value = stability
-			multiply = 0.01
-		}
-		clergy_estate_target_satisfaction = small_privilege_target_satisfaction
-		country_cabinet_efficiency = 0.1
-	}
-	country_modifier = {
-		potential_trigger = { 
-			has_dlc = "d008_fate_of_the_phoenix"
-		}
-		global_bureaucracy_maintenance_efficiency = 0.1
-	}
-	country_modifier = {
-		potential_trigger = { 
-			has_advance = roman_scribal_administration
-		}
-		global_clergy_max_literacy = 5
-		global_pop_promotion_speed_modifier = 0.10
-	}
-}
-
-br_roman_ecumenical_patriarch_privilege = {
-	estate = clergy_estate
-	icon = clergy_religious_state
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			owns = location:constantinople
-		}
-	}
-	allow = {
-		religion ?= religion:orthodox
-	}
-	can_revoke = {
-		"estate_power(estate_type:crown_estate)" >= 0.35
-		societal_value:spiritualist_vs_humanist > 75
-	}
-	country_modifier = {
-		global_clergy_estate_power = 0.25
-		monthly_towards_spiritualist = societal_value_monthly_move
-		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
-	}
-	#country_modifier = {
-	#	potential_trigger = {  societal_value:individualism_vs_communalism >= 50}
-	#	global_pop_conversion_speed_modifier = 0.25
-	#}
-	country_modifier = {
-		potential_trigger = { stability > 0 }
-		scale = {
-			value = stability
-			multiply = 0.01
-		}
-		clergy_estate_target_satisfaction = small_privilege_target_satisfaction
-	}
-	country_modifier = {
-		potential_trigger = { legitimacy < 100 }
-		scale = {
-			value = legitimacy
-			multiply = -0.01
-			add = 1
-		}
-		clergy_estate_max_tax = -0.1
-	}
-	#positive
-	##May split these off or replace name/description.
-	country_modifier = {
-		potential_trigger = { owns = location:alexandria }
-		orthodox_synod_cost_modifier = -0.25
-	}
-	country_modifier = {
-		potential_trigger = { owns = location:constantinople }
-		diplomatic_reputation = 2
-	}
-	country_modifier = {
-		potential_trigger = { owns = location:antioch }
-		monthly_religious_influence = 0.1
-	}
-	country_modifier = {
-		potential_trigger = { owns = location:rome }
-		global_pop_conversion_speed_modifier = 0.25
-	}
-	country_modifier = {
-		potential_trigger = { owns = location:jerusalem }
-		tolerance_own = 1
-	}
-}
 
 #br_orthodox_military_orders = {
 #	estate = clergy_estate
@@ -640,130 +685,140 @@ br_roman_ecumenical_patriarch_privilege = {
 #		army_maintenance_efficiency = 0.15
 #	}
 #}
+### Tribal Privileges ###
 
-### BR added tribal estate privileges ###
-
-br_elysian_foederati_privilege = {
-	estate = tribes_estate
-	icon = tribal_autonomy
-	
-	potential = { #tech unlock
-		#OR = {
-		#	has_or_had_tag = E1Y			
-		#	has_or_had_tag = E2Y
-		#	culture = { has_culture_group = culture_group:elysian_group }
-		#}
-	}
-	country_modifier = {
-		global_tribes_estate_power = 0.5
-		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
-		tribes_estate_levy_size = 0.5
-		wrong_culture_levy_size = 0.1
-		levy_maintenance_modifier = -0.1
-		monthly_towards_free_subjects = societal_value_monthly_move
-		global_tribal_promotion = -0.1
-	}
-}
-
-br_ere_foederati_privilege = { #not done
-	estate = tribes_estate
-	icon = tribes_tribal_levies
-	
-	potential = {
-		culture = { has_culture_group = culture_group:greek_group }
-	}
-	country_modifier = {
-		global_tribes_estate_power = 1
-		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
-		tribes_estate_levy_size = 0.25
-		wrong_culture_levy_size = 0.05
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		monthly_towards_decentralization = societal_value_minor_monthly_move
-	}
-}
-br_ere_varangian_privilege = { #not done
-	estate = tribes_estate
-	icon = tribes_tribal_levies
-	
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			owns = location:constantinople
+	br_elysian_foederati_privilege = {
+		estate = tribes_estate
+		icon = tribal_autonomy
+		
+		potential = { #tech unlock
+			#OR = {
+			#	has_or_had_tag = E1Y			
+			#	has_or_had_tag = E2Y
+			#	culture = { has_culture_group = culture_group:elysian_group }
+			#}
+		}
+		country_modifier = {
+			global_tribes_estate_power = 0.5
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_levy_size = 0.5
+			wrong_culture_levy_size = 0.1
+			levy_maintenance_modifier = -0.1
+			monthly_towards_free_subjects = societal_value_monthly_move
+			global_tribal_promotion = -0.1
 		}
 	}
-	country_modifier = {
-		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
-		global_tribes_estate_power = 1
-		mercenary_units_preference_modifier = 0.25
-		global_mercenaries_modifier = 0.1
-		hire_mercenary_premium_cost_modifier  = -0.1
-		mercenary_maintenance_efficiency = 0.1
-	}
-}
 
-br_turkoman_privilege = {
-	estate = tribes_estate
-	icon = tribes_tribal_levies
-	
-	potential = {
-		religion ?= { group ?= religion_group:muslim }
-		any_pop = { 
+	br_ere_foederati_privilege = { #not done
+		estate = tribes_estate
+		icon = tribes_tribal_levies
+		
+		potential = {
+			culture = { has_culture_group = culture_group:greek_group }
+			any_pop = { 
+				pop_type = pop_type:tribesmen 
+				pop_size > 1
+			}
+		}
+		country_modifier = {
+			global_tribes_estate_power = 1
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_levy_size = 0.25
+			wrong_culture_levy_size = 0.05
+			monthly_towards_free_subjects = societal_value_minor_monthly_move
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+		}
+	}
+
+	br_ere_varangian_privilege = { #not done
+		estate = tribes_estate
+		icon = tribes_tribal_levies
+		
+		potential = {
 			OR = {
-				culture = { has_culture_group = culture_group:turkic_group }
+				has_or_had_tag = BYZ
+				owns = location:constantinople
+			}
+			any_pop = { 
+				pop_type = pop_type:tribesmen 
+				pop_size > 1
 			}
 		}
-	}
-	country_modifier = {
-		global_tribes_estate_power = 1.0
-		tribes_estate_target_satisfaction = small_privilege_target_satisfaction
-		tribes_estate_levy_size = 0.5
-		levy_maintenance_modifier = -0.1
-		monthly_towards_free_subjects = societal_value_monthly_move
-		global_tribal_promotion = -0.25
-		global_tribesmen_migration_allowed = yes
-	}
-}
-
-br_ottoman_dhimmi_levies = {
-	estate = dhimmi_estate
-	icon = dhimmi_military_service
-	potential = {
-		religion ?= {
-			group ?= religion_group:muslim
+		country_modifier = {
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			global_tribes_estate_power = 1
+			mercenary_units_preference_modifier = 0.25
+			global_mercenaries_modifier = 0.1
+			hire_mercenary_premium_cost_modifier  = -0.1
+			mercenary_maintenance_efficiency = 0.1
+			tribes_estate_allowed_leading_military = yes
 		}
-		culture = { has_culture_group = culture_group:turkic_group }
-		any_non_state_religion_location = {
-			dominant_religion ?= { 
+	}
+
+	br_turkoman_privilege = {
+		estate = tribes_estate
+		icon = tribes_tribal_levies
+		
+		potential = {
+			religion ?= { group ?= religion_group:muslim }
+			any_pop = { 
 				OR = {
-					group = religion_group:christian
-					group = religion_group:israelite_group
+					culture = { has_culture_group = culture_group:turkic_group }
 				}
 			}
 		}
+		country_modifier = {
+			global_tribes_estate_power = 1.0
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_levy_size = 0.5
+			levy_maintenance_modifier = -0.1
+			monthly_towards_free_subjects = societal_value_monthly_move
+			global_tribal_promotion = -0.25
+			global_tribesmen_migration_allowed = yes
+			tribes_estate_allowed_leading_military = yes
+		}
 	}
-	allow = {}
-	location_modifier = {
-		potential_trigger = {
-			dominant_religion ?= { 
-				OR = {
-					group = religion_group:christian
-					group = religion_group:israelite_group
+
+	br_ottoman_dhimmi_levies = {
+		estate = dhimmi_estate
+		icon = dhimmi_military_service
+		potential = {
+			religion ?= {
+				group ?= religion_group:muslim
+			}
+			culture = { has_culture_group = culture_group:turkic_group }
+			any_non_state_religion_location = {
+				dominant_religion ?= { 
+					OR = {
+						group = religion_group:christian
+						group = religion_group:israelite_group
+					}
 				}
 			}
 		}
-		local_pop_conversion_speed_modifier = -0.25
-		local_unrest = -0.1
-	}
-	country_modifier = {
-		#tolerance_heathen = 1
-		clergy_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
-		dhimmi_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_dhimmi_estate_power = 1
-		wrong_culture_levy_size = 0.1
-		dhimmi_estate_levy_size = 0.2
-	}
+		allow = {}
+		location_modifier = {
+			potential_trigger = {
+				dominant_religion ?= { 
+					OR = {
+						group = religion_group:christian
+						group = religion_group:israelite_group
+					}
+				}
+			}
+			local_pop_conversion_speed_modifier = -0.25
+			local_unrest = -0.1
+		}
+		country_modifier = {
+			#tolerance_heathen = 1
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+			dhimmi_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_dhimmi_estate_power = 1
+			wrong_culture_levy_size = 0.1
+			dhimmi_estate_levy_size = 0.2
+		}
 
-	ai_weight = {
-		add = 25
+		ai_weight = {
+			add = 25
+		}
 	}
-}
