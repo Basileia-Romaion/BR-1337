@@ -38,6 +38,7 @@ character_db={
 		religion = orthodox
 		birth_date = 1301.1.1
 		birth = constantinople
+		estate = tribes_estate
 		adm = 33 dip = 33 mil = 95
 		father = swe_erik_xi
 		#mother = 
@@ -52,6 +53,7 @@ character_db={
 		religion = orthodox
 		birth_date = 1301.1.1
 		birth = constantinople
+		estate = tribes_estate
 		adm = 33 dip = 33 mil = 95
 		father = eng_harold_godwinson
 		#mother = 
@@ -234,8 +236,8 @@ character_db={
 		religion = orthodox
 		birth_date = 1297.1.1
 		birth = constantinople
+		estate = tribes_estate
 		adm = 55 dip = 55 mil = 77
-		estate = nobles_estate
 		father = br_ere_rdm_character_19
 		#mother = 
 		dynasty = drogan_dynasty
@@ -277,8 +279,8 @@ character_db={
 		religion = orthodox
 		birth_date = 1267.1.1
 		birth = constantinople
+		estate = tribes_estate
 		adm = 55 dip = 55 mil = 77
-		estate = nobles_estate
 		#father = eng_harold_godwinson
 		#mother = 
 		dynasty = drogan_dynasty
@@ -1066,7 +1068,7 @@ character_db={
 		father = byz_andronikos_ii_palaiologos
 		mother = byz_eirene_di_monferrato
 		dynasty = palaiologos_dynasty
-		tag = ATH
+		tag = HE1
 	}
 	br_ere_rdm_character_97 = {
 		first_name = "random"
