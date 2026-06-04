@@ -222,6 +222,9 @@ br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively inte
 	
 	location_potential = {
 		is_province_capital = yes
+		NOT = { 
+			this = location:constantinople
+		}
 	}
 	remove_if = {
 		NOT = { owner = { religion = religion:orthodox } }
@@ -266,6 +269,11 @@ br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doc
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
+	location_potential = { 
+		NOT = { 
+			this = location:constantinople
+		}
+	}
 	
 	possible_production_methods = {
 		library_maintenance
@@ -309,6 +317,9 @@ br_nomophylakeion = { #Archive and office of legal scholars and judges.
 	
 	location_potential = {
 		is_province_capital = yes
+		NOT = { 
+			this = location:constantinople
+		}
 	}
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
@@ -357,6 +368,9 @@ br_dikasterion = { #Provincial court administering Roman law.
 	
 	location_potential = {
 		is_province_capital = yes
+		NOT = { 
+			this = location:constantinople
+		}
 	}
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
