@@ -972,7 +972,7 @@ locations={
 	mus = { rank = town		town_setup = christian_anatolian_town }
 	erzurum = { rank = town		town_setup = christian_anatolian_town }
 	aksaray = { rank = town		town_setup = christian_anatolian_town }
-	inonu = { rank = town		town_setup = christian_anatolian_town }
+	bozan = { rank = town		town_setup = christian_anatolian_town }
 
 	#Central Asia
 	bukhara = { rank = city town_setup = central_asian_city }
@@ -4486,7 +4486,7 @@ building_manager = {
 	br_praitoria_building = { tag = BYZ level = 1 location = edirne }
 	br_praitoria_building = { tag = BYZ level = 1 location = smyrna }
 
-	br_stationes_building = { tag = BYZ level = 1 location = bozan }
+	br_stationes_building = { tag = BYZ level = 1 location = inonu }
 	br_stationes_building = { tag = BYZ level = 1 location = manisa }
 	br_stationes_building = { tag = BYZ level = 1 location = sogut }
 	br_stationes_building = { tag = BYZ level = 1 location = honaz }
@@ -4808,6 +4808,7 @@ building_manager = {
 	thema_headquarters = { tag = KAP level = 1 location = sivas }
 	thema_headquarters = { tag = AN3 level = 1 location = sebinkarahisar }
 	thema_headquarters = { tag = CIL level = 1 location = silifke }
+	thema_headquarters = { tag = BYZ level = 1 location = bozan }
 
 	#Balkans
 	br_doukate_building = { tag = MOE level = 1 location = mystras }
@@ -5814,7 +5815,7 @@ building_manager = {
 	forest_village = { tag = WA0 level = 2 location = severin }
 	market_village = { tag = WA2 level = 2 location = buzau }
 	forest_village = { tag = WA2 level = 2 location = buzau }
-	farming_village = { tag = BYZ level = 1 location = bozan }
+	farming_village = { tag = BYZ level = 1 location = inonu }
 	farming_village = { tag = BYZ level = 1 location = rodoscuk }
 	farming_village = { tag = CIL level = 2 location = adana }
 	farming_village = { tag = BYZ level = 1 location = guzelhisar }
@@ -5884,7 +5885,7 @@ building_manager = {
 	#market_village = { tag = MOE level = 1 location = mystras }
 	market_village = { tag = MOE level = 1 location = nafplio }
 	market_village = { tag = ACH level = 1 location = andravida }
-	market_village = { tag = BYZ level = 1 location = bozan }
+	market_village = { tag = BYZ level = 1 location = inonu }
 	market_village = { tag = BYZ level = 1 location = bandirma }
 	market_village = { tag = ANA level = 1 location = nigde }
 	market_village = { tag = CYP level = 1 location = limassol }
@@ -6365,7 +6366,7 @@ building_manager = {
 	local_estates = { tag = BYZ level = 4 location = uskudar }
 	local_estates = { tag = BYZ level = 2 location = bilecik }
 	local_estates = { tag = BYZ level = 1 location = akcasehir }
-	local_estates = { tag = BYZ level = 1 location = bozan }
+	local_estates = { tag = BYZ level = 1 location = inonu }
 	local_estates = { tag = BYZ level = 2 location = bandirma }
 	local_estates = { tag = BYZ level = 1 location = yuksekkum }
 	local_estates = { tag = BYZ level = 1 location = mengen }
@@ -6698,19 +6699,6 @@ building_manager = {
 	castle = { tag = SER level = 1 location =  kucevo }
 	castle = { tag = SER level = 1 location =  trgoviste_SER }
 	nobility_fortifications = { tag = BYZ level = 1 location = uluborlu }
-	stockade = { tag = BYZ level = 1 location = bursa }
-	stockade = { tag = BYZ level = 1 location = rodos }
-	stockade = { tag = BYZ level = 1 location = bozan }
-	stockade = { tag = BYZ level = 1 location = akcasehir }
-	stockade = { tag = BYZ level = 1 location = manavgat }
-	stockade = { tag = BYZ level = 1 location = mengen }
-	stockade = { tag = BYZ level = 1 location = gallipoli }
-	stockade = { tag = BYZ level = 1 location = alasehir }
-	stockade = { tag = BYZ level = 1 location = manisa }
-	stockade = { tag = CRT level = 1 location = candia }
-	stockade = { tag = MOE level = 1 location = tripolitsa }
-	stockade = { tag = EPI level = 1 location = ioannina }
-	stockade = { tag = HE1 level = 1 location = athens }
 	nobility_fortifications = { tag = CIL level = 1 location = alaiye }
 	stockade = { tag = CIL level = 1 location = kars_armenia }
 	nobility_fortifications = { tag = TRE level = 1 location = kastamonu }
