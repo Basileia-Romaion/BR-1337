@@ -1003,6 +1003,7 @@ REPLACE_OR_CREATE:water_frame = {
 
 ###-Horde-
 INJECT:horse_lords = {
+	tribes_estate_levy_size = 0.2
 	global_distance_from_capital_speed_propagation = 0.2
 }
 INJECT:glh_kipchak_khanate = {
@@ -1020,7 +1021,7 @@ REPLACE_OR_CREATE:ilk_restore_yam = {	#Restore the Yäm
 	requires = diplomatic_range_age_1
 	icon = diplomatic_training
 
-	global_distance_from_capital_speed_propagation = 0.05
+	global_distance_from_capital_speed_propagation = 0.1
 }
 REPLACE_OR_CREATE:ilk_ilkhanate_resurgent = {
 	age = age_2_renaissance

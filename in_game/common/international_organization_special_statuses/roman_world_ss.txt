@@ -82,9 +82,11 @@ domestikos_west = {
 	}
 	
 	on_bestowed_effect = {
+		trigger_event_non_silently = br_ere_events.1004
 	}
 	
 	on_rescinded_effect = {
+		trigger_event_non_silently = br_ere_events.1005
 	}
 
 	special_status_power = {
@@ -152,9 +154,11 @@ domestikos_east = {
 	}
 	
 	on_bestowed_effect = {
+		trigger_event_non_silently = br_ere_events.1004
 	}
 	
 	on_rescinded_effect = {
+		trigger_event_non_silently = br_ere_events.1005
 	}
 
 	special_status_power = {

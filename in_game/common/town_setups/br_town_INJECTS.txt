@@ -163,6 +163,8 @@ INJECT:greek_city_port = {
 	artisan_guilds = 1 #BR added estate building
 	merchants_guild = 1 #BR added estate building
 	local_schools = 1 #BR added estate building
+	br_episkopeion = 1
+	br_dikasterion = 1
 }
 
 INJECT:greek_town_port = {
@@ -203,6 +205,8 @@ INJECT:christian_anatolian_city = {
 	scriptorium = 1 #br add
 	artisan_guilds = 1 #BR added estate building
 	horse_breeders = 1
+	br_episkopeion = 1
+	br_dikasterion = 1
 }
 
 INJECT:christian_anatolian_town = {

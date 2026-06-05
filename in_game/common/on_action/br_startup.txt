@@ -938,7 +938,7 @@ br_on_game_start = {
 		location:karahisar_i_sahib = {
 			add_road_to = {
 				target = location:turgut
-				type = paved_road
+				type = gravel_road
 			}
 		}
 		location:turgut = {
@@ -950,13 +950,13 @@ br_on_game_start = {
 		location:karahisar_i_sahib = {
 			add_road_to = {
 				target = location:kutahya
-				type = paved_road
+				type = gravel_road
 			}
 		}
 		location:kutahya = {
 			add_road_to = {
 				target = location:sogut
-				type = paved_road
+				type = gravel_road
 			}
 		}
 
@@ -999,16 +999,22 @@ br_on_game_start = {
 		location:bozan = {
 			add_road_to = {
 				target = location:emirdag
-				type = gravel_road
+				type = paved_road
 			}
 		}
 		location:emirdag = {
 			add_road_to = {
 				target = location:turgut
-				type = gravel_road
+				type = paved_road
 			}
 		}
-		location:turgut = {
+		location:emirdag = {
+			add_road_to = {
+				target = location:karahisar_i_sahib
+				type = paved_road
+			}
+		}
+		location:celtik = {
 			add_road_to = {
 				target = location:ankara
 				type = gravel_road

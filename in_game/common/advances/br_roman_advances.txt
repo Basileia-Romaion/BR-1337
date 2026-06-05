@@ -163,6 +163,36 @@ br_roman_ecumenical_patriarch_advance = {
 	requires = roman_codified_custom
 }
 
+br_anatolian_heartland = {
+	age = age_1_traditions
+	potential = {
+		any_owned_location = {
+			OR = {
+				area = area:central_anatolia_area
+				area = area:cappadocia_area
+			}
+		}
+	}
+	requires = feudalism_advance
+	global_garrison_growth = 0.01
+	trade_land_efficiency = 0.1
+	plateau_proximity_impact = -0.2
+}
+
+br_anatolian_farmlands = {
+	age = age_1_traditions
+	potential = {
+		any_owned_location = {
+			OR = {
+				area = area:central_anatolia_area
+				area = area:cappadocia_area
+			}
+		}
+	}
+	requires = br_anatolian_heartland
+	global_wheat_output_modifier = 0.1
+}
+
 
 # AGE 2 – Renaissance
 

@@ -43,6 +43,20 @@ br_startup.1 = {
 			change_raw_material = goods:millet
 		}
 
+		#Anatolia
+		location:karahisar_i_sahib = {
+            change_raw_material = goods:wheat
+        }
+		location:inonu = {
+            change_raw_material = goods:wheat
+        }
+		location:usak = {
+            change_raw_material = goods:wheat
+        }
+		location:sogut = {
+            change_raw_material = goods:wheat
+        }
+
 		#Elysium
 		location:matapeake = {
 			change_raw_material = goods:wine
@@ -147,6 +161,7 @@ br_startup.1 = {
         location:jarrakan = {
             change_raw_material = goods:tin
         }
+
 
 		# Vinland
 		location:misha_shipu = {

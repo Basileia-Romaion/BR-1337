@@ -5,7 +5,7 @@
 ### The aim to increase City specialization. They increase the efficiency of a specific Good, but decrease the efficiency of all others.
 
 br_naval_theme_rights = {
-	#icon = constantinopolitan_silk_monopoly_rights
+	icon = br_naval_theme_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
@@ -23,12 +23,12 @@ br_naval_theme_rights = {
 		}
 	}
 	location_modifier = {
-		#local_sailors_modifier = 0.1
+		local_sailors_modifier = 0.1
 		harbor_suitability = 0.2
 		local_maritime_presence = 0.1
 		local_soldiers_desired_pop = 0.1
 		local_nobles_estate_power = 0.5
-		local_naval_supplies_output_modifier = 0.2
+		local_naval_supplies_output_modifier = 0.15
 		local_tar_output_modifier = 0.1
 	}
 	
@@ -36,7 +36,7 @@ br_naval_theme_rights = {
 }
 
 br_land_theme_rights = {
-	#icon = constantinopolitan_silk_monopoly_rights
+	icon = br_land_theme_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
@@ -46,18 +46,17 @@ br_land_theme_rights = {
 	allow = {
 		scope:target = {
 			is_province_capital = yes
-			NOR = {
+			NOT = {
 				has_town_rights = town_rights_type:br_naval_theme_rights
-				has_town_rights = town_rights_type:staple_port
 			}
 		}
 	}
 	location_modifier = {
-		#local_manpower_modifier = 0.1
-		local_levy_size_modifier = 0.1
+		local_manpower_modifier = 0.1
+		local_army_levy_size_modifier = 0.1
 		local_soldiers_desired_pop = 0.1
 		local_nobles_estate_power = 0.5
-		local_weaponry_output_modifier = 0.2
+		local_weaponry_output_modifier = 0.15
 		local_firearms_output_modifier = 0.1
 		local_cannons_output_modifier = 0.1
 	}

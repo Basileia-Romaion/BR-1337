@@ -14330,6 +14330,7 @@ countries = {
 				name_john.name_alexander = 1
 			}
 			reforms = {
+				bulgarian_tsardom
 				autocracy
 			}
 			privilege = {
@@ -14341,6 +14342,11 @@ countries = {
 				#burghers
 				#peasants
 				peasants_allowed_weapons_privilege
+
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribes_pasture_access
+				tribes_land_rights
 			}
 		}
 		accepted_cultures = {
@@ -18316,7 +18322,7 @@ countries = {
 	#Luxembourg
 	LUX = {
 		own_control_core = {
-			luxembourg arlon bastogne bitburg la_roche orchimont neufchateau_luxembourg st_vith thionville vianden
+			luxembourg arlon bastogne bitburg la_roche orchimont neufchateau_luxembourg st_vith vianden
 		}
 
 		starting_technology_level = 3
@@ -56066,6 +56072,7 @@ countries = {
 			vertus bar_sur_aube
 			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould brienne
 			rosnay villemaur choiseul
+			thionville
 		}
 		own_control_integrated = {
 			#Too small/unimportant vassals (fiefs movants)

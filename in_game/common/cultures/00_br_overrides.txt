@@ -334,7 +334,7 @@ REPLACE_OR_CREATE:dalmatian = {
 	}
 }
 
-albanian = {
+REPLACE_OR_CREATE:albanian = {
 	language = albanian_language
 
 	color = map_albanian
@@ -370,4 +370,24 @@ albanian = {
 #	}
 #}
 
+REPLACE_OR_CREATE:bulgarian = { 
+	language = bulgarian_language
+	
+	color = map_bulgarian
+	
+	tags = { south_slavic_gfx east_mediterranean_gfx mediterranean_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		hungarian = negative
+		wallachian = positive
+		venetian = negative
+		greek_culture = negative
+
+		boulgaroi = kindred
+	}
+	culture_groups = {
+		slavic_group
+		south_slavic_group
+	}
+}
 

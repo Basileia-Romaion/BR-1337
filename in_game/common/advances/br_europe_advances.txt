@@ -126,10 +126,11 @@ br_italian_universities = {
 			culture = culture:venetian
 		}
 	}
-	global_nobles_max_literacy = 10
-	global_burghers_max_literacy = 10
-	global_clergy_max_literacy = 10
+	global_nobles_max_literacy = 15
+	global_burghers_max_literacy = 15
+	global_clergy_max_literacy = 15
 	global_monthly_literacy = 0.02
+	research_speed_modifier = 0.05
 	requires = library_advance
 }
 br_italy_great_families = {
@@ -327,7 +328,7 @@ br_french_heritage = {
 	}
 	nobles_estate_levy_size = 1.0
 	army_heavy_cavalry_power = 0.1
-	army_heavy_cavalry_maintenance_cost_modifier = -0.1
+	army_heavy_cavalry_maintenance_cost_modifier = -0.2
 	#great_power_score_exempt_from_forfeit = 10
 	requires = br_french_tradition
 }
@@ -346,6 +347,7 @@ br_carolingian_relatinization = { #unique loc needed
 	global_clergy_max_literacy = 10
 	global_max_literacy = 2
 	global_monthly_literacy = 0.01
+	cultural_influence_modifier = 0.1
 	global_pop_assimilation_speed_modifier = 0.1
 	requires = library_advance
 }
@@ -367,7 +369,8 @@ br_carolingian_centralization = { #unique loc needed
 	
 	num_local_governors = 1
 	tax_income_efficiency = large_tax_income_efficiency_bonus
-	global_distance_from_capital_speed_propagation = 0.1
+	global_distance_from_capital_speed_propagation = 0.15
+	global_integration_speed_modifier = 0.15
 }
 br_french_language_in_all_courts = {
 	age = age_2_renaissance
@@ -376,6 +379,7 @@ br_french_language_in_all_courts = {
 		has_or_had_tag = LOT
 	}
 	cultural_influence_modifier = 0.25
+	global_pop_assimilation_speed_modifier = 0.1
 }
 br_elan = {
 	age = age_2_renaissance
@@ -498,6 +502,7 @@ br_arm_bagrationi_dynasty = {
 	requires = distribution_of_power_advance
 	monthly_legitimacy = 0.05
 }
+#split these into 2 or 3 advances, one for each age, and add more bonuses to them. Also add a unique loc for each of them
 br_armenian_mountain_strongholds = {
 	age = age_1_traditions
 	icon = hun_castle_warriors
@@ -508,6 +513,44 @@ br_armenian_mountain_strongholds = {
 		}
 	}
 	requires = feudalism_advance
-	global_hostile_attrition = 0.25
-	trade_land_efficiency = 0.15
+	fort_maintenance_efficiency = 0.1
+	global_garrison_size_modifier = 0.1
+	global_hostile_attrition = 0.1
+	trade_land_efficiency = 0.1
+	mountains_proximity_impact = -0.1
+	hills_proximity_impact = -0.1
+	plateau_proximity_impact = -0.1
+}
+br_balkan_mountain_strongholds = {
+	age = age_1_traditions
+	icon = hun_castle_warriors
+	potential = {
+		OR = {
+			culture = culture:bulgarian
+            culture = culture:serbian
+		}
+	}
+	requires = feudalism_advance
+	global_garrison_size_modifier = 0.1
+	global_hostile_attrition = 0.1
+	trade_land_efficiency = 0.1
+	mountains_proximity_impact = -0.1
+	hills_proximity_impact = -0.1
+	plateau_proximity_impact = -0.1
+}
+br_bulgar_steppe_heritage = {
+	age = age_1_traditions
+	icon = horse_lords
+	requires = feudalism_advance
+
+	potential = {
+		culture = culture:bulgarian
+	}
+
+	army_light_cavalry_power = 0.1
+	army_light_cavalry_reinforce_cost_modifier = -0.2
+	army_light_cavalry_maintenance_cost_modifier = -0.2
+
+	tribes_estate_levy_size = 0.3
+	always_allow_army_levies = yes
 }

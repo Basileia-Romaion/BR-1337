@@ -962,7 +962,7 @@ locations={
 	#ladik_pontus = { rank = town		town_setup = christian_anatolian_town }
 	#balikesir = { rank = town		town_setup = christian_anatolian_town }
 	milas = { rank = town		town_setup = greek_town_port }
-	karahisar_i_sahib = { rank = town		town_setup = christian_anatolian_town }
+	emirdag = { rank = town		town_setup = christian_anatolian_town }
 	#manisa = { rank = town		town_setup = christian_anatolian_town }
 	#niksar = { rank = town		town_setup = christian_anatolian_town }
 	antalya = { rank = town		town_setup = greek_town_port }
@@ -4625,7 +4625,7 @@ building_manager = {
 	br_pronoia_estate = { tag = BYZ level = 1 location = nazilli }
 	br_pronoia_estate = { tag = BYZ level = 1 location = guzelhisar }
 	br_pronoia_estate = { tag = BYZ level = 1 location = bilecik }
-	br_pronoia_estate = { tag = BYZ level = 1 location = emirdag }
+	br_pronoia_estate = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	br_pronoia_estate = { tag = BYZ level = 1 location = uluborlu }
 	br_pronoia_estate = { tag = BYZ level = 1 location = sis }
 	br_pronoia_estate = { tag = BYZ level = 1 location = eregli_kar }
@@ -4789,7 +4789,7 @@ building_manager = {
 	#thema_headquarters = { tag = BYZ level = 1 location = izmit }
 	br_doukate_building = { tag = BYZ level = 1 location = edirne }
 	thema_headquarters = { tag = BYZ level = 1 location = kutahya }
-	thema_headquarters = { tag = BYZ level = 1 location = karahisar_i_sahib }
+	thema_headquarters = { tag = BYZ level = 1 location = emirdag }
 	thema_headquarters = { tag = BYZ level = 1 location = lazkiye }
 	br_doukate_building = { tag = BYZ level = 1 location = antalya }
 	thema_headquarters = { tag = BYZ level = 1 location = milas }
@@ -5701,8 +5701,8 @@ building_manager = {
 	farming_village = { tag = BYZ level = 1 location = balikesir }
 	market_village = { tag = BYZ level = 1 location = manisa }
 	farming_village = { tag = BYZ level = 1 location = manisa }
-	market_village = { tag = BYZ level = 1 location = emirdag }
-	farming_village = { tag = BYZ level = 1 location = emirdag }
+	market_village = { tag = BYZ level = 2 location = karahisar_i_sahib }
+	farming_village = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	market_village = { tag = BYZ level = 1 location = sultanonu }
 	farming_village = { tag = BYZ level = 1 location = sultanonu }
 	forest_village = { tag = BYZ level = 1 location = adranos }
@@ -6375,7 +6375,7 @@ building_manager = {
 	local_estates = { tag = BYZ level = 2 location = luleburgaz }
 	local_estates = { tag = BYZ level = 2 location = gonen }
 	local_estates = { tag = BYZ level = 1 location = edremit }
-	local_estates = { tag = BYZ level = 1 location = emirdag }
+	local_estates = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	local_estates = { tag = BYZ level = 1 location = honaz }
 	local_estates = { tag = BYZ level = 2 location = uluborlu }
 	local_estates = { tag = BYZ level = 2 location = tavas }
@@ -6487,7 +6487,7 @@ building_manager = {
 	local_markets = { tag = BYZ level = 1 location = kalamata }
 	local_markets = { tag = BYZ level = 1 location = nafplio}
 	local_markets = { tag = BYZ level = 1 location = uluborlu }
-	local_markets = { tag = BYZ level = 1 location = emirdag }
+	local_markets = { tag = BYZ level = 1 location = karahisar_i_sahib }
 	local_markets = { tag = BYZ level = 1 location = eregli }
 	local_markets = { tag = BYZ level = 1 location = cankiri }
 	local_markets = { tag = BYZ level = 1 location = afsin }

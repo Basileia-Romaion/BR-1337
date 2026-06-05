@@ -16,6 +16,35 @@ TRY_INJECT:nobles_recruitment_center = {
 	}
 }
 
+TRY_INJECT:kurultai = {
+	modifier = {
+		local_proximity_source = 10 #br added
+	}
+}
+TRY_INJECT:order_stronghold = {
+	modifier = {
+		local_proximity_source = 10 #br added
+	}
+}
+
+TRY_INJECT:bey_fortress = {
+	modifier = {
+		#local_proximity_source = 5
+		local_garrison_size = 0.1
+	}
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+	
+}
+
+TRY_INJECT:mamluk_barracks = {
+	modifier = {
+		local_proximity_source = 5
+	}
+}
+
 REPLACE_OR_CREATE:thema_headquarters = {
 	is_foreign = no
 	pop_type = soldiers

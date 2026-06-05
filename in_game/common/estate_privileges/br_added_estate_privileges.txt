@@ -349,6 +349,7 @@
 			monthly_towards_stratiotai = societal_value_monthly_move
 			global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
 			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+			levy_maintenance_modifier = -0.1
 		}
 		#positive
 		country_modifier = {
@@ -357,7 +358,8 @@
 				value = stability
 				multiply = 0.01
 			}
-			monthly_experience_gain = 0.05
+			#monthly_experience_gain = 0.05
+			global_defensive = 0.1
 			global_army_levy_size_modifier = 0.1
 			levy_combat_efficiency_modifier = 0.1
 		}
@@ -379,6 +381,41 @@
 				add = 1
 			}
 			global_max_rural_control = -0.05
+		}
+	}
+
+	br_themata_reformed_privilege = {
+		estate = peasants_estate
+		icon = primacy_of_nobility
+		potential = {
+		}
+		allow = {
+		}
+		can_revoke = {
+			government_power > 75
+		}
+		country_modifier = {
+			global_peasants_estate_power = 1
+			global_peasant_enfranchisment = 0.1
+			peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+			monthly_towards_free_subjects = societal_value_minor_monthly_move
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_stratiotai = societal_value_monthly_move
+			global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+			#army_maintenance_efficiency = 0.1
+			levy_maintenance_modifier = -0.15
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			global_defensive = 0.15
+			global_army_levy_size_modifier = 0.15
+			levy_combat_efficiency_modifier = 0.15
 		}
 	}
 
@@ -711,7 +748,7 @@
 
 	br_ere_foederati_privilege = { #not done
 		estate = tribes_estate
-		icon = tribes_tribal_levies
+		icon = cas_caballeros_villanos
 		
 		potential = {
 			culture = { has_culture_group = culture_group:greek_group }
@@ -721,8 +758,9 @@
 			}
 		}
 		country_modifier = {
+			amount_looted_modifier = 0.1
 			global_tribes_estate_power = 1
-			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			tribes_estate_levy_size = 0.25
 			wrong_culture_levy_size = 0.05
 			monthly_towards_free_subjects = societal_value_minor_monthly_move
@@ -732,7 +770,7 @@
 
 	br_ere_varangian_privilege = { #not done
 		estate = tribes_estate
-		icon = tribes_tribal_levies
+		icon = coign_and_livery_privilege
 		
 		potential = {
 			OR = {
@@ -741,7 +779,7 @@
 			}
 		}
 		country_modifier = {
-			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_tribes_estate_power = 1
 			mercenary_units_preference_modifier = 0.33
 			global_mercenaries_modifier = 0.1
@@ -753,7 +791,7 @@
 
 	br_ere_varangian_privateers = { #not done
 		estate = tribes_estate
-		icon = tribes_tribal_levies #needed
+		icon = noble_sponsored_navy
 		
 		potential = {
 			OR = {
@@ -762,9 +800,8 @@
 			}
 		}
 		country_modifier = {
-			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_tribes_estate_power = 1
-
 			hire_privateer_cost_modifier = -0.1
 			privateer_maintenance_cost_modifier = -0.1
 			privateer_durability = 0.01
