@@ -7,7 +7,7 @@ TRY_INJECT:average_literacy = {
 }
 
 TRY_INJECT:average_development = {
-	tribes_estate_target_satisfaction = -1 #Tribals like less development
+	tribes_estate_target_satisfaction = -0.5 #Tribals like less development
 }
 
 #BR added modifiers
@@ -149,10 +149,6 @@ REPLACE_OR_CREATE:byz_mercantile_self_reliance_modifier = {
 	monthly_legitimacy = 0.02 #0.1
 }
 
-REPLACE_OR_CREATE:BYZ_cracking_down_on_nobility = {
-	game_data = {
-		category = country
-	}
-	global_nobles_estate_power = -0.5
+TRY_INJECT:BYZ_cracking_down_on_nobility = {
 	stability_investment = stability_investment_penalty
 }

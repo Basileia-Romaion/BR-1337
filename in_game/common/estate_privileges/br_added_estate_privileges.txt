@@ -263,6 +263,8 @@
 			global_peasant_enfranchisment = 0.05
 			nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
 			aggressiveness_modifier = 0.25
+			tolerance_heathen = -1
+			#tolerance_heretic = -1
 		}
 		country_modifier = {
 			potential_trigger = { legitimacy > 0 }
@@ -279,7 +281,6 @@
 			potential_trigger = { any_neighbor_country = { NOT = { religion.group = root.religion.group } } }
 			damage_done_versus_heathens_modifier = 0.1
 			antagonism_religion_influence = 0.5
-			tolerance_heretic = -1
 		}
 			
 	}
@@ -638,7 +639,7 @@
 				value = stability
 				multiply = 0.01
 			}
-			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		}
 		country_modifier = {
 			potential_trigger = { legitimacy < 100 }
@@ -670,6 +671,32 @@
 		country_modifier = {
 			potential_trigger = { owns = location:jerusalem }
 			tolerance_own = 1
+		}
+	}
+
+	br_roman_orthodox_catechesis = {
+		icon = dhimmi_mazalim_court
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				culture = { has_culture_group = culture_group:roman_group }
+			}
+			#NOT = { has_estate_privilege = estate_privilege:promote_cultural_unity }
+			#NOT = { has_estate_privilege = estate_privilege:clergy_enforced_unity }
+		}
+		estate = clergy_estate
+		country_modifier = {
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
+			monthly_towards_spiritualist = societal_value_monthly_move
+
+			global_pop_assimilation_speed_modifier = 0.15
+			global_pop_conversion_speed_modifier = 0.25
+			global_clergy_estate_power = 0.25
+
+			cultures_capacity_modifier = -0.25
+			tolerance_heathen = -0.5
+			tolerance_heretic = -0.25
 		}
 	}
 

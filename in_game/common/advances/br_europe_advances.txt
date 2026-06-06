@@ -326,9 +326,9 @@ br_french_heritage = {
 	potential = {
 		has_or_had_tag = LOT
 	}
-	nobles_estate_levy_size = 1.0
+	nobles_estate_levy_size = 0.5
 	army_heavy_cavalry_power = 0.1
-	army_heavy_cavalry_maintenance_cost_modifier = -0.2
+	army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	#great_power_score_exempt_from_forfeit = 10
 	requires = br_french_tradition
 }

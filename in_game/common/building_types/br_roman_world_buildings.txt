@@ -216,7 +216,7 @@ br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively inte
 	graphical_tags = { small_religious }
 
 	country_potential = {
-		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		owner = { religion = religion:orthodox }
 	}
 	allow = { is_province_capital = yes }
 	
@@ -264,7 +264,7 @@ br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doc
 	graphical_tags = { small_religious }
 
 	country_potential = {
-		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
 	}
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
@@ -284,7 +284,6 @@ br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doc
 		local_pop_assimilation_speed_modifier = 0.1
 		local_pop_conversion_speed_modifier = 0.1
 		local_clergy_estate_power = 0.25
-		local_max_literacy = 2.5
 		local_monthly_literacy = 0.05
 	}
 	capital_country_modifier = {

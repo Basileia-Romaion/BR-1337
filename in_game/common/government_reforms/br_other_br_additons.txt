@@ -83,16 +83,36 @@ br_alandalus_reform = {
 		monthly_towards_humanist = societal_value_monthly_move
 		global_dhimmi_estate_power = 5
 		dhimmi_estate_levy_size = 0.5
-		tolerance_heathen = 4
+		tolerance_heathen = 2
 		cultures_capacity = 1
 		
 		#debuffs
-		global_pop_assimilation_speed_modifier = -0.5
+		#global_pop_assimilation_speed_modifier = -0.5
         global_pop_conversion_speed_modifier = -0.5
 	}
 	years = 2
 }
 
+###Other###
+br_mongol_tolerance = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = GLH
+	}
+	country_modifier = {
+		add_accepted_culture_cost_modifier = -1
+		cultures_capacity = 3
+		tolerance_heathen = 2
+
+        global_pop_assimilation_speed_modifier = -0.5
+        global_pop_conversion_speed_modifier = -0.5
+        wrong_culture_levy_size = 0.25
+	}
+	unique = yes
+	years = 2
+}
+
+###HRE###
 br_carolingian_heritage = {
 	unique = yes
 	icon = holy_imperial_monarchy_reform
@@ -108,14 +128,162 @@ br_carolingian_heritage = {
 	country_modifier = {
 		government_reform_slots = 1
 		diplomatic_capacity = 1
-		global_peasant_enfranchisment = -0.10
 	}
 	country_modifier = {
 		potential_trigger = { government_power >= 50 }
 		monthly_towards_centralization = societal_value_monthly_move
 		global_crown_estate_power = 0.25
-		nobles_estate_max_tax = 0.25
-		power_projection = 5
+		monthly_legitimacy = 0.1
+		power_projection = 10
 	}
 	years = 2
 }
+
+br_ancient_french_taxation = {
+	unique = yes
+	icon = ancient_french_taxation
+	potential = {
+		has_or_had_tag = LOT
+	}
+
+	locked = {
+		custom_tooltip = {
+			text = fra_ancient_french_taxation_removal_conditions
+			societal_value:centralization_vs_decentralization >= -50
+		}
+	}
+
+	country_modifier = {
+		global_peasant_enfranchisment = -0.20
+		government_reform_slots = 1
+		nobles_estate_max_tax = 0.2
+		subject_income_modifier = 0.1
+	}
+	years = 2
+}
+
+br_french_feudal_nobility = { # French Feudalism
+    unique = yes
+	content_priority = 900
+	icon = french_feudal_nobility
+	potential = {
+		has_or_had_tag = LOT
+		government_type = government_type:monarchy
+		NOT = { has_reform = government_reform:feudal_nobility }
+		NOT = { has_reform = government_reform:br_french_centralized_monarchy }
+	}
+	allow = {
+		has_or_had_tag = LOT
+		NOT = { has_reform = government_reform:br_french_centralized_monarchy }
+	}
+	country_modifier = {
+		diplomatic_capacity = 1
+		monthly_towards_serfdom = societal_value_large_monthly_move
+		monthly_towards_aristocracy = societal_value_monthly_move
+		nobles_estate_levy_size = 0.5
+		army_heavy_cavalry_power = 0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
+	}
+	years = 2
+}
+
+br_french_centralized_monarchy = { # Centralized French Monarchy
+    unique = yes
+	content_priority = 800
+	icon = french_centralized_monarchy
+	potential = {
+		has_or_had_tag = LOT
+		government_type = government_type:monarchy
+		NOT = { has_reform = government_reform:br_french_feudal_nobility }
+	}
+	allow = {
+		has_or_had_tag = LOT
+		societal_value:centralization_vs_decentralization >= -50
+	}
+	country_modifier = {
+		nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+		#monthly_towards_centralization = societal_value_monthly_move
+		global_crown_estate_power = 0.10
+		legislative_efficiency = 0.10
+		power_projection = 5
+		revoke_privilege_cost_modifier = -0.1
+		government_reform_slots = 1
+	}
+	years = 2
+}
+
+#br_french_appanage_reform = { # Unique Gov Reform for Appanage subjects
+	#icon = french_appanage_reform
+	#potential = {
+		#OR = {
+			#capital.region = region:france_region
+			#capital.area = area:brabant_area
+			#capital.area = area:flanders_area
+			#capital.area = area:holland_area
+		#}
+		#is_subject_type = appanage
+	#}
+	#allow = {
+		#overlord ?= {
+			#OR = {
+				#modifier:has_appanages_subjects = yes
+				#has_reform = government_reform:br_french_feudal_nobility
+				#has_reform = government_reform:br_french_appanage_reform
+			#}
+		#}
+		#is_subject = yes
+	#}
+	#locked = {
+		#is_locked_mechanic = {
+			#mechanic = government_reform
+			#type = br_french_appanage_reform
+		#}
+	#}
+	#country_modifier = {
+		#global_nobles_estate_power = 0.33
+		#nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+		#nobles_estate_max_tax = 0.05
+		#government_reform_slots = 1
+		#loyalty_to_overlord = 10
+	#}
+	#years = 2
+#}
+#
+#br_french_ducal_vassal_reform = { # Unique Gov Reform for French vassals subjects
+	#icon = french_ducal_vassal_reform
+	#potential = {
+		#overlord ?= {
+			#OR = {
+				#has_reform = government_reform:br_french_feudal_nobility
+				#has_reform = government_reform:br_french_ducal_vassal_reform
+			#}
+		#}
+		#government_type = government_type:monarchy
+		#NOT = { has_reform = government_reform:br_french_feudal_nobility }
+		#NOT = { has_reform = government_reform:br_french_appanage_reform }
+		#NOT = { has_or_had_tag = LOT }
+	#}
+	#allow = {
+		#overlord ?= {
+			#OR = {
+				#has_reform = government_reform:br_french_feudal_nobility
+				#has_reform = government_reform:br_french_ducal_vassal_reform
+			#}
+		#}
+		#is_independent_or_autonomous_subject = no
+	#}
+	#locked = {
+		#is_locked_mechanic = {
+			#mechanic = government_reform
+			#type = br_french_ducal_vassal_reform
+		#}
+	#}
+	#country_modifier = {
+		#stability_investment = small_stability_investment
+		#nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+		#monthly_towards_aristocracy = societal_value_monthly_move
+		#diplomatic_capacity = 1
+		#loyalty_to_overlord = 25
+	#}
+	#years = 2
+#}

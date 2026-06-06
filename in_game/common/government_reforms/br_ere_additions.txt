@@ -64,8 +64,12 @@ br_sub_theme_subject = {
 	age = age_1_traditions
 	icon = theme_system
 	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
+		OR = {
+			culture = { has_culture_group = culture_group:roman_group }
+			is_subject_type = br_thema_subject
+		}
+
 	}
 	allow = {
 		OR = {
@@ -108,8 +112,11 @@ br_sub_pronoia_subject = {
 	age = age_1_traditions
 	icon = theme_system
 	potential = {
-		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
+		OR = {
+			culture = { has_culture_group = culture_group:roman_group }
+			is_subject_type = pronoia
+		}
 	}
 	allow = {
 		OR = {
@@ -202,6 +209,7 @@ br_naval_akritai_reform = {
             has_or_had_tag = K1B
 			has_or_had_tag = HE0
             has_or_had_tag = KYP
+			is_subject_type = br_naval_thema_subject
         }
     }
     locked = {
@@ -273,21 +281,4 @@ br_naval_akritai_reform = {
 
 #	years = 2
 #}
-###Other###
-br_mongol_tolerance = {
-	age = age_1_traditions
-	potential = {
-		has_or_had_tag = GLH
-	}
-	country_modifier = {
-		add_accepted_culture_cost_modifier = -1
-		cultures_capacity = 5
-		tolerance_heathen = 3
 
-        global_pop_assimilation_speed_modifier = -0.85
-        global_pop_conversion_speed_modifier = -0.85
-        wrong_culture_levy_size = 0.25
-	}
-	unique = yes
-	years = 2
-}
