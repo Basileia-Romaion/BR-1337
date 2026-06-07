@@ -19555,6 +19555,7 @@ countries = {
 				tribes_tribal_levies
 				tribes_allow_gatherings
 				local_tribal_strongholds
+				br_berber_privilege
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
@@ -19630,6 +19631,7 @@ countries = {
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
+				br_berber_privilege
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
@@ -19712,6 +19714,7 @@ countries = {
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
+				br_berber_privilege
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
@@ -20217,6 +20220,16 @@ countries = {
 			ruler_term = { character = trp_thabit_ibn_ammar start_date = 1324.1.1 end_date = 1327.1.1 regnal_number = 1 }
 			ruler_term = { character = trp_muhammad_ibn_thabit start_date = 1332.1.1 regnal_number = 1 }
 
+			privilege = {
+				#Nobles
+				noble_sponsored_navy
+				land_of_commerce
+				allow_trade_center_sponsorship
+				#Tribes
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				br_berber_privilege
+			}
 			laws = {
 				sharia_law = maliki_policy
 			}
@@ -23152,6 +23165,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = bqa_fayed_ibn_muqaddam
+			privilege = {
+				#Nobles
+				noble_sponsored_navy
+				#Burghers
+				land_of_commerce
+				allow_trade_center_sponsorship
+				#Tribes
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				br_berber_privilege
+			}
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
@@ -32923,6 +32947,9 @@ countries = {
 
 				#Tribes
 				tribes_tribal_levies
+
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
 			}
 			
 			laws = {
@@ -33222,6 +33249,9 @@ countries = {
 				tribes_tribal_registry
 				tribes_protected_faith
 				tribes_in_administration
+
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
 
 			}
 			
@@ -33849,6 +33879,9 @@ countries = {
 				tribes_tribal_registry
 				tribes_protected_faith
 				tribes_in_administration
+
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
 			}
 			
 			laws = {
@@ -56090,7 +56123,7 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_western_europe"
 		include = "catholic_monarchy"
-		include = "feudal_europe"
+		#include = "feudal_europe"
 
 		government = {
 			heir_selection = salic_law
@@ -56162,25 +56195,25 @@ countries = {
 				name_lothar = 2
 			}
 
-			centralization_vs_decentralization = 85
+			centralization_vs_decentralization = -25
 			aristocracy_vs_plutocracy = -75
 			serfdom_vs_free_subjects = -80
 			traditionalist_vs_innovative = -30
 			spiritualist_vs_humanist = -50
 			mercantilism_vs_free_trade = -25
-			offensive_vs_defensive = -20
-			land_vs_naval = -30
-			quality_vs_quantity = -30
-			belligerent_vs_conciliatory = -20
-			capital_economy_vs_traditional_economy = 70
+			offensive_vs_defensive = -35
+			land_vs_naval = -100
+			quality_vs_quantity = -35
+			belligerent_vs_conciliatory = -45
+			capital_economy_vs_traditional_economy = 75
 			individualism_vs_communalism = -30
-			outward_vs_inward = -50
+			outward_vs_inward = -75
 
 			reforms = {
 				br_carolingian_heritage
+				br_ancient_french_taxation
+				br_french_feudal_nobility
 				autocracy
-				#french_feudal_nobility
-				#ancient_french_taxation
 			}
 
 			laws = {
@@ -56789,6 +56822,9 @@ countries = {
 				tribes_protected_faith
 				tribes_in_administration
 
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
+
 			}
 			
 			laws = {
@@ -56846,6 +56882,9 @@ countries = {
 				tribes_tribal_registry
 				tribes_protected_faith
 				tribes_in_administration
+
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
 
 			}
 			
