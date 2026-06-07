@@ -4513,7 +4513,10 @@ building_manager = {
 	#Anatolia
 	dock = { tag = BYZ level = 1 location = smyrna }
 	br_naval_theme_hq = { tag = A1G level = 1 location = canakkale }
+	stockade = { tag = A1G level = 1 location = canakkale }
 	br_naval_theme_hq = { tag = K1B level = 1 location = antalya }
+	stockade = { tag = K1B level = 1 location = antalya }
+
 	dock = { tag = MAM level = 1 location = suez }
 	wharf = { tag = BYZ level = 1 location = smyrna }
 	cathedral = { tag = BYZ level = 1 location = smyrna }
@@ -4774,13 +4777,16 @@ building_manager = {
 	#hre_imperial_armory_own = { tag = LOT level = 1 location = strasbourg }
 
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = brussels }
-	hre_imperial_armory_foreign = { tag = LOT level = 1 location = mainz }
+	hre_imperial_armory_foreign = { tag = LOT level = 2 location = mainz }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = cologne }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = vienna }
-	hre_imperial_armory_foreign = { tag = LOT level = 1 location = aachen }
+	hre_imperial_armory_foreign = { tag = LOT level = 2 location = aachen }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = milano }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = verona }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = florence }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = genoa }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = parma }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = bruges }
 
 	#Anatolia
 	#thema_headquarters = { tag = BYZ level = 1 location = iznik }
