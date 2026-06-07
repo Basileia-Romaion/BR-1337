@@ -10,7 +10,7 @@
 		moroccan = kindred	
 		algerian = positive
 		tunisian = positive
-		sephardi = positive
+		sephardi = kindred
 		mozarabic = positive
 	}
 	
@@ -30,13 +30,13 @@ mozarabic = {
 
 	opinions = {
 		andalusi = positive
-		sephardi = positive
+		sephardi = kindred
 		castilian = positive
 		aragonese = positive
 	}
 
 	location_modifier = {
-		local_pop_conversion_speed_modifier = -0.5
+		local_pop_conversion_speed_modifier = -0.25
 	}
 	
 	culture_groups = {
@@ -52,8 +52,8 @@ arab_sicilian = {
 	tags = { maghrebi_gfx middle_east_gfx west_mediterranean_gfx mediterranean_gfx }
 
 	opinions = {
-		tunisian = positive
-		andalusi = positive
+		tunisian = kindred
+		andalusi = kindred
 	}
 	
 	culture_groups = {
