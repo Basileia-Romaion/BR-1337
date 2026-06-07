@@ -152,7 +152,7 @@ INJECT:german_coastal_city = {
 
 
 INJECT:greek_town = {
-	stockade = 1 #BR Edit
+	#stockade = 1 #BR Edit
 	marketplace = 2 #BR EDIT
 	parish_church = 1 #BR added estate building
 }
@@ -168,7 +168,7 @@ INJECT:greek_city_port = {
 }
 
 INJECT:greek_town_port = {
-	stockade = 1
+	#stockade = 1
 	artisan_guilds = 1 #BR added estate building
 	merchants_guild = 1 #BR added estate building
 }
@@ -210,7 +210,7 @@ INJECT:christian_anatolian_city = {
 }
 
 INJECT:christian_anatolian_town = {
-	stockade = 1 # BR ADDED
+	#stockade = 1 # BR ADDED
 	parish_church = 1 #BR added estate building
 	horse_breeders = 1
 }
