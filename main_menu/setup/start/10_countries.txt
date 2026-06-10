@@ -4400,18 +4400,15 @@ countries = {
 		}
 	}
 	EAG = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			bury fakenham ipswich lavenham lowestoft lynn norwich thetford yarmouth
 		}
 		
 		include = "expl_western_europe"
-		include = "catholic_monarchy"
-		include = "feudal_europe"
+		include = "catholic_monarchy_not_present"
 		
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = random
+
 		}
 		
 		accepted_cultures = {
@@ -4422,18 +4419,15 @@ countries = {
 		capital = tamworth
 	}
 	LSY = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			boston grantham grimsby lincoln louth spalding
 		}
 		
 		include = "expl_western_europe"
-		include = "catholic_monarchy"
-		include = "feudal_europe"
+		include = "catholic_monarchy_not_present"
 		
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = random
+
 		}
 		
 		accepted_cultures = {
@@ -4749,6 +4743,8 @@ countries = {
 	}
 	ORK = { # Orkney
 		own_control_core = {
+			# Northern Isles #shetland orkney 
+			torshavn
 			orkney shetland
 			# Scotland
 			thurso dornoch durness tongue
@@ -14231,6 +14227,7 @@ countries = {
 			dospat bansko krupnik melnik nevrokop beden
 			ustra
 			bukelon ormenio
+			karvuna pangalia kaliakra
 		}
 
 		our_cores_conquered_by_others = {
@@ -32914,7 +32911,11 @@ countries = {
 			barqaid sinjar bara_iraq nusaybin ras_ayn
 			diyarbekir ergani
 			cermik
-			kahta samsat
+			jabbul al_bab manbij maskanah dabiq aleppo zardana marrat
+			khanaser qastal salamiyya
+			ithriya sukhnah taybah
+			arak huwwarin qaryatayn tadmur
+			deir_ez_zor tabqah rahba
 		}
 		own_control_integrated = {
 		
@@ -33184,14 +33185,11 @@ countries = {
 	#Dulkadirids - DUL https://en.wikipedia.org/wiki/Dulkadirids
 	DUL = {
 		own_control_core = {
-			jabbul al_bab manbij maskanah dabiq aleppo zardana marrat
 			kilis afrin 
-			ayntab dluk
-			khanaser qastal salamiyya
-			kaysun
-			ithriya sukhnah taybah
-			arak huwwarin qaryatayn tadmur
-			deir_ez_zor tabqah rahba
+			kaysun ayntab dluk
+			kahta samsat
+			trapessac
+			besni marash
 		}
 
 		include = "expl_eastern_europe"
@@ -33266,11 +33264,12 @@ countries = {
 			date = 1395.1.1
 			size = 1
 		}
-		capital = aleppo
+		capital = kilis
 		country_rank = rank_duchy
 		religious_school = ismaili_school
 		tolerated_cultures = {
-			syriac_culture
+			kurdish_culture
+			#syriac_culture
 		}
 	}
 	
@@ -33690,33 +33689,19 @@ countries = {
 
 	#Kilis - KIL
 	KIL = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			trapessac
 			besni marash
-
-		}
-		our_cores_conquered_by_others = {
 			enguzud
 			ulnia kaysun elbistan goksun afsin
 		}
 		
 		include = "expl_middle_east"
-		include = "muslim_monarchy_no_coast"
-
+		include = "muslim_monarchy_not_present"
 
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = random
 		}
-
-		tolerated_cultures = {
-			syriac_culture
-			levantine_culture
-		}
-
 		capital = kaysun
-		dynasty = canbolad_dynasty
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 	}
 
@@ -54166,9 +54151,12 @@ countries = {
 	
 	B0L = {
 		own_control_core = {
-			karvuna pangalia kaliakra
 			babadag cernavoda constanta enisala isaccea
 			tulcea harsova
+		}
+		our_cores_conquered_by_others = {
+			varna
+			karvuna pangalia kaliakra
 		}
 		
 		starting_technology_level = 3
@@ -57014,11 +57002,10 @@ countries = {
 			windsor reading abingdon
 			buckingham aylesbury wycombe
 			daventry bosworth leicester
-
+			bury fakenham ipswich lavenham lowestoft lynn norwich thetford yarmouth
+			boston grantham grimsby lincoln louth spalding
 			barking bedford cambridge chelmsford colchester dunstable ely harrow hedingham hertford huntingdon kettering kingston london loughborough newark northampton nottingham prittlewell retford rutland royston st_albans walden
 			
-		# Northern Isles #shetland orkney 
-			torshavn
 		}
 
 		capital = london

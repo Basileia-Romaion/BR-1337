@@ -33,61 +33,39 @@ br_ere_events.1 = {
 			mode = add_and_extend
 			size = 0.5
 		}
-		#if = {
-			#limit = {
-				#has_dlc = "d008_fate_of_the_phoenix"
-			#}
+		if = {
+			limit = {
+				has_dlc = "d008_fate_of_the_phoenix"
+			}
 			##Europe Pronoia
-			#c:S1Y = {
-				#make_subject_of = {
-					#target = c:BYZ
-					#type = subject_type:pronoia
+			if = {
+				limit = { country_exists = c:THE }
+				c:THE = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:HE1 }
+				c:HE1 = {
+					make_subject_of = {
+						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+			}
+			#if = {
+				#limit = { country_exists = c:MOE }
+				#c:MOE = {
+					#make_subject_of = {
+						#target = c:BYZ
+						#type = subject_type:pronoia
+					#}
 				#}
 			#}
-			#c:B0R = {
-				#make_subject_of = {
-					#target = c:THE
-					#type = subject_type:pronoia
-				#}
-			#}
-			#c:THS = {
-				#make_subject_of = {
-					#target = c:THE
-					#type = subject_type:pronoia
-				#}
-			#}
-			#c:ACH = {
-				#make_subject_of = {
-					#target = c:HE1
-					#type = subject_type:pronoia
-				#}
-			#}
-			#c:MOE = {
-				#make_subject_of = {
-					#target = c:HE1
-					#type = subject_type:pronoia
-				#}
-			#}
-			##Anatolia Pronoia
-			#c:AN12 = {
-				#make_subject_of = {
-					#target = c:AON
-					#type = subject_type:pronoia
-				#}
-			#}
-			#c:AN11 = {
-				#make_subject_of = {
-					#target = c:AON
-					#type = subject_type:pronoia
-				#}
-			#}
-			#c:P2N = {
-				#make_subject_of = {
-					#target = c:TRE
-					#type = subject_type:pronoia
-				#}
-			#}
-		#}
+		}
 	}
 	option = {
 		historical_option = yes

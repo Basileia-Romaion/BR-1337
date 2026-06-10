@@ -443,7 +443,10 @@ br_foederati_grant = { #Foederati Settlements
 	employment_size = 0.500
 	
 	country_potential = {
-		has_estate_privilege = estate_privilege:br_ere_foederati_privilege
+		OR = {
+   			has_estate_privilege = estate_privilege:br_ere_foederati_privilege
+			has_estate_privilege = estate_privilege:br_elysian_foederati_privilege
+		}
 	}
 	location_potential = {
 		local_control < 0.75
@@ -507,7 +510,7 @@ br_foederati_grant = { #Foederati Settlements
 	
 	modifier = {
 		local_tribes_estate_power = 1
-		local_tribesmen_desired_pop = 0.5
+		local_tribesmen_desired_pop = 1
 		local_tribal_promotion = -0.5
 		local_food_capacity = 100
 		local_monthly_food_modifier = 0.1
@@ -516,7 +519,6 @@ br_foederati_grant = { #Foederati Settlements
 		local_tribesmen_assimilation_blocked = yes
 	}
 }
-
 
 br_pyrgoi = {#frontier watchtowers
 	is_special = yes

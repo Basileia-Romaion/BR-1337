@@ -191,7 +191,6 @@ diplomacy_manager = {
     dependency = { first = LOT second = MOU subject_type = vassal }
     dependency = { first = LOT second = CHN subject_type = vassal }
     dependency = { first = LOT second = BLL subject_type = vassal }
-    dependency = { first = LOT second = ROU subject_type = vassal }
     dependency = { first = LOT second = LUX subject_type = vassal }
     dependency = { first = LOT second = FCB subject_type = vassal }
     dependency = { first = LOT second = DUN subject_type = vassal }
@@ -663,6 +662,7 @@ diplomacy_manager = {
     dependency = { first = ATQ second = HSN subject_type = vassal }
     dependency = { first = ATQ second = BHT subject_type = vassal }
     dependency = { first = ATQ second = HZN subject_type = vassal }
+    dependency = { first = ATQ second = DUL subject_type = vassal }
 
     scripted_mutual = { first = MKW second = ZZR type = alliance }
 

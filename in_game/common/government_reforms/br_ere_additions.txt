@@ -21,7 +21,7 @@
 #ERE
 br_imperial_administration = {
 	age = age_1_traditions
-	icon = holy_imperial_monarchy_reform #placeholder icon
+	icon = byzantine_court_ceremonies_reform #holy_imperial_monarchy_reform #placeholder icon
 	potential = {
 		has_or_had_tag = BYZ
 	}
@@ -31,6 +31,7 @@ br_imperial_administration = {
 	country_modifier = {
 		government_reform_slots = 1
 		court_spending_efficiency  = -0.1
+		base_crown_estate_power_modifier = 0.1
 	}
 	country_modifier = {
 		potential_trigger = { stability > 0 }

@@ -58,7 +58,8 @@
  orthodox_order_commandery_tt: "Owner grants [ShowRelationTypeName('military_sponsorship')] to us"
 
  br_varangian_recruitment_building: "Varangian Commandery"
- br_varangian_recruitment_building_desc: "An imperial compound maintained for the enlistment of northern warriors into Roman service. Here envoys and officers oversee the induction of Varangians, who pledge their axes and loyalty to the Basileus in exchange for pay, honor, and advancement within the Tágmata. From these halls, foreign strength is bound to imperial authority."
+ br_varangian_recruitment_building_desc: "An imperial compound maintained for the enlistment of northern warriors into Roman service. Here envoys and officers oversee the induction of Varangians, who pledge their axes and loyalty to the Basileus in exchange for pay, honor, and advancement within the Tágmata. From these halls, foreign strength is bound to imperial authority. Increases the amount of [ShowUnitTypeName('a_varangians')] and their upgraded varients you can have by one."
+
 
  br_tagmata_barracks: "Tágmata Barracks"
  br_tagmata_barracks_desc: "Permanent urban barracks housing the professional Tágmata regiments. Stationed only in provinces under firm imperial control, these soldiers answer directly to the Basileus. Costly to maintain yet disciplined and reliable, they embody the centralized military authority of the Roman state."
@@ -94,6 +95,9 @@
 
  br_varangian_barracks: "Varangian Barracks"
  br_varangian_barracks_desc: "A permanent and well-provisioned stronghold of the Varangian Guard. No longer a mere encampment, this institutionalized corps serves as an elite imperial regiment, fiercely loyal to the Basileus and feared across the battlefield for its discipline and ferocity."
+
+ br_foederati_grant: "Foiderátōn Ktḗseis"
+ br_foederati_grant_desc: "These lands have been granted to Foiderátoi tribes settled within the Empire's borders. In exchange for pasture, farmland, and a degree of local autonomy, they provide warriors to defend the frontier and bolster the Emperor's armies. Though valuable as a military reserve, such settlements preserve their distinct customs and slow the spread of Roman ways."
 
  br_tagmata_camp: "Tagmata Camp"
  br_tagmata_camp_desc: "A provincial encampment of the Tagmata, the professional regiments of the Empire. Drawn from loyal subjects and maintained under imperial authority, these troops provide a disciplined core to the field armies and reinforce order within the cities."

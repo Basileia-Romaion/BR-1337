@@ -1,15 +1,9 @@
-﻿#INJECT:trade_company_harbor = {
-	#modifier = {
-		#max_ships_built_at_same_time = 1
-		#building_owner_maritime_presence = 0.14
-		#local_sailors = 0.025
-		#can_build_ships_in_this_location = yes
-		#local_repair_speed = 0.02
-	#}
-#}
+﻿#Latin trade company foreign land buildings
 
 br_latin_harbor = {
+	audio_tier = 3
 	is_foreign = yes
+	is_special = yes
 	max_levels = trade_company_building_max_level
 	pop_type = burghers
 	own_or_overlord_relation_needed = trade_access
@@ -24,7 +18,7 @@ br_latin_harbor = {
 	megalopolis = yes
 	build_time = trade_company_build_time
 	possible_production_methods = {
-		satellite_trade_building_requirements
+		port_building_maintenance
 	}
 
 	country_potential = {
@@ -45,6 +39,7 @@ br_latin_harbor = {
 }
 
 br_latin_trading_post = {
+	audio_tier = 3
 	is_special = yes
 	is_foreign = yes
 	need_good_relation = no
@@ -60,7 +55,6 @@ br_latin_trading_post = {
 	category = trade_category
 
 	employment_size = large_foreign_trade_employment
-	
 	pop_size_created = large_foreign_trade_employment
 	
 	rural_settlement = setup_only
@@ -70,9 +64,7 @@ br_latin_trading_post = {
 
 	increase_per_level_cost = 1
 
-
 	country_potential = {
-		religion = religion:catholic
 		has_estate_privilege = estate_privilege:br_special_trade_companies
 		has_reform = government_reform:br_special_merchant_republic
 	}
@@ -106,7 +98,7 @@ br_latin_trading_post = {
 		local_migration_attraction = 0.05
 		sailors_to_building_owner = 0.001
 		local_marketplace_building_levels = 2
-		local_market_access = 0.02
+		local_market_access = 0.025
 		#building_missionary_effort = 0.001
 	}
 	allow_wrong_startup = yes
@@ -114,6 +106,7 @@ br_latin_trading_post = {
 
 br_latin_chapel = {
 	is_foreign = yes
+	is_special = yes
 	need_good_relation = yes
 	want_foreign_pop_created = no
 	pop_type = clergy
@@ -195,6 +188,295 @@ br_indike_quarters = {
 	}
 	construction_demand = market_center_building_construction
 	allow_wrong_startup = yes
+}
+
+#Latin trade company owned land buildings
+
+br_latin_harbor_base = {
+	audio_tier = 3
+	is_foreign = no
+	max_levels = trade_company_building_max_level
+	pop_type = burghers
+	category = trade_category
+	employment_size = large_foreign_trade_employment
+	icon = trade_company_harbor 
+
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = trade_company_build_time
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_special_trade_companies
+		has_reform = government_reform:br_special_merchant_republic
+	}
+
+	modifier = {
+		building_owner_maritime_presence = 0.1
+		local_proximity_source = 10
+		max_ships_built_at_same_time = 2
+		local_sailors = 0.025
+		can_build_ships_in_this_location = yes
+		harbor_suitability = 0.1
+		local_repair_speed = 0.02
+	}
+}
+
+br_latin_trading_base = {
+	is_special = yes
+	is_foreign = no
+	need_good_relation = no
+	in_empty = any
+	max_levels = 1
+	pop_type = burghers
+	icon = fondaco #trade_office #overseas_trading_post por_feitoria
+
+	stronger_power_projection = no
+	category = trade_category
+	employment_size = large_foreign_trade_employment
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	increase_per_level_cost = 1
+
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_special_trade_companies
+		has_reform = government_reform:br_special_merchant_republic
+	}
+	location_potential = {
+		OR = {
+			is_coastal = yes
+			is_port = yes
+		}
+		dominant_culture = { has_culture_group = culture_group:greek_group }
+	}
+	allow = {
+		within_naval_range_of = scope:actor
+	}
+	
+	build_time = trade_post_build_time
+	
+	unique_production_methods = {
+		br_latin_trading_base_maintenance = {
+			paper = 0.1
+			masonry = 0.05
+			naval_supplies = 0.25
+			category = building_maintenance
+		}
+	}
+	
+	modifier = {
+		local_migration_attraction = 0.05
+		local_marketplace_building_levels = 5
+		local_market_access = 0.05
+		local_trade_protection_factor = 0.25
+		local_merchant_power = 1.0
+		local_trades_per_burgher = 1.0
+		local_merchant_capacity = 1.0
+	}
+	allow_wrong_startup = yes
+}
+
+br_latin_slave_market = {
+	audio_tier = 2
+	is_foreign = no
+	max_levels = slave_market_max_level
+	startup_ramp_target = rural_startup_ramp_target
+	pop_type = burghers
+
+	category = government_category
+	employment_size = trade_employment
+
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+
+	build_time = generic_town_build_time
+	unique_production_methods = {
+		slave_market_maintenance = {
+			leather = 0.5
+			tools = 0.4
+			weaponry = 0.4
+			paper = 0.3
+
+			produced = slaves_goods
+			output = 2.0
+
+			debug_max_profit = rural_profit_margin
+			category = building_maintenance
+		}
+	}
+
+	modifier = {
+		building_enslavement_power = 0.10
+		local_slave_pop_satisfaction = -0.025
+	}
+
+	construction_demand = town_building_construction
+
+}
+
+
+#negative
+
+br_bandits_building = {
+	is_foreign = no
+	max_levels = estate_building_stackable_level
+	pop_type = peasants
+	icon = maniot_toll_guards
+	
+	category = estate_category
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = setup_only
+	city = no
+	
+	estate = peasants_estate
+	build_time = estate_build_time
+	
+	location_potential = {
+		local_control < 0.25
+		region = region:balkan_region
+		NOT = { 
+			OR = {
+				has_fort = yes
+				has_building = building_type:br_pronoia_estate
+				has_building = building_type:br_kekhrismene_pronoia
+				has_building = building_type:br_soldier_farmers
+				has_building = building_type:br_stratiotikon_thema_estate
+			}
+		}
+	}
+
+	#country_potential = {
+	#	culture = { has_culture_group = culture_group:roman_group }
+	#}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	modifier = {
+		local_peasant_enfranchisment = 0.1
+		local_monthly_food_modifier = -0.25
+		local_peasants_estate_power = 1
+		local_max_control = -0.1
+    }
+
+	destroy_price = br_bandits_building_remove_price
+	allow_wrong_startup = yes
+	construction_demand = estate_construct_building
+}
+
+
+#Roman Orthodox Buildings
+# Orthodox Buildings
+orthodox_missionary_building = {
+	is_foreign = yes
+	stronger_power_projection = no
+	need_good_relation = yes
+	max_levels = 1
+	pop_type = clergy
+	graphical_tags = { small_religious }
+	
+	category = religious_category
+	
+	employment_size = religious_building_employment
+	
+	pop_size_created = religious_building_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	conversion_religion = orthodox
+	
+	country_potential = {
+		has_reform = government_reform:patriarchate
+		religion = religion:orthodox
+	}
+	
+	allow = {
+		owner = { within_diplomatic_range = scope:actor }
+		NOT = { dominant_religion = scope:actor.religion }
+	}
+	
+	possible_production_methods = {
+		colony_maintenance
+	}
+	construction_demand = simple_colony_construction
+
+	build_time = colonise_build_time
+	
+	modifier = {
+		building_missionary_effort = 0.05
+		local_tribal_promotion = 0.5
+		local_disease_resistance = 0.05
+		local_max_literacy = 5
+	}
+}
+
+patriarchate_seat = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+	
+	employment_size = religious_building_employment
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	category = religious_category
+	
+	country_potential = {
+		has_reform = government_reform:patriarchate
+		religion = religion:orthodox
+	}
+	
+	location_potential = {
+		is_capital = yes
+	}
+
+	build_time = religious_building_time
+	
+	unique_production_methods = {
+		patriarchate_seat_maintenance = {
+			glass = 0.05
+			cloth = 0.05
+			fine_cloth = 0.025
+			paper = 0.1
+			copper = 0.05
+			tools = 0.05
+			category = building_maintenance
+		}
+	}
+	
+	construction_demand = cardinal_construction
+
+	modifier = {
+		local_max_literacy = 5
+		local_clergy_food_consumption = 0.2
+		monthly_religious_influence = 1
+	}
 }
 
 br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively integrate local populations.

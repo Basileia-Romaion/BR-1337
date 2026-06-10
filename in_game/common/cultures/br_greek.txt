@@ -325,7 +325,7 @@ illyrikoi_greek_culture = {
 	opinions = {
 		greek_culture = positive
 		dalmatian = positive
-		aromanian = positive
+		aromanian = kindred
 		albanian = positive
 	}
 	country_modifier = {
@@ -424,8 +424,7 @@ armenikon_greek_culture = { #BR addition
 		anatolian_greek_culture = kindred
 		pontic_greek_culture = kindred
 		kilikioi_greek_culture = positive
-		syrenikoi_greek_culture = positive
-		armenian_culture = positive
+		armenian_culture = kindred
 	}
 	country_modifier = {
 		land_unit_attrition = -0.25

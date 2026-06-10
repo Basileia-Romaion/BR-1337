@@ -1,0 +1,174 @@
+﻿###- BR base-game building injects -###
+
+#estate building Injects
+#Nobles
+
+TRY_INJECT:nobility_fortifications = {
+	modifier = {
+		local_garrison_size = 0.025 #br added
+		local_soldiers_desired_pop = 0.01
+	}
+	#br added tiny fort
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+
+}
+
+TRY_INJECT:toll_castle = {
+	modifier = {
+		local_trade_protection_factor = 0.02 #br added
+		local_soldiers_desired_pop = 0.01
+	}
+}
+
+TRY_INJECT:nobles_recruitment_center = {
+	modifier = {
+		local_manpower = 0.002
+	}
+}
+
+#Clergy
+# Not estate buildings, but edited here for convenience
+
+TRY_INJECT:fortress_church = {
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+		local_soldiers_desired_pop = 0.01
+	}
+}
+
+TRY_INJECT:fortress_granary = {
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+		local_soldiers_desired_pop = 0.01
+	}
+}
+
+TRY_INJECT:temple = {
+	modifier = {
+		#local_pop_assimilation_speed_modifier = 0.1
+		local_pop_conversion_speed_modifier = 0.05
+	}
+}
+
+#Burghers
+
+TRY_INJECT:seljuk_mint = {
+	country_potential = {
+		OR = {
+			owns = location:tabriz
+			owns = location:mosul
+		}
+	}
+
+	location_potential = {
+		OR = {
+			this = location:tabriz
+			this = location:mosul
+		}
+	}
+}
+
+#Peasants
+
+TRY_INJECT:peasants_training_grounds = {
+	modifier = {
+		local_manpower = 0.002 #increased from 0.001
+		local_max_control = -0.05 #br added
+	}
+}
+
+#Trade building nerfs
+
+TRY_INJECT:entrepot = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+TRY_INJECT:trading_hub = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+TRY_INJECT:customs_house = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+TRY_INJECT:stock_exchange = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+TRY_INJECT:clearing_house = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+TRY_INJECT:city_walls = {
+	market_center_modifier = {
+		local_trade_center_power = -0.05 #was 0.1
+	}
+}
+
+#Military buildings
+
+TRY_INJECT:order_stronghold = {
+	modifier = {
+		local_garrison_size = 0.1 #br added
+	}
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+}
+
+TRY_INJECT:sergeantry = {
+	capital_modifier = {
+		local_unrest = -0.025 #br added
+	}
+}
+
+TRY_INJECT:city_guard = {
+	capital_modifier = {
+		local_garrison_size = 0.025 #br added
+		local_unrest = -0.025  #br added
+	}
+}
+
+TRY_INJECT:kurultai = {
+	modifier = {
+		local_proximity_source = 10 #br added
+	}
+}
+TRY_INJECT:order_stronghold = {
+	modifier = {
+		local_proximity_source = 10 #br added
+	}
+}
+
+TRY_INJECT:bey_fortress = {
+	modifier = {
+		#local_proximity_source = 5
+		local_garrison_size = 0.1
+	}
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+}
+
+TRY_INJECT:mamluk_barracks = {
+	modifier = {
+		local_proximity_source = 5
+	}
+}

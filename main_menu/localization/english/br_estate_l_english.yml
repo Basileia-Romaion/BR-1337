@@ -21,13 +21,13 @@
  br_roman_ecumenical_patriarch_privilege_desc: "By ancient canon and the dignity of New Rome, the Ecumenical Patriarch presides as first among hierarchs within the oikoumene. Through synod, embassy, and sacred decree, his authority extends across the sees of the Empire, guiding doctrine, shaping diplomacy, and binding newly restored lands to the Orthodox communion."
 
  br_bureaucrat_clergy: "Ekklēsiastikē Dioikēsis"
- br_bureaucrat_clergy_desc: "The sekreta of the Empire are entrusted to the logothetai, guardians of fisc and nomos throughout the oikoumene. By chrysobull and sealed ordinance, imperial command is reduced to written statute and enduring register. Thus the Basileus rules not by whim, but through ordered administration rooted in Roman law."
+ br_bureaucrat_clergy_desc: "The sekreta of the Empire are entrusted to the logothetai, guardians of fisc and nomos throughout the oikoumene. By chrysobull and sealed ordinance, imperial command is reduced to written statute and enduring register. Thus the Basileus rules not by whim, but through ordered administration rooted in Roman law. Allows [ShowBuildingTypeName('br_nomophylakeion')] and [ShowBuildingTypeName('br_dikasterion')]"
 
  br_themata_peasant_privilege: "Stratiōtai Land Grant"
- br_themata_peasant_privilege_desc: "Within the themes, land is held by stratiōtai bound to render service in defense of the Roman order. These free households, settled upon military allotments, furnish disciplined levies in time of war and uphold imperial authority in time of peace. Through this system, the state secures loyal levies drawn from free households, reinforcing provincial defense while tempering the dominance of magnate estates."
+ br_themata_peasant_privilege_desc: "Within the themes, land is held by stratiōtai bound to render service in defense of the Roman order. These free households, settled upon military allotments, furnish disciplined levies in time of war and uphold imperial authority in time of peace. Through this system, the state secures loyal levies drawn from free households, reinforcing provincial defense while tempering the dominance of magnate estates. Allows [ShowBuildingTypeName('br_soldier_farmers')] and [ShowBuildingTypeName('br_stratiotikon_thema_estate')]"
 
  br_dynatoi_magnates: "Dynatoi Magnates"
- br_dynatoi_magnates_desc: "Powerful landed magnates consolidate estates across the provinces, extending their authority over dependent cultivators and local administration. Their wealth strengthens rural production and fortifies the countryside, yet their growing dominance diminishes the independence of smaller households and shifts the balance of power away from the crown."
+ br_dynatoi_magnates_desc: "Powerful landed magnates consolidate estates across the provinces, extending their authority over dependent cultivators and local administration. Their wealth strengthens rural production and fortifies the countryside, yet their growing dominance diminishes the independence of smaller households and shifts the balance of power away from the crown. Allows [ShowBuildingTypeName('br_pronoia_estate')] and [ShowBuildingTypeName('br_kekhrismene_pronoia')]"
 
  br_frontier_expansion_privilege: "Frontier Homestead Privileges"
  br_frontier_expansion_privilege_desc: "Settler households on the frontier are granted broad autonomy to clear land, fortify their holdings, and subdue surrounding tribes. In exchange for protection and expansion, they are permitted to organize local militias and manage captured labor. This fosters hardy independence, though it weakens central oversight."
@@ -44,11 +44,11 @@
  br_noble_armies: "$noble_armies$"
  br_noble_armies_desc: "$noble_armies_desc$"
 
- br_ere_foederati_privilege: "Foideratoi" #Foederati
- br_ere_foederati_privilege_desc: "Lands upon the imperial frontiers have been granted to the Foideratoi, [ROOT.GetCountry.GetGovernment.GetEstateName('tribes_estate')] allies bound by oath to the service of the Basileus. These federate tribes guard the marches and furnish warriors to the armies of [ROOT.GetCountry.GetName], preserving the strength of the themes in troubled regions. Yet their chieftains retain considerable authority, and the customs of foreign peoples endure within the Empire."
+ br_ere_foederati_privilege: "Foideratoi"
+ br_ere_foederati_privilege_desc: "Lands upon the imperial frontiers have been granted to the Foideratoi, allied [ROOT.GetCountry.GetGovernment.GetEstateName('tribes_estate')] bound by oath and treaty to the service of the Basileus. These federate tribes guard the marches, watch the mountain passes, and furnish warriors to the armies of [ROOT.GetCountry.GetName], preserving the strength of the themes in troubled regions. Yet their chieftains retain considerable authority, and the customs and tongues of foreign peoples endure within the Empire. Allows [ShowBuildingTypeName('br_foederati_grant')]"
 
  br_ere_varangian_privilege: "Várangoi Hetaireía"
- br_ere_varangian_privilege_desc: "The Várangoi of the Imperial Hetaireía stand among the most trusted warriors of the Basileus, bound by oath, gold, and glory to the service of [ROOT.GetCountry.GetName]. Drawn from the northern seas and settled throughout the Themes, these axe-bearing foreigners strengthen the Tagmata and furnish seasoned captains to the armies of the Empire. Yet their communities remain apart from the Rhōmaioi, preserving the customs and tongue of their distant homelands."
+ br_ere_varangian_privilege_desc: "The Várangoi of the Imperial Hetaireía stand among the most trusted warriors of the Basileus, bound by oath, gold, and glory to the service of [ROOT.GetCountry.GetName]. Drawn from the northern seas and settled throughout the [ROOT.GetCountry.GetFlavorRank], these axe-bearing foreigners strengthen the Tagmata, guard the person of the Emperor, and furnish seasoned captains to the armies of the Empire. Yet their communities remain apart from the [ShowCultureName('greek_culture')], preserving the customs, laws, and tongue of their distant homelands. Allows [ShowBuildingTypeName('br_varangian_recruitment_building')], [ShowBuildingTypeName('br_varangian_camp')] and [ShowBuildingTypeName('br_varangian_barracks')]"
 
  br_turkoman_privilege: "Türkmen Frontier Privileges"
  br_turkoman_privilege_desc: "The Türkmen tribes are granted wide autonomy across the marches in exchange for military service and loyalty to the state. Their horsemen swell the armies of the realm at little expense, yet their growing influence entrenches tribal traditions and slows the transition toward a more settled society."
@@ -57,7 +57,7 @@
  br_ottoman_dhimmi_levies_desc: "The Christian and Jewish communities of the realm are permitted to furnish auxiliary soldiers in service to the Sultan. In return for their loyalty and military contribution, the Dhimmi are afforded greater toleration and protection, easing unrest within the provinces while strengthening the armies with experienced local recruits."
 
  br_roman_orthodox_catechesis: "Katēchēsis tōn Romaiōn"
- br_roman_orthodox_catechesis_desc: "The Holy Church has been entrusted with the spiritual guidance of the Empire's peoples. Through catechesis, instruction, and the teaching of the Roman tradition, the faithful shall be drawn into the commonwealth of the Romaioi and strengthened in devotion to the Orthodox faith."
+ br_roman_orthodox_catechesis_desc: "The Holy Church has been entrusted with the spiritual guidance of the Empire's peoples. Through catechesis, instruction, and the teaching of the Roman tradition, the faithful shall be drawn into the commonwealth of the Romaioi and strengthened in devotion to the Orthodox faith. Allows [ShowBuildingTypeName('br_didaskaleion')]"
 
  br_berber_privilege: "Privileges of the Berber Junds"
  br_berber_privilege_desc: "The Berber junds and tribal confederations of Al-Andalus retain their ancient rights in return for military service. Their horsemen and warriors stand ready to defend the realm, while their chiefs remain influential figures in provincial affairs. Though this arrangement strengthens the armies of the state, it also preserves tribal loyalties and customs."

@@ -234,7 +234,7 @@
 	}
 ### Peasants Privileges ###
 
-	akritai_privilege = { #u20 updated
+	akritai_privilege = {
 		estate = peasants_estate
 		icon = ghazi_privilege #control_of_the_borderlands
 		potential = {
@@ -264,7 +264,7 @@
 			nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
 			aggressiveness_modifier = 0.25
 			tolerance_heathen = -1
-			#tolerance_heretic = -1
+			antagonism_religion_influence = 0.25
 		}
 		country_modifier = {
 			potential_trigger = { legitimacy > 0 }
@@ -280,7 +280,6 @@
 		country_modifier = {
 			potential_trigger = { any_neighbor_country = { NOT = { religion.group = root.religion.group } } }
 			damage_done_versus_heathens_modifier = 0.1
-			antagonism_religion_influence = 0.5
 		}
 			
 	}
@@ -321,14 +320,14 @@
 		}
 	}
 
-	br_themata_peasant_privilege = { #u20 updated
+	br_themata_peasant_privilege = {
 		estate = peasants_estate
-		icon = dhimmi_military_service #primacy_of_nobility
+		icon = br_themata_peasant_privilege #dhimmi_military_service #primacy_of_nobility
 		potential = {
 			OR = {
 				has_or_had_tag = BYZ
 				culture = { has_culture_group = culture_group:roman_group }
-			}	
+			}
 		}
 		allow = {
 			OR = {
@@ -387,10 +386,19 @@
 
 	br_themata_reformed_privilege = {
 		estate = peasants_estate
-		icon = primacy_of_nobility
+		icon = br_themata_reformed_privilege
 		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				culture = { has_culture_group = culture_group:roman_group }
+			}
 		}
 		allow = {
+			OR = {
+				societal_value:serfdom_vs_free_subjects >= 25
+				has_estate_privilege = estate_privilege:br_themata_reformed_privilege #So it won't drop off if you fall below 25 value
+			}
+			has_policy = br_thema_levies_upgraded
 		}
 		can_revoke = {
 			government_power > 75
@@ -404,7 +412,6 @@
 			monthly_towards_stratiotai = societal_value_monthly_move
 			global_soldiers_desired_pop_scaled = 0.005 #5 per 1000 #Soldier Levies
 			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
-			#army_maintenance_efficiency = 0.1
 			levy_maintenance_modifier = -0.15
 		}
 		#positive
@@ -697,6 +704,7 @@
 			cultures_capacity_modifier = -0.25
 			tolerance_heathen = -0.5
 			tolerance_heretic = -0.25
+			antagonism_religion_influence = 0.25
 		}
 	}
 
@@ -776,7 +784,6 @@
 	br_ere_foederati_privilege = { #not done
 		estate = tribes_estate
 		icon = cas_caballeros_villanos
-		
 		potential = {
 			culture = { has_culture_group = culture_group:greek_group }
 			any_pop = { 
@@ -785,20 +792,21 @@
 			}
 		}
 		country_modifier = {
-			amount_looted_modifier = 0.1
 			global_tribes_estate_power = 1
 			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
-			tribes_estate_levy_size = 0.25
-			wrong_culture_levy_size = 0.05
 			monthly_towards_free_subjects = societal_value_minor_monthly_move
 			monthly_towards_decentralization = societal_value_minor_monthly_move
+
+			#amount_looted_modifier = 0.1
+			tribes_estate_levy_size = 0.25
+			wrong_culture_levy_size = 0.05
+			levy_maintenance_modifier = -0.1
 		}
 	}
 
 	br_ere_varangian_privilege = { #not done
 		estate = tribes_estate
-		icon = coign_and_livery_privilege
-		
+		#icon = br_ere_varangian_privilege #coign_and_livery_privilege
 		potential = {
 			OR = {
 				has_or_had_tag = BYZ
@@ -808,18 +816,17 @@
 		country_modifier = {
 			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_tribes_estate_power = 1
-			mercenary_units_preference_modifier = 0.33
+			#base_tribes_estate_power_modifier = 0.02
+			mercenary_units_preference_modifier = 0.5
 			global_mercenaries_modifier = 0.1
 			hire_mercenary_premium_cost_modifier  = -0.1
 			mercenary_maintenance_efficiency = 0.1
 			tribes_estate_allowed_leading_military = yes
 		}
 	}
-
-	br_ere_varangian_privateers = { #not done
+	br_ere_varangian_guard_privilege = { #not done
 		estate = tribes_estate
-		icon = noble_sponsored_navy
-		
+		icon = br_ere_varangian_privilege
 		potential = {
 			OR = {
 				has_or_had_tag = BYZ
@@ -829,17 +836,34 @@
 		country_modifier = {
 			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_tribes_estate_power = 1
-			hire_privateer_cost_modifier = -0.1
-			privateer_maintenance_cost_modifier = -0.1
-			privateer_durability = 0.01
+			army_heavy_infantry_power = 0.1
+			army_heavy_infantry_build_cost_modifier = -0.1
+			army_heavy_infantry_maintenance_cost_modifier = -0.1
 		}
 	}
 
+	br_ere_varangian_privateers = { #not done
+		estate = tribes_estate
+		icon = noble_sponsored_navy
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				owns = location:constantinople
+			}
+		}
+		country_modifier = {
+			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_tribes_estate_power = 1
+			hire_privateer_cost_modifier = -0.2
+			privateer_maintenance_cost_modifier = -0.2
+			privateer_durability = 0.02
+		}
+	}
 
 ### Turkish Privileges ###	
 	br_turkoman_privilege = {
 		estate = tribes_estate
-		icon = tribes_tribal_levies
+		icon = br_turkoman_privilege #tribes_tribal_levies
 		
 		potential = {
 			religion ?= { group ?= religion_group:muslim }
@@ -908,7 +932,7 @@
 ### Andalusian Privileges ###
 	br_berber_privilege = {
 		estate = tribes_estate
-		icon = tribes_tribal_levies
+		icon = br_turkoman_privilege #tribes_tribal_levies
 		
 		potential = {
 			religion ?= { group ?= religion_group:muslim }

@@ -361,21 +361,21 @@ SE4 = {
 BNK = { #Bankaropoulos #funny but surprisingly plausible
 	color = rgb { 75 175 125 }
 
-	culture_definition = bankariotai_culture
+	culture_definition = romanyoti #bankariotai_culture
 	religion_definition = judaism
 }
 
 MKB = { #Makrembolitēs
 	color = rgb { 175 125 95 }
 
-	culture_definition = makrembolitai_culture
+	culture_definition = pontic_greek_culture #makrembolitai_culture
 	religion_definition = orthodox
 }
 
 CHY = { #Chrysotrapeziōtai
 	color = rgb { 75 125 175 }
 
-	culture_definition = chrysotrapeziotai_culture
+	culture_definition = syrenikoi_greek_culture #chrysotrapeziotai_culture
 	religion_definition = miaphysite
 }
 

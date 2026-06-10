@@ -82,6 +82,7 @@ br_alandalus_reform = {
 	country_modifier = {
 		monthly_towards_humanist = societal_value_monthly_move
 		global_dhimmi_estate_power = 5
+		#base_dhimmi_estate_power_modifier = 0.1
 		dhimmi_estate_levy_size = 0.5
 		tolerance_heathen = 2
 		cultures_capacity = 1

@@ -22,6 +22,7 @@
 
 	country_modifier = {
 		export_efficiency = 0.1
+		import_efficiency = 0.1
 	}
 	
 	culture_groups = {
@@ -103,9 +104,9 @@ REPLACE_OR_CREATE:coptic_culture = {
 
 	opinions = {
 		aegyptian_greek_culture = kindred
-		lower_egyptian_culture = positive
-		upper_egyptian_culture = positive
-		libyan_arabic_culture = positive
+		#lower_egyptian_culture = positive
+		#upper_egyptian_culture = positive
+		#libyan_arabic_culture = positive
 	}
 	culture_groups = {
 		egypt_group roman_group
@@ -176,23 +177,6 @@ REPLACE_OR_CREATE:syriac_culture = {
 	culture_groups = {
 		syria_group roman_group
 	}
-}
-
-REPLACE_OR_CREATE:alawite_culture = {
-	language = levantine_dialect
-	
-	color = color_culture_alawite
-	
-	tags = { levantine_gfx middle_east_gfx }
-
-	opinions = {
-		syrenikoi_greek_culture = positive
-		syriac_culture = positive
-	}
-	
-	culture_groups = {
-		syria_group arabic_group
-	}	
 }
 
 REPLACE_OR_CREATE:levantine_culture = {

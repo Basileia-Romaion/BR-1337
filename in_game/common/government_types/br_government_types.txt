@@ -1,15 +1,23 @@
 ﻿TRY_INJECT:steppe_horde = {
 	modifier = {
-		tribes_estate_levy_size = 0.5
-		global_tribes_estate_power = 1
+		tribes_estate_levy_size = 1
+		global_tribes_estate_power = 2
+		local_nobles_estate_power = -0.25
+		local_burghers_estate_power = -0.25
 		levy_maintenance_modifier = -0.25
+		global_tribal_promotion = -0.25
+		global_tribesmen_pop_growth = 0.25
 	}
 }
 
 TRY_INJECT:tribe = {
 	modifier = {
-		tribes_estate_levy_size = 0.5
-		global_tribes_estate_power = 1
+		tribes_estate_levy_size = 1
+		global_tribes_estate_power = 2
+		local_nobles_estate_power = -0.25
+		local_burghers_estate_power = -0.25
 		levy_maintenance_modifier = -0.25
+		global_tribal_promotion = -0.25
+		global_tribesmen_pop_growth = 0.25
 	}
 }

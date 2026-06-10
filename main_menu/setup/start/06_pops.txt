@@ -3070,6 +3070,7 @@ zutphen = {
 luxembourg = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 0.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 13.533	culture = moselle_franconian	religion = catholic }
 }
 arlon = {
@@ -3081,7 +3082,7 @@ arlon = {
 thionville = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 9.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 10.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 3.956	culture = moselle_franconian	religion = catholic }
 }
 vianden = {
@@ -3192,9 +3193,9 @@ montmedy = {
 }
 neufchateau_luxembourg = {
 	define_pop = {	type = clergy	size = 0.004	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 4.568	culture = walloon	religion = catholic }
+	define_pop = {	type = peasants	size = 4.968	culture = walloon	religion = catholic }
 	define_pop = {	type = peasants	size = 0.760	culture = ripuarian_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 3.283	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 2.983	culture = lorrain	religion = catholic }
 }
 lubeck = {
 	define_pop = {	type = nobles	size = 0.025	culture = holsatian	religion = catholic }
@@ -3540,26 +3541,26 @@ castellaun = {
 saarbrucken = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 8.750	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 9.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 4.101	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 7.058	culture = rhine_franconian	religion = catholic }
 }
 merzig = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 14.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 15.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 7.402	culture = moselle_franconian	religion = catholic }
 }
 lichtenberg_veldenz = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 6.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 7.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 5.177	culture = rhine_franconian	religion = catholic }
 }
 trier = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 9.750	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 10.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 0.608	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 8.852	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.563	culture = rhine_franconian	religion = catholic }
@@ -3568,21 +3569,20 @@ trier = {
 birkenfeld = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 6.750	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 7.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 6.678	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.706	culture = rhine_franconian	religion = catholic }
 }
 meisenheim = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 5.750	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 6.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 3.438	culture = rhine_franconian	religion = catholic }
 }
 saarburg = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 8.750	culture = lorrain	religion = catholic }
-	define_pop = {	type = burghers	size = 0.181	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 9.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 3.473	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.770	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.049	culture = ashkenazi	religion = judaism }
@@ -3590,7 +3590,7 @@ saarburg = {
 kreuznach = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 6.250	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 7.250	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 4.303	culture = rhine_franconian	religion = catholic }
 }
 cologne = {
@@ -5575,13 +5575,13 @@ bienne = {
 lake_neuchatel = {
 }
 kaiserslautern = {
-	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 22.465	culture = rhine_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 16.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 16.465	culture = rhine_franconian	religion = catholic }
 }
 zweibrucken = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 11.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 12.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 12.153	culture = rhine_franconian	religion = catholic }
 }
 speyer = {
@@ -5593,23 +5593,23 @@ speyer = {
 	define_pop = {	type = peasants	size = 0.380	culture = ashkenazi	religion = judaism }
 }
 pirmasens = {
-	define_pop = {	type = peasants	size = 7.950	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.263	culture = rhine_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 10.950	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 11.263	culture = rhine_franconian	religion = catholic }
 }
 germersheim = {
-	define_pop = {	type = peasants	size = 8.150	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 23.849	culture = rhine_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 22.849	culture = rhine_franconian	religion = catholic }
 }
 leiningen = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 8.150	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 16.092	culture = rhine_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 13.092	culture = rhine_franconian	religion = catholic }
 }
 heidelberg = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 7.750	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 8.750	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 3.048	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 16.121	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.169	culture = ashkenazi	religion = judaism }
@@ -5618,14 +5618,14 @@ landau_rhineland = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 0.585	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 3.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 4.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 7.818	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.163	culture = ashkenazi	religion = judaism }
 }
 neustadt_an_der_haardt = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 7.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 8.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 0.910	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 9.698	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.253	culture = ashkenazi	religion = judaism }
@@ -6580,41 +6580,41 @@ pribor = {
 strasbourg = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 35.297	culture = rhine_alemannic	religion = catholic }
+	define_pop = {	type = peasants	size = 33.297	culture = rhine_alemannic	religion = catholic }
 	define_pop = {	type = peasants	size = 0.475	culture = ashkenazi	religion = judaism }
 }
 haguenau = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 8.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 9.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 12.075	culture = rhine_alemannic	religion = catholic }
 	define_pop = {	type = peasants	size = 2.626	culture = rhine_franconian	religion = catholic }
 }
 zabern = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 8.950	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 22.007	culture = rhine_alemannic	religion = catholic }
+	define_pop = {	type = peasants	size = 9.950	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 21.007	culture = rhine_alemannic	religion = catholic }
 }
 lichtenberg = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 14.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 15.156	culture = rhine_alemannic	religion = catholic }
 	define_pop = {	type = peasants	size = 6.437	culture = rhine_franconian	religion = catholic }
 }
 benfeld = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.850	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 13.850	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 24.172	culture = rhine_alemannic	religion = catholic }
 }
 colmar = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 2.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 3.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = rhine_alemannic	religion = catholic }
 	define_pop = {	type = peasants	size = 26.500	culture = rhine_alemannic	religion = catholic }
 	define_pop = {	type = peasants	size = 0.738	culture = ashkenazi	religion = judaism }
@@ -6659,9 +6659,15 @@ london = {
 	define_pop = {	type = peasants	size = 37.838	culture = english	religion = catholic }
 }
 harrow = {
-	define_pop = {	type = peasants	size = 13.970	culture = english	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 12.970	culture = english	religion = catholic }
 }
 kingston = {
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.838	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 10.554	culture = english	religion = catholic }
 }
 reigate = {
@@ -6895,7 +6901,7 @@ pennines_02 = {
 york = {
 	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 18.941	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 28.941	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 11.941	culture = northumbrian	religion = catholic }
 	define_pop = {	type = peasants	size = 5.469	culture = english	religion = catholic }
 }
@@ -6906,7 +6912,10 @@ scarborough = {
 	define_pop = {	type = peasants	size = 8.419	culture = northumbrian	religion = catholic }
 }
 bedale = {
-	define_pop = {	type = peasants	size = 21.289	culture = northumbrian	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 3.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 18.289	culture = northumbrian	religion = catholic }
 }
 richmond = {
 	define_pop = {	type = peasants	size = 17.439	culture = northumbrian	religion = catholic }
@@ -6936,15 +6945,15 @@ bridlington = {
 selby = {
 	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 8.838	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 8.121	culture = northumbrian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 7.121	culture = northumbrian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.060	culture = english	religion = catholic }
 }
 norton = {
 	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 8.838	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 8.725	culture = northumbrian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 7.725	culture = northumbrian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.363	culture = english	religion = catholic }
 }
 leeds = {
@@ -6952,8 +6961,11 @@ leeds = {
 	define_pop = {	type = peasants	size = 4.145	culture = northumbrian	religion = catholic }
 }
 pontefract = {
-	define_pop = {	type = peasants	size = 9.427	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 4.713	culture = northumbrian	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 5.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 8.427	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 3.713	culture = northumbrian	religion = catholic }
 }
 skipton = {
 	define_pop = {	type = peasants	size = 8.053	culture = northumbrian	religion = catholic }
@@ -6968,8 +6980,11 @@ doncaster = {
 	define_pop = {	type = peasants	size = 5.280	culture = northumbrian	religion = catholic }
 }
 ripon = {
-	define_pop = {	type = peasants	size = 9.548	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.773	culture = english	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 4.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 8.548	culture = northumbrian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.773	culture = english	religion = catholic }
 }
 pennines_04 = {
 }
@@ -7033,7 +7048,10 @@ nantwich = {
 	define_pop = {	type = peasants	size = 12.176	culture = english	religion = catholic }
 }
 norwich = {
-	define_pop = {	type = peasants	size = 61.137	culture = english	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 11.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 51.137	culture = english	religion = catholic }
 }
 lynn = {
 	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
@@ -7042,16 +7060,17 @@ lynn = {
 	define_pop = {	type = peasants	size = 48.147	culture = english	religion = catholic }
 }
 yarmouth = {
-	define_pop = {	type = peasants	size = 8.838	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 45.357	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 15.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 40.357	culture = english	religion = catholic }
 }
 thetford = {
-	define_pop = {	type = peasants	size = 51.848	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 8.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 45.848	culture = english	religion = catholic }
 }
 fakenham = {
 	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 8.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 6.838	culture = anglo_norse_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 44.403	culture = english	religion = catholic }
 }
 colchester = {
@@ -7089,7 +7108,10 @@ bury = {
 	define_pop = {	type = peasants	size = 36.037	culture = english	religion = catholic }
 }
 lowestoft = {
-	define_pop = {	type = peasants	size = 41.298	culture = english	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 7.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 35.298	culture = english	religion = catholic }
 }
 lavenham = {
 	define_pop = {	type = peasants	size = 48.384	culture = english	religion = catholic }
@@ -7098,7 +7120,10 @@ cambridge = {
 	define_pop = {	type = peasants	size = 23.839	culture = english	religion = catholic }
 }
 ely = {
-	define_pop = {	type = peasants	size = 13.669	culture = english	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.085	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.838	culture = anglo_norse_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 12.669	culture = english	religion = catholic }
 }
 huntingdon = {
 	define_pop = {	type = peasants	size = 22.146	culture = english	religion = catholic }
@@ -9584,19 +9609,19 @@ morhange = {
 saint_avold = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 13.850	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 14.850	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 5.726	culture = rhine_franconian	religion = catholic }
 }
 vic_sur_seille = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 4.694	culture = rhine_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.877	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 17.877	culture = lorrain	religion = catholic }
 }
 wallerfangen = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 18.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 19.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 8.669	culture = moselle_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.778	culture = rhine_franconian	religion = catholic }
 }
@@ -9623,25 +9648,25 @@ toul = {
 sarreguemines = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 9.188	culture = rhine_franconian	religion = catholic }
 }
 bitche = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 11.150	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.066	culture = rhine_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 11.066	culture = rhine_franconian	religion = catholic }
 }
 saarwerden = {
 	define_pop = {	type = nobles	size = 0.010	culture = lorrain	religion = catholic }
 	define_pop = {	type = clergy	size = 0.050	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 12.150	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 13.150	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 10.409	culture = rhine_franconian	religion = catholic }
 }
 sarrebourg = {
 	define_pop = {	type = clergy	size = 0.017	culture = lorrain	religion = catholic }
 	define_pop = {	type = peasants	size = 8.457	culture = rhine_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.387	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 14.387	culture = lorrain	religion = catholic }
 }
 verdun = {
 	define_pop = {	type = nobles	size = 0.009	culture = lorrain	religion = catholic }
@@ -15233,16 +15258,16 @@ cortona = {
 	define_pop = {	type = burghers	size = 0.824	culture = tuscan	religion = catholic }
 	define_pop = {	type = burghers	size = 0.466	culture = median	religion = catholic }
 	define_pop = {	type = burghers	size = 0.372	culture = italki	religion = judaism }
-	define_pop = {	type = burghers	size = 0.140	culture = emilian	religion = catholic }
+	define_pop = {	type = burghers	size = 0.140	culture = romagnol	religion = catholic }
 	define_pop = {	type = peasants	size = 24.439	culture = tuscan	religion = catholic }
 	define_pop = {	type = peasants	size = 0.207	culture = median	religion = catholic }
 	define_pop = {	type = peasants	size = 0.113	culture = italki	religion = judaism }
-	define_pop = {	type = peasants	size = 0.113	culture = emilian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.113	culture = romagnol	religion = catholic }
 }
 sansepolcro = {
 	define_pop = {	type = clergy	size = 0.009	culture = tuscan	religion = catholic }
 	define_pop = {	type = peasants	size = 10.222	culture = tuscan	religion = catholic }
-	define_pop = {	type = peasants	size = 1.134	culture = emilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.134	culture = romagnol	religion = catholic }
 }
 florence = {
 	define_pop = {	type = nobles	size = 0.229	culture = tuscan	religion = catholic }
@@ -15252,7 +15277,7 @@ florence = {
 	define_pop = {	type = burghers	size = 1.496	culture = venetian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.000	culture = bardi_bank_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 136.535	culture = tuscan	religion = catholic }
-	define_pop = {	type = peasants	size = 1.121	culture = emilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.121	culture = romagnol	religion = catholic }
 	define_pop = {	type = peasants	size = 1.112	culture = italki	religion = judaism }
 	define_pop = {	type = peasants	size = 1.098	culture = median	religion = catholic }
 	define_pop = {	type = peasants	size = 1.136	culture = venetian	religion = catholic }
@@ -34551,8 +34576,8 @@ baalbek = {
 	define_pop = {	type = clergy	size = 0.014	culture = levantine_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 32.821	culture = levantine_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 10.377	culture = levantine_culture	religion = shia }
-	define_pop = {	type = peasants	size = 8.639	culture = syriac_culture	religion = orthodox }
-	define_pop = {	type = slaves	size = 32.821	culture = syriac_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 28.639	culture = syriac_culture	religion = miaphysite }
+	define_pop = {	type = slaves	size = 12.821	culture = syriac_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 21.755	culture = levantine_culture	religion = druzism }
 }
 deir_qamar = {

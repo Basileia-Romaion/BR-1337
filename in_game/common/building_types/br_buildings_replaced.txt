@@ -1,28 +1,4 @@
-﻿INJECT:seljuk_mint = {
-	country_potential = {
-		OR = {
-			owns = location:tabriz
-			owns = location:mosul
-		}
-	}
-
-	location_potential = {
-		OR = {
-			this = location:tabriz
-			this = location:mosul
-		}
-	}
-}
-
-INJECT:order_stronghold = {
-	modifier = {
-		local_garrison_size = 0.1 #br added
-	}
-	raw_modifier = {
-		minimum_fort_level = 1
-		propagating_zone_of_control = no
-	}
-}
+﻿#br base-game buildings replaced
 
 REPLACE_OR_CREATE:venetian_quarter = {
 	is_foreign = yes
@@ -109,7 +85,149 @@ REPLACE_OR_CREATE:galata = {
 	construction_demand = market_center_building_construction
 }
 
-#Aqueducts
+#Roman
+REPLACE_OR_CREATE:thema_headquarters = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = military_category
+	
+	employment_size = manpower_employment
+	
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = medium_soldier_building
+
+	country_potential = {
+		modifier:allow_thema_headquarters = yes
+	}
+
+	allow = { 
+		is_province_capital = yes 
+		owner = { modifier:allow_thema_headquarters = yes }
+	}
+	
+	location_potential = { 
+		is_capital = no 
+		is_province_capital = yes
+		NOR = { 
+			has_building = building_type:br_tagmata_camp
+			has_building = building_type:br_tagmata_barracks
+			#has_building = building_type:br_naval_theme_hq
+			has_building = building_type:br_doukate_building
+			has_building = building_type:br_katapanate_building
+			has_building = building_type:br_despotate_building
+			has_building = building_type:br_dioikesis_building
+		}
+	}
+	remove_if = {
+		root.owner = { modifier:allow_thema_headquarters = no }
+	}
+
+	modifier = {
+		local_pop_assimilation_speed_modifier = 0.05
+		local_manpower = 0.01
+		can_recruit_regiment_in_this_location = yes
+		local_nobles_estate_power = 0.5 #local_crown_estate_power = -0.1
+		local_garrison_size = 0.1
+		local_proximity_source = 10 #was 20 seemed too strong
+	}
+	
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+		local_nobles_desired_pop = 0.01
+	}
+	capital_country_modifier = {
+		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
+	}
+
+	possible_production_methods =  {
+		early_soldier_building_maintenance
+	}
+	construction_demand = early_soldier_building_construction
+}
+
+REPLACE_OR_CREATE:theodosian_walls = {
+	audio_tier = 6
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = theodosian_walls_max_level
+	
+	employment_size = theodosian_walls
+	category = defense_category
+	
+	
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	build_time = huge_unique_build_time
+
+	location_potential = {
+		this = location:constantinople
+	}
+	
+	country_potential = {
+		owns = location:constantinople
+	}
+
+	allow = {
+		owner = {
+			or = {
+				is_ai = no
+				not = { has_or_had_tag = TUR }
+				and = {
+					has_or_had_tag = TUR
+					c:TUR.religion = location:constantinople.dominant_religion	
+				}
+			}
+		}
+	}
+
+	remove_if = {
+		root.owner = {
+			is_ai = yes
+			has_or_had_tag = TUR
+			not = { 
+				c:TUR.religion = location:constantinople.dominant_religion 
+			}
+		}
+	}
+
+	expensive = yes
+	possible_production_methods = {
+		city_walls_maintenance
+	}
+	construction_demand = city_walls_construction
+
+	modifier = {
+		# same as city_walls but it can be doubled by event
+		local_garrison_size = 1.0
+		local_defensive = 0.25
+		blocks_vision_from_land = yes
+		blocks_vision_from_sea = yes
+		movement_cost = 0.2
+		local_unrest = -0.05
+		local_burghers_estate_power = 0.1
+	}
+
+	market_center_modifier = {
+		local_trade_center_power = 0.05 #was 0.1	
+	}
+	
+	raw_modifier = {
+		fort_level = 3
+		pure_tooltip_entry = pte_no_propagating_zone_of_control            # propagating_zone_of_control = no
+		local_war_score_efficiency = -1
+	}
+	graphical_tags = { large_city_walls city_walls }
+}
 
 REPLACE_OR_CREATE:aqueduct_system = {
 	content_priority = 100
