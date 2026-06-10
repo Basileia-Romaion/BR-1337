@@ -4030,7 +4030,7 @@ countries = {
 			}
 			privilege = {
 				#joint_assembly_decrees
-				ghazi_privilege
+				br_ghazi_privilege
 				urban_development_grants
 
 				dhimmi_abrahamic_communities
@@ -12612,7 +12612,7 @@ countries = {
 		capital = andravida
 	}
 
-	PAT = { 
+	PAT = { #BR pat removed
 		our_cores_conquered_by_others = {
 			chalandritsa patras
 		}
@@ -12693,6 +12693,7 @@ countries = {
 
 				urban_development_grants
 				#burghers
+				br_latinoi_privateers
 				land_of_commerce
 				sponsor_maritime_contracts
 				shipwright_contracts
@@ -12813,6 +12814,7 @@ countries = {
 
 				urban_development_grants
 				#burghers
+				br_latinoi_privateers
 				land_of_commerce
 				sponsor_maritime_contracts
 				shipwright_contracts
@@ -13354,11 +13356,13 @@ countries = {
 
 				br_ere_foederati_privilege
 				br_ere_varangian_privilege
+				br_ere_varangian_privateers
 			}
 			reforms = {
 				br_imperial_administration
 				theme_system
 				kritai_katholikoi
+				autocracy
 
 				#Fate of the Phoenix
 				katepanata
@@ -14664,6 +14668,7 @@ countries = {
 
 			privilege = {
 				#Noble Privileges
+				br_reconquista_privilege
 				general_privilege
 				#Clergy
 				clergy_military_orders
@@ -14813,6 +14818,7 @@ countries = {
 
 			privilege = {
 				#Noblity
+				br_reconquista_privilege
 				#monetary_fiefs
 				#Clergy
 				clergy_military_orders
@@ -14896,6 +14902,7 @@ countries = {
 				feudal_nobility
 			}
 			privilege = {
+				br_reconquista_privilege
 				#Clergy
 				clergy_military_orders
 				#Burghers
@@ -15034,6 +15041,7 @@ countries = {
 			
 			privilege = {
 				#Noblity
+				br_reconquista_privilege
 				#monetary_fiefs
 				#Clergy
 				clergy_military_orders
@@ -15051,10 +15059,10 @@ countries = {
 				royal_court_customs_law = itinerant_court_policy
 			}
 			
-			aristocracy_vs_plutocracy = -40
+			aristocracy_vs_plutocracy = -75
 			serfdom_vs_free_subjects = -15
 			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = -15
+			belligerent_vs_conciliatory = -40
 			outward_vs_inward = -30
 		}
 
@@ -15063,14 +15071,14 @@ countries = {
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
-			date = 1385.1.1
-			size = 0.25
+			date = 1450.1.1
+			size = 0.33
 		}
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
 			date = 1420.1.1
-			size = 0.25
+			size = 0.33
 		}
 		ai_advance_preference_tags = {
 			exploration = 5
@@ -15199,11 +15207,18 @@ countries = {
 				name_ishmael = 1
 				name_joseph = 1
 			}
-
+			reforms = {
+				the_jewel_of_alandalus_reform
+				br_alandalus_reform
+			}
+			laws = {
+				sharia_law = maliki_policy
+			}
 			privilege = {
 				#Nobles
 				elaborate_court_ceremonies
 				noble_sponsored_navy
+				br_ghazi_privilege
 				#joint_assembly_decrees
 
 				#Clergy
@@ -15242,31 +15257,26 @@ countries = {
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
 				dhimmi_in_administration
+				br_andalusian_dhimmi_levies
 				
 			}
 			
 			centralization_vs_decentralization = -50
 			aristocracy_vs_plutocracy = 50
-			serfdom_vs_free_subjects = 25
+			serfdom_vs_free_subjects = 50
 			traditionalist_vs_innovative = 50
 			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 35
-			offensive_vs_defensive = 50
+			mercantilism_vs_free_trade = 50
+			offensive_vs_defensive = 75
 			land_vs_naval = -20
-			quality_vs_quantity = -30
-			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = -50
+			belligerent_vs_conciliatory = 75
 			capital_economy_vs_traditional_economy = -60
-			individualism_vs_communalism = -20
+			individualism_vs_communalism = -40
 			outward_vs_inward = -60
 			mysticism_vs_jurisprudence = 50
 			
-			reforms = {
-				the_jewel_of_alandalus_reform
-				br_alandalus_reform
-			}
-			laws = {
-				sharia_law = maliki_policy
-			}
+			
 		}
 		court_language = maghrebi_dialect
 		religious_school = maliki_school
@@ -19294,8 +19304,9 @@ countries = {
 
 			
 			privilege = {
-
+				br_reconquista_privilege
 				#Burghers
+				br_latinoi_privateers
 				privateer_contracts #By the mid/late point of the 14th century Rhodes had become one of the major naval bases in the eastern Mediterranean specifically structured to support Hospitaller corsair operations and fleet maintenance.
 
 			}
@@ -19374,6 +19385,7 @@ countries = {
 
 				urban_development_grants
 				#burghers
+				br_latinoi_privateers
 				land_of_commerce
 				sponsor_maritime_contracts
 				shipwright_contracts
@@ -19701,6 +19713,7 @@ countries = {
 			privilege = {
 				#Nobles
 				noble_sponsored_navy
+				br_ghazi_privilege
 				#Ulama
 				waqf_payments
 				#Burghers
@@ -23008,7 +23021,7 @@ countries = {
 				elaborate_court_ceremonies
 				banal_lordship
 				#joint_assembly_decrees
-				ghazi_privilege
+				br_ghazi_privilege
 				noble_sponsored_navy
 				auxilium_et_consilium
 
@@ -32933,7 +32946,7 @@ countries = {
 
 			privilege = {
 				#Nobles
-				ghazi_privilege
+				br_ghazi_privilege
 
 				#Dhimmi #BR ADDED
 				dhimmi_land_rights
@@ -33204,7 +33217,7 @@ countries = {
 				elaborate_court_ceremonies
 				banal_lordship
 				#joint_assembly_decrees
-				ghazi_privilege
+				br_ghazi_privilege
 				noble_sponsored_navy
 				auxilium_et_consilium
 
@@ -53917,41 +53930,32 @@ countries = {
 		type = building
 		starting_technology_level = 3
 		include = "catholic_republic_not_present"
-		
 		capital = constantinople
 		government = {
 			type = republic
 			heir_selection = bank_selection
+			ruler = random
+
 			reforms = {	banking_country }
-			
-			centralization_vs_decentralization = 20
-			aristocracy_vs_plutocracy = 70
-			serfdom_vs_free_subjects = 70
-			traditionalist_vs_innovative = 30
-			spiritualist_vs_humanist = 20
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = 75
-			quality_vs_quantity = -20
-			offensive_vs_defensive = 30
-			land_vs_naval = 40
-			capital_economy_vs_traditional_economy = -50
-			individualism_vs_communalism = -50
-			outward_vs_inward = -90
+
+			aristocracy_vs_plutocracy = 100
+			traditionalist_vs_innovative = 75
+			spiritualist_vs_humanist = 75
+			mercantilism_vs_free_trade = 100
+			capital_economy_vs_traditional_economy = -100
+			individualism_vs_communalism = -100
+			outward_vs_inward = -100
 			laws = {
 				marriage_law = monogamous_marriage
 				heir_religion_law = heir_same_religion
 			}
-			
-			ruler = random
 		}
-		
 		country_rank = rank_county
 		currency_data = {
 			gold = 5000
 			stability = 100
 			government_power = 100
 		}
-		
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		include = "expl_silk_road_center"
@@ -53963,41 +53967,31 @@ countries = {
 		type = building
 		starting_technology_level = 3
 		include = "catholic_republic_not_present"
-		
 		capital = constantinople
 		government = {
 			type = republic
 			heir_selection = bank_selection
 			reforms = {	banking_country }
 			ruler = br_ere_rdm_character_84
-			
-			centralization_vs_decentralization = 20
-			aristocracy_vs_plutocracy = 70
-			serfdom_vs_free_subjects = 70
-			traditionalist_vs_innovative = 30
-			spiritualist_vs_humanist = 20
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = 50
-			quality_vs_quantity = -20
-			offensive_vs_defensive = 30
-			land_vs_naval = 40
-			capital_economy_vs_traditional_economy = -50
-			individualism_vs_communalism = -50
-			outward_vs_inward = -90
+
+			aristocracy_vs_plutocracy = 100
+			traditionalist_vs_innovative = 75
+			spiritualist_vs_humanist = 75
+			mercantilism_vs_free_trade = 100
+			capital_economy_vs_traditional_economy = -100
+			individualism_vs_communalism = -100
+			outward_vs_inward = -100
 			laws = {
 				marriage_law = monogamous_marriage
 				heir_religion_law = heir_same_religion
 			}
-
 		}
-		
 		country_rank = rank_county
 		currency_data = {
 			gold = 5000
 			stability = 100
 			government_power = 100
 		}
-		
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		include = "expl_silk_road_center"
@@ -54009,7 +54003,6 @@ countries = {
 		type = building
 		starting_technology_level = 3
 		include = "catholic_republic_not_present"
-		
 		capital = constantinople
 		government = {
 			type = republic
@@ -54017,32 +54010,24 @@ countries = {
 			reforms = {	banking_country }
 			ruler = br_ere_rdm_character_89 #br_ere_rdm_character_45
 			
-			centralization_vs_decentralization = 20
-			aristocracy_vs_plutocracy = 70
-			serfdom_vs_free_subjects = 70
-			traditionalist_vs_innovative = 30
-			spiritualist_vs_humanist = 20
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = 50
-			quality_vs_quantity = -20
-			offensive_vs_defensive = 30
-			land_vs_naval = 40
-			capital_economy_vs_traditional_economy = -50
-			individualism_vs_communalism = -50
-			outward_vs_inward = -90
+			aristocracy_vs_plutocracy = 100
+			traditionalist_vs_innovative = 75
+			spiritualist_vs_humanist = 75
+			mercantilism_vs_free_trade = 100
+			capital_economy_vs_traditional_economy = -100
+			individualism_vs_communalism = -100
+			outward_vs_inward = -100
 			laws = {
 				marriage_law = monogamous_marriage
 				heir_religion_law = heir_same_religion
 			}
 		}
-		
 		country_rank = rank_county
 		currency_data = {
 			gold = 5000
 			stability = 100
 			government_power = 100
 		}
-		
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		include = "expl_silk_road_center"
@@ -56710,7 +56695,7 @@ countries = {
 			privilege = {
 				#Nobles
 				elaborate_court_ceremonies
-				ghazi_privilege
+				br_ghazi_privilege
 				auxilium_et_consilium
 				#joint_assembly_decrees
 
@@ -56918,7 +56903,7 @@ countries = {
 				elaborate_court_ceremonies
 				banal_lordship
 				#joint_assembly_decrees
-				ghazi_privilege
+				br_ghazi_privilege
 				noble_sponsored_navy
 				auxilium_et_consilium
 

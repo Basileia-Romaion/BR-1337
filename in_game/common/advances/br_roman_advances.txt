@@ -163,37 +163,6 @@ br_roman_ecumenical_patriarch_advance = {
 	requires = roman_codified_custom
 }
 
-br_anatolian_heartland = {
-	age = age_1_traditions
-	potential = {
-		any_owned_location = {
-			OR = {
-				area = area:central_anatolia_area
-				area = area:cappadocia_area
-			}
-		}
-	}
-	requires = feudalism_advance
-	global_garrison_growth = 0.01
-	trade_land_efficiency = 0.1
-	plateau_proximity_impact = -0.2
-}
-
-br_anatolian_farmlands = {
-	age = age_1_traditions
-	potential = {
-		any_owned_location = {
-			OR = {
-				area = area:central_anatolia_area
-				area = area:cappadocia_area
-			}
-		}
-	}
-	requires = br_anatolian_heartland
-	global_wheat_output_modifier = 0.1
-}
-
-
 # AGE 2 – Renaissance
 
 roman_scribal_administration = {
@@ -619,3 +588,70 @@ br_age_6_basilikoi_advance = {
 	ai_weight = { add = 5 }
 }
 
+
+### sub-culture advances ###
+
+#Anatolia/Cappadocia
+br_anatolian_heartland = {
+	age = age_1_traditions
+	potential = {
+		any_owned_location = {
+			OR = {
+				area = area:central_anatolia_area
+				area = area:cappadocia_area
+			}
+		}
+	}
+	requires = feudalism_advance
+	global_garrison_growth = 0.05
+	trade_land_efficiency = 0.1
+	plateau_proximity_impact = -0.2
+}
+
+br_anatolian_farmlands = {
+	age = age_1_traditions
+	potential = {
+		any_owned_location = {
+			OR = {
+				area = area:central_anatolia_area
+				area = area:cappadocia_area
+			}
+		}
+	}
+	requires = br_anatolian_heartland
+	global_wheat_output_modifier = 0.1
+}
+
+br_anatolian_heritage = {
+	age = age_1_traditions
+	icon = hun_castle_warriors
+	potential = {
+		OR = {
+			culture = culture:cappadocian_greek_culture
+            culture = culture:anatolian_greek_culture
+			culture = culture:armenikon_greek_culture
+		}
+	}
+	requires = feudalism_advance
+	mountains_proximity_impact = -0.1
+	hills_proximity_impact = -0.1
+	plateau_proximity_impact = -0.1
+	army_heavy_infantry_maintenance_cost_modifier = -0.1
+    army_heavy_cavalry_maintenance_cost_modifier = -0.1
+}
+
+#Anatolia/Cappadocia
+br_pontic_heritage = {
+	age = age_1_traditions
+	icon = hun_castle_warriors
+	potential = {
+		culture = culture:pontic_greek_culture
+	}
+	requires = feudalism_advance
+	global_defensive = 0.1
+	trade_sea_efficiency = 0.1
+	global_trade_protection_factor = 0.05
+	#global_lumber_output_modifier = 0.1
+	army_heavy_infantry_maintenance_cost_modifier = -0.1
+	army_light_infantry_maintenance_cost_modifier = -0.2
+}

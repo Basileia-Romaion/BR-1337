@@ -26,6 +26,9 @@
  br_themata_peasant_privilege: "Stratiōtai Land Grant"
  br_themata_peasant_privilege_desc: "Within the themes, land is held by stratiōtai bound to render service in defense of the Roman order. These free households, settled upon military allotments, furnish disciplined levies in time of war and uphold imperial authority in time of peace. Through this system, the state secures loyal levies drawn from free households, reinforcing provincial defense while tempering the dominance of magnate estates. Allows [ShowBuildingTypeName('br_soldier_farmers')] and [ShowBuildingTypeName('br_stratiotikon_thema_estate')]"
 
+ br_themata_reformed_privilege: "Anakainisis tōn Thematōn"
+ br_themata_reformed_privilege_desc: "The Anakainisis tōn Thematōn, the Renewal of the Themes, restores the military foundations of the Roman state. New generations of Stratiōtai are settled upon military allotments, while provincial administration is reorganized to support the defense of [ROOT.GetCountry.GetName]. The resulting system produces loyal levies, prosperous frontier communities, and a resilient army rooted in the free households of the Empire. Allows [ShowBuildingTypeName('br_soldier_farmers')] and [ShowBuildingTypeName('br_stratiotikon_thema_estate')]"
+
  br_dynatoi_magnates: "Dynatoi Magnates"
  br_dynatoi_magnates_desc: "Powerful landed magnates consolidate estates across the provinces, extending their authority over dependent cultivators and local administration. Their wealth strengthens rural production and fortifies the countryside, yet their growing dominance diminishes the independence of smaller households and shifts the balance of power away from the crown. Allows [ShowBuildingTypeName('br_pronoia_estate')] and [ShowBuildingTypeName('br_kekhrismene_pronoia')]"
 
@@ -50,6 +53,9 @@
  br_ere_varangian_privilege: "Várangoi Hetaireía"
  br_ere_varangian_privilege_desc: "The Várangoi of the Imperial Hetaireía stand among the most trusted warriors of the Basileus, bound by oath, gold, and glory to the service of [ROOT.GetCountry.GetName]. Drawn from the northern seas and settled throughout the [ROOT.GetCountry.GetFlavorRank], these axe-bearing foreigners strengthen the Tagmata, guard the person of the Emperor, and furnish seasoned captains to the armies of the Empire. Yet their communities remain apart from the [ShowCultureName('greek_culture')], preserving the customs, laws, and tongue of their distant homelands. Allows [ShowBuildingTypeName('br_varangian_recruitment_building')], [ShowBuildingTypeName('br_varangian_camp')] and [ShowBuildingTypeName('br_varangian_barracks')]"
 
+ br_ere_varangian_privateers: "Varangoi Nautikoi"
+ br_ere_varangian_privateers_desc: "Companies of Varangoi in Imperial service are granted the right to outfit vessels and wage war against the enemies of the Basileus. Their skill as sailors and raiders reduces the cost of maintaining private fleets, while their exploits bring wealth and renown to both themselves and [ROOT.GetCountry.GetName]."
+
  br_turkoman_privilege: "Türkmen Frontier Privileges"
  br_turkoman_privilege_desc: "The Türkmen tribes are granted wide autonomy across the marches in exchange for military service and loyalty to the state. Their horsemen swell the armies of the realm at little expense, yet their growing influence entrenches tribal traditions and slows the transition toward a more settled society."
 
@@ -64,3 +70,12 @@
 
  br_andalusian_dhimmi_levies: "Muwallad and Dhimmi Militias"
  br_andalusian_dhimmi_levies_desc: "The diverse peoples of Al-Andalus are called upon to aid in the defense of the realm. Christian and Jewish communities may furnish local militias and auxiliary formations, strengthening regional security and fostering coexistence between the faiths under Andalusian rule."
+
+ br_reconquista_privilege: "Spirit of the Reconquista"
+ br_reconquista_privilege_desc: "The frontier nobility are entrusted with the sacred duty of reclaiming lands held by the enemies of the Faith. Drawn by promises of plunder, captives, and glory, these warriors maintain a constant state of readiness against neighboring infidels. While this strengthens the armies of Christendom and fuels expansion, it also empowers a militant aristocracy whose interests are tied to perpetual frontier warfare."
+
+ br_ghazi_privilege: "Ghazi Frontier Tradition"
+ br_ghazi_privilege_desc: "The Ghazis are warriors of the frontier who dedicate themselves to the struggle against the enemies of Islam. Sustained by raids, booty, and religious zeal, they gather beneath local lords and tribal chiefs to wage war along the borders of the Dār al-Islām. Their presence strengthens the military power of the realm and inspires martial vigor, though it also reinforces the influence of decentralized frontier elites."
+
+ br_latinoi_privateers: "Latinoi Corsair Contracts"
+ br_latinoi_privateers_desc: "The Latinoi merchant houses are granted charters to outfit private vessels and wage war against the enemies of the state. Drawing upon generations of maritime expertise and commercial networks that span the seas, these privateers protect trade, harass rival shipping, and enrich both themselves and the treasury through captured prizes."

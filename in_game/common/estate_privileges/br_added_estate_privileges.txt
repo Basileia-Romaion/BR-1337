@@ -232,6 +232,77 @@
 			army_heavy_cavalry_power = 0.1
 		}
 	}
+
+	br_reconquista_privilege = {
+		estate = nobles_estate
+		icon = control_of_the_borderlands
+		potential = {
+			religion ?= religion:catholic
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = { NOT = { religion.group = root.religion.group } }
+				has_estate_privilege = estate_privilege:br_reconquista_privilege
+			}
+		}
+		can_revoke = {
+			OR = {
+				societal_value:centralization_vs_decentralization > 0
+				societal_value:spiritualist_vs_humanist > 25
+			}
+		}
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_nobles_estate_power = 1
+
+			tolerance_heathen = -1
+			auto_slave_raid_different_religion = yes
+			damage_done_versus_heathens_modifier = 0.1
+			global_army_levy_size_modifier = 0.1
+			amount_looted_modifier = 0.5
+
+			aggressiveness_modifier = 0.25
+			antagonism_religion_influence = 0.25
+		}	
+	}
+
+	br_ghazi_privilege = {
+		estate = nobles_estate
+		icon = ghazi_privilege
+		potential = {
+			religion ?= { group ?= religion_group:muslim }
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = { NOT = { religion.group = root.religion.group } }
+				has_estate_privilege = estate_privilege:br_ghazi_privilege
+			}
+		}
+		can_revoke = {
+			OR = {
+				societal_value:centralization_vs_decentralization > 0
+				societal_value:spiritualist_vs_humanist > 25
+			}
+		}
+		
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+			global_nobles_estate_power = 1
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_quality = societal_value_minor_monthly_move
+
+			tolerance_heathen = -1
+			auto_slave_raid_different_religion = yes
+			damage_done_versus_heathens_modifier = 0.1
+			global_army_levy_size_modifier = 0.1
+			amount_looted_modifier = 0.5
+
+			aggressiveness_modifier = 0.25
+			antagonism_religion_influence = 0.25
+		}
+	}
+
+	
 ### Peasants Privileges ###
 
 	akritai_privilege = {
@@ -310,13 +381,7 @@
 			global_army_levy_size_modifier = 0.1
 			allow_native_subjugation_cb = yes
 			auto_slave_raid_different_religion = yes
-		}
-		country_modifier = {
-			potential_trigger = {  societal_value:belligerent_vs_conciliatory <= -25 }
 			enslave_tribals = yes
-			aggressiveness_modifier = 0.25
-			expected_warscore_modifier = 0.25
-			coalition_strength_tolerance = 10
 		}
 	}
 
@@ -504,6 +569,25 @@
 			navy_maintenance_efficiency = 0.25
 			navy_light_ship_maintenance_cost_modifier = -0.25
 		}	
+	}
+
+	br_latinoi_privateers = {
+		estate = burghers_estate
+		icon = privateer_contracts
+
+		potential = {
+			num_of_ports > 0
+			culture = culture:latinoi
+		}
+		country_modifier = {
+			burghers_estate_target_satisfaction = small_privilege_target_satisfaction
+			global_burghers_estate_power = 0.33
+			can_hire_privateers = yes
+			hire_privateer_cost_modifier = -0.2
+			privateer_maintenance_cost_modifier = -0.1
+			navy_maintenance_efficiency = 0.1
+			navy_light_ship_maintenance_cost_modifier = -0.1
+		}
 	}
 
 	br_latin_trade_naval_reliance = { #split into two 
@@ -781,7 +865,7 @@
 		}
 	}
 
-	br_ere_foederati_privilege = { #not done
+	br_ere_foederati_privilege = {
 		estate = tribes_estate
 		icon = cas_caballeros_villanos
 		potential = {
@@ -818,31 +902,32 @@
 			global_tribes_estate_power = 1
 			#base_tribes_estate_power_modifier = 0.02
 			mercenary_units_preference_modifier = 0.5
-			global_mercenaries_modifier = 0.1
-			hire_mercenary_premium_cost_modifier  = -0.1
-			mercenary_maintenance_efficiency = 0.1
+			#global_mercenaries_modifier = 0.1
+			hire_mercenary_premium_cost_modifier  = -0.15
+			mercenary_maintenance_efficiency = 0.15
 			tribes_estate_allowed_leading_military = yes
 		}
 	}
-	br_ere_varangian_guard_privilege = { #not done
-		estate = tribes_estate
-		icon = br_ere_varangian_privilege
-		potential = {
-			OR = {
-				has_or_had_tag = BYZ
-				owns = location:constantinople
-			}
-		}
-		country_modifier = {
-			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
-			global_tribes_estate_power = 1
-			army_heavy_infantry_power = 0.1
-			army_heavy_infantry_build_cost_modifier = -0.1
-			army_heavy_infantry_maintenance_cost_modifier = -0.1
-		}
-	}
+	
+	#br_ere_varangian_guard_privilege = { #not done
+		#estate = tribes_estate
+		#icon = br_ere_varangian_privilege
+		#potential = {
+			#OR = {
+				#has_or_had_tag = BYZ
+				#owns = location:constantinople
+			#}
+		#}
+		#country_modifier = {
+			#tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
+			#global_tribes_estate_power = 1
+			#army_heavy_infantry_power = 0.1
+			#army_heavy_infantry_build_cost_modifier = -0.1
+			#army_heavy_infantry_maintenance_cost_modifier = -0.1
+		#}
+	#}
 
-	br_ere_varangian_privateers = { #not done
+	br_ere_varangian_privateers = {
 		estate = tribes_estate
 		icon = noble_sponsored_navy
 		potential = {
@@ -854,9 +939,10 @@
 		country_modifier = {
 			tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_tribes_estate_power = 1
-			hire_privateer_cost_modifier = -0.2
-			privateer_maintenance_cost_modifier = -0.2
-			privateer_durability = 0.02
+			can_hire_privateers = yes
+			hire_privateer_cost_modifier = -0.1
+			privateer_maintenance_cost_modifier = -0.1
+			#privateer_durability = 0.02
 		}
 	}
 
@@ -929,7 +1015,7 @@
 		}
 	}
 
-### Andalusian Privileges ###
+### Andalusian/berber Privileges ###
 	br_berber_privilege = {
 		estate = tribes_estate
 		icon = br_turkoman_privilege #tribes_tribal_levies

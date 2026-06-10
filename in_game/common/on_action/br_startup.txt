@@ -62,28 +62,41 @@ br_on_game_start = {
 
         #BR added Trade Company
 		every_country = {
-			limit = { has_reform = government_reform:merchant_republic }
+			limit = { has_advance = br_italian_universities } #has_reform = government_reform:merchant_republic
 
-            if = {
-                limit = { NOT = { has_advance = trade_companies_advance } }
-                research_advance = advance_type:trade_companies_advance
-				research_advance = advance_type:guilds
-				research_advance = advance_type:abacus_advance
-				research_advance = advance_type:ledgers_double_checking
-            }
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:government_sanctioned_celebrations
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:diplomatic_capacity_traditions
+			research_advance = advance_type:trade_companies_advance
+			research_advance = advance_type:guilds
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:ledgers_double_checking
         }
 		every_country = {
 			limit = { has_reform = government_reform:banking_country }
 
-            if = {
-                limit = { NOT = { has_advance = banking_advance } }
-                research_advance = advance_type:banking_advance
-				research_advance = advance_type:meritocracy_advance
-				research_advance = advance_type:merchants_and_trade
-				research_advance = advance_type:trade_range_advance_age_2
-				research_advance = advance_type:abacus_advance
-				research_advance = advance_type:ledgers_double_checking
-            }
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:diplomatic_capacity_traditions
+			research_advance = advance_type:banking_advance
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:ledgers_double_checking
         }
 		every_country = {
 			limit = { has_reform = government_reform:military_order_reform }
@@ -129,6 +142,16 @@ br_on_game_start = {
 			research_advance = advance_type:talented_traders
         }
 		c:RIC = {
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+            research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -148,6 +171,18 @@ br_on_game_start = {
 			research_advance = advance_type:talented_traders
 		}
 		c:VTC = {
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+            research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:government_sanctioned_celebrations
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -165,6 +200,18 @@ br_on_game_start = {
 			research_advance = advance_type:talented_traders
 		}
 		c:GTC = {
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+            research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:government_sanctioned_celebrations
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -319,6 +366,14 @@ br_on_game_start = {
 		}
 
 		c:TUR = {
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:temporary_appointments
+			research_advance = advance_type:government_sanctioned_celebrations
+			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:seljuk_roots
 			research_advance = advance_type:timariots
 			research_advance = advance_type:slavery_before_death

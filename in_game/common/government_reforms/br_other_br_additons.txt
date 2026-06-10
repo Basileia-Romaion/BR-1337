@@ -155,10 +155,11 @@ br_ancient_french_taxation = {
 	}
 
 	country_modifier = {
+		monthly_towards_serfdom = societal_value_monthly_move
 		global_peasant_enfranchisment = -0.20
 		government_reform_slots = 1
 		nobles_estate_max_tax = 0.2
-		subject_income_modifier = 0.1
+		subject_income_modifier = 0.2
 	}
 	years = 2
 }
@@ -179,9 +180,9 @@ br_french_feudal_nobility = { # French Feudalism
 	}
 	country_modifier = {
 		diplomatic_capacity = 1
-		monthly_towards_serfdom = societal_value_large_monthly_move
-		monthly_towards_aristocracy = societal_value_monthly_move
-		nobles_estate_levy_size = 0.5
+		monthly_towards_serfdom = societal_value_monthly_move
+		monthly_towards_aristocracy = societal_value_large_monthly_move
+		nobles_estate_levy_size = 0.25
 		army_heavy_cavalry_power = 0.1
 		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
