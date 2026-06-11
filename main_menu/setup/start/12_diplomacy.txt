@@ -121,13 +121,12 @@ diplomacy_manager = {
     dependency = { first = GLH second = KCH subject_type = tributary }
     dependency = { first = GLH second = SZL subject_type = tributary }
     dependency = { first = GLH second = GLM subject_type = tributary }
-    dependency = { first = GLH second = RHO subject_type = tributary }
     dependency = { first = GLH second = YAR subject_type = tributary }
     dependency = { first = GLH second = RSO subject_type = tributary }
 
 	#Ruthenia
-    dependency = { first = GLH second = HAL subject_type = tributary }
-	dependency = { first = GLH second = VOL subject_type = tributary }
+    #dependency = { first = GLH second = HAL subject_type = tributary }
+	#dependency = { first = GLH second = VOL subject_type = tributary }
 	dependency = { first = GLH second = BRY subject_type = tributary }
 	dependency = { first = GLH second = CHR subject_type = tributary }
 	dependency = { first = GLH second = KIE subject_type = tributary }
