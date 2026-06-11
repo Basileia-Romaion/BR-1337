@@ -1,0 +1,21 @@
+﻿REPLACE_OR_CREATE:royal_marriage = {
+	rank_difference = -15
+	opinion = 0.1
+	heir = 10
+	different_culture = -5
+	different_religion = -25 #was -100
+	different_religion_group = -75 # was -200
+	same_culture = 5
+	trust_in_actor = 2
+	same_court_language = 5
+	actor_is_rival = -100
+	actor_overlord_is_rival = -100
+	recipient_is_rival = -100
+	recipient_overlord_is_rival = -100
+	age_female = -10
+	marriage_desirability = 1
+	border_distance = -0.025
+	culture_view = 10
+	religion_view = 10
+	union_size = -4
+}
