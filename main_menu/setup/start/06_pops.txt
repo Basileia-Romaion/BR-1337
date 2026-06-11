@@ -21540,13 +21540,13 @@ usivka = {
 	define_pop = {	type = tribesmen	size = 2.910	culture = crimean	religion = tengri }
 	define_pop = {	type = slaves	size = 3.255	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = tribesmen	size = 4.500	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 5.500	culture = cossack_culture	religion = orthodox }
 }
 mala_vyska = {
 	define_pop = {	type = clergy	size = 0.012	culture = mongolian_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 0.295	culture = crimean	religion = sunni }
 	define_pop = {	type = peasants	size = 1.931	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 4.687	culture = crimean	religion = tengri }
+	define_pop = {	type = tribesmen	size = 6.687	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
 	define_pop = {	type = slaves	size = 0.500	culture = ruthenian		religion = orthodox }
 	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox }
@@ -21555,7 +21555,7 @@ umanske = {
 	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 0.256	culture = crimean	religion = sunni }
 	define_pop = {	type = peasants	size = 1.983	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 3.885	culture = crimean	religion = tengri }
+	define_pop = {	type = tribesmen	size = 6.885	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
 	define_pop = {	type = slaves	size = 0.500	culture = ruthenian		religion = orthodox }
 	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox } 
@@ -21636,7 +21636,7 @@ myshuryn_rih = {
 	define_pop = {	type = tribesmen	size = 1.787	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
 	define_pop = {	type = slaves	size = 1.689	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 5.500	culture = cossack_culture	religion = orthodox }
 }
 sofiivka = {
 	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = sunni }
@@ -27903,36 +27903,37 @@ pindus_mountains8 = {
 }
 grevena = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.294	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.107	culture = albanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.294	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 1.771	culture = sclavene	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.107	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.224	culture = aromanian	religion = orthodox }
 }
 kastoria = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.680	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 0.771	culture = bulgarian	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.179	culture = aromanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.179	culture = aromanian	religion = bogomilism }
-	define_pop = {	type = peasants	size = 1.790	culture = bulgarian	religion = bogomilism }
+	define_pop = {	type = tribesmen	size = 2.771	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.579	culture = aromanian	religion = bogomilism }
+	define_pop = {	type = tribesmen	size = 1.790	culture = bulgarian	religion = bogomilism }
 }
 servia = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.613	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.613	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.771	culture = sclavene	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.066	culture = bulgarian	religion = orthodox }
 }
 siatista = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.309	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.190	culture = albanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.309	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.171	culture = sclavene	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.190	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.983	culture = aromanian	religion = orthodox }
 }
 ostrovo = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.466	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.216	culture = bulgarian	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.810	culture = aromanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.810	culture = aromanian	religion = bogomilism }
-	define_pop = {	type = peasants	size = 1.810	culture = bulgarian	religion = bogomilism }
+	define_pop = {	type = peasants	size = 5.466	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.771	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.810	culture = aromanian	religion = bogomilism }
+	define_pop = {	type = tribesmen	size = 3.110	culture = bulgarian	religion = bogomilism }
 }
 pindus_mountains5 = {
 }
@@ -28411,53 +28412,53 @@ avlonya = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.743	culture = illyrikoi_greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.743	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.225	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.225	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.561	culture = aromanian	religion = orthodox }
 }
 argyrokastro = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 12.464	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 10.464	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.075	culture = arvanite	religion = orthodox }
 }
 butrint = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.521	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 }
 kleisoura_epirus = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.650	culture = aromanian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.131	culture = albanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.531	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.131	culture = arvanite	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.531	culture = greek_culture	religion = orthodox }
 }
 konitsa = {
 	define_pop = {	type = clergy	size = 0.009	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.512	culture = aromanian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.120	culture = albanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.288	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.120	culture = arvanite	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.288	culture = greek_culture	religion = orthodox }
 }
 pindus_mountains6 = {
 }
 angelokastron = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 15.864	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 }
 karpenisi = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.757	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.973	culture = aromanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.557	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.275	culture = arvanite	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.173	culture = aromanian	religion = orthodox }
 }
 loidoriki = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.281	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.150	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.281	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.150	culture = sclavene	religion = orthodox }
 }
 nafpaktos = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 7.655	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 }
 salona = {
 	define_pop = {	type = nobles	size = 0.017	culture = latinoi	religion = catholic }
@@ -28469,7 +28470,7 @@ salona = {
 vonitsa = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.939	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 }
 lake_trichonida = {
 }
@@ -28572,7 +28573,7 @@ arta = {
 	define_pop = {	type = peasants	size = 13.648	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.678	culture = aromanian	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.152	culture = romanyoti	religion = judaism }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 	define_pop = {	type = burghers	size = 0.575	culture = latinoi	religion = catholic }
 	define_pop = {	type = clergy	size = 0.018	culture = latinoi	religion = catholic }
 	define_pop = {	type = peasants	size = 1.239	culture = latinoi	religion = catholic }
@@ -28581,7 +28582,7 @@ ioannina = {
 	define_pop = {	type = nobles	size = 0.013	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = clergy	size = 0.020	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 8.371	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.075	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.075	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.678	culture = aromanian	religion = orthodox }
 	define_pop = {	type = peasants	size = 0.652	culture = romanyoti	religion = judaism }
 	define_pop = {	type = soldiers	size = 0.097	culture = varangian	religion = orthodox }
@@ -28593,17 +28594,17 @@ ioannina = {
 parga = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.700	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.750	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 1.750	culture = arvanite	religion = orthodox }
 }
 preveza = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.372	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.750	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 1.750	culture = arvanite	religion = orthodox }
 }
 pyli = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.848	culture = aromanian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 3.148	culture = albanian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.148	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.498	culture = greek_culture	religion = orthodox }
 }
 pindus_mountains7 = {
@@ -28634,8 +28635,9 @@ farsala = {
 }
 karditsa = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.807	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.031	culture = albanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.807	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.771	culture = sclavene	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.031	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.599	culture = aromanian	religion = orthodox }
 }
 stomio = {
@@ -28644,8 +28646,9 @@ stomio = {
 }
 trikala = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.943	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.275	culture = albanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.943	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 1.771	culture = sclavene	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.275	culture = arvanite	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.555	culture = aromanian	religion = orthodox }
 }
 tyrnavos = {
@@ -28667,8 +28670,8 @@ chalandritsa = {
 }
 kalavryta = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 4.268	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.750	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.868	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.950	culture = sclavene	religion = orthodox }
 }
 vostitsa = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
@@ -28682,8 +28685,8 @@ tripolitsa = {
 }
 karytaina = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.286	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.750	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.186	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.950	culture = sclavene	religion = orthodox }
 }
 veligosti = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
@@ -28746,8 +28749,8 @@ andravida = {
 }
 andritsaina = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.353	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.750	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.353	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.750	culture = sclavene	religion = orthodox }
 }
 pontikokastro = {
 	define_pop = {	type = clergy	size = 0.008	culture = greek_culture	religion = orthodox }
@@ -28801,8 +28804,8 @@ kyparissia = {
 leuktron = {
 	define_pop = {	type = clergy	size = 0.010	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.614	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 1.253	culture = sclavene	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.565	culture = greek_culture	religion = hellenism_religion }
+	define_pop = {	type = tribesmen	size = 4.253	culture = sclavene	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.565	culture = greek_culture	religion = hellenism_religion }
 }
 modon = {
 	define_pop = {	type = nobles	size = 0.008	culture = latinoi	religion = catholic }
@@ -32387,8 +32390,7 @@ bayramic = {
 can = {
 	define_pop = {	type = clergy	size = 0.003	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 15.613	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.125	culture = sclavene	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.563	culture = armenian_culture	religion = miaphysite }
+	#define_pop = {	type = peasants	size = 2.125	culture = sclavene	religion = orthodox }
 }
 canakkale = {
 	define_pop = {	type = peasants	size = 25.945	culture = greek_culture	religion = orthodox }
@@ -32479,7 +32481,6 @@ manyas = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 15.569	culture = greek_culture	religion = orthodox }
 	#define_pop = {	type = peasants	size = 2.125	culture = sclavene	religion = orthodox } #Slavs, forcibly resettled to Anatolia. 
-	define_pop = {	type = peasants	size = 3.563	culture = armenian_culture	religion = miaphysite }
 }
 mihalic = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
@@ -34158,18 +34159,17 @@ antioch = {
 	define_pop = {	type = nobles	size = 0.058	culture = syrenikoi_greek_culture	religion = orthodox }
 	define_pop = {	type = clergy	size = 0.164	culture = syrenikoi_greek_culture	religion = orthodox }
 	define_pop = {	type = burghers	size = 2.050	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = burghers	size = 1.379	culture = romanyoti religion = judaism }
+	define_pop = {	type = burghers	size = 2.379	culture = romanyoti religion = judaism }
 	define_pop = {	type = burghers	size = 3.379	culture = syrenikoi_greek_culture	religion = orthodox }
 	define_pop = {	type = burghers	size = 1.375	culture = latinoi	religion = catholic }
 	define_pop = {	type = burghers	size = 1.949	culture = syriac_culture	religion = miaphysite }
-	define_pop = {	type = peasants	size = 10.639	culture = syrenikoi_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 16.639	culture = syriac_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 20.639	culture = syrenikoi_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 10.639	culture = syriac_culture	religion = miaphysite }
 	define_pop = {	type = peasants	size = 1.916	culture = romanyoti religion = judaism }
-	define_pop = {	type = peasants	size = 13.362	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 10.362	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = clergy	size = 0.018	culture = latinoi	religion = catholic }
 	define_pop = {	type = peasants	size = 0.839	culture = latinoi	religion = catholic }
 	define_pop = {	type = slaves	size = 2.873	culture = levantine_culture	religion = shia } #alawite_culture
-	define_pop = {	type = peasants	size = 4.639	culture = levantine_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 6.685	culture = levantine_culture	religion = sunni }
 }
 afrin = {
@@ -34182,11 +34182,11 @@ afrin = {
 }
 arsuz = {
 	define_pop = {	type = clergy	size = 0.009	culture = syrenikoi_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.639	culture = syrenikoi_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.639	culture = syrenikoi_greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.639	culture = syriac_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.405	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 1.873	culture = levantine_culture	religion = shia } #alawite_culture
-	define_pop = {	type = slaves	size = 3.685	culture = levantine_culture	religion = sunni }
+	define_pop = {	type = slaves	size = 2.685	culture = levantine_culture	religion = sunni }
 }
 artah = {
 	define_pop = {	type = clergy	size = 0.009	culture = armenian_culture	religion = miaphysite }
