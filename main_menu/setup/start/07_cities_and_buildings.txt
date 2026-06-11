@@ -5435,7 +5435,6 @@ building_manager = {
 	caravanserai = { tag = GLH level = 1 location = simbirsk }
 	kurultai = { tag = GLH level = 1 location = kumak }
 	caravanserai = { tag = GLH level = 1 location = kumak }
-	caravanserai = { tag = GLH level = 1 location = kumak }
 	kurultai = { tag = GLH level = 1 location = kazan }
 	slave_market = { tag = GLH level = 3 location = kazan }
 	caravanserai = { tag = GLH level = 1 location = kazan }
@@ -5487,6 +5486,24 @@ building_manager = {
 	market_village = { tag = MOS level = 1 location = bryansk }
 	market_village = { tag = MOS level = 1 location = novosil }
 	
+	caravanserai = { tag = GLH level = 1 location = khadjibey }
+	tribal_war_camp = { tag = GLH level = 1 location =  khadjibey }
+	tribal_market_villages = { tag = GLH level = 1 location =  khadjibey }
+
+	caravanserai = { tag = GLH level = 1 location = qarasuvbazar }
+	tribal_war_camp = { tag = GLH level = 1 location =  qarasuvbazar }
+	tribal_market_villages = { tag = GLH level = 1 location =  qarasuvbazar }
+
+	caravanserai = { tag = GLH level = 1 location = melitopol }
+	tribal_war_camp = { tag = GLH level = 1 location =  melitopol }
+	tribal_market_villages = { tag = GLH level = 1 location =  melitopol }
+
+	caravanserai = { tag = GLH level = 1 location = shyrokyne }
+	tribal_war_camp = { tag = GLH level = 1 location =  shyrokyne }
+	tribal_market_villages = { tag = GLH level = 1 location =  shyrokyne }
+
+	tribal_war_camp = { tag = GLH level = 1 location =  oleksandrivka }
+	tribal_market_villages = { tag = GLH level = 1 location =  oleksandrivka }
 
 #Tribal Buildings
 	tribal_war_camp = { tag = GLH level = 1 location =  yenotayevka }
