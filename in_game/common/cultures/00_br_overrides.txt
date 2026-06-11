@@ -341,18 +341,56 @@ REPLACE_OR_CREATE:albanian = {
 	}
 }
 
-#arvanite = {
-#	language = albanian_language
-#	
-#	color = map_arvanite
-#	
-#	tags = { east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
-#
-#	opinions = {
-#		albanian = kindred
-#		greek_culture = positive
-#	}
-#}
+REPLACE_OR_CREATE:arvanite = {
+	language = albanian_language
+	
+	color = map_arvanite
+	
+	tags = { east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		albanian = kindred
+		#greek_culture = positive
+	}
+	culture_groups = {
+		illyrian_group
+	}
+}
+
+REPLACE_OR_CREATE:sclavene = { 
+	language = serbian_dialect
+	
+	color = map_sclavene
+	
+	tags = { south_slavic_gfx east_mediterranean_gfx mediterranean_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	opinions = { 
+		#greek_culture = positive #regularly revolted
+	}	
+	culture_groups = {
+		slavic_group
+		south_slavic_group
+	}
+}
+
+REPLACE_OR_CREATE:aromanian = { 
+	language = romanian_language
+	
+	color = map_aromanian
+	
+	tags = { romanian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		istroromanian = kindred
+		moldovan = kindred
+		transylvanian = kindred
+		wallachian = kindred
+	}	
+	culture_groups = {
+		romanian_group
+	}
+}
+
 
 REPLACE_OR_CREATE:bulgarian = { 
 	language = bulgarian_language
