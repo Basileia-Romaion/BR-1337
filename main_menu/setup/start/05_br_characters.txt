@@ -5,7 +5,7 @@ character_db={
 
 #ERE
 	br_ere_rdm_character_00 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1301.1.1
@@ -19,7 +19,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_01 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1301.1.1
@@ -33,7 +33,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_02 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = varangian
 		religion = orthodox
 		birth_date = 1301.1.1
@@ -48,7 +48,7 @@ character_db={
 		admiral_trait = accomplished_sailor
 	}
 	br_ere_rdm_character_03 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = varangian
 		religion = orthodox
 		birth_date = 1301.1.1
@@ -63,7 +63,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_04 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = latinoi
 		religion = catholic
 		estate = burghers_estate
@@ -78,7 +78,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_05 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = latinoi
 		religion = catholic
 		estate = burghers_estate
@@ -93,7 +93,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_06 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = latinoi
 		religion = catholic
 		#estate = burghers_estate
@@ -108,7 +108,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_07 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = latinoi
 		religion = catholic
 		#estate = burghers_estate
@@ -123,7 +123,7 @@ character_db={
 	}
 
 	br_ere_rdm_character_08 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -136,7 +136,7 @@ character_db={
 		tag = BYZ
 	}
 	br_ere_rdm_character_09 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -149,7 +149,7 @@ character_db={
 		tag = BYZ
 	}
 	br_ere_rdm_character_10 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -162,7 +162,7 @@ character_db={
 		tag = BYZ
 	}
 	br_ere_rdm_character_11 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		#estate = clergy_estate
@@ -175,7 +175,7 @@ character_db={
 		ruler_trait = eunuch
 	}
 	br_ere_rdm_character_12 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		#estate = clergy_estate
@@ -189,7 +189,7 @@ character_db={
 		ruler_trait = eunuch
 	}
 	br_ere_rdm_character_13 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		#estate = clergy_estate
@@ -203,7 +203,7 @@ character_db={
 		#ruler_trait = eunuch
 	}
 	br_ere_rdm_character_14 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		#estate = clergy_estate
@@ -217,7 +217,7 @@ character_db={
 		#ruler_trait = eunuch
 	}
 	br_ere_rdm_character_15 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		#estate = clergy_estate
@@ -290,7 +290,7 @@ character_db={
 
  #argyros_dynasty
 	br_ere_rdm_character_20 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1291.1.1
@@ -299,7 +299,7 @@ character_db={
 		tag = AN12
 	}
 	br_ere_rdm_character_21 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1309.1.1
@@ -309,7 +309,7 @@ character_db={
 		tag = AN12
 	}
 	br_ere_rdm_character_22 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1311.1.1
@@ -319,7 +319,7 @@ character_db={
 		tag = AN12
 	}
 	br_ere_rdm_character_23 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -331,7 +331,7 @@ character_db={
 	}
  #phokas_dynasty
 	br_ere_rdm_character_24 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1298.1.1
@@ -340,7 +340,7 @@ character_db={
 		tag = AN8
 	}
 	br_ere_rdm_character_25 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1307.1.1
@@ -350,7 +350,7 @@ character_db={
 		tag = AN7
 	}
 	br_ere_rdm_character_26 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1319.1.1
@@ -360,7 +360,7 @@ character_db={
 		tag = AN1
 	}
 	br_ere_rdm_character_27 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -372,7 +372,7 @@ character_db={
 	}
  #skleros_dynasty
 	br_ere_rdm_character_28 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -381,7 +381,7 @@ character_db={
 		tag = AN13
 	}
 	br_ere_rdm_character_29 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1312.1.1
@@ -391,7 +391,7 @@ character_db={
 		tag = AN13
 	}
 	br_ere_rdm_character_30 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1321.1.1
@@ -401,7 +401,7 @@ character_db={
 		tag = AN13
 	}
 	br_ere_rdm_character_31 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -413,7 +413,7 @@ character_db={
 	}
  #kourkouas_dynasty
 	br_ere_rdm_character_32 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1299.1.1
@@ -422,7 +422,7 @@ character_db={
 		tag = AN10
 	}
 	br_ere_rdm_character_33 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1316.1.1
@@ -432,7 +432,7 @@ character_db={
 		tag = AN10
 	}
 	br_ere_rdm_character_34 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1322.1.1
@@ -442,7 +442,7 @@ character_db={
 		tag = AN10
 	}
 	br_ere_rdm_character_35 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		female = yes
@@ -462,7 +462,7 @@ character_db={
 	}
  #doukas
 	br_ere_rdm_character_37 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = boulgaroi
 		religion = orthodox
 		birth_date = 1297.1.1
@@ -471,7 +471,7 @@ character_db={
 		tag = B0L
 	}
 	br_ere_rdm_character_38 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = boulgaroi
 		religion = orthodox
 		birth_date = 1308.1.1
@@ -481,7 +481,7 @@ character_db={
 		tag = WA2
 	}
 	br_ere_rdm_character_39 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = boulgaroi
 		religion = orthodox
 		birth_date = 1309.1.1
@@ -492,7 +492,7 @@ character_db={
 	}
  #Angelos
 	br_ere_rdm_character_40 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -503,7 +503,7 @@ character_db={
 		tag = ACH
 	}
 	br_ere_rdm_character_41 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1306.1.1
@@ -514,7 +514,7 @@ character_db={
 		tag = ACH
 	}
 	br_ere_rdm_character_42 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -527,7 +527,7 @@ character_db={
 
  #Maleinos
 	br_ere_rdm_character_43 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -536,7 +536,7 @@ character_db={
 		tag = AN4
 	}
 	br_ere_rdm_character_44 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1313.1.1
@@ -546,7 +546,7 @@ character_db={
 		tag = AN4
 	}
 	br_ere_rdm_character_45 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1313.1.1
@@ -556,7 +556,7 @@ character_db={
 		tag = AN4
 	}
 	br_ere_rdm_character_46 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1327.1.1
@@ -566,7 +566,7 @@ character_db={
 		tag = AN4
 	}
 	br_ere_rdm_character_47 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1327.1.1
@@ -577,7 +577,7 @@ character_db={
 	}
  #Hexakionites
 	br_ere_rdm_character_48 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -586,7 +586,7 @@ character_db={
 		tag = S2C
 	}
 	br_ere_rdm_character_49 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1313.1.1
@@ -596,7 +596,7 @@ character_db={
 		tag = S2C
 	}
 	br_ere_rdm_character_50 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1316.1.1
@@ -607,7 +607,7 @@ character_db={
 	}
  #Maniakes
 	br_ere_rdm_character_51 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -616,7 +616,7 @@ character_db={
 		tag = S1C
 	}
 	br_ere_rdm_character_52 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1313.1.1
@@ -626,7 +626,7 @@ character_db={
 		tag = S1C
 	}
 	br_ere_rdm_character_53 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1316.1.1
@@ -637,7 +637,7 @@ character_db={
 	}
  #Boioannes
 	br_ere_rdm_character_54 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -646,7 +646,7 @@ character_db={
 		tag = S3C
 	}
 	br_ere_rdm_character_55 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1312.1.1
@@ -656,7 +656,7 @@ character_db={
 		tag = S3C
 	}
 	br_ere_rdm_character_56 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -666,7 +666,7 @@ character_db={
 		tag = S3C
 	}
 	br_ere_rdm_character_57 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -678,7 +678,7 @@ character_db={
 	}
  #Vatatzes
 	br_ere_rdm_character_58 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -687,7 +687,7 @@ character_db={
 		tag = AN9
 	}
 	br_ere_rdm_character_59 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1312.1.1
@@ -697,7 +697,7 @@ character_db={
 		tag = AN9
 	}
 	br_ere_rdm_character_60 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -707,7 +707,7 @@ character_db={
 		tag = AN9
 	}
 	br_ere_rdm_character_61 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -719,7 +719,7 @@ character_db={
 	}
  #Laskaris
 	br_ere_rdm_character_62 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -729,7 +729,7 @@ character_db={
 		tag = ICO
 	}
 	br_ere_rdm_character_63 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1312.1.1
@@ -739,7 +739,7 @@ character_db={
 		tag = ICO
 	}
 	br_ere_rdm_character_64 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -749,7 +749,7 @@ character_db={
 		tag = ICO
 	}
 	br_ere_rdm_character_65 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -761,7 +761,7 @@ character_db={
 	}
  #Tornikios
 	br_ere_rdm_character_66 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -770,7 +770,7 @@ character_db={
 		tag = AN2
 	}
 	br_ere_rdm_character_67 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -780,7 +780,7 @@ character_db={
 		tag = AN2
 	}
 	br_ere_rdm_character_68 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -792,7 +792,7 @@ character_db={
 	}
  #Bryennios
 	br_ere_rdm_character_69 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -801,7 +801,7 @@ character_db={
 		tag = PAF
 	}
 	br_ere_rdm_character_70 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -811,7 +811,7 @@ character_db={
 		tag = PAF
 	}
 	br_ere_rdm_character_71 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -823,7 +823,7 @@ character_db={
 	}
  #Botaneiates
 	br_ere_rdm_character_72 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -832,7 +832,7 @@ character_db={
 		tag = AN5
 	}
 	br_ere_rdm_character_73 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -842,7 +842,7 @@ character_db={
 		tag = AN5
 	}
 	br_ere_rdm_character_74 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -854,7 +854,7 @@ character_db={
 	}
  #Armenopoulos
 	br_ere_rdm_character_75 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -863,7 +863,7 @@ character_db={
 		tag = AN3
 	}
 	br_ere_rdm_character_76 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -873,7 +873,7 @@ character_db={
 		tag = AN3
 	}
 	br_ere_rdm_character_77 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -885,7 +885,7 @@ character_db={
 	}
  #Rangabes
 	br_ere_rdm_character_78 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -894,7 +894,7 @@ character_db={
 		tag = S5C
 	}
 	br_ere_rdm_character_79 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -904,7 +904,7 @@ character_db={
 		tag = S5C
 	}
 	br_ere_rdm_character_80 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -916,7 +916,7 @@ character_db={
 	}
  #Rogerios
 	br_ere_rdm_character_81 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -925,7 +925,7 @@ character_db={
 		tag = N3P
 	}
 	br_ere_rdm_character_82 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -935,7 +935,7 @@ character_db={
 		tag = N3P
 	}
 	br_ere_rdm_character_83 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = greek_culture
 		religion = orthodox
@@ -947,7 +947,7 @@ character_db={
 	}
  #Makrembolites
 	br_ere_rdm_character_84 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -956,7 +956,7 @@ character_db={
 		tag = MKB
 	}
 	br_ere_rdm_character_85 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -966,7 +966,7 @@ character_db={
 		tag = MKB
 	}
 	br_ere_rdm_character_86 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1319.1.1
@@ -976,7 +976,7 @@ character_db={
 		tag = MKB
 	}
 	br_ere_rdm_character_87 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1322.1.1
@@ -986,7 +986,7 @@ character_db={
 		tag = MKB
 	}
 	br_ere_rdm_character_88 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1328.1.1
@@ -997,7 +997,7 @@ character_db={
 	}
  #Notaras
 	br_ere_rdm_character_89 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1294.1.1
@@ -1006,7 +1006,7 @@ character_db={
 		tag = CHY
 	}
 	br_ere_rdm_character_90 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1317.1.1
@@ -1016,7 +1016,7 @@ character_db={
 		tag = CHY
 	}
 	br_ere_rdm_character_91 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1319.1.1
@@ -1026,7 +1026,7 @@ character_db={
 		tag = CHY
 	}
 	br_ere_rdm_character_92 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1322.1.1
@@ -1036,7 +1036,7 @@ character_db={
 		tag = CHY
 	}
 	br_ere_rdm_character_94 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1301.1.1
@@ -1048,7 +1048,7 @@ character_db={
 		tag = BYZ
 	}
 	br_ere_rdm_character_95 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1296.1.1
@@ -1060,7 +1060,7 @@ character_db={
 		tag = BYZ
 	}
 	br_ere_rdm_character_96 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1297.1.1
@@ -1071,7 +1071,7 @@ character_db={
 		tag = HE1
 	}
 	br_ere_rdm_character_97 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		adm = 45 dip = 77 mil = 80
@@ -1081,7 +1081,7 @@ character_db={
 		tag = AON
 	}
 	br_ere_rdm_character_98 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1284.1.1
@@ -1092,7 +1092,7 @@ character_db={
 		tag = AN11
 	}
 	br_ere_rdm_character_99 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		adm = 40 dip = 36 mil = 45
@@ -1104,7 +1104,7 @@ character_db={
 		tag = THE
 	}
 	br_ere_rdm_character_100 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = greek_culture
 		religion = orthodox
 		birth_date = 1322.1.1 # Married 1341
@@ -1118,7 +1118,7 @@ character_db={
 
 #Balkans	
 	br_balkan_rdm_character_1 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = bulgarian
 		religion = orthodox
 		adm = 28 dip = 17 mil = 22
@@ -1130,7 +1130,7 @@ character_db={
 		tag = SE1
 	}
 	br_balkan_rdm_character_2 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = bulgarian
 		religion = orthodox
 		birth_date = 1323.1.1
@@ -1141,7 +1141,7 @@ character_db={
 		tag = WA1
 	}
 	br_balkan_rdm_character_3 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = bulgarian
 		religion = orthodox
 		birth_date = 1325.1.1
@@ -1152,7 +1152,7 @@ character_db={
 		tag = WA0
 	}
 	br_balkan_rdm_character_4 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = bulgarian
 		religion = orthodox
 		birth_date = 1327.1.1
@@ -1163,7 +1163,7 @@ character_db={
 		tag = SE2
 	}
 	br_balkan_rdm_character_5 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		last_name = { name = Komnin_Asen }
 		culture = bulgarian
 		religion = orthodox
@@ -1177,7 +1177,7 @@ character_db={
 	}
 	
 	br_balkan_rdm_character_6 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = bulgarian
 		religion = orthodox
 		birth_date = 1312.1.1
@@ -1193,7 +1193,7 @@ character_db={
 #Naples
  #Hauteville
 	br_nap_rdm_character_1 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = neapolitan
 		religion = catholic
 		birth_date = 1294.1.1
@@ -1202,7 +1202,7 @@ character_db={
 		tag = BNV
 	}
 	br_nap_rdm_character_2 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = neapolitan
 		religion = catholic
 		birth_date = 1318.1.1
@@ -1212,7 +1212,7 @@ character_db={
 		tag = N1P
 	}
 	br_nap_rdm_character_3 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = neapolitan
 		religion = catholic
 		birth_date = 1319.1.1
@@ -1222,7 +1222,7 @@ character_db={
 		tag = N2P
 	}
 	br_nap_rdm_character_4 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = neapolitan
 		religion = catholic
@@ -1233,7 +1233,7 @@ character_db={
 		tag = BNV
 	}
 	br_nap_rdm_character_5 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		female = yes
 		culture = neapolitan
 		religion = catholic
@@ -1289,7 +1289,7 @@ character_db={
 		tag = E1Y
 	}
 	br_ely_rdm_character_00 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1303,7 +1303,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_01 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1317,7 +1317,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_02 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1331,7 +1331,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_03 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1345,7 +1345,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_04 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1359,7 +1359,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_05 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		birth_date = 1319.1.1
@@ -1373,7 +1373,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_06 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1387,7 +1387,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_07 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = aureliani
 		religion = hellenism_religion
 		female = yes
@@ -1401,7 +1401,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_08 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = hellenism_religion
 		female = yes
@@ -1415,7 +1415,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_09 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = hellenism_religion
 		female = yes
@@ -1429,7 +1429,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_10 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = hellenism_religion
 		female = yes
@@ -1444,7 +1444,7 @@ character_db={
 
 	#E2Y
 	br_ely_rdm_character_11 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1458,7 +1458,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_12 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1472,7 +1472,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_13 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1486,7 +1486,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_14 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1500,7 +1500,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_15 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1514,7 +1514,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_16 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		birth_date = 1319.1.1
@@ -1528,7 +1528,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_17 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = photianoi
 		religion = orthodox
 		female = yes
@@ -1542,7 +1542,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_18 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = orthodox
 		female = yes
@@ -1556,7 +1556,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_19 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = orthodox
 		female = yes
@@ -1570,7 +1570,7 @@ character_db={
 	}
 
 	br_ely_rdm_character_20 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = orthodox
 		female = yes
@@ -1585,7 +1585,7 @@ character_db={
 
 	#K1K
 	br_ely_rdm_character_21 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = kykladian_culture
 		religion = hellenism_religion
 		female = yes
@@ -1598,7 +1598,7 @@ character_db={
 		tag = K1K
 	}
 	br_ely_rdm_character_22 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = kykladian_culture
 		religion = hellenism_religion
 		female = yes
@@ -1611,7 +1611,7 @@ character_db={
 		tag = K1K
 	}
 	br_ely_rdm_character_23 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = kykladian_culture
 		religion = hellenism_religion
 		female = yes
@@ -1624,7 +1624,7 @@ character_db={
 		tag = K1K
 	}
 	br_ely_rdm_character_24 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = kykladian_culture
 		religion = hellenism_religion
 		female = yes
@@ -1637,7 +1637,7 @@ character_db={
 		tag = K1K
 	}
 	br_ely_rdm_character_25 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = hellenism_religion
 		female = yes
@@ -1650,7 +1650,7 @@ character_db={
 		tag = K1K
 	}
 	br_ely_rdm_character_26 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = elyrics_culture
 		religion = hellenism_religion
 		female = yes
@@ -1677,7 +1677,7 @@ character_db={
 
 #NSE
 	br_nse_character_0 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = norwegian
 		religion = catholic
 		birth_date = 1301.1.1
@@ -1691,7 +1691,7 @@ character_db={
 		admiral_trait = accomplished_sailor
 	}
 	br_nse_character_03 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = norwegian
 		religion = catholic
 		birth_date = 1331.1.1
@@ -1704,7 +1704,7 @@ character_db={
 	}
 
 	br_nse_character_01 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = danish
 		religion = catholic
 		birth_date = 1301.1.1
@@ -1718,7 +1718,7 @@ character_db={
 		admiral_trait = accomplished_sailor
 	}
 	br_nse_character_04 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = danish
 		religion = catholic
 		birth_date = 1331.1.1
@@ -1731,7 +1731,7 @@ character_db={
 	}
 
 	br_nse_character_02 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = anglo_norse_culture
 		religion = catholic
 		birth_date = 1301.1.1
@@ -1745,7 +1745,7 @@ character_db={
 		admiral_trait = accomplished_sailor
 	}
 	br_nse_character_05 = {
-		first_name = "random"
+		first_name = { name = "random" }
 		culture = anglo_norse_culture
 		religion = catholic
 		birth_date = 1331.1.1
