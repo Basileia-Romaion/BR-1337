@@ -20,6 +20,9 @@ REPLACE_OR_CREATE:cappadocian_greek_culture = {
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
 		armenian_culture = positive
+
+		turkish_culture = negative
+		turkoman_culture = negative
 	}
 	country_modifier = {
 		army_heavy_infantry_power = 0.1
@@ -53,9 +56,11 @@ REPLACE_OR_CREATE:greek_culture = {
 		varangian = positive
 		romanyoti = positive
 		armenian_culture = positive
+		aromanian = positive
 
 		sclavene = negative
 		bulgarian = negative
+		turkish_culture = negative
 
 	}
 	country_modifier = {
@@ -135,6 +140,9 @@ REPLACE_OR_CREATE:pontic_greek_culture = {
 		gothic_culture = positive
 		laz_culture = positive
 		armenikon_greek_culture = positive
+
+		turkish_culture = negative
+		turkoman_culture = negative
 	}
 	country_modifier = {
 		expand_rgo_mining_cost_modifier = -0.1
@@ -186,6 +194,9 @@ anatolian_greek_culture = { #BR addition
 		kilikioi_greek_culture = positive
 		syrenikoi_greek_culture = positive
 		armenian_culture = positive
+
+		turkish_culture = negative
+		turkoman_culture = negative
 	}
 
 	country_modifier = {
@@ -285,6 +296,9 @@ syrenikoi_greek_culture = {
 		aegyptian_greek_culture = positive
 		cappadocian_greek_culture = positive
 		syriac_culture = kindred
+
+		turkish_culture = negative
+		turkoman_culture = negative
 	}
 	country_modifier = {
 		global_trade_center_power = 0.05
@@ -425,6 +439,9 @@ armenikon_greek_culture = { #BR addition
 		pontic_greek_culture = kindred
 		kilikioi_greek_culture = positive
 		armenian_culture = kindred
+
+		turkish_culture = negative
+		turkoman_culture = negative
 	}
 	country_modifier = {
 		land_unit_attrition = -0.25
