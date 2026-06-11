@@ -273,7 +273,8 @@ REPLACE_OR_CREATE:legacy_of_genghis = {
 		army_light_cavalry_maintenance_cost_modifier = -0.2
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_horde_unity = 0.25
-		tribes_estate_levy_size = 0.5
+		court_spending_efficiency = 0.25
+		#tribes_estate_levy_size = 0.5
 	}
 
 	years = 2
