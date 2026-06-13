@@ -105,10 +105,44 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 			}
 		}
-		#c:GTC = {
-		#	capital = {
-		#	}
-		#}
+		c:GTC = {
+			capital = {
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+			}
+		}
 		c:VEN = {
 			capital = {
 				create_sub_unit = unit_type:n_barque
@@ -157,10 +191,44 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 			}
 		}
-		#c:VTC = {
-		#	capital = {
-		#	}
-		#}
+		c:VTC = {
+			capital = {
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+			}
+		}
 		c:KNI = {
 			add_casus_belli = {
 				target = c:AD2

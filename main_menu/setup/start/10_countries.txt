@@ -3987,6 +3987,22 @@ countries = {
 			armavir
 			qarasuvbazar
 			ismail
+
+			#Formerly BR subjects
+
+			kichkas rozdory hryshyne pavlohrad 
+			yelanets usivka mala_vyska umanske ingul petrove 
+			karlivka kolomak berestyn samarchyk oril ternivka
+			kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
+			adalaga barvinkove
+			donets_kharkiv zmiiv chuhuiv
+			okhtyrka kotelva khotmyzh
+			kursk fatezh kosozhichi olgov
+			manturovo_kursk troitskoye_na_shchigrakh
+			opalkova
+			belgorod rakitnoye muzhech sudzha oboyan
+			tula_russia bogoroditsk arkhangelskoye kurkino donkov yelets talitsa_yelets gogol
+			ust_livny
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"
@@ -4214,11 +4230,11 @@ countries = {
 
 	GAZ = {	# Gazaria
 		own_control_core = {
-			tana kaffa vosporo
+			kaffa vosporo
 			taman
 		}
 		our_cores_conquered_by_others = {
-			amasra
+			amasra tana
 		}
 
 		starting_technology_level = 3
@@ -12564,7 +12580,8 @@ countries = {
 		include = "br_pronoia_template"
 		government = {
 			ruler = br_ere_rdm_character_96
-			ruler_term = { character = br_ere_rdm_character_96 start_date = 1329.9.25 } 
+			ruler_term = { character = br_ere_rdm_character_96 start_date = 1329.9.25 }
+			#heir_selection = dynastic_elective_succession
 		}
 
 		tolerated_cultures = {
@@ -12623,33 +12640,31 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_bishopric"
+		include = "catholic_bishopric_"
 		government = {
-			type = theocracy
-
 			ruler = random
 
 			#ruler_term = { character = pat_guglielmo_frangipani start_date = 1317.1.3 regnal_number = 1 }
 
-			regnal_numbers = {
-				#Antelm = 1
-				name_bernard = 1
-				name_godfrey = 1
-				name_benedict = 1
-				name_john = 2
-				name_james = 1
-				name_rayner = 1
-				name_william = 1
-			}
-			reforms = {
-				partitio_reform
-			}
-			laws = {
-				legal_code_law = assizes_of_romania_policy
-			}
-			privilege = {
-				lat_latin_crusader_elite
-			}
+			#regnal_numbers = {
+				##Antelm = 1
+				#name_bernard = 1
+				#name_godfrey = 1
+				#name_benedict = 1
+				#name_john = 2
+				#name_james = 1
+				#name_rayner = 1
+				#name_william = 1
+			#}
+			#reforms = {
+				#partitio_reform
+			#}
+			#laws = {
+				#legal_code_law = assizes_of_romania_policy
+			#}
+			#privilege = {
+				#lat_latin_crusader_elite
+			#}
 		}
 
 		tolerated_cultures = {
@@ -12662,7 +12677,6 @@ countries = {
 	CEP = {
 		own_control_core = {
 			zakynthos leukas cephalonia
-			modon kythira
 		}
 
 		starting_technology_level = 3
@@ -12686,6 +12700,7 @@ countries = {
 				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
+				br_reconquista_privilege
 
 				peasants_protected_faith
 				peasants_autonomous_villages
@@ -12761,8 +12776,6 @@ countries = {
 	NAX = { #https://en.wikipedia.org/wiki/Duchy_of_the_Archipelago
 		own_control_core = {
 			naxos kythnos milos
-			andros mykonos amorgos
-			samos ikaria foca
 		}
 
 		starting_technology_level = 3
@@ -12802,6 +12815,7 @@ countries = {
 			}
 			privilege = {
 				lat_latin_crusader_elite
+				br_reconquista_privilege
 
 				feudal_mercenary_contracts
 				increased_civic_engagement
@@ -12909,6 +12923,7 @@ countries = {
 		include = "br_pronoia_template"
 		government = {
 			ruler = br_ere_rdm_character_99
+			heir_selection = dynastic_elective_succession
 			
 			ruler_term = { character = the_bonifacio_i_monferrato start_date = 1204.5.16 end_date = 1207.1.1 regnal_number = 1 }
 			ruler_term = { character = sic_demetrio_i_thessalonica start_date = 1207.1.1 end_date = 1224.12.1 regnal_number = 1 }
@@ -13444,16 +13459,16 @@ countries = {
 			#end_regency_date = 1341.1.1
 			#heir = alb_charles_durazzo
 
-			ruler_term = { character = nap_charles_i_anjou start_date = 1272.2.1 end_date = 1285.1.7 regnal_number = 1 }
-			ruler_term = { character = nap_carlo_ii_anjou start_date = 1285.1.7 end_date = 1294.8.13 regnal_number = 2 }
-			ruler_term = { character = alb_filippo_i_taranto start_date = 1294.8.13 end_date = 1332.12.23 regnal_number = 1 }
-			ruler_term = { character = ach_robert_taranto start_date = 1332.12.23 end_date = 1333.1.1 regnal_number = 1 }
-			ruler_term = { character = alb_john_gravina start_date = 1333.1.1 end_date = 1336.4.5 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_john = 1
-				name_charles = 1
-			}
+			#ruler_term = { character = nap_charles_i_anjou start_date = 1272.2.1 end_date = 1285.1.7 regnal_number = 1 }
+			#ruler_term = { character = nap_carlo_ii_anjou start_date = 1285.1.7 end_date = 1294.8.13 regnal_number = 2 }
+			#ruler_term = { character = alb_filippo_i_taranto start_date = 1294.8.13 end_date = 1332.12.23 regnal_number = 1 }
+			#ruler_term = { character = ach_robert_taranto start_date = 1332.12.23 end_date = 1333.1.1 regnal_number = 1 }
+			#ruler_term = { character = alb_john_gravina start_date = 1333.1.1 end_date = 1334.4.5 regnal_number = 1 }
+#
+			#regnal_numbers = {
+				#name_john = 1
+				#name_charles = 1
+			#}
 		}
 
 		tolerated_cultures = {
@@ -13502,7 +13517,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_albanian_tribes_privilege
 			}
 			centralization_vs_decentralization = 75
 			serfdom_vs_free_subjects = 75
@@ -13562,7 +13577,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_albanian_tribes_privilege
 			}
 			centralization_vs_decentralization = 75
 			serfdom_vs_free_subjects = 75
@@ -13596,14 +13611,12 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
+			ruler = mzk_mentulo_muzaka
 
-			regency = consort_regency
-			active_regent = alb_agnes_perigord
-			start_regency_date = 1336.4.5
-			end_regency_date = 1341.1.1
-			heir = alb_charles_durazzo
+			ruler_term = { character = mzk_andrea_i_muzaka start_date = 1279.1.1 end_date = 1319.1.1 regnal_number = 1 }
+			ruler_term = { character = mzk_teodor_i_muzaka start_date = 1319.1.1 end_date = 1331.1.1 regnal_number = 1 }
+			ruler_term = { character = mzk_mentulo_muzaka start_date = 1331.1.1 regnal_number = 2 }
 
-			ruler_term = { character = nap_charles_i_anjou start_date = 1272.2.1 end_date = 1285.1.7 regnal_number = 1 }
 			reforms = {
 				local_army_organization
 			}
@@ -13621,7 +13634,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_albanian_tribes_privilege
 			}
 			centralization_vs_decentralization = 75
 			serfdom_vs_free_subjects = 75
@@ -13677,7 +13690,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_albanian_tribes_privilege
 			}
 			centralization_vs_decentralization = 75
 			serfdom_vs_free_subjects = 75
@@ -13794,7 +13807,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_slavic_tribes_privilege
 			}
 			laws = {
 				feudal_de_jure_law = by_tradition
@@ -13928,7 +13941,7 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
+				br_slavic_tribes_privilege
 			}
 			centralization_vs_decentralization = 75
 			serfdom_vs_free_subjects = 75
@@ -14475,7 +14488,7 @@ countries = {
 		include = "br_pronoia_template"
 		government = {
 			ruler = br_ere_rdm_character_13
-			ruler_term = { character = br_ere_rdm_character_13 start_date = 1331.9.25 } 
+			ruler_term = { character = br_ere_rdm_character_13 start_date = 1331.9.25 }
 		}
 		
 		country_rank = rank_duchy
@@ -14611,7 +14624,7 @@ countries = {
 			puigcerda prades montpellier perpignan
 			vielha
 			zaragoza ariza belchite carinena calatayud daroca tarazona
-			palma ciudadela_de_menorca ibiza manacor pollensa #Majorca
+			palma ibiza manacor pollensa #Majorca
 			castellon_de_la_plana ares_del_maestre llucena morella peniscola
 			teruel albarracin alcaniz alfambra cantavieja montalban mora_de_rubielos valderrobres
 		}
@@ -14971,7 +14984,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = random
+			ruler = cas_alfonso_xi_burgundy
+			heir = cas_pedro_i_burgundy
 			
 			ruler_term = { character = lon_pelagio_asturias start_date = 718.9.8 end_date = 737.1.1 regnal_number = 1 }
 			ruler_term = { character = lon_favila_asturias start_date = 737.1.1 end_date = 739.1.1 regnal_number = 1 }
@@ -15019,6 +15033,7 @@ countries = {
 			#ruler_term = { character = cas_alfonso_x_burgundy start_date = 1252.5.30 end_date = 1284.4.4 regnal_number = 10 }
 			#ruler_term = { character = cas_sancho_iv_burgundy start_date = 1284.4.4 end_date = 1295.4.25 regnal_number = 4 }
 			#ruler_term = { character = cas_fernando_iv_burgundy start_date = 1295.4.25 end_date = 1312.9.7 regnal_number = 4 }
+			ruler_term = { character = cas_alfonso_xi_burgundy start_date = 1312.9.7 regnal_number = 11 }
 
 			regnal_numbers = {
 				name_pelagius = 1
@@ -19307,6 +19322,9 @@ countries = {
 				br_reconquista_privilege
 				#Burghers
 				br_latinoi_privateers
+				br_latin_occupiers
+				br_latinoi_navy
+				br_latinoi_army
 				privateer_contracts #By the mid/late point of the 14th century Rhodes had become one of the major naval bases in the eastern Mediterranean specifically structured to support Hospitaller corsair operations and fleet maintenance.
 
 			}
@@ -19324,7 +19342,10 @@ countries = {
 
 	NEG = { #Negroponte https://en.wikipedia.org/wiki/Triarchy_of_Negroponte
 		own_control_core = {
-			negroponte kleisoura karystos kymi oreos eretreia
+			negroponte kleisoura kymi oreos eretreia
+		}
+		our_cores_conquered_by_others = {
+			karystos
 		}
 
 		starting_technology_level = 3
@@ -19378,6 +19399,7 @@ countries = {
 				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
+				br_reconquista_privilege
 
 				peasants_protected_faith
 				peasants_autonomous_villages
@@ -19401,7 +19423,7 @@ countries = {
 			gold = 1500
 		}
 		court_language = venetian_dialect
-		capital = karystos
+		capital = negroponte
 	}
 
 	SAO = { #Salona #removed
@@ -33083,8 +33105,8 @@ countries = {
 		include = "expl_indian_trade_route"
 		include = "br_pronoia_template"
 		government = {
-			ruler = tre_ioannes_iii_komnenos
-			ruler_term = { character = tre_ioannes_iii_komnenos start_date = 1335.1.1 }
+			ruler = br_ere_rdm_character_102
+			ruler_term = { character = br_ere_rdm_character_102 start_date = 1335.1.1 }
 		}
 
 		accepted_cultures = {
@@ -33987,7 +34009,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 
@@ -50989,7 +51010,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 			
 			laws = {
@@ -51065,7 +51085,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -51135,7 +51154,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 
@@ -51356,7 +51374,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		liturgical_language = armenian_language
@@ -51434,7 +51451,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 
 		}
@@ -51660,7 +51676,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		liturgical_language = armenian_language
@@ -51727,7 +51742,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		liturgical_language = armenian_language
@@ -51790,7 +51804,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -53716,6 +53729,7 @@ countries = {
 				embellish_great_works_of_faith
 				clergy_land_rights
 				freedom_of_interpretation
+				br_ghazi_privilege
 				
 				#Burghers
 				formal_guilds
@@ -53750,7 +53764,6 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
-		 #accepted_cultures = { arab_sicilian }
 		tolerated_cultures = {
 			griko_culture
 			sardinian
@@ -53761,12 +53774,17 @@ countries = {
 	}
 	
 	GTC = { 
-		#our_cores_conquered_by_others = { chios lemnos amasra tana samos ikaria foca }
+		own_control_core = {
+			samos ikaria foca
+			tana
+			chios cesme
+		}
+		our_cores_conquered_by_others = { lemnos amasra }
 		
 		type = building
 		starting_technology_level = 3
 		
-		capital = kaffa
+		capital = tana
 
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -53803,6 +53821,7 @@ countries = {
 				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
+				br_latin_occupiers
 
 				peasants_protected_faith
 				peasants_autonomous_villages
@@ -53816,14 +53835,17 @@ countries = {
 				shipwright_contracts
 				market_fairs
 				br_special_trade_companies
+				br_latinoi_privateers
+				br_latinoi_navy
+				br_latinoi_army	
 			}
 
 			centralization_vs_decentralization = 25
 			aristocracy_vs_plutocracy = 100
-			serfdom_vs_free_subjects = 75
-			traditionalist_vs_innovative = 50
-			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 75
+			serfdom_vs_free_subjects = -10
+			traditionalist_vs_innovative = 75
+			spiritualist_vs_humanist = 75
+			mercantilism_vs_free_trade = 100
 			offensive_vs_defensive = 75
 			land_vs_naval = 100
 			quality_vs_quantity = -50
@@ -53831,6 +53853,7 @@ countries = {
 			capital_economy_vs_traditional_economy = -100
 			individualism_vs_communalism = -100
 			outward_vs_inward = -100
+
 		}
 		currency_data = {
 			gold = 2500
@@ -53841,13 +53864,17 @@ countries = {
 		country_rank = rank_duchy
 	}
 
-	VTC = { 
-		#our_cores_conquered_by_others = { andros mykonos amorgos karpathos samos ikaria foca }
+	VTC = {
+		own_control_core = {
+			karystos
+			modon kythira andros mykonos amorgos karpathos
+		}
+		#our_cores_conquered_by_others = { samos ikaria foca }
 
 		type = building
 		starting_technology_level = 3
 		
-		capital = candia
+		capital = karystos
 
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -53884,6 +53911,7 @@ countries = {
 				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
+				br_latin_occupiers
 
 				peasants_protected_faith
 				peasants_autonomous_villages
@@ -53897,14 +53925,17 @@ countries = {
 				shipwright_contracts
 				market_fairs
 				br_special_trade_companies
+				br_latinoi_privateers
+				br_latinoi_navy
+				br_latinoi_army
 			}
 
 			centralization_vs_decentralization = 25
 			aristocracy_vs_plutocracy = 100
-			serfdom_vs_free_subjects = 75
-			traditionalist_vs_innovative = 50
-			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 75 #Maybe it should be the other direction?
+			serfdom_vs_free_subjects = -10
+			traditionalist_vs_innovative = 75
+			spiritualist_vs_humanist = 75
+			mercantilism_vs_free_trade = 100
 			offensive_vs_defensive = 75
 			land_vs_naval = 100
 			quality_vs_quantity = -50
@@ -54490,9 +54521,9 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 		government = {
-			
-			ruler_term = { character = tre_michael_komnenos start_date = 1333.1.1 }
-			ruler = tre_michael_komnenos
+			ruler_term = { character = br_ere_rdm_character_101 start_date = 1333.1.1 }
+			ruler = br_ere_rdm_character_101
+
 		}
 		
 		accepted_cultures = {
@@ -54598,21 +54629,17 @@ countries = {
 
 	#Russia
 	ZAZ = { #Zaporozhia
-		type = army
-		
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			kichkas rozdory hryshyne pavlohrad 
 			yelanets usivka mala_vyska umanske ingul petrove 
 			karlivka kolomak berestyn samarchyk oril ternivka
 			kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
 			adalaga barvinkove
 		}
-		
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
 		include = "eurasian_horde"
 		court_language = ukrainian_dialect
-		
 		government = {
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
@@ -54620,7 +54647,6 @@ countries = {
 			reforms = {
 				cossacks_reform
 			}
-
 			privilege = {
 				cossack_identity
 				cossacks_land_rights
@@ -54633,7 +54659,6 @@ countries = {
 				cossacks_rada_autonomy
 				cossacks_register
 			}
-
 			centralization_vs_decentralization = 80
 			spiritualist_vs_humanist = -80
 			serfdom_vs_free_subjects = 80
@@ -54641,18 +54666,13 @@ countries = {
 			land_vs_naval = -100
 			individualism_vs_communalism = 80
 			outward_vs_inward = 80
-			
-			laws = {
-				marriage_law = monogamous_marriage
-				heir_religion_law = heir_same_religion
-			}
 		}
-		#timed_modifier = {
-		#	modifier = "br_levy_size_modifier"
-		#	start_date = 1333.1.1
-		#	date = 1338.1.1
-		#	size = 2
-		#}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1338.1.1
+			size = 2
+		}
 		capital = kodak
 	}
 	
@@ -54711,70 +54731,46 @@ countries = {
 	}
 	
 	RH1 = { #Tula Principality
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			tula_russia bogoroditsk arkhangelskoye kurkino donkov yelets talitsa_yelets gogol
 			ust_livny
 		}
-		
 		starting_technology_level = 3
 		country_rank = rank_county
-		
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = rya_ivan_ii_korotopol_rurikovich
-			ruler_term = { character = rya_ivan_ii_korotopol_rurikovich start_date = 1327.1.1 regnal_number = 2 }
+			ruler = random
 		}
-		
 		liturgical_language = church_slavonic_language
-		
-		tolerated_cultures = {
-		}
-		
 		capital = tula_russia
 		include = "russian_principality_no_coast"
 		include = "expl_novgorod"
 	}
 	
 	RH2 = { #Principality of Kursk
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			kursk fatezh kosozhichi olgov
 			manturovo_kursk troitskoye_na_shchigrakh
 			opalkova
 			belgorod rakitnoye muzhech sudzha oboyan
 		}
-		
 		starting_technology_level = 3
 		country_rank = rank_county
-		
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = bry_gleb_svyatoslavich_rurikovich
-			ruler_term = { character = bry_gleb_svyatoslavich_rurikovich start_date = 1333.1.1 regnal_number = 1 }
+			ruler = random
 		}
-		
 		liturgical_language = church_slavonic_language
-		
-		tolerated_cultures = {
-		}
-		
 		capital = kursk
 		include = "russian_principality_no_coast"
 		include = "expl_novgorod"
 	}
 
 	RH3 = { #Donets
-		type = army
-		
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			donets_kharkiv zmiiv chuhuiv
 			okhtyrka kotelva khotmyzh
 		}
-		
 		starting_technology_level = 3
 		country_rank = rank_county
-		
 		government = {
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
@@ -54782,7 +54778,6 @@ countries = {
 			reforms = {
 				cossacks_reform
 			}
-
 			privilege = {
 				cossack_identity
 				cossacks_land_rights
@@ -54795,7 +54790,6 @@ countries = {
 				cossacks_rada_autonomy
 				cossacks_register
 			}
-
 			centralization_vs_decentralization = 80
 			spiritualist_vs_humanist = -80
 			serfdom_vs_free_subjects = 80
@@ -54803,24 +54797,16 @@ countries = {
 			land_vs_naval = -100
 			individualism_vs_communalism = 80
 			outward_vs_inward = 80
-			
-			laws = {
-				marriage_law = monogamous_marriage
-				heir_religion_law = heir_same_religion
-			}
 		}
-		#timed_modifier = {
-		#	modifier = "br_levy_size_modifier"
-		#	start_date = 1333.1.1
-		#	date = 1338.1.1
-		#	size = 2
-		#}
-		
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1338.1.1
+			size = 2
+		}
 		liturgical_language = church_slavonic_language
-		
 		tolerated_cultures = {
 		}
-		
 		capital = donets_kharkiv
 		include = "expl_eastern_europe"
 		include = "eurasian_horde"
@@ -55042,7 +55028,8 @@ countries = {
 		include = "expl_indian_trade_route"
 		government = {
 			ruler = br_ere_rdm_character_12
-			ruler_term = { character = br_ere_rdm_character_12 start_date = 1329.9.25 } 
+			ruler_term = { character = br_ere_rdm_character_12 start_date = 1329.9.25 }
+			heir_selection = dynastic_elective_succession
 		}
 		
 		country_rank = rank_county
@@ -55094,10 +55081,10 @@ countries = {
 			canakkale
 			thasos sporades lemnos imbros molyvos mitilene
 			lapseki bayramic ayvacik
-			chios cesme
 		}
 
 		our_cores_conquered_by_others = {
+			chios cesme
 			samos ikaria foca
 			lemnos
 			andros mykonos amorgos
@@ -55645,7 +55632,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -55709,7 +55695,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -55776,7 +55761,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -55838,7 +55822,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -55900,7 +55883,6 @@ countries = {
 				tribes_pasture_access
 				tribes_tribal_levies
 				tribes_protected_faith
-				jaysh_armies
 			}
 		}
 		
@@ -55914,6 +55896,33 @@ countries = {
 		capital = ganja
 	}
 	
+	#AN14 = { #Armenian in Anatolia
+		#type = pop
+		#add_pops_from_locations = {
+			#kars_armenia
+			#anavarza sis caxud
+			#comana_cil hargan
+			#ayas 
+			#corycus candir_cil molevon
+			#adana
+			#tarsus
+			#kapan
+			#silifke anamur ermenek mut
+			#selinti
+			#nigde bor_tur
+			#develi
+			#ayntab
+			#kilis trapessac
+			#iskenderun
+		#}
+		#starting_technology_level = 3
+		#include = "expl_christian_caucasus"
+		#include = "eastern_european_monarchy"
+		#government = {
+			#ruler = random
+		#}
+	#}
+
   #Africa
 	
   #India
@@ -56608,10 +56617,14 @@ countries = {
 		religious_school = maliki_school
 		
 		country_rank = rank_duchy
-		capital = zamora
+		capital = zaragoza
 		
 		accepted_cultures = {
 			sephardi
+			mozarabic
+		}
+		tolerated_cultures = {
+			aragonese
 		}
 		
 	}
@@ -56637,12 +56650,12 @@ countries = {
 		government = {
 
 		}
-		currency_data = {
-			war_exhaustion = 4
-		}
-		
-		tolerated_cultures = {
+		accepted_cultures = {
+			sephardi
 			mozarabic
+		}
+		tolerated_cultures = {
+			catalan
 		}
 		
 	}

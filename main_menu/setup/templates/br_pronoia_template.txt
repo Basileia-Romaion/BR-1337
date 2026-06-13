@@ -1,7 +1,7 @@
 ﻿starting_technology_level = 3
 government = {
 	type = monarchy
-	heir_selection = dynastic_elective_succession
+	heir_selection = cognatic_primogeniture #dynastic_elective_succession
 	
 	centralization_vs_decentralization = 50
 	aristocracy_vs_plutocracy = -70

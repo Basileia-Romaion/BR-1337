@@ -75,7 +75,6 @@ br_on_game_start = {
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
 			research_advance = advance_type:diplomatic_capacity_traditions
-			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
@@ -166,7 +165,6 @@ br_on_game_start = {
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
@@ -195,7 +193,6 @@ br_on_game_start = {
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
@@ -224,7 +221,6 @@ br_on_game_start = {
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
@@ -257,7 +253,6 @@ br_on_game_start = {
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
-			research_advance = advance_type:trade_companies_advance
 			research_advance = advance_type:guilds
 			add_gold = 500
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }

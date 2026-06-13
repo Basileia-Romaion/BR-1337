@@ -1,0 +1,64 @@
+
+unit_manager = {
+	#Italians
+	army = {
+		country = VTC
+		location = karystos
+		sub_units = {
+			a_men_at_arms = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+		}
+		#morale = 1.0
+		#leader = ven_pietro_rossi
+	}
+	army = {
+		country = GTC
+		location = tana
+		sub_units = {
+			a_men_at_arms = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+		}
+		#morale = 1.0
+		#leader = ven_pietro_rossi
+	}
+	army = {
+		country = MLO
+		location = milano
+		sub_units = {
+			a_men_at_arms = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+			a_crossbowmen = { strength = 1.0 }
+		}
+	}
+	#ERE
+	#army = {
+		#country = BYZ
+		#location = constantinople
+		#sub_units = {
+			#a_varangians = { strength = 1.0 }
+			#a_varangians = { strength = 1.0 }
+			#a_varangians = { strength = 1.0 }
+			#a_varangians = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+			#a_byzantine_cataphracts = { strength = 1.0 }
+		#}
+	#}
+	army = {
+		country = AOI
+		location = antioch
+		sub_units = {
+			a_akritai = { strength = 1.0 }
+			a_akritai = { strength = 1.0 }
+			a_akritai = { strength = 1.0 }
+			a_byzantine_cataphracts = { strength = 1.0 }
+			a_byzantine_cataphracts = { strength = 1.0 }
+			a_byzantine_cataphracts = { strength = 1.0 }
+		}
+	}
+}

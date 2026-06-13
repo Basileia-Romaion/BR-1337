@@ -1,4 +1,6 @@
-﻿INJECT:scandinavian_town = {
+﻿###Town Injects
+
+INJECT:scandinavian_town = {
 	nobility_fortifications = 1 #BR added estate building
 	nobles_recruitment_center = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
@@ -150,29 +152,6 @@ INJECT:german_coastal_city = {
 	local_schools = 1 #BR added estate building
 }
 
-
-INJECT:greek_town = {
-	#stockade = 1 #BR Edit
-	marketplace = 2 #BR EDIT
-	parish_church = 1 #BR added estate building
-}
-
-INJECT:greek_city_port = {
-	city_walls = 1 #BR edit
-	scriptorium = 1 #br add
-	artisan_guilds = 1 #BR added estate building
-	merchants_guild = 1 #BR added estate building
-	local_schools = 1 #BR added estate building
-	br_episkopeion = 1
-	br_dikasterion = 1
-}
-
-INJECT:greek_town_port = {
-	#stockade = 1
-	artisan_guilds = 1 #BR added estate building
-	merchants_guild = 1 #BR added estate building
-}
-
 INJECT:balkan_town = {
 	nobility_fortifications = 1 #BR added estate building
 	artisan_guilds = 1 #BR added estate building
@@ -199,20 +178,6 @@ INJECT:maghreb_city = {
 INJECT:egyptian_city = {
 	artisan_guilds = 1 #BR added estate building
 	parish_church = 1 #BR added estate building
-}
-
-INJECT:christian_anatolian_city = {
-	scriptorium = 1 #br add
-	artisan_guilds = 1 #BR added estate building
-	horse_breeders = 1
-	br_episkopeion = 1
-	br_dikasterion = 1
-}
-
-INJECT:christian_anatolian_town = {
-	#stockade = 1 # BR ADDED
-	parish_church = 1 #BR added estate building
-	horse_breeders = 1
 }
 
 INJECT:levant_town = {
@@ -277,6 +242,100 @@ INJECT:italian_coastal_city = {
 	guild_hall  = 1 #BR added estate building
 	artisan_guilds = 1 #BR added estate building
 	merchants_guild = 1 #BR added estate building
+}
+
+### Town Replaces
+REPLACE_OR_CREATE:greek_town = {
+	brewery = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	mason = 1
+	pottery_guild = 1
+	granary = 1
+	tannery = 1
+	#castle = 1 # br removed
+	marketplace = 2 #BR EDIT
+	parish_church = 1 #BR added estate building
+}
+
+REPLACE_OR_CREATE:greek_city_port = {
+	brewery = 2
+	city_walls = 1 #BR edit replaces castle
+	temple = 1
+	tools_guild = 2
+	weapon_guild = 2
+	glass_guild = 1
+	cloth_guild = 1
+	fine_cloth_guild = 1
+	paper_guild = 1
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	jewelry_guild = 1
+	tannery = 1
+	granary = 2
+	marketplace = 1
+	naval_supplies_guild = 1
+	dyes_guild = 1
+	wharf = 1
+	scriptorium = 1 #br add
+	artisan_guilds = 1 #BR added estate building
+	merchants_guild = 1 #BR added estate building
+	local_schools = 1 #BR added estate building
+	br_episkopeion = 1
+	br_dikasterion = 1
+}
+
+REPLACE_OR_CREATE:greek_town_port = {
+	brewery = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	mason = 1
+	pottery_guild = 1
+	granary = 1
+	naval_supplies_guild = 1
+	wharf = 1
+	marketplace = 1
+	artisan_guilds = 1 #BR added estate building
+	merchants_guild = 1 #BR added estate building
+}
+
+REPLACE_OR_CREATE:christian_anatolian_city = {
+	temple = 1
+	tools_guild = 2
+	weapon_guild = 1
+	cloth_guild = 1
+	fine_cloth_guild = 2
+	paper_guild = 1
+	scriptorium = 1
+	glass_guild = 1
+	granary = 2
+	jewelry_guild = 1
+	dyes_guild = 1
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	marketplace = 2
+	city_walls = 1 #BR edit replaces castle
+	tannery = 1
+	artisan_guilds = 1 #BR added estate building
+	horse_breeders = 1
+	br_episkopeion = 1
+	br_dikasterion = 1
+}
+
+REPLACE_OR_CREATE:christian_anatolian_town = {
+	temple = 1
+	tools_guild = 1
+	tannery = 1
+	weapon_guild = 1
+	mason = 1
+	pottery_guild = 1
+	marketplace = 1
+	parish_church = 1 #BR added estate building
+	horse_breeders = 1
 }
 
 #BR Added

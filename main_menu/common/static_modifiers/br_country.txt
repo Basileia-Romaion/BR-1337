@@ -65,7 +65,7 @@ br_lucky_country_buff = {
 		category = country
 		decaying = yes
 	}
-	global_crown_estate_power = 0.25
+	global_crown_estate_power = 0.5
 	antagonism_received_modifier = -0.25
 	monthly_legitimacy = 0.25
 	stability_investment = 0.25
@@ -83,7 +83,7 @@ br_lucky_republic_buff = {
 		category = country
 		decaying = yes
 	}
-	global_crown_estate_power = 0.25
+	global_crown_estate_power = 0.5
 	antagonism_received_modifier = -0.25
 	monthly_republican_tradition = 0.25
 	stability_investment = 0.25
@@ -110,6 +110,7 @@ br_assimilation_culture_buff = {
 
 REPLACE_OR_CREATE:restored_the_imperial_capital_modifier = {
 	game_data = { category = country }
+	global_crown_estate_power = 0.1 #br added
 	monthly_legitimacy = 0.05 #0.3
 	global_estate_target_satisfaction = small_permanent_target_satisfaction #large_permanent_target_satisfaction
 }

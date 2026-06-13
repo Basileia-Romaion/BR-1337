@@ -74,6 +74,9 @@ br_latin_trading_post = {
 			is_port = yes
 		}
 		dominant_culture = { has_culture_group = culture_group:greek_group }
+		NOT = { 
+			has_building = building_type:br_latin_trading_base
+		}
 	}
 	allow = {
 		within_naval_range_of = scope:actor
@@ -147,7 +150,7 @@ br_latin_chapel = {
 	}
 
 	capital_country_modifier = {
-		monthly_religious_influence = 0.2
+		monthly_religious_influence = 0.1
 	}
 	allow_wrong_startup = yes
 }
@@ -192,10 +195,49 @@ br_indike_quarters = {
 
 #Latin trade company owned land buildings
 
+br_latin_garrison = {
+	audio_tier = 3
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = trade_category
+	employment_size = large_foreign_trade_employment
+	icon = trade_company_garrison
+	rural_settlement = setup_only
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = trade_company_build_time
+	unique_production_methods = {
+		br_latin_garrison_maintenance = {
+			lumber = 0.1
+			weaponry = 0.05
+			tar = 0.025
+			category = building_maintenance
+		}
+	}
+	country_potential = {
+		has_estate_privilege = estate_privilege:br_special_trade_companies
+		has_reform = government_reform:br_special_merchant_republic
+	}
+	custom_tags = { trade_company_building satellite_trade_building }
+	modifier = {
+		local_defensive = 0.25
+		local_garrison_size = 0.25
+		local_trade_protection_factor = 0.1
+		#local_max_control = 0.05
+		local_manpower = 0.002
+	}
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+}
+
 br_latin_harbor_base = {
 	audio_tier = 3
 	is_foreign = no
-	max_levels = trade_company_building_max_level
+	max_levels = 1
 	pop_type = burghers
 	category = trade_category
 	employment_size = large_foreign_trade_employment
@@ -216,12 +258,12 @@ br_latin_harbor_base = {
 	}
 
 	modifier = {
-		building_owner_maritime_presence = 0.1
-		local_proximity_source = 10
+		building_owner_maritime_presence = 0.15
+		local_proximity_source = 15
 		max_ships_built_at_same_time = 2
 		local_sailors = 0.025
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.1
+		harbor_suitability = 0.15
 		local_repair_speed = 0.02
 	}
 }
@@ -275,8 +317,7 @@ br_latin_trading_base = {
 	modifier = {
 		local_migration_attraction = 0.05
 		local_marketplace_building_levels = 5
-		local_market_access = 0.05
-		local_trade_protection_factor = 0.25
+		local_market_access = 0.1
 		local_merchant_power = 1.0
 		local_trades_per_burgher = 1.0
 		local_merchant_capacity = 1.0
@@ -290,6 +331,7 @@ br_latin_slave_market = {
 	max_levels = slave_market_max_level
 	startup_ramp_target = rural_startup_ramp_target
 	pop_type = burghers
+	icon = slave_center #slave_market
 
 	category = government_category
 	employment_size = trade_employment
@@ -308,11 +350,11 @@ br_latin_slave_market = {
 
 	build_time = generic_town_build_time
 	unique_production_methods = {
-		slave_market_maintenance = {
-			leather = 0.5
-			tools = 0.4
-			weaponry = 0.4
-			paper = 0.3
+		br_latin_slave_market_maintenance = {
+			leather = 0.35
+			tools = 0.25
+			weaponry = 0.25
+			paper = 0.15
 
 			produced = slaves_goods
 			output = 2.0
@@ -329,6 +371,58 @@ br_latin_slave_market = {
 
 	construction_demand = town_building_construction
 
+}
+
+br_latin_slave_center = {
+	audio_tier = 2
+	in_empty = any
+	is_foreign = yes
+	stronger_power_projection = yes
+	max_levels = 1
+	startup_ramp_target = rural_startup_ramp_target
+	pop_type = burghers
+	icon = slave_center
+	category = colonial_category
+	employment_size = foreign_trade_employment
+	pop_size_created = foreign_trade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	location_potential = {
+		NOT = { dominant_religion.group = scope:actor.religion.group }
+		owner ?= { religion != scope:actor.religion }
+	}
+	
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+
+	build_time = colonise_build_time
+	
+	unique_production_methods = {
+		br_latin_slave_center_maintenance = {
+			stone = 0.1
+			tools = 0.1
+			paper = 0.05
+			produced = slaves_goods
+			output = 1
+			
+			debug_max_profit = -1  
+			category = building_maintenance
+		}
+	}
+	construction_demand = simple_colony_construction
+
+	modifier = {
+		building_enslavement_power = 0.20
+		local_slave_pop_satisfaction = -0.05
+	}
 }
 
 
@@ -375,8 +469,10 @@ br_bandits_building = {
 	modifier = {
 		local_peasant_enfranchisment = 0.1
 		local_monthly_food_modifier = -0.25
-		local_peasants_estate_power = 1
-		local_max_control = -0.1
+		local_nobles_estate_power = -1
+		local_burghers_estate_power = -1
+		local_crown_estate_power = -1
+		local_distance_from_capital_speed_propagation = -0.25
     }
 
 	destroy_price = br_bandits_building_remove_price

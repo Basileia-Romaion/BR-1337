@@ -179,5 +179,110 @@ war_manager = {
 		start_date = 1337.9.11
 		months = 60
 	}
+
+		war = {
+		war_name={
+			name="SCALIGER_WAR_NAME"
+		}
+		
+		superiority = {
+			type = superiority_coalition_scaliger_war
+			casus_belli = cb_scaligeri_war
+		}
+		
+		start_date = 1336.6.22
+		action = 1337.3.1
+		attacker = {
+			country = VEN
+			request = {
+				reason = Instigator
+			}
+		}
+		attacker = {
+			country = TTE
+			request = {
+				caller = VEN
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = CRT
+			request = {
+				caller = VEN
+				reason = Subject
+			}
+		}
+		attacker = {
+			country = RAG
+			request = {
+				caller = VEN
+				reason = Subject
+			}
+		}
+
+		attacker = {
+			country = FLO
+			request = {
+				caller = VEN
+				reason = Ally
+			}
+		}
+
+		attacker = {
+			country = MLO
+			request = {
+				caller = VEN
+				reason = Ally
+			}
+		}
+
+		attacker = {
+			country = FER
+			request = {
+				caller = VEN
+				reason = Ally
+			}
+		}
+
+		attacker = {
+			country = MAN
+			request = {
+				caller = VEN
+				reason = Ally
+			}
+		}
+
+		defender = {
+			country = VER
+			request = {
+				reason = Target
+			}
+		}
+
+		defender = {
+			country = PAD
+			request = {
+				caller = VER
+				reason = Subject
+			}
+		}
+
+		defender = {
+			country = PAR
+			request = {
+				caller = VER
+				reason = Subject
+			}
+		}
+
+		defender = {
+			country = LUC
+			request = {
+				caller = VER
+				reason = Subject
+			}
+		}
+	}
+	
 	
 }

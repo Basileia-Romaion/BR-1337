@@ -1,48 +1,5 @@
 war_manager = {
 
-	war = {
-		war_name={
-			name="NORMAL_WAR_NAME"
-			ordinal=1
-			first = {
-				name="DYR"
-			}
-			SECOND = {
-				name="THP"
-			}
-		}
-		
-		take_province = {
-			type = conquer_province
-			casus_belli = cb_conquer_province
-			location = kruje
-		}
-		
-		start_date = 1335.1.1
-		action = 1337.3.1
-		attacker = {
-			country = DYR
-			request = {
-				reason = Instigator
-			}
-		}
-		attacker = {
-			country = EPI
-			request = {
-				caller = DYR
-				reason = Subject
-			}
-		}
-
-		defender = {
-			country = THP
-			request = {
-				reason = Target
-			}
-		}
-
-	}
-	
 	civil_war = {
 		war_name = {
 			name = "CIVIL_WAR_NAME"
@@ -84,7 +41,7 @@ war_manager = {
 		defender = SWE
 		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
 		start_date = 1333.3.2
-		months = 480
+		months = 680
 	}
 
 	truce = { 

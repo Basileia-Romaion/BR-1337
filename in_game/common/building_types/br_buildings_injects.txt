@@ -5,8 +5,8 @@
 
 TRY_INJECT:nobility_fortifications = {
 	modifier = {
-		local_garrison_size = 0.025 #br added
-		local_soldiers_desired_pop = 0.01
+		local_garrison_size = 0.05
+		local_soldiers_desired_pop = 0.05
 	}
 	#br added tiny fort
 	raw_modifier = {
@@ -16,12 +16,12 @@ TRY_INJECT:nobility_fortifications = {
 
 }
 
-TRY_INJECT:toll_castle = {
-	modifier = {
-		local_trade_protection_factor = 0.02 #br added
-		local_soldiers_desired_pop = 0.01
-	}
-}
+#TRY_INJECT:toll_castle = {
+	#modifier = {
+		#local_trade_protection_factor = 0.02 #br added
+		#local_soldiers_desired_pop = 0.01
+	#}
+#}
 
 TRY_INJECT:nobles_recruitment_center = {
 	modifier = {
@@ -140,7 +140,7 @@ TRY_INJECT:sergeantry = {
 
 TRY_INJECT:city_guard = {
 	capital_modifier = {
-		local_garrison_size = 0.025 #br added
+		local_garrison_size = 0.1 #br added
 		local_unrest = -0.025  #br added
 	}
 }

@@ -130,7 +130,7 @@ character_db={
 		birth_date = 1319.1.1
 		birth = constantinople
 		#adm = 60 dip = 60 mil = 95
-		father = byz_alexios_apokaukos
+		father = br_ere_rdm_character_97
 		#mother = 
 		dynasty = apokaukos_dynasty
 		tag = BYZ
@@ -973,7 +973,8 @@ character_db={
 		birth = constantinople
 		father = br_ere_rdm_character_84
 		dynasty = makrembolites_dynasty
-		tag = MKB
+		ruler_trait = eunuch
+		tag = BYZ
 	}
 	br_ere_rdm_character_87 = {
 		first_name = { name = "random" }
@@ -1113,6 +1114,44 @@ character_db={
 		#mother = Unknown
 		dynasty = palaiologos_dynasty
 		tag = B0R
+	}
+ #Komnenos
+	# Uncle of the Emperor of Trebizond
+	br_ere_rdm_character_101 = {
+		first_name = { name = name_michael }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1288.1.1
+		birth = antioch
+		father = tre_ioannes_ii_komnenos
+		mother = tre_eudokia_palaiologina
+		dynasty = komnenos_dynasty # Should be dynasty = megas_komnenos_dynasty
+		tag = AOI
+	}
+
+	# Cousin of the Emperor of Trebizond
+	br_ere_rdm_character_102 = {
+		first_name = { name = name_john }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = constantinople
+		father = br_ere_rdm_character_101
+		#mother = Daughter of Konstantinos Akropolites
+		dynasty = komnenos_dynasty # Should be dynasty = megas_komnenos_dynasty
+		tag = KYP
+	}
+ #extra eunuchs
+	br_ere_rdm_character_103 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1319.1.1
+		birth = constantinople
+		#father = 
+		dynasty = bringas_dynasty
+		ruler_trait = eunuch
+		tag = BYZ
 	}
 
 
@@ -1705,12 +1744,12 @@ character_db={
 
 	br_nse_character_01 = {
 		first_name = { name = "random" }
-		culture = danish
+		culture = anglo_norse_culture
 		religion = catholic
 		birth_date = 1301.1.1
 		birth = constantinople
 		adm = 66 dip = 55 mil = 88
-		father = dan_chistopher_ii 
+		#father = dan_chistopher_ii 
 		#mother = 
 		dynasty = siggurson_dynasty
 		tag = NSE
@@ -1719,7 +1758,7 @@ character_db={
 	}
 	br_nse_character_04 = {
 		first_name = { name = "random" }
-		culture = danish
+		culture = anglo_norse_culture
 		religion = catholic
 		birth_date = 1331.1.1
 		birth = constantinople
@@ -1765,7 +1804,7 @@ character_db={
 		birth_date = 1317.1.1
 		birth = metz
 		adm = 88 dip = 77 mil = 77
-		father = br_nse_character_02
+		#father = br_nse_character_02
 		#mother = 
 		#dynasty = siggurson_dynasty
 		tag = LOT

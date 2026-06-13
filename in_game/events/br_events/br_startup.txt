@@ -56,6 +56,15 @@ br_startup.1 = {
 		location:sogut = {
             change_raw_material = goods:wheat
         }
+		location:iznik = {
+            change_raw_material = goods:wheat
+        }
+		location:arac = {
+			change_raw_material = goods:lumber
+		}
+		location:balya = {
+			change_raw_material = goods:lumber
+		}
 
 		#Elysium
 		location:matapeake = {
