@@ -89,12 +89,6 @@ br_ere_events.1 = {
 					}
 					add_pop_satisfaction = pop_satisfaction_extreme_bonus
 				}
-				every_pop = {
-					limit = {
-						culture = culture:alan
-					}
-					add_pop_satisfaction = pop_satisfaction_extreme_bonus
-				}
 			}
 	   	}
 	}
@@ -960,7 +954,7 @@ br_ere_events.104 = { #Anatolian Brigands
 	option = {
 		name = br_ere_events.104.a
 		historical_option = yes
-		trigger = { has_reform = government_reform:br_themata_reformed_privilege }
+		trigger = { has_estate_privilege = estate_privilege:br_themata_reformed_privilege }
 		add_manpower = { value = root.monthly_manpower multiply = 12 }
 		change_societal_value = { type = serfdom_vs_free_subjects value = societal_value_minor_move_to_right }
 		custom_tooltip = {
@@ -1803,7 +1797,7 @@ br_ere_events.1002 = {
 		name = br_ere_events.2.a
 
 		c:A1G = {
-			declare_war_with_cb = {  target = c:NAX type = casus_belli:cb_maritime_dominance }
+			declare_war_with_cb = {  target = c:GTC type = casus_belli:cb_maritime_dominance }
 		}
 		
 	}

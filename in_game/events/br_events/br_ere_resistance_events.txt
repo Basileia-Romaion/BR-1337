@@ -271,6 +271,7 @@ br_ere_resistance_events.5 = { #Holy League Victorious
 	desc = br_ere_resistance_events.5.desc
 	outcome = neutral
 
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -293,7 +294,7 @@ br_ere_resistance_events.6 = { #Holy League Defeated
 	desc = br_ere_resistance_events.6.desc
 	outcome = neutral
 	
-
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = angry
 		10 = interior
@@ -316,7 +317,7 @@ br_ere_resistance_events.7 = { #Based on Battle of Lepanto
 	desc = br_ere_resistance_events.7.desc
 	outcome = neutral
 
-
+	orphan = yes #to finish setup
 	fire_only_once = yes
 	
 	trigger = {
@@ -381,7 +382,7 @@ br_ere_resistance_events.9 = { #Romans Victorious
 	
 	fire_only_once = yes
 	
-
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -406,7 +407,7 @@ br_ere_resistance_events.10 = { #Romans Defeated
 	
 	fire_only_once = yes
 	
-
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = angry
 		10 = interior
@@ -479,6 +480,13 @@ br_ere_resistance_events.21 = {
 	desc = br_ere_resistance_events.21.desc
 	outcome = neutral
 
+	dynamic_historical_event = {
+		tag = POL
+		tag = PLC
+		from = 1400.1.1
+		to = 1700.1.1
+		monthly_chance = 20
+	}
 	trigger = {
 		tag = POL
 		country_exists = c:BYZ
@@ -1707,12 +1715,12 @@ br_ere_resistance_events.62 = {
 
 		every_in_list = {
 			list = jihad_list
-			trigger_event_silently = br_ere_resistance_events.2
+			trigger_event_silently = br_ere_resistance_events.63
 			custom_tooltip = br_ere_resistance_events.62.a.tt
 		}
 		
 		c:BYZ ?= {
-			trigger_event_non_silently = br_ere_resistance_events.8
+			trigger_event_non_silently = br_ere_resistance_events.68
 		}
 	}
 
@@ -1749,7 +1757,7 @@ br_ere_resistance_events.63 = {
 		join_war_as_attacker = { war = scope:jihad_war }
 		add_prestige = prestige_mild_bonus
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.3
+			trigger_event_non_silently = br_ere_resistance_events.64
 			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
 		}
 		
@@ -1772,7 +1780,7 @@ br_ere_resistance_events.63 = {
 		add_prestige = prestige_severe_penalty
 		
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.4
+			trigger_event_non_silently = br_ere_resistance_events.65
 			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
 		}
 	}
@@ -1835,6 +1843,7 @@ br_ere_resistance_events.66 = { #Jihad Victorious
 	desc = br_ere_resistance_events.66.desc
 	outcome = neutral
 
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -1857,6 +1866,7 @@ br_ere_resistance_events.67 = { #Jihad Defeated
 	desc = br_ere_resistance_events.67.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = angry
 		10 = interior
@@ -1910,6 +1920,7 @@ br_ere_resistance_events.69 = { #Romans Victorious
 	
 	fire_only_once = yes
 
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -1931,6 +1942,7 @@ br_ere_resistance_events.70 = { #Romans Defeated
 	desc = br_ere_resistance_events.70.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	fire_only_once = yes
 	illustration_tags = {
 		10 = angry
@@ -2081,12 +2093,12 @@ br_ere_resistance_events.71 = {
 
 		every_in_list = {
 			list = jihad_list
-			trigger_event_silently = br_ere_resistance_events.2
+			trigger_event_silently = br_ere_resistance_events.72
 			custom_tooltip = br_ere_resistance_events.71.a.tt
 		}
 		
 		c:BYZ ?= {
-			trigger_event_non_silently = br_ere_resistance_events.8
+			trigger_event_non_silently = br_ere_resistance_events.77
 		}
 	}
 
@@ -2123,7 +2135,7 @@ br_ere_resistance_events.72 = {
 		join_war_as_attacker = { war = scope:jihad_war }
 		add_prestige = prestige_mild_bonus
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.3
+			trigger_event_non_silently = br_ere_resistance_events.73
 			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
 		}
 		
@@ -2146,7 +2158,7 @@ br_ere_resistance_events.72 = {
 		add_prestige = prestige_severe_penalty
 		
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.4
+			trigger_event_non_silently = br_ere_resistance_events.74
 			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
 		}
 	}
@@ -2209,6 +2221,7 @@ br_ere_resistance_events.75 = { #Jihad Victorious
 	desc = br_ere_resistance_events.75.desc
 	outcome = neutral
 
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -2231,6 +2244,7 @@ br_ere_resistance_events.76 = { #Jihad Defeated
 	desc = br_ere_resistance_events.76.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = angry
 		10 = interior
@@ -2282,6 +2296,7 @@ br_ere_resistance_events.78 = { #Romans Victorious
 	desc = br_ere_resistance_events.78.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	fire_only_once = yes
 
 	illustration_tags = {
@@ -2305,6 +2320,7 @@ br_ere_resistance_events.79 = { #Romans Defeated
 	desc = br_ere_resistance_events.79.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	fire_only_once = yes
 	illustration_tags = {
 		10 = angry
@@ -2439,12 +2455,12 @@ br_ere_resistance_events.80 = {
 
 		every_in_list = {
 			list = jihad_list
-			trigger_event_silently = br_ere_resistance_events.2
+			trigger_event_silently = br_ere_resistance_events.81
 			custom_tooltip = br_ere_resistance_events.80.a.tt
 		}
 		
 		c:BYZ ?= {
-			trigger_event_non_silently = br_ere_resistance_events.8
+			trigger_event_non_silently = br_ere_resistance_events.86
 		}
 	}
 
@@ -2481,7 +2497,7 @@ br_ere_resistance_events.81 = {
 		join_war_as_attacker = { war = scope:jihad_war }
 		add_prestige = prestige_mild_bonus
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.3
+			trigger_event_non_silently = br_ere_resistance_events.82
 			add_opinion = { target = ROOT modifier = pap_joined_the_holy_league }
 		}
 		
@@ -2504,7 +2520,7 @@ br_ere_resistance_events.81 = {
 		add_prestige = prestige_severe_penalty
 		
 		c:MAM = {
-			trigger_event_non_silently = br_ere_resistance_events.4
+			trigger_event_non_silently = br_ere_resistance_events.83
 			add_opinion = { target = ROOT modifier = pap_refused_the_holy_league }
 		}
 	}
@@ -2567,6 +2583,7 @@ br_ere_resistance_events.84 = { #Jihad Victorious
 	desc = br_ere_resistance_events.84.desc
 	outcome = neutral
 
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -2589,6 +2606,7 @@ br_ere_resistance_events.85 = { #Jihad Defeated
 	desc = br_ere_resistance_events.85.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	illustration_tags = {
 		10 = angry
 		10 = interior
@@ -2640,6 +2658,7 @@ br_ere_resistance_events.87 = { #Romans Victorious
 	desc = br_ere_resistance_events.87.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	fire_only_once = yes
 
 	illustration_tags = {
@@ -2663,6 +2682,7 @@ br_ere_resistance_events.88 = { #Romans Defeated
 	desc = br_ere_resistance_events.88.desc
 	outcome = neutral
 	
+	orphan = yes #to finish setup
 	fire_only_once = yes
 	illustration_tags = {
 		10 = angry
@@ -2705,7 +2725,12 @@ br_ere_resistance_events.100 = { #Bulgarian-Roman Wars
 
 	fire_only_once = yes
 
-
+	dynamic_historical_event = {
+		tag = BUL
+		from = 1340.1.1
+		to = 1700.1.1
+		monthly_chance = 5
+	}
 	trigger = {
 		has_ruler = yes
 		country_exists = c:BYZ
