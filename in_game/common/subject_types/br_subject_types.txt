@@ -271,7 +271,10 @@ REPLACE_OR_CREATE:br_thema_subject = {
 		}
 		NOT = {
 			scope:target = {
-				has_reform = government_reform:banking_country
+				OR = {
+					has_reform = government_reform:banking_country
+					has_reform = government_reform:br_special_merchant_republic
+				}
 			}
 		}
 
@@ -326,7 +329,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	}
 
 	creation_visible = {
-		NOT = { has_advance = samanta_advance }
+		NOT = { has_advance = samanta_advance } #do I need this?
 		OR = {
 			AND = {
 				has_or_had_tag = BYZ
@@ -341,7 +344,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	}
 
 	release_country_enabled = {
-		NOT = { has_advance = samanta_advance }
+		NOT = { has_advance = samanta_advance } #do I need this?
 		OR = {
 			AND = {
 				has_or_had_tag = BYZ
@@ -365,6 +368,16 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	join_defensive_wars_always = {
 		always = yes
 	}
+
+	#can_attack = {
+		#OR = {
+			#AND = {
+				#scope:attacker = { has_country_modifier = granted_autonomy_to_expand_modifier }
+				#scope:attacker.overlord ?= scope:defender.overlord
+			#}
+			#scope:attacker.overlord ?= scope:defender
+		#}
+	#}
 	
 	diplomatic_capacity_cost_scale = 0.75
 	

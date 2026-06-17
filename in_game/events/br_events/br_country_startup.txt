@@ -660,6 +660,30 @@ br_country_startup.3 = { #cbs added
 				type = casus_belli:cb_jihad
 			}
 		}
+		c:LIT = {
+			add_casus_belli = {
+				target = c:KIE
+				type = casus_belli:cb_subjugation
+			}
+			add_casus_belli = {
+				target = c:CHR
+				type = casus_belli:cb_subjugation
+			}
+		}
+		c:LON = {
+			add_casus_belli = {
+				target = c:POR
+				type = casus_belli:cb_subjugation
+			}
+			add_casus_belli = {
+				target = c:CAS
+				type = casus_belli:cb_subjugation
+			}
+			add_casus_belli = {
+				target = c:NAV
+				type = casus_belli:cb_subjugation
+			}
+		}
 
 	}
 
@@ -906,6 +930,869 @@ br_country_startup.6 = {
 	#	name = br_country_startup.6.b
 	#
 	#}
+
+}
+
+br_country_startup.7 = {
+	type = country_event
+	title = br_country_startup.7.title
+	desc = br_country_startup.7.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_syrian.dds"
+	#orphan = yes
+	trigger = {
+		tag = BNK
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		
+	#West HRE
+		c:FRA ?= {
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:AQN ?= {
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:FLA ?= {
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:LOT ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		
+	#North Europe
+		c:NSE ?= {
+			every_owned_location = {
+				limit = {
+					region = region:great_britain_region
+                	raw_material = goods:wool
+                }
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				OR = {
+					raw_material = goods:lumber
+                	raw_material = goods:iron
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:SWE ?= {
+			every_owned_location = {
+				OR = {
+					raw_material = goods:lumber
+                	raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+
+	#Italy
+		c:MLO ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 2
+                }
+            }
+		}
+		c:VEN ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:fruit
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:FLO ?= {
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:PAP ?= {
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:VER ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:lumber
+						raw_material = goods:iron
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:BNV ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:horses
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:S4C ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:silver
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		
+		
+	#central europe
+		c:HUN ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:lumber
+						raw_material = goods:iron
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:POL ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:LIT ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:LBV = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:UBV ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:BOH ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:CRO ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:millet
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:CRH = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:lead
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:BOS = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:silver
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+
+	#east europe
+		c:KIE ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:MOS ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+	#ERE
+		c:BYZ ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:THE ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:goods_gold
+						raw_material = goods:gems
+					}
+				}
+				change_max_raw_material_workers = 5
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:copper
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:EPI ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:gems
+				}
+				change_max_raw_material_workers = 4
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:fruit
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:S1Y = {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 4
+			}
+		}
+	#Pontics
+		c:PAF ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:lumber
+						raw_material = goods:copper
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:AN6 ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:lumber
+                }
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:P2N ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:lumber
+                }
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:TRE ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+						raw_material = goods:silver
+					}
+                }
+				change_max_raw_material_workers = 3
+			}
+		}
+	#Anatolia
+		c:AON ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:wheat
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:ICO ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:silver
+					}
+                }
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:AN7 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:AN8 = {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:AN10 ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:wheat
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:AN2 ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:CIL ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:KYP ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:lumber
+						raw_material = goods:copper
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+	#Caucaus 
+		c:GEO ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:ARM ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 4
+			}
+			every_owned_location = {
+				limit = {
+					raw_material = goods:saffron
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+
+	#Balkans
+		c:SER ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:silver
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:copper
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:BUL ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:B1L ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:silver
+						raw_material = goods:iron
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:WA1 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:WA0 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:SE2 ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:silver
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:SE0 ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:silver
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:CRO = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:millet
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:ACH ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:fruit
+						raw_material = goods:millet
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:MOE ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:fruit
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:HE1 ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:stone
+						raw_material = goods:dyes
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:THS ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:fruit
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		
+		
+		
+	#Iberia
+		c:ADU ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:fruit
+						raw_material = goods:saffron
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:LON = {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:NAV = {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:ARA = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+
+		#Central Asia
+		c:GLH ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:millet
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		
+	#Middle East
+		c:TUR ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:goods_gold
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:ATQ = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:millet
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:DLH ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+                if = {
+                    limit = { is_full_expanded_rgo = no }
+                    change_max_raw_material_workers = 1
+                }
+            }
+		}
+		c:SY2 = {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:millet
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:MZF ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:silver
+						raw_material = goods:wheat
+						raw_material = goods:iron
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+		c:KRM ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:goods_gold
+						raw_material = goods:silver
+						raw_material = goods:wheat
+						raw_material = goods:iron
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+		}
+
+	#Africa
+		c:TUN ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:millet
+						raw_material = goods:wheat
+					}
+				}
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:iron
+						raw_material = goods:gems
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		c:MAM ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 6
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:fruit
+						raw_material = goods:millet
+					}
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		c:MAL ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:goods_gold
+				}
+				change_max_raw_material_workers = 4
+			}
+		}
+		c:BBK ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:goods_gold
+				}
+				change_max_raw_material_workers = 3
+			}
+		}
+		
+		
+	}
+
+	option = {
+		historical_option = yes
+		name = br_country_startup.7.a
+	}
+
 
 }
 

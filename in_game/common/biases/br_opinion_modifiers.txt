@@ -1,0 +1,19 @@
+﻿#Example of Opinion Modifiers ----------
+
+#extreme_penalty =	{ value = -100 months = 300 yearly_decay = 4}
+#severe_penalty =	{ value = -50 months = 300 yearly_decay = 2}
+#mild_penalty =	{ value = -25 months = 300 yearly_decay = 1}
+#weak_penalty =	{ value = -10 months = 120 yearly_decay = 1}
+
+#weak_bonus =	{ value = 10 months = 120 yearly_decay = 1}
+#mild_bonus =	{ value = 25 months = 300 yearly_decay = 1}
+#severe_bonus =	{ value = 50 months = 300 yearly_decay = 2}
+#extreme_bonus =	{ value = 100 months = 300 yearly_decay = 4}
+
+#----------------------------------------
+
+
+br_hre_start_opinion = {
+	value = 200
+	yearly_decay = 1
+}

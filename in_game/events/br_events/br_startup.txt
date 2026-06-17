@@ -42,12 +42,30 @@ br_startup.1 = {
 		location:burgas = {
 			change_raw_material = goods:millet
 		}
+		location:thessaloniki = {
+			change_raw_material = goods:wheat
+		}
+		location:durres = {
+			change_raw_material = goods:fruit
+		}
+		location:karytaina = {
+			change_raw_material = goods:fruit
+		}
 
 		#Anatolia
 		location:karahisar_i_sahib = {
             change_raw_material = goods:wheat
         }
 		location:inonu = {
+            change_raw_material = goods:wheat
+        }
+		location:kirsehir = {
+            change_raw_material = goods:wheat
+        }
+		location:sariyahsi = {
+            change_raw_material = goods:wheat
+        }
+		location:koyulhisar = {
             change_raw_material = goods:wheat
         }
 		location:usak = {
@@ -65,8 +83,19 @@ br_startup.1 = {
 		location:balya = {
 			change_raw_material = goods:lumber
 		}
+		location:inebolu = {
+			change_raw_material = goods:lumber
+		}
+		location:bartin = {
+			change_raw_material = goods:lumber
+		}
+		
+	#Levant
+		location:tripoli_syria = {
+			change_raw_material = goods:lumber
+		}
 
-		#Elysium
+	#Elysium
 		location:matapeake = {
 			change_raw_material = goods:wine
 		}
@@ -172,7 +201,7 @@ br_startup.1 = {
         }
 
 
-		# Vinland
+	# Vinland
 		location:misha_shipu = {
 			change_raw_material = goods:tin #need for naval supplies
 		}

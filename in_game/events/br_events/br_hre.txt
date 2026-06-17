@@ -1,0 +1,44 @@
+﻿#hidden_effect = {
+
+namespace = br_hre_events
+
+#HRE starting event is to balance the massive negative opinion all members have due to the mods starting laws.
+br_hre_events.1 = {
+	type = country_event
+	title = br_hre_events.1.title
+	desc = br_hre_events.1.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	trigger = {
+	}
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		#event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_hre_events.1.a
+
+		custom_tooltip = {
+			text = br_hre_events.1.att
+			international_organization:hre ?= {
+				every_international_organization_member = {
+					limit = { 
+						NOT = { is_leader_of_international_organization = root }
+					}
+					add_opinion = {
+						target = c:LOT
+						modifier = br_hre_start_opinion
+					}
+				}
+			}
+		}
+	}
+}

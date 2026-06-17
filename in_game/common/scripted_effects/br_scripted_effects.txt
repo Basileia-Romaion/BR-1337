@@ -11,13 +11,14 @@ REPLACE_OR_CREATE:hre_setup_hre_variables = {
 			add_policy_to_international_organization = policy:perpetual_diet_policy
 			add_policy_to_international_organization = policy:hre_early_imperial_diet_policy #BR Test lvl 2/5
 			add_policy_to_international_organization = policy:emperor_successor_preference_policy #BR Test lvl 4/5
-			add_policy_to_international_organization = policy:imperial_armory_expanded
+			add_policy_to_international_organization = policy:imperial_standing_army #BR lvl 4/5
 			#add_policy_to_international_organization = policy:manpower_from_cities #BR Test lvl 2/5
-			add_policy_to_international_organization = policy:only_treasury_payment # BR Test no_monetary_contribution lvl 2/5
+			add_policy_to_international_organization = policy:only_treasury_payment # BR Test lvl 2/5
 			add_policy_to_international_organization = policy:free_cities_policy #BR Test lvl 3/5 cities_of_the_emperor_policy
 			add_policy_to_international_organization = policy:empire_wide_free_cities_policy #BR Test lvl 3/3
 			add_policy_to_international_organization = policy:landfriede_rank_4_policy #BR Test lvl 4/5
-			add_policy_to_international_organization = policy:kaisertum_policy #BR lvl 2/5
+			add_policy_to_international_organization = policy:improved_imperial_authority_policy #BR lvl 3/5
+			add_policy_to_international_organization = policy:imperial_circles_established #BR lvl 2/2
 		}
 	}
 }

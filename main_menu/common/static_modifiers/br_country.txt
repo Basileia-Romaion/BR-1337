@@ -65,6 +65,7 @@ br_lucky_country_buff = {
 		category = country
 		decaying = yes
 	}
+	#global_estate_power = -0.5
 	global_crown_estate_power = 0.5
 	antagonism_received_modifier = -0.25
 	monthly_legitimacy = 0.25
@@ -83,6 +84,7 @@ br_lucky_republic_buff = {
 		category = country
 		decaying = yes
 	}
+	#global_estate_power = -0.5
 	global_crown_estate_power = 0.5
 	antagonism_received_modifier = -0.25
 	monthly_republican_tradition = 0.25

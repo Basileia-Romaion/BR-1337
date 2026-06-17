@@ -480,7 +480,6 @@ br_bandits_building = {
 	construction_demand = estate_construct_building
 }
 
-
 #Roman Orthodox Buildings
 # Orthodox Buildings
 orthodox_missionary_building = {
@@ -580,7 +579,7 @@ br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively inte
 	is_foreign = no
 	max_levels = estate_building_single_level
 	pop_type = clergy
-	icon = nobled_sponsored_temple
+	icon = royal_audience_and_chancery #nobled_sponsored_temple
 	
 	employment_size = estate_clergy_employment
 	category = cultural_category
@@ -628,7 +627,7 @@ br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doc
 	is_foreign = no
 	max_levels = estate_building_single_level
 	pop_type = clergy
-	icon = local_shrine
+	icon = venetian_quarter #local_shrine #darussifa
 	
 	employment_size = estate_clergy_employment
 	category = cultural_category
@@ -674,7 +673,7 @@ br_nomophylakeion = { #Archive and office of legal scholars and judges.
 	is_foreign = no
 	max_levels = estate_building_single_level
 	pop_type = clergy
-	icon = clerical_archives
+	icon = llotja_seda #clerical_archives
 	
 	employment_size = estate_clergy_employment
 	category = cultural_category
@@ -725,7 +724,7 @@ br_dikasterion = { #Provincial court administering Roman law.
 	is_foreign = no
 	max_levels = estate_building_single_level
 	pop_type = clergy
-	icon = bulgarian_administration_center
+	icon = segovia_artillery_academy #bulgarian_administration_center
 	
 	employment_size = estate_clergy_employment
 	category = cultural_category
@@ -767,3 +766,10 @@ br_dikasterion = { #Provincial court administering Roman law.
 		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
 	}
 }
+
+#for upgrades
+#enderun_academy
+#gymnasium_building
+#imperial_academy_of_arts
+#sanssouci
+#phanariot_district

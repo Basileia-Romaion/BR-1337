@@ -221,14 +221,14 @@ br_varangian_camp = {
 
 
 	modifier = {
-		local_tribes_estate_power = 0.5
+		#local_crown_estate_power = 0.25
 		local_manpower = 0.015
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 2
 	}
-	#capital_country_modifier = {
-	#	monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
-	#}
+	capital_country_modifier = {
+		global_tribes_estate_power = 0.5
+	}
 	
 	possible_production_methods =  {
 		early_soldier_building_maintenance
@@ -638,7 +638,7 @@ br_kleisourai = {#fortified mountain passes
 	allow_wrong_startup = yes
 }
 
-
+#global_estate_power = -0.1
 #Icons for later.
 #walls_of_benin #ostrog #bey_fortress
 #venetian_quarter #ori_portuguese_quarters 
@@ -679,14 +679,13 @@ br_varangian_barracks = {
 
 
 	modifier = {
-		local_tribes_estate_power = 0.5
 		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 4
 	}
-	#capital_country_modifier = {
-	#	monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
-	#}
+	capital_country_modifier = {
+		global_tribes_estate_power = 0.5
+	}
 	
 	possible_production_methods =  {
 		soldier_building_maintenance
@@ -993,7 +992,7 @@ br_praitoria_building = { #Provincial administrative headquarters where imperial
 	town = setup_only
 	city = yes
 	megalopolis = yes
-	icon = papal_archives
+	icon = papal_archives #italian_administration_center
 
 	ai_forbid_shutdown = yes
 	forbidden_for_estates = yes
@@ -1274,7 +1273,7 @@ br_dioikesis_building = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = soldiers
-	icon = fortress
+	icon = fortress #alhambra
 
 	category = government_category
 	obsolete = br_despotate_building

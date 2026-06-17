@@ -12,6 +12,9 @@ br_on_game_start = {
         #c:RIC = {
             #trigger_event_silently = br_indikes_events.1
         #}
+		c:LOT = {
+            trigger_event_silently = br_hre_events.1
+        }
 		c:SAR = {
             trigger_event_silently = br_country_startup.4
         }
@@ -20,6 +23,9 @@ br_on_game_start = {
         }
 		c:B0L = {
             trigger_event_silently = br_country_startup.6
+        }
+		c:BNK = {
+            trigger_event_silently = br_country_startup.7
         }
         c:K1K = {
             trigger_event_silently = br_country_startup.1 #naval units

@@ -1,7 +1,5 @@
 diplomacy_manager = {
 	# Anglia
-	dependency = { first = NSE second = EAG subject_type = fiefdom }
-	dependency = { first = NSE second = LSY subject_type = fiefdom }
 	dependency = { first = NSE second = NOL subject_type = vassal }
 	dependency = { first = NSE second = MCA subject_type = vassal }
 	
@@ -199,18 +197,17 @@ diplomacy_manager = {
 	dependency = { first = AQN second = MDM subject_type = vassal }
 	dependency = { first = AQN second = AMG subject_type = vassal }
 	dependency = { first = AQN second = AST subject_type = vassal }
-	dependency = { first = AQN second = IJO subject_type = vassal }
 	dependency = { first = AQN second = BRR subject_type = vassal }
 	dependency = { first = AQN second = GUY subject_type = vassal }
-    dependency = { first = AQN second = COM subject_type = vassal }
     dependency = { first = AQN second = PER subject_type = vassal }
-    dependency = { first = AQN second = COM subject_type = vassal }
     dependency = { first = AQN second = VNT subject_type = vassal }
     dependency = { first = AQN second = RCC subject_type = vassal }
     dependency = { first = AQN second = MRC subject_type = vassal }
     dependency = { first = AQN second = ANG subject_type = vassal }
 
     #Toulose
+    dependency = { first = TOU second = IJO subject_type = vassal }
+    dependency = { first = TOU second = COM subject_type = vassal }
 	dependency = { first = TOU second = NRB subject_type = vassal }
 	dependency = { first = TOU second = FOI subject_type = vassal }
     dependency = { first = TOU second = CLT subject_type = vassal }
@@ -289,7 +286,15 @@ diplomacy_manager = {
 	
 	dependency = { first = VEN second = PAD subject_type = vassal }
 	dependency = { first = MLO second = PAR subject_type = vassal }
+    dependency = { first = MLO second = PAV subject_type = vassal }
 	dependency = { first = MLO second = LUC subject_type = vassal }
+
+	dependency = { first = FLO second = COT subject_type = vassal }
+	dependency = { first = FLO second = PRA subject_type = vassal }
+	dependency = { first = FLO second = PST subject_type = vassal }
+	dependency = { first = FLO second = PEA subject_type = vassal }
+    dependency = { first = FLO second = CDC subject_type = vassal }
+    dependency = { first = FLO second = VLT subject_type = vassal }
 
 	dependency = { first = BNV second = N2P subject_type = vassal }
     dependency = { first = BNV second = N1P subject_type = vassal }
@@ -597,8 +602,8 @@ diplomacy_manager = {
     dependency = { first = POL second = RAW subject_type = vassal }
     dependency = { first = POL second = CZK subject_type = vassal }
 
-    dependency = { first = POL second = VOL subject_type = dominion }
-    dependency = { first = POL second = HAL subject_type = dominion }
+    dependency = { first = POL second = VOL subject_type = vassal }
+    dependency = { first = POL second = HAL subject_type = vassal }
 
     #Balkans:
     scripted_mutual = { first = HUN second = POL type = alliance }
@@ -1042,7 +1047,7 @@ diplomacy_manager = {
     dependency = { first = MYI second = TYY subject_type = tributary }
 
     #------------Levant-------------
-    dependency = { first = MAM second = SY2 subject_type = vassal }
+    dependency = { first = MAM second = SY2 subject_type = fiefdom }
     dependency = { first = MAM second = BKZ subject_type = vassal }
     dependency = { first = MAM second = BQA subject_type = vassal }
     dependency = { first = MAM second = SKN subject_type = vassal }
