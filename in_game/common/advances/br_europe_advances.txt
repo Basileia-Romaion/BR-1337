@@ -126,6 +126,8 @@ br_italian_universities = {
 			culture = culture:piedmontese
 			culture = culture:tuscan
 			culture = culture:venetian
+			culture = culture:emilian
+			culture = culture:romagnol
 		}
 	}
 	global_nobles_max_literacy = 15
@@ -145,6 +147,8 @@ br_italy_great_families = {
 			culture = culture:piedmontese
 			culture = culture:tuscan
 			culture = culture:venetian
+			culture = culture:emilian
+			culture = culture:romagnol
 		}
 	}
 	monthly_prestige = 0.1
@@ -161,6 +165,8 @@ br_italian_innovativeness = {
 			culture = culture:piedmontese
 			culture = culture:tuscan
 			culture = culture:venetian
+			culture = culture:emilian
+			culture = culture:romagnol
 		}
 	}
 	global_monthly_literacy = 0.05
@@ -179,6 +185,8 @@ br_italian_condottieri = {
 			culture = culture:tuscan
 			culture = culture:venetian
 			culture = culture:latinoi
+			culture = culture:emilian
+			culture = culture:romagnol
 		}
 	}
 	hire_mercenary_premium_cost_modifier = -0.25
@@ -187,7 +195,18 @@ br_italian_condottieri = {
 	mercenary_units_preference_modifier = 0.25
 	requires = feudalism_advance
 }
-#global_merchant_power = 0.2
+#Latin Trade Companies
+br_latinoi_banking_advance = {
+	potential = {
+		has_reform =government_reform:br_special_merchant_republic
+	}
+	age = age_1_traditions
+	icon = banking_advance
+	unlock_country_interaction = take_over_loan
+	minting_income_factor = 0.10
+	total_loan_capacity_modifier = 0.5 
+	requires = medieval_administration
+}
 br_slave_manned_galleys = {
 	icon = slave_manned_galleys
 	content_priority = 800
@@ -247,7 +266,7 @@ br_latinoi_the_galley_assembly_line_of_suda_advance = {
 	potential = {
 		culture = culture:latinoi
 	}
-	navy_galley_power = 0.15
+	navy_galley_power = 0.1
 	own_coast_naval_combat_bonus = 0.1
 	requires = trade_range_advance_age_2
 }
