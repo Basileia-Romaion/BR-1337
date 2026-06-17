@@ -48,7 +48,7 @@ br_vinland_naval_raiding = {
 	allow_privateers_slave_raid = yes
 	can_hire_privateers = yes
     auto_slave_raid_different_religion = yes
-
+	unlock_casus_belli = cb_exploration
     requires = colonies
 }
 
