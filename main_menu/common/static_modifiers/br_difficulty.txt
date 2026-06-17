@@ -4,9 +4,10 @@
 #minor buffs for the ai on higher difficulties.
 
 TRY_INJECT:difficulty_ai_normal = {
-	cultures_capacity = 1.5
+	cultures_capacity = 1
 	wrong_culture_levy_size = 0.15
 	global_crown_estate_power = 0.15
+	global_estate_power = -0.15
 	subject_loyalty = 10
 	levy_maintenance_modifier = -0.35
 }
@@ -14,7 +15,8 @@ TRY_INJECT:difficulty_ai_normal = {
 TRY_INJECT:difficulty_ai_hard = {
 	cultures_capacity = 2
 	wrong_culture_levy_size = 0.25
-	global_crown_estate_power = 0.35
+	global_crown_estate_power = 0.25
+	global_estate_power = -0.25
 	subject_loyalty = 15
 	levy_maintenance_modifier = -0.45
 }
@@ -23,7 +25,8 @@ TRY_INJECT:difficulty_ai_very_hard = {
 	cultures_capacity = 3
 	wrong_culture_levy_size = 0.5
 	global_crown_estate_power = 0.5
-	subject_loyalty = 20
-	levy_maintenance_modifier = -0.65
+	global_estate_power = -0.5
+	subject_loyalty = 25
+	levy_maintenance_modifier = -0.5
 }
 
