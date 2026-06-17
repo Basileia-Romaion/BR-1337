@@ -8,7 +8,7 @@
 #army_heavy_infantry_power = 0.02
 #global_pop_conversion_speed = 0.01
 #minting_income_factor = 0.10
-#global_distance_from_capital_speed_propagation = 0.05
+
 #global_monthly_development = 0.001
 #build_gravel_road_cost_modifier = -0.1
 #build_paved_road_cost_modifier = -0.1
@@ -18,7 +18,6 @@
 # global_max_urban_control
 # global_nobles_desired_pop_scaled = 0.002
 # land_cost_on_distance_from_capital_modifier
-# sea_cost_on_distance_from_capital_when_maritime
 # naval_damage_done = 0.2
 # navy_galley_power = 0.1
 # artillery_bonus_vs_fort = 1
@@ -28,6 +27,10 @@
 # spy_network_construction = 0.2
 #global_silk_output_modifier = 0.1
 #global_jewelry_output_modifier = 0.1
+
+# global_distance_from_capital_speed_propagation = 0.2
+# land_cost_on_distance_from_capital_speed_propagation = 0.2
+# sea_cost_on_distance_from_capital_when_maritime = -1
 
 #
 #global_max_literacy = 5
@@ -633,6 +636,7 @@ br_anatolian_heritage = {
 		}
 	}
 	requires = feudalism_advance
+	land_cost_on_distance_from_capital_speed_propagation = -0.1
 	mountains_proximity_impact = -0.1
 	hills_proximity_impact = -0.1
 	plateau_proximity_impact = -0.1
@@ -640,7 +644,20 @@ br_anatolian_heritage = {
     army_heavy_cavalry_maintenance_cost_modifier = -0.1
 }
 
+#Pontica/black_sea
 #Anatolia/Cappadocia
+br_pontic_lumber = {
+	age = age_1_traditions
+	icon = lumber_improvements_absolutism
+	potential = {
+		any_owned_location = {
+			area = area:pontus_area
+		}
+	}
+	requires = feudalism_advance
+	global_lumber_output_modifier = 0.1
+}
+
 br_pontic_heritage = {
 	age = age_1_traditions
 	icon = hun_castle_warriors
@@ -649,9 +666,11 @@ br_pontic_heritage = {
 	}
 	requires = feudalism_advance
 	global_defensive = 0.1
+	sea_cost_on_distance_from_capital_when_maritime = -0.2
 	trade_sea_efficiency = 0.1
 	global_trade_protection_factor = 0.05
-	#global_lumber_output_modifier = 0.1
 	army_heavy_infantry_maintenance_cost_modifier = -0.1
 	army_light_infantry_maintenance_cost_modifier = -0.2
 }
+
+
