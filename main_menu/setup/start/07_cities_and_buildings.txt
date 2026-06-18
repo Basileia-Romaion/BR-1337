@@ -4835,10 +4835,10 @@ building_manager = {
 	horse_breeders = { tag = LOT level = 2 location = strasbourg }
 	horse_breeders = { tag = FRA level = 2 location = paris }
 
-	hre_imperial_armory_own = { tag = LOT level = 1 location = metz }
-	hre_imperial_armory_own = { tag = LOT level = 1 location = troyes }
-	hre_imperial_armory_own = { tag = LOT level = 1 location = trier }
-	hre_imperial_armory_own = { tag = LOT level = 1 location = strasbourg }
+	#hre_imperial_armory_own = { tag = LOT level = 1 location = metz }
+	#hre_imperial_armory_own = { tag = LOT level = 1 location = troyes }
+	#hre_imperial_armory_own = { tag = LOT level = 1 location = trier }
+	#hre_imperial_armory_own = { tag = LOT level = 1 location = strasbourg }
 
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = brussels }
 	hre_imperial_armory_foreign = { tag = LOT level = 2 location = mainz }
@@ -4852,7 +4852,7 @@ building_manager = {
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = parma }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = bruges }
 	hre_imperial_armory_foreign = { tag = LOT level = 2 location = paris }
-	hre_imperial_armory_foreign = { tag = LOT level = 1 location = toulous }
+	hre_imperial_armory_foreign = { tag = LOT level = 1 location = toulouse }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = bordeaux }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = dijon }
 	hre_imperial_armory_foreign = { tag = LOT level = 1 location = marseille }
