@@ -33,6 +33,22 @@
 	use_patronym = yes
 }
 
+REPLACE_OR_CREATE:roman_culture = {
+	language = roman_dialect
+	color = map_ROM
+	tags = { roman_gfx greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		greek_culture = kindred
+	}
+
+	culture_groups = {
+		greek_group italian_group roman_group
+	}
+
+	active = no
+}
+
 REPLACE_OR_CREATE:southern_gallo_italic = { 
 	language = lombard_dialect
 	
@@ -41,6 +57,7 @@ REPLACE_OR_CREATE:southern_gallo_italic = {
 	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
+		neapolitan = kindred
 	}
 	
 	culture_groups = {
@@ -56,6 +73,8 @@ REPLACE_OR_CREATE:armenian_culture = { #https://en.wikipedia.org/wiki/Armenians
 	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
+		armenikon_greek_culture = positive
+		kilikioi_greek_culture = positive
 		georgian_culture = positive
 		greek_culture = positive
 	}
@@ -204,8 +223,13 @@ REPLACE_OR_CREATE:aromanian = {
 	tags = { romanian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
+		istroromanian = kindred
+		moldovan = kindred
+		transylvanian = kindred
+		wallachian = kindred
 		greek_culture = positive
 		illyrikoi_greek_culture = positive
+		boulgaroi = positive
 	}
 	culture_groups = {
 		romanian_group roman_group
@@ -238,6 +262,7 @@ REPLACE_OR_CREATE:venetian = {
 	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
+		dalmatian = kindred
 		latinoi = kindred
 		greek_culture = positive
 	}
@@ -287,8 +312,9 @@ REPLACE_OR_CREATE:neapolitan = {
 	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
+		southern_gallo_italic = kindred
 		italiotai_culture = positive
-		greek_culture = positive
+		#greek_culture = positive
 	}
 	location_modifier = {
 		local_separatism = 0.05
@@ -326,7 +352,8 @@ REPLACE_OR_CREATE:albanian = {
 	tags = { east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		#arvanite = kindred
+		arvanite = kindred
+		boulgaroi = positive
 		greek_culture = negative
 		venetian = positive
 		bulgarian = positive
@@ -350,7 +377,8 @@ REPLACE_OR_CREATE:arvanite = {
 
 	opinions = {
 		albanian = kindred
-		#greek_culture = positive
+		boulgaroi = positive
+		illyrikoi_greek_culture = positive
 	}
 	culture_groups = {
 		illyrian_group
@@ -372,25 +400,6 @@ REPLACE_OR_CREATE:sclavene = {
 		south_slavic_group
 	}
 }
-
-REPLACE_OR_CREATE:aromanian = { 
-	language = romanian_language
-	
-	color = map_aromanian
-	
-	tags = { romanian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
-
-	opinions = {
-		istroromanian = kindred
-		moldovan = kindred
-		transylvanian = kindred
-		wallachian = kindred
-	}	
-	culture_groups = {
-		romanian_group
-	}
-}
-
 
 REPLACE_OR_CREATE:bulgarian = { 
 	language = bulgarian_language

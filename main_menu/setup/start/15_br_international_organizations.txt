@@ -107,28 +107,28 @@ international_organization_manager = {
     }
 
 	#Iberia defensive league
-	add_international_organization = {
-        type = defensive_league
-        creation_date = 1311.2.3
+	#add_international_organization = {
+        #type = defensive_league
+        #creation_date = 1311.2.3
 
-        map_color = rgb { 16 41 202 }
+        #map_color = rgb { 16 41 202 }
 
-        members = {
-            LON CAS POR AQN
-        }
-        leader = LON
-    }
-	add_international_organization = {
-        type = defensive_league
-        creation_date = 1311.2.3
+        #members = {
+            #LON CAS POR AQN
+        #}
+        #leader = LON
+    #}
+	#add_international_organization = {
+        #type = defensive_league
+        #creation_date = 1311.2.3
 
-        map_color = rgb { 16 41 202 }
+        #map_color = rgb { 16 41 202 }
 
-        members = {
-            ARA NAV TOU KNI GEN
-        }
-        leader = ARA
-    }
+        #members = {
+            #ARA NAV TOU KNI GEN
+        #}
+        #leader = ARA
+    #}
 
 	add_international_organization = {
 		type = roman_world

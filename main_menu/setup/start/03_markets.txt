@@ -98,13 +98,6 @@ market_manager = {
 	#add_market = sarayjuk #BR removed
 	add_market = urgench
 	
-	# India
-	add_market = delhi
-	add_market = chittagong
-	add_market = varanasi
-	add_market = kataka
-	add_market = goa
-	
 	# East Asia
 	add_market = dadu
 	add_market = kyoto #sakai
@@ -138,10 +131,17 @@ market_manager = {
 
 	add_market = akita
 
-	# South Asia
+	#South Asia 
 	add_market = khambat
 	add_market = pazhaverkadu
 	add_market = kozhikode
+	
+	#India
+	add_market = delhi
+	add_market = chittagong
+	add_market = varanasi
+	add_market = kataka
+	add_market = goa
 	
 	# Indochina
 	add_market = berune

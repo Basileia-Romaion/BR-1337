@@ -51,6 +51,16 @@
  roman_world_rescind_domestikos_east: "Rescind the Domestikos of the East"
  roman_world_rescind_domestikos_east_desc: "Strip the current holder of the dignity of Domestikos of the East and restore the command of the eastern armies to the Basileus."
 
+ br_change_strategos: "Appoint Stratēgós"
+ br_change_strategos_desc: "Remove the current Stratēgós and appoint a new governor from among the loyal dynasts of the Empire. The newly appointed ruler shall govern the Thema in the name of the Basileus."
+
+ br_allow_dynastic_inheritance: "Grant Dynastic Succession"
+ br_allow_dynastic_inheritance_desc: "Permit the office of Stratēgós to pass hereditarily within the ruling household. The Thema shall remain loyal to the Empire, but its governance will become increasingly dynastic in nature."
+
+ br_remove_dynastic_inheritance: "Restore Imperial Appointment"
+ br_remove_dynastic_inheritance_desc: "Revoke hereditary succession within the Thema. Upon the death of the current Stratēgós, a successor shall be selected according to imperial authority rather than family inheritance."
+
+
  DISTANCE_FROM_ROMANLAND: "Distance from Romanía"
  ROMAN_WORLD_MEMBERS_AT_WAR: "Romaiokratía Wars"
  br_roman_location_bonus_tt: "The [locations|e] of the [GetUniqueInternationalOrganization('roman_world').GetName] get the following modifiers:"

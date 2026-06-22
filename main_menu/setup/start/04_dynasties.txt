@@ -146,7 +146,6 @@ dynasty_manager = {
 		name = { name = york_dynasty }
 		home = york
 		important = yes
-
 		dynasty_name_type = location
 		male_names = {
 			name_edmond name_edward name_george name_henry name_richard
@@ -1661,6 +1660,8 @@ dynasty_manager = {
 			# name_john should be name_john.alternative.diminutive: "Ivaniš"
 		}
 		female_names = {
+			name_angelica name_anna name_barbara name_mattea name_thaddea
+			# name_anna should be name_anna.diminutive: "Anica"
 		}
 	}
 

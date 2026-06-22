@@ -16,13 +16,15 @@ TRY_INJECT:is_occupied = {
 }
 
 TRY_INJECT:capital = {
+	local_market_access = 0.04
 	local_garrison_size = 0.2
 	local_nobles_max_literacy = 5
-	local_monthly_prosperity = 0.001
+	#local_monthly_prosperity = 0.001
 	local_marketplace_building_levels = 2
 }
 
 TRY_INJECT:province_capital = {
+	local_market_access = 0.02
 	local_garrison_size = 0.1
 	local_max_control = 0.02
 	local_nobles_max_literacy = 2

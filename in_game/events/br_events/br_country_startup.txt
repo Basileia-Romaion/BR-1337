@@ -16,7 +16,7 @@ br_country_startup.1 = { #naval units added
 
 	immediate = {
 		#new world
-		c:K1K = {
+		c:K1K ?= {
 			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
@@ -30,7 +30,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit_of_category = sub_unit_category:navy_transport
 			}
 		}
-		c:NRV = {
+		c:NRV ?= {
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -42,7 +42,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_vinland_longship
 			}
 		}
-		c:NRR = {
+		c:NRR ?= {
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -50,7 +50,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_vinland_longship
 			}
 		}
-		c:NRH = {
+		c:NRH ?= {
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -58,7 +58,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_vinland_longship
 			}
 		}
-		c:NRC = {
+		c:NRC ?= {
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -69,7 +69,7 @@ br_country_startup.1 = { #naval units added
 			}
 		}
 
-		c:GEN = {
+		c:GEN ?= {
 			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
@@ -103,9 +103,18 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
-		c:GTC = {
+		c:GTC ?= {
 			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
@@ -138,9 +147,54 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+			}
+			location:tana = {
+				add_location_modifier = {
+					modifier = influx_of_merchants_modifier
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = powerful_center_of_burghers_modifier
+					years = 25
+					mode = add_and_extend
+				}
+			}
+		}
+		c:PIS ?= {
+			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
 		c:VEN = {
@@ -189,6 +243,15 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
 		c:VTC = {
@@ -227,6 +290,15 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
 		c:KNI = {
@@ -243,12 +315,15 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
-				create_sub_unit_of_category = sub_unit_category:navy_transport
-				create_sub_unit_of_category = sub_unit_category:navy_transport
-				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
-				#create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:a_crusader_knights
 			}
 		}
 		c:A1G = {
@@ -263,6 +338,9 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
 		c:K1B = {
@@ -287,6 +365,9 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
+				create_sub_unit = unit_type:n_hulk
 			}
 		}
 		c:MAM = {
@@ -324,6 +405,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit_of_category = sub_unit_category:navy_light_ship
 				create_sub_unit_of_category = sub_unit_category:navy_light_ship
 				create_sub_unit_of_category = sub_unit_category:navy_light_ship
+				
 			}
 		}
 	
@@ -409,6 +491,30 @@ br_country_startup.2 = { #units added
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit = unit_type:br_tagmata_ballistai
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
+			}
+			location:ulnia = {
+				add_location_modifier = {
+					modifier = greek_culture_reinforced_akritai
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = greek_culture_recent_aid_during_wartime
+					years = 50
+					mode = add_and_extend
+				}
+			}
+			location:enguzud = {
+				add_location_modifier = {
+					modifier = greek_culture_reinforced_akritai
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = greek_culture_recent_aid_during_wartime
+					years = 50
+					mode = add_and_extend
+				}
 			}
 		}
 		c:SGO = {
@@ -498,6 +604,30 @@ br_country_startup.2 = { #units added
 				create_sub_unit = unit_type:a_akritai
 				create_sub_unit = unit_type:a_akritai
 				create_sub_unit = unit_type:a_byzantine_cataphracts
+			}
+			location:antioch = {
+				add_location_modifier = {
+					modifier = greek_culture_reinforced_akritai
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = greek_culture_recent_aid_during_wartime
+					years = 50
+					mode = add_and_extend
+				}
+			}
+			location:arsuz = {
+				add_location_modifier = {
+					modifier = greek_culture_reinforced_akritai
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = greek_culture_recent_aid_during_wartime
+					years = 50
+					mode = add_and_extend
+				}
 			}
 		}
 
@@ -1037,6 +1167,18 @@ br_country_startup.7 = {
                     change_max_raw_material_workers = 2
                 }
             }
+			location:milano = {
+				add_location_modifier = {
+					modifier = italian_culture_major_center_of_art_and_culture
+					years = 150
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = growing_cloth_industry_modifier
+					years = 50
+					mode = add_and_extend
+				}
+			}
 		}
 		c:VEN ?= {
 			every_owned_location = {
@@ -1051,6 +1193,18 @@ br_country_startup.7 = {
                     change_max_raw_material_workers = 1
                 }
             }
+			location:venice = {
+				add_location_modifier = {
+					modifier = italian_culture_major_center_of_art_and_culture
+					years = 150
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = powerful_center_of_burghers_modifier
+					years = 25
+					mode = add_and_extend
+				}
+			}
 		}
 		c:FLO ?= {
 			every_owned_location = {
@@ -1059,6 +1213,18 @@ br_country_startup.7 = {
                     change_max_raw_material_workers = 1
                 }
             }
+			location:florence = {
+				add_location_modifier = {
+					modifier = italian_culture_major_center_of_art_and_culture
+					years = 150
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = growing_cloth_industry_modifier
+					years = 50
+					mode = add_and_extend
+				}
+			}
 		}
 		c:PAP ?= {
 			every_owned_location = {
@@ -1067,6 +1233,13 @@ br_country_startup.7 = {
                     change_max_raw_material_workers = 1
                 }
             }
+			location:rome = {
+				add_location_modifier = {
+					modifier = influence_of_the_old_capital_modifier
+					years = -1
+					mode = add_and_extend
+				}
+			}
 		}
 		c:VER ?= {
 			every_owned_location = {
@@ -1257,6 +1430,13 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			location:polygyros = {
+				add_location_modifier = {
+					modifier = expanded_mines_modifier
+					years = -1
+					mode = add_and_extend
+				}
+			}
 		}
 		c:EPI ?= {
 			every_owned_location = {
@@ -1396,6 +1576,18 @@ br_country_startup.7 = {
 					raw_material = goods:lumber
 				}
 				change_max_raw_material_workers = 2
+			}
+			location:kars_armenia = {
+				add_location_modifier = {
+					modifier = greek_culture_reinforced_akritai
+					years = 50
+					mode = add_and_extend
+				}
+				add_location_modifier = {
+					modifier = greek_culture_recent_aid_during_wartime
+					years = 50
+					mode = add_and_extend
+				}
 			}
 		}
 		c:KYP ?= {

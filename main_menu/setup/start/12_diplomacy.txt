@@ -204,6 +204,7 @@ diplomacy_manager = {
     dependency = { first = AQN second = RCC subject_type = vassal }
     dependency = { first = AQN second = MRC subject_type = vassal }
     dependency = { first = AQN second = ANG subject_type = vassal }
+    scripted_oneway = { first = AQN second = LON type = guarantee }
 
     #Toulose
     dependency = { first = TOU second = IJO subject_type = vassal }
@@ -211,6 +212,7 @@ diplomacy_manager = {
 	dependency = { first = TOU second = NRB subject_type = vassal }
 	dependency = { first = TOU second = FOI subject_type = vassal }
     dependency = { first = TOU second = CLT subject_type = vassal }
+    scripted_oneway = { first = TOU second = ARA type = guarantee }
 
     #Neustria
     dependency = { first = FRA second = SSN subject_type = vassal }

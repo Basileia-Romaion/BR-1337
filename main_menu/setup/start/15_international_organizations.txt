@@ -23,6 +23,8 @@ international_organization_manager = {
 		VUD BMS BLB HSP BSK MSO WGO BHL GLN AOS RBG FLK RDL NID MDS TGG GRY PSZ CFC MUR MUL WDE 
 		BLM DIS EVS FUR GRK HAC JEV SAB THD WIE ELL HEH HLF HOH KIR NEL TUB KTZ NSA LEU PST
 		MOD BLG FER
+
+		SYE LDA
 		# From France
 		PRC MIE AQN MDM MRC BRR TOU POI
 		BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR ETA NRM ANJ ARS ANG BRI FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON MON AUM ROU FLA NEV RET NRB VNT RCC CLT
@@ -89,6 +91,7 @@ international_organization_manager = {
 		}
 		free_city = {
 			AAC BRM FRN GOS HAM KNZ MEM NUR REG ROT RVA ULM LUB DTM AGC KMP WTZ WRM BRN BSC ZUR CFC MUL
+			SYE LDA
 			#Should be but can't because they only have "rural settlements"
 			# MLH BIB NHS OFB SWH WDB WEI SLT
 			ERF 
@@ -687,7 +690,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 301.1.1
-		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN }
+		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN CIL }
 		variables = { 
 			religion = religion:miaphysite
 			seat = location:ani #BR EDIT

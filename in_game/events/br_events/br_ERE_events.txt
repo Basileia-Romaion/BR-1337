@@ -2,7 +2,6 @@
 
 namespace = br_ere_events
 
-	#unlock_law_effect = { type = br_military_frontier }
 
 br_ere_events.1 = {
 	type = country_event
@@ -90,35 +89,12 @@ br_ere_events.1 = {
 					add_pop_satisfaction = pop_satisfaction_extreme_bonus
 				}
 			}
+			trigger_event_silently = br_console_only_events.1
 	   	}
 	}
 }
 
-br_ere_events.2 = {
-	type = country_event
-	title = br_ere_events.2.title
-	desc = br_ere_events.2.desc
-	outcome = neutral
-	fire_only_once = yes
-	trigger = {
-	}
-	
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
-
-	immediate = {
-	}
-
-	option = {
-		historical_option = yes
-		name = br_ere_events.2.a
-		c:A1G = {
-			trigger_event_non_silently = { id = br_ere_events.2 }
-		}
-	}
-}
+#br_ere_events.2 OPEN
 
 br_ere_events.3 = {
 	type = country_event
@@ -179,55 +155,55 @@ br_ere_events.3 = {
 			annex_country = { country = c:THE }
 			annex_country = { country = c:MOE }
 
-			c:HE1 = {
+			c:HE1 ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:AN8 = {
+			c:AN8 ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:AN10 = {
+			c:AN10 ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:AON = {
+			c:AON ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:ICO = {
+			c:ICO ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:TRE = {
+			c:TRE ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:AN13 = {
+			c:AN13 ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:AOI = {
+			c:AOI ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:br_thema_subject
 				}
 			}
-			c:OHS = {
+			c:OHS ?= {
 				make_subject_of = {
 					target = c:BYZ
 					type = subject_type:march
@@ -237,7 +213,7 @@ br_ere_events.3 = {
 	}
 }
 
-#4 open
+#br_ere_events.4 OPEN
 
 br_ere_events.5 = {
 	type = country_event

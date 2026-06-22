@@ -31,10 +31,13 @@ br_latin_harbor = {
 	custom_tags = { trade_company_building satellite_trade_building }
 	modifier = {
 		max_ships_built_at_same_time = 1
-		building_owner_maritime_presence = 0.1
-		local_sailors = 0.01
+		building_owner_overlord_maritime_presence = 0.25
+		sailors_to_building_owner = 0.01
 		can_build_ships_in_this_location = yes
-		local_repair_speed = 0.02
+
+		# bonuses to locaton owner
+		local_sailors = 0.001
+		harbor_suitability = 0.05
 	}
 }
 
@@ -96,13 +99,12 @@ br_latin_trading_post = {
 	modifier = {
 		building_owner_overlord_maritime_presence = 0.1
 		merchant_capacity_from_building = 0.5
-		merchant_power_from_building = 0.5
-		#Italian merchants settle in the new location
+		merchant_power_from_building = 0.33
+		
+		#Italian merchants settle in the new location # bonus to locaton owner
 		local_migration_attraction = 0.05
-		sailors_to_building_owner = 0.001
 		local_marketplace_building_levels = 2
-		local_market_access = 0.025
-		#building_missionary_effort = 0.001
+		local_market_access = 0.05
 	}
 	allow_wrong_startup = yes
 }
@@ -145,13 +147,12 @@ br_latin_chapel = {
 	build_time = generic_town_build_time
 	
 	modifier = {
-		local_max_literacy = 2
 		building_missionary_effort = 0.001
+		# bonuses to locaton owner
+		local_max_literacy = 2
+		local_disease_resistance = 0.02
 	}
 
-	capital_country_modifier = {
-		monthly_religious_influence = 0.1
-	}
 	allow_wrong_startup = yes
 }
 
@@ -220,12 +221,16 @@ br_latin_garrison = {
 		has_estate_privilege = estate_privilege:br_special_trade_companies
 		has_reform = government_reform:br_special_merchant_republic
 	}
+	remove_if = {
+		owner ?= { 
+			NOT = { has_reform = government_reform:br_special_merchant_republic }
+		}
+	}
 	custom_tags = { trade_company_building satellite_trade_building }
 	modifier = {
 		local_defensive = 0.25
 		local_garrison_size = 0.25
 		local_trade_protection_factor = 0.1
-		#local_max_control = 0.05
 		local_manpower = 0.002
 	}
 	raw_modifier = {
@@ -242,7 +247,6 @@ br_latin_harbor_base = {
 	category = trade_category
 	employment_size = large_foreign_trade_employment
 	icon = trade_company_harbor 
-
 	rural_settlement = setup_only
 	town = yes
 	city = yes
@@ -251,20 +255,22 @@ br_latin_harbor_base = {
 	possible_production_methods = {
 		port_building_maintenance
 	}
-
 	country_potential = {
 		has_estate_privilege = estate_privilege:br_special_trade_companies
 		has_reform = government_reform:br_special_merchant_republic
 	}
-
+	remove_if = {
+		owner ?= { 
+			NOT = { has_reform = government_reform:br_special_merchant_republic }
+		}
+	}
 	modifier = {
 		building_owner_maritime_presence = 0.15
 		local_proximity_source = 15
-		max_ships_built_at_same_time = 2
-		local_sailors = 0.025
+		max_ships_built_at_same_time = 1
+		local_sailors = 0.015
 		can_build_ships_in_this_location = yes
 		harbor_suitability = 0.15
-		local_repair_speed = 0.02
 	}
 }
 
@@ -276,18 +282,12 @@ br_latin_trading_base = {
 	max_levels = 1
 	pop_type = burghers
 	icon = fondaco #trade_office #overseas_trading_post por_feitoria
-
-	stronger_power_projection = no
 	category = trade_category
 	employment_size = large_foreign_trade_employment
-	
 	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	increase_per_level_cost = 1
-
 	country_potential = {
 		has_estate_privilege = estate_privilege:br_special_trade_companies
 		has_reform = government_reform:br_special_merchant_republic
@@ -299,12 +299,12 @@ br_latin_trading_base = {
 		}
 		dominant_culture = { has_culture_group = culture_group:greek_group }
 	}
-	allow = {
-		within_naval_range_of = scope:actor
+	remove_if = {
+		owner ?= { 
+			NOT = { has_reform = government_reform:br_special_merchant_republic }
+		}
 	}
-	
 	build_time = trade_post_build_time
-	
 	unique_production_methods = {
 		br_latin_trading_base_maintenance = {
 			paper = 0.1
@@ -313,7 +313,6 @@ br_latin_trading_base = {
 			category = building_maintenance
 		}
 	}
-	
 	modifier = {
 		local_migration_attraction = 0.05
 		local_marketplace_building_levels = 5
@@ -336,7 +335,7 @@ br_latin_slave_market = {
 	category = government_category
 	employment_size = trade_employment
 
-	rural_settlement = no
+	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
@@ -469,7 +468,7 @@ br_bandits_building = {
 	modifier = {
 		local_peasant_enfranchisment = 0.1
 		local_monthly_food_modifier = -0.25
-		local_nobles_estate_power = -1
+		local_nobles_estate_power = -5
 		local_burghers_estate_power = -1
 		local_crown_estate_power = -1
 		local_distance_from_capital_speed_propagation = -0.25
@@ -496,15 +495,18 @@ orthodox_missionary_building = {
 	
 	pop_size_created = religious_building_employment
 	
-	rural_settlement = yes
+	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
 	conversion_religion = orthodox
 	
 	country_potential = {
-		has_reform = government_reform:patriarchate
 		religion = religion:orthodox
+		OR = {
+   			has_reform = government_reform:patriarchate
+			has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
+		}
 	}
 	
 	allow = {

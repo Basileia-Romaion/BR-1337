@@ -142,6 +142,8 @@ diplomacy_manager = {
 	opinion = { first = K1B second = NAX type = left_empire }
 	opinion = { first = HE1 second = VEN type = ven_opinion_morean_confrontation }
 	opinion = { first = VEN second = HE1 type = ven_opinion_morean_confrontation }
+	opinion = { first = MOE second = VEN type = ven_opinion_morean_confrontation }
+	opinion = { first = VEN second = MOE type = ven_opinion_morean_confrontation }
 
 	#Serbia
 	opinion = { first = SER second = BYZ type = opinion_dynastic_allies }
@@ -173,6 +175,12 @@ diplomacy_manager = {
 	opinion = { first = VEN second = GEN type = trade_conflict }
 	opinion = { first = GEN second = VEN type = trade_conflict }
 	opinion = { first = VEN second = VER type = opinion_declared_war }
+	opinion = { first = MLO second = BYZ type = opinion_good_relations }
+	opinion = { first = BYZ second = MLO type = opinion_good_relations }
+	opinion = { first = FLO second = BYZ type = opinion_good_relations }
+	opinion = { first = BYZ second = FLO type = opinion_good_relations }
+	opinion = { first = PIS second = BYZ type = opinion_good_relations }
+	opinion = { first = BYZ second = PIS type = opinion_good_relations }
 	
 
 	opinion = { first = NAX second = VEN type = opinion_military_aid }

@@ -120,6 +120,14 @@ TRY_INJECT:city_walls = {
 	}
 }
 
+#bank injects
+TRY_INJECT:banking_office = {
+	modifier = {
+		local_market_access = 0.025
+	}
+}
+
+
 #Military buildings
 
 TRY_INJECT:order_stronghold = {

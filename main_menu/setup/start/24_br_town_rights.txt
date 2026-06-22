@@ -1,24 +1,19 @@
 townrights_manager = {
  ####-BR Additions-###
-	#constantinople = constantinopolitan_silk_monopoly_rights
 	constantinople = scholai_literacy_rights
-	constantinople = staple_port
-	thessaloniki = imperial_breadbasket_rights
+	#thessaloniki = imperial_breadbasket_rights
 	athens = scholai_literacy_rights
 	izmit = scholai_literacy_rights
 
-	tana = staple_port
-	kaffa = staple_port
 	durres = br_naval_theme_rights
 	canakkale = br_naval_theme_rights
 	antalya = br_naval_theme_rights
-	candia = br_naval_theme_rights
+	#candia = br_naval_theme_rights
 	smyrna = br_naval_theme_rights
 	trebizond = br_naval_theme_rights
 	sinop = br_naval_theme_rights
 	theodoro = br_naval_theme_rights
-	theodoro = fortress_town
-	amasra = br_naval_theme_rights
+	#amasra = br_naval_theme_rights
 	bari = br_naval_theme_rights
 	syracuse = br_naval_theme_rights
 	marmaris = br_naval_theme_rights
@@ -38,4 +33,39 @@ townrights_manager = {
 	amasya = br_land_theme_rights
 	sivas = br_land_theme_rights
 	arta = br_land_theme_rights
+
+	tana = market_charter
+	kaffa = market_charter
+	theodoro = staple_port
+	thessaloniki = market_charter
+	smyrna = market_charter
+	ankara = market_charter
+	amasra = market_charter
+	konya = market_charter
+	malatya = market_charter
+	van = market_charter
+
+	candia = market_charter
+	syracuse = market_charter
+
+	valencia = market_charter
+	sevilla = market_charter
+	
+	plovdiv = market_charter
+	varna = market_charter
+	constanta = market_charter
+	ohrid = market_charter
+
+	zadar = market_charter
+	split = market_charter
+	karystos = market_charter
+
+	tripoli = market_charter
+	benghazi = market_charter
+	acre = market_charter
+	jerusalem = market_charter
+	larnaca = market_charter
+
+	
+
 }

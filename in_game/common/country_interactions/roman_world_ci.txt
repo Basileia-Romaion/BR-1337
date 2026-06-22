@@ -490,3 +490,232 @@ br_restore_roman_status = {
 		}
 	}
 }
+
+#These are for the Theme subject type to allow changing ruler and allowing or disallowng dynastic inheritance or direct imperial inheritance on stategos death.
+br_change_strategos = {
+	type = diplomacy
+	category = CATEGORY_HRE_ACTIONS
+	ai_tick = never
+	ai_tick_frequency = 120
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+		#scope:actor = {
+			#exists = ruler_or_heir_if_regent.dynasty
+			#ruler_or_heir_if_regent.dynasty = {
+				#num_adult_available_dynasty_members > 0
+			#}
+		#}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+
+		cache_targets = yes
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+
+		visible = {
+			is_subject_type = br_thema_subject
+			is_subject_of = scope:actor
+		}
+		enabled = {
+			#has_regent = yes
+			#has_heir = no
+			not = { is_at_war_with = scope:actor }
+			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		#target_flag = target
+		ai_interaction_source_list = {
+			scope:actor = {
+				ruler_or_heir_if_regent.dynasty = {
+					every_available_dynasty_member = {
+						limit = {
+							religion = scope:actor.religion
+							modifier:blocked_from_character_interactions = no
+						}
+						add_to_list = source
+					}
+				}
+			}
+		}
+
+		cache_interaction_source_list = yes
+		target_flag = target
+		name = "change_ruler_SELECT_TITLE"
+		none_available_msg_key = "change_ruler_no_characters"
+		column = {
+			data = character_ruler
+		}
+
+		visible = {
+			is_alive = yes
+			is_ruler = no
+			is_heir = no
+			has_dynasty = yes
+			#dynasty = scope:actor.ruler_or_heir_if_regent.dynasty
+			is_adult = yes
+			religion = scope:actor.religion
+			modifier:blocked_from_character_interactions = no
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = { exists = scope:target }
+			scope:target = { move_country = scope:recipient }
+			scope:recipient = { set_new_ruler = scope:target }
+		}
+	}
+	
+	block_when_at_war = yes
+	
+	ai_will_do = {
+		add = -10
+	}
+}	
+
+br_allow_dynastic_inheritance = {
+	type = diplomacy
+	category = CATEGORY_HRE_ACTIONS
+	ai_tick = never
+	ai_tick_frequency = 120
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+
+		cache_targets = yes
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+
+		visible = {
+			is_subject_type = br_thema_subject
+			succession_law = heir_selection:dynastic_elective_succession
+			is_subject_of = scope:actor
+		}
+		enabled = {
+			#has_regent = yes
+			#has_heir = no
+			not = { is_at_war_with = scope:actor }
+			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:recipient }
+			scope:recipient = { change_heir_selection = heir_selection:cognatic_primogeniture }
+		}
+	}
+
+	ai_will_do = {
+		add = -10
+	}
+}	
+
+br_remove_dynastic_inheritance = {
+	type = diplomacy
+	category = CATEGORY_HRE_ACTIONS
+	ai_tick = never
+	ai_tick_frequency = 120
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+
+		cache_targets = yes
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+
+		visible = {
+			is_subject_type = br_thema_subject
+			succession_law = heir_selection:cognatic_primogeniture
+			is_subject_of = scope:actor
+		}
+		enabled = {
+			#has_regent = yes
+			#has_heir = no
+			not = { is_at_war_with = scope:actor }
+			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:recipient }
+			scope:recipient = { change_heir_selection = heir_selection:dynastic_elective_succession }
+		}
+	}
+
+	ai_will_do = {
+		add = -10
+	}
+}	

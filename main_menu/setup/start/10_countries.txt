@@ -4102,11 +4102,13 @@ countries = {
 		}
 
 		accepted_cultures = {
+			astrakhani
 			crimean
 			#mongolian_culture
 			nogai
 			kazani
 			mishar
+			bolghar_culture
 		}
 
 
@@ -10588,6 +10590,8 @@ countries = {
 			arona novara domodossola varallo #Comune of Novara
 			piacenza bardi fiorenzuola #Comune of Piacenza
 			vercelli biella #Comune of Vercelli
+		}
+		own_conquered = {
 			asola brescia palazzolo salo_ita breno nozza
 		}
 
@@ -14643,9 +14647,11 @@ countries = {
 			centralization_vs_decentralization = 50
 			traditionalist_vs_innovative = -20
 			spiritualist_vs_humanist = -50
-			aristocracy_vs_plutocracy = -20
 			mercantilism_vs_free_trade = 0
-			land_vs_naval = 10
+			aristocracy_vs_plutocracy = -100
+			offensive_vs_defensive = 100
+			land_vs_naval = -100
+			capital_economy_vs_traditional_economy = 100
 
 			privilege = {
 				#Noble Privileges
@@ -14662,7 +14668,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1365.1.1
+			date = 1425.1.1
 			size = 1
 		}
 		currency_data = {
@@ -14825,11 +14831,11 @@ countries = {
 				royal_court_customs_law = itinerant_court_policy
 			}
 
-			aristocracy_vs_plutocracy = -40
-			serfdom_vs_free_subjects = -15
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = -15
-			outward_vs_inward = -30
+			aristocracy_vs_plutocracy = -100
+			spiritualist_vs_humanist = -75
+			offensive_vs_defensive = 100
+			land_vs_naval = -100
+			capital_economy_vs_traditional_economy = 100
 		}
 
 		country_rank = rank_kingdom
@@ -14914,8 +14920,8 @@ countries = {
 
 			centralization_vs_decentralization = 15
 			mercantilism_vs_free_trade = -20
-			land_vs_naval = -10
-			quality_vs_quantity = -10
+			land_vs_naval = -50
+			quality_vs_quantity = -25
 			capital_economy_vs_traditional_economy = 80
 		}
 
@@ -14927,7 +14933,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1365.1.1
+			date = 1425.1.1
 			size = 1
 		}
 		currency_data = {
@@ -15051,24 +15057,15 @@ countries = {
 				#Clergy
 				clergy_military_orders
 				#Commoners
-				ayuntamientos
-				cas_caballeros_villanos
-			}
-			
-			laws = {
-				administrative_system = adelantamiento_system
-				distribution_of_power_law = dop_law_castilian_courts
-				legal_code_law = siete_partidas_law
-				medieval_levy_law = alarde
-				mesta_council_law = quadrillas_organization
-				royal_court_customs_law = itinerant_court_policy
 			}
 			
 			aristocracy_vs_plutocracy = -75
-			serfdom_vs_free_subjects = -15
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = -40
-			outward_vs_inward = -30
+			spiritualist_vs_humanist = -75
+			offensive_vs_defensive = 100
+			land_vs_naval = -100
+			belligerent_vs_conciliatory = -75
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 25
 		}
 
 		country_rank = rank_kingdom
@@ -15076,14 +15073,14 @@ countries = {
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
-			date = 1450.1.1
+			date = 1500.1.1
 			size = 0.33
 		}
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.5
+			date = 1500.1.1
+			size = 0.75
 		}
 		currency_data = {
 			gold = 1000
@@ -15277,13 +15274,13 @@ countries = {
 			traditionalist_vs_innovative = 50
 			spiritualist_vs_humanist = 80
 			mercantilism_vs_free_trade = 50
-			offensive_vs_defensive = 75
-			land_vs_naval = -20
+			offensive_vs_defensive = 100
+			land_vs_naval = -25
 			quality_vs_quantity = -50
-			belligerent_vs_conciliatory = 75
-			capital_economy_vs_traditional_economy = -60
-			individualism_vs_communalism = -40
-			outward_vs_inward = -60
+			belligerent_vs_conciliatory = 100
+			capital_economy_vs_traditional_economy = -75
+			individualism_vs_communalism = -50
+			outward_vs_inward = -75
 			mysticism_vs_jurisprudence = 50
 			
 			
@@ -15299,11 +15296,15 @@ countries = {
 
 		currency_data = {
 			gold = 2000
-			prestige = 50
-			stability = 50
+			prestige = 75
+			stability = 25
+		}
+		accepted_cultures = {
+			sephardi
+			zenati
 		}
 		tolerated_cultures = {
-			sephardi
+			mozarabic
 		}
 
 		capital = cordoba #br edit
@@ -15403,6 +15404,10 @@ countries = {
 			mercantilism_vs_free_trade = -30
 			quality_vs_quantity = -20
 			capital_economy_vs_traditional_economy = 80
+			aristocracy_vs_plutocracy = -100
+			spiritualist_vs_humanist = -75
+			offensive_vs_defensive = 100
+			land_vs_naval = -100
 		}
 
 		accepted_cultures = {
@@ -15434,6 +15439,8 @@ countries = {
 			chartres auneau #Chartres
 			brie_comte_robert melun nemours #Gatinais
 			meaux provins nogent_sur_seine #Brie Champenoise
+			etampes #C. de Etampes
+			monfort_lamaury
 		}
 
 		dynasty = valois_dynasty
@@ -16506,32 +16513,15 @@ countries = {
 
 	#Etampes (Appanage)
 	ETA = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			etampes #C. de Etampes
 			gien #C. de Gien
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast_no_censor"
-		include = "feudal_europe"
+		include = "catholic_monarchy_not_present"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			regency = consort_regency
-			active_regent = ale_maria_burgundy_castile
-			start_regency_date = 1336.9.5
-			end_regency_date = 1354.1.1
-			heir = eta_louis_evreux
-			reforms = {
-				#french_appanage_reform
-			}
 
-			ruler_term = { character = eta_charles_evreux start_date = 1319.5.19 end_date = 1336.9.5 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_charles = 1
-				name_louis = 1
-			}
 		}
 
 		capital = etampes
@@ -17095,45 +17085,14 @@ countries = {
 
 	#Montfort (Vassal, Fief Mouvant)
 	MON = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			monfort_lamaury
 		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast_no_censor"
-		include = "feudal_europe"
+		include = "catholic_monarchy_not_present"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = mon_jean_montfort
-			reforms = {
-				#french_ducal_vassal_reform
-			}
-
-			ruler_term = { character = mon_amaury_i_montfort start_date = 1050.1.1 end_date = 1053.1.1 regnal_number = 1 }
-			ruler_term = { character = mon_simon_i_montfort start_date = 1053.1.1 end_date = 1087.9.25 regnal_number = 1 }
-			ruler_term = { character = mon_amaury_ii_montfort start_date = 1087.9.25 end_date = 1089.1.1 regnal_number = 2 }
-			ruler_term = { character = mon_richard_montfort start_date = 1089.1.1 end_date = 1092.1.1 regnal_number = 1 }
-			ruler_term = { character = mon_simon_ii_montfort start_date = 1092.1.1 end_date = 1101.9.25 regnal_number = 2 }
-			ruler_term = { character = mon_amaury_iii_montfort start_date = 1101.9.25 end_date = 1137.1.1 regnal_number = 3 }
-			ruler_term = { character = mon_simon_iii_montfort start_date = 1137.1.1 end_date = 1181.3.13 regnal_number = 3 }
-			ruler_term = { character = mon_simon_iv_montfort start_date = 1181.3.13 end_date = 1218.6.25 regnal_number = 4 }
-			ruler_term = { character = mon_amaury_vi_montfort start_date = 1218.6.25 end_date = 1241.8.28 regnal_number = 3 }
-			ruler_term = { character = mon_jean_i_montfort start_date = 1241.8.28 end_date = 1249.1.1 regnal_number = 1 }
-			ruler_term = { character = mon_beatrice_montfort start_date = 1249.1.1 end_date = 1311.3.9 regnal_number = 1 }
-			ruler_term = { character = mon_yolande_montfort start_date = 1311.3.9 end_date = 1322.8.2 regnal_number = 1 }
-			ruler_term = { character = mon_jean_montfort start_date = 1322.8.2 regnal_number = 2 }
-
-			regnal_numbers = {
-				name_william = 1
-				name_amalric = 6
-				name_simeon = 4
-				name_richard = 1
-				name_john = 2
-				name_beatrix = 1
-				name_yolande = 1
-			}
 		}
 		capital = monfort_lamaury
 	}
@@ -18092,6 +18051,7 @@ countries = {
 	ORL = {
 		own_control_core = {
 			orleans sully vitry_aux_loges montargis #Orléanais
+			gien #C. de Gien
 		}
 
 		our_cores_conquered_by_others = {
@@ -36337,13 +36297,13 @@ countries = {
 	}
 
 	LDA = {  # Landau (South Germany)
-		our_cores_conquered_by_others = {
+		own_control_core = {
 			landau_rhineland
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
 		include = "expl_northern_europe"
-		include = "catholic_republic_not_present"
+		include = "catholic_free_city_no_coast"
 		government = {
 			type = republic
 			heir_selection = republic_4_year_terms
@@ -39074,13 +39034,13 @@ countries = {
 	}
 
 	SYE = {	#Speyer
-		our_cores_conquered_by_others = {
+		own_control_core = {
 			speyer
 		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_republic_not_present"
+		include = "catholic_free_city_no_coast"
 		include = "expl_northern_europe"
 		government = {
 			ruler = random
@@ -54417,6 +54377,12 @@ countries = {
 		liturgical_language = koine_dialect
 		country_rank = rank_duchy
 		capital = antioch
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1500.1.1
+			size = 0.5
+		}
 	}
 
 	OHS = { #Brotherhood of the Holy Sepulchre
@@ -54442,13 +54408,14 @@ countries = {
 			government_power = 100
 		}
 		accepted_cultures = { armenian_culture }
+		accepted_cultures = { armenian_culture }
 		liturgical_language = koine_dialect
 		country_rank = rank_duchy
 		capital = ulnia
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1375.1.1
+			date = 1400.1.1
 			size = 1
 		}
 	}
@@ -55775,7 +55742,7 @@ countries = {
 			metz wallerfangen saint_avold morhange vic_sur_seille #Pay Messin
 			merzig saarbrucken saarburg lichtenberg_veldenz meisenheim kreuznach birkenfeld trier #Trier
 			sarreguemines bitche saarwerden sarrebourg #Sarregueminois
-			zweibrucken kaiserslautern pirmasens germersheim landau_rhineland neustadt_an_der_haardt leiningen speyer heidelberg #Palatinate
+			zweibrucken kaiserslautern pirmasens germersheim neustadt_an_der_haardt leiningen heidelberg #Palatinate
 			lichtenberg haguenau strasbourg zabern benfeld #Lower Alsace
 			salm luneville nancy toul #Pays de Nancy
 			saint_die epinal arches darney mirecourt neufchateau_des_vosges #Vosges
@@ -55788,6 +55755,8 @@ countries = {
 			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould brienne
 			rosnay villemaur choiseul
 			thionville
+
+			# landau_rhineland speyer
 		}
 		own_control_integrated = {
 			#Too small/unimportant vassals (fiefs movants)

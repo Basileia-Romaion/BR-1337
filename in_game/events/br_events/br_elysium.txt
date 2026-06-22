@@ -1,11 +1,12 @@
-﻿namespace = elysium
+﻿namespace = elysium_event
 
 #add_migration
 
-elysium.1 = {
+# Form Elysium
+elysium_event.1 = {
 	type = country_event
-	title = elysium.1.title
-	desc = elysium.1.desc
+	title = elysium_event.1.title
+	desc = elysium_event.1.desc
 	outcome = positive
 
 	illustration_tags = {
@@ -29,7 +30,7 @@ elysium.1 = {
 	}
 
 	option = {
-		name = elysium.1.a
+		name = elysium_event.1.a
 		historical_option = yes
 		high_reward_option = yes
 
@@ -97,7 +98,7 @@ elysium.1 = {
 	}
 
 	option = {
-		name = elysium.1.b
+		name = elysium_event.1.b
 		historical_option = yes
 		high_reward_option = yes
 
@@ -127,3 +128,59 @@ elysium.1 = {
 	}
 
 }
+
+
+#elysium_event.2 = {
+	#type = country_event
+	#title = elysium_event.2.title
+	#desc = elysium_event.2.desc
+	#outcome = neutral
+	#fire_only_once = yes
+	#image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
+	#trigger = {
+		#tag = E1Y
+	#}
+#	
+	#illustration_tags = {
+		#10 = regular
+		#10 = interior
+	#}
+#
+	#immediate = {
+		#if = {
+			#limit = {
+				#has_dlc = "d008_fate_of_the_phoenix"
+			#}
+			#scope:actor = {
+				#change_religion = religion:hellenism_religion
+				#add_religious_aspect = religious_aspect:monism_aspect
+				#ruler = {
+					#change_character_religion = religion:hellenism_religion
+					#every_descendant = {
+						#limit = {
+							#is_alive = yes
+							#owner = scope:actor
+						#}
+						#change_character_religion = religion:hellenism_religion
+					#}
+				#}
+#
+				#capital = {			
+					#spawn_movement = {
+						#movement_definition = movement_definition:hellenism_religion_movement
+						#supporters = {
+							#value = population
+							#multiply = 0.1
+						#}
+					#}
+				#}
+			#}
+		#}
+	#}
+	#option = {
+		#historical_option = yes
+		#name = elysium_event.2.a
+#
+#
+	#}
+#}

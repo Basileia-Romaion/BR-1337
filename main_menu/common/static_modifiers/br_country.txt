@@ -138,8 +138,7 @@ REPLACE_OR_CREATE:byz_reliance_on_italian_navies = {
 	game_data = {
 		category = country 
 	}
-	ship_build_speed = 0.1
-	navy_galley_build_cost_modifier = -0.1
+	navy_maintenance_efficiency = 0.25 #BR ADDED # replaces navy_galley_build_cost_modifier = -0.1 and ship_build_speed = 0.1
 	monthly_legitimacy = -0.1 #-0.05
 	import_efficiency = tiny_trade_efficiency_penalty
 }
@@ -148,7 +147,7 @@ REPLACE_OR_CREATE:byz_mercantile_self_reliance_modifier = {
 	game_data = {
 		category = country 
 	}
-	selling_efficiency = tiny_trade_efficiency_bonus
+	selling_efficiency = small_trade_efficiency_bonus #tiny_trade_efficiency_bonus
 	monthly_legitimacy = 0.02 #0.1
 }
 
