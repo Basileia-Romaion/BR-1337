@@ -13399,6 +13399,7 @@ countries = {
 			latinoi
 			anatolian_greek_culture
 			pontic_greek_culture
+			armenian_culture
 		}
 
 		liturgical_language = koine_dialect
@@ -14321,6 +14322,7 @@ countries = {
 				#peasants
 				peasants_allowed_weapons_privilege
 
+				br_slavic_tribes_privilege
 				tribes_tribal_levies
 				tribes_allow_gatherings
 				tribes_pasture_access
@@ -14329,11 +14331,12 @@ countries = {
 		}
 		accepted_cultures = {
 			boulgaroi
-			greek_culture
 		}
 		tolerated_cultures = {
 			serbian
 			wallachian
+			aromanian
+			armenian_culture
 		}
 
 		currency_data = {
