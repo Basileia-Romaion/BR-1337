@@ -539,6 +539,7 @@ br_pyrgoi = {#frontier watchtowers
 
 	expensive = no
 	location_potential = {
+		#is_border = yes
 		NOT = {
 			has_fort = yes
 		}
@@ -549,15 +550,16 @@ br_pyrgoi = {#frontier watchtowers
 			}
 		}
 	}
+	remove_if = {
+		is_border = no
+	}
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	unique_production_methods = {
 		br_pyrgoi_maintenance = {
-			lumber = 0.05
 			stone = 0.05
-			weaponry = 0.01
-			tar = 0.01
+			weaponry = 0.05
 			category = building_maintenance
 		}
 	}
@@ -565,9 +567,7 @@ br_pyrgoi = {#frontier watchtowers
 	
 	modifier = {
 		local_garrison_size = 0.025
-		local_hostile_attrition = 0.15
-		#local_monthly_control = 0.001
-		#local_unrest = -0.05
+		local_hostile_attrition = 0.25
 	}
 	
 	raw_modifier = {
@@ -602,30 +602,26 @@ br_kleisourai = {#fortified mountain passes
 	location_potential = {
 		topography = mountains
 		num_roads > 0
-		#OR ={
-		#	topography = mountains
-		#	topography = plateau
-		#	topography = hills
-		#}
 	}
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
 	unique_production_methods = {
 		br_kleisourai_maintenance = {
-			lumber = 0.05
-			stone = 0.05
-			weaponry = 0.01
-			tar = 0.01
+			lumber = 0.1
+			stone = 0.1
+			weaponry = 0.1
+			tar = 0.05
 			category = building_maintenance
 		}
 	}
 	construction_demand = stockade_construction
 	
 	modifier = {
-		local_garrison_size = 0.050
-		local_hostile_attrition = 0.25
-		local_defensive = 0.1
+		local_garrison_size = 0.05
+		local_hostile_attrition = 0.5
+		movement_cost = 0.5
+        possible_frontage_modifier = -0.5
 	}
 	
 	raw_modifier = {
@@ -934,6 +930,7 @@ br_apothekai_building = {#Apothēkai – logistical depots
 		local_food_capacity = 150
 		local_monthly_control = 0.001
 		local_supply_limit_modifier = 1
+        supply_limit = 25
 		local_army_attrition = -1
 		local_soldiers_desired_pop = 0.1
 		local_clergy_desired_pop = 0.1

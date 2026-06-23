@@ -46,7 +46,6 @@ br_latin_trading_post = {
 	is_special = yes
 	is_foreign = yes
 	need_good_relation = no
-	in_empty = any
 	max_levels = trade_company_building_max_level
 	pop_type = burghers
 	icon = fondaco #trade_office #overseas_trading_post por_feitoria
@@ -211,9 +210,10 @@ br_latin_garrison = {
 	build_time = trade_company_build_time
 	unique_production_methods = {
 		br_latin_garrison_maintenance = {
-			lumber = 0.1
+			stone = 0.1
+			lumber = 0.15
 			weaponry = 0.05
-			tar = 0.025
+			tar = 0.05
 			category = building_maintenance
 		}
 	}
@@ -276,9 +276,6 @@ br_latin_harbor_base = {
 
 br_latin_trading_base = {
 	is_special = yes
-	is_foreign = no
-	need_good_relation = no
-	in_empty = any
 	max_levels = 1
 	pop_type = burghers
 	icon = fondaco #trade_office #overseas_trading_post por_feitoria
@@ -297,7 +294,6 @@ br_latin_trading_base = {
 			is_coastal = yes
 			is_port = yes
 		}
-		dominant_culture = { has_culture_group = culture_group:greek_group }
 	}
 	remove_if = {
 		owner ?= { 

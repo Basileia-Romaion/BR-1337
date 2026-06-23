@@ -44,7 +44,7 @@ REPLACE_OR_CREATE:byz_bureaucracy_advance = {
 	age = age_1_traditions
 	icon = library_advance
 	global_max_bureaucracy_slots = 2
-	allow_bureaucracy = yes
+	#allow_bureaucracy = yes #base now
 	requires = medieval_administration
 }
 
