@@ -53544,7 +53544,7 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "br_pronoia_template"
+		include = "br_thema_template"
 		government = {
 			ruler_term = { character = br_ere_rdm_character_48 start_date = 1335.1.1 }
 			ruler = br_ere_rdm_character_48
@@ -54104,19 +54104,6 @@ countries = {
 		government = {
 			ruler_term = { character = br_balkan_rdm_character_3 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_3
-			centralization_vs_decentralization = 70
-			aristocracy_vs_plutocracy = -50
-			serfdom_vs_free_subjects = -90
-			traditionalist_vs_innovative = -30
-			spiritualist_vs_humanist = -50
-			mercantilism_vs_free_trade = -60
-			offensive_vs_defensive = 20
-			land_vs_naval = -20
-			quality_vs_quantity = 15
-			belligerent_vs_conciliatory = -20
-			capital_economy_vs_traditional_economy = 95
-			individualism_vs_communalism = -20
-			outward_vs_inward = 20
 		}
 		accepted_cultures = {
 			bulgarian
@@ -54138,19 +54125,6 @@ countries = {
 		government = {
 			ruler_term = { character = br_balkan_rdm_character_2 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_2
-			centralization_vs_decentralization = 70
-			aristocracy_vs_plutocracy = -50
-			serfdom_vs_free_subjects = -90
-			traditionalist_vs_innovative = -30
-			spiritualist_vs_humanist = -50
-			mercantilism_vs_free_trade = -60
-			offensive_vs_defensive = 20
-			land_vs_naval = -20
-			quality_vs_quantity = 15
-			belligerent_vs_conciliatory = -20
-			capital_economy_vs_traditional_economy = 95
-			individualism_vs_communalism = -20
-			outward_vs_inward = 20
 		}
 		accepted_cultures = {
 			bulgarian
@@ -54172,19 +54146,6 @@ countries = {
 		government = {
 			ruler_term = { character = br_ere_rdm_character_39 start_date = 1333.1.1 }
 			ruler = br_ere_rdm_character_39
-			centralization_vs_decentralization = 70
-			aristocracy_vs_plutocracy = -50
-			serfdom_vs_free_subjects = -90
-			traditionalist_vs_innovative = -30
-			spiritualist_vs_humanist = -50
-			mercantilism_vs_free_trade = -60
-			offensive_vs_defensive = 20
-			land_vs_naval = -20
-			quality_vs_quantity = 15
-			belligerent_vs_conciliatory = -20
-			capital_economy_vs_traditional_economy = 95
-			individualism_vs_communalism = -20
-			outward_vs_inward = 20
 		}
 		accepted_cultures = {
 			bulgarian
@@ -54410,7 +54371,6 @@ countries = {
 			army_tradition = 100
 			government_power = 100
 		}
-		accepted_cultures = { armenian_culture }
 		accepted_cultures = { armenian_culture }
 		liturgical_language = koine_dialect
 		country_rank = rank_duchy
