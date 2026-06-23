@@ -4,7 +4,8 @@ REPLACE_OR_CREATE:byz_cataphracts_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	age = age_1_traditions
@@ -16,7 +17,8 @@ REPLACE_OR_CREATE:byz_akritai_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	age = age_1_traditions
@@ -37,7 +39,8 @@ REPLACE_OR_CREATE:byz_bureaucracy_advance = {
 	potential = { 
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 		has_dlc = "d008_fate_of_the_phoenix"
 	}
