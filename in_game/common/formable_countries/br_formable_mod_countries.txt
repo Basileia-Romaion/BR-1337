@@ -273,7 +273,7 @@ REPLACE_OR_CREATE:AFK_f = {
 
 REPLACE_OR_CREATE:P0N_f = {
 	level = 3
-	required_locations_fraction = 0.66
+	required_locations_fraction = 0.65
 	rule = historical
 	
 	potential = {
@@ -333,7 +333,7 @@ REPLACE_OR_CREATE:P1N_f = {
 
 IT0_f = {
 	level = 3
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.5
 	rule = historical
 	potential = {
 		not = { tag = ITA }

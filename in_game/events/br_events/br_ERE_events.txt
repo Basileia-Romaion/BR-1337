@@ -36,7 +36,7 @@ br_ere_events.1 = {
 			limit = {
 				has_dlc = "d008_fate_of_the_phoenix"
 			}
-			##Europe Pronoia
+			##Europe Pronoia family members
 			if = {
 				limit = { country_exists = c:THE }
 				c:THE = {
@@ -55,15 +55,6 @@ br_ere_events.1 = {
 					}
 				}
 			}
-			#if = {
-				#limit = { country_exists = c:MOE }
-				#c:MOE = {
-					#make_subject_of = {
-						#target = c:BYZ
-						#type = subject_type:pronoia
-					#}
-				#}
-			#}
 		}
 	}
 	option = {
@@ -78,7 +69,6 @@ br_ere_events.1 = {
 				every_pop = {
 					limit = {
 						culture = culture:anatolian_greek_culture
-						#pop_type = pop_type:burghers
 					}
 					add_pop_satisfaction = pop_satisfaction_extreme_penalty
 				}
@@ -89,7 +79,6 @@ br_ere_events.1 = {
 					add_pop_satisfaction = pop_satisfaction_extreme_bonus
 				}
 			}
-			trigger_event_silently = br_console_only_events.1
 	   	}
 	}
 }

@@ -27,7 +27,15 @@ REPLACE_OR_CREATE:byz_akritai_advance = {
 }
 REPLACE_OR_CREATE:expand_varangian_guard_advance = {
 	age = age_2_renaissance
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	unlock_unit = br_renaissance_varangians
 	#num_of_varangian_units = 6
 	requires = medieval_military
@@ -36,11 +44,13 @@ REPLACE_OR_CREATE:expand_varangian_guard_advance = {
 
 REPLACE_OR_CREATE:byz_bureaucracy_advance = {
 	content_priority = 600
-	potential = { 
+	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:greek_group }
-			culture = { has_culture_group = culture_group:elysian_group }
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
 		}
 		has_dlc = "d008_fate_of_the_phoenix"
 	}
@@ -49,161 +59,6 @@ REPLACE_OR_CREATE:byz_bureaucracy_advance = {
 	global_max_bureaucracy_slots = 2
 	#allow_bureaucracy = yes #base now
 	requires = medieval_administration
-}
-
-##############################-Iberia-##############################
-REPLACE_OR_CREATE:cas_repoblaciones = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	global_monthly_prosperity = 0.001
-	global_migration_speed_modifier = 0.1
-	requires = legalism_advance
-}
-REPLACE_OR_CREATE:cas_the_reconquista = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	land_morale_modifier = 0.15
-	requires = feudalism_advance
-}
-REPLACE_OR_CREATE:cas_castilian_navy = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	global_maritime_presence_modifier = 0.1
-	navy_heavy_ship_power = 0.15
-	requires = dock_advance
-}
-REPLACE_OR_CREATE:cas_cronicas_reales = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	cultural_tradition_modifier = 0.1
-	monthly_prestige = 0.1
-	requires = renaissance_court
-}
-REPLACE_OR_CREATE:cas_masters_of_the_orders = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	monthly_army_tradition = 0.05
-	requires = pike_square
-}
-REPLACE_OR_CREATE:cas_new_world = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			has_or_had_tag = ADU
-			is_castilian_spain = yes
-		}
-	}
-	colonial_migration_size_modifier = 0.25
-	colonial_range_modifier = 0.25
-	requires = open_sea_exploration
-}
-REPLACE_OR_CREATE:cas_reform_of_millones = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	tax_income_efficiency = large_tax_income_efficiency_bonus
-	requires = imperial_ambitions
-}
-REPLACE_OR_CREATE:cas_marine_infantry = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	army_disembark_speed = 0.25
-	naval_morale_modifier = 0.10
-	requires = mercenaries_reformation_advance
-}
-REPLACE_OR_CREATE:cas_pasos = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	tolerance_own = 1
-	requires = absolute_rulership
-}
-REPLACE_OR_CREATE:cas_real_academia_espanola = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	global_monthly_literacy = 0.02
-	requires = the_constitution
-}
-
-REPLACE_OR_CREATE:cas_canal_de_castilla = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			is_castilian_spain = yes
-		}
-	}
-	global_monthly_food_modifier = 0.2
-	requires = enlightened_court
-}
-
-REPLACE_OR_CREATE:cas_royal_factories = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = CAS
-			has_or_had_tag = LON
-			has_or_had_tag = ADU
-			is_castilian_spain = yes
-		}
-	}
-	global_production_efficiency = large_production_efficiency_bonus
-	requires = revolutions_subject_opinions_advance
 }
 
 ##############################-Norway/Vikings-##############################
@@ -555,16 +410,8 @@ REPLACE_OR_CREATE:english_tradition = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -576,16 +423,8 @@ REPLACE_OR_CREATE:english_heritage = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -599,16 +438,8 @@ REPLACE_OR_CREATE:magna_carta_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -623,20 +454,11 @@ REPLACE_OR_CREATE:unlock_early_longbowmen_advance = {
 		OR = {
 			has_or_had_tag = WLS
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
 			has_or_had_tag = NSE
 			culture = culture:welsh
 			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:welsh }
+			culture = { merged_culture_group_contains_culture = culture:english }
 		}
 	}
 	unlock_levy = levy_a_early_longbowmen
@@ -650,20 +472,11 @@ REPLACE_OR_CREATE:unlock_longbowmen_advance = {
 		OR = {
 			has_or_had_tag = WLS
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
 			has_or_had_tag = NSE
 			culture = culture:welsh
 			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:welsh }
+			culture = { merged_culture_group_contains_culture = culture:english }
 		}
 	}
 	unlock_levy = levy_a_longbowmen
@@ -676,20 +489,11 @@ REPLACE_OR_CREATE:unlock_late_longbowmen_advance = {
 		OR = {
 			has_or_had_tag = WLS
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
 			has_or_had_tag = NSE
 			culture = culture:welsh
 			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:welsh }
+			culture = { merged_culture_group_contains_culture = culture:english }
 		}
 	}
 	unlock_levy = levy_a_late_longbowmen
@@ -700,17 +504,8 @@ REPLACE_OR_CREATE:royal_navy = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -721,17 +516,8 @@ REPLACE_OR_CREATE:secretaries_of_state = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -742,17 +528,8 @@ REPLACE_OR_CREATE:eltham_ordinance = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -764,17 +541,8 @@ REPLACE_OR_CREATE:sick_and_hurt_board = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -786,17 +554,8 @@ REPLACE_OR_CREATE:british_bill_of_rights = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -808,17 +567,8 @@ REPLACE_OR_CREATE:navigation_acts = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -830,17 +580,8 @@ REPLACE_OR_CREATE:inigo_architecture = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -855,17 +596,8 @@ REPLACE_OR_CREATE:sailing_and_fighting_instructions = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -883,17 +615,8 @@ REPLACE_OR_CREATE:coke_smelting = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -915,17 +638,8 @@ REPLACE_OR_CREATE:eng_red_coats = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -938,17 +652,8 @@ REPLACE_OR_CREATE:eng_experimental_riflemen = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -961,17 +666,8 @@ REPLACE_OR_CREATE:english_ambition = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}
@@ -982,17 +678,8 @@ REPLACE_OR_CREATE:water_frame = {
 	potential = {
 		OR = {
 			has_or_had_tag = ENG
-			has_or_had_tag = AGL
-			has_or_had_tag = LSY
-			has_or_had_tag = EAG
-			has_or_had_tag = KAT
-			has_or_had_tag = DST
-			has_or_had_tag = SMR
-			has_or_had_tag = WSX
-			has_or_had_tag = CRN
-			has_or_had_tag = MCA
-			has_or_had_tag = NOL
-			has_or_had_tag = GBR
+			culture = culture:english
+			culture = { merged_culture_group_contains_culture = culture:english }
 			has_or_had_tag = NSE
 		}
 	}

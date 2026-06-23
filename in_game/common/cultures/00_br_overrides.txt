@@ -247,10 +247,12 @@ REPLACE_OR_CREATE:median = {
 	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
+		latinoi = positive
+		italiotai_culture = positive
 	}
 	
 	culture_groups = {
-		italian_group roman_group
+		italian_group #roman_group
 	}
 }
 
@@ -264,6 +266,7 @@ REPLACE_OR_CREATE:venetian = {
 	opinions = {
 		dalmatian = kindred
 		latinoi = kindred
+		italiotai_culture = kindred
 		greek_culture = positive
 	}
 
@@ -274,7 +277,7 @@ REPLACE_OR_CREATE:venetian = {
 	}
 	
 	culture_groups = {
-		italian_group roman_group
+		italian_group #roman_group
 	}
 }
 
@@ -321,7 +324,7 @@ REPLACE_OR_CREATE:neapolitan = {
 	}
 	
 	culture_groups = {
-		italian_group roman_group
+		italian_group
 	}
 }
 
@@ -381,7 +384,28 @@ REPLACE_OR_CREATE:arvanite = {
 		illyrikoi_greek_culture = positive
 	}
 	culture_groups = {
-		illyrian_group
+		illyrian_group roman_group
+	}
+}
+
+REPLACE_OR_CREATE:serbian = {
+	language = serbian_dialect
+	
+	color = map_serbian
+	
+	tags = { south_slavic_gfx east_mediterranean_gfx mediterranean_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		greek_culture = negative
+		bulgarian = negative
+		albanian = positive
+		boulgaroi = positive
+		illyrikoi_greek_culture = positive
+	}
+	culture_groups = {
+		slavic_group
+		south_slavic_group
+		roman_group
 	}
 }
 
@@ -398,6 +422,7 @@ REPLACE_OR_CREATE:sclavene = {
 	culture_groups = {
 		slavic_group
 		south_slavic_group
+		roman_group
 	}
 }
 
@@ -419,6 +444,7 @@ REPLACE_OR_CREATE:bulgarian = {
 	culture_groups = {
 		slavic_group
 		south_slavic_group
+		roman_group
 	}
 }
 

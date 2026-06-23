@@ -82,7 +82,6 @@ roman_romaioi_identity = {
 		OR = {
 			has_or_had_tag = BYZ
 			culture = culture:greek_culture
-			#culture = { has_culture_group = culture_group:roman_group }
 		}
 	}
 	requires = state_administration_advance
@@ -97,16 +96,14 @@ roman_codified_custom = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = codified_laws
-	global_crown_estate_power = 0.05
 	unlock_policy = br_roman_court_customs
 	unlock_policy = br_byzantine_law
+	unlock_policy = br_roman_distribution_of_power_law
 	diplomatic_reputation = diplomatic_reputation_mild_bonus
 }
 
@@ -123,11 +120,9 @@ roman_pronoial_administration = {
 		}
 	}
 	requires = roman_codified_custom
-	unlock_policy = br_roman_distribution_of_power_law
 	unlock_policy = br_pronoia_system
 	unlock_building = br_pronoia_estate
 	subject_loyalty = 5
-	diplomatic_annexation_efficiency = 0.05
 }
 
 roman_akritic_reforms = {
@@ -136,10 +131,8 @@ roman_akritic_reforms = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = roman_pronoial_administration
@@ -155,10 +148,16 @@ roman_akritic_reforms = {
 
 br_roman_ecumenical_patriarch_advance = {
 	age = age_1_traditions
-	potential = { has_or_had_tag = BYZ }
-		
-	religious_icon_power_modifier = 0.25
-	global_clergy_city_desired_pop =  0.05
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
+
 	global_pop_conversion_speed_modifier = 0.25
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	icon = church_councils
@@ -174,15 +173,13 @@ roman_scribal_administration = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = renaissance_development
-	research_speed_modifier = 0.05
-	global_clergy_max_literacy = 5
+	#research_speed_modifier = 0.05
+	global_clergy_max_literacy = 10
 	global_books_output_modifier = 0.05
 	ai_weight = { add = 5 }
 }
@@ -193,10 +190,8 @@ roman_court_and_office = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = roman_scribal_administration
@@ -207,32 +202,57 @@ roman_court_and_office = {
 	ai_weight = { add = 5 }
 }
 
-br_stationes_advance = { #loc
+br_stationes_advance = {
 	age = age_2_renaissance
 	icon = byz_crossroads_of_continents
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = roman_court_and_office
-	#army_auxiliary_power = 0.1
+	army_auxiliary_power = 0.1
 	global_distance_from_capital_speed_propagation = 0.05
-	global_trade_through_owned_territory_efficiency = 0.05
-	trade_range_modifier = 0.05
+	global_trade_through_owned_territory_efficiency = 0.1
 	unlock_building = br_stationes_building
 	ai_weight = { add = 5 }
 }
 
-br_tagmata_barracks_advance = { #loc
+#trade_range_modifier = 0.05
+#army_logistics_distance_modifier = 0.1
+
+br_tagmata_barracks_advance = {
 	age = age_2_renaissance
 	icon = byz_modernized_strategikon
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = medieval_military
-	global_manpower_modifier = 0.05
 	unlock_building = br_tagmata_barracks
 	ai_weight = { add = 5 }
+}
+
+br_roman_marine_infantry = {
+	age = age_4_reformation
+	icon = cas_marine_infantry
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	army_disembark_speed = 0.25
+	naval_morale_modifier = 0.10
+	requires = mercenaries_reformation_advance
 }
 
 #br_orthodox_missionary_work = {
@@ -254,10 +274,8 @@ roman_thematic_recruitment = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = pike_square
@@ -274,16 +292,15 @@ roman_infrastructure = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = supply_depot_advance_age_3_discovery
 	global_road_building_time = -0.1
 	global_distance_from_capital_speed_propagation = 0.1
 	global_trade_through_owned_territory_efficiency = 0.1
+	army_logistics_distance_modifier = 0.1
 	ai_weight = { add = 5 }
 }
 
@@ -293,14 +310,11 @@ br_apothekai_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = roman_infrastructure
-	supply_depot_capacity = 25
 	unlock_building = br_apothekai_building
 	ai_weight = { add = 5 }
 }
@@ -313,10 +327,8 @@ roman_imperial_legitimacy = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = confessional_court
@@ -332,14 +344,12 @@ roman_civic_order = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = roman_imperial_legitimacy
-	tolerance_own = 1
+	tolerance_own = 0.5
 	global_urban_build_buildings_efficiency = 0.05
 	global_pop_promotion_speed_modifier = 0.1
 	ai_weight = { add = 5 }
@@ -370,10 +380,8 @@ roman_centralized_command = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = regiment_reinforcement_speed_absolutism
@@ -389,15 +397,13 @@ roman_law_above_custom = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			any_overlord_or_above = {
-				has_or_had_tag = BYZ
-			}
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = war_score_absolutism_advance
 	change_policy_cost_modifier = -0.1
-	global_crown_estate_power = 0.05
+	global_crown_estate_power = 0.1
 	ai_weight = { add = 5 }
 }
 
@@ -409,10 +415,8 @@ roman_state_identity = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			#any_overlord_or_above = {
-			#	has_or_had_tag = BYZ
-			#}
-			#culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	requires = crown_power_advance_revolutions
@@ -429,7 +433,13 @@ roman_state_identity = {
 br_greek_fire = {
 	age = age_1_traditions
 	requires = roman_codified_custom
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
 	icon = alchemy_advance
 	siege_ability = 0.05 # siege ability
 	navy_galley_power = 0.05
@@ -444,7 +454,15 @@ br_greek_fire = {
 
 br_traditions_varangians_advance = {
 	age = age_1_traditions
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = roman_akritic_reforms
 	unlock_building = br_varangian_camp
 	icon = expand_varangian_guard_advance
@@ -454,7 +472,15 @@ br_traditions_varangians_advance = {
 
 br_discovery_varangians_advance = {
 	age = age_3_discovery
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = matchlock_gun
 	unlock_unit = br_discovery_varangians
 	unlock_building = br_varangian_barracks
@@ -465,7 +491,15 @@ br_discovery_varangians_advance = {
 
 br_reformation_varangians_advance = {
 	age = age_4_reformation
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = flintlock_gun
 	unlock_unit = br_reformation_varangians
 	icon = expand_varangian_guard_advance
@@ -475,7 +509,15 @@ br_reformation_varangians_advance = {
 
 br_absolutism_varangians_advance = {
 	age = age_5_absolutism
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = roman_centralized_command
 	unlock_unit = br_absolutism_varangians
 	icon = expand_varangian_guard_advance
@@ -485,7 +527,15 @@ br_absolutism_varangians_advance = {
 
 br_revolutions_varangians_advance = {
 	age = age_6_revolutions
-	potential = { has_or_had_tag = BYZ }
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group }
+				owns = location:constantinople
+			}
+		}
+	}
 	requires = recruitment_improvements_revolutions
 	unlock_unit = br_revolutions_varangians
 	icon = expand_varangian_guard_advance
@@ -500,7 +550,8 @@ br_katapanate_building_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	#icon = 
@@ -513,7 +564,8 @@ br_age_2_kontaratoi_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	icon = byz_cataphracts_advance
@@ -527,7 +579,8 @@ br_despotate_building_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	#icon = 
@@ -540,7 +593,8 @@ br_age_3_lonchophoroi_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	icon = byz_cataphracts_advance
@@ -554,7 +608,8 @@ br_age_4_thorakophoroi_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	icon = byz_cataphracts_advance
@@ -568,7 +623,8 @@ br_age_5_prokoursatores_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	icon = byz_cataphracts_advance
@@ -582,7 +638,8 @@ br_age_6_basilikoi_advance = {
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:roman_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
 	icon = byz_cataphracts_advance

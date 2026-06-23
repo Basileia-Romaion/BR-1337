@@ -160,7 +160,7 @@ br_naval_theme_hq = {
 		}
 	}
 	country_potential = {
-		culture = { has_culture_group = culture_group:roman_group }
+		culture = { has_culture_group = culture_group:greek_group }
 		#has_reform = government_reform:br_naval_akritai_reform
 	}
 
@@ -216,7 +216,7 @@ br_varangian_camp = {
 	}
 
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
 	}
 
 
@@ -263,7 +263,7 @@ br_tagmata_camp = {
 	}
 
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
 	}
 
 	modifier = {
@@ -297,21 +297,28 @@ br_soldier_farmers = { #thema estates
 	
 	location_potential = {
 		local_control < 0.75
-		NOT = { 
+		NOR = { 
 			has_building = building_type:br_pronoia_estate
+			has_building = building_type:br_kekhrismene_pronoia
+			has_building = building_type:br_foederati_grant
 		}
 		OR = {
-			raw_material = goods:wheat
-			raw_material = goods:maize
-			raw_material = goods:rice
-			raw_material = goods:millet
-			raw_material = goods:legumes
-			raw_material = goods:potato
-			raw_material = goods:livestock
-			raw_material = goods:olives
-			raw_material = goods:fruit
-			raw_material = goods:wool
+			vegetation = grasslands
+			vegetation = farmland
+			vegetation = sparse
 		}
+		#OR = {
+			#raw_material = goods:wheat
+			#raw_material = goods:maize
+			#raw_material = goods:rice
+			#raw_material = goods:millet
+			#raw_material = goods:legumes
+			#raw_material = goods:potato
+			#raw_material = goods:livestock
+			#raw_material = goods:olives
+			#raw_material = goods:fruit
+			#raw_material = goods:wool
+		#}
 	}
 
 	allow_wrong_startup = yes
@@ -322,30 +329,34 @@ br_soldier_farmers = { #thema estates
 
 	build_time = village_build_time
 	
+	possible_production_methods = {
+		rural_weaponmaker
+	}
 	unique_production_methods = {
 		br_soldier_farmers_cattle_maintenance = {
 			tools = 0.025
 			clay = 1.0
 			output = 0.5
 			produced = livestock
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
 		br_soldier_farmers_wool_maintenance = {
 			tools = 0.025
 			clay = 1.0
-			output = 0.25
+			output = 0.5
 			produced = wool
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
 		br_soldier_farmers_sturdy_crops_maintenance = { 
+			tools = 0.025
+			clay = 1.0
 			produced = millet
 			output = 1
-			tools = 0.1
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -353,7 +364,7 @@ br_soldier_farmers = { #thema estates
 			produced = horses
 			output = 0.5
 			millet = 0.5
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 	}
@@ -397,8 +408,10 @@ br_pronoia_estate = { #pronoia estates
 
 	location_potential = {
 		local_control < 0.75
-		NOT = { 
+		NOR = { 
+			has_building = building_type:br_foederati_grant
 			has_building = building_type:br_soldier_farmers
+			has_building = building_type:br_stratiotikon_thema_estate
 		}
 		OR = {
 			vegetation = grasslands
@@ -452,7 +465,9 @@ br_foederati_grant = { #Foederati Settlements
 		local_control < 0.75
 		NOR = { 
 			has_building = building_type:br_pronoia_estate
+			has_building = building_type:br_kekhrismene_pronoia
 			has_building = building_type:br_soldier_farmers
+			has_building = building_type:br_stratiotikon_thema_estate
 		}
 		any_pop = { 
 			pop_type = pop_type:tribesmen 
@@ -474,7 +489,7 @@ br_foederati_grant = { #Foederati Settlements
 			clay = 1.0
 			output = 0.5
 			produced = livestock
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -483,7 +498,7 @@ br_foederati_grant = { #Foederati Settlements
 			clay = 1.0
 			output = 0.25
 			produced = wool
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -491,7 +506,7 @@ br_foederati_grant = { #Foederati Settlements
 			produced = millet
 			output = 1
 			tools = 0.1
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -499,7 +514,7 @@ br_foederati_grant = { #Foederati Settlements
 			produced = horses
 			output = 0.5
 			millet = 0.5
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 	}
@@ -558,6 +573,7 @@ br_pyrgoi = {#frontier watchtowers
 	}
 	unique_production_methods = {
 		br_pyrgoi_maintenance = {
+			lumber = 0.1
 			stone = 0.05
 			weaponry = 0.05
 			category = building_maintenance
@@ -595,6 +611,7 @@ br_kleisourai = {#fortified mountain passes
 	megalopolis = no
 
 	ai_forbid_shutdown = yes
+	AI_ignore_available_worker_flag = yes
 	#is_indestructible = yes
 	build_time = small_fort_building
 
@@ -623,14 +640,10 @@ br_kleisourai = {#fortified mountain passes
 		movement_cost = 0.5
         possible_frontage_modifier = -0.5
 	}
-	
 	raw_modifier = {
 		minimum_fort_level = 1
 		propagating_zone_of_control = no
 	}
-	#remove_if = {
-	#	NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	#}
 	allow_wrong_startup = yes
 }
 
@@ -670,7 +683,7 @@ br_varangian_barracks = {
 	}
 
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
 	}
 
 
@@ -719,7 +732,7 @@ br_tagmata_barracks = {
 	}
 	allow = { is_province_capital = yes }
 	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		NOT = { owner = { culture = { has_culture_group = culture_group:greek_group } } }
 	}
 
 
@@ -754,9 +767,10 @@ br_stratiotikon_thema_estate = { #Military Theme
 	
 	location_potential = {
 		local_control < 0.85
-		NOT = { 
+		NOR = { 
 			has_building = building_type:br_pronoia_estate
 			has_building = building_type:br_kekhrismene_pronoia
+			has_building = building_type:br_foederati_grant
 		}
 		OR = {
 			raw_material = goods:wheat
@@ -785,7 +799,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 			clay = 1.0
 			output = 0.65
 			produced = livestock
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -794,7 +808,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 			clay = 1.0
 			output = 0.35
 			produced = wool
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -802,7 +816,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 			produced = millet
 			output = 1
 			tools = 0.1
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 
@@ -810,7 +824,7 @@ br_stratiotikon_thema_estate = { #Military Theme
 			produced = horses
 			output = 0.5
 			millet = 0.5
-			debug_max_profit = 0.6
+			debug_max_profit = rural_profit_margin
 			category = building_maintenance
 		}
 	}
@@ -831,7 +845,6 @@ br_stratiotikon_thema_estate = { #Military Theme
 		local_soldiers_desired_pop = 0.5
 		local_army_levy_size_modifier = 0.15
 		local_manpower = 0.005
-		#local_pop_assimilation_speed = 0.002
 	}
 }
 
@@ -854,7 +867,8 @@ br_kekhrismene_pronoia = { #pronoia estates
 
 	location_potential = {
 		local_control < 0.85
-		NOT = { 
+		NOR = { 
+			has_building = building_type:br_foederati_grant
 			has_building = building_type:br_soldier_farmers
 			has_building = building_type:br_stratiotikon_thema_estate
 		}
@@ -884,7 +898,6 @@ br_kekhrismene_pronoia = { #pronoia estates
 		local_nobles_desired_pop = 0.05
 		local_soldiers_desired_pop = 0.25
 		local_manpower = 0.002
-		#local_pop_assimilation_speed = 0.001
     }
 }
 
@@ -1100,6 +1113,9 @@ br_doukate_building = {
 		local_nobles_estate_power = 0.5
 		local_proximity_source = 20
     }
+	#capital_to_overlord_modifier = {
+	#	local_manpower = 0.005
+    #}
 	
 	raw_modifier = {
 		minimum_fort_level = 2
@@ -1176,6 +1192,9 @@ br_katapanate_building = {
 		local_nobles_estate_power = 0.35
 		local_proximity_source = 25
     }
+	#capital_to_overlord_modifier = {
+	#	local_manpower = 0.01
+    #}
 	
 	raw_modifier = {
 		minimum_fort_level = 2
@@ -1253,6 +1272,9 @@ br_despotate_building = {
 		local_nobles_estate_power = 0.25
 		local_proximity_source = 35
     }
+	#capital_to_overlord_modifier = {
+	#	local_manpower = 0.015
+    #}
 	
 	raw_modifier = {
 		minimum_fort_level = 3
@@ -1329,6 +1351,9 @@ br_dioikesis_building = {
 		#local_nobles_estate_power = 0.50
 		local_proximity_source = 45
     }
+	#capital_to_overlord_modifier = {
+	#	local_manpower = 0.02
+    #}
 	
 	raw_modifier = {
 		minimum_fort_level = 4

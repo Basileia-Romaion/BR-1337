@@ -82,7 +82,7 @@ REPLACE_OR_CREATE:city = {
 			}
 			AND = {
 				owner = { is_ai = yes }
-				population >= 50
+				population >= 45
 			}
 		}
 		modifier:cannot_upgrade_location = no
@@ -138,7 +138,7 @@ REPLACE_OR_CREATE:town = {
 			}
 			AND = {
 				owner = { is_ai = yes }
-				population >= 20
+				population >= 15
 			}
 		}
 		modifier:cannot_upgrade_location = no

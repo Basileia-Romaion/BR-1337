@@ -4721,6 +4721,33 @@ building_manager = {
 	br_pronoia_estate = { tag = BYZ level = 1 location = turgut }
 	br_pronoia_estate = { tag = BYZ level = 1 location = suluklu }
 
+	#Imitators 
+	#Serbs and Bulgars
+	br_pronoia_estate = { tag = SER level = 1 location = pristina }
+	#br_pronoia_estate = { tag = SER level = 1 location = rudnik }
+	br_pronoia_estate = { tag = SER level = 1 location = branicevo }
+	br_pronoia_estate = { tag = SER level = 1 location = smederevo }
+	br_pronoia_estate = { tag = SER level = 1 location = stalac }
+	br_pronoia_estate = { tag = SER level = 1 location = gradac }
+	br_pronoia_estate = { tag = SER level = 1 location = krupanj }
+	br_pronoia_estate = { tag = SER level = 1 location = uzice }
+	br_pronoia_estate = { tag = SER level = 1 location = ustikolina }
+	br_pronoia_estate = { tag = SER level = 1 location = trebinje }
+	br_pronoia_estate = { tag = SER level = 1 location = gradina }
+	br_pronoia_estate = { tag = SER level = 1 location = has }
+	br_pronoia_estate = { tag = SER level = 1 location = peja }
+	br_pronoia_estate = { tag = SER level = 1 location = brskovo }
+
+	br_pronoia_estate = { tag = BUL level = 1 location = strumica }
+	br_pronoia_estate = { tag = BUL level = 1 location = prilep }
+	br_pronoia_estate = { tag = BUL level = 1 location = melnik }
+	br_pronoia_estate = { tag = BUL level = 1 location = pirot }
+	br_pronoia_estate = { tag = BUL level = 1 location = pleven }
+	br_pronoia_estate = { tag = BUL level = 1 location = nikopol }
+	br_pronoia_estate = { tag = BUL level = 1 location = cherven }
+	br_pronoia_estate = { tag = BUL level = 1 location = shumen }
+	br_pronoia_estate = { tag = BUL level = 1 location = sozopol }
+
 	#Latins
 	br_pronoia_estate = { tag = ACH level = 1 location = andravida }
 	br_pronoia_estate = { tag = ACH level = 1 location = kalamata }
@@ -4964,7 +4991,6 @@ building_manager = {
 	peasants_training_grounds = { tag = MES level = 1 location = arapgir }
 
 	sergeantry = { tag = BUL level = 1 location = sredets }
-	nobles_recruitment_center = { tag = BUL level = 1 location = pleven }
 	peasants_training_grounds = { tag = BUL level = 1 location = ruse }
 	peasants_training_grounds = { tag = BUL level = 1 location = cherven }
 	peasants_training_grounds = { tag = BUL level = 1 location = stanimaka }
@@ -4972,8 +4998,6 @@ building_manager = {
 	sergeantry = { tag = SER level = 1 location = prizren }
 	sergeantry = { tag = SER level = 1 location = skopje }
 	sergeantry = { tag = SER level = 1 location = nis }
-	nobles_recruitment_center = { tag = SER level = 1 location = smederevo }
-	nobles_recruitment_center = { tag = SER level = 1 location = uzice }
 	nobles_recruitment_center = { tag = SER level = 1 location = soko_grad }
 	peasants_training_grounds = { tag = SER level = 1 location = trebinje }
 	peasants_training_grounds = { tag = SER level = 1 location = shkoder }
@@ -4984,14 +5008,10 @@ building_manager = {
 	peasants_training_grounds = { tag = BOS level = 1 location = kljuc }
 	peasants_training_grounds = { tag = BOS level = 1 location = mostar }
 	nobles_recruitment_center = { tag = SER level = 1 location = kucevo }
-	nobles_recruitment_center = { tag = SER level = 1 location = stalac }
 	nobles_recruitment_center = { tag = SER level = 1 location = velbuzd }
 	nobles_recruitment_center = { tag = SER level = 1 location = trgoviste_SER }
-	nobles_recruitment_center = { tag = SER level = 1 location = krupanj }
-	nobles_recruitment_center = { tag = BUL level = 1 location = sozopol }
 	sergeantry = { tag = BUL level = 1 location = constanta }
 	nobles_recruitment_center = { tag = BUL level = 1 location = stanimaka }
-	nobles_recruitment_center = { tag = BUL level = 1 location = melnik }
 	nobles_recruitment_center = { tag = BUL level = 1 location = lardeja }
 
 	peasants_training_grounds = { tag = MZK level = 1 location = debar }

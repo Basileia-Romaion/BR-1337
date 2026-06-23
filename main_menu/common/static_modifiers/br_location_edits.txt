@@ -52,3 +52,12 @@ TRY_INJECT:minor_rebel_uprising = {
 	local_monthly_prosperity = -0.005 # additional -0.005 for 0.01 total
 	local_monthly_control = -0.005 # additional -0.005 for 0.01 total
 }
+
+REPLACE_OR_CREATE:repopulation_of_anatolia_modifier = {
+	game_data = {
+		category = location
+	}
+
+	local_migration_attraction = 1 #was 2
+	local_monthly_prosperity= 0.005 #was 0.003
+}
