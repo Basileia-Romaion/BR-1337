@@ -211,7 +211,7 @@ imperial_loyalist = {
 	}
 
 	auto_rescind_trigger = {
-		religion = scope:recipient.leader_country.religion
+		religion != scope:recipient.leader_country.religion
 		OR = {
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
