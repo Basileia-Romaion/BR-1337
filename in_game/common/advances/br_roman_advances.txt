@@ -730,4 +730,28 @@ br_pontic_heritage = {
 	army_light_infantry_maintenance_cost_modifier = -0.2
 }
 
-
+#Mount Athos
+br_mount_athos_incense = {
+	age = age_1_traditions
+	potential = {
+		has_reform = government_reform:br_holy_community
+	}
+	global_incense_output_modifier = 1
+	requires = cathedral_advance
+}
+br_mount_athos_books = {
+	age = age_1_traditions
+	potential = {
+		has_reform = government_reform:br_holy_community
+	}
+	global_books_output_modifier = 1
+	requires = br_mount_athos_incense
+}
+br_mount_athos_wine = {
+	age = age_1_traditions
+	potential = {
+		has_reform = government_reform:br_holy_community
+	}
+	global_wine_output_modifier = 1
+	requires = br_mount_athos_books
+}

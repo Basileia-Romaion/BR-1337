@@ -1,0 +1,66 @@
+﻿starting_technology_level = 3
+court_language = koine_dialect
+
+government = {
+	type = theocracy
+	heir_selection = abbot_elective
+	
+	centralization_vs_decentralization = 0
+	traditionalist_vs_innovative = -100
+	spiritualist_vs_humanist = -100
+	aristocracy_vs_plutocracy = 0
+	serfdom_vs_free_subjects = 0
+	mercantilism_vs_free_trade = -100
+	belligerent_vs_conciliatory = 100
+	quality_vs_quantity = 0
+	offensive_vs_defensive = 100
+	land_vs_naval = -100
+	capital_economy_vs_traditional_economy = 100
+	individualism_vs_communalism = 100
+	outward_vs_inward = 100
+	parliament = {
+		parliament_type = estate_parliament
+	}
+	
+	privilege = {
+		#clergy
+		clergy_literacy_rights
+		clergy_enforced_unity
+		clergy_strengthen_faith
+		clergy_powerful_dioceses
+		clerical_advisory_council
+		embellish_great_works_of_faith
+		clergy_religious_state
+		liturgical_mural_art
+		clergy_in_administration
+		promote_cultural_unity
+		religious_diplomats
+		br_bureaucrat_clergy
+		br_roman_orthodox_catechesis
+
+		#Commoners
+		no_labor_sunday
+	}
+	reforms = {
+		br_holy_community
+	}
+	laws = {
+		censorship = strict_censorship
+		theocratic_leadership = monastic_order
+		holy_mission_law = internal_mission_policy
+		divine_cause_law = pursuit_of_knowledge_policy
+		education_masses_law = theocratic_education
+		administrative_system = central_councils
+		cultural_traditions_law = civil_society
+		marriage_law = celibacy
+		heir_religion_law = heir_special_succession
+		language_of_pleading = language_of_pleading_court
+		distribution_of_power_law = dop_favor_the_clergy
+		immigration_law = open_borders_law
+		mining_law = peasants_mining_law
+		coin_laws = gold_and_silver_coins
+		legal_code_law = byzantine_law
+		patriarchate_law = state_patriarchate_policy
+	}
+}
+

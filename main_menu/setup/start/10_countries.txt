@@ -12569,6 +12569,27 @@ countries = {
 		capital = thebes
 	}
 
+	HC0 = {
+		own_control_core = {
+			mount_athos
+		}
+		
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "br_orthodox_abbey"
+		government = {
+			reforms = {
+				br_sub_religious_subject
+			}
+		}
+		
+		country_rank = rank_county
+		court_language = koine_dialect
+		liturgical_language = koine_dialect
+
+		capital = mount_athos
+	} 
+
 
 	ACH = { #https://en.wikipedia.org/wiki/Principality_of_Achaea
 		own_control_core = {
@@ -12887,7 +12908,7 @@ countries = {
 	THE = {
 		own_control_core = {
 			hatera veria edessa kassandreia polygyros thessaloniki
-			kilkis giannitsa gynaikokastro mount_athos rentina
+			kilkis giannitsa gynaikokastro rentina
 		}
 		
 		starting_technology_level = 3
@@ -53417,7 +53438,9 @@ countries = {
 			isernia larino trivento bovino foggia lucera
 			manfredonia rotondo sansevero
 			ariano venafro piedimonte
-			andria barletta
+		}
+		own_control_conquered = {
+			andria barletta acerenza
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -53452,7 +53475,10 @@ countries = {
 	
 	N1P = {
 		own_control_core = {
-			salerno vallo campagna salacon 
+			salerno vallo campagna salacon
+		}
+		own_control_conquered = {
+			lagonegro scalea
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -53509,6 +53535,26 @@ countries = {
 		country_rank = rank_duchy
 	}
 
+	N4P = {
+		own_control_core = {
+			potenza
+		}
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_republic"
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			reforms = {
+			}
+			privilege = {
+			}
+		}
+		capital = potenza
+		country_rank = rank_county
+	}
+
 	#Sikelanoi
 	S1C = {
 		own_control_core = {
@@ -53561,7 +53607,10 @@ countries = {
 	S3C = {
 		own_control_core = {
 			cotrone gerace monteleone nicastro palmi reggiocal catanzaro
-			paola cosenza castrovillari cassano scalea rossano
+			paola cosenza castrovillari rossano
+		}
+		our_cores_conquered_by_others = {
+			cassano scalea
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -53580,10 +53629,11 @@ countries = {
 
 	S5C = {
 		own_control_core = {
-			matera
-			lagonegro
-			santarcangelo
-			montepeloso potenza acerenza
+			matera santarcangelo montepeloso
+			cassano
+		}
+		our_cores_conquered_by_others = {
+			potenza acerenza lagonegro
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -53595,7 +53645,7 @@ countries = {
 		accepted_cultures = {
 			greek_culture
 		}
-		country_rank = rank_duchy
+		country_rank = rank_county
 		liturgical_language = koine_dialect
 		capital = matera
 	}

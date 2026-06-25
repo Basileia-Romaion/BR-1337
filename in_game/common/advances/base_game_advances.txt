@@ -703,6 +703,7 @@ INJECT:glh_kipchak_khanate = {
 	subject_income_modifier = 0.25
 	flatland_proximity_impact = -0.25
 }
+
 REPLACE_OR_CREATE:ilk_restore_yam = {	#Restore the Yäm
 	age = age_2_renaissance
 	potential = {
@@ -716,62 +717,7 @@ REPLACE_OR_CREATE:ilk_restore_yam = {	#Restore the Yäm
 	global_distance_from_capital_speed_propagation = 0.33
 	flatland_proximity_impact = -0.33
 }
-REPLACE_OR_CREATE:ilk_ilkhanate_resurgent = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = ILK
-			has_or_had_tag = TUR
-		}
-	}
-	requires = ilk_restore_yam
-	icon = horde_ardor
 
-	#great_power_score_modifier = 0.1
-	monthly_prestige = 0.1
-}
-REPLACE_OR_CREATE:ilk_persian_arts_and_architecture = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = ILK
-			has_or_had_tag = TUR
-		}
-	}
-	requires = hire_artist_cost_modifier_advance_disc
-	icon = ira_spread_of_persian_influence
-	research_speed_modifier = 0.1
-	global_urban_build_buildings_efficiency = 0.05
-}
-REPLACE_OR_CREATE:ilk_descendants_of_genghis_khan = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = ILK
-			has_or_had_tag = TUR
-		}
-	}
-	requires = pike_and_shot_advance
-	icon = successors_of_genghis_khan
-	army_light_cavalry_power = 0.2
-}
-REPLACE_OR_CREATE:ilk_new_roots = {	#They move away from being horde-like to a more reformed state, more stable and robust
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = ILK
-			has_or_had_tag = TUR
-		}
-	}
-	allow = {
-		NOT = { country_type = army }
-	}
-	requires = early_modern_administation
-	icon = administrative_leadership
-	government_reform_slots = 1
-	allow_children = no
-	
-}
 
 ##############################-Wallachia-##############################
 ### removed 
@@ -1322,95 +1268,4 @@ REPLACE_OR_CREATE:rom_roman_architecture = {
 	requires = industrialization_advance
 	icon = efficient_construction_plans
 	building_upkeep_efficiency = 0.15
-}
-
-##############################-Turkic-##############################
-
-REPLACE_OR_CREATE:seljuk_heritage = {
-	age = age_1_traditions
-	icon = seljuk_roots
-	potential = {
-		has_or_had_tag = TUR
-	}
-	
-	global_integration_speed_modifier = 0.33
-	#great_power_score_exempt_from_forfeit = 5
-	subject_income_modifier = 0.1
-	global_crown_estate_power = 0.1
-	
-	requires = feudalism_advance
-}
-
-REPLACE_OR_CREATE:turkic_traditions = {
-	age = age_1_traditions
-	icon = turco_mongol_tradition
-	potential = {
-		has_or_had_tag = TUR
-	}
-	discipline = 0.05
-	army_light_cavalry_build_cost_modifier = -0.2
-	army_light_cavalry_maintenance_cost_modifier = -0.1
-	army_light_cavalry_power = 0.1
-	levy_maintenance_modifier = -0.1
-	requires = seljuk_heritage
-	
-}
-
-REPLACE_OR_CREATE:ghazi = {
-	age = age_1_traditions
-	potential = {
-		has_or_had_tag = TUR
-	}
-	nobles_estate_levy_size = 0.25
-	slave_raid_efficiency = 0.1
-	prestige_from_land_battle = 0.5
-	army_tradition_from_battle = 0.5
-	unlock_estate_privilege = ghazi_privilege
-	levy_maintenance_modifier = -0.1
-
-	requires = seljuk_heritage
-}
-
-REPLACE_OR_CREATE:azeb_irregulars = {
-	age = age_1_traditions
-	potential = {
-		has_or_had_tag = TUR
-	}
-	global_manpower_modifier = 0.10
-	army_maintenance_efficiency = 0.1
-	levy_maintenance_modifier = -0.25
-
-	requires = seljuk_heritage
-}
-
-REPLACE_OR_CREATE:heirs_of_rum = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = TUR
-			has_reform = government_reform:anatolian_beylik
-		}
-	}
-
-	requires = medieval_military
-	global_integration_speed_modifier = 0.1
-	monthly_prestige = 0.1
-	subject_income_modifier = 0.1
-	#great_power_score_exempt_from_forfeit = 10
-	global_crown_estate_power = 0.2
-}
-
-REPLACE_OR_CREATE:seljuk_roots = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = TUR
-			has_reform = government_reform:anatolian_beylik
-		}
-	}
-	discipline = 0.05
-	requires = regiment_reinforcement_speed_renaissance
-	army_light_cavalry_maintenance_cost_modifier = -0.2
-	global_manpower_modifier = 0.1
-	army_maintenance_efficiency = 0.1
 }

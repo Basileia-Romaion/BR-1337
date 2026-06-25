@@ -1,6 +1,5 @@
 countries = {
 	countries = {
-
 	#Balkans
 		ANA = { #br releasable
 			our_cores_conquered_by_others = {
@@ -12,7 +11,6 @@ countries = {
 				konya altinekin celtik cumra ladik suluklu turgut
 				larende eregli_kar eskil hatunsaray karapinar obruk pirloganda
 				sivrihisar beypazari bozan kaymaz kibrus kizilca mihaliccik
-
 				kirsehir hacibektas nevsehir sariyahsi urgup
 				bozok baliseyh candir dinek_keskin sorgun
 				isparta burdur dinar egirdir stefani uluborlu
@@ -20,7 +18,6 @@ countries = {
 				kutahya aslanapa domanic emet simav tavsanli
 				sultanonu bilecik goynuk eynegol inonu nalli sogut
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
@@ -30,9 +27,7 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			government = {
-
 			}
-			
 			country_rank = rank_kingdom
 			accepted_cultures = {
 				greek_culture
@@ -44,7 +39,6 @@ countries = {
 			liturgical_language = koine_dialect
 			capital = ankara
 		}
-
 		KAP = {
 			our_cores_conquered_by_others = {
 				kayseri bogazliyan develi tomarza yahyali
@@ -53,7 +47,6 @@ countries = {
 				larende eregli_kar eskil hatunsaray karapinar obruk pirloganda
 				aksaray kochisar kulu_turkey insuyu
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
@@ -65,7 +58,6 @@ countries = {
 			government = {
 				ruler = random
 			}
-			
 			country_rank = rank_kingdom
 			accepted_cultures = {
 				greek_culture
@@ -73,11 +65,9 @@ countries = {
 			tolerated_cultures = {
 				armenian_culture
 			}
-			
 			liturgical_language = koine_dialect
 			capital = kayseri
 		}
-
 		P0N = {
 			our_cores_conquered_by_others = {
 				#bolu akcasehir akyazi eregli konrapa mudurnu
@@ -87,7 +77,6 @@ countries = {
 				sinop bafra boyabat gerze samsun
 				trebizond gorele gumushane khupati rize surmene
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
@@ -99,7 +88,6 @@ countries = {
 			government = {
 				ruler = random
 			}
-			
 			country_rank = rank_kingdom
 			accepted_cultures = {
 				greek_culture
@@ -107,18 +95,15 @@ countries = {
 			tolerated_cultures = {
 				armenian_culture
 			}
-			
 			liturgical_language = koine_dialect
 			capital = sinop
 		}
-
 		P1N = {
 			our_cores_conquered_by_others = {
 				theodoro qirq_yer lusta qarasuvbazar
 				kaffa soldaia vosporo seyitler solkhat
 				kalay kezlev aqmecit jurchi or_qapi
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
@@ -130,7 +115,6 @@ countries = {
 			government = {
 				ruler = random
 			}
-			
 			country_rank = rank_kingdom
 			accepted_cultures = {
 				gothic_culture
@@ -140,11 +124,9 @@ countries = {
 				latinoi
 				greek_culture
 			}
-			
 			liturgical_language = koine_dialect
 			capital = theodoro
 		}
-
 		AN0 = {
 			our_cores_conquered_by_others = {
 				amasya gadegara ladik_pontus merzifon sonisa
@@ -153,7 +135,6 @@ countries = {
 				divrigi arapgir arguvan egin
 				erzurum bayburt erzincan ilic kelkit kemah sebinkarahisar siran tercan
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "br_thema_template"
@@ -165,7 +146,6 @@ countries = {
 			government = {
 				ruler = random
 			}
-			
 			country_rank = rank_duchy
 			accepted_cultures = {
 				greek_culture
@@ -173,17 +153,14 @@ countries = {
 			tolerated_cultures = {
 				armenian_culture
 			}
-			
 			liturgical_language = koine_dialect
 			capital = sivas
 		}
-		
 		SE4 = { #Releasable
 			our_cores_conquered_by_others = {
 				podgorica bar_cg gradina kotor onogost
 				shkoder dukagjini has koman lezha
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -193,7 +170,6 @@ countries = {
 			include = "br_pronoia_template"
 			government = {
 			}
-			
 			accepted_cultures = {
 				serbian
 			}
@@ -201,18 +177,14 @@ countries = {
 				latinoi
 				albanian
 			}
-			
 			country_rank = rank_duchy
 			liturgical_language = koine_dialect
-			
 			capital = shkoder
 		}
-
 		B2L = {
 			our_cores_conquered_by_others = {
 				dospat bansko krupnik melnik nevrokop beden
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "eastern_european_monarchy"
@@ -220,7 +192,6 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-				
 				reforms = {
 					autocracy
 				}
@@ -237,15 +208,12 @@ countries = {
 				serbian
 			}
 			liturgical_language = church_slavonic_language
-			
 			capital = melnik
 		}
-		
 		B3L = {
 			our_cores_conquered_by_others = {
 				sredets svoge dupnitsa samokov zemlungrad tsaribrod pirot
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "br_pronoia_template"
@@ -259,17 +227,14 @@ countries = {
 				bulgarian
 			}
 			liturgical_language = koine_dialect
-			
 			capital = sredets
 		}
-		
 		B4L = {
 			our_cores_conquered_by_others = {
 				plovdiv kran strelcha tsepina kostenets stipon
 				beden stanimaka
 				constantia_bul boruy sliven
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "br_pronoia_template"
@@ -283,10 +248,8 @@ countries = {
 				bulgarian
 			}
 			liturgical_language = koine_dialect
-			
 			capital = plovdiv
 		}
-		
 		B5L = {
 			our_cores_conquered_by_others = {
 				ohrid bitola prilep florina kicevo tetovo
@@ -294,7 +257,6 @@ countries = {
 				vranje velbuzd
 				debar
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "br_pronoia_template"
@@ -308,10 +270,8 @@ countries = {
 				bulgarian
 			}
 			liturgical_language = koine_dialect
-			
 			capital = skopje
 		}
-		
 		B6L = {
 			our_cores_conquered_by_others = {
 				karvuna pangalia kaliakra
@@ -322,7 +282,6 @@ countries = {
 				lovech nikopol pleven oryahovo bozhenitsa hotalich tryavna
 				gigen dobrolak ruse kladentsi lyaskovets veliki_preslav ktenia
 			}
-			
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "br_pronoia_template"
@@ -335,19 +294,15 @@ countries = {
 			tolerated_cultures = {
 				wallachian
 			}
-
 			dynasty = doukas_dynasty
 			liturgical_language = koine_dialect
-			
 			capital = tarnovo
 		}
-
 	## Middle East
 		SY0 = { #br releasable
 			our_cores_conquered_by_others = {
 				jerusalem acre beersheba gaza hebron majdal nablus safed jaffa
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "expl_mediterranean"
@@ -358,21 +313,17 @@ countries = {
 			include = "br_thema_template"
 			government = {
 			}
-			
 			accepted_cultures = {
 				syriac_culture
 			}
-			
 			liturgical_language = koine_dialect
 			country_rank = rank_duchy
 			capital = jerusalem
 		}
-
 		SY1 = {
 			our_cores_conquered_by_others = {
 				urfa birecik suruc viransehir
 			}
-			
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
 			include = "expl_mediterranean"
@@ -383,18 +334,14 @@ countries = {
 			include = "br_thema_template"
 			government = {
 			}
-			
 			accepted_cultures = {
 				syriac_culture
 			}
-			
 			liturgical_language = koine_dialect
 			country_rank = rank_county
 			capital = urfa
 		}
-
 	#Africa
-	
 		AGY = { #releasable
 			our_cores_conquered_by_others = {
 				alexandria el_alamein damanhur ramsis kafr_saqr kharibta rashid wadi_el_natrun
@@ -408,7 +355,6 @@ countries = {
 				minya ashmunayn el_bahnasa sharuna tahna
 				kharga bahariyya baris el_qasr qasr_farafra siwa
 			}
-
 			include = "expl_eastern_europe"
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -416,7 +362,6 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
-
 			country_rank = rank_kingdom
 			government = {
 			}
@@ -426,10 +371,8 @@ countries = {
 			tolerated_cultures = {
 				upper_egyptian_culture
 			}
-			
 			capital = alexandria
 		}
-		
 		AFK = { #releasable
 			our_cores_conquered_by_others = {
 				bir_el_alter
@@ -445,7 +388,6 @@ countries = {
 				bordj_bou_arreridj jama_TUN
 				el_ksour medjez_el_bab sbikha
 			}
-
 			include = "expl_eastern_europe"
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -453,378 +395,319 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
-
 			country_rank = rank_kingdom
 			government = {
-
 			}
-			
 			capital = tunis
 		}
-		
+
 	#IBERIA
-		AD3 = { 
-			our_cores_conquered_by_others = {
-				caceres alcantara arroyo brozas valencia_de_alcantara #caceres_province
-				plasencia galisteo granadilla jaraicejo valverde #plasencia_province
-				ciudad_rodrigo coria #ciudad_rodrigo_province
+		#AD3 = { 
+			#our_cores_conquered_by_others = {
+				#caceres alcantara arroyo brozas valencia_de_alcantara #caceres_province
+				#plasencia galisteo granadilla jaraicejo valverde #plasencia_province
+				#ciudad_rodrigo coria #ciudad_rodrigo_province
+				#badajoz albuquerque barcarrota jerez_de_los_caballeros villanueva_del_fresno #badajoz_province
+				#elvas crato avis portalegre vila_vicosa #alto_alentejo_province
+				#moura serpa #baixo_alentejo_province
+				#merida azuaga llerena monesterio montanchez zafra #merida_province
+				#villanueva_de_la_serena belalcazar medellin zalamea #villanueva_de_la_serena_province
+				#trujillo escurial herrera puebla_de_alcocer #trujillo_province
+			#}
+			#starting_technology_level = 3
+			#include = "expl_mediterranean"
+			#include = "expl_silk_road_west"
+			#include = "expl_silk_road_center"
+			#include = "expl_silk_road_east"
+			#include = "expl_indian_trade_route"
+			#include = "iberian_monarchy_no_auxilium"
+			#government = {
+				#type = monarchy
+				#heir_selection = oligarchic_elective
+				#ruler = random
+				#privilege = {
+					##Nobles
+					##Clergy
+					#freedom_of_interpretation
+					##Burghers
+					#formal_guilds
+					#building_rights
+					#market_fairs
+					#land_of_commerce
+					#urban_development_grants
+					#commercial_advisory_council
+					#burghers_protected_faith
+					#allow_trade_center_sponsorship
+					##Peasants
+					#partial_yield
+					#peasants_free_peasantry
+					##Dhimmi
+					#dhimmi_land_rights
+					#dhimmi_administrative_posts
+					#dhimmi_abrahamic_communities
+					#dhimmi_pact_of_umar
+					#dhimmi_military_service
+					#dhimmi_traditions
+					#dharmic_dhimmi_communities
+					#dhimmi_promote_tolerance
+					#dhimmi_legal_autonomy
+					#dhimmi_promote_dhimmi_hierarchy
+					#dhimmi_mazalim_court
+					#dhimmi_in_administration
+				#}
+				#centralization_vs_decentralization = -50
+				#aristocracy_vs_plutocracy = 50
+				#serfdom_vs_free_subjects = 25
+				#traditionalist_vs_innovative = 50
+				#spiritualist_vs_humanist = 80
+				#mercantilism_vs_free_trade = 35
+				#offensive_vs_defensive = 50
+				#land_vs_naval = -20
+				#quality_vs_quantity = -30
+				#belligerent_vs_conciliatory = 50
+				#capital_economy_vs_traditional_economy = -60
+				#individualism_vs_communalism = -20
+				#outward_vs_inward = -60
+				#mysticism_vs_jurisprudence = 50
+				#laws = {
+					#sharia_law = maliki_policy
+				#}
+			#}
+			#court_language = maghrebi_dialect
+			#religious_school = maliki_school
+			#country_rank = rank_duchy
+			#capital = caceres
+			#accepted_cultures = {
+				#sephardi
+			#}
+		#}
+		#AD4 = {
+			#our_cores_conquered_by_others = {
+				#coimbra esgueira feira figueira #beira_litoral_province
+				#viseu besteiros guarda lamego meda pinhel seia trancoso #beira_alta_province
+				#covilha idanha sabugal #beira_baixa_province
+			#}
+			#starting_technology_level = 3
+			#include = "expl_mediterranean"
+			#include = "expl_silk_road_west"
+			#include = "expl_silk_road_center"
+			#include = "expl_silk_road_east"
+			#include = "expl_indian_trade_route"
+			#include = "iberian_monarchy_no_auxilium"
+			#government = {
+				#type = monarchy
+				#heir_selection = oligarchic_elective
+				#ruler = random
+				#privilege = {
+					##Nobles
+					##Clergy
+					#freedom_of_interpretation
+					##Burghers
+					#formal_guilds
+					#building_rights
+					#market_fairs
+					#land_of_commerce
+					#urban_development_grants
+					#commercial_advisory_council
+					#burghers_protected_faith
+					#allow_trade_center_sponsorship
+					##Peasants
+					#partial_yield
+					#peasants_free_peasantry
+					##Dhimmi
+					#dhimmi_land_rights
+					#dhimmi_administrative_posts
+					#dhimmi_abrahamic_communities
+					#dhimmi_pact_of_umar
+					#dhimmi_military_service
+					#dhimmi_traditions
+					#dharmic_dhimmi_communities
+					#dhimmi_promote_tolerance
+					#dhimmi_legal_autonomy
+					#dhimmi_promote_dhimmi_hierarchy
+					#dhimmi_mazalim_court
+					#dhimmi_in_administration
 
-				badajoz albuquerque barcarrota jerez_de_los_caballeros villanueva_del_fresno #badajoz_province
-				elvas crato avis portalegre vila_vicosa #alto_alentejo_province
-				moura serpa #baixo_alentejo_province
-				merida azuaga llerena monesterio montanchez zafra #merida_province
-				villanueva_de_la_serena belalcazar medellin zalamea #villanueva_de_la_serena_province
-				trujillo escurial herrera puebla_de_alcocer #trujillo_province
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "iberian_monarchy_no_auxilium"
-			
-			government = {
-				type = monarchy
-				heir_selection = oligarchic_elective
-				ruler = random
-				
-				privilege = {
-					#Nobles
-					#Clergy
-					freedom_of_interpretation
-					
-					#Burghers
-					formal_guilds
-					building_rights
-					market_fairs
-					land_of_commerce
-					urban_development_grants
-					commercial_advisory_council
-					burghers_protected_faith
-					allow_trade_center_sponsorship
-					
-					#Peasants
-					partial_yield
-					peasants_free_peasantry
-					
-					#Dhimmi
-					dhimmi_land_rights
-					dhimmi_administrative_posts
-					dhimmi_abrahamic_communities
-					dhimmi_pact_of_umar
-					dhimmi_military_service
-					dhimmi_traditions
-					dharmic_dhimmi_communities
-					dhimmi_promote_tolerance
-					dhimmi_legal_autonomy
-					dhimmi_promote_dhimmi_hierarchy
-					dhimmi_mazalim_court
-					dhimmi_in_administration
-					
-				}
-				
-				centralization_vs_decentralization = -50
-				aristocracy_vs_plutocracy = 50
-				serfdom_vs_free_subjects = 25
-				traditionalist_vs_innovative = 50
-				spiritualist_vs_humanist = 80
-				mercantilism_vs_free_trade = 35
-				offensive_vs_defensive = 50
-				land_vs_naval = -20
-				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = 50
-				capital_economy_vs_traditional_economy = -60
-				individualism_vs_communalism = -20
-				outward_vs_inward = -60
-				mysticism_vs_jurisprudence = 50
-				
-				laws = {
-					sharia_law = maliki_policy
-				}
-			}
-
-			court_language = maghrebi_dialect
-			religious_school = maliki_school
-			
-			country_rank = rank_duchy
-			capital = caceres
-			
-			accepted_cultures = {
-				sephardi
-			}
-			
-		}
-
-		AD4 = {
-			our_cores_conquered_by_others = {
-				coimbra esgueira feira figueira #beira_litoral_province
-				viseu besteiros guarda lamego meda pinhel seia trancoso #beira_alta_province
-				covilha idanha sabugal #beira_baixa_province
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "iberian_monarchy_no_auxilium"
-			
-			government = {
-				type = monarchy
-				heir_selection = oligarchic_elective
-				ruler = random
-				
-				privilege = {
-					#Nobles
-					#Clergy
-					freedom_of_interpretation
-					
-					#Burghers
-					formal_guilds
-					building_rights
-					market_fairs
-					land_of_commerce
-					urban_development_grants
-					commercial_advisory_council
-					burghers_protected_faith
-					allow_trade_center_sponsorship
-					
-					#Peasants
-					partial_yield
-					peasants_free_peasantry
-					
-					#Dhimmi
-					dhimmi_land_rights
-					dhimmi_administrative_posts
-					dhimmi_abrahamic_communities
-					dhimmi_pact_of_umar
-					dhimmi_military_service
-					dhimmi_traditions
-					dharmic_dhimmi_communities
-					dhimmi_promote_tolerance
-					dhimmi_legal_autonomy
-					dhimmi_promote_dhimmi_hierarchy
-					dhimmi_mazalim_court
-					dhimmi_in_administration
-					
-				}
-				
-				centralization_vs_decentralization = -50
-				aristocracy_vs_plutocracy = 50
-				serfdom_vs_free_subjects = 25
-				traditionalist_vs_innovative = 50
-				spiritualist_vs_humanist = 80
-				mercantilism_vs_free_trade = 35
-				offensive_vs_defensive = 50
-				land_vs_naval = -20
-				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = 50
-				capital_economy_vs_traditional_economy = -60
-				individualism_vs_communalism = -20
-				outward_vs_inward = -60
-				mysticism_vs_jurisprudence = 50
-				
-				laws = {
-					sharia_law = maliki_policy
-				}
-			}
-
-			court_language = maghrebi_dialect
-			religious_school = maliki_school
-			
-			country_rank = rank_duchy
-			capital = coimbra
-			
-			accepted_cultures = {
-				sephardi
-			}
-			
-		}
-
-		AD5 = { #TOLEDO
-			our_cores_conquered_by_others = {
-				toledo guadalupe illescas los_yebenes navalucillos puebla_de_montalban puente_arzobispo talavera_de_la_reina #toledo_province
-				chinchon consuegra ocana alcazar_de_san_juan tomelloso ucles #ocana_province
-				buitrago_de_lozoya guadalajara brihuega cobeta siguenza zorita #guadalajara_province
-				cuenca beteta canete huete molina_de_aragon pareja torralba #cuenca_province
-				madrid alcala_de_henares colmenar el_escorial maqueda #madrid_province
-				adrada las_navas oropesa #avila_province
-				#alarcon belmonte iniesta jorquera moya san_clemente #alarcon_province
-				#alcaraz lezuza alhambra_location montiel villapalacios villarobledo #east_mancha_province
-				#ciudad_real almaden almodovar_del_campo calatrava malagon manzanares puertollano #west_mancha_province
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "iberian_monarchy_no_auxilium"
-			
-			government = {
-				type = monarchy
-				heir_selection = oligarchic_elective
-				ruler = random
-				
-				privilege = {
-					#Nobles
-					#Clergy
-					freedom_of_interpretation
-					
-					#Burghers
-					formal_guilds
-					building_rights
-					market_fairs
-					land_of_commerce
-					urban_development_grants
-					commercial_advisory_council
-					burghers_protected_faith
-					allow_trade_center_sponsorship
-					
-					#Peasants
-					partial_yield
-					peasants_free_peasantry
-					
-					#Dhimmi
-					dhimmi_land_rights
-					dhimmi_administrative_posts
-					dhimmi_abrahamic_communities
-					dhimmi_pact_of_umar
-					dhimmi_military_service
-					dhimmi_traditions
-					dharmic_dhimmi_communities
-					dhimmi_promote_tolerance
-					dhimmi_legal_autonomy
-					dhimmi_promote_dhimmi_hierarchy
-					dhimmi_mazalim_court
-					dhimmi_in_administration
-					
-				}
-				
-				centralization_vs_decentralization = -50
-				aristocracy_vs_plutocracy = 50
-				serfdom_vs_free_subjects = 25
-				traditionalist_vs_innovative = 50
-				spiritualist_vs_humanist = 80
-				mercantilism_vs_free_trade = 35
-				offensive_vs_defensive = 50
-				land_vs_naval = -20
-				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = 50
-				capital_economy_vs_traditional_economy = -60
-				individualism_vs_communalism = -20
-				outward_vs_inward = -60
-				mysticism_vs_jurisprudence = 50
-				
-				laws = {
-					sharia_law = maliki_policy
-				}
-			}
-
-			court_language = maghrebi_dialect
-			religious_school = maliki_school
-			
-			country_rank = rank_duchy
-			capital = toledo
-			
-			accepted_cultures = {
-				sephardi
-			}
-			
-		}
-
-		AD6 = {
-			our_cores_conquered_by_others = {
-				valencia bunol chelva lliria #valencia_province
-				ibiza
-				orihuela alicante elche #orihuela_province
-				jativa alcoy ayora denia gandia #jativa_province
-				castellon_de_la_plana ares_del_maestre llucena morella peniscola #castellon_province
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "iberian_monarchy_no_auxilium"
-			
-			government = {
-				type = monarchy
-				heir_selection = oligarchic_elective
-				ruler = random
-				
-				privilege = {
-					#Nobles
-					#Clergy
-					freedom_of_interpretation
-					
-					#Burghers
-					formal_guilds
-					building_rights
-					market_fairs
-					land_of_commerce
-					urban_development_grants
-					commercial_advisory_council
-					burghers_protected_faith
-					allow_trade_center_sponsorship
-					
-					#Peasants
-					partial_yield
-					peasants_free_peasantry
-					
-					#Dhimmi
-					dhimmi_land_rights
-					dhimmi_administrative_posts
-					dhimmi_abrahamic_communities
-					dhimmi_pact_of_umar
-					dhimmi_military_service
-					dhimmi_traditions
-					dharmic_dhimmi_communities
-					dhimmi_promote_tolerance
-					dhimmi_legal_autonomy
-					dhimmi_promote_dhimmi_hierarchy
-					dhimmi_mazalim_court
-					dhimmi_in_administration
-					
-				}
-				
-				centralization_vs_decentralization = -50
-				aristocracy_vs_plutocracy = 50
-				serfdom_vs_free_subjects = 25
-				traditionalist_vs_innovative = 50
-				spiritualist_vs_humanist = 80
-				mercantilism_vs_free_trade = 35
-				offensive_vs_defensive = 50
-				land_vs_naval = -20
-				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = 50
-				capital_economy_vs_traditional_economy = -60
-				individualism_vs_communalism = -20
-				outward_vs_inward = -60
-				mysticism_vs_jurisprudence = 50
-				
-				laws = {
-					sharia_law = maliki_policy
-				}
-			}
-
-			court_language = maghrebi_dialect
-			religious_school = maliki_school
-			
-			country_rank = rank_duchy
-			capital = valencia
-			
-			accepted_cultures = {
-				sephardi
-			}
-			
-		}
-
+				#}
+				#centralization_vs_decentralization = -50
+				#aristocracy_vs_plutocracy = 50
+				#serfdom_vs_free_subjects = 25
+				#traditionalist_vs_innovative = 50
+				#spiritualist_vs_humanist = 80
+				#mercantilism_vs_free_trade = 35
+				#offensive_vs_defensive = 50
+				#land_vs_naval = -20
+				#quality_vs_quantity = -30
+				#belligerent_vs_conciliatory = 50
+				#capital_economy_vs_traditional_economy = -60
+				#individualism_vs_communalism = -20
+				#outward_vs_inward = -60
+				#mysticism_vs_jurisprudence = 50
+				#laws = {
+					#sharia_law = maliki_policy
+				#}
+			#}
+			#court_language = maghrebi_dialect
+			#religious_school = maliki_school
+			#country_rank = rank_duchy
+			#capital = coimbra
+			#accepted_cultures = {
+				#sephardi
+			#}
+		#}
+		#AD5 = { #TOLEDO
+			#our_cores_conquered_by_others = {
+				#toledo guadalupe illescas los_yebenes navalucillos puebla_de_montalban puente_arzobispo talavera_de_la_reina #toledo_province
+				#chinchon consuegra ocana alcazar_de_san_juan tomelloso ucles #ocana_province
+				#buitrago_de_lozoya guadalajara brihuega cobeta siguenza zorita #guadalajara_province
+				#cuenca beteta canete huete molina_de_aragon pareja torralba #cuenca_province
+				#madrid alcala_de_henares colmenar el_escorial maqueda #madrid_province
+				#adrada las_navas oropesa #avila_province
+				##alarcon belmonte iniesta jorquera moya san_clemente #alarcon_province
+				##alcaraz lezuza alhambra_location montiel villapalacios villarobledo #east_mancha_province
+				##ciudad_real almaden almodovar_del_campo calatrava malagon manzanares puertollano #west_mancha_province
+			#}
+			#starting_technology_level = 3
+			#include = "expl_mediterranean"
+			#include = "expl_silk_road_west"
+			#include = "expl_silk_road_center"
+			#include = "expl_silk_road_east"
+			#include = "expl_indian_trade_route"
+			#include = "iberian_monarchy_no_auxilium"
+			#government = {
+				#type = monarchy
+				#heir_selection = oligarchic_elective
+				#ruler = random
+				#privilege = {
+					##Nobles
+					##Clergy
+					#freedom_of_interpretation
+					##Burghers
+					#formal_guilds
+					#building_rights
+					#market_fairs
+					#land_of_commerce
+					#urban_development_grants
+					#commercial_advisory_council
+					#burghers_protected_faith
+					#allow_trade_center_sponsorship
+					##Peasants
+					#partial_yield
+					#peasants_free_peasantry
+					##Dhimmi
+					#dhimmi_land_rights
+					#dhimmi_administrative_posts
+					#dhimmi_abrahamic_communities
+					#dhimmi_pact_of_umar
+					#dhimmi_military_service
+					#dhimmi_traditions
+					#dharmic_dhimmi_communities
+					#dhimmi_promote_tolerance
+					#dhimmi_legal_autonomy
+					#dhimmi_promote_dhimmi_hierarchy
+					#dhimmi_mazalim_court
+					#dhimmi_in_administration
+				#}
+				#centralization_vs_decentralization = -50
+				#aristocracy_vs_plutocracy = 50
+				#serfdom_vs_free_subjects = 25
+				#traditionalist_vs_innovative = 50
+				#spiritualist_vs_humanist = 80
+				#mercantilism_vs_free_trade = 35
+				#offensive_vs_defensive = 50
+				#land_vs_naval = -20
+				#quality_vs_quantity = -30
+				#belligerent_vs_conciliatory = 50
+				#capital_economy_vs_traditional_economy = -60
+				#individualism_vs_communalism = -20
+				#outward_vs_inward = -60
+				#mysticism_vs_jurisprudence = 50
+				#laws = {
+					#sharia_law = maliki_policy
+				#}
+			#}
+			#court_language = maghrebi_dialect
+			#religious_school = maliki_school
+			#country_rank = rank_duchy
+			#capital = toledo
+			#accepted_cultures = {
+				#sephardi
+			#}
+		#}
+		#AD6 = {
+			#our_cores_conquered_by_others = {
+				#valencia bunol chelva lliria #valencia_province
+				#ibiza
+				#orihuela alicante elche #orihuela_province
+				#jativa alcoy ayora denia gandia #jativa_province
+				#castellon_de_la_plana ares_del_maestre llucena morella peniscola #castellon_province
+			#}
+			#starting_technology_level = 3
+			#include = "expl_mediterranean"
+			#include = "expl_silk_road_west"
+			#include = "expl_silk_road_center"
+			#include = "expl_silk_road_east"
+			#include = "expl_indian_trade_route"
+			#include = "iberian_monarchy_no_auxilium"
+			#government = {
+				#type = monarchy
+				#heir_selection = oligarchic_elective
+				#ruler = random
+				#privilege = {
+					##Nobles
+					##Clergy
+					#freedom_of_interpretation
+					##Burghers
+					#formal_guilds
+					#building_rights
+					#market_fairs
+					#land_of_commerce
+					#urban_development_grants
+					#commercial_advisory_council
+					#burghers_protected_faith
+					#allow_trade_center_sponsorship
+					##Peasants
+					#partial_yield
+					#peasants_free_peasantry
+					##Dhimmi
+					#dhimmi_land_rights
+					#dhimmi_administrative_posts
+					#dhimmi_abrahamic_communities
+					#dhimmi_pact_of_umar
+					#dhimmi_military_service
+					#dhimmi_traditions
+					#dharmic_dhimmi_communities
+					#dhimmi_promote_tolerance
+					#dhimmi_legal_autonomy
+					#dhimmi_promote_dhimmi_hierarchy
+					#dhimmi_mazalim_court
+					#dhimmi_in_administration
+				#}
+				#centralization_vs_decentralization = -50
+				#aristocracy_vs_plutocracy = 50
+				#serfdom_vs_free_subjects = 25
+				#traditionalist_vs_innovative = 50
+				#spiritualist_vs_humanist = 80
+				#mercantilism_vs_free_trade = 35
+				#offensive_vs_defensive = 50
+				#land_vs_naval = -20
+				#quality_vs_quantity = -30
+				#belligerent_vs_conciliatory = 50
+				#capital_economy_vs_traditional_economy = -60
+				#individualism_vs_communalism = -20
+				#outward_vs_inward = -60
+				#mysticism_vs_jurisprudence = 50
+				#laws = {
+					#sharia_law = maliki_policy
+				#}
+			#}
+			#court_language = maghrebi_dialect
+			#religious_school = maliki_school
+			#country_rank = rank_duchy
+			#capital = valencia
+			#accepted_cultures = {
+				#sephardi
+			#}
+		#}
 	}
 }

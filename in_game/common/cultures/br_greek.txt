@@ -87,7 +87,7 @@ REPLACE_OR_CREATE:griko_culture = {
 		greek_culture = positive
 		african_greek_culture = kindred
 		italiotai_culture = kindred
-		neapolitan = positive
+		romanyoti = positive
 	}
 	country_modifier = {
 		global_sailors_modifier = 0.1
@@ -114,6 +114,7 @@ italiotai_culture = {
 		griko_culture = kindred
 		#sicilian = positive
 		neapolitan = positive
+		romanyoti = positive
 	}
 
 	country_modifier = {
@@ -421,8 +422,7 @@ boulgaroi = {
 		fort_maintenance_efficiency = 0.10
 	}
 	culture_groups = {
-		roman_group
-		south_slavic_group
+		greek_group roman_group south_slavic_group
 	}
 }
 
@@ -451,7 +451,7 @@ armenikon_greek_culture = { #BR addition
 	}
 	
 	culture_groups = {
-		greek_group caucasian_group roman_group
+		greek_group roman_group caucasian_group
 	}
 }
 

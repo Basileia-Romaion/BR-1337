@@ -1,10 +1,11 @@
 ﻿tribal_agriculture = {
 	is_foreign = no
-	max_levels = 3
 	pop_type = tribesmen
 	
 	category = village_category
 	employment_size = village_employment_size
+	max_levels = rural_building_cap
+	startup_ramp_target = rural_startup_ramp_target
 	
 	rural_settlement = yes
 	
@@ -57,10 +58,11 @@
 
 tribal_market_villages = {
 	is_foreign = no
-	max_levels = 3
 	pop_type = tribesmen
 	
 	employment_size = village_employment_size
+	max_levels = rural_building_cap
+	startup_ramp_target = rural_startup_ramp_target
 	
 	rural_settlement = yes
 	
@@ -142,10 +144,12 @@ tribal_war_camp = {
 
 tribal_hunting_lodge = {
 	is_foreign = no
-	max_levels = 3
 	pop_type = tribesmen
 	
 	employment_size = rural_peasant_produce_employment
+	max_levels = rural_building_cap
+	startup_ramp_target = rural_startup_ramp_target
+
 	category = village_category
 	
 	rural_settlement = yes

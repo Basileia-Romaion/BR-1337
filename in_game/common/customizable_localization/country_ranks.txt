@@ -22,6 +22,16 @@
 		}
 	}
 	text = {
+		localization_key = country_rank_br_holy_community
+		trigger = {
+			AND = {
+				#country_rank = country_rank:rank_county
+				has_reform = government_reform:br_holy_community
+				has_culture_group = culture_group:roman_group
+			}
+		}
+	}
+	text = {
 		localization_key = country_rank_br_kleisoura
 		trigger = {
 			AND = {

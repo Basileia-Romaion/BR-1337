@@ -59,6 +59,34 @@ arab_sicilian = {
 	culture_groups = {
 		maghrebi_group
 		italian_group
+		arabic_group
+	}
+}
+
+REPLACE_OR_CREATE:tunisian = {
+	language = maghrebi_dialect
+	
+	color = map_tunis
+	
+	tags = { maghrebi_gfx middle_east_gfx }
+
+	opinions = {	
+		sicilian = negative
+		neapolitan = negative
+		eastern_amazigh = negative
+		kabyle = positive
+		moroccan = positive
+		algerian = positive
+		arab_sicilian = kindred
+		andalusi = kindred
+		african_greek_culture = positive #so they won't be enslaved and disappear.
+	}		
+	
+	use_patronym = yes
+	
+	culture_groups = {
+		arabic_group
+		maghrebi_group
 	}
 }
 

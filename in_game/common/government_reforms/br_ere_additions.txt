@@ -156,50 +156,39 @@ br_sub_pronoia_subject = {
 	years = 2
 }
 
-#br_sub_religious_subject = {
-	#age = age_1_traditions
-	#icon = primas_germaniae
-	#potential = {
-		#culture = { has_culture_group = culture_group:roman_group }
-		#NOT = { has_or_had_tag = BYZ }
-	#}
-	#allow = {
-		#OR = {
-			#is_subject_of = c:BYZ
-			#is_member_of_international_organization = international_organization:roman_world
-		#}
-	#}
-	#locked = {
-		#OR = {
-			#is_subject_of = c:BYZ
-			#is_member_of_international_organization = international_organization:roman_world
-		#}
-	#}
-	#country_modifier = {
-		#monthly_towards_spiritualist = societal_value_monthly_move
-		#maximum_religious_influence = 500
-		#monthly_religious_influence = 1
-		#tolerance_own = 5
-		#global_clergy_estate_power = 1
-		#monthly_towards_br_bureaucratic = societal_value_monthly_move
-		##allow_bureaucracy = yes
-		##global_max_bureaucracy_slots = 1
-	#}
-	#country_modifier = {
-		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 75 } }
-		#loyalty_to_overlord = 10
-    #}
-	#country_modifier = {
-		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 125 } }
-		#hostile_diplomatic_annexation_efficiency = 0.5
-    #}
-	#country_modifier = {
-		#potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
-		#loyalty_to_overlord = -25
-		#hostile_diplomatic_annexation_efficiency = -0.5
-    #}
-	#years = 2
-#}
+br_sub_religious_subject = {
+	age = age_1_traditions
+	icon = primas_germaniae
+	potential = {
+		government_type = government_type:theocracy
+		culture = { has_culture_group = culture_group:roman_group }
+		NOT = { has_or_had_tag = BYZ }
+	}
+	locked = {
+		OR = {
+			is_subject_of = c:BYZ
+			is_member_of_international_organization = international_organization:roman_world
+		}
+	}
+	country_modifier = {
+		monthly_towards_spiritualist = societal_value_monthly_move
+		monthly_towards_br_bureaucratic = societal_value_monthly_move
+		maximum_religious_influence = 100
+		monthly_religious_influence = 1
+		tolerance_own = 1
+		can_be_annexed = no
+		overlord_protects_external = yes
+	}
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 100 } }
+		loyalty_to_overlord = 10
+    }
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 50 } }
+		loyalty_to_overlord = -25
+    }
+	years = 2
+}
 
 br_naval_akritai_reform = {
     age = age_1_traditions

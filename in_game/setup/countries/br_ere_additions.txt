@@ -179,6 +179,13 @@ HE1 = {
 	religion_definition = orthodox
 }
 
+HC0 = { #Mount Athos
+	color = rgb { 77 88 84 }
+
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
 KYP = {
 	color = rgb { 185 78 130 }
 
@@ -368,15 +375,15 @@ BNK = { #Bankaropoulos #funny but surprisingly plausible
 MKB = { #Makrembolitēs
 	color = rgb { 175 125 95 }
 
-	culture_definition = pontic_greek_culture #makrembolitai_culture
-	religion_definition = orthodox
+	culture_definition = romanyoti #makrembolitai_culture
+	religion_definition = judaism
 }
 
 CHY = { #Chrysotrapeziōtai
 	color = rgb { 75 125 175 }
 
-	culture_definition = syrenikoi_greek_culture #chrysotrapeziotai_culture
-	religion_definition = miaphysite
+	culture_definition = romanyoti #chrysotrapeziotai_culture
+	religion_definition = judaism
 }
 
 #Italia
@@ -421,6 +428,12 @@ N3P = { #Neápolis
     color = rgb { 135 65 95 }
     culture_definition = italiotai_culture
 	religion_definition = orthodox
+}
+
+N4P = { #Putenze
+    color = rgb { 88 125 144 }
+    culture_definition = neapolitan
+	religion_definition = catholic
 }
 
 S1C = { #Sikelanoi

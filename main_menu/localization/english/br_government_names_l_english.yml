@@ -73,6 +73,11 @@
  country_rank_br_patriarchate_ruler_male: "Patriarch"
  country_rank_br_patriarchate_ruler_female: "Patriarch"
 
+ country_rank_br_holy_community: "Hiera Koinotēs"
+ country_rank_br_holy_community_ADJ: "Koinobitic"
+ country_rank_br_holy_community_ruler_male: "Protos"
+ country_rank_br_holy_community_ruler_female: "Protos"
+
 ### subject types
  br_thema_subject: "Théma"
  br_thema_subject_desc: "The Thémata stand among the foremost pillars of the Roman order, provinces entrusted to $country_rank_br_thema_ruler_male$ who govern in the name of the Basileus. Born from the necessities of war and the defense of the Empire, they bind military command with civil authority, raising soldiers from their lands and guarding the frontiers against the enemies of [GetCountry('BYZ').GetName]. Though their offices have grown powerful and oft hereditary, the Thémata remain subjects of the Imperial Throne, sustained by the grace and authority of Constantinople."

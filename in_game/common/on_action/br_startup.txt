@@ -425,6 +425,14 @@ br_on_game_start = {
 			research_advance = advance_type:scholasticism
 		}
 
+		every_country = {
+			limit = { has_reform = government_reform:country_rank_br_holy_community }
+
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:servants_of_god
+        }
+
 		#Starting roads
 		#Thrace
 		location:constantinople = {

@@ -547,14 +547,20 @@ br_mount_athos_building = {
     possible_production_methods = {
 		monastery_maintenance
 	}
+
+	capital_country_modifier = {
+		maximum_religious_influence = 100
+		monthly_religious_influence = 0.25
+		monthly_towards_spiritualist = 0.05
+		monthly_towards_communalism = 0.05
+	}
 	modifier = {
-		local_clergy_desired_pop = 1
-		local_cultural_tradition = 1
-		local_clergy_estate_power = 10
-		local_max_control = -1
+		local_clergy_desired_pop = 5
+		local_cultural_tradition = 5
+		#local_clergy_estate_power = 10
+		#local_max_control = -1
+		#local_clergy_conversion_blocked = yes
 		cannot_upgrade_location = yes
-		local_clergy_conversion_blocked = yes
-		monthly_towards_spiritualist = 0.02
     }
 	construction_demand = town_building_construction
 }

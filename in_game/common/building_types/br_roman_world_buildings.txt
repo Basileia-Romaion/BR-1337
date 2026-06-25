@@ -1,773 +1,862 @@
 ﻿#Latin trade company foreign land buildings
+	br_latin_harbor = {
+		audio_tier = 3
+		is_foreign = yes
+		is_special = yes
+		max_levels = trade_company_building_max_level
+		pop_type = burghers
+		own_or_overlord_relation_needed = trade_access
+		category = trade_category
+		employment_size = large_foreign_trade_employment
+		pop_size_created = large_foreign_trade_employment
+		icon = trade_company_harbor 
 
-br_latin_harbor = {
-	audio_tier = 3
-	is_foreign = yes
-	is_special = yes
-	max_levels = trade_company_building_max_level
-	pop_type = burghers
-	own_or_overlord_relation_needed = trade_access
-	category = trade_category
-	employment_size = large_foreign_trade_employment
-	pop_size_created = large_foreign_trade_employment
-	icon = trade_company_harbor 
-
-	rural_settlement = yes
-	town = yes
-	city = yes
-	megalopolis = yes
-	build_time = trade_company_build_time
-	possible_production_methods = {
-		port_building_maintenance
-	}
-
-	country_potential = {
-		always = no
-	}
-	allow = {
-		always = no
-	}
-
-	custom_tags = { trade_company_building satellite_trade_building }
-	modifier = {
-		max_ships_built_at_same_time = 1
-		building_owner_overlord_maritime_presence = 0.25
-		sailors_to_building_owner = 0.01
-		can_build_ships_in_this_location = yes
-
-		# bonuses to locaton owner
-		local_sailors = 0.001
-		harbor_suitability = 0.05
-	}
-}
-
-br_latin_trading_post = {
-	audio_tier = 3
-	is_special = yes
-	is_foreign = yes
-	need_good_relation = no
-	max_levels = trade_company_building_max_level
-	pop_type = burghers
-	icon = fondaco #trade_office #overseas_trading_post por_feitoria
-
-	stronger_power_projection = no
-	#own_or_overlord_relation_needed = trade_access
-	#international_organization_link = roman_world	
-	
-	category = trade_category
-
-	employment_size = large_foreign_trade_employment
-	pop_size_created = large_foreign_trade_employment
-	
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-
-	increase_per_level_cost = 1
-
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:br_special_merchant_republic
-	}
-	location_potential = {
-		OR = {
-			is_coastal = yes
-			is_port = yes
+		rural_settlement = yes
+		town = yes
+		city = yes
+		megalopolis = yes
+		build_time = trade_company_build_time
+		possible_production_methods = {
+			port_building_maintenance
 		}
-		dominant_culture = { has_culture_group = culture_group:greek_group }
-		NOT = { 
-			has_building = building_type:br_latin_trading_base
+
+		country_potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+
+		custom_tags = { trade_company_building satellite_trade_building }
+		modifier = {
+			max_ships_built_at_same_time = 1
+			building_owner_overlord_maritime_presence = 0.25
+			sailors_to_building_owner = 0.01
+			can_build_ships_in_this_location = yes
+
+			# bonuses to locaton owner
+			local_sailors = 0.001
+			harbor_suitability = 0.05
 		}
 	}
-	allow = {
-		within_naval_range_of = scope:actor
-	}
-	
-	build_time = trade_post_build_time
-	
-	unique_production_methods = {
-		br_latin_trading_post_maintenance = {
-			paper = 0.1
-			masonry = 0.05
-			naval_supplies = 0.25
-			category = building_maintenance
-		}
-	}
-	
-	modifier = {
-		building_owner_overlord_maritime_presence = 0.1
-		merchant_capacity_from_building = 0.5
-		merchant_power_from_building = 0.33
+
+	br_latin_trading_post = {
+		audio_tier = 3
+		is_special = yes
+		is_foreign = yes
+		need_good_relation = no
+		max_levels = trade_company_building_max_level
+		pop_type = burghers
+		icon = fondaco #trade_office #overseas_trading_post por_feitoria
+
+		stronger_power_projection = no
+		#own_or_overlord_relation_needed = trade_access
+		#international_organization_link = roman_world	
 		
-		#Italian merchants settle in the new location # bonus to locaton owner
-		local_migration_attraction = 0.05
-		local_marketplace_building_levels = 2
-		local_market_access = 0.05
-	}
-	allow_wrong_startup = yes
-}
+		category = trade_category
 
-br_latin_chapel = {
-	is_foreign = yes
-	is_special = yes
-	need_good_relation = yes
-	want_foreign_pop_created = no
-	pop_type = clergy
-	icon = merchant_guild_chapel
+		employment_size = large_foreign_trade_employment
+		pop_size_created = large_foreign_trade_employment
+		
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
 
-	max_levels = 1
-	expensive = yes
-	category = colonial_category
+		increase_per_level_cost = 1
 
-	employment_size = religious_building_employment
-	
-	pop_size_created = religious_building_employment
-
-	price = merchant_guild_chapel_price
-	
-	rural_settlement = setup_only
-	town = setup_only
-	city = yes
-	megalopolis = yes
-	conversion_religion = catholic
-
-	country_potential = {
-		AND = {
-			religion = religion:catholic
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
 			has_reform = government_reform:br_special_merchant_republic
 		}
-	}
-	
-	possible_production_methods = { merchant_guild_chapel_requirements }
-	construction_demand = merchant_guild_chapel_construction
-
-	
-	build_time = generic_town_build_time
-	
-	modifier = {
-		building_missionary_effort = 0.001
-		# bonuses to locaton owner
-		local_max_literacy = 2
-		local_disease_resistance = 0.02
-	}
-
-	allow_wrong_startup = yes
-}
-
-br_indike_quarters = {
-	is_special = yes
-	is_foreign = yes
-	pop_type = burghers
-	employment_size = foreign_trade_employment
-	pop_size_created = foreign_trade_employment
-	icon = ori_portuguese_quarters
-
-	max_levels = 1
-	category = trade_category
-	town = yes
-	city = yes
-	megalopolis = yes
-	
-	need_good_relation = yes
-	
-	country_potential = {
-		always = no
-	}
-	allow = {
-		always = no
-	}
-	
-	expensive = yes
-	build_time = trade_post_build_time
-	modifier = {
-		building_owner_maritime_presence = 0.05
-		local_max_rgo_size = 3
-		local_rgo_build_time = -0.25
-		#local_build_buildings_efficiency = 0.3
-	}
-	possible_production_methods = {
-		ori_portuguese_quarters_maintenance
-	}
-	construction_demand = market_center_building_construction
-	allow_wrong_startup = yes
-}
-
-#Latin trade company owned land buildings
-
-br_latin_garrison = {
-	audio_tier = 3
-	is_foreign = no
-	max_levels = 1
-	pop_type = soldiers
-	category = trade_category
-	employment_size = large_foreign_trade_employment
-	icon = trade_company_garrison
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	build_time = trade_company_build_time
-	unique_production_methods = {
-		br_latin_garrison_maintenance = {
-			stone = 0.1
-			lumber = 0.15
-			weaponry = 0.05
-			tar = 0.05
-			category = building_maintenance
-		}
-	}
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:br_special_merchant_republic
-	}
-	remove_if = {
-		owner ?= { 
-			NOT = { has_reform = government_reform:br_special_merchant_republic }
-		}
-	}
-	custom_tags = { trade_company_building satellite_trade_building }
-	modifier = {
-		local_defensive = 0.25
-		local_garrison_size = 0.25
-		local_trade_protection_factor = 0.1
-		local_manpower = 0.002
-	}
-	raw_modifier = {
-		minimum_fort_level = 1
-		propagating_zone_of_control = no
-	}
-}
-
-br_latin_harbor_base = {
-	audio_tier = 3
-	is_foreign = no
-	max_levels = 1
-	pop_type = burghers
-	category = trade_category
-	employment_size = large_foreign_trade_employment
-	icon = trade_company_harbor 
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	build_time = trade_company_build_time
-	possible_production_methods = {
-		port_building_maintenance
-	}
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:br_special_merchant_republic
-	}
-	remove_if = {
-		owner ?= { 
-			NOT = { has_reform = government_reform:br_special_merchant_republic }
-		}
-	}
-	modifier = {
-		building_owner_maritime_presence = 0.15
-		local_proximity_source = 15
-		max_ships_built_at_same_time = 1
-		local_sailors = 0.015
-		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.15
-	}
-}
-
-br_latin_trading_base = {
-	is_special = yes
-	max_levels = 1
-	pop_type = burghers
-	icon = fondaco #trade_office #overseas_trading_post por_feitoria
-	category = trade_category
-	employment_size = large_foreign_trade_employment
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_special_trade_companies
-		has_reform = government_reform:br_special_merchant_republic
-	}
-	location_potential = {
-		OR = {
-			is_coastal = yes
-			is_port = yes
-		}
-	}
-	remove_if = {
-		owner ?= { 
-			NOT = { has_reform = government_reform:br_special_merchant_republic }
-		}
-	}
-	build_time = trade_post_build_time
-	unique_production_methods = {
-		br_latin_trading_base_maintenance = {
-			paper = 0.1
-			masonry = 0.05
-			naval_supplies = 0.25
-			category = building_maintenance
-		}
-	}
-	modifier = {
-		local_migration_attraction = 0.05
-		local_marketplace_building_levels = 5
-		local_market_access = 0.1
-		local_merchant_power = 1.0
-		local_trades_per_burgher = 1.0
-		local_merchant_capacity = 1.0
-	}
-	allow_wrong_startup = yes
-}
-
-br_latin_slave_market = {
-	audio_tier = 2
-	is_foreign = no
-	max_levels = slave_market_max_level
-	startup_ramp_target = rural_startup_ramp_target
-	pop_type = burghers
-	icon = slave_center #slave_market
-
-	category = government_category
-	employment_size = trade_employment
-
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-
-	country_potential = {
-		always = no
-	}
-	allow = {
-		always = no
-	}
-
-	build_time = generic_town_build_time
-	unique_production_methods = {
-		br_latin_slave_market_maintenance = {
-			leather = 0.35
-			tools = 0.25
-			weaponry = 0.25
-			paper = 0.15
-
-			produced = slaves_goods
-			output = 2.0
-
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-	}
-
-	modifier = {
-		building_enslavement_power = 0.10
-		local_slave_pop_satisfaction = -0.025
-	}
-
-	construction_demand = town_building_construction
-
-}
-
-br_latin_slave_center = {
-	audio_tier = 2
-	in_empty = any
-	is_foreign = yes
-	stronger_power_projection = yes
-	max_levels = 1
-	startup_ramp_target = rural_startup_ramp_target
-	pop_type = burghers
-	icon = slave_center
-	category = colonial_category
-	employment_size = foreign_trade_employment
-	pop_size_created = foreign_trade_employment
-	
-	rural_settlement = yes
-	town = yes
-	city = yes
-	megalopolis = yes
-	
-	location_potential = {
-		NOT = { dominant_religion.group = scope:actor.religion.group }
-		owner ?= { religion != scope:actor.religion }
-	}
-	
-	country_potential = {
-		always = no
-	}
-	allow = {
-		always = no
-	}
-
-	build_time = colonise_build_time
-	
-	unique_production_methods = {
-		br_latin_slave_center_maintenance = {
-			stone = 0.1
-			tools = 0.1
-			paper = 0.05
-			produced = slaves_goods
-			output = 1
-			
-			debug_max_profit = -1  
-			category = building_maintenance
-		}
-	}
-	construction_demand = simple_colony_construction
-
-	modifier = {
-		building_enslavement_power = 0.20
-		local_slave_pop_satisfaction = -0.05
-	}
-}
-
-
-#negative
-
-br_bandits_building = {
-	is_foreign = no
-	max_levels = estate_building_stackable_level
-	pop_type = peasants
-	icon = maniot_toll_guards
-	
-	category = estate_category
-	employment_size = estate_peasants_employment
-	
-	rural_settlement = yes
-	town = setup_only
-	city = no
-	
-	estate = peasants_estate
-	build_time = estate_build_time
-	
-	location_potential = {
-		local_control < 0.25
-		region = region:balkan_region
-		NOT = { 
+		location_potential = {
 			OR = {
-				has_fort = yes
-				has_building = building_type:br_pronoia_estate
-				has_building = building_type:br_kekhrismene_pronoia
-				has_building = building_type:br_soldier_farmers
-				has_building = building_type:br_stratiotikon_thema_estate
+				is_coastal = yes
+				is_port = yes
+			}
+			dominant_culture = { has_culture_group = culture_group:greek_group }
+			NOT = { 
+				has_building = building_type:br_latin_trading_base
 			}
 		}
+		allow = {
+			within_naval_range_of = scope:actor
+		}
+		
+		build_time = trade_post_build_time
+		
+		unique_production_methods = {
+			br_latin_trading_post_maintenance = {
+				paper = 0.1
+				masonry = 0.05
+				naval_supplies = 0.25
+				category = building_maintenance
+			}
+		}
+		
+		modifier = {
+			building_owner_overlord_maritime_presence = 0.1
+			merchant_capacity_from_building = 0.5
+			merchant_power_from_building = 0.33
+			
+			#Italian merchants settle in the new location # bonus to locaton owner
+			local_migration_attraction = 0.05
+			local_marketplace_building_levels = 2
+			local_market_access = 0.05
+		}
+		allow_wrong_startup = yes
 	}
 
-	#country_potential = {
-	#	culture = { has_culture_group = culture_group:roman_group }
-	#}
+	br_latin_chapel = {
+		is_foreign = yes
+		is_special = yes
+		need_good_relation = yes
+		want_foreign_pop_created = no
+		pop_type = clergy
+		icon = merchant_guild_chapel
 
-	possible_production_methods = {
-		estate_building_input
+		max_levels = 1
+		expensive = yes
+		category = colonial_category
+
+		employment_size = religious_building_employment
+		
+		pop_size_created = religious_building_employment
+
+		price = merchant_guild_chapel_price
+		
+		rural_settlement = setup_only
+		town = setup_only
+		city = yes
+		megalopolis = yes
+		conversion_religion = catholic
+
+		country_potential = {
+			AND = {
+				religion = religion:catholic
+				has_reform = government_reform:br_special_merchant_republic
+			}
+		}
+		
+		possible_production_methods = { merchant_guild_chapel_requirements }
+		construction_demand = merchant_guild_chapel_construction
+
+		
+		build_time = generic_town_build_time
+		
+		modifier = {
+			building_missionary_effort = 0.001
+			# bonuses to locaton owner
+			local_max_literacy = 2
+			local_disease_resistance = 0.02
+		}
+
+		allow_wrong_startup = yes
 	}
 
-	modifier = {
-		local_peasant_enfranchisment = 0.1
-		local_monthly_food_modifier = -0.25
-		local_nobles_estate_power = -5
-		local_burghers_estate_power = -1
-		local_crown_estate_power = -1
-		local_distance_from_capital_speed_propagation = -0.25
-    }
+	br_indike_quarters = {
+		is_special = yes
+		is_foreign = yes
+		pop_type = burghers
+		employment_size = foreign_trade_employment
+		pop_size_created = foreign_trade_employment
+		icon = ori_portuguese_quarters
 
-	destroy_price = br_bandits_building_remove_price
-	allow_wrong_startup = yes
-	construction_demand = estate_construct_building
-}
+		max_levels = 1
+		category = trade_category
+		town = yes
+		city = yes
+		megalopolis = yes
+		
+		need_good_relation = yes
+		
+		country_potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		
+		expensive = yes
+		build_time = trade_post_build_time
+		modifier = {
+			building_owner_maritime_presence = 0.05
+			local_max_rgo_size = 3
+			local_rgo_build_time = -0.25
+			#local_build_buildings_efficiency = 0.3
+		}
+		possible_production_methods = {
+			ori_portuguese_quarters_maintenance
+		}
+		construction_demand = market_center_building_construction
+		allow_wrong_startup = yes
+	}
+
+#Latin trade company owned land buildings
+	br_latin_garrison = {
+		audio_tier = 3
+		is_foreign = no
+		max_levels = 1
+		pop_type = soldiers
+		category = trade_category
+		employment_size = large_foreign_trade_employment
+		icon = trade_company_garrison
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		build_time = trade_company_build_time
+		unique_production_methods = {
+			br_latin_garrison_maintenance = {
+				stone = 0.1
+				lumber = 0.15
+				weaponry = 0.05
+				tar = 0.05
+				category = building_maintenance
+			}
+		}
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
+			has_reform = government_reform:br_special_merchant_republic
+		}
+		remove_if = {
+			owner ?= { 
+				NOT = { has_reform = government_reform:br_special_merchant_republic }
+			}
+		}
+		custom_tags = { trade_company_building satellite_trade_building }
+		modifier = {
+			local_defensive = 0.25
+			local_garrison_size = 0.25
+			local_trade_protection_factor = 0.1
+			local_manpower = 0.002
+		}
+		raw_modifier = {
+			minimum_fort_level = 1
+			propagating_zone_of_control = no
+		}
+	}
+
+	br_latin_harbor_base = {
+		audio_tier = 3
+		is_foreign = no
+		max_levels = 1
+		pop_type = burghers
+		category = trade_category
+		employment_size = large_foreign_trade_employment
+		icon = trade_company_harbor 
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		build_time = trade_company_build_time
+		possible_production_methods = {
+			port_building_maintenance
+		}
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
+			has_reform = government_reform:br_special_merchant_republic
+		}
+		remove_if = {
+			owner ?= { 
+				NOT = { has_reform = government_reform:br_special_merchant_republic }
+			}
+		}
+		modifier = {
+			building_owner_maritime_presence = 0.15
+			local_proximity_source = 15
+			max_ships_built_at_same_time = 1
+			local_sailors = 0.015
+			can_build_ships_in_this_location = yes
+			harbor_suitability = 0.15
+		}
+	}
+
+	br_latin_trading_base = {
+		is_special = yes
+		max_levels = 1
+		pop_type = burghers
+		icon = fondaco #trade_office #overseas_trading_post por_feitoria
+		category = trade_category
+		employment_size = large_foreign_trade_employment
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
+			has_reform = government_reform:br_special_merchant_republic
+		}
+		location_potential = {
+			OR = {
+				is_coastal = yes
+				is_port = yes
+			}
+		}
+		remove_if = {
+			owner ?= { 
+				NOT = { has_reform = government_reform:br_special_merchant_republic }
+			}
+		}
+		build_time = trade_post_build_time
+		unique_production_methods = {
+			br_latin_trading_base_maintenance = {
+				paper = 0.1
+				masonry = 0.05
+				naval_supplies = 0.25
+				category = building_maintenance
+			}
+		}
+		modifier = {
+			local_migration_attraction = 0.05
+			local_marketplace_building_levels = 5
+			local_market_access = 0.1
+			local_merchant_power = 1.0
+			local_trades_per_burgher = 1.0
+			local_merchant_capacity = 1.0
+		}
+		allow_wrong_startup = yes
+	}
+
+	br_latin_slave_market = {
+		audio_tier = 2
+		is_foreign = no
+		max_levels = slave_market_max_level
+		startup_ramp_target = rural_startup_ramp_target
+		pop_type = burghers
+		icon = slave_center #slave_market
+
+		category = government_category
+		employment_size = trade_employment
+
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+
+		country_potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+
+		build_time = generic_town_build_time
+		unique_production_methods = {
+			br_latin_slave_market_maintenance = {
+				leather = 0.35
+				tools = 0.25
+				weaponry = 0.25
+				paper = 0.15
+
+				produced = slaves_goods
+				output = 2.0
+
+				debug_max_profit = rural_profit_margin
+				category = building_maintenance
+			}
+		}
+
+		modifier = {
+			building_enslavement_power = 0.10
+			local_slave_pop_satisfaction = -0.025
+		}
+
+		construction_demand = town_building_construction
+
+	}
+
+	br_latin_slave_center = {
+		audio_tier = 2
+		in_empty = any
+		is_foreign = yes
+		stronger_power_projection = yes
+		max_levels = 1
+		startup_ramp_target = rural_startup_ramp_target
+		pop_type = burghers
+		icon = slave_center
+		category = colonial_category
+		employment_size = foreign_trade_employment
+		pop_size_created = foreign_trade_employment
+		
+		rural_settlement = yes
+		town = yes
+		city = yes
+		megalopolis = yes
+		
+		location_potential = {
+			NOT = { dominant_religion.group = scope:actor.religion.group }
+			owner ?= { religion != scope:actor.religion }
+		}
+		
+		country_potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+
+		build_time = colonise_build_time
+		
+		unique_production_methods = {
+			br_latin_slave_center_maintenance = {
+				stone = 0.1
+				tools = 0.1
+				paper = 0.05
+				produced = slaves_goods
+				output = 1
+				
+				debug_max_profit = -1  
+				category = building_maintenance
+			}
+		}
+		construction_demand = simple_colony_construction
+
+		modifier = {
+			building_enslavement_power = 0.20
+			local_slave_pop_satisfaction = -0.05
+		}
+	}
+
+#negative
+	br_bandits_building = {
+		is_foreign = no
+		max_levels = estate_building_stackable_level
+		pop_type = peasants
+		icon = maniot_toll_guards
+		
+		category = estate_category
+		employment_size = estate_peasants_employment
+		
+		rural_settlement = yes
+		town = setup_only
+		city = no
+		
+		estate = peasants_estate
+		build_time = estate_build_time
+		
+		location_potential = {
+			local_control < 0.25
+			region = region:balkan_region
+			NOT = { 
+				OR = {
+					has_fort = yes
+					has_building = building_type:br_pronoia_estate
+					has_building = building_type:br_kekhrismene_pronoia
+					has_building = building_type:br_soldier_farmers
+					has_building = building_type:br_stratiotikon_thema_estate
+				}
+			}
+		}
+
+		#country_potential = {
+		#	culture = { has_culture_group = culture_group:roman_group }
+		#}
+
+		possible_production_methods = {
+			estate_building_input
+		}
+
+		modifier = {
+			local_peasant_enfranchisment = 0.1
+			local_monthly_food_modifier = -0.25
+			local_nobles_estate_power = -5
+			local_burghers_estate_power = -1
+			local_crown_estate_power = -1
+			local_distance_from_capital_speed_propagation = -0.25
+		}
+
+		destroy_price = br_bandits_building_remove_price
+		allow_wrong_startup = yes
+		construction_demand = estate_construct_building
+	}
 
 #Roman Orthodox Buildings
 # Orthodox Buildings
-orthodox_missionary_building = {
-	is_foreign = yes
-	stronger_power_projection = no
-	need_good_relation = yes
-	max_levels = 1
-	pop_type = clergy
-	graphical_tags = { small_religious }
-	
-	category = religious_category
-	
-	employment_size = religious_building_employment
-	
-	pop_size_created = religious_building_employment
-	
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	conversion_religion = orthodox
-	
-	country_potential = {
-		religion = religion:orthodox
-		OR = {
-   			has_reform = government_reform:patriarchate
+	orthodox_missionary_building = {
+		is_foreign = yes
+		stronger_power_projection = no
+		need_good_relation = yes
+		max_levels = 1
+		pop_type = clergy
+		graphical_tags = { small_religious }
+		
+		category = religious_category
+		
+		employment_size = religious_building_employment
+		
+		pop_size_created = religious_building_employment
+		
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		conversion_religion = orthodox
+		
+		country_potential = {
+			religion = religion:orthodox
+			OR = {
+				has_reform = government_reform:patriarchate
+				has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
+			}
+		}
+		
+		allow = {
+			owner = { within_diplomatic_range = scope:actor }
+			NOT = { dominant_religion = scope:actor.religion }
+		}
+		
+		possible_production_methods = {
+			colony_maintenance
+		}
+		construction_demand = simple_colony_construction
+
+		build_time = colonise_build_time
+		
+		modifier = {
+			building_missionary_effort = 0.05
+			local_tribal_promotion = 0.5
+			local_disease_resistance = 0.05
+			local_max_literacy = 5
+		}
+	}
+
+	patriarchate_seat = {
+		is_special = yes
+		is_foreign = no
+		max_levels = 1
+		pop_type = clergy
+		
+		employment_size = religious_building_employment
+
+		rural_settlement = yes
+		town = yes
+		city = yes
+		megalopolis = yes
+
+		category = religious_category
+		
+		country_potential = {
+			has_reform = government_reform:patriarchate
+			religion = religion:orthodox
+		}
+		
+		location_potential = {
+			is_capital = yes
+		}
+
+		build_time = religious_building_time
+		
+		unique_production_methods = {
+			patriarchate_seat_maintenance = {
+				glass = 0.05
+				cloth = 0.05
+				fine_cloth = 0.025
+				paper = 0.1
+				copper = 0.05
+				tools = 0.05
+				category = building_maintenance
+			}
+		}
+		
+		construction_demand = cardinal_construction
+
+		modifier = {
+			local_max_literacy = 5
+			local_clergy_food_consumption = 0.2
+			monthly_religious_influence = 1
+		}
+	}
+
+	br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively integrate local populations.
+		audio_tier = 2
+		is_foreign = no
+		max_levels = estate_building_single_level
+		pop_type = clergy
+		icon = royal_audience_and_chancery #nobled_sponsored_temple
+		
+		employment_size = estate_clergy_employment
+		category = cultural_category
+		
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+
+		build_time = cultural_building_time
+		graphical_tags = { small_religious }
+
+		country_potential = {
+			owner = { religion = religion:orthodox }
+		}
+		allow = { is_province_capital = yes }
+		
+		location_potential = {
+			is_province_capital = yes
+			NOT = { 
+				this = location:constantinople
+			}
+		}
+		remove_if = {
+			NOT = { owner = { religion = religion:orthodox } }
+		}
+		
+		possible_production_methods = {
+			temple_maintenance
+		}
+		construction_demand = town_building_construction
+
+		modifier = {
+			local_pop_conversion_speed_modifier = 0.1
+			local_clergy_estate_power = 0.5
+			local_clergy_pop_growth = 0.1
+		}
+		capital_country_modifier = {
+			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+		}
+	}
+
+	br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doctrine.
+		audio_tier = 1
+		is_foreign = no
+		max_levels = estate_building_single_level
+		pop_type = clergy
+		icon = venetian_quarter #local_shrine #darussifa
+		
+		employment_size = estate_clergy_employment
+		category = cultural_category
+
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		
+		build_time = cultural_building_time
+		graphical_tags = { small_religious }
+
+		country_potential = {
 			has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
 		}
+		remove_if = {
+			NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		}
+		location_potential = { 
+			NOT = { 
+				this = location:constantinople
+			}
+		}
+		
+		possible_production_methods = {
+			library_maintenance
+		}
+		construction_demand = town_building_construction
+		
+		modifier = {
+			local_pop_assimilation_speed_modifier = 0.1
+			local_pop_conversion_speed_modifier = 0.1
+			local_clergy_estate_power = 0.25
+			local_monthly_literacy = 0.05
+		}
+		capital_country_modifier = {
+			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+		}
 	}
-	
-	allow = {
-		owner = { within_diplomatic_range = scope:actor }
-		NOT = { dominant_religion = scope:actor.religion }
-	}
-	
-	possible_production_methods = {
-		colony_maintenance
-	}
-	construction_demand = simple_colony_construction
 
-	build_time = colonise_build_time
-	
-	modifier = {
-		building_missionary_effort = 0.05
-		local_tribal_promotion = 0.5
-		local_disease_resistance = 0.05
-		local_max_literacy = 5
-	}
-}
+	br_nomophylakeion = { #Archive and office of legal scholars and judges.
+		audio_tier = 2
+		is_foreign = no
+		max_levels = estate_building_single_level
+		pop_type = clergy
+		icon = llotja_seda #clerical_archives
+		
+		employment_size = estate_clergy_employment
+		category = cultural_category
+		
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		
+		build_time = cultural_building_time
+		graphical_tags = { small_religious }
 
-patriarchate_seat = {
-	is_special = yes
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		}
+		allow = { is_province_capital = yes }
+		
+		location_potential = {
+			is_province_capital = yes
+			NOT = { 
+				this = location:constantinople
+			}
+		}
+		remove_if = {
+			NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		}
+		
+		possible_production_methods = {
+			library_maintenance
+		}
+		construction_demand = town_building_construction
+			
+		
+		modifier = {
+			local_max_urban_control = 0.025
+			local_pop_assimilation_speed_modifier = 0.05
+			local_clergy_estate_power = 0.25
+			local_clergy_max_literacy = 2.5
+			local_nobles_max_literacy = 2.5
+		}
+		capital_country_modifier = {
+			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+		}
+	}
+
+	br_dikasterion = { #Provincial court administering Roman law.
+		audio_tier = 2
+		is_foreign = no
+		max_levels = estate_building_single_level
+		pop_type = clergy
+		icon = segovia_artillery_academy #bulgarian_administration_center
+		
+		employment_size = estate_clergy_employment
+		category = cultural_category
+		
+		rural_settlement = setup_only
+		town = yes
+		city = yes
+		megalopolis = yes
+		
+		build_time = cultural_building_time
+		graphical_tags = { small_religious }
+
+		country_potential = {
+			has_estate_privilege = estate_privilege:br_bureaucrat_clergy
+		}
+		allow = { is_province_capital = yes }
+		
+		location_potential = {
+			is_province_capital = yes
+			NOT = { 
+				this = location:constantinople
+			}
+		}
+		remove_if = {
+			NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+		}
+		
+		possible_production_methods = {
+			temple_maintenance
+		}
+		construction_demand = town_building_construction
+			
+		
+		modifier = {
+			local_max_urban_control = 0.05
+			local_pop_assimilation_speed_modifier = 0.1
+		}
+		capital_country_modifier = {
+			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
+		}
+	}
+
+#Mount Athos
+br_mount_athos_incense = {
+	icon = college_of_poets
+	audio_tier = 3
 	is_foreign = no
+	pop_type = clergy
 	max_levels = 1
-	pop_type = clergy
-	
-	employment_size = religious_building_employment
-
+	category = consumer_goods_category
+	employment_size = large_religious_building_employment
 	rural_settlement = yes
-	town = yes
-	city = yes
-	megalopolis = yes
-
-	category = religious_category
-	
+	town = no
+	city = no
+	megalopolis = no
+	ai_forbid_shutdown = yes
+	location_potential = { is_capital = yes }
 	country_potential = {
-		has_reform = government_reform:patriarchate
-		religion = religion:orthodox
+		has_reform = government_reform:br_holy_community
 	}
-	
-	location_potential = {
-		is_capital = yes
-	}
-
-	build_time = religious_building_time
-	
+	build_time = village_build_time
 	unique_production_methods = {
-		patriarchate_seat_maintenance = {
-			glass = 0.05
-			cloth = 0.05
-			fine_cloth = 0.025
-			paper = 0.1
-			copper = 0.05
-			tools = 0.05
-			category = building_maintenance
+		br_mount_athos_incense_maintenance = {
+			produced = incense
+			output = 1
+			category = guild_input
 		}
 	}
-	
-	construction_demand = cardinal_construction
-
-	modifier = {
-		local_max_literacy = 5
-		local_clergy_food_consumption = 0.2
-		monthly_religious_influence = 1
-	}
-}
-
-br_episkopeion = { #(Bishop's Residence) The bishop and his clergy actively integrate local populations.
-	audio_tier = 2
-	is_foreign = no
-	max_levels = estate_building_single_level
-	pop_type = clergy
-	icon = royal_audience_and_chancery #nobled_sponsored_temple
-	
-	employment_size = estate_clergy_employment
-	category = cultural_category
-	
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-
-	build_time = cultural_building_time
 	graphical_tags = { small_religious }
-
+	construction_demand = village_construction
+}
+br_mount_athos_winery = {
+	icon = camara_comptos
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+	category = consumer_goods_category
+	employment_size = large_religious_building_employment
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+	ai_forbid_shutdown = yes
+	location_potential = { is_capital = yes }
 	country_potential = {
-		owner = { religion = religion:orthodox }
+		has_reform = government_reform:br_holy_community
 	}
-	allow = { is_province_capital = yes }
-	
-	location_potential = {
-		is_province_capital = yes
-		NOT = { 
-			this = location:constantinople
+	build_time = village_build_time
+	unique_production_methods = {		
+		br_mount_athos_winery_maintenance = {
+			produced = wine
+			output = 1
+			category = guild_input
 		}
 	}
-	remove_if = {
-		NOT = { owner = { religion = religion:orthodox } }
-	}
-	
-	possible_production_methods = {
-		temple_maintenance
-	}
-	construction_demand = town_building_construction
-
-	modifier = {
-		local_pop_conversion_speed_modifier = 0.1
-		local_clergy_estate_power = 0.5
-		local_clergy_pop_growth = 0.1
-	}
-	capital_country_modifier = {
-		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
-	}
+	graphical_tags = { small_religious }
+	construction_demand = village_construction
 }
-
-br_didaskaleion = { #Church-run schools teaching Greek literacy and Orthodox doctrine.
+br_mount_athos_scriptorium = {
+	icon = bardic_school
 	audio_tier = 1
 	is_foreign = no
-	max_levels = estate_building_single_level
 	pop_type = clergy
-	icon = venetian_quarter #local_shrine #darussifa
-	
-	employment_size = estate_clergy_employment
-	category = cultural_category
-
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	
-	build_time = cultural_building_time
-	graphical_tags = { small_religious }
-
+	max_levels = 1
+	category = consumer_goods_category
+	employment_size = large_religious_building_employment
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+	ai_forbid_shutdown = yes
+	location_potential = { is_capital = yes }
 	country_potential = {
-		has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
+		has_reform = government_reform:br_holy_community
 	}
-	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	}
-	location_potential = { 
-		NOT = { 
-			this = location:constantinople
+	build_time = village_build_time
+	unique_production_methods = {
+		br_mount_athos_scriptorium_maintenance = {
+			produced = books
+			output = 1
+			category = guild_input
 		}
 	}
-	
-	possible_production_methods = {
-		library_maintenance
-	}
-	construction_demand = town_building_construction
-	
-	modifier = {
-		local_pop_assimilation_speed_modifier = 0.1
-		local_pop_conversion_speed_modifier = 0.1
-		local_clergy_estate_power = 0.25
-		local_monthly_literacy = 0.05
-	}
-	capital_country_modifier = {
-		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
-	}
-}
-
-br_nomophylakeion = { #Archive and office of legal scholars and judges.
-	audio_tier = 2
-	is_foreign = no
-	max_levels = estate_building_single_level
-	pop_type = clergy
-	icon = llotja_seda #clerical_archives
-	
-	employment_size = estate_clergy_employment
-	category = cultural_category
-	
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	
-	build_time = cultural_building_time
 	graphical_tags = { small_religious }
-
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
-	}
-	allow = { is_province_capital = yes }
-	
-	location_potential = {
-		is_province_capital = yes
-		NOT = { 
-			this = location:constantinople
-		}
-	}
-	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	}
-	
-	possible_production_methods = {
-		library_maintenance
-	}
-	construction_demand = town_building_construction
-		
-	
-	modifier = {
-		local_max_urban_control = 0.025
-		local_pop_assimilation_speed_modifier = 0.05
-		local_clergy_estate_power = 0.25
-		local_clergy_max_literacy = 2.5
-		local_nobles_max_literacy = 2.5
-	}
-	capital_country_modifier = {
-		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
-	}
+	construction_demand = village_construction
 }
 
-br_dikasterion = { #Provincial court administering Roman law.
-	audio_tier = 2
-	is_foreign = no
-	max_levels = estate_building_single_level
-	pop_type = clergy
-	icon = segovia_artillery_academy #bulgarian_administration_center
-	
-	employment_size = estate_clergy_employment
-	category = cultural_category
-	
-	rural_settlement = setup_only
-	town = yes
-	city = yes
-	megalopolis = yes
-	
-	build_time = cultural_building_time
-	graphical_tags = { small_religious }
+#icons for upgrades
+#royal_society
+#sevilla_bullfighting_school
+#segovia_artillery_academy
 
-	country_potential = {
-		has_estate_privilege = estate_privilege:br_bureaucrat_clergy
-	}
-	allow = { is_province_capital = yes }
-	
-	location_potential = {
-		is_province_capital = yes
-		NOT = { 
-			this = location:constantinople
-		}
-	}
-	remove_if = {
-		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
-	}
-	
-	possible_production_methods = {
-		temple_maintenance
-	}
-	construction_demand = town_building_construction
-		
-	
-	modifier = {
-		local_max_urban_control = 0.05
-		local_pop_assimilation_speed_modifier = 0.1
-	}
-	capital_country_modifier = {
-		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
-	}
-}
-
-#for upgrades
 #enderun_academy
 #gymnasium_building
 #imperial_academy_of_arts
 #sanssouci
 #phanariot_district
+
+#bardic_school
+#camara_comptos
+#college_of_poets

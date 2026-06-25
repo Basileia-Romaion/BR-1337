@@ -144,7 +144,7 @@ locations={
 	bari = { rank = town 			town_setup = greek_town_port }
 	benevento = { rank = town 			town_setup = italian_town }
 	bergamo = { rank = town 		town_setup = italian_town }
-	brindisi = { rank = town 		town_setup = italian_town }
+	brindisi = { rank = town 		town_setup = italian_coastal_town }
 	cagliari = { rank = town 		town_setup = italian_town }
 	catania = { rank = town 		town_setup = italian_coastal_town }
 	catanzaro = { rank = town 		town_setup = greek_town_port }
@@ -162,7 +162,7 @@ locations={
 	lucera = { rank = town 			town_setup = italian_town }
 	macerata = { rank = town 		town_setup = italian_town }
 	manfredonia = { rank = town 	town_setup = italian_town }
-	matera = { rank = town 			town_setup = italian_town }
+	matera = { rank = town 			town_setup = italian_coastal_town }
 	mazara = { rank = town 			town_setup = italian_town }
 	melfi = { rank = town 			town_setup = italian_town }
 	modena = { rank = town 			town_setup = italian_town }
@@ -4451,7 +4451,13 @@ building_manager = {
 	parish_church = { tag = MAM level = 1 location = saint_katrine }
 	scriptorium = { tag = MAM level = 4 location = alexandria }
 
-	br_mount_athos_building = { tag = BYZ level = 1 location = mount_athos }
+	br_mount_athos_building = { tag = MAO level = 1 location = mount_athos }
+	br_mount_athos_incense = { tag = MAO level = 1 location = mount_athos }
+	br_mount_athos_winery = { tag = MAO level = 1 location = mount_athos }
+	br_mount_athos_scriptorium = { tag = MAO level = 1 location = mount_athos }
+	#rural_glassmaker = { tag = MAO level = 1 location = mount_athos }
+	#rural_clothmaker = { tag = MAO level = 1 location = mount_athos }
+	
 	parish_church = { tag = BYZ level = 1 location = trikala }
 	parish_church = { tag = BYZ level = 1 location = salona }
 	parish_church = { tag = BYZ level = 1 location = leuktron }

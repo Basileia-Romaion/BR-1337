@@ -58,6 +58,30 @@ REPLACE_OR_CREATE:repopulation_of_anatolia_modifier = {
 		category = location
 	}
 
-	local_migration_attraction = 1 #was 2
+	local_migration_attraction = 0.33 #was 2
 	local_monthly_prosperity= 0.005 #was 0.003
+}
+
+REPLACE_OR_CREATE:greek_culture_influential_polis = {
+	game_data = {
+		category = location
+	}
+
+	local_migration_attraction = 0.33 #was 1
+	free_building_levels = 2
+	local_nobles_estate_power = 0.25 #was 0.5
+	local_burghers_estate_power = 0.25 #was 0.5
+	local_clergy_estate_power = 0.25 #was 0.5
+	local_monthly_prosperity= 0.002 # added
+}
+
+REPLACE_OR_CREATE:mines_of_tzantzakon_modifier = {
+	game_data = {
+		category = location
+		decaying = yes
+	}
+
+	local_raw_material_output = 1
+	local_migration_attraction = 0.33 #was 1
+	local_monthly_prosperity= 0.003 #br added
 }

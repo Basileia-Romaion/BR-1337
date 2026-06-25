@@ -1,0 +1,479 @@
+﻿namespace = br_flavor_byz
+
+#br copies of base events
+br_flavor_byz.13 = { #https://en.wikipedia.org/wiki/Mystras#Centre_of_learning_and_culture
+	type = country_event
+	title = flavor_byz.13.title
+	desc = flavor_byz.13.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1350.1.1
+		to = 1400.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = BYZ
+		owns_or_non_sovereign_subject_owns = location:mystras #so you can get event if area subject owned
+		at_war = no
+		location:mystras = {
+			#controller = ROOT
+			prosperity > 0
+		}
+		has_advance = art_school_advance
+	}
+
+	immediate = {
+		location:mystras = {
+			save_scope_as = target_location
+			province = { save_scope_as = target_province }
+		}
+	}
+
+	option = {
+		name = flavor_byz.13.a
+		trigger = {
+			location:mystras = {
+				NOR = {
+					OR = {
+						has_building = building_type:art_school
+						has_building = building_type:arts_academy
+					}
+					location_rank = location_rank:town
+				}
+			}
+		}
+		if = {
+			limit = {
+				location:mystras = {
+					NOT = { location_rank = location_rank:town }
+				}
+			}
+			location:mystras = { change_location_rank_effect = { location_rank = location_rank:town } }
+		}
+		if = {
+			limit = {
+				location:mystras = { is_capital = yes }
+				has_advance = arts_academy_advance
+				location:mystras = {
+					NOT = { has_building = building_type:arts_academy }
+				}
+			}
+			location:mystras = {
+				if = {
+					limit = { has_building = building_type:art_school }
+					hidden_effect = { destroy_building = "building(building_type:art_school|owner)" }
+				}
+				construct_building = {
+					building_type = building_type:arts_academy
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				location:mystras = { is_capital = yes }
+				has_advance = art_school_advance
+				location:mystras = {
+					NOT = { has_building = building_type:art_school }
+				}
+			}
+			location:mystras = {
+				construct_building = {
+					building_type = building_type:art_school
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+				}
+			}
+		}
+		else = {
+			scope:target_province = {
+				add_province_modifier = {
+					modifier = center_of_learning_modifier
+					years = -1
+					mode = replace
+				}
+			}
+		}
+		change_gold_effect = { scale = -3 }
+	}
+
+	option = {
+		name = flavor_byz.13.b
+		historical_option = yes
+
+		scope:target_location = {
+			change_prosperity = prosperity_severe_bonus
+		}
+		scope:target_location.province = {
+			every_location_in_province = {
+				limit = {
+					this != scope:target_location
+				}
+				change_prosperity = prosperity_very_weak_bonus
+			}
+		}
+		culture = {
+			add_cultural_tradition = cultural_tradition_severe_bonus
+			add_cultural_influence = cultural_influence_severe_bonus
+		}
+		change_gold_effect = { scale = -2 }
+	}
+
+	option = {
+		name = flavor_byz.13.c
+
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_flavor_byz.66 = {
+	type = country_event
+	title = flavor_byz.66.title
+	desc = flavor_byz.66.desc
+	outcome = neutral
+	historical_info = flavor_byz.66.historical_info
+
+	trigger = {
+		has_or_had_tag = BYZ
+		owns_or_non_sovereign_subject_owns = location:thessaloniki #so you can get event if area subject owned
+		current_month <= 6 # Preparations earlier in the year
+	}
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ 
+		from = 1337.1.1
+		to = 1500.1.1
+		monthly_chance = 1
+	}
+
+	immediate = {
+		location:thessaloniki = {
+			save_scope_as = target_location
+			event_illustration_estate_effect = {
+				background = estate_type:clergy_estate
+				foreground = estate_type:burghers_estate
+			}
+		}	
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	option = {
+		name = flavor_byz.66.a
+		
+		change_gold_effect = {
+			scale = -3
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_mild_bonus
+		}
+
+		add_religious_influence = religious_influence_mild_bonus
+
+		scope:target_location = {
+			add_location_modifier = {
+				mode = add
+				modifier = BYZ_grand_fair_of_st_demetrius
+				years = modifier_duration_years_very_long
+			}
+		}
+	}
+
+	option = {
+		name = flavor_byz.66.b
+		
+		scope:target_location = {
+			add_location_modifier = {
+				mode = add
+				modifier = BYZ_grand_fair_of_st_demetrius
+				years = modifier_duration_years_short
+			}
+		}
+	}
+}
+
+br_flavor_byz.1100 = { #
+	type = country_event
+	title = flavor_byz.1100.title
+	desc = flavor_byz.1100.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1338.1.1
+		to = 1350.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = BYZ
+		religion = religion:orthodox
+		owns_or_non_sovereign_subject_owns = location:mount_athos #so you can get event if area subject owned
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		location:mount_athos = {
+			event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+			save_scope_as = target_location
+		}
+
+		if = {
+			limit = {
+				character:byz_barlaam_of_seminara ?= {
+					is_alive = yes
+					owner = ROOT
+				}
+			}
+
+			character:byz_barlaam_of_seminara = { save_scope_as = target_character_1 }
+		}
+
+		if = {
+			limit = {
+				character:byz_gregory_palamas ?= {
+					is_alive = yes
+					owner = ROOT
+				}
+			}
+
+			character:byz_gregory_palamas = { save_scope_as = target_character_2 }
+		}
+
+		if = {
+			limit = { 
+				NOT = { exists = scope:target_character_1 }
+			}
+
+			random_character = {
+				limit = {
+					has_estate = estate_type:clergy_estate
+					religion = root.religion
+				}
+				save_scope_as = target_character_1 
+			}
+		}
+
+		if = {
+			limit = { 
+				NOT = { exists = scope:target_character_2 }
+			}
+
+			random_character = {
+				limit = {
+					this != scope:target_character_1
+					has_estate = estate_type:clergy_estate
+					religion = root.religion
+				}
+				save_scope_as = target_character_2
+			}
+		}
+
+		set_variable = {
+			name = num_clergy_palamite_pops_variable
+			value = 0
+		}
+
+		set_variable = {
+			name = num_barlaamite_pops_variable
+			value = 0
+		}
+
+		every_pop = {
+			limit = {
+				owner = root
+				religion = religion:orthodox
+				pop_type = pop_type:clergy
+				NOR = {
+					location = root.capital
+					location = location:mount_athos
+				}
+			}
+			random_list = {
+				1 = { 
+					add_to_list = agry_palamite_clergy_list 
+					root = { 
+						change_variable = {
+							name = num_clergy_palamite_pops_variable
+							add = {
+								value = prev.pop_size
+								multiply = 1000
+							}
+						}
+					}
+				}
+				1 = { 
+					add_to_list = angry_barlaamite_clergy_list 
+					root = { 
+						change_variable = {
+							name = num_barlaamite_pops_variable
+							add = {
+								value = prev.pop_size
+								multiply = 1000
+							}
+						}
+					}
+				}
+			}
+		}
+
+		location:mount_athos = {
+			every_pop = {
+				limit = {
+					owner = root
+					religion = religion:orthodox
+					pop_type = pop_type:clergy
+				}
+				add_to_list = agry_palamite_clergy_list 
+				root = { 
+					change_variable = {
+						name = num_clergy_palamite_pops_variable
+						add = prev.pop_size
+					}
+				}
+			}
+		}
+
+		capital = {
+			every_pop = {
+				limit = {
+					owner = root
+					religion = religion:orthodox
+					pop_type = pop_type:clergy
+				}
+				add_to_list = angry_barlaamite_clergy_list 
+				root = { 
+					change_variable = {
+						name = num_barlaamite_pops_variable
+						add = prev.pop_size
+					}
+				}
+			}
+		}
+
+		religion:orthodox = {
+			every_country_in_religion = {
+				limit = {
+					this != root
+					OR = {
+						capital.region = root.capital.region
+						is_neighbor_of = root
+					}
+				}
+
+				random_list = {
+					1 = { add_to_list = barlaam_angry_country_list }
+					1 = { add_to_list = palamas_angry_country_list }
+				}
+			}
+		}
+
+	}
+
+	option = { #Favor Palamas
+		name = flavor_byz.1100.a
+		historical_option = yes
+
+		custom_tooltip = {
+			text = angry_barlaamite_clergy_tt
+
+			every_in_list = {
+				list = angry_barlaamite_clergy_list
+
+				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+			}
+		}
+
+		change_societal_value = {
+			type = traditionalist_vs_innovative
+			value = societal_value_move_to_left
+		}
+
+		add_country_modifier = {
+			modifier = promoted_hesychastic_influences_modifier
+			mode = replace
+			years = modifier_duration_years_long
+		}
+
+		every_in_list = {
+			list = palamas_angry_country_list
+
+			add_opinion = {
+				modifier = sided_with_palamas_opinion_modifier
+				target = root
+			}
+		}
+
+		hidden_effect = {
+			scope:target_character_2 = { set_variable = hesychasm_activated_variable }
+		}
+	}
+
+	option = {	#Favor Barlaam
+		name = flavor_byz.1100.b
+
+		custom_tooltip = {
+			text = angry_palamite_clergy_tt
+
+			every_in_list = {
+				list = agry_palamite_clergy_list
+
+				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+			}
+		}
+
+		every_in_list = {
+			list = barlaam_angry_country_list
+
+			add_opinion = {
+				modifier = sided_with_barlaam_opinion_modifier
+				target = root
+			}
+		}
+
+		change_societal_value = {
+			type = latinization_vs_hellenization
+			value = societal_value_move_to_left
+		}
+
+		add_country_modifier = {
+			modifier = suppressed_hesychastic_influences_modifier
+			mode = replace
+			years = modifier_duration_years_long
+		}
+	}
+
+	option = {	#Let them solve it among themselves
+		name = flavor_byz.1100.c
+
+		trigger = {
+			NOT = { any_active_disaster = { disaster_type = disaster_type:byzantine_succession_crisis } }
+			NOT = { has_variable = had_disaster_byzantine_succession_crisis_variable }
+		}
+		
+		custom_tooltip = {
+			text = negatively_affect_succ_crisis_tt
+			set_variable = hesychasm_indicisiveness_variable
+		}
+	}
+
+	after = {
+		remove_variable = num_clergy_palamite_pops_variable
+		remove_variable = num_barlaamite_pops_variable
+	}
+}

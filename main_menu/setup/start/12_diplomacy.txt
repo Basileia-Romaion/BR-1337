@@ -300,7 +300,8 @@ diplomacy_manager = {
 
 	dependency = { first = BNV second = N2P subject_type = vassal }
     dependency = { first = BNV second = N1P subject_type = vassal }
-    dependency = { first = N1P second = S5C subject_type = vassal }
+    dependency = { first = N1P second = N4P subject_type = vassal }
+    dependency = { first = S2C second = S5C subject_type = vassal }
 
 	#-------Iberia-------
 	#dependency = { first = ADU second = AD1 subject_type = vassal }
@@ -445,6 +446,7 @@ diplomacy_manager = {
     #------ERE/"Byzantium"-------- ###
     scripted_mutual = { first = BYZ second = HE1 type = alliance }
     scripted_mutual = { first = BYZ second = THE type = alliance }
+    dependency = { first = BYZ second = HC0 subject_type = tributary } # Mount Athos
 
     dependency = { first = BYZ second = FEO subject_type = br_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
