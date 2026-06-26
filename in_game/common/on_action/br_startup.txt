@@ -6,38 +6,38 @@
 
 br_on_game_start = {
     effect = {
-        c:E1Y = {
+        c:E1Y ?= {
             trigger_event_silently = br_startup.1 #resource changes
         }
-        #c:RIC = {
+        #c:RIC ?= {
             #trigger_event_silently = br_indikes_events.1
         #}
-		c:LOT = {
+		c:LOT ?= {
             trigger_event_silently = br_hre_events.1
         }
-		c:SAR = {
+		c:SAR ?= {
             trigger_event_silently = br_country_startup.4
         }
-		c:S1C = {
+		c:S1C ?= {
             trigger_event_silently = br_country_startup.5
         }
-		c:B0L = {
+		c:B0L ?= {
             trigger_event_silently = br_country_startup.6
         }
-		c:BNK = {
+		c:BNK ?= {
             trigger_event_silently = br_country_startup.7
         }
-        c:K1K = {
+        c:K1K ?= {
             trigger_event_silently = br_country_startup.1 #naval units
         }
-        c:RH0 = {
+        c:RH0 ?= {
             trigger_event_silently = br_country_startup.2 #military units
         }
-        c:OHS = {
+        c:OHS ?= {
             trigger_event_silently = br_country_startup.3 #extra cbs
         }
 
-        c:BYZ = {
+        c:BYZ ?= {
 			trigger_event_silently = br_ere_events.1 #start event with cbs
 			research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:educated_bureaucrats
@@ -60,12 +60,7 @@ br_on_game_start = {
 			grant_estate_privilege = estate_privilege:br_roman_ecumenical_patriarch_privilege
 		}
 
-		c:ETH = {
-			research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:organized_religion
-		}
-
+		
         #BR added Trade Company
 		every_country = {
 			limit = { has_advance = br_italian_universities } #has_reform = government_reform:merchant_republic
@@ -84,6 +79,7 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
+			research_advance = advance_type:patron_of_art
         }
 		every_country = {
 			limit = { has_reform = government_reform:banking_country }
@@ -146,7 +142,7 @@ br_on_game_start = {
 			#research_advance = advance_type:italian_condottieri
 			research_advance = advance_type:talented_traders
         }
-		c:RIC = {
+		c:RIC ?= {
 			research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:educated_bureaucrats
 			research_advance = advance_type:efficient_bureaucracy
@@ -174,7 +170,7 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
-		c:VTC = {
+		c:VTC ?= {
 			research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:educated_bureaucrats
 			research_advance = advance_type:efficient_bureaucracy
@@ -202,7 +198,7 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
-		c:GTC = {
+		c:GTC ?= {
 			research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:educated_bureaucrats
 			research_advance = advance_type:efficient_bureaucracy
@@ -230,7 +226,7 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
-		c:NAX = {
+		c:NAX ?= {
 			research_advance = advance_type:unlock_hulk_advance
 			research_advance = advance_type:unlock_men_at_arms_advance
 			research_advance = advance_type:unlock_crossbowmen_advance
@@ -238,7 +234,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
-		c:CEP = {
+		c:CEP ?= {
 			research_advance = advance_type:unlock_hulk_advance
 			research_advance = advance_type:unlock_men_at_arms_advance
 			research_advance = advance_type:unlock_crossbowmen_advance
@@ -246,7 +242,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
-		c:GAZ = {
+		c:GAZ ?= {
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -264,28 +260,28 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
-		c:VEN = {
+		c:VEN ?= {
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
             research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:diplomatic_capacity_traditions
 		}
-		c:GEN = {
+		c:GEN ?= {
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
             research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:diplomatic_capacity_traditions
 		}
-		c:PIS = {
+		c:PIS ?= {
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
             research_advance = advance_type:meritocracy_advance
 			research_advance = advance_type:diplomatic_capacity_traditions
 		}
-		c:K1K = {
+		c:K1K ?= {
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:letters_of_marque
 			research_advance = advance_type:sturdy_privateers
@@ -295,24 +291,110 @@ br_on_game_start = {
 			#add_policy = policy:pirate_elective
 			#add_policy = policy:benefits_for_privateers
 		}
-		c:ADU = {
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:ledgers_double_checking
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
+		c:A1G ?= {
+			trigger_event_silently = br_ere_events.1002
+			research_advance = advance_type:unlock_barque_advance
+			research_advance = advance_type:unlock_m_galley_advance
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+		}
+		c:K1B ?= {
+			research_advance = advance_type:unlock_barque_advance
+			research_advance = advance_type:unlock_m_galley_advance
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+		}
+		c:LOT ?= {
+			research_advance = advance_type:aristocracy
+			research_advance = advance_type:unlock_cavalry_advance
+			research_advance = advance_type:unlock_heavy_cavalry_advance
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
-			research_advance = advance_type:muslim_caravans
-			research_advance = advance_type:indian_sea_trade
-		}
-		c:MAM = {
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
+			add_gold = 2500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+		c:FRA ?= {
+			research_advance = advance_type:aristocracy
+			research_advance = advance_type:unlock_cavalry_advance
+			research_advance = advance_type:unlock_heavy_cavalry_advance
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+		}
+		c:PAP ?= {
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:res_publica_christiana
+			research_advance = advance_type:roman_orthodoxy
+			research_advance = advance_type:marian_devotion
+			research_advance = advance_type:catholic_pilgrimages
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+			research_advance = advance_type:servants_of_god
+			research_advance = advance_type:pap_the_word_of_the_lord
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+
+		every_country = {
+			limit = { has_reform = government_reform:br_holy_community }
+
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:servants_of_god
+        }
+
+		every_country = {
+			limit = { religion.group = religion_group:muslim }
+
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:scholasticism
+			research_advance = advance_type:people_of_allah
+			research_advance = advance_type:holy_revelation
+			research_advance = advance_type:islamic_calligraphy
+			research_advance = advance_type:islamic_prayer
+			research_advance = advance_type:zakah
+			research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:educated_bureaucrats
+			research_advance = advance_type:efficient_bureaucracy
+            research_advance = advance_type:efficient_logistics
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:muslim_caravans
+        }
+
+		c:TUR ?= {
+			research_advance = advance_type:seljuk_roots
+			research_advance = advance_type:timariots
+			research_advance = advance_type:slavery_before_death
+			research_advance = advance_type:bashi_bazouks
+			research_advance = advance_type:akinji_cavalry
+			research_advance = advance_type:heirs_of_rum
+			research_advance = advance_type:uc_bey_advance
+			research_advance = advance_type:persian_in_the_court
+			research_advance = advance_type:crossroads_of_commerce
+			research_advance = advance_type:millets
+			research_advance = advance_type:timariots
+			research_advance = advance_type:autonomous_pashas
+			research_advance = advance_type:indian_sea_trade
+			add_gold = 2500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+
+		c:ADU ?= {
+			research_advance = advance_type:ledgers_double_checking
+			research_advance = advance_type:power_projection_advance_1
+            research_advance = advance_type:non_inheritable_offices
+			research_advance = advance_type:province_governors
+		}
+		c:MAM ?= {
+			research_advance = advance_type:ledgers_double_checking
             research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
@@ -322,116 +404,7 @@ br_on_game_start = {
 			research_advance = advance_type:port_customs
 			research_advance = advance_type:indian_sea_trade
 		}
-		#c:AIA = {
-            #research_advance = advance_type:meritocracy_advance
-			#research_advance = advance_type:abacus_advance
-			#research_advance = advance_type:ledgers_double_checking
-			#research_advance = advance_type:organized_religion
-			#research_advance = advance_type:scholasticism
-			#research_advance = advance_type:power_projection_advance_1
-            #research_advance = advance_type:non_inheritable_offices
-			#research_advance = advance_type:province_governors
-			#research_advance = advance_type:muslim_caravans
-			#research_advance = advance_type:indian_sea_trade
-		#}
-		#c:A0A = {
-            #research_advance = advance_type:meritocracy_advance
-			#research_advance = advance_type:abacus_advance
-			#research_advance = advance_type:ledgers_double_checking
-			#research_advance = advance_type:organized_religion
-			#research_advance = advance_type:scholasticism
-			#research_advance = advance_type:muslim_caravans
-			#research_advance = advance_type:indian_sea_trade
-		#}
-		#c:A2A = {
-            #research_advance = advance_type:meritocracy_advance
-			#research_advance = advance_type:abacus_advance
-			#research_advance = advance_type:ledgers_double_checking
-			#research_advance = advance_type:organized_religion
-			#research_advance = advance_type:scholasticism
-			#research_advance = advance_type:muslim_caravans
-			#research_advance = advance_type:indian_sea_trade
-		#}
-		c:A1G = {
-			trigger_event_silently = br_ere_events.1002
-			research_advance = advance_type:unlock_barque_advance
-			research_advance = advance_type:unlock_m_galley_advance
-			research_advance = advance_type:unlock_hulk_advance
-			research_advance = advance_type:rudimentary_coastal_ship_repair
-		}
-		c:K1B = {
-			research_advance = advance_type:unlock_barque_advance
-			research_advance = advance_type:unlock_m_galley_advance
-			research_advance = advance_type:unlock_hulk_advance
-			research_advance = advance_type:rudimentary_coastal_ship_repair
-		}
 
-		c:TUR = {
-			research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:educated_bureaucrats
-			research_advance = advance_type:efficient_bureaucracy
-            research_advance = advance_type:efficient_logistics
-			research_advance = advance_type:abacus_advance
-			research_advance = advance_type:temporary_appointments
-			research_advance = advance_type:government_sanctioned_celebrations
-			research_advance = advance_type:diplomatic_capacity_traditions
-			research_advance = advance_type:seljuk_roots
-			research_advance = advance_type:timariots
-			research_advance = advance_type:slavery_before_death
-			research_advance = advance_type:bashi_bazouks
-			research_advance = advance_type:there_shall_be_no_grass
-			research_advance = advance_type:akinji_cavalry
-			research_advance = advance_type:heirs_of_rum
-			research_advance = advance_type:uc_bey_advance
-			research_advance = advance_type:fratricide_succesion_advance
-			research_advance = advance_type:persian_in_the_court
-			research_advance = advance_type:crossroads_of_commerce
-			research_advance = advance_type:millets
-			research_advance = advance_type:timariots
-			research_advance = advance_type:autonomous_pashas
-			research_advance = advance_type:power_projection_advance_1
-            research_advance = advance_type:non_inheritable_offices
-			research_advance = advance_type:province_governors
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			research_advance = advance_type:muslim_caravans
-			research_advance = advance_type:indian_sea_trade
-			add_gold = 2500
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-		}
-
-		c:LOT = {
-			research_advance = advance_type:aristocracy
-			research_advance = advance_type:unlock_cavalry_advance
-			research_advance = advance_type:unlock_heavy_cavalry_advance
-			research_advance = advance_type:power_projection_advance_1
-            research_advance = advance_type:non_inheritable_offices
-			research_advance = advance_type:province_governors
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			add_gold = 2500
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-		}
-		c:FRA = {
-			research_advance = advance_type:aristocracy
-			research_advance = advance_type:unlock_cavalry_advance
-			research_advance = advance_type:unlock_heavy_cavalry_advance
-			research_advance = advance_type:power_projection_advance_1
-            research_advance = advance_type:non_inheritable_offices
-			research_advance = advance_type:province_governors
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-		}
-
-		every_country = {
-			limit = { has_reform = government_reform:country_rank_br_holy_community }
-
-			research_advance = advance_type:organized_religion
-			research_advance = advance_type:scholasticism
-			research_advance = advance_type:servants_of_god
-        }
 
 		#Starting roads
 		#Thrace

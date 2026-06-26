@@ -11,7 +11,7 @@ TRY_INJECT:nobility_fortifications = {
 	#br added tiny fort
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 	}
 
 }
@@ -35,15 +35,13 @@ TRY_INJECT:nobles_recruitment_center = {
 TRY_INJECT:fortress_church = {
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
-		local_soldiers_desired_pop = 0.01
 	}
 }
 
 TRY_INJECT:fortress_granary = {
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 		local_soldiers_desired_pop = 0.01
 	}
 }
@@ -51,7 +49,7 @@ TRY_INJECT:fortress_granary = {
 TRY_INJECT:temple = {
 	modifier = {
 		#local_pop_assimilation_speed_modifier = 0.1
-		local_pop_conversion_speed_modifier = 0.05
+		local_pop_conversion_speed_modifier = 0.1
 	}
 }
 
@@ -136,7 +134,7 @@ TRY_INJECT:order_stronghold = {
 	}
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 	}
 }
 
@@ -171,7 +169,7 @@ TRY_INJECT:bey_fortress = {
 	}
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 	}
 }
 

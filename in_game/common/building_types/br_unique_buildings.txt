@@ -557,11 +557,13 @@ br_mount_athos_building = {
 	modifier = {
 		local_clergy_desired_pop = 5
 		local_cultural_tradition = 5
-		#local_clergy_estate_power = 10
-		#local_max_control = -1
-		#local_clergy_conversion_blocked = yes
 		cannot_upgrade_location = yes
+		local_garrison_size = 0.5
     }
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
 	construction_demand = town_building_construction
 }
 

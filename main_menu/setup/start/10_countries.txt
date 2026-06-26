@@ -12206,6 +12206,7 @@ countries = {
 				council_of_forty
 				council_of_ten
 				merchant_republic
+				#state_backed_merchant_fleet
 			}
 
 			privilege = {
@@ -12580,6 +12581,9 @@ countries = {
 		government = {
 			reforms = {
 				br_sub_religious_subject
+				enforce_religious_adherence
+				#administration_of_clerical_lands
+				#religious_laws_enforced
 			}
 		}
 		
@@ -23006,8 +23010,7 @@ countries = {
 			matruh sallum tobruk
 			el_qoseir ras_gharib safaga
 			el_jundi faran nuweiba saint_katrine
-			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
-			shoubak madaba
+			
 
 		}
 		
@@ -53452,10 +53455,14 @@ countries = {
 			ruler_term = { character = br_nap_rdm_character_1 start_date = 1335.1.1 }
 			ruler = br_nap_rdm_character_1
 			reforms = {
+				autocracy
+				#royal_decree
+				#of_noble_bearing
 			}
 			privilege = {
 			}
 		}
+		accepted_cultures = { southern_gallo_italic norman }
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
@@ -56576,6 +56583,8 @@ countries = {
 			damascus artah baniyas hama homs idlib jableh kafartab latakia masyaf nabek qusayr tartus
 			burraq jayrud qutayfah
 			bosra dara nawa salkhad suwayda irbid
+			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
+			shoubak madaba
 		}
 		
 		include = "expl_muslim_mediterranean"

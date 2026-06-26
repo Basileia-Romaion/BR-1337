@@ -1,4 +1,4 @@
-﻿
+
 
 #modern_imperial_army
 #country_child_education = 0.1
@@ -47,7 +47,8 @@ br_imperial_administration = {
 		potential_trigger = { 
 			has_dlc = "d008_fate_of_the_phoenix"
 		}
-		global_max_bureaucracy_slots = 2
+		global_max_bureaucracy_slots = 1
+		maintain_bureaucracy_price_cost_modifier = -0.1
 	}
 	country_modifier = {
 		potential_trigger = { legitimacy < 100 }
@@ -89,7 +90,7 @@ br_sub_theme_subject = {
 		monthly_towards_defensive = societal_value_monthly_move
 		allow_thema_headquarters = yes
 		global_defensive = 0.1
-		monthly_towards_stratiotai = societal_value_monthly_move
+		monthly_towards_stratiotai = societal_value_large_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { 
@@ -136,7 +137,7 @@ br_sub_pronoia_subject = {
 		global_nobles_estate_power = 0.25
 		monthly_towards_aristocracy = societal_value_monthly_move
 		allow_thema_headquarters = yes
-		monthly_towards_stratiotai = societal_value_minor_monthly_move
+		monthly_towards_stratiotai = societal_value_large_monthly_move
 	}
 	country_modifier = {
 		potential_trigger = { 
@@ -174,10 +175,8 @@ br_sub_religious_subject = {
 		monthly_towards_spiritualist = societal_value_monthly_move
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
 		maximum_religious_influence = 100
-		monthly_religious_influence = 1
+		monthly_religious_influence = 0.25
 		tolerance_own = 1
-		can_be_annexed = no
-		overlord_protects_external = yes
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 100 } }
@@ -236,6 +235,38 @@ br_naval_akritai_reform = {
 		loyalty_to_overlord = -25
     }
     years = 2
+}
+
+br_katepanata_reform = {
+	icon = katepanata
+	potential = {
+		NOT = { has_or_had_tag = BYZ }
+		OR = {
+			culture = { has_culture_group = culture_group:roman_group }
+			#is_subject_type = br_thema_subject
+		}
+		country_rank = country_rank:rank_kingdom
+	}
+	country_modifier = {
+		monthly_towards_land = societal_value_monthly_move
+		monthly_towards_defensive = societal_value_monthly_move
+		monthly_towards_stratiotai = societal_value_large_monthly_move
+		global_crown_estate_power = 0.25
+		allow_thema_headquarters = yes
+		
+	}
+	country_modifier = {
+		global_max_bureaucracy_slots = 1
+	}
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
+		loyalty_to_overlord = 10
+    }
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 75 } }
+		loyalty_to_overlord = -25
+    }
+	years = 2
 }
 
 #br_military_order_reform = {

@@ -18,6 +18,7 @@ government = {
 	capital_economy_vs_traditional_economy = 100
 	individualism_vs_communalism = 100
 	outward_vs_inward = 100
+	br_bureaucratic_vs_stratiotai = -100
 	parliament = {
 		parliament_type = estate_parliament
 	}
@@ -37,6 +38,7 @@ government = {
 		religious_diplomats
 		br_bureaucrat_clergy
 		br_roman_orthodox_catechesis
+		br_fortified_religious_enclave
 
 		#Commoners
 		no_labor_sunday

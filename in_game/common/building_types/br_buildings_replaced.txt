@@ -139,7 +139,7 @@ REPLACE_OR_CREATE:thema_headquarters = {
 	
 	raw_modifier = {
 		minimum_fort_level = 1
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 		local_nobles_desired_pop = 0.01
 	}
 	capital_country_modifier = {

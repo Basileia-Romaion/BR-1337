@@ -1904,6 +1904,41 @@ br_ere_events.1005 = {
 	}
 }
 
+br_ere_events.1006 = { #
+	type = country_event
+	title = flavor_byz.1100.title
+	desc = flavor_byz.1100.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HC0
+		from = 1338.1.1
+		to = 1350.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_or_had_tag = HC0
+		religion = religion:orthodox
+		owns = location:mount_athos
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+	}
+
+	option = { #Favor Palamas
+		name = flavor_byz.1100.a
+		c:BYZ ?= {
+			trigger_event_non_silently = flavor_byz.1100
+		}
+	}
+}
 
 #reforms and varangians 2000-2100
 br_ere_events.2000 = { #The Reforms of [ambitious_ruler.GetName]

@@ -274,6 +274,8 @@ br_asturias_real_academia_espanola = {
 			culture = culture:leonese
 		}
 	}
+	global_nobles_max_literacy = 10
+	global_clergy_max_literacy = 10
 	global_monthly_literacy = 0.02
 	requires = the_constitution
 }
@@ -320,11 +322,12 @@ br_italian_universities = {
 			culture = culture:romagnol
 		}
 	}
-	global_nobles_max_literacy = 25
-	global_burghers_max_literacy = 15
-	global_clergy_max_literacy = 15
+	#unlock_building = university #early unlock
+	global_nobles_max_literacy = 10
+	global_burghers_max_literacy = 10
+	global_clergy_max_literacy = 10
+	global_max_literacy = 5
 	global_monthly_literacy = 0.02
-	research_speed_modifier = 0.05
 	requires = library_advance
 }
 br_italy_great_families = {
@@ -576,7 +579,7 @@ br_carolingian_relatinization = { #unique loc needed
 	global_nobles_max_literacy = 10
 	global_clergy_max_literacy = 10
 	global_max_literacy = 2
-	global_monthly_literacy = 0.01
+	global_monthly_literacy = 0.02
 	cultural_influence_modifier = 0.1
 	global_pop_assimilation_speed_modifier = 0.1
 	requires = library_advance
@@ -589,7 +592,7 @@ br_papal_protector = { #unique loc needed
 
 	papal_relations = 50
 	monthly_religious_influence = 0.1
-	global_pop_conversion_speed_modifier = 0.1
+	global_heretic_pop_conversion_speed_modifier = 0.25
 }
 br_carolingian_centralization = { #unique loc needed
 	age = age_1_traditions

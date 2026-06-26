@@ -84,7 +84,7 @@ br_varangian_recruitment_building = {
 	stronger_power_projection = no
 	need_good_relation = yes
 	pop_type = soldiers
-	#icon = seljuk_mint
+	icon = ostrog
 	
 	category = military_category
 	
@@ -116,6 +116,7 @@ br_varangian_recruitment_building = {
 
 	modifier = {
 		manpower_to_building_owner = 0.015
+		pure_tooltip_entry = MODIFIER_TYPE_DESC_num_of_varangian_units
 	}
 	construction_demand = order_commandery_construction
 	possible_production_methods = {
@@ -655,6 +656,7 @@ br_kleisourai = {#fortified mountain passes
 
 #general_archive_of_simancas
 #cantonments
+#grand_apartment
 
 ### Tier 2 / Age 3 ###
 
@@ -903,8 +905,6 @@ br_kekhrismene_pronoia = { #pronoia estates
 		local_manpower = 0.002
     }
 }
-
-#grand_apartment dun_fort
 
 br_apothekai_building = {#Apothēkai – logistical depots
 	is_special = yes

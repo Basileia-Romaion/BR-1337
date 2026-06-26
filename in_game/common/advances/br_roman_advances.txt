@@ -158,7 +158,7 @@ br_roman_ecumenical_patriarch_advance = {
 		}
 	}
 
-	global_pop_conversion_speed_modifier = 0.25
+	global_heretic_pop_conversion_speed_modifier = 0.25
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	icon = church_councils
 		
@@ -736,7 +736,7 @@ br_mount_athos_incense = {
 	potential = {
 		has_reform = government_reform:br_holy_community
 	}
-	global_incense_output_modifier = 1
+	global_incense_output_modifier = 0.33
 	requires = cathedral_advance
 }
 br_mount_athos_books = {
@@ -744,7 +744,7 @@ br_mount_athos_books = {
 	potential = {
 		has_reform = government_reform:br_holy_community
 	}
-	global_books_output_modifier = 1
+	global_books_output_modifier = 0.33
 	requires = br_mount_athos_incense
 }
 br_mount_athos_wine = {
@@ -752,6 +752,6 @@ br_mount_athos_wine = {
 	potential = {
 		has_reform = government_reform:br_holy_community
 	}
-	global_wine_output_modifier = 1
+	global_wine_output_modifier = 0.33
 	requires = br_mount_athos_books
 }

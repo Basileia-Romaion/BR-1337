@@ -446,7 +446,7 @@ diplomacy_manager = {
     #------ERE/"Byzantium"-------- ###
     scripted_mutual = { first = BYZ second = HE1 type = alliance }
     scripted_mutual = { first = BYZ second = THE type = alliance }
-    dependency = { first = BYZ second = HC0 subject_type = tributary } # Mount Athos
+    dependency = { first = BYZ second = HC0 subject_type = br_stavropegion_subject } # Mount Athos
 
     dependency = { first = BYZ second = FEO subject_type = br_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
@@ -486,7 +486,6 @@ diplomacy_manager = {
     dependency = { first = AON second = AN11 subject_type = br_thema_subject } # Thema
     dependency = { first = AON second = AN12 subject_type = br_thema_subject } # Thema
     dependency = { first = AON second = AN4 subject_type = br_thema_subject } # Thema
-    dependency = { first = AN13 second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
     #dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
@@ -494,7 +493,12 @@ diplomacy_manager = {
     dependency = { first = AN10 second = AN3 subject_type = br_thema_subject } # Thema
     dependency = { first = ICO second = AN9 subject_type = br_thema_subject } # Pronoïakon Ktéma
 
-    scripted_mutual = { first = AN8 second = AN13 type = alliance }
+    dependency = { first = AOI second = AN13 subject_type = br_thema_subject }
+    dependency = { first = AOI second = KYP subject_type = br_thema_subject }
+    dependency = { first = AOI second = OHS subject_type = br_stavropegion_subject }
+    dependency = { first = AOI second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
+
+    #scripted_mutual = { first = AN8 second = AN13 type = alliance }
 
     
 

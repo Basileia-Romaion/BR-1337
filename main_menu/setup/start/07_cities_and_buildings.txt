@@ -4952,10 +4952,11 @@ building_manager = {
 
 	#Italy
 	sergeantry	= { tag = N1P level = 1 location = salerno } #Sergeants at arms
-	sergeantry	= { tag = BNV level = 1 location = lucera } #Sergeants at arms
+	castle = { tag = BNV level = 1 location = benevento }
+	sergeantry	= { tag = BNV level = 1 location = benevento } #Sergeants at arms
 	sergeantry = { tag = N2P level = 1 location = gaeta }
 	castle = { tag = BNV level = 1 location = melfi }
-	thema_headquarters = { tag = S5C level = 1 location = potenza }
+	
 	thema_headquarters = { tag = THS level = 1 location = larissa }
 	thema_headquarters = { tag = S3C level = 1 location = catanzaro }
 	thema_headquarters = { tag = S5C level = 1 location = matera }

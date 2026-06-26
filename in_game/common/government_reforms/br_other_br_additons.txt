@@ -1,4 +1,6 @@
-﻿#theocracy 
+﻿#mass_levy_system
+
+#theocracy 
 patriarchate = {
 	major = yes
 	unique = yes
@@ -45,6 +47,7 @@ br_holy_community = { #Mount Athos
 		monthly_towards_spiritualist = societal_value_monthly_move
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_devotion = 0.25
+		stability_decay = -0.0025
 		blocked_from_conversion = yes
 	}
 	block_for_rebel = yes
@@ -70,6 +73,7 @@ br_special_merchant_republic = {
 	major = yes
 	government = republic
 	country_modifier = {
+		num_naval_governors = 1
 		global_merchant_capacity_modifier = 0.5
 		trade_income = 0.5
 		global_foreign_build_buildings_efficiency = 0.5
@@ -82,6 +86,87 @@ br_special_merchant_republic = {
 	}
 	years = 2
 }
+
+br_roman_india_trading_company = {
+	icon = east_india_trading_company
+	potential = {
+		has_or_had_tag = RIC
+	}
+	country_modifier = {
+		monthly_towards_naval = societal_value_monthly_move
+		monthly_towards_capital_economy = societal_value_monthly_move
+		monthly_towards_free_trade = societal_value_monthly_move
+		
+		num_naval_governors = 1
+		merchant_power_from_maritime_modifier = 0.1
+		global_merchant_power = 0.1
+		port_cost_distance_from_capital = -2
+	}
+
+	years = 2
+}
+
+#state_backed_merchant_fleet = {
+	#societal_values = {
+		#mercantilism_focus
+		#naval_focus
+	#}
+	#age = age_4_reformation
+	#country_modifier = {
+		#navy_light_ship_maintenance_cost_modifier = -0.2
+		#trade_sea_efficiency = medium_trade_sea_efficiency_bonus
+		#merchant_power_from_maritime_modifier = 0.1
+		#monthly_towards_outward = societal_value_monthly_move
+		#export_impact_on_demand = 0.05
+	#}
+
+	#years = 2
+#}
+
+#naval_infrastructure_act = {
+	#age = age_4_reformation
+
+	#societal_values = {
+		#naval_focus
+	#}
+	
+	#country_modifier = {
+		#monthly_towards_naval = societal_value_monthly_move
+		#port_cost_distance_from_capital = -2
+		#num_naval_governors = 1
+	#}
+
+	#location_modifier = {
+		#potential_trigger = {
+			#custom_tooltip = {
+				#text = coastal_city_or_town_gets_tt
+				#is_coastal = yes
+				#is_city = yes
+			#}
+		#}
+		#harbor_suitability = 0.1
+	#}
+
+	#years = 2
+#}
+
+#trade_guards_reform = {
+	#age = age_4_reformation
+
+	#societal_values = {
+		#free_trade_focus
+		#quality_focus
+	#}
+
+	#country_modifier = {
+		#land_morale_modifier = 0.1
+		#global_trade_protection_factor = 0.1
+		#peasants_estate_allowed_to_build_roads = yes
+	#}
+
+	#years = 2
+#}
+
 
 #Country specific
 #byzantine_court_ceremonies_reform
@@ -108,7 +193,7 @@ br_alandalus_reform = {
 		
 		#debuffs
 		#global_pop_assimilation_speed_modifier = -0.5
-        global_pop_conversion_speed_modifier = -0.5
+        global_heathen_pop_conversion_speed_modifier = -0.5
 	}
 	years = 2
 }

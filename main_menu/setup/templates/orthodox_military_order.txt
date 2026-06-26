@@ -48,7 +48,7 @@ government = {
 	
 	privilege = {
 		#Nobles
-		nobles_land_rights
+		auxilium_et_consilium
 		noble_fortification_licenses
 
 		#clergy
@@ -58,6 +58,9 @@ government = {
 		clergy_strengthen_faith
 		clergy_powerful_dioceses
 		clerical_advisory_council
+		br_bureaucrat_clergy
+		br_roman_orthodox_catechesis
+		br_fortified_religious_enclave 
 
 		#burghers
 		market_fairs
@@ -70,6 +73,7 @@ government = {
 		partial_yield
 		no_labor_sunday
 		peasants_allowed_weapons_privilege
+		br_themata_peasant_privilege
 		akritai_privilege
 	}
 	reforms = {

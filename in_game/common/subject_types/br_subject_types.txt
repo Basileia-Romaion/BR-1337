@@ -712,3 +712,123 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
         }
 	}
 }
+
+REPLACE_OR_CREATE:br_stavropegion_subject = {
+	content_priority = 300
+	color = subject_appanage
+	level = 1
+
+	visible_through_diplomacy = {
+		always = no
+	}
+
+	visible_through_treaty = {
+		always = no
+	}
+
+	creation_visible = {
+		always = no
+	}
+
+	release_country_enabled = {
+		always = no
+	}
+	
+	join_defensive_wars = Never
+	join_offensive_wars = Never
+	diplomatic_capacity_cost_scale = 0.25
+	strength_vs_overlord = -1
+	
+	has_overlords_ruler = no
+	can_be_annexed = no
+
+	subject_can_cancel = no
+	overlord_can_cancel = no
+	
+	can_overlord_build_roads = yes
+	can_overlord_build_buildings = yes
+	can_overlord_build_rgos = yes
+
+	can_overlord_recruit_regiments = yes
+    can_overlord_build_ships = yes
+	
+	has_limited_diplomacy = yes
+	fleet_basing_rights = yes
+	food_access = yes
+	
+	can_change_rank = no
+	can_change_heir_selection = yes
+
+	minimum_opinion_for_offer = 150
+
+	great_power_score_transfer = 0.25 # the amount of Great Power Score that is transferred from the Subject to the Overlord
+	
+	institution_spread_to_overlord = monthly_institution_spread_mild
+	institution_spread_to_subject = monthly_institution_spread_mild
+	
+	overlord_modifier = {
+		monthly_towards_spiritualist = societal_value_tiny_monthly_move
+		monthly_religious_influence = 0.05
+	}
+
+	subject_modifier = {
+		loyalty_to_overlord = 50
+		blocked_from_conversion = yes
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
+	}
+
+	diplo_chance_accept_subject = {
+		base = -90
+		current_strength = 0.2
+		border_distance = -0.3
+		negative_opinion = -5
+		positive_opinion = 0.25
+		rank_difference = -5
+		giving_defensive_support = 2
+		receiving_defensive_support = 5
+		royal_ties = 1
+
+		num_of_limited_subjects = -5
+		culture_war = 3
+		diplomatic_reputation = 1
+		different_religion = -100
+		same_common_language = 10
+		same_court_language = 20
+		different_culture = -50
+		different_government_type = -25
+		actor_at_war = -20
+		competing_power = -200
+		tax_base = -0.25
+		
+		reject_subjugation_reasons = -1
+		accept_subjugation_reasons = 1
+	}
+
+	diplo_chance_accept_overlord = {
+		base = -50
+		border_distance = -0.3
+		negative_opinion = -5
+		positive_opinion = 0.25
+		same_common_language = 10
+		same_court_language = 20
+		different_culture = -50
+		different_government_type = -25
+		actor_at_war = -20
+		competing_power = -200
+	}
+
+	ai_wants_to_be_overlord = {
+        scope:subject = {
+			add = {
+                desc = "COALITION_GRADE_ANTAGONISM_TOWARDS_THEM_SUBJECT"
+                value = {
+                    every_country_with_coalition_grade_antagonism_against_us = {                    
+                        add = {
+                            value = -10
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

@@ -1,7 +1,5 @@
 #parliament_base_support = 0.2
-#global_pop_conversion_speed_modifier = -0.1
 #monthly_army_tradition = 0.05
-# BR added Nobles Estate Privileges
 # allow_native_subjugation_cb = yes
 # enslave_tribals = yes
 #monthly_complacency = 0.05
@@ -41,7 +39,7 @@
 #Romaíon Cultural Supremacy
 #Tagmata
 
-
+#trunk_road_to_erzurum_privilege
 #Senate
 
 ### Noble Privileges ###
@@ -208,8 +206,8 @@
 			cultures_capacity = 2
 			
 			#debuffs
-			global_pop_assimilation_speed_modifier = -0.5
-			global_pop_conversion_speed_modifier = -0.5
+			global_pop_assimilation_speed_modifier = -0.25
+			global_heretic_pop_conversion_speed_modifier = -0.5
 			mercenary_units_preference_modifier = 0.25
 		}
 	}
@@ -808,6 +806,24 @@
 			tolerance_heathen = -0.5
 			tolerance_heretic = -0.25
 			antagonism_religion_influence = 0.25
+		}
+	}
+
+	br_fortified_religious_enclave = {
+		icon = villes_franches #expansionist_zealotry #jaysh_armies
+		potential = {
+			has_reform = government_reform:br_holy_community
+		}
+		estate = clergy_estate
+		country_modifier = {
+			global_clergy_estate_power = 0.25
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_defensive = societal_value_monthly_move
+			monthly_towards_land = societal_value_minor_monthly_move
+
+			clergy_estate_levy_size = 0.5
+			global_defensive = 0.5
+			unlock_building = fortress_church
 		}
 	}
 

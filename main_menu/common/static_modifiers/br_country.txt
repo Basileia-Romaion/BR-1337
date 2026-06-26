@@ -1,13 +1,24 @@
-﻿###################################
+###################################
 # Hardcoded
 ###################################
-
+#stability_cost_efficiency
+#court_spending_efficiency
 TRY_INJECT:average_literacy = {
-	stability_investment = large_stability_investment_penalty
+	stability_decay = 0.0025 #0.25 at 100% literacy
 }
 
 TRY_INJECT:average_development = {
 	tribes_estate_target_satisfaction = -0.5 #Tribals like less development
+}
+
+TRY_INJECT:is_great_power = {
+	court_spending_efficiency = -0.2
+	stability_decay = 0.002
+}
+
+TRY_INJECT:is_regional_power = {
+	court_spending_efficiency = -0.1
+	stability_decay = 0.001
 }
 
 #BR added modifiers

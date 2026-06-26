@@ -14,7 +14,7 @@
  country_name_construction_IMPERIUM: "$country_name_construction_IMPERIUM_rank_name$"
  country_name_construction_IMPERIUM_map: "$country_name_construction_IMPERIUM_rank_name_map$"
 
- rank_empire_IMPERIUM: "IMPERIUM"
+ rank_empire_IMPERIUM: ""
  rank_empire_IMPERIUM_ruler_male: "Imperator"
  rank_empire_IMPERIUM_ruler_female: "Imperatrix"
 
@@ -170,3 +170,51 @@
  OFFER_br_naval_thema_subject_ALREADY_SUBJECT: "$country_already_a_subject$"
  OFFER_br_naval_thema_subject_AT_WAR: "$country_is_at_war$"
  OFFER_br_naval_thema_subject_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
+
+ br_stavropegion_subject: "Imperial Stavropegion"
+ br_stavropegion_subject_desc: "The Imperial Stavropegia are sacred institutions placed under the direct protection of the Emperor and the highest ecclesiastical authority. Freed from local episcopal control, these holy communities govern their own spiritual and temporal affairs according to ancient monastic and canonical tradition. In return for their privileges, they serve as bastions of prayer, learning, and devotion, preserving the Orthodox faith and the memory of the Roman oikoumenē. From the deserts of Sinai to the Holy Mountain of Athos, they stand apart from worldly power while remaining bound to the Roman order through faith and patronage."
+
+ LEAD_br_stavropegion_subject: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_br_stavropegion_subject: "[SUBJECT_TYPE.GetName] of $LIST$."
+
+ OFFER_br_stavropegion_subject_TOOLTIP_HEADER: "Grant Stavropegial Status to [TARGET_COUNTRY.GetName]"
+ OFFER_br_stavropegion_subject_TOOLTIP_HEADER_NO_TARGET: "Grant Stavropegial Status to a [country|e]"
+ REQUEST_br_stavropegion_subject_TOOLTIP_HEADER: "Request Stavropegial Protection from [TARGET_COUNTRY.GetName]"
+ REQUEST_br_stavropegion_subject_TOOLTIP_HEADER_NO_TARGET: "Request Stavropegial Protection from a [country|e]"
+ CANCEL_br_stavropegion_subject_TOOLTIP_HEADER: "Revoke Stavropegial Status from [TARGET_COUNTRY.GetName]"
+ CANCEL_br_stavropegion_subject_TOOLTIP_HEADER_NO_TARGET: "Revoke Stavropegial Status from a [country|e]"
+ BREAK_br_stavropegion_subject_TOOLTIP_HEADER: "Renounce Stavropegial Protection from [TARGET_COUNTRY.GetName]"
+ BREAK_br_stavropegion_subject_TOOLTIP_HEADER_NO_TARGET: "Renounce Stavropegial Protection from a [country|e]"
+
+ OFFER_br_stavropegion_subjectTITLE: "Grant Stavropegial Status"
+ REQUEST_br_stavropegion_subjectTITLE: "Request Stavropegial Protection"
+ CANCEL_br_stavropegion_subjectTITLE: "Revoke Stavropegial Status"
+ BREAK_br_stavropegion_subjectTITLE: "Renounce Stavropegial Protection"
+
+ OFFER_br_stavropegion_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ REQUEST_br_stavropegion_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ CANCEL_br_stavropegion_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ BREAK_br_stavropegion_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+
+ OFFER_br_stavropegion_subject_NEWDESC: "Do we wish to grant [COUNTRY.GetName] the status of an Imperial Stavropegion, placing them under direct sacred protection while allowing them autonomy over their internal affairs?"
+ REQUEST_br_stavropegion_subject_NEWDESC: "Do we wish to request recognition as an Imperial Stavropegion under the protection of [TARGET_COUNTRY.GetName], securing autonomy under ecclesiastical authority?"
+ CANCEL_br_stavropegion_subject_NEWDESC: "Do we wish to revoke the Stavropegial status of [COUNTRY.GetName], returning them to ordinary ecclesiastical jurisdiction?"
+ BREAK_br_stavropegion_subject_NEWDESC: "Do we wish to renounce our Stavropegial status under [TARGET_COUNTRY.GetName]?\nThis will severely strain relations and may provoke a political and ecclesiastical response."
+
+ OFFER_br_stavropegion_subject_DESC: "Grant them sacred autonomy under imperial and patriarchal protection."
+ REQUEST_br_stavropegion_subject_DESC: "Seek recognition as a protected ecclesiastical community."
+ CANCEL_br_stavropegion_subject_DESC: "Remove their privileged ecclesiastical status."
+ BREAK_br_stavropegion_subject_DESC: "End our protected ecclesiastical relationship."
+
+ OFFER_br_stavropegion_subject_REQTITLE: "Request Stavropegial Recognition"
+ REQUEST_br_stavropegion_subject_REQTITLE: "Offer Stavropegial Protection"
+ OFFER_br_stavropegion_subject_REQDESC: "[COUNTRY.GetName] requests that we grant them Imperial Stavropegial status under sacred protection."
+ REQUEST_br_stavropegion_subject_REQDESC: "[COUNTRY.GetName] offers to place themselves under our protection as an Imperial Stavropegion."
+
+ OFFER_br_stavropegion_subject_TOO_LOW: "@trigger_no! To grant Stavropegial status to [COUNTRY.GetLongName], their opinion of us must be at least $NEED|Y$, while it is currently only $VAL|Y0$."
+ CANCEL_br_stavropegion_subject_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$"
+ BREAK_br_stavropegion_subject_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$"
+
+ OFFER_br_stavropegion_subject_ALREADY_SUBJECT: "$country_already_a_subject$"
+ OFFER_br_stavropegion_subject_AT_WAR: "$country_is_at_war$"
+ OFFER_br_stavropegion_subject_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
