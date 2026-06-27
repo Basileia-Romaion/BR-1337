@@ -337,6 +337,7 @@ character_db={
 		birth_date = 1298.1.1
 		birth = kayseri
 		dynasty = phokas_dynasty
+		spouse = br_caucasian_rdm_character_1
 		tag = AN8
 	}
 	br_ere_rdm_character_25 = {
@@ -377,6 +378,7 @@ character_db={
 		religion = orthodox
 		birth_date = 1296.1.1
 		birth = tarsus
+		spouse = br_caucasian_rdm_character_2
 		dynasty = skleros_dynasty
 		tag = AN13
 	}
@@ -1226,7 +1228,32 @@ character_db={
 		dynasty = sratsimir_dynasty
 		tag = SE0
 	}
-
+#Caucasia
+	br_caucasian_rdm_character_1 = {
+		first_name = { name = "random" }
+		culture = georgian_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1312.1.1
+		birth = tbilisi
+		father = geo_george_v
+		mother = geo_rulers_wife
+		dynasty = bagrationi_dynasty
+		spouse = br_ere_rdm_character_24
+		tag = AN8
+	}
+	br_caucasian_rdm_character_2 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1311.1.1
+		birth = ani
+		father = arm_zakare_iv
+		dynasty = bagratuni_dynasty 
+		spouse = br_ere_rdm_character_28
+		tag = AN13
+	}
 
 
 #Naples

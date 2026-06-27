@@ -1,5 +1,7 @@
 ﻿namespace = br_country_startup
 
+# has_presence_in
+
 br_country_startup.1 = { #naval units added
 	type = country_event
 	title = br_country_startup.1.title
@@ -197,7 +199,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_hulk
 			}
 		}
-		c:VEN = {
+		c:VEN ?= {
 			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
@@ -254,7 +256,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_hulk
 			}
 		}
-		c:VTC = {
+		c:VTC ?= {
 			capital = {
 				create_sub_unit = unit_type:n_barque
 				create_sub_unit = unit_type:n_barque
@@ -301,7 +303,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_hulk
 			}
 		}
-		c:KNI = {
+		c:KNI ?= {
 			add_casus_belli = {
 				target = c:AD2
 				type = casus_belli:cb_deus_vult #cb_crusade
@@ -326,7 +328,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:a_crusader_knights
 			}
 		}
-		c:A1G = {
+		c:A1G ?= {
 			capital = {
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
@@ -342,8 +344,14 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_hulk
 				create_sub_unit = unit_type:n_hulk
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:K1B = {
+		c:K1B ?= {
 			capital = {
 				create_sub_unit = unit_type:n_mediterrannean_galley
 				create_sub_unit = unit_type:n_mediterrannean_galley
@@ -369,8 +377,14 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_hulk
 				create_sub_unit = unit_type:n_hulk
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:MAM = {
+		c:MAM ?= {
 			location:suez = {
 				create_sub_unit_of_category = sub_unit_category:navy_light_ship
 				create_sub_unit_of_category = sub_unit_category:navy_light_ship
@@ -434,7 +448,7 @@ br_country_startup.2 = { #units added
 	fire_only_once = yes
 
 	immediate = {
-		c:RH0 = {
+		c:RH0 ?= {
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
@@ -444,7 +458,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:BUL = {
+		c:BUL ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
@@ -454,7 +468,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 			}
 		}
-		c:HUN = {
+		c:HUN ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
@@ -464,7 +478,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 			}
 		}
-		c:ARA = {
+		c:ARA ?= {
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
@@ -474,15 +488,28 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:CAS = {
+		c:CAS ?= {
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
 			}
 		}
 
-		c:OHS = {
+		c:OHS ?= {
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
@@ -516,8 +543,11 @@ br_country_startup.2 = { #units added
 					mode = add_and_extend
 				}
 			}
+			every_owned_location = {
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:SGO = {
+		c:SGO ?= {
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
@@ -528,7 +558,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:ARM = {
+		c:ARM ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
@@ -538,7 +568,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:GEO = {
+		c:GEO ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
@@ -548,7 +578,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:LOT = {
+		c:LOT ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
@@ -564,7 +594,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:FRA = {
+		c:FRA ?= {
 			capital = {
 				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
@@ -574,7 +604,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
-		c:BYZ = {
+		c:BYZ ?= {
 			capital = {
 				create_sub_unit = unit_type:a_varangians
 				create_sub_unit = unit_type:a_varangians
@@ -590,17 +620,21 @@ br_country_startup.2 = { #units added
 				#create_sub_unit = unit_type:a_supply_carts
 			}
 		}
-		c:DYR = {
+		c:DYR ?= {
 			capital = {
 				create_sub_unit = unit_type:a_byzantine_cataphracts
 				create_sub_unit = unit_type:br_unit_trebuchet
 				create_sub_unit = unit_type:br_unit_trebuchet
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:AOI = {
+		c:AOI ?= {
 			capital = {
-				create_sub_unit = unit_type:a_akritai
-				create_sub_unit = unit_type:a_akritai
 				create_sub_unit = unit_type:a_akritai
 				create_sub_unit = unit_type:a_akritai
 				create_sub_unit = unit_type:a_byzantine_cataphracts
@@ -629,6 +663,13 @@ br_country_startup.2 = { #units added
 					mode = add_and_extend
 				}
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
+
 		}
 
 	}
@@ -656,31 +697,31 @@ br_country_startup.3 = { #cbs added
 	fire_only_once = yes
 
 	immediate = {
-		c:RH0 = {
+		c:RH0 ?= {
 			add_casus_belli = {
 				target = c:GLH
 				type = casus_belli:cb_deus_vult #cb_crusade
 			}
 		}
-		c:BUL = {
+		c:BUL ?= {
 			add_casus_belli = {
 				target = c:BYZ
 				type = casus_belli:cb_border_war
 			}
 		}
-		c:ARA = {
+		c:ARA ?= {
 			add_casus_belli = {
 				target = c:AD1
 				type = casus_belli:cb_deus_vult #cb_crusade
 			}
 		}
-		c:OHS = {
+		c:OHS ?= {
 			add_casus_belli = {
 				target = c:KIL
 				type = casus_belli:cb_deus_vult #cb_crusade
 			}
 		}
-		c:SGO = {
+		c:SGO ?= {
 			add_casus_belli = {
 				target = c:KIP
 				type = casus_belli:cb_border_war
@@ -694,103 +735,29 @@ br_country_startup.3 = { #cbs added
 				type = casus_belli:cb_border_war
 			}
 		}
-		c:ARM = {
-			add_casus_belli = {
-				target = c:VDZ
-				type = casus_belli:cb_subjugation
-			}
+		c:ARM ?= {
 			add_casus_belli = {
 				target = c:AAI
 				type = casus_belli:cb_subjugation
 			}
 			add_casus_belli = {
 				target = c:SME
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:VAN
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:DER
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:KOG
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:MES
 				type = casus_belli:cb_subjugation
 			}
 		}
-		c:GEO = {
-			add_casus_belli = {
-				target = c:AAI
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:SME
-				type = casus_belli:cb_subjugation
-			}
+		c:GEO ?= {
 			add_casus_belli = {
 				target = c:GAN
 				type = casus_belli:cb_border_war
 			}
 		}
-		c:GLH = {
-			add_casus_belli = {
-				target = c:RH1
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:RH2
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:RH3
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:ZAZ
-				type = casus_belli:cb_border_war
-			}
-		}
 		c:TUR = {
-			add_casus_belli = {
+			add_casus_belli ?= {
 				target = c:ERE
 				type = casus_belli:cb_border_war
 			}
-			add_casus_belli = {
-				target = c:KKL
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:SRV
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:DML
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:ATZ
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:SYU
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:KCN
-				type = casus_belli:cb_border_war
-			}
-			add_casus_belli = {
-				target = c:OHS
-				type = casus_belli:cb_jihad
-			}
 		}
-		c:LIT = {
+		c:LIT ?= {
 			add_casus_belli = {
 				target = c:KIE
 				type = casus_belli:cb_subjugation
@@ -800,7 +767,7 @@ br_country_startup.3 = { #cbs added
 				type = casus_belli:cb_subjugation
 			}
 		}
-		c:LON = {
+		c:LON ?= {
 			add_casus_belli = {
 				target = c:POR
 				type = casus_belli:cb_subjugation
@@ -1142,6 +1109,15 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					dominant_culture = culture:english
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
 		c:SWE ?= {
 			every_owned_location = {
@@ -1280,6 +1256,33 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:S1C ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:fruit
+						raw_material = goods:sugar
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_extreme_penalty
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
 		
 		
@@ -1320,7 +1323,7 @@ br_country_startup.7 = {
 				change_max_raw_material_workers = 1
 			}
 		}
-		c:LBV = {
+		c:LBV ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1358,7 +1361,7 @@ br_country_startup.7 = {
 				change_max_raw_material_workers = 1
 			}
 		}
-		c:CRH = {
+		c:CRH ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1369,7 +1372,7 @@ br_country_startup.7 = {
 				change_max_raw_material_workers = 2
 			}
 		}
-		c:BOS = {
+		c:BOS ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1390,6 +1393,20 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
 		c:MOS ?= {
 			every_owned_location = {
@@ -1409,6 +1426,30 @@ br_country_startup.7 = {
 					raw_material = goods:wheat
 				}
 				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					#region = region:anatolia_region
+					OR = {
+						location_rank = location_rank:city
+						location_rank = location_rank:town
+					}
+				}
+				change_prosperity = prosperity_very_weak_bonus
+				#add_location_modifier = { modifier = repopulation_of_anatolia_modifier years = 10 mode = add_and_extend }
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_tiny_penalty
+			}
+			every_owned_location = {
+				limit = {
+					region = region:anatolia_region
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
 			}
 		}
 		c:THE ?= {
@@ -1437,6 +1478,12 @@ br_country_startup.7 = {
 					mode = add_and_extend
 				}
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
 		}
 		c:EPI ?= {
 			every_owned_location = {
@@ -1454,13 +1501,33 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
 		}
-		c:S1Y = {
+		c:S1Y ?= {
 			every_owned_location = {
 				limit = {
 					raw_material = goods:iron
 				}
 				change_max_raw_material_workers = 4
+			}
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:B0R ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:fur
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 	#Pontics
@@ -1474,6 +1541,12 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
 		c:AN6 ?= {
 			every_owned_location = {
@@ -1482,6 +1555,12 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:P2N ?= {
 			every_owned_location = {
@@ -1489,6 +1568,12 @@ br_country_startup.7 = {
                 	raw_material = goods:lumber
                 }
 				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
 			}
 		}
 		c:TRE ?= {
@@ -1502,6 +1587,12 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
 		}
 	#Anatolia
 		c:AON ?= {
@@ -1514,6 +1605,12 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:ICO ?= {
 			every_owned_location = {
@@ -1525,6 +1622,65 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN1 ?= {
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN2 ?= {
+			every_owned_location = {
+				limit = {
+                	OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+                }
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN4 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN5 ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:wheat
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:AN7 ?= {
 			every_owned_location = {
@@ -1533,13 +1689,39 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
-		c:AN8 = {
+		c:AN8 ?= {
 			every_owned_location = {
 				limit = {
 					raw_material = goods:lumber
 				}
 				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN9 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:lumber
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 		c:AN10 ?= {
@@ -1552,16 +1734,50 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 2
 			}
-		}
-		c:AN2 ?= {
 			every_owned_location = {
 				limit = {
-                	OR = {
-                		raw_material = goods:iron
-						raw_material = goods:lumber
-					}
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN11 ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:silver
                 }
-				change_max_raw_material_workers = 2
+				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN12 ?= {
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN13 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 		c:CIL ?= {
@@ -1588,6 +1804,9 @@ br_country_startup.7 = {
 					years = 50
 					mode = add_and_extend
 				}
+			}
+			every_owned_location = {
+				change_prosperity = prosperity_severe_penalty
 			}
 		}
 		c:KYP ?= {
@@ -1619,6 +1838,40 @@ br_country_startup.7 = {
                 }
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:SME ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:lumber
+					}
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AAI ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+						raw_material = goods:copper
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:ARM ?= {
 			every_owned_location = {
@@ -1632,6 +1885,140 @@ br_country_startup.7 = {
 					raw_material = goods:saffron
 				}
 				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:VDZ ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:iron
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:ATZ ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_extreme_penalty
+			}
+		}
+		c:SYU ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:copper
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_extreme_penalty
+			}
+		}
+		c:KCN ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:silver
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:GAN ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:goods_gold
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN3 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:KOG ?= {
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:MES ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:iron
+                }
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:DER ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:lumber
+                }
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:VAN ?= {
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
 			}
 		}
 
@@ -1656,6 +2043,13 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
 		c:BUL ?= {
 			every_owned_location = {
@@ -1667,6 +2061,12 @@ br_country_startup.7 = {
 					}
 				}
 				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
 			}
 		}
 		c:B1L ?= {
@@ -1681,6 +2081,19 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
 		c:WA1 ?= {
 			every_owned_location = {
@@ -1688,6 +2101,12 @@ br_country_startup.7 = {
 					raw_material = goods:lumber
 				}
 				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 		c:WA0 ?= {
@@ -1703,6 +2122,12 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:SE2 ?= {
 			every_owned_location = {
@@ -1713,6 +2138,12 @@ br_country_startup.7 = {
 					}
 				}
 				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 		c:SE0 ?= {
@@ -1726,8 +2157,14 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
-		c:CRO = {
+		c:CRO ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1750,6 +2187,9 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:MOE ?= {
 			every_owned_location = {
@@ -1764,6 +2204,12 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:HE1 ?= {
 			every_owned_location = {
@@ -1775,6 +2221,12 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 1
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
 		}
 		c:THS ?= {
 			every_owned_location = {
@@ -1785,6 +2237,12 @@ br_country_startup.7 = {
 					}
 				}
 				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
 			}
 		}
 		
@@ -1807,24 +2265,119 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					dominant_culture = culture:mozarabic
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
+			every_owned_location = {
+				limit = {
+					dominant_culture = culture:andalusi
+				}
+				change_prosperity = prosperity_weak_bonus
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
 		}
-		c:LON = {
+		c:AD1 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:AD2 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
+		}
+		c:POR ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+                		raw_material = goods:iron
+                		raw_material = goods:lumber
+						raw_material = goods:tin
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_extreme_penalty
+			}
+		}
+		c:LON ?= {
 			every_owned_location = {
 				limit = {
 					raw_material = goods:iron
 				}
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:NAV = {
+		c:NAV ?= {
 			every_owned_location = {
 				limit = {
 					raw_material = goods:iron
 				}
 				change_max_raw_material_workers = 3
 			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
 		}
-		c:ARA = {
+		c:ARA ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1833,6 +2386,19 @@ br_country_startup.7 = {
 					}
 				}
 				change_max_raw_material_workers = 3
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_severe_penalty
 			}
 		}
 
@@ -1843,6 +2409,24 @@ br_country_startup.7 = {
 					raw_material = goods:millet
 				}
 				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					OR = {
+                		dominant_culture = culture:cossack_culture
+						dominant_culture = culture:ruthenian
+					}
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_very_weak_penalty
+			}
+			every_owned_location = {
+				limit = {
+					is_border = yes
+					location_rank = location_rank:rural_settlement
+				}
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
 			}
 		}
 		
@@ -1858,7 +2442,12 @@ br_country_startup.7 = {
 				change_max_raw_material_workers = 3
 			}
 		}
-		c:ATQ = {
+		c:DUL ?= {
+			every_owned_location = {
+				change_prosperity = prosperity_severe_penalty
+			}
+		}
+		c:ATQ ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1867,6 +2456,12 @@ br_country_startup.7 = {
 					}
 				}
 				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
 			}
 		}
 		c:DLH ?= {
@@ -1883,7 +2478,7 @@ br_country_startup.7 = {
                 }
             }
 		}
-		c:SY2 = {
+		c:SY2 ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
@@ -1974,6 +2569,21 @@ br_country_startup.7 = {
 					raw_material = goods:goods_gold
 				}
 				change_max_raw_material_workers = 3
+			}
+		}
+
+		c:YEM ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:incense
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					raw_material = goods:coffee
+				}
+				change_max_raw_material_workers = 4
 			}
 		}
 		

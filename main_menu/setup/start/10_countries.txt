@@ -4240,6 +4240,12 @@ countries = {
 
 		include = "expl_western_europe"
 		include = "br_thema_template"
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 	}
 
 	GAZ = {	# Gazaria
@@ -9007,6 +9013,10 @@ countries = {
 			date = 1365.1.1
 			size = 1
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -10
+			war_exhaustion = 6
+		}
 		
 		country_rank = rank_duchy
 		capital = oristano
@@ -12564,6 +12574,12 @@ countries = {
 		tolerated_cultures = {
 			latinoi
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
@@ -12621,6 +12637,13 @@ countries = {
 		accepted_cultures = {
 			latinoi
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
+
 		
 		culture = greek_culture
 		religion = orthodox
@@ -12902,6 +12925,12 @@ countries = {
 		tolerated_cultures = {
 			latinoi
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 6
+		}
 
 		liturgical_language = koine_dialect
 
@@ -12944,6 +12973,12 @@ countries = {
 
 		tolerated_cultures = {
 			aromanian
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		
 		country_rank = rank_duchy
@@ -13001,6 +13036,17 @@ countries = {
 
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
+
+		accepted_cultures = {
+			aromanian
+		}
+
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 
 		capital = larissa
 	}
@@ -14407,7 +14453,7 @@ countries = {
 
 		liturgical_language = church_slavonic_language
 
-		country_rank = rank_kingdom
+		country_rank = rank_duchy
 		capital = vidin
 		dynasty = sratsimir_dynasty
 	}
@@ -14493,6 +14539,13 @@ countries = {
 		
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
+
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 		
 		capital = mystras
 	}
@@ -33024,7 +33077,6 @@ countries = {
 		own_control_core = {
 			kars_armenia
 			anavarza sis caxud
-			comana_cil hargan
 		}
 
 		our_cores_conquered_by_others = {
@@ -33040,6 +33092,7 @@ countries = {
 			ayntab
 			kilis trapessac
 			iskenderun
+			hargan
 		}
 
 		starting_technology_level = 3
@@ -33111,6 +33164,13 @@ countries = {
 
 		accepted_cultures = {
 			latinoi
+		}
+
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 2
 		}
 
 		liturgical_language = koine_dialect
@@ -33800,7 +33860,12 @@ countries = {
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
 		capital = trebizond
-		
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		accepted_cultures = {
 			greek_culture
 		}
@@ -53540,6 +53605,12 @@ countries = {
 		}
 		capital = naples
 		country_rank = rank_duchy
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 2
+		}
 	}
 
 	N4P = {
@@ -53582,6 +53653,12 @@ countries = {
 		accepted_cultures = {
 			greek_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -10
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
 		capital = syracuse
@@ -53608,6 +53685,12 @@ countries = {
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
 		capital = bari
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 	}
 
 	#Kalavrías
@@ -53628,6 +53711,12 @@ countries = {
 		}
 		accepted_cultures = {
 			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
@@ -53651,6 +53740,12 @@ countries = {
 		}
 		accepted_cultures = {
 			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		country_rank = rank_county
 		liturgical_language = koine_dialect
@@ -54053,14 +54148,11 @@ countries = {
 			latinoi
 			albanian
 		}
-
-		currency_data = {
-			gold = 500
-			prestige = 50
-			stability = 75
-			government_power = 75
-			navy_tradition = 15
-			army_tradition = 45
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		
 		country_rank = rank_duchy
@@ -54404,6 +54496,12 @@ countries = {
 			date = 1500.1.1
 			size = 0.5
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 	}
 
 	OHS = { #Brotherhood of the Holy Sepulchre
@@ -54495,6 +54593,12 @@ countries = {
 		}
 		liturgical_language = koine_dialect
 		capital = konya
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 	}
 	
 	AON = {
@@ -54525,6 +54629,12 @@ countries = {
 		}
 		liturgical_language = koine_dialect
 		capital = ankara
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 	}
 	
 	PAF = {
@@ -54556,7 +54666,12 @@ countries = {
 		tolerated_cultures = {
 			armenian_culture
 		}
-		
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = amasra
 	}
@@ -54625,6 +54740,12 @@ countries = {
 		tolerated_cultures = {
 			bulgarian
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 		liturgical_language = koine_dialect
 		capital = serres
 	}
@@ -54648,6 +54769,12 @@ countries = {
 		country_rank = rank_county
 		accepted_cultures = {
 			aromanian
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		liturgical_language = koine_dialect
 		capital = ostrovo
@@ -54691,8 +54818,10 @@ countries = {
 		own_control_core = {
 			elbistan goksun afsin
 		}
+		own_control_conquered = {
+			comana_cil
+		}
 		our_cores_conquered_by_others = {
-			comana_cil hargan
 			enguzud kapan ulnia
 			darende gurun
 		}
@@ -54711,6 +54840,12 @@ countries = {
 		}
 		tolerated_cultures = {
 			romanyoti
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
 		}
 		liturgical_language = koine_dialect
 		capital = afsin
@@ -54741,6 +54876,12 @@ countries = {
 			greek_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = sivas
 	}
@@ -54769,6 +54910,12 @@ countries = {
 			greek_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = sebinkarahisar
 	}
@@ -54792,6 +54939,12 @@ countries = {
 		accepted_cultures = {
 			greek_culture
 			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
 		}
 		liturgical_language = koine_dialect
 		capital = kirsehir
@@ -54818,6 +54971,12 @@ countries = {
 		}
 		tolerated_cultures = {
 			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
 		}
 		liturgical_language = koine_dialect
 		capital = silifke
@@ -54848,6 +55007,12 @@ countries = {
 			laz_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = samsun
 	}
@@ -54873,6 +55038,12 @@ countries = {
 			anatolian_greek_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = aksaray
 	}
@@ -54882,6 +55053,9 @@ countries = {
 			kayseri develi tomarza yahyali 
 			urgup 
 			gemerek
+		}
+		own_control_conquered = {
+			hargan
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54896,6 +55070,10 @@ countries = {
 			greek_culture
 			armenian_culture
 			anatolian_greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			war_exhaustion = 5
 		}
 		dynasty = phokas_dynasty
 		liturgical_language = koine_dialect
@@ -54922,6 +55100,12 @@ countries = {
 		accepted_cultures = {
 			greek_culture
 			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		liturgical_language = koine_dialect
 		capital = beysehir
@@ -54950,6 +55134,12 @@ countries = {
 			greek_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
 		liturgical_language = koine_dialect
 		capital = amasya
 	}
@@ -54975,6 +55165,12 @@ countries = {
 			greek_culture
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 		liturgical_language = koine_dialect
 		capital = cankiri
 	}
@@ -54999,6 +55195,12 @@ countries = {
 		tolerated_cultures = {
 			armenian_culture
 		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
 		dynasty = argyros_dynasty
 		liturgical_language = koine_dialect
 		capital = celtik
@@ -55014,7 +55216,6 @@ countries = {
 		our_cores_conquered_by_others = {
 			kars_armenia
 			anavarza sis caxud
-			hargan iskenderun
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55026,6 +55227,12 @@ countries = {
 		}
 		tolerated_cultures = {
 			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
 		}
 		dynasty = skleros_dynasty
 		court_language = kilikioi_dialect
@@ -55055,6 +55262,12 @@ countries = {
 		}
 		tolerated_cultures = {
 			laz_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
 		}
 		liturgical_language = koine_dialect
 		capital = sinop
@@ -56583,8 +56796,8 @@ countries = {
 			damascus artah baniyas hama homs idlib jableh kafartab latakia masyaf nabek qusayr tartus
 			burraq jayrud qutayfah
 			bosra dara nawa salkhad suwayda irbid
-			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
-			shoubak madaba
+
+			jerusalem acre beersheba gaza hebron majdal nablus safed jaffa
 		}
 		
 		include = "expl_muslim_mediterranean"
@@ -56663,6 +56876,38 @@ countries = {
 		government = { mysticism_vs_jurisprudence = 25 }
 		capital = damascus
 	}
+
+	SY4 = {
+		own_control_core = {
+			amman aqaba karak maan sughar al_quwayrah shoubak madaba
+		}
+		
+		starting_technology_level = 3
+		include = "expl_middle_east"
+		include = "muslim_tribe_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+			privilege = {
+				#Tribes
+
+				br_arab_privilege
+				tribes_land_rights
+				tribes_pasture_access
+
+			}
+		}
+
+		capital = irbid
+		tolerated_cultures = {
+			levantine_culture
+		}
+		religious_school = hanafi_school
+		government = { mysticism_vs_jurisprudence = -15 }
+		
+	}
+
 	
   	#North Sea Empire
 	NSE = {

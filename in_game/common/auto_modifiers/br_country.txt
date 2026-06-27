@@ -9,6 +9,7 @@ TRY_INJECT:country_base_values = {
 	stability_decay = 0.001 #an additional 0.001 for 0.006 total
 	#stability_investment = stability_investment_penalty #br addition
 	global_trade_protection_factor = 0.25 #added to better balance the global markets
+	antagonism_religion_influence = 1 #increase to antagonism against different religions
 }
 
 TRY_INJECT:war_exhaustion_impact = {

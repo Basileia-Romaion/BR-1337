@@ -783,7 +783,7 @@
 	}
 
 	br_roman_orthodox_catechesis = {
-		icon = dhimmi_mazalim_court
+		#icon = dhimmi_mazalim_court
 		potential = {
 			OR = {
 				has_or_had_tag = BYZ
@@ -1049,6 +1049,31 @@
 
 		ai_weight = {
 			add = 25
+		}
+	}
+
+### Arabian Privileges ###	
+	br_arab_privilege = {
+		estate = tribes_estate
+		icon = br_turkoman_privilege #tribes_tribal_levies
+		
+		potential = {
+			culture = { has_culture_group = culture_group:arabian_group }
+			any_pop = { 
+				pop_type = pop_type:tribesmen 
+				pop_size > 1
+			}
+		}
+		country_modifier = {
+			global_tribes_estate_power = 1.0
+			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
+			tribes_estate_levy_size = 1
+			levy_maintenance_modifier = -0.25
+			monthly_towards_free_subjects = societal_value_monthly_move
+			monthly_towards_decentralization = societal_value_monthly_move
+			global_tribal_promotion = -0.5
+			global_tribesmen_migration_allowed = yes
+			tribes_estate_allowed_leading_military = yes
 		}
 	}
 

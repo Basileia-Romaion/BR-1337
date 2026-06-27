@@ -93,9 +93,9 @@ locations={
 	plovdiv = { rank = city 		town_setup = greek_town }
 	#ruse = { rank = town 			town_setup = balkan_town }	
 	#shumen = { rank = town 		town_setup = balkan_town }
-	sliven = { rank = town 			town_setup = balkan_town }
+	#sliven = { rank = town 			town_setup = balkan_town }
 	sredets = { rank = town 		town_setup = balkan_town }
-	targoviste_BUL = { rank = town 	town_setup = balkan_town }
+	#targoviste_BUL = { rank = town 	town_setup = balkan_town }
 	varna = { rank = town 			town_setup = balkan_town }
 	vidin = { rank = town 			town_setup = balkan_town }	
 	
@@ -148,7 +148,7 @@ locations={
 	cagliari = { rank = town 		town_setup = italian_town }
 	catania = { rank = town 		town_setup = italian_coastal_town }
 	catanzaro = { rank = town 		town_setup = greek_town_port }
-	cefalu = { rank = town 			town_setup = italian_town }
+	#cefalu = { rank = town 			town_setup = italian_town }
 	cesena = { rank = town 			town_setup = italian_town }
 	chioggia = { rank = town 		town_setup = italian_coastal_town }
 	cotrone = { rank = town 		town_setup = italian_coastal_town }
@@ -195,7 +195,7 @@ locations={
 	velletri = { rank = town 		town_setup = italian_town }
 	vercelli = { rank = town 		town_setup = italian_town }
 	vicenza = { rank = town 		town_setup = italian_town }
-	villa_di_chiesa = { rank = town town_setup = italian_town }
+	#villa_di_chiesa = { rank = town town_setup = italian_town }
 	viterbo = { rank = town 		town_setup = italian_town }
 	volterra = { rank = town 		town_setup = italian_town }
 	
@@ -488,7 +488,7 @@ locations={
 	cervera = { rank = town town_setup = iberian_town }
 	#ciudad_rodrigo = { rank = town town_setup = iberian_town }
 	coimbra = { rank = town town_setup = iberian_town }
-	cuenca = { rank = town town_setup = iberian_town }
+	#cuenca = { rank = town town_setup = iberian_town }
 	ecija = { rank = town town_setup = iberian_town }
 	#viseu = { rank = town town_setup = iberian_town }
 	evora = { rank = town town_setup = iberian_town }
@@ -4651,6 +4651,19 @@ building_manager = {
 	fiber_crops_farm = { tag = BYZ level = 1 location = uskudar }
 	horse_breeders = { tag = THS level = 1 location = larissa }
 
+	br_pronoia_estate = { tag = BUL level = 1 location = sliven }
+	farming_village = { tag = BUL level = 2 location = sliven }
+	market_village = { tag = BUL level = 1 location = sliven }
+	forest_village = { tag = BUL level = 1 location = sliven }
+
+	br_pronoia_estate = { tag = BUL level = 1 location = targoviste_BUL }
+	market_village = { tag = BUL level = 1 location = targoviste_BUL }
+	forest_village = { tag = BUL level = 2 location = targoviste_BUL }
+
+	br_pronoia_estate = { tag = BUL level = 1 location = veliki_preslav }
+	farming_village = { tag = BUL level = 2 location = veliki_preslav }
+	market_village = { tag = BUL level = 1 location = veliki_preslav }
+
 	farming_village = { tag = BYZ level = 1 location = silivri }
 	farming_village = { tag = BYZ level = 1 location = catalca }
 	farming_village = { tag = BYZ level = 1 location = vize }
@@ -4974,6 +4987,16 @@ building_manager = {
 	stockade = { tag = S4C level = 1 location = girgenti }
 	nobility_fortifications = { tag = S4C level = 1 location = caltanisetta }
 	castle = { tag = S4C level = 1 location = caltanisetta }
+
+	nobility_fortifications	= { tag = VEN level = 1 location = sinj }
+	nobility_fortifications	= { tag = VEN level = 1 location = kaseg }
+
+	nobility_fortifications	= { tag = SER level = 1 location = kotor }
+
+	nobility_fortifications	= { tag = BUL level = 1 location = strumica }
+	nobility_fortifications	= { tag = BUL level = 1 location = melnik }
+	
+	nobility_fortifications	= { tag = THE level = 1 location = edessa }
 
 	#Estate Manpower buildings
 	
@@ -6233,6 +6256,7 @@ building_manager = {
 	market_village = { tag = SER level = 1 location = kucevo }
 	market_village = { tag = BOS level = 1 location = kozara }
 	market_village = { tag = CRO level = 1 location = senj }
+	fishing_village = { tag = VEN level = 1 location = makarska }
 	market_village = { tag = ACH level = 1 location = chalandritsa }
 	market_village = { tag = ACH level = 1 location = nafpaktos }
 	forest_village = { tag = ACH level = 1 location = nafpaktos }
@@ -6736,6 +6760,14 @@ building_manager = {
 	fishing_village = { tag = GEN level = 3 location = terranova_pausania }
 	fishing_village = { tag = KNI level = 5 location = malta }
 	market_village = { tag = KNI level = 2 location = malta }
+
+	fishing_village = { tag = KNI level = 3 location = villa_di_chiesa }
+	market_village = { tag = KNI level = 2 location = villa_di_chiesa }
+	fishing_village = { tag = KNI level = 3 location = cefalu }
+	market_village = { tag = KNI level = 2 location = cefalu }
+
+	market_village = { tag = ADU level = 2 location = cuenca }
+
 	fishing_village = { tag = BQA level = 2 location = derna }
 	wharf = { tag = BQA level = 1 location = benghazi }
 	fishing_village = { tag = MAM level = 2 location = tobruk }
@@ -7212,8 +7244,6 @@ building_manager = {
 	br_kleisourai = { tag = AN5 level = 1 location = ermenek }
 	br_kleisourai = { tag = AN5 level = 1 location = kars_armenia }
 	br_kleisourai = { tag = ICO level = 1 location = selinti }
-	br_kleisourai = { tag = AN1 level = 1 location = afsin }
-
 	br_kleisourai = { tag = AOI level = 1 location = arsuz }
 	
 	br_pyrgoi = { tag = AN1 level = 1 location = goksun }
@@ -7233,6 +7263,7 @@ building_manager = {
 	br_pyrgoi = { tag = AN5 level = 1 location = mut }
 
 
+	nobility_fortifications = { tag = AN1 level = 1 location = afsin }
 	nobility_fortifications = { tag = B0R level = 1 location = ostrovo }
 	nobility_fortifications = { tag = BYZ level = 1 location = demotica }
 	nobility_fortifications = { tag = BYZ level = 1 location = serres }

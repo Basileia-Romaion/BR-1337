@@ -177,6 +177,24 @@ REPLACE_OR_CREATE:upper_egyptian_culture = { # Upper Egypt
 	}	
 }
 
+REPLACE_OR_CREATE:bedouin_culture = { 
+	language = peninsular_dialect 
+	
+	color = color_culture_bedouin
+	
+	tags = { arabian_gfx middle_east_gfx}
+
+	opinions = {
+
+	}	
+	
+	culture_groups = {
+		arabic_group
+		arabian_group
+	}	
+}
+
+
 REPLACE_OR_CREATE:syriac_culture = {
 	language = aramaic_language
 	
