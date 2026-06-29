@@ -63,19 +63,11 @@ br_special_merchant_republic = {
 			has_or_had_tag = RIC
 		}
 	}
-	allow = {
-		OR = {
-			has_or_had_tag = GTC
-			has_or_had_tag = VTC
-			has_or_had_tag = RIC
-		}
-	}
 	major = yes
 	government = republic
 	country_modifier = {
-		num_naval_governors = 1
 		global_merchant_capacity_modifier = 0.5
-		trade_income = 0.5
+		trade_income = 0.25
 		global_foreign_build_buildings_efficiency = 0.5
 		merchant_maintenance_efficiency = 0.50
 		navy_maintenance_efficiency = 0.25

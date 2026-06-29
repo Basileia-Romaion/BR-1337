@@ -291,6 +291,41 @@ AN13 = {
 	religion_definition = orthodox
 }
 
+AN14 = {
+	color = rgb { 118 72 67 }
+
+	culture_definition = armenikon_greek_culture
+	religion_definition = orthodox
+}
+
+AN15 = {
+	color = rgb { 102 78 62 }
+
+	culture_definition = armenikon_greek_culture
+	religion_definition = orthodox
+}
+
+AN16 = {
+	color = rgb { 102 78 82 }
+
+	culture_definition = armenikon_greek_culture
+	religion_definition = orthodox
+}
+
+AN17 = {
+	color = rgb { 95 59 148 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+AN18 = {
+	color = rgb { 95 59 148 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
 P0N = {
 	color = rgb { 96 88 148 }
 
@@ -306,6 +341,13 @@ P1N = {
 }
 
 P2N = {
+	color = rgb { 72 98 124 }
+
+	culture_definition = pontic_greek_culture
+	religion_definition = orthodox
+}
+
+P3N = {
 	color = rgb { 72 98 124 }
 
 	culture_definition = pontic_greek_culture
@@ -362,6 +404,12 @@ SE4 = {
 	color = rgb { 155 95 140 }
 	culture_definition = illyrikoi_greek_culture
 	religion_definition = orthodox
+}
+
+DLM = {
+	color = rgb { 55 135 160 }
+	culture_definition = dalmatian
+	religion_definition = catholic
 }
 
 #Banks

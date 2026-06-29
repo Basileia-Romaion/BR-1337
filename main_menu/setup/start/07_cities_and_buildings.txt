@@ -470,7 +470,7 @@ locations={
 	
 	# Iberia
 	barcelona = { rank = city 	town_setup = barcelona_city }
-	cordoba = { rank = city town_setup = iberian_city }
+	cordoba = { rank = city town_setup = cordoba_city }
 	granada = { rank = city town_setup = iberian_city }
 	lisbon = { rank = town town_setup = iberian_town_port }
 	malaga = { rank = city town_setup = iberian_city_port }
@@ -1845,13 +1845,13 @@ building_manager = {
 	dock = { tag = ADU level = 1	location = valencia }
 	dock = { tag = ARA level = 1	location = barcelona }
 
-	fishing_village = { tag = CAS level = 1 location = bilbao }   #BR edit
-	fishing_village = { tag = CAS level = 1 location = laredo }   #BR edit
-	fishing_village = { tag = CAS level = 1 location = san_vicente_barquera }   #BR edit
-	fishing_village = { tag = CAS level = 1 location = san_sebastian }   #BR edit
-	fishing_village = { tag = CAS level = 1 location = valmaseda }   #BR edit
+	fishing_village = { tag = CAS level = 1 location = bilbao }
+	fishing_village = { tag = CAS level = 1 location = laredo }
+	fishing_village = { tag = CAS level = 1 location = san_vicente_barquera }
+	fishing_village = { tag = CAS level = 1 location = san_sebastian }
+	fishing_village = { tag = CAS level = 1 location = valmaseda }
 
-	lumber_mill = { tag = CAS level = 1 location = bilbao }
+	lumber_mill = { tag = CAS level = 1 location = bilbao } 
 	lumber_mill = { tag = NAV level = 1 location = sanguesa }
 	lumber_mill = { tag = CAS level = 1 location = san_sebastian } 
 	lumber_mill = { tag = CAS level = 1 location = valmaseda } 
@@ -1859,8 +1859,8 @@ building_manager = {
 	market_village = { tag = CAS level = 1 location = bilbao }
 	market_village = { tag = NAV level = 1 location = estella }
 
-	monastery 	= { tag = CAS level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)   #BR edit
-	monastery 	= { tag = CAS level = 1 location = aranda_de_duero } #Santo Domingo de Silos   #BR edit
+	monastery 	= { tag = CAS level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)
+	monastery 	= { tag = CAS level = 1 location = aranda_de_duero } #Santo Domingo de Silos
 	monastery 	= { tag = ARA level = 1 location = barcelona } #Montserrat
 	monastery 	= { tag = POR level = 1 location = barcelos } #Rates
 	monastery 	= { tag = CAS level = 1 location = bilbao } #Ziortza
@@ -4988,6 +4988,7 @@ building_manager = {
 	nobility_fortifications = { tag = S4C level = 1 location = caltanisetta }
 	castle = { tag = S4C level = 1 location = caltanisetta }
 
+	nobility_fortifications = { tag = SER level = 1 location = ustikolina }
 	nobility_fortifications	= { tag = VEN level = 1 location = sinj }
 	nobility_fortifications	= { tag = VEN level = 1 location = kaseg }
 
@@ -4997,6 +4998,8 @@ building_manager = {
 	nobility_fortifications	= { tag = BUL level = 1 location = melnik }
 	
 	nobility_fortifications	= { tag = THE level = 1 location = edessa }
+	nobility_fortifications = { tag = ACH level = 1 location = andritsaina }
+	nobility_fortifications = { tag = HE1 level = 1 location = salona }
 
 	#Estate Manpower buildings
 	
@@ -6535,9 +6538,6 @@ building_manager = {
 	farming_village = { tag = AN1 level = 1 location = elbistan }
 	farming_village = { tag = AN1 level = 1 location = goksun }
 	forest_village = { tag = AN1 level = 1 location = darende }
-	
-	nobility_fortifications = { tag = ARM level = 1 location = bayazit }
-	nobility_fortifications = { tag = ARM level = 1 location = malazgirt }
 
 	#Italy
 	art_school = { tag = RAV level = 1 location = ravenna }
@@ -6875,16 +6875,7 @@ building_manager = {
 	merchants_guild = { tag = THE level = 1 location = thessaloniki }
 	artisan_guilds = { tag = THE level = 1 location = thessaloniki }
 	burgher_mansion = { tag = THE level = 1 location = thessaloniki }
-	nobility_fortifications = { tag = BYZ level = 1 location = manavgat }
-	nobility_fortifications = { tag = BYZ level = 1 location = ustra }
-	nobility_fortifications = { tag = THE level = 1 location = kastoria }
-	nobility_fortifications = { tag = THS level = 1 location = gravia }
-	nobility_fortifications = { tag = EPI level = 1 location = ioannina }
-	nobility_fortifications = { tag = EPI level = 1 location = angelokastron }
-	nobility_fortifications = { tag = EPI level = 1 location = argyrokastro }
-	nobility_fortifications = { tag = NEG level = 1 location = negroponte }
 	local_markets = { tag = NEG level = 1 location = negroponte }
-	nobility_fortifications = { tag = NAX level = 1 location = naxos }
 	local_markets = { tag = NAX level = 1 location = naxos }
 	clerical_archives = { tag = AOI level = 1 location = antioch }
 	local_estates = { tag = CEP level = 1 location = cephalonia }
@@ -7181,52 +7172,20 @@ building_manager = {
 
 
 
-	nobility_fortifications = { tag = CIL level = 1 location = sis }
+	
+
 	local_estates = { tag = CRT level = 1 location = chania }
 	local_markets = { tag = CRT level = 1 location = chania }
 	local_markets = { tag = VTC level = 1 location = corfu }
 	local_markets = { tag = CEP level = 1 location = cephalonia }
-	nobility_fortifications = { tag = CIL level = 1 location = adana }
-	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
-	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
-	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
-	nobility_fortifications = { tag = ANA level = 1 location = zile }
-	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
-	nobility_fortifications = { tag = ACH level = 1 location = andravida }
-
-	nobility_fortifications = { tag = BUL level = 1 location = branicevo }
 	local_estates = { tag = BUL level = 1 location = branicevo }
-	nobility_fortifications = { tag = BUL level = 1 location = nikopol }
 	local_estates = { tag = BUL level = 1 location = nikopol }
-	nobility_fortifications = { tag = SER level = 1 location = smederevo }
 	local_estates = { tag = SER level = 1 location = smederevo }
-	nobility_fortifications = { tag = SER level = 1 location = uzice }
 	local_estates = { tag = SER level = 1 location = uzice }
-	nobility_fortifications = { tag = SER level = 1 location = soko_grad }
 	local_estates = { tag = SER level = 1 location = soko_grad }
-	nobility_fortifications = { tag = SER level = 1 location = smederevo }
 	local_estates = { tag = SER level = 1 location = smederevo }
-	
-
 	local_markets = { tag = TRE level = 1 location = lusta }
-	nobility_fortifications = { tag = MES level = 1 location = arguvan }
-	nobility_fortifications = { tag = DER level = 1 location = palu }
-	nobility_fortifications = { tag = ARM level = 1 location = ercis }
-	nobility_fortifications = { tag = ARM level = 1 location = karakilise }
-	nobility_fortifications = { tag = ARM level = 1 location = tercan }
-	nobility_fortifications = { tag = ARM level = 1 location = surmali }
-	nobility_fortifications = { tag = ARM level = 1 location = yerevan }
-	nobility_fortifications = { tag = KCN level = 1 location = gandzasar }
-	nobility_fortifications = { tag = SYU level = 1 location = kapan_armenia }
-	nobility_fortifications = { tag = ATZ level = 1 location = maku }
-	nobility_fortifications = { tag = AAI level = 1 location = akhalkalaki }
-	nobility_fortifications = { tag = SME level = 1 location = akhaltsikhe }
-	nobility_fortifications = { tag = GEO level = 1 location = bodbe }
-	nobility_fortifications = { tag = GEO level = 1 location = surmali }
-	nobility_fortifications = { tag = GEO level = 1 location = kutaisi }
-	nobility_fortifications = { tag = GEO level = 1 location = anaklia }
-	order_stronghold = { tag = GEO level = 1	location = hereti }
-	order_stronghold = { tag = ARM level = 1	location = khor_virap }
+	
 
 	
 #BR added fortifications
@@ -7247,7 +7206,7 @@ building_manager = {
 	br_kleisourai = { tag = AOI level = 1 location = arsuz }
 	
 	br_pyrgoi = { tag = AN1 level = 1 location = goksun }
-	br_pyrgoi = { tag = AN2 level = 1 location = divrigi }
+	br_pyrgoi = { tag = AN2 level = 1 location = egin }
 	br_pyrgoi = { tag = FEO level = 1 location = lusta }
 	br_pyrgoi = { tag = FEO level = 1 location = soldaia }
 	br_pyrgoi = { tag = THE level = 1 location = kilkis }
@@ -7262,33 +7221,80 @@ building_manager = {
 	br_pyrgoi = { tag = AN1 level = 1 location = elbistan }
 	br_pyrgoi = { tag = AN5 level = 1 location = mut }
 
-
-	nobility_fortifications = { tag = AN1 level = 1 location = afsin }
-	nobility_fortifications = { tag = B0R level = 1 location = ostrovo }
-	nobility_fortifications = { tag = BYZ level = 1 location = demotica }
-	nobility_fortifications = { tag = BYZ level = 1 location = serres }
 	castle = { tag = BYZ level = 1 location = demotica }
 	castle = { tag = KNI level = 1 location = malta } #br edit
 	castle = { tag = SER level = 1 location = kozelj }
 	castle = { tag = SER level = 1 location = kucevo }
 	castle = { tag = SER level = 1 location = trgoviste_SER }
+	castle = { tag = VEN level = 1 location = novigrad }
+	castle = { tag = VEN level = 1 location = dubrovnik }
+	stockade = { tag = TRE level = 1 location = niksar }
+
+	order_stronghold = { tag = CEP level = 1 location = cephalonia }
+	order_stronghold = { tag = NAX level = 1 location = naxos }
+	order_stronghold = { tag = NEG level = 1 location = negroponte }
+	order_stronghold = { tag = GEO level = 1	location = hereti }
+	order_stronghold = { tag = ARM level = 1	location = khor_virap }
+
+	nobility_fortifications = { tag = AN16 level = 1 location = bogazliyan }
+	nobility_fortifications = { tag = AN2 level = 1 location = darende }
+	nobility_fortifications = { tag = AN2 level = 1 location = divrigi }
+	nobility_fortifications = { tag = AN2 level = 1 location = ilic }
+	nobility_fortifications = { tag = AN1 level = 1 location = afsin }
+	nobility_fortifications = { tag = B0R level = 1 location = ostrovo }
+	nobility_fortifications = { tag = BYZ level = 1 location = demotica }
+	nobility_fortifications = { tag = BYZ level = 1 location = serres }
+
+	nobility_fortifications = { tag = MES level = 1 location = arguvan }
+	nobility_fortifications = { tag = DER level = 1 location = palu }
+	nobility_fortifications = { tag = ARM level = 1 location = ercis }
+	nobility_fortifications = { tag = ARM level = 1 location = karakilise }
+	nobility_fortifications = { tag = ARM level = 1 location = tercan }
+	nobility_fortifications = { tag = ARM level = 1 location = surmali }
+	nobility_fortifications = { tag = ARM level = 1 location = yerevan }
+	nobility_fortifications = { tag = KCN level = 1 location = gandzasar }
+	nobility_fortifications = { tag = SYU level = 1 location = kapan_armenia }
+	nobility_fortifications = { tag = ATZ level = 1 location = maku }
+	nobility_fortifications = { tag = AAI level = 1 location = akhalkalaki }
+	nobility_fortifications = { tag = SME level = 1 location = akhaltsikhe }
+	nobility_fortifications = { tag = GEO level = 1 location = bodbe }
+	nobility_fortifications = { tag = GEO level = 1 location = surmali }
+	nobility_fortifications = { tag = GEO level = 1 location = kutaisi }
+	nobility_fortifications = { tag = GEO level = 1 location = anaklia }
+
+	nobility_fortifications = { tag = ARM level = 1 location = bayazit }
+	nobility_fortifications = { tag = ARM level = 1 location = malazgirt }
+	nobility_fortifications = { tag = CIL level = 1 location = sis }
+	nobility_fortifications = { tag = CIL level = 1 location = adana }
+	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
+	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
+	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
+	nobility_fortifications = { tag = ANA level = 1 location = zile }
+	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
+	nobility_fortifications = { tag = ACH level = 1 location = andravida }
+
+	nobility_fortifications = { tag = BUL level = 1 location = branicevo }
+	nobility_fortifications = { tag = BUL level = 1 location = nikopol }
+	nobility_fortifications = { tag = SER level = 1 location = smederevo }
+	nobility_fortifications = { tag = SER level = 1 location = soko_grad }
+	nobility_fortifications = { tag = SER level = 1 location = uzice }
+
 	nobility_fortifications = { tag = BYZ level = 1 location = uluborlu }
 	nobility_fortifications = { tag = CIL level = 1 location = alaiye }
 	nobility_fortifications = { tag = CIL level = 1 location = kars_armenia }
 	nobility_fortifications = { tag = TRE level = 1 location = kastamonu }
 	nobility_fortifications = { tag = TRE level = 1 location = bafra }
-	stockade = { tag = TRE level = 1 location = niksar }
 	
 	nobility_fortifications = { tag = CEP level = 1 location = cephalonia }
-	order_stronghold = { tag = CEP level = 1 location = cephalonia }
 	nobility_fortifications = { tag = NAX level = 1 location = naxos }
-	order_stronghold = { tag = NAX level = 1 location = naxos }
+	nobility_fortifications = { tag = BYZ level = 1 location = manavgat }
+	nobility_fortifications = { tag = BYZ level = 1 location = ustra }
+	nobility_fortifications = { tag = THE level = 1 location = kastoria }
+	nobility_fortifications = { tag = THS level = 1 location = gravia }
+	nobility_fortifications = { tag = EPI level = 1 location = ioannina }
+	nobility_fortifications = { tag = EPI level = 1 location = angelokastron }
+	nobility_fortifications = { tag = EPI level = 1 location = argyrokastro }
 	nobility_fortifications = { tag = NEG level = 1 location = negroponte }
-	order_stronghold = { tag = NEG level = 1 location = negroponte }
-
-	#castle = { tag = CRT level = 1 location = candia }
-	castle = { tag = VEN level = 1 location = novigrad }
-	castle = { tag = VEN level = 1 location = dubrovnik }
 
 	#Varangian Recruitment
 	br_varangian_recruitment_building = { tag = BYZ level = 1 location = stockholm }

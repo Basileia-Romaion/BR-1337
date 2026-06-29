@@ -36,7 +36,7 @@ br_ere_events.1 = {
 			limit = {
 				has_dlc = "d008_fate_of_the_phoenix"
 			}
-			##Europe Pronoia family members
+			##Europe Pronoia family members and their pronoia
 			if = {
 				limit = { country_exists = c:THE }
 				c:THE = {
@@ -47,10 +47,173 @@ br_ere_events.1 = {
 				}
 			}
 			if = {
+				limit = { country_exists = c:B0R }
+				c:B0R = {
+					make_subject_of = {
+						target = c:THE
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:THS }
+				c:THS = {
+					make_subject_of = {
+						target = c:THE
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
 				limit = { country_exists = c:HE1 }
 				c:HE1 = {
 					make_subject_of = {
 						target = c:BYZ
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:ACH }
+				c:ACH = {
+					make_subject_of = {
+						target = c:HE1
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:MOE }
+				c:MOE = {
+					make_subject_of = {
+						target = c:HE1
+						type = subject_type:pronoia
+					}
+				}
+			}
+			#Anatolian
+			if = {
+				limit = { country_exists = c:AN4 }
+				c:AN4 = {
+					make_subject_of = {
+						target = c:AON
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN11 }
+				c:AN11 = {
+					make_subject_of = {
+						target = c:AON
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN12 }
+				c:AN12 = {
+					make_subject_of = {
+						target = c:AON
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN9 }
+				c:AN9 = {
+					make_subject_of = {
+						target = c:ICO
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN7 }
+				c:AN7 = {
+					make_subject_of = {
+						target = c:AN8
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN13 }
+				c:AN13 = {
+					make_subject_of = {
+						target = c:AOI
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN5 }
+				c:AN5 = {
+					make_subject_of = {
+						target = c:AOI
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN6 }
+				c:AN6 = {
+					make_subject_of = {
+						target = c:TRE
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:P2N }
+				c:P2N = {
+					make_subject_of = {
+						target = c:TRE
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN2 }
+				c:AN2 = {
+					make_subject_of = {
+						target = c:AN10
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN3 }
+				c:AN3 = {
+					make_subject_of = {
+						target = c:AN10
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN14 }
+				c:AN14 = {
+					make_subject_of = {
+						target = c:AN2
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN15 }
+				c:AN15 = {
+					make_subject_of = {
+						target = c:AN2
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = c:AN16 }
+				c:AN16 = {
+					make_subject_of = {
+						target = c:AN2
 						type = subject_type:pronoia
 					}
 				}

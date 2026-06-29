@@ -1637,13 +1637,48 @@ br_country_startup.7 = {
 		c:AN2 ?= {
 			every_owned_location = {
 				limit = {
-                	OR = {
-                		raw_material = goods:iron
-						raw_material = goods:lumber
-					}
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN14 ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:iron
                 }
 				change_max_raw_material_workers = 2
 			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN15 ?= {
+			every_owned_location = {
+				limit = {
+                	raw_material = goods:lumber
+                }
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN16 ?= {
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN17 ?= {
 			every_owned_location = {
 				limit = {
 					location_rank = location_rank:rural_settlement

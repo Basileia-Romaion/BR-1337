@@ -92,6 +92,8 @@ br_on_game_start = {
 			research_advance = advance_type:province_governors
 			research_advance = advance_type:temporary_appointments
 			research_advance = advance_type:scholasticism
+			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
 			research_advance = advance_type:diplomatic_capacity_traditions
 			research_advance = advance_type:banking_advance
 			research_advance = advance_type:merchants_and_trade
@@ -153,6 +155,7 @@ br_on_game_start = {
 			research_advance = advance_type:temporary_appointments
 			research_advance = advance_type:scholasticism
 			research_advance = advance_type:diplomatic_capacity_traditions
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -183,6 +186,7 @@ br_on_game_start = {
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
 			research_advance = advance_type:diplomatic_capacity_traditions
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -211,6 +215,7 @@ br_on_game_start = {
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
 			research_advance = advance_type:diplomatic_capacity_traditions
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_early_carrack_advance
@@ -220,6 +225,44 @@ br_on_game_start = {
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
+		}
+		c:DLM ?= {
+			research_advance = advance_type:meritocracy_advance
+            research_advance = advance_type:power_projection_advance_1
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:naval_morale_advance_1
+			research_advance = advance_type:unlock_barque_advance
+			research_advance = advance_type:unlock_m_galley_advance
+			research_advance = advance_type:unlock_early_carrack_advance
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:unlock_men_at_arms_advance
+			research_advance = advance_type:unlock_crossbowmen_advance
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:abacus_advance
+			research_advance = advance_type:ledgers_double_checking
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+			research_advance = advance_type:guilds
+			research_advance = advance_type:talented_traders
+		}
+		c:RAG ?= {
+			research_advance = advance_type:meritocracy_advance
+            research_advance = advance_type:power_projection_advance_1
+			research_advance = advance_type:organized_religion
+			research_advance = advance_type:naval_morale_advance_1
+			research_advance = advance_type:unlock_barque_advance
+			research_advance = advance_type:unlock_m_galley_advance
+			research_advance = advance_type:unlock_early_carrack_advance
+			research_advance = advance_type:unlock_hulk_advance
+			research_advance = advance_type:unlock_men_at_arms_advance
+			research_advance = advance_type:unlock_crossbowmen_advance
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:ledgers_double_checking
 			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
@@ -261,6 +304,7 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
 		c:VEN ?= {
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
@@ -268,6 +312,7 @@ br_on_game_start = {
 			research_advance = advance_type:diplomatic_capacity_traditions
 		}
 		c:GEN ?= {
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
@@ -275,6 +320,7 @@ br_on_game_start = {
 			research_advance = advance_type:diplomatic_capacity_traditions
 		}
 		c:PIS ?= {
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:merchants_and_trade
 			research_advance = advance_type:trade_range_advance_age_2
 			research_advance = advance_type:rudimentary_coastal_ship_repair
@@ -293,12 +339,14 @@ br_on_game_start = {
 		}
 		c:A1G ?= {
 			trigger_event_silently = br_ere_events.1002
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_hulk_advance
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 		}
 		c:K1B ?= {
+			research_advance = advance_type:naval_morale_advance_1
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:unlock_m_galley_advance
 			research_advance = advance_type:unlock_hulk_advance
@@ -313,7 +361,7 @@ br_on_game_start = {
 			research_advance = advance_type:province_governors
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism
-			add_gold = 2500
+			add_gold = 1000
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
@@ -371,7 +419,6 @@ br_on_game_start = {
 		c:TUR ?= {
 			research_advance = advance_type:seljuk_roots
 			research_advance = advance_type:timariots
-			research_advance = advance_type:slavery_before_death
 			research_advance = advance_type:bashi_bazouks
 			research_advance = advance_type:akinji_cavalry
 			research_advance = advance_type:heirs_of_rum
@@ -381,8 +428,7 @@ br_on_game_start = {
 			research_advance = advance_type:millets
 			research_advance = advance_type:timariots
 			research_advance = advance_type:autonomous_pashas
-			research_advance = advance_type:indian_sea_trade
-			add_gold = 2500
+			add_gold = 500
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}

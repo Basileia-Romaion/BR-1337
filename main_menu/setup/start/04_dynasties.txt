@@ -1110,10 +1110,29 @@ dynasty_manager = {
 		name = { name = kantakouzenos_dynasty }
 		home = constantinople
 		male_names = {
-			name_andronikos name_demetrius name_emmanuel name_george name_john name_matthew name_theodore name_thomas
+			name_andronikos name_alexander name_alexis name_angel name_anastasius
+			name_basil
+			name_constantine name_constantine.name_john
+			name_demetrius
+			name_emmanuel
+			name_george
+			name_john
+			name_michael
+			name_nikephoros name_nicholas
+			name_philip
+			name_theodore
+			name_thomas name_theophilos
 		}
 		female_names = {
-			name_helen name_irene name_mary name_theodora
+			name_anna name_alexandra name_anastasia name_anna.name_mary
+			name_cassandra name_catherine name_constance
+			name_eudokia name_euphemia
+			name_helen
+			name_irene name_irene.name_mary
+			name_mary name_mary.name_anna
+			name_sophia name_sophia.name_mary
+			name_theodora name_theodora.name_mary
+			name_zoe
 		}
 	}
 
@@ -1153,10 +1172,29 @@ dynasty_manager = {
 		name = { name = komnenos_asen_dynasty }
 		home = kavaje
 		male_names = {
-			name_alexander name_john name_michael
+			name_andronikos name_alexander name_alexis name_angel name_anastasius
+			name_basil
+			name_constantine name_constantine.name_john
+			name_demetrius
+			name_emmanuel
+			name_george
+			name_john
+			name_michael
+			name_nikephoros name_nicholas
+			name_philip
+			name_theodore
+			name_thomas name_theophilos
 		}
 		female_names = {
-			name_kominia
+			name_anna name_alexandra name_anastasia name_anna.name_mary
+			name_cassandra name_catherine name_constance
+			name_eudokia name_euphemia
+			name_helen
+			name_irene name_irene.name_mary
+			name_mary name_mary.name_anna
+			name_sophia name_sophia.name_mary
+			name_theodora name_theodora.name_mary
+			name_zoe
 		}
 	}
 
@@ -1269,10 +1307,29 @@ dynasty_manager = {
 		name = { name = komnenos_dynasty }
 		home = trebizond
 		male_names = {
-			name_alexis name_basil name_david name_emmanuel name_john name_michael
+			name_andronikos name_alexander name_alexis name_angel name_anastasius
+			name_basil
+			name_constantine name_constantine.name_john
+			name_demetrius
+			name_emmanuel
+			name_george
+			name_john
+			name_michael
+			name_nikephoros name_nicholas
+			name_philip
+			name_theodore
+			name_thomas name_theophilos
 		}
 		female_names = {
-			name_anna name_eudokia name_helen name_mary name_theodora
+			name_anna name_alexandra name_anastasia name_anna.name_mary
+			name_cassandra name_catherine name_constance
+			name_eudokia name_euphemia
+			name_helen
+			name_irene name_irene.name_mary
+			name_mary name_mary.name_anna
+			name_sophia name_sophia.name_mary
+			name_theodora name_theodora.name_mary
+			name_zoe
 		}
 	}
 
@@ -1382,10 +1439,29 @@ dynasty_manager = {
 		name = { name = palaiologos_dynasty }
 		home = constantinople
 		male_names = {
-			name_andronikos name_constantine name_demetrius name_emmanuel name_john name_michael name_theodore name_thomas
+			name_andronikos name_alexander name_alexis name_angel name_anastasius
+			name_basil
+			name_constantine name_constantine.name_john
+			name_demetrius
+			name_emmanuel
+			name_george
+			name_john
+			name_michael
+			name_nikephoros name_nicholas
+			name_philip
+			name_theodore
+			name_thomas name_theophilos
 		}
 		female_names = {
-			name_anna name_helen name_irene name_mary name_theodora name_zoe
+			name_anna name_alexandra name_anastasia name_anna.name_mary
+			name_cassandra name_catherine name_constance
+			name_eudokia name_euphemia
+			name_helen
+			name_irene name_irene.name_mary
+			name_mary name_mary.name_anna
+			name_sophia name_sophia.name_mary
+			name_theodora name_theodora.name_mary
+			name_zoe
 		}
 	}
 
@@ -3217,10 +3293,29 @@ dynasty_manager = {
 		dynasty_name_type = location
 		important = yes
 		male_names = {
-			name_albert name_charles name_ferdinand name_leopold name_maximilian name_philip
+			name_albert
+			name_charles
+			name_ernest
+			name_ferdinand name_frederick name_francis name_francis.name_joseph name_francis.name_frederick
+			name_joseph
+			name_leopold
+			name_maximilian name_matthias
+			name_philip
+			name_rudolf
+			name_sigmund
+			name_vladislav
+
 		}
 		female_names = {
-			name_anna name_caroline name_catherine name_elizabeth name_margaret name_mary name_mary.name_anna name_theresa
+			name_anna
+			name_blanche name_barbara
+			name_caroline name_catherine name_christine
+			name_dorothy
+			name_elizabeth
+			name_joanna
+			name_margaret name_mary name_mary.name_anna name_mary.name_theresa name_mary.name_elizabeth name_mary.name_madeleine
+			name_theresa
+
 		}
 	}
 
@@ -3260,10 +3355,24 @@ dynasty_manager = {
 		important = yes
 		dynasty_name_type = location
 		male_names = {
-			name_charles name_eitel.name_frederick name_frederick
+			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
+			name_christian name_christian.name_william
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_anna name_frances name_joanna name_maximiliane name_mary.name_anna name_theresa
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -3272,10 +3381,24 @@ dynasty_manager = {
 		home = berlin
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_frederick name_frederick.name_william name_john
+			name_albert name_albert.name_achilles
+			name_charles
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_anna name_dorothy name_eleanor name_elizabeth name_louise name_madeleine name_sophia
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -3284,10 +3407,24 @@ dynasty_manager = {
 		home = nuremberg
 		dynasty_name_type = location
 		male_names = {
-			name_albert name_berthold name_frederick name_john
+			name_albert name_albert.name_achilles name_albert.name_frederick name_august name_august.name_frederick
+			name_christian name_christian.name_william
+			name_eitel.name_frederick name_ernest
+			name_frederick name_frederick.name_william
+			name_george.name_william
+			name_john name_joachim name_john.name_george name_john.name_sigmund
+			name_william
 		}
 		female_names = {
-			name_adelaide name_agnes name_anna name_beatrix name_catherine name_elizabeth name_helen name_margaret
+			name_anna name_anna.name_catherine name_anna.name_sophia
+			name_barbara name_barbara.name_sophia
+			name_catherine
+			name_frances
+			name_joanna
+			name_maximiliane name_mary.name_anna name_mary.name_eleanor name_mary.name_madeleine
+			name_sophia
+			name_theresa
+			name_victoria
 		}
 	}
 
@@ -3378,10 +3515,31 @@ dynasty_manager = {
 		home = munich
 		dynasty_name_type = location
 		male_names = {
-			name_charles name_frederick name_john name_louis name_robert
+			name_albert name_adolf
+			name_charles name_charles.name_albert name_charles.name_theodore name_clemence.name_august name_charles.name_louis name_christopher
+			name_ernest
+			name_frederick name_ferdinand.name_mary
+			name_henry
+			name_john name_joseph name_joseph.name_clemence
+			name_louis name_leopold
+			name_maximilian name_maximilian.name_emmanuel name_maximilian.name_joseph name_maximilian.name_henry
+			name_otto name_otto.name_henry
+			name_philip
+			name_robert name_rudolf
+			name_stephen name_sigmund
+			name_william name_wolfgang name_wolfgang.name_william
+
 		}
 		female_names = {
-			name_anna name_elizabeth name_margaret name_mary.name_anna
+			name_anna name_anna.name_caroline name_agnes
+			name_beatrix
+			name_christine
+			name_elizabeth name_eleanor name_eleanor.name_madeleine
+			name_frances
+			name_joanna name_jacqueline
+			name_margaret
+			name_mary.name_anna name_mary name_mary.name_madeleine name_madeleine name_margaret name_matilda
+			name_ulrike.name_eleanor
 		}
 	}
 

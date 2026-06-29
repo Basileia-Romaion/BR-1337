@@ -1234,7 +1234,7 @@ character_db={
 		adm = 80 dip = 66 mil = 85
 		health_trait = healthy
 	}
-	
+
 	eng_edward_the_black_prince = {		
 		first_name = { name = name_edward }
 		nickname = { name = "nick_the_black" }
@@ -13628,7 +13628,22 @@ character_db={
 		dynasty = anjou_dynasty
 		tag = NAP
 	}
-	
+
+	nap_eloisa_anjou = {
+		first_name = { name = name_eloise }
+		culture = neapolitan
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1325.1.1
+		death_date = 1325.12.27
+		birth = naples
+		father = nap_carlo_anjou
+		mother = nap_marie_valois
+		dynasty = anjou_dynasty
+		tag = NAP
+	}
+
 	# Son of the King of Naples
 	nap_luigi_anjou = {
 		first_name = { name = name_louis }
@@ -16823,6 +16838,23 @@ character_db={
 		dynasty = burgundy_castile_dynasty
 		tag = POR
 		ruler_trait = silver_tongue
+	}
+
+	cas_juan_manuel = {
+		first_name = { name = name_john }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		adm = 72 dip = 44 mil = 38
+		birth_date = 1282.5.5
+		birth = puebla_de_montalban # Escalona
+		#father = sto_manuel_burgundy
+		#mother = cas_beatrice_savoie
+		dynasty = manuel_dynasty
+		tag = CAS
+		artist = writer
+		artist_trait = prominent
+		artist_skill = 0.8
 	}
 
 	# Line of the Counts of Aumale
@@ -31206,6 +31238,8 @@ character_db={
 		dynasty = carretto_dynasty # Should be dynasty = carretto_millesimo_dynasty
 		tag = MND
 	}
+		
+	# II Line of the Marchesi di Carretto	
 
 	mnd_tommaso_millesimo = {
 		first_name = { name = name_thomas }
@@ -31788,6 +31822,8 @@ character_db={
 		dynasty = alidosi_dynasty
 		tag = IMO
 	}
+	
+	# HOUSE ALIDOSI (Lords of Imola)
 
 	imo_litto_alidosi = {
 		first_name = { name = name_philip } # Should be alternative: "Lippo"
@@ -33632,6 +33668,8 @@ character_db={
 		dynasty = carceri_dynasty
 		tag = NEG
 	}
+	
+	# HOUSE OF CARRARA (Lords of Padua)
 
 	neg_rizzardo_dalle_carceri = { # Northern Triarchy (Oreos)
 		first_name = { name = name_richard }
@@ -36454,6 +36492,8 @@ character_db={
 		tag = FER
 		ruler_trait = intricate_web_weaver
 	}
+	
+	# Daughters of the Lord of Ferrara
 
 	fer_orsolina_macaruffi = {
 		first_name = { name = name_ursula } # Should use diminutive: Orsolina
@@ -36707,6 +36747,8 @@ character_db={
 		spouse = fer_bertoldo_este
 		tag = FER
 	}
+	
+	# HOUSE DELLA FAGGIOLA
 
 	fer_francesco_este_ii = {
 		first_name = { name = name_francis }
@@ -39640,7 +39682,7 @@ character_db={
 		last_name = { name = de_Langosco }
 		culture = lombard
 		religion = catholic
-		estate = nobles_estate
+		estate = burghers_estate
 		female = yes
 		birth_date = 1286.1.1 # Unknown
 		death_date = 1310.1.1 # Unknown
@@ -41594,6 +41636,7 @@ character_db={
 		dynasty = malatesta_dynasty
 		tag = RIM
 	}
+	
 
 	# Uncle of the Lord of Rimini & Pesaro
 	ces_paolo_malatesta = {
@@ -41724,6 +41767,8 @@ character_db={
 		dynasty = malatesta_dynasty
 		tag = FAE
 	}
+	
+	# HOUSE GONZAGA (Lords of Mantua)
 
 	# Aunt of the Lord of Rimini & Pesaro & Mother of the Lord of Ravenna
 	rav_maddalena_malatesta = {
@@ -42728,7 +42773,7 @@ character_db={
 		first_name = { name = name_robert }
 		culture = median
 		religion = catholic
-		adm = 64 dip = 69 mil = 41
+		adm = 66 dip = 66 mil = 45
 		birth_date = 1295.1.1
 		birth = pitigliano
 		father = ptg_romano_orsini
@@ -42863,6 +42908,8 @@ character_db={
 		dynasty = orsini_monterotondo_dynasty # Founder of the Monterotondo line of the House of Orsini
 		tag = PAP
 	}
+	
+	# Children of the Lord of Bologna
 
 	pap_napoleone_cardinale_orsini = { # Cardinal from 1288	
 		first_name = { name = name_napoleon }
@@ -42924,7 +42971,7 @@ character_db={
 		first_name = { name = name_angela }
 		culture = median
 		religion = catholic
-		estate = nobles_estate
+		estate = burghers_estate
 		female = yes
 		birth_date = 1318.1.1
 		birth = rome
@@ -43158,6 +43205,8 @@ character_db={
 		dynasty = apostolico_orsini_dynasty
 		tag = ACH
 	}
+	
+	# HOUSE DA POLENTA (Lords of Ravenna)
 
 	# Pope Celestine III
 	pap_celestino_iii = {	
@@ -45843,6 +45892,8 @@ character_db={
 		dynasty = da_verona_dynasty
 		tag = NEG
 	}
+	
+	#Theocratic Countries (Papal States, Trento)
 
 	neg_giberto_ii_verona = { # Central Triarchy (Chalkis)
 		first_name = { name = name_gilbert }
@@ -45857,6 +45908,8 @@ character_db={
 		dynasty = da_verona_dynasty
 		tag = NEG
 	}
+	
+	#Former Popes
 
 	neg_beatrice_verona = { # Central Triarchy (Chalkis)
 		first_name = { name = name_beatrix }
@@ -52354,6 +52407,7 @@ character_db={
 		general_trait = mamluk
 		tag = MAM
 	}
+	#Spouses and Son of the Ruler
 
 	#Predecessor
 	mam_baybars_ii = { #https://en.wikipedia.org/wiki/Baybars_II
@@ -52408,6 +52462,10 @@ character_db={
 		spouse = mam_an_nasir_bahri
 		tag = MAM
 	}
+	
+	#-------------------------- East Asia ----------------------------
+	
+	#Korea
 
 	#Ruler's 3rd Spouse
 	mam_qutlughmalik = {
@@ -74510,6 +74568,20 @@ character_db={
 		ruler_trait = sinner
 	}
 
+	cil_hethum_hethumid = {
+		first_name = { name = name_hethum }
+		culture = armenian_culture
+		religion = miaphysite
+		adm = 9 dip = 26 mil = 10
+		birth_date = 1322.1.1 # Parents married 1321
+		death_date = 1331.1.1
+		birth = sis
+		father = cil_leo_iv
+		mother = cil_alids_of_korikos
+		dynasty = hetumids_dynasty
+		tag = CIL
+	}
+
 	# Other Hethumids
 
 	cil_oshin_of_korikos = {
@@ -80248,7 +80320,7 @@ character_db={
 		culture = arpitan
 		religion = catholic
 		estate = nobles_estate
-		adm = 24 dip = 42 mil = 68
+		adm = 39 dip = 39 mil = 66
 		birth_date = 1311.1.1
 		birth = delemont
 		father = bas_pierre_ii_grandson
@@ -91726,6 +91798,7 @@ character_db={
 		last_name = { name = Svyatoslavich }
 		culture = muscovite
 		religion = orthodox
+		adm = 55 dip = 75 mil = 50
 		birth_date = 1300.1.1
 		birth = bryansk
 		dynasty = rurikovich_dynasty
@@ -103755,5 +103828,17 @@ character_db={
 		birth = kaimana
 		dynasty = kaimana_dynasty
 		tag = KAM
+	}
+
+	lhj_naservand_ruler = { #Naservand family ruled Lahijan until the Kar-Kiya takeover in 1367-68; specific 1337 ruler unattested
+		first_name = { name = name_ali }
+		culture = gilak_culture
+		religion = sunni
+		estate = nobles_estate
+		adm = 40 dip = 60 mil = 35
+		birth_date = 1295.1.1 #Unknown
+		birth = lahijan
+		dynasty = naservand_dynasty
+		tag = LHJ
 	}
 }

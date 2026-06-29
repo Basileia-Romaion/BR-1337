@@ -323,10 +323,9 @@ br_italian_universities = {
 		}
 	}
 	#unlock_building = university #early unlock
-	global_nobles_max_literacy = 10
-	global_burghers_max_literacy = 10
-	global_clergy_max_literacy = 10
-	global_max_literacy = 5
+	global_nobles_max_literacy = 15
+	global_burghers_max_literacy = 15
+	global_clergy_max_literacy = 15
 	global_monthly_literacy = 0.02
 	requires = library_advance
 }
@@ -344,7 +343,7 @@ br_italy_great_families = {
 			culture = culture:romagnol
 		}
 	}
-	monthly_prestige = 0.1
+	monthly_prestige = 0.05
 	diplomatic_capacity_modifier = 0.1
 	requires = distribution_of_power_advance
 }
@@ -388,19 +387,19 @@ br_italian_condottieri = {
 	mercenary_units_preference_modifier = 0.25
 	requires = feudalism_advance
 }
-
-trade_companies_advance = {
+br_italian_competitive_trade_advance = {
 	age = age_1_traditions
 	icon = expanded_supply_trains
 	potential = {
 		OR = {
 			has_or_had_tag = VEN
 			has_or_had_tag = GEN
-			#has_or_had_tag = PIS
+			has_or_had_tag = PIS
 		}
 	}
-	unlock_subject_type = trade_company
+	#unlock_subject_type = trade_company
 	subject_income_modifier = 0.1
+	power_projection = 10
 
 	requires = colonies
 }

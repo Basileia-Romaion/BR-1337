@@ -70,13 +70,16 @@
 			has_reform = government_reform:br_special_merchant_republic
 		}
 		location_potential = {
+			#modifier:harbor_suitability > 10
 			OR = {
 				is_coastal = yes
 				is_port = yes
 			}
 			dominant_culture = { has_culture_group = culture_group:greek_group }
-			NOT = { 
+			NOR = { 
 				has_building = building_type:br_latin_trading_base
+				has_building = building_type:trade_office
+				has_building = building_type:overseas_trading_post
 			}
 		}
 		allow = {
@@ -97,7 +100,7 @@
 		modifier = {
 			building_owner_overlord_maritime_presence = 0.1
 			merchant_capacity_from_building = 0.5
-			merchant_power_from_building = 0.33
+			merchant_power_from_building = 0.25
 			
 			#Italian merchants settle in the new location # bonus to locaton owner
 			local_migration_attraction = 0.05
@@ -311,7 +314,7 @@
 			local_migration_attraction = 0.05
 			local_marketplace_building_levels = 5
 			local_market_access = 0.1
-			local_merchant_power = 1.0
+			local_merchant_power = 0.5
 			local_trades_per_burgher = 1.0
 			local_merchant_capacity = 1.0
 		}

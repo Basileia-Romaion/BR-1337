@@ -587,8 +587,9 @@ international_organization_manager = {
 			MOE THS PAF	THE HE1 ACH
 			MKB CHY #BNK
 			AN1 AN2 AN3 AN4 AN5
-			ZAZ RH1 RH2 RH3
-			AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N
+			#ZAZ RH1 RH2 RH3
+			AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N P3N
+			AN14 AN15 AN16
 
 			#Athos
 			HC0
@@ -693,7 +694,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 301.1.1
-		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN CIL }
+		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN CIL AN18 AN17 }
 		variables = { 
 			religion = religion:miaphysite
 			seat = location:ani #BR EDIT

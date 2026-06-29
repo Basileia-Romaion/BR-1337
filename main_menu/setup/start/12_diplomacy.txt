@@ -257,6 +257,7 @@ diplomacy_manager = {
 	dependency = { first = VEN second = TTE subject_type = vassal start_date = 1202.10.9 } #Trieste and Muggia swear loyalty to Dux Enrico Dandolo
 	dependency = { first = VTC second = CRT subject_type = vassal }
 	dependency = { first = VEN second = RAG subject_type = vassal }
+    dependency = { first = VEN second = DLM subject_type = vassal }
 
     dependency = { first = VEN second = VTC subject_type = trade_company }
     dependency = { first = GEN second = GTC subject_type = trade_company }
@@ -448,7 +449,7 @@ diplomacy_manager = {
     scripted_mutual = { first = BYZ second = THE type = alliance }
     dependency = { first = BYZ second = HC0 subject_type = br_stavropegion_subject } # Mount Athos
 
-    dependency = { first = BYZ second = FEO subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = FEO subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = THE subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = BYZ second = HE1 subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = BYZ second = S1Y subject_type = br_thema_subject } # Pronoïakon Ktéma
@@ -475,28 +476,34 @@ diplomacy_manager = {
     # state_bank
 
     #Sub dependencies
-    dependency = { first = HE1 second = MOE subject_type = br_thema_subject } # Pronoïakon Ktéma
-    dependency = { first = HE1 second = ACH subject_type = br_thema_subject } # Pronoïakon Ktéma
-    dependency = { first = THE second = B0R subject_type = br_thema_subject } # Pronoïakon Ktéma
-    dependency = { first = THE second = THS subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = HE1 second = MOE subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = HE1 second = ACH subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = EPI second = DYR subject_type = march } # Thema
 
-    dependency = { first = TRE second = AN6 subject_type = br_thema_subject } # Thema
-    dependency = { first = TRE second = P2N subject_type = br_thema_subject } # Thema
-    dependency = { first = AON second = AN11 subject_type = br_thema_subject } # Thema
-    dependency = { first = AON second = AN12 subject_type = br_thema_subject } # Thema
-    dependency = { first = AON second = AN4 subject_type = br_thema_subject } # Thema
+    dependency = { first = TRE second = AN6 subject_type = vassal } # Thema
+    dependency = { first = TRE second = P2N subject_type = vassal } # Thema
+    dependency = { first = TRE second = P3N subject_type = vassal } # Thema
+    dependency = { first = AON second = AN11 subject_type = vassal } # Thema
+    dependency = { first = AON second = AN12 subject_type = vassal } # Thema
+    dependency = { first = AON second = AN4 subject_type = vassal } # Thema
     #dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
-    dependency = { first = AN8 second = AN7 subject_type = br_thema_subject } # Thema
-    dependency = { first = AN10 second = AN2 subject_type = br_thema_subject } # Thema
-    dependency = { first = AN10 second = AN3 subject_type = br_thema_subject } # Thema
-    dependency = { first = ICO second = AN9 subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = AN8 second = AN7 subject_type = vassal } # Thema
+    dependency = { first = AN10 second = AN2 subject_type = vassal } # Thema
+    dependency = { first = AN10 second = AN3 subject_type = vassal } # Thema
+    dependency = { first = ICO second = AN9 subject_type = vassal } # Pronoïakon Ktéma
 
-    dependency = { first = AOI second = AN13 subject_type = br_thema_subject }
-    dependency = { first = AOI second = KYP subject_type = br_thema_subject }
+    dependency = { first = AN2 second = AN14 subject_type = vassal }
+    dependency = { first = AN2 second = AN15 subject_type = vassal }
+    dependency = { first = AN8 second = AN16 subject_type = vassal }
+    dependency = { first = AN8 second = AN18 subject_type = vassal }
+
+    dependency = { first = AOI second = AN13 subject_type = vassal }
+    dependency = { first = AOI second = KYP subject_type = vassal }
     dependency = { first = AOI second = OHS subject_type = br_stavropegion_subject }
-    dependency = { first = AOI second = AN5 subject_type = br_thema_subject } # Pronoïakon Ktéma
+    dependency = { first = AOI second = AN5 subject_type = vassal } # Pronoïakon Ktéma
 
     #scripted_mutual = { first = AN8 second = AN13 type = alliance }
 

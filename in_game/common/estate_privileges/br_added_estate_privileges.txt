@@ -531,10 +531,9 @@
 		}
 		country_modifier = {
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
-			global_crown_estate_power = 0.5
+			#global_crown_estate_power = 0.5
 			global_burghers_estate_power = 0.25
-			global_estate_max_tax = 0.15
-			estate_enrichment = -0.15
+			global_estate_max_tax = 0.1
 			global_trades_per_burgher = 1
 			export_efficiency = large_trade_efficiency_bonus
 			trade_importance_modifier = 0.25

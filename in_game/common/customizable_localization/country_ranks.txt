@@ -755,7 +755,7 @@
 			country_rank_is_empire = yes
 			culture = { has_culture_group = culture_group:greek_group }
 		}
-	}
+	}	
 
 	text = {
 		localization_key = rank_empire_turkish
@@ -870,6 +870,26 @@
 
 			country_rank_is_kingdom = yes
 			has_reform = government_reform:banking_country
+		}
+	}
+
+	text = {
+		localization_key = rank_kingdom_maori_native
+		trigger = {
+			country_rank_is_kingdom = yes
+			culture = culture:maori_culture
+			NOT = {
+				OR = {
+					religion.group = religion_group:christian
+					court_language ?= language:english_language
+					overlord ?= {
+						OR = {
+							culture ?= { language = language:english_language }
+							religion.group = religion_group:christian
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -1707,7 +1727,15 @@
 		}
 	}
 
+	# Horde
 
+	text = {
+		localization_key = rank_duchy_horde
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:steppe_horde
+		}
+	}
 
 	# Tribe
 	text = {
@@ -2384,6 +2412,16 @@
 
 			country_rank_is_county = yes
 			government_type = government_type:theocracy
+		}
+	}
+
+	# Horde
+
+	text = {
+		localization_key = rank_county_horde
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:steppe_horde
 		}
 	}
 

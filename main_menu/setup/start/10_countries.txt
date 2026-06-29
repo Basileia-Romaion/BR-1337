@@ -224,7 +224,6 @@ countries = {
 			laws = {
 				legal_code_law = dan_regional_law
 			}
-			
 
 			#Societal Values
 			centralization_vs_decentralization = 100
@@ -12170,14 +12169,11 @@ countries = {
 	VEN = {
 		own_control_core = {
 			chioggia venice mestre
-			pola rovinj pag zadar split brac
+			pola rovinj
 			pazin rijeka
 		}
 		
 		own_control_integrated = {
-			#CRO
-			sibenik kaseg knin novigrad crikvenica senj
-			krk makarska sinj
 			corfu
 		}
 
@@ -33097,7 +33093,7 @@ countries = {
 
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy"
+		include = "br_armenian_monarchy"
 		rebellion_demand = default_nationalist_demand
 		government = {
 			type = monarchy
@@ -33134,10 +33130,6 @@ countries = {
 			}
 		}
 		revolt = yes
-		tolerated_cultures = {
-			syriac_culture
-		}
-
 		country_rank = rank_duchy
 		capital = sis
 	}
@@ -33285,6 +33277,7 @@ countries = {
 			kahta samsat
 			trapessac
 			besni marash
+			artah idlib
 		}
 
 		include = "expl_eastern_europe"
@@ -33811,7 +33804,6 @@ countries = {
 		own_control_core = {
 			trebizond giresun gorele gumushane surmene
 			bayramlu
-			rize khupati
 		}
 
 		our_cores_conquered_by_others = {
@@ -54016,6 +54008,61 @@ countries = {
 		country_rank = rank_duchy
 	}
 
+	DLM = {
+		own_control_core = {
+			zadar split
+			sibenik kaseg knin novigrad crikvenica senj
+			krk makarska sinj pag brac
+		}
+
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_republic"
+		country_rank = rank_duchy
+		government = {
+			type = republic
+			heir_selection = lottery_election
+
+			ruler = random
+
+			laws = {
+				republican_foundation_law = republicanism_policy
+				heir_religion_law = heir_same_religion
+			}
+			reforms = {
+				merchant_republic
+				#state_backed_merchant_fleet
+			}
+
+			privilege = {
+
+				feudal_mercenary_contracts
+
+				urban_development_grants
+				allow_trade_center_sponsorship
+				guild_investments
+				
+				#burghers
+				sponsor_maritime_contracts
+				shipwright_contracts
+				market_fairs
+			
+				#peasants
+				peasants_allowed_weapons_privilege
+			}
+		}
+
+		capital = split
+
+		accepted_cultures = {
+			illyrikoi_greek_culture
+		}
+	}
+
+
 	
   #Balkan Tags
 	#Banks 
@@ -54464,6 +54511,7 @@ countries = {
 		}
 		our_cores_conquered_by_others = {
 			trapessac artah idlib latakia
+			ayas kars_armenia
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54853,15 +54901,10 @@ countries = {
 	
 	AN2 = {
 		own_control_core = {
-			sivas dasmenda deliktash hafik sarkisla divrigi
-			zara
-		}
-		own_control_integrated = {
-			ilic egin 
-			darende gurun
+			sivas deliktash hafik sarkisla dasmenda
 		}
 		our_cores_conquered_by_others = {
-			gemerek
+			gemerek ilic zara divrigi
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54884,6 +54927,131 @@ countries = {
 		}
 		liturgical_language = koine_dialect
 		capital = sivas
+	}
+
+	AN14 = {
+		own_control_core = {
+			divrigi egin
+		}
+		starting_technology_level = 3
+		include = "br_thema_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = divrigi
+	}
+
+	AN15 = {
+		own_control_core = {
+			darende gurun
+		}
+		starting_technology_level = 3
+		include = "br_thema_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = darende
+	}
+
+	AN16 = {
+		own_control_core = {
+			bogazliyan
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = bogazliyan
+	}
+
+	AN17 = {
+		own_control_core = {
+			ilic zara
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		rebellion_demand = default_nationalist_demand
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		revolt = yes
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1344.1.1
+			size = 1
+		}
+		capital = ilic
+	}
+
+	AN18 = {
+		own_control_core = {
+			hargan
+		}
+		our_cores_conquered_by_others = {
+			comana_cil anavarza sis caxud
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		rebellion_demand = default_nationalist_demand
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		revolt = yes
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1344.1.1
+			size = 1
+		}
+		capital = hargan
 	}
 	
 	AN3 = {
@@ -54923,7 +55091,7 @@ countries = {
 	AN4 = {
 		own_control_core = {
 			bozok candir dinek_keskin sorgun baliseyh
-			bogazliyan kirsehir hacibektas
+			kirsehir hacibektas
 			huseyinabad sungurlu
 			corum
 		}
@@ -55053,9 +55221,6 @@ countries = {
 			kayseri develi tomarza yahyali 
 			urgup 
 			gemerek
-		}
-		own_control_conquered = {
-			hargan
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55272,6 +55437,31 @@ countries = {
 		liturgical_language = koine_dialect
 		capital = sinop
 	}
+
+	P2N = {
+		own_control_core = {
+			rize khupati
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		tolerated_cultures = {
+			laz_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
+		liturgical_language = koine_dialect
+		capital = rize
+	}
 	
 
   #Armenian Tags
@@ -55281,61 +55471,16 @@ countries = {
 			mus 
 			varto malazgirt hinis tutak
 		}
-		
 		our_cores_conquered_by_others = {
 			hizan bahcesaray bitlis kulp sason genc
 		}
-		
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy_no_coast"
+		include = "br_armenian_monarchy"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
-			
-			reforms = {
-				autocracy
-				local_army_organization
-			}
-
-			traditionalist_vs_innovative = -75
-			spiritualist_vs_humanist = -75
-			aristocracy_vs_plutocracy = -75
-			belligerent_vs_conciliatory = 75
-			offensive_vs_defensive = 100
-			land_vs_naval = -100
-			individualism_vs_communalism = 50
-			outward_vs_inward = 75
-			
-			privilege = {
-				br_arm_nakharars
-				br_arm_highland_villages
-				#Nobles
-				noble_serfdom_rights
-				feudal_mercenary_contracts
-				primacy_of_nobility
-				#clergy
-				embellish_great_works_of_faith
-				clergy_powerful_dioceses
-				clergy_strengthen_faith
-				#burghers
-				land_of_commerce
-				#peasants
-				peasants_allowed_weapons_privilege
-				peasants_yeomanry
-
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-			}
 		}
-		
 		country_rank = rank_duchy
-		tolerated_cultures = {
-		}
-		
 		capital = mus
 	}
 	
@@ -55344,61 +55489,16 @@ countries = {
 			bayburt erzincan kelkit kemah
 			erzurum tercan
 		}
-		
 		our_cores_conquered_by_others = {
 			sebinkarahisar siran ilic
 		}
-		
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy_no_coast"
+		include = "br_armenian_monarchy"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
-			
-			reforms = {
-				autocracy
-				local_army_organization
-			}
-
-			traditionalist_vs_innovative = -75
-			spiritualist_vs_humanist = -75
-			aristocracy_vs_plutocracy = -75
-			belligerent_vs_conciliatory = 75
-			offensive_vs_defensive = 100
-			land_vs_naval = -100
-			individualism_vs_communalism = 50
-			outward_vs_inward = 75
-			
-			privilege = {
-				br_arm_nakharars
-				br_arm_highland_villages
-				#Nobles
-				noble_serfdom_rights
-				feudal_mercenary_contracts
-				primacy_of_nobility
-				#clergy
-				embellish_great_works_of_faith
-				clergy_powerful_dioceses
-				clergy_strengthen_faith
-				#burghers
-				land_of_commerce
-				#peasants
-				peasants_allowed_weapons_privilege
-				peasants_yeomanry
-
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-			}
 		}
-		
 		country_rank = rank_duchy
-		tolerated_cultures = {
-		}
-		
 		capital = erzurum
 	}
 	
@@ -55410,61 +55510,16 @@ countries = {
 			harput adakli keban palu
 			cemisgezek kuzucan pertek
 		}
-		
 		our_cores_conquered_by_others = {
 			divrigi egin
 		}
-		
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy_no_coast"
+		include = "br_armenian_monarchy"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
-			
-			reforms = {
-				autocracy
-				local_army_organization
-			}
-
-			traditionalist_vs_innovative = -75
-			spiritualist_vs_humanist = -75
-			aristocracy_vs_plutocracy = -75
-			belligerent_vs_conciliatory = 75
-			offensive_vs_defensive = 100
-			land_vs_naval = -100
-			individualism_vs_communalism = 50
-			outward_vs_inward = 75
-			
-			privilege = {
-				br_arm_nakharars
-				br_arm_highland_villages
-				#Nobles
-				noble_serfdom_rights
-				feudal_mercenary_contracts
-				primacy_of_nobility
-				#clergy
-				embellish_great_works_of_faith
-				clergy_powerful_dioceses
-				clergy_strengthen_faith
-				#burghers
-				land_of_commerce
-				#peasants
-				peasants_allowed_weapons_privilege
-				peasants_yeomanry
-
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-			}
 		}
-		
 		country_rank = rank_duchy
-		tolerated_cultures = {
-		}
-		
 		capital = malatya
 	}
 	
@@ -55472,60 +55527,16 @@ countries = {
 		own_control_core = {
 			van catak hosap tatvan ahlat bargiri ercis
 		}
-		
 		our_cores_conquered_by_others = {
 			mus hizan bahcesaray bitlis
 		}
-		
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy_no_coast"
+		include = "br_armenian_monarchy"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
-			
-			reforms = {
-				autocracy
-				local_army_organization
-			}
-
-			traditionalist_vs_innovative = -75
-			spiritualist_vs_humanist = -75
-			aristocracy_vs_plutocracy = -75
-			belligerent_vs_conciliatory = 75
-			offensive_vs_defensive = 100
-			land_vs_naval = -100
-			individualism_vs_communalism = 50
-			outward_vs_inward = 75
-			
-			privilege = {
-				#Nobles
-				noble_patronage_of_the_arts
-				noble_serfdom_rights
-				feudal_mercenary_contracts
-				primacy_of_nobility
-				#clergy
-				embellish_great_works_of_faith
-				clergy_powerful_dioceses
-				clergy_strengthen_faith
-				#burghers
-				land_of_commerce
-				#peasants
-				peasants_allowed_weapons_privilege
-				peasants_yeomanry
-
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-			}
 		}
-		
 		country_rank = rank_duchy
-		tolerated_cultures = {
-		}
-		
 		capital = van
 	}
 	
@@ -55538,58 +55549,14 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
-		include = "eastern_european_monarchy_no_coast"
+		include = "br_armenian_monarchy"
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler = random
-			
-			reforms = {
-				autocracy
-				local_army_organization
-			}
-
-			traditionalist_vs_innovative = -75
-			spiritualist_vs_humanist = -75
-			aristocracy_vs_plutocracy = -75
-			belligerent_vs_conciliatory = 75
-			offensive_vs_defensive = 100
-			land_vs_naval = -100
-			individualism_vs_communalism = 50
-			outward_vs_inward = 75
-			
-			privilege = {
-				#Nobles
-				noble_patronage_of_the_arts
-				noble_serfdom_rights
-				feudal_mercenary_contracts
-				primacy_of_nobility
-				auxilium_et_consilium
-				#clergy
-				embellish_great_works_of_faith
-				clergy_powerful_dioceses
-				clergy_strengthen_faith
-				religious_diplomats
-				#burghers
-				land_of_commerce
-				#peasants
-				peasants_allowed_weapons_privilege
-				peasants_yeomanry
-
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-			}
 		}
-		
 		country_rank = rank_duchy
 		accepted_cultures = {
 			georgian_culture
 		}
-		tolerated_cultures = {
-		}
-		
 		capital = ganja
 	}
 	
@@ -55614,7 +55581,7 @@ countries = {
 		#}
 		#starting_technology_level = 3
 		#include = "expl_christian_caucasus"
-		#include = "eastern_european_monarchy"
+		#include = "br_armenian_monarchy"
 		#government = {
 			#ruler = random
 		#}
@@ -56793,11 +56760,14 @@ countries = {
 	SY2 = {
 		own_control_core = {
 			beirut baalbek deir_qamar sidon tripoli_syria
-			damascus artah baniyas hama homs idlib jableh kafartab latakia masyaf nabek qusayr tartus
+			damascus baniyas hama homs jableh kafartab latakia masyaf nabek qusayr tartus
 			burraq jayrud qutayfah
 			bosra dara nawa salkhad suwayda irbid
 
 			jerusalem acre beersheba gaza hebron majdal nablus safed jaffa
+		}
+		our_cores_conquered_by_others = {
+			artah idlib
 		}
 		
 		include = "expl_muslim_mediterranean"
