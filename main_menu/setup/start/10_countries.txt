@@ -55140,37 +55140,6 @@ countries = {
 		capital = catak
 		religious_school = maturidi_school
 	}
-	
-	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium 
-		own_control_conquered = {
-			eskil obruk karapinar
-		}
-		starting_technology_level = 3
-		include = "expl_middle_east"
-		include = "muslim_monarchy_no_coast"
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = br_tourkoromaioi_rdm_character_2
-			ruler_term = { character = br_tourkoromaioi_rdm_character_2 start_date = 1329.9.25 }
-
-			reforms = {
-				br_sub_foideratoi_subject
-			}
-			privilege = {
-				br_turkoman_privilege
-				br_ere_foederati_privilege
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribal_autonomy
-				tribes_land_rights
-				tribes_pasture_access
-			}
-		}
-		capital = obruk
-		dynasty = bayindir_dynasty
-		religious_school = maturidi_school
-	}
 
 	AN3 = {
 		own_control_core = {
