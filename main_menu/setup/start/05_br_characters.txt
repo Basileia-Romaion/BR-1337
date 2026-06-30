@@ -1249,9 +1249,71 @@ character_db={
 		female = yes
 		birth_date = 1311.1.1
 		birth = ani
-		father = arm_zakare_iv
+		father = br_caucasian_rdm_character_4
 		dynasty = bagratuni_dynasty 
 		spouse = br_ere_rdm_character_28
+		tag = AN13
+	}
+
+ #Armenia
+	br_caucasian_rdm_character_3 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1260.1.1
+		birth = ani
+		dynasty = bagratuni_dynasty
+		tag = ARM
+	}
+	br_caucasian_rdm_character_4 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1289.1.1
+		birth = ani
+		father = br_caucasian_rdm_character_3
+		dynasty = bagratuni_dynasty
+		tag = ARM
+	}
+	br_caucasian_rdm_character_5 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1292.1.1
+		birth = ani
+		father = br_caucasian_rdm_character_3
+		dynasty = bagratuni_dynasty
+		tag = ARM
+	}
+	br_caucasian_rdm_character_6 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1308.1.1
+		birth = ani
+		father = br_caucasian_rdm_character_4
+		dynasty = bagratuni_dynasty 
+		tag = ARM
+	}
+	br_caucasian_rdm_character_7 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = miaphysite
+		birth_date = 1309.1.1
+		birth = ani
+		father = br_caucasian_rdm_character_4
+		dynasty = bagratuni_dynasty 
+		tag = ARM
+	}
+	br_caucasian_rdm_character_8 = {
+		first_name = { name = "random" }
+		culture = armenian_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1318.1.1
+		birth = ani
+		father = br_caucasian_rdm_character_4
+		dynasty = bagratuni_dynasty 
 		tag = AN13
 	}
 

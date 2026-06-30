@@ -128,10 +128,6 @@ diplomacy_manager = {
 	dependency = { first = GLH second = BRY subject_type = tributary }
 	dependency = { first = GLH second = CHR subject_type = tributary }
 	dependency = { first = GLH second = KIE subject_type = tributary }
-    dependency = { first = GLH second = RH3 subject_type = vassal }
-    dependency = { first = GLH second = ZAZ subject_type = vassal }
-    dependency = { first = GLH second = RH1 subject_type = vassal }
-    dependency = { first = GLH second = RH2 subject_type = vassal }
 
     #Central Asia
     dependency = { first = GLH second = G0L subject_type = vassal }
@@ -497,6 +493,8 @@ diplomacy_manager = {
 
     dependency = { first = AN2 second = AN14 subject_type = vassal }
     dependency = { first = AN2 second = AN15 subject_type = vassal }
+    dependency = { first = AN2 second = AN19 subject_type = vassal }
+    
     dependency = { first = AN8 second = AN16 subject_type = vassal }
     dependency = { first = AN8 second = AN18 subject_type = vassal }
 
@@ -539,6 +537,7 @@ diplomacy_manager = {
     dependency = { first = ARM second = KOG subject_type = vassal } #BR ADDED
     dependency = { first = ARM second = DER subject_type = vassal } #BR ADDED
     dependency = { first = ARM second = MES subject_type = vassal } #BR ADDED
+    dependency = { first = MES second = AN17 subject_type = vassal }
     dependency = { first = ARM second = VAN subject_type = vassal } #BR ADDED
     dependency = { first = ARM second = VDZ subject_type = vassal }
     scripted_mutual = { first = GEO second = ARM type = alliance }

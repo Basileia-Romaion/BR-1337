@@ -19,6 +19,13 @@ war_manager = {
 				reason = Instigator
 			}
 		}
+		attacker = {
+			country = AN18
+			request = {
+				caller = CIL
+				reason = Ally
+			}
+		}
 		defender = {
 			country = AN13
 			request = {
@@ -27,33 +34,6 @@ war_manager = {
 		}
 	}
 
-	civil_war = {
-		war_name = {
-			name = "CIVIL_WAR_NAME"
-			ordinal=1
-			first = {
-				name="AN17"
-			}
-			SECOND = {
-				name="AN2"
-			}
-		}
-		start_date = 1335.1.1
-		action = 1337.3.1
-		attacker = {
-			country = AN17
-			request = {
-				reason = Instigator
-			}
-		}
-		defender = {
-			country = AN2
-			request = {
-				reason = Target
-			}
-		}
-	}
-	
 	truce = { 
 		attacker = NSE
 		#

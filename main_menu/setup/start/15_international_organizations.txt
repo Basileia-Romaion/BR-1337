@@ -522,8 +522,7 @@ international_organization_manager = {
 			FMB GRS KAS KLN KZK MOG MSV PRK SZL UGL VLR VYA ZUB
 
 			#BR ADDED 
-			BRY KIE CHR TRB STS NVS RYL PRM VYT ZAZ # VOL HAL
-			RH1 RH2 RH3
+			BRY KIE CHR TRB STS NVS RYL PRM VYT # VOL HAL
 
 		}
 		tatar_overlord = {
@@ -589,7 +588,7 @@ international_organization_manager = {
 			AN1 AN2 AN3 AN4 AN5
 			#ZAZ RH1 RH2 RH3
 			AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N P3N
-			AN14 AN15 AN16
+			AN14 AN15 AN16 AN18 AN19
 
 			#Athos
 			HC0
@@ -694,7 +693,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 301.1.1
-		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN CIL AN18 AN17 }
+		members = { ARM ATZ KCN SYU VDZ MES KOG DER VAN GAN CIL AN18 AN17 AN19  }
 		variables = { 
 			religion = religion:miaphysite
 			seat = location:ani #BR EDIT

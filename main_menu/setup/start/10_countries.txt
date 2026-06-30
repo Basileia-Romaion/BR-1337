@@ -176,11 +176,8 @@ countries = {
 			size = 0.33
 		}
 		currency_data = {
-			gold = 500
-			prestige = 75
 			stability = 100
-			government_power = 100
-			army_tradition = 75
+			army_tradition = 100
 		}
 
 		accepted_cultures = { finnish gutnish }
@@ -4096,7 +4093,7 @@ countries = {
 			gold = 1500
 			stability = 100
 			prestige = 100
-			government_power = 75
+			government_power = 100
 			army_tradition = 100
 		}
 
@@ -4286,7 +4283,7 @@ countries = {
 			pontic_greek_culture
 		}
 		currency_data = {
-			gold = 2800
+			gold = 750
 		}
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -6202,6 +6199,7 @@ countries = {
 
 		#Delhi Setup to accurately portray the starting situation
 		currency_data = {
+			gold = 2500
 			stability = 15
 			prestige = 100
 			government_power = 40
@@ -9841,7 +9839,7 @@ countries = {
 		}
 		country_rank = rank_duchy
 		currency_data = {
-			gold = 2500
+			gold = 1000
 			prestige = 100
 			stability = 100
 			government_power = 100
@@ -10176,7 +10174,7 @@ countries = {
 		}
 		capital = genoa
 		currency_data = {
-			gold = 2500
+			gold = 1500
 			stability = 100
 			prestige = 100
 			government_power = 75
@@ -10713,10 +10711,10 @@ countries = {
 		dynasty = visconti_dynasty
 		country_rank = rank_duchy
 		currency_data = {
-			gold = 3500
+			gold = 1500
 			stability = 100
 			prestige = 100
-			government_power = 75
+			government_power = 100
 			army_tradition = 100
 		}
 	}
@@ -11150,7 +11148,7 @@ countries = {
 			neapolitan
 		}
 		currency_data = {
-			gold = 5000
+			gold = 2500
 			prestige = 100
 			stability = 100
 			government_power = 100
@@ -11388,7 +11386,7 @@ countries = {
 		}
 
 		currency_data = {
-			gold = 1500
+			gold = 1000
 			stability = 75
 			prestige = 75
 			government_power = 100
@@ -11472,10 +11470,7 @@ countries = {
 
 		}
 		currency_data = {
-			gold = 1500
-			prestige = 100
-			stability = 100
-			government_power = 100
+			gold = 750
 			navy_tradition = 50
 			army_tradition = 50
 		}
@@ -12295,7 +12290,7 @@ countries = {
 		#https://www.researchgate.net/publication/269643384_The_Venetian_Money_Market_Banks_Panics_and_the_Public_Debt_1200-1500
 		#https://www.jstor.org/stable/1882461
 		currency_data = {
-			gold = 4000
+			gold = 2000
 			prestige = 100
 			stability = 100
 			government_power = 100
@@ -12385,7 +12380,7 @@ countries = {
 		}
 
 		currency_data = {
-			gold = 1250
+			gold = 750
 		}
 
 		country_rank = rank_duchy
@@ -12512,100 +12507,6 @@ countries = {
 	}
 
 	#Balkans
-	HE0 = {
-		our_cores_conquered_by_others = {
-			chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
-			karpathos
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_indian_trade_route"
-		include = "br_pronoia_template"
-		government = {
-			privilege = {
-				#burghers
-				sponsor_maritime_contracts
-				shipwright_contracts
-			}
-
-			land_vs_naval = 75
-		}
-
-		tolerated_cultures = {
-			latinoi
-		}
-
-		country_rank = rank_duchy
-		liturgical_language = koine_dialect
-		capital = candia
-	}
-
-	HE1 = {
-		own_control_core = {
-			athens megara thebes atalanti livadeia
-			corinth damala ermioni xylokastro
-			gravia bodonitsa neopatras zetounion
-			salona loidoriki nafpaktos 
-		}
-		our_cores_conquered_by_others = {
-			negroponte kleisoura karystos kymi oreos eretreia
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "br_pronoia_template"
-		government = {
-			ruler = br_ere_rdm_character_96
-			ruler_term = { character = br_ere_rdm_character_96 start_date = 1329.9.25 }
-			#heir_selection = dynastic_elective_succession
-		}
-
-		tolerated_cultures = {
-			latinoi
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -5
-			government_power = -5
-			#inflation = 0.1
-			war_exhaustion = 4
-		}
-
-		country_rank = rank_duchy
-		liturgical_language = koine_dialect
-		capital = thebes
-	}
-
-	HC0 = {
-		own_control_core = {
-			mount_athos
-		}
-		
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "br_orthodox_abbey"
-		government = {
-			reforms = {
-				br_sub_religious_subject
-				enforce_religious_adherence
-				#administration_of_clerical_lands
-				#religious_laws_enforced
-			}
-		}
-		
-		country_rank = rank_county
-		court_language = koine_dialect
-		liturgical_language = koine_dialect
-
-		capital = mount_athos
-	} 
-
 
 	ACH = { #https://en.wikipedia.org/wiki/Principality_of_Achaea
 		own_control_core = {
@@ -12739,7 +12640,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 1250
+			gold = 750
 		}
 		culture = latinoi
 		accepted_cultures = {
@@ -12857,7 +12758,7 @@ countries = {
 		}
 
 		currency_data = {
-			gold = 1500
+			gold = 500
 		}
 		accepted_cultures = {
 			greek_culture
@@ -14749,11 +14650,7 @@ countries = {
 			size = 1
 		}
 		currency_data = {
-			gold = 1000
-			prestige = 100
-			stability = 100
-			government_power = 100
-			navy_tradition = 25
+			gold = 500
 			army_tradition = 100
 		}
 
@@ -15015,10 +14912,6 @@ countries = {
 		}
 		currency_data = {
 			gold = 750
-			prestige = 100
-			stability = 100
-			government_power = 100
-			navy_tradition = 25
 			army_tradition = 100
 		}
 		country_rank = rank_duchy #BR EDIT
@@ -15161,10 +15054,6 @@ countries = {
 		}
 		currency_data = {
 			gold = 1000
-			prestige = 100
-			stability = 100
-			government_power = 100
-			navy_tradition = 25
 			army_tradition = 100
 		}
 		ai_advance_preference_tags = {
@@ -15371,11 +15260,6 @@ countries = {
 			exploration = 5
 		}
 
-		currency_data = {
-			gold = 2000
-			prestige = 75
-			stability = 25
-		}
 		accepted_cultures = {
 			sephardi
 			zenati
@@ -18899,10 +18783,6 @@ countries = {
 		court_language = church_dialect
 
 		currency_data = {
-			gold = 500
-			prestige = 75
-			stability = 75
-			government_power = 75
 			army_tradition = 100
 		}
 
@@ -19453,7 +19333,7 @@ countries = {
 			greek_culture
 		}
 		currency_data = {
-			gold = 1500
+			gold = 500
 		}
 		court_language = venetian_dialect
 		capital = negroponte
@@ -19796,9 +19676,6 @@ countries = {
 		}
 		currency_data = {
 			gold = 1000
-			prestige = 100
-			stability = 100
-			government_power = 100
 			navy_tradition = 100
 			army_tradition = 100
 		}
@@ -33071,14 +32948,13 @@ countries = {
 	#Cilicia - CIL https://en.wikipedia.org/wiki/Armenian_Kingdom_of_Cilicia
 	CIL = {
 		own_control_core = {
-			kars_armenia
-			anavarza sis caxud
+			anavarza sis caxud molevon
 		}
 
 		our_cores_conquered_by_others = {
 			ayas 
-			corycus candir_cil molevon
-			adana
+			corycus candir_cil
+			kars_armenia adana
 			tarsus
 			kapan
 			silifke anamur ermenek mut
@@ -33997,10 +33873,7 @@ countries = {
 			size = 1
 		}
 		currency_data = {
-			gold = 2500
-			prestige = 100
-			stability = 100
-			government_power = 100
+			gold = 1500
 			army_tradition = 100
 		}
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
@@ -34691,8 +34564,8 @@ countries = {
 	#Döger - DGE
 	DGE = {
 		our_cores_conquered_by_others = {
-			raqqa  busayrah jabar madinat_far
-			urfa  birecik harran suruc viransehir  siverek
+			raqqa busayrah jabar madinat_far
+			urfa birecik harran suruc viransehir siverek
 		}
 
 		starting_technology_level = 3
@@ -41498,9 +41371,6 @@ countries = {
 		}
 		currency_data = {
 			gold = 500
-			prestige = 75
-			stability = 75
-			government_power = 75
 			army_tradition = 75
 		}
 
@@ -42080,9 +41950,6 @@ countries = {
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 500
-			prestige = 50
-			stability = 75
-			government_power = 75
 			army_tradition = 100
 		}
 	}
@@ -51399,9 +51266,11 @@ countries = {
 			ruler_term = { character = arm_zakare_iii start_date = 1250.1.1 end_date = 1261.1.1 regnal_number = 3 }
 			ruler_term = { character = arm_ivane_ii start_date = 1261.1.1 end_date = 1270.1.1 regnal_number = 2 }
 			ruler_term = { character = arm_shahnshah_ii start_date = 1270.1.1 end_date = 1320.1.1 regnal_number = 2 }
-			ruler_term = { character = arm_zakare_iv start_date = 1320.1.1 regnal_number = 4 }
+			ruler_term = { character = arm_zakare_iv start_date = 1320.1.1 end_date = 1330.1.1 regnal_number = 4 }
+			ruler_term = { character = br_caucasian_rdm_character_4 start_date = 1330.1.1}
 
-			ruler = arm_zakare_iv
+			ruler = br_caucasian_rdm_character_4
+			
 			reforms = {
 				autocracy
 				local_army_organization
@@ -53824,12 +53693,8 @@ countries = {
 			size = 1
 		}
 		currency_data = {
-			gold = 1500
-			prestige = 50
-			stability = 75
-			government_power = 75
+			gold = 750
 			navy_tradition = 75
-			army_tradition = 25
 		}
 		capital = palermo
 		dynasty = hafsid_dynasty
@@ -53911,12 +53776,8 @@ countries = {
 			outward_vs_inward = -100
 		}
 		currency_data = {
-			gold = 2500
-			prestige = 50
-			stability = 75
-			government_power = 100
+			gold = 500
 			navy_tradition = 100
-			army_tradition = 25
 		}
 		country_rank = rank_duchy
 	}
@@ -53998,12 +53859,8 @@ countries = {
 			outward_vs_inward = -100
 		}
 		currency_data = {
-			gold = 2500
-			prestige = 50
-			stability = 75
-			government_power = 100
+			gold = 500
 			navy_tradition = 100
-			army_tradition = 25
 		}
 		country_rank = rank_duchy
 	}
@@ -54014,42 +53871,39 @@ countries = {
 			sibenik kaseg knin novigrad crikvenica senj
 			krk makarska sinj pag brac
 		}
-
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
 		include = "catholic_republic"
 		country_rank = rank_duchy
 		government = {
 			type = republic
 			heir_selection = lottery_election
-
 			ruler = random
+
+			offensive_vs_defensive = 100
+			land_vs_naval = -25
 
 			laws = {
 				republican_foundation_law = republicanism_policy
 				heir_religion_law = heir_same_religion
 			}
+
 			reforms = {
 				merchant_republic
 				#state_backed_merchant_fleet
 			}
 
 			privilege = {
-
 				feudal_mercenary_contracts
 
-				urban_development_grants
-				allow_trade_center_sponsorship
-				guild_investments
-				
 				#burghers
 				sponsor_maritime_contracts
 				shipwright_contracts
 				market_fairs
-			
+				urban_development_grants
+				allow_trade_center_sponsorship
+				guild_investments
+
 				#peasants
 				peasants_allowed_weapons_privilege
 			}
@@ -54065,6 +53919,128 @@ countries = {
 
 	
   #Balkan Tags
+  HE0 = {
+		our_cores_conquered_by_others = {
+			chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
+			karpathos
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "br_pronoia_template"
+		government = {
+			privilege = {
+				#burghers
+				sponsor_maritime_contracts
+				shipwright_contracts
+			}
+
+			land_vs_naval = 75
+		}
+
+		tolerated_cultures = {
+			latinoi
+		}
+
+		country_rank = rank_duchy
+		liturgical_language = koine_dialect
+		capital = candia
+	}
+
+	HE1 = {
+		own_control_core = {
+			athens megara thebes atalanti livadeia
+			corinth damala ermioni xylokastro
+			gravia bodonitsa neopatras zetounion
+			salona loidoriki nafpaktos 
+		}
+		our_cores_conquered_by_others = {
+			negroponte kleisoura karystos kymi oreos eretreia
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "br_pronoia_template"
+		government = {
+			ruler = br_ere_rdm_character_96
+			ruler_term = { character = br_ere_rdm_character_96 start_date = 1329.9.25 }
+			#heir_selection = dynastic_elective_succession
+		}
+
+		tolerated_cultures = {
+			latinoi
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -5
+			government_power = -5
+			#inflation = 0.1
+			war_exhaustion = 4
+		}
+
+		country_rank = rank_duchy
+		liturgical_language = koine_dialect
+		capital = thebes
+	}
+
+	HE2 = {
+		type = pop
+		add_pops_from_locations = {
+			tripolitsa veligosti karytaina
+			monemvasia mystras oitylo leuktron astros
+			argos nafplio
+			damala ermioni kalamata kyparissia
+			andritsaina pontikokastro andravida corinth
+			chalandritsa patras vostitsa kalavryta xylokastro
+			kythira modon
+		}
+
+
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "eurasian_orthodox_tribe"
+
+		include = "eurasian_tribe"
+		starting_technology_level = 3
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+			privilege = {
+				peasants_allowed_weapons_privilege
+				tribes_land_rights
+				tribes_pasture_access
+				br_slavic_tribes_privilege
+			}
+		}
+	}
+
+	HC0 = {
+		own_control_core = {
+			mount_athos
+		}
+		
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "br_orthodox_abbey"
+		government = {
+			reforms = {
+				br_sub_religious_subject
+				enforce_religious_adherence
+				#administration_of_clerical_lands
+				#religious_laws_enforced
+			}
+		}
+		
+		country_rank = rank_county
+		court_language = koine_dialect
+		liturgical_language = koine_dialect
+
+		capital = mount_athos
+	} 
+
+
 	#Banks 
 	BNK = {	#Bankaropoulos
 		type = building
@@ -54092,9 +54068,7 @@ countries = {
 		}
 		country_rank = rank_county
 		currency_data = {
-			gold = 5000
-			stability = 100
-			government_power = 100
+			gold = 500
 		}
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -54127,9 +54101,7 @@ countries = {
 		}
 		country_rank = rank_county
 		currency_data = {
-			gold = 5000
-			stability = 100
-			government_power = 100
+			gold = 500
 		}
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -54162,9 +54134,7 @@ countries = {
 		}
 		country_rank = rank_county
 		currency_data = {
-			gold = 5000
-			stability = 100
-			government_power = 100
+			gold = 500
 		}
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -54508,10 +54478,10 @@ countries = {
 	AOI = {
 		own_control_core = {
 			antioch arsuz iskenderun
+			ayas kars_armenia
 		}
 		our_cores_conquered_by_others = {
 			trapessac artah idlib latakia
-			ayas kars_armenia
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54529,7 +54499,7 @@ countries = {
 			syriac_culture
 		}
 		currency_data = {
-			gold = 1500
+			gold = 1250
 			prestige = 50
 			stability = 100
 			government_power = 100
@@ -54746,9 +54716,6 @@ countries = {
 			ruler = random
 		}
 		currency_data = {
-			gold = 1000
-			stability = 75
-			government_power = 50
 			navy_tradition = 100
 		}
 		country_rank = rank_duchy
@@ -55009,7 +54976,7 @@ countries = {
 
 	AN17 = {
 		own_control_core = {
-			ilic zara
+			arapgir arguvan
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55026,7 +54993,7 @@ countries = {
 			date = 1344.1.1
 			size = 1
 		}
-		capital = ilic
+		capital = arapgir
 	}
 
 	AN18 = {
@@ -55052,6 +55019,23 @@ countries = {
 			size = 1
 		}
 		capital = hargan
+	}
+
+	AN19 = {
+		own_control_core = {
+			ilic zara
+		}
+		our_cores_conquered_by_others = {
+			kemah
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = kemah
 	}
 	
 	AN3 = {
@@ -55375,12 +55359,11 @@ countries = {
 		own_control_core = {
 			adana 
 			tarsus
-			ayas 
-			corycus candir_cil molevon
+			corycus candir_cil
 		}
 		our_cores_conquered_by_others = {
-			kars_armenia
-			anavarza sis caxud
+			kars_armenia ayas
+			anavarza
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55438,7 +55421,7 @@ countries = {
 		capital = sinop
 	}
 
-	P2N = {
+	P3N = {
 		own_control_core = {
 			rize khupati
 		}
@@ -55486,11 +55469,11 @@ countries = {
 	
 	KOG = {
 		own_control_core = {
-			bayburt erzincan kelkit kemah
+			bayburt erzincan kelkit
 			erzurum tercan
 		}
 		our_cores_conquered_by_others = {
-			sebinkarahisar siran ilic
+			sebinkarahisar siran ilic kemah
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55504,14 +55487,13 @@ countries = {
 	
 	MES = {
 		own_control_core = {
-			arapgir arguvan
 			malatya
 			genc
 			harput adakli keban palu
 			cemisgezek kuzucan pertek
 		}
 		our_cores_conquered_by_others = {
-			divrigi egin
+			divrigi egin arapgir arguvan
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55663,10 +55645,8 @@ countries = {
 
 		}
 		currency_data = {
-			gold = 800
-			stability = 100
+			gold = 750
 			army_tradition = 100
-			government_power = 100
 		}
 		accepted_cultures = { gothic_culture }
 		liturgical_language = koine_dialect
@@ -56113,8 +56093,6 @@ countries = {
 		currency_data = {
 			gold = 2250
 			prestige = 100
-			stability = 75
-			government_power = 75
 			army_tradition = 100
 		}
 	}

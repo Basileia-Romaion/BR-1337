@@ -9,72 +9,61 @@
 
 DYR = {
 	color = rgb { 185 125 150 }
-
 	culture_definition = illyrikoi_greek_culture
 	religion_definition = orthodox
 }
 
-
 #Anatolia
 ANA = {
 	color = rgb { 205 38 50 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 ICO = {
 	color = rgb { 155 58 50 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 AON = {
 	color = rgb { 175 38 60 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 KAP = {
 	color = rgb { 150 38 75 }
-
 	culture_definition = cappadocian_greek_culture
 	religion_definition = orthodox
 }
 
 PAF = {
 	color = rgb { 145 99 158 }
-
 	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
 }
 
 K1B = {
 	color = rgb { 95 18 145 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 S1Y = {
 	color = rgb { 125 98 45 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 B0R = {
 	color = rgb { 95 78 85 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 A1G = {
 	color = rgb { 85 28 145 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
@@ -82,35 +71,30 @@ A1G = {
 #Armenia
 DER = {
 	color = rgb { 95 59 148 }
-
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 KOG = {
 	color = rgb { 127 78 118 }
-
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 MES = {
 	color = rgb { 137 48 88 }
-
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 VAN = {
 	color = rgb { 137 68 98 }
-
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 GAN = {
 	color = rgb { 157 58 98 }
-
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
@@ -118,217 +102,204 @@ GAN = {
 #Balkans
 B0L = {
 	color = rgb { 23 169 115 }
-
 	culture_definition = boulgaroi
 	religion_definition = orthodox
 }
 
 B1L = {
 	color = rgb { 53 129 55 }
-
 	culture_definition = bulgarian
 	religion_definition = orthodox
 }
 
 B2L = {
 	color = rgb { 73 109 75 }
-
 	culture_definition = bulgarian
 	religion_definition = orthodox
 }
 
 B3L = {
 	color = rgb { 123 79 65 }
-
 	culture_definition = boulgaroi
 	religion_definition = orthodox
 }
 
 B4L = {
 	color = rgb { 63 69 95 }
-
 	culture_definition = boulgaroi
 	religion_definition = orthodox
 }
 
 B5L = {
 	color = rgb { 113 49 95 }
-
 	culture_definition = boulgaroi
 	religion_definition = orthodox
 }
 
 B6L = {
 	color = rgb { 133 79 95 }
-
 	culture_definition = boulgaroi
 	religion_definition = orthodox
 }
 
 HE0 = {
 	color = rgb { 128  70  150 }
-	
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 HE1 = {
 	color = rgb { 61 88 184 }
-
 	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+HE2 = {
+	color = rgb { 61 188 124 }
+	culture_definition = sclavene
 	religion_definition = orthodox
 }
 
 HC0 = { #Mount Athos
 	color = rgb { 77 88 84 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 KYP = {
 	color = rgb { 185 78 130 }
-
 	culture_definition = greek_culture
 	religion_definition = orthodox
 }
 
 AN0 = {
 	color = rgb { 165 85 135 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN1 = {
 	color = rgb { 155 96 54 }
-
 	culture_definition = cappadocian_greek_culture
 	religion_definition = orthodox
 }
 
 AN2 = {
 	color = rgb { 145 75 75 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN3 = {
 	color = rgb { 145 60 65 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN4 = {
 	color = rgb { 155 45 75 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 AN5 = {
 	color = rgb { 165 95 135 }
-
 	culture_definition = kilikioi_greek_culture
 	religion_definition = orthodox
 }
 
 AN6 = {
 	color = rgb { 132 128 165 }
-
 	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
 }
 
 AN7 = {
 	color = rgb { 162 66 89 }
-
 	culture_definition = cappadocian_greek_culture
 	religion_definition = orthodox
 }
 
 AN8 = {
 	color = rgb { 157 71 55 }
-
 	culture_definition = cappadocian_greek_culture
 	religion_definition = orthodox
 }
 
 AN9 = {
 	color = rgb { 168 42 78 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 AN10 = {
 	color = rgb { 148 50 77 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN11 = {
 	color = rgb { 138 32 68 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 AN12 = {
 	color = rgb { 148 42 78 }
-
 	culture_definition = anatolian_greek_culture
 	religion_definition = orthodox
 }
 
 AN13 = {
 	color = rgb { 154 62 92 }
-
 	culture_definition = kilikioi_greek_culture
 	religion_definition = orthodox
 }
 
 AN14 = {
 	color = rgb { 118 72 67 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN15 = {
 	color = rgb { 102 78 62 }
-
 	culture_definition = armenikon_greek_culture
 	religion_definition = orthodox
 }
 
 AN16 = {
-	color = rgb { 102 78 82 }
-
-	culture_definition = armenikon_greek_culture
+	color = rgb { 122 78 82 }
+	culture_definition = cappadocian_greek_culture
 	religion_definition = orthodox
 }
 
 AN17 = {
-	color = rgb { 95 59 148 }
-
+	color = rgb { 161 39 118 }
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 AN18 = {
-	color = rgb { 95 59 148 }
+	color = rgb { 162 22 98 }
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
 
+AN19 = {
+	color = rgb { 140 38 70 }
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+AN20 = {
+	color = rgb { 142 38 72 }
 	culture_definition = armenian_culture
 	religion_definition = miaphysite
 }
 
 P0N = {
 	color = rgb { 96 88 148 }
-
 	culture_definition = pontic_greek_culture
 	religion_definition = orthodox
 }

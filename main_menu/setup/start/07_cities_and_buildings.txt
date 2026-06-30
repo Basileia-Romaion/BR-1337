@@ -5273,17 +5273,17 @@ building_manager = {
 	charcoal_maker = { tag = HUN level = 1 location = hont }
 	charcoal_maker = { tag = HUN level = 1 location = nitra }
 	
+	irrigation_systems = { tag = BYZ level = 1 location = bursa }
+	irrigation_systems = { tag = BYZ level = 1 location = iznik }
+	irrigation_systems = { tag = HE1 level = 1 location = thebes }
+	irrigation_systems = { tag = AO1 level = 1 location = antioch }
+	irrigation_systems = { tag = PAP level = 2 location = rome }
 
 	#Naval centers
 	lazaretto = { tag = BYZ level = 1 location = constantinople }
 	port_authority = { tag = BYZ level = 1 location = constantinople }
 	lazaretto = { tag = BYZ level = 1 location = smyrna }
 	lazaretto = { tag = BYZ level = 1 location = izmit }
-	irrigation_systems = { tag = BYZ level = 1 location = bursa }
-	irrigation_systems = { tag = BYZ level = 1 location = iznik }
-	irrigation_systems = { tag = HE1 level = 1 location = thebes }
-	irrigation_systems = { tag = AO1 level = 1 location = antioch }
-	irrigation_systems = { tag = PAP level = 2 location = rome }
 	lazaretto = { tag = BYZ level = 1 location = bursa }
 	#coastal_fort  = { tag = VEN level = 1 location = venice }
 	lazaretto = { tag = VEN level = 1 location = venice }

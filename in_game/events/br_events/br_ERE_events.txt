@@ -213,7 +213,7 @@ br_ere_events.1 = {
 				limit = { country_exists = c:AN16 }
 				c:AN16 = {
 					make_subject_of = {
-						target = c:AN2
+						target = c:AN8
 						type = subject_type:pronoia
 					}
 				}

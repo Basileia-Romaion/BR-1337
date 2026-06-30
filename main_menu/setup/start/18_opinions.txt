@@ -292,12 +292,6 @@ diplomacy_manager = {
 	opinion = { first = TUR second = ATQ type = left_empire }
 	opinion = { first = TUR second = DUL type = left_empire }
 
-	opinion = { first = GLH second = ZAZ type = left_empire }
-	opinion = { first = GLH second = RH0 type = left_empire }
-	opinion = { first = GLH second = RH1 type = left_empire }
-	opinion = { first = GLH second = RH2 type = left_empire }
-	opinion = { first = GLH second = RH3 type = left_empire }
-
 	opinion = { first = MAM second = VEN type = opinion_military_aid }
 	opinion = { first = MAM second = VTC type = opinion_military_aid }
 	opinion = { first = VEN second = MAM type = opinion_traders_in_x }
