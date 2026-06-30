@@ -1058,7 +1058,6 @@
 		icon = br_turkoman_privilege #tribes_tribal_levies
 		
 		potential = {
-			religion ?= { group ?= religion_group:muslim }
 			any_pop = { 
 				OR = {
 					culture = { has_culture_group = culture_group:turkic_group }

@@ -1317,6 +1317,90 @@ character_db={
 		tag = AN13
 	}
 
+ #Tourkopouloi
+	br_tourkoromaioi_rdm_character_1 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1260.1.1
+		birth = obruk
+		dynasty = bayindir_dynasty
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_2 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1289.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_1
+		dynasty = bayindir_dynasty
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_3 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1292.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_1
+		dynasty = bayindir_dynasty
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_4 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1308.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_2
+		dynasty = bayindir_dynasty 
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_5 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1309.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_2
+		dynasty = bayindir_dynasty 
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_6 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1318.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_2
+		dynasty = bayindir_dynasty 
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_7 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1320.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_2
+		dynasty = bayindir_dynasty 
+		tag = AN24
+	}
+	br_tourkoromaioi_rdm_character_8 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1322.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_2
+		dynasty = bayindir_dynasty 
+		tag = AN24
+	}
+
 
 #Naples
  #Hauteville

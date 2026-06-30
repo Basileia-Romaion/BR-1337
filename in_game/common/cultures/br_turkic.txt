@@ -33,3 +33,28 @@ REPLACE_OR_CREATE:turkish_culture = { #https://en.wikipedia.org/wiki/Turkish_peo
 
 	dynasty_name_type = descendant	
 }
+
+REPLACE_OR_CREATE:turkoman_culture = {
+	language = turkmen_dialect
+
+	color = color_culture_turkoman
+
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		br_tourkoromaioi_culture = kindred
+	}
+
+	culture_groups = {
+		turkic_group
+	}
+
+	goods_demand_modifier = {
+		tea = 2
+		saffron = 1.5
+		legumes = 1.2
+		livestock = 1.5
+		olives = 1.2
+	}
+}
+

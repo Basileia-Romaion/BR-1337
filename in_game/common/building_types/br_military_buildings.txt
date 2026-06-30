@@ -332,42 +332,11 @@ br_soldier_farmers = { #thema estates
 	
 	possible_production_methods = {
 		rural_weaponmaker
-	}
-	unique_production_methods = {
-		br_soldier_farmers_cattle_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.5
-			produced = livestock
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_wool_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.5
-			produced = wool
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_sturdy_crops_maintenance = { 
-			tools = 0.025
-			clay = 1.0
-			produced = millet
-			output = 1
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_horses_maintenance = {
-			produced = horses
-			output = 0.5
-			millet = 0.5
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
+		br_soldier_farmers_cattle_maintenance
+		br_soldier_farmers_wool_maintenance
+		br_soldier_farmers_sturdy_crops_maintenance
+		br_soldier_farmers_wheat_maintenance
+		br_soldier_farmers_horses_maintenance
 	}
 
 	country_potential = {
@@ -449,7 +418,7 @@ br_foederati_grant = { #Foederati Settlements
 	is_foreign = no
 	max_levels = 1
 	pop_type = tribesmen
-	icon = eghabho_nore_mansion
+	icon = pomor_outpost #eghabho_nore_mansion
 
 	category = village_category
 	#estate = peasants_estate
@@ -484,40 +453,17 @@ br_foederati_grant = { #Foederati Settlements
 
 	build_time = village_build_time
 	
-	unique_production_methods = {
-		br_soldier_farmers_cattle_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.5
-			produced = livestock
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_wool_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.25
-			produced = wool
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_sturdy_crops_maintenance = { 
-			produced = millet
-			output = 1
-			tools = 0.1
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_soldier_farmers_horses_maintenance = {
-			produced = horses
-			output = 0.5
-			millet = 0.5
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
+	possible_production_methods = {
+		forest_tannery
+		hunting_lodges
+		rural_millet_brewery
+		rural_weaponmaker
+		rural_blacksmith
+		br_soldier_farmers_cattle_maintenance
+		br_soldier_farmers_wool_maintenance
+		br_soldier_farmers_sturdy_crops_maintenance
+		br_soldier_farmers_wheat_maintenance
+		br_soldier_farmers_horses_maintenance
 	}
 
 	remove_if = {
@@ -804,40 +750,13 @@ br_stratiotikon_thema_estate = { #Military Theme
 
 	build_time = village_build_time
 	
-	unique_production_methods = {
-		br_stratiotikon_thema_cattle_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.65
-			produced = livestock
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_stratiotikon_thema_wool_maintenance = {
-			tools = 0.025
-			clay = 1.0
-			output = 0.35
-			produced = wool
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_stratiotikon_thema_sturdy_crops_maintenance = { 
-			produced = millet
-			output = 1
-			tools = 0.1
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
-
-		br_stratiotikon_thema_horses_maintenance = {
-			produced = horses
-			output = 0.5
-			millet = 0.5
-			debug_max_profit = rural_profit_margin
-			category = building_maintenance
-		}
+	possible_production_methods = {
+		rural_weaponmaker
+		br_soldier_farmers_cattle_maintenance
+		br_soldier_farmers_wool_maintenance
+		br_soldier_farmers_sturdy_crops_maintenance
+		br_soldier_farmers_wheat_maintenance
+		br_soldier_farmers_horses_maintenance
 	}
 
 	country_potential = {

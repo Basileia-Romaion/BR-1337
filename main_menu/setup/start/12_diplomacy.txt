@@ -490,6 +490,7 @@ diplomacy_manager = {
     dependency = { first = AN10 second = AN2 subject_type = vassal } # Thema
     dependency = { first = AN10 second = AN3 subject_type = vassal } # Thema
     dependency = { first = ICO second = AN9 subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = ICO second = AN24 subject_type = vassal }
 
     dependency = { first = AN2 second = AN14 subject_type = vassal }
     dependency = { first = AN2 second = AN15 subject_type = vassal }

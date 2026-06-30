@@ -1,0 +1,45 @@
+﻿
+br_soldier_farmers_cattle_maintenance = {
+	tools = 0.025
+	clay = 0.75
+	output = 0.5
+	produced = livestock
+	debug_max_profit = rural_profit_margin
+	category = building_maintenance
+}
+
+br_soldier_farmers_wool_maintenance = {
+	tools = 0.025
+	clay = 0.75
+	output = 0.5
+	produced = wool
+	debug_max_profit = rural_profit_margin
+	category = building_maintenance
+}
+
+br_soldier_farmers_sturdy_crops_maintenance = { 
+	tools = 0.025
+	clay = 0.75
+	produced = millet
+	output = 1
+	debug_max_profit = rural_profit_margin
+	category = building_maintenance
+}
+
+br_soldier_farmers_wheat_maintenance = { 
+	tools = 0.025
+	clay = 0.75
+	produced = wheat
+	output = 1
+	debug_max_profit = rural_profit_margin
+	category = building_maintenance
+}
+
+br_soldier_farmers_horses_maintenance = {
+	tools = 0.025
+	clay = 0.75
+	produced = horses
+	output = 0.5
+	debug_max_profit = rural_profit_margin
+	category = building_maintenance
+}

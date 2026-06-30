@@ -40,6 +40,16 @@
 		}
 	}
 	text = {
+		localization_key = country_rank_br_foideratoi
+		trigger = {
+			AND = {
+				#country_rank = country_rank:rank_county
+				has_reform = government_reform:br_sub_foideratoi_subject
+				has_culture_group = culture_group:roman_group
+			}
+		}
+	}
+	text = {
 		localization_key = country_rank_br_kleisoura
 		trigger = {
 			AND = {

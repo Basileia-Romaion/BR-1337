@@ -671,6 +671,29 @@ br_country_startup.2 = { #units added
 			}
 
 		}
+		c:AN24 ?= {
+			capital = {
+				create_sub_unit = unit_type:a_steppe_horse_archers
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_weak_penalty
+				every_pop = {
+					limit = {
+						culture = culture:turkoman_culture
+					}
+					change_pop_culture = culture:br_tourkoromaioi_culture
+				}
+				#every_pop = {
+				#	limit = {
+				#		religion = religion:sunni
+				#	}
+				#	change_pop_religion = religion:orthodox
+				#}
+			}
+		}
 
 	}
 

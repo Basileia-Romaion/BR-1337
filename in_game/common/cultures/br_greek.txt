@@ -457,7 +457,7 @@ armenikon_greek_culture = { #BR addition
 
 br_tourkoromaioi_culture = {
 	language = tourkopoulika_dialect
-	color = rgb { 150 110 180 }
+	color = rgb { 150 140 180 }
 	tags = { greek_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
 
 	opinions = {
@@ -473,6 +473,10 @@ br_tourkoromaioi_culture = {
 		livestock = 1.5
 		olives = 1.2
 	}
+	
+	use_patronym = yes
+
+	dynasty_name_type = descendant	
 }
 
 #bank cultures 100% fictional
