@@ -535,9 +535,16 @@ diplomacy_manager = {
 
     #Anatolia
     dependency = { first = ARM second = KOG subject_type = vassal } #BR ADDED
+    dependency = { first = KOG second = AN22 subject_type = vassal }
+    dependency = { first = KOG second = AN23 subject_type = vassal }
+
     dependency = { first = ARM second = DER subject_type = vassal } #BR ADDED
+
     dependency = { first = ARM second = MES subject_type = vassal } #BR ADDED
     dependency = { first = MES second = AN17 subject_type = vassal }
+    dependency = { first = MES second = AN20 subject_type = vassal }
+    dependency = { first = MES second = AN21 subject_type = vassal }
+    
     dependency = { first = ARM second = VAN subject_type = vassal } #BR ADDED
     dependency = { first = ARM second = VDZ subject_type = vassal }
     scripted_mutual = { first = GEO second = ARM type = alliance }
@@ -674,13 +681,15 @@ diplomacy_manager = {
 
     dependency = { first = ATQ second = ZRQ subject_type = vassal }
     dependency = { first = ATQ second = HZR subject_type = vassal }
-    dependency = { first = ATQ second = EGL subject_type = vassal }
     dependency = { first = ATQ second = DIL subject_type = vassal }
     dependency = { first = ATQ second = BIT subject_type = vassal }
     dependency = { first = ATQ second = HSN subject_type = vassal }
     dependency = { first = ATQ second = BHT subject_type = vassal }
     dependency = { first = ATQ second = HZN subject_type = vassal }
     dependency = { first = ATQ second = DUL subject_type = vassal }
+
+    dependency = { first = ATQ second = DGE subject_type = uc_bey }
+    dependency = { first = DGE second = EGL subject_type = vassal }
 
     scripted_mutual = { first = MKW second = ZZR type = alliance }
 

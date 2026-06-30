@@ -13,6 +13,15 @@ current_age = age_1_traditions
 # our_cores_conquered_by_others
 # revolt = yes
 
+#rebellion_demand = default_nationalist_demand
+#revolt = yes
+#timed_modifier = {
+#	modifier = "br_levy_size_modifier"
+#	start_date = 1333.1.1
+#	date = 1344.1.1
+#	size = 1
+#}
+
 countries = {
 	countries = {
 
@@ -4060,7 +4069,6 @@ countries = {
 				dhimmi_military_service
 				dhimmi_traditions
 				dhimmi_administrative_posts
-				dharmic_dhimmi_communities
 				dhimmi_land_rights
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
@@ -6175,6 +6183,7 @@ countries = {
 
 				#Dhimmi
 				dhimmi_land_rights
+				dharmic_dhimmi_communities
 				dhimmi_administrative_posts
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
@@ -15224,7 +15233,6 @@ countries = {
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
@@ -22988,7 +22996,6 @@ countries = {
 				dhimmi_land_rights
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
@@ -32864,8 +32871,7 @@ countries = {
 			raqqa  busayrah jabar madinat_far
 			urfa birecik harran suruc viransehir siverek
 			barqaid sinjar bara_iraq nusaybin ras_ayn
-			diyarbekir ergani
-			cermik
+			diyarbekir
 			jabbul al_bab manbij maskanah dabiq aleppo zardana marrat
 			khanaser qastal salamiyya
 			ithriya sukhnah taybah
@@ -33197,7 +33203,6 @@ countries = {
 				dhimmi_land_rights
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
@@ -33409,8 +33414,7 @@ countries = {
 	#Egil - EGL
 	EGL = {
 		own_control_core = {
-			sivrice egil
-			gerger
+			sivrice gerger
 		}
 
 		include = "expl_middle_east"
@@ -33483,7 +33487,7 @@ countries = {
 	#Hazro - HZR
 	HZR = {
 		own_control_core = {
-			hazro heni kulp sason
+			hazro kulp sason
 		}
 
 		include = "expl_middle_east"
@@ -33823,7 +33827,6 @@ countries = {
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				
 				#Tribes
 				tribes_tribal_levies
@@ -34563,9 +34566,12 @@ countries = {
 
 	#Döger - DGE
 	DGE = {
-		our_cores_conquered_by_others = {
-			raqqa busayrah jabar madinat_far
-			urfa birecik harran suruc viransehir siverek
+		type = army
+		own_control_core = {
+			ergani cermik egil heni
+		}
+		own_control_conquered = {
+			harput keban palu cemisgezek pertek
 		}
 
 		starting_technology_level = 3
@@ -34575,14 +34581,26 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+
+			privilege = {
+				br_ghazi_privilege
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
+				
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribal_autonomy
+				tribes_land_rights
+				tribes_pasture_access
+			}
+
 		}
 
-		capital = urfa
+		capital = cermik
 		dynasty = doger_dynasty
 
 		tolerated_cultures = {
-			syriac_culture
-			iraqi_culture
+			kurdish_culture
 		}
 		religious_school = hanafi_school
 		government = { mysticism_vs_jurisprudence = -15 }
@@ -53668,7 +53686,6 @@ countries = {
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
@@ -54590,8 +54607,10 @@ countries = {
 
 	ICO = {
 		own_control_core = {
-			konya hatunsaray karapinar ladik larende pirloganda
-			obruk altinekin cumra
+			konya hatunsaray ladik larende pirloganda cumra altinekin
+		}
+		our_cores_conquered_by_others = {
+			obruk karapinar
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54974,29 +54993,21 @@ countries = {
 		capital = bogazliyan
 	}
 
-	AN17 = {
+	AN17 = { #small armenian principality 
 		own_control_core = {
 			arapgir arguvan
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
 		include = "br_armenian_monarchy"
-		rebellion_demand = default_nationalist_demand
 		government = {
 			ruler = random
 		}
 		country_rank = rank_county
-		revolt = yes
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1344.1.1
-			size = 1
-		}
 		capital = arapgir
 	}
 
-	AN18 = {
+	AN18 = { #small armenian principality 
 		own_control_core = {
 			hargan
 		}
@@ -55006,22 +55017,13 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
 		include = "br_armenian_monarchy"
-		rebellion_demand = default_nationalist_demand
 		government = {
 			ruler = random
 		}
 		country_rank = rank_county
-		revolt = yes
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1344.1.1
-			size = 1
-		}
 		capital = hargan
 	}
-
-	AN19 = {
+	AN19 = { #small armenian principality 
 		own_control_core = {
 			ilic zara
 		}
@@ -55036,6 +55038,125 @@ countries = {
 		}
 		country_rank = rank_county
 		capital = kemah
+	}
+	AN20 = { #small armenian principality 
+		own_control_core = {
+			adakli genc bingol
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = genc
+	}
+	AN21 = { #small armenian principality 
+		own_control_core = {
+			kuzucan
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = kuzucan
+	}
+	AN22 = { #small armenian principality 
+		own_control_core = {
+			kemah erzincan
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = erzincan
+	}
+	AN23 = { #small armenian principality 
+		own_control_core = {
+			bayburt kelkit
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = erzincan
+	}
+
+	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium 
+		own_control_conquered = {
+			eskil obruk karapinar
+		}
+		starting_technology_level = 3
+		include = "expl_middle_east"
+		include = "muslim_monarchy_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+
+			reforms = {
+				anatolian_beylik
+				br_sub_foideratoi_subject
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_ottoman_dhimmi_levies
+				br_turkoman_privilege
+				br_ere_foederati_privilege
+				
+				dhimmi_land_rights
+				dhimmi_pact_of_umar
+				dhimmi_traditions
+				dhimmi_legal_autonomy
+				dhimmi_promote_dhimmi_hierarchy
+				dhimmi_mazalim_court
+				dhimmi_in_administration
+
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribal_autonomy
+				tribes_land_rights
+				tribes_pasture_access
+			}
+		}
+		accepted_cultures = { 
+			turkoman_culture
+		}
+		tolerated_cultures = {
+			armenian_culture
+			cappadocian_greek_culture
+			anatolian_greek_culture
+		}
+		capital = obruk
+		religious_school = maturidi_school
+	}
+	
+	AN25 = { #Kurdish tribe in mountains near Van
+		own_control_core = {
+			catak hosap
+		}
+		include = "expl_middle_east"
+		include = "muslim_tribe_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+		}
+		tolerated_cultures = {
+			armenian_culture
+		}
+		capital = catak
+		religious_school = maturidi_school
 	}
 	
 	AN3 = {
@@ -55172,9 +55293,11 @@ countries = {
 	AN7 = {
 		own_control_core = {
 			aksaray kochisar sariyahsi eregli_kar
-			eskil
 			nevsehir
 			bekarlar bor_tur nigde
+		}
+		our_cores_conquered_by_others = {
+			eskil
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55450,12 +55573,11 @@ countries = {
   #Armenian Tags
 	DER = {
 		own_control_core = {
-			bingol 
 			mus 
 			varto malazgirt hinis tutak
 		}
 		our_cores_conquered_by_others = {
-			hizan bahcesaray bitlis kulp sason genc
+			hizan bahcesaray bitlis kulp sason genc bingol
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55469,11 +55591,10 @@ countries = {
 	
 	KOG = {
 		own_control_core = {
-			bayburt erzincan kelkit
 			erzurum tercan
 		}
 		our_cores_conquered_by_others = {
-			sebinkarahisar siran ilic kemah
+			sebinkarahisar siran ilic kemah erzincan bayburt kelkit
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55488,12 +55609,9 @@ countries = {
 	MES = {
 		own_control_core = {
 			malatya
-			genc
-			harput adakli keban palu
-			cemisgezek kuzucan pertek
 		}
 		our_cores_conquered_by_others = {
-			divrigi egin arapgir arguvan
+			divrigi egin arapgir arguvan adakli genc harput keban palu cemisgezek pertek
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55501,16 +55619,17 @@ countries = {
 		government = {
 			ruler = random
 		}
+
 		country_rank = rank_duchy
 		capital = malatya
 	}
 	
 	VAN = {
 		own_control_core = {
-			van catak hosap tatvan ahlat bargiri ercis
+			van tatvan ahlat bargiri ercis
 		}
 		our_cores_conquered_by_others = {
-			mus hizan bahcesaray bitlis
+			mus hizan bahcesaray bitlis catak hosap
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -56337,7 +56456,6 @@ countries = {
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
@@ -56434,7 +56552,6 @@ countries = {
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
@@ -56584,7 +56701,6 @@ countries = {
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				urban_development_grants
 
 			}
@@ -56642,7 +56758,6 @@ countries = {
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				urban_development_grants
 
 				#Tribes
@@ -56703,7 +56818,6 @@ countries = {
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				urban_development_grants
 
 				#Tribes
@@ -56792,7 +56906,6 @@ countries = {
 				dhimmi_land_rights
 				dhimmi_pact_of_umar
 				dhimmi_traditions
-				dharmic_dhimmi_communities
 				dhimmi_legal_autonomy
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court

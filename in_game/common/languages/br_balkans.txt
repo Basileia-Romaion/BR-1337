@@ -279,8 +279,6 @@
 				name_yaroslava
 				name_xenia 
 				name_zlata
-				#Unique non dynamic names
-				Gorislava Gradislava Malusha Prebrana Predslava Zabava Zvenislava
 			}
 			dynasty_names = {
 				Rurikovich Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
@@ -315,9 +313,6 @@
 				name_wenceslas name_waldemar
 				name_vojnomir name_vladislav
 				name_zivko name_zdzislaw name_zdravko
-
-				#Unique names
-				Kalojan Momchil Trpimir
 			}
 			female_names = {
 				name_alexandra name_antonia
@@ -337,9 +332,6 @@
 				name_theresa name_theodora name_tsveta
 				name_vasilisa name_violet
 				name_yvonne name_yolande
-
-				# Unique names
-				Bisera Iskra Iva Lala Nevena Stoyanka Zhivka
 			}
 			dynasty_names = {
 				Krum Dulo Cometopuli name_asen Terter Shishman Teleki Vojislavljevic
@@ -375,7 +367,6 @@
 		}
 		varangian_dialect = {
 			male_names = {
-				Drogános Drogánios
 				name_adam name_adrian name_alan name_alberic name_albert name_alexander name_alfred name_andrew name_anthony name_archibald name_arnold name_arthur name_emmerich
 				name_benedict 
 				name_cecil name_charles name_christian name_christopher name_clement name_cuthbert 
@@ -396,7 +387,6 @@
 				name_theobald name_theodore name_thomas
 				name_vincent
 				name_walter name_wilfred name_william
-
 				name_algoth name_absalon
 				name_birger name_berthold name_bo name_bjorn
 				name_canute name_cornificius
@@ -413,7 +403,6 @@
 				name_thore
 				name_ulrick
 				name_waldemar
-
 			}
 			female_names = {
 				#from language
@@ -426,21 +415,8 @@
 				name_matilda name_margaret
 				name_olga
 				name_sophia name_sara name_sigrid
-				
-				Asta #short form of name_astrid
-				Elin #scandinavian version of name_helen
-				Gunhild #Gunnhild Norwegian Gunnhildur Icelandic
-				Ingegerd
-				name_ingrid
-				Karin #swedish version for name_catherine
-				Marta #scandinavian version of name_martha
-				Ragnhild #scandinavian version of name_reinhild
-
-				#from dialect
-				name_walburga
 			}
 			dynasty_names = {
-				Varingios
 				Vasa Rehnskold Bonde Natt_Och_Dag Bielke name_sture
 				tre_rosor tott trolle horn_surname skytte baner fleming leijonhufvud eka porse sjoblad bagge bratt bure grip stenbock
 
@@ -450,6 +426,48 @@
 			}
 			lowborn = {
 				Persson Mjolnare Andersson Olsson Eriksson Johansson Jakobsson Karlsson Smed Knutsson Svensson Svantesson Axelsson
+			}
+		}
+		tourkopoulika_dialect = {
+			male_names = {
+				name_aaron name_abdulaziz name_abdulhamid name_abdullah name_abdulmajid name_abdulrahman name_abraham name_afsin name_ahmad name_ala.name_al_din name_alexander name_ali name_alikhan name_alim name_amin name_arif name_artuk name_aydin 
+				name_bahador name_baybars
+				name_candar
+				name_david name_dilmacname_dulkadir
+				name_elias name_eretna name_ertugrul 
+				name_farhad
+				name_genghis name_germiyan name_ghiyath.name_al_din
+				name_hamid name_hasan name_husayn
+				name_inanc name_isaac name_ishmael name_izz.name_al_din
+				name_jahangir name_jalal.name_al_din name_jam name_jamal name_james name_jesus name_jonas name_joseph
+				name_kamal Kara name_karaman name_khalil name_khayr.name_al_din name_khidr name_kilic name_kubad
+				name_mahmud name_malik name_malik.name_shah name_masud name_moses name_muhammad name_murad name_mustafa
+				name_nizam.name_al_din
+				name_omar name_orhan name_osman
+				name_qamar name_qasim
+				name_rajab name_ramazan name_ridwan name_rostam
+				name_salih name_salim name_salomon name_sayf.name_al_din name_sinan
+				name_timur name_timur.name_tash
+			}
+			female_names = {
+				name_aisha name_amina name_asli name_asli.name_khan name_ayneh
+				name_daphne name_darya Dilek name_dunya
+				name_fatima name_firuzeh
+				name_golbahar
+				name_homa name_huriya
+				name_khadija name_khorram name_kulthum name_kumus
+				name_laleh name_leyla
+				name_mansura name_marwa
+				name_niloufar name_nur
+				name_safiyaname_sati name_shahnaz name_sharifa name_sybil
+				name_zahra name_zuhal
+			}
+
+			dynasty_names = {
+				
+			}
+			lowborn = {
+				Aydogdu Balaban name_ertugrul Gunduz Ipek Karatay name_kilic Sonmez Yasar
 			}
 		}
 	}

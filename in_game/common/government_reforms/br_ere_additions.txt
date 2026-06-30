@@ -100,7 +100,6 @@ br_sub_theme_subject = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
@@ -147,7 +146,6 @@ br_sub_pronoia_subject = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {
@@ -189,6 +187,36 @@ br_sub_religious_subject = {
 	years = 2
 }
 
+br_sub_foideratoi_subject = {
+	age = age_1_traditions
+	icon = basic_timariot_system #expanded_timariot_system
+	potential = {
+		OR = {
+			has_reform = government_reform:br_sub_foideratoi_subject
+			#is_subject_type = br_foederati_subject
+		}
+	}
+	locked = {
+		#is_subject_type = br_foederati_subject
+	}
+	country_modifier = {
+		tribes_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_tribes_estate_power = 1
+		army_light_cavalry_maintenance_cost_modifier = -0.25
+		levy_maintenance_modifier = -0.25
+	}
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
+		loyalty_to_overlord = 10
+    }
+	country_modifier = {
+		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value <= 75 } }
+		loyalty_to_overlord = -25
+    }
+	years = 2
+}
+
+
 br_naval_akritai_reform = {
     age = age_1_traditions
     icon = crusade_sea_reform
@@ -227,7 +255,6 @@ br_naval_akritai_reform = {
 	}
 	country_modifier = {
 		potential_trigger = { is_subject_of = c:BYZ opinion = { target = c:BYZ value >= 150 } }
-		hostile_diplomatic_annexation_efficiency = 0.25
 		loyalty_to_overlord = 10
     }
 	country_modifier = {

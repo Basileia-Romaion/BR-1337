@@ -69,6 +69,9 @@
 			monthly_towards_aristocracy = societal_value_monthly_move
 			monthly_towards_land = societal_value_monthly_move
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_tsar_bulgars_romans = {
@@ -93,6 +96,9 @@
 			#debuffs
 			global_pop_assimilation_speed_modifier = -0.5
 			monthly_towards_humanist = societal_value_minor_monthly_move
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -120,6 +126,9 @@
 			global_defensive = 0.1
 			army_maintenance_efficiency = 0.1
 			global_max_rural_control = -0.05
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -182,6 +191,9 @@
 			subject_opinions = -25
 			global_max_rural_control = -0.05
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_latin_occupiers = {
@@ -210,6 +222,9 @@
 			global_heretic_pop_conversion_speed_modifier = -0.5
 			mercenary_units_preference_modifier = 0.25
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_noble_armies = { 
@@ -228,6 +243,9 @@
 			global_soldiers_rural_desired_pop_scaled = 0.01
 			nobles_estate_satisfaction_decay = 0.02
 			army_heavy_cavalry_power = 0.1
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -261,6 +279,9 @@
 
 			aggressiveness_modifier = 0.25
 			antagonism_religion_influence = 0.25
+		}
+		ai_weight = {
+			add = 25
 		}	
 	}
 
@@ -297,6 +318,9 @@
 
 			aggressiveness_modifier = 0.25
 			antagonism_religion_influence = 0.25
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -350,7 +374,9 @@
 			potential_trigger = { any_neighbor_country = { NOT = { religion.group = root.religion.group } } }
 			damage_done_versus_heathens_modifier = 0.1
 		}
-			
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_frontier_expansion_privilege = {
@@ -380,6 +406,9 @@
 			allow_native_subjugation_cb = yes
 			auto_slave_raid_different_religion = yes
 			enslave_tribals = yes
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -445,6 +474,9 @@
 			}
 			global_max_rural_control = -0.05
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_themata_reformed_privilege = {
@@ -488,6 +520,9 @@
 			global_army_levy_size_modifier = 0.15
 			levy_combat_efficiency_modifier = 0.15
 		}
+		ai_weight = {
+			add = 50
+		}
 	}
 
 	br_arm_highland_villages = { #will break up and balance later.
@@ -515,6 +550,9 @@
 			fort_maintenance_efficiency = 0.1
 			levy_maintenance_modifier = -0.1
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 ### Burgher Privileges ###
@@ -537,6 +575,9 @@
 			global_trades_per_burgher = 1
 			export_efficiency = large_trade_efficiency_bonus
 			trade_importance_modifier = 0.25
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -561,6 +602,9 @@
 			navy_maintenance_efficiency = 0.2
 			navy_light_ship_maintenance_cost_modifier = -0.2
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_latinoi_army = {
@@ -580,6 +624,9 @@
 			mercenary_units_preference_modifier = 0.5
 			hire_mercenary_premium_cost_modifier = -0.33
 			mercenary_maintenance_efficiency = 0.33
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -603,6 +650,9 @@
 			privateer_maintenance_cost_modifier = -0.2
 			navy_maintenance_efficiency = 0.1
 			navy_light_ship_maintenance_cost_modifier = -0.1
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -713,6 +763,9 @@
 			global_clergy_max_literacy = 5
 			global_pop_promotion_speed_modifier = 0.10
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_roman_ecumenical_patriarch_privilege = {
@@ -779,6 +832,9 @@
 			potential_trigger = { owns = location:jerusalem }
 			tolerance_own = 1
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_roman_orthodox_catechesis = {
@@ -806,6 +862,9 @@
 			tolerance_heretic = -0.25
 			antagonism_religion_influence = 0.25
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_fortified_religious_enclave = {
@@ -823,6 +882,9 @@
 			clergy_estate_levy_size = 0.5
 			global_defensive = 0.5
 			unlock_building = fortress_church
+		}
+		ai_weight = {
+			add = 99
 		}
 	}
 
@@ -882,11 +944,6 @@
 		icon = tribal_autonomy
 		
 		potential = { #tech unlock
-			#OR = {
-			#	has_or_had_tag = E1Y			
-			#	has_or_had_tag = E2Y
-			#	culture = { has_culture_group = culture_group:elysian_group }
-			#}
 		}
 		country_modifier = {
 			global_tribes_estate_power = 0.5
@@ -897,13 +954,19 @@
 			monthly_towards_free_subjects = societal_value_monthly_move
 			global_tribal_promotion = -0.1
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_ere_foederati_privilege = {
 		estate = tribes_estate
 		icon = cas_caballeros_villanos
 		potential = {
-			culture = { has_culture_group = culture_group:greek_group }
+			OR = {
+				culture = { has_culture_group = culture_group:greek_group }
+				has_estate_privilege = estate_privilege:br_ere_foederati_privilege
+			}
 			any_pop = { 
 				pop_type = pop_type:tribesmen 
 				pop_size > 1
@@ -919,6 +982,9 @@
 			tribes_estate_levy_size = 0.25
 			wrong_culture_levy_size = 0.05
 			levy_maintenance_modifier = -0.1
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -940,6 +1006,9 @@
 			hire_mercenary_premium_cost_modifier  = -0.15
 			mercenary_maintenance_efficiency = 0.15
 			tribes_estate_allowed_leading_military = yes
+		}
+		ai_weight = {
+			add = 99
 		}
 	}
 	
@@ -978,6 +1047,9 @@
 			privateer_maintenance_cost_modifier = -0.1
 			#privateer_durability = 0.02
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 ### Turkish Privileges ###	
@@ -1003,6 +1075,9 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -1045,7 +1120,6 @@
 			wrong_culture_levy_size = 0.1
 			dhimmi_estate_levy_size = 0.2
 		}
-
 		ai_weight = {
 			add = 25
 		}
@@ -1074,6 +1148,9 @@
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 ### Andalusian/berber Privileges ###
@@ -1099,6 +1176,9 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+		}
+		ai_weight = {
+			add = 25
 		}
 	}
 
@@ -1165,6 +1245,9 @@
 			global_tribal_promotion = -0.25
 			tribes_estate_allowed_leading_military = yes
 		}
+		ai_weight = {
+			add = 25
+		}
 	}
 
 	br_albanian_tribes_privilege = {
@@ -1182,5 +1265,8 @@
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.5
 			tribes_estate_allowed_leading_military = yes
+		}
+		ai_weight = {
+			add = 25
 		}
 	}

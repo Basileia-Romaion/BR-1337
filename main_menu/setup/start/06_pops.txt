@@ -19843,7 +19843,8 @@ catak = {
 	define_pop = {	type = peasants	size = 0.882	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = peasants	size = 0.205	culture = kurdish_culture	religion = nestorianism }
 	define_pop = {	type = tribesmen	size = 1.267	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = tribesmen	size = 2.293	culture = kurdish_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 1.293	culture = kurdish_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 2.993	culture = kurdish_culture	religion = sunni }
 }
 hizan = {
 	define_pop = {	type = clergy	size = 0.001	culture = armenian_culture	religion = miaphysite }
@@ -19922,10 +19923,11 @@ mescit_mountains = {
 otlukbeli_mountains = {
 }
 harput = {
-	define_pop = {	type = peasants	size = 15.935	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 10.935	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 0.867	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 1.874	culture = zaza_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 1.936	culture = zaza_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 5.803	culture = turkoman_culture	religion = sunni }
 }
 adakli = {
 	define_pop = {	type = peasants	size = 5.036	culture = armenian_culture	religion = miaphysite }
@@ -19945,9 +19947,10 @@ bingol = {
 cemisgezek = {
 	define_pop = {	type = peasants	size = 1.734	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 0.401	culture = zaza_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 4.668	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 3.668	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 1.498	culture = zaza_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 2.800	culture = zaza_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 2.803	culture = turkoman_culture	religion = sunni }
 }
 genc = {
 	define_pop = {	type = peasants	size = 4.723	culture = armenian_culture	religion = miaphysite }
@@ -19957,10 +19960,11 @@ genc = {
 	define_pop = {	type = slaves	size = 1.623	culture = zaza_culture	religion = yazidism }
 }
 keban = {
-	define_pop = {	type = peasants	size = 9.404	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 7.104	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 0.867	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen size = 1.106	culture = zaza_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.552	culture = zaza_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 3.803	culture = turkoman_culture	religion = sunni }
 }
 kuzucan = {
 	define_pop = {	type = peasants	size = 1.687	culture = armenian_culture	religion = miaphysite }
@@ -19970,17 +19974,19 @@ kuzucan = {
 	define_pop = {	type = slaves	size = 2.125	culture = zaza_culture	religion = yazidism }
 }
 palu = {
-	define_pop = {	type = peasants	size = 20.081	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 14.081	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 1.867	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 2.480	culture = zaza_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 2.238	culture = zaza_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 6.803	culture = turkoman_culture	religion = sunni }
 }
 pertek = {
 	define_pop = {	type = peasants	size = 2.334	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 0.198	culture = zaza_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 4.065	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 3.065	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 1.423	culture = zaza_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 2.453	culture = zaza_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 2.803	culture = turkoman_culture	religion = sunni }
 }
 sivrice = {
 	define_pop = {	type = peasants	size = 1.529	culture = armenian_culture	religion = miaphysite }
@@ -20092,6 +20098,7 @@ hosap = {
 	define_pop = {	type = peasants	size = 1.205	culture = kurdish_culture	religion = nestorianism }
 	define_pop = {	type = tribesmen	size = 1.267	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 1.293	culture = kurdish_culture	religion = yazidism }
+	define_pop = {	type = tribesmen	size = 2.093	culture = kurdish_culture	religion = sunni }
 }
 tatvan = {
 	define_pop = {	type = clergy	size = 0.009	culture = armenian_culture	religion = miaphysite }
@@ -32004,9 +32011,10 @@ eregli_kar = {
 }
 eskil = {
 	define_pop = {	type = clergy	size = 0.004	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 4.519	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
-	define_pop = {	type = peasants	size = 6.246	culture = cappadocian_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.879	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 3.219	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 5.846	culture = cappadocian_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.479	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 4.503	culture = turkoman_culture	religion = sunni }
 }
 hatunsaray = {
 	define_pop = {	type = clergy	size = 0.071	culture = greek_culture	religion = orthodox }
@@ -32015,15 +32023,17 @@ hatunsaray = {
 }
 karapinar = {
 	define_pop = {	type = clergy	size = 0.071	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.512	culture = anatolian_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.746	culture = cappadocian_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.512	culture = anatolian_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.246	culture = cappadocian_greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 1.501	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 4.250	culture = turkoman_culture	religion = sunni }
 }
 obruk = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.579	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 3.579	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
 	define_pop = {	type = peasants	size = 1.146	culture = cappadocian_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.886	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 1.586	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 5.250	culture = turkoman_culture	religion = sunni }
 }
 pirloganda = {
 	define_pop = {	type = clergy	size = 0.089	culture = greek_culture	religion = orthodox }

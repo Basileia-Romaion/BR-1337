@@ -455,6 +455,26 @@ armenikon_greek_culture = { #BR addition
 	}
 }
 
+br_tourkoromaioi_culture = {
+	language = tourkopoulika_dialect
+	color = rgb { 150 110 180 }
+	tags = { greek_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+
+	opinions = {
+	}
+	culture_groups = {
+		turkic_group
+		roman_group
+	}
+	goods_demand_modifier = {
+		tea = 2
+		saffron = 1.5
+		legumes = 1.2
+		livestock = 1.5
+		olives = 1.2
+	}
+}
+
 #bank cultures 100% fictional
 bankariotai_culture = {
 	language = romanyoti_dialect

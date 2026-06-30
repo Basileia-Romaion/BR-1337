@@ -449,7 +449,7 @@ br_foederati_grant = { #Foederati Settlements
 	is_foreign = no
 	max_levels = 1
 	pop_type = tribesmen
-	icon = kastellet
+	icon = eghabho_nore_mansion
 
 	category = village_category
 	#estate = peasants_estate
@@ -653,10 +653,16 @@ br_kleisourai = {#fortified mountain passes
 #walls_of_benin #ostrog #bey_fortress
 #venetian_quarter #ori_portuguese_quarters 
 #dun_fort #bodrum_castle
+#wls_marcher_lordship
+#walls_of_ston
 
 #general_archive_of_simancas
 #cantonments
 #grand_apartment
+
+#for varangians
+#gallowglass_sept
+#pomor_outpost
 
 ### Tier 2 / Age 3 ###
 
@@ -1215,7 +1221,7 @@ br_despotate_building = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = soldiers
-	icon = bastion
+	icon = general_archive_of_simancas
 
 	category = government_category
 	obsolete = br_katapanate_building

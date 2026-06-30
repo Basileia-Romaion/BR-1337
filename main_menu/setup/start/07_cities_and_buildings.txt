@@ -5001,9 +5001,12 @@ building_manager = {
 	nobility_fortifications = { tag = ACH level = 1 location = andritsaina }
 	nobility_fortifications = { tag = HE1 level = 1 location = salona }
 
+	br_foederati_grant = { tag = AN24 level = 1 location = eskil }
+	br_foederati_grant = { tag = AN24 level = 1 location = obruk }
+	br_foederati_grant = { tag = AN24 level = 1 location = karapinar }
+	
 	#Estate Manpower buildings
 	
-
 	sergeantry = { tag = CRO level = 1 location = zagreb }
 	sergeantry = { tag = ARM level = 1 location = ani }
 	sergeantry = { tag = GEO level = 1 location = tbilisi }
@@ -5022,6 +5025,9 @@ building_manager = {
 	peasants_training_grounds = { tag = ARM level = 1 location = tercan }
 	peasants_training_grounds = { tag = DER level = 1 location = harput }
 	peasants_training_grounds = { tag = MES level = 1 location = arapgir }
+	peasants_training_grounds = { tag = ARM level = 1 location = genc }
+	peasants_training_grounds = { tag = ARM level = 1 location = kuzucan }
+	peasants_training_grounds = { tag = ARM level = 1 location = erzincan }
 
 	sergeantry = { tag = BUL level = 1 location = sredets }
 	peasants_training_grounds = { tag = BUL level = 1 location = ruse }
@@ -5366,6 +5372,8 @@ building_manager = {
 	bey_fortress = { tag = DUL level = 1 location = aleppo }
 	bey_fortress = { tag = DUL level = 1 location = urfa }
 	bey_fortress = { tag = DUL level = 1 location = nusaybin }
+	bey_fortress = { tag = DGE level = 1 location = cermik }
+	bey_fortress = { tag = DUL level = 1 location = kilis }
 	seljuk_mint = { tag = TUR level = 2 location = nusaybin }
 	seljuk_mint = { tag = TUR level = 2 location = soltaniyeh }
 	seljuk_mint = { tag = TUR level = 4 location = rey }
@@ -6018,6 +6026,8 @@ building_manager = {
 	tribal_market_villages = { tag = TUR level = 1 location = hazro }
 	tribal_war_camp = { tag = TUR level = 1 location = cermik }
 	tribal_market_villages = { tag = TUR level = 1 location = cermik }
+	tribal_war_camp = { tag = TUR level = 1 location = heni }
+	tribal_war_camp = { tag = TUR level = 1 location = egil }
 	tribal_war_camp = { tag = TUR level = 1 location = kilis }
 	tribal_market_villages = { tag = TUR level = 2 location = kilis }
 	tribal_hunting_lodge = { tag = TUR level = 1 location = kilis }
@@ -7253,6 +7263,8 @@ building_manager = {
 	nobility_fortifications = { tag = ARM level = 1 location = tercan }
 	nobility_fortifications = { tag = ARM level = 1 location = surmali }
 	nobility_fortifications = { tag = ARM level = 1 location = yerevan }
+	nobility_fortifications = { tag = ARM level = 1 location = erzincan }
+	nobility_fortifications = { tag = ARM level = 1 location = kelkit }
 	nobility_fortifications = { tag = KCN level = 1 location = gandzasar }
 	nobility_fortifications = { tag = SYU level = 1 location = kapan_armenia }
 	nobility_fortifications = { tag = ATZ level = 1 location = maku }
@@ -7265,12 +7277,18 @@ building_manager = {
 
 	nobility_fortifications = { tag = ARM level = 1 location = bayazit }
 	nobility_fortifications = { tag = ARM level = 1 location = malazgirt }
+
+	nobility_fortifications = { tag = ARM level = 1 location = genc }
+	nobility_fortifications = { tag = ARM level = 1 location = kuzucan }
+	nobility_fortifications = { tag = ARM level = 1 location = arapgir }
+	
 	nobility_fortifications = { tag = CIL level = 1 location = sis }
 	nobility_fortifications = { tag = CIL level = 1 location = adana }
 	nobility_fortifications = { tag = ANA level = 1 location = eregli_kar }
 	nobility_fortifications = { tag = ANA level = 1 location = kirsehir }
 	nobility_fortifications = { tag = ANA level = 1 location = sungurlu }
 	nobility_fortifications = { tag = ANA level = 1 location = zile }
+
 	nobility_fortifications = { tag = MOE level = 1 location = tripolitsa }
 	nobility_fortifications = { tag = ACH level = 1 location = andravida }
 
