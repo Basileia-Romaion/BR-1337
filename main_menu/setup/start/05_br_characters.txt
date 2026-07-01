@@ -1318,6 +1318,7 @@ character_db={
 	}
 
  #Tourkopouloi
+	#Bayındır
 	br_tourkoromaioi_rdm_character_1 = {
 		first_name = { name = "random" }
 		culture = br_tourkoromaioi_culture
@@ -1399,6 +1400,90 @@ character_db={
 		father = br_tourkoromaioi_rdm_character_2
 		dynasty = bayindir_dynasty 
 		tag = AN24
+	}
+
+	#Avşar
+	br_tourkoromaioi_rdm_character_9 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1260.1.1
+		birth = obruk
+		dynasty = avsar_dynasty
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_10 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1289.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_9
+		dynasty = avsar_dynasty
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_11 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1292.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_9
+		dynasty = avsar_dynasty
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_12 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1308.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_10
+		dynasty = avsar_dynasty 
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_13 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		birth_date = 1309.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_10
+		dynasty = avsar_dynasty 
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_14 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1318.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_10
+		dynasty = avsar_dynasty 
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_15 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1320.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_10
+		dynasty = avsar_dynasty 
+		tag = AN26
+	}
+	br_tourkoromaioi_rdm_character_16 = {
+		first_name = { name = "random" }
+		culture = br_tourkoromaioi_culture
+		religion = orthodox
+		female = yes
+		birth_date = 1322.1.1
+		birth = obruk
+		father = br_tourkoromaioi_rdm_character_10
+		dynasty = avsar_dynasty 
+		tag = AN26
 	}
 
 

@@ -13645,6 +13645,7 @@ countries = {
 			arilje brvenik
 			koman has dukagjini lezha
 			kocani strumica shtip
+			gacko
 		}
 
 		our_cores_conquered_by_others = {
@@ -13796,13 +13797,13 @@ countries = {
 
 	BOS = {
 		own_control_core = {
-			metkovic glamoc
-			vrhbosna konjic srebrenica doboj soli
-			jajce livno zenica kljuc srebrenik
+			glamoc
+			vrhbosna srebrenica doboj soli
+			jajce zenica kljuc srebrenik
 			glaz teocak olovo borac
 		}
 		our_cores_conquered_by_others = {
-			kozara
+			kozara konjic livno
 		}
 
 		starting_technology_level = 3
@@ -13883,7 +13884,10 @@ countries = {
 
 	RAG = {
 		own_control_core = {
-			dubrovnik slano
+			dubrovnik
+		}
+		own_control_integrated = {
+			slano metkovic
 		}
 
 		starting_technology_level = 3
@@ -14333,10 +14337,13 @@ countries = {
 
 	HUM = {
 		own_control_core = {
-			drijeva gacko mostar nevesinje
+			drijeva mostar nevesinje
+		}
+		own_control_integrated = {
+			konjic livno
 		}
 		our_cores_conquered_by_others = {
-			trebinje slano
+			trebinje slano metkovic gacko
 		}
 
 		starting_technology_level = 3

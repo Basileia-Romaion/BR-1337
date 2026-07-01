@@ -4100,9 +4100,7 @@ building_manager = {
 	stockade = { tag = KIE level = 1 location = kaharlyk }
 	stockade = { tag = KIE level = 1 location = korsun }
 	stockade = { tag = KIE level = 1 location = mychesk }
-	stockade = { tag = KIE level = 1 location = poltava }
 	stockade = { tag = KIE level = 1 location = zolotonosha }
-	stockade = { tag = KIE level = 1 location = okhtyrka }
 	stockade = { tag = KIE level = 1 location = glushkovo }
 	stockade = { tag = KIE level = 1 location = kolomak }
 	stockade = { tag = TIB level = 1 location = tsora }
@@ -4722,6 +4720,7 @@ building_manager = {
 	br_pronoia_estate = { tag = BYZ level = 1 location = bor_tur }
 	br_pronoia_estate = { tag = BYZ level = 1 location = baliseyh }
 	br_pronoia_estate = { tag = BYZ level = 1 location = balikesir }
+	br_pronoia_estate = { tag = BUL level = 1 location = insuyu }
 
 
 	br_pronoia_estate = { tag = BYZ level = 1 location = boyabat }
@@ -4756,6 +4755,7 @@ building_manager = {
 	br_pronoia_estate = { tag = SER level = 1 location = has }
 	br_pronoia_estate = { tag = SER level = 1 location = peja }
 	br_pronoia_estate = { tag = SER level = 1 location = brskovo }
+	br_pronoia_estate = { tag = SER level = 1 location = mostar }
 
 	br_pronoia_estate = { tag = BUL level = 1 location = strumica }
 	br_pronoia_estate = { tag = BUL level = 1 location = prilep }
@@ -4998,8 +4998,15 @@ building_manager = {
 	nobility_fortifications	= { tag = BUL level = 1 location = melnik }
 	
 	nobility_fortifications	= { tag = THE level = 1 location = edessa }
-	nobility_fortifications = { tag = ACH level = 1 location = andritsaina }
 	nobility_fortifications = { tag = HE1 level = 1 location = salona }
+	nobility_fortifications = { tag = ACH level = 1 location = kalamata }
+
+	br_foederati_grant = { tag = HE2 level = 1 location = andritsaina }
+	br_foederati_grant = { tag = HE2 level = 1 location = kalavryta }
+
+	br_foederati_grant = { tag = HE3 level = 1 location = karytaina }
+	br_foederati_grant = { tag = HE3 level = 1 location = veligosti }
+	br_foederati_grant = { tag = HE3 level = 1 location = leuktron }
 
 	br_foederati_grant = { tag = AN24 level = 1 location = eskil }
 	br_foederati_grant = { tag = AN24 level = 1 location = obruk }
@@ -5650,7 +5657,6 @@ building_manager = {
 	tannery = { tag = GLH level = 2 location = sarai_al_jadid }
 	tannery = { tag = GLH level = 1 location = astrakhan }
 	fine_cloth_guild = { tag = GLH level = 1 location = astrakhan }
-	tar_kiln = { tag = GLH level = 1 location = umanske }
 	charcoal_maker = { tag = GLH level = 1 location = bykovo }
 
 #Russia
@@ -5860,7 +5866,6 @@ building_manager = {
 	tribal_market_villages = { tag = ZAZ level = 1 location = yelanets }
 	peasants_training_grounds = { tag = ZAZ level = 1 location = yelanets }
 	free_village = { tag = ZAZ level = 2 location = yelanets }
-	peasants_training_grounds = { tag = ZAZ level = 1 location = usivka }
 	free_village = { tag = ZAZ level = 2 location = usivka }
 	peasants_training_grounds = { tag = ZAZ level = 1 location = rozdory }
 	free_village = { tag = ZAZ level = 2 location = rozdory }
@@ -6398,7 +6403,7 @@ building_manager = {
 	forest_village = { tag = BOS level = 1 location = vrhbosna }
 	farming_village = { tag = BOS level = 1 location = doboj }
 	farming_village = { tag = BOS level = 1 location = nevesinje }
-	farming_village = { tag = BOS level = 1 location = mostar }
+	farming_village = { tag = BOS level = 2 location = mostar }
 	farming_village = { tag = BOS level = 1 location = glaz }
 	market_village = { tag = NAX level = 3 location = naxos }
 	rural_clothmaker = { tag = NAX level = 1 location = naxos }
@@ -6863,9 +6868,18 @@ building_manager = {
 	market_village = { tag = KAR level = 1 location = badra }
 	market_village = { tag = KAR level = 1 location = dayr_aqul }
 
-	#u23 new villages
+
 	market_village = { tag = LIT level = 2 location = trakai }
-	market_village = { tag = LIT level = 2 location = poltava }
+
+	#Wild fields
+	free_village = { tag = ZAZ level = 2 location = usivka }
+	tribal_market_villages = { tag = ZAZ level = 2 location = usivka }
+	free_village = { tag = ZAZ level = 2 location = poltava }
+	tribal_market_villages = { tag = ZAZ level = 2 location = poltava }
+	free_village = { tag = ZAZ level = 1 location = umanske }
+	tribal_market_villages = { tag = ZAZ level = 1 location = umanske }
+	free_village = { tag = ZAZ level = 2 location = mala_vyska }
+
 
 	tribal_war_camp = { tag = G0L level = 1 location = chimgi_tura }
 	tribal_market_villages = { tag = G0L level = 3 location = chimgi_tura }
@@ -7300,6 +7314,8 @@ building_manager = {
 	nobility_fortifications = { tag = SER level = 1 location = smederevo }
 	nobility_fortifications = { tag = SER level = 1 location = soko_grad }
 	nobility_fortifications = { tag = SER level = 1 location = uzice }
+	nobility_fortifications = { tag = SER level = 1 location = mostar }
+	nobility_fortifications = { tag = SER level = 1 location = trebinje }
 
 	nobility_fortifications = { tag = BYZ level = 1 location = uluborlu }
 	nobility_fortifications = { tag = CIL level = 1 location = alaiye }

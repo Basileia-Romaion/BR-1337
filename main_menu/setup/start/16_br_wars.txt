@@ -1,38 +1,7 @@
-war_manager = {
+#religious_war
+#civil_war
 
-	civil_war = {
-		war_name = {
-			name = "CIVIL_WAR_NAME"
-			ordinal=1
-			first = {
-				name="CIL"
-			}
-			SECOND = {
-				name="AN13"
-			}
-		}
-		start_date = 1335.1.1
-		action = 1337.3.1
-		attacker = {
-			country = CIL
-			request = {
-				reason = Instigator
-			}
-		}
-		attacker = {
-			country = AN18
-			request = {
-				caller = CIL
-				reason = Ally
-			}
-		}
-		defender = {
-			country = AN13
-			request = {
-				reason = Target
-			}
-		}
-	}
+war_manager = {
 
 	truce = { 
 		attacker = NSE
@@ -42,7 +11,6 @@ war_manager = {
 		start_date = 1333.3.2
 		months = 680
 	}
-
 	truce = { 
 		attacker = GLH
 		#
@@ -59,7 +27,6 @@ war_manager = {
 		start_date = 1333.3.2
 		months = 600
 	}
-
 	truce = { 
 		attacker = LOT
 		#

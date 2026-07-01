@@ -18799,71 +18799,57 @@ lypova_dolyna = {
 	define_pop = {	type = peasants	size = 11.143	culture = severian	religion = orthodox }
 }
 lubny = {
-	define_pop = {	type = clergy	size = 0.013	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 10.202	culture = ruthenian	religion = orthodox }
 }
 pyriatyn = {
-	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 8.978	culture = ruthenian	religion = orthodox }
 }
 horodyshche = {
-	define_pop = {	type = clergy	size = 0.002	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 4.320	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 3.216	culture = cossack_culture	religion = orthodox }
 }
 horoshino = {
-	define_pop = {	type = clergy	size = 0.003	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 5.935	culture = ruthenian	religion = orthodox }
 }
 zolotonosha = {
-	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 13.051	culture = ruthenian	religion = orthodox }
 }
 yahotyn = {
 	define_pop = {	type = peasants	size = 8.325	culture = ruthenian	religion = orthodox }
 }
 pereiaslav = {
-	define_pop = {	type = clergy	size = 0.011	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 14.025	culture = ruthenian	religion = orthodox }
 }
 boryspil = {
-	define_pop = {	type = clergy	size = 0.008	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 11.096	culture = ruthenian	religion = orthodox }
 }
 oster = {
-	define_pop = {	type = clergy	size = 0.007	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 9.428	culture = ruthenian	religion = orthodox }
 }
 kozelets = {
-	define_pop = {	type = clergy	size = 0.016	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 9.103	culture = ruthenian	religion = orthodox }
 }
 yaroslavka = {
 	define_pop = {	type = peasants	size = 5.400	culture = ruthenian	religion = orthodox }
 }
 poltava = {
-	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.662	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 6.416	culture = cossack_culture	religion = orthodox }
 }
 kremenchuk = {
-	define_pop = {	type = clergy	size = 0.003	culture = mongolian_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.725	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 5.416	culture = cossack_culture	religion = orthodox }
 }
 myrhorod = {
-	define_pop = {	type = clergy	size = 0.007	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 9.943	culture = ruthenian	religion = orthodox }
 }
 velyki_sorochyntsi = {
-	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.173	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.173	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
 }
 hovtva = {
-	define_pop = {	type = peasants	size = 3.567	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
 }
 opishnya = {
-	define_pop = {	type = peasants	size = 3.330	culture = severian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
 }
 bratslav = {
 	define_pop = {	type = clergy	size = 0.002	culture = ruthenian	religion = orthodox }
@@ -19265,7 +19251,6 @@ novhorod_siverskyi = {
 	define_pop = {	type = peasants	size = 20.444	culture = severian	religion = orthodox }
 }
 hlukhiv = {
-	define_pop = {	type = clergy	size = 0.008	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 12.885	culture = severian	religion = orthodox }
 }
 verba = {
@@ -19313,7 +19298,6 @@ boldyzh = {
 	define_pop = {	type = peasants	size = 11.978	culture = severian	religion = orthodox }
 }
 dmitriyev = {
-	define_pop = {	type = clergy	size = 0.012	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 10.618	culture = severian	religion = orthodox }
 }
 rylsk = {
@@ -19509,7 +19493,6 @@ kyiv = {
 	define_pop = {	type = tribesmen	size = 1.416	culture = cossack_culture	religion = orthodox }
 }
 desnyanskyi_horodok = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 14.207	culture = ruthenian	religion = orthodox }
 }
 dymer = {
@@ -21522,31 +21505,16 @@ yelanets = {
 	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox }
 }
 usivka = {
-	define_pop = {	type = clergy	size = 0.016	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = peasants	size = 0.565	culture = crimean	religion = sunni }
-	define_pop = {	type = peasants	size = 1.293	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.910	culture = crimean	religion = tengri }
-	define_pop = {	type = slaves	size = 3.255	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
+	define_pop = {	type = tribesmen	size = 3.910	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 5.500	culture = cossack_culture	religion = orthodox }
 }
 mala_vyska = {
-	define_pop = {	type = clergy	size = 0.012	culture = mongolian_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 0.295	culture = crimean	religion = sunni }
-	define_pop = {	type = peasants	size = 1.931	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 6.687	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = slaves	size = 0.500	culture = ruthenian		religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.687	culture = crimean	religion = tengri }
+	define_pop = {	type = tribesmen	size = 5.500	culture = cossack_culture	religion = orthodox }
 }
 umanske = {
-	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 0.256	culture = crimean	religion = sunni }
-	define_pop = {	type = peasants	size = 1.983	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 6.885	culture = crimean	religion = tengri }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = slaves	size = 0.500	culture = ruthenian		religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.500	culture = cossack_culture	religion = orthodox } 
+	define_pop = {	type = tribesmen	size = 3.885	culture = crimean	religion = tengri }
+	define_pop = {	type = tribesmen	size = 5.500	culture = cossack_culture	religion = orthodox } 
 }
 ingul = {
 	define_pop = {	type = clergy	size = 0.006	culture = mongolian_culture	religion = sunni }
@@ -21567,12 +21535,10 @@ petrove = {
 	define_pop = {	type = tribesmen	size = 3.500	culture = cossack_culture	religion = orthodox }
 }
 karlivka = {
-	define_pop = {	type = clergy	size = 0.003	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 3.341	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 4.500	culture = cossack_culture	religion = orthodox }
 }
 kolomak = {
-	define_pop = {	type = peasants	size = 1.330	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 4.250	culture = cossack_culture	religion = orthodox }
 }
 berestyn = {
@@ -21669,7 +21635,6 @@ kursk = {
 	define_pop = {	type = slaves	size = 10.919	culture = severian	religion = orthodox }
 }
 fatezh = {
-	define_pop = {	type = clergy	size = 0.001	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 7.015	culture = severian	religion = orthodox }
 }
 opalkova = {
@@ -21682,37 +21647,30 @@ manturovo_kursk = {
 	define_pop = {	type = slaves	size = 6.034	culture = severian	religion = orthodox }
 }
 olgov = {
-	define_pop = {	type = clergy	size = 0.002	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 7.105	culture = severian	religion = orthodox }
 }
 oskol = {
 	define_pop = {	type = slaves	size = 6.715	culture = severian	religion = orthodox }
 }
 troitskoye_na_shchigrakh = {
-	define_pop = {	type = clergy	size = 0.007	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 12.877	culture = severian	religion = orthodox }
 }
 belgorod = {
-	define_pop = {	type = clergy	size = 0.001	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 7.820	culture = severian	religion = orthodox }
 }
 korocha = {
 	define_pop = {	type = slaves	size = 6.130	culture = severian	religion = orthodox }
 }
 oboyan = {
-	define_pop = {	type = clergy	size = 0.002	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 6.088	culture = severian	religion = orthodox }
 }
 muzhech = {
-	define_pop = {	type = clergy	size = 0.003	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 4.854	culture = severian	religion = orthodox }
 }
 rakitnoye = {
-	define_pop = {	type = clergy	size = 0.005	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 6.700	culture = severian	religion = orthodox }
 }
 sudzha = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 7.906	culture = severian	religion = orthodox }
 }
 yelets = {
@@ -21847,23 +21805,16 @@ konstantinovka = {
 	define_pop = {	type = slaves	size = 0.500	culture = ryazanian		religion = orthodox }
 }
 izium = {
-	define_pop = {	type = clergy	size = 0.009	culture = mongolian_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 0.312	culture = mishar	religion = sunni }
-	define_pop = {	type = peasants	size = 0.449	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 1.800	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.563	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = peasants	size = 1.112	culture = mishar	religion = sunni }
+	define_pop = {	type = tribesmen	size = 2.800	culture = mishar	religion = tengri }
+	define_pop = {	type = tribesmen	size = 4.863	culture = alan_culture	religion = alan_paganism }
 	define_pop = {	type = slaves	size = 2.126	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
 }
 adalaga = {
-	define_pop = {	type = peasants	size = 0.216	culture = mishar	religion = sunni }
-	define_pop = {	type = peasants	size = 0.289	culture = mishar	religion = tengri }
+	define_pop = {	type = peasants	size = 0.516	culture = mishar	religion = sunni }
 	define_pop = {	type = tribesmen	size = 1.579	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.085	culture = alan_culture	religion = alan_paganism }
-	define_pop = {	type = slaves	size = 1.173	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.085	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = slaves	size = 1.873	culture = ruthenian	religion = orthodox }
 }
 barvinkove = {
 	define_pop = {	type = clergy	size = 0.008	culture = mongolian_culture	religion = sunni }
@@ -21874,12 +21825,10 @@ barvinkove = {
 	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
 }
 kupiansk = {
-	define_pop = {	type = clergy	size = 0.033	culture = mongolian_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 0.254	culture = mishar	religion = sunni }
-	define_pop = {	type = peasants	size = 1.820	culture = mishar	religion = tengri }
+	define_pop = {	type = peasants	size = 0.854	culture = mishar	religion = sunni }
 	define_pop = {	type = tribesmen	size = 4.011	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 0.500	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = slaves	size = 0.500	culture = ryazanian		religion = orthodox }
+	define_pop = {	type = tribesmen	size = 3.097	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = slaves	size = 1.500	culture = ryazanian		religion = orthodox }
 }
 sloviansk = {
 	define_pop = {	type = peasants	size = 0.450	culture = crimean	religion = sunni }
@@ -21915,16 +21864,15 @@ vilshana = {
 	define_pop = {	type = peasants	size = 3.703	culture = severian	religion = orthodox }
 }
 donets_kharkiv = {
-	define_pop = {	type = clergy	size = 0.001	culture = mongolian_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 2.670	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 4.900	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.597	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = tribesmen	size = 4.500	culture = cossack_culture	religion = orthodox }
 }
 chuhuiv = {
-	define_pop = {	type = peasants	size = 0.218	culture = mishar	religion = sunni }
-	define_pop = {	type = peasants	size = 0.299	culture = mishar	religion = tengri }
+	define_pop = {	type = peasants	size = 0.518	culture = mishar	religion = sunni }
 	define_pop = {	type = tribesmen	size = 1.579	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 2.097	culture = alan_culture	religion = alan_paganism }
-	define_pop = {	type = slaves	size = 2.197	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.097	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = slaves	size = 2.097	culture = ruthenian	religion = orthodox }
 	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
 }
 khotmyzh = {
@@ -21932,21 +21880,17 @@ khotmyzh = {
 	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
 }
 kotelva = {
-	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.264	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 3.416	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.416	culture = cossack_culture	religion = orthodox }
 }
 okhtyrka = {
-	define_pop = {	type = clergy	size = 0.006	culture = severian	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.476	culture = severian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 5.416	culture = cossack_culture	religion = orthodox }
 }
 zmiiv = {
-	define_pop = {	type = peasants	size = 0.175	culture = mishar	religion = sunni }
-	define_pop = {	type = peasants	size = 0.308	culture = mishar	religion = tengri }
+	define_pop = {	type = peasants	size = 0.475	culture = mishar	religion = sunni }
 	define_pop = {	type = tribesmen	size = 1.397	culture = mishar	religion = tengri }
-	define_pop = {	type = tribesmen	size = 1.881	culture = alan_culture	religion = alan_paganism }
-	define_pop = {	type = slaves	size = 1.765	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 4.281	culture = alan_culture	religion = alan_paganism }
+	define_pop = {	type = slaves	size = 1.565	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 1.616	culture = cossack_culture	religion = orthodox }
 }
 melitopol = {
 	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = sunni }

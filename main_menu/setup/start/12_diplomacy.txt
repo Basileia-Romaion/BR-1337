@@ -473,7 +473,9 @@ diplomacy_manager = {
 
     #Sub dependencies
     dependency = { first = HE1 second = MOE subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = MOE second = HE3 subject_type = vassal }
     dependency = { first = HE1 second = ACH subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = ACH second = HE2 subject_type = vassal }
     dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = EPI second = DYR subject_type = march } # Thema
@@ -486,7 +488,7 @@ diplomacy_manager = {
     dependency = { first = AON second = AN4 subject_type = vassal } # Thema
     dependency = { first = AON second = AN28 subject_type = vassal }
     dependency = { first = AON second = AN26 subject_type = vassal }
-    #dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
+    dependency = { first = AN13 second = CIL subject_type = vassal }
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = vassal } # Thema
     dependency = { first = AN8 second = AN27 subject_type = vassal }
@@ -649,6 +651,9 @@ diplomacy_manager = {
     dependency = { first = BUL second = B0L subject_type = march }
 
     dependency = { first = HUN second = SE3 subject_type = fiefdom }
+
+    #dependency = { first = SER second = HUM subject_type = fiefdom }
+    dependency = { first = SER second = TRO subject_type = vassal }
 
     #-------------Persia------------
     #dependency = { first = TUR second = A0A subject_type = uc_bey }
