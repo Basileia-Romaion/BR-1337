@@ -330,11 +330,11 @@ REPLACE_OR_CREATE:bashtinas_and_pronijas_grants = {
 	country_modifier = {
 		monthly_towards_decentralization = societal_value_monthly_move
 		nobles_estate_max_tax = -0.1
-		global_nobles_estate_power = 0.4 #was 0.2
+		global_nobles_estate_power = 0.2
 		nobles_estate_target_satisfaction = small_privilege_target_satisfaction
 	}
 	country_modifier = {  #BR ADDED
-		potential_trigger = { "estate_power(estate_type:crown_estate)" >= 0.25 }
+		potential_trigger = { legitimacy > 50 }
 		nobles_estate_levy_size = 0.5
 		army_maintenance_efficiency = 0.15
 	}
@@ -350,11 +350,11 @@ REPLACE_OR_CREATE:zupa_districts = {
 	country_modifier = {
 		monthly_towards_defensive = societal_value_monthly_move
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_nobles_estate_power = 0.5 #was 0.4
+		global_nobles_estate_power = 0.4
 		tax_income_efficiency = medium_tax_income_efficiency_bonus #br added
 	}
 	country_modifier = {  #BR ADDED
-		potential_trigger = { "estate_power(estate_type:crown_estate)" >= 0.25 }
+		potential_trigger = { legitimacy > 50 }
 		global_army_levy_size_modifier = 0.15
 		levy_maintenance_modifier = -0.15
 	}
@@ -368,13 +368,13 @@ REPLACE_OR_CREATE:vlastele_krayishnik = {
 	}
 	
 	country_modifier = {
-		global_max_control = -0.05
-		global_defensive = 0.15
-		fort_limit_modifier = 0.25 #br added
+		global_max_rural_control = -0.05
 		global_nobles_estate_power = 0.2
+		fort_limit = 1 #br added
 	}
 	country_modifier = {  #BR ADDED
-		potential_trigger = { "estate_power(estate_type:crown_estate)" >= 0.25 }
+		potential_trigger = { legitimacy > 50 }
 		global_garrison_size_modifier = 0.25
+		global_defensive = 0.15
 	}
 }
