@@ -219,7 +219,7 @@ br_tribal_capital = {
 		is_capital = yes
 		any_pop = { 
 			pop_type = pop_type:tribesmen 
-			pop_size > 1
+			pop_size > 5
 		}
 	}
 	
