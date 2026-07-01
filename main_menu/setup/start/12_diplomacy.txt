@@ -484,9 +484,12 @@ diplomacy_manager = {
     dependency = { first = AON second = AN11 subject_type = vassal } # Thema
     dependency = { first = AON second = AN12 subject_type = vassal } # Thema
     dependency = { first = AON second = AN4 subject_type = vassal } # Thema
+    dependency = { first = AON second = AN28 subject_type = vassal }
+    dependency = { first = AON second = AN26 subject_type = vassal }
     #dependency = { first = AN13 second = CIL subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN1 subject_type = march } # Kleisoura
     dependency = { first = AN8 second = AN7 subject_type = vassal } # Thema
+    dependency = { first = AN8 second = AN27 subject_type = vassal }
     dependency = { first = AN10 second = AN2 subject_type = vassal } # Thema
     dependency = { first = AN10 second = AN3 subject_type = vassal } # Thema
     dependency = { first = ICO second = AN9 subject_type = vassal } # Pronoïakon Ktéma

@@ -186,7 +186,61 @@ tribal_hunting_lodge = {
 		local_tribes_estate_power = 0.25
 		local_tribal_promotion = -0.25
 		local_tribesmen_desired_pop = 1
+	}	
+
+}
+
+br_tribal_capital = {
+	audio_tier = 3
+	is_special = yes
+	is_foreign = no
+	pop_type = tribesmen
+	icon = kurultai
+	
+	max_levels = kurultai_max_level
+	employment_size = kurultai_employment
+	
+	category = military_category
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	allow_wrong_startup = yes
+	
+	expensive = yes
+	
+	country_potential = {
+		government_type ?= government_type:tribe
 	}
 	
+	location_potential = {
+		is_capital = yes
+		any_pop = { 
+			pop_type = pop_type:tribesmen 
+			pop_size > 1
+		}
+	}
 	
+	remove_if = {
+		owner = { government_type != government_type:tribe }
+	}
+	
+	build_time = soldier_building
+	
+	modifier = {
+		local_manpower = 0.05
+		can_recruit_regiment_in_this_location = yes
+	}
+	
+	unique_production_methods = {
+		br_tribal_capital_maintenance = {
+			horses = 0.2
+			leather = 0.05
+			weaponry = 0.02
+			category = building_maintenance
+		}
+	}
+	construction_demand = early_soldier_building_construction
 }

@@ -7,6 +7,7 @@ br_turkic_traditions = {
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	requires = horse_riding_advance
@@ -25,6 +26,7 @@ br_turkic_descendants_of_seljuk = {
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	requires = br_turkic_traditions
@@ -40,6 +42,7 @@ br_turkic_seljuk_resurgent = {
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	requires = br_turkic_descendants_of_seljuk
@@ -55,6 +58,7 @@ br_turkic_new_roots = {	#They move away from being horde-like to a more reformed
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	allow = {
@@ -65,12 +69,22 @@ br_turkic_new_roots = {	#They move away from being horde-like to a more reformed
 	government_reform_slots = 1
 	global_distance_from_capital_speed_propagation = 0.2
 }
+br_greek_in_the_court = {
+	age = age_1_traditions
+	icon = ira_islamized_persia
+	potential = {
+		culture = culture:br_tourkoromaioi_culture
+	}
+	cultures_capacity = 1
+	requires = br_turkic_new_roots
+}
 br_turkic_persian_arts_and_architecture = {
 	age = age_1_traditions
 	potential = {
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	requires = br_turkic_new_roots
@@ -84,6 +98,7 @@ br_turkic_ghazi = {
 		OR = {
 			culture = culture:turkish_culture
 			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
 		}
 	}
 	nobles_estate_levy_size = 0.25
@@ -92,4 +107,20 @@ br_turkic_ghazi = {
 	army_tradition_from_battle = 0.5
 
 	requires = br_turkic_new_roots
+}
+
+br_turkic_slave_tax = {
+	age = age_1_traditions
+
+	potential = {
+		OR = {
+			culture = culture:turkish_culture
+			culture = culture:turkoman_culture
+			culture = culture:br_tourkoromaioi_culture
+		}
+	}
+	global_slaves_goods_output_modifier = 0.5
+
+	requires = br_turkic_ghazi
+
 }

@@ -31462,7 +31462,7 @@ sonisa = {
 }
 bozok = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.426	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 12.426	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
 	define_pop = {	type = peasants	size = 4.284	culture = armenian_culture	religion = miaphysite }
 }
 baliseyh = {
@@ -31480,8 +31480,9 @@ candir = {
 }
 dinek_keskin = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.342	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 7.342	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
 	define_pop = {	type = peasants	size = 2.947	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 3.803	culture = turkoman_culture	religion = sunni }
 }
 sorgun = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
@@ -31587,17 +31588,19 @@ middle_taurus_5 = {
 }
 kirsehir = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.067	culture = cappadocian_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.126	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
-	define_pop = {	type = peasants	size = 4.355	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 3.067	culture = cappadocian_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 5.126	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 2.355	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = tribesmen	size = 0.220	culture = romani_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 2.946	culture = levantine_culture religion = sunni }
+	define_pop = {	type = tribesmen	size = 4.503	culture = turkoman_culture	religion = sunni }
 }
 hacibektas = {
 	define_pop = {	type = clergy	size = 0.005	culture = greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.237	culture = cappadocian_greek_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 4.265	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
+	define_pop = {	type = peasants	size = 5.237	culture = cappadocian_greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.265	culture = anatolian_greek_culture	religion = orthodox } #BR EDIT
 	define_pop = {	type = peasants	size = 2.890	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = tribesmen	size = 4.203	culture = turkoman_culture	religion = sunni }
 }
 nevsehir = {
 	define_pop = {	type = clergy	size = 0.080	culture = greek_culture	religion = orthodox }

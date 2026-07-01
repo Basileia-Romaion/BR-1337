@@ -54607,10 +54607,10 @@ countries = {
 
 	ICO = {
 		own_control_core = {
-			konya hatunsaray ladik larende pirloganda cumra altinekin
+			konya hatunsaray larende pirloganda cumra
 		}
 		our_cores_conquered_by_others = {
-			obruk karapinar
+			obruk karapinar altinekin ladik
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55092,7 +55092,8 @@ countries = {
 		capital = erzincan
 	}
 
-	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium 
+	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium
+		type = army
 		own_control_conquered = {
 			eskil obruk karapinar
 		}
@@ -55140,6 +55141,94 @@ countries = {
 		capital = catak
 		religious_school = maturidi_school
 	}
+	
+	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Kayseri
+		type = army
+		own_control_conquered = {
+			kirsehir hacibektas dinek_keskin
+		}
+		starting_technology_level = 3
+		include = "expl_middle_east"
+		include = "muslim_monarchy_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = br_tourkoromaioi_rdm_character_2
+			ruler_term = { character = br_tourkoromaioi_rdm_character_2 start_date = 1329.9.25 }
+
+			reforms = {
+				br_sub_foideratoi_subject
+			}
+			privilege = {
+				br_turkoman_privilege
+				br_ere_foederati_privilege
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribal_autonomy
+				tribes_land_rights
+				tribes_pasture_access
+			}
+		}
+		capital = kirsehir
+		dynasty = bayindir_dynasty
+		religious_school = maturidi_school
+	}
+
+	AN27 = { #Cappadocian pronoia
+		own_control_core = {
+			nevsehir kochisar sariyahsi
+		}
+		our_cores_conquered_by_others = {
+			kirsehir
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			#ruler = br_ere_rdm_character_25
+			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			anatolian_greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = nevsehir
+	}
+
+	AN28 = { #anatolian pronoia
+		own_control_core = {
+			insuyu kulu_turkey altinekin ladik
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			#ruler = br_ere_rdm_character_25
+			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			greek_culture
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = insuyu
+	}
 
 	AN3 = {
 		own_control_core = {
@@ -55177,10 +55266,12 @@ countries = {
 	
 	AN4 = {
 		own_control_core = {
-			bozok dinek_keskin sorgun baliseyh
-			kirsehir hacibektas
+			bozok sorgun baliseyh
 			huseyinabad sungurlu
 			corum
+		}
+		our_cores_conquered_by_others = {
+			kirsehir hacibektas dinek_keskin
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -55202,7 +55293,7 @@ countries = {
 			war_exhaustion = 5
 		}
 		liturgical_language = koine_dialect
-		capital = kirsehir
+		capital = bozok
 	}
 	
 	AN5 = {
@@ -55274,22 +55365,21 @@ countries = {
 
 	AN7 = {
 		own_control_core = {
-			aksaray kochisar sariyahsi eregli_kar
-			nevsehir
+			aksaray eregli_kar
 			bekarlar bor_tur nigde
 		}
 		our_cores_conquered_by_others = {
-			eskil
+			eskil nevsehir kochisar sariyahsi
 		}
 		starting_technology_level = 3
-		include = "br_thema_template"
+		include = "br_pronoia_template"
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		government = {
 			ruler = br_ere_rdm_character_25
 			ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
 		}
-		country_rank = rank_duchy
+		country_rank = rank_county
 		accepted_cultures = {
 			greek_culture
 			anatolian_greek_culture
@@ -55431,7 +55521,6 @@ countries = {
 
 	AN12 = {
 		own_control_core = {
-			insuyu kulu_turkey
 			turgut suluklu celtik
 		}
 		starting_technology_level = 3
