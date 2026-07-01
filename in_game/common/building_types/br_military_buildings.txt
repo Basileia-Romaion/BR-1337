@@ -292,7 +292,7 @@ br_soldier_farmers = { #thema estates
 	icon = kastellet
 
 	category = village_category
-	estate = peasants_estate
+	#estate = peasants_estate
 
 	employment_size = 0.250
 	
@@ -345,6 +345,10 @@ br_soldier_farmers = { #thema estates
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
+	can_destroy = {
+        local_control > 0.75
+	}
+	destroy_price = br_bandits_building_remove_price
 	
 	modifier = {
 		local_pop_assimilation_speed_modifier = 0.05
@@ -366,7 +370,7 @@ br_pronoia_estate = { #pronoia estates
 	icon = tur_kodjabashi_office
 
 	category = village_category
-	estate = nobles_estate
+	#estate = nobles_estate
 
 	employment_size = 0.025
 	
@@ -402,6 +406,10 @@ br_pronoia_estate = { #pronoia estates
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
+	can_destroy = {
+        local_control > 0.75
+	}
+	destroy_price = br_bandits_building_remove_price
 	
 	modifier = {
 		local_peasant_enfranchisment = -0.02
@@ -423,7 +431,7 @@ br_foederati_grant = { #Foederati Settlements
 	category = village_category
 	#estate = peasants_estate
 
-	employment_size = 0.500
+	employment_size = 1
 	
 	country_potential = {
 		OR = {
@@ -458,7 +466,7 @@ br_foederati_grant = { #Foederati Settlements
 		hunting_lodges
 		rural_millet_brewery
 		rural_weaponmaker
-		rural_blacksmith
+		#rural_blacksmith
 		br_soldier_farmers_cattle_maintenance
 		br_soldier_farmers_wool_maintenance
 		br_soldier_farmers_sturdy_crops_maintenance
@@ -469,15 +477,21 @@ br_foederati_grant = { #Foederati Settlements
 	remove_if = {
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
+	can_destroy = {
+        local_control > 0.75
+	}
+	destroy_price = br_bandits_building_remove_price
 	
 	modifier = {
-		local_tribes_estate_power = 1
-		local_tribesmen_desired_pop = 1
-		local_tribal_promotion = -0.5
+		local_tribes_estate_power = 5
 		local_food_capacity = 100
 		local_monthly_food_modifier = 0.1
 		local_manpower = 0.002
-		local_army_levy_size_modifier = 0.5
+		local_army_levy_size_modifier = 1
+	}
+	raw_modifier = {
+		local_tribesmen_desired_pop = 2.5
+		local_tribal_promotion = -1
 		local_tribesmen_assimilation_blocked = yes
 	}
 }
