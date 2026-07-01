@@ -2458,7 +2458,7 @@ countries = {
 			#Kiev Chernihiv
 			melnya
 			ichnia pryluky chornukhy
-			lypova_dolyna romen buryn sumy krasnopillia hadiach
+			lypova_dolyna romen buryn sumy hadiach #krasnopillia
 			glushkovo putyvl vilshana
 			brahin khoiniki kholmyech
 		}
@@ -3996,10 +3996,6 @@ countries = {
 			ukek teshevka voronezh oskol rovenki valuyki
 			karkaraly
 			kaynar_atbai
-
-			bratslav balta bershad karabul savran
-			torhovytsia teplyk tsybuliv uman zavallia
-			vinnytsia sokilets
 			armavir
 			qarasuvbazar
 			ismail
@@ -4007,16 +4003,15 @@ countries = {
 			#Formerly BR subjects
 
 			kichkas rozdory hryshyne pavlohrad 
-			yelanets usivka mala_vyska umanske ingul petrove 
-			karlivka kolomak berestyn samarchyk oril ternivka
+			yelanets ingul petrove 
+			karlivka berestyn samarchyk oril ternivka
 			kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
 			adalaga barvinkove
 			donets_kharkiv zmiiv chuhuiv
-			okhtyrka kotelva khotmyzh
 			kursk fatezh kosozhichi olgov
 			manturovo_kursk troitskoye_na_shchigrakh
 			opalkova
-			belgorod rakitnoye muzhech sudzha oboyan
+			belgorod muzhech oboyan
 			tula_russia bogoroditsk arkhangelskoye kurkino donkov yelets talitsa_yelets gogol
 			ust_livny
 		}
@@ -12520,11 +12515,11 @@ countries = {
 	ACH = { #https://en.wikipedia.org/wiki/Principality_of_Achaea
 		own_control_core = {
 			kalamata kyparissia
-			chalandritsa patras vostitsa kalavryta
-			andritsaina pontikokastro andravida
+			chalandritsa patras vostitsa
+			andravida pontikokastro
 		}
-		
 		our_cores_conquered_by_others = {
+			kalavryta andritsaina
 			tripolitsa veligosti karytaina
 			corinth damala ermioni xylokastro
 		}
@@ -13645,7 +13640,6 @@ countries = {
 			peja prizren kotor shkoder onogost gradina
 			budimlja brskovo gjakova mitrovica
 			podgorica bar_cg prijepolje visegrad ustikolina soko_grad
-			gacko trebinje
 			uzice pljevlja
 			trgoviste_SER sjenica 
 			arilje brvenik
@@ -13654,6 +13648,7 @@ countries = {
 		}
 
 		our_cores_conquered_by_others = {
+			trebinje
 			ravno kucevo branicevo
 			stalac
 			krusevac jagodina zica
@@ -13674,7 +13669,7 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_kingdom
 		government = {
 			type = monarchy
@@ -13718,43 +13713,23 @@ countries = {
 				name_stephen.name_uros = 4
 			}
 			reforms = {
-				autocracy
-				local_army_organization
 			}
 			privilege = {
 				#Nobles
-				noble_serfdom_rights
 				bashtinas_and_pronijas_grants
 				zupa_districts
 				vlastele_krayishnik
-				feudal_mercenary_contracts
+				
 				primacy_of_nobility
-
+				feudal_mercenary_contracts
+				
 				#clergy
 				clergy_powerful_dioceses
 				#burghers
 				#peasants
 				gradozadanje_and_gradobljudenlje_rights
-				peasants_allowed_weapons_privilege
 				peasants_yeomanry
-
-				tribes_land_rights
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_tribal_levies
-				tribes_protected_faith
-				br_slavic_tribes_privilege
 			}
-			laws = {
-				feudal_de_jure_law = by_tradition
-				medieval_levy_law = noble_levies
-				royal_court_customs_law = aristocratic_court_policy
-				administrative_system = feudal_administration
-				distribution_of_power_law = dop_traditional_distribution_of_power
-			}
-
-			quality_vs_quantity = 15
-			belligerent_vs_conciliatory = -10
 
 		}
 		tolerated_cultures = {
@@ -13777,7 +13752,7 @@ countries = {
 		}
 		currency_data = {
 			gold = 500
-			prestige = 100
+			prestige = 75
 			stability = 100
 			government_power = 100
 			army_tradition = 100
@@ -13821,10 +13796,10 @@ countries = {
 
 	BOS = {
 		own_control_core = {
-			mostar metkovic glamoc
+			metkovic glamoc
 			vrhbosna konjic srebrenica doboj soli
-			jajce livno drijeva zenica kljuc srebrenik
-			glaz teocak olovo borac nevesinje
+			jajce livno zenica kljuc srebrenik
+			glaz teocak olovo borac
 		}
 		our_cores_conquered_by_others = {
 			kozara
@@ -14201,7 +14176,7 @@ countries = {
 
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_empire
 		government = {
 			type = monarchy
@@ -14287,7 +14262,6 @@ countries = {
 			}
 			reforms = {
 				bulgarian_tsardom
-				autocracy
 			}
 			privilege = {
 				#nobles
@@ -14297,13 +14271,6 @@ countries = {
 				br_tsar_bulgars_romans
 				#burghers
 				#peasants
-				peasants_allowed_weapons_privilege
-
-				br_slavic_tribes_privilege
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribes_pasture_access
-				tribes_land_rights
 			}
 		}
 		accepted_cultures = {
@@ -14365,14 +14332,16 @@ countries = {
 	}
 
 	HUM = {
+		own_control_core = {
+			drijeva gacko mostar nevesinje
+		}
 		our_cores_conquered_by_others = {
-			trebinje drijeva gacko mostar nevesinje
-			slano
+			trebinje slano
 		}
 
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy_not_present"
+		include = "br_balkan_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -14419,12 +14388,13 @@ countries = {
 
 	MOE = { #BR ADDED
 		own_control_core = {
-			tripolitsa veligosti karytaina
-			monemvasia mystras oitylo leuktron astros
+			monemvasia mystras astros
 			argos nafplio
-			
+			tripolitsa 
+			oitylo
 		}
 		our_cores_conquered_by_others = {
+			karytaina veligosti leuktron
 			damala ermioni kalamata kyparissia
 			andritsaina pontikokastro andravida corinth
 			chalandritsa patras vostitsa kalavryta xylokastro
@@ -19394,12 +19364,12 @@ countries = {
 	}
 
 	TRO = { #Travunija		
-		our_cores_conquered_by_others = {
+		own_control_core = {
 			trebinje
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "catholic_monarchy_not_present"
+		include = "br_balkan_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -30858,14 +30828,14 @@ countries = {
 		karasor balyktykol tuzdysor zhalauly
 		zhanaarka takhir
 		abakasnk beya shushenskoye
-		verkhotomsk kolchugino
+		#verkhotomsk kolchugino
 		taskayevo
 		imakia zhelezin lebyazhye
 		bursol kuchukskoye volchikha butyrskoe
 		kuznetsk salair kytmanovo ust_kabyrza askiz
 		mayma biysk
 		suzun berdsk chesnokovka kalmanka barnaul
-		krivoshchekovo kamen dovolnoye kozhevnikovo bolotnye
+		krivoshchekovo kamen dovolnoye #kozhevnikovo bolotnye
 	}
 
 	starting_technology_level = 3
@@ -32956,7 +32926,6 @@ countries = {
 		own_control_core = {
 			anavarza sis caxud molevon
 		}
-
 		our_cores_conquered_by_others = {
 			ayas 
 			corycus candir_cil
@@ -32976,7 +32945,6 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
 		include = "br_armenian_monarchy"
-		rebellion_demand = default_nationalist_demand
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -33011,8 +32979,7 @@ countries = {
 				name_oshin = 1
 			}
 		}
-		revolt = yes
-		country_rank = rank_duchy
+		country_rank = rank_county
 		capital = sis
 	}
 
@@ -42533,14 +42500,13 @@ countries = {
 			ovruch bilokorovychi korosten malyn narodychi stodolichi
 			zhytomyr berdychiv chudniv chortolisy korostyshiv mychesk
 			
-			poltava kremenchuk myrhorod velyki_sorochyntsi
+			myrhorod
 			lubny pyriatyn horodyshche horoshino zolotonosha
 			pereiaslav desnyanskyi_horodok boryspil oster kozelets
 			#Black Ruthenia
 				
 
 			yaroslavka yahotyn lutava
-			opishnya hovtva
 		}
 		
 		include = "expl_eastern_europe"
@@ -54002,35 +53968,66 @@ countries = {
 	}
 
 	HE2 = {
-		type = pop
-		add_pops_from_locations = {
-			tripolitsa veligosti karytaina
-			monemvasia mystras oitylo leuktron astros
-			argos nafplio
-			damala ermioni kalamata kyparissia
-			andritsaina pontikokastro andravida corinth
-			chalandritsa patras vostitsa kalavryta xylokastro
-			kythira modon
+		#type = pop
+		own_control_core = {
+			andritsaina kalavryta
 		}
-
-
+		our_cores_conquered_by_others = {
+			pontikokastro 
+		}
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		include = "eurasian_orthodox_tribe"
-
-		include = "eurasian_tribe"
 		starting_technology_level = 3
 		government = {
 			type = tribe
 			heir_selection = tribal_oldest_male
 			ruler = random
+			reforms = {
+				br_sub_foideratoi_subject
+			}
 			privilege = {
+				br_ere_foederati_privilege
 				peasants_allowed_weapons_privilege
 				tribes_land_rights
 				tribes_pasture_access
 				br_slavic_tribes_privilege
 			}
 		}
+		capital = andritsaina
+	}
+
+	HE3 = {
+		own_control_core = {
+			karytaina
+			veligosti 
+			leuktron
+		}
+		our_cores_conquered_by_others = {
+			tripolitsa 
+			oitylo 
+		}
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "eurasian_orthodox_tribe"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+
+			reforms = {
+				br_sub_foideratoi_subject
+			}
+			privilege = {
+				br_ere_foederati_privilege
+				peasants_allowed_weapons_privilege
+				tribes_land_rights
+				tribes_pasture_access
+				br_slavic_tribes_privilege
+			}
+		}
+		capital = karytaina
 	}
 
 	HC0 = {
@@ -54173,7 +54170,6 @@ countries = {
 		include = "expl_mediterranean"
 		include = "br_pronoia_template"
 		government = {
-			
 			ruler_term = { character = br_ere_rdm_character_01 start_date = 1335.1.1 }
 			ruler = br_ere_rdm_character_01
 		}
@@ -54207,29 +54203,13 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_duchy
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
 			ruler_term = { character = br_balkan_rdm_character_5 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_5
-			regnal_numbers = {
-				name_peter = 2
-				Ivan_Asen = 3
-				name_michael = 3
-				name_constantine = 1
-				name_george = 2
-				name_theodore = 1
-				name_john.name_stephen = 1
-				name_john.name_alexander = 1
-			}
-			reforms = {
-				autocracy
-			}
 			privilege = {
 				primacy_of_nobility
-				peasants_allowed_weapons_privilege
 				br_tsar_bulgars_romans
 			}
 		}
@@ -54260,9 +54240,6 @@ countries = {
 		include = "br_pronoia_template"
 		country_rank = rank_county
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-
 			ruler_term = { character = br_ere_rdm_character_37 start_date = 1329.9.25 } 
 			ruler = br_ere_rdm_character_37
 		}
@@ -54349,26 +54326,14 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_duchy
 		government = {
 			ruler_term = { character = br_balkan_rdm_character_6 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_6
-			reforms = {
-				autocracy
-			}
 			privilege = {
 				feudal_mercenary_contracts
 				primacy_of_nobility
-				auxilium_et_consilium
-				peasants_allowed_weapons_privilege
-			}
-			laws = {
-				feudal_de_jure_law = by_tradition
-				medieval_levy_law = noble_levies
-				royal_court_customs_law = aristocratic_court_policy
-				administrative_system = feudal_administration
-				distribution_of_power_law = dop_traditional_distribution_of_power
 			}
 		}
 		tolerated_cultures = {
@@ -54386,26 +54351,14 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_duchy
 		government = {
 			ruler_term = { character = br_balkan_rdm_character_1 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_1
-			reforms = {
-				autocracy
-			}
 			privilege = {
 				feudal_mercenary_contracts
 				primacy_of_nobility
-				auxilium_et_consilium
-				peasants_allowed_weapons_privilege
-			}
-			laws = {
-				feudal_de_jure_law = by_tradition
-				medieval_levy_law = noble_levies
-				royal_court_customs_law = aristocratic_court_policy
-				administrative_system = feudal_administration
-				distribution_of_power_law = dop_traditional_distribution_of_power
 			}
 		}
 		tolerated_cultures = {
@@ -54424,28 +54377,15 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_duchy
 		government = {
 			ruler_term = { character = br_balkan_rdm_character_4 start_date = 1333.1.1 }
 			ruler = br_balkan_rdm_character_4
-			reforms = {
-				autocracy
-			}
 			privilege = {
 				feudal_mercenary_contracts
 				primacy_of_nobility
-				auxilium_et_consilium
-				peasants_allowed_weapons_privilege
 			}
-			laws = {
-				feudal_de_jure_law = by_tradition
-				medieval_levy_law = noble_levies
-				royal_court_customs_law = aristocratic_court_policy
-				administrative_system = feudal_administration
-				distribution_of_power_law = dop_traditional_distribution_of_power
-			}
-			
 		}
 		tolerated_cultures = {
 		}
@@ -54460,27 +54400,15 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
-		include = "eastern_european_monarchy"
+		include = "br_balkan_monarchy"
 		country_rank = rank_county
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
-			reforms = {
-				autocracy
-			}
 			privilege = {
 				feudal_mercenary_contracts
 				primacy_of_nobility
-				auxilium_et_consilium
-				peasants_allowed_weapons_privilege
-			}
-			laws = {
-				feudal_de_jure_law = by_tradition
-				medieval_levy_law = noble_levies
-				royal_court_customs_law = aristocratic_court_policy
-				administrative_system = feudal_administration
-				distribution_of_power_law = dop_traditional_distribution_of_power
 			}	
 		}
 		tolerated_cultures = {
@@ -54915,321 +54843,6 @@ countries = {
 		capital = sivas
 	}
 
-	AN14 = {
-		own_control_core = {
-			divrigi egin
-		}
-		starting_technology_level = 3
-		include = "br_thema_template"
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		government = {
-			ruler = random
-			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
-		}
-		country_rank = rank_county
-		accepted_cultures = {
-			armenian_culture
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -25
-			government_power = -10
-			#inflation = 0.1
-			war_exhaustion = 5
-		}
-		liturgical_language = koine_dialect
-		capital = divrigi
-	}
-
-	AN15 = {
-		own_control_core = {
-			darende gurun
-		}
-		starting_technology_level = 3
-		include = "br_thema_template"
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		government = {
-			ruler = random
-			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
-		}
-		country_rank = rank_county
-		accepted_cultures = {
-			armenian_culture
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -25
-			government_power = -10
-			#inflation = 0.1
-			war_exhaustion = 5
-		}
-		liturgical_language = koine_dialect
-		capital = darende
-	}
-
-	AN16 = {
-		own_control_core = {
-			bogazliyan candir
-		}
-		starting_technology_level = 3
-		include = "br_pronoia_template"
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		government = {
-			ruler = random
-			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
-		}
-		country_rank = rank_county
-		accepted_cultures = {
-			armenian_culture
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -25
-			government_power = -10
-			#inflation = 0.1
-			war_exhaustion = 5
-		}
-		liturgical_language = koine_dialect
-		capital = bogazliyan
-	}
-
-	AN17 = { #small armenian principality 
-		own_control_core = {
-			arapgir arguvan
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = arapgir
-	}
-
-	AN18 = { #small armenian principality 
-		own_control_core = {
-			hargan
-		}
-		our_cores_conquered_by_others = {
-			comana_cil anavarza sis caxud
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = hargan
-	}
-	AN19 = { #small armenian principality 
-		own_control_core = {
-			ilic zara
-		}
-		our_cores_conquered_by_others = {
-			kemah
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = kemah
-	}
-	AN20 = { #small armenian principality 
-		own_control_core = {
-			adakli genc bingol
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = genc
-	}
-	AN21 = { #small armenian principality 
-		own_control_core = {
-			kuzucan
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = kuzucan
-	}
-	AN22 = { #small armenian principality 
-		own_control_core = {
-			kemah erzincan
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = erzincan
-	}
-	AN23 = { #small armenian principality 
-		own_control_core = {
-			bayburt kelkit
-		}
-		starting_technology_level = 3
-		include = "expl_christian_caucasus"
-		include = "br_armenian_monarchy"
-		government = {
-			ruler = random
-		}
-		country_rank = rank_county
-		capital = erzincan
-	}
-
-	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium
-		type = army
-		own_control_conquered = {
-			eskil obruk karapinar
-		}
-		starting_technology_level = 3
-		include = "expl_middle_east"
-		include = "muslim_monarchy_no_coast"
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = br_tourkoromaioi_rdm_character_2
-			ruler_term = { character = br_tourkoromaioi_rdm_character_2 start_date = 1329.9.25 }
-
-			reforms = {
-				br_sub_foideratoi_subject
-			}
-			privilege = {
-				br_turkoman_privilege
-				br_ere_foederati_privilege
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribal_autonomy
-				tribes_land_rights
-				tribes_pasture_access
-			}
-		}
-		capital = obruk
-		dynasty = bayindir_dynasty
-		religious_school = maturidi_school
-	}
-	
-	AN25 = { #Kurdish tribe in mountains near Van
-		own_control_core = {
-			catak hosap
-		}
-		include = "expl_middle_east"
-		include = "muslim_tribe_no_coast"
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = random
-		}
-		tolerated_cultures = {
-			armenian_culture
-		}
-		capital = catak
-		religious_school = maturidi_school
-	}
-	
-	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Kayseri
-		type = army
-		own_control_conquered = {
-			kirsehir hacibektas dinek_keskin
-		}
-		starting_technology_level = 3
-		include = "expl_middle_east"
-		include = "muslim_monarchy_no_coast"
-		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = br_tourkoromaioi_rdm_character_2
-			ruler_term = { character = br_tourkoromaioi_rdm_character_2 start_date = 1329.9.25 }
-
-			reforms = {
-				br_sub_foideratoi_subject
-			}
-			privilege = {
-				br_turkoman_privilege
-				br_ere_foederati_privilege
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribal_autonomy
-				tribes_land_rights
-				tribes_pasture_access
-			}
-		}
-		capital = kirsehir
-		dynasty = bayindir_dynasty
-		religious_school = maturidi_school
-	}
-
-	AN27 = { #Cappadocian pronoia
-		own_control_core = {
-			nevsehir kochisar sariyahsi
-		}
-		our_cores_conquered_by_others = {
-			kirsehir
-		}
-		starting_technology_level = 3
-		include = "br_pronoia_template"
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		government = {
-			#ruler = br_ere_rdm_character_25
-			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
-		}
-		country_rank = rank_county
-		accepted_cultures = {
-			anatolian_greek_culture
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -25
-			government_power = -10
-			#inflation = 0.1
-			war_exhaustion = 5
-		}
-		liturgical_language = koine_dialect
-		capital = nevsehir
-	}
-
-	AN28 = { #anatolian pronoia
-		own_control_core = {
-			insuyu kulu_turkey altinekin ladik
-		}
-		starting_technology_level = 3
-		include = "br_pronoia_template"
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		government = {
-			#ruler = br_ere_rdm_character_25
-			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
-		}
-		country_rank = rank_county
-		accepted_cultures = {
-			greek_culture
-			armenian_culture
-		}
-		currency_data = { #From ongoing civil war and turkic raiding
-			stability = -25
-			government_power = -10
-			#inflation = 0.1
-			war_exhaustion = 5
-		}
-		liturgical_language = koine_dialect
-		capital = insuyu
-	}
-
 	AN3 = {
 		own_control_core = {
 			sebinkarahisar
@@ -55583,6 +55196,322 @@ countries = {
 		capital = tarsus
 	}
 
+	
+	AN14 = {
+		own_control_core = {
+			divrigi egin
+		}
+		starting_technology_level = 3
+		include = "br_thema_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = divrigi
+	}
+
+	AN15 = {
+		own_control_core = {
+			darende gurun
+		}
+		starting_technology_level = 3
+		include = "br_thema_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = darende
+	}
+
+	AN16 = {
+		own_control_core = {
+			bogazliyan candir
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+			#ruler_term = { character = br_ere_rdm_character_66 start_date = 1335.1.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = bogazliyan
+	}
+
+	AN17 = { #small armenian principality 
+		own_control_core = {
+			arapgir arguvan
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = arapgir
+	}
+
+	AN18 = { #small armenian principality 
+		own_control_core = {
+			hargan
+		}
+		our_cores_conquered_by_others = {
+			comana_cil anavarza sis caxud
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = hargan
+	}
+	AN19 = { #small armenian principality 
+		own_control_core = {
+			ilic zara
+		}
+		our_cores_conquered_by_others = {
+			kemah
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = kemah
+	}
+	AN20 = { #small armenian principality 
+		own_control_core = {
+			adakli genc bingol
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = genc
+	}
+	AN21 = { #small armenian principality 
+		own_control_core = {
+			kuzucan
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = kuzucan
+	}
+	AN22 = { #small armenian principality 
+		own_control_core = {
+			kemah erzincan
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = erzincan
+	}
+	AN23 = { #small armenian principality 
+		own_control_core = {
+			bayburt kelkit
+		}
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "br_armenian_monarchy"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = erzincan
+	}
+
+	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium
+		type = army
+		own_control_conquered = {
+			eskil obruk karapinar
+		}
+		starting_technology_level = 3
+		include = "expl_middle_east"
+		include = "muslim_monarchy_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = br_tourkoromaioi_rdm_character_2
+			ruler_term = { character = br_tourkoromaioi_rdm_character_2 start_date = 1329.9.25 }
+
+			reforms = {
+				br_sub_foideratoi_subject
+			}
+			privilege = {
+				br_turkoman_privilege
+				br_ere_foederati_privilege
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribal_autonomy
+				tribes_land_rights
+				tribes_pasture_access
+			}
+		}
+		capital = obruk
+		dynasty = bayindir_dynasty
+		religious_school = maturidi_school
+	}
+	
+	AN25 = { #Kurdish tribe in mountains near Van
+		own_control_core = {
+			catak hosap
+		}
+		include = "expl_middle_east"
+		include = "muslim_tribe_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+		}
+		tolerated_cultures = {
+			armenian_culture
+		}
+		capital = catak
+		religious_school = maturidi_school
+	}
+	
+	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Kayseri
+		type = army
+		own_control_conquered = {
+			kirsehir hacibektas dinek_keskin
+		}
+		starting_technology_level = 3
+		include = "expl_middle_east"
+		include = "muslim_monarchy_no_coast"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = br_tourkoromaioi_rdm_character_9
+			ruler_term = { character = br_tourkoromaioi_rdm_character_9 start_date = 1329.9.25 }
+
+			reforms = {
+				br_sub_foideratoi_subject
+			}
+			privilege = {
+				br_turkoman_privilege
+				br_ere_foederati_privilege
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				tribal_autonomy
+				tribes_land_rights
+				tribes_pasture_access
+			}
+		}
+		capital = kirsehir
+		dynasty = avsar_dynasty
+		religious_school = maturidi_school
+	}
+
+	AN27 = { #Cappadocian pronoia
+		own_control_core = {
+			nevsehir kochisar sariyahsi
+		}
+		our_cores_conquered_by_others = {
+			kirsehir
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			#ruler = br_ere_rdm_character_25
+			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			anatolian_greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = nevsehir
+	}
+
+	AN28 = { #anatolian pronoia
+		own_control_core = {
+			insuyu kulu_turkey altinekin ladik
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			#ruler = br_ere_rdm_character_25
+			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			greek_culture
+			armenian_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = insuyu
+	}
+
 	P2N = {
 		own_control_core = {
 			boyabat sinop gerze
@@ -55926,16 +55855,18 @@ countries = {
 
 	G0L = { # SIBIR Khanate
 		own_control_core = {
-			qashliq siberia_abalak turtas yukonda
+			qashliq siberia_abalak
 			tara znamenskoye ust_ishim omsk kamyshnoye cherlak tyukalinsk kolosovka
 			chimgi_tura tugulym yalutorovsk shadrinsk tsaryovo_gorodishche
 			tobolsk vagay tavdinsky_sloboda yurginskoye vikulovo
-			surgut bolshoy_balyk irtysh megion bolshoy_yugan upper_ob
 
 			gorkovskoye okoneshnikovo
 			chastoozerye polovinnoye armizonskoye berdyuzhye korkina_sloboda
 			shish muromtsevo sartlan kargat kainsky_pas kyshtovka
-			tomsk melnikovo molchanovo kargasok vasyugan kolpashevo
+
+			#turtas yukonda
+			#surgut bolshoy_balyk irtysh megion bolshoy_yugan upper_ob
+			#tomsk melnikovo molchanovo kargasok vasyugan kolpashevo
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"
