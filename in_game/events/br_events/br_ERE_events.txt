@@ -120,6 +120,15 @@ br_ere_events.1 = {
 				}
 			}
 			if = {
+				limit = { country_exists = c:AN28 }
+				c:AN28 = {
+					make_subject_of = {
+						target = c:AON
+						type = subject_type:pronoia
+					}
+				}
+			}
+			if = {
 				limit = { country_exists = c:AN9 }
 				c:AN9 = {
 					make_subject_of = {
@@ -218,6 +227,16 @@ br_ere_events.1 = {
 					}
 				}
 			}
+			if = {
+				limit = { country_exists = c:AN27 }
+				c:AN27 = {
+					make_subject_of = {
+						target = c:AN8
+						type = subject_type:pronoia
+					}
+				}
+			}
+			
 		}
 	}
 	option = {
@@ -1953,10 +1972,6 @@ br_ere_events.1003 = {
 		high_reward_option = yes
 		name = br_ere_events.1003.a
 
-		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_bonus }
-		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
 		if = {
             limit = {
                 NOR = {
@@ -1973,6 +1988,7 @@ br_ere_events.1003 = {
                     cost_multiplier = 0
                     cost_multiplier_reason = "game_concept_event"
                 }
+				create_sub_unit = unit_type:a_byzantine_cataphracts
             }
         }
 
@@ -2001,10 +2017,6 @@ br_ere_events.1004 = {
 		high_reward_option = yes
 		name = br_ere_events.1004.a
 
-		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_bonus }
-		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
 		if = {
             limit = {
                 NOR = {
@@ -2020,6 +2032,7 @@ br_ere_events.1004 = {
                     cost_multiplier = 0
                     cost_multiplier_reason = "game_concept_event"
                 }
+				create_sub_unit = unit_type:a_byzantine_cataphracts
             }
         }
 
