@@ -78,6 +78,13 @@ br_sub_theme_subject = {
 			is_subject_of = c:BYZ
 			is_member_of_international_organization = international_organization:roman_world
 		}
+		NOR = {
+			has_reform = government_reform:br_sub_pronoia_subject
+			has_reform = government_reform:br_sub_religious_subject
+			has_reform = government_reform:br_naval_akritai_reform
+			has_reform = government_reform:br_katepanata_reform
+			has_reform = government_reform:br_sub_foideratoi_subject
+		}
 	}
 	locked = {
 		OR = {
@@ -124,6 +131,13 @@ br_sub_pronoia_subject = {
 			is_subject_of = c:BYZ
 			is_member_of_international_organization = international_organization:roman_world
 		}
+		NOR = {
+			has_reform = government_reform:br_sub_theme_subject
+			has_reform = government_reform:br_sub_religious_subject
+			has_reform = government_reform:br_naval_akritai_reform
+			has_reform = government_reform:br_katepanata_reform
+			has_reform = government_reform:br_sub_foideratoi_subject
+		}
 	}
 	locked = {
 		OR = {
@@ -163,12 +177,26 @@ br_sub_religious_subject = {
 		culture = { has_culture_group = culture_group:roman_group }
 		NOT = { has_or_had_tag = BYZ }
 	}
+	allow = {
+		OR = {
+			is_subject_of = c:BYZ
+			is_member_of_international_organization = international_organization:roman_world
+		}
+		NOR = {
+			has_reform = government_reform:br_sub_theme_subject
+			has_reform = government_reform:br_sub_pronoia_subject
+			has_reform = government_reform:br_naval_akritai_reform
+			has_reform = government_reform:br_katepanata_reform
+			has_reform = government_reform:br_sub_foideratoi_subject
+		}
+	}
 	locked = {
 		OR = {
 			is_subject_of = c:BYZ
 			is_member_of_international_organization = international_organization:roman_world
 		}
 	}
+
 	country_modifier = {
 		monthly_towards_spiritualist = societal_value_monthly_move
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
@@ -194,6 +222,19 @@ br_sub_foideratoi_subject = {
 		OR = {
 			has_reform = government_reform:br_sub_foideratoi_subject
 			#is_subject_type = br_foederati_subject
+		}
+	}
+	allow = {
+		OR = {
+			is_subject_of = c:BYZ
+			is_member_of_international_organization = international_organization:roman_world
+		}
+		NOR = {
+			has_reform = government_reform:br_sub_theme_subject
+			has_reform = government_reform:br_sub_pronoia_subject
+			has_reform = government_reform:br_sub_religious_subject
+			has_reform = government_reform:br_naval_akritai_reform
+			has_reform = government_reform:br_katepanata_reform
 		}
 	}
 	locked = {
