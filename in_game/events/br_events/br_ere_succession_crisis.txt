@@ -1,5 +1,30 @@
 ﻿namespace = br_ere_succession_crisis
 
+		#custom_tooltip = {
+			#text = flavor_wls.13.tt1
+
+			#every_disloyal_subject = {
+				#make_subject_of = {
+					#target = scope:glyndwr_country
+					#type = subject_type
+				#}
+				#every_subject = {
+					#join_war_with = {
+						#target = scope:glyndwr_country
+						#war = scope:glyndwr_country.civil_war
+						#call_in_subjects = yes
+					#}
+				#}
+			#}
+
+			#every_loyal_subject = {
+				#join_war_with = {
+					#target = root
+					#war = root.civil_war
+					#call_in_subjects = yes
+				#}
+			#}
+		#}
 
 br_ere_succession_crisis.1 = {
 	type = country_event
