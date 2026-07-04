@@ -32856,7 +32856,7 @@ countries = {
 			deir_ez_zor tabqah rahba
 		}
 		own_control_integrated = {
-		
+
 		}
 
 		starting_technology_level = 3
@@ -33135,70 +33135,14 @@ countries = {
 			besni marash
 			artah idlib
 		}
-
 		include = "expl_eastern_europe"
 		include = "expl_muslim_mediterranean"
-		include = "turkish_beylik_no_coast_no_greek"
-
+		include = "br_turkic_tribal"
 		government = {
 			ruler_term = {	 character = dul_karaca start_date = 1337.1.1 }
 			ruler = dul_karaca
-			privilege = {
-				#Nobles
-				elaborate_court_ceremonies
-				banal_lordship
-				#joint_assembly_decrees
-				br_ghazi_privilege
-				noble_sponsored_navy
-				auxilium_et_consilium
-
-				#Ulama
-				#waqf_payments
-				embellish_great_works_of_faith
-				freedom_of_interpretation
-				
-				#Burghers
-				trade_monopolies
-				formal_guilds
-				shipwright_contracts
-				land_of_commerce
-				allow_trade_center_sponsorship
-				urban_development_grants
-				commercial_advisory_council
-				burghers_protected_faith
-
-				#peasants
-				peasants_allowed_weapons_privilege
-				
-				#Dhimmi #BR ADDED
-				dhimmi_administrative_posts
-				dhimmi_abrahamic_communities
-				dhimmi_military_service
-				dhimmi_land_rights
-				dhimmi_pact_of_umar
-				dhimmi_traditions
-				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
-				dhimmi_mazalim_court
-				dhimmi_in_administration
-
-				#Tribes
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribes_land_rights
-				tribes_pasture_access
-				tribes_tribal_registry
-				tribes_protected_faith
-				tribes_in_administration
-
-				br_ottoman_dhimmi_levies
-				br_turkoman_privilege
-
-			}
-			
 			laws = {
 				sharia_law = ismaili_policy
-				education_masses_law = basic_religious_education
 			}
 		}
 		timed_modifier = {
@@ -33729,11 +33673,6 @@ countries = {
 			balad_ruz baqubah khalis khanaqin mandali
 			eyvan
 			tabriz heris maragheh sarab tufarqan
-			beylagan lemberan 
-			mughan baciravan bilasuvar germi salyan varsan
-			ahar aslanduz kaleybar khiyav mardanaqom qahqaheh
-			hadishahr marand
-			urmia khameneh salmas
 			santeh takht_e_soleyman
 			miyaneh aghkand
 			zanjan mahneshan sarcham sojas
@@ -33863,10 +33802,10 @@ countries = {
 	#Artaz - ATZ #BR EDIT
 	ATZ = {
 		own_control_core = {
-			maku nazok_olya qarahziaoddin siah_cheshmeh
+			maku siah_cheshmeh
 		}
 		our_cores_conquered_by_others = {
-			bayazit
+			bayazit nazok_olya qarahziaoddin
 		}
 		
 		include = "expl_christian_caucasus"
@@ -34385,54 +34324,55 @@ countries = {
 
 	#Aq Qoyunlu - AQQ
 	AQQ = {
-		our_cores_conquered_by_others = {
-			harput adakli palu
-			bayburt 
+		type = army
+		own_control_core = {
+			hadishahr marand mardanaqom
+			urmia khameneh salmas
 		}
-
+		own_control_conquered = {
+			nazok_olya qarahziaoddin julfa nakhchivan
+		}
+		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "muslim_tribe_no_coast_not_present"
-
-
+		include = "br_turkic_tribal"
 		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
+			type = monarchy
+			heir_selection = cognatic_primogeniture
 			ruler = random
-
-			laws = {
-				sharia_law = hanafi_policy
-			}
 		}
-
-		capital = palu
+		tolerated_cultures = {
+			adhari_culture
+		}
+		country_rank = rank_duchy
+		capital = hadishahr
 		religious_school = hanafi_school
-		government = { mysticism_vs_jurisprudence = -15 }	
 	}
 
 	#Qara Qoyunlu - QAR
 	QAR = {
-		our_cores_conquered_by_others = {
-			ercis bargiri
-			qayyarah tal_afar
+		type = army
+		own_control_core = {
+			beylagan lemberan zardab
+			mughan baciravan bilasuvar germi salyan varsan
+			ahar aslanduz kaleybar khiyav qahqaheh
 		}
-
+		own_control_conquered = {
+			aresh barda goroz shusha
+		}
+		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "muslim_tribe_no_coast_not_present"
-
-
+		include = "br_turkic_tribal"
 		government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
+			type = monarchy
+			heir_selection = cognatic_primogeniture
 			ruler = random
-
-			laws = {
-				sharia_law = hanafi_policy #There is no proof that they were shiite as claimed in EU4
-			}
 		}
-
-		capital = ercis
+		tolerated_cultures = {
+			adhari_culture
+		}
+		country_rank = rank_duchy
+		capital = beylagan
 		religious_school = hanafi_school
-		government = { mysticism_vs_jurisprudence = -15 }	
 	}
 
 	#Al 'Alī - AAL
@@ -34547,38 +34487,21 @@ countries = {
 		own_control_conquered = {
 			harput keban palu cemisgezek pertek
 		}
-
 		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "muslim_monarchy_no_coast"
+		include = "br_turkic_tribal"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
-
-			privilege = {
-				br_ghazi_privilege
-				br_ottoman_dhimmi_levies
-				br_turkoman_privilege
-				
-				tribes_tribal_levies
-				tribes_allow_gatherings
-				tribal_autonomy
-				tribes_land_rights
-				tribes_pasture_access
-			}
-
 		}
-
 		capital = cermik
 		dynasty = doger_dynasty
-
 		tolerated_cultures = {
 			kurdish_culture
 		}
 		religious_school = hanafi_school
 		government = { mysticism_vs_jurisprudence = -15 }
-		
 	}
  #-------------------------- Holy Roman Empire ---------------------------- 
 
@@ -51121,7 +51044,7 @@ countries = {
 		own_control_core = {
 			baku javad mahmudabad maraza qobustan shamakhi
 			shirvan derbent niyazabad quba shabran
-			agsu goychay zardab
+			agsu goychay
 		}
 
 		own_control_integrated = {
@@ -51216,6 +51139,8 @@ countries = {
 			hasankale tekman
 			karakilise
 			bayazit
+			sotk bjni
+			spitak kayen
 		}
 
 		our_cores_conquered_by_others = {
@@ -51331,6 +51256,8 @@ countries = {
 	VDZ = { #Vayots Dzor
 		own_control_core = {
 			gladzor
+		}
+		our_cores_conquered_by_others = {
 			sotk bjni
 			spitak kayen
 		}
@@ -51520,11 +51447,11 @@ countries = {
 
 	SKI = { #Shaki
 		own_control_core = {
-			shaki aresh vartashen
+			shaki vartashen
 		}
 
 		our_cores_conquered_by_others = {
-			agsu goychay javad qabala zardab
+			agsu goychay javad qabala zardab aresh
 		}
 
 		include = "expl_middle_east"
@@ -51545,14 +51472,16 @@ countries = {
 		
 		capital = shaki
 		tolerated_cultures = {
-			azeri_culture
 			lezgin_culture
 		}
 	}
 
 	KCN = { #Khachen
 		own_control_core = {
-			gandzasar haterk goroz shusha kashatagh
+			gandzasar haterk kashatagh
+		}
+		our_cores_conquered_by_others = {
+			goroz shusha
 		}
 
 
@@ -51616,11 +51545,11 @@ countries = {
 
 	SYU = { #Syunik
 		own_control_core = {
-			kapan_armenia goris tatev julfa nakhchivan
+			kapan_armenia goris tatev
 		}
 
 		our_cores_conquered_by_others = {
-			kashatagh
+			kashatagh julfa nakhchivan
 		}
 
 		include = "expl_christian_caucasus"
@@ -55650,10 +55579,10 @@ countries = {
 	
 	GAN = {
 		own_control_core = {
-			ganja gardman shamkir barda
+			ganja gardman shamkir
 		}
 		our_cores_conquered_by_others = {
-			shaki aresh vartashen
+			shaki aresh vartashen barda
 		}
 		starting_technology_level = 3
 		include = "expl_christian_caucasus"
@@ -55661,13 +55590,13 @@ countries = {
 		government = {
 			ruler = random
 		}
-		country_rank = rank_duchy
+		#country_rank = rank_duchy
 		accepted_cultures = {
 			georgian_culture
 		}
 		capital = ganja
 	}
-	
+
 	#AN14 = { #Armenian in Anatolia
 		#type = pop
 		#add_pops_from_locations = {

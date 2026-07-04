@@ -293,8 +293,8 @@
  br_balkan_mountain_strongholds: "Balkan Mountain Strongholds"
  br_balkan_mountain_strongholds_desc: "The mountains and valleys of the Balkans have long sheltered fortified settlements and resilient communities. Generations of warfare in difficult terrain have produced a network of strongholds capable of frustrating invaders while safeguarding trade and communication through the interior."
 
- br_bulgar_steppe_heritage: "Legacy of the Horse Lords"
- br_bulgar_steppe_heritage_desc: "Though settled among the mountains and plains of the Balkans, the Bulgars retain traditions born upon the Eurasian steppe. Skilled horsemen and hardy warriors answer the call to arms with speed and discipline, providing a reliable source of cavalry and levies for the realm."
+ br_balkan_tribal_heritage : "Legacy of the Horse Lords"
+ br_balkan_tribal_heritage _desc: "Though settled among the mountains and plains of the Balkans, the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] retain traditions born upon the Eurasian steppe. Skilled horsemen and hardy warriors answer the call to arms with speed and discipline, providing a reliable source of cavalry and levies for the realm."
 
  br_asturias_fortress: "Fortress of Asturias"
  br_asturias_fortress_desc: "The rugged mountains of Asturias have long served as a bastion against foreign conquest. Fortified passes, hilltop castles, and isolated strongholds enable local rulers to resist larger foes while inflicting heavy losses upon any army that dares penetrate the highlands."
@@ -395,6 +395,12 @@
  br_italian_condottieri: "$italian_condottieri$"
  br_italian_condottieri_desc: "$italian_condottieri_desc$"
 
+ br_carolingian_relatinization: "Carolingian Relatinization" #Renovatio Latina
+ br_carolingian_relatinization_desc: "Following the reforms of Charlemagne and his successors, the Latin tongue is restored as the language of scholarship, administration, and faith. Monasteries, cathedral schools, and royal scriptoria cultivate a learned elite whose shared culture strengthens both the realm and the Church."
+ br_papal_protector: "Protector of the Holy See"
+ br_papal_protector_desc: "As the foremost defender of the Papacy, our rulers enjoy the favor of the Supreme Pontiff and the moral authority that accompanies it. This sacred bond reinforces the unity of the faithful while strengthening our influence throughout Christendom."
+ br_carolingian_centralization: "Carolingian Centralization" #Renovatio Regni
+ br_carolingian_centralization_desc: "A kingdom cannot endure if its authority rests solely in the hands of ambitious lords. By strengthening royal governors, extending the reach of the crown, and establishing uniform administration throughout the realm, the Carolingian ideal of a united Christian monarchy is renewed."
  br_french_tradition: "$french_tradition$"
  br_french_tradition_desc: "$french_tradition_desc$"
  br_french_heritage: "$french_heritage$"

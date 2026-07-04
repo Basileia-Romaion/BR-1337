@@ -1,11 +1,11 @@
 ﻿TRY_INJECT:rank_empire = {
 	rank_modifier = {
-		global_max_bureaucracy_slots = 1
+		global_max_bureaucracy_slots = 2
 	}
 }
 
-#TRY_INJECT:rank_kingdom = {
-	#rank_modifier = {
-		#global_max_bureaucracy_slots = 1
-	#}
-#}
+TRY_INJECT:rank_kingdom = {
+	rank_modifier = {
+		global_max_bureaucracy_slots = 1
+	}
+}

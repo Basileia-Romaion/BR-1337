@@ -1,5 +1,6 @@
 ﻿
 ##############################-Turkic-##############################
+#These are currently overpowered so that they are a good rival for the ERE.
 br_turkic_traditions = {
 	age = age_1_traditions
 	icon = turco_mongol_tradition
@@ -12,10 +13,11 @@ br_turkic_traditions = {
 	}
 	requires = horse_riding_advance
 
-	army_light_cavalry_build_cost_modifier = -0.2
-	army_light_cavalry_reinforce_cost_modifier = -0.2
-	army_light_cavalry_maintenance_cost_modifier = -0.2
-	levy_maintenance_modifier = -0.2
+	army_light_cavalry_build_cost_modifier = -0.15
+	army_light_cavalry_reinforce_cost_modifier = -0.15
+	army_light_cavalry_maintenance_cost_modifier = -0.15
+	levy_maintenance_modifier = -0.15
+	army_movement_speed = 0.05
 	unlock_unit = a_steppe_horse_archers
 
 }
@@ -31,9 +33,9 @@ br_turkic_descendants_of_seljuk = {
 	}
 	requires = br_turkic_traditions
 
-	army_light_cavalry_power = 0.2
-	global_manpower_modifier = 0.2
-	army_maintenance_efficiency = 0.2
+	army_light_cavalry_power = 0.15
+	global_manpower_modifier = 0.15
+	army_maintenance_efficiency = 0.15
 }
 br_turkic_seljuk_resurgent = {
 	age = age_1_traditions
@@ -47,9 +49,8 @@ br_turkic_seljuk_resurgent = {
 	}
 	requires = br_turkic_descendants_of_seljuk
 
-	global_integration_speed_modifier = 0.2
-	subject_income_modifier = 0.2
-	global_crown_estate_power = 0.2
+	subject_income_modifier = 0.25
+	global_crown_estate_power = 0.25
 	
 }
 br_turkic_new_roots = {	#They move away from being horde-like to a more reformed state, more stable and robust
@@ -68,6 +69,7 @@ br_turkic_new_roots = {	#They move away from being horde-like to a more reformed
 	icon = administrative_leadership
 	government_reform_slots = 1
 	global_distance_from_capital_speed_propagation = 0.2
+	global_integration_speed_modifier = 0.2
 }
 br_greek_in_the_court = {
 	age = age_1_traditions

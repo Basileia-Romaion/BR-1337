@@ -32,6 +32,8 @@ br_imperial_administration = {
 		government_reform_slots = 1
 		court_spending_efficiency  = -0.1
 		base_crown_estate_power_modifier = 0.1
+		#global_max_bureaucracy_slots = 1
+		maintain_bureaucracy_price_cost_modifier = -0.1
 	}
 	country_modifier = {
 		potential_trigger = { stability > 0 }
@@ -42,13 +44,6 @@ br_imperial_administration = {
 		monthly_towards_centralization = societal_value_monthly_move
 		monthly_towards_br_bureaucratic = societal_value_monthly_move
 		global_crown_estate_power = 0.25
-	}
-	country_modifier = {
-		potential_trigger = { 
-			has_dlc = "d008_fate_of_the_phoenix"
-		}
-		global_max_bureaucracy_slots = 1
-		maintain_bureaucracy_price_cost_modifier = -0.1
 	}
 	country_modifier = {
 		potential_trigger = { legitimacy < 100 }
@@ -321,9 +316,6 @@ br_katepanata_reform = {
 		monthly_towards_stratiotai = societal_value_large_monthly_move
 		global_crown_estate_power = 0.25
 		allow_thema_headquarters = yes
-		
-	}
-	country_modifier = {
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {

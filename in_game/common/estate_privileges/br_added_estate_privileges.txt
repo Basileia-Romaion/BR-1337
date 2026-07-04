@@ -235,7 +235,7 @@
 		}
 		country_modifier = {
 			nobles_estate_levy_size = 1
-			wrong_culture_levy_size = 0.1
+			peasants_estate_levy_size = -0.1
 			monthly_towards_aristocracy = societal_value_monthly_move
 			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 			global_nobles_estate_power = 0.50
@@ -735,6 +735,7 @@
 			societal_value:spiritualist_vs_humanist > 50
 		}
 		country_modifier = {
+			global_bureaucracy_maintenance_efficiency = 0.1
 			global_clergy_estate_power = 0.25
 			global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000
 			monthly_towards_centralization = societal_value_minor_monthly_move
@@ -749,12 +750,6 @@
 			}
 			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
 			country_cabinet_efficiency = 0.1
-		}
-		country_modifier = {
-			potential_trigger = { 
-				has_dlc = "d008_fate_of_the_phoenix"
-			}
-			global_bureaucracy_maintenance_efficiency = 0.1
 		}
 		country_modifier = {
 			potential_trigger = { 

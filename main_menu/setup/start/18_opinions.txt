@@ -68,47 +68,6 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = P2N type = left_empire }
 
 	#Disloyal
-	opinion = { first = B0R second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = THS second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = ACH second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AON second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = PAF second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = ICO second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = TRE second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = CIL second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN1 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN2 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN3 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN4 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN5 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN6 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN7 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN8 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN9 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN10 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN11 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-	opinion = { first = AN12 second = BYZ type = opinion_declined_to_recognize_monarchy_modifier }
-
-	opinion = { first = B0R second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = THS second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = ACH second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AON second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = PAF second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = ICO second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = TRE second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = CIL second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN1 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN2 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN3 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN4 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN5 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN6 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN7 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN8 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN9 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN10 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN11 second = BYZ type = opinion_low_legitimacy }
-	opinion = { first = AN12 second = BYZ type = opinion_low_legitimacy }
 	
 	#Loyal
 	#opinion = { first = FEO second = BYZ type = opinion_emperors_genorisity }

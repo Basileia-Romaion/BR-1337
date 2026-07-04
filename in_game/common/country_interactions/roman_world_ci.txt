@@ -36,6 +36,7 @@ roman_world_bestow_domestikos_west = {
 
 	effect = {
 		scope:actor = {
+			change_roman_authority = { value = -5 }
             add_legitimacy = -10 #added as a cost
 		}
 		international_organization:roman_world = {
@@ -148,6 +149,7 @@ roman_world_rescind_domestikos_west = {
 
 	effect = {
 		scope:actor = {
+            change_roman_authority = { value = -5 }
             add_stability = -10
 		}
 		international_organization:roman_world = {
@@ -210,6 +212,7 @@ roman_world_bestow_domestikos_east = {
 
 	effect = {
 		scope:actor = {
+            change_roman_authority = { value = -5 }
             add_legitimacy = -10 #added as a cost
 		}
 		international_organization:roman_world = {
@@ -322,6 +325,7 @@ roman_world_rescind_domestikos_east = {
 
 	effect = {
 		scope:actor = {
+            change_roman_authority = { value = -5 }
             add_stability = -10
 		}
 		international_organization:roman_world = {
@@ -393,7 +397,9 @@ br_restore_roman_status = {
 
 	effect = {
 		scope:actor = {
+            change_roman_authority = { value = -10 }
             add_legitimacy = -10 #added as a cost
+			add_prestige = 5
 		}
 		scope:recipient = {
 			make_subject_of = {
@@ -600,6 +606,7 @@ br_change_strategos = {
 	
 	effect = {
 		scope:actor = {
+			change_roman_authority = { value = -5 }
             add_legitimacy = -10 #added as a cost
 		}
 		if = {
@@ -667,7 +674,9 @@ br_allow_dynastic_inheritance = {
 
 	effect = {
 		scope:actor = {
+			change_roman_authority = { value = 5 }
             add_stability = 10
+			add_prestige = -5
 		}
 		if = {
 			limit = { exists = scope:recipient }
@@ -731,7 +740,9 @@ br_remove_dynastic_inheritance = {
 
 	effect = {
 		scope:actor = {
+			change_roman_authority = { value = -5 }
             add_stability = -10
+			add_prestige = 5
 		}
 		if = {
 			limit = { exists = scope:recipient }

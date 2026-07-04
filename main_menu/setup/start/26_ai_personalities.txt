@@ -4,6 +4,23 @@
 countries = {
 	countries = {
 
+		#BR Additions
+		BUL ?= { ai_personality = ai_opportunistic }
+		SER ?= { ai_personality = ai_opportunistic }
+		ADU ?= { ai_personality = ai_opportunistic }
+		NSE ?= { ai_personality = ai_opportunistic }
+		BNV ?= { ai_personality = ai_opportunistic }
+		TUN ?= { ai_personality = ai_opportunistic }
+		E1Y ?= { ai_personality = ai_opportunistic }
+		E2Y ?= { ai_personality = ai_opportunistic }
+		NRV ?= { ai_personality = ai_opportunistic }
+
+		MZF ?= { ai_personality = ai_aggressive }
+
+		ARM ?= { ai_personality = ai_defensive }
+		VAN ?= { ai_personality = ai_defensive }
+		DER ?= { ai_personality = ai_defensive }
+
 		# Aggressive: militarist nations that pursue wars without hesitation
 		TUR ?= { ai_personality = ai_aggressive }  # Ottoman Empire
 		SWE ?= { ai_personality = ai_aggressive }  # Sweden
@@ -17,8 +34,6 @@ countries = {
 		FRA ?= { ai_personality = ai_expansionist }  # France
 		LOT ?= { ai_personality = ai_expansionist }  # France
 		MOS ?= { ai_personality = ai_expansionist }  # Muscovy / Russia
-		ADU ?= { ai_personality = ai_expansionist }  # Castile
-		ENG ?= { ai_personality = ai_expansionist }  # England
 		DAN ?= { ai_personality = ai_expansionist }  # Denmark
 		BRA ?= { ai_personality = ai_expansionist }  # Brandenburg
 		HUN ?= { ai_personality = ai_expansionist }  # Hungary

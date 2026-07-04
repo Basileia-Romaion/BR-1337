@@ -552,7 +552,6 @@ diplomacy_manager = {
     dependency = { first = MES second = AN21 subject_type = vassal }
     
     dependency = { first = ARM second = VAN subject_type = vassal } #BR ADDED
-    dependency = { first = ARM second = VDZ subject_type = vassal }
     scripted_mutual = { first = GEO second = ARM type = alliance }
     #dependency = { first = GEO second = SGO subject_type = march }
     scripted_oneway = { first = GEO second = SGO type = guarantee }
@@ -659,7 +658,6 @@ diplomacy_manager = {
     #dependency = { first = TUR second = A0A subject_type = uc_bey }
     #dependency = { first = TUR second = A2A subject_type = uc_bey }
     dependency = { first = TUR second = ARD subject_type = vassal }
-    dependency = { first = TUR second = DML subject_type = vassal }
     dependency = { first = TUR second = HDR subject_type = vassal }
     dependency = { first = TUR second = IHB subject_type = vassal }
     dependency = { first = TUR second = KEL subject_type = vassal }
@@ -674,10 +672,17 @@ diplomacy_manager = {
     dependency = { first = TUR second = ZZR subject_type = vassal }
     #dependency = { first = TUR second = AIA subject_type = vassal }
     dependency = { first = TUR second = SRV subject_type = vassal }
-    dependency = { first = TUR second = SYU subject_type = vassal }
-    dependency = { first = TUR second = ATZ subject_type = vassal }
-    dependency = { first = TUR second = KCN subject_type = vassal }
-    dependency = { first = TUR second = GAN subject_type = vassal }
+
+    dependency = { first = TUR second = AQQ subject_type = uc_bey }
+    dependency = { first = AQQ second = SYU subject_type = vassal }
+    dependency = { first = AQQ second = ATZ subject_type = vassal }
+    dependency = { first = AQQ second = DML subject_type = vassal }
+    dependency = { first = AQQ second = VDZ subject_type = vassal }
+
+    dependency = { first = TUR second = QAR subject_type = uc_bey }
+    dependency = { first = QAR second = KCN subject_type = vassal }
+    dependency = { first = QAR second = GAN subject_type = vassal }
+    dependency = { first = QAR second = SKI subject_type = vassal }
 
     dependency = { first = TUR second = HNY subject_type = vassal } #A0A
     dependency = { first = TUR second = KRI subject_type = vassal } #A0A

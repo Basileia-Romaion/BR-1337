@@ -51,11 +51,6 @@ br_spqe_reform = {
 		country_cabinet_efficiency = 0.1
 		government_reform_slots = 1
 		parliament_base_support = 0.1
-	}
-    country_modifier = {
-		potential_trigger = { 
-			has_dlc = "d008_fate_of_the_phoenix"
-		}
 		global_max_bureaucracy_slots = 1
 	}
 

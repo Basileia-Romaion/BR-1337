@@ -6,6 +6,24 @@
 
 br_on_game_start = {
     effect = {
+		every_country = {
+			limit = { 
+					has_special_status_in_international_organization = {
+					type = special_status:defiant_strategoi
+					international_organization = international_organization:roman_world
+				}
+			}
+			set_personality = ai_personality:ai_defensive
+			add_opinion = {
+				modifier = opinion_low_legitimacy
+				target = c:BYZ
+			}
+			add_opinion = {
+				modifier = opinion_declined_to_recognize_monarchy_modifier
+				target = c:BYZ
+			}
+        }
+
         c:E1Y ?= {
             trigger_event_silently = br_startup.1 #resource changes
         }

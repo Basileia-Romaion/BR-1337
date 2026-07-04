@@ -224,13 +224,16 @@ br_carolingian_heritage = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		diplomatic_capacity = 1
+		monthly_legitimacy = 0.1
 	}
 	country_modifier = {
 		potential_trigger = { government_power >= 50 }
 		monthly_towards_centralization = societal_value_monthly_move
 		global_crown_estate_power = 0.25
-		monthly_legitimacy = 0.1
+	}
+	country_modifier = {
+		potential_trigger = { prestige >= 50 }
+		army_heavy_cavalry_power = 0.1
 		power_projection = 10
 	}
 	years = 2
@@ -242,14 +245,12 @@ br_ancient_french_taxation = {
 	potential = {
 		has_or_had_tag = LOT
 	}
-
 	locked = {
 		custom_tooltip = {
 			text = fra_ancient_french_taxation_removal_conditions
 			societal_value:centralization_vs_decentralization >= -50
 		}
 	}
-
 	country_modifier = {
 		monthly_towards_serfdom = societal_value_monthly_move
 		global_peasant_enfranchisment = -0.20
@@ -279,7 +280,6 @@ br_french_feudal_nobility = { # French Feudalism
 		monthly_towards_serfdom = societal_value_monthly_move
 		monthly_towards_aristocracy = societal_value_large_monthly_move
 		nobles_estate_levy_size = 0.25
-		army_heavy_cavalry_power = 0.1
 		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
 	years = 2
@@ -303,7 +303,7 @@ br_french_centralized_monarchy = { # Centralized French Monarchy
 		#monthly_towards_centralization = societal_value_monthly_move
 		global_crown_estate_power = 0.10
 		legislative_efficiency = 0.10
-		power_projection = 5
+		power_projection = 10
 		revoke_privilege_cost_modifier = -0.1
 		government_reform_slots = 1
 	}

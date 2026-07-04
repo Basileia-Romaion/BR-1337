@@ -41,6 +41,11 @@ REPLACE_OR_CREATE:create_colonial_charter = {
 		cache_targets = yes #these are the same no matter where we're coming from
 		name = "create_colonial_charter_select_province_definition"
 		none_available_msg_key = "create_colonial_charter_no_provinces"
+		pre_evaluation_sort_value = {
+			value = "scope:actor.colonial_charter_distance(root)"
+			multiply = -1 # closer = higher score = evaluated fully first
+		}
+		pre_evaluation_number_to_evaluate_fully = 10
 		column = {
 			data = colonial_charter
 		}

@@ -44,7 +44,12 @@ br_ere_events.1 = {
 						target = c:BYZ
 						type = subject_type:pronoia
 					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
+					}
 				}
+				
 			}
 			if = {
 				limit = { country_exists = c:B0R }
@@ -52,6 +57,10 @@ br_ere_events.1 = {
 					make_subject_of = {
 						target = c:THE
 						type = subject_type:pronoia
+					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
 					}
 				}
 			}
@@ -62,6 +71,10 @@ br_ere_events.1 = {
 						target = c:THE
 						type = subject_type:pronoia
 					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
+					}
 				}
 			}
 			if = {
@@ -70,6 +83,10 @@ br_ere_events.1 = {
 					make_subject_of = {
 						target = c:BYZ
 						type = subject_type:pronoia
+					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
 					}
 				}
 			}
@@ -80,6 +97,10 @@ br_ere_events.1 = {
 						target = c:HE1
 						type = subject_type:pronoia
 					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
+					}
 				}
 			}
 			if = {
@@ -88,6 +109,10 @@ br_ere_events.1 = {
 					make_subject_of = {
 						target = c:HE1
 						type = subject_type:pronoia
+					}
+					remove_opinion = {
+						target = c:BYZ
+						modifier = opinion_declined_to_recognize_monarchy_modifier
 					}
 				}
 			}

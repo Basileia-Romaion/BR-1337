@@ -48,13 +48,15 @@
  br_alandalus_reform: "The Andalusian Compact"
  br_alandalus_reform_desc: "The rulers of al-Andalus have long maintained their authority through a careful balance of tolerance, scholarship, and administrative sophistication. Muslims, Christians, and Jews alike are granted space within the realm’s social order, strengthening the prosperity and resilience of the state. Yet this same spirit of accommodation preserves local identities and traditions, slowing the cultural and religious unification of the realm."
 
- br_ancient_french_taxation: "Ancient [GetCountry('LOT').GetAdjectiveWithNoTooltip] Taxation"
+ #[ShowSpecialStatusName('emperor')] #[GetCountry('LOT').GetAdjectiveWithNoTooltip] #[GetCountry('LOT').GetName] #[GetCountry('LOT').GetAdjective]
+ 
+ br_ancient_french_taxation: "[GetUniqueInternationalOrganization('hre').GetName] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] Taxation"
  br_ancient_french_taxation_desc: "Historically, taxes have been imposed and collected only in times of need, not by a recurrent system."
 
- br_french_feudal_nobility: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Feudal Nobility"
- br_french_feudal_nobility_desc: "Feudalism has a tight grip on [GetCountry('LOT').GetAdjective] court affairs. Powerful nobles and autonomous, decentralized subjects have unprecedented amounts of freedom and say in our internal administration."
- br_french_centralized_monarchy: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Monarchy"
- br_french_centralized_monarchy_desc: "Following centuries of heavy decentralization, [GetCountry('LOT').GetName] has consolidated many of its fragmented appanage and ducal lands, paving the way for a more modern state."
+ br_french_feudal_nobility: "[GetUniqueInternationalOrganization('hre').GetName] Feudal Nobility"
+ br_french_feudal_nobility_desc: "Feudalism has a tight grip on the [ShowSpecialStatusName('emperor')]s court affairs. Powerful nobles and autonomous, decentralized subjects have unprecedented amounts of freedom and say in our internal administration."
+ br_french_centralized_monarchy: "[GetUniqueInternationalOrganization('hre').GetName] Monarchy"
+ br_french_centralized_monarchy_desc: "Following centuries of heavy decentralization, [ShowSpecialStatusName('emperor')] has consolidated many of its fragmented appanage and ducal lands, paving the way for a more modern state."
  #br_french_appanage_reform: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Appanage"
  #br_french_appanage_reform_desc: "As Princes of the Blood, holders of appanages enjoy a higher standing among the subjects of [GetCountry('LOT').GetName], as well as greater privileges. Furthermore, the [GetCountry('LOT').GetAdjective] monarch is expected to pay them adequate respect in exchange for their assistance in diplomatic affairs."
  #br_french_ducal_vassal_reform: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Ducal"

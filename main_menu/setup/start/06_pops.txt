@@ -20155,7 +20155,7 @@ shusha = {
 	define_pop = {	type = clergy	size = 0.008	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = peasants	size = 4.611	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 1.536	culture = adhari_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = tribesmen	size = 0.303	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 2.853	culture = turkoman_culture	religion = sunni }
 }
 kapan_armenia = {
 	define_pop = {	type = nobles	size = 0.016	culture = armenian_culture	religion = miaphysite }
@@ -20747,10 +20747,10 @@ barda = {
 beylagan = {
 	define_pop = {	type = clergy	size = 0.008	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 3.754	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 2.345	culture = turkoman_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 4.938	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 2.753	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = slaves	size = 3.904	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = soldiers	size = 1.000	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 8.245	culture = turkoman_culture	religion = sunni } #azeri_culture
+	define_pop = {	type = slaves	size = 4.938	culture = adhari_culture	religion = zoroastrian }
+	define_pop = {	type = slaves	size = 4.904	culture = armenian_culture	religion = miaphysite }
 }
 gardman = {
 	define_pop = {	type = clergy	size = 0.011	culture = armenian_culture	religion = miaphysite }
@@ -20820,53 +20820,47 @@ mughan = {
 	define_pop = {	type = clergy	size = 0.021	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = clergy	size = 0.001	culture = adhari_culture	religion = zoroastrian }
 	define_pop = {	type = peasants	size = 6.559	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 5.466	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.638	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 2.929	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 7.229	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.850	culture = armenian_culture	religion = miaphysite }
 }
 baciravan = {
 	define_pop = {	type = clergy	size = 0.002	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 4.284	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 2.069	culture = talysh_culture	religion = shia }
-	define_pop = {	type = peasants	size = 2.230	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.069	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 3.308	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 5.808	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.440	culture = talysh_culture	religion = zoroastrian }
 	define_pop = {	type = slaves	size = 0.650	culture = armenian_culture	religion = miaphysite }
 }
 bilasuvar = {
 	define_pop = {	type = clergy	size = 0.015	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 4.715	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 3.929	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.178	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 2.386	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 5.786	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.850	culture = armenian_culture	religion = miaphysite }
 }
 germi = {
 	define_pop = {	type = clergy	size = 0.021	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = clergy	size = 0.001	culture = adhari_culture	religion = zoroastrian }
 	define_pop = {	type = peasants	size = 6.520	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 5.433	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.628	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 2.917	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 7.229	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.850	culture = armenian_culture	religion = miaphysite }
 }
 salyan = {
 	define_pop = {	type = clergy	size = 0.010	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 3.181	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 2.651	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 3.794	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 1.934	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 4.234	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.850	culture = armenian_culture	religion = miaphysite }
 }
 varsan = {
 	define_pop = {	type = clergy	size = 0.015	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = clergy	size = 0.001	culture = adhari_culture	religion = zoroastrian }
 	define_pop = {	type = peasants	size = 4.906	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = peasants	size = 4.088	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.226	culture = adhari_culture	religion = zoroastrian }
-	define_pop = {	type = tribesmen	size = 2.442	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 6.442	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 0.850	culture = armenian_culture	religion = miaphysite }
 }
 shaki = {
@@ -20921,7 +20915,7 @@ zardab = {
 	define_pop = {	type = peasants	size = 5.506	culture = adhari_culture	religion = zoroastrian }
 	define_pop = {	type = tribesmen	size = 1.883	culture = lezgin_culture	religion = orthodox }
 	define_pop = {	type = slaves	size = 1.627	culture = georgian_culture	religion = orthodox }
-	define_pop = {	type = tribesmen	size = 4.303	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 6.303	culture = turkoman_culture	religion = sunni }
 }
 shirvan = {
 	define_pop = {	type = clergy	size = 0.020	culture = adhari_culture	religion = sunni }
@@ -36995,18 +36989,18 @@ ahar = {
 }
 aslanduz = {
 	define_pop = {	type = clergy	size = 0.010	culture = turkish_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 7.228	culture = turkish_culture	religion = sunni } #azeri_culture
+	define_pop = {	type = peasants	size = 2.228	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 5.782	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 3.081	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 6.781	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 5.731	culture = adhari_culture	religion = zoroastrian }
 }
 kaleybar = {
 	define_pop = {	type = clergy	size = 0.006	culture = turkish_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 4.270	culture = turkish_culture	religion = sunni } #azeri_culture
+	define_pop = {	type = peasants	size = 1.270	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 6.929	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 7.039	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 8.039	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 6.063	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = slaves	size = 5.518	culture = adhari_culture	religion = zoroastrian }
+	define_pop = {	type = slaves	size = 6.518	culture = adhari_culture	religion = zoroastrian }
 }
 khiyav = {
 	define_pop = {	type = clergy	size = 0.005	culture = turkish_culture	religion = sunni } #azeri_culture
@@ -37016,17 +37010,15 @@ khiyav = {
 	define_pop = {	type = slaves	size = 3.838	culture = adhari_culture	religion = zoroastrian }
 }
 mardanaqom = {
-	define_pop = {	type = clergy	size = 0.006	culture = turkish_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 0.910	culture = turkish_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 0.916	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 2.822	culture = turkoman_culture	religion = sunni }
-	define_pop = {	type = slaves	size = 1.024	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 1.916	culture = adhari_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 5.822	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = slaves	size = 1.524	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 3.306	culture = adhari_culture	religion = zoroastrian }
 }
 qahqaheh = {
 	define_pop = {	type = peasants	size = 1.688	culture = turkish_culture	religion = sunni } #azeri_culture
 	define_pop = {	type = peasants	size = 1.351	culture = adhari_culture	religion = sunni }
-	define_pop = {	type = tribesmen	size = 1.486	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 2.486	culture = turkoman_culture	religion = sunni }
 	define_pop = {	type = slaves	size = 3.404	culture = adhari_culture	religion = zoroastrian }
 }
 nir = {
@@ -37116,15 +37108,14 @@ maku = {
 	define_pop = {	type = peasants	size = 4.236	culture = armenian_culture	religion = miaphysite }
 }
 hadishahr = {
-	define_pop = {	type = clergy	size = 0.008	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = tribesmen	size = 3.046	culture = turkoman_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 0.736	culture = armenian_culture	religion = miaphysite }
-	define_pop = {	type = slaves	size = 1.639	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 1.216	culture = adhari_culture	religion = sunni }
+	define_pop = {	type = soldiers	size = 1.000	culture = turkoman_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 8.646	culture = turkoman_culture	religion = sunni } #azeri_culture
+	define_pop = {	type = slaves	size = 3.639	culture = armenian_culture	religion = miaphysite }
 }
 marand = {
-	define_pop = {	type = clergy	size = 0.008	culture = armenian_culture	religion = miaphysite }
+	define_pop = {	type = peasants	size = 1.916	culture = adhari_culture	religion = sunni }
 	define_pop = {	type = tribesmen	size = 7.031	culture = turkoman_culture	religion = sunni } #azeri_culture
-	define_pop = {	type = peasants	size = 0.736	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = slaves	size = 3.786	culture = armenian_culture	religion = miaphysite }
 }
 nazok_olya = {
