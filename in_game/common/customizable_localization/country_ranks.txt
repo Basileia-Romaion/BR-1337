@@ -116,6 +116,16 @@
 		}
 	}
 
+	#text = {
+		#localization_key = country_rank_br_phorophoros
+		#trigger = {
+			#is_subject_type = br_phorophoros_subject
+			#overlord ?= {
+				#culture = { has_culture_group = culture_group:roman_group }
+			#}
+		#}
+	#}
+
 	text = {
 		localization_key = country_rank_br_apoikia
 		trigger = {

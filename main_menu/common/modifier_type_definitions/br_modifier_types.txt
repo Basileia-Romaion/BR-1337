@@ -46,3 +46,10 @@ country_can_use_br_romaiokratia_cb = {
 	}
 	boolean=yes
 }
+
+allow_phorophoros_subject={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}

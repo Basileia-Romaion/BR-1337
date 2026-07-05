@@ -223,3 +223,65 @@
  OFFER_br_stavropegion_subject_ALREADY_SUBJECT: "$country_already_a_subject$"
  OFFER_br_stavropegion_subject_AT_WAR: "$country_is_at_war$"
  OFFER_br_stavropegion_subject_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"
+
+ MODIFIER_TYPE_NAME_allow_phorophoros_subject: "Allow [ShowSubjectTypeNameWithNoTooltip('br_phorophoros_subject')] Subjects"
+ MODIFIER_TYPE_DESC_allow_phorophoros_subject: "This allows the [country|e] to have [ShowSubjectTypeName('br_phorophoros_subject')] [subjects|e]."
+
+ br_phorophoros_subject: "Phorophóros"
+ br_phorophoros_subject_desc: "The Phorophóroi are kingdoms and principalities bound to the Empire by treaty rather than direct rule. Governed by their own princes, they retain broad authority over their internal affairs while acknowledging the supremacy of the Basileus through the payment of tribute and the observance of Imperial interests. In return, they enjoy the protection of the Roman Empire against foreign enemies, serving as loyal buffers upon its frontiers and steadfast companions of the Imperial order."
+
+ LEAD_br_phorophoros_subject: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_br_phorophoros_subject: "[SUBJECT_TYPE.GetName] of $LIST$."
+
+ OFFER_br_phorophoros_subject_TOOLTIP_HEADER: "Demand that [TARGET_COUNTRY.GetName] becomes a $br_phorophoros_subject$"
+ OFFER_br_phorophoros_subject_TOOLTIP_HEADER_NO_TARGET: "Demand that a [country|e] becomes a $br_phorophoros_subject$"
+ REQUEST_br_phorophoros_subject_TOOLTIP_HEADER: "Request to become a $br_phorophoros_subject$ of [TARGET_COUNTRY.GetName]"
+ REQUEST_br_phorophoros_subject_TOOLTIP_HEADER_NO_TARGET: "Request that we become a $br_phorophoros_subject$ of a [country|e]"
+ CANCEL_br_phorophoros_subject_TOOLTIP_HEADER: "End the $br_phorophoros_subject$ relationship with [TARGET_COUNTRY.GetName]"
+ CANCEL_br_phorophoros_subject_TOOLTIP_HEADER_NO_TARGET: "End a $br_phorophoros_subject$ relationship"
+ BREAK_br_phorophoros_subject_TOOLTIP_HEADER: "Refuse to remain a $br_phorophoros_subject$ of [TARGET_COUNTRY.GetName]"
+ BREAK_br_phorophoros_subject_TOOLTIP_HEADER_NO_TARGET: "Refuse to remain a $br_phorophoros_subject$ of a [country|e]"
+
+ OFFER_br_phorophoros_subjectTITLE: "Request they become our $br_phorophoros_subject$"
+ OFFER_br_phorophoros_subject_FLAVOR: "Choose a [country|e] to offer [ShowSubjectTypeName('br_phorophoros_subject')] status"
+
+ REQUEST_br_phorophoros_subjectTITLE: "Offer to become their $br_phorophoros_subject$"
+ REQUEST_br_phorophoros_subject_FLAVOR: "Choose a [country|e] to become their [ShowSubjectTypeName('br_phorophoros_subject')]"
+
+ CANCEL_br_phorophoros_subjectTITLE: "End $br_phorophoros_subject$ Status"
+ CANCEL_br_phorophoros_subject_FLAVOR: "Choose a [country|e] to end their [ShowSubjectTypeName('br_phorophoros_subject')] status"
+
+ BREAK_br_phorophoros_subjectTITLE: "Renounce $br_phorophoros_subject$ Status"
+
+ OFFER_br_phorophoros_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ REQUEST_br_phorophoros_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ CANCEL_br_phorophoros_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ BREAK_br_phorophoros_subject_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+
+ OFFER_br_phorophoros_subject_NEWDESC: "Do we wish to demand that [COUNTRY.GetName] becomes our $br_phorophoros_subject$?"
+ REQUEST_br_phorophoros_subject_NEWDESC: "Do we wish to request that we become a $br_phorophoros_subject$ of [COUNTRY.GetName]?"
+ CANCEL_br_phorophoros_subject_NEWDESC: "Do we wish to end the $br_phorophoros_subject$ relationship with [COUNTRY.GetName]?"
+ BREAK_br_phorophoros_subject_NEWDESC: "Do we wish to cease being a $br_phorophoros_subject$ of [COUNTRY.GetName]?\nThis will worsen our relations, and they will gain a [casus_belli|e] against us!"
+
+ OFFER_br_phorophoros_subject_DESC: "Suggest that they become our $br_phorophoros_subject$."
+ REQUEST_br_phorophoros_subject_DESC: "Suggest that we become their $br_phorophoros_subject$."
+ CANCEL_br_phorophoros_subject_DESC: "End the $br_phorophoros_subject$ relationship."
+ BREAK_br_phorophoros_subject_DESC: "Cease being a $br_phorophoros_subject$."
+
+ OFFER_br_phorophoros_subject_REQTITLE: "Request we become a $br_phorophoros_subject$"
+ REQUEST_br_phorophoros_subject_REQTITLE: "Offer to become our $br_phorophoros_subject$"
+
+ OFFER_br_phorophoros_subject_REQDESC: "[COUNTRY.GetName] is requesting that we become their [SUBJECT_TYPE.GetName]."
+ REQUEST_br_phorophoros_subject_REQDESC: "[COUNTRY.GetName] is offering to become our [SUBJECT_TYPE.GetName]."
+
+ CANCEL_br_phorophoros_subject_REQDESC: "$MONARCHTITLE$"
+ BREAK_br_phorophoros_subject_REQDESC: "$MONARCHTITLE$"
+
+ OFFER_br_phorophoros_subject_TOO_LOW: "@trigger_no! To make [COUNTRY.GetLongName] a $br_phorophoros_subject$, their opinion of us must be at least $NEED|Y$, while it is currently only $VAL|Y0$."
+
+ CANCEL_br_phorophoros_subject_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$"
+ BREAK_br_phorophoros_subject_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$"
+
+ OFFER_br_phorophoros_subject_ALREADY_SUBJECT: "$country_already_a_subject$"
+ OFFER_br_phorophoros_subject_AT_WAR: "$country_is_at_war$"
+ OFFER_br_phorophoros_subject_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$"

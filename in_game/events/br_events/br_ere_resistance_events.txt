@@ -625,7 +625,7 @@ br_ere_resistance_events.32 = { #An Offer from Ragusa
 		c:RAG = {
 			make_subject_of = {
 				target = c:BYZ
-				type = subject_type:tributary
+				type = subject_type:br_phorophoros_subject
 			}
 		}
 		add_opinion = {
