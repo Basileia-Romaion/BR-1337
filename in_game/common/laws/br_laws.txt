@@ -29,10 +29,11 @@ INJECT:distribution_of_power_law = {
 		}
 		country_modifier = {
 			global_crown_estate_power = 0.25
-			government_size = 1
+			global_estate_max_tax = 0.05
+			nobles_estate_satisfaction_decay = 0.025
+			#global_estate_satisfaction_decay = 0.025
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
-			tax_income_efficiency = large_tax_income_efficiency_bonus
 		}
 		estate_preferences = {
 			crown_estate

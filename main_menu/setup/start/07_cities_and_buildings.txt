@@ -3763,7 +3763,6 @@ building_manager = {
 	city_walls = { tag = FLA level = 1 location = ghent } # 13 km
 	city_walls = { tag = KAN level = 1 location = kano } # 12 km, completed mid-14th c.
 	city_walls = { tag = KHM level = 1 location = angkor } # 12 km – Angkor Thom, 10 m tall, wide moat
-	city_walls = { tag = COC level = 1 location = mayapan } # 9.1 km, 12 gates
 	city_walls = { tag = FLO level = 1 location = florence } # 8.5 km
 	city_walls = { tag = YSU level = 1 location = samarkand } # 8 km (pre-Timur)
 	city_walls = { tag = KOL level = 1 location = cologne } # 8.0 km
@@ -5589,7 +5588,6 @@ building_manager = {
 	wharf = { tag = TRP level = 1 location = tripoli }
 	tar_kiln = { tag = TRP level = 1 location = tripoli }
 	wharf = { tag = MAM level = 1 location = alexandria }
-	tar_kiln = { tag = MAM level = 1 location = alexandria }
 	wharf = { tag = MAM level = 1 location = damietta }
 	wharf = { tag = MAM level = 1 location = acre }
 	wharf = { tag = MEC level = 1 location = jeddah }
@@ -7503,7 +7501,6 @@ building_manager = {
 
 	#Major and Important Trade locations
 	marketplace	= { tag = MAM level = 15 location = cairo }
-	entrepot = { tag = MAM level = 1 location = cairo }
 	funduq = { tag = MAM level = 1 location = cairo }
 	library = { tag = MAM level = 1 location = cairo }
 	marketplace	= { tag = MAM level = 15 location = alexandria }

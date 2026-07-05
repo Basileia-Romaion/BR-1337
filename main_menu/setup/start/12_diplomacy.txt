@@ -198,7 +198,6 @@ diplomacy_manager = {
     dependency = { first = AQN second = PER subject_type = vassal }
     dependency = { first = AQN second = VNT subject_type = vassal }
     dependency = { first = AQN second = RCC subject_type = vassal }
-    dependency = { first = AQN second = MRC subject_type = vassal }
     dependency = { first = AQN second = ANG subject_type = vassal }
     scripted_oneway = { first = AQN second = LON type = guarantee }
 
@@ -212,11 +211,8 @@ diplomacy_manager = {
 
     #Neustria
     dependency = { first = FRA second = SSN subject_type = vassal }
-	dependency = { first = FRA second = ETA subject_type = vassal }
-	dependency = { first = FRA second = MON subject_type = vassal }
     dependency = { first = FRA second = ORL subject_type = vassal }
     dependency = { first = FRA second = DRE subject_type = vassal }
-	dependency = { first = FRA second = PRC subject_type = vassal }
     dependency = { first = FRA second = VRM subject_type = vassal }
     dependency = { first = FRA second = ALE subject_type = vassal }
     dependency = { first = FRA second = VDM subject_type = vassal }
@@ -313,13 +309,13 @@ diplomacy_manager = {
     #dependency = { first = LON second = CAS subject_type = vassal }
     dependency = { first = CAS second = AD0 subject_type = vassal }
     #dependency = { first = LON second = POR subject_type = vassal }
-    scripted_mutual = { first = PAP second = KNI type = alliance }
-    scripted_mutual = { first = ARA second = KNI type = alliance }
-    scripted_mutual = { first = GEN second = KNI type = alliance }
+    scripted_oneway = { first = PAP second = KNI type = guarantee }
+    scripted_oneway = { first = ARA second = KNI type = guarantee }
+    scripted_oneway = { first = GEN second = KNI type = guarantee }
 	
-	#scripted_oneway = { first = CAS second = CTV type = military_sponsorship }   #BR edit
-	#scripted_oneway = { first = CAS second = STO type = military_sponsorship }   #BR edit
-	#scripted_oneway = { first = CAS second = ACT type = military_sponsorship }   #BR edit
+	#scripted_oneway = { first = CAS second = CTV type = military_sponsorship }
+	#scripted_oneway = { first = CAS second = STO type = military_sponsorship }
+	#scripted_oneway = { first = CAS second = ACT type = military_sponsorship }
 	#scripted_oneway = { first = ARA second = MTS type = military_sponsorship }
 	#scripted_oneway = { first = POR second = OPX type = military_sponsorship }
 	
@@ -478,7 +474,7 @@ diplomacy_manager = {
     dependency = { first = ACH second = HE2 subject_type = vassal }
     dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = EPI second = DYR subject_type = march } # Thema
+    #dependency = { first = EPI second = DYR subject_type = march } # Thema
 
     dependency = { first = TRE second = AN6 subject_type = vassal } # Thema
     dependency = { first = TRE second = P2N subject_type = vassal } # Thema
@@ -634,7 +630,7 @@ diplomacy_manager = {
     #Balkans:
     scripted_mutual = { first = HUN second = POL type = alliance }
     dependency = { first = HUN second = CRO subject_type = dominion }
-    scripted_mutual = { first = EPI second = S2C type = alliance }
+    #scripted_mutual = { first = EPI second = S2C type = alliance }
     #Bulgaria
     dependency = { first = BUL second = B1L subject_type = vassal }
     dependency = { first = B1L second = MZK subject_type = vassal }
@@ -670,7 +666,6 @@ diplomacy_manager = {
     dependency = { first = TUR second = HKK subject_type = vassal }
     dependency = { first = TUR second = SOH subject_type = vassal }
     dependency = { first = TUR second = ZZR subject_type = vassal }
-    #dependency = { first = TUR second = AIA subject_type = vassal }
     dependency = { first = TUR second = SRV subject_type = vassal }
 
     dependency = { first = TUR second = AQQ subject_type = uc_bey }

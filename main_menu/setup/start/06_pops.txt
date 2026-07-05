@@ -7263,24 +7263,24 @@ ullapool = {
 fannichs = {
 }
 dornoch = {
-	define_pop = {	type = clergy	size = 0.060	culture = highland	religion = catholic }
+	define_pop = {	type = clergy	size = 0.060	culture = norn_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 0.498	culture = norn_culture	religion = catholic }
 	define_pop = {	type = tribesmen	size = 3.769	culture = highland	religion = catholic }
 }
 durness = {
-	define_pop = {	type = nobles	size = 0.012	culture = highland	religion = catholic }
-	define_pop = {	type = nobles	size = 0.001	culture = scottish	religion = catholic }
-	define_pop = {	type = clergy	size = 0.011	culture = highland	religion = catholic }
+	define_pop = {	type = nobles	size = 0.012	culture = norn_culture	religion = catholic }
+	define_pop = {	type = clergy	size = 0.011	culture = norn_culture	religion = catholic }
 	define_pop = {	type = peasants	size = 0.373	culture = norn_culture	religion = catholic }
 	define_pop = {	type = tribesmen	size = 1.381	culture = highland	religion = catholic }
 }
 tongue = {
+	define_pop = {	type = peasants	size = 0.271	culture = norn_culture	religion = catholic }
 	define_pop = {	type = tribesmen	size = 0.643	culture = highland	religion = catholic }
 	define_pop = {	type = tribesmen	size = 0.930	culture = norn_culture	religion = catholic }
 }
 thurso = {
 	define_pop = {	type = clergy	size = 0.011	culture = norn_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 2.171	culture = norn_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 2.731	culture = norn_culture	religion = catholic }
 	define_pop = {	type = tribesmen	size = 0.747	culture = highland	religion = catholic }
 }
 ben_klibreck = {
@@ -18866,7 +18866,9 @@ bershad = {
 drahushiv = {
 	define_pop = {	type = clergy	size = 0.010	culture = rhos_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.731	culture = rhos_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.900	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = peasants	size = 5.900	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = slaves	size = 1.157	culture = crimean	religion = tengri }
 }
 karabul = {
 	define_pop = {	type = clergy	size = 0.002	culture = ruthenian	religion = orthodox }
@@ -18924,14 +18926,16 @@ vinnytsia = {
 buzhskyi = {
 	define_pop = {	type = clergy	size = 0.010	culture = rhos_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.731	culture = rhos_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.188	culture = ruthenian	religion = orthodox }
-	define_pop = {	type = slaves	size = 0.557	culture = crimean	religion = tengri }
-	define_pop = {	type = slaves	size = 0.675	culture = crimean	religion = tengri }
+	define_pop = {	type = peasants	size = 5.188	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = slaves	size = 1.557	culture = crimean	religion = tengri }
+	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
 }
 pohrebyshche = {
 	define_pop = {	type = clergy	size = 0.025	culture = rhos_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 2.731	culture = rhos_culture	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.943	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.943	culture = ruthenian	religion = orthodox }
+	define_pop = {	type = tribesmen	size = 2.216	culture = cossack_culture	religion = orthodox }
+	define_pop = {	type = slaves	size = 1.157	culture = crimean	religion = tengri }
 }
 sokilets = {
 	define_pop = {	type = slaves	size = 4.545	culture = ruthenian	religion = orthodox }

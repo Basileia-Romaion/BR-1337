@@ -10,6 +10,7 @@ orthodox_order_commandery = {
 	
 	max_levels = 1
 	employment_size = order_religious_building_employment
+	pop_size_created = order_religious_building_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -69,7 +70,7 @@ orthodox_order_commandery = {
 	modifier = {
 		local_pop_conversion_speed_modifier = 0.05
 		gold_to_building_owner = 0.15
-		manpower_to_building_owner = 0.01
+		manpower_to_building_owner = 0.005
 	}
 	construction_demand = order_commandery_construction
 	possible_production_methods = {
@@ -90,6 +91,7 @@ br_varangian_recruitment_building = {
 	
 	max_levels = 1
 	employment_size = order_religious_building_employment
+	pop_size_created = order_religious_building_employment
 	
 	rural_settlement = no
 	town = yes
@@ -115,7 +117,7 @@ br_varangian_recruitment_building = {
 	build_time = soldier_building
 
 	modifier = {
-		manpower_to_building_owner = 0.015
+		manpower_to_building_owner = 0.005
 		pure_tooltip_entry = MODIFIER_TYPE_DESC_num_of_varangian_units
 	}
 	construction_demand = order_commandery_construction
@@ -132,7 +134,7 @@ br_naval_theme_hq = {
 	icon = por_feitoria
 	
 	max_levels = 1
-	employment_size = dry_dock_employment
+	employment_size = shipyard_employment
 	
 	category = military_category
 	
@@ -166,12 +168,12 @@ br_naval_theme_hq = {
 	}
 
 	modifier = {
-		local_proximity_source = 15
+		local_proximity_source = 10
 		max_ships_built_at_same_time = 2
-		local_sailors = 0.05
+		local_sailors = 0.035
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.25
-		local_repair_speed = 0.02
+		harbor_suitability = 0.2
+		local_repair_speed = 0.05
 	}
 	capital_country_modifier = {
 		navy_galley_power = 0.05
@@ -222,13 +224,13 @@ br_varangian_camp = {
 
 
 	modifier = {
-		#local_crown_estate_power = 0.25
-		local_manpower = 0.015
+		local_crown_estate_power = 0.1
+		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 		local_soldiers_desired_pop = 2
 	}
 	capital_country_modifier = {
-		global_tribes_estate_power = 0.5
+		global_tribes_estate_power = 1 #Tribes are being used for the varangians.
 	}
 	
 	possible_production_methods =  {
@@ -244,7 +246,7 @@ br_tagmata_camp = {
 	pop_type = soldiers
 	max_levels = 1
 	icon = armory
-	
+
 	employment_size = manpower_employment
 	category = military_category
 
@@ -252,7 +254,7 @@ br_tagmata_camp = {
 	city = yes
 	megalopolis = yes
 	build_time = soldier_building
-	
+
 	forbidden_for_estates = yes
 
 	location_potential = {
@@ -269,14 +271,14 @@ br_tagmata_camp = {
 
 	modifier = {
 		local_crown_estate_power = 0.25
-		local_manpower = 0.015
+		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 		local_unrest = -0.025
 	}
 	capital_country_modifier = {
 		monthly_towards_stratiotai = societal_value_min_scaling_monthly_move
 	}
-	
+
 	possible_production_methods =  {
 		early_soldier_building_maintenance
 	}
@@ -372,7 +374,7 @@ br_pronoia_estate = { #pronoia estates
 	category = village_category
 	#estate = nobles_estate
 
-	employment_size = 0.025
+	employment_size = 0.075
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
@@ -681,7 +683,7 @@ br_tagmata_barracks = {
 	max_levels = 1
 	icon = barracks
 	
-	employment_size = manpower_employment
+	employment_size = manpower_100_employment
 	category = military_category
 
 	town = yes
@@ -802,7 +804,7 @@ br_kekhrismene_pronoia = { #pronoia estates
 	category = village_category
 	obsolete = br_pronoia_estate
 
-	employment_size = 0.05
+	employment_size = 0.1
 	
 	allow_wrong_startup = yes
 	rural_settlement = yes
@@ -1000,7 +1002,7 @@ br_doukate_building = {
 	icon = grand_apartment
 
 	category = government_category
-	employment_size = castle_employment
+	employment_size = bastion_employment
 	rural_settlement = setup_only
 	town = setup_only
 	city = yes
@@ -1079,7 +1081,7 @@ br_katapanate_building = {
 
 	category = government_category
 	obsolete = br_doukate_building
-	employment_size = castle_employment
+	employment_size = star_fort_employment
 	rural_settlement = yes
 	town = setup_only
 	city = yes
@@ -1158,7 +1160,7 @@ br_despotate_building = {
 
 	category = government_category
 	obsolete = br_katapanate_building
-	employment_size = castle_employment
+	employment_size = star_fort_employment
 	rural_settlement = no
 	town = setup_only
 	city = yes
@@ -1238,7 +1240,7 @@ br_dioikesis_building = {
 
 	category = government_category
 	obsolete = br_despotate_building
-	employment_size = castle_employment
+	employment_size = fortress_employment
 	rural_settlement = no
 	town = setup_only
 	city = yes

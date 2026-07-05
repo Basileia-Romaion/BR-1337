@@ -1,733 +1,762 @@
 ﻿###BR-Drogan note some advances are purposefully over-powered for overall gameplay balance generally the goal is to break up the stronger ones I can put my time into the country/region.
 
 ##############################-Iberia-##############################
-br_adu_banu_nasr = {
-	age = age_1_traditions
-	icon = gra_banu_nasr
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_banu_nasr = {
+		age = age_1_traditions
+		icon = gra_banu_nasr
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_manpower_modifier = 0.1
+		requires = legalism_advance
 	}
-	global_manpower_modifier = 0.1
-	requires = legalism_advance
-}
-br_adu_nasrid_art = {
-	age = age_1_traditions
-	icon = gra_nasrid_art
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_nasrid_art = {
+		age = age_1_traditions
+		icon = gra_nasrid_art
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_build_buildings_efficiency = 0.1
+		global_monthly_art_start_chance = 0.1
+		requires = feudalism_advance
 	}
-	global_build_buildings_efficiency = 0.1
-	global_monthly_art_start_chance = 0.1
-	requires = feudalism_advance
-}
-br_adu_skillful_envoys = {
-	age = age_2_renaissance
-	icon = gra_skillful_envoys
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_skillful_envoys = {
+		age = age_2_renaissance
+		icon = gra_skillful_envoys
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		diplomatic_range_modifier = 0.25
+		monthly_diplomats = 0.1
+		requires = power_projection_advance_2
 	}
-	diplomatic_range_modifier = 0.25
-	monthly_diplomats = 0.1
-	requires = power_projection_advance_2
-}
-br_adu_razzias = {
-	age = age_2_renaissance
-	icon = gra_razzias
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_razzias = {
+		age = age_2_renaissance
+		icon = gra_razzias
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		army_movement_speed = 0.1
+		requires = drill_army_advance
 	}
-	army_movement_speed = 0.1
-	requires = drill_army_advance
-}
-br_adu_muttavia_armies = {
-	age = age_3_discovery
-	icon = gra_muttavia_armies
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_muttavia_armies = {
+		age = age_3_discovery
+		icon = gra_muttavia_armies
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		hire_mercenary_premium_cost_modifier  = -0.10
+		mercenary_maintenance_efficiency = 0.10
+		requires = regiment_reinforcement_speed_discovery
 	}
-	hire_mercenary_premium_cost_modifier  = -0.10
-	mercenary_maintenance_efficiency = 0.10
-	requires = regiment_reinforcement_speed_discovery
-}
-br_adu_expand_qanahs = {
-	age = age_3_discovery
-	icon = gra_expand_qanahs
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_expand_qanahs = {
+		age = age_3_discovery
+		icon = gra_expand_qanahs
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_monthly_food_modifier = 0.2
+		requires = formalized_relations
 	}
-	global_monthly_food_modifier = 0.2
-	requires = formalized_relations
-}
-br_adu_new_world = {
-	age = age_3_discovery
-	icon = cas_new_world
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_new_world = {
+		age = age_3_discovery
+		icon = cas_new_world
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		colonial_migration_size_modifier = 0.25
+		colonial_range_modifier = 0.25
+		requires = open_sea_exploration
 	}
-	colonial_migration_size_modifier = 0.25
-	colonial_range_modifier = 0.25
-	requires = open_sea_exploration
-}
-br_adu_marine_infantry = {
-	age = age_4_reformation
-	icon = cas_marine_infantry
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_marine_infantry = {
+		age = age_4_reformation
+		icon = cas_marine_infantry
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		army_disembark_speed = 0.25
+		naval_morale_modifier = 0.10
+		requires = mercenaries_reformation_advance
 	}
-	army_disembark_speed = 0.25
-	naval_morale_modifier = 0.10
-	requires = mercenaries_reformation_advance
-}
-br_adu_adaptative_trade = {
-	age = age_4_reformation
-	icon = gra_adaptative_trade
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_adaptative_trade = {
+		age = age_4_reformation
+		icon = gra_adaptative_trade
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		merchant_maintenance_efficiency  = 0.10
+		export_efficiency = small_trade_efficiency_bonus
+		requires = global_trade_routes_advance
 	}
-	merchant_maintenance_efficiency  = 0.10
-	export_efficiency = small_trade_efficiency_bonus
-	requires = global_trade_routes_advance
-}
-br_adu_expand_the_frontier = {
-	age = age_4_reformation
-	icon = gra_expand_the_frontier
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_expand_the_frontier = {
+		age = age_4_reformation
+		icon = gra_expand_the_frontier
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_integration_speed_modifier = 0.2
+		requires = regiment_reinforcement_speed_reformation
 	}
-	global_integration_speed_modifier = 0.2
-	requires = regiment_reinforcement_speed_reformation
-}
-br_adu_a_strong_rule = {
-	age = age_5_absolutism
-	icon = gra_a_strong_rule
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_a_strong_rule = {
+		age = age_5_absolutism
+		icon = gra_a_strong_rule
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_crown_estate_power = 0.10
+		requires = the_constitution
 	}
-	global_crown_estate_power = 0.10
-	requires = the_constitution
-}
-br_adu_modernized_economy = {
-	age = age_5_absolutism
-	icon = gra_modernized_economy
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_modernized_economy = {
+		age = age_5_absolutism
+		icon = gra_modernized_economy
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_raw_material_output = 0.2
+		requires = construction_speed_absolutism
 	}
-	global_raw_material_output = 0.2
-	requires = construction_speed_absolutism
-}
-br_adu_ghazawat = {
-	age = age_6_revolutions
-	icon = gra_ghazawat
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_ghazawat = {
+		age = age_6_revolutions
+		icon = gra_ghazawat
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		land_morale_modifier = 0.15
+		requires = corps_organisation
 	}
-	land_morale_modifier = 0.15
-	requires = corps_organisation
-}
-br_adu_a_new_golden_era = {
-	age = age_6_revolutions
-	icon = gra_a_new_golden_era
-	potential = {
-		OR = {
-			has_or_had_tag = ADU
-			culture = culture:andalusi
+	br_adu_a_new_golden_era = {
+		age = age_6_revolutions
+		icon = gra_a_new_golden_era
+		potential = {
+			OR = {
+				has_or_had_tag = ADU
+				culture = culture:andalusi
+			}
 		}
+		global_max_literacy = 10
+		global_monthly_literacy = 0.02
+		requires = government_size_revolutions
 	}
-    global_max_literacy = 10
-    global_monthly_literacy = 0.02
-	requires = government_size_revolutions
-}
 
 ##############################-Asturias-##############################
-br_asturias_repoblaciones = {
-	age = age_1_traditions
-	icon = cas_repoblaciones
-	potential = {
-		OR = {
+	br_asturias_fortress = {
+		age = age_1_traditions
+		icon = hun_castle_warriors
+		potential = {
 			has_or_had_tag = LON
-			culture = culture:leonese
 		}
+		requires = feudalism_advance
+		fort_limit_modifier = 0.2
+		fort_maintenance_efficiency = 0.2
+		global_garrison_size_modifier = 0.2
+		global_hostile_attrition = 0.1
+		mountains_proximity_impact = -0.1
+		hills_proximity_impact = -0.1
+		plateau_proximity_impact = -0.1
 	}
-	global_monthly_prosperity = 0.001
-	global_migration_speed_modifier = 0.1
-	requires = legalism_advance
-}
-br_asturias_the_reconquista = {
-	age = age_1_traditions
-	icon = cas_the_reconquista
-	potential = {
-		OR = {
+	br_asturias_military = {
+		age = age_1_traditions
+		icon = hun_castle_warriors
+		potential = {
 			has_or_had_tag = LON
-			culture = culture:leonese
 		}
+		requires = br_asturias_fortress
+		discipline = 0.05
+		nobles_estate_levy_size = 0.25
+		levy_maintenance_modifier = -0.1
+		army_heavy_cavalry_power = 0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
-	land_morale_modifier = 0.15
-	requires = feudalism_advance
-}
-br_asturias_castilian_navy = {
-	age = age_2_renaissance
-	icon = cas_castilian_navy
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	global_maritime_presence_modifier = 0.1
-	navy_heavy_ship_power = 0.15
-	requires = dock_advance
-}
-br_asturias_cronicas_reales = {
-	age = age_2_renaissance
-	icon = cas_cronicas_reales
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	cultural_tradition_modifier = 0.1
-	monthly_prestige = 0.1
-	requires = renaissance_court
-}
-br_asturias_masters_of_the_orders = {
-	age = age_3_discovery
-	icon = cas_masters_of_the_orders
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	monthly_army_tradition = 0.05
-	requires = pike_square
-}
-br_asturias_reform_of_millones = {
-	age = age_4_reformation
-	icon = cas_reform_of_millones
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	tax_income_efficiency = large_tax_income_efficiency_bonus
-	requires = imperial_ambitions
-}
-br_asturias_pasos = {
-	age = age_5_absolutism
-	icon = cas_pasos
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	tolerance_own = 1
-	requires = absolute_rulership
-}
-br_asturias_real_academia_espanola = {
-	age = age_5_absolutism
-	icon = cas_real_academia_espanola
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
-		}
-	}
-	global_nobles_max_literacy = 10
-	global_clergy_max_literacy = 10
-	global_monthly_literacy = 0.02
-	requires = the_constitution
-}
 
-br_asturias_canal_de_castilla = {
-	age = age_6_revolutions
-	icon = cas_canal_de_castilla
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
+	br_asturias_repoblaciones = {
+		age = age_1_traditions
+		icon = cas_repoblaciones
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
 		}
+		global_monthly_prosperity = 0.001
+		global_migration_speed_modifier = 0.1
+		requires = legalism_advance
 	}
-	global_monthly_food_modifier = 0.2
-	requires = enlightened_court
-}
+	br_asturias_the_reconquista = {
+		age = age_1_traditions
+		icon = cas_the_reconquista
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		land_morale_modifier = 0.15
+		requires = feudalism_advance
+	}
+	br_asturias_castilian_navy = {
+		age = age_2_renaissance
+		icon = cas_castilian_navy
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		global_maritime_presence_modifier = 0.1
+		navy_heavy_ship_power = 0.15
+		requires = dock_advance
+	}
+	br_asturias_cronicas_reales = {
+		age = age_2_renaissance
+		icon = cas_cronicas_reales
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		cultural_tradition_modifier = 0.1
+		monthly_prestige = 0.1
+		requires = renaissance_court
+	}
+	br_asturias_masters_of_the_orders = {
+		age = age_3_discovery
+		icon = cas_masters_of_the_orders
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		monthly_army_tradition = 0.05
+		requires = pike_square
+	}
+	br_asturias_reform_of_millones = {
+		age = age_4_reformation
+		icon = cas_reform_of_millones
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		tax_income_efficiency = large_tax_income_efficiency_bonus
+		requires = imperial_ambitions
+	}
+	br_asturias_pasos = {
+		age = age_5_absolutism
+		icon = cas_pasos
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		tolerance_own = 1
+		requires = absolute_rulership
+	}
+	br_asturias_real_academia_espanola = {
+		age = age_5_absolutism
+		icon = cas_real_academia_espanola
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		global_nobles_max_literacy = 10
+		global_clergy_max_literacy = 10
+		global_monthly_literacy = 0.02
+		requires = the_constitution
+	}
 
-br_asturias_royal_factories = {
-	age = age_6_revolutions
-	icon = cas_royal_factories
-	potential = {
-		OR = {
-			has_or_had_tag = LON
-			culture = culture:leonese
+	br_asturias_canal_de_castilla = {
+		age = age_6_revolutions
+		icon = cas_canal_de_castilla
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
 		}
+		global_monthly_food_modifier = 0.2
+		requires = enlightened_court
 	}
-	global_production_efficiency = large_production_efficiency_bonus
-	requires = revolutions_subject_opinions_advance
-}
+
+	br_asturias_royal_factories = {
+		age = age_6_revolutions
+		icon = cas_royal_factories
+		potential = {
+			OR = {
+				has_or_had_tag = LON
+				culture = culture:leonese
+			}
+		}
+		global_production_efficiency = large_production_efficiency_bonus
+		requires = revolutions_subject_opinions_advance
+	}
 
 ##############################-Italy-##############################
-#global_monthly_art_start_chance = 0.1
-br_italian_universities = {
-	age = age_1_traditions
-	icon = scholasticism
-	potential = {
-		OR = { #copy for north italians
-			culture = culture:lombard
-			culture = culture:ligurian
-			culture = culture:piedmontese
-			culture = culture:tuscan
-			culture = culture:venetian
-			culture = culture:emilian
-			culture = culture:romagnol
+	#global_monthly_art_start_chance = 0.1
+	br_italian_universities = {
+		age = age_1_traditions
+		icon = scholasticism
+		potential = {
+			OR = { #copy for north italians
+				culture = culture:lombard
+				culture = culture:ligurian
+				culture = culture:piedmontese
+				culture = culture:tuscan
+				culture = culture:venetian
+				culture = culture:emilian
+				culture = culture:romagnol
+			}
 		}
+		#unlock_building = university #early unlock
+		global_nobles_max_literacy = 15
+		global_burghers_max_literacy = 15
+		global_clergy_max_literacy = 15
+		global_monthly_literacy = 0.02
+		requires = library_advance
 	}
-	#unlock_building = university #early unlock
-	global_nobles_max_literacy = 15
-	global_burghers_max_literacy = 15
-	global_clergy_max_literacy = 15
-	global_monthly_literacy = 0.02
-	requires = library_advance
-}
-br_italy_great_families = {
-	age = age_1_traditions
-	icon = cultural_acceptance_advance
-	potential = {
-		OR = { #copy for north italians
-			culture = culture:lombard
-			culture = culture:ligurian
-			culture = culture:piedmontese
-			culture = culture:tuscan
-			culture = culture:venetian
-			culture = culture:emilian
-			culture = culture:romagnol
+	br_italy_great_families = {
+		age = age_1_traditions
+		icon = cultural_acceptance_advance
+		potential = {
+			OR = { #copy for north italians
+				culture = culture:lombard
+				culture = culture:ligurian
+				culture = culture:piedmontese
+				culture = culture:tuscan
+				culture = culture:venetian
+				culture = culture:emilian
+				culture = culture:romagnol
+			}
 		}
+		monthly_prestige = 0.05
+		diplomatic_capacity_modifier = 0.1
+		requires = distribution_of_power_advance
 	}
-	monthly_prestige = 0.05
-	diplomatic_capacity_modifier = 0.1
-	requires = distribution_of_power_advance
-}
-br_italian_innovativeness = {
-	age = age_1_traditions
-	icon = genoese_banking_traditions
-	potential = {
-		OR = { #copy for north italians
-			culture = culture:lombard
-			culture = culture:ligurian
-			culture = culture:piedmontese
-			culture = culture:tuscan
-			culture = culture:venetian
-			culture = culture:emilian
-			culture = culture:romagnol
+	br_italian_innovativeness = {
+		age = age_1_traditions
+		icon = genoese_banking_traditions
+		potential = {
+			OR = { #copy for north italians
+				culture = culture:lombard
+				culture = culture:ligurian
+				culture = culture:piedmontese
+				culture = culture:tuscan
+				culture = culture:venetian
+				culture = culture:emilian
+				culture = culture:romagnol
+			}
 		}
+		global_monthly_literacy = 0.05
+		research_speed_modifier = 0.05
+		embrace_institution_cost_modifier = -0.25
+		requires = br_italian_universities
 	}
-	global_monthly_literacy = 0.05
-	research_speed_modifier = 0.05
-	embrace_institution_cost_modifier = -0.25
-	requires = br_italian_universities
-}
-br_italian_condottieri = {
-	age = age_1_traditions
-	icon = glorious_arms
-	potential = {
-		OR = { #copy for north italians
-			culture = culture:lombard
-			culture = culture:ligurian
-			culture = culture:piedmontese
-			culture = culture:tuscan
-			culture = culture:venetian
+	br_italian_condottieri = {
+		age = age_1_traditions
+		icon = glorious_arms
+		potential = {
+			OR = { #copy for north italians
+				culture = culture:lombard
+				culture = culture:ligurian
+				culture = culture:piedmontese
+				culture = culture:tuscan
+				culture = culture:venetian
+				culture = culture:latinoi
+				culture = culture:emilian
+				culture = culture:romagnol
+			}
+		}
+		hire_mercenary_premium_cost_modifier = -0.25
+		hire_mercenary_leader_cost_modifier = -0.25
+		mercenary_maintenance_efficiency = 0.25
+		mercenary_units_preference_modifier = 0.25
+		requires = feudalism_advance
+	}
+	br_italian_competitive_trade_advance = {
+		age = age_1_traditions
+		icon = expanded_supply_trains
+		potential = {
+			OR = {
+				has_or_had_tag = VEN
+				has_or_had_tag = GEN
+				has_or_had_tag = PIS
+			}
+		}
+		#unlock_subject_type = trade_company
+		subject_income_modifier = 0.1
+		power_projection = 10
+
+		requires = colonies
+	}
+
+	#Latin Trade Companies
+	br_latinoi_banking_advance = {
+		potential = {
+			has_reform =government_reform:br_special_merchant_republic
+		}
+		age = age_1_traditions
+		icon = banking_advance
+		unlock_country_interaction = take_over_loan
+		minting_income_factor = 0.10
+		total_loan_capacity_modifier = 0.5 
+		requires = medieval_administration
+	}
+	br_slave_manned_galleys = {
+		icon = slave_manned_galleys
+		content_priority = 800
+		potential = { culture = culture:latinoi }
+		age = age_1_traditions
+		unlock_building = galley_barracks
+	}
+	br_latinoi_galley = {
+		icon = genoese_galley
+		content_priority = 1100
+		potential = { culture = culture:latinoi }
+		age = age_1_traditions
+		unlock_unit = n_genoese_galley
+	}
+	br_latinoi_crossbowmen = {
+		icon = a_genoese_crossbowmen
+		content_priority = 900
+		potential = { culture = culture:latinoi }
+		age = age_2_renaissance
+		unlock_unit = a_genoese_crossbowmen
+		army_light_infantry_power = 0.1
+		requires = unlock_crossbowmen_advance
+	}
+
+	br_latinoi_sanudos_isles_advance = {
+		age = age_1_traditions
+		icon = merchant_power_from_maritime_reformation_advance
+		potential = {
 			culture = culture:latinoi
-			culture = culture:emilian
-			culture = culture:romagnol
 		}
+		merchant_power_from_maritime = 0.05
+		requires = more_merchants_age_of_trad
 	}
-	hire_mercenary_premium_cost_modifier = -0.25
-	hire_mercenary_leader_cost_modifier = -0.25
-	mercenary_maintenance_efficiency = 0.25
-	mercenary_units_preference_modifier = 0.25
-	requires = feudalism_advance
-}
-br_italian_competitive_trade_advance = {
-	age = age_1_traditions
-	icon = expanded_supply_trains
-	potential = {
-		OR = {
-			has_or_had_tag = VEN
-			has_or_had_tag = GEN
-			has_or_had_tag = PIS
+	br_latinoi_negropontine_navarchy_advance = {
+		age = age_1_traditions
+		icon = rudimentary_coastal_ship_repair
+		potential = {
+			culture = culture:latinoi
 		}
+		navy_galley_maintenance_cost_modifier = -0.1
+		navy_galley_power = 0.1
+		requires = ship_building_advance
 	}
-	#unlock_subject_type = trade_company
-	subject_income_modifier = 0.1
-	power_projection = 10
-
-	requires = colonies
-}
-
-#Latin Trade Companies
-br_latinoi_banking_advance = {
-	potential = {
-		has_reform =government_reform:br_special_merchant_republic
+	br_latinoi_ionian_sea_wall_advance = {
+		age = age_2_renaissance
+		icon = defensive_mentality
+		potential = {
+			culture = culture:latinoi
+		}
+		global_defensive = 0.1
+		own_coast_naval_combat_bonus = 0.1
+		requires = drill_army_advance
 	}
-	age = age_1_traditions
-	icon = banking_advance
-	unlock_country_interaction = take_over_loan
-	minting_income_factor = 0.10
-	total_loan_capacity_modifier = 0.5 
-	requires = medieval_administration
-}
-br_slave_manned_galleys = {
-	icon = slave_manned_galleys
-	content_priority = 800
-	potential = { culture = culture:latinoi }
-	age = age_1_traditions
-	unlock_building = galley_barracks
-}
-br_latinoi_galley = {
-	icon = genoese_galley
-	content_priority = 1100
-	potential = { culture = culture:latinoi }
-	age = age_1_traditions
-	unlock_unit = n_genoese_galley
-}
-br_latinoi_crossbowmen = {
-	icon = a_genoese_crossbowmen
-	content_priority = 900
-	potential = { culture = culture:latinoi }
-	age = age_2_renaissance
-	unlock_unit = a_genoese_crossbowmen
-	army_light_infantry_power = 0.1
-	requires = unlock_crossbowmen_advance
-}
-
-br_latinoi_sanudos_isles_advance = {
-	age = age_1_traditions
-	icon = merchant_power_from_maritime_reformation_advance
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_the_galley_assembly_line_of_suda_advance = {
+		age = age_2_renaissance
+		icon = ship_building_advance
+		potential = {
+			culture = culture:latinoi
+		}
+		navy_galley_power = 0.1
+		own_coast_naval_combat_bonus = 0.1
+		requires = trade_range_advance_age_2
 	}
-	merchant_power_from_maritime = 0.05
-	requires = more_merchants_age_of_trad
-}
-br_latinoi_negropontine_navarchy_advance = {
-	age = age_1_traditions
-	icon = rudimentary_coastal_ship_repair
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_archipelagic_vigil_advance = {
+		age = age_2_renaissance
+		icon = ship_building_advance
+		potential = {
+			culture = culture:latinoi
+		}
+		navy_tradition_decay = -0.001
+		naval_morale_modifier = 0.10
+		requires = rudimentary_coastal_ship_repair
 	}
-	navy_galley_maintenance_cost_modifier = -0.1
-	navy_galley_power = 0.1
-	requires = ship_building_advance
-}
-br_latinoi_ionian_sea_wall_advance = {
-	age = age_2_renaissance
-	icon = defensive_mentality
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_the_three_fold_defense_advance = {
+		age = age_2_renaissance
+		icon = regiment_reinforcement_speed_renaissance
+		potential = {
+			culture = culture:latinoi
+		}
+		global_garrison_size_modifier = 0.1
+		global_garrison_growth = 0.02
+		requires = recruitment_improvements_renaissance
 	}
-	global_defensive = 0.1
-	own_coast_naval_combat_bonus = 0.1
-	requires = drill_army_advance
-}
-br_latinoi_the_galley_assembly_line_of_suda_advance = {
-	age = age_2_renaissance
-	icon = ship_building_advance
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_the_consulate_of_the_sea_advance = {
+		age = age_2_renaissance
+		icon = zmw_merchant_taxes
+		potential = {
+			culture = culture:latinoi
+		}
+		trade_range_modifier = 0.25
+		requires = merchants_and_trade
 	}
-	navy_galley_power = 0.1
-	own_coast_naval_combat_bonus = 0.1
-	requires = trade_range_advance_age_2
-}
-br_latinoi_archipelagic_vigil_advance = {
-	age = age_2_renaissance
-	icon = ship_building_advance
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_levantine_trades_advance = {
+		age = age_4_reformation
+		icon = global_trade_routes_advance
+		potential = {
+			culture = culture:latinoi
+		}
+		export_efficiency = small_trade_efficiency_bonus
+		requires = global_trade_advance
 	}
-	navy_tradition_decay = -0.001
-	naval_morale_modifier = 0.10
-	requires = rudimentary_coastal_ship_repair
-}
-br_latinoi_the_three_fold_defense_advance = {
-	age = age_2_renaissance
-	icon = regiment_reinforcement_speed_renaissance
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_the_piraeus_arsenal_advance = {
+		age = age_4_reformation
+		icon = safe_exploration_techniques_advance
+		potential = {
+			culture = culture:latinoi
+		}
+		navy_maintenance_efficiency = 0.1
+		ship_build_speed = 0.1
+		requires = maritime_advance_age_4
 	}
-	global_garrison_size_modifier = 0.1
-	global_garrison_growth = 0.02
-	requires = recruitment_improvements_renaissance
-}
-br_latinoi_the_consulate_of_the_sea_advance = {
-	age = age_2_renaissance
-	icon = zmw_merchant_taxes
-	potential = {
-		culture = culture:latinoi
+	br_latinoi_the_maritime_consulates_advance = {
+		age = age_4_reformation
+		icon = efficient_spies
+		potential = {
+			culture = culture:latinoi
+		}
+		spy_network_construction = 0.1
+		requires = global_trade_advance
 	}
-	trade_range_modifier = 0.25
-	requires = merchants_and_trade
-}
-br_latinoi_levantine_trades_advance = {
-	age = age_4_reformation
-	icon = global_trade_routes_advance
-	potential = {
-		culture = culture:latinoi
-	}
-	export_efficiency = small_trade_efficiency_bonus
-	requires = global_trade_advance
-}
-br_latinoi_the_piraeus_arsenal_advance = {
-	age = age_4_reformation
-	icon = safe_exploration_techniques_advance
-	potential = {
-		culture = culture:latinoi
-	}
-	navy_maintenance_efficiency = 0.1
-	ship_build_speed = 0.1
-	requires = maritime_advance_age_4
-}
-br_latinoi_the_maritime_consulates_advance = {
-	age = age_4_reformation
-	icon = efficient_spies
-	potential = {
-		culture = culture:latinoi
-	}
-	spy_network_construction = 0.1
-	requires = global_trade_advance
-}
 
 ##############################-Western HRE-##############################
-#army_light_cavalry_build_cost_modifier = -0.1
-#army_light_cavalry_maintenance_cost_modifier = -0.05
-br_french_tradition = {
-	age = age_1_traditions
-	icon = french_tradition
-	potential = {
-		has_or_had_tag = LOT
-	}
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
-	diplomatic_capacity = 2
-	monthly_diplomats = 0.1
-	subject_income_modifier = 0.1
-	requires = feudalism_advance
-}
-br_french_heritage = {
-	age = age_1_traditions
-	icon = french_heritage
-	potential = {
-		has_or_had_tag = LOT
-	}
-	nobles_estate_levy_size = 0.5
-	army_heavy_cavalry_power = 0.1
-	army_heavy_cavalry_maintenance_cost_modifier = -0.1
-	#great_power_score_exempt_from_forfeit = 10
-	requires = br_french_tradition
-}
-br_carolingian_relatinization = { #unique loc needed
-	age = age_1_traditions
-	icon = br_french_tradition
-	icon = scholasticism
-	potential = {
-		OR = {
+	#army_light_cavalry_build_cost_modifier = -0.1
+	#army_light_cavalry_maintenance_cost_modifier = -0.05
+	br_french_tradition = {
+		age = age_1_traditions
+		icon = french_tradition
+		potential = {
 			has_or_had_tag = LOT
-			has_or_had_tag = FRA
-			has_or_had_tag = AQN
+		}
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
+		diplomatic_capacity = 2
+		monthly_diplomats = 0.1
+		subject_income_modifier = 0.1
+		requires = feudalism_advance
+	}
+	br_french_heritage = {
+		age = age_1_traditions
+		icon = french_heritage
+		potential = {
+			has_or_had_tag = LOT
+		}
+		nobles_estate_levy_size = 0.5
+		army_heavy_cavalry_power = 0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
+		#great_power_score_exempt_from_forfeit = 10
+		requires = br_french_tradition
+	}
+	br_carolingian_relatinization = { #unique loc needed
+		age = age_1_traditions
+		icon = br_french_tradition
+		icon = scholasticism
+		potential = {
+			OR = {
+				has_or_had_tag = LOT
+				has_or_had_tag = FRA
+				has_or_had_tag = AQN
+			}
+		}
+		global_nobles_max_literacy = 10
+		global_clergy_max_literacy = 10
+		global_max_literacy = 2
+		global_monthly_literacy = 0.02
+		cultural_influence_modifier = 0.1
+		global_pop_assimilation_speed_modifier = 0.1
+		requires = library_advance
+	}
+	br_papal_protector = { #unique loc needed
+		age = age_1_traditions
+		potential = { has_or_had_tag = LOT }
+		requires = br_carolingian_relatinization
+		icon = pap_the_word_of_the_lord
+
+		papal_relations = 50
+		monthly_religious_influence = 0.1
+		global_heretic_pop_conversion_speed_modifier = 0.25
+	}
+	br_carolingian_centralization = { #unique loc needed
+		age = age_1_traditions
+		potential = { has_or_had_tag = LOT }
+		requires = br_papal_protector
+		icon = local_nobility
+		
+		#num_local_governors = 1
+		tax_income_efficiency = large_tax_income_efficiency_bonus
+		global_distance_from_capital_speed_propagation = 0.1
+		global_integration_speed_modifier = 0.1
+		#wrong_culture_levy_size = 0.1
+	}
+	br_french_language_in_all_courts = {
+		age = age_2_renaissance
+		icon = french_language_in_all_courts
+		potential = {
+			has_or_had_tag = LOT
+		}
+		cultural_influence_modifier = 0.25
+		global_pop_assimilation_speed_modifier = 0.1
+	}
+	br_elan = {
+		age = age_2_renaissance
+		icon = elan
+		potential = {
+			has_or_had_tag = LOT
+		}
+		land_morale_modifier = 0.2
+	}
+	br_estates_general = {
+		age = age_3_discovery
+		icon = estates_general
+		country_cabinet_efficiency = 0.1
+		potential = {
+			has_or_had_tag = LOT
 		}
 	}
-	global_nobles_max_literacy = 10
-	global_clergy_max_literacy = 10
-	global_max_literacy = 2
-	global_monthly_literacy = 0.02
-	cultural_influence_modifier = 0.1
-	global_pop_assimilation_speed_modifier = 0.1
-	requires = library_advance
-}
-br_papal_protector = { #unique loc needed
-	age = age_1_traditions
-	potential = { has_or_had_tag = LOT }
-	requires = br_carolingian_relatinization
-	icon = pap_the_word_of_the_lord
-
-	papal_relations = 50
-	monthly_religious_influence = 0.1
-	global_heretic_pop_conversion_speed_modifier = 0.25
-}
-br_carolingian_centralization = { #unique loc needed
-	age = age_1_traditions
-	potential = { has_or_had_tag = LOT }
-	requires = br_papal_protector
-	icon = local_nobility
-	
-	#num_local_governors = 1
-	tax_income_efficiency = large_tax_income_efficiency_bonus
-	global_distance_from_capital_speed_propagation = 0.1
-	global_integration_speed_modifier = 0.1
-	#wrong_culture_levy_size = 0.1
-}
-br_french_language_in_all_courts = {
-	age = age_2_renaissance
-	icon = french_language_in_all_courts
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_gendarmes = {
+		age = age_3_discovery
+		icon = fra_gendarmes
+		potential = {
+			has_or_had_tag = LOT
+		}
+		army_light_cavalry_power = 0.1
+		army_maintenance_efficiency = 0.05
 	}
-	cultural_influence_modifier = 0.25
-	global_pop_assimilation_speed_modifier = 0.1
-}
-br_elan = {
-	age = age_2_renaissance
-	icon = elan
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_integration_of_new_territories = {
+		age = age_3_discovery
+		icon = fra_integration_of_new_territories
+		potential = {
+			has_or_had_tag = LOT
+		}
+		global_integration_speed_modifier = 0.2
 	}
-	land_morale_modifier = 0.2
-}
-br_estates_general = {
-	age = age_3_discovery
-	icon = estates_general
-	country_cabinet_efficiency = 0.1
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_reliance_on_privateers = {
+		age = age_4_reformation
+		icon = fra_reliance_on_privateers
+		potential = {
+			has_or_had_tag = LOT
+		}
+		hire_privateer_cost_modifier = -0.1
+		privateer_maintenance_cost_modifier = -0.1
 	}
-}
-br_fra_gendarmes = {
-	age = age_3_discovery
-	icon = fra_gendarmes
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_reformation_of_taxation = {
+		age = age_4_reformation
+		icon = fra_reformation_of_taxation
+		potential = {
+			has_or_had_tag = LOT
+		}
+		tax_income_efficiency = medium_tax_income_efficiency_bonus
 	}
-	army_light_cavalry_power = 0.1
-	army_maintenance_efficiency = 0.05
-}
-br_fra_integration_of_new_territories = {
-	age = age_3_discovery
-	icon = fra_integration_of_new_territories
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_school_of_fontainebleau = {
+		age = age_4_reformation
+		icon = fra_school_of_fontainebleau
+		potential = {
+			has_or_had_tag = LOT
+		}
+		invite_artist_cost_modifier = -0.25
+		num_possible_artists = 1
 	}
-	global_integration_speed_modifier = 0.2
-}
-br_fra_reliance_on_privateers = {
-	age = age_4_reformation
-	icon = fra_reliance_on_privateers
-	potential = {
-		has_or_had_tag = LOT
+	br_vauban_fortifications = {
+		age = age_5_absolutism
+		icon = vauban_fortifications
+		potential = {
+			has_or_had_tag = LOT
+		}
+		fort_limit_modifier = 0.2
 	}
-	hire_privateer_cost_modifier = -0.1
-	privateer_maintenance_cost_modifier = -0.1
-}
-br_fra_reformation_of_taxation = {
-	age = age_4_reformation
-	icon = fra_reformation_of_taxation
-	potential = {
-		has_or_had_tag = LOT
+	br_the_philosophes = {
+		age = age_5_absolutism
+		icon = the_philosophes
+		potential = {
+			has_or_had_tag = LOT
+		}
+		research_speed_modifier = 0.05
 	}
-	tax_income_efficiency = medium_tax_income_efficiency_bonus
-}
-br_fra_school_of_fontainebleau = {
-	age = age_4_reformation
-	icon = fra_school_of_fontainebleau
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_expansion_of_france = {
+		age = age_5_absolutism
+		icon = fra_expansion_of_france
+		potential = {
+			has_or_had_tag = LOT
+		}
+		casus_belli_creation_speed_modifier = 0.25
 	}
-	invite_artist_cost_modifier = -0.25
-	num_possible_artists = 1
-}
-br_vauban_fortifications = {
-	age = age_5_absolutism
-	icon = vauban_fortifications
-	potential = {
-		has_or_had_tag = LOT
+	br_fra_code_civil = {
+		age = age_6_revolutions
+		icon = fra_code_civil
+		potential = {
+			has_or_had_tag = LOT
+		}
+		legislative_efficiency = 0.2
 	}
-	fort_limit_modifier = 0.2
-}
-br_the_philosophes = {
-	age = age_5_absolutism
-	icon = the_philosophes
-	potential = {
-		has_or_had_tag = LOT
+	br_french_ambition = {
+		age = age_6_revolutions
+		icon = french_ambition
+		potential = {
+			has_or_had_tag = LOT
+		}
+		discipline = 0.05
 	}
-	research_speed_modifier = 0.05
-}
-br_fra_expansion_of_france = {
-	age = age_5_absolutism
-	icon = fra_expansion_of_france
-	potential = {
-		has_or_had_tag = LOT
+	#From BOH #edit make more unique
+	br_students_of_foreign_courts = {
+		age = age_1_traditions
+		icon = students_of_foreign_courts
+		potential = {
+			has_or_had_tag = LOT
+		}
+		country_child_education = 0.1
+		global_nobles_max_literacy = 5
+		requires = chancery_advance
 	}
-	casus_belli_creation_speed_modifier = 0.25
-}
-br_fra_code_civil = {
-	age = age_6_revolutions
-	icon = fra_code_civil
-	potential = {
-		has_or_had_tag = LOT
-	}
-	legislative_efficiency = 0.2
-}
-br_french_ambition = {
-	age = age_6_revolutions
-	icon = french_ambition
-	potential = {
-		has_or_had_tag = LOT
-	}
-	discipline = 0.05
-}
-#From BOH
-br_students_of_foreign_courts = {
-	age = age_1_traditions
-	icon = students_of_foreign_courts
-	potential = {
-		has_or_had_tag = LOT
-	}
-	country_child_education = 0.1
-	global_nobles_max_literacy = 5
-	requires = chancery_advance
-}
 
 
 ##############################-Armenia-##############################
-br_arm_bagrationi_dynasty = {
+br_arm_bagrationi_dynasty = { #bagrutuni
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = ARM
@@ -786,40 +815,27 @@ br_balkan_tribal_heritage = {
             culture = culture:serbian
 		}
 	}
-	army_light_cavalry_maintenance_cost_modifier = -0.25
-	tribes_estate_levy_size = 0.25
-	levy_maintenance_modifier = -0.25
+	army_light_cavalry_build_cost_modifier = -0.15
+	army_light_cavalry_maintenance_cost_modifier = -0.15
+	tribes_estate_levy_size = 0.33
+	levy_maintenance_modifier = -0.15
+}
+br_magyar_cumen_cavalry = {
+	age = age_1_traditions
+	icon = horse_lords
+	requires = br_balkan_tribal_heritage
+	potential = {
+		OR = {
+			culture = culture:hungarian
+			culture = culture:cuman_culture
+            #culture = culture:szekely
+		}
+	}
+	nobles_estate_levy_size = 0.1
+	army_light_cavalry_power = 0.1
 	army_movement_speed = 0.05
-	always_allow_army_levies = yes
+	unlock_unit = a_steppe_horse_archers
 }
-#Iberia
-br_asturias_fortress = {
-	age = age_1_traditions
-	icon = hun_castle_warriors
-	potential = {
-		has_or_had_tag = LON
-	}
-	requires = feudalism_advance
-	fort_limit_modifier = 0.2
-	fort_maintenance_efficiency = 0.2
-	global_garrison_size_modifier = 0.2
-	global_hostile_attrition = 0.1
-	mountains_proximity_impact = -0.1
-	hills_proximity_impact = -0.1
-	plateau_proximity_impact = -0.1
-}
-br_asturias_military = {
-	age = age_1_traditions
-	icon = hun_castle_warriors
-	potential = {
-		has_or_had_tag = LON
-	}
-	requires = br_asturias_fortress
-	discipline = 0.05
-	nobles_estate_levy_size = 0.25
-	levy_maintenance_modifier = -0.1
-	army_heavy_cavalry_power = 0.1
-    army_heavy_cavalry_maintenance_cost_modifier = -0.1
-}
+
 
 

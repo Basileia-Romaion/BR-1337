@@ -27,7 +27,7 @@ international_organization_manager = {
 		SYE LDA
 		# From France
 		PRC MIE AQN MDM MRC BRR TOU POI
-		BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR ETA NRM ANJ ARS ANG BRI FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON MON AUM ROU FLA NEV RET NRB VNT RCC CLT
+		BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR NRM ANJ ARS ANG BRI FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON AUM ROU FLA NEV RET NRB VNT RCC CLT
 		SSN VRM AMI STP ORL BER CEX TNE CMT LYN VIV GUY
 	}
 		leader = LOT
@@ -117,8 +117,8 @@ international_organization_manager = {
 			ELL HEH HLF HOH KIR NEL TUB LEU 
 			MOD
 			# From France
-			BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR ETA NRM ANJ ARS ANG BRI
-			FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON MON AUM ROU
+			BUR ALE AUV BGN BOU AUX SAN DRE VDM EVR NRM ANJ ARS ANG BRI
+			FOI AMG FRZ BLS AST COM IJO MRT VLN PER TON AUM ROU
 			FLA NEV RET NRB VNT RCC CLT TOU POI
 			SSN VRM AMI STP ORL BER CEX TNE CMT LYN VIV GUY
 		}
@@ -346,42 +346,42 @@ international_organization_manager = {
 	}
 
 	#BR remove, replace or rework
-	add_international_organization = {
-		type = lordship_of_ireland
-		creation_date = 1177.1.1
-		members = {
-			# leader
-			HBA
-			# core earldoms
-			DMS ORD KID CWM ULS DCI
-			# lapsed earldoms
-			CLR MYO GLS
-			# bishop
-			AMA
-			# gaelic			
-		 	#CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY ARD CNN HYM ANN KEE IVG IMA TGH FCL CVN AMH
-		}
-		lord_of_ireland = { HBA }
-		lieutenant = {  } # was not one of the Earls in 1337
-		loyalist = { 
-			# core earldoms
-			DMS ORD KID CWM ULS DCI
-		}
-		regions = { ireland_region }
-		
+	#add_international_organization = {
+		#type = lordship_of_ireland
+		#creation_date = 1177.1.1
+		#members = {
+			## leader
+			#HBA
+			## core earldoms
+			#DMS ORD KID CWM ULS DCI
+			## lapsed earldoms
+			#CLR MYO GLS
+			## bishop
+			#AMA
+			## gaelic			
+		 	##CLA MCM BEA TYR LEI TRY OIL CMA OSS FMA BFN UMH THO SLN FLY ARD CNN HYM ANN KEE IVG IMA TGH FCL CVN AMH
+		#}
+		#lord_of_ireland = { }
+		#lieutenant = {  } # was not one of the Earls in 1337
+		#loyalist = { 
+			## core earldoms
+			#DMS ORD KID CWM ULS DCI
+		#}
+		#regions = { ireland_region }
+	
 
-		laws = {
-			lordship_of_ireland_rule_laudabiliter_policy
-		}
+		#laws = {
+			#lordship_of_ireland_rule_laudabiliter_policy
+		#}
 
-		ruler_term = { character = eng_john_lackland start_date = 1177.1.1 end_date = 1216.10.19 regnal_number = 1 }  # became Lord of Ireland before being King of England
-		ruler_term = { character = eng_henry_iii start_date = 1216.10.28 end_date = 1272.11.16 regnal_number = 3 }
-		ruler_term = { character = eng_edward_i start_date = 1272.11.20 end_date = 1307.7.8 regnal_number = 1 }
-		ruler_term = { character = eng_edward_ii start_date = 1307.7.8 end_date = 1327.1.20 regnal_number = 2 }
-		ruler_term = { character = eng_edward_iii start_date = 1327.1.25 regnal_number = 3 }
-		variables = { 
-		}
-	}
+		#ruler_term = { character = eng_john_lackland start_date = 1177.1.1 end_date = 1216.10.19 regnal_number = 1 }  # became Lord of Ireland before being King of England
+		#ruler_term = { character = eng_henry_iii start_date = 1216.10.28 end_date = 1272.11.16 regnal_number = 3 }
+		#ruler_term = { character = eng_edward_i start_date = 1272.11.20 end_date = 1307.7.8 regnal_number = 1 }
+		#ruler_term = { character = eng_edward_ii start_date = 1307.7.8 end_date = 1327.1.20 regnal_number = 2 }
+		#ruler_term = { character = eng_edward_iii start_date = 1327.1.25 regnal_number = 3 }
+		#variables = { 
+		#}
+	#}
 
 	#################################################################
 	# 				Japanese Shogunate								#
@@ -448,11 +448,11 @@ international_organization_manager = {
 		type = guelphs_io
 		creation_date = 1125.5.23
 		members = {
-			PAP BLG PEA FLO ASD FER CNV CHX MND TTN IMO RAV FAE RIM ANC CMR PRA COT PTG SIE GUB MTA PES ATI
+			PAP BLG PEA FLO FER IMO RAV FAE RIM ANC CMR PRA COT PTG SIE GUB MTA PES
 			#BR ADDED
-			BNV SPL N1P N2P N3P
+			BNV SPL N1P N2P N4P
 			#Othodox side with Pope until we add a third option.
-			S1C S2C S3C S5C SAR
+			N3P S1C S2C S3C S5C SAR
 		}
 		leader = BNV
 	}
@@ -461,6 +461,7 @@ international_organization_manager = {
 		creation_date = 1125.5.23
 		members = {
 			MLO PIS PAV VER URB GEN ATI SAL PAR LUC CES MAN MFA VLT FRM LCA CRR PAD
+			AOS PIE CNV CHX ABA MND ASD TTN MSP MOD 
 		}
 		leader = MLO
 	}
@@ -484,7 +485,8 @@ international_organization_manager = {
 
 			TUR ARD ATZ DML HDR HLL HNY IHB KEL KKL KLR KRI KTW MKW RKL SLI SRV SYY ZBR
 			BHT BIT DIL DMB DSN EGL HKK HZN HZR MZJ SOH ZRQ ZZR #Sutayids
-			AIA SYU KCN GAN
+			SYU KCN GAN
+			AQQ QAR
 
 			#Unaligned
 
@@ -584,7 +586,7 @@ international_organization_manager = {
 			#BR ADDED
 			ICO AON S1Y B0R A1G K1B
 			MOE THS PAF	THE HE1 ACH
-			MKB CHY #BNK
+			#MKB #CHY #BNK
 			AN1 AN2 AN3 AN4 AN5
 			#ZAZ RH1 RH2 RH3
 			AN6 AN7 AN8 AN9 AN10 AN11 AN12 P2N P3N
@@ -594,10 +596,10 @@ international_organization_manager = {
 			HC0
 
 			#Antioch
-			OHS AOI AN12
+			OHS AOI
 
 			#Rome
-			S1C S2C S3C S5C N3P DYR CRT MTR ANT THP MZK SAR
+			S1C S2C S3C S5C N3P DYR MTR ANT THP MZK SAR
 
 			#Cyprus
 			KYP

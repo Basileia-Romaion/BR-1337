@@ -34,9 +34,6 @@ government = {
 		cultural_traditions_law = martial_society
 		foreign_cultural_law = blood_tax_of_foreigners
 		language_of_pleading = language_of_pleading_court
-		legal_code_law = civil_law_policy
-		maritime_law = protect_trade_routes
-		piracy_law = anti_piracy_policy
 		distribution_of_power_law = dop_favor_the_clergy
 		immigration_law = open_borders_law
 		mining_law = nobles_mining_law
@@ -60,24 +57,22 @@ government = {
 		clerical_advisory_council
 		br_bureaucrat_clergy
 		br_roman_orthodox_catechesis
-		br_fortified_religious_enclave 
 
 		#burghers
 		market_fairs
 		formal_guilds
-		trade_monopolies
-		building_roads_rights
 
 		#Commoners
 		allow_hunting
 		partial_yield
 		no_labor_sunday
 		peasants_allowed_weapons_privilege
-		br_themata_peasant_privilege
+		br_themata_reformed_privilege #br_themata_peasant_privilege
 		akritai_privilege
 	}
 	reforms = {
 		military_order_reform #br_military_order_reform
+		shield_of_the_faith_reform 
 	}
 }
 

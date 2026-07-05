@@ -6386,9 +6386,8 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			kangri
 			kashmiri_culture
-		 }
+		}
 	}
 
 	#RJR - Rajouri
@@ -7150,7 +7149,6 @@ countries = {
 			land_vs_naval = 50
 		}
 
-		tolerated_cultures = { sindhi }
 	}
 
 	#SMA - Samma
@@ -10777,7 +10775,7 @@ countries = {
 		government = {
 			type = republic
 			heir_selection = podesta_elective
-
+			ruler = random
 			reforms = {
 				signoria_reform
 			}
@@ -12306,7 +12304,6 @@ countries = {
 	CRT = { #Candia https://en.wikipedia.org/wiki/Kingdom_of_Candia
 		own_control_core = {
 			chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
-			karpathos
 		}
 
 		starting_technology_level = 3
@@ -12389,7 +12386,6 @@ countries = {
 
 		country_rank = rank_duchy
 		court_language = venetian_dialect
-		liturgical_language = koine_dialect
 		capital = candia
 		dynasty = cornaro_dynasty
 		dynasty = gradenigo_dynasty
@@ -12535,9 +12531,6 @@ countries = {
 			ruler_term = { character = br_ere_rdm_character_41 start_date = 1329.9.25 } 
 		}
 
-		accepted_cultures = {
-			latinoi
-		}
 		currency_data = { #From ongoing civil war and turkic raiding
 			stability = -5
 			government_power = -5
@@ -12565,7 +12558,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_bishopric_"
+		include = "catholic_bishopric"
 		government = {
 			ruler = random
 
@@ -12622,7 +12615,6 @@ countries = {
 			privilege = {
 				lat_latin_crusader_elite
 				feudal_mercenary_contracts
-				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
 				br_reconquista_privilege
@@ -12743,7 +12735,6 @@ countries = {
 				br_reconquista_privilege
 
 				feudal_mercenary_contracts
-				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
 
@@ -12777,7 +12768,6 @@ countries = {
 		own_control_core = {
 			angelokastron vonitsa arta preveza parga ioannina pyli karpenisi
 			kleisoura_epirus butrint argyrokastro avlonya konitsa
-
 		}
 		our_cores_conquered_by_others = {
 			zakynthos leukas cephalonia corfu
@@ -13644,11 +13634,11 @@ countries = {
 			trgoviste_SER sjenica 
 			arilje brvenik
 			koman has dukagjini lezha
-			kocani strumica shtip
 			gacko
 		}
 
 		our_cores_conquered_by_others = {
+			kocani strumica shtip
 			trebinje
 			ravno kucevo branicevo
 			stalac
@@ -14001,7 +13991,7 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			slovene southern_bavarian croatian
+			slovene croatian
 		}
 
 		country_rank = rank_county
@@ -19294,7 +19284,6 @@ countries = {
 
 			privilege = {
 				feudal_mercenary_contracts
-				increased_civic_engagement
 				noble_sponsored_navy
 				nobles_protected_faith
 				br_reconquista_privilege
@@ -21176,10 +21165,6 @@ countries = {
 			laws = {
 				sharia_law = maliki_policy
 			}
-		}
-
-		tolerated_cultures = {
-			fulbe
 		}
 
 		capital = kaedi
@@ -36241,9 +36226,7 @@ countries = {
 				name_william = 2
 			}
 		}
-		tolerated_cultures = {
-			arpitan
-		}
+
 		country_rank = rank_county
 		capital = gruyere
 	}
@@ -36411,9 +36394,6 @@ countries = {
 		include = "expl_northern_europe"
 		include = "swiss_republic"
 		government = { ruler = random }
-		tolerated_cultures = {
-			romansh
-		}
 		country_rank = rank_county
 		capital = ilanz
 	}
@@ -36426,9 +36406,6 @@ countries = {
 		include = "expl_western_europe"
 		include = "expl_northern_europe"
 		include = "swiss_theocracy"
-		tolerated_cultures = {
-			romansh
-		}
 		government = {
 			ruler = random
 			heir_selection = abbot_elective
@@ -42365,9 +42342,6 @@ countries = {
 
 		liturgical_language = church_slavonic_language
 
-		tolerated_cultures = {
-			smolenskian_culture
-		}
 
 		capital = mstsislaw
 		country_rank = rank_duchy
@@ -42528,6 +42502,7 @@ countries = {
 				cossacks_land_rights
 				cossacks_sanctioned_atamans
 				cossacks_allowed_free_roaming
+				cossacks_colonization
 			}
 		}
 
@@ -46430,10 +46405,6 @@ countries = {
 
 		include = "expl_india_hindu"
 		include = "indian_hindu_monarchy_no_coast"
-
-		tolerated_cultures = {
-			bhojpuri_culture
-		}
 
 		capital = buxar
 		government = {
@@ -53981,12 +53952,11 @@ countries = {
 				#administration_of_clerical_lands
 				#religious_laws_enforced
 			}
+			ruler = random
 		}
-		
 		country_rank = rank_county
 		court_language = koine_dialect
 		liturgical_language = koine_dialect
-
 		capital = mount_athos
 	} 
 
@@ -55404,8 +55374,7 @@ countries = {
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		government = {
-			#ruler = br_ere_rdm_character_25
-			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+			ruler = random
 		}
 		country_rank = rank_county
 		accepted_cultures = {
@@ -55430,8 +55399,7 @@ countries = {
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
 		government = {
-			#ruler = br_ere_rdm_character_25
-			#ruler_term = { character = br_ere_rdm_character_25 start_date = 1297.11.1 }
+			ruler = random
 		}
 		country_rank = rank_county
 		accepted_cultures = {
@@ -56205,7 +56173,6 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_western_europe"
 		include = "catholic_monarchy"
-		include = "feudal_europe"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -56953,7 +56920,8 @@ countries = {
 		include = "catholic_monarchy"
 		include = "expl_scandinavia"
 		government = {
-			ruler = br_nse_character_01 #ruler_term = { character = nor_hakan_magnusson start_date = 1299.11.1 end_date = 1319.5.8 regnal_number = 5	}
+			ruler = br_nse_character_01 
+			ruler_term = { character = br_nse_character_01 start_date = 1319.11.1 }
 
 			
 			reforms = {
