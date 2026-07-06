@@ -11178,7 +11178,7 @@ character_db={
 	}
 		
 	bul_irene_palaiologos = { #https://en.wikipedia.org/wiki/Maria-Irene_Palaiologina
-		first_name = { name = name_irene }
+		first_name = { name = name_mary } # Maria; her elder sister married to Trebizond keeps name_irene
 		culture = greek_culture
 		religion = orthodox	
 		female = yes
@@ -50168,7 +50168,7 @@ character_db={
 		birth = villalba # Portugal
 		father = cas_pedro_fernandez_castro
 		#mother = por_aldonca_lourenco_valadares # Mistress
-		#dynasty = castro_dynasty
+		dynasty = castro_dynasty
 		tag = CAS
 		timed_modifier = {
 			modifier = "bastard"
@@ -99624,7 +99624,7 @@ character_db={
 		birth_date = 1110.1.1 #Unknown
 		birth = ani
 		death_date = 1160.1.1 #Unknown
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99636,7 +99636,7 @@ character_db={
 		birth = ani
 		death_date = 1187.1.1 #Exact date unknown
 		father = arm_zakare_i
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99648,7 +99648,7 @@ character_db={
 		birth = ani
 		death_date = 1212.1.1 #Exact date unknown
 		father = arm_sargis
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99660,7 +99660,7 @@ character_db={
 		birth = ani
 		death_date = 1227.1.1 #Exact date unknown
 		father = arm_sargis
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99672,19 +99672,19 @@ character_db={
 		birth = ani
 		death_date = 1250.1.1 #Exact date unknown
 		father = arm_ivane_i
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
 	arm_shahnshah = {
-		first_name = { name = name_shahnshah }
+		first_name = { name = name_shahnshan }
 		culture = armenian_culture
 		religion = miaphysite
 		birth_date = 1197.1.1 #Exact date unknown
 		birth = ani
 		death_date = 1261.1.1 #Exact date unknown
 		father = arm_zakare_ii
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99696,7 +99696,7 @@ character_db={
 		birth = ani
 		death_date = 1261.1.1 #Exact date unknown
 		father = arm_shahnshah
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99708,7 +99708,7 @@ character_db={
 		birth = ani
 		death_date = 1270.1.1 #Unknown
 		father = arm_shahnshah
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99720,7 +99720,7 @@ character_db={
 		birth = ani
 		death_date = 1320.1.1 #Unknown
 		father = arm_ivane_ii
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99731,7 +99731,7 @@ character_db={
 		birth_date = 1260.1.1 #Unknown
 		birth = ani
 		father = arm_ivane_ii
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99742,7 +99742,7 @@ character_db={
 		birth_date = 1285.1.1 #Unknown
 		birth = ani
 		father = arm_vahram
-		dynasty = bagratuni_dynasty #zakarid_dynasty
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
@@ -99753,7 +99753,7 @@ character_db={
 		birth_date = 1305.1.1 #Unknown
 		birth = ani
 		father = arm_zakare_iv
-		dynasty = bagratuni_dynasty 
+		dynasty = zakarid_dynasty
 		tag = ARM
 	}
 
