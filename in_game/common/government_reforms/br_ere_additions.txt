@@ -215,13 +215,8 @@ br_sub_foideratoi_subject = {
 	icon = basic_timariot_system #expanded_timariot_system
 	potential = {
 		OR = {
-			has_reform = government_reform:br_sub_foideratoi_subject
-			#is_subject_type = br_foederati_subject
-		}
-	}
-	allow = {
-		OR = {
 			is_subject_of = c:BYZ
+			has_reform = government_reform:br_sub_foideratoi_subject
 			is_member_of_international_organization = international_organization:roman_world
 		}
 		NOR = {
