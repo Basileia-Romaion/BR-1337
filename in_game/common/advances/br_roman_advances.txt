@@ -655,8 +655,8 @@ br_age_6_basilikoi_advance = {
 br_anatolian_heartland = {
 	age = age_1_traditions
 	potential = {
-		any_owned_location = {
-			OR = {
+		original_capital ?= {
+			OR = {				
 				area = area:central_anatolia_area
 				area = area:cappadocia_area
 			}
@@ -671,8 +671,8 @@ br_anatolian_heartland = {
 br_anatolian_farmlands = {
 	age = age_1_traditions
 	potential = {
-		any_owned_location = {
-			OR = {
+		original_capital ?= {
+			OR = {				
 				area = area:central_anatolia_area
 				area = area:cappadocia_area
 			}
@@ -707,7 +707,7 @@ br_pontic_lumber = {
 	age = age_1_traditions
 	icon = lumber_improvements_absolutism
 	potential = {
-		any_owned_location = {
+		original_capital ?= {
 			area = area:pontus_area
 		}
 	}
