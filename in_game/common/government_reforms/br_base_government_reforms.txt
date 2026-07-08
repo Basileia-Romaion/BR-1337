@@ -71,6 +71,14 @@ REPLACE_OR_CREATE:crusade_sea_reform = {
 	years = 2
 }
 
+INJECT:feudal_nobility = {
+	country_modifier = {
+		nobles_estate_levy_size = 0.1 #br added
+		monthly_towards_aristocracy = societal_value_tiny_monthly_move #br added
+		monthly_towards_decentralization = societal_value_tiny_monthly_move #br added
+	}
+}
+
 #Country specific
 #byzantine_court_ceremonies_reform
 #ERE

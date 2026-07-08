@@ -122,7 +122,7 @@
 			monthly_towards_aristocracy = societal_value_monthly_move
 			global_nobles_estate_power = 0.5
 			# Military boosts
-			nobles_estate_levy_size = 1
+			nobles_estate_levy_size = 0.5
 			global_defensive = 0.1
 			army_maintenance_efficiency = 0.1
 			global_max_rural_control = -0.05
@@ -234,7 +234,7 @@
 			has_or_had_tag = LOT
 		}
 		country_modifier = {
-			nobles_estate_levy_size = 1
+			nobles_estate_levy_size = 0.5
 			peasants_estate_levy_size = -0.1
 			monthly_towards_aristocracy = societal_value_monthly_move
 			nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
