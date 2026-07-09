@@ -152,7 +152,7 @@ TRY_INJECT:city_guard = {
 }
 
 TRY_INJECT:kurultai = {
-	modifier = {
+	raw_modifier = {
 		local_proximity_source = 10 #br added
 	}
 }
