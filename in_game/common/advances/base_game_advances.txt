@@ -690,35 +690,6 @@ REPLACE_OR_CREATE:water_frame = {
 	global_cloth_output_modifier = 0.33
 }
 
-
-###-Horde-
-INJECT:horse_lords = {
-	tribes_estate_levy_size = 0.2
-	global_distance_from_capital_speed_propagation = 0.2
-	flatland_proximity_impact = -0.2
-	army_movement_speed = 0.1
-}
-INJECT:glh_kipchak_khanate = {
-	wrong_culture_levy_size = 0.25 #br added
-	global_distance_from_capital_speed_propagation = 0.25
-	subject_income_modifier = 0.25
-	flatland_proximity_impact = -0.25
-}
-
-REPLACE_OR_CREATE:ilk_restore_yam = {	#Restore the Yäm
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = ILK
-			has_or_had_tag = GLH
-		}
-	}
-	requires = diplomatic_range_age_1
-	icon = diplomatic_training
-	global_distance_from_capital_speed_propagation = 0.33
-	flatland_proximity_impact = -0.33
-}
-
 ##############################-Bulgaria-##############################
 REPLACE_OR_CREATE:legacy_of_ivan_asen_ii = {
 	age = age_1_traditions

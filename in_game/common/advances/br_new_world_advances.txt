@@ -20,12 +20,21 @@ br_stone_weapons = {
 	potential = {
 		exists = capital
 		original_capital ?= { continent = continent:america }
+		NOR = {
+			has_or_had_tag = NRV
+			has_or_had_tag = NRR
+			has_or_had_tag = NRH
+			has_or_had_tag = NRC
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = K1K
+		}
 	}
 	requires = agriculture_advance
 	unlock_production_method = pre_columbian_weapon_smith_maintenance
-	global_wild_game_output_modifier = 0.1
-	tribes_estate_levy_size = 1
-	levy_maintenance_modifier = -0.25
+	#global_wild_game_output_modifier = 0.1
+	#tribes_estate_levy_size = 1
+	#levy_maintenance_modifier = -0.25
 }
 
 

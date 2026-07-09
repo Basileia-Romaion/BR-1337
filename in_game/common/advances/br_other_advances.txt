@@ -68,7 +68,7 @@ br_turkic_new_roots = {	#They move away from being horde-like to a more reformed
 	requires = br_turkic_seljuk_resurgent
 	icon = administrative_leadership
 	government_reform_slots = 1
-	global_distance_from_capital_speed_propagation = 0.2
+	land_cost_on_distance_from_capital_speed_propagation = 0.25
 	global_integration_speed_modifier = 0.2
 }
 br_greek_in_the_court = {
@@ -122,7 +122,78 @@ br_turkic_slave_tax = {
 		}
 	}
 	global_slaves_goods_output_modifier = 0.5
+	subject_income_modifier = 0.25
+	slave_raid_efficiency = 0.25
 
 	requires = br_turkic_ghazi
 
 }
+
+
+###-Horde-
+
+br_glh_endless_steppe = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = GLH
+	}
+	requires = horse_riding_advance
+	land_cost_on_distance_from_capital_speed_propagation = 0.5
+	flatland_proximity_impact = -0.5
+}
+
+br_glh_mongol_tatar_legacy = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = GLH
+	}
+	requires = br_glh_endless_steppe
+	army_light_cavalry_maintenance_cost_modifier = -0.25
+	army_movement_speed = 0.1
+}
+br_glh_fear_of_the_horde = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = GLH
+	}
+	requires = br_glh_mongol_tatar_legacy
+	subject_loyalty = 10
+	monthly_horde_unity = 0.25
+	global_crown_estate_power = 0.25
+}
+br_glh_tribute_to_the_horde = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = GLH
+	}
+	requires = br_glh_fear_of_the_horde
+	subject_income_modifier = 1
+}
+br_tatar_mongol_raiding = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:steppe_group }
+	}
+	global_slaves_goods_output_modifier = 0.25
+	slave_raid_efficiency = 0.25
+	amount_looted_modifier = 0.25
+	army_logistics_distance_modifier = 0.25
+	requires = br_glh_tribute_to_the_horde
+}
+
+br_glh_religious_tolerance = {
+	icon = glh_kipchak_khanate
+	age = age_1_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:steppe_group }
+	}
+	requires = feudalism_advance
+	wrong_culture_levy_size = 0.1
+	tolerance_heathen = 0.5
+}
+

@@ -214,7 +214,7 @@ br_stationes_advance = {
 	}
 	requires = roman_court_and_office
 	army_auxiliary_power = 0.1
-	global_distance_from_capital_speed_propagation = 0.05
+	land_cost_on_distance_from_capital_speed_propagation = 0.05
 	global_trade_through_owned_territory_efficiency = 0.1
 	unlock_building = br_stationes_building
 	ai_weight = { add = 5 }
@@ -298,7 +298,7 @@ roman_infrastructure = {
 	}
 	requires = supply_depot_advance_age_3_discovery
 	global_road_building_time = -0.1
-	global_distance_from_capital_speed_propagation = 0.1
+	land_cost_on_distance_from_capital_speed_propagation = 0.1
 	global_trade_through_owned_territory_efficiency = 0.1
 	army_logistics_distance_modifier = 0.1
 	ai_weight = { add = 5 }
