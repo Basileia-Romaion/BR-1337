@@ -15,20 +15,12 @@
 #
 #	
 #}
+INJECT:ARA = {
+	culture_definition = aragonese
+}
 
-REPLACE_OR_CREATE:POR = {
-	color = map_POR
-	color2 = rgb { 16 41 202 }
-
+INJECT:POR = {
 	culture_definition = galician
-	religion_definition = catholic
-	
-	unit_color0 = rgb { 44 66 96 }
-	unit_color1 = rgb { 214 22 30 }
-	unit_color2 = rgb { 220 220 220 }
-
-	description_category = administrative
-	difficulty = 2
 }
 
 REPLACE_OR_CREATE:LON = {

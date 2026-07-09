@@ -416,8 +416,12 @@ br_on_game_start = {
 			research_advance = advance_type:servants_of_god
         }
 
+
 		every_country = {
-			limit = { religion.group = religion_group:muslim }
+			limit = { 
+				religion.group = religion_group:muslim
+				has_tribal_government = no
+			}
 
 			research_advance = advance_type:organized_religion
 			research_advance = advance_type:scholasticism

@@ -2,6 +2,30 @@
 
 # Patch Notes
 
+# Update 23 0.21-0.23
+ * Have not been keeping proper notes.
+ 
+## Main Features
+  ### Events
+  - 100+ new events mostly revolving around the expansion of the Romans and growing external resistance to it. Even Potential Crusades and Jihads. 
+  ### Reforms and Privilages
+  - Dozens of new estate privilages and government reforms for various countries.
+  ### Buildings
+  - 10 new Buildings for Latinoi Trade Companies
+  - ERE: Upgrade to Constantinoples Shipyard and Military focus addition to the University.
+  - 12 new buildings for the roman world for culture, religion, assimilation, military and uniques. 
+  ### Diplomatic features
+  - 3 New Subject types
+  - 5 New diplomatic actions
+  ### Advances
+  - 100+ new advances for various tags, regions and cultures.
+  ### Modifiers
+  - Added various decaying modifiers often tied to events.
+
+## Balance
+  - Many new countries and map/balance changes.
+ 
+
 # Update 20
 - 0.20
 ## Balance

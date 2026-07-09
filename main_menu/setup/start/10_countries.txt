@@ -2808,9 +2808,11 @@ countries = {
 
 		own_control_integrated = {
 			dalneye_konstantinovo
-			uren tonshayevo vetluga semyonov kovernino krasnye_baki sharanga varnavino
 			pavlovo
-			khakhaly raznezhye voskresenskoye
+
+			#uren tonshayevo vetluga semyonov kovernino krasnye_baki sharanga varnavino
+			
+			#khakhaly raznezhye voskresenskoye
 		}
 
 		starting_technology_level = 3
@@ -3930,7 +3932,7 @@ countries = {
 			zhamshy kashkanteniz kyzylsay moiynty mukur yangikent buzikkala jubara karmakshi
 			sighnaq asanas barchkend jand kamyskala sozak aksumbe gulshara kyzylkorgan ran tasty
 
-			chilia cetatea_alba gura_galbenei sarata tighina chatyun kutarka sernur morki urzhum
+			chilia cetatea_alba gura_galbenei sarata tighina chatyun kabachischi
 			zainsk syun verkhneyarkeyevo
 			menzelinsk lower_aktanyshbash chalninsky_pochinok chekmagush chishmy
 			ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo
@@ -3950,7 +3952,7 @@ countries = {
 			atishchevo tsivilsk
 
 			bolshoye_murashkino kurmysh lyskovo perevoz sechenovo spasskoye_lyskovo
-			cheboksary kozmodemyansk alikovo vasilsursk
+			cheboksary alikovo vasilsursk
 			azeevo
 			kadom
 			ushkan koskuduk manysai shagan zhaksy_karasay
@@ -3960,7 +3962,7 @@ countries = {
 			pulzhai qonirat shimbay xojeli khurgancha
 			vezir urgench
 			kazan laish calli mamadysh bogatye_saby oli_baraza dobyaz
-			yaransk kiknur kabachischi yoshkar_ola
+			
 			bolghar cukataw bilyar almetyevsk
 			tabynsky ishimbay beloretsk
 			buguruslan sergiyevsk
@@ -3999,6 +4001,10 @@ countries = {
 			armavir
 			qarasuvbazar
 			ismail
+
+			# might make unowned
+			fatezh kosozhichi sudzha rakitnoye
+			kolomak kotelva okhtyrka khotmyzh
 
 			#Formerly BR subjects
 
@@ -14540,19 +14546,19 @@ countries = {
 			huesca ainsa almudevar anso barbastro benabarre ejea_de_los_caballeros fraga jaca monzon sarinena sos
 			zuera
 			caspe
+			tudela
 			pina_de_ebro
+			peniscola
+			alcaniz valderrobres
 		}
-
-		own_control_conquered = {
-		}
-
 		our_cores_conquered_by_others = {
+			belchite tarazona
 			puigcerda prades montpellier perpignan
 			vielha
-			zaragoza ariza belchite carinena calatayud daroca tarazona
+			zaragoza ariza daroca carinena calatayud
 			palma ibiza manacor pollensa #Majorca
-			castellon_de_la_plana ares_del_maestre llucena morella peniscola
-			teruel albarracin alcaniz alfambra cantavieja montalban mora_de_rubielos valderrobres
+			castellon_de_la_plana ares_del_maestre llucena morella
+			teruel albarracin alfambra cantavieja montalban mora_de_rubielos
 		}
 
 		starting_technology_level = 3
@@ -14633,7 +14639,7 @@ countries = {
 		court_language = catalan_dialect
 		country_rank = rank_kingdom
 		capital = barcelona
-		accepted_cultures = { aragonese }
+		accepted_cultures = { catalan }
 		tolerated_cultures = {
 			andalusi
 			sephardi
@@ -14704,11 +14710,15 @@ countries = {
 			salamanca alba_de_tormes bejar ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes #Ciudad rodrigo
 			palencia palenzuela aranda_de_duero
 			sto_domingo_silos
-			soria almazan berlanga burgo_de_osma
-			calatanazor medinaceli
+			soria burgo_de_osma
+			calatanazor
+
+			arnedo calahorra agreda
+			# medinaceli almazan berlanga
 		}
 
 		our_cores_conquered_by_others = {
+			medinaceli almazan berlanga
 			burgos briviesca castrojeriz lerma miranda_de_ebro sto_domingo_silos villadiego villarcayo
 			santander laredo potes san_vicente_barquera
 			aguilar_de_campoo carrion_de_los_condes monzon_campos saldana reinosa
@@ -14809,7 +14819,7 @@ countries = {
 	POR = {
 		own_control_core = { #BR Edit
 			feira #Beira Litoral
-			lamego meda pinhel trancoso viseu #Beira Alta
+			lamego meda trancoso viseu #Beira Alta pinhel
 			porto aguiar barcelos braga guimaraes montalegre valenca viana_do_castelo #Minho
 			braganca chaves macedo miranda_de_i_douro mirandela moncorvo vila_real #Tras-os-Montes
 		}
@@ -14910,9 +14920,8 @@ countries = {
 			santander laredo potes san_vicente_barquera
 			aguilar_de_campoo carrion_de_los_condes monzon_campos saldana reinosa
 			puebla_de_sanabria alcanices benavente
-		}
-		
-		our_cores_conquered_by_others = {
+			logrono najera bilbao durango valmaseda 
+			anana vitoria laguardia
 		}
 
 		starting_technology_level = 3
@@ -15084,7 +15093,7 @@ countries = {
 			granada adra almunecar guadix huescar illora loja pinar orgiva
 			malaga antequera velez_malaga
 			#BR edit
-			adrada las_navas oropesa #Avila
+			adrada oropesa #Avila las_navas
 			cuenca alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena torralba
 			madrid alcala_de_henares brihuega buitrago_de_lozoya cobeta colmenar el_escorial guadalajara maqueda siguenza zorita
 			ciudad_real alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
@@ -15092,7 +15101,7 @@ countries = {
 			badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
 			caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
 			plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea
-			ciudad_rodrigo coria #Ciudad rodrigo
+			coria # ciudad_rodrigo
 			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia
 			jaen andujar baeza cazorla jodar martos ubeda
 			murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena jumilla
@@ -15105,9 +15114,12 @@ countries = {
 			#Portugal
 			lagos faro silves tavira
 			evora alvalade alvito avis beja crato elvas estremoz mertola montemor mora_portugal moura odemira ourique ponte_sor portalegre portel salvaterra serpa sines vila_vicosa
-			coimbra besteiros castelo_branco covilha esgueira guarda idanha proenca_nova sabugal seia
+			coimbra besteiros castelo_branco covilha esgueira idanha proenca_nova sabugal #guarda seia
 			alcacer_do_sal alcobaca chao_de_couce figueira leiria santarem setubal tomar torres_novas
 			lisbon torres_vedras
+			daroca
+			teruel alfambra mora_de_rubielos castellon_de_la_plana
+			
 			#Africa
 			tangier ceuta
 		}
@@ -15249,11 +15261,14 @@ countries = {
 	#Navarre
 	NAV = {
 		own_control_core = {
-			pamplona elizondo estella olite roncesvalles sanguesa tudela viana laguardia
+			pamplona elizondo estella olite roncesvalles sanguesa viana
 			saint_jean_pied_de_port #Gascony
-			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
-			arnedo calahorra agreda
-			logrono najera #Burgos
+			san_sebastian tolosa onate salvatierra
+		}
+
+		our_cores_conquered_by_others = {
+			tudela laguardia
+			bilbao anana durango valmaseda vitoria
 		}
 
 		starting_technology_level = 3
@@ -55685,7 +55700,8 @@ countries = {
 	
 	RH1 = { #Tula Principality
 		our_cores_conquered_by_others = {
-			tula_russia bogoroditsk arkhangelskoye kurkino donkov yelets talitsa_yelets gogol
+			tula_russia bogoroditsk arkhangelskoye kurkino
+			donkov yelets talitsa_yelets gogol
 			ust_livny
 		}
 		starting_technology_level = 3
@@ -56405,12 +56421,16 @@ countries = {
 	AD1 = { #BR addition
 		own_control_core = {
 			zaragoza
-			ariza belchite carinena calatayud daroca tarazona
-			castellon_de_la_plana ares_del_maestre llucena morella peniscola
-			teruel albarracin alcaniz alfambra cantavieja montalban mora_de_rubielos valderrobres
+			belchite carinena calatayud tarazona
 		}
-		
+
 		our_cores_conquered_by_others = {
+			
+			peniscola
+			alcaniz valderrobres
+			daroca teruel alfambra mora_de_rubielos castellon_de_la_plana ares_del_maestre
+			albarracin montalban cantavieja morella llucena
+			ariza
 			zuera
 			caspe
 			pina_de_ebro
@@ -56488,7 +56508,7 @@ countries = {
 		court_language = maghrebi_dialect
 		religious_school = maliki_school
 		
-		country_rank = rank_duchy
+		country_rank = rank_county
 		capital = zaragoza
 		
 		accepted_cultures = {

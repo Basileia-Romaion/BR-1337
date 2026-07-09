@@ -307,7 +307,8 @@ diplomacy_manager = {
 	scripted_oneway = { first = AQN second = ANR type = guarantee }
 	scripted_oneway = { first = TOU second = ANR type = guarantee }
     #dependency = { first = LON second = CAS subject_type = vassal }
-    dependency = { first = CAS second = AD0 subject_type = vassal }
+    #dependency = { first = CAS second = AD0 subject_type = vassal }
+    #dependency = { first = ARA second = AD1 subject_type = vassal }
     #dependency = { first = LON second = POR subject_type = vassal }
     scripted_oneway = { first = PAP second = KNI type = guarantee }
     scripted_oneway = { first = ARA second = KNI type = guarantee }
@@ -669,14 +670,14 @@ diplomacy_manager = {
     dependency = { first = TUR second = SRV subject_type = vassal }
 
     dependency = { first = TUR second = AQQ subject_type = uc_bey }
-    dependency = { first = AQQ second = SYU subject_type = vassal }
-    dependency = { first = AQQ second = ATZ subject_type = vassal }
+    dependency = { first = AQQ second = SYU subject_type = tributary }
+    dependency = { first = AQQ second = ATZ subject_type = tributary }
     dependency = { first = AQQ second = DML subject_type = vassal }
-    dependency = { first = AQQ second = VDZ subject_type = vassal }
+    dependency = { first = AQQ second = VDZ subject_type = tributary }
 
     dependency = { first = TUR second = QAR subject_type = uc_bey }
-    dependency = { first = QAR second = KCN subject_type = vassal }
-    dependency = { first = QAR second = GAN subject_type = vassal }
+    dependency = { first = QAR second = KCN subject_type = tributary }
+    dependency = { first = QAR second = GAN subject_type = tributary }
     dependency = { first = QAR second = SKI subject_type = vassal }
 
     dependency = { first = TUR second = HNY subject_type = vassal } #A0A

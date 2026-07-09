@@ -2289,6 +2289,13 @@ br_country_startup.7 = {
 				}
 				change_max_raw_material_workers = 2
 			}
+			location:novo_brdo = {
+				add_location_modifier = {
+					modifier = expanded_mines_modifier
+					years = -1
+					mode = add_and_extend
+				}
+			}
 			every_owned_location = {
 				limit = {
 					location_rank = location_rank:rural_settlement
@@ -2554,6 +2561,15 @@ br_country_startup.7 = {
 
 		#Central Asia
 		c:GLH ?= {
+			change_culture = culture:astrakhani
+			capital = {
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
+			}
 			every_owned_location = {
 				limit = {
 					raw_material = goods:millet

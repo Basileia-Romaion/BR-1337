@@ -95,31 +95,8 @@ REPLACE_OR_CREATE:griko_culture = {
 		#navy_repair_cost
 	}
 	location_modifier = {
-		local_pop_assimilation_speed_modifier = -0.5
-	}
-	
-	culture_groups = {
-		italian_group greek_group roman_group
-	}
-}
-
-italiotai_culture = {
-	language = griko_dialect
-	color = rgb { 158 61 179 }
-	
-	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
-
-	opinions = {
-		greek_culture = positive
-		griko_culture = kindred
-		#sicilian = positive
-		neapolitan = positive
-		romanyoti = positive
-	}
-
-	country_modifier = {
-		global_urban_build_buildings_efficiency = 0.1
-		global_peasant_enfranchisment = 0.05
+		local_pop_assimilation_speed_modifier = -0.25
+		local_peasants_estate_unrest = 0.05
 	}
 	
 	culture_groups = {
@@ -150,6 +127,7 @@ REPLACE_OR_CREATE:pontic_greek_culture = {
 	}
 	location_modifier = {
 		local_lumber_output_modifier = 0.25
+		local_pop_join_rebel_threshold = 0.05
 	}
 	
 	culture_groups = {
@@ -181,6 +159,33 @@ REPLACE_OR_CREATE:gothic_culture = {
 
 #BR additional Regional Hellenic Cultures
 
+italiotai_culture = {
+	language = griko_dialect
+	color = rgb { 158 61 179 }
+	
+	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		greek_culture = positive
+		griko_culture = kindred
+		#sicilian = positive
+		neapolitan = positive
+		romanyoti = positive
+	}
+
+	country_modifier = {
+		global_urban_build_buildings_efficiency = 0.1
+		global_peasant_enfranchisment = 0.05
+	}
+	location_modifier = {
+		local_burghers_estate_unrest = 0.1
+	}
+	
+	culture_groups = {
+		italian_group greek_group roman_group
+	}
+}
+
 anatolian_greek_culture = { #BR addition
 	language = cappadocian_dialect
 	color = rgb { 205 38 50 }
@@ -206,7 +211,7 @@ anatolian_greek_culture = { #BR addition
 	}
 	location_modifier = {
 		local_nobles_estate_power = 0.25
-		local_unrest = 0.05
+		local_nobles_estate_unrest = 0.1
 	}
 	
 	culture_groups = {
@@ -255,6 +260,9 @@ indikes_greek_culture = {
 		trade_range_modifier = 0.5
 		#unlock_casus_belli = cb_exploration
 	}
+	location_modifier = {
+		local_burghers_estate_unrest = 0.1
+	}
 
 	
 	culture_groups = {
@@ -278,6 +286,9 @@ aegyptian_greek_culture = {
 		#food_consumption_modifier = -0.1
 		port_cost_distance_from_capital = -5
 		trade_range_modifier = 0.5
+	}
+	location_modifier = {
+		local_burghers_estate_unrest = 0.1
 	}
 	
 	culture_groups = {
@@ -304,7 +315,10 @@ syrenikoi_greek_culture = {
 	country_modifier = {
 		global_trade_center_power = 0.05
 		army_logistics_distance_modifier = 0.1
-	}	
+	}
+	location_modifier = {
+		local_burghers_estate_unrest = 0.1
+	}
 	
 	culture_groups = {
 		greek_group syria_group roman_group
@@ -324,6 +338,10 @@ african_greek_culture = {
 	}
 	country_modifier = {
 		global_supply_limit_modifier = 0.1
+	}
+	location_modifier = {
+		local_wheat_output_modifier = 0.1
+		local_pop_join_rebel_threshold = 0.05
 	}
 	
 	culture_groups = {
@@ -345,6 +363,10 @@ illyrikoi_greek_culture = {
 	}
 	country_modifier = {
 		
+	}
+	location_modifier = {
+		local_fish_output_modifier = 0.1
+		local_pop_join_rebel_threshold = 0.05
 	}
 	
 	culture_groups = {
@@ -370,7 +392,9 @@ kilikioi_greek_culture = {
 		
 	}
 	location_modifier = {
-		local_separatism = 0.05
+		local_wheat_output_modifier = 0.1
+		local_pop_join_rebel_threshold = 0.05
+		#local_peasants_estate_unrest = 0.1
 	}
 	
 	culture_groups = {
@@ -420,6 +444,9 @@ boulgaroi = {
 	country_modifier = {
 		global_max_rgo_size_modifier_in_rural = 0.1
 		fort_maintenance_efficiency = 0.10
+	}
+	location_modifier = {
+		local_nobles_estate_unrest = 0.05
 	}
 	culture_groups = {
 		greek_group roman_group south_slavic_group

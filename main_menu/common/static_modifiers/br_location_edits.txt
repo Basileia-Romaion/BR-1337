@@ -9,7 +9,7 @@ TRY_INJECT:inverse_control = {
 	local_manpower_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
 	local_levy_size_modifier = 0.25 #br addition so total wll be -0.75 instead of -1.0.
 	local_tribal_promotion = -1.0 #br added
-	local_separatism = 0.25 #BR added
+	#local_separatism = 0.25 #BR added
 }
 TRY_INJECT:is_occupied = {
 	local_food_capacity_modifier = -0.5 #br added
