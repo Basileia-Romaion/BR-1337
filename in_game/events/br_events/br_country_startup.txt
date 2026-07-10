@@ -2561,7 +2561,7 @@ br_country_startup.7 = {
 
 		#Central Asia
 		c:GLH ?= {
-			change_culture = culture:astrakhani
+			#change_culture = culture:astrakhani
 			capital = {
 				create_sub_unit = unit_type:a_steppe_horse_archers
 				create_sub_unit = unit_type:a_steppe_horse_archers
