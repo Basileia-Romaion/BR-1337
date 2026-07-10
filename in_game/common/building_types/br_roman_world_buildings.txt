@@ -590,7 +590,7 @@
 		graphical_tags = { small_religious }
 
 		country_potential = {
-			owner = { religion = religion:orthodox }
+			religion = religion:orthodox
 		}
 		allow = { is_province_capital = yes }
 		
