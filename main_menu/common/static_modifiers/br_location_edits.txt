@@ -10,6 +10,7 @@ TRY_INJECT:inverse_control = {
 	local_levy_size_modifier = 0.25 #br addition so total wll be -0.75 instead of -1.0.
 	local_tribal_promotion = -1.0 #br added
 	#local_separatism = 0.25 #BR added
+	#local_tribes_estate_unrest -0.1
 }
 TRY_INJECT:is_occupied = {
 	local_food_capacity_modifier = -0.5 #br added
@@ -47,17 +48,34 @@ TRY_INJECT:raised_levies = {
 	local_monthly_food_modifier = -0.1 #additonal -0.1 for -0.3 total
 }
 
+#multiplies with devastation in location (0 to -1) I think this means positive is negative
+TRY_INJECT:devastation = {
+	local_disease_resistance = 0.25 #addition 
+}
+TRY_INJECT:winter_mild = {
+	local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.5 total
+}
+TRY_INJECT:winter_normal = {
+	local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.75 total
+}
+TRY_INJECT:expensive_food_in_location = {
+	local_unrest = 0.1 #addition
+	#local_disease_resistance = -0.1 #addition
+}
+
 # from rebel system
 TRY_INJECT:minor_rebel_uprising = {
 	local_monthly_prosperity = -0.005 # additional -0.005 for 0.01 total
 	local_monthly_control = -0.005 # additional -0.005 for 0.01 total
 }
 
+
+
+#Nerfed DLC modifiers
 REPLACE_OR_CREATE:repopulation_of_anatolia_modifier = {
 	game_data = {
 		category = location
 	}
-
 	local_migration_attraction = 0.33 #was 2
 	local_monthly_prosperity= 0.005 #was 0.003
 }
@@ -66,7 +84,6 @@ REPLACE_OR_CREATE:greek_culture_influential_polis = {
 	game_data = {
 		category = location
 	}
-
 	local_migration_attraction = 0.33 #was 1
 	free_building_levels = 2
 	local_nobles_estate_power = 0.25 #was 0.5
@@ -80,8 +97,32 @@ REPLACE_OR_CREATE:mines_of_tzantzakon_modifier = {
 		category = location
 		decaying = yes
 	}
-
 	local_raw_material_output = 1
 	local_migration_attraction = 0.33 #was 1
 	local_monthly_prosperity= 0.003 #br added
 }
+
+
+### further testing needed
+
+
+#TRY_INJECT:river_flowing_through_1 = {
+	#local_disease_resistance = 0.03 
+	#local_monthly_prosperity = 0.001 
+#}
+#TRY_INJECT:river_flowing_through_2 = {
+	#local_disease_resistance = 0.04 
+	#local_monthly_prosperity = 0.001 
+#}
+#TRY_INJECT:river_flowing_through_3 = {
+	#local_disease_resistance = 0.05 
+	#local_monthly_prosperity = 0.001 
+#}
+#TRY_INJECT:river_flowing_through_4 = {
+	#local_disease_resistance = 0.06 
+	#local_monthly_prosperity = 0.002 
+#}
+#TRY_INJECT:river_flowing_through_5 = {
+	#local_disease_resistance = 0.08 
+	#local_monthly_prosperity = 0.002 
+#}
