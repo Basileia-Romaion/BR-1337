@@ -12,7 +12,7 @@ orthodox_order_commandery = {
 	employment_size = order_religious_building_employment
 	pop_size_created = order_religious_building_employment
 	
-	rural_settlement = yes
+	rural_settlement = setup_only
 	town = yes
 	city = yes
 	megalopolis = yes
@@ -69,7 +69,7 @@ orthodox_order_commandery = {
 
 	modifier = {
 		local_pop_conversion_speed_modifier = 0.05
-		gold_to_building_owner = 0.15
+		gold_to_building_owner = 0.1
 		manpower_to_building_owner = 0.005
 	}
 	construction_demand = order_commandery_construction
