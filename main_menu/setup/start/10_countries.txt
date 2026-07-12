@@ -41688,8 +41688,12 @@ countries = {
 
 		liturgical_language = church_slavonic_language
 
-		tolerated_cultures = {
+		court_language = polish_dialect
+
+		accepted_cultures = {
 			lesser_polish
+		}
+		tolerated_cultures = {
 			volhynian_culture
 			moldovan
 		}
@@ -41755,8 +41759,12 @@ countries = {
 
 		liturgical_language = church_slavonic_language
 
-		tolerated_cultures = {
+		court_language = polish_dialect
+		
+		accepted_cultures = {
 			lesser_polish
+		}
+		tolerated_cultures = {
 			polesian_culture
 		}
 		
