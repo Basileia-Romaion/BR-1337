@@ -68,5 +68,13 @@ war_manager = {
 		months = 120
 	}
 
+	truce = { 
+		attacker = CAS
+		#
+		defender = AD1
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1333.3.2
+		months = 240
+	}
 
 }
