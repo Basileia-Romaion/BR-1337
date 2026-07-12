@@ -466,3 +466,77 @@ REPLACE_OR_CREATE:bulgarian = {
 	}
 }
 
+REPLACE_OR_CREATE:muscovite = {
+	language = russian_dialect #muscovite_dialect
+	color = map_MOS
+	
+	tags = { russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		smolenskian_culture = positive
+		ryazanian = kindred
+		crimean = negative
+		mishar = enemy
+		astrakhani = negative
+		kazani = enemy  
+		mongolian_culture = enemy
+		rhos_culture = positive
+	}
+
+	culture_groups = {
+		russian_group
+		slavic_group
+	}
+}
+
+REPLACE_OR_CREATE:ryazanian = {
+	language = russian_dialect #muscovite_dialect
+	color = map_RYA
+	
+	tags = { russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	opinions = {
+		severian = positive
+		muscovite = kindred
+		crimean = negative
+		mishar = enemy
+		astrakhani = enemy
+		kazani = enemy
+		mongolian_culture = enemy
+		rhos_culture = positive
+	}
+
+	culture_groups = {
+		russian_group
+		slavic_group
+	}
+}
+
+REPLACE_OR_CREATE:ruthenian = { #KIE
+	language = ukrainian_dialect
+	color = map_ruthenian
+	
+	tags = { ukrainian_gfx ruthenian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+ 
+	opinions = {
+		severian = positive
+		polesian_culture = kindred
+		halychian_culture = positive
+		volhynian_culture = positive
+		rusyn_culture = positive
+		polatskian_culture = positive
+		smolenskian_culture = positive
+		cossack_culture = kindred
+		crimean = enemy
+		mishar = enemy
+		astrakhani = negative
+		mongolian_culture = enemy
+		rhos_culture = positive
+	}
+
+	culture_groups = {
+		russian_group
+		slavic_group
+	}
+}
+
