@@ -184,3 +184,73 @@ elysium_event.1 = {
 #
 	#}
 #}
+
+
+#Start up event to make the game think Hellenism exists
+elysium_event.3 = { #Greek Pagan Larper Spreads his Heresy!
+	type = country_event
+	title = elysium_event.3.title
+	desc = elysium_event.3.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		#character:byz_gemistos_plethon = { save_scope_as = target_character }
+		#ruler_or_regent = { save_scope_as = target_character2 }
+		#ordered_country_in_diplomatic_range = {
+			#limit = {
+				#country_type = location
+				#this != root
+			#}
+			#order_by = average_country_literacy
+			#check_range_bounds = no
+			#max = 1
+			#save_scope_as = target_country
+		#}
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate	background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = elysium_event.3.a
+
+		hidden_effect = {
+			change_religion = religion:hellenism_religion
+			add_religious_aspect = religious_aspect:monism_aspect
+			ruler_or_regent ?= {
+				change_character_religion = religion:hellenism_religion
+				every_child = {
+					limit = {
+						is_heir = no
+					}
+					change_character_religion = religion:hellenism_religion
+				}
+			}
+			heir ?= {
+				change_character_religion = religion:hellenism_religion
+			}
+			consort ?= {
+				change_character_religion = religion:hellenism_religion
+			}
+		}
+		#if = {
+		#	limit = { has_dlc = "d008_fate_of_the_phoenix" }
+		#	capital = {
+		#		spawn_movement = {
+		#			movement_definition = movement_definition:hellenism_religion_movement
+		#			supporters = {
+		#				value = population
+		#				multiply = 1
+		#			}
+		#		}
+		#	}
+		#}
+	}
+
+}

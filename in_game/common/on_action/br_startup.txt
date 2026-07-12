@@ -26,6 +26,7 @@ br_on_game_start = {
 
         c:E1Y ?= {
             trigger_event_silently = br_startup.1 #resource changes
+			trigger_event_silently = elysium_event.3
         }
         #c:RIC ?= {
             #trigger_event_silently = br_indikes_events.1
