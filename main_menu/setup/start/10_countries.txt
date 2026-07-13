@@ -12957,31 +12957,22 @@ countries = {
 			uskudar silli biga eregli
 			vize
 			traianopolis demotica
-			kibrus mihaliccik sivrihisar bozan kaymaz
-			bolu gerede mengen
-			akcasehir akyazi konrapa mudurnu
+			akcasehir akyazi
 			bursa adranos iznik
 			izmit atpazari
 			domanic
-			sultanonu bilecik goynuk eynegol inonu nalli sogut
+			sultanonu bilecik goynuk eynegol inonu sogut
 			balikesir balya edremit manyas mihalic susurluk
 			bandirma can gonen
 			dursunbey harmancik
-			altintas emirdag seyitgazi
 			kutahya aslanapa emet simav tavsanli
-			usak banaz gediz seyhli
+			gediz
 			manisa akhisar demirci gordes kula
 			bergama bigadic soma
 			smyrna ayasuluk menemen urla
 			tire balat birgi guzelhisar nazilli
 			milas
 			mugla cine
-			tavas
-			honaz lazkiye
-			karahisar_i_sahib sandikli suhut
-			isparta burdur dinar egirdir uluborlu
-			golhisar stefani
-			megri yuksekkum bodrum gokabat
 		}
 
 		our_cores_conquered_by_others = {
@@ -13004,10 +12995,26 @@ countries = {
 			manavgat finike
 			rodos kos
 			alaiye selinti
+			megri yuksekkum bodrum gokabat
 			#NAX
 			naxos kythnos milos
 			andros mykonos amorgos
 			samos ikaria foca
+
+			#Pontic
+			bolu gerede mengen 
+			konrapa
+
+			#Anatolia
+			emirdag seyitgazi altintas karahisar_i_sahib suhut
+
+			usak banaz honaz lazkiye seyhli
+			isparta burdur dinar egirdir stefani uluborlu
+			sandikli
+			golhisar tavas
+
+			mudurnu nalli
+			sivrihisar bozan kaymaz kibrus mihaliccik
 		}
 		
 		starting_technology_level = 3
@@ -54577,9 +54584,9 @@ countries = {
 			manavgat finike
 			rodos kos
 			alaiye selinti
+			megri yuksekkum bodrum gokabat
 		}
 		our_cores_conquered_by_others = {
-			megri yuksekkum bodrum gokabat
 			karpathos
 			#golhisar tavas mugla milas cine
 		}
@@ -55437,6 +55444,111 @@ countries = {
 		}
 		liturgical_language = koine_dialect
 		capital = insuyu
+	}
+
+	AN29 = { #anatolian pronoia
+		own_control_core = {
+			sivrihisar bozan kaymaz kibrus mihaliccik
+			mudurnu nalli
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = bozan
+	}
+
+	AN30 = { #pontic pronoia
+		own_control_core = {
+			bolu gerede mengen
+			konrapa
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = bolu
+	}
+
+	AN31 = { #Anatolian pronoia
+		own_control_core = {
+			usak banaz honaz lazkiye seyhli
+			isparta burdur dinar egirdir stefani uluborlu
+			sandikli
+			golhisar tavas
+		}
+		starting_technology_level = 3
+		include = "br_thema_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_duchy
+		accepted_cultures = {
+			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = honaz
+	}
+
+	AN32 = { #Anatolian pronoia
+		own_control_core = {
+			emirdag seyitgazi altintas karahisar_i_sahib suhut
+		}
+		starting_technology_level = 3
+		include = "br_pronoia_template"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		accepted_cultures = {
+			greek_culture
+		}
+		currency_data = { #From ongoing civil war and turkic raiding
+			stability = -25
+			government_power = -10
+			#inflation = 0.1
+			war_exhaustion = 5
+		}
+		liturgical_language = koine_dialect
+		capital = emirdag
 	}
 
 	P2N = {

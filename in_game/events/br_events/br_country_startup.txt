@@ -383,6 +383,9 @@ br_country_startup.1 = { #naval units added
 				}
 				change_prosperity = prosperity_weak_penalty
 			}
+			every_owned_location = {
+				change_max_raw_material_workers = 1
+			}
 		}
 		c:MAM ?= {
 			location:suez = {
@@ -595,6 +598,9 @@ br_country_startup.2 = { #units added
 			}
 		}
 		c:BYZ ?= {
+			every_unit = {
+				destroy_unit = yes
+			}
 			capital = {
 				create_sub_unit = unit_type:a_varangians
 				create_sub_unit = unit_type:a_varangians
@@ -1930,6 +1936,65 @@ br_country_startup.7 = {
 				change_prosperity = prosperity_mild_penalty
 			}
 		}
+		c:AN29 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:clay
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN30 ?= {
+			every_owned_location = {
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN31 ?= {
+			every_owned_location = {
+				limit = {
+					OR = {
+						raw_material = goods:wheat
+						raw_material = goods:clay
+					}
+				}
+				change_max_raw_material_workers = 2
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
+		c:AN32 ?= {
+			every_owned_location = {
+				limit = {
+					raw_material = goods:wheat
+				}
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				change_max_raw_material_workers = 1
+			}
+			every_owned_location = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_prosperity = prosperity_mild_penalty
+			}
+		}
 		c:CIL ?= {
 			every_owned_location = {
 				limit = {
@@ -2561,8 +2626,13 @@ br_country_startup.7 = {
 
 		#Central Asia
 		c:GLH ?= {
+			every_unit = {
+				destroy_unit = yes
+			}
 			#change_culture = culture:astrakhani
 			capital = {
+				create_sub_unit = unit_type:a_steppe_horse_archers
+				create_sub_unit = unit_type:a_steppe_horse_archers
 				create_sub_unit = unit_type:a_steppe_horse_archers
 				create_sub_unit = unit_type:a_steppe_horse_archers
 				create_sub_unit = unit_type:a_steppe_horse_archers

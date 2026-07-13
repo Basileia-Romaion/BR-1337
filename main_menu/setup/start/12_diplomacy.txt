@@ -466,6 +466,11 @@ diplomacy_manager = {
    
     #dependency = { first = BYZ second = EPI subject_type = tributary } # Autonomia
 
+    dependency = { first = BYZ second = AN29 subject_type = br_thema_subject }
+	dependency = { first = BYZ second = AN30 subject_type = br_thema_subject }
+    dependency = { first = BYZ second = AN31 subject_type = br_thema_subject }
+    dependency = { first = BYZ second = AN32 subject_type = br_thema_subject }
+
     # state_bank
 
     #Sub dependencies
