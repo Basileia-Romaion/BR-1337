@@ -1,65 +1,37 @@
 ﻿l_english:
 
  roman_world: "Oikoumenē"
- roman_world_desc: "The Oikoumenē embodies the universal Roman claim to order and civilization under the Basileus. From Constantinople radiates a vision of rule that binds diverse lands and peoples into a single imperial sphere. Through the structures of Romaiokratía, this order is maintained, extending imperial authority across both subject realms and allied powers."
+ roman_world_desc: "The Oikoumenē embodies the universal Roman claim to order and civilization under the [ShowSpecialStatusName('br_emperor')].\n\nFrom [ShowLocationName('constantinople')] flows an imperial order that binds diverse lands and peoples into a single political sphere.\n\nThrough the institutions of [ShowLawName('br_romaiokratia_law')], the Basileus extends $roman_authority$ across both [ShowSpecialStatusName('imperial_loyalist')] and [ShowSpecialStatusName('external_member')], preserving the unity and supremacy of the Roman world."
 
  game_concept_roman_authority_gc: "Auctoritas"
- game_concept_roman_authority_gc_desc: "Auctoritas represents the recognized legitimacy and moral authority of the Basileus. It is not enforced by arms alone, but granted through acknowledgment, tradition, and acceptance of Roman supremacy. As more realms and authorities recognize the imperial order, Roman Authority grows, enabling the Basileus to command obedience, enforce decrees, and uphold Roman rule. When Roman Authority wanes, imperial power loses its binding force, regardless of military strength."
+ game_concept_roman_authority_gc_desc: "Auctoritas represents the recognized legitimacy and moral $roman_authority$ of the [ShowSpecialStatusName('br_emperor')]. It is not enforced by arms alone, but granted through acknowledgment, tradition, and acceptance of Roman supremacy. As more realms and authorities recognize the imperial order, $roman_authority$ grows, enabling the Basileus to command obedience, enforce decrees, and uphold Roman rule. When $roman_authority$ wanes, imperial power loses its binding force, regardless of military strength."
 
  RW_LEADER: "Basileus"
- NUMBER_OF_ROMAN_MEMBERS: "Romaiokratía Members"
- CURRENT_ROMAN_AUTHORITY: "Current Auctoritas"
+ NUMBER_OF_ROMAN_MEMBERS: "[ShowSpecialStatusName('imperial_loyalist')] & [ShowSpecialStatusName('external_member')]"
+ ROMAN_WORLD_MEMBERS_AT_WAR: "Internal Wars"
+ ROMAN_DOMESTIKOS_WEST: "[ShowSpecialStatusName('domestikos_west')]"
+ ROMAN_DOMESTIKOS_EAST: "[ShowSpecialStatusName('domestikos_east')]"
+ ROMAN_DISLOYAL_DECAY: "[ShowSpecialStatusName('defiant_strategoi')]"
+ CURRENT_ROMAN_AUTHORITY: "Current $roman_authority$"
+
  MODIFIER_TYPE_NAME_monthly_roman_authority: "Monthly Auctoritas"
- MODIFIER_TYPE_DESC_monthly_roman_authority: "Monthly Auctoritas"
+ MODIFIER_TYPE_DESC_monthly_roman_authority: "Monthly $roman_authority$"
+
+ monthly_roman_authority: "Monthly Roman Authority"
+ IO_MONTHLY_ROMAN_AUTHORITY: "[ShowLawName('br_romaiokratia_law')] [ShowModifierTypeNameWithBreakdown('roman_authority', GetUniqueInternationalOrganization('roman_world').GetLeaderCountry.Self)]" 
+
  #change_roman_authority_text: "Auctoritas"
  BR_EMPEROR_DIP_REPUTATION: "Diplomatic Reputation of $BYZ$"
 
  roman_authority: "Auctoritas" #or Oikoumenikón, Legitimitas, Caesarian, Imperial Authority, Imperium, Maiestas, Dominium, Exousía, Kýros
- roman_authority_DISPLAY: "Auctoritas"
- roman_authority_desc: "Auctoritas represents the recognized legitimacy and moral authority of the Basileus. It is not enforced by arms alone, but granted through acknowledgment, tradition, and acceptance of Roman supremacy. As more realms and authorities recognize the imperial order, Auctoritas grows, enabling the Basileus to command obedience, enforce decrees, and uphold Roman rule. When Auctoritas wanes, imperial power loses its binding force, regardless of military strength."
- roman_tribute: "Phóros" #or Sýntaxis, Aporá, 
+ roman_authority_DISPLAY: "$VAL|0$"
+ ROMAN_AUTHORITY_DISPLAY: "$VAL$"
+
+ roman_authority_desc: "$roman_authority$ represents the recognized legitimacy and moral authority of the [GetUniqueInternationalOrganization('roman_world').GetLeaderTitle] within the [GetUniqueInternationalOrganization('roman_world').GetName].\n\nIt is sustained not by arms alone, but through [ShowLawName('br_romaiokratia_law')], ancient tradition, and the recognition of the primacy of [ShowLocationName('constantinople')].\n\nAs more [ShowSpecialStatusName('imperial_loyalist')] and [ShowSpecialStatusName('external_member')] acknowledge the imperial order, $roman_authority$ grows, enabling the [ShowSpecialStatusName('br_emperor')] to command obedience, issue decrees, and uphold Roman rule. When $roman_authority$ declines, the authority of the Empire loses its binding force, regardless of its military strength."
+
+ roman_tribute: "Phóros"
  roman_tribute_price: "Phóros"
- roman_tribute_desc: "Phóros represents the regular payments and material contributions remitted to Constantinople by members of the Roman order. It reflects the fiscal obligations that sustain the imperial administration, court, and defenses of the empire. Steady Phóros ensures the effective functioning of Roman rule, while shortfalls strain the treasury and weaken the empire’s ability to project authority and maintain order."
-
-### Romaiokratía Special statuses
- br_emperor: "Basileus and Autokratōr"
- br_emperor_desc: "The Basileus and Autokratōr of the Romans, crowned in Constantinople, heir to the Caesars, and supreme ruler of the Oikoumenē. It is his sacred charge to uphold the order of the Basileía and safeguard the Roman world."
-
- domestikos_west: "Domestikos tēs Dyseōs"
- domestikos_west_desc: "The Domestikos of the West commands the imperial tagmata and field armies of the European provinces, entrusted with the defense and authority of the western dominions in the name of the Basileus."
-
- domestikos_east: "Domestikos tēs Anatolēs"
- domestikos_east_desc: "The Domestikos of the East commands the imperial armies of Anatolia and the eastern themes, bearing responsibility for the defense of the Empire’s ancient heartlands and the execution of imperial will."
-
- imperial_loyalist: "Basilikoi Hypēkooi"
- imperial_loyalist_desc: "From humble pronoia-holders to the governors of themes and katepanates, these servants of the Basileía remain steadfast in their loyalty, upholding imperial authority and executing the will of Constantinople in both civil and military affairs."
-
- defiant_strategoi: "Autonomoi Strategoi"
- defiant_strategoi_desc: "From ambitious strategoi to entrenched dynatoi, these provincial rulers govern in the Emperor’s name but heed his commands only when it suits them, exercising authority with growing independence as the reach of Constantinople falters."
-
- external_member: "Symmachoi of the Oikoumenē"
- external_member_desc: "Peoples and rulers beyond the core of the Romaíoi, yet bound to the imperial order through diplomacy, alliance, and shared interest. Though not counted among the Romans, they partake in the wider oikoumenē shaped by imperial influence."
-
- roman_world_bestow_domestikos_west: "Appoint Domestikos of the West"
- roman_world_bestow_domestikos_west_desc: "Grant the dignity of Domestikos of the West, entrusting the command of the Empire's western armies to a loyal servant of the Basileus."
-
- roman_world_rescind_domestikos_west: "Rescind the Domestikos of the West"
- roman_world_rescind_domestikos_west_desc: "Strip the current holder of the dignity of Domestikos of the West and return command of the western armies to the imperial court."
-
- roman_world_bestow_domestikos_east: "Appoint Domestikos of the East"
- roman_world_bestow_domestikos_east_desc: "Grant the dignity of Domestikos of the East, placing the imperial armies of Anatolia and the eastern themes under a trusted commander."
- roman_world_rescind_domestikos_east: "Rescind the Domestikos of the East"
- roman_world_rescind_domestikos_east_desc: "Strip the current holder of the dignity of Domestikos of the East and restore the command of the eastern armies to the Basileus."
-
- br_change_strategos: "Appoint Stratēgós"
- br_change_strategos_desc: "Remove the current Stratēgós and appoint a new governor from among the loyal dynasts of the Empire. The newly appointed ruler shall govern the Thema in the name of the Basileus."
-
- br_allow_dynastic_inheritance: "Grant Dynastic Succession"
- br_allow_dynastic_inheritance_desc: "Permit the office of Stratēgós to pass hereditarily within the ruling household. The Thema shall remain loyal to the Empire, but its governance will become increasingly dynastic in nature."
-
- br_remove_dynastic_inheritance: "Restore Imperial Appointment"
- br_remove_dynastic_inheritance_desc: "Revoke hereditary succession within the Thema. Upon the death of the current Stratēgós, a successor shall be selected according to imperial authority rather than family inheritance."
-
+ roman_tribute_desc: "Phóros represents the regular payments and material contributions remitted to [ShowLocationName('constantinople')] by members of [GetUniqueInternationalOrganization('roman_world').GetName].\n\nIt reflects the fiscal obligations that sustain the imperial administration, court, and defenses of the empire.\n\nSteady Phóros ensures the effective functioning of Roman rule, while shortfalls strain the treasury and weaken the empire’s ability to project authority and maintain order."
 
  DISTANCE_FROM_ROMANLAND: "Distance from Romanía"
  ROMAN_WORLD_MEMBERS_AT_WAR: "Romaiokratía Wars"
@@ -78,27 +50,68 @@
  FIRST_PAST_SUBTRACT_ROMAN_AUTHORITY: "The [international_organization|e] lost $VALUE|-$ #Y $roman_authority$#!"
  THIRD_PAST_SUBTRACT_ROMAN_AUTHORITY: "[INTERNATIONAL_ORGANIZATION.GetName] lost $VALUE|-$ #Y $roman_authority$#!"
 
+
+### Romaiokratía Special statuses
+ br_emperor: "Basileus and Autokratōr"
+ br_emperor_desc: "The Basileus and Autokratōr of the Romans, enthroned within the [ShowBuildingTypeName('br_great_palace_building')], heir to the Caesars, and supreme ruler of the [GetUniqueInternationalOrganization('roman_world').GetName]. It is his sacred duty to uphold the order of the Basileía and safeguard the unity of the Roman world."
+
+ domestikos_west: "Domestikos tēs Dyseōs"
+ domestikos_west_desc: "The Domestikos of the West commands the imperial tagmata and field armies of the European provinces, entrusted with the defense of the western dominions and the execution of the Basileus' will."
+
+ domestikos_east: "Domestikos tēs Anatolēs"
+ domestikos_east_desc: "The Domestikos of the East commands the imperial tagmata and field armies of Anatolia and the eastern themes, entrusted with defending the Empire's ancient heartlands and carrying out the will of the Basileus."
+
+ imperial_loyalist: "Basilikoi Hypēkooi"
+ imperial_loyalist_desc: "From humble [ShowPolicyName('pronoia_system')]-holders to the governors of [ShowSubjectTypeName('br_thema_subject')] and katepanates, these loyal servants of the Basileía uphold the authority of the [ShowSpecialStatusName('br_emperor')], faithfully administering and defending the imperial order in the name of [ShowLocationName('constantinople')]."
+
+ defiant_strategoi: "Autonomoi Strategoi"
+ defiant_strategoi_desc: "From ambitious strategoi to entrenched dynatoi, these provincial rulers govern in the name of the [ShowSpecialStatusName('br_emperor')], yet heed his commands only when it serves their interests. As the reach of [ShowLocationName('constantinople')] weakens, their autonomy and influence continue to grow."
+
+ external_member: "Symmachoi of the Oikoumenē"
+ external_member_desc: "Peoples and rulers beyond the core of the [GetCountry('BYZ').GetFlavorRank], yet bound to the [ShowLawName('br_romaiokratia_law')] through diplomacy, alliance, and mutual interest. Though not counted among the Romaíoi, they participate in the wider [GetUniqueInternationalOrganization('roman_world').GetName], acknowledging the authority and influence of the imperial order."
+
+ roman_world_bestow_domestikos_west: "Appoint Domestikos of the West"
+ roman_world_bestow_domestikos_west_desc: "Grant the dignity of Domestikos of the West, entrusting the command of the Empire's western armies to a loyal servant of the Basileus."
+
+ roman_world_rescind_domestikos_west: "Rescind the Domestikos of the West"
+ roman_world_rescind_domestikos_west_desc: "Strip the current holder of the dignity of Domestikos of the West and return command of the western armies to the imperial court."
+
+ roman_world_bestow_domestikos_east: "Appoint Domestikos of the East"
+ roman_world_bestow_domestikos_east_desc: "Grant the dignity of Domestikos of the East, placing the imperial armies of Anatolia and the eastern themes under a trusted commander."
+ roman_world_rescind_domestikos_east: "Rescind the Domestikos of the East"
+ roman_world_rescind_domestikos_east_desc: "Strip the current holder of the dignity of Domestikos of the East and restore the command of the eastern armies to the Basileus."
+
+ br_change_strategos: "Appoint Stratēgós"
+ br_change_strategos_desc: "Remove the current Stratēgós and appoint a new governor from among the loyal dynasts of the Empire. The newly appointed ruler shall govern the [ShowSubjectTypeName('br_thema_subject')] in the name of the Basileus."
+
+ br_allow_dynastic_inheritance: "Grant Dynastic Succession"
+ br_allow_dynastic_inheritance_desc: "Permit the office of Stratēgós to pass hereditarily within the ruling household. The [ShowSubjectTypeName('br_thema_subject')] shall remain loyal to the Empire, but its governance will become increasingly dynastic in nature."
+
+ br_remove_dynastic_inheritance: "Restore Imperial Appointment"
+ br_remove_dynastic_inheritance_desc: "Revoke hereditary succession within the [ShowSubjectTypeName('br_thema_subject')]. Upon the death of the current Stratēgós, a successor shall be selected according to imperial authority rather than family inheritance."
+
+
 ### Romaiokratía Laws
  br_romaiokratia_law: "Romaiokratía"
- br_romaiokratia_law_desc: "Romaiokratía defines the order through which the Basileus asserts authority across the Oikoumenē. Through it, lands and rulers are drawn into a hierarchy of obligation, service, and submission, binding the Roman world into a single imperial system of governance."
+ br_romaiokratia_law_desc: "Romaiokratía defines the order through which the [ShowSpecialStatusName('br_emperor')] exercises $roman_authority$ throughout the [GetUniqueInternationalOrganization('roman_world').GetName]. Through its institutions, lands and rulers are bound by obligation, service, and loyalty, uniting the Roman world within a single imperial hierarchy."
 
- br_romaiokratia_weak_policy: "Nominal Supremacy"
- br_romaiokratia_weak_policy_desc: "Imperial authority is acknowledged in name, but little binds the members of the Oikoumenē beyond custom and tradition. The Basileus holds prestige, yet his influence remains limited."
+ br_romaiokratia_weak_policy: "Imperial Primacy"
+ br_romaiokratia_weak_policy_desc: "The $roman_authority$ of the [ShowSpecialStatusName('br_emperor')] is acknowledged in principle, yet little binds the members of the [GetUniqueInternationalOrganization('roman_world').GetName] beyond custom, tradition, and mutual interest. The Basileus commands prestige, though his influence remains limited."
 
- br_romaiokratia_low_policy: "Recognized Authority"
- br_romaiokratia_low_policy_desc: "The authority of the Basileus is formally recognized among the realms of the Oikoumenē. While still largely autonomous, members increasingly look to Constantinople for legitimacy and guidance."
+ br_romaiokratia_low_policy: "Recognized Supremacy"
+ br_romaiokratia_low_policy_desc: "The $roman_authority$ of the [ShowSpecialStatusName('br_emperor')] is formally recognized throughout the [GetUniqueInternationalOrganization('roman_world').GetName]. Though still largely autonomous, its members increasingly look to [ShowLocationName('constantinople')] for legitimacy, guidance, and arbitration."
 
  br_romaiokratia_medium_policy: "Imperial Arbitration"
- br_romaiokratia_medium_policy_desc: "The Basileus stands as arbiter among the realms of the Oikoumenē, mediating disputes and asserting a growing role in their governance. Imperial authority extends beyond recognition into active oversight."
+ br_romaiokratia_medium_policy_desc: "The [ShowSpecialStatusName('br_emperor')] stands as the supreme arbiter of the [GetUniqueInternationalOrganization('roman_world').GetName], settling disputes between its members and exercising an increasingly active role in their governance. Imperial $roman_authority$ extends beyond recognition into direct oversight."
 
- br_romaiokratia_high_policy: "Imperial Integration"
- br_romaiokratia_high_policy_desc: "The structures of Romaiokratía bind the Oikoumenē ever closer to Constantinople. Administration, diplomacy, and authority increasingly flow through imperial institutions, strengthening unity under the Basileus."
+ br_romaiokratia_high_policy: "Imperial Ascendancy"
+ br_romaiokratia_high_policy_desc: "The institutions of [ShowLawName('br_romaiokratia_law')] bind the [GetUniqueInternationalOrganization('roman_world').GetName] ever more closely to [ShowLocationName('constantinople')]. Administration, diplomacy, and $roman_authority$ increasingly flow through imperial institutions, strengthening unity beneath the Basileus."
 
- br_romaiokratia_annex_policy: "Universal Dominion"
- br_romaiokratia_annex_policy_desc: "The Oikoumenē stands unified under the undisputed authority of the Basileus. Distinctions between subject and ally fade as all are drawn fully into the imperial order, securing peace and supremacy across the Roman world."
+ br_romaiokratia_annex_policy: "Imperial Universality"
+ br_romaiokratia_annex_policy_desc: "The [GetUniqueInternationalOrganization('roman_world').GetName] stands united beneath the undisputed $roman_authority$ of the [ShowSpecialStatusName('br_emperor')]. Distinctions between subject and ally fade as all are incorporated into a single imperial order, securing lasting peace and Roman supremacy throughout the [GetUniqueInternationalOrganization('roman_world').GetName]."
 
- br_restore_roman_status: "Restore Imperial Order"
- br_restore_roman_status_desc: "Those within the Oikoumenē who have drifted from their proper station may, through recognition of the Basileus and the authority of Romaiokratía, be restored peacefully to their rightful place within the imperial order."
+ br_restore_roman_status: "Restore Imperial Communion"
+ br_restore_roman_status_desc: "Those within the [GetUniqueInternationalOrganization('roman_world').GetName] who have drifted from their proper station may, through renewed recognition of the [ShowSpecialStatusName('br_emperor')] and the authority of [ShowLawName('br_romaiokratia_law')], be peacefully restored to their rightful place within the imperial order."
 
 ### Not in use
 
@@ -108,9 +121,9 @@
  #or
 
  #roman_world: "Oikoumenē"
- #roman_world_desc: "Oikoumenē represents the universal Roman claim to rule the civilized world. It reflects the ideological and institutional reach of Constantinople as the center of order, law, and imperial legitimacy. As the Basileus strengthens his authority, the Oikoumenē expands—binding diverse peoples, provinces, and realms into a single Roman vision of civilization under imperial stewardship."
+ #roman_world_desc: "Oikoumenē represents the universal Roman claim to rule the civilized world. It reflects the ideological and institutional reach of [ShowLocationName('constantinople')] as the center of order, law, and imperial legitimacy. As the Basileus strengthens his authority, the Oikoumenē expands—binding diverse peoples, provinces, and realms into a single Roman vision of civilization under imperial stewardship."
 
  #or 
 
  #roman_world: "Basileía tōn Romaíon"
- #roman_world_desc: "Basileía tōn Romaíon represents the institutional heart of the Roman Empire: its laws, offices, treasury, and mechanisms of rule centered in Constantinople. It reflects the capacity of the Basileus to govern directly through established authority, administration, and tradition. A strong Basileía ensures stability, obedience, and effective governance, while weakness within it undermines imperial control regardless of external recognition."
+ #roman_world_desc: "Basileía tōn Romaíon represents the institutional heart of the Roman Empire: its laws, offices, treasury, and mechanisms of rule centered in [ShowLocationName('constantinople')]. It reflects the capacity of the Basileus to govern directly through established authority, administration, and tradition. A strong Basileía ensures stability, obedience, and effective governance, while weakness within it undermines imperial control regardless of external recognition."

@@ -47,7 +47,7 @@ br_romaiokratia_law = {
 			}
 			monthly_diplomats = 0.1
 			monthly_prestige = 0.05
-			monthly_roman_authority = 0.05
+			monthly_roman_authority = 0.06
 			country_can_use_br_romaiokratia_cb = yes
 		}
 		wants_this_policy_bias = {
@@ -83,7 +83,7 @@ br_romaiokratia_law = {
 			monthly_diplomats = 0.2
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
-			monthly_roman_authority = 0.06
+			monthly_roman_authority = 0.08
 			country_can_use_br_romaiokratia_cb = yes
 		}
 		country_modifier = {
@@ -138,7 +138,7 @@ br_romaiokratia_law = {
 			subject_loyalty = 5
 			monthly_prestige = 0.1
 			diplomatic_reputation = diplomatic_reputation_very_weak_bonus
-			monthly_roman_authority = 0.08
+			monthly_roman_authority = 0.1
 			country_can_use_br_romaiokratia_cb = yes
 			global_max_bureaucracy_slots = 1
 		}
@@ -211,7 +211,7 @@ br_romaiokratia_law = {
 			subject_loyalty = 10
 			monthly_prestige = 0.15
 			diplomatic_reputation = diplomatic_reputation_weak_bonus
-			monthly_roman_authority = 0.1
+			monthly_roman_authority = 0.12
 			government_size = 1
 			country_can_use_br_romaiokratia_cb = yes
 			monthly_complacency = 0.03

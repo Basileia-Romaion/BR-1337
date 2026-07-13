@@ -1,4 +1,5 @@
-﻿br_emperor = {
+﻿
+br_emperor = {
 	max_countries = 1
 	priority = 15
 	can_bestow_trigger = {
@@ -26,7 +27,7 @@ domestikos_west = {
 	priority = 10
 
 	modifier = {
-		loyalty_to_overlord = 10
+		loyalty_to_overlord = 25
 		monthly_legitimacy = 0.1
 		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
@@ -34,8 +35,9 @@ domestikos_west = {
 	}
 
 	leader_modifier = {
+		#monthly_roman_authority = 0.02
 		court_spending_efficiency = -0.02
-		government_size = 1
+		#government_size = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -101,7 +103,7 @@ domestikos_east = {
 	priority = 10
 
 	modifier = {
-		loyalty_to_overlord = 10
+		loyalty_to_overlord = 25
 		monthly_legitimacy = 0.1
 		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
@@ -109,8 +111,9 @@ domestikos_east = {
 	}
 
 	leader_modifier = {
+		#monthly_roman_authority = 0.02
 		court_spending_efficiency = -0.02
-		num_local_governors = 1
+		#num_local_governors = 1
 		monthly_towards_stratiotai = societal_value_tiny_monthly_move
 	}
 
@@ -182,7 +185,7 @@ imperial_loyalist = {
 	}
 
 	can_bestow_trigger = {
-	NOR = {
+		NOR = {
 			has_special_status_in_international_organization = {
 				type = special_status:br_emperor
 				international_organization = scope:recipient
@@ -259,6 +262,7 @@ defiant_strategoi = {
 
 	leader_modifier = {
 		monthly_legitimacy = -0.005
+		#monthly_roman_authority = -0.001
 	}
 
 	can_bestow_trigger = {
@@ -431,3 +435,4 @@ external_member = {
 #
 #	map_color = define:NMapColors|INTERNATIONAL_ORGANIZATION_TIER4_COLOR
 #}
+
