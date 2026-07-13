@@ -2,6 +2,21 @@
 
 # Patch Notes
 
+# 0.23.1
+## Improved the Oikoumenē and Auctoritas
+ - Oikoumenē given new descriptions and tooltips thoughout.
+ - Auctoritas completely revamped it now functions as I intended with clean understandable UI and clear methods to gain etc.
+## New Tags added to Western Anatolia
+  - AN29: "Boukellariōn"
+  - AN30: "Bithýnion"
+  - AN31: "Thrakēsíon"
+  - AN32: "Amórion"
+## Improved the Golden Horde
+  - Asjusted the population of the steppe. Higher pop near main rivers.
+  - Startng Culture changed to Astrakhani
+## Hellenic Relgion should now function.
+  - Small event at start of the game (Localization not done) for Elysiara that converts them to Hellenic even though they already are Hellenic this should fix the game not thinking Hellenism exists preventing pop conversion. 
+
 # Update 23 0.21-0.23
  * Have not been keeping proper notes.
  
