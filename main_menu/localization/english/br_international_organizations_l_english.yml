@@ -22,6 +22,13 @@
  roman_authority_HIGH: "$roman_authority$ is high"
  roman_authority_LOW: "$roman_authority$ is low"
 
+ br_reshape_bureaucracy: "Reorganize the Logothesia"
+ br_reshape_bureaucracy_desc: "Reform the Logothesia and administrative institutions of the [GetUniqueInternationalOrganization('roman_world').GetName], improving the efficiency of imperial governance and reinforcing Roman $roman_authority$ throughout the Oikoumenē."
+ br_strengthen_ministry: "Strengthen Logothesion"
+ br_strengthen_ministry_desc: "Each Logothesion serves a vital role in governing the [GetUniqueInternationalOrganization('roman_world').GetName]. By expanding its $roman_authority$ and resources, [GetCountry('BYZ').GetFlavorRank] may better administer its lands and subjects."
+ br_proclaim_decree: "Issue Chrysobull"
+ br_proclaim_decree_desc: "$roman_world_decrees_desc$"
+
  #change_roman_authority_text: "Auctoritas"
  BR_EMPEROR_DIP_REPUTATION: "Diplomatic Reputation of $BYZ$"
 
