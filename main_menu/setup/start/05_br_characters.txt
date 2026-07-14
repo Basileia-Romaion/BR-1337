@@ -1155,7 +1155,296 @@ character_db={
 		ruler_trait = eunuch
 		tag = BYZ
 	}
-
+ #Dalassenos
+	br_ere_rdm_character_104 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = antioch
+		dynasty = Dalassenos
+		tag = AOI
+	}
+	br_ere_rdm_character_105 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = antioch
+		father = br_ere_rdm_character_104
+		dynasty = Dalassenos
+		tag = AN27
+	}
+	br_ere_rdm_character_106 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = antioch
+		father = br_ere_rdm_character_104
+		dynasty = Dalassenos
+		tag = AOI
+	}
+	br_ere_rdm_character_107 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1323.1.1
+		birth = antioch
+		father = br_ere_rdm_character_104
+		dynasty = Dalassenos
+		tag = AOI
+	}
+	br_ere_rdm_character_108 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1324.1.1
+		birth = antioch
+		father = br_ere_rdm_character_104
+		dynasty = Dalassenos
+		tag = AOI
+	}
+ #Taronites
+	br_ere_rdm_character_109 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = sivas
+		dynasty = Taronites
+		tag = AN19
+	}
+	br_ere_rdm_character_110 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = sivas
+		father = br_ere_rdm_character_109
+		dynasty = Taronites
+		tag = AN19
+	}
+	br_ere_rdm_character_111 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = sivas
+		father = br_ere_rdm_character_109
+		dynasty = Taronites
+		tag = AN19
+	}
+ #Kamateros
+	br_ere_rdm_character_112 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = sivas
+		dynasty = Kamateros
+		tag = AN28
+	}
+	br_ere_rdm_character_113 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = sivas
+		father = br_ere_rdm_character_112
+		dynasty = Kamateros
+		tag = AN28
+	}
+	br_ere_rdm_character_114 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = sivas
+		father = br_ere_rdm_character_112
+		dynasty = Kamateros
+		tag = AN28
+	}
+ #Petraliphas
+	br_ere_rdm_character_115 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = larissa
+		dynasty = Petraliphas
+		tag = AN32
+	}
+	br_ere_rdm_character_116 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = larissa
+		father = br_ere_rdm_character_115
+		dynasty = Petraliphas
+		tag = AN32
+	}
+	br_ere_rdm_character_117 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = larissa
+		father = br_ere_rdm_character_115
+		dynasty = Petraliphas
+		tag = AN32
+	}
+ #Choumnos
+	br_ere_rdm_character_118 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = thessaloniki
+		dynasty = Choumnos
+		tag = AN31
+	}
+	br_ere_rdm_character_119 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = thessaloniki
+		father = br_ere_rdm_character_118
+		dynasty = Choumnos
+		tag = AN31
+	}
+	br_ere_rdm_character_120 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = thessaloniki
+		father = br_ere_rdm_character_118
+		dynasty = Choumnos
+		tag = AN31
+	}
+ #Kallergis
+	br_ere_rdm_character_121 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = candia
+		dynasty = Kallergis
+		tag = K1B
+	}
+	br_ere_rdm_character_122 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = antalya
+		father = br_ere_rdm_character_121
+		dynasty = Kallergis
+		tag = K1B
+	}
+	br_ere_rdm_character_123 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = antalya
+		father = br_ere_rdm_character_121
+		dynasty = Kallergis
+		tag = K1B
+	}
+#Melissenos
+	br_ere_rdm_character_124 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = smyrna
+		dynasty = melissenos_dynasty
+		tag = AN29
+	}
+	br_ere_rdm_character_125 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = smyrna
+		father = br_ere_rdm_character_124
+		dynasty = melissenos_dynasty
+		tag = AN29
+	}
+	br_ere_rdm_character_126 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = smyrna
+		father = br_ere_rdm_character_124
+		dynasty = melissenos_dynasty
+		tag = AN29
+	}
+	br_ere_rdm_character_127 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = smyrna
+		father = br_ere_rdm_character_124
+		dynasty = melissenos_dynasty
+		tag = AN29
+	}
+	br_ere_rdm_character_128 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = smyrna
+		father = br_ere_rdm_character_124
+		dynasty = melissenos_dynasty
+		tag = AN29
+	}
+#Xiphilinos
+	br_ere_rdm_character_129 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1305.1.1
+		birth = amasra
+		dynasty = Xiphilinos
+		tag = AN30
+	}
+	br_ere_rdm_character_130 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1321.1.1
+		birth = amasra
+		father = br_ere_rdm_character_129
+		dynasty = Xiphilinos
+		tag = AN30
+	}
+	br_ere_rdm_character_131 = {
+		first_name = { name = "random" }
+		female = yes
+		culture = greek_culture
+		religion = orthodox
+		birth_date = 1322.1.1
+		birth = amasra
+		father = br_ere_rdm_character_129
+		dynasty = melissenos_dynasty
+		tag = AN30
+	}
 
 #Balkans	
 	br_balkan_rdm_character_1 = {
