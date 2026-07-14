@@ -1,7 +1,7 @@
 ﻿l_english:
 
  roman_world: "Oikoumenē"
- roman_world_desc: "The Oikoumenē embodies the universal Roman claim to order and civilization under the [ShowSpecialStatusName('br_emperor')].\n\nFrom [ShowLocationName('constantinople')] flows an imperial order that binds diverse lands and peoples into a single political sphere.\n\nThrough the institutions of [ShowLawName('br_romaiokratia_law')], the Basileus extends $roman_authority$ across both [ShowSpecialStatusName('imperial_loyalist')] and [ShowSpecialStatusName('external_member')], preserving the unity and supremacy of the Roman world."
+ roman_world_desc: "The #bold Oikoumenē#! embodies the universal Roman claim to order and civilization under the [ShowSpecialStatusName('br_emperor')].\n\nFrom [ShowLocationName('constantinople')] flows an imperial order that binds diverse lands and peoples into a single political sphere.\n\nThrough the institutions of [ShowLawName('br_romaiokratia_law')], the Basileus extends $roman_authority$ across both [ShowSpecialStatusName('imperial_loyalist')] and [ShowSpecialStatusName('external_member')], preserving the unity and supremacy of the Roman world.\n\n#bold Diplomatic Actions:#!\n[ShowCountryInteractionName('br_restore_roman_status')]\n[ShowCountryInteractionName('br_change_strategos')]\n[ShowCountryInteractionName('br_allow_dynastic_inheritance')]\n[ShowCountryInteractionName('br_remove_dynastic_inheritance')]\n\n#bold Unique Subjects:#!\n[ShowSubjectTypeName('br_thema_subject')]\n[ShowSubjectTypeName('br_naval_thema_subject')]\n[ShowSubjectTypeName('br_stavropegion_subject')]\n[ShowSubjectTypeName('br_phorophoros_subject')]"
 
  game_concept_roman_authority_gc: "Auctoritas"
  game_concept_roman_authority_gc_desc: "Auctoritas represents the recognized legitimacy and moral $roman_authority$ of the [ShowSpecialStatusName('br_emperor')]. It is not enforced by arms alone, but granted through acknowledgment, tradition, and acceptance of Roman supremacy. As more realms and authorities recognize the imperial order, $roman_authority$ grows, enabling the Basileus to command obedience, enforce decrees, and uphold Roman rule. When $roman_authority$ wanes, imperial power loses its binding force, regardless of military strength."
@@ -85,11 +85,13 @@
  br_change_strategos_desc: "Remove the current Stratēgós and appoint a new governor from among the loyal dynasts of the Empire. The newly appointed ruler shall govern the [ShowSubjectTypeName('br_thema_subject')] in the name of the Basileus."
 
  br_allow_dynastic_inheritance: "Grant Dynastic Succession"
- br_allow_dynastic_inheritance_desc: "Permit the office of Stratēgós to pass hereditarily within the ruling household. The [ShowSubjectTypeName('br_thema_subject')] shall remain loyal to the Empire, but its governance will become increasingly dynastic in nature."
+ br_allow_dynastic_inheritance_desc: "Permit the office of Stratēgós to pass hereditarily within the subjects dynasty. The [ShowSubjectTypeName('br_thema_subject')] shall remain loyal to the Empire, but its governance will become increasingly dynastic in nature."
 
  br_remove_dynastic_inheritance: "Restore Imperial Appointment"
  br_remove_dynastic_inheritance_desc: "Revoke hereditary succession within the [ShowSubjectTypeName('br_thema_subject')]. Upon the death of the current Stratēgós, a successor shall be selected according to imperial authority rather than family inheritance."
 
+ br_restore_roman_status: "Restore Imperial Order"
+ br_restore_roman_status_desc: "Those within the [GetUniqueInternationalOrganization('roman_world').GetName] who have drifted from their proper station may, through renewed recognition of the [ShowSpecialStatusName('br_emperor')] and the authority of [ShowLawName('br_romaiokratia_law')], be peacefully restored to their rightful place within the imperial order."
 
 ### Romaiokratía Laws
  br_romaiokratia_law: "Romaiokratía"
@@ -110,8 +112,6 @@
  br_romaiokratia_annex_policy: "Imperial Universality"
  br_romaiokratia_annex_policy_desc: "The [GetUniqueInternationalOrganization('roman_world').GetName] stands united beneath the undisputed $roman_authority$ of the [ShowSpecialStatusName('br_emperor')]. Distinctions between subject and ally fade as all are incorporated into a single imperial order, securing lasting peace and Roman supremacy throughout the [GetUniqueInternationalOrganization('roman_world').GetName]."
 
- br_restore_roman_status: "Restore Imperial Communion"
- br_restore_roman_status_desc: "Those within the [GetUniqueInternationalOrganization('roman_world').GetName] who have drifted from their proper station may, through renewed recognition of the [ShowSpecialStatusName('br_emperor')] and the authority of [ShowLawName('br_romaiokratia_law')], be peacefully restored to their rightful place within the imperial order."
 
 ### Not in use
 

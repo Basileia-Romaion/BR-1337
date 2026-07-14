@@ -3,22 +3,22 @@
 
     ai_tick = monthly
     ai_tick_frequency = 60
-
     automation_tick = never
     show_message_to_target = yes
 
     potential = {
         exists = international_organization:roman_world
     }
-
     allow = {
+        international_organization:roman_world = { 
+			var:roman_authority > 5
+		}
 		scope:actor = {
-            #is_leader_of_international_organization = international_organization:roman_world
 			modifier:country_can_use_br_romaiokratia_cb = yes
 		}
     }
 
-    price = price:br_romaiokratia_casus_belli_price
+    #price = price:br_romaiokratia_casus_belli_price
     cooldown = { type = br_romaiokratia_casus_belli years = 1 }
 
     select_trigger = {
@@ -54,25 +54,25 @@
         name = "choose_country"
         column = { data = name }
         visible = {
-			is_member_of_international_organization = international_organization:roman_world 
-			#international_organization:roman_world = {
-			#	country_has_special_status = {
-			#		type = special_status:defiant_strategoi
-			#		#country = root
-			#	}
-			#}
+			is_member_of_international_organization = international_organization:roman_world
 			has_special_status_in_international_organization = {
 				type = special_status:defiant_strategoi
 				international_organization = international_organization:roman_world
 			}
         }
-
 		enabled = {
-			is_neighbor_of = scope:actor
+            has_special_status_in_international_organization = {
+				type = special_status:defiant_strategoi
+				international_organization = international_organization:roman_world
+			}
 		}
     }
 
     effect = {
+        scope:actor = {
+			change_roman_authority = { value = -5 }
+            add_legitimacy = -5
+		}
         if = {
             limit = { exists = scope:target }
             scope:actor = {
@@ -83,18 +83,417 @@
                 }
             }
         }
-        #else = { custom_tooltip = br_romaiokratia_casus_belli }
     }
 
     # Keep AI from trying when there’s no bound target
     ai_prerequisite = {
         exists = scope:target
     }
-
     ai_will_do = {
         add = {
             desc = "game_concept_stability"
             value = "scope:actor.currency_utility(stability|stability_mild_bonus)"
         }
     }
+}
+
+#Domestikos of the West
+roman_world_bestow_domestikos_west = {
+	type = internationalorganization
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+			"num_countries_with_special_status(special_status:domestikos_west)" < "max_countries_with_special_status(special_status:domestikos_west)"
+		}
+	}
+	allow = {
+        international_organization:roman_world = { 
+			var:roman_authority > 5
+		}
+	}
+
+    #price = price:br_romaiokratia_casus_belli_price
+    cooldown = { type = br_romaiokratia_casus_belli years = 1 }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        source = actor
+        target_flag = recipient
+        name = "choose_international_organization"
+        column = { data = name }
+        visible = { international_organization_type = international_organization_type:roman_world }
+    }
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:roman_world
+		}
+        enabled = {
+			international_organization:roman_world = {
+				special_status_can_be_bestowed = {
+					type = special_status:domestikos_west
+					country = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			change_roman_authority = { value = -5 }
+		}
+		international_organization:roman_world = {
+			international_organization_add_special_status = {
+				type = special_status:domestikos_west
+				country = scope:target
+			}
+			international_organization_remove_special_status = {
+				type = special_status:imperial_loyalist
+				country = scope:target
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = -100
+		add = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:target)"
+		}
+		add = {
+			desc = "THEIR_OPINION_TOOLTIP"
+			value = "scope:target.opinion(scope:actor)"
+		}
+		if = {
+			limit = {
+				scope:actor.culture = scope:target.culture
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				scope:actor = {
+					any_accepted_culture = {
+						this = scope:target.culture
+					}
+				}
+			}
+			add = 25
+		}
+	}
+
+	accept = {
+		if = {
+			limit = { exists = scope:target }
+			add = {
+				desc = "THEIR_OPINION_TOOLTIP"
+				value = "scope:target.opinion(scope:actor)"
+				if = {
+					limit = {
+						scope:target = {
+							"opinion(scope:actor)" > 0
+						}
+					}
+					divide = 10
+				}
+				else = {
+					divide = 5
+				}
+			}
+			add = {
+				scope:actor = {
+					value = modifier:diplomatic_reputation
+					multiply = 3
+				}
+			}
+			add = {
+				scope:target = {
+					value = "trust(scope:actor)"
+					divide = 5
+				}
+			}
+		}
+	}
+}
+
+roman_world_rescind_domestikos_west = {
+	type = internationalorganization
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+		}
+	}
+	allow = {
+        international_organization:roman_world = { 
+			var:roman_authority > 5
+		}
+	}
+
+    #price = price:br_romaiokratia_casus_belli_price
+    cooldown = { type = br_romaiokratia_casus_belli years = 1 }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        source = actor
+        target_flag = recipient
+        name = "choose_international_organization"
+        column = { data = name }
+        visible = { international_organization_type = international_organization_type:roman_world }
+    }
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:roman_world
+			international_organization:roman_world = {
+				country_has_special_status = {
+					type = special_status:domestikos_west
+					country = root
+				}
+			}
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		scope:actor = {
+            change_roman_authority = { value = -5 }
+            add_stability = -10
+		}
+		international_organization:roman_world = {
+			international_organization_remove_special_status = {
+				type = special_status:domestikos_west
+				country = scope:target
+			}
+			international_organization_add_special_status = {
+				type = special_status:imperial_loyalist
+				country = scope:target
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:target)"
+		}
+	}
+}
+
+#Domestikos of the East
+roman_world_bestow_domestikos_east = {
+	type = internationalorganization
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+			"num_countries_with_special_status(special_status:domestikos_east)" < "max_countries_with_special_status(special_status:domestikos_east)"
+		}
+	}
+
+	allow = {
+        international_organization:roman_world = { 
+			var:roman_authority > 5
+		}
+	}
+
+    #price = price:br_romaiokratia_casus_belli_price
+    cooldown = { type = br_romaiokratia_casus_belli years = 1 }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        source = actor
+        target_flag = recipient
+        name = "choose_international_organization"
+        column = { data = name }
+        visible = { international_organization_type = international_organization_type:roman_world }
+    }
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:roman_world
+		}
+        enabled = {
+			international_organization:roman_world = {
+				special_status_can_be_bestowed = {
+					type = special_status:domestikos_east
+					country = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+            change_roman_authority = { value = -5 }
+            add_legitimacy = -10 #added as a cost
+		}
+		international_organization:roman_world = {
+			international_organization_add_special_status = {
+				type = special_status:domestikos_east
+				country = scope:target
+			}
+			international_organization_remove_special_status = {
+				type = special_status:imperial_loyalist
+				country = scope:target
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = -100
+		add = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:target)"
+		}
+		add = {
+			desc = "THEIR_OPINION_TOOLTIP"
+			value = "scope:target.opinion(scope:actor)"
+		}
+		if = {
+			limit = {
+				scope:actor.culture = scope:target.culture
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				scope:actor = {
+					any_accepted_culture = {
+						this = scope:target.culture
+					}
+				}
+			}
+			add = 25
+		}
+	}
+
+	accept = {
+		if = {
+			limit = { exists = scope:target }
+			add = {
+				desc = "THEIR_OPINION_TOOLTIP"
+				value = "scope:target.opinion(scope:actor)"
+				if = {
+					limit = {
+						scope:target = {
+							"opinion(scope:actor)" > 0
+						}
+					}
+					divide = 10
+				}
+				else = {
+					divide = 5
+				}
+			}
+			add = {
+				scope:actor = {
+					value = modifier:diplomatic_reputation
+					multiply = 3
+				}
+			}
+			add = {
+				scope:target = {
+					value = "trust(scope:actor)"
+					divide = 5
+				}
+			}
+		}
+	}
+}
+
+roman_world_rescind_domestikos_east = {
+	type = internationalorganization
+
+	potential = {
+		exists = international_organization:roman_world
+		international_organization:roman_world = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+        international_organization:roman_world = { 
+			var:roman_authority > 5
+		}
+	}
+
+    #price = price:br_romaiokratia_casus_belli_price
+    cooldown = { type = br_romaiokratia_casus_belli years = 1 }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        source = actor
+        target_flag = recipient
+        name = "choose_international_organization"
+        column = { data = name }
+        visible = { international_organization_type = international_organization_type:roman_world }
+    }
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:roman_world
+			international_organization:roman_world = {
+				country_has_special_status = {
+					type = special_status:domestikos_east
+					country = root
+				}
+			}
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		scope:actor = {
+            change_roman_authority = { value = -5 }
+            add_stability = -10
+		}
+		international_organization:roman_world = {
+			international_organization_remove_special_status = {
+				type = special_status:domestikos_east
+				country = scope:target
+			}
+			international_organization_add_special_status = {
+				type = special_status:imperial_loyalist
+				country = scope:target
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:target)"
+		}
+	}
 }

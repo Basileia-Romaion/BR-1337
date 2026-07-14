@@ -1,355 +1,4 @@
-﻿#Domestikos of the West
-roman_world_bestow_domestikos_west = {
-	type = diplomacy
-	category = CATEGORY_HRE_ACTIONS
-
-	potential = {
-		exists = international_organization:roman_world
-		international_organization:roman_world = {
-			leader_country ?= scope:actor
-			"num_countries_with_special_status(special_status:domestikos_west)" < "max_countries_with_special_status(special_status:domestikos_west)"
-		}
-	}
-
-	allow = {
-	}
-	
-	select_trigger = {
-		looking_for_a = country
-		target_flag = recipient
-		name = "choose_country"
-		column = {
-			data = name
-		}
-		visible = {
-			is_member_of_international_organization = international_organization:roman_world
-		}
-        enabled = {
-			international_organization:roman_world = {
-				special_status_can_be_bestowed = {
-					type = special_status:domestikos_west
-					country = root
-				}
-			}
-		}
-	}
-
-	effect = {
-		scope:actor = {
-			change_roman_authority = { value = -5 }
-            add_legitimacy = -10 #added as a cost
-		}
-		international_organization:roman_world = {
-			international_organization_add_special_status = {
-				type = special_status:domestikos_west
-				country = scope:recipient
-			}
-			international_organization_remove_special_status = {
-				type = special_status:imperial_loyalist
-				country = scope:recipient
-			}
-		}
-	}
-
-	ai_will_do = {
-		value = -100
-		add = {
-			desc = "OUR_OPINION_TOOLTIP"
-			value = "scope:actor.opinion(scope:recipient)"
-		}
-		add = {
-			desc = "THEIR_OPINION_TOOLTIP"
-			value = "scope:recipient.opinion(scope:actor)"
-		}
-		if = {
-			limit = {
-				scope:actor.culture = scope:recipient.culture
-			}
-			add = 50
-		}
-		else_if = {
-			limit = {
-				scope:actor = {
-					any_accepted_culture = {
-						this = scope:recipient.culture
-					}
-				}
-			}
-			add = 25
-		}
-	}
-
-	accept = {
-		if = {
-			limit = { exists = scope:recipient }
-			add = {
-				desc = "THEIR_OPINION_TOOLTIP"
-				value = "scope:recipient.opinion(scope:actor)"
-				if = {
-					limit = {
-						scope:recipient = {
-							"opinion(scope:actor)" > 0
-						}
-					}
-					divide = 10
-				}
-				else = {
-					divide = 5
-				}
-			}
-			add = {
-				scope:actor = {
-					value = modifier:diplomatic_reputation
-					multiply = 3
-				}
-			}
-			add = {
-				scope:recipient = {
-					value = "trust(scope:actor)"
-					divide = 5
-				}
-			}
-		}
-	}
-}
-
-roman_world_rescind_domestikos_west = {
-	type = diplomacy
-	category = CATEGORY_HRE_ACTIONS
-
-	potential = {
-		exists = international_organization:roman_world
-		international_organization:roman_world = {
-			leader_country ?= scope:actor
-		}
-	}
-
-	allow = {
-	}
-	
-	select_trigger = {
-		looking_for_a = country
-		target_flag = recipient
-		name = "choose_country"
-		column = {
-			data = name
-		}
-		visible = {
-			is_member_of_international_organization = international_organization:roman_world
-			international_organization:roman_world = {
-				country_has_special_status = {
-					type = special_status:domestikos_west
-					country = root
-				}
-			}
-		}
-        enabled = {
-		}
-	}
-
-	effect = {
-		scope:actor = {
-            change_roman_authority = { value = -5 }
-            add_stability = -10
-		}
-		international_organization:roman_world = {
-			international_organization_remove_special_status = {
-				type = special_status:domestikos_west
-				country = scope:recipient
-			}
-			international_organization_add_special_status = {
-				type = special_status:imperial_loyalist
-				country = scope:recipient
-			}
-		}
-	}
-
-	ai_will_do = {
-		value = 0
-
-		subtract = {
-			desc = "OUR_OPINION_TOOLTIP"
-			value = "scope:actor.opinion(scope:recipient)"
-		}
-	}
-}
-
-#Domestikos of the East
-roman_world_bestow_domestikos_east = {
-	type = diplomacy
-	category = CATEGORY_HRE_ACTIONS
-
-	potential = {
-		exists = international_organization:roman_world
-		international_organization:roman_world = {
-			leader_country ?= scope:actor
-			"num_countries_with_special_status(special_status:domestikos_east)" < "max_countries_with_special_status(special_status:domestikos_east)"
-		}
-	}
-
-	allow = {
-	}
-	
-	select_trigger = {
-		looking_for_a = country
-		target_flag = recipient
-		name = "choose_country"
-		column = {
-			data = name
-		}
-		visible = {
-			is_member_of_international_organization = international_organization:roman_world
-		}
-        enabled = {
-			international_organization:roman_world = {
-				special_status_can_be_bestowed = {
-					type = special_status:domestikos_east
-					country = root
-				}
-			}
-		}
-	}
-
-	effect = {
-		scope:actor = {
-            change_roman_authority = { value = -5 }
-            add_legitimacy = -10 #added as a cost
-		}
-		international_organization:roman_world = {
-			international_organization_add_special_status = {
-				type = special_status:domestikos_east
-				country = scope:recipient
-			}
-			international_organization_remove_special_status = {
-				type = special_status:imperial_loyalist
-				country = scope:recipient
-			}
-		}
-	}
-
-	ai_will_do = {
-		value = -100
-		add = {
-			desc = "OUR_OPINION_TOOLTIP"
-			value = "scope:actor.opinion(scope:recipient)"
-		}
-		add = {
-			desc = "THEIR_OPINION_TOOLTIP"
-			value = "scope:recipient.opinion(scope:actor)"
-		}
-		if = {
-			limit = {
-				scope:actor.culture = scope:recipient.culture
-			}
-			add = 50
-		}
-		else_if = {
-			limit = {
-				scope:actor = {
-					any_accepted_culture = {
-						this = scope:recipient.culture
-					}
-				}
-			}
-			add = 25
-		}
-	}
-
-	accept = {
-		if = {
-			limit = { exists = scope:recipient }
-			add = {
-				desc = "THEIR_OPINION_TOOLTIP"
-				value = "scope:recipient.opinion(scope:actor)"
-				if = {
-					limit = {
-						scope:recipient = {
-							"opinion(scope:actor)" > 0
-						}
-					}
-					divide = 10
-				}
-				else = {
-					divide = 5
-				}
-			}
-			add = {
-				scope:actor = {
-					value = modifier:diplomatic_reputation
-					multiply = 3
-				}
-			}
-			add = {
-				scope:recipient = {
-					value = "trust(scope:actor)"
-					divide = 5
-				}
-			}
-		}
-	}
-}
-
-roman_world_rescind_domestikos_east = {
-	type = diplomacy
-	category = CATEGORY_HRE_ACTIONS
-
-	potential = {
-		exists = international_organization:roman_world
-		international_organization:roman_world = {
-			leader_country ?= scope:actor
-		}
-	}
-
-	allow = {
-	}
-	
-	select_trigger = {
-		looking_for_a = country
-		target_flag = recipient
-		name = "choose_country"
-		column = {
-			data = name
-		}
-		visible = {
-			is_member_of_international_organization = international_organization:roman_world
-			international_organization:roman_world = {
-				country_has_special_status = {
-					type = special_status:domestikos_east
-					country = root
-				}
-			}
-		}
-        enabled = {
-		}
-	}
-
-	effect = {
-		scope:actor = {
-            change_roman_authority = { value = -5 }
-            add_stability = -10
-		}
-		international_organization:roman_world = {
-			international_organization_remove_special_status = {
-				type = special_status:domestikos_east
-				country = scope:recipient
-			}
-			international_organization_add_special_status = {
-				type = special_status:imperial_loyalist
-				country = scope:recipient
-			}
-		}
-	}
-
-	ai_will_do = {
-		value = 0
-
-		subtract = {
-			desc = "OUR_OPINION_TOOLTIP"
-			value = "scope:actor.opinion(scope:recipient)"
-		}
-	}
-}
-
+﻿
 # Subjugate
 br_restore_roman_status = {
 	type = diplomacy
@@ -754,3 +403,356 @@ br_remove_dynastic_inheritance = {
 		add = -10
 	}
 }	
+
+
+##Domestikos of the West
+#roman_world_bestow_domestikos_west = {
+	#type = diplomacy
+	#category = CATEGORY_HRE_ACTIONS
+#
+	#potential = {
+		#exists = international_organization:roman_world
+		#international_organization:roman_world = {
+			#leader_country ?= scope:actor
+			#"num_countries_with_special_status(special_status:domestikos_west)" < "max_countries_with_special_status(special_status:domestikos_west)"
+		#}
+	#}
+#
+	#allow = {
+	#}
+#	
+	#select_trigger = {
+		#looking_for_a = country
+		#target_flag = recipient
+		#name = "choose_country"
+		#column = {
+			#data = name
+		#}
+		#visible = {
+			#is_member_of_international_organization = international_organization:roman_world
+		#}
+        #enabled = {
+			#international_organization:roman_world = {
+				#special_status_can_be_bestowed = {
+					#type = special_status:domestikos_west
+					#country = root
+				#}
+			#}
+		#}
+	#}
+#
+	#effect = {
+		#scope:actor = {
+			#change_roman_authority = { value = -5 }
+            #add_legitimacy = -10 #added as a cost
+		#}
+		#international_organization:roman_world = {
+			#international_organization_add_special_status = {
+				#type = special_status:domestikos_west
+				#country = scope:recipient
+			#}
+			#international_organization_remove_special_status = {
+				#type = special_status:imperial_loyalist
+				#country = scope:recipient
+			#}
+		#}
+	#}
+#
+	#ai_will_do = {
+		#value = -100
+		#add = {
+			#desc = "OUR_OPINION_TOOLTIP"
+			#value = "scope:actor.opinion(scope:recipient)"
+		#}
+		#add = {
+			#desc = "THEIR_OPINION_TOOLTIP"
+			#value = "scope:recipient.opinion(scope:actor)"
+		#}
+		#if = {
+			#limit = {
+				#scope:actor.culture = scope:recipient.culture
+			#}
+			#add = 50
+		#}
+		#else_if = {
+			#limit = {
+				#scope:actor = {
+					#any_accepted_culture = {
+						#this = scope:recipient.culture
+					#}
+				#}
+			#}
+			#add = 25
+		#}
+	#}
+#
+	#accept = {
+		#if = {
+			#limit = { exists = scope:recipient }
+			#add = {
+				#desc = "THEIR_OPINION_TOOLTIP"
+				#value = "scope:recipient.opinion(scope:actor)"
+				#if = {
+					#limit = {
+						#scope:recipient = {
+							#"opinion(scope:actor)" > 0
+						#}
+					#}
+					#divide = 10
+				#}
+				#else = {
+					#divide = 5
+				#}
+			#}
+			#add = {
+				#scope:actor = {
+					#value = modifier:diplomatic_reputation
+					#multiply = 3
+				#}
+			#}
+			#add = {
+				#scope:recipient = {
+					#value = "trust(scope:actor)"
+					#divide = 5
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#roman_world_rescind_domestikos_west = {
+	#type = diplomacy
+	#category = CATEGORY_HRE_ACTIONS
+#
+	#potential = {
+		#exists = international_organization:roman_world
+		#international_organization:roman_world = {
+			#leader_country ?= scope:actor
+		#}
+	#}
+#
+	#allow = {
+	#}
+#	
+	#select_trigger = {
+		#looking_for_a = country
+		#target_flag = recipient
+		#name = "choose_country"
+		#column = {
+			#data = name
+		#}
+		#visible = {
+			#is_member_of_international_organization = international_organization:roman_world
+			#international_organization:roman_world = {
+				#country_has_special_status = {
+					#type = special_status:domestikos_west
+					#country = root
+				#}
+			#}
+		#}
+        #enabled = {
+		#}
+	#}
+#
+	#effect = {
+		#scope:actor = {
+            #change_roman_authority = { value = -5 }
+            #add_stability = -10
+		#}
+		#international_organization:roman_world = {
+			#international_organization_remove_special_status = {
+				#type = special_status:domestikos_west
+				#country = scope:recipient
+			#}
+			#international_organization_add_special_status = {
+				#type = special_status:imperial_loyalist
+				#country = scope:recipient
+			#}
+		#}
+	#}
+#
+	#ai_will_do = {
+		#value = 0
+#
+		#subtract = {
+			#desc = "OUR_OPINION_TOOLTIP"
+			#value = "scope:actor.opinion(scope:recipient)"
+		#}
+	#}
+#}
+#
+##Domestikos of the East
+#roman_world_bestow_domestikos_east = {
+	#type = diplomacy
+	#category = CATEGORY_HRE_ACTIONS
+#
+	#potential = {
+		#exists = international_organization:roman_world
+		#international_organization:roman_world = {
+			#leader_country ?= scope:actor
+			#"num_countries_with_special_status(special_status:domestikos_east)" < "max_countries_with_special_status(special_status:domestikos_east)"
+		#}
+	#}
+#
+	#allow = {
+	#}
+#	
+	#select_trigger = {
+		#looking_for_a = country
+		#target_flag = recipient
+		#name = "choose_country"
+		#column = {
+			#data = name
+		#}
+		#visible = {
+			#is_member_of_international_organization = international_organization:roman_world
+		#}
+        #enabled = {
+			#international_organization:roman_world = {
+				#special_status_can_be_bestowed = {
+					#type = special_status:domestikos_east
+					#country = root
+				#}
+			#}
+		#}
+	#}
+#
+	#effect = {
+		#scope:actor = {
+            #change_roman_authority = { value = -5 }
+            #add_legitimacy = -10 #added as a cost
+		#}
+		#international_organization:roman_world = {
+			#international_organization_add_special_status = {
+				#type = special_status:domestikos_east
+				#country = scope:recipient
+			#}
+			#international_organization_remove_special_status = {
+				#type = special_status:imperial_loyalist
+				#country = scope:recipient
+			#}
+		#}
+	#}
+#
+	#ai_will_do = {
+		#value = -100
+		#add = {
+			#desc = "OUR_OPINION_TOOLTIP"
+			#value = "scope:actor.opinion(scope:recipient)"
+		#}
+		#add = {
+			#desc = "THEIR_OPINION_TOOLTIP"
+			#value = "scope:recipient.opinion(scope:actor)"
+		#}
+		#if = {
+			#limit = {
+				#scope:actor.culture = scope:recipient.culture
+			#}
+			#add = 50
+		#}
+		#else_if = {
+			#limit = {
+				#scope:actor = {
+					#any_accepted_culture = {
+						#this = scope:recipient.culture
+					#}
+				#}
+			#}
+			#add = 25
+		#}
+	#}
+#
+	#accept = {
+		#if = {
+			#limit = { exists = scope:recipient }
+			#add = {
+				#desc = "THEIR_OPINION_TOOLTIP"
+				#value = "scope:recipient.opinion(scope:actor)"
+				#if = {
+					#limit = {
+						#scope:recipient = {
+							#"opinion(scope:actor)" > 0
+						#}
+					#}
+					#divide = 10
+				#}
+				#else = {
+					#divide = 5
+				#}
+			#}
+			#add = {
+				#scope:actor = {
+					#value = modifier:diplomatic_reputation
+					#multiply = 3
+				#}
+			#}
+			#add = {
+				#scope:recipient = {
+					#value = "trust(scope:actor)"
+					#divide = 5
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#roman_world_rescind_domestikos_east = {
+	#type = diplomacy
+	#category = CATEGORY_HRE_ACTIONS
+#
+	#potential = {
+		#exists = international_organization:roman_world
+		#international_organization:roman_world = {
+			#leader_country ?= scope:actor
+		#}
+	#}
+#
+	#allow = {
+	#}
+#	
+	#select_trigger = {
+		#looking_for_a = country
+		#target_flag = recipient
+		#name = "choose_country"
+		#column = {
+			#data = name
+		#}
+		#visible = {
+			#is_member_of_international_organization = international_organization:roman_world
+			#international_organization:roman_world = {
+				#country_has_special_status = {
+					#type = special_status:domestikos_east
+					#country = root
+				#}
+			#}
+		#}
+        #enabled = {
+		#}
+	#}
+#
+	#effect = {
+		#scope:actor = {
+            #change_roman_authority = { value = -5 }
+            #add_stability = -10
+		#}
+		#international_organization:roman_world = {
+			#international_organization_remove_special_status = {
+				#type = special_status:domestikos_east
+				#country = scope:recipient
+			#}
+			#international_organization_add_special_status = {
+				#type = special_status:imperial_loyalist
+				#country = scope:recipient
+			#}
+		#}
+	#}
+#
+	#ai_will_do = {
+		#value = 0
+#
+		#subtract = {
+			#desc = "OUR_OPINION_TOOLTIP"
+			#value = "scope:actor.opinion(scope:recipient)"
+		#}
+	#}
+#}
