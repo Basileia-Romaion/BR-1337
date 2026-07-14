@@ -902,20 +902,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = expanded_palace_bureaucracy
 						years = 5
-						size = {
-							value = 1
-							add = {
-								desc = roman_world
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-						}
 					}
 				}
 				if = {
@@ -923,25 +909,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = conducted_population_census
 						years = 5
-						size = {
-							value = 1
-							add = {
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-							if = {
-								limit = {
-									scope:actor = { has_country_modifier = strengthened_ministry_of_revenue }
-								}
-								add = 0.5
-							}
-						}
 					}
 				}
 				if = {
@@ -949,19 +916,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = increased_tariff_control
 						years = 5
-						size = {
-							value = 1
-							add = {
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-						}
 					}
 				}
 				if = {
@@ -969,25 +923,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = issued_great_warnings
 						years = 5
-						size = {
-							value = 1
-							add = {
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-							if = {
-								limit = {
-									scope:actor = { has_country_modifier = strengthened_ministry_of_justice }
-								}
-								add = 0.1
-							}
-						}
 					}
 				}
 				if = {
@@ -995,25 +930,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = commenced_infrastructure_works
 						years = 5
-						size = {
-							value = 1
-							add = {
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-							if = {
-								limit = {
-									scope:actor = { has_country_modifier = strengthened_ministry_of_works }
-								}
-								add = 0.1
-							}
-						}
 					}
 				}
 				if = {
@@ -1021,25 +937,6 @@ br_proclaim_decree = {
 					add_country_modifier = {
 						modifier = reinforced_fortifications
 						years = 5
-						size = {
-							value = 1
-							add = {
-								value = {
-									add = international_organization:roman_world.total_members
-									divide = 100
-								}
-							}
-							add = {
-								value = modifier:country_cabinet_efficiency
-								divide = 2
-							}
-							if = {
-								limit = {
-									scope:actor = { has_country_modifier = strengthened_ministry_of_war }
-								}
-								add = 0.1
-							}
-						}
 					}
 				}
 			}
