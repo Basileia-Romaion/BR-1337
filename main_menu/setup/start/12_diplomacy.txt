@@ -464,7 +464,7 @@ diplomacy_manager = {
     #dependency = { first = BYZ second = AN8 subject_type = vassal } # Thema
     #dependency = { first = BYZ second = AN9 subject_type = vassal } # Thema
    
-    #dependency = { first = BYZ second = EPI subject_type = tributary } # Autonomia
+    #dependency = { first = BYZ second = EPI subject_type = br_phorophoros_subject } # Autonomia
 
     dependency = { first = BYZ second = AN29 subject_type = br_thema_subject }
 	dependency = { first = BYZ second = AN30 subject_type = br_thema_subject }
