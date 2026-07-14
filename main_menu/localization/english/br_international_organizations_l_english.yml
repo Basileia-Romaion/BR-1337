@@ -18,7 +18,7 @@
  MODIFIER_TYPE_DESC_monthly_roman_authority: "Monthly $roman_authority$"
 
  monthly_roman_authority: "Monthly Roman Authority"
- IO_MONTHLY_ROMAN_AUTHORITY: "[ShowLawName('br_romaiokratia_law')] [ShowModifierTypeNameWithBreakdown('roman_authority', GetUniqueInternationalOrganization('roman_world').GetLeaderCountry.Self)]" 
+ IO_MONTHLY_ROMAN_AUTHORITY: "[ShowLawName('br_romaiokratia_law')] [ShowModifierTypeNameWithBreakdown('roman_authority', GetUniqueInternationalOrganization('roman_world').GetLeaderCountry.Self)] & [bureaucracies|e]" 
 
  #change_roman_authority_text: "Auctoritas"
  BR_EMPEROR_DIP_REPUTATION: "Diplomatic Reputation of $BYZ$"

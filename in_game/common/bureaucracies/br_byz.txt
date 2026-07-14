@@ -46,6 +46,7 @@ REPLACE_OR_CREATE:themata_bureaucracy = {
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_defensive = 0.2
+		monthly_roman_authority = 0.02
 	}
 
 	#negative
@@ -56,6 +57,7 @@ REPLACE_OR_CREATE:themata_bureaucracy = {
 		}
 		levy_recovery_modifier = -0.2
 		global_nobles_estate_power = 0.5
+		monthly_roman_authority = -0.02
 	}
 }
 
@@ -97,6 +99,7 @@ REPLACE_OR_CREATE:kephalai_bureaucracy = {
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		num_local_governors = 1
+		monthly_roman_authority = 0.02
 	}
 
 	#negative
@@ -107,6 +110,7 @@ REPLACE_OR_CREATE:kephalai_bureaucracy = {
 		}
 		estate_enrichment = 0.2
 		global_non_rural_monthly_prosperity = -0.002
+		monthly_roman_authority = -0.02
 	}
 }
 
@@ -161,6 +165,7 @@ REPLACE_OR_CREATE:allelengyon_bureaucracy = {
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_monthly_prosperity = 0.001
+		monthly_roman_authority = 0.02
 	}
 
 	#negative
@@ -171,6 +176,126 @@ REPLACE_OR_CREATE:allelengyon_bureaucracy = {
 			multiply = { value = 1 subtract = scope:maintenance }
 		}
 		global_monthly_development = -0.0025
+		monthly_roman_authority = -0.02
 	}
 }
 
+INJECT:nomos_empsychos_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:honorary_titles_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:court_eunuchs_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:ritualistic_court_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:sixty_books_of_the_basilika_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:romanitas_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:imperial_senate_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
+
+INJECT:magister_militum_bureaucracy = {
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		monthly_roman_authority = 0.02
+	}
+	negative_modifier = {
+		scale = {
+			value = 1
+			add = scope:entrenchment
+			multiply = { value = 1 subtract = scope:maintenance }
+		}
+		monthly_roman_authority = -0.02	
+	}
+}
