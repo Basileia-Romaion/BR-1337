@@ -497,3 +497,633 @@ roman_world_rescind_domestikos_east = {
 		}
 	}
 }
+
+
+#
+br_reshape_bureaucracy = {
+	type = internationalorganization
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+	automation_tick = monthly
+	automation_tick_frequency = 3
+	player_automated_category = diplomacy
+
+	potential = {
+		exists = international_organization:roman_world
+		scope:actor = { is_member_of_international_organization = international_organization:roman_world }
+	}
+	allow = {
+		international_organization:roman_world = { 
+			var:roman_authority > 10
+		}
+		scope:actor = { is_leader_of_international_organization = international_organization:roman_world }
+	}
+	
+	price = price:reshape_bureaucracy
+	cooldown = {
+		type = reshape_bureaucracy
+		years = 20
+	}
+	select_trigger = {
+		looking_for_a = international_organization
+		source = actor
+		target_flag = recipient
+		name = "choose_international_organization"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:roman_world
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			change_roman_authority = { value = -10 }
+			remove_decree_monthly_roman_authority_loss = yes
+			add_country_modifier = { modifier = reshaped_bureaucracy years = 10 }
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		add = {
+			desc = "CAN_EASILY_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold >= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = 50
+			}
+		}
+		add = {
+			desc = "roman_authority_HIGH"
+			if = {
+				limit = {
+					international_organization:roman_world.var:roman_authority > 75
+				}
+				value = 10
+			}
+		}
+		add = {
+			desc = "IS_BANKRUPT_TOOLTIP"
+			if = {
+				limit = {	
+					scope:actor = { 
+						is_during_bankruptcy = yes
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			desc = "IS_AT_WAR"
+			if = {
+				limit = {	
+					scope:actor = { 
+						at_war = yes
+					}
+				}
+				value = -25
+			}
+		}
+		add = {
+			desc = "CAN_NOT_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold <= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = -60
+			}
+		}
+		add = {
+			desc = "roman_authority_LOW"
+			if = {
+				limit = {
+					international_organization:roman_world.var:roman_authority < 75
+				}
+				value = -100
+			}
+		}
+	}
+}
+
+br_strengthen_ministry = {
+	type = internationalorganization
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+
+	automation_tick = monthly
+	automation_tick_frequency = 3
+	player_automated_category = diplomacy
+
+	potential = {
+		exists = international_organization:roman_world
+		scope:actor = { is_member_of_international_organization = international_organization:roman_world }
+	}
+	allow = {
+		international_organization:roman_world = { 
+			var:roman_authority > 10
+		}
+		scope:actor = { is_leader_of_international_organization = international_organization:roman_world }
+	}
+	
+	price = price:strengthen_ministry
+	cooldown = {
+		type = strengthen_ministry
+		years = 20
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		source = actor
+		target_flag = recipient
+		name = "choose_international_organization"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:roman_world
+		}
+	}
+	select_trigger = {
+		looking_for_a = policy
+		target_flag = target_policy
+		name = "select_ministry"
+		none_available_msg_key = "no_ministries"
+		column = {
+			data = policy_name_desc
+		}
+		visible = {
+			OR = {
+				this = policy:ministry_of_rites
+				this = policy:ministry_of_personnel
+				this = policy:ministry_of_revenue
+				this = policy:ministry_of_war
+				this = policy:ministry_of_justice
+				this = policy:ministry_of_works
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:target_policy }
+			scope:actor = {
+				if = {
+					limit = { modifier:allow_righteousness = yes }
+					add_righteousness = righteousness_mild_bonus
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_rites }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_rites years = 20 }
+					custom_tooltip = countries_more_likely_to_accept_invite_to_sect_tt
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_personnel }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_personnel years = 20 }
+					if = {
+						limit = { is_leader_of_international_organization = international_organization:roman_world }
+						custom_tooltip = better_exams_results_tt
+					}
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_revenue }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_revenue years = 20 }
+					if = {
+						limit = { is_leader_of_international_organization = international_organization:roman_world }
+						custom_tooltip = better_census_results_tt
+					}
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_war }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_war years = 20 }
+					if = {
+						limit = { is_leader_of_international_organization = international_organization:roman_world }
+						custom_tooltip = better_reinforce_fortification_results_tt
+					}
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_justice }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_justice years = 20 }
+					if = {
+						limit = { is_leader_of_international_organization = international_organization:roman_world }
+						custom_tooltip = better_warning_results_tt
+					}
+				}
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_works }
+				scope:actor = {
+					add_country_modifier = { modifier = strengthened_ministry_of_works years = 20 }
+					if = {
+						limit = { is_leader_of_international_organization = international_organization:roman_world }
+						custom_tooltip = better_infrastructure_works_results_tt
+					}
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = { exists = scope:target_policy }
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_rites }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_rites)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_personnel }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_personnel)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_revenue }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_revenue)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_war }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_war)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_justice }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_justice)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:ministry_of_works }
+				add = "scope:actor.add_static_modifier_utility(strengthened_ministry_of_works)"
+			}
+		}
+		add = {
+			desc = "CAN_EASILY_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold >= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = 50
+			}
+		}
+		add = {
+			desc = "IS_BANKRUPT_TOOLTIP"
+			if = {
+				limit = {	
+					scope:actor = { 
+						is_during_bankruptcy = yes
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			desc = "IS_AT_WAR"
+			if = {
+				limit = {	
+					scope:actor = { 
+						at_war = yes
+					}
+				}
+				value = -25
+			}
+		}
+		add = {
+			desc = "CAN_NOT_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold <= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = -60
+			}
+		}
+	}
+}
+
+br_proclaim_decree = {
+	type = internationalorganization
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+	automation_tick = monthly
+	automation_tick_frequency = 3
+	player_automated_category = diplomacy
+
+	potential = {
+		exists = international_organization:roman_world
+		scope:actor = { is_member_of_international_organization = international_organization:roman_world }
+	}
+	allow = {
+		international_organization:roman_world = { 
+			var:roman_authority > 10
+		}
+		scope:actor = { is_leader_of_international_organization = international_organization:roman_world }
+	}
+	
+	price = price:proclaim_decree
+	cooldown = {
+		type = proclaim_decree
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		source = actor
+		target_flag = recipient
+		name = "choose_international_organization"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:roman_world
+		}
+	}
+	select_trigger = {
+		looking_for_a = policy
+		target_flag = target_policy
+		name = "select_decree"
+		none_available_msg_key = "no_decrees"
+		column = {
+			data = policy_name_desc
+		}
+		visible = {
+			OR = {
+				this = policy:expand_palace_bureaucracy_decree
+				this = policy:conduct_population_census_decree
+				this = policy:increase_tariff_control_decree
+				this = policy:issue_great_warnings_decree
+				this = policy:commence_infrastructure_works_decree
+				this = policy:reinforce_fortifications_decree
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:target_policy }
+			scope:actor = {
+				change_roman_authority = { value = -10 }
+				add_decree_monthly_roman_authority_loss = yes
+				if = {
+					limit = { modifier:allow_righteousness = yes }
+					add_righteousness = righteousness_mild_bonus
+				}
+				if = {
+					limit = { scope:target_policy = policy:expand_palace_bureaucracy_decree }
+					add_country_modifier = {
+						modifier = expanded_palace_bureaucracy
+						years = 5
+						size = {
+							value = 1
+							add = {
+								desc = roman_world
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = { scope:target_policy = policy:conduct_population_census_decree }
+					add_country_modifier = {
+						modifier = conducted_population_census
+						years = 5
+						size = {
+							value = 1
+							add = {
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+							if = {
+								limit = {
+									scope:actor = { has_country_modifier = strengthened_ministry_of_revenue }
+								}
+								add = 0.5
+							}
+						}
+					}
+				}
+				if = {
+					limit = { scope:target_policy = policy:increase_tariff_control_decree }
+					add_country_modifier = {
+						modifier = increased_tariff_control
+						years = 5
+						size = {
+							value = 1
+							add = {
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+						}
+					}
+				}
+				if = {
+					limit = { scope:target_policy = policy:issue_great_warnings_decree }
+					add_country_modifier = {
+						modifier = issued_great_warnings
+						years = 5
+						size = {
+							value = 1
+							add = {
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+							if = {
+								limit = {
+									scope:actor = { has_country_modifier = strengthened_ministry_of_justice }
+								}
+								add = 0.1
+							}
+						}
+					}
+				}
+				if = {
+					limit = { scope:target_policy = policy:commence_infrastructure_works_decree }
+					add_country_modifier = {
+						modifier = commenced_infrastructure_works
+						years = 5
+						size = {
+							value = 1
+							add = {
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+							if = {
+								limit = {
+									scope:actor = { has_country_modifier = strengthened_ministry_of_works }
+								}
+								add = 0.1
+							}
+						}
+					}
+				}
+				if = {
+					limit = { scope:target_policy = policy:reinforce_fortifications_decree }
+					add_country_modifier = {
+						modifier = reinforced_fortifications
+						years = 5
+						size = {
+							value = 1
+							add = {
+								value = {
+									add = international_organization:roman_world.total_members
+									divide = 100
+								}
+							}
+							add = {
+								value = modifier:country_cabinet_efficiency
+								divide = 2
+							}
+							if = {
+								limit = {
+									scope:actor = { has_country_modifier = strengthened_ministry_of_war }
+								}
+								add = 0.1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = { exists = scope:target_policy }
+			if = {
+				limit = { scope:target_policy = policy:expand_palace_bureaucracy_decree }
+				add = "scope:actor.add_static_modifier_utility(expanded_palace_bureaucracy)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:conduct_population_census_decree }
+				add = "scope:actor.add_static_modifier_utility(conducted_population_census)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:increase_tariff_control_decree }
+				add = "scope:actor.add_static_modifier_utility(increased_tariff_control)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:issue_great_warnings_decree }
+				add = "scope:actor.add_static_modifier_utility(issued_great_warnings)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:commence_infrastructure_works_decree }
+				add = "scope:actor.add_static_modifier_utility(commenced_infrastructure_works)"
+			}
+			if = {
+				limit = { scope:target_policy = policy:reinforce_fortifications_decree }
+				add = "scope:actor.add_static_modifier_utility(reinforced_fortifications)"
+			}
+		}
+		add = {
+			desc = "CAN_EASILY_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold >= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = 50
+			}
+		}
+		add = {
+			desc = "IS_BANKRUPT_TOOLTIP"
+			if = {
+				limit = {	
+					scope:actor = { 
+						is_during_bankruptcy = yes
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			desc = "IS_AT_WAR"
+			if = {
+				limit = {	
+					scope:actor = { 
+						at_war = yes
+					}
+				}
+				value = -25
+			}
+		}
+		add = {
+			desc = "CAN_NOT_AFFORD"
+			if = {
+				limit = {
+					scope:actor = {
+						gold <= {
+							value = scope:actor.monthly_income_trade_and_tax
+							multiply = 6
+						}
+					}
+				}
+				value = -60
+			}
+		}
+	}
+}

@@ -70,6 +70,14 @@ br_imperial_instability = {
 	global_max_rural_control = -0.1
 }
 
+roman_decree_maintenance = {
+	game_data = {
+		category = country
+	}
+	monthly_roman_authority = -0.1
+}
+
+
 #lucky country buff can be scaled 0.25 lucky - 1 super lucky.
 br_lucky_country_buff = {
 	game_data = {

@@ -46,3 +46,22 @@ change_roman_authority = {
 		}
 	}
 }
+
+add_decree_monthly_roman_authority_loss = {
+	add_country_modifier = {
+		modifier = roman_decree_maintenance
+		years = 10
+		mode = add_and_extend
+	}
+}
+
+remove_decree_monthly_roman_authority_loss = {
+	change_country_modifier_size = {
+		modifier = roman_decree_maintenance
+		value = -1
+	}
+	if = {
+		limit = { country_modifier_strength = { modifier = roman_decree_maintenance value <= 0 } }
+		remove_country_modifier = roman_decree_maintenance
+	}
+}
