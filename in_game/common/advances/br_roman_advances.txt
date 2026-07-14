@@ -138,6 +138,8 @@ roman_akritic_reforms = {
 	requires = roman_pronoial_administration
 
 	unlock_subject_type = march
+	unlock_subject_type = br_thema_subject
+	unlock_subject_type = br_naval_thema_subject
 	unlock_policy = br_thema_levies
 	unlock_policy = br_military_court_policy 
 	unlock_policy = br_naval_court_policy
@@ -160,6 +162,7 @@ br_roman_ecumenical_patriarch_advance = {
 
 	global_heretic_pop_conversion_speed_modifier = 0.25
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
+	unlock_subject_type = br_stavropegion_subject
 	icon = church_councils
 		
 	requires = roman_codified_custom
