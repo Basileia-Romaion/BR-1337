@@ -2,6 +2,17 @@
 
 # Patch Notes
 
+# 0.23.2
+## Oikoumenē and Auctoritas
+  - bureaucracies now affect Auctoritas scaling with funding.
+  - Added three new categories to spend Auctoritas on. Currently they are idendical to the Middle Kingdom actions they are based on.
+    - Reorganize the Logothesia
+    - Strengthen Logothesion
+    - Issue Chrysobull
+  - Lots more UI and localization improvements.
+## Other
+  - New Anatolian dynasties for the newer tags: Dalassenos , Taronites, Kamateros,  Petraliphas,  Choumnos, Kallergis, Xiphilinos.
+
 # 0.23.1
 ## Improved the Oikoumenē and Auctoritas
  - Oikoumenē given new descriptions and tooltips thoughout.
