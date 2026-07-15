@@ -27,7 +27,7 @@
  br_strengthen_ministry: "Strengthen Logothesion"
  br_strengthen_ministry_desc: "Each Logothesion serves a vital role in governing the [GetUniqueInternationalOrganization('roman_world').GetName]. By expanding its $roman_authority$ and resources, [GetCountry('BYZ').GetFlavorRank] may better administer its lands and subjects."
  br_proclaim_decree: "Issue Chrysobull"
- br_proclaim_decree_desc: "$roman_world_decrees_desc$"
+ br_proclaim_decree_desc: "The Romaiokratía is upheld through Imperial Chrysobulls, by which the will of the [ShowSpecialStatusName('br_emperor')] is proclaimed across the [GetUniqueInternationalOrganization('roman_world').GetName]. These decrees strengthen the administration of the Roman world and direct the policies of the Empire, though each proclamation expends precious $roman_authority$."
 
  #change_roman_authority_text: "Auctoritas"
  BR_EMPEROR_DIP_REPUTATION: "Diplomatic Reputation of $BYZ$"
@@ -68,7 +68,7 @@
  domestikos_west_desc: "The Domestikos of the West commands the imperial tagmata and field armies of the European provinces, entrusted with the defense of the western dominions and the execution of the Basileus' will."
 
  domestikos_east: "Domestikos tēs Anatolēs"
- domestikos_east_desc: "The Domestikos of the East commands the imperial tagmata and field armies of Anatolia and the eastern themes, entrusted with defending the Empire's ancient heartlands and carrying out the will of the Basileus."
+ domestikos_east_desc: "The Domestikos of the East commands the imperial tagmata and field armies of [ShowRegionName('anatolia_region')] and the eastern themes, entrusted with defending the Empire's ancient heartlands and carrying out the will of the Basileus."
 
  imperial_loyalist: "Basilikoi Hypēkooi"
  imperial_loyalist_desc: "From humble [ShowPolicyName('pronoia_system')]-holders to the governors of [ShowSubjectTypeName('br_thema_subject')] and katepanates, these loyal servants of the Basileía uphold the authority of the [ShowSpecialStatusName('br_emperor')], faithfully administering and defending the imperial order in the name of [ShowLocationName('constantinople')]."
@@ -79,16 +79,17 @@
  external_member: "Symmachoi of the Oikoumenē"
  external_member_desc: "Peoples and rulers beyond the core of the [GetCountry('BYZ').GetFlavorRank], yet bound to the [ShowLawName('br_romaiokratia_law')] through diplomacy, alliance, and mutual interest. Though not counted among the Romaíoi, they participate in the wider [GetUniqueInternationalOrganization('roman_world').GetName], acknowledging the authority and influence of the imperial order."
 
- roman_world_bestow_domestikos_west: "Appoint Domestikos of the West"
+ roman_world_bestow_domestikos_west: "Appoint [ShowSpecialStatusName('domestikos_west')]"
  roman_world_bestow_domestikos_west_desc: "Grant the dignity of Domestikos of the West, entrusting the command of the Empire's western armies to a loyal servant of the Basileus."
 
- roman_world_rescind_domestikos_west: "Rescind the Domestikos of the West"
- roman_world_rescind_domestikos_west_desc: "Strip the current holder of the dignity of Domestikos of the West and return command of the western armies to the imperial court."
+ roman_world_rescind_domestikos_west: "Rescind [ShowSpecialStatusName('domestikos_west')]"
+ roman_world_rescind_domestikos_west_desc: "Strip the current holder of the dignity of Domestikos of the West and return command of the western armies to [ShowLocationName('constantinople')]."
 
- roman_world_bestow_domestikos_east: "Appoint Domestikos of the East"
- roman_world_bestow_domestikos_east_desc: "Grant the dignity of Domestikos of the East, placing the imperial armies of Anatolia and the eastern themes under a trusted commander."
- roman_world_rescind_domestikos_east: "Rescind the Domestikos of the East"
- roman_world_rescind_domestikos_east_desc: "Strip the current holder of the dignity of Domestikos of the East and restore the command of the eastern armies to the Basileus."
+ roman_world_bestow_domestikos_east: "Appoint [ShowSpecialStatusName('domestikos_east')]"
+ roman_world_bestow_domestikos_east_desc: "Grant the dignity of Domestikos of the East, placing the imperial armies of [ShowRegionNameWithNoTooltip('anatolia_region')] and the eastern themes under a trusted commander."
+
+ roman_world_rescind_domestikos_east: "Rescind [ShowSpecialStatusName('domestikos_east')]"
+ roman_world_rescind_domestikos_east_desc: "Strip the current holder of the dignity of Domestikos of the East and restore the command of the eastern armies to the [ShowSpecialStatusName('br_emperor')]."
 
  br_change_strategos: "Appoint Stratēgós"
  br_change_strategos_desc: "Remove the current Stratēgós and appoint a new governor from among the loyal dynasts of the Empire. The newly appointed ruler shall govern the [ShowSubjectTypeName('br_thema_subject')] in the name of the Basileus."

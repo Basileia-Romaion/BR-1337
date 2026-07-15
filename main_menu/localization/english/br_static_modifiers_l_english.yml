@@ -28,8 +28,10 @@
  MODIFIER_TYPE_DESC_br_romaiokratia_casus_belli_cost_modifier: "This impacts the [costs|e] of [ShowGenericActionName('br_romaiokratia_casus_belli')] in the [GetUniqueInternationalOrganization('roman_world').GetNameWithNoTooltip]."
 
  br_romaiokratia_casus_belli: "Enforce the Imperial Order"
- br_romaiokratia_casus_belli_desc: "Those who stand within the Oikoumenē are bound by duty to the Basileus and the structures of Romaiokratía. When obedience falters, it falls upon the Empire to restore order and reaffirm the bonds that sustain the Roman world."
+ br_romaiokratia_casus_belli_desc: "Those who stand within the [GetUniqueInternationalOrganization('roman_world').GetName] are bound by duty to the Basileus and the structures of [ShowLawName('br_romaiokratia_law')]. When obedience falters, it falls upon the Empire to restore order and reaffirm the bonds that sustain the Roman world."
  br_romaiokratia_casus_belli_price: "Issue Imperial Mandate"
+
+ STATIC_MODIFIER_NAME_roman_decree_maintenance: "$roman_authority$ maintenance"
 
  stratiotai_focus: "Stratiōtai"
  br_bureaucratic_focus: "Logothetai"

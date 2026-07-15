@@ -50,7 +50,7 @@ change_roman_authority = {
 add_decree_monthly_roman_authority_loss = {
 	add_country_modifier = {
 		modifier = roman_decree_maintenance
-		years = 10
+		years = 5
 		mode = add_and_extend
 	}
 }

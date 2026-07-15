@@ -681,17 +681,10 @@ br_strengthen_ministry = {
 	effect = {
 		if = {
 			limit = { exists = scope:target_policy }
-			scope:actor = {
-				if = {
-					limit = { modifier:allow_righteousness = yes }
-					add_righteousness = righteousness_mild_bonus
-				}
-			}
 			if = {
 				limit = { scope:target_policy = policy:ministry_of_rites }
 				scope:actor = {
 					add_country_modifier = { modifier = strengthened_ministry_of_rites years = 20 }
-					custom_tooltip = countries_more_likely_to_accept_invite_to_sect_tt
 				}
 			}
 			if = {
@@ -700,7 +693,6 @@ br_strengthen_ministry = {
 					add_country_modifier = { modifier = strengthened_ministry_of_personnel years = 20 }
 					if = {
 						limit = { is_leader_of_international_organization = international_organization:roman_world }
-						custom_tooltip = better_exams_results_tt
 					}
 				}
 			}
@@ -710,7 +702,6 @@ br_strengthen_ministry = {
 					add_country_modifier = { modifier = strengthened_ministry_of_revenue years = 20 }
 					if = {
 						limit = { is_leader_of_international_organization = international_organization:roman_world }
-						custom_tooltip = better_census_results_tt
 					}
 				}
 			}
@@ -720,7 +711,6 @@ br_strengthen_ministry = {
 					add_country_modifier = { modifier = strengthened_ministry_of_war years = 20 }
 					if = {
 						limit = { is_leader_of_international_organization = international_organization:roman_world }
-						custom_tooltip = better_reinforce_fortification_results_tt
 					}
 				}
 			}
@@ -730,7 +720,6 @@ br_strengthen_ministry = {
 					add_country_modifier = { modifier = strengthened_ministry_of_justice years = 20 }
 					if = {
 						limit = { is_leader_of_international_organization = international_organization:roman_world }
-						custom_tooltip = better_warning_results_tt
 					}
 				}
 			}
@@ -740,7 +729,6 @@ br_strengthen_ministry = {
 					add_country_modifier = { modifier = strengthened_ministry_of_works years = 20 }
 					if = {
 						limit = { is_leader_of_international_organization = international_organization:roman_world }
-						custom_tooltip = better_infrastructure_works_results_tt
 					}
 				}
 			}
@@ -893,10 +881,6 @@ br_proclaim_decree = {
 			scope:actor = {
 				change_roman_authority = { value = -10 }
 				add_decree_monthly_roman_authority_loss = yes
-				if = {
-					limit = { modifier:allow_righteousness = yes }
-					add_righteousness = righteousness_mild_bonus
-				}
 				if = {
 					limit = { scope:target_policy = policy:expand_palace_bureaucracy_decree }
 					add_country_modifier = {
