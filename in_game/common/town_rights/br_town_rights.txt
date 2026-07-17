@@ -65,3 +65,39 @@ br_land_theme_rights = {
 	
 	color = red
 }
+
+br_latin_port_rights = {
+	icon = staple_port
+	potential = {
+		OR = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
+			has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+		}
+	}
+	allow = {
+		scope:target = {
+			is_port = yes
+		}
+	}
+	location_modifier = {
+		harbor_suitability = 0.1
+		local_trades_per_burgher = 0.25
+		local_market_access = 0.1
+		local_burghers_estate_power = 0.5
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	color = hsv { 0.52 0.44 0.78 }
+}
+
+br_dynatoi_rights = {
+	icon = manorial_customals
+	potential = {
+		has_estate_privilege = estate_privilege:br_dynatoi_magnates
+	}
+	location_modifier = {
+		local_monthly_food_modifier = 0.5
+		local_food_decay = -0.001
+		local_peasant_enfranchisment = -0.1
+	}
+	color = map_GBR
+}
