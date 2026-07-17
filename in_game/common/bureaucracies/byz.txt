@@ -1,4 +1,4 @@
-﻿nomos_empsychos_bureaucracy = {
+﻿REPLACE_OR_CREATE:nomos_empsychos_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -14,6 +14,10 @@
 			AND = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
+			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -32,6 +36,7 @@
 	#neutral
 	neutral_modifier = {
 		global_estate_satisfaction_from_legitimacy = 0.05
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
@@ -39,6 +44,7 @@
 		scale = { value = scope:maintenance }
 		
 		global_crown_estate_power = 0.15
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -47,11 +53,12 @@
 			value = 1
 			subtract = scope:maintenance
 		}
-		global_estate_satisfaction_decay = 0.025		
+		global_estate_satisfaction_decay = 0.025	
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-honorary_titles_bureaucracy = {
+REPLACE_OR_CREATE:honorary_titles_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -76,18 +83,24 @@ honorary_titles_bureaucracy = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group } #br added
+				country_rank = country_rank:rank_empire
+			}
 		}
 	}
 
 	#neutral
 	neutral_modifier = {
 		country_cabinet_efficiency = 0.1
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_estate_target_satisfaction = small_permanent_target_satisfaction
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -97,10 +110,12 @@ honorary_titles_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		global_crown_estate_power = -0.3
+		monthly_roman_authority = -0.02 #br added
+		#pretenders
 	}
 }
 
-court_eunuchs_bureaucracy = {
+REPLACE_OR_CREATE:court_eunuchs_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -125,12 +140,17 @@ court_eunuchs_bureaucracy = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
+			AND = {
+				culture = { has_culture_group = culture_group:roman_group } #br added
+				country_rank = country_rank:rank_empire
+			}
 		}
 	}
 
 	#neutral
 	neutral_modifier = {
 		may_hire_eunuch_advisors = yes
+		monthly_towards_br_bureaucratic = societal_value_monthly_move #br added
 	}
 
 	#positive
@@ -138,6 +158,7 @@ court_eunuchs_bureaucracy = {
 		scale = { value = scope:maintenance }
 		country_child_education = 0.1
 		global_monthly_literacy = 0.01
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -147,10 +168,11 @@ court_eunuchs_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		stability_decay = 0.0025
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-ritualistic_court_bureaucracy = {
+REPLACE_OR_CREATE:ritualistic_court_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -165,6 +187,10 @@ ritualistic_court_bureaucracy = {
 			AND = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
+			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -181,6 +207,7 @@ ritualistic_court_bureaucracy = {
 	neutral_modifier = {
 		monthly_legitimacy = 0.1
 		monthly_republican_tradition = 0.1
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
@@ -189,6 +216,7 @@ ritualistic_court_bureaucracy = {
 		diplomatic_reputation = 1
 		annexation_speed_modifier = 0.10
 		cultural_influence_modifier = 0.15
+		monthly_roman_authority = 0.03 #br added
 	}
 
 	#negative
@@ -198,10 +226,11 @@ ritualistic_court_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-sixty_books_of_the_basilika_bureaucracy = {
+REPLACE_OR_CREATE:sixty_books_of_the_basilika_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -249,6 +278,7 @@ sixty_books_of_the_basilika_bureaucracy = {
 	neutral_modifier = {
 		tax_income_efficiency = 0.05
 		monthly_legitimacy = 0.05
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
@@ -267,6 +297,7 @@ sixty_books_of_the_basilika_bureaucracy = {
 			}
 		}
 		global_estate_power = -0.5
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -276,10 +307,11 @@ sixty_books_of_the_basilika_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		pop_join_rebel_threshold = 0.05
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-romanitas_bureaucracy = {
+REPLACE_OR_CREATE:romanitas_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -295,6 +327,10 @@ romanitas_bureaucracy = {
 			AND = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
+			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -321,6 +357,7 @@ romanitas_bureaucracy = {
 	neutral_modifier = {
 		monthly_prestige = 0.2
 		cultural_influence_modifier = 0.1
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
@@ -328,6 +365,7 @@ romanitas_bureaucracy = {
 		scale = { value = scope:maintenance }
 		global_integration_speed_modifier = 0.25
 		monthly_legitimacy = 0.1
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -337,10 +375,11 @@ romanitas_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		diplomatic_reputation = -1
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-imperial_senate_bureaucracy = {
+REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -356,6 +395,10 @@ imperial_senate_bureaucracy = {
 			AND = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
+			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -370,12 +413,14 @@ imperial_senate_bureaucracy = {
 	#neutral
 	neutral_modifier = {
 		parliament_duration_modifier = 0.3
+		monthly_towards_br_bureaucratic = societal_value_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		parliament_base_support = 0.075
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -386,10 +431,11 @@ imperial_senate_bureaucracy = {
 		}
 		monthly_legitimacy = -0.2
 		monthly_republican_tradition = -0.2
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-kephalai_bureaucracy = {
+REPLACE_OR_CREATE:kephalai_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -406,6 +452,10 @@ kephalai_bureaucracy = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
+			}
 		}
 	}
 
@@ -415,10 +465,14 @@ kephalai_bureaucracy = {
 				text = won_fate_of_the_phoenix_disaster_tt
 				has_variable = won_fate_of_the_phoenix_disaster_variable
 			}
-
 			AND = {
 				has_or_had_tag = TRE
 				owns = location:constantinople
+			}
+			AND = { #br added
+				societal_value:centralization_vs_decentralization < -50
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -434,12 +488,14 @@ kephalai_bureaucracy = {
 	#neutral
 	neutral_modifier = {
 		government_size = 1
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		num_local_governors = 1
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -449,11 +505,12 @@ kephalai_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		estate_enrichment = 0.3
-		global_non_rural_monthly_prosperity = -0.003
+		global_non_rural_monthly_prosperity = -0.002 #was -0.003
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-magister_militum_bureaucracy = {
+REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -470,6 +527,10 @@ magister_militum_bureaucracy = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
+			}
 		}
 	}
 
@@ -478,6 +539,11 @@ magister_militum_bureaucracy = {
 			custom_tooltip = {
 				text = has_unlocked_bureaucracy_via_flavor_byz_31_tt
 				has_reform = government_reform:modern_imperial_army
+			}
+			AND = { #br added
+				societal_value:quality_vs_quantity < -50
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -494,6 +560,7 @@ magister_militum_bureaucracy = {
 	neutral_modifier = {
 		monthly_army_tradition = 0.2
 		monthly_navy_tradition = 0.2
+		monthly_towards_stratiotai = societal_value_monthly_move #br added
 	}
 
 	#positive
@@ -503,6 +570,7 @@ magister_militum_bureaucracy = {
 		train_general_ability = 25
 		train_admiral_ability = 25
 		military_tactics = 0.2
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -513,10 +581,11 @@ magister_militum_bureaucracy = {
 		}
 		monthly_legitimacy = -0.2
 		global_nobles_estate_power = 0.5
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-themata_bureaucracy = {
+REPLACE_OR_CREATE:themata_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -541,6 +610,13 @@ themata_bureaucracy = {
 				}
 			}
 			has_reform = government_reform:theme_system
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				OR = {
+					has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+					has_estate_privilege = estate_privilege:br_themata_reformed_privilege
+				}
+			}
 		}
 	}
 
@@ -553,15 +629,17 @@ themata_bureaucracy = {
 
 	#neutral
 	neutral_modifier = {
-		global_manpower_modifier = 0.075
-		global_levy_size_modifier = 0.075
+		global_manpower_modifier = 0.05 #was 0.075
+		global_levy_size_modifier = 0.1 #was 0.075
 		monthly_army_tradition = 0.1
+		monthly_towards_stratiotai = societal_value_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_defensive = 0.2
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -572,10 +650,11 @@ themata_bureaucracy = {
 		}
 		levy_recovery_modifier = -0.2
 		global_nobles_estate_power = 0.5
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
-allelengyon_bureaucracy = {
+REPLACE_OR_CREATE:allelengyon_bureaucracy = {
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -589,6 +668,10 @@ allelengyon_bureaucracy = {
 		OR = {
 			has_or_had_tag = BYZ
 			has_or_had_tag = TRE
+			AND = { #br added
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
+			}
 		}
 	}
 
@@ -598,10 +681,14 @@ allelengyon_bureaucracy = {
 				text = won_fate_of_the_phoenix_disaster_tt
 				has_variable = won_fate_of_the_phoenix_disaster_variable
 			}
-
 			AND = {
 				has_or_had_tag = TRE
 				owns = location:constantinople
+			}
+			AND = { #br added
+				societal_value:individualism_vs_communalism > 25
+				culture = { has_culture_group = culture_group:roman_group }
+				country_rank_level >= 3 # kingdom
 			}
 		}
 	}
@@ -618,12 +705,14 @@ allelengyon_bureaucracy = {
 	neutral_modifier = {
 		estate_enrichment = -0.1
 		global_peasant_enfranchisment = 0.05
+		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_monthly_prosperity = 0.001
+		monthly_roman_authority = 0.02 #br added
 	}
 
 	#negative
@@ -632,7 +721,8 @@ allelengyon_bureaucracy = {
 			value = 1
 			subtract = scope:maintenance
 		}
-		global_monthly_development = -0.0025
+		global_monthly_development = -0.002 #was -0.0025
+		monthly_roman_authority = -0.02 #br added
 	}
 }
 
