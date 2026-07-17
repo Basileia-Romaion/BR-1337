@@ -10874,36 +10874,30 @@ countries = {
 	}
 
 	#Naples
-	NAP = {
-		our_cores_conquered_by_others = {
-			aquila atri celano cittaducale csantangelo sulmona teramo chieti lanciano vasto bojano
-			isernia larino trivento altamura andria bari barletta monopoli bovino foggia lucera
-			manfredonia rotondo sansevero brindisi francavilla gallipoliita lecce martinafr taranto
-			acerenza lagonegro matera melfi montepeloso potenza santarcangelo catanzaro cotrone gerace
-			monteleone nicastro palmi reggiocal cassano castrovillari cosenza scalea paola rossano caserta
-			gaeta naples nola piedimonte sora venafro campagna salacon salerno vallo ariano avellino santangelo
-		}
+	#NAP = {
+		#our_cores_conquered_by_others = {
+			#aquila atri celano cittaducale csantangelo sulmona teramo chieti lanciano vasto bojano
+			#isernia larino trivento altamura andria bari barletta monopoli bovino foggia lucera
+			#manfredonia rotondo sansevero brindisi francavilla gallipoliita lecce martinafr taranto
+			#acerenza lagonegro matera melfi montepeloso potenza santarcangelo catanzaro cotrone gerace
+			#monteleone nicastro palmi reggiocal cassano castrovillari cosenza scalea paola rossano caserta
+			#gaeta naples nola piedimonte sora venafro campagna salacon salerno vallo ariano avellino santangelo
+		#}
 
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-
-			regnal_numbers = {
-			}
-			ruler = random
-		}
-		accepted_cultures = { sicilian }
-		tolerated_cultures = { median }
-		capital = naples
-		country_rank = rank_kingdom
-	}
+		#starting_technology_level = 3
+		#include = "expl_mediterranean"
+		#include = "expl_silk_road_west"
+		#include = "expl_silk_road_center"
+		#include = "expl_silk_road_east"
+		#include = "expl_indian_trade_route"
+		#include = "catholic_monarchy_not_present"
+		#government = {
+			#type = monarchy
+			#ruler = random
+		#}
+		#capital = naples
+		#country_rank = rank_kingdom
+	#}
 
 	#Provence (Union with Naples)
 	PRO = {
@@ -54596,7 +54590,8 @@ countries = {
 		include = "expl_silk_road_west"
 		government = {
 			type = monarchy
-			ruler = random
+			ruler = br_ere_rdm_character_121
+			ruler_term = { character = br_ere_rdm_character_121 start_date = 1335.1.1 }
 		}
 		currency_data = {
 			navy_tradition = 100
@@ -55555,7 +55550,7 @@ countries = {
 			war_exhaustion = 5
 		}
 		liturgical_language = koine_dialect
-		capital = emirdag
+		capital = karahisar_i_sahib
 	}
 
 	P2N = {
