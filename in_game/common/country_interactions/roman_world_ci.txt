@@ -3,7 +3,6 @@
 br_restore_roman_status = {
 	type = diplomacy
 	category = CATEGORY_HRE_ACTIONS
-
 	ai_limit_per_check = 1
 
 	potential = {
@@ -12,7 +11,6 @@ br_restore_roman_status = {
 			leader_country ?= scope:actor
 		}
 	}
-
 	allow = {
 		scope:actor = {
             is_leader_of_international_organization = international_organization:roman_world
@@ -29,6 +27,7 @@ br_restore_roman_status = {
 		visible = {
 			is_member_of_international_organization = international_organization:roman_world
 			is_rebel_country = no
+			is_ai = yes
 			international_organization:roman_world = {
 				country_has_special_status = {
 					type = special_status:defiant_strategoi
@@ -170,18 +169,10 @@ br_change_strategos = {
 
 	potential = {
 		exists = international_organization:roman_world
+
 		international_organization:roman_world = {
 			leader_country ?= scope:actor
 		}
-	}
-
-	allow = {
-		#scope:actor = {
-			#exists = ruler_or_heir_if_regent.dynasty
-			#ruler_or_heir_if_regent.dynasty = {
-				#num_adult_available_dynasty_members > 0
-			#}
-		#}
 	}
 	
 	select_trigger = {
@@ -194,27 +185,26 @@ br_change_strategos = {
 				}
 			}
 		}
-
 		cache_targets = yes
 		target_flag = recipient
 		name = "choose_country"
 		column = {
 			data = name
 		}
-
 		visible = {
-			is_subject_type = br_thema_subject
+			OR = {
+				is_subject_type = br_thema_subject
+				is_subject_type = br_naval_thema_subject
+				is_subject_type = pronoia
+			}
 			is_subject_of = scope:actor
 		}
 		enabled = {
-			#has_regent = yes
-			#has_heir = no
 			not = { is_at_war_with = scope:actor }
-			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
-			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
 		}
 	}
-
 	select_trigger = {
 		looking_for_a = character
 		source = actor
@@ -240,19 +230,17 @@ br_change_strategos = {
 		column = {
 			data = character_ruler
 		}
-
 		visible = {
 			is_alive = yes
 			is_ruler = no
 			is_heir = no
 			has_dynasty = yes
-			#dynasty = scope:actor.ruler_or_heir_if_regent.dynasty
 			is_adult = yes
 			religion = scope:actor.religion
 			modifier:blocked_from_character_interactions = no
 		}
 	}
-	
+
 	effect = {
 		scope:actor = {
 			change_roman_authority = { value = -5 }
@@ -264,7 +252,6 @@ br_change_strategos = {
 			scope:recipient = { set_new_ruler = scope:target }
 		}
 	}
-	
 	block_when_at_war = yes
 	
 	ai_will_do = {
@@ -284,11 +271,6 @@ br_allow_dynastic_inheritance = {
 			leader_country ?= scope:actor
 		}
 	}
-
-	allow = {
-
-	}
-	
 	select_trigger = {
 		looking_for_a = country
 		target_flag = recipient
@@ -299,25 +281,19 @@ br_allow_dynastic_inheritance = {
 				}
 			}
 		}
-
 		cache_targets = yes
 		target_flag = recipient
 		name = "choose_country"
 		column = {
 			data = name
 		}
-
 		visible = {
 			is_subject_type = br_thema_subject
 			succession_law = heir_selection:dynastic_elective_succession
 			is_subject_of = scope:actor
 		}
 		enabled = {
-			#has_regent = yes
-			#has_heir = no
 			not = { is_at_war_with = scope:actor }
-			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
-			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
 		}
 	}
 
@@ -332,7 +308,6 @@ br_allow_dynastic_inheritance = {
 			scope:recipient = { change_heir_selection = heir_selection:cognatic_primogeniture }
 		}
 	}
-
 	ai_will_do = {
 		add = -10
 	}
@@ -351,10 +326,6 @@ br_remove_dynastic_inheritance = {
 		}
 	}
 
-	allow = {
-
-	}
-	
 	select_trigger = {
 		looking_for_a = country
 		target_flag = recipient
@@ -365,25 +336,21 @@ br_remove_dynastic_inheritance = {
 				}
 			}
 		}
-
 		cache_targets = yes
 		target_flag = recipient
 		name = "choose_country"
 		column = {
 			data = name
 		}
-
 		visible = {
 			is_subject_type = br_thema_subject
 			succession_law = heir_selection:cognatic_primogeniture
 			is_subject_of = scope:actor
 		}
 		enabled = {
-			#has_regent = yes
-			#has_heir = no
 			not = { is_at_war_with = scope:actor }
-			#subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
-			#liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
 		}
 	}
 
@@ -398,7 +365,6 @@ br_remove_dynastic_inheritance = {
 			scope:recipient = { change_heir_selection = heir_selection:dynastic_elective_succession }
 		}
 	}
-
 	ai_will_do = {
 		add = -10
 	}
