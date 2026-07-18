@@ -475,8 +475,9 @@ br_on_game_start = {
 		}
 
 
-		#Starting roads
-		#Thrace
+	#Starting roads
+	 
+	 #Thrace
 		location:constantinople = {
 			add_road_to = {
 				target = location:silivri
@@ -549,7 +550,6 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
-
 		location:edirne = {
 			add_road_to = {
 				target = location:kirklareli
@@ -688,126 +688,33 @@ br_on_game_start = {
 				type = gravel_road
 			}
 		}
-
-		#Iberia
-		location:cordoba = {
+		location:karystos = {
 			add_road_to = {
-				target = location:sevilla
-				type = paved_road
+				target = location:negroponte
+				type = gravel_road
 			}
 		}
-		location:cordoba = {
+		location:thessaloniki = {
 			add_road_to = {
-				target = location:granada
-				type = paved_road
+				target = location:polygyros
+				type = gravel_road
 			}
 		}
-		location:granada = {
+		location:thessaloniki = {
 			add_road_to = {
-				target = location:malaga
-				type = paved_road
+				target = location:kassandreia
+				type = gravel_road
 			}
 		}
-		location:velez_malaga = {
-			add_road_to = {
-				target = location:almeria
-				type = paved_road
-			}
-		}
-		location:almeria = {
-			add_road_to = {
-				target = location:murcia
-				type = paved_road
-			}
-		}
-		location:murcia = {
-			add_road_to = {
-				target = location:orihuela
-				type = paved_road
-			}
-		}
-		location:orihuela = {
-			add_road_to = {
-				target = location:denia
-				type = paved_road
-			}
-		}
-		location:denia = {
-			add_road_to = {
-				target = location:tarragona
-				type = paved_road
-			}
-		}
-		location:tarragona = {
-			add_road_to = {
-				target = location:girona
-				type = paved_road
-			}
-		}
-		location:girona = {
-			add_road_to = {
-				target = location:prades
-				type = paved_road
-			}
-		}
-		location:prades = {
-			add_road_to = {
-				target = location:perpignan
-				type = paved_road
-			}
-		}
-		location:perpignan = {
-			add_road_to = {
-				target = location:agde
-				type = paved_road
-			}
-		}
-		location:agde = {
-			add_road_to = {
-				target = location:arles
-				type = paved_road
-			}
-		}
-		location:arles = {
-			add_road_to = {
-				target = location:marseille
-				type = paved_road
-			}
-		}
-		location:cordoba = {
-			add_road_to = {
-				target = location:toledo
-				type = paved_road
-			}
-		}
-		location:toledo = {
-			add_road_to = {
-				target = location:cuenca
-				type = paved_road
-			}
-		}
-		location:cuenca = {
-			add_road_to = {
-				target = location:valencia
-				type = paved_road
-			}
-		}
-
 		
-		#Anatolia
+	 #Anatolia
 		location:uskudar = {
 			add_road_to = {
 				target = location:izmit
 				type = paved_road
 			}
 		}
-		location:izmit = {
-			add_road_to = {
-				target = location:goynuk
-				type = paved_road
-			}
-		}
-		location:goynuk = {
+		location:iznik = {
 			add_road_to = {
 				target = location:sogut
 				type = paved_road
@@ -839,11 +746,17 @@ br_on_game_start = {
 		}
 		location:ankara = {
 			add_road_to = {
-				target = location:kalecik
-				type = paved_road
+				target = location:cubuk
+				type = gravel_road
 			}
 		}
-		location:kalecik = {
+		location:cubuk = {
+			add_road_to = {
+				target = location:sabanozu
+				type = gravel_road
+			}
+		}
+		location:ankara = {
 			add_road_to = {
 				target = location:karakecili
 				type = paved_road
@@ -857,13 +770,7 @@ br_on_game_start = {
 		}
 		location:sariyahsi = {
 			add_road_to = {
-				target = location:kochisar
-				type = paved_road
-			}
-		}
-		location:kochisar = {
-			add_road_to = {
-				target = location:aksaray
+				target = location:nevsehir
 				type = paved_road
 			}
 		}
@@ -923,8 +830,14 @@ br_on_game_start = {
 		}
 		location:izmit = {
 			add_road_to = {
-				target = location:bursa
+				target = location:iznik
 				type = paved_road
+			}
+		}
+		location:iznik = {
+			add_road_to = {
+				target = location:bursa
+				type = gravel_road
 			}
 		}
 		location:bursa = {
@@ -936,6 +849,18 @@ br_on_game_start = {
 		location:bergama = {
 			add_road_to = {
 				target = location:smyrna
+				type = gravel_road
+			}
+		}
+		location:ayasuluk = {
+			add_road_to = {
+				target = location:smyrna
+				type = gravel_road
+			}
+		}
+		location:ayasuluk = {
+			add_road_to = {
+				target = location:birgi
 				type = paved_road
 			}
 		}
@@ -1017,16 +942,46 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
-		location:obruk = {
+		location:altinekin = {
 			add_road_to = {
 				target = location:konya
 				type = paved_road
 			}
 		}
-		location:manisa = {
+		location:altinekin = {
 			add_road_to = {
-				target = location:birgi
+				target = location:karakecili
+				type = gravel_road
+			}
+		}
+		location:smyrna = {
+			add_road_to = {
+				target = location:kula
 				type = paved_road
+			}
+		}
+		location:kula = {
+			add_road_to = {
+				target = location:alasehir
+				type = paved_road
+			}
+		}
+		location:kula = {
+			add_road_to = {
+				target = location:gediz
+				type = gravel_road
+			}
+		}
+		location:gediz = {
+			add_road_to = {
+				target = location:aslanapa
+				type = gravel_road
+			}
+		}
+		location:aslanapa = {
+			add_road_to = {
+				target = location:kutahya
+				type = gravel_road
 			}
 		}
 		location:birgi = {
@@ -1049,7 +1004,7 @@ br_on_game_start = {
 		}
 		location:turgut = {
 			add_road_to = {
-				target = location:konya
+				target = location:obruk
 				type = paved_road
 			}
 		}
@@ -1065,7 +1020,12 @@ br_on_game_start = {
 				type = gravel_road
 			}
 		}
-
+		location:ankara = {
+			add_road_to = {
+				target = location:kalecik
+				type = paved_road
+			}
+		}
 		location:kalecik = {
 			add_road_to = {
 				target = location:amasya
@@ -1075,19 +1035,19 @@ br_on_game_start = {
 		location:amasya = {
 			add_road_to = {
 				target = location:sivas
-				type = paved_road
+				type = gravel_road
 			}
 		}
 		location:molevon = {
 			add_road_to = {
 				target = location:anavarza
-				type = paved_road
+				type = gravel_road
 			}
 		}
 		location:anavarza = {
 			add_road_to = {
 				target = location:adana
-				type = paved_road
+				type = gravel_road
 			}
 		}
 		location:uluborlu = {
@@ -1099,6 +1059,206 @@ br_on_game_start = {
 		location:beysehir = {
 			add_road_to = {
 				target = location:turgut
+				type = gravel_road
+			}
+		}
+		location:sogut = {
+			add_road_to = {
+				target = location:inonu
+				type = gravel_road
+			}
+		}
+		location:inonu = {
+			add_road_to = {
+				target = location:kutahya
+				type = gravel_road
+			}
+		}
+		location:kutahya = {
+			add_road_to = {
+				target = location:karahisar_i_sahib
+				type = gravel_road
+			}
+		}
+		location:honaz = {
+			add_road_to = {
+				target = location:uluborlu
+				type = gravel_road
+			}
+		}
+		location:dinar = {
+			add_road_to = {
+				target = location:antalya
+				type = gravel_road
+			}
+		}
+		location:manavgat = {
+			add_road_to = {
+				target = location:beysehir
+				type = gravel_road
+			}
+		}
+		location:bursa = {
+			add_road_to = {
+				target = location:balya
+				type = gravel_road
+			}
+		}
+		location:balya = {
+			add_road_to = {
+				target = location:bergama
+				type = gravel_road
+			}
+		}
+		location:bursa = {
+			add_road_to = {
+				target = location:bilecik
+				type = gravel_road
+			}
+		}
+		location:foca = {
+			add_road_to = {
+				target = location:bergama
+				type = gravel_road
+			}
+		}
+		location:foca = {
+			add_road_to = {
+				target = location:menemen
+				type = gravel_road
+			}
+		}
+		location:menemen = {
+			add_road_to = {
+				target = location:smyrna
+				type = gravel_road
+			}
+		}
+		location:bergama = {
+			add_road_to = {
+				target = location:edremit
+				type = gravel_road
+			}
+		}
+		location:edremit = {
+			add_road_to = {
+				target = location:ayvacik
+				type = gravel_road
+			}
+		}
+		location:edremit = {
+			add_road_to = {
+				target = location:balya
+				type = gravel_road
+			}
+		}
+		location:balya = {
+			add_road_to = {
+				target = location:bigadic
+				type = gravel_road
+			}
+		}
+		location:bigadic = {
+			add_road_to = {
+				target = location:kutahya
+				type = gravel_road
+			}
+		}
+		location:ayvacik = {
+			add_road_to = {
+				target = location:canakkale
+				type = gravel_road
+			}
+		}
+		location:canakkale = {
+			add_road_to = {
+				target = location:lapseki
+				type = gravel_road
+			}
+		}
+		location:lapseki = {
+			add_road_to = {
+				target = location:bandirma
+				type = gravel_road
+			}
+		}
+
+		location:ayasuluk = {
+			add_road_to = {
+				target = location:bodrum
+				type = gravel_road
+			}
+		}
+		location:bodrum = {
+			add_road_to = {
+				target = location:marmaris
+				type = gravel_road
+			}
+		}
+
+		location:bolu = {
+			add_road_to = {
+				target = location:akcasehir
+				type = gravel_road
+			}
+		}
+		location:bolu = {
+			add_road_to = {
+				target = location:cubuk
+				type = gravel_road
+			}
+		}
+		location:bartin = {
+			add_road_to = {
+				target = location:cankiri
+				type = gravel_road
+			}
+		}
+		location:boyabat = {
+			add_road_to = {
+				target = location:corum
+				type = gravel_road
+			}
+		}
+		location:sebinkarahisar = {
+			add_road_to = {
+				target = location:giresun
+				type = gravel_road
+			}
+		}
+		location:sebinkarahisar = {
+			add_road_to = {
+				target = location:sivas
+				type = gravel_road
+			}
+		}
+		location:afsin = {
+			add_road_to = {
+				target = location:kayseri
+				type = gravel_road
+			}
+		}
+		location:afsin = {
+			add_road_to = {
+				target = location:marash
+				type = gravel_road
+			}
+		}
+		location:lazkiye = {
+			add_road_to = {
+				target = location:guzelhisar
+				type = gravel_road
+			}
+		}
+		location:guzelhisar = {
+			add_road_to = {
+				target = location:ayasuluk
+				type = gravel_road
+			}
+		}
+		location:gokabat = {
+			add_road_to = {
+				target = location:lazkiye
 				type = gravel_road
 			}
 		}
@@ -1120,15 +1280,124 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
-		location:celtik = {
+		location:marmaris = {
 			add_road_to = {
-				target = location:ankara
+				target = location:kas
+				type = gravel_road
+			}
+		}
+		location:kas = {
+			add_road_to = {
+				target = location:antalya
+				type = gravel_road
+			}
+		}
+		location:bursa = {
+			add_road_to = {
+				target = location:kutahya
 				type = gravel_road
 			}
 		}
 
-		#Levant
 
+		location:pirloganda = {
+			add_road_to = {
+				target = location:divrigi
+				type = gravel_road
+			}
+		}
+
+		location:bozok = {
+			add_road_to = {
+				target = location:kayseri
+				type = gravel_road
+			}
+		}
+		location:bozok = {
+			add_road_to = {
+				target = location:sulusaray
+				type = gravel_road
+			}
+		}
+		location:bozok = {
+			add_road_to = {
+				target = location:sungurlu
+				type = gravel_road
+			}
+		}
+
+	 #taurcia
+		location:theodoro = {
+			add_road_to = {
+				target = location:kaffa
+				type = gravel_road
+			}
+		}
+		location:tana = {
+			add_road_to = {
+				target = location:sarai_al_jadid
+				type = gravel_road
+			}
+		}
+
+	 #crete
+		location:candia = {
+			add_road_to = {
+				target = location:chania
+				type = gravel_road
+			}
+		}
+		location:candia = {
+			add_road_to = {
+				target = location:siteia
+				type = gravel_road
+			}
+		}
+	 #cyprus
+		location:nicosia_cyp = {
+			add_road_to = {
+				target = location:larnaca
+				type = gravel_road
+			}
+		}
+		location:nicosia_cyp = {
+			add_road_to = {
+				target = location:morphou
+				type = gravel_road
+			}
+		}
+		location:morphou = {
+			add_road_to = {
+				target = location:paphos
+				type = gravel_road
+			}
+		}
+		location:paphos = {
+			add_road_to = {
+				target = location:limassol
+				type = gravel_road
+			}
+		}
+		location:limassol = {
+			add_road_to = {
+				target = location:larnaca
+				type = gravel_road
+			}
+		}
+		location:nicosia_cyp = {
+			add_road_to = {
+				target = location:kyrenia
+				type = gravel_road
+			}
+		}
+		location:nicosia_cyp = {
+			add_road_to = {
+				target = location:famagusta
+				type = gravel_road
+			}
+		}
+
+	 #Levant
 		location:antioch = {
 			add_road_to = {
 				target = location:jaffa
@@ -1153,6 +1422,25 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
+		location:damietta = {
+			add_road_to = {
+				target = location:mansoura
+				type = gravel_road
+			}
+		}
+		location:mansoura = {
+			add_road_to = {
+				target = location:samanoud
+				type = gravel_road
+			}
+		}
+		location:samanoud = {
+			add_road_to = {
+				target = location:qalyub
+				type = gravel_road
+			}
+		}
+
 		location:tartus = {
 			add_road_to = {
 				target = location:nabek
@@ -1171,7 +1459,6 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
-
 		location:isfahan = {
 			add_road_to = {
 				target = location:yazd
@@ -1286,9 +1573,81 @@ br_on_game_start = {
 				type = gravel_road
 			}
 		}
+		location:aleppo = {
+			add_road_to = {
+				target = location:deir_ez_zor
+				type = gravel_road
+			}
+		}
+		location:kars_armenia = {
+			add_road_to = {
+				target = location:kilis
+				type = gravel_road
+			}
+		}
+		location:kilis = {
+			add_road_to = {
+				target = location:dabiq
+				type = gravel_road
+			}
+		}
+		location:tabriz = {
+			add_road_to = {
+				target = location:beylagan
+				type = gravel_road
+			}
+		}
+		location:beylagan = {
+			add_road_to = {
+				target = location:baku
+				type = gravel_road
+			}
+		}
+		location:beylagan = {
+			add_road_to = {
+				target = location:tbilisi
+				type = gravel_road
+			}
+		}
+		location:baku = {
+			add_road_to = {
+				target = location:astrakhan
+				type = gravel_road
+			}
+		}
+		location:sarayjuk = {
+			add_road_to = {
+				target = location:astrakhan
+				type = gravel_road
+			}
+		}
+		location:sarayjuk = {
+			add_road_to = {
+				target = location:urgench
+				type = gravel_road
+			}
+		}
+		location:sarai_al_jadid = {
+			add_road_to = {
+				target = location:chyorny_yar
+				type = gravel_road
+			}
+		}
+		location:chyorny_yar = {
+			add_road_to = {
+				target = location:yenotayevka
+				type = gravel_road
+			}
+		}
+		location:yenotayevka = {
+			add_road_to = {
+				target = location:astrakhan
+				type = gravel_road
+			}
+		}
 
 
-		#Italy
+	 #Italy
 		location:rome = {
 			add_road_to = {
 				target = location:velletri
@@ -1451,6 +1810,244 @@ br_on_game_start = {
 				type = paved_road
 			}
 		}
+		location:milano = {
+			add_road_to = {
+				target = location:brescia
+				type = gravel_road
+			}
+		}
+		location:brescia = {
+			add_road_to = {
+				target = location:verona
+				type = gravel_road
+			}
+		}
+		location:milano = {
+			add_road_to = {
+				target = location:novara
+				type = gravel_road
+			}
+		}
+		location:novara = {
+			add_road_to = {
+				target = location:turin
+				type = gravel_road
+			}
+		}
+		location:turin = {
+			add_road_to = {
+				target = location:lyon
+				type = gravel_road
+			}
+		}
 
-    }
+	 #Iberia
+		location:cordoba = {
+			add_road_to = {
+				target = location:sevilla
+				type = paved_road
+			}
+		}
+		location:cordoba = {
+			add_road_to = {
+				target = location:granada
+				type = paved_road
+			}
+		}
+		location:granada = {
+			add_road_to = {
+				target = location:malaga
+				type = paved_road
+			}
+		}
+		location:velez_malaga = {
+			add_road_to = {
+				target = location:almeria
+				type = paved_road
+			}
+		}
+		location:almeria = {
+			add_road_to = {
+				target = location:murcia
+				type = paved_road
+			}
+		}
+		location:murcia = {
+			add_road_to = {
+				target = location:orihuela
+				type = paved_road
+			}
+		}
+		location:orihuela = {
+			add_road_to = {
+				target = location:denia
+				type = paved_road
+			}
+		}
+		location:denia = {
+			add_road_to = {
+				target = location:tarragona
+				type = paved_road
+			}
+		}
+		location:tarragona = {
+			add_road_to = {
+				target = location:girona
+				type = paved_road
+			}
+		}
+		location:girona = {
+			add_road_to = {
+				target = location:prades
+				type = paved_road
+			}
+		}
+		location:prades = {
+			add_road_to = {
+				target = location:perpignan
+				type = paved_road
+			}
+		}
+		location:perpignan = {
+			add_road_to = {
+				target = location:agde
+				type = paved_road
+			}
+		}
+		location:agde = {
+			add_road_to = {
+				target = location:arles
+				type = paved_road
+			}
+		}
+		location:arles = {
+			add_road_to = {
+				target = location:marseille
+				type = paved_road
+			}
+		}
+		location:cordoba = {
+			add_road_to = {
+				target = location:toledo
+				type = paved_road
+			}
+		}
+		location:toledo = {
+			add_road_to = {
+				target = location:cuenca
+				type = paved_road
+			}
+		}
+		location:cuenca = {
+			add_road_to = {
+				target = location:valencia
+				type = paved_road
+			}
+		}
+
+	 #West HRE
+		location:metz = {
+			add_road_to = {
+				target = location:strasbourg
+				type = gravel_road
+			}
+		}
+		location:metz = {
+			add_road_to = {
+				target = location:dijon
+				type = gravel_road
+			}
+		}
+		location:strasbourg = {
+			add_road_to = {
+				target = location:mulhouse
+				type = gravel_road
+			}
+		}
+		location:mulhouse = {
+			add_road_to = {
+				target = location:besancon
+				type = gravel_road
+			}
+		}
+		location:strasbourg = {
+			add_road_to = {
+				target = location:speyer
+				type = gravel_road
+			}
+		}
+		location:speyer = {
+			add_road_to = {
+				target = location:worms
+				type = gravel_road
+			}
+		}
+		location:worms = {
+			add_road_to = {
+				target = location:oppenheim
+				type = gravel_road
+			}
+		}
+		location:oppenheim = {
+			add_road_to = {
+				target = location:mainz
+				type = gravel_road
+			}
+		}
+		location:reims = {
+			add_road_to = {
+				target = location:aachen
+				type = gravel_road
+			}
+		}
+		location:troyes = {
+			add_road_to = {
+				target = location:bourges
+				type = gravel_road
+			}
+		}
+		location:bourges = {
+			add_road_to = {
+				target = location:autun
+				type = gravel_road
+			}
+		}
+		location:autun = {
+			add_road_to = {
+				target = location:dijon
+				type = gravel_road
+			}
+		}
+		location:bourges = {
+			add_road_to = {
+				target = location:limoges
+				type = gravel_road
+			}
+		}
+		location:limoges = {
+			add_road_to = {
+				target = location:clermont
+				type = gravel_road
+			}
+		}
+		location:limoges = {
+			add_road_to = {
+				target = location:perigueux
+				type = gravel_road
+			}
+		}
+		location:perigueux = {
+			add_road_to = {
+				target = location:libourne
+				type = gravel_road
+			}
+		}
+		location:clermont = {
+			add_road_to = {
+				target = location:lyon
+				type = gravel_road
+			}
+		}
+    
+	}
 }
