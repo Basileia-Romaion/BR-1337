@@ -41253,7 +41253,7 @@ countries = {
 		capital = krakow
 		dynasty = piast_dynasty
 		country_rank = rank_kingdom
-		court_language = church_dialect
+		#court_language = church_dialect
 
 		timed_modifier = {
 			modifier = "interdict"
@@ -41265,7 +41265,7 @@ countries = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
 			date = 1475.1.1
-			size = 0.33
+			size = 0.5
 		}
 
 		accepted_cultures = {
@@ -41850,7 +41850,7 @@ countries = {
 
 		capital = vilnius
 		dynasty = gediminid_dynasty
-		court_language = belarusian_dialect
+		court_language = polish_dialect
 		timed_modifier = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1

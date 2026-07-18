@@ -59,7 +59,6 @@ br_land_theme_rights = {
 		local_nobles_estate_power = 0.25
 		local_burghers_estate_power = -0.25
 		local_soldiers_desired_pop = 0.25
-
 		local_weaponry_output_modifier = 0.1
 	}
 	
@@ -95,9 +94,12 @@ br_dynatoi_rights = {
 		has_estate_privilege = estate_privilege:br_dynatoi_magnates
 	}
 	location_modifier = {
-		local_monthly_food_modifier = 0.5
+		local_army_levy_size_modifier = 0.1
+		local_nobles_estate_power = 0.33
+		local_monthly_food_modifier = 0.33
 		local_food_decay = -0.001
 		local_peasant_enfranchisment = -0.1
 	}
 	color = map_GBR
 }
+
