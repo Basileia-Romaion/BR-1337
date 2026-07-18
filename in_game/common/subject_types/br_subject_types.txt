@@ -942,6 +942,7 @@ br_phorophoros_subject = {  #Phorophóros
 	}
 	
 	subject_modifier = {
+		blocked_from_conversion = yes
 	}
 
 	diplo_chance_accept_subject = {
@@ -1001,6 +1002,13 @@ br_phorophoros_subject = {  #Phorophóros
                 }
             }
         }
+	}
+}
+
+
+INJECT:tributary = { 
+	subject_modifier = {
+		blocked_from_conversion = yes
 	}
 }
 
