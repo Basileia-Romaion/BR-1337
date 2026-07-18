@@ -785,7 +785,7 @@ br_armenian_mountain_strongholds = {
 	plateau_proximity_impact = -0.1
 }
 
-#
+##############################-Balkans-##############################
 br_balkan_mountain_strongholds = {
 	age = age_1_traditions
 	icon = hun_castle_warriors
@@ -837,5 +837,31 @@ br_magyar_cumen_cavalry = {
 	unlock_unit = a_steppe_horse_archers
 }
 
+
+##############################-Norse-##############################
+br_norse_heritage = {
+	icon = swedish_tradition
+	potential = {
+		culture = { has_culture_group = culture_group:scandinavian_group }
+	}
+	age = age_1_traditions
+	army_heavy_infantry_power = 0.1
+	army_tradition_from_battle = 0.2
+	levy_maintenance_modifier = -0.2
+	#exploration_maintenance_efficiency = 0.1
+		
+	requires = feudalism_advance
+}
+
+br_norse_diplomacy = {
+	icon = swedish_tradition
+	potential = {
+		culture = { has_culture_group = culture_group:scandinavian_group }
+	}
+	age = age_1_traditions
+	allow_tributary_subject = yes
+		
+	requires = br_norse_heritage
+}
 
 
