@@ -41,3 +41,8 @@
  MODIFIER_TYPE_DESC_monthly_towards_br_bureaucratic: "Authority is concentrated in the imperial administration, where Logothetai, clerks, and palace officials extend the reach of law and governance from the capital. The influence of provincial magnates is restrained as the machinery of state grows stronger and more centralized."
  MODIFIER_TYPE_NAME_monthly_towards_stratiotai: "Monthly Shift toward the Stratiōtai"
  MODIFIER_TYPE_DESC_monthly_towards_stratiotai: "Power rests increasingly with the Stratiōtai and the great landed families of the provinces. Soldier-farmers and military aristocrats alike command land, wealth, and armed retinues, forming a resilient but independent power base that strengthens the army while challenging central authority."
+
+ game_concept_stratiotai_gc: "$stratiotai_focus$"
+ game_concept_stratiotai_gc_desc: "$MODIFIER_TYPE_DESC_monthly_towards_stratiotai$"
+ game_concept_br_bureaucratic_gc: "$br_bureaucratic_focus$"
+ game_concept_br_bureaucratic_gc_desc: "$MODIFIER_TYPE_DESC_monthly_towards_br_bureaucratic$"

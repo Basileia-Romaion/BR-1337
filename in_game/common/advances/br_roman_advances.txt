@@ -734,7 +734,7 @@ br_pontic_heritage = {
 }
 
 #Mount Athos
-br_mount_athos_incense = {
+br_mount_athos_incense_advance = {
 	age = age_1_traditions
 	potential = {
 		has_reform = government_reform:br_holy_community
@@ -748,7 +748,7 @@ br_mount_athos_books = {
 		has_reform = government_reform:br_holy_community
 	}
 	global_books_output_modifier = 0.33
-	requires = br_mount_athos_incense
+	requires = br_mount_athos_incense_advance
 }
 br_mount_athos_wine = {
 	age = age_1_traditions
