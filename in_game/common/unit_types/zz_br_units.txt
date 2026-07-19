@@ -402,7 +402,7 @@ br_absolutism_varangians = {
 
 br_age_5_prokoursatores = {
 	is_special = yes
-	copy_from = a_byzantine_cataphracts_6
+	copy_from = a_age_5_absolutism_heavy_cavalry
 
 	upgrades_to_only = br_age_6_basilikoi
 	limit = cataphracts_unit_limit

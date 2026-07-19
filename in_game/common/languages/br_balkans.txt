@@ -294,75 +294,70 @@
 		} #Something Old Church Slavonic with much more greek influence
 		boulgaroi_dialect = {
 			male_names = {
-				name_asen name_alexander name_anthony name_angel name_athanasius name_alexis
-				name_borislav name_bogdan name_bogomil name_bronislav name_basil name_bartholomew
-				name_boris name_bernard name_bozidar
-				name_constantine name_christopher name_cosmas name_clement
-				name_damian name_demetrius name_daniel name_dennis name_dominic
-				name_emil 
-				name_george name_gabriel name_germanus name_gregory 
-				name_joachim name_jeremiah name_john
-				name_krasimir name_kresimir
-				name_lubomir name_lazarus
-				name_michael name_mark name_miroslav
+				name_alexander name_alexis Alkan name_andrew name_angel name_anthony name_asen name_athanasius
+				name_bartholomew name_basil name_belisarius name_bernard name_bogdan name_bogomil name_boris name_borislav name_bronislav
+				name_christopher name_constantine name_clement name_cosmas
+				name_damian name_daniel name_demetrius name_dennis name_dobromir name_dominic
+				name_elias name_emil
+				name_gabriel name_gennadius name_george name_gerasimos name_germanus name_gregory name_goran
+				name_jeremiah name_joachim name_john name_jordan
+				name_krasimir
+				name_lazarus name_lubomir
+				name_mark name_michael name_miroslav
 				name_nicholas
+				name_ognyan
 				name_paul name_peter
-				name_radomir name_radoslav name_radu 
-				name_stephen name_simeon name_samuel name_saba name_slavko name_strahomir name_svyatoslav
+				name_radomir name_radoslav name_radu
+				name_sabbas name_samuel name_simeon name_slavko name_stephen name_strahomir name_svyatoslav
 				name_theodore name_tomislav
-				name_wenceslas name_waldemar
-				name_vojnomir name_vladislav
-				name_zivko name_zdzislaw name_zdravko
+				name_waldemar name_wenceslas
+				name_vladislav name_vojnomir
+				name_zdravko name_zdzislaw name_zivko
 			}
 			female_names = {
-				name_alexandra name_antonia
-				name_biljana name_bogdana name_bojana name_borislava name_bogumila
-				name_christine
-				name_desislava
-				name_elizabeth name_emily name_eudokia
+				name_alexandra name_anna name_antonia name_athanasia
+				name_biljana name_bogdana name_bogumila name_bojana name_borislava
+				name_catherine name_christine
+				name_daphne name_desislava name_dorothy
+				name_elizabeth name_emily name_eudokia name_eve
 				name_georgia
-				name_joanna name_jordana
+				name_hope
+				name_irene
+				name_joanna name_jordana name_joy
 				name_krasimira
-				name_lydia name_lillian
-				name_maia
-				name_nadia name_nicole
-				name_philippa name_petra
+				name_lillian name_ludmila name_lydia
+				name_maia name_marigold name_miroslava
+				name_nicole
+				name_paraskevi name_petra name_philippa
 				name_regina name_rosa
-				name_silvia name_snezhana name_stanislava
-				name_theresa name_theodora name_tsveta
+				name_silvia name_snezhana name_sophia name_stanislava
+				name_theodora name_theodota name_theresa name_tihomira
 				name_vasilisa name_violet
-				name_yvonne name_yolande
+				name_yolande name_yvonne
 			}
 			dynasty_names = {
-				Krum Dulo Cometopuli name_asen Terter Shishman Teleki Vojislavljevic
-				Cantacuzino Smilets Battenberg Shervashidze Pejacevic
+				Battenberg Cantacuzino Cometopuli Dulo Krum name_asen Pejacevic Shervashidze Smilets Teleki Vojislavljevic
 			}
 			lowborn = {
-				Aleksandrov Aleksiev Alexandrov Alexiev Aliev Andonov Andov Andreev 
-				Angelov Antonov Apostolov Asenov Atanasov Avramov Balakov Balev Beron 
-				Blagoev Bogdanov Bojidarov Bojilov Bonev Borimirov Borisov Boshkov 
-				Botev Boyanov Bozinov Brakalov Brankov Briski Brukhalov Choroleev 
-				Christov Cvetkov Davidov Deskov Dimitrov Dimov Dinev Dobrev Donchev 
-				Donev Dounev Draganov Dzhurov Evanov Filipov Firfov Ganchev Ganev 
-				Genchev Genov Georghiev Georgiev Gergiev Ginchev Gogov Gospodinov 
-				Grigorov Gruev Guentchev Gueorgiev Hasanov Hinov Hlutev Hristov 
-				Hubchev Ignatiev Ignatov Iliev Iloski Ivanov Ivaylov Janev Jordanov 
-				Jovtvev Kamenov Karanov Karavelov Karshakov Katzarov Kirilov Kirov 
-				Kiryakov Kishishev Kolev Konstantinov Kostadinov Kostov Kovachev 
-				Kozlek Krastev Kremenliev Krumov Krupov Langov Lazarov Lechkov 
-				Liapchev Lomek Lukanov Lunchev Maleev Manolov Marinov Markhov Markov 
-				Matev Matov Metodiev Mihailov Mihaylov Mihov Milanov Milev Minchev 
-				Minkov Mitkov Mitov Mladenov Nachev Naydenov Nedelchev Nenov Nikolaev 
-				Nikolov Panayotov Paskalev Pavlov Peev Penchev Pendarev Penev Penov 
-				Petkov Petrinski Petrov Popov Prandjev Prandzhev Radev Raev Rangelov 
-				Rusev Savov Simeonov Sirakov Slavov Sofiyanski Spasov Spassov Spirov 
-				Stamboliev Stanchev Stanev Stankov Stanoytchev Stefanov Stoev Stoianov 
-				Stoickkov Stoilov Stojanov Stoyanov Stoychev Stoykov Strashilov 
-				Svetkov Tanev Tasev Terziev Tihanek Todorov Tomash Tomov Tonev 
-				Tontchev Trifonov Tsankov Tsvetanov Tsvetkov Tzekin Uzunov Valchev 
-				Valkov Vasilev Vassilev Velev Velikov Velkov Videnov Vlamidirov 
-				Vulchanov Yanev Yankov Yordanov Yordanyotov Yotov Zahariev Zdravkov 
-				Zelenogorski Zhelev Zhivkov Zlatev
+				Aleksandrov Aleksiev Alexandrov Alexiev Aliev Andreev Angelov Antonov Apostolov Asenov Atanasov Avramov 
+				Balakov Blagoev Bogdanov Bonev Borimirov Borisov Botev Boyanov Bozinov Brakalov 
+				Choroleev Cvetkov 
+				Davidov Deskov Dimitrov Dimov Dinev Dobrev Donchev Draganov Dzhurov 
+				Filipov Firfov 
+				Ganchev Georgiev Gogov Gospodinov Grigorov Gueorgiev 
+				Hinov Hlutev Hristov Hubchev 
+				Ignatiev Ignatov Iliev Iloski Ivanov Ivaylov 
+				Kamenov Karavelov Kirilov Kiryakov Kolev Konstantinov Kostadinov Kostov Krastev Krumov 
+				Lazarov Lukanov Lunchev 
+				Manolov Marinov Markov Mihaylov Mladenov 
+				Nedelchev Nenov Nikolaev Nikolov 
+				Paskalev Pavlov Penev Petkov Petrinski Petrov Popov Prandzhev 
+				Radev Rangelov Rusev 
+				Savov Simeonov Slavov Stanev Stankov Stefanov Stoilov Stoyanov 
+				Tanev Tasev Terziev Todorov Tomov Trifonov Tsankov Tsvetanov 
+				Valchev Vasilev Velikov Videnov 
+				Yanev Yankov Yordanov 
+				Zahariev Zdravkov Zelenogorski Zhelev Zhivkov Zlatev
 			}
 		}
 		varangian_dialect = {

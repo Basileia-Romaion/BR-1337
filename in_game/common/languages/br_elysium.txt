@@ -3,64 +3,34 @@
 	color = map_BYZ
 	family = romance_language_family
 
+	fallback = greek_language # this is so Byzantium can keep their Greek names that haven't been translated into Latin yet if they switch to Latin culture
+
 	male_names = {
-		Appius Agrippa Aulus Caelus Decimus Decius Drusus name_faustus Gaius Gnaeus name_lucius Mamercus Manius name_mark Mettius Opiter 
-		Publius Postumus Proculus Quintus Secundus Septimus Servius name_sextus Spurius Tertius name_titus Tiberius Volero Volumnius name_octavius
+		name_aeneas Appius Agrippa name_aulus Caelus name_chrysogonos name_decimus name_decius Drusus name_faustus name_gaius name_gnaeus name_lucius Mamercus name_manius name_mark Mettius Opiter 
+		name_publius Postumus Proculus name_quintus name_secundus Septimus name_servius name_sextus name_spurius Tertius name_titus name_tiberius Volero Volumnius name_octavius
 		Statius Tullus Volesus Vopiscus Caeso Paullus Hostus Numerius Sertor Potitus Vibius Cossus Arruns Camillus name_august
-		#Greek
-		name_adrian name_aeneas name_akakios name_alexander name_alexis name_ambrose name_anastasius name_anatoly name_andrew name_andronikos Anthemios name_anthimos name_antiocos name_anthony Apollonios Argyros name_arsenios name_artemios name_athanasius 
-		Bardas name_bartholomew name_basil name_belisarius Boethios Bosporios 
-		name_castor name_christopher name_chrysanthos name_chrysogonos name_constantine name_cyriacus
-		name_damian name_demetrius name_dennis Diogenes name_dorotheos 
-		name_elias name_elpidius Eudoxios Euphemios name_eusebius name_eustathius Eustratios name_evangelos 
-		name_gabriel name_gennadius name_george name_gerasimos name_germanus name_gregory
-		Hektorios name_heraclius name_hercules Hierotheos Himerios
-		name_irenaeus
-		name_jason name_john
-		name_lycus
-		name_matthew
-		name_nestor name_nicodemus name_nikomedes
-		name_onesim name_orestes
-		Palaemon name_paul name_pelagius name_peter name_philemon name_philip name_prokop
-		Skantarios name_stephen   
-		name_theodore name_thomas  
 	}
 	female_names = {
-		name_agrippina Appia Aula Caesula Decima name_fausta Gaia Gnaea Hosta name_lucia Maio Mamerca Mania Marcia Maxima Mettia Mino Nona Numeria
-		Octavia Paulla Postuma Prima Procula Publia Quarta Quinta Secunda Septima Servia Sexta Spuria Statia Tertia Titia
+		name_agrippina Appia Aula Caesula Decima name_fausta Gaia Gnaea Hosta name_lucia Maio Mamerca Mania name_marcia Maxima Mettia Mino Nona Numeria
+		name_octavia Paulla Postuma Prima Procula Publia Quarta Quinta Secunda Septima Servia Sexta Spuria Statia Tertia Titia
 		Tiberia Tulla Vibia Volusa Vopisca
-		# Greek
-		name_adriana name_agatha name_agnes name_alexandra name_anastasia name_anna Anthe Anthousa Antipatra name_antonia name_apollonia name_athanasia 
-		name_barbara Basillike
-		Chrysogone name_caroline name_constance name_constantina name_cyriaca
-		Damiane name_daphne Demetra name_denise name_dorothy
-		Elaiodora name_epifania name_eudokia name_eudoxia name_eugenie name_eulalia name_eunice name_euphemia name_euphrasia name_euphrosyne name_eupraxia name_eustathia Evanthia
-		Garyphallia name_gillette name_gregoria
-		name_helen Hypatia
-		name_irene  
-		name_joanna    
-		Kale name_kyra    
-		name_paraskevi  
-		name_zoe
 	}
 	dynasty_names = {
-		name_helios name_anthony name_cassius name_claude name_cornelius Fabius Flavius name_julius name_livius	name_marius name_octavius Pompeius Sempronius Valerius
+		name_helios name_anthony name_cassius name_claude name_cornelius Fabius name_flavius name_julius name_livius name_marius name_octavius Pompeius Sempronius name_valerius
 	}
 	lowborn = {
 		Vorenius Pullo
-		Aburius	Accius Acilius Acutius Aebutius Aemilius Alienus Anicius Annius
-		Antius Antistius Appuleius Apronius Aquillius name_attilio Atius	Aufidius Aulius
-		Blossius name_aurelius Caecinus Caecilius Calavius Calpurnius Cantius Carvilius Catius Centenius	Cilnius	Cispius	Cloelius Cominius
-		Coruncanius Curiatius Curtius Curius Decius Domitius name_fabrice Foslius Fulcinius Fulvius Furius	Funius
-		Gabinius Galerius Gracchus Geganius Gellius	Herminius Horatius Hortensius Hostilius
-		Junius Juventius Laetorius Lartius Licinius name_lucius Lucretius Maelius Maenius Mamilius Manlius Marcius
+		Aburius Accius Acilius Acutius Aebutius Aemilius Alienus Anicius Annius
+		Antius Antistius Appuleius Apronius Aquillius name_attilio Atius Aufidius Aulius
+		Blossius name_aurelius Caecinus Caecilius Calavius Calpurnius Cantius Carvilius Catius Centenius Cilnius Cispius Cloelius Cominius
+		Coruncanius Curiatius Curtius Curius name_decius Domitius name_fabrice Foslius Fulcinius Fulvius Furius Funius
+		Gabinius name_galerius Gracchus Geganius Gellius Herminius name_horatius Hortensius Hostilius
+		Junius Juventius Laetorius Lartius name_licinius name_lucius Lucretius Maelius Maenius Mamilius Manlius name_marcius
 		Memmius Messius Metilius Minucius Mummius Nigidius Ninnius Nonius Numicius Numisius
-		Ofilius	Ogulnius Opimius Oppius Octacilius Ovidius Papirius Pinarius Plautius Plinius Postumius Pompilius 	
+		Ofilius Ogulnius Opimius Oppius Octacilius Ovidius Papirius Pinarius Plautius Plinius Postumius Pompilius 	
 		Pomponius Popillius Porcius Publilius Pupius Quintilius Quinctius Rabirius Resius Romilius Salonius Salvius Scribonius
-		Sergius	Sertorius Servilius	Sestius Sextius Sextilius Sicinius Silius Sulpicius Titius Tremulus Tullius Ulpius
+		name_sergius Sertorius Servilius Sestius Sextius Sextilius Sicinius Silius Sulpicius Titius Tremulus Tullius Ulpius
 		Verginius Veturius Vesuvius Villius Viridius Volumnius
-		# Greek
-		Adamos Chloros Dimopoulos Economou Galatas Georgiadis Halkias Ioannidis Kameniatis Karagiannis Konstantinidis Makris Mallas name_papadopoulos Nikolaos Papageorgiou Samaras Vasiliou Vlahos
 	}
 
 	patronym_prefix_son = "patronym_prefix_latin_son"
