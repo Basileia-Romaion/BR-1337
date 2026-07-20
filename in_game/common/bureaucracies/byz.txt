@@ -9,6 +9,10 @@
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
+		uses_government_power = legitimacy
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
@@ -16,14 +20,13 @@
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
 			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank_level >= 3 # kingdom
 			}
 		}
-	}
-
-	allow = {
-		uses_government_power = legitimacy
 	}
 
 	estates_that_like = {
@@ -77,6 +80,9 @@ REPLACE_OR_CREATE:honorary_titles_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
@@ -84,7 +90,10 @@ REPLACE_OR_CREATE:honorary_titles_bureaucracy = {
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
 			AND = {
-				culture = { has_culture_group = culture_group:roman_group } #br added
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank = country_rank:rank_empire
 			}
 		}
@@ -134,6 +143,9 @@ REPLACE_OR_CREATE:court_eunuchs_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
@@ -141,7 +153,10 @@ REPLACE_OR_CREATE:court_eunuchs_bureaucracy = {
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
 			AND = {
-				culture = { has_culture_group = culture_group:roman_group } #br added
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank = country_rank:rank_empire
 			}
 		}
@@ -182,6 +197,9 @@ REPLACE_OR_CREATE:ritualistic_court_bureaucracy = {
 	}
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
@@ -189,7 +207,10 @@ REPLACE_OR_CREATE:ritualistic_court_bureaucracy = {
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
 			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank_level >= 3 # kingdom
 			}
 		}
@@ -249,11 +270,21 @@ REPLACE_OR_CREATE:sixty_books_of_the_basilika_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
 				has_or_had_tag = TRE
 				has_variable = tre_unlocked_byz_bureaucracies
+			}
+			AND = { #br added
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
+				country_rank = country_rank:rank_empire
 			}
 		}
 	}
@@ -311,7 +342,7 @@ REPLACE_OR_CREATE:sixty_books_of_the_basilika_bureaucracy = {
 	}
 }
 
-REPLACE_OR_CREATE:romanitas_bureaucracy = {
+REPLACE_OR_CREATE:romanitas_bureaucracy = { #rework
 	implementation_price = price:implement_bureaucracy_price
 	maintenance_price = price:maintain_bureaucracy_price
 	removal_price = price:remove_bureaucracy_price
@@ -322,17 +353,7 @@ REPLACE_OR_CREATE:romanitas_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
-		OR = {
-			has_or_had_tag = BYZ
-			AND = {
-				has_or_had_tag = TRE
-				has_variable = tre_unlocked_byz_bureaucracies
-			}
-			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				country_rank_level >= 3 # kingdom
-			}
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	allow = {
@@ -390,6 +411,9 @@ REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	allow = {
 		OR = {
 			has_or_had_tag = BYZ
 			AND = {
@@ -397,8 +421,11 @@ REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 				has_variable = tre_unlocked_byz_bureaucracies
 			}
 			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				country_rank_level >= 3 # kingdom
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
+				country_rank = country_rank:rank_empire
 			}
 		}
 	}
@@ -446,17 +473,7 @@ REPLACE_OR_CREATE:kephalai_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
-		OR = {
-			has_or_had_tag = BYZ
-			AND = {
-				has_or_had_tag = TRE
-				has_variable = tre_unlocked_byz_bureaucracies
-			}
-			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				country_rank_level >= 3 # kingdom
-			}
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	allow = {
@@ -521,17 +538,7 @@ REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
-		OR = {
-			has_or_had_tag = BYZ
-			AND = {
-				has_or_had_tag = TRE
-				has_variable = tre_unlocked_byz_bureaucracies
-			}
-			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				country_rank_level >= 3 # kingdom
-			}
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	allow = {
@@ -542,7 +549,10 @@ REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 			}
 			AND = { #br added
 				societal_value:quality_vs_quantity < -50
-				culture = { has_culture_group = culture_group:roman_group }
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank_level >= 3 # kingdom
 			}
 		}
@@ -596,10 +606,7 @@ REPLACE_OR_CREATE:themata_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
-		OR = {
-			has_or_had_tag = BYZ
-			has_or_had_tag = TRE
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	allow = {
@@ -609,13 +616,10 @@ REPLACE_OR_CREATE:themata_bureaucracy = {
 					bureaucracy_type = bureaucracy_type:magister_militum_bureaucracy
 				}
 			}
-			has_reform = government_reform:theme_system
-			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				OR = {
-					has_estate_privilege = estate_privilege:br_themata_peasant_privilege
-					has_estate_privilege = estate_privilege:br_themata_reformed_privilege
-				}
+			OR = {
+				has_estate_privilege = estate_privilege:br_themata_peasant_privilege
+				has_estate_privilege = estate_privilege:br_themata_reformed_privilege
+				has_reform = government_reform:theme_system
 			}
 		}
 	}
@@ -665,14 +669,7 @@ REPLACE_OR_CREATE:allelengyon_bureaucracy = {
 
 	potential = {
 		has_dlc = "d008_fate_of_the_phoenix"
-		OR = {
-			has_or_had_tag = BYZ
-			has_or_had_tag = TRE
-			AND = { #br added
-				culture = { has_culture_group = culture_group:roman_group }
-				country_rank_level >= 3 # kingdom
-			}
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 	}
 
 	allow = {
@@ -687,7 +684,10 @@ REPLACE_OR_CREATE:allelengyon_bureaucracy = {
 			}
 			AND = { #br added
 				societal_value:individualism_vs_communalism > 25
-				culture = { has_culture_group = culture_group:roman_group }
+				OR = {
+					culture = { has_culture_group = culture_group:greek_group }
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 				country_rank_level >= 3 # kingdom
 			}
 		}
