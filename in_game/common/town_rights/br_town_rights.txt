@@ -92,7 +92,6 @@ br_dynatoi_rights = {
 	#icon = manorial_customals
 	potential = {
 		has_estate_privilege = estate_privilege:br_dynatoi_magnates
-		this = location:tabriz
 	}
 	location_modifier = {
 		local_army_levy_size_modifier = 0.1
@@ -107,8 +106,16 @@ br_dynatoi_rights = {
 br_siderokausia_rights = {
 	#icon = mining_charter
 	potential = {
-		this = location:polygyros
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+		}
 	}
+	allow = {
+        scope:target = {
+            this = location:polygyros
+        }
+    }
 	location_modifier = {
 		local_goods_gold_output_modifier = 0.1
         local_market_access = 0.03
