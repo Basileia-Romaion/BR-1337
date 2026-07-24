@@ -31,6 +31,7 @@
 # global_distance_from_capital_speed_propagation = 0.2
 # land_cost_on_distance_from_capital_speed_propagation = 0.2
 # sea_cost_on_distance_from_capital_when_maritime = -1
+#artillery_bonus_vs_fort = 1
 
 #
 #global_max_literacy = 5
@@ -85,8 +86,8 @@ roman_romaioi_identity = {
 		}
 	}
 	requires = state_administration_advance
-	global_pop_assimilation_speed_modifier = 0.25
-	cultural_influence_modifier = 0.25
+	global_pop_assimilation_speed_modifier = 0.1
+	cultural_influence_modifier = 0.1
 	unlock_policy = br_roman_tradition
 }
 
@@ -122,7 +123,8 @@ roman_pronoial_administration = {
 	requires = roman_codified_custom
 	unlock_policy = br_pronoia_system
 	unlock_building = br_pronoia_estate
-	subject_loyalty = 5
+	subject_opinions = 5
+	#subject_loyalty = 5
 }
 
 roman_akritic_reforms = {
@@ -159,8 +161,8 @@ br_roman_ecumenical_patriarch_advance = {
 			}
 		}
 	}
-
-	global_heretic_pop_conversion_speed_modifier = 0.25
+	global_pop_conversion_speed_modifier = 0.1
+	#global_heretic_pop_conversion_speed_modifier = 0.25
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	unlock_subject_type = br_stavropegion_subject
 	icon = church_councils
@@ -170,7 +172,7 @@ br_roman_ecumenical_patriarch_advance = {
 
 # AGE 2 – Renaissance
 
-roman_scribal_administration = {
+roman_scribal_administration = { #logothetes
 	age = age_2_renaissance
 	icon = administrative_leadership
 	potential = {
@@ -352,10 +354,24 @@ roman_civic_order = {
 		}
 	}
 	requires = roman_imperial_legitimacy
-	tolerance_own = 0.5
+	tolerance_own = 0.25
 	global_urban_build_buildings_efficiency = 0.05
 	global_pop_promotion_speed_modifier = 0.1
 	ai_weight = { add = 5 }
+}
+
+br_roman_inquisition = {
+	icon = byz_heart_of_orthodoxy_advance
+	age = age_4_reformation
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	requires = roman_civic_order
+	global_pop_conversion_speed_modifier = 0.1
 }
 
 br_kekhrismene_advance = {

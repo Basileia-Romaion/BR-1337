@@ -2407,7 +2407,7 @@ countries = {
 		liturgical_language = church_slavonic_language
 
 		capital = trubchevsk
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 		include = "expl_novgorod"
 	}
 
@@ -2489,7 +2489,7 @@ countries = {
 		}
 
 		capital = chernihiv
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 		include = "expl_novgorod"
 	}
 
@@ -2516,7 +2516,7 @@ countries = {
 
 		dynasty = rurikovich_dynasty
 		capital = starodub_siverskyi
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 		include = "expl_novgorod"
 	}
 
@@ -2545,7 +2545,7 @@ countries = {
 
 		dynasty = rurikovich_dynasty
 		capital = novhorod_siverskyi
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 		include = "expl_novgorod"
 	}
 
@@ -2569,7 +2569,7 @@ countries = {
 		dynasty = rurikovich_dynasty
 		capital = rylsk
 		include = "expl_northern_europe"
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 	}
 
 	#Principality of Novosil	(Новосильское княжество)
@@ -41940,7 +41940,7 @@ countries = {
 		}
 
 		include = "expl_eastern_europe"
-		include = "lithuanian_monarchy"
+		include = "br_russian_principality"
 		government = {
 			ruler = pok_narimantas_gediminds
 
@@ -42280,7 +42280,7 @@ countries = {
 		}
 
 		include = "expl_eastern_europe"
-		include = "lithuanian_monarchy"
+		include = "br_russian_principality"
 		government = {
 			ruler = vbk_algirdas_gediminds
 
@@ -42381,7 +42381,7 @@ countries = {
 		}
 
 		include = "expl_eastern_europe"
-		include = "lithuanian_monarchy"
+		include = "br_russian_principality"
 		government = {
 			ruler = smo_ivan_alexandrovich_rurikovich 
 
@@ -42437,7 +42437,7 @@ countries = {
 		}
 		
 		include = "expl_eastern_europe"
-		include = "ruthenian_principality_no_coast"
+		include = "br_russian_principality"
 		government = {
 			ruler = kie_teodoras_ivanovich_rurikovich
 

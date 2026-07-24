@@ -864,6 +864,28 @@
 		}
 	}
 
+	br_russian_subject_privilege = { #to stop the russian subjects from being force converted. and some extra buffs
+		estate = clergy_estate
+		icon = dhimmi_mazalim_court
+		potential = {
+			culture = { has_culture_group = culture_group:russian_group }
+			religion ?= religion:orthodox
+		}
+		country_modifier = {
+			global_clergy_estate_power = 0.25
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+			
+			blocked_from_conversion = yes
+
+			global_defensive = 0.1
+			global_hostile_attrition = 0.25
+			fort_maintenance_efficiency = 0.1
+		}
+		ai_weight = {
+			add = 25
+		}
+	}
+
 	br_fortified_religious_enclave = {
 		icon = villes_franches #expansionist_zealotry #jaysh_armies
 		potential = {
