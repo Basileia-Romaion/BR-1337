@@ -172,7 +172,7 @@ REPLACE_OR_CREATE:theodosian_walls = {
 	location_potential = {
 		this = location:constantinople
 	}
-	
+
 	country_potential = {
 		owns = location:constantinople
 	}
@@ -284,4 +284,52 @@ REPLACE_OR_CREATE:aqueduct_system = {
 	#	monthly_republican_tradition = 0.1
 	#	monthly_devotion = 0.1
 	#}
+}
+
+
+br_yorvik_capital = {
+	icon = kings_manor
+	audio_tier = 3
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+
+	employment_size = large_noble_employment
+	category = government_category
+
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		tag = NSE
+	}
+	allow = {
+		always = no
+	}
+
+	build_time = government_build_time
+	location_potential = {
+		this = location:york
+	}
+
+	unique_production_methods = {
+		br_yorvik_capital_maintenance = {
+			tools = 0.1
+			masonry = 0.2
+			weaponry = 0.1
+			paper = 0.5
+			furniture = 0.25
+			fine_cloth = 0.25
+
+			category = building_maintenance
+		}
+	}
+	construction_demand = early_capital_building_construction
+	modifier = {
+		local_nobles_estate_power = 1
+		local_proximity_source = 50
+	}
 }

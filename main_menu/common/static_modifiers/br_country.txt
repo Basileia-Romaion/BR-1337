@@ -1,4 +1,4 @@
-###################################
+﻿###################################
 # Hardcoded
 ###################################
 #stability_cost_efficiency
@@ -126,6 +126,24 @@ br_assimilation_culture_buff = {
 	global_pop_assimilation_speed = 0.01 #10
 	global_pop_assimilation_speed_modifier = 0.5
 }
+
+# One per societal value in game/in_game/common/societal_values
+# Will be scaled with cabinet efficiency
+
+br_bureaucratic_progress_cabinet_efficiency = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_br_bureaucratic = 1
+}
+
+stratiotai_progress_cabinet_efficiency = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_stratiotai = 1
+}
+
 
 #replace vanilla for better balance
 

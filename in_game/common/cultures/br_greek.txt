@@ -92,7 +92,7 @@ REPLACE_OR_CREATE:griko_culture = {
 	country_modifier = {
 		global_sailors_modifier = 0.1
 		global_defensive = 0.1
-		#navy_repair_cost
+		trade_sea_efficiency = 0.1
 	}
 	location_modifier = {
 		local_pop_assimilation_speed_modifier = -0.25
@@ -256,9 +256,8 @@ indikes_greek_culture = {
 	}
 	country_modifier = {
 		port_cost_distance_from_capital = -5
-		navy_repair_cost = -0.25
 		trade_range_modifier = 0.5
-		#unlock_casus_belli = cb_exploration
+		trade_sea_efficiency = 0.1
 	}
 	location_modifier = {
 		local_burghers_estate_unrest = 0.1
@@ -406,7 +405,7 @@ rhos_culture = {
 	language = rhos_dialect
 	color = rgb { 121 186 138 }
 	
-	tags = { greek_gfx russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+	tags = { greek_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
 	
 	opinions = {
 		greek_culture = positive

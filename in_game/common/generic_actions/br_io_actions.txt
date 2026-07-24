@@ -32,23 +32,8 @@
 
     select_trigger = {
         looking_for_a = country
-        interaction_source_list = {
-            OR = {
-			    region:anatolia_region = {
-				    every_location_in_region = {
-				    	owner ?= {						
-				    		add_to_list = source
-				    	}
-			    	}
-			    }
-                region:balkan_region = {
-				    every_location_in_region = {
-				    	owner ?= {						
-				    		add_to_list = source
-				    	}
-			    	}
-			    }
-            }
+		interaction_source_list = {
+			scripted_geography:macedonian_dynasty_byzantine_empire_geography = { add_to_list = source }
 		}
         target_flag = target
         name = "choose_country"
@@ -189,38 +174,6 @@ roman_world_bestow_domestikos_west = {
 		}
 	}
 
-	accept = {
-		if = {
-			limit = { exists = scope:target }
-			add = {
-				desc = "THEIR_OPINION_TOOLTIP"
-				value = "scope:target.opinion(scope:actor)"
-				if = {
-					limit = {
-						scope:target = {
-							"opinion(scope:actor)" > 0
-						}
-					}
-					divide = 10
-				}
-				else = {
-					divide = 5
-				}
-			}
-			add = {
-				scope:actor = {
-					value = modifier:diplomatic_reputation
-					multiply = 3
-				}
-			}
-			add = {
-				scope:target = {
-					value = "trust(scope:actor)"
-					divide = 5
-				}
-			}
-		}
-	}
 }
 
 roman_world_rescind_domestikos_west = {
@@ -387,39 +340,6 @@ roman_world_bestow_domestikos_east = {
 				}
 			}
 			add = 25
-		}
-	}
-
-	accept = {
-		if = {
-			limit = { exists = scope:target }
-			add = {
-				desc = "THEIR_OPINION_TOOLTIP"
-				value = "scope:target.opinion(scope:actor)"
-				if = {
-					limit = {
-						scope:target = {
-							"opinion(scope:actor)" > 0
-						}
-					}
-					divide = 10
-				}
-				else = {
-					divide = 5
-				}
-			}
-			add = {
-				scope:actor = {
-					value = modifier:diplomatic_reputation
-					multiply = 3
-				}
-			}
-			add = {
-				scope:target = {
-					value = "trust(scope:actor)"
-					divide = 5
-				}
-			}
 		}
 	}
 }

@@ -32,21 +32,13 @@
 	text = {
 		localization_key = country_rank_br_holy_community
 		trigger = {
-			AND = {
-				#country_rank = country_rank:rank_county
-				has_reform = government_reform:br_holy_community
-				has_culture_group = culture_group:roman_group
-			}
+			has_reform = government_reform:br_holy_community
 		}
 	}
 	text = {
 		localization_key = country_rank_br_foideratoi
 		trigger = {
-			AND = {
-				#country_rank = country_rank:rank_county
-				has_reform = government_reform:br_sub_foideratoi_subject
-				has_culture_group = culture_group:roman_group
-			}
+			has_reform = government_reform:br_sub_foideratoi_subject
 		}
 	}
 	text = {
@@ -55,7 +47,6 @@
 			AND = {
 				country_rank = country_rank:rank_county
 				has_reform = government_reform:br_sub_theme_subject
-				has_culture_group = culture_group:greek_group
 			}
 		}
 	}
@@ -68,7 +59,6 @@
 					has_reform = government_reform:br_sub_pronoia_subject
 					has_reform = government_reform:br_sub_theme_subject
 				}
-				has_culture_group = culture_group:greek_group
 			}
 		}
 	}
@@ -79,18 +69,16 @@
 			AND = {
 				country_rank = country_rank:rank_county
 				has_reform = government_reform:br_sub_pronoia_subject
-				has_culture_group = culture_group:greek_group
 			}
 		}
 	}
 
 	text = {
-		localization_key = country_rank_br_exarchate
+		localization_key = country_rank_br_exarchate #Despotate
 		trigger = {
 			AND = {
 				country_rank = country_rank:rank_kingdom
 				has_reform = government_reform:br_sub_pronoia_subject
-				has_culture_group = culture_group:greek_group
 			}
 		}
 	}
@@ -101,7 +89,6 @@
 			AND = {
 				country_rank = country_rank:rank_kingdom
 				has_reform = government_reform:br_sub_theme_subject
-				has_culture_group = culture_group:greek_group
 			}
 		}
 	}

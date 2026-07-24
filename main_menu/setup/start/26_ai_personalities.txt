@@ -5,21 +5,33 @@ countries = {
 	countries = {
 
 		#BR Additions
+
+		MZF ?= { ai_personality = ai_aggressive }
+		E1Y ?= { ai_personality = ai_aggressive }
+		LIT ?= { ai_personality = ai_aggressive }
+
 		BUL ?= { ai_personality = ai_opportunistic }
 		SER ?= { ai_personality = ai_opportunistic }
 		ADU ?= { ai_personality = ai_opportunistic }
 		NSE ?= { ai_personality = ai_opportunistic }
 		BNV ?= { ai_personality = ai_opportunistic }
 		TUN ?= { ai_personality = ai_opportunistic }
-		E1Y ?= { ai_personality = ai_opportunistic }
 		E2Y ?= { ai_personality = ai_opportunistic }
-		NRV ?= { ai_personality = ai_opportunistic }
+		GTC ?= { ai_personality = ai_opportunistic }
+		VTC ?= { ai_personality = ai_opportunistic }
+		RIC ?= { ai_personality = ai_opportunistic }
+		AOI ?= { ai_personality = ai_opportunistic }
 
-		MZF ?= { ai_personality = ai_aggressive }
+		ARA ?= { ai_personality = ai_expansionist }
+		NRV ?= { ai_personality = ai_expansionist }
+		SAX ?= { ai_personality = ai_expansionist }
 
+		
 		ARM ?= { ai_personality = ai_defensive }
 		VAN ?= { ai_personality = ai_defensive }
 		DER ?= { ai_personality = ai_defensive }
+
+		
 
 		# Aggressive: militarist nations that pursue wars without hesitation
 		TUR ?= { ai_personality = ai_aggressive }  # Ottoman Empire
@@ -37,13 +49,11 @@ countries = {
 		DAN ?= { ai_personality = ai_expansionist }  # Denmark
 		BRA ?= { ai_personality = ai_expansionist }  # Brandenburg
 		HUN ?= { ai_personality = ai_expansionist }  # Hungary
+		POL ?= { ai_personality = ai_expansionist }  # Poland
 
 		# Defensive: nations content to hold their ground
 		BYZ ?= { ai_personality = ai_defensive }  # Byzantium
-		POL ?= { ai_personality = ai_defensive }  # Poland
-		LIT ?= { ai_personality = ai_defensive }  # Lithuania
 		MAM ?= { ai_personality = ai_defensive }  # Mamluk Sultanate
-		BOH ?= { ai_personality = ai_defensive }  # Bohemia
 		MAR ?= { ai_personality = ai_defensive }  # Marinids
 		ETH ?= { ai_personality = ai_defensive }  # Ethiopia
 
@@ -60,6 +70,7 @@ countries = {
 		NAP ?= { ai_personality = ai_opportunistic }  # Naples
 		SCO ?= { ai_personality = ai_opportunistic }  # Scotland
 		MLO ?= { ai_personality = ai_opportunistic }  # Milan
+		BOH ?= { ai_personality = ai_opportunistic }  # Bohemia
 
 		# Isolationist: internally focused, avoid foreign entanglement
 		MNG ?= { ai_personality = ai_isolationist }  # Ming China

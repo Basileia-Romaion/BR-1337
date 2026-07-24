@@ -5,7 +5,7 @@
 ### The aim to increase City specialization. They increase the efficiency of a specific Good, but decrease the efficiency of all others.
 
 br_naval_theme_rights = {
-	icon = br_naval_theme_rights
+	#icon = br_naval_theme_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
@@ -37,7 +37,7 @@ br_naval_theme_rights = {
 }
 
 br_land_theme_rights = {
-	icon = br_land_theme_rights
+	#icon = br_land_theme_rights
 	potential = {
 		OR = {
 			has_or_had_tag = BYZ
@@ -59,9 +59,72 @@ br_land_theme_rights = {
 		local_nobles_estate_power = 0.25
 		local_burghers_estate_power = -0.25
 		local_soldiers_desired_pop = 0.25
-
 		local_weaponry_output_modifier = 0.1
 	}
 	
 	color = red
 }
+
+br_latin_port_rights = {
+	#icon = staple_port
+	potential = {
+		OR = {
+			has_estate_privilege = estate_privilege:br_special_trade_companies
+			has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+		}
+	}
+	allow = {
+		scope:target = {
+			is_port = yes
+		}
+	}
+	location_modifier = {
+		harbor_suitability = 0.1
+		local_trades_per_burgher = 0.25
+		local_market_access = 0.1
+		local_burghers_estate_power = 0.5
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	color = hsv { 0.52 0.44 0.78 }
+}
+
+br_dynatoi_rights = {
+	#icon = manorial_customals
+	potential = {
+		has_estate_privilege = estate_privilege:br_dynatoi_magnates
+	}
+	location_modifier = {
+		local_army_levy_size_modifier = 0.1
+		local_nobles_estate_power = 0.33
+		local_monthly_food_modifier = 0.33
+		local_food_decay = -0.001
+		local_peasant_enfranchisment = -0.1
+	}
+	color = map_GBR
+}
+
+br_siderokausia_rights = {
+	#icon = mining_charter
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+	}
+	allow = {
+        scope:target = {
+            this = location:polygyros
+        }
+    }
+	location_modifier = {
+		local_goods_gold_output_modifier = 0.1
+        local_market_access = 0.03
+		local_max_rgo_size_modifier = 0.25
+
+		local_peasant_enfranchisment = -0.1
+		local_production_efficiency = town_right_efficiency_penalty
+		#goods_gold_impacts_inflation
+	}
+	color = hsv { 0.38 0.30 0.46 }
+}
+

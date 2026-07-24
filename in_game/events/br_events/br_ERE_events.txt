@@ -1944,30 +1944,14 @@ br_ere_events.1002 = {
 	desc = br_ere_events.2.desc
 	fire_only_once = yes
 	outcome = neutral
-	#orphan = yes
-	trigger = {
-		#tag = A1G
-	}
-	
+
 	illustration_tags = {
 		10 = regular
 		10 = interior
 	}
-
-	immediate = {
-		#if = {
-		#	limit = {
-		#		NOT = { is_at_war_with = c:NAX }
-		#	}
-		#	declare_war_with_cb = {  target = c:NAX type = casus_belli:cb_annex }
-		#}
-	}
-
 	option = {
 		historical_option = yes
-		#high_reward_option = yes
 		name = br_ere_events.2.a
-
 		c:A1G = {
 			declare_war_with_cb = {  target = c:GTC type = casus_belli:cb_maritime_dominance }
 		}
@@ -1979,9 +1963,6 @@ br_ere_events.1003 = {
 	type = country_event
 	outcome = neutral
 	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
-	trigger = {
-	}
-	
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -1996,6 +1977,16 @@ br_ere_events.1003 = {
 	option = {
 		high_reward_option = yes
 		name = br_ere_events.1003.a
+
+		#if = {
+			#limit = {
+				#location_rank = location_rank:rural_settlement
+			#}
+			#br_stratiotikon_thema_estate
+		#}
+		#else_if = {
+
+		#}
 
 		if = {
             limit = {

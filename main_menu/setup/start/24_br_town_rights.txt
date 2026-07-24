@@ -39,8 +39,8 @@ townrights_manager = {
 	bozan = br_land_theme_rights
 	emirdag = br_land_theme_rights
 
-	tana = market_charter
-	kaffa = market_charter
+	tana = br_latin_port_rights
+	kaffa = br_latin_port_rights
 	theodoro = staple_port
 	thessaloniki = market_charter
 	smyrna = market_charter
@@ -69,7 +69,7 @@ townrights_manager = {
 	ohrid = market_charter
 	zadar = market_charter
 	split = market_charter
-	karystos = market_charter
+	karystos = br_latin_port
 	mystras = market_charter
 	corinth = market_charter
 	larissa = market_charter
@@ -80,7 +80,7 @@ townrights_manager = {
 	acre = market_charter
 	jerusalem = market_charter
 	larnaca = market_charter
-	aleppo = market_charter
+	urfa = market_charter
 	mosul = market_charter
 	alexandria = market_charter
 	rey = market_charter
@@ -89,8 +89,26 @@ townrights_manager = {
 	yazd = market_charter
 	bombay = market_charter
 
+	vidin = fortress_town
+	nis = fortress_town
+	belgrade = fortress_town
+	mus = fortress_town
+	van = fortress_town
+	malatya = fortress_town
+	trgoviste_SER = fortress_town
 
 	### rural locations
+
+	demotica = fortress_town
+
+	foca = br_latin_port_rights
+	samos = br_latin_port_rights
+	chios = br_latin_port_rights
+	modon = br_latin_port_rights
+	cephalonia = br_latin_port_rights
+	corfu = br_latin_port_rights
+	limassol = br_latin_port_rights
+
 	polygyros = mining_charter
 	kastamonu = mining_charter
 	gumus = mining_charter
@@ -100,6 +118,24 @@ townrights_manager = {
 	paphos = mining_charter
 	surmene = mining_charter
 	novo_brdo = mining_charter
+
+	famagusta = br_dynatoi_rights
+	corycus = br_dynatoi_rights
+	sis = br_dynatoi_rights
+	haymana = br_dynatoi_rights
+	merzifon = br_dynatoi_rights
+	kirsehir = br_dynatoi_rights
+	sariyahsi = br_dynatoi_rights
+	niksar = br_dynatoi_rights
+	koyulhisar = br_dynatoi_rights
+	bafra = br_dynatoi_rights
+	inonu = br_dynatoi_rights
+	sultanonu = br_dynatoi_rights
+	usak = br_dynatoi_rights
+	seyhli = br_dynatoi_rights
+	lazkiye = br_dynatoi_rights
+	kula = br_dynatoi_rights
+	guzelhisar = br_dynatoi_rights
 
 	
 

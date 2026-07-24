@@ -599,7 +599,7 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	}
 
 	subject_modifier = {
-		trade_efficiency = 0.1
+		trade_sea_efficiency = large_trade_sea_efficiency_bonus
 		global_navy_levy_size_modifier = 0.2
 		always_allow_navy_levies = yes
 		monthly_towards_naval = societal_value_large_monthly_move
@@ -705,47 +705,43 @@ REPLACE_OR_CREATE:br_stavropegion_subject = {
 	visible_through_diplomacy = {
 		always = no
 	}
-
 	visible_through_treaty = {
 		always = no
 	}
-
 	creation_visible = {
 		always = no
 	}
-
 	release_country_enabled = {
 		always = no
 	}
 	
-	join_defensive_wars = Never
-	join_offensive_wars = Never
+	join_offensive_wars_always = {
+		always = no
+	}
+	join_defensive_wars_always = {
+		always = no
+	}
 	diplomatic_capacity_cost_scale = 0.25
 	strength_vs_overlord = -1
-	
+
 	has_overlords_ruler = no
 	can_be_annexed = no
-
 	subject_can_cancel = no
 	overlord_can_cancel = no
-	
-	can_overlord_build_roads = yes
-	can_overlord_build_buildings = yes
-	can_overlord_build_rgos = yes
-
-	can_overlord_recruit_regiments = yes
-    can_overlord_build_ships = yes
-	
+	can_overlord_build_roads = no
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+	can_overlord_recruit_regiments = no
+    can_overlord_build_ships = no
 	has_limited_diplomacy = yes
 	fleet_basing_rights = yes
 	food_access = yes
-	
 	can_change_rank = no
-	can_change_heir_selection = yes
+	can_change_heir_selection = no
 
 	minimum_opinion_for_offer = 150
 
-	great_power_score_transfer = 0.25 # the amount of Great Power Score that is transferred from the Subject to the Overlord
+	great_power_score_transfer = 0.1 # the amount of Great Power Score that is transferred from the Subject to the Overlord
 	
 	institution_spread_to_overlord = monthly_institution_spread_mild
 	institution_spread_to_subject = monthly_institution_spread_mild
@@ -935,13 +931,14 @@ br_phorophoros_subject = {  #Phorophóros
 	
 	has_limited_diplomacy = no
 
-	great_power_score_transfer = 0.25 # the amount of Great Power Score that is transferred from the Subject to the Overlord
+	great_power_score_transfer = 0.1 # the amount of Great Power Score that is transferred from the Subject to the Overlord
 	
 	overlord_modifier = {
 		monthly_prestige = 0.01
 	}
 	
 	subject_modifier = {
+		blocked_from_conversion = yes
 	}
 
 	diplo_chance_accept_subject = {
@@ -1001,6 +998,13 @@ br_phorophoros_subject = {  #Phorophóros
                 }
             }
         }
+	}
+}
+
+
+INJECT:tributary = { 
+	subject_modifier = {
+		blocked_from_conversion = yes
 	}
 }
 

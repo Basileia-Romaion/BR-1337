@@ -3,27 +3,27 @@
 is_adjacent_to_owned_or_subject_owns = yes
 is_owned_by_target_or_subject
 
-## International organization for E.R.E & N.S.E.
+## International organization for ~~E.R.E~~ N.S.E.
 Similar to HRE or Illkanate Middle Kingdom etc. 
 
 ~~Elysium flavor around nation formation. Including culture and founding of the City of Elysium roughly modern day DC area basiclly between the two colonies.~~
 
 ## Roman (BYZ) Content
+- regular legitimacy decline and pretender rebellions caused each time we get a new ruler. Similar to hordes maybe
 - Events for subjects to break away if/when legitimacy drops below -15 with option for ERE to fight to maintain relationship or let the subject slip away.
     - maybe tied to BYZ international organization.
 - Event to offer Elysium colonial status if own straits of Hercules and have made contact/have good relations with ai elysian tags. 
 - Third ERE faction in the guelphs_and_ghibellines to make it a three way if BYZ has land in Italy.
 - Varangian buildings
     ~~- Foreign manpower building~~
-    - current Varangian building isn't increasing amount of Varangian units you can have so gotta figure that out. 
-    - Barracks
-    - etc
+    ~~- current Varangian building isn't increasing amount of Varangian units you can have so gotta figure that out.~~
+    ~~- Barracks~~
 ~~- Building based themata that work similar to the Shogunate.~~
 - Advances
     - Restoration of the Imperial Polis
-    - Revival of the Logos 
-    - Restore Thematic Order
-    - Pronoia Reform
+    ~~- Revival of the Logos ~~
+    ~~- Restore Thematic Order~~
+    ~~- Pronoia Reform~~
     - Tagmata Modernization
     - Nautikón Reform
     - Restoration of Imperial Unity
@@ -43,11 +43,11 @@ New Angland
 ## Balkans
 - Bulgaria stuff make them a good rival to ERE
     - Reform the Bulgarian Empire
-    - Bulgarian noble faction mechanics (Boyars vs Tsar)
+    ~~- Bulgarian noble faction mechanics (Boyars vs Tsar)~~
     - Cultural tension between Romanized and Slavic elites
     - Competing imperial claims over the Balkans
     - Bulgarian religious autonomy vs Patriarchal control
-    - Border marcher states that can flip allegiance (Wallachian and Serbian vassals)
+    ~~- Border marcher states that can flip allegiance (Wallachian and Serbian vassals)~~
 
 - activate base game content for our tags where it makes sense
 
@@ -65,4 +65,3 @@ New Angland
 
 ## fix errors
 - Fix bugs in error log. 
-- error spam related to government, may be caused by giving countries reforms that they are not supposed to have but not sure.

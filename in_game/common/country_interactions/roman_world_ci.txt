@@ -19,6 +19,9 @@ br_restore_roman_status = {
 	
 	select_trigger = {
 		looking_for_a = country
+		#interaction_source_list = {
+			#scripted_geography:macedonian_dynasty_byzantine_empire_geography = { add_to_list = source }
+		#}
 		target_flag = recipient
 		name = "choose_country"
 		column = {

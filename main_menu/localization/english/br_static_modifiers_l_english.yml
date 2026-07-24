@@ -41,3 +41,124 @@
  MODIFIER_TYPE_DESC_monthly_towards_br_bureaucratic: "Authority is concentrated in the imperial administration, where Logothetai, clerks, and palace officials extend the reach of law and governance from the capital. The influence of provincial magnates is restrained as the machinery of state grows stronger and more centralized."
  MODIFIER_TYPE_NAME_monthly_towards_stratiotai: "Monthly Shift toward the Stratiōtai"
  MODIFIER_TYPE_DESC_monthly_towards_stratiotai: "Power rests increasingly with the Stratiōtai and the great landed families of the provinces. Soldier-farmers and military aristocrats alike command land, wealth, and armed retinues, forming a resilient but independent power base that strengthens the army while challenging central authority."
+
+ game_concept_stratiotai_gc: "$stratiotai_focus$"
+ game_concept_stratiotai_gc_desc: "$MODIFIER_TYPE_DESC_monthly_towards_stratiotai$"
+ game_concept_br_bureaucratic_gc: "$br_bureaucratic_focus$"
+ game_concept_br_bureaucratic_gc_desc: "$MODIFIER_TYPE_DESC_monthly_towards_br_bureaucratic$"
+
+
+##### Unsorted localization #####
+br_latin_port_rights: "Latin Port Rights"
+br_latin_port_rights_desc: "Grants privileged trading rights and harbor access to Latin merchants, encouraging commerce while increasing foreign influence within Roman ports."
+
+br_dynatoi_rights: "Dynatoi Privileges"
+br_dynatoi_rights_desc: "Recognizes the traditional rights and exemptions of the great landholding families, strengthening their loyalty while increasing their political influence."
+
+br_siderokausia_rights: "Siderokausia Mining Rights"
+br_siderokausia_rights_desc: "Regulates the extraction of precious metals from the mines of Siderokausia, ensuring a steady flow of wealth into the imperial treasury."
+
+br_fortified_religious_enclave: "Fortified Religious Enclave"
+br_fortified_religious_enclave_desc: "A monastery or sacred community granted the right to maintain walls and garrisons, serving as both a spiritual center and frontier stronghold."
+
+br_arab_privilege: "Arab Privileges"
+br_arab_privilege_desc: "Confirms the traditional rights of loyal Arab communities, securing their military service and cooperation in frontier administration."
+
+br_conquer_persia: "Conquer Persia"
+br_conquer_hre: "Restore the Western Provinces"
+br_conquer_balkans: "Secure the Balkans"
+
+br_katepanata_reform: "Katepanata Reform"
+br_katepanata_reform_desc: "Reorganizes the frontier commands into powerful Katepanates, improving military coordination and provincial administration."
+
+br_roman_india_trading_company: "Roman India Trading Company"
+br_roman_india_trading_company_desc: "A chartered trading company established to dominate commerce with India and the riches of the eastern seas."
+
+diplomatic_status_roman_world_name: "Roman Status"
+diplomatic_status_roman_world_tooltip: "Determines a country's recognized standing within the Roman World."
+roman_world_list_who_tt: "Countries recognized within the Roman World"
+
+illyrian_group: "Illyrian"
+illyrian_group_desc: "The Illyrian cultures inhabit the western Balkans, preserving traditions shaped by centuries of Roman rule and frontier life."
+
+br_early_artillery_construction: "Early Artillery Construction"
+br_early_artillery_maintenance: "Early Artillery Maintenance"
+
+dip_br_restore_roman_status_CATEGORY: "Restore Roman Status"
+PROPOSE_br_restore_roman_status: "Restore Roman Status"
+INCOMING_OFFER_br_restore_roman_status: "Restore Roman Status"
+INCOMING_OFFER_TITLE_br_restore_roman_status: "Roman Status Restored"
+br_restore_roman_status_reject_effect_text: "Roman status is not restored."
+br_restore_roman_status_reject_effect_text_past: "Roman status was not restored."
+br_restore_roman_status_act: "Restore Roman Status"
+br_restore_roman_status_effect_text: "Restores the target's recognized status within the Roman World."
+br_restore_roman_status_effect_text_past: "Restored the target's recognized status within the Roman World."
+
+dip_br_change_strategos_CATEGORY: "Appoint Strategos"
+PROPOSE_br_change_strategos: "Appoint Strategos"
+br_change_strategos_act: "Appoint Strategos"
+br_change_strategos_effect_text: "Appoints a new Strategos to govern the Theme."
+br_change_strategos_effect_text_past: "Appointed a new Strategos to govern the Theme."
+
+dip_br_allow_dynastic_inheritance_CATEGORY: "Grant Dynastic Inheritance"
+PROPOSE_br_allow_dynastic_inheritance: "Grant Dynastic Inheritance"
+br_allow_dynastic_inheritance_act: "Grant Dynastic Inheritance"
+br_allow_dynastic_inheritance_effect_text: "Allows the office to pass through the holder's dynasty."
+br_allow_dynastic_inheritance_effect_text_past: "Granted hereditary succession to the office."
+
+dip_br_remove_dynastic_inheritance_CATEGORY: "Revoke Dynastic Inheritance"
+PROPOSE_br_remove_dynastic_inheritance: "Revoke Dynastic Inheritance"
+br_remove_dynastic_inheritance_act: "Revoke Dynastic Inheritance"
+br_remove_dynastic_inheritance_effect_text: "Revokes hereditary succession and restores imperial appointment."
+br_remove_dynastic_inheritance_effect_text_past: "Revoked hereditary succession from the office."
+
+br_yorvik_capital: "Capital of Jórvík"
+br_yorvik_capital_desc: "The political and commercial heart of the Kingdom of Jórvík, commanding trade across northern Britannia."
+
+br_magyar_cumen_cavalry: "Magyar-Cuman Cavalry"
+br_magyar_cumen_cavalry_desc: "Combining Magyar discipline with Cuman horsemanship, these swift riders excel in reconnaissance, skirmishing, and pursuit."
+
+br_norse_heritage: "Norse Heritage"
+br_norse_heritage_desc: "Centuries of seafaring tradition and warrior culture continue to shape the identity of the Norse peoples."
+
+br_norse_diplomacy: "Norse Diplomacy"
+br_norse_diplomacy_desc: "Skilled negotiators and merchants, the Norse maintain profitable relationships across the northern seas."
+
+br_glh_endless_steppe: "Endless Steppe"
+br_glh_endless_steppe_desc: "The boundless grasslands provide unmatched freedom of movement and sustain the Horde's nomadic way of life."
+
+br_glh_mongol_tatar_legacy: "Mongol-Tatar Legacy"
+br_glh_mongol_tatar_legacy_desc: "The traditions of Mongol conquest and Tatar administration continue to shape the Horde's institutions."
+
+br_glh_fear_of_the_horde: "Fear of the Horde"
+br_glh_fear_of_the_horde_desc: "The memory of devastating invasions still compels neighboring peoples to submit rather than resist."
+
+br_glh_tribute_to_the_horde: "Tribute to the Horde"
+br_glh_tribute_to_the_horde_desc: "Tributary peoples offer wealth and supplies in exchange for peace and recognition."
+
+br_tatar_mongol_raiding: "Tatar-Mongol Raiding"
+br_tatar_mongol_raiding_desc: "Swift cavalry raids strike deep into enemy territory, carrying off plunder before organized resistance can form."
+
+br_glh_religious_tolerance: "Religious Tolerance"
+br_glh_religious_tolerance_desc: "The Horde permits many faiths to coexist, provided they remain loyal and pay their obligations."
+
+PERFORM_br_romaiokratia_casus_belli_ACTION: "You established a Roman Claim."
+PERFORM_roman_world_bestow_domestikos_west_ACTION: "You bestowed the title of Domestikos of the West."
+PERFORM_roman_world_rescind_domestikos_west_ACTION: "You rescinded the title of Domestikos of the West."
+PERFORM_roman_world_bestow_domestikos_east_ACTION: "You bestowed the title of Domestikos of the East."
+PERFORM_roman_world_rescind_domestikos_east_ACTION: "You rescinded the title of Domestikos of the East."
+PERFORM_br_reshape_bureaucracy_ACTION: "You reshaped the Imperial Bureaucracy."
+PERFORM_br_strengthen_ministry_ACTION: "You strengthened the Imperial Ministries."
+PERFORM_br_proclaim_decree_ACTION: "You proclaimed an Imperial Decree."
+
+WE_PERFORM_br_restore_roman_status_ACTION: "You restored Roman Status."
+ACTION_br_restore_roman_status_PERFORMED_ON_US: "Our Roman Status has been restored."
+
+WE_PERFORM_br_change_strategos_ACTION: "You appointed a new Strategos."
+ACTION_br_change_strategos_PERFORMED_ON_US: "A new Strategos has been appointed over our Theme."
+
+WE_PERFORM_br_allow_dynastic_inheritance_ACTION: "You granted Dynastic Inheritance."
+ACTION_br_allow_dynastic_inheritance_PERFORMED_ON_US: "Dynastic Inheritance has been granted to our office."
+
+WE_PERFORM_br_remove_dynastic_inheritance_ACTION: "You revoked Dynastic Inheritance."
+ACTION_br_remove_dynastic_inheritance_PERFORMED_ON_US: "Dynastic Inheritance has been revoked from our office."
