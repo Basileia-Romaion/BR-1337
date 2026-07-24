@@ -109,25 +109,25 @@ diplomacy_manager = {
 	
 
     #Russia
-    dependency = { first = GLH second = PRM subject_type = tributary }
-	dependency = { first = GLH second = VYT subject_type = tributary }
-	dependency = { first = GLH second = RYA subject_type = tributary }
-    dependency = { first = GLH second = MOS subject_type = tributary }
-    dependency = { first = GLH second = SMO subject_type = tributary }
-    dependency = { first = GLH second = TVE subject_type = tributary }
-    dependency = { first = GLH second = NSL subject_type = tributary }
-    dependency = { first = GLH second = KCH subject_type = tributary }
-    dependency = { first = GLH second = SZL subject_type = tributary }
-    dependency = { first = GLH second = GLM subject_type = tributary }
-    dependency = { first = GLH second = YAR subject_type = tributary }
-    dependency = { first = GLH second = RSO subject_type = tributary }
+    #dependency = { first = GLH second = PRM subject_type = tributary }
+	#dependency = { first = GLH second = VYT subject_type = tributary }
+	#dependency = { first = GLH second = RYA subject_type = tributary }
+    #dependency = { first = GLH second = MOS subject_type = tributary }
+    #dependency = { first = GLH second = SMO subject_type = tributary }
+    #dependency = { first = GLH second = TVE subject_type = tributary }
+    #dependency = { first = GLH second = NSL subject_type = tributary }
+    #dependency = { first = GLH second = KCH subject_type = tributary }
+    #dependency = { first = GLH second = SZL subject_type = tributary }
+    #dependency = { first = GLH second = GLM subject_type = tributary }
+    #dependency = { first = GLH second = YAR subject_type = tributary }
+    #dependency = { first = GLH second = RSO subject_type = tributary }
 
 	#Ruthenia
     #dependency = { first = GLH second = HAL subject_type = tributary }
 	#dependency = { first = GLH second = VOL subject_type = tributary }
-	dependency = { first = GLH second = BRY subject_type = tributary }
-	dependency = { first = GLH second = CHR subject_type = tributary }
-	dependency = { first = GLH second = KIE subject_type = tributary }
+	#dependency = { first = GLH second = BRY subject_type = tributary }
+	#dependency = { first = GLH second = CHR subject_type = tributary }
+	#dependency = { first = GLH second = KIE subject_type = tributary }
 
     #Central Asia
     dependency = { first = GLH second = G0L subject_type = vassal }
@@ -661,7 +661,6 @@ diplomacy_manager = {
     #dependency = { first = TUR second = A2A subject_type = uc_bey }
     dependency = { first = TUR second = ARD subject_type = vassal }
     dependency = { first = TUR second = HDR subject_type = vassal }
-    dependency = { first = TUR second = IHB subject_type = vassal }
     dependency = { first = TUR second = KEL subject_type = vassal }
     dependency = { first = TUR second = KKL subject_type = vassal }
     dependency = { first = TUR second = KTW subject_type = vassal }
@@ -672,7 +671,6 @@ diplomacy_manager = {
     dependency = { first = TUR second = HKK subject_type = vassal }
     dependency = { first = TUR second = SOH subject_type = vassal }
     dependency = { first = TUR second = ZZR subject_type = vassal }
-    dependency = { first = TUR second = SRV subject_type = vassal }
 
     dependency = { first = TUR second = AQQ subject_type = uc_bey }
     dependency = { first = AQQ second = SYU subject_type = tributary }
@@ -684,6 +682,8 @@ diplomacy_manager = {
     dependency = { first = QAR second = KCN subject_type = tributary }
     dependency = { first = QAR second = GAN subject_type = tributary }
     dependency = { first = QAR second = SKI subject_type = vassal }
+    dependency = { first = QAR second = SRV subject_type = vassal }
+    dependency = { first = QAR second = IHB subject_type = vassal }
 
     dependency = { first = TUR second = HNY subject_type = vassal } #A0A
     dependency = { first = TUR second = KRI subject_type = vassal } #A0A
