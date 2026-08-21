@@ -58,7 +58,6 @@ REPLACE_OR_CREATE:a_varangians = {
 	content_priority = 500
 	copy_from = a_age_1_traditions_heavy_infantry
 	is_special = yes
-
 	upgrades_to_only = br_renaissance_varangians
 
 	combat = {
@@ -72,7 +71,6 @@ REPLACE_OR_CREATE:a_varangians = {
 	location_potential = {
 		is_capital = yes
 	}
-
 	country_potential = {
 		has_or_had_tag = BYZ
 	}
@@ -82,9 +80,7 @@ REPLACE_OR_CREATE:a_varangians = {
 	#	value = 1
 	#	add = modifier:num_of_varangian_units
 	#}
-
 	limit = br_varangian_unit_limit
-
 
 	gfx_tags = { axe_tag heavy_tag }
 }
@@ -140,10 +136,10 @@ br_tagmata_toxotai = {
 br_tagmata_ballistai = {
 	category = army_artillery
 	copy_from = a_age_1_traditions_artillery
+	upgrades_to_only = a_houfnice
 
 	build_time_modifier = 0.75
 	combat_power = 3
-
 
 	buildable = yes
 	age = "age_1_traditions"
@@ -168,6 +164,7 @@ br_tagmata_ballistai = {
 br_unit_trebuchet = {
 	category = army_artillery
 	copy_from = a_age_1_traditions_artillery
+	upgrades_to_only = a_houfnice
 
 	build_time_modifier = 0.75
 	combat_power = 1
@@ -196,7 +193,6 @@ br_unit_trebuchet = {
 br_renaissance_varangians = {
 	is_special = yes
 	copy_from = a_age_2_renaissance_heavy_infantry
-
 	upgrades_to_only = br_discovery_varangians
 
 	combat = {
@@ -206,12 +202,10 @@ br_renaissance_varangians = {
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
-
 	#limit = {
 	#	value = 1
 	#	add = modifier:num_of_varangian_units
 	#}
-
 	limit = br_varangian_unit_limit
 	
 	gfx_tags = { heavy_tag }
@@ -220,15 +214,14 @@ br_renaissance_varangians = {
 br_age_2_kontaratoi = {
 	is_special = yes
 	copy_from = a_age_2_renaissance_heavy_cavalry
-
 	upgrades_to_only = br_age_3_lonchophoroi
 	limit = cataphracts_unit_limit
 
 	build_time_modifier = 0.50
-	
+
 	construction_demand = expensive_heavy_cavalry_construction
 	maintenance_demand =  expensive_heavy_cavalry_maintenance
-	
+
 	buildable = yes
 
 	#movement_speed = -0.5
@@ -240,11 +233,9 @@ br_age_2_kontaratoi = {
 		hills = -0.1
 		mountains = -0.15
 	}
-
 	location_potential = {
 		unit_byzantine_cataphracts_location_trigger = yes
 	}
-
 	gfx_tags = { 
 		cataphract_tag 
 		spear_tag
