@@ -66,6 +66,10 @@
                     target = scope:target
                     years  = 5
                 }
+				drop_antagonism_bomb = {
+					target = scope:actor.capital
+					modifier = br_ere_claimed_land_antagonism #5
+				}
             }
         }
     }

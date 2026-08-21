@@ -51,12 +51,17 @@ br_restore_roman_status = {
             change_roman_authority = { value = -10 }
             add_legitimacy = -10 #added as a cost
 			add_prestige = 5
+			drop_antagonism_bomb = {
+				target = scope:actor.capital
+				modifier = br_ere_claimed_land_antagonism #5
+			}
 		}
 		scope:recipient = {
 			make_subject_of = {
 				target = scope:actor
 				type = subject_type:br_thema_subject
 			}
+			add_opinion = { target = scope:actor modifier = rus_claimed_land }
 		}
 	}
 
