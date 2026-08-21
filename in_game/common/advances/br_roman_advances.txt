@@ -86,7 +86,7 @@ roman_romaioi_identity = {
 		}
 	}
 	requires = state_administration_advance
-	global_pop_assimilation_speed_modifier = 0.1
+	global_pop_assimilation_speed_modifier = 0.05
 	cultural_influence_modifier = 0.1
 	unlock_policy = br_roman_tradition
 }
@@ -105,7 +105,7 @@ roman_codified_custom = {
 	unlock_policy = br_roman_court_customs
 	unlock_policy = br_byzantine_law
 	unlock_policy = br_roman_distribution_of_power_law
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
+	diplomatic_reputation = diplomatic_reputation_very_weak_bonus
 }
 
 roman_pronoial_administration = {
@@ -161,7 +161,7 @@ br_roman_ecumenical_patriarch_advance = {
 			}
 		}
 	}
-	global_pop_conversion_speed_modifier = 0.1
+	global_pop_conversion_speed_modifier = 0.05
 	#global_heretic_pop_conversion_speed_modifier = 0.25
 	unlock_estate_privilege = br_roman_ecumenical_patriarch_privilege
 	unlock_subject_type = br_stavropegion_subject
@@ -184,7 +184,7 @@ roman_scribal_administration = { #logothetes
 	}
 	requires = renaissance_development
 	#research_speed_modifier = 0.05
-	global_clergy_max_literacy = 10
+	global_clergy_max_literacy = 5
 	global_books_output_modifier = 0.05
 	ai_weight = { add = 5 }
 }
@@ -200,8 +200,7 @@ roman_court_and_office = {
 		}
 	}
 	requires = roman_scribal_administration
-	#diplomatic_capacity = 1
-	monthly_diplomats = 0.1
+	monthly_diplomats = 0.05
 	global_monthly_control = 0.001
 	unlock_building = br_praitoria_building
 	ai_weight = { add = 5 }
@@ -220,7 +219,7 @@ br_stationes_advance = {
 	requires = roman_court_and_office
 	army_auxiliary_power = 0.1
 	land_cost_on_distance_from_capital_speed_propagation = 0.05
-	global_trade_through_owned_territory_efficiency = 0.1
+	global_trade_through_owned_territory_efficiency = 0.05
 	unlock_building = br_stationes_building
 	ai_weight = { add = 5 }
 }
@@ -243,21 +242,6 @@ br_tagmata_barracks_advance = {
 	requires = medieval_military
 	unlock_building = br_tagmata_barracks
 	ai_weight = { add = 5 }
-}
-
-br_roman_marine_infantry = {
-	age = age_4_reformation
-	icon = cas_marine_infantry
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:greek_group }
-			culture = { has_culture_group = culture_group:elysian_group }
-		}
-	}
-	army_disembark_speed = 0.25
-	naval_morale_modifier = 0.10
-	requires = mercenaries_reformation_advance
 }
 
 #br_orthodox_missionary_work = {
@@ -303,8 +287,8 @@ roman_infrastructure = {
 	}
 	requires = supply_depot_advance_age_3_discovery
 	global_road_building_time = -0.1
-	land_cost_on_distance_from_capital_speed_propagation = 0.1
-	global_trade_through_owned_territory_efficiency = 0.1
+	land_cost_on_distance_from_capital_speed_propagation = 0.05
+	global_trade_through_owned_territory_efficiency = 0.05
 	army_logistics_distance_modifier = 0.1
 	ai_weight = { add = 5 }
 }
@@ -338,7 +322,7 @@ roman_imperial_legitimacy = {
 	}
 	requires = confessional_court
 	stability_investment = tiny_stability_investment
-	global_integration_speed_modifier = 0.1
+	global_integration_speed_modifier = 0.05
 	diplomatic_reputation = diplomatic_reputation_mild_bonus
 	ai_weight = { add = 5 }
 }
@@ -356,7 +340,7 @@ roman_civic_order = {
 	requires = roman_imperial_legitimacy
 	tolerance_own = 0.25
 	global_urban_build_buildings_efficiency = 0.05
-	global_pop_promotion_speed_modifier = 0.1
+	global_pop_promotion_speed_modifier = 0.05
 	ai_weight = { add = 5 }
 }
 
@@ -389,6 +373,21 @@ br_kekhrismene_advance = {
 	requires = roman_civic_order
 	unlock_building = br_kekhrismene_pronoia
 	ai_weight = { add = 5 }
+}
+
+br_roman_marine_infantry = {
+	age = age_4_reformation
+	icon = cas_marine_infantry
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			culture = { has_culture_group = culture_group:greek_group }
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	army_disembark_speed = 0.25
+	naval_morale_modifier = 0.10
+	requires = mercenaries_reformation_advance
 }
 
 # AGE 5 – Absolutism

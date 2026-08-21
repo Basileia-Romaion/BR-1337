@@ -38,7 +38,7 @@
 
 	#neutral
 	neutral_modifier = {
-		global_estate_satisfaction_from_legitimacy = 0.05
+		global_estate_satisfaction_from_legitimacy = 0.025 #was 0.05
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
@@ -46,7 +46,7 @@
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		
-		global_crown_estate_power = 0.15
+		global_crown_estate_power = 0.1 #was 0.15
 		monthly_roman_authority = 0.02 #br added
 	}
 
@@ -56,7 +56,7 @@
 			value = 1
 			subtract = scope:maintenance
 		}
-		global_estate_satisfaction_decay = 0.025	
+		global_estate_satisfaction_decay = 0.025
 		monthly_roman_authority = -0.02 #br added
 	}
 }
@@ -101,7 +101,7 @@ REPLACE_OR_CREATE:honorary_titles_bureaucracy = {
 
 	#neutral
 	neutral_modifier = {
-		country_cabinet_efficiency = 0.1
+		country_cabinet_efficiency = 0.05 #was 0.1
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
@@ -226,8 +226,8 @@ REPLACE_OR_CREATE:ritualistic_court_bureaucracy = {
 
 	#neutral
 	neutral_modifier = {
-		monthly_legitimacy = 0.1
-		monthly_republican_tradition = 0.1
+		monthly_legitimacy = 0.05 #was 0.1
+		monthly_republican_tradition = 0.05 #was 0.1
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
@@ -236,7 +236,7 @@ REPLACE_OR_CREATE:ritualistic_court_bureaucracy = {
 		scale = { value = scope:maintenance }
 		diplomatic_reputation = 1
 		annexation_speed_modifier = 0.10
-		cultural_influence_modifier = 0.15
+		cultural_influence_modifier = 0.1 #was 0.15
 		monthly_roman_authority = 0.03 #br added
 	}
 
@@ -327,7 +327,7 @@ REPLACE_OR_CREATE:sixty_books_of_the_basilika_bureaucracy = {
 				}
 			}
 		}
-		global_estate_power = -0.5
+		global_estate_power = -0.25 #was -0.5
 		monthly_roman_authority = 0.02 #br added
 	}
 
@@ -376,7 +376,7 @@ REPLACE_OR_CREATE:romanitas_bureaucracy = { #rework
 
 	#neutral
 	neutral_modifier = {
-		monthly_prestige = 0.2
+		monthly_prestige = 0.1 #was 0.2
 		cultural_influence_modifier = 0.1
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
@@ -385,7 +385,7 @@ REPLACE_OR_CREATE:romanitas_bureaucracy = { #rework
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_integration_speed_modifier = 0.25
-		monthly_legitimacy = 0.1
+		monthly_legitimacy = 0.05 #was 0.1
 		monthly_roman_authority = 0.02 #br added
 	}
 
@@ -439,14 +439,14 @@ REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 
 	#neutral
 	neutral_modifier = {
-		parliament_duration_modifier = 0.3
+		parliament_duration_modifier = 0.25 #was 0.3
 		monthly_towards_br_bureaucratic = societal_value_monthly_move #br added
 	}
 
 	#positive
 	positive_modifier = {
 		scale = { value = scope:maintenance }
-		parliament_base_support = 0.075
+		parliament_base_support = 0.05 #was 0.075
 		monthly_roman_authority = 0.02 #br added
 	}
 
@@ -568,8 +568,8 @@ REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 
 	#neutral
 	neutral_modifier = {
-		monthly_army_tradition = 0.2
-		monthly_navy_tradition = 0.2
+		monthly_army_tradition = 0.1 #was 0.2
+		monthly_navy_tradition = 0.1 #was 0.2
 		monthly_towards_stratiotai = societal_value_monthly_move #br added
 	}
 
@@ -577,9 +577,9 @@ REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 
-		train_general_ability = 25
-		train_admiral_ability = 25
-		military_tactics = 0.2
+		train_general_ability = 10 #was 25
+		train_admiral_ability = 10 #was 25
+		military_tactics = 0.1 #was 0.1
 		monthly_roman_authority = 0.02 #br added
 	}
 

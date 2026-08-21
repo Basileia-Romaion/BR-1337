@@ -43,7 +43,7 @@
 #Senate
 
 ### Noble Privileges ###
-
+ #BUL
 	boyarski_voiski = {
 		estate = nobles_estate
 		icon = formalized_oath
@@ -101,7 +101,7 @@
 			add = 25
 		}
 	}
-
+ #ARM
 	br_arm_nakharars = { #will break up and balance later.
 		estate = nobles_estate
 		icon = formalized_oath
@@ -131,7 +131,7 @@
 			add = 25
 		}
 	}
-
+ #BYZ
 	br_dynatoi_magnates = {
 		estate = nobles_estate
 		icon = banal_lordship #powerful_italian_families
@@ -157,7 +157,7 @@
 			monthly_towards_serfdom = societal_value_monthly_move
 			monthly_towards_aristocracy = societal_value_monthly_move
 			monthly_towards_decentralization = societal_value_minor_monthly_move
-			monthly_towards_stratiotai = societal_value_minor_monthly_move	
+			monthly_towards_stratiotai = societal_value_minor_monthly_move
 		}
 		#positive modifiers
 		country_modifier = {
