@@ -33,8 +33,24 @@
     select_trigger = {
         looking_for_a = country
 		interaction_source_list = {
-			scripted_geography:macedonian_dynasty_byzantine_empire_geography = { add_to_list = source }
+            OR = {
+			    region:anatolia_region = {
+				    every_location_in_region = {
+				    	owner ?= {						
+				    		add_to_list = source
+				    	}
+			    	}
+			    }
+                region:balkan_region = {
+				    every_location_in_region = {
+				    	owner ?= {						
+				    		add_to_list = source
+				    	}
+			    	}
+			    }
+            }
 		}
+		
         target_flag = target
         name = "choose_country"
         column = { data = name }
