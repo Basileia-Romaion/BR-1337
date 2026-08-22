@@ -2,6 +2,14 @@
 
 # Patch Notes
 
+# 0.23.3
+- Balance pass on ERE modifiers especally ones active at game start.
+- various changes to bureaucracy_impact_modifier
+- Fix the geography trigger for the IO subjugate action
+- Changed the age 1 artillery to only upgrade to age 2 artillery to prevent accidently upgrading trebuchets to ballistae since they for different things.
+- small amount of antagonism for the cb/subjugate actions
+- Fix: POK, VBK, SMO & KIE missing their starting tech
+
 # 0.23.2
 ## Oikoumenē and Auctoritas
   - bureaucracies now affect Auctoritas scaling with funding.
