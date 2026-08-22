@@ -144,9 +144,9 @@ br_senaton_building = {
 	}
 
 	capital_country_modifier = {
-		global_distance_from_capital_speed_propagation = 0.05
 		country_cabinet_efficiency = 0.025
 		global_estate_max_tax = 0.025
+		imperial_senate_bureaucracy_impact_modifier = 0.1
 		permanent_parliament_location = yes
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 	}

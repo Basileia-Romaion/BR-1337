@@ -12,19 +12,20 @@ br_bureaucratic_vs_stratiotai = {
         nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
         global_crown_estate_power = 0.25
         global_clergy_estate_power = 0.5
-        global_clergy_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
-        global_burghers_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
-		
+        global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000 pops.
+        global_burghers_city_desired_pop_scaled = 0.005 #5 per 1000 pops.
+        court_eunuchs_bureaucracy_impact_modifier = 0.25
+
         #positives
         global_max_urban_control = 0.1 #+
         #country_cabinet_efficiency = 0.1 #+
-        tax_income_efficiency = 0.1 #+
+        #tax_income_efficiency = 0.1 #+
 
-        #negatives
-        court_spending_efficiency = -0.1 #- more money spent on court and titles.
-        land_morale_modifier = -0.05 #- less morale
+        ###negatives###
+        #court_spending_efficiency = -0.1 #- more money spent on court and titles. #made more sense when it was cost increase, but now it is efficiency, so it is a bit weird.
+        land_morale_modifier = -0.1 #- less morale
         global_manpower_modifier = -0.25 #- less manpower
-		
+
         #AI
 		bias_for_scholar_policies = 25
         diplomacy_importance_modifier = 0.1
@@ -35,6 +36,7 @@ br_bureaucratic_vs_stratiotai = {
         global_nobles_estate_power = 0.5
         global_nobles_city_desired_pop_scaled = 0.002 #2 per 1000 pops.
         global_soldiers_city_desired_pop_scaled = 0.01 #10 per 1000 pops.
+        themata_bureaucracy_impact_modifier = 0.25 #+
 
         #positives
 		discipline = 0.05 #+
@@ -45,7 +47,7 @@ br_bureaucratic_vs_stratiotai = {
         #levy_combat_efficiency_modifier = 0.1
 
         #negatives
-        army_maintenance_efficiency = -0.1 #- more money for the armies and generals.
+        #army_maintenance_efficiency = -0.1 #- more money for the armies and generals. #made more sense when it was cost increase, but now it is efficiency, so it is a bit weird.
 
         #AI
 		bias_for_militarist_policies = 25
@@ -74,6 +76,7 @@ TRY_INJECT:aristocracy_vs_plutocracy = {
 		global_burghers_max_literacy = 5
 	}
 }
+
 TRY_INJECT:capital_economy_vs_traditional_economy = {
 	left_modifier = {
 		global_burghers_max_literacy = 5

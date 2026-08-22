@@ -91,7 +91,7 @@ br_sub_theme_subject = {
 		monthly_towards_land = societal_value_monthly_move
 		monthly_towards_defensive = societal_value_monthly_move
 		allow_thema_headquarters = yes
-		global_defensive = 0.1
+		themata_bureaucracy_impact_modifier = 0.25
 		monthly_towards_stratiotai = societal_value_large_monthly_move
 	}
 	country_modifier = {
@@ -311,6 +311,7 @@ br_katepanata_reform = {
 		monthly_towards_stratiotai = societal_value_large_monthly_move
 		global_crown_estate_power = 0.25
 		allow_thema_headquarters = yes
+		kephalai_bureaucracy_impact_modifier = 0.25
 		global_max_bureaucracy_slots = 1
 	}
 	country_modifier = {

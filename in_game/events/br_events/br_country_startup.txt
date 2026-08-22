@@ -425,14 +425,11 @@ br_country_startup.1 = { #naval units added
 				
 			}
 		}
-	
 	}
 
 	option = {
 		name = br_country_startup.1.a
-
 		historical_option = yes
-
 	}
 }
 
@@ -460,22 +457,25 @@ br_country_startup.2 = { #units added
 		}
 		c:BUL ?= {
 			capital = {
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
-				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
-				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit = unit_type:br_unit_trebuchet
 			}
 		}
 		c:HUN ?= {
 			capital = {
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
+				create_sub_unit_of_category = sub_unit_category:army_heavy_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
 				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
-				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
-				create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+				create_sub_unit = unit_type:a_steppe_horse_archers #cumens
+				create_sub_unit = unit_type:br_unit_trebuchet
 			}
 		}
 		c:ARA ?= {
@@ -493,6 +493,7 @@ br_country_startup.2 = { #units added
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
+				create_sub_unit = unit_type:br_unit_trebuchet
 			}
 			every_owned_location = {
 				limit = {
@@ -614,13 +615,15 @@ br_country_startup.2 = { #units added
 				create_sub_unit = unit_type:a_byzantine_cataphracts
 				#create_sub_unit = unit_type:a_supply_carts
 				#create_sub_unit = unit_type:a_supply_carts
+				create_sub_unit_of_category = sub_unit_category:army_auxiliary
+				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
 		}
 		c:DYR ?= {
 			capital = {
 				create_sub_unit = unit_type:a_byzantine_cataphracts
-				create_sub_unit = unit_type:br_unit_trebuchet
-				create_sub_unit = unit_type:br_unit_trebuchet
+				#create_sub_unit = unit_type:br_unit_trebuchet
+				#create_sub_unit = unit_type:br_unit_trebuchet
 			}
 			every_owned_location = {
 				limit = {
@@ -760,14 +763,11 @@ br_country_startup.2 = { #units added
 				change_prosperity = prosperity_severe_penalty
 			}
 		}
-
 	}
 
 	option = {
 		name = br_country_startup.2.a
-
 		historical_option = yes
-
 	}
 }
 
