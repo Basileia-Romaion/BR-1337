@@ -12512,9 +12512,9 @@ countries = {
 			kalamata kyparissia
 			chalandritsa patras vostitsa
 			andravida pontikokastro
+			andritsaina kalavryta
 		}
 		our_cores_conquered_by_others = {
-			kalavryta andritsaina
 			tripolitsa veligosti karytaina
 			corinth damala ermioni xylokastro
 		}
@@ -12529,7 +12529,6 @@ countries = {
 			ruler = br_ere_rdm_character_41
 			ruler_term = { character = br_ere_rdm_character_41 start_date = 1329.9.25 } 
 		}
-
 		currency_data = { #From ongoing civil war and turkic raiding
 			stability = -5
 			government_power = -5
@@ -12537,7 +12536,6 @@ countries = {
 			war_exhaustion = 4
 		}
 
-		
 		culture = greek_culture
 		religion = orthodox
 		country_rank = rank_county
@@ -14395,15 +14393,15 @@ countries = {
 			argos nafplio
 			tripolitsa 
 			oitylo
+			karytaina veligosti leuktron
 		}
 		our_cores_conquered_by_others = {
-			karytaina veligosti leuktron
 			damala ermioni kalamata kyparissia
 			andritsaina pontikokastro andravida corinth
 			chalandritsa patras vostitsa kalavryta xylokastro
 			kythira modon
 		}
-		
+
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -14415,17 +14413,14 @@ countries = {
 			ruler = br_ere_rdm_character_13
 			ruler_term = { character = br_ere_rdm_character_13 start_date = 1331.9.25 }
 		}
-		
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
-
 		currency_data = { #From ongoing civil war and turkic raiding
 			stability = -5
 			government_power = -5
 			#inflation = 0.1
 			war_exhaustion = 4
 		}
-		
 		capital = mystras
 	}
 
@@ -53903,10 +53898,8 @@ countries = {
 
 	HE2 = {
 		#type = pop
-		own_control_core = {
-			andritsaina kalavryta
-		}
 		our_cores_conquered_by_others = {
+			andritsaina kalavryta
 			pontikokastro 
 		}
 		include = "expl_mediterranean"
@@ -53932,12 +53925,10 @@ countries = {
 	}
 
 	HE3 = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			karytaina
 			veligosti 
 			leuktron
-		}
-		our_cores_conquered_by_others = {
 			tripolitsa 
 			oitylo 
 		}
@@ -54469,9 +54460,10 @@ countries = {
 	ICO = {
 		own_control_core = {
 			konya hatunsaray larende pirloganda cumra
+			obruk karapinar
 		}
 		our_cores_conquered_by_others = {
-			obruk karapinar altinekin ladik
+			altinekin ladik
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54816,8 +54808,6 @@ countries = {
 			bozok sorgun baliseyh
 			huseyinabad sungurlu
 			corum
-		}
-		our_cores_conquered_by_others = {
 			kirsehir hacibektas dinek_keskin
 		}
 		starting_technology_level = 3
@@ -54914,9 +54904,10 @@ countries = {
 		own_control_core = {
 			aksaray eregli_kar
 			bekarlar bor_tur nigde
+			eskil
 		}
 		our_cores_conquered_by_others = {
-			eskil nevsehir kochisar sariyahsi
+			nevsehir kochisar sariyahsi
 		}
 		starting_technology_level = 3
 		include = "br_pronoia_template"
@@ -55310,8 +55301,8 @@ countries = {
 	}
 
 	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium
-		type = army
-		own_control_conquered = {
+		#type = army
+		our_cores_conquered_by_others = {
 			eskil obruk karapinar
 		}
 		starting_technology_level = 3
@@ -55338,7 +55329,6 @@ countries = {
 		}
 		capital = obruk
 		dynasty = bayindir_dynasty
-		religious_school = maturidi_school
 	}
 	
 	AN25 = { #Kurdish tribe in mountains near Van
@@ -55360,8 +55350,8 @@ countries = {
 	}
 	
 	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Kayseri
-		type = army
-		own_control_conquered = {
+		#type = army
+		our_cores_conquered_by_others = {
 			kirsehir hacibektas dinek_keskin
 		}
 		starting_technology_level = 3
@@ -55372,7 +55362,6 @@ countries = {
 			heir_selection = tribal_oldest_male
 			ruler = br_tourkoromaioi_rdm_character_9
 			ruler_term = { character = br_tourkoromaioi_rdm_character_9 start_date = 1329.9.25 }
-
 			reforms = {
 				br_sub_foideratoi_subject
 			}
@@ -55388,7 +55377,6 @@ countries = {
 		}
 		capital = kirsehir
 		dynasty = avsar_dynasty
-		religious_school = maturidi_school
 	}
 
 	AN27 = { #Cappadocian pronoia
