@@ -227,3 +227,28 @@ elysium_event.3 = {
 		}
 	}
 }
+
+elysium_event.4 = {
+	type = country_event
+	title = elysium_event.4.title
+	desc = elysium_event.4.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate	background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = elysium_event.4.a
+		#hidden_effect = {
+		#}
+	}
+}

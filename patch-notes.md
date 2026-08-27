@@ -2,6 +2,25 @@
 
 # Patch Notes
 
+# 0.24
+
+## Balance changes
+  - simplified these debuffs by removing the scaling so they simply on or off so they easier to understand
+  - Adjusted the unqiue constantinople building icons to be a bit more smooth to be closer to the texture of vanilla. Hagia Sophia still a bit squeshed 
+
+## Map changes
+### Cultures
+  - adjusted the Lur/Farsi cultural/religion border to blend a bit better and be more shia and less zorastrian.
+### Countries
+  - The Morean Slavs and the Hellenized Turkic tags moved to releasable.
+  - moved theme of Thessalonki to a releabable. Moved the city and Gold/Gem mines to ERE and the rest split between Strymon and Beroia
+  - misc map changes in west HRE and iberia
+
+## Events
+  - Opening flavor event for both the Elysian tags.
+  - Moved the Iberia crusade target to the balerics since I changed Zaragoza to just be a city state.
+
+
 # 0.23.3
 - Balance pass on ERE modifiers especally ones active at game start.
 - various changes to bureaucracy_impact_modifier
