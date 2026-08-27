@@ -18,11 +18,11 @@ br_latin_wars.1 = {
 	}
 
 	trigger = {
-		location:zaragoza = {
+		location:palma = {
 			owner.religion.group != ROOT.religion.group
 		}
 		religion = religion:catholic
-		country_exists = c:ARA
+		country_exists = c:KNI
 		crusade_potential_trigger = yes
 		crusade_allow_trigger = yes
 	}
@@ -34,16 +34,16 @@ br_latin_wars.1 = {
 
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		location:zaragoza.owner = {
+		location:palma.owner = {
 			save_scope_as = crusade_target
 		}
-		c:ARA = {
+		c:KNI = {
 			if = {
 				limit = { religion = religion:catholic }
 				add_to_list = list_of_nations_to_invite_to_crusade
 			}
 		}
-		c:KNI ?= {
+		c:ARA ?= {
 			if = {
 				limit = { religion = religion:catholic }
 				add_to_list = list_of_nations_to_invite_to_crusade
@@ -87,11 +87,11 @@ br_latin_wars.1 = {
 		historical_option = yes
 		set_global_variable = {
 			name = crusade_location_target
-			value = location:zaragoza
+			value = location:palma
 		}
 		crusade_effect = { target = scope:crusade_target }
 
-		c:ARA = {
+		c:KNI = {
 			set_variable = receive_additional_benefits
 		}
 
@@ -203,7 +203,7 @@ br_latin_wars.2 = {
 		}
 		if = {
 			limit = {
-				this = c:ARA
+				this = c:KNI
 			}
 			set_variable = participated_in_smyrniote_crusade
 		}
@@ -234,13 +234,10 @@ br_latin_wars.3 = {
 
 	option = {
 		name = br_latin_wars.3.a
-		
 		add_religious_influence_if_valid = {
-			VALUE = 20
+			VALUE = 35
 		}
-
 		add_prestige = prestige_mild_bonus
-
 		add_army_tradition = army_tradition_mild_bonus
 	}
 }
@@ -261,7 +258,7 @@ br_latin_wars.4 = {
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
 		set_variable = flavor_kni_pap_4_lock
-		c:ARA = {
+		c:KNI = {
 			save_scope_as = target_country
 		}
 		save_scope_as = the_from
@@ -269,16 +266,14 @@ br_latin_wars.4 = {
 
 	trigger = {
 		NOT = { has_variable = flavor_kni_pap_4_lock }
-		c:ARA = {
+		c:KNI = {
 			has_variable = participated_in_smyrniote_crusade
 		}
 	}
 
 	option = {
 		name = br_latin_wars.4.a
-		
 		historical_option = yes
-
 		add_country_modifier = {
 			modifier = kni_cession_of_anatolia_to_holy_order
 			years = 40
@@ -286,7 +281,7 @@ br_latin_wars.4 = {
 		show_as_tooltip = {
 			every_province = {
 				limit = {
-					area = area:aragon_area
+					area = area:balearics_area
 				}
 				change_province_owner = scope:target_country
 			}
@@ -298,7 +293,6 @@ br_latin_wars.4 = {
 
 	option = {
 		name = br_latin_wars.4.b
-		
 		add_prestige = prestige_mild_bonus
 	}
 	after = {
@@ -324,14 +318,12 @@ br_latin_wars.5 = {
 
 	option = {
 		name = br_latin_wars.5.a
-		
 		historical_option = yes
-
 		scope:the_from = {
 			set_variable = kni_accept
 			every_province = {
 				limit = {
-					area = area:aragon_area
+					area = area:balearics_area
 				}
 				change_province_owner = ROOT
 			}
@@ -339,13 +331,11 @@ br_latin_wars.5 = {
 	}
 	option = {
 		name = br_latin_wars.5.b
-		
 		add_prestige = prestige_mild_penalty
 		scope:the_from = {
 			set_variable = kni_deny
 		}
 	}
-
 	after = {
 		scope:the_from = { trigger_event_non_silently = br_latin_wars.6 }
 	}
