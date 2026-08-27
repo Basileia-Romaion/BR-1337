@@ -488,19 +488,18 @@
 		max_levels = 1
 		pop_type = clergy
 		graphical_tags = { small_religious }
-		
+
 		category = religious_category
-		
+
 		employment_size = religious_building_employment
-		
 		pop_size_created = religious_building_employment
-		
+
 		rural_settlement = setup_only
 		town = yes
 		city = yes
 		megalopolis = yes
 		conversion_religion = orthodox
-		
+
 		country_potential = {
 			religion = religion:orthodox
 			OR = {
@@ -508,19 +507,19 @@
 				has_estate_privilege = estate_privilege:br_roman_orthodox_catechesis
 			}
 		}
-		
+
 		allow = {
 			owner = { within_diplomatic_range = scope:actor }
 			NOT = { dominant_religion = scope:actor.religion }
 		}
-		
+
 		possible_production_methods = {
 			colony_maintenance
 		}
 		construction_demand = simple_colony_construction
 
 		build_time = colonise_build_time
-		
+
 		modifier = {
 			building_missionary_effort = 0.05
 			local_tribal_promotion = 0.5
@@ -534,7 +533,7 @@
 		is_foreign = no
 		max_levels = 1
 		pop_type = clergy
-		
+
 		employment_size = religious_building_employment
 
 		rural_settlement = yes
@@ -543,18 +542,18 @@
 		megalopolis = yes
 
 		category = religious_category
-		
+
 		country_potential = {
 			has_reform = government_reform:patriarchate
 			religion = religion:orthodox
 		}
-		
+
 		location_potential = {
 			is_capital = yes
 		}
 
 		build_time = religious_building_time
-		
+
 		unique_production_methods = {
 			patriarchate_seat_maintenance = {
 				glass = 0.05
@@ -566,7 +565,7 @@
 				category = building_maintenance
 			}
 		}
-		
+
 		construction_demand = cardinal_construction
 
 		modifier = {
@@ -582,10 +581,10 @@
 		max_levels = estate_building_single_level
 		pop_type = clergy
 		icon = royal_audience_and_chancery #nobled_sponsored_temple
-		
+
 		employment_size = estate_clergy_employment
 		category = cultural_category
-		
+
 		rural_settlement = setup_only
 		town = yes
 		city = yes
@@ -598,7 +597,7 @@
 			religion = religion:orthodox
 		}
 		allow = { is_province_capital = yes }
-		
+
 		location_potential = {
 			is_province_capital = yes
 			NOT = { 
@@ -608,16 +607,16 @@
 		remove_if = {
 			NOT = { owner = { religion = religion:orthodox } }
 		}
-		
+
 		possible_production_methods = {
 			temple_maintenance
 		}
 		construction_demand = town_building_construction
 
 		modifier = {
+			local_cultural_tradition = 0.1
 			local_pop_conversion_speed_modifier = 0.1
 			local_clergy_estate_power = 0.5
-			local_clergy_pop_growth = 0.1
 		}
 		capital_country_modifier = {
 			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
@@ -630,7 +629,7 @@
 		max_levels = estate_building_single_level
 		pop_type = clergy
 		icon = venetian_quarter #local_shrine #darussifa
-		
+
 		employment_size = estate_clergy_employment
 		category = cultural_category
 
@@ -638,7 +637,7 @@
 		town = yes
 		city = yes
 		megalopolis = yes
-		
+
 		build_time = cultural_building_time
 		graphical_tags = { small_religious }
 
@@ -653,15 +652,16 @@
 				this = location:constantinople
 			}
 		}
-		
+
 		possible_production_methods = {
 			library_maintenance
 		}
 		construction_demand = town_building_construction
-		
+
 		modifier = {
-			local_pop_assimilation_speed_modifier = 0.1
-			local_pop_conversion_speed_modifier = 0.1
+			local_cultural_influence = 0.05
+			local_pop_assimilation_speed_modifier = 0.075
+			local_pop_conversion_speed_modifier = 0.075
 			local_clergy_estate_power = 0.25
 			local_monthly_literacy = 0.05
 		}
@@ -676,15 +676,15 @@
 		max_levels = estate_building_single_level
 		pop_type = clergy
 		icon = llotja_seda #clerical_archives
-		
+
 		employment_size = estate_clergy_employment
 		category = cultural_category
-		
+
 		rural_settlement = setup_only
 		town = yes
 		city = yes
 		megalopolis = yes
-		
+
 		build_time = cultural_building_time
 		graphical_tags = { small_religious }
 
@@ -692,7 +692,7 @@
 			has_estate_privilege = estate_privilege:br_bureaucrat_clergy
 		}
 		allow = { is_province_capital = yes }
-		
+
 		location_potential = {
 			is_province_capital = yes
 			NOT = { 
@@ -702,14 +702,14 @@
 		remove_if = {
 			NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 		}
-		
+
 		possible_production_methods = {
 			library_maintenance
 		}
 		construction_demand = town_building_construction
-			
-		
+
 		modifier = {
+			local_cultural_influence = 0.05
 			local_max_urban_control = 0.025
 			local_pop_assimilation_speed_modifier = 0.05
 			local_clergy_estate_power = 0.25
@@ -727,15 +727,15 @@
 		max_levels = estate_building_single_level
 		pop_type = clergy
 		icon = segovia_artillery_academy #bulgarian_administration_center
-		
+
 		employment_size = estate_clergy_employment
 		category = cultural_category
-		
+
 		rural_settlement = setup_only
 		town = yes
 		city = yes
 		megalopolis = yes
-		
+
 		build_time = cultural_building_time
 		graphical_tags = { small_religious }
 
@@ -743,7 +743,7 @@
 			has_estate_privilege = estate_privilege:br_bureaucrat_clergy
 		}
 		allow = { is_province_capital = yes }
-		
+
 		location_potential = {
 			is_province_capital = yes
 			NOT = { 
@@ -753,16 +753,16 @@
 		remove_if = {
 			NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 		}
-		
+
 		possible_production_methods = {
 			temple_maintenance
 		}
 		construction_demand = town_building_construction
-			
-		
+
 		modifier = {
+			local_cultural_influence = 0.05
 			local_max_urban_control = 0.05
-			local_pop_assimilation_speed_modifier = 0.1
+			local_pop_assimilation_speed_modifier = 0.05
 		}
 		capital_country_modifier = {
 			monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move

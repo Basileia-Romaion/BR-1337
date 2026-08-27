@@ -13,7 +13,6 @@ TRY_INJECT:nobility_fortifications = {
 		minimum_fort_level = 1
 		pure_tooltip_entry = pte_no_propagating_zone_of_control
 	}
-
 }
 
 #TRY_INJECT:toll_castle = {
@@ -84,44 +83,44 @@ TRY_INJECT:peasants_training_grounds = {
 
 TRY_INJECT:entrepot = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 TRY_INJECT:trading_hub = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 TRY_INJECT:customs_house = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 TRY_INJECT:stock_exchange = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 TRY_INJECT:clearing_house = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 TRY_INJECT:city_walls = {
 	market_center_modifier = {
-		local_trade_center_power = -0.05 #was 0.1
+		local_trade_center_power = -0.05 #was 0.1 now 0.05
 	}
 }
 
 #bank injects
 TRY_INJECT:banking_office = {
 	modifier = {
-		local_market_access = 0.025
+		local_market_access = 0.025 #small benefit to the location owner
 	}
 }
 
