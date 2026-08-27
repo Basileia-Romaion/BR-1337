@@ -6,7 +6,7 @@
 #negative because inject doesn't replace is adds or subtracts
 TRY_INJECT:country_base_values = {
 	#monthly_legitimacy = -0.25 #an additional -0.25
-	stability_decay = 0.001 #an additional 0.001 for 0.006 total
+	stability_decay = 0.0025 #an additional 0.0025 for 0.0075 total
 	#stability_investment = stability_investment_penalty #br addition
 	global_trade_protection_factor = 0.25 #added to better balance the global markets
 	antagonism_religion_influence = 1 #increase to antagonism against different religions

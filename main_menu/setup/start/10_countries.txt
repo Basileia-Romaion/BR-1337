@@ -12827,7 +12827,7 @@ countries = {
 	}
 
 	THE = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			hatera veria edessa kassandreia polygyros thessaloniki
 			kilkis giannitsa gynaikokastro rentina
 		}
@@ -12964,6 +12964,8 @@ countries = {
 			tire balat birgi guzelhisar nazilli
 			milas
 			mugla cine
+
+			kassandreia polygyros thessaloniki
 		}
 
 		our_cores_conquered_by_others = {
@@ -12973,7 +12975,7 @@ countries = {
 			xanthia
 			komotini
 			#THE
-			hatera veria edessa kassandreia polygyros thessaloniki
+			hatera veria edessa
 			kilkis giannitsa gynaikokastro mount_athos rentina
 			#A1G
 			canakkale
@@ -14545,12 +14547,12 @@ countries = {
 			pina_de_ebro
 			peniscola
 			alcaniz valderrobres
+			belchite carinena calatayud tarazona
 		}
 		our_cores_conquered_by_others = {
-			belchite tarazona
 			puigcerda prades montpellier perpignan
 			vielha
-			zaragoza ariza daroca carinena calatayud
+			zaragoza ariza daroca
 			palma ibiza manacor pollensa #Majorca
 			castellon_de_la_plana ares_del_maestre llucena morella
 			teruel albarracin alfambra cantavieja montalban mora_de_rubielos
@@ -54607,6 +54609,7 @@ countries = {
 			kavala drama serres
 			xanthia
 			komotini
+			kilkis gynaikokastro rentina
 		}
 		our_cores_conquered_by_others = {
 			smolyan ustra
@@ -54641,6 +54644,7 @@ countries = {
 	B0R = {
 		own_control_core = {
 			grevena siatista kastoria servia ostrovo
+			giannitsa veria edessa hatera
 		}
 		#our_cores_conquered_by_others = {
 		#	florina
@@ -54665,7 +54669,7 @@ countries = {
 			war_exhaustion = 4
 		}
 		liturgical_language = koine_dialect
-		capital = ostrovo
+		capital = veria
 	}
 
 	A1G = {
@@ -56562,7 +56566,6 @@ countries = {
 			heir_selection = oligarchic_elective
 			ruler = random
 			
-
 			privilege = {
 				#Nobles
 				

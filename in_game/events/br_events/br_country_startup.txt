@@ -603,18 +603,19 @@ br_country_startup.2 = { #units added
 				destroy_unit = yes
 			}
 			capital = {
-				create_sub_unit = unit_type:a_varangians
-				create_sub_unit = unit_type:a_varangians
-				create_sub_unit = unit_type:a_varangians
-				create_sub_unit = unit_type:a_varangians
+				#create_sub_unit = unit_type:a_varangians
+				#create_sub_unit = unit_type:a_varangians
+				#create_sub_unit = unit_type:a_varangians
+				#create_sub_unit = unit_type:a_varangians
 				create_sub_unit = unit_type:a_byzantine_cataphracts
 				create_sub_unit = unit_type:a_byzantine_cataphracts
 				create_sub_unit = unit_type:a_byzantine_cataphracts
 				create_sub_unit = unit_type:a_byzantine_cataphracts
-				create_sub_unit = unit_type:a_byzantine_cataphracts
-				create_sub_unit = unit_type:a_byzantine_cataphracts
+				#create_sub_unit = unit_type:a_byzantine_cataphracts
+				#create_sub_unit = unit_type:a_byzantine_cataphracts
 				#create_sub_unit = unit_type:a_supply_carts
 				#create_sub_unit = unit_type:a_supply_carts
+				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 				create_sub_unit_of_category = sub_unit_category:army_auxiliary
 			}
@@ -760,7 +761,7 @@ br_country_startup.3 = { #cbs added
 		}
 		c:ARA ?= {
 			add_casus_belli = {
-				target = c:AD1
+				target = c:AD2
 				type = casus_belli:cb_deus_vult #cb_crusade
 			}
 		}
@@ -1478,6 +1479,22 @@ br_country_startup.7 = {
 			}
 			every_owned_location = {
 				limit = {
+					OR = {
+                		raw_material = goods:goods_gold
+						raw_material = goods:gems
+					}
+				}
+				change_max_raw_material_workers = 5
+			}
+			location:polygyros = {
+				add_location_modifier = {
+					modifier = expanded_mines_modifier
+					years = -1
+					mode = add_and_extend
+				}
+			}
+			every_owned_location = {
+				limit = {
 					#region = region:anatolia_region
 					OR = {
 						location_rank = location_rank:city
@@ -1496,39 +1513,6 @@ br_country_startup.7 = {
 			every_owned_location = {
 				limit = {
 					region = region:anatolia_region
-					location_rank = location_rank:rural_settlement
-				}
-				change_prosperity = prosperity_very_weak_penalty
-			}
-		}
-		c:THE ?= {
-			every_owned_location = {
-				limit = {
-					OR = {
-                		raw_material = goods:goods_gold
-						raw_material = goods:gems
-					}
-				}
-				change_max_raw_material_workers = 5
-			}
-			every_owned_location = {
-				limit = {
-					OR = {
-                		raw_material = goods:copper
-						raw_material = goods:wheat
-					}
-				}
-				change_max_raw_material_workers = 2
-			}
-			location:polygyros = {
-				add_location_modifier = {
-					modifier = expanded_mines_modifier
-					years = -1
-					mode = add_and_extend
-				}
-			}
-			every_owned_location = {
-				limit = {
 					location_rank = location_rank:rural_settlement
 				}
 				change_prosperity = prosperity_very_weak_penalty
@@ -1571,7 +1555,11 @@ br_country_startup.7 = {
 		c:B0R ?= {
 			every_owned_location = {
 				limit = {
-					raw_material = goods:fur
+					OR = {
+                		raw_material = goods:copper
+						raw_material = goods:fur
+						raw_material = goods:wheat
+					}
 				}
 				change_max_raw_material_workers = 2
 			}
@@ -2495,28 +2483,6 @@ br_country_startup.7 = {
 					is_border = yes
 					location_rank = location_rank:rural_settlement
 				}
-				change_prosperity = prosperity_severe_penalty
-			}
-		}
-		c:AD1 ?= {
-			every_owned_location = {
-				limit = {
-					raw_material = goods:wheat
-				}
-				change_max_raw_material_workers = 2
-			}
-			every_owned_location = {
-				limit = {
-					location_rank = location_rank:rural_settlement
-				}
-				change_prosperity = prosperity_severe_penalty
-			}
-			every_owned_location = {
-				limit = {
-					is_border = yes
-					location_rank = location_rank:rural_settlement
-				}
-				change_development = development_severe_penalty
 				change_prosperity = prosperity_severe_penalty
 			}
 		}

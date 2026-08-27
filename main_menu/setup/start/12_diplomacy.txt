@@ -320,7 +320,8 @@ diplomacy_manager = {
 	#scripted_oneway = { first = ARA second = MTS type = military_sponsorship }
 	#scripted_oneway = { first = POR second = OPX type = military_sponsorship }
 	
-	
+	dependency = { first = ARA second = AD0 subject_type = vassal }
+    dependency = { first = CAS second = AD1 subject_type = vassal }
 	
 	#-------Maghreb-------
 	dependency = { first = KBO second = FZA subject_type = vassal }
@@ -438,8 +439,6 @@ diplomacy_manager = {
 
 
     #------ERE/"Byzantium"-------- ###
-    scripted_mutual = { first = BYZ second = HE1 type = alliance }
-    scripted_mutual = { first = BYZ second = THE type = alliance }
     dependency = { first = BYZ second = HC0 subject_type = br_stavropegion_subject } # Mount Athos
 
     dependency = { first = BYZ second = FEO subject_type = vassal } # Pronoïakon Ktéma
@@ -476,8 +475,8 @@ diplomacy_manager = {
     #Sub dependencies
     dependency = { first = HE1 second = MOE subject_type = vassal } # Pronoïakon Ktéma
     dependency = { first = HE1 second = ACH subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = THE second = B0R subject_type = vassal } # Pronoïakon Ktéma
-    dependency = { first = THE second = THS subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = B0R subject_type = vassal } # Pronoïakon Ktéma
+    dependency = { first = BYZ second = THS subject_type = vassal } # Pronoïakon Ktéma
     #dependency = { first = EPI second = DYR subject_type = march } # Thema
 
     dependency = { first = TRE second = AN6 subject_type = vassal } # Thema
@@ -563,7 +562,6 @@ diplomacy_manager = {
 	scripted_oneway = { first = GEO second = SGO type = military_sponsorship }
 	scripted_oneway = { first = PAF second = OHS type = military_sponsorship }
 	scripted_oneway = { first = BYZ second = OHS type = military_sponsorship }
-	scripted_oneway = { first = THE second = OHS type = military_sponsorship }
     scripted_oneway = { first = HE1 second = OHS type = military_sponsorship }
 	scripted_oneway = { first = SER second = OHS type = military_sponsorship }
 

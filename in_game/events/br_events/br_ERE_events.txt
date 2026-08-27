@@ -20,6 +20,19 @@ br_ere_events.1 = {
 	}
 
 	immediate = {
+		create_mercenary = {
+			name = br_varangian_merc
+			home = location:vize
+			definitions = {
+				br_renaissance_varangians = 1 #a_varangians
+				#a_steppe_horse_archers = 4
+			}
+			cost_multiplier = -0.5
+			save_scope_as = br_varangian_merc
+			leader = scope:br_varangian_character
+			#experience = 100
+		}
+
 		add_country_modifier = {
 			modifier = br_crisis_of_legitimacy
 			years = 25
@@ -55,7 +68,7 @@ br_ere_events.1 = {
 				limit = { country_exists = c:B0R }
 				c:B0R = {
 					make_subject_of = {
-						target = c:THE
+						target = c:BYZ
 						type = subject_type:pronoia
 					}
 					remove_opinion = {
@@ -68,7 +81,7 @@ br_ere_events.1 = {
 				limit = { country_exists = c:THS }
 				c:THS = {
 					make_subject_of = {
-						target = c:THE
+						target = c:BYZ
 						type = subject_type:pronoia
 					}
 					remove_opinion = {
@@ -286,6 +299,7 @@ br_ere_events.1 = {
 					add_pop_satisfaction = pop_satisfaction_extreme_bonus
 				}
 			}
+			hire_mercenary = scope:br_varangian_merc
 	   	}
 	}
 }
