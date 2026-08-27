@@ -15542,6 +15542,8 @@ countries = {
 			avallon
 			montcenis
 			aignay arnay beaune auxonne louhans
+			
+			langres grancey #D. de Langres
 		}
 
 		starting_technology_level = 3
@@ -16974,7 +16976,10 @@ countries = {
 	#Tonnerre (Vassal, Fief Mouvant)
 	TON = {
 		own_control_core = {
-			tonnerre saint_florentin bar_sur_seine #Sénonais
+			tonnerre saint_florentin #Sénonais
+		}
+		our_cores_conquered_by_others = {
+			bar_sur_seine
 		}
 
 		starting_technology_level = 3
@@ -56072,7 +56077,6 @@ countries = {
 
 	LOT = {
 		own_control_core = {
-			langres grancey #D. de Langres
 			chalons_champagne #C. de Chalon
 			reims #D. Reims
 
@@ -56094,6 +56098,8 @@ countries = {
 			rosnay villemaur choiseul
 			thionville
 
+			bar_sur_seine
+			chateau_thierry broyes #Brie Champenoise
 			# landau_rhineland speyer
 		}
 		own_control_integrated = {
@@ -56422,8 +56428,11 @@ countries = {
 	SSN = {
 		own_control_core = {
 			soissons braine noyon coucy laon #Soissonnais
-			chateau_thierry broyes #Brie Champenoise
 			guise hirson marle ribemont #Thiérache
+		}
+
+		our_cores_conquered_by_others = {
+			chateau_thierry broyes #Brie Champenoise
 		}
 
 		starting_technology_level = 3
@@ -56538,11 +56547,10 @@ countries = {
 	AD1 = { #BR addition
 		own_control_core = {
 			zaragoza
-			belchite carinena calatayud tarazona
 		}
 
 		our_cores_conquered_by_others = {
-			
+			belchite carinena calatayud tarazona
 			peniscola
 			alcaniz valderrobres
 			daroca teruel alfambra mora_de_rubielos castellon_de_la_plana ares_del_maestre
