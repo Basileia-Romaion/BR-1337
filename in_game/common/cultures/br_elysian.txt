@@ -50,7 +50,7 @@ elyrics_culture = {
 	language = elyrics_dialect
 	color = rgb{ 128 90 118 }
 	
-	tags = { native_american_tag north_american_gfx american_gfx east_mediterranean_gfx mediterranean_gfx  }
+	tags = { east_mediterranean_gfx north_american_gfx american_gfx }
 	#iroquois_gfx
 	opinions = {
 		photianoi = kindred
@@ -70,8 +70,8 @@ elyrics_culture = {
 }
 
 elysian_culture = {
-	#language = elysian_language
-	language = elysian_latin_dialect
+	language = elysian_language
+	#language = elysian_latin_dialect
 
 	color = rgb{  59 19 68 }
 	
