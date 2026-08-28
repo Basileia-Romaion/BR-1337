@@ -126,3 +126,15 @@ REPLACE_OR_CREATE:mines_of_tzantzakon_modifier = {
 	#local_disease_resistance = 0.08 
 	#local_monthly_prosperity = 0.002 
 #}
+
+### BR added locaton modifiers.
+
+br_new_world_capital = { #Modifier for new world capital, to make it more attractive for migration and growth to help not drain all its pops colonizing.
+	game_data = {
+		category = location 
+	}
+	local_migration_attraction = 0.1
+	local_build_buildings_efficiency = 0.1
+	local_pop_promotion_speed_modifier = 0.1
+	local_population_growth = 0.01
+}

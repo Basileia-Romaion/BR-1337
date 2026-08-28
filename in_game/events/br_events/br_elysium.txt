@@ -49,6 +49,11 @@ elysium_event.1 = {
 					years = 25
 					mode = add_and_extend
 				}
+				add_location_modifier = {
+					modifier = br_new_world_capital
+					years = -1
+					mode = add_and_extend
+				}
 				# figure out how to set vegetation = farmland
  			}
 			add_country_modifier = {

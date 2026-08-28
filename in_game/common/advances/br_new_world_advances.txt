@@ -344,7 +344,7 @@ elysian_civic_syncretism = {
 	}
 	requires = feudalism_advance
 	cultures_capacity_modifier = 0.5
-	global_pop_assimilation_speed = 0.001
+	#global_pop_assimilation_speed = 0.001
 	global_pop_assimilation_speed_modifier = 0.25
 }
 
@@ -362,7 +362,7 @@ elysian_colonial_charters = {
 	global_integration_speed_modifier = 0.1
 	global_migration_speed_modifier = 0.1
 	rural_migration_attraction = 0.1
-	global_population_growth = 0.0005
+	global_population_growth = 0.0002
 }
 
 # age_2_renaissance
@@ -698,7 +698,7 @@ br_colonial_tradition = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.0005
 }
 br_colonial_heritage = {
 	age = age_1_traditions

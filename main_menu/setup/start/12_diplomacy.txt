@@ -320,8 +320,8 @@ diplomacy_manager = {
 	#scripted_oneway = { first = ARA second = MTS type = military_sponsorship }
 	#scripted_oneway = { first = POR second = OPX type = military_sponsorship }
 	
-	dependency = { first = ARA second = AD0 subject_type = vassal }
-    dependency = { first = CAS second = AD1 subject_type = vassal }
+	dependency = { first = ARA second = AD0 subject_type = tributary }
+    dependency = { first = CAS second = AD1 subject_type = tributary }
 	
 	#-------Maghreb-------
 	dependency = { first = KBO second = FZA subject_type = vassal }
