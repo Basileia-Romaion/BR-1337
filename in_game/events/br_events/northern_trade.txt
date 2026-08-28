@@ -1,9 +1,8 @@
 ﻿namespace = northern_trade
 
-
 #Context event that explains to the player what is in store for them
 
-northern_trade.1={
+northern_trade.1 = {
     type=country_event
     title=northern_trade.1.title
     desc=northern_trade.1.desc
@@ -32,7 +31,7 @@ northern_trade.1={
 
 }
 
-northern_trade.2={
+northern_trade.2 = {
     type=country_event
     title=northern_trade.2.title
     desc=northern_trade.2.desc

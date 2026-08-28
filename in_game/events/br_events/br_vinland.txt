@@ -1,0 +1,51 @@
+﻿namespace = br_vinland_event
+
+# Create new Capital for Vinland Eiriksvagr. After the explorer and founder of Vinland, Leif Erikson, the son of Erik the Red, who was the first European to set foot in North America. The capital is located in Stadacona, which is now Quebec City, Canada.
+br_vinland_event.1 = {
+	type = country_event
+	title = br_vinland_event.1.title
+	desc = br_vinland_event.1.desc
+	outcome = positive
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	trigger = {
+	}
+
+	immediate = {
+		location:stadacona = {
+			save_scope_as = target_location
+		}
+		capital = {
+			save_scope_as = current_capital
+		}
+	}
+
+	option = {
+		name = br_vinland_event.1.a
+		historical_option = yes
+		high_reward_option = yes
+
+		move_capital_event_effect = {
+			from = scope:current_capital
+			to = scope:target_location
+		}
+		scope:target_location = {
+			rename_location = Eiriksvagr
+			change_location_rank = location_rank:city
+			add_location_modifier = {
+				modifier = birth_of_a_new_city_adm
+				years = 25
+				mode = add_and_extend
+			}
+			add_location_modifier = {
+				modifier = br_new_world_capital
+				years = -1
+				mode = add_and_extend
+			}
+		}
+	}
+
+}

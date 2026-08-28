@@ -65,11 +65,6 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
-				add_location_modifier = {
-					modifier = br_new_world_capital
-					years = 50
-					mode = add_and_extend
-				}
 			}
 		}
 		c:NRR ?= {
