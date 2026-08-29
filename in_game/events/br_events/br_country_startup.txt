@@ -31,7 +31,7 @@ br_country_startup.1 = { #naval units added
 				create_sub_unit_of_category = sub_unit_category:navy_transport
 				create_sub_unit_of_category = sub_unit_category:navy_transport
 				add_location_modifier = {
-					modifier = br_new_world_capital
+					modifier = br_new_world_elysian_capital
 					years = 50
 					mode = add_and_extend
 				}
@@ -40,7 +40,7 @@ br_country_startup.1 = { #naval units added
 		c:E1Y ?= {
 			capital = {
 				add_location_modifier = {
-					modifier = br_new_world_capital
+					modifier = br_new_world_elysian_capital
 					years = 50
 					mode = add_and_extend
 				}
@@ -49,7 +49,7 @@ br_country_startup.1 = { #naval units added
 		c:E2Y ?= {
 			capital = {
 				add_location_modifier = {
-					modifier = br_new_world_capital
+					modifier = br_new_world_elysian_capital
 					years = 50
 					mode = add_and_extend
 				}
