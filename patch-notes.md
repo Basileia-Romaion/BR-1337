@@ -4,10 +4,6 @@
 
 # 0.24
 
-## Balance changes
-  - simplified these debuffs by removing the scaling so they simply on or off so they easier to understand
-  - Adjusted the unqiue constantinople building icons to be a bit more smooth to be closer to the texture of vanilla. Hagia Sophia still a bit squeshed 
-
 ## Map changes
 ### Cultures
   - adjusted the Lur/Farsi cultural/religion border to blend a bit better and be more shia and less zorastrian.
@@ -17,9 +13,25 @@
   - misc map changes in west HRE and iberia
 
 ## Events
+  - Opening flavor event for vinland.
   - Opening flavor event for both the Elysian tags.
   - Moved the Iberia crusade target to the balerics since I changed Zaragoza to just be a city state.
 
+## Balance changes
+  - simplified these debuffs by removing the scaling so they simply on or off so they easier to understand
+  - Adjusted the unqiue constantinople building icons to be a bit more smooth to be closer to the texture of vanilla. Hagia Sophia still a bit squeshed 
+  - Halfed the Elysian and New World Pop growth modifiers to better align with vanilla modifiers.
+  - Added a capital modifier for the Elysians/Vinlanders that gives pop growth and attraction for the capital to help balance out all the pops leaving to colonize.
+   - br_new_world_vinland_capital: "Heart of Vinland"
+   - br_new_world_elysian_capital: "Elysian Polis"
+   - br_new_world_elysian_capital_2: "Cradle of Elysium"
+
+## Localization
+  - Kipchak loc for the steppe.
+
+## Fixes
+  - Restored the Elysian language for the Elysian culture its supposed to be a hybrid between Latin and Greek. We had been using Elysian Latin because previously we could not get the location localization to work for new languages.
+  - Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
 
 # 0.23.3
 - Balance pass on ERE modifiers especally ones active at game start.
