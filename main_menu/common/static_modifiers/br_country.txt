@@ -86,7 +86,6 @@ br_lucky_country_buff = {
 	}
 	#global_estate_power = -0.5
 	global_crown_estate_power = 0.5
-	antagonism_received_modifier = -0.25
 	monthly_legitimacy = 0.25
 	stability_investment = 0.25
 	global_integration_speed_modifier = 1
@@ -105,7 +104,6 @@ br_lucky_republic_buff = {
 	}
 	#global_estate_power = -0.5
 	global_crown_estate_power = 0.5
-	antagonism_received_modifier = -0.25
 	monthly_republican_tradition = 0.25
 	stability_investment = 0.25
 	global_integration_speed_modifier = 1
@@ -114,6 +112,18 @@ br_lucky_republic_buff = {
 	naval_morale_modifier = 0.25
 	trade_income = 0.25
 	mercenary_units_preference_modifier = 0.5
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	aggressiveness_modifier = 0.5
+}
+
+br_lucky_colonial_ai_buff = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	exploration_maintenance_efficiency = 0.5
+    colonial_maintenance_efficiency = 0.5
+	global_crown_estate_power = 0.5
 	global_estate_target_satisfaction = large_permanent_target_satisfaction
 	aggressiveness_modifier = 0.5
 }

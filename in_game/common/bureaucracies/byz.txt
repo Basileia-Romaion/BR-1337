@@ -456,7 +456,7 @@ REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 			value = 1
 			subtract = scope:maintenance
 		}
-		monthly_legitimacy = -0.2
+		monthly_legitimacy = -0.25 #increase from 0.2
 		monthly_republican_tradition = -0.2
 		monthly_roman_authority = -0.02 #br added
 	}
@@ -589,7 +589,7 @@ REPLACE_OR_CREATE:magister_militum_bureaucracy = {
 			value = 1
 			subtract = scope:maintenance
 		}
-		monthly_legitimacy = -0.2
+		monthly_legitimacy = -0.25 #increase from 0.2
 		global_nobles_estate_power = 0.5
 		monthly_roman_authority = -0.02 #br added
 	}
