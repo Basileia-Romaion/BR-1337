@@ -85,6 +85,17 @@ elysium_event.1 = {
 					change_pop_culture = culture:elysian_culture
 				}
 			}
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						OR = {
+							culture = { has_culture_group = culture_group:powhatan_group }
+							culture = { has_culture_group = culture_group:lenape_group }
+						}
+					}
+					change_pop_culture = culture:elyrics_culture
+				}
+			}
  		#}
 		hidden_effect = {
 			scope:target_location = {
