@@ -87,6 +87,8 @@ locations = {
 	}
 	wachilmezi = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.750	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.650	culture = skraeling_culture	religion = norse }
 	}
 	onkobagag = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = eastern_abenaki_culture	religion = midewiwin_religion }
@@ -105,10 +107,12 @@ locations = {
 		define_pop = {	type = peasants		size = 4.152	culture = vinlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 0.852	culture = stadaconan_culture	religion = iroquoian_totemism }
 		define_pop = {	type = peasants		size = 0.611	culture = skraeling_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 0.396	culture = skraeling_culture		religion = totemism }
+		define_pop = {	type = tribesmen	size = 0.396	culture = skraeling_culture		religion = iroquoian_totemism }
 	}
 	andawaohie = {
 		define_pop = {	type = tribesmen	size = 1.230	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.800	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.750	culture = skraeling_culture	religion = norse }
 	}
 	ontaretse = {
 		define_pop = {	type = tribesmen	size = 0.318	culture = stadaconan_culture	religion = iroquoian_totemism }
@@ -489,6 +493,8 @@ locations = {
 	}
 	masolian = {
 		define_pop = {	type = tribesmen	size = 0.900	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.500	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.350	culture = skraeling_culture	religion = norse }
 	}
 	yamaska = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = western_abenaki_culture	religion = midewiwin_religion }
@@ -500,21 +506,31 @@ locations = {
 	}
 	hochelaga = {
 		define_pop = {	type = tribesmen	size = 0.677	culture = osheaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.400	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.300	culture = skraeling_culture	religion = norse }
 	}
 	kemoimenahan = {
 		define_pop = {	type = tribesmen	size = 0.637	culture = osheaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.400	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.300	culture = skraeling_culture	religion = norse }
 	}
 	ahkwesasne = {
 		define_pop = {	type = tribesmen	size = 0.850	culture = osheaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.325	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.225	culture = skraeling_culture	religion = norse }
 	}
 	otennienontant = {
 		define_pop = {	type = tribesmen	size = 0.425	culture = osheaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.350	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.250	culture = skraeling_culture	religion = norse }
 	}
 	makigotekw = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = osheaga_culture	religion = iroquoian_totemism }
 	}
 	loigan_sibo = {
 		define_pop = {	type = tribesmen	size = 0.724	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.500	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.350	culture = skraeling_culture	religion = norse }
 	}
 	lake_of_two_mountains = {
 	}
@@ -534,6 +550,8 @@ locations = {
 	}
 	wolinak = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.650	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.500	culture = skraeling_culture	religion = norse }
 	}
 	wabanaki = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = western_abenaki_culture	religion = midewiwin_religion }
@@ -543,6 +561,8 @@ locations = {
 	}
 	nebesek = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.550	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.400	culture = skraeling_culture	religion = norse }
 	}
 	nikitotegwak = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = western_abenaki_culture	religion = midewiwin_religion }
@@ -569,9 +589,13 @@ locations = {
 	}
 	ekwentondie = {
 		define_pop = {	type = tribesmen	size = 1.084	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.750	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.650	culture = skraeling_culture	religion = norse }
 	}
 	yamachiche = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = maisouna_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.550	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.400	culture = skraeling_culture	religion = norse }
 	}
 	shawinigan = {
 		define_pop = {	type = tribesmen	size = 0.106	culture = atikamekw_culture	religion = midewiwin_religion }
@@ -1575,15 +1599,23 @@ locations = {
 	}
 	cataraqui = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = agojuda_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.300	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	kahwenoke = {
 		define_pop = {	type = tribesmen	size = 0.637	culture = osheaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.300	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	toniato = {
 		define_pop = {	type = tribesmen	size = 0.850	culture = agojuda_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.300	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	gananoque = {
 		define_pop = {	type = tribesmen	size = 1.084	culture = agojuda_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 0.300	culture = skraeling_culture		religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	opinicon = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = agojuda_culture	religion = iroquoian_totemism }
