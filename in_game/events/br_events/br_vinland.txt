@@ -28,6 +28,13 @@ br_vinland_event.1 = {
 		historical_option = yes
 		high_reward_option = yes
 
+		scope:current_capital = {
+			add_location_modifier = {
+				modifier = influence_of_the_old_capital_modifier
+				years = 100
+				mode = add_and_extend
+			}
+		}
 		move_capital_event_effect = {
 			from = scope:current_capital
 			to = scope:target_location

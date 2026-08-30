@@ -36,6 +36,13 @@ elysium_event.1 = {
 
 		add_prestige = prestige_extreme_bonus
 		change_culture = culture:elysian_culture
+		scope:current_capital = {
+			add_location_modifier = {
+				modifier = influence_of_the_old_capital_modifier
+				years = 100
+				mode = add_and_extend
+			}
+		}
 		move_capital_event_effect = {
 			from = scope:current_capital
 			to = scope:target_location
