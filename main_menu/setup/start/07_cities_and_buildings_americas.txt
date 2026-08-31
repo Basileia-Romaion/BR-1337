@@ -262,6 +262,21 @@ building_manager = {
 	
 	
 	####---------- Haudenosauneega ----------####
+	tribal_war_camp = { tag = KKA level = 1 location =  canajoharie }
+	tribal_hunting_lodge = { tag = KKA level = 1 location =  canajoharie }
+	tribal_market_villages = { tag = KKA level = 2 location =  canajoharie }
+	tribal_war_camp = { tag = ONY level = 1 location =  onenioteke }
+	tribal_hunting_lodge = { tag = ONY level = 1 location =  onenioteke }
+	tribal_market_villages = { tag = ONY level = 1 location =  onenioteke }
+	tribal_war_camp = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_hunting_lodge = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_market_villages = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_war_camp = { tag = GYO level = 1 location =  skaniatares }
+	tribal_hunting_lodge = { tag = GYO level = 1 location =  skaniatares }
+	tribal_market_villages = { tag = GYO level = 1 location =  skaniatares }
+	tribal_war_camp = { tag = ONN level = 1 location =  canadaigua }
+	tribal_hunting_lodge = { tag = ONN level = 1 location =  canadaigua }
+	tribal_market_villages = { tag = ONN level = 1 location =  canadaigua }
 	#--
 	
 	####---------- Tsenacommacah ----------####
@@ -289,6 +304,7 @@ building_manager = {
 	clay_pit = { tag = E1Y level = 1 location = matapeake }
 	parish_church = { tag = E1Y level = 1 location = matapeake }
 	parish_church = { tag = E1Y level = 1 location = patapsco }
+	horse_breeders = { tag = E1Y level = 1 location = patapsco }
 
 	#temple = { tag = DOE level = 1 location = doeg }
 	#mason = { tag = DOE level = 1 location = doeg }
@@ -302,6 +318,7 @@ building_manager = {
 	#rural_clothmaker = { tag = E2Y level = 1 location = nansemond }
 	parish_church = { tag = E2Y level = 1 location = nansemond }
 	parish_church = { tag = E2Y level = 1 location = kiskiack }
+	horse_breeders = { tag = E2Y level = 1 location = nansemond }
 	
 	tribal_war_camp = { tag = E5Y level = 1 location =  patawomeck }
 	tribal_hunting_lodge = { tag = E5Y level = 1 location =  patawomeck }
@@ -334,7 +351,6 @@ building_manager = {
 
 	####---------- Cahokia ----------####
 	#--
-	
 	####---------- Great Plains ----------####
 	#--
 	
