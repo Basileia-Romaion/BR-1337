@@ -23,62 +23,10 @@ br_vinland_event.1 = {
 		}
 	}
 
-	option = { #special option for ai, in order to make vinland a stronger rival to Elysium.
-		trigger = {
-			is_ai = yes
-			c:BEO ?= {
-				is_ai = yes
-			}
-			c:MIK ?= {
-				is_ai = yes
-			}
-			c:INV ?= {
-				is_ai = yes
-			}
-		}
-		name = br_vinland_event.1.a
-		scope:current_capital = {
-			add_location_modifier = {
-				modifier = influence_of_the_old_capital_modifier
-				years = 100
-				mode = add_and_extend
-			}
-		}
-		move_capital_event_effect = {
-			from = scope:current_capital
-			to = scope:target_location
-		}
-		scope:target_location = {
-			rename_location = Eiriksvagr
-			change_location_rank = location_rank:city
-			add_location_modifier = {
-				modifier = birth_of_a_new_city_adm
-				years = 25
-				mode = add_and_extend
-			}
-			add_location_modifier = {
-				modifier = br_new_world_vinland_capital
-				years = -1
-				mode = add_and_extend
-			}
-		}
-		annex_country = { country = c:BEO }
-		annex_country = { country = c:MIK }
-		c:INV ?= {
-			make_subject_of = {
-				target = c:NRV
-				type = subject_type:vassal
-			}
-		}
-	}
-
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = br_vinland_event.1.a
 		historical_option = yes
-		#high_reward_option = yes
+		high_reward_option = yes
 
 		scope:current_capital = {
 			add_location_modifier = {
