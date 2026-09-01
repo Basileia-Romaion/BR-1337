@@ -9838,12 +9838,6 @@ countries = {
 			date = 1345.1.1
 			size = 1
 		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
-		}
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 1000
@@ -10172,12 +10166,6 @@ countries = {
 
 		tolerated_cultures = {
 			corsican
-		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.33
 		}
 		capital = genoa
 		currency_data = {
@@ -10707,12 +10695,6 @@ countries = {
 
 		tolerated_cultures = {
 			emilian
-		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
 		}
 		capital = milano
 		dynasty = visconti_dynasty
@@ -12281,12 +12263,6 @@ countries = {
 					}
 				}
 			}
-		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
 		}
 		#https://www.researchgate.net/publication/269643384_The_Venetian_Money_Market_Banks_Panics_and_the_Public_Debt_1200-1500
 		#https://www.jstor.org/stable/1882461

@@ -64,29 +64,7 @@ br_on_game_start = {
 
 		#Events to boost lucky ai countries
 		#33% x100 years
-		c:SER ?= {
-            trigger_event_silently = br_country_startup.8
-        }
-		#c:LON ?= {
-        #   trigger_event_silently = br_country_startup.8
-        #}
-		c:TUN ?= {
-            trigger_event_silently = br_country_startup.8
-        }
-		c:MZF ?= {
-            trigger_event_silently = br_country_startup.8
-        }
-		c:LIT ?= {
-            trigger_event_silently = br_country_startup.9
-        }
 		#50% x100 years
-		c:POL ?= {
-            trigger_event_silently = br_country_startup.10
-        }
-		#100% x200 years
-		c:TUR ?= {
-            trigger_event_silently = br_country_startup.11
-        }
 
         c:BYZ ?= {
 			trigger_event_silently = br_ere_events.1 #start event with cbs
@@ -354,30 +332,6 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
-		c:VEN ?= {
-			research_advance = advance_type:naval_morale_advance_1
-			research_advance = advance_type:merchants_and_trade
-			research_advance = advance_type:trade_range_advance_age_2
-			research_advance = advance_type:rudimentary_coastal_ship_repair
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:diplomatic_capacity_traditions
-		}
-		c:GEN ?= {
-			research_advance = advance_type:naval_morale_advance_1
-			research_advance = advance_type:merchants_and_trade
-			research_advance = advance_type:trade_range_advance_age_2
-			research_advance = advance_type:rudimentary_coastal_ship_repair
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:diplomatic_capacity_traditions
-		}
-		c:PIS ?= {
-			research_advance = advance_type:naval_morale_advance_1
-			research_advance = advance_type:merchants_and_trade
-			research_advance = advance_type:trade_range_advance_age_2
-			research_advance = advance_type:rudimentary_coastal_ship_repair
-            research_advance = advance_type:meritocracy_advance
-			research_advance = advance_type:diplomatic_capacity_traditions
-		}
 		c:K1K ?= {
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:letters_of_marque
@@ -470,23 +424,6 @@ br_on_game_start = {
 			research_advance = advance_type:abacus_advance
 			research_advance = advance_type:muslim_caravans
         }
-
-		c:TUR ?= {
-			research_advance = advance_type:seljuk_roots
-			research_advance = advance_type:timariots
-			research_advance = advance_type:bashi_bazouks
-			research_advance = advance_type:akinji_cavalry
-			research_advance = advance_type:heirs_of_rum
-			research_advance = advance_type:uc_bey_advance
-			research_advance = advance_type:persian_in_the_court
-			research_advance = advance_type:crossroads_of_commerce
-			research_advance = advance_type:millets
-			research_advance = advance_type:timariots
-			research_advance = advance_type:autonomous_pashas
-			add_gold = 500
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
-			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
-		}
 
 		c:ADU ?= {
 			research_advance = advance_type:ledgers_double_checking
