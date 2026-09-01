@@ -196,6 +196,7 @@
 		}
 	}
 
+ #Other
 	br_latin_occupiers = {
 		estate = nobles_estate
 		icon = banal_lordship
@@ -570,12 +571,10 @@
 		}
 		country_modifier = {
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
-			#global_crown_estate_power = 0.5
-			global_burghers_estate_power = 0.25
-			global_estate_max_tax = 0.1
+			global_burghers_estate_power = 0.5
 			global_trades_per_burgher = 1
-			export_efficiency = large_trade_efficiency_bonus
-			trade_importance_modifier = 0.25
+			trade_income = 0.5
+			trade_importance_modifier = 0.5
 		}
 		ai_weight = {
 			add = 25
@@ -596,13 +595,13 @@
 		}
 		country_modifier = {
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
-			global_burghers_estate_power = 0.25
+			global_burghers_estate_power = 0.5
 			trade_sea_efficiency = large_trade_sea_efficiency_bonus
 			expected_navy_size = 30
 			sea_cost_on_distance_from_capital_when_maritime = -1
 			global_navy_levy_size_modifier = 1
-			navy_maintenance_efficiency = 0.2
-			navy_light_ship_maintenance_cost_modifier = -0.2
+			navy_maintenance_efficiency = 0.25
+			navy_light_ship_maintenance_cost_modifier = -0.25
 		}
 		ai_weight = {
 			add = 25
@@ -623,7 +622,7 @@
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
 			global_burghers_estate_power = 0.25
 			expected_army_size = 5
-			mercenary_units_preference_modifier = 0.5
+			mercenary_units_preference_modifier = 1
 			hire_mercenary_premium_cost_modifier = -0.33
 			mercenary_maintenance_efficiency = 0.33
 		}
@@ -648,17 +647,15 @@
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
 			global_burghers_estate_power = 0.25
 			can_hire_privateers = yes
-			hire_privateer_cost_modifier = -0.2
-			privateer_maintenance_cost_modifier = -0.2
-			navy_maintenance_efficiency = 0.1
-			navy_light_ship_maintenance_cost_modifier = -0.1
+			hire_privateer_cost_modifier = -0.33
+			privateer_maintenance_cost_modifier = -0.33
 		}
 		ai_weight = {
 			add = 25
 		}
 	}
-
-	br_latin_trade_naval_reliance = { #split into two 
+ #BYZ
+	br_latin_trade_naval_reliance = {
 		estate = burghers_estate
 		#icon = sponsor_maritime_contracts
 		potential = {
@@ -673,13 +670,10 @@
 		}
 		country_modifier = {
 			global_burghers_estate_power = 0.25
-			global_burghers_conversion_blocked = yes
 			burghers_estate_allowed_in_cabinet = yes
+			trade_income = -0.25
 			expected_navy_size_modifier = -0.5
-			tolerance_heretic = 1
-			foreign_export_from_market_efficiency = 0.25 #1.3 check
 			monthly_towards_plutocracy = societal_value_monthly_move
-			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 		}
 		#positive
 		country_modifier = {
@@ -719,6 +713,27 @@
 			global_sailors_modifier = -0.5
 		}
 	}
+	br_latin_minority_privilege = {
+		estate = burghers_estate
+		#icon = sponsor_maritime_contracts
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				has_estate_privilege = estate_privilege:br_latin_minority_privilege
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization > -50
+			government_power > 95
+		}
+		country_modifier = {
+			global_burghers_conversion_blocked = yes
+			tolerance_heretic = 1
+			tolerance_own = -0.5
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		}
+	}
+
 
 ### Clergy Privileges ###
 
@@ -737,7 +752,6 @@
 			societal_value:spiritualist_vs_humanist > 50
 		}
 		country_modifier = {
-			global_bureaucracy_maintenance_efficiency = 0.1
 			global_clergy_estate_power = 0.25
 			global_clergy_city_desired_pop_scaled = 0.005 #5 per 1000
 			monthly_towards_centralization = societal_value_minor_monthly_move
@@ -758,7 +772,7 @@
 				has_advance = roman_scribal_administration
 			}
 			global_clergy_max_literacy = 5
-			global_pop_promotion_speed_modifier = 0.10
+			global_bureaucracy_maintenance_efficiency = 0.1
 		}
 		ai_weight = {
 			add = 25
@@ -786,26 +800,13 @@
 			monthly_towards_spiritualist = societal_value_monthly_move
 			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 		}
-		#country_modifier = {
-		#	potential_trigger = {  societal_value:individualism_vs_communalism >= 50}
-		#	global_pop_conversion_speed_modifier = 0.25
-		#}
 		country_modifier = {
-			potential_trigger = { stability > 0 }
-			scale = {
-				value = stability
-				multiply = 0.01
-			}
+			potential_trigger = { stability > 50 }
 			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		}
 		country_modifier = {
-			potential_trigger = { legitimacy < 100 }
-			scale = {
-				value = legitimacy
-				multiply = -0.01
-				add = 1
-			}
-			clergy_estate_max_tax = -0.1
+			potential_trigger = { legitimacy < 75 }
+			clergy_estate_max_tax = -0.25
 		}
 		#positive
 		##May split these off or replace name/description.
@@ -835,14 +836,11 @@
 	}
 
 	br_roman_orthodox_catechesis = {
-		#icon = dhimmi_mazalim_court
 		potential = {
 			OR = {
 				has_or_had_tag = BYZ
 				culture = { has_culture_group = culture_group:roman_group }
 			}
-			#NOT = { has_estate_privilege = estate_privilege:promote_cultural_unity }
-			#NOT = { has_estate_privilege = estate_privilege:clergy_enforced_unity }
 		}
 		estate = clergy_estate
 		country_modifier = {
@@ -856,7 +854,7 @@
 
 			cultures_capacity_modifier = -0.25
 			tolerance_heathen = -0.5
-			tolerance_heretic = -0.25
+			tolerance_heretic = -0.5
 			antagonism_religion_influence = 0.25
 		}
 		ai_weight = {
@@ -864,7 +862,7 @@
 		}
 	}
 
-	br_russian_subject_privilege = { #to stop the russian subjects from being force converted. and some extra buffs
+	br_russian_subject_privilege = { #to stop the russian subjects from being force converted.
 		estate = clergy_estate
 		icon = dhimmi_mazalim_court
 		potential = {
@@ -873,13 +871,9 @@
 		}
 		country_modifier = {
 			global_clergy_estate_power = 0.25
-			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
-			
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
 			blocked_from_conversion = yes
-
-			global_defensive = 0.1
-			global_hostile_attrition = 0.25
-			fort_maintenance_efficiency = 0.1
+			loyalty_to_overlord = 10
 		}
 		ai_weight = {
 			add = 25
@@ -1083,10 +1077,10 @@
 			}
 		}
 		country_modifier = {
-			global_tribes_estate_power = 1.0
+			global_tribes_estate_power = 1
 			tribes_estate_target_satisfaction = small_privilege_target_satisfaction
 			tribes_estate_levy_size = 0.5
-			levy_maintenance_modifier = -0.1
+			levy_maintenance_modifier = -0.25
 			monthly_towards_free_subjects = societal_value_monthly_move
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.25
