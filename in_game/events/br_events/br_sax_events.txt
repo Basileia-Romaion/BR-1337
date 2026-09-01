@@ -12,7 +12,7 @@ namespace = br_sax_events
 		from = 1300.1.1
 		to = 1800.1.1
 		monthly_chance = 40
-}
+	}
 
 	illustration_tags = {
 		10 = happy
@@ -31,46 +31,66 @@ namespace = br_sax_events
 	option = {
 		name = br_sax_events.1.a
 		
-        location:berlin = 
-				construct_building = {
-					building_type = building_type:merchants_quarters
-					cost_multiplier = 0
-					cost_multiplier_reason = "game_concept_event"
-                construct_building = {
-					building_type = building_type:merchants_quarters
-					cost_multiplier = 0
-					cost_multiplier_reason = "game_concept_event"
-                construct_building = {
-					building_type = building_type:merchants_quarters
-					cost_multiplier = 0
-					cost_multiplier_reason = "game_concept_event"        
-		province_definition:mittelmark_province = {
-			every_location_in_province_definition = {
-				limit = { owner = root }
-				change_integration_progress = 20
-              }
-              }  
-             }
+        location:berlin = {
+			construct_building = {
+				building_type = building_type:merchants_quarters
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
 			}
-		}
+			construct_building = {
+				building_type = building_type:merchants_quarters
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
+			}
+			construct_building = {
+				building_type = building_type:merchants_quarters
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"      
+			}
+			province_definition:mittelmark_province = {
+				every_location_in_province_definition = {
+					limit = { owner = root }
+					change_integration_progress = 20
+				}
+			}
+    	}
 	}
 
 	option = {
 		name = br_sax_events.1.b
 		
-        location:berlin = 
-				construct_building = {
-					building_type = building_type:barracks
-					cost_multiplier = 0
-					cost_multiplier_reason = "game_concept_event"
-		province_definition:mittelmark_province = {
-			every_location_in_province_definition = {
-				limit = { owner = root }
-				change_integration_progress = 20
+        location:berlin = {
+			construct_building = {
+				building_type = building_type:barracks
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
+			}
+			province_definition:mittelmark_province = {
+				every_location_in_province_definition = {
+					limit = { owner = root }
+					change_integration_progress = 20
+				}
+			}
+    	}
+	}
+
+	option = {
+		name = br_sax_events.1.b
+		
+        location:berlin = {
+			construct_building = {
+				building_type = building_type:barracks
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
+			}
+			province_definition:mittelmark_province = {
+				every_location_in_province_definition = {
+					limit = { owner = root }
+					change_integration_progress = 20
+				}
 			}
 		}
-	  }
-    } 
+    }
 }
 
 # Hamburg Conquest 
@@ -85,7 +105,7 @@ namespace = br_sax_events
 		from = 1300.1.1
 		to = 1800.1.1
 		monthly_chance = 40
-}
+	}
 
 	illustration_tags = {
 		10 = happy
@@ -104,12 +124,13 @@ namespace = br_sax_events
 	option = {
 		name = br_sax_events.2.a
 		
-     location:hamburg = 
-				construct_building = {
-					building_type = building_type:shipyard
-					cost_multiplier = 0.25
-					cost_multiplier_reason = "game_concept_event"
-			
+    	location:hamburg = {
+			construct_building = {
+				building_type = building_type:shipyard
+				cost_multiplier = 0.25
+				cost_multiplier_reason = "game_concept_event"
+			}
+		}
 	}
 
 	option = {
@@ -118,7 +139,6 @@ namespace = br_sax_events
         add_prestige = prestige_mild_penalty
         scope:target_location = {
 			change_prosperity = prosperity_severe_penalty
-          }
-	   }
-    }  	
+        }
+	}
 }
