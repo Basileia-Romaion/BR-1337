@@ -2809,3 +2809,235 @@ br_country_startup.7 = {
 
 }
 
+br_country_startup.8 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	option = {
+		#name = br_country_startup.8.a
+		trigger = {
+			is_ai = yes
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.33
+		}
+	}
+
+	option = {
+		#name = br_country_startup.8.b
+		trigger = {
+			is_ai = no
+		}
+
+	}
+
+	#option = {		
+		#name = br_country_startup.8.c		
+		#high_risk_option = yes		
+		#trigger = {		
+			#is_ai = no		
+		#}		
+		#hidden_effect = {		
+			#if = {		
+				#limit = { is_ai = yes }		
+			#}		
+		#}		
+	#}		
+
+}
+
+br_country_startup.9 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	immediate = {
+	}
+
+	option = {
+		trigger = {
+			is_ai = yes
+			c:KIE ?= {
+				is_ai = yes
+			}
+			c:CHR ?= {
+				is_ai = yes
+			}
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.33
+		}
+		#change_religion = religion:catholic
+		#annex_country = { country = c:KIE }
+		#annex_country = { country = c:CHR }
+		c:KIE ?= {
+			make_subject_of = {
+				target = c:LIT
+				type = subject_type:vassal
+			}
+		}
+		c:CHR ?= {
+			make_subject_of = {
+				target = c:LIT
+				type = subject_type:vassal
+			}
+		}
+		every_subject = {
+			grant_estate_privilege = estate_privilege:br_russian_subject_privilege
+		}
+	}
+	option = {
+		trigger = {
+			is_ai = yes
+			NOR = {
+				c:KIE ?= {
+					is_ai = yes
+				}
+				c:CHY ?= {
+					is_ai = yes
+				}
+			}
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.5
+		}
+	}
+
+	option = {
+		trigger = {
+			is_ai = no
+		}
+
+	}	
+
+}
+
+br_country_startup.10 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	immediate = {
+	}
+
+	option = {
+		trigger = {
+			is_ai = yes
+			c:VOL ?= {
+				is_ai = yes
+			}
+			c:HAL ?= {
+				is_ai = yes
+			}
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.5
+		}
+		c:VOL ?= {
+			make_subject_of = {
+				target = c:POL
+				type = subject_type:vassal
+			}
+		}
+		c:HAL ?= {
+			make_subject_of = {
+				target = c:POL
+				type = subject_type:vassal
+			}
+		}
+
+	}
+	option = {
+		trigger = {
+			is_ai = yes
+			NOR = {
+				c:VOL ?= {
+					is_ai = yes
+				}
+				c:HAL ?= {
+					is_ai = yes
+				}
+			}
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 200
+			mode = add_and_extend
+			size = 0.5
+		}
+	}
+
+	option = {
+		trigger = {
+			is_ai = no
+		}
+
+	}	
+
+}
+
+br_country_startup.11 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	immediate = {
+	}
+
+	option = {
+		trigger = {
+			is_ai = yes
+		}
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 200
+			mode = add_and_extend
+			size = 1
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 75
+			mode = add_and_extend
+			size = 1
+		}
+	}
+
+	option = {
+		trigger = {
+			is_ai = no
+		}
+	}	
+
+}

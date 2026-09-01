@@ -13736,12 +13736,6 @@ countries = {
 
 		liturgical_language = church_slavonic_language
 		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
-		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
 			date = 1425.1.1
@@ -15022,12 +15016,6 @@ countries = {
 
 		country_rank = rank_kingdom
 		capital = leon
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1500.1.1
-			size = 0.33
-		}
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
@@ -19659,12 +19647,6 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 1000
 			navy_tradition = 100
@@ -33775,20 +33757,6 @@ countries = {
 		accepted_cultures = { 
 			turkoman_culture
 			farsi_culture
-			adhari_culture
-			iraqi_culture
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1395.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 1
 		}
 		currency_data = {
 			gold = 1500
@@ -41262,12 +41230,6 @@ countries = {
 			date = 1342.1.1
 			size = 1
 		}
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.5
-		}
 
 		accepted_cultures = {
 			greater_polish
@@ -41853,15 +41815,9 @@ countries = {
 		dynasty = gediminid_dynasty
 		court_language = polish_dialect
 		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1395.1.1
-			size = 0.33
-		}
-		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1395.1.1
+			date = 1433.1.1
 			size = 0.75
 		}
 		country_rank = rank_duchy
@@ -42849,7 +42805,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1400.1.1
+			date = 1425.1.1
 			size = 1
 		}
 		court_language = karluk_language
@@ -49130,12 +49086,6 @@ countries = {
 			baloch_culture
 		}
 		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
-		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
 			date = 1425.1.1
@@ -53312,7 +53262,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1355.1.1
+			date = 1400.1.1
 			size = 0.5
 		}
 		currency_data = {
@@ -53608,7 +53558,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1355.1.1
+			date = 1365.1.1
 			size = 1
 		}
 		currency_data = {
@@ -55769,12 +55719,6 @@ countries = {
 			land_vs_naval = -100
 			individualism_vs_communalism = 80
 			outward_vs_inward = 80
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1338.1.1
-			size = 2
 		}
 		capital = kodak
 	}
