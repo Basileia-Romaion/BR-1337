@@ -1,0 +1,124 @@
+namespace = br_sax_events 
+
+# Berlin Conquest 
+ br_sax_events.1 = {
+	type = country_event
+	title = br_sax_events.1.title
+	desc = br_sax_events.1.desc
+	outcome = neutral
+	fire_only_once = yes
+    dynamic_historical_event = {
+		tag = SAX
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 40
+}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		has_or_had_tag = SAX
+		owns = location:berlin 
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = br_sax_events.1.a
+		
+        location:berlin = 
+				construct_building = {
+					building_type = building_type:merchants_quarters
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+                construct_building = {
+					building_type = building_type:merchants_quarters
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+                construct_building = {
+					building_type = building_type:merchants_quarters
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"        
+		province_definition:mittelmark_province = {
+			every_location_in_province_definition = {
+				limit = { owner = root }
+				change_integration_progress = 20
+              }
+              }  
+             }
+			}
+		}
+	}
+
+	option = {
+		name = br_sax_events.1.b
+		
+        location:berlin = 
+				construct_building = {
+					building_type = building_type:barracks
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+		province_definition:mittelmark_province = {
+			every_location_in_province_definition = {
+				limit = { owner = root }
+				change_integration_progress = 20
+			}
+		}
+	  }
+    } 
+}
+
+# Hamburg Conquest 
+ br_sax_events.2 = {
+	type = country_event
+	title = br_sax_events.2.title
+	desc = br_sax_events.2.desc
+	outcome = neutral
+	fire_only_once = yes
+    dynamic_historical_event = {
+		tag = SAX
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 40
+}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		has_or_had_tag = SAX
+		owns = location:hamburg
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = br_sax_events.2.a
+		
+     location:hamburg = 
+				construct_building = {
+					building_type = building_type:shipyard
+					cost_multiplier = 0.25
+					cost_multiplier_reason = "game_concept_event"
+			
+	}
+
+	option = {
+		name = br_sax_events.2.b
+		
+        add_prestige = prestige_mild_penalty
+        scope:target_location = {
+			change_prosperity = prosperity_severe_penalty
+          }
+	   }
+    }  	
+}
