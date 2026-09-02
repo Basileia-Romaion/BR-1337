@@ -73,24 +73,6 @@ namespace = br_sax_events
 			}
     	}
 	}
-
-	option = {
-		name = br_sax_events.1.b
-		
-        location:berlin = {
-			construct_building = {
-				building_type = building_type:barracks
-				cost_multiplier = 0
-				cost_multiplier_reason = "game_concept_event"
-			}
-			province_definition:mittelmark_province = {
-				every_location_in_province_definition = {
-					limit = { owner = root }
-					change_integration_progress = 20
-				}
-			}
-		}
-    }
 }
 
 # Hamburg Conquest 
@@ -232,7 +214,7 @@ br_sax_events.1001 = { #Emperors Response to Demand
 
 		hidden_effect = {
 			scope:origin_country = {
-				trigger_event_non_silently = { #Privilege Granted
+				trigger_event_non_silently = { # Privilege Granted
 					id = br_sax_events.1003
 				}
 			}
@@ -244,14 +226,14 @@ br_sax_events.1001 = { #Emperors Response to Demand
 		name = br_sax_events.1001.b
 
 		scope:origin_country = {
-			trigger_event_non_silently = { #Privilege denied
+			trigger_event_non_silently = { # Privilege denied
 				id = br_sax_events.1002
 			}
 		}
 	}
 }
 
-br_sax_events.1002 = { #Privilege denied
+br_sax_events.1002 = { # Privilege denied
 	type = country_event
 	title = br_sax_events.1002.title
 	desc = br_sax_events.1002.desc
@@ -271,7 +253,7 @@ br_sax_events.1002 = { #Privilege denied
 	}
 }
 
-br_sax_events.1003 = { #Habsburg - Privilege Granted
+br_sax_events.1003 = { # Privilege Granted
 	type = country_event
 	title = br_sax_events.1003.title
 	desc = br_sax_events.1003.desc
