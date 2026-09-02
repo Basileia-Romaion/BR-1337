@@ -503,9 +503,9 @@
 				has_or_had_tag = E2Y
 				culture = { has_culture_group = culture_group:elysian_group }
 			}
-			societal_value:spiritualist_vs_humanist > -25
 		}
 		allow = {
+			societal_value:spiritualist_vs_humanist > -25
 		}
 		can_revoke = {
 			societal_value:centralization_vs_decentralization > -25
@@ -747,6 +747,9 @@
 				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
+		allow = {
+			religion ?= religion:orthodox
+		}
 		can_revoke = {
 			government_power > 75
 			"estate_power(estate_type:clergy_estate)" <= 0.2
@@ -843,6 +846,9 @@
 				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
+		allow = {
+			religion ?= religion:orthodox
+		}
 		estate = clergy_estate
 		country_modifier = {
 			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
@@ -876,7 +882,7 @@
 			loyalty_to_overlord = 10
 		}
 		ai_weight = {
-			add = 50
+			add = 99
 		}
 	}
 
@@ -893,14 +899,14 @@
 			loyalty_to_overlord = 10
 		}
 		ai_weight = {
-			add = 50
+			add = 99
 		}
 	}
 
 	br_fortified_religious_enclave = {
 		icon = villes_franches #expansionist_zealotry #jaysh_armies
 		potential = {
-			has_reform = government_reform:br_holy_community
+			has_reform = government_reform:br_holy_community #only available by event or setup.
 		}
 		estate = clergy_estate
 		country_modifier = {
