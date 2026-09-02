@@ -85,6 +85,19 @@ elysium_event.1 = {
 					change_pop_culture = culture:elysian_culture
 				}
 			}
+ 		#}
+		hidden_effect = {
+			scope:target_location = {
+				change_raw_material = goods:silk
+				change_development = development_extreme_bonus
+				change_prosperity = prosperity_radical_bonus
+				every_pop = {
+					limit = {
+						NOT = { culture = { is_accepted_in = root } }
+					}
+					change_pop_culture = root.culture
+				}
+ 			}
 			every_owned_location = {
 				every_pop = {
 					limit = {
@@ -96,20 +109,14 @@ elysium_event.1 = {
 					change_pop_culture = culture:elyrics_culture
 				}
 			}
- 		#}
-		hidden_effect = {
-			scope:target_location = {
-				change_development = development_extreme_bonus
-				change_prosperity = prosperity_radical_bonus
+			every_owned_location = {
 				every_pop = {
 					limit = {
-						NOT = { culture = { is_accepted_in = root } }
+						culture = culture:elyrics_culture
+						pop_type = pop_type:tribesmen
 					}
-					change_pop_culture = root.culture
+					change_pop_type = pop_type:peasants #slaves
 				}
- 			}
-			location:anacostia = {
-				change_raw_material = goods:silk
 			}
 		}
 
