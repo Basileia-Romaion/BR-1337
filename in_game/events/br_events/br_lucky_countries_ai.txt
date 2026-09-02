@@ -6,7 +6,8 @@ br_lucky_countries_ai.1 = {
 	outcome = neutral
 	title = empty_text
 	desc = empty_text
-	hidden = yes 
+	hidden = yes
+	fire_only_once = yes
 
 	dynamic_historical_event = {
         tag = SER
