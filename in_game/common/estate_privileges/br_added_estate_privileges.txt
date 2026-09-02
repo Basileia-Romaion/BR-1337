@@ -327,7 +327,7 @@
 
 	
 ### Peasants Privileges ###
-
+ #BYZ
 	akritai_privilege = {
 		estate = peasants_estate
 		icon = ghazi_privilege #control_of_the_borderlands
@@ -379,40 +379,7 @@
 			add = 25
 		}
 	}
-
-	br_frontier_expansion_privilege = {
-		estate = peasants_estate
-		icon = control_of_the_borderlands
-		potential = {
-			OR = {
-				has_or_had_tag = E1Y			
-				has_or_had_tag = E2Y
-				culture = { has_culture_group = culture_group:elysian_group }
-			}
-		}
-		allow = {
-		}
-		can_revoke = {
-			societal_value:centralization_vs_decentralization > -25
-		}
-		country_modifier = {
-			global_peasants_estate_power = 1
-			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
-			monthly_towards_decentralization = societal_value_minor_monthly_move
-			monthly_towards_belligerent = societal_value_minor_monthly_move
-			tribes_estate_target_satisfaction = -0.25
-			allow_rgo_slave_demand = yes
-			global_peasant_enfranchisment = 0.05
-			global_army_levy_size_modifier = 0.1
-			allow_native_subjugation_cb = yes
-			auto_slave_raid_different_religion = yes
-			enslave_tribals = yes
-		}
-		ai_weight = {
-			add = 25
-		}
-	}
-
+	
 	br_themata_peasant_privilege = {
 		estate = peasants_estate
 		icon = br_themata_peasant_privilege #dhimmi_military_service #primacy_of_nobility
@@ -526,7 +493,41 @@
 			add = 50
 		}
 	}
-
+ #ELY
+	br_frontier_expansion_privilege = {
+		estate = peasants_estate
+		icon = control_of_the_borderlands
+		potential = {
+			OR = {
+				has_or_had_tag = E1Y			
+				has_or_had_tag = E2Y
+				culture = { has_culture_group = culture_group:elysian_group }
+			}
+			societal_value:spiritualist_vs_humanist > -25
+		}
+		allow = {
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization > -25
+		}
+		country_modifier = {
+			global_peasants_estate_power = 1
+			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_belligerent = societal_value_minor_monthly_move
+			tribes_estate_target_satisfaction = -0.25
+			allow_rgo_slave_demand = yes
+			global_peasant_enfranchisment = 0.05
+			global_army_levy_size_modifier = 0.1
+			allow_native_subjugation_cb = yes
+			auto_slave_raid_different_religion = yes
+			enslave_tribals = yes
+		}
+		ai_weight = {
+			add = 25
+		}
+	}
+ #ARM
 	br_arm_highland_villages = { #will break up and balance later.
 		estate = peasants_estate
 		icon = dhimmi_military_service
