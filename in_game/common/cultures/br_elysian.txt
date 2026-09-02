@@ -7,9 +7,7 @@ aureliani = {
 	tags = { south_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
 
 	opinions = {
-		greek_culture = positive
-		median = kindred
-		photianoi = kindred
+		photianoi = positive
 		elysian_culture = kindred
 	}
 	country_modifier = {
@@ -29,9 +27,7 @@ photianoi = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 	
 	opinions = {
-		greek_culture = positive
-		median = positive
-		aureliani = kindred
+		aureliani = positive
 		elysian_culture = kindred
 	}
 	country_modifier = {
@@ -47,7 +43,7 @@ photianoi = {
 }
 
 elyrics_culture = {
-	language = elysian_language #elyrics_dialect
+	language = elyrics_dialect
 	color = rgb{ 128 90 118 }
 	
 	tags = { east_mediterranean_gfx north_american_gfx american_gfx }
@@ -56,6 +52,7 @@ elyrics_culture = {
 		photianoi = kindred
 		aureliani = kindred
 		elysian_culture = kindred
+		kykladian_culture = kindred
 	}
 
 	country_modifier = {
@@ -100,7 +97,7 @@ kykladian_culture = {
 		aureliani = positive
 		elyrics_culture = positive
 		elysian_culture = positive
-		photianoi = kindred
+		photianoi = positive
 	}
 
 	country_modifier = {

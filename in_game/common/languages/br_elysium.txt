@@ -1,7 +1,7 @@
 ﻿elysian_language = {
 
 	color = map_BYZ
-	family = romance_language_family
+	#family = romance_language_family
 
 	fallback = greek_language # this is so Byzantium can keep their Greek names that haven't been translated into Latin yet if they switch to Latin culture
 
@@ -39,6 +39,9 @@
 	location_suffix = "ensis"
 	
 	dialects = {
-
+		elysian_language = {
+			default = yes
+		}
+		elyrics_dialect = {}
 	}
 }
