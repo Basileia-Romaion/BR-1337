@@ -866,8 +866,7 @@
 		estate = clergy_estate
 		icon = dhimmi_mazalim_court
 		potential = {
-			culture = { has_culture_group = culture_group:russian_group }
-			religion ?= religion:orthodox
+			has_estate_privilege = estate_privilege:br_russian_subject_privilege #only available by event or setup.
 		}
 		country_modifier = {
 			global_clergy_estate_power = 0.25
@@ -876,7 +875,24 @@
 			loyalty_to_overlord = 10
 		}
 		ai_weight = {
-			add = 25
+			add = 50
+		}
+	}
+
+	br_protected_subject_faith_privilege = { #to stop the russian subjects from being force converted.
+		estate = clergy_estate
+		icon = dhimmi_mazalim_court
+		potential = {
+			has_estate_privilege = estate_privilege:br_protected_subject_faith_privilege #only available by event or setup.
+		}
+		country_modifier = {
+			global_clergy_estate_power = 0.25
+			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			blocked_from_conversion = yes
+			loyalty_to_overlord = 10
+		}
+		ai_weight = {
+			add = 50
 		}
 	}
 
