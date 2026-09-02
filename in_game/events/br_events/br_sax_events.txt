@@ -142,3 +142,159 @@ namespace = br_sax_events
         }
 	}
 }
+
+#Archduchy of Saxony Event Chain
+br_sax_events.1000. = { #Archduchy of Saxony
+	hide_portraits = yes
+	type = country_event
+	title = br_sax_events.1000.title
+	desc = br_sax_events.1000.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:hre.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:hre.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:hre
+		NOT = {
+			is_leader_of_international_organization = international_organization:hre
+		}
+		international_organization:hre = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns = location:berlin
+		owns = location:hamburg
+		owns = location:magdeburg
+	}
+
+	option = {
+		name = br_sax_events.1000.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_sax_events.1001
+			}
+		}
+	}
+}
+
+br_sax_events.1001 = { #Emperors Response to Demand
+	type = country_event
+	title = br_sax_events.1001.title
+	desc = br_sax_events.1001.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:nobles_estate }
+
+	option = {
+		name = br_sax_events.1001.a
+		historical_option = yes
+
+		hidden_effect = {
+			scope:origin_country = {
+				trigger_event_non_silently = { #Privilege Granted
+					id = br_sax_events.1003
+				}
+			}
+		}
+	}
+
+
+	option = {
+		name = br_sax_events.1001.b
+
+		scope:origin_country = {
+			trigger_event_non_silently = { #Privilege denied
+				id = br_sax_events.1002
+			}
+		}
+	}
+}
+
+br_sax_events.1002 = { #Privilege denied
+	type = country_event
+	title = br_sax_events.1002.title
+	desc = br_sax_events.1002.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_sax_events.1002.a
+	}
+}
+
+br_sax_events.1003 = { #Habsburg - Privilege Granted
+	type = country_event
+	title = br_sax_events.1003.title
+	desc = br_sax_events.1003.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = br_sax_events.1003.a
+
+		unlock_government_reform_effect = { type = br_saxon_archduchy }
+		add_reform = government_reform:br_saxon_archduchy
+		hidden_effect = {
+			ruler ?= {
+				reset_ruler_title = {}
+			}
+		}
+	}
+}

@@ -385,3 +385,28 @@ br_french_centralized_monarchy = { # Centralized French Monarchy
 	#}
 	#years = 2
 #}
+
+br_saxon_archduchy = {
+	unique = yes
+	content_priority = 400
+	government = monarchy
+	potential = {
+		OR = {
+			has_or_had_tag = SAX
+		}
+		has_unlocked_government_reform_trigger = { type = br_saxon_archduchy }
+	}
+	allow = {
+		is_member_of_international_organization = international_organization:hre
+	}
+	locked = {
+		is_member_of_international_organization = international_organization:hre
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		monthly_diplomats = 0.2
+		monthly_prestige = 0.2
+		monthly_legitimacy = 0.2
+	}
+	years = 2
+}
