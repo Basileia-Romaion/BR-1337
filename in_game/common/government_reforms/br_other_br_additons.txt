@@ -386,9 +386,10 @@ br_french_centralized_monarchy = { # Centralized French Monarchy
 	#years = 2
 #}
 
-br_saxon_archduchy = {
+br_saxon_archduchy = { #Saxony Unique Government Reform
 	unique = yes
 	content_priority = 400
+	icon = austrian_archduchy_reform
 	government = monarchy
 	potential = {
 		OR = {
