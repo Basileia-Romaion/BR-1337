@@ -1,0 +1,579 @@
+﻿### WIP early work
+
+namespace = br_elysian_DHE
+
+br_elysian_dhe.10 = {
+	type = country_event
+	title = br_elysian_dhe.10.title
+	desc = br_elysian_dhe.10.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		tag = E4Y
+		tag = K1K
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		any_neighbor_country = {
+			NOT = {
+				culture = root.culture
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	option = {
+		name = br_elysian_dhe.10.a
+		add_country_modifier = {
+            modifier = trade_investments_modifier
+            months = 360
+            mode = add_and_extend
+        }
+	}
+	option = {
+		name = br_elysian_dhe.10.b
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+br_elysian_dhe.11 = {
+	type = country_event
+	title = br_elysian_dhe.11.title
+	desc = br_elysian_dhe.11.desc
+	outcome = positive
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		random_owned_location = {
+			save_scope_as = market_location
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.11.a
+		scope:market_location = {
+			add_prosperity = prosperity_mild_bonus
+		}
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = br_elysian_dhe.11.b
+		add_gold = gold_weak_bonus
+
+		add_migration = {
+			owner = this
+			from = scope:market_location.province_definition
+			to = capital.province_definition
+			amount = 0.01
+			months = 24
+		}
+	}
+}
+
+br_elysian_dhe.12 = {
+	type = country_event
+	title = br_elysian_dhe.12.title
+	desc = br_elysian_dhe.12.desc
+	outcome = positive
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		tag = E4Y
+		tag = K1K
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		any_owned_location = {
+			any_pop = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	immediate = {
+		random_owned_location = {
+			limit = {
+				any_pop = {
+					NOT = {
+						culture = root.culture
+					}
+				}
+			}
+			save_scope_as = mixed_settlement
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.12.a
+		scope:mixed_settlement = {
+			every_pop = {
+				limit = {
+					NOR = {
+						culture = culture:aureliani
+						culture = culture:photianoi
+						culture = culture:elysian_culture
+						culture = culture:kykladian_culture
+					}
+				}
+				change_pop_culture = culture:elyrics_culture
+			}
+		}
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.12.b
+		culture = {
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+	}
+}
+
+br_elysian_dhe.20 = {
+	type = country_event
+	title = br_elysian_dhe.20.title
+	desc = br_elysian_dhe.20.desc
+	outcome = neutral
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = E1Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		culture = culture:aureliani
+	}
+
+	illustration_tags = {
+		10 = religious
+		10 = exterior
+	}
+
+	option = {
+		name = br_elysian_dhe.20.a
+
+		culture = {
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = br_elysian_dhe.20.b
+
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+		}
+	}
+}
+
+br_elysian_dhe.21 = {
+	type = country_event
+	title = br_elysian_dhe.21.title
+	desc = br_elysian_dhe.21.desc
+	outcome = positive
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = E1Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		culture = culture:aureliani
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = religious
+	}
+
+	option = {
+		name = br_elysian_dhe.21.a
+
+		add_stability = stability_mild_bonus
+
+		culture = {
+			add_cultural_tradition = cultural_tradition_weak_bonus
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.21.b
+
+		add_prestige = prestige_mild_bonus
+
+		culture = {
+			add_cultural_influence = cultural_influence_weak_bonus
+		}
+	}
+}
+
+br_elysian_dhe.22 = {
+	type = country_event
+	title = br_elysian_dhe.22.title
+	desc = br_elysian_dhe.22.desc
+	outcome = positive
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = E1Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		culture = culture:aureliani
+	}
+
+	illustration_tags = {
+		10 = institution
+		10 = interior
+	}
+
+	option = {
+		name = br_elysian_dhe.22.a
+
+		add_prestige = prestige_mild_bonus
+
+		culture = {
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.22.b
+
+		add_stability = stability_weak_bonus
+	}
+}
+
+br_elysian_dhe.30 = {
+	type = country_event
+	title = br_elysian_dhe.30.title
+	desc = br_elysian_dhe.30.desc
+	outcome = neutral
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		culture = culture:photianoi
+	}
+
+	illustration_tags = {
+		10 = religious
+		10 = interior
+	}
+
+	option = {
+		name = br_elysian_dhe.30.a
+
+		add_stability = stability_mild_bonus
+
+		culture = {
+			add_cultural_tradition = cultural_tradition_weak_bonus
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.30.b
+
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+br_elysian_dhe.31 = {
+	type = country_event
+	title = br_elysian_dhe.31.title
+	desc = br_elysian_dhe.31.desc
+	outcome = positive
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		culture = culture:photianoi
+
+		any_owned_location = {
+			any_pop = {
+				culture = culture:elyrics_culture
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = religious
+		10 = interior
+	}
+
+	option = {
+		name = br_elysian_dhe.31.a
+
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.31.b
+
+		add_stability = stability_mild_bonus
+	}
+}
+
+br_elysian_dhe.40 = {
+	type = country_event
+	title = br_elysian_dhe.40.title
+	desc = br_elysian_dhe.40.desc
+	outcome = negative
+
+	#fire_only_once = yes
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		current_month = 9
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	option = {
+		name = br_elysian_dhe.40.a
+
+		add_gold = gold_mild_penalty
+
+		capital = {
+			change_prosperity = prosperity_mild_penalty
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.40.b
+
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+br_elysian_dhe.41 = {
+	type = country_event
+	title = br_elysian_dhe.41.title
+	desc = br_elysian_dhe.41.desc
+	outcome = positive
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		current_month = 10
+
+		capital.province = {
+			province_food_percentage > 0.85
+		}
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	option = {
+		name = br_elysian_dhe.41.a
+
+		capital.province = {
+			change_province_food = 100
+		}
+
+		add_stability = stability_weak_bonus
+	}
+
+	option = {
+		name = br_elysian_dhe.41.b
+
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+br_elysian_dhe.42 = {
+	type = country_event
+	title = br_elysian_dhe.42.title
+	desc = br_elysian_dhe.42.desc
+	outcome = neutral
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		any_neighbor_country = {
+			NOT = {
+				culture = root.culture
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+
+	immediate = {
+		random_neighbor_country = {
+			limit = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+			save_scope_as = neighboring_people
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.42.a
+
+		add_gold = gold_weak_bonus
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = br_elysian_dhe.42.b
+
+		add_stability = stability_weak_bonus
+	}
+}
+
+br_elysian_dhe.50 = {
+	type = country_event
+	title = br_elysian_dhe.50.title
+	desc = br_elysian_dhe.50.desc
+	outcome = neutral
+
+	#fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1336.1.1
+		to = 1737.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		OR = {
+			culture = culture:aureliani
+			culture = culture:photianoi
+		}
+
+		NOT = {
+			has_country_modifier = old_world_memories
+		}
+	}
+
+	illustration_tags = {
+		10 = institution
+		10 = interior
+	}
+
+	option = {
+		name = br_elysian_dhe.50.a
+
+		add_prestige = prestige_extreme_bonus
+
+		add_country_modifier = {
+			modifier = old_world_memories
+			years = 25
+			mode = add_and_extend
+		}
+	}
+
+	option = {
+		name = br_elysian_dhe.50.b
+
+		culture = {
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+	}
+}
