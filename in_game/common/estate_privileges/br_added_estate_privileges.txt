@@ -505,10 +505,7 @@
 			}
 		}
 		allow = {
-			societal_value:spiritualist_vs_humanist > -25
-		}
-		can_revoke = {
-			societal_value:centralization_vs_decentralization > -25
+			societal_value:belligerent_vs_conciliatory > -50
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
