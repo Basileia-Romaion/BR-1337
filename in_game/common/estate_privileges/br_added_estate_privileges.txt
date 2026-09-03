@@ -899,7 +899,7 @@
 			loyalty_to_overlord = 10
 		}
 		ai_weight = {
-			add = 99
+			add = 999 #ai should not drop this privilege as they are important for the subjects to not be converted.
 		}
 	}
 
@@ -911,12 +911,12 @@
 		}
 		country_modifier = {
 			global_clergy_estate_power = 0.25
-			clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 			blocked_from_conversion = yes
 			loyalty_to_overlord = 10
 		}
 		ai_weight = {
-			add = 99
+			add = 999 #ai should not drop this privilege as they are important for the subjects to not be converted.
 		}
 	}
 
@@ -936,7 +936,7 @@
 			global_defensive = 0.5
 		}
 		ai_weight = {
-			add = 99
+			add = 999 #ai should not drop this privilege as they are important for the rp.
 		}
 	}
 

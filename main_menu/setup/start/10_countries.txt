@@ -56388,7 +56388,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy_no_auxilium"
+		include = "muslim_monarchy"
 		
 		government = {
 			type = monarchy
@@ -56465,7 +56465,6 @@ countries = {
 		}
 	}
 	
-	
 	AD1 = { #BR addition
 		own_control_core = {
 			zaragoza
@@ -56489,7 +56488,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy_no_auxilium"
+		include = "muslim_monarchy"
 		
 		government = {
 			type = monarchy
@@ -56583,7 +56582,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy"
+		include = "muslim_monarchy"
 		
 		country_rank = rank_duchy
 		capital = palma
