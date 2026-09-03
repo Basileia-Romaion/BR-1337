@@ -336,7 +336,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory > -75
+			societal_value:belligerent_vs_conciliatory < 75
 		}
 		country_modifier = {
 			global_nobles_estate_power = 1
@@ -526,7 +526,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory > -25
+			societal_value:belligerent_vs_conciliatory < 25
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
