@@ -125,6 +125,85 @@ namespace = br_sax_events
 	}
 }
 
+br_sax_events.3 = { #The Rise of Hanover
+	type = country_event
+	title = br_sax_events.3.title
+	desc = br_sax_events.3.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1371.1.1
+		to = 1520.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		owns = location:hanover
+		location:hanover = {
+			population >= 25
+			NOR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+		}
+	}
+illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = br_sax_events.3.a
+		historical_option = yes
+
+		trigger = {
+			NOT = { capital = location:hanover }
+		}
+
+		change_gold_effect = { scale = -5.00 }
+
+		if = {
+			limit = {
+				location:hanover = {
+					is_capital = no
+				}
+			}
+			set_capital = location:hanover
+		}
+
+		location:hanover = {
+			if = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_location_rank_effect = { location_rank = location_rank:town }
+			}
+			change_development  = development_severe_bonus
+		}
+	}
+
+	option = {
+		name = br_sax_events.3.b
+		change_gold_effect = { scale = -3.00 }
+		location:dresden = {
+			if = {
+				limit = {
+					location_rank = location_rank:rural_settlement
+				}
+				change_location_rank_effect = { location_rank = location_rank:town }
+			}
+			change_development  = development_severe_bonus
+		}
+	}
+}
+
 #Archduchy of Saxony Event Chain
 br_sax_events.1000. = { #Archduchy of Saxony
 	hide_portraits = yes
