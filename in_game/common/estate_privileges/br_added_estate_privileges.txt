@@ -325,6 +325,27 @@
 		}
 	}
 
+	br_aggresive_enslavement_privilege = {
+		estate = nobles_estate
+		icon = control_of_the_borderlands
+		potential = {
+			OR = {
+				has_or_had_tag = E1Y			
+				has_or_had_tag = E2Y
+				culture = { has_culture_group = culture_group:elysian_group }
+			}
+		}
+		allow = {
+			societal_value:belligerent_vs_conciliatory > -75
+		}
+		country_modifier = {
+			global_nobles_estate_power = 1
+			monthly_towards_belligerent = societal_value_minor_monthly_move
+			tribes_estate_target_satisfaction = -1
+			allow_rgo_slave_demand = yes
+			enslave_tribals = yes
+		}
+	}
 	
 ### Peasants Privileges ###
  #BYZ
@@ -505,7 +526,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory > -50
+			societal_value:belligerent_vs_conciliatory > -25
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
@@ -518,7 +539,6 @@
 			global_army_levy_size_modifier = 0.1
 			allow_native_subjugation_cb = yes
 			auto_slave_raid_different_religion = yes
-			enslave_tribals = yes
 		}
 		ai_weight = {
 			add = 25
