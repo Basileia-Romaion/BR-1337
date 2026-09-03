@@ -2020,11 +2020,11 @@ building_manager = {
 	city_guard = { tag = VEN level = 1	location = venice }
 
 	#Aegean Pirates
-	pirate_haven = { tag = VTC level = 1 location = amorgos }
-	pirate_haven = { tag = BYZ level = 1 location = sporades }
-	pirate_haven = { tag = NAX level = 1 location = kythnos }
-	pirate_haven = { tag = NAX level = 1 location = milos }
-	pirate_haven = { tag = BOS level = 1 location = metkovic }
+	br_pirate_hideout = { tag = VTC level = 1 location = amorgos }
+	br_pirate_hideout = { tag = BYZ level = 1 location = sporades }
+	br_pirate_hideout = { tag = NAX level = 1 location = kythnos }
+	br_pirate_hideout = { tag = NAX level = 1 location = milos }
+	br_pirate_hideout = { tag = BOS level = 1 location = metkovic }
 
 	#Genoese Galley Barracks #Unique
 	galley_barracks = { tag = GEN level = 1 location = genoa }
@@ -5362,30 +5362,30 @@ building_manager = {
 
 	#Added Pirates
 	#Black Sea
-	pirate_haven = { tag = GLH level = 1 location = melitopol }
-	pirate_haven = { tag = GLH level = 1 location = khadjibey }
-	pirate_haven = { tag = KIP level = 1 location = susaco }
+	br_pirate_hideout = { tag = GLH level = 1 location = melitopol }
+	br_pirate_hideout = { tag = GLH level = 1 location = khadjibey }
+	br_pirate_hideout = { tag = KIP level = 1 location = susaco }
 
-	pirate_haven = { tag = SER level = 1 location = kotor }
+	br_pirate_hideout = { tag = SER level = 1 location = kotor }
 
 	#Mediterranean
-	pirate_haven = { tag = AD2 level = 1 location = ciudadela_de_menorca }
-	pirate_haven = { tag = TLE level = 1 location = algiers }
-	pirate_haven = { tag = TLE level = 1 location = bejaia }
-	pirate_haven = { tag = TUN level = 1 location = ajim }
-	pirate_haven = { tag = BJA level = 1 location = derna }
-	pirate_haven = { tag = MAM level = 1 location = sidon }
-	pirate_haven = { tag = ADU level = 1 location = ibiza }
-	pirate_haven = { tag = TLE level = 1 location = mostaganem }
-	pirate_haven = { tag = MAM level = 1 location = tobruk }
-	pirate_haven = { tag = GEN level = 1 location = alghero }
+	br_pirate_hideout = { tag = AD2 level = 1 location = ciudadela_de_menorca }
+	br_pirate_hideout = { tag = TLE level = 1 location = algiers }
+	br_pirate_hideout = { tag = TLE level = 1 location = bejaia }
+	br_pirate_hideout = { tag = TUN level = 1 location = ajim }
+	br_pirate_hideout = { tag = BJA level = 1 location = derna }
+	br_pirate_hideout = { tag = MAM level = 1 location = sidon }
+	br_pirate_hideout = { tag = ADU level = 1 location = ibiza }
+	br_pirate_hideout = { tag = TLE level = 1 location = mostaganem }
+	br_pirate_hideout = { tag = MAM level = 1 location = tobruk }
+	br_pirate_hideout = { tag = GEN level = 1 location = alghero }
 
 
 	#atlantic
-	pirate_haven = { tag = ADU level = 1 location = figueira }
-	pirate_haven = { tag = ADU level = 1 location = lagos }
-	pirate_haven = { tag = ADU level = 1 location = santiago }
-	pirate_haven = { tag = ADU level = 1 location = tamaraceite }
+	br_pirate_hideout = { tag = ADU level = 1 location = figueira }
+	br_pirate_hideout = { tag = ADU level = 1 location = lagos }
+	br_pirate_hideout = { tag = ADU level = 1 location = santiago }
+	br_pirate_hideout = { tag = ADU level = 1 location = tamaraceite }
 
 	#Mesopotamia
 	royal_court = { tag = TUR level = 1 location = baghdad }
