@@ -1502,6 +1502,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.212	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	muinawamek = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 0.106	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	nisiamk = {
@@ -3618,6 +3619,7 @@ locations = {
 	caribe_sea15 = {
 	}
 	shawmut = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 4.023	culture = massachusett_culture	religion = midewiwin_religion }
 	}
 	naumkeag = {
@@ -3755,6 +3757,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 2.132	culture = western_abenaki_culture	religion = midewiwin_religion }
 	}
 	casco = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 1.851	culture = pennacook_culture	religion = midewiwin_religion }
 	}
 	kennebunk = {
@@ -4576,6 +4579,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.122	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	corani = {
+		define_pop = {	type = peasants		size = 0.076	culture = kykladian_culture religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 0.701	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	neuse = {
@@ -4966,7 +4970,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.430	culture = timucua_culture	religion = mississippian_ceremonial }
 	}
 	tybee = {
-		define_pop = {	type = clergy	size = 0.016	culture = guale_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.076	culture = kykladian_culture religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.442	culture = guale_culture	religion = mississippian_ceremonial }
 	}
 	ossabaw = {

@@ -253,6 +253,11 @@ building_manager = {
 	fruit_orchard = { tag = NRV level = 1 location = uashat }
 	fruit_orchard = { tag = INV level = 1 location = stadacona }
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
+
+	pirate_haven = { tag = NRC level = 1 location = casco }
+	pirate_haven = { tag = NRC level = 1 location = shawmut }
+	pirate_haven = { tag = NRC level = 1 location = muinawamek }
+	pirate_haven = { tag = NRC level = 1 location = horta }
 	
 	####---------- Canada ----------####
 	#--
@@ -347,7 +352,9 @@ building_manager = {
 	fishing_village = { tag = K1K level = 3 location = west_sabaneneque }
 	tar_kiln = { tag = K1K level = 1 location = west_sabaneneque }
 
-	
+	pirate_haven = { tag = K1K level = 1 location = corani }
+	pirate_haven = { tag = K1K level = 1 location = tybee }
+	pirate_haven = { tag = K1K level = 1 location = bermuda }
 
 	####---------- Cahokia ----------####
 	#--
