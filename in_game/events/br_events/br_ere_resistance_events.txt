@@ -2772,5 +2772,368 @@ br_ere_resistance_events.100 = { #Bulgarian-Roman Wars
 	}
 }
 
+############################## Roman Subject Events ##############################
+
+br_ere_resistance_events.201 = {
+	type = country_event
+	title = br_ere_resistance_events.201.title
+	desc = br_ere_resistance_events.201.desc
+	outcome = neutral
+	trigger = {
+		liberty_desire > 50
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		OR = {
+			current_age = age_5_absolutism
+			current_age = age_6_revolutions
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		save_scope_as = from
+		create_character = {
+			trait_category = general
+			save_scope_as = new_general_scope
+			create_in_limbo = yes
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.201.a
+		scope:new_general_scope = { move_country = root }
+
+		overlord = {
+			trigger_event_silently = { id = br_ere_resistance_events.202 }
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.201.b
+		add_liberty_desire = liberty_desire_mild_plus
+		overlord = {
+			trigger_event_silently = { id = br_ere_resistance_events.203 }
+		}
+		kill_character = {
+			target = scope:new_general_scope
+			reason = execution
+			killer = ruler
+		}
+	}
+}
+
+br_ere_resistance_events.202 = {
+	type = country_event
+	title = br_ere_resistance_events.202.title
+	desc = br_ere_resistance_events.202.desc
+	outcome = neutral
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+	option = {
+		name = br_ere_resistance_events.202.a
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+br_ere_resistance_events.203 = {
+	type = country_event
+	title = br_ere_resistance_events.203.title
+	desc = br_ere_resistance_events.203.desc
+	outcome = neutral
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+	option = {
+		name = br_ere_resistance_events.203.a
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+br_ere_resistance_events.204 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.204.title
+	desc = br_ere_resistance_events.204.desc
+	outcome = neutral
+	trigger = {
+		any_subject = {
+			OR = {
+				is_subject_type = pronoia
+				is_subject_type = br_thema_subject
+			}
+		}
+		war_exhaustion > 4
+	}
+	
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		save_scope_as = from
+	}
+
+	option = {
+		name = br_ere_resistance_events.204.a
+		add_war_exhaustion = war_exhaustion_mild_bonus
+		ordered_subject = {
+			limit = {
+				OR = {
+					is_subject_type = pronoia
+					is_subject_type = br_thema_subject
+				}
+			}
+			order_by = total_population
+			max = {
+				value = 1
+				add = {
+					value = num_subjects
+					divide = 3
+				}
+			}
+			
+			show_as_tooltip = {
+				add_liberty_desire = liberty_desire_mild_plus
+				add_war_exhaustion = war_exhaustion_weak_penalty
+			}
+			trigger_event_silently = { id = br_ere_resistance_events.205 }
+		
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.204.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_ere_resistance_events.205 = {
+	type = country_event
+	title = br_ere_resistance_events.205.title
+	desc = br_ere_resistance_events.205.desc
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.205.a
+		add_liberty_desire = liberty_desire_mild_plus
+		add_war_exhaustion = war_exhaustion_weak_penalty
+	}
+}
+
+br_ere_resistance_events.206 = {
+	type = country_event
+	title = br_ere_resistance_events.206.title
+	desc = br_ere_resistance_events.206.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		stability < 10
+		
+		ruler ?= {
+			OR = {
+				adm < 50
+				has_trait = embezzler
+				has_trait = sinner
+				has_trait = greedy
+				has_trait = obsessive_perfectionist
+			}
+		}
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.206.a
+		change_gold_effect = { scale = -2 }
+	}
+}
+
+br_ere_resistance_events.207 = {
+	type = country_event
+	title = br_ere_resistance_events.207.title
+	desc = br_ere_resistance_events.207.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		ruler ?= {
+			mil < 40
+			dip < 40
+			adm < 40
+		}
+
+	}
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.207.a
+		ruler = { remove_ruler = root }
+	}
+	option = {
+		name = br_ere_resistance_events.207.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+	}
+}
+
+br_ere_resistance_events.208 = {
+	type = country_event
+	title = br_ere_resistance_events.208.title
+	desc = br_ere_resistance_events.208.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		gold < 150.00
+		num_loans >= 3
+		stability < 0
+	}
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.208.a
+		add_government_power = government_power_extreme_penalty
+	}
+	option = {
+		name = br_ere_resistance_events.208.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_ere_resistance_events.209 = {
+	type = country_event
+	title = br_ere_resistance_events.209.title
+	desc = br_ere_resistance_events.209.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		stability > 20
+	}
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.209.a
+		add_country_modifier = { modifier = colonist_incentives years = 10 mode = add_and_extend }  
+	}
+}
+
+br_ere_resistance_events.210 = {
+	type = country_event
+	title = br_ere_resistance_events.210.title
+	desc = br_ere_resistance_events.210.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		"estate_power(estate_type:nobles_estate)" > 0.20
+		estate_satisfaction:burghers_estate < 0.75
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.210.a
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = br_ere_resistance_events.210.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+br_ere_resistance_events.211 = {
+	type = country_event
+	title = br_ere_resistance_events.211.title
+	desc = br_ere_resistance_events.211.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		"estate_power(estate_type:burghers_estate)" >= 0.20
+		estate_satisfaction:nobles_estate < 0.75
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.211.a
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = br_ere_resistance_events.211.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+
 
 #HRE
