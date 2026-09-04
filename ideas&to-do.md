@@ -65,3 +65,36 @@ New Angland
 
 ## fix errors
 - Fix bugs in error log. 
+
+
+##
+Elysium events early ideas
+
+Settlers moving in a group west away from Elysium to form new tags.
+Language development into the Elysian Tongue
+Elysilatinī vs Elysinói rivalry
+Eventually, extremely rare European contact
+Rumors from distant travelers: #Vinlander or Kykladians
+Mixed families: Elyrics probably province level convert the natives to elyrics.
+Failed attempts to sail east:
+Special locations get a free town maybe the locations of modern day dc and new york.
+Border disputes: free cb
+
+#
+Native diplomatic visits
+Interpreters maybe 
+Native religious syncretism Maybe something about the Pantheon and the local dieties 
+Shared festivals with the natives
+Plentful Harvest
+River flooding 
+New crops
+Fishing grounds
+Forest resources
+Roman relics
+Hellenic festivals
+Greek manuscripts
+Church disputes
+Ancient traditions
+Strange objects
+Old Roman inscriptions
+
