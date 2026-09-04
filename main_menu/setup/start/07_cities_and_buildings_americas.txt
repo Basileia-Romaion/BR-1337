@@ -253,6 +253,11 @@ building_manager = {
 	fruit_orchard = { tag = NRV level = 1 location = uashat }
 	fruit_orchard = { tag = INV level = 1 location = stadacona }
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
+
+	br_pirate_hideout_vikings = { tag = NRC level = 1 location = casco }
+	br_pirate_hideout_vikings = { tag = NRC level = 1 location = shawmut }
+	br_pirate_hideout_vikings = { tag = NRC level = 1 location = muinawamek }
+	br_pirate_hideout_vikings = { tag = NRC level = 1 location = horta }
 	
 	####---------- Canada ----------####
 	#--
@@ -262,6 +267,21 @@ building_manager = {
 	
 	
 	####---------- Haudenosauneega ----------####
+	tribal_war_camp = { tag = KKA level = 1 location =  canajoharie }
+	tribal_hunting_lodge = { tag = KKA level = 1 location =  canajoharie }
+	tribal_market_villages = { tag = KKA level = 2 location =  canajoharie }
+	tribal_war_camp = { tag = ONY level = 1 location =  onenioteke }
+	tribal_hunting_lodge = { tag = ONY level = 1 location =  onenioteke }
+	tribal_market_villages = { tag = ONY level = 1 location =  onenioteke }
+	tribal_war_camp = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_hunting_lodge = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_market_villages = { tag = ONO level = 1 location =  tsikahiotsisto }
+	tribal_war_camp = { tag = GYO level = 1 location =  skaniatares }
+	tribal_hunting_lodge = { tag = GYO level = 1 location =  skaniatares }
+	tribal_market_villages = { tag = GYO level = 1 location =  skaniatares }
+	tribal_war_camp = { tag = ONN level = 1 location =  canadaigua }
+	tribal_hunting_lodge = { tag = ONN level = 1 location =  canadaigua }
+	tribal_market_villages = { tag = ONN level = 1 location =  canadaigua }
 	#--
 	
 	####---------- Tsenacommacah ----------####
@@ -289,6 +309,7 @@ building_manager = {
 	clay_pit = { tag = E1Y level = 1 location = matapeake }
 	parish_church = { tag = E1Y level = 1 location = matapeake }
 	parish_church = { tag = E1Y level = 1 location = patapsco }
+	horse_breeders = { tag = E1Y level = 1 location = patapsco }
 
 	#temple = { tag = DOE level = 1 location = doeg }
 	#mason = { tag = DOE level = 1 location = doeg }
@@ -302,6 +323,7 @@ building_manager = {
 	#rural_clothmaker = { tag = E2Y level = 1 location = nansemond }
 	parish_church = { tag = E2Y level = 1 location = nansemond }
 	parish_church = { tag = E2Y level = 1 location = kiskiack }
+	horse_breeders = { tag = E2Y level = 1 location = nansemond }
 	
 	tribal_war_camp = { tag = E5Y level = 1 location =  patawomeck }
 	tribal_hunting_lodge = { tag = E5Y level = 1 location =  patawomeck }
@@ -330,11 +352,12 @@ building_manager = {
 	fishing_village = { tag = K1K level = 3 location = west_sabaneneque }
 	tar_kiln = { tag = K1K level = 1 location = west_sabaneneque }
 
-	
+	br_pirate_hideout_elysia = { tag = K1K level = 1 location = corani }
+	br_pirate_hideout_elysia = { tag = K1K level = 1 location = tybee }
+	br_pirate_hideout_elysia = { tag = K1K level = 1 location = bermuda }
 
 	####---------- Cahokia ----------####
 	#--
-	
 	####---------- Great Plains ----------####
 	#--
 	

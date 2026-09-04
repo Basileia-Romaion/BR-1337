@@ -368,8 +368,34 @@ disease_outbreak_manager = {
 			asia
 			africa
         }
+        areas = {
+            maryland_area
+            quebec_area
+            labrador_area
+            newfoundland_area
+            prince_edward_island_area
+            acadia_area
+            new_brunswick_area
+        }
+    }
+    add_disease_resistance = {
+        type = great_pestilence
+        resistance = 0.85
+
+        provinces = { 
+            chesapeake_province
+            tsenacommacah_province
+            roanoke_province
+            bahamas_province
+        }
+    }
+
+    add_disease_resistance = {
+        type = great_pestilence
+        resistance = 0.5
+
 		regions = {
-			# Has already hit North America in our timeline
+			# Has already hit North America in our timeline, but game balance reasons adding back at reduced value.
 			canada_region
 			caribbean_region
 			east_coast_region
@@ -380,6 +406,12 @@ disease_outbreak_manager = {
 			alaska_region
 			west_coast_region
 		}
+
+        provinces = { 
+            chesapeake_province
+            tsenacommacah_province
+            roanoke_province
+        }
     }
 
     #these are all locations with outbreaks of malaria that will be tested for environmental infection as the game runs

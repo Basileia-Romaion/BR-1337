@@ -168,7 +168,7 @@ vinlander_longhouse_settlement = {
 		}
 	}
 	requires = pike_square
-	global_population_growth = 0.0002
+	global_population_growth = 0.0001
 }
 
 vinlander_pathfinders = {
@@ -343,8 +343,7 @@ elysian_civic_syncretism = {
 		}
 	}
 	requires = feudalism_advance
-	cultures_capacity_modifier = 0.5
-	#global_pop_assimilation_speed = 0.001
+	cultures_capacity_modifier = 0.25
 	global_pop_assimilation_speed_modifier = 0.25
 }
 
@@ -362,7 +361,7 @@ elysian_colonial_charters = {
 	global_integration_speed_modifier = 0.1
 	global_migration_speed_modifier = 0.1
 	rural_migration_attraction = 0.1
-	global_population_growth = 0.0002
+	global_population_growth = 0.0001
 }
 
 # age_2_renaissance
@@ -698,7 +697,7 @@ br_colonial_tradition = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	global_population_growth = 0.0005
+	global_population_growth = 0.0002
 }
 br_colonial_heritage = {
 	age = age_1_traditions
@@ -714,7 +713,7 @@ br_colonial_heritage = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	global_monthly_development = 0.005
+	global_monthly_development = 0.002
 }
 br_founding_fathers = {
 	age = age_2_renaissance
@@ -763,7 +762,7 @@ br_new_frontiers = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	colonial_migration_size_modifier = 0.15
+	colonial_migration_size_modifier = 0.1
 }
 br_continental_trade = {
 	age = age_3_discovery

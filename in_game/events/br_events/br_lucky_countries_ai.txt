@@ -1,0 +1,246 @@
+﻿namespace = br_lucky_countries_ai
+
+#AI lucky countries
+br_lucky_countries_ai.1 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+        tag = SER
+		tag = TUN
+		tag = MZF
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = { #33% x100 years
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.33
+		}
+	}
+
+}
+
+br_lucky_countries_ai.2 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+        tag = LIT
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+
+	trigger = {
+		is_ai = yes
+		c:KIE ?= {
+			is_ai = yes
+		}
+		c:CHR ?= {
+			is_ai = yes
+		}
+	}
+
+	immediate = {
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.33
+		}
+		c:KIE ?= {
+			make_subject_of = {
+				target = c:LIT
+				type = subject_type:vassal
+			}
+		}
+		c:CHR ?= {
+			make_subject_of = {
+				target = c:LIT
+				type = subject_type:vassal
+			}
+		}
+		every_subject = {
+			grant_estate_privilege = estate_privilege:br_russian_subject_privilege
+		}
+	}	
+
+}
+
+br_lucky_countries_ai.3 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+        tag = POL
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+
+	trigger = {
+		is_ai = yes
+		c:VOL ?= {
+			is_ai = yes
+		}
+		c:HAL ?= {
+			is_ai = yes
+		}
+	}
+
+	immediate = {
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 150
+			mode = add_and_extend
+			size = 0.5
+		}
+		c:VOL ?= {
+			make_subject_of = {
+				target = c:POL
+				type = subject_type:vassal
+			}
+		}
+		c:HAL ?= {
+			make_subject_of = {
+				target = c:POL
+				type = subject_type:vassal
+			}
+		}
+	}
+
+}
+
+br_lucky_countries_ai.4 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 200
+			mode = add_and_extend
+			size = 1
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 75
+			mode = add_and_extend
+			size = 1
+		}
+
+		research_advance = advance_type:seljuk_roots
+		research_advance = advance_type:timariots
+		research_advance = advance_type:bashi_bazouks
+		research_advance = advance_type:akinji_cavalry
+		research_advance = advance_type:heirs_of_rum
+		research_advance = advance_type:uc_bey_advance
+		research_advance = advance_type:persian_in_the_court
+		research_advance = advance_type:crossroads_of_commerce
+		research_advance = advance_type:millets
+		research_advance = advance_type:timariots
+		research_advance = advance_type:autonomous_pashas
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+
+	}
+
+}
+
+#Lucky italian trade republics
+br_lucky_countries_ai.5 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+	dynamic_historical_event = {
+        tag = VEN
+		tag = GEN
+		tag = PIS
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+	}
+	immediate = {
+		add_country_modifier = {
+			modifier = br_lucky_republic_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.5
+		}
+		research_advance = advance_type:naval_morale_advance_1
+		research_advance = advance_type:merchants_and_trade
+		research_advance = advance_type:trade_range_advance_age_2
+		research_advance = advance_type:rudimentary_coastal_ship_repair
+		research_advance = advance_type:meritocracy_advance
+		research_advance = advance_type:diplomatic_capacity_traditions
+	}
+}
+
+br_lucky_countries_ai.6 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+	dynamic_historical_event = {
+        tag = MLO
+		tag = FLO
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+	}
+	immediate = {
+		add_country_modifier = {
+			modifier = br_lucky_republic_buff
+			years = 150
+			mode = add_and_extend
+			size = 0.75
+		}
+	}
+}

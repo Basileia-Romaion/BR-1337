@@ -1502,6 +1502,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.212	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	muinawamek = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 0.106	culture = mikmaq_culture	religion = midewiwin_religion }
 	}
 	nisiamk = {
@@ -3618,6 +3619,7 @@ locations = {
 	caribe_sea15 = {
 	}
 	shawmut = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 4.023	culture = massachusett_culture	religion = midewiwin_religion }
 	}
 	naumkeag = {
@@ -3755,6 +3757,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 2.132	culture = western_abenaki_culture	religion = midewiwin_religion }
 	}
 	casco = {
+		define_pop = {	type = peasants		size = 0.074	culture = kathurlander		religion = norse }
 		define_pop = {	type = tribesmen	size = 1.851	culture = pennacook_culture	religion = midewiwin_religion }
 	}
 	kennebunk = {
@@ -3889,7 +3892,7 @@ locations = {
 	}
 	canajoharie = {
 		define_pop = {	type = peasants	size = 1.603	culture = kanienkehaka_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 1.857	culture = kanienkehaka_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 3.857	culture = kanienkehaka_culture	religion = iroquoian_totemism }
 	}
 	saratoga = {
 		define_pop = {	type = peasants	size = 1.222	culture = kanienkehaka_culture	religion = iroquoian_totemism }
@@ -3959,7 +3962,7 @@ locations = {
 	}
 	onenioteke = {
 		define_pop = {	type = peasants	size = 1.299	culture = onyotaaka_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 1.533	culture = onyotaaka_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 3.533	culture = onyotaaka_culture	religion = iroquoian_totemism }
 	}
 	niiohehsane = {
 		define_pop = {	type = peasants	size = 0.219	culture = onyotaaka_culture	religion = iroquoian_totemism }
@@ -3977,7 +3980,7 @@ locations = {
 	}
 	tsikahiotsisto = {
 		define_pop = {	type = peasants	size = 1.007	culture = onondagega_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 1.190	culture = onondagega_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 3.190	culture = onondagega_culture	religion = iroquoian_totemism }
 	}
 	oswego = {
 		define_pop = {	type = peasants	size = 0.596	culture = onondagega_culture	religion = iroquoian_totemism }
@@ -3989,7 +3992,7 @@ locations = {
 	}
 	skaniatares = {
 		define_pop = {	type = peasants	size = 1.913	culture = gayogohono_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 1.425	culture = gayogohono_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 3.425	culture = gayogohono_culture	religion = iroquoian_totemism }
 	}
 	assorodus = {
 		define_pop = {	type = peasants	size = 0.340	culture = gayogohono_culture	religion = iroquoian_totemism }
@@ -4007,7 +4010,7 @@ locations = {
 	}
 	canadaigua = {
 		define_pop = {	type = peasants	size = 1.473	culture = onondowaga_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 1.196	culture = onondowaga_culture	religion = iroquoian_totemism }
+		define_pop = {	type = tribesmen	size = 3.196	culture = onondowaga_culture	religion = iroquoian_totemism }
 	}
 	irondequoit = {
 		define_pop = {	type = nobles		size = 0.221	culture = onondowaga_culture	religion = iroquoian_totemism }
@@ -4576,6 +4579,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.122	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	corani = {
+		define_pop = {	type = peasants		size = 0.076	culture = kykladian_culture religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 0.701	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	neuse = {
@@ -4966,7 +4970,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.430	culture = timucua_culture	religion = mississippian_ceremonial }
 	}
 	tybee = {
-		define_pop = {	type = clergy	size = 0.016	culture = guale_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.076	culture = kykladian_culture religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.442	culture = guale_culture	religion = mississippian_ceremonial }
 	}
 	ossabaw = {
