@@ -2908,13 +2908,13 @@ br_ere_resistance_events.204 = {
 					divide = 3
 				}
 			}
-			
+
 			show_as_tooltip = {
 				add_liberty_desire = liberty_desire_mild_plus
 				add_war_exhaustion = war_exhaustion_weak_penalty
 			}
 			trigger_event_silently = { id = br_ere_resistance_events.205 }
-		
+
 		}
 	}
 	option = {

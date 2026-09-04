@@ -292,57 +292,56 @@
   ### events for ERE subjects or administrative divisions.
 
  br_ere_resistance_events.201.title: "Freedom Fighter or Rebel?"
- br_ere_resistance_events.201.desc: "A colonel in the army is making a name for himself as a strong proponent of armed resistance against [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetLongName]. Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people seem to listen to his ideas of independence.\n\nShould we brand him a traitor and a rebel, or might he be the one who can help us to cast off our imperial shackles and lead [ROOT.GetCountry.GetName] towards greater autonomy?"
- br_ere_resistance_events.201.a: "Promote him to general!"
- br_ere_resistance_events.201.b: "He must be executed!"
+ br_ere_resistance_events.201.desc: "A colonel in the army is making a name for himself as a fervent advocate of armed resistance against [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetLongName]. Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people are beginning to heed his calls for independence.\n\nShould we brand him a traitor and rebel against the imperial order, or might he be the one who can help us cast off the imperial yoke and lead [ROOT.GetCountry.GetName] towards greater autonomy?"
+ br_ere_resistance_events.201.a: "Raise him to the rank of strategos!"
+ br_ere_resistance_events.201.b: "He must lose his head!"
 
  br_ere_resistance_events.202.title: "Trouble in [from.GetName]"
- br_ere_resistance_events.202.desc: "A colonel in the [from.GetAdjective] army has been making a name for himself as a strong proponent of armed resistance against [ROOT.GetCountry.GetName]! Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people seem to listen to his dangerous ideas of independence.\n\nBut instead of immediately beheading this upstart, the local authorities in [from.GetName] have promoted him to general!"
- br_ere_resistance_events.202.a: "How dare they?!"
+ br_ere_resistance_events.202.desc: "A colonel in the [from.GetAdjective] army has been making a name for himself as a fervent advocate of armed resistance against [ROOT.GetCountry.GetName]! Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people are beginning to heed his dangerous calls for independence.\n\nBut instead of immediately putting down this insolent rebel, the local authorities in [from.GetName] have raised him to the rank of strategos!"
+ br_ere_resistance_events.202.a: "How dare they defy the imperial order?!"
 
- br_ere_resistance_events.203.title: "Rebel Commander Executed"
- br_ere_resistance_events.203.desc: "A colonel in the [from.GetAdjective] army has been making a name for himself as a strong proponent of armed resistance against [ROOT.GetCountry.GetName]! Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people seem to listen to his dangerous ideas of independence.\n\nFortunately, [from.GetCountry.GetGovernment.GetRulerTitle] [from.GetCountry.GetGovernment.GetRuler.GetName] dealt with the matter swiftly by removing the colonel's head. This action, however, seems to have stirred up an even greater desire for liberty [from.GetName]..."
+ br_ere_resistance_events.203.title: "Rebel Strategos Executed"
+ br_ere_resistance_events.203.desc: "A colonel in the [from.GetAdjective] army has been making a name for himself as a fervent advocate of armed resistance against [ROOT.GetCountry.GetName]! Besides being a gifted soldier, he seems to be an inspiring and charismatic leader, and more and more people are beginning to heed his dangerous calls for independence.\n\nFortunately, [from.GetCountry.GetGovernment.GetRulerTitle] [from.GetCountry.GetGovernment.GetRuler.GetName] dealt with the matter swiftly, ordering the rebel's execution and removing his head. This action, however, seems to have stirred an even greater desire for liberty in [from.GetName]..."
  br_ere_resistance_events.203.a: "Perhaps this was a rash solution..."
 
  br_ere_resistance_events.204.title: "The Burden of War"
- br_ere_resistance_events.204.desc: "Our recent war has left the country exhausted. Perhaps some of this burden should be shared by our subjects?"
- br_ere_resistance_events.204.a: "Increase subject taxation!"
- br_ere_resistance_events.204.b: "We will shoulder the burden."
+ br_ere_resistance_events.204.desc: "Our recent war has left the country exhausted. Perhaps some of this burden should be shared by our [ShowSubjectTypeName('br_thema_subject')], who benefit from the protection of the imperial armies?"
+ br_ere_resistance_events.204.a: "Increase the taxation of our [ShowSubjectTypeName('br_thema_subject')]!"
+ br_ere_resistance_events.204.b: "We shall bear the burden ourselves."
 
  br_ere_resistance_events.205.title: "The Burden of War"
- br_ere_resistance_events.205.desc: "The recent war of [from.GetName] has left our country exhausted. Since the war involved one of our neighbors, [from.GetCountry.GetGovernment.GetRulerTitle] [from.GetCountry.GetGovernment.GetRuler.GetName] has now decided that we should shoulder part of the burden!"
+ br_ere_resistance_events.205.desc: "The recent war of [from.GetName] has left our country exhausted. Since the war involved one of our neighbors, [from.GetCountry.GetGovernment.GetRulerTitle] [from.GetCountry.GetGovernment.GetRuler.GetName] has now decreed that we must shoulder a portion of the imperial burden!"
  br_ere_resistance_events.205.a: "Intolerable!"
 
- br_ere_resistance_events.206.title: "A Corrupted Governor"
- br_ere_resistance_events.206.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s struggles with the administration of our nation are not a secret, and our most skilled diplomats have needed to silence rumors about [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] ineptitude in an attempt to maintain the peace in the subject. However, the recent increase in corruption has brought about the inevitable. One of our former administrators has made public that the monetary help received from the Crown has gone directly into [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s pocket.\n\nThis disreputable behavior in times of need has led to a number of uprisings among our people that need to be taken care of."
- br_ere_resistance_events.206.a: "This is outrageous."
+ br_ere_resistance_events.206.title: "A Corrupt [from.GetCountry.GetGovernment.GetRulerTitle]"
+ br_ere_resistance_events.206.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s failures in administering our nation are no secret, and our most skilled envoys have been forced to silence rumors of [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] incompetence in an effort to preserve peace within the [ShowSubjectTypeName('br_thema_subject')]. Yet the recent rise in corruption has brought the inevitable reckoning. One of our former administrators has revealed publicly that the financial aid sent by the Imperial Court has gone directly into [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s coffers.\n\nSuch disgraceful conduct in a time of hardship has stirred numerous uprisings among our people, and they must now be brought to heel."
+ br_ere_resistance_events.206.a: "This is an outrage."
 
- br_ere_resistance_events.207.title: "A New Governor"
- br_ere_resistance_events.207.desc: "Rumors of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s inefficient rule have unavoidably reached the Crown, spreading concerns about how this unfortunate situation may affect their reputation and ours. Under the threat of being brought under direct rule by the Crown, [ROOT.GetName] has offered us a palliative deal: Appoint a new governor who can take the reins of our [ROOT.GetName] before it is too late."
- br_ere_resistance_events.207.a: "We should take their advice."
- br_ere_resistance_events.207.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] can still rule."
+ br_ere_resistance_events.207.title: "A New [from.GetCountry.GetGovernment.GetRulerTitle]"
+ br_ere_resistance_events.207.desc: "Rumors of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s ineffective rule have inevitably reached the Imperial Court, raising concerns over the damage this unfortunate situation may bring to both their reputation and ours. Under threat of bringing the province under direct imperial administration, [ROOT.GetName] has offered us a conciliatory remedy: appoint a new [from.GetCountry.GetGovernment.GetRulerTitle] who can take the reins of our [ROOT.GetName] before the situation worsens."
+ br_ere_resistance_events.207.a: "We should heed their counsel."
+ br_ere_resistance_events.207.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] can still govern."
 
  br_ere_resistance_events.208.title: "[ROOT.GetCountry.GetNameWithNoTooltip|U] Are in Debt!"
- br_ere_resistance_events.208.desc: "The trying times that are facing our subject know no apparent end. The monetary debt that is now laid upon us has crushed the spirit of our people who, prompted by the famine that their families are suffering, have demanded that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] find an immediate and effective solution."
+ br_ere_resistance_events.208.desc: "The trying times that have befallen our [ShowSubjectTypeName('br_thema_subject')] seem to have no end. The debts now weighing upon us have crushed the spirit of our people, who, driven by famine and the suffering of their families, demand that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] find an immediate remedy."
  br_ere_resistance_events.208.a: "We shall use our influence to resolve this."
- br_ere_resistance_events.208.b: "Their complaints are baseless."
+ br_ere_resistance_events.208.b: "Their complaints have no merit."
 
  br_ere_resistance_events.209.title: "Settler Incentives"
- br_ere_resistance_events.209.desc: "The lands of our subject are fertile and excellent for farming, our people are kind and welcoming, our administration is as effective as it can be, and the wind sings of calm and stability, which is a far cry from the metropolis's political turmoil. We are indeed a paradise on earth, but change is often a displeasing, although sometimes necessary, process, and our population is not as high as we would like it to be.\n\nOne advisor has suggested that a new policy be enacted, increasing our tolerance of other faiths so that more settlers can be attracted to our prosperous land."
- br_ere_resistance_events.209.a: "This will surely grant us more settlers."
+ br_ere_resistance_events.209.desc: "The lands of our [ShowSubjectTypeName('br_thema_subject')] are fertile and excellent for cultivation, our people are kind and welcoming, our administration is as effective as circumstances allow, and the winds carry the promise of peace and stability—a far cry from the turmoil of the imperial metropolis. We are indeed a paradise on earth, yet change is often unwelcome, however necessary, and our population is not as numerous as we would wish.\n\nOne advisor has proposed a new policy: greater tolerance toward other faiths, in the hope that settlers from across the Empire may be encouraged to make their homes in our prosperous lands."
+ br_ere_resistance_events.209.a: "This will surely attract more settlers."
+
+ br_ere_resistance_events.210.title: "Appease the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]"
+ br_ere_resistance_events.210.desc: "Concerns have arisen among the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] regarding the governance of our [ShowSubjectTypeName('br_thema_subject')]. Their grievances have been whispered through marketplaces and privately discussed for months, but it has now become clear that their discontent is both serious and widespread.\n\nOne of their members approached [ROOT.GetCountry.GetGovernment.GetRuler.GetName] this morning, even before [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] could attend the council, and made their intentions quite explicit, saying 'We are deeply concerned that the noble aristocracy is steering the fate of [ROOT.GetCountry.GetName] according to the vices and greed of the Old World.'"
+ br_ere_resistance_events.210.a: "We should side with the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
+ br_ere_resistance_events.210.b: "We must protect the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
+
+ br_ere_resistance_events.211.title: "A Noble Concern"
+ br_ere_resistance_events.211.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are not known for concealing their political opinions, nor do they seem particularly concerned with doing so. They have been heard at feasts and banquets loudly proclaiming that the [ShowSubjectTypeName('br_thema_subject')] is doomed to fail because of the influence so wrongly wielded by the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')].\n\nToday, however, their concerns prompted an unprecedented approach: one of them came to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s chambers before the first light of dawn. 'Forgive me for disturbing your rest, my [ROOT.GetCountry.GetGovernment.GetRulerTitle],' they said, 'but something must be done at once. The insolence and lack of virtue of the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are turning this [ShowSubjectTypeName('br_thema_subject')] into a fool's paradise. This must be stopped before today's council.'"
+ br_ere_resistance_events.211.a: "We should side with the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
+ br_ere_resistance_events.211.b: "We must protect the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
 
  STATIC_MODIFIER_NAME_colonist_incentives: "Settler Incentives"
  STATIC_MODIFIER_DESC_colonist_incentives: "A new set of privileges has been granted to all faiths."
-
- br_ere_resistance_events.210.title: "Appease the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]"
- br_ere_resistance_events.210.desc: "Concerns have been raised among the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] regarding the rule of our subject. Their opinions had been hinted at and surreptitiously spread over the course of the past few months, but it has now become clear in many respects that their discontent is distinct and worrying.\n\nOne of their members approached [ROOT.GetCountry.GetGovernment.GetRuler.GetName] this morning, even before [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] could attend the council, and has made their intentions quite explicit, saying 'We are deeply concerned about the noble oligarchy influencing [ROOT.GetCountry.GetName]'s fate with their Old World's vices and greed.'"
- br_ere_resistance_events.210.a: "We should side with the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
- br_ere_resistance_events.210.b: "We need to protect the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
-
- br_ere_resistance_events.211.title: "A Noble Concern"
- br_ere_resistance_events.211.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are not very good at hiding their political positions, nor do they seem to care. They have been heard in feasts and banquets loudly stating that the subject is doomed to failure, due to the power that the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] so wrongly hold.\n\nToday, however, their intentions have led to an unprecedented approach: One of them came to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s chambers before the first hours of dawn. 'Sorry to interrupt your rest, my [ROOT.GetCountry.GetGovernment.GetRulerTitle],' they said, 'however something must be done immediately. [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]'s insolence and lack of virtue are making a fool's paradise of this subject. This must be stopped before today's council.'"
- br_ere_resistance_events.211.a: "We should side with the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
- br_ere_resistance_events.211.b: "We need to protect the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
-
 
 
