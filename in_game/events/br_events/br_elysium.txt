@@ -51,6 +51,7 @@ elysium_event.1 = {
  			scope:target_location = {
  				rename_location = Elysium
 				change_location_rank = location_rank:city
+				change_raw_material = goods:silk
 				add_location_modifier = {
 					modifier = birth_of_a_new_city_adm
 					years = 25
@@ -86,9 +87,8 @@ elysium_event.1 = {
 				}
 			}
  		#}
-		hidden_effect = {
+		hidden_effect = { #Goal is to split these two effects off so they are a more drawn out process via multiple events that happen after Elysium formation.
 			scope:target_location = {
-				change_raw_material = goods:silk
 				change_development = development_extreme_bonus
 				change_prosperity = prosperity_radical_bonus
 				every_pop = {
@@ -104,9 +104,15 @@ elysium_event.1 = {
 						OR = {
 							culture = { has_culture_group = culture_group:powhatan_group }
 							culture = { has_culture_group = culture_group:lenape_group }
+							culture = { has_culture_group = culture_group:skarureh_group }
+							culture = { has_culture_group = culture_group:tutelo_group }
 						}
 					}
-					change_pop_culture = culture:elyrics_culture
+					split_pop = {
+						fraction = 0.5 #50% of the pop will be changed to the new culture
+						culture = culture:elyrics_culture
+					}
+					#change_pop_culture = culture:elyrics_culture
 				}
 			}
 			every_owned_location = {
@@ -133,7 +139,6 @@ elysium_event.1 = {
 		high_reward_option = yes
 
 		add_prestige = prestige_extreme_bonus
-
 		
 		add_country_modifier = {
 			modifier = br_elysium_formed
