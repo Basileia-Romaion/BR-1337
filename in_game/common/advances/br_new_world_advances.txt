@@ -862,3 +862,93 @@ br_colonial_ambition = {
 }
 
 
+br_ely_unlock_legionaries_1_advance = {
+	age = age_1_traditions
+	allow_children	= no
+	requires = iron_working
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_1
+}
+
+br_ely_unlock_legionaries_2_advance = {
+	age = age_2_renaissance
+	allow_children	= no
+	requires = armory_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_2
+}
+
+br_ely_unlock_legionaries_3_advance = {
+	age = age_3_discovery
+	allow_children	= no
+	requires = training_fields_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_3
+}
+
+br_ely_unlock_legionaries_4_advance = {
+	age = age_4_reformation
+	allow_children	= no
+	requires = barracks_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_4
+}
+
+br_ely_unlock_legionaries_5_advance = {
+	age = age_5_absolutism
+	allow_children	= no
+	requires = military_revolution_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_5
+}
+
+
+br_ely_unlock_legionaries_6_advance = {
+	age = age_6_revolutions
+	requires = conscription_center_advance
+	allow_children	= no
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_6
+}
