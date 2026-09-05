@@ -93,3 +93,32 @@ TRY_INJECT:centralization_vs_decentralization = {
 		global_tribes_estate_power = 0.5
 	}
 }
+
+REPLACE_OR_CREATE:latinization_vs_hellenization = {
+	content_priority = 900
+	allow = {
+		has_dlc = "d008_fate_of_the_phoenix"
+        OR = {
+            has_or_had_tag = BYZ
+            has_or_had_tag = E1Y
+            has_or_had_tag = E2Y
+            has_or_had_tag = ELY
+            has_or_had_tag = IMP
+		}
+	}
+	
+	left_modifier = { #Latinitas
+		diplomatic_spending_cost = -0.2
+		selling_efficiency = small_trade_efficiency_bonus
+		allow_roman_movement = yes
+		monthly_towards_humanist = societal_value_monthly_move
+		monthly_towards_innovative = societal_value_monthly_move
+	}
+
+	right_modifier = { #Rhomanismos
+		stability_cost_efficiency = 0.4
+		tolerance_own = 0.5
+		monthly_towards_spiritualist = societal_value_monthly_move
+		monthly_towards_traditionalist = societal_value_monthly_move
+	}
+}

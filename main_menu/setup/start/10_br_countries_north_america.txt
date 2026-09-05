@@ -763,7 +763,7 @@ countries = {
 			}
 			own_control_colony = {
 			}
-			
+
 			capital = patapsco
 			include = "elysian_foothold"
 			court_language = elysian_latin_dialect
@@ -773,6 +773,7 @@ countries = {
 				heir_selection = cognatic_primogeniture
 				ruler = br_e1y_character_1
 				ruler_term = { character = br_e1y_character_1 start_date = 1308.5.24 }
+				latinization_vs_hellenization = -100
 			}
 			
 			tolerated_cultures = {
@@ -806,6 +807,7 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
+				latinization_vs_hellenization = 100
 			}
 			
 			tolerated_cultures = {
