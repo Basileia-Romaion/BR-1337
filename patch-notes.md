@@ -16,6 +16,22 @@
   - Opening flavor event for vinland.
   - Opening flavor event for both the Elysian tags.
   - Moved the Iberia crusade target to the balerics since I changed Zaragoza to just be a city state.
+  - 10 events for Theme and Pronoia subject types. These are to cause a bit of friction with the emperor and add a tad bit more flavor.
+
+## Cultural
+ - Restored the Elysian language to the tongue of the Elysian culture
+ - Made the Elyrics Dialect under the Elysian language
+
+## Characters
+ - More starting characters to the main elysian tags and vinland
+
+## Privileges
+  - split the Romans latin naval privilege in two with a religious portion being separate.
+  - slight tweaks to some other privileges.
+  - Add localization to the Russian privilage that protected Russian Orthodox subjects from being force converted from their overlord.
+  - Added a generic version for the Andalusi city states
+  - The Elysian priviledge Frontier Settlements has been split in two with the enslave all tribesmen when colonizing portion being broken off into a seperate nobles privilage that requires 75 towards bellgerance
+    -  Spoils of the Frontier: "The frontier is a place of conquest, and those who wage war shall be entitled to claim captives and slaves among the defeated."
 
 ## Balance changes
   - simplified these debuffs by removing the scaling so they simply on or off so they easier to understand
@@ -25,6 +41,16 @@
    - br_new_world_vinland_capital: "Heart of Vinland"
    - br_new_world_elysian_capital: "Elysian Polis"
    - br_new_world_elysian_capital_2: "Cradle of Elysium"
+  - Gave Vinland and Elysium +80 proximity for 100 years in their old capital when moving the capital to new location.
+  - moved most the 'lucky country' timed modifiers to happen via an event that only applies if they are ai controlled.
+  - When forming Elysium the natives within the core area will hybridize and settle.
+  - Adjusted the Great Pestilence. The Parts of the Americas occupied by people of european decent will still have very high resistance but further away will drop to between 50-75% resistance. So when the mechanics fires it will cause a good amount of death but not near the vanilla levels. This was primarily done for game balance. Will adjust if needed.
+
+## Buildings
+  - Added new Pirate hideout buildings they are smaller with half the spawn chance of the Pirate Haven. The Main building is a bit harder to remove than a haven. Also added two varients for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
+    - Pirate Hideout: "A secluded coastal refuge where pirates gather, plan their raids, and evade the authorities."
+    - Kykladian Pirate Cove: "Pirates originating from the Kykladian Islands to the south have established hidden coves along the shores of Elysium, using them as bases from which to gather and launch their raids."
+    - Varangian Pirate Cove: "Varangian pirates and raiders from the northern seas have established hidden coves along the shores, using them as bases from which to gather and launch their raids."
 
 ## Localization
   - Kipchak loc for the steppe.
