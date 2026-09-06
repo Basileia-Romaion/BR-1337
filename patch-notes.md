@@ -27,11 +27,17 @@
 - Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
 - Elysians with the dlc should now be able to sponsor greek fire if they get a scientist.
 - Forming Elysium will give you a Scientist.
+- Forming Elysium will change all your court characters to the Elysian culture.
+- Elysians will start with colonial subjects
+- Added 3 Hellenic Holy Sites to the new world
+- Added 2 'Orthodox' Holy sites to the New World.
+
 
 ## Map changes
 ### Cultures
   - adjusted the Lur/Farsi cultural/religion border to blend a bit better and be more shia and less zorastrian.
 ### Countries
+  - Haudenosaunee unified at game start
   - The Morean Slavs and the Hellenized Turkic tags moved to releasable.
   - moved theme of Thessalonki to a releabable. Moved the city and Gold/Gem mines to ERE and the rest split between Strymon and Beroia
   - misc map changes in west HRE and iberia
@@ -68,6 +74,7 @@
   - Gave Vinland and Elysium +80 proximity for 100 years in their old capital when moving the capital to new location.
   - moved most the 'lucky country' timed modifiers to happen via an event that only applies if they are ai controlled.
   - When forming Elysium the natives within the core area will hybridize and settle.
+  - Vinland and the Elysians will start with colonial_nation subjects.
 
 ## Buildings
   - Added new Pirate hideout buildings they are smaller with half the spawn chance of the Pirate Haven. The Main building is a bit harder to remove than a haven. Also added two varients for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
