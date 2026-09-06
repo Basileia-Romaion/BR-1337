@@ -4156,7 +4156,9 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.280	culture = carantouan_culture	religion = iroquoian_totemism }
 	}
 	massawomeck = {
-		define_pop = {	type = tribesmen	size = 0.841	culture = onojutta_culture	religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 0.506	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 2.912	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = slaves	size = 0.541	culture = onojutta_culture	religion = iroquoian_totemism }
 	}
 	scahentowanen = {
 		define_pop = {	type = tribesmen	size = 1.122	culture = carantouan_culture	religion = iroquoian_totemism }
@@ -4502,19 +4504,27 @@ locations = {
 	cumberland_mountains_7 = {
 	}
 	moneton = {
+		define_pop = {	type = peasants		size = 0.076	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 1.212	culture = elyrics_culture	religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.711	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	mohetan = {
 		define_pop = {	type = tribesmen	size = 1.851	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	kanawha = {
-		define_pop = {	type = tribesmen	size = 1.711	culture = moneton_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.256	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 3.512	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = tribesmen	size = 0.811	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	ouasioto = {
-		define_pop = {	type = tribesmen	size = 1.691	culture = moneton_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.186	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 2.812	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = tribesmen	size = 0.691	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	pocatalico = {
-		define_pop = {	type = tribesmen	size = 1.711	culture = moneton_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.076	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 1.212	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = tribesmen	size = 0.711	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	chinquetana = {
 		define_pop = {	type = tribesmen	size = 1.092	culture = moneton_culture	religion = mississippian_ceremonial }
@@ -4523,6 +4533,8 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.851	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	tsalagi = {
+		define_pop = {	type = peasants		size = 0.076	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 1.212	culture = elyrics_culture	religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.402	culture = moneton_culture	religion = mississippian_ceremonial }
 	}
 	anigiduwagi = {
@@ -4535,10 +4547,14 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.982	culture = chalahgawtha_culture	religion = mississippian_ceremonial }
 	}
 	onimgohow = {
-		define_pop = {	type = tribesmen	size = 2.693	culture = mekoche_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.176	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 2.212	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = tribesmen	size = 0.993	culture = mekoche_culture	religion = mississippian_ceremonial }
 	}
 	calicua = {
-		define_pop = {	type = tribesmen	size = 1.851	culture = mekoche_culture	religion = mississippian_ceremonial }
+		define_pop = {	type = peasants		size = 0.076	culture = aureliani religion = hellenism_religion }
+		define_pop = {	type = peasants		size = 1.212	culture = elyrics_culture	religion = hellenism_religion }
+		define_pop = {	type = tribesmen	size = 0.851	culture = mekoche_culture	religion = mississippian_ceremonial }
 	}
 	roanoke = {
 		define_pop = {	type = nobles		size = 0.010	culture = photianoi			religion = orthodox }

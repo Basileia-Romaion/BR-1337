@@ -41,6 +41,27 @@ E5Y = { #BR addition
 	religion_definition = hellenism_religion
 }
 
+E6Y = { #BR addition
+	color = rgb { 120 144 99 }
+
+	culture_definition = elyrics_culture
+	religion_definition = hellenism_religion
+}
+
+E7Y = { #BR addition
+	color = rgb { 66 88 44 }
+
+	culture_definition = elyrics_culture
+	religion_definition = hellenism_religion
+}
+
+E8Y = { #BR addition
+	color = rgb { 120 44 99 }
+
+	culture_definition = elyrics_culture
+	religion_definition = orthodox
+}
+
 K1K = { #BR addition
 	color = rgb { 120 58 155 }
 
@@ -51,7 +72,7 @@ K1K = { #BR addition
 #Natives
 IRO = {
 	color = map_onondowaga
-	color2 = rgb { 89 177 31 }
+	color2 = rgb { 87 182 80 }
 
 	culture_definition = onondowaga_culture
 	religion_definition = iroquoian_totemism
