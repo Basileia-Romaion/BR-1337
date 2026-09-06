@@ -256,7 +256,7 @@ elysium_event.3 = {
 	option = {
 		name = elysium_event.3.a
 
-		hidden_effect = {
+		hidden_effect = { #Needed so the game knows Hellenism exists.
 			change_religion = religion:hellenism_religion
 			add_religious_aspect = religious_aspect:monism_aspect
 			ruler_or_regent ?= {
@@ -273,6 +273,19 @@ elysium_event.3 = {
 			}
 			consort ?= {
 				change_character_religion = religion:hellenism_religion
+			}
+
+			c:E5Y = {
+				make_subject_of = {
+					target = c:E1Y
+					type = subject_type:colonial_nation
+				}
+			}
+			c:K1K = {
+				make_subject_of = {
+					target = c:E1Y
+					type = subject_type:colonial_nation
+				}
 			}
 		}
 	}
@@ -298,7 +311,16 @@ elysium_event.4 = {
 
 	option = {
 		name = elysium_event.4.a
+		hidden_effect = {
+			c:E4Y = {
+				make_subject_of = {
+					target = c:E2Y
+					type = subject_type:colonial_nation
+				}
+			}
+		}
 	}
+
 }
 
 namespace = br_elysian_DHE

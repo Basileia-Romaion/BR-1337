@@ -1,12 +1,17 @@
 diplomacy_manager = {
 	####---------- Vinland ----------####
-	dependency = { first = NRV second = NRC subject_type = dominion }
-	dependency = { first = NRV second = BEO subject_type = vassal }
-	dependency = { first = NRV second = NRH subject_type = dominion }
-	dependency = { first = NRV second = NRR subject_type = dominion }
+	dependency = { first = NRV second = NRC subject_type = vassal }
+	dependency = { first = NRV second = NRH subject_type = vassal }
+	dependency = { first = NRV second = NRR subject_type = vassal }
+	dependency = { first = NRV second = BEO subject_type = tributary }
+	dependency = { first = NRV second = MIK subject_type = tributary }
 	
 	####---------- Haudenosauneega ----------####
-	
+	dependency = { first = IRO second = WRO subject_type = tributary }
+	dependency = { first = IRO second = ERI subject_type = tributary }
+	dependency = { first = IRO second = KEN subject_type = tributary }
+	dependency = { first = IRO second = ONG subject_type = tributary }
+	dependency = { first = IRO second = ADR subject_type = tributary }
 	
 	####---------- Tsenacommacah ----------####
 	dependency = { first = E2Y second = E4Y subject_type = dominion }
