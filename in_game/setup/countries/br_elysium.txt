@@ -47,3 +47,17 @@ K1K = { #BR addition
 	culture_definition = kykladian_culture
 	religion_definition = hellenism_religion
 }
+
+#Natives
+IRO = {
+	color = map_onondowaga
+	color2 = rgb { 89 177 31 }
+
+	culture_definition = onondowaga_culture
+	religion_definition = iroquoian_totemism
+
+	description_category = diplomatic
+	difficulty = 5
+
+	
+}

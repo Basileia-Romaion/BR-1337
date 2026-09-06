@@ -553,111 +553,38 @@ countries = {
 		}
 		
 		#Mohawk/Kanien'kehaka
-		KKA = {
+		#Oneida/Onyotaaka
+		#Onondaga/Onondagega
+		#Cayuga/Gayogohono
+		#Seneca/Onondowaga
+		IRO = {
 			own_control_core = {
-				canajoharie saratoga schenectady teionontatatie oneonta
+				canadaigua geneseo tsonentsiio irondequoit #ONN
+				skaniatares assorodus gahato #GYO
+				tsikahiotsisto otsiningo oswego #ONO
+				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
+
+				canajoharie saratoga schenectady teionontatatie oneonta #KKA
 				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
 				ahna_wate
 			}
 			
-			capital = canajoharie
+			capital = irondequoit #canadaigua
 			include = "haudenosaunee_tribe"
 			court_language = haudenosaunee_language
 			government = {
 				ruler = random
 			}
 			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
+				gold = 400
+				stability = 95
+				tribal_cohesion = 95
 			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Oneida/Onyotaaka
-		ONY = {
-			own_control_core = {
-				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa
-			}
-			
-			capital = onenioteke
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Onondaga/Onondagega
-		ONO = {
-			own_control_core = {
-				tsikahiotsisto otsiningo oswego
-			}
-			
-			capital = tsikahiotsisto
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Cayuga/Gayogohono
-		GYO = {
-			own_control_core = {
-				skaniatares assorodus gahato
-			}
-			
-			capital = skaniatares
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Seneca/Onondowaga
-		ONN = {
-			own_control_core = {
-				canadaigua geneseo tsonentsiio irondequoit
-			}
-			
-			capital = canadaigua
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
+			accepted_cultures = {
+				gayogohono_culture
+				onondagega_culture
+				onyotaaka_culture
+				kanienkehaka_culture
 			}
 			
 			include = "expl_new_england"

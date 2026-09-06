@@ -805,11 +805,12 @@ international_organization_manager = {
 	#################################################################
 	# 					Tribal Confederation						#
 	#################################################################
-	add_international_organization = {
-		type = tribal_confederation
-		creation_date = 1142.1.1
-		members = { ONO KKA ONY GYO ONN }
-	}
+	#BR unified
+#	add_international_organization = {
+#		type = tribal_confederation
+#		creation_date = 1142.1.1
+#		members = { IRO #ONO KKA ONY GYO ONN }
+#	}
 	add_international_organization = {
 		type = tribal_confederation
 		creation_date = 1337.1.1

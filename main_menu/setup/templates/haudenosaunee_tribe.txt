@@ -13,7 +13,7 @@ government = {
 	belligerent_vs_conciliatory = 60
 	quality_vs_quantity = -50
 	offensive_vs_defensive = 10
-	land_vs_naval = -90
+	land_vs_naval = -100
 	capital_economy_vs_traditional_economy = 100
 	individualism_vs_communalism = 80
 	outward_vs_inward = 50
@@ -22,31 +22,35 @@ government = {
 	}
 
 	privilege = {
-		#Nobles
+		haudenosaunee_labor_division
+		nobility_council
 		nobles_land_rights
-
-		#Clergy
-		clerical_advisory_council
-		promote_cultural_unity
-
-		#Burghers
+		tribal_autonomy
+		
+		#clergy
+		embellish_great_works_of_faith
+		
+		#burghers
+		urban_development_grants
 		market_fairs
-
+		
 		#Commoners
 		peasants_autonomous_villages
 		communal_lands
-		haudenosaunee_labor_division
 		allow_hunting
 		partial_yield
 		peasants_free_peasantry
 		
 		tribes_tribal_levies
 		tribes_allow_gatherings
+		tribes_land_rights
+		tribes_pasture_access
 	}
 
 	laws = {
 		marriage_law = polygyny
 		heir_religion_law = heir_same_religion
+		cultural_traditions_law = martial_society
 	}
 
 	reforms = {
