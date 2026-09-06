@@ -4,6 +4,30 @@
 
 # 0.24
 
+## Dawn of Elysium content. Part 1
+- The Lost Legions: "The Elysian state still rests upon the military institutions established by the Roman settlers centuries ago. Legionary service has become the foundation of political authority, while the descendants of the old officers form a powerful hereditary nobility."
+- dlc owners will have access to the Legionary units while playing in Elysium.
+- dlc owners will have access to the latinization_vs_hellenization mechanics while playing in Elysium including dozens of events.
+- Forming Elysium will allow the construction of hippodrome, aqueduct & gymnasiums
+- Opening flavor event for both the main Elysian tags. (Will be improved more later)
+- Elysian language to the tongue of the Elysian culture, with a dialect for Elyrics.
+- The Elysian priviledge Frontier Settlements has been split in two with the enslave all tribesmen when colonizing portion being broken off into a seperate nobles privilage that requires 75 towards bellgerance
+  -  Spoils of the Frontier: "The frontier is a place of conquest, and those who wage war shall be entitled to claim captives and slaves among the defeated."
+- Updates 
+- More starting characters for the Elysian tags.
+- Lowered the Elysian and New World Pop growth modifiers to better align with vanilla modifiers.
+- Added a capital modifier for the Elysians that gives pop growth and attraction for the capital to help balance out all the pops colonizing.
+  - br_new_world_elysian_capital: "Elysian Polis"
+  - br_new_world_elysian_capital_2: "Cradle of Elysium"
+  - +80 proximity for 100 years in their old capital when moving the capital to new Elysium.
+  - When forming Elysium the natives within the core area will hybridize and settle.
+- Added two Pirate hideout buildings for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
+  - Kykladian Pirate Cove: "Pirates originating from the Kykladian Islands to the south have established hidden coves along the shores of Elysium, using them as bases from which to gather and launch their raids."
+  - Varangian Pirate Cove: "Varangian pirates and raiders from the northern seas have established hidden coves along the shores, using them as bases from which to gather and launch their raids."
+- Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
+- Elysians with the dlc should now be able to sponsor greek fire if they get a scientist.
+- Forming Elysium will give you a Scientist.
+
 ## Map changes
 ### Cultures
   - adjusted the Lur/Farsi cultural/religion border to blend a bit better and be more shia and less zorastrian.
@@ -44,7 +68,6 @@
   - Gave Vinland and Elysium +80 proximity for 100 years in their old capital when moving the capital to new location.
   - moved most the 'lucky country' timed modifiers to happen via an event that only applies if they are ai controlled.
   - When forming Elysium the natives within the core area will hybridize and settle.
-  - Adjusted the Great Pestilence. The Parts of the Americas occupied by people of european decent will still have very high resistance but further away will drop to between 50-75% resistance. So when the mechanics fires it will cause a good amount of death but not near the vanilla levels. This was primarily done for game balance. Will adjust if needed.
 
 ## Buildings
   - Added new Pirate hideout buildings they are smaller with half the spawn chance of the Pirate Haven. The Main building is a bit harder to remove than a haven. Also added two varients for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
