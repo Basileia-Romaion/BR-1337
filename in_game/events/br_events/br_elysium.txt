@@ -1,6 +1,7 @@
 ﻿namespace = elysium_event
 
 #add_migration
+#change_character_culture = culture:elysian_culture
 
 # Form Elysium
 elysium_event.1 = {
@@ -135,6 +136,9 @@ elysium_event.1 = {
 				}
 			}
 			scope:the_scientist = { move_country = root }
+			every_character = {
+				change_character_culture = culture:elysian_culture
+			}
 		}
 
 		culture = {
