@@ -782,12 +782,6 @@ br_country_startup.3 = { #cbs added
 				type = casus_belli:cb_border_war
 			}
 		}
-		c:ARA ?= {
-			add_casus_belli = {
-				target = c:AD2
-				type = casus_belli:cb_deus_vult #cb_crusade
-			}
-		}
 		c:OHS ?= {
 			add_casus_belli = {
 				target = c:KIL
@@ -828,16 +822,6 @@ br_country_startup.3 = { #cbs added
 			add_casus_belli ?= {
 				target = c:ERE
 				type = casus_belli:cb_border_war
-			}
-		}
-		c:LIT ?= {
-			add_casus_belli = {
-				target = c:KIE
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:CHR
-				type = casus_belli:cb_subjugation
 			}
 		}
 		c:LON ?= {
