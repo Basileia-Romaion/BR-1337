@@ -21,6 +21,16 @@ elysium_event.1 = {
 	}
 
 	immediate = {
+		create_character = {
+			trait_category = artist
+			artist = scientist
+			estate = estate_type:burghers_estate
+			artist_skill = { 0.4 0.9 }
+			culture = root.culture
+			religion = root.religion
+			create_in_limbo = yes
+			save_scope_as = the_scientist
+		}
 		location:anacostia = {
 			save_scope_as = target_location
 		}
@@ -124,6 +134,7 @@ elysium_event.1 = {
 					change_pop_type = pop_type:peasants #slaves
 				}
 			}
+			scope:the_scientist = { move_country = root }
 		}
 
 		culture = {
@@ -283,7 +294,119 @@ elysium_event.4 = {
 
 	option = {
 		name = elysium_event.4.a
-		#hidden_effect = {
-		#}
 	}
 }
+
+namespace = br_elysian_DHE
+
+### DHEs
+
+#### Repurposed vanilla DHEs
+
+br_elysian_DHE.1 = { #Possibility to sponsor Greek Fire
+	type = country_event
+	title = d008_flavor_byz.1.title
+	desc = d008_flavor_byz.1.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/special/greek_fire.dds"
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		OR = {
+			has_or_had_tag = IMP
+			has_or_had_tag = ELY
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+		}
+		has_dlc = "d008_fate_of_the_phoenix"
+		any_artist = {
+			artist_type = scientist
+			has_art_in_progress = no
+			NOT = { has_character_modifier = busy_modifier }
+			artist_skill > 0.7
+		}
+	}
+
+	immediate = {
+		random_artist = {
+			limit = {
+				artist_type = scientist
+				has_art_in_progress = no
+				NOT = { has_character_modifier = busy_modifier }
+				artist_skill > 0.7
+			}
+			save_scope_as = target_artist
+		}
+	}
+
+	option = { #Sponsor
+		name = d008_flavor_byz.1.a
+		change_gold_effect = { scale = -5 }
+		custom_tooltip = {
+			text = d008_flavor_byz.1.a.tt
+			if = {
+				limit = { exists = scope:target_artist }
+				scope:target_artist = {
+					add_character_modifier = {
+						modifier = busy_modifier
+						years = -1
+						mode = add
+					}
+					set_variable = searching_for_greek_fire
+				}
+				random_list = {
+					50 = {
+						trigger_event_non_silently = { id = d008_flavor_byz.2 days = { 60 180 } }
+					}
+					50 = {
+						trigger_event_non_silently = { id = d008_flavor_byz.3 days = { 60 180 } }
+					}
+				}
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus}
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus}
+	}
+
+	option = { #Nah
+		name = d008_flavor_byz.1.b
+		add_prestige = prestige_mild_bonus
+		add_navy_tradition = navy_tradition_mild_bonus
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
