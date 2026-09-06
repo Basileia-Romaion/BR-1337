@@ -13,6 +13,7 @@ br_lucky_countries_ai.1 = {
         tag = SER
 		tag = TUN
 		tag = MZF
+		tag = MAL
         from = 1337.1.1
         to = 1338.1.1
         monthly_chance = 100
@@ -25,6 +26,12 @@ br_lucky_countries_ai.1 = {
 	immediate = { #33% x100 years
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
+			years = 100
+			mode = add_and_extend
+			size = 0.33
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
 			years = 100
 			mode = add_and_extend
 			size = 0.33
@@ -64,6 +71,12 @@ br_lucky_countries_ai.2 = {
 			years = 100
 			mode = add_and_extend
 			size = 0.33
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 100
+			mode = add_and_extend
+			size = 0.5
 		}
 		c:KIE ?= {
 			make_subject_of = {
@@ -241,6 +254,40 @@ br_lucky_countries_ai.6 = {
 			years = 150
 			mode = add_and_extend
 			size = 0.75
+		}
+	}
+}
+
+br_lucky_countries_ai.7 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+	dynamic_historical_event = {
+        tag = LOT
+		tag = TNC #Aztec
+		tag = CSU #Inca
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+	}
+	immediate = { #decaying to 0.5% x150 years
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 150
+			mode = add_and_extend
+			size = 0.5
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 150
+			mode = add_and_extend
+			size = 0.5
 		}
 	}
 }
