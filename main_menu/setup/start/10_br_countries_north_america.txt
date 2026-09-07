@@ -586,7 +586,7 @@ countries = {
 				onyotaaka_culture
 				kanienkehaka_culture
 			}
-			
+			country_rank = rank_kingdom
 			include = "expl_new_england"
 			include = "expl_american_great_lakes"
 		}
@@ -636,6 +636,7 @@ countries = {
 			capital = cahokia
 			include = "woodlands_centralized_natives"
 			court_language = dhegiha_language
+			country_rank = rank_kingdom
 			government = {
 				ruler = random
 			}
