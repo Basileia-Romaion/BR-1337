@@ -31,6 +31,10 @@
 - Elysians will start with colonial subjects
 - Added 3 Hellenic Holy Sites to the new world
 - Added 2 'Orthodox' Holy sites to the New World.
+- Two new Elyric tags
+    - E6Y: "Aithaia"
+    - E7Y: "Apaleisia"
+- Put All the Elysian Cultures in the greek_group know know as Roman Group. It contains many events and other content the region could benefit from.
 
 
 ## Map changes
@@ -41,12 +45,16 @@
   - The Morean Slavs and the Hellenized Turkic tags moved to releasable.
   - moved theme of Thessalonki to a releabable. Moved the city and Gold/Gem mines to ERE and the rest split between Strymon and Beroia
   - misc map changes in west HRE and iberia
+  - Two new Elyric tags
+    - E6Y: "Aithaia"
+    - E7Y: "Apaleisia"
 
 ## Events
   - Opening flavor event for vinland.
   - Opening flavor event for both the Elysian tags.
   - Moved the Iberia crusade target to the balerics since I changed Zaragoza to just be a city state.
   - 10 events for Theme and Pronoia subject types. These are to cause a bit of friction with the emperor and add a tad bit more flavor.
+  - Haudenosauneega starting event added with some backstory
 
 ## Cultural
  - Restored the Elysian language to the tongue of the Elysian culture
@@ -75,6 +83,10 @@
   - moved most the 'lucky country' timed modifiers to happen via an event that only applies if they are ai controlled.
   - When forming Elysium the natives within the core area will hybridize and settle.
   - Vinland and the Elysians will start with colonial_nation subjects.
+  - small vinland outposts added
+  - Haudenosauneega and Cahokia given a large amount of tribal buildings
+  - Haudenosauneega and Cahokia given kingdom rank. No unique title yet.
+  - Haudenosauneega and Cahokia ai should colonize once they research the tech.
 
 ## Buildings
   - Added new Pirate hideout buildings they are smaller with half the spawn chance of the Pirate Haven. The Main building is a bit harder to remove than a haven. Also added two varients for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
@@ -88,6 +100,13 @@
 ## Fixes
   - Restored the Elysian language for the Elysian culture its supposed to be a hybrid between Latin and Greek. We had been using Elysian Latin because previously we could not get the location localization to work for new languages.
   - Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
+
+
+
+
+
+
+
 
 # 0.23.3
 - Balance pass on ERE modifiers especally ones active at game start.
