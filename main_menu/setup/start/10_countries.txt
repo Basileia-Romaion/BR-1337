@@ -15081,7 +15081,6 @@ countries = {
 		own_control_colony = {
 			teguise
 			funchal
-			ponta_delgada
 			bissagos
 		}
 
@@ -57277,8 +57276,68 @@ countries = {
 		capital = raseiniai
 		country_rank = rank_county
 	}
-
+	######Azores#####
 	
+	HUK = {	#Haukland
+		own_control_core = {
+			ponta_delgada
+			angra
+		}
+
+		starting_technology_level = 3
+		include = "peasant_republic"
+		include = "expl_scandinavia"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+
+		discovered_regions = {
+			macaronesia_region
+		}
+
+		government = {
+			reforms = {
+				family_sagas_reform
+				hauklandic_sailors_reform
+			}
+		}
+
+
+		country_rank = rank_county
+		capital = angra
+	}
+	FAK = {	#Falkland
+		own_control_core = {
+			horta
+			santa_cruz_flores
+		}
+
+		starting_technology_level = 3
+		include = "peasant_republic"
+		include = "expl_scandinavia"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+
+		discovered_regions = {
+			macaronesia_region
+		}
+
+		government = {
+			reforms = {
+				family_sagas_reform
+				hauklandic_sailors_reform
+			}
+		}
+
+
+		country_rank = rank_county
+		capital = horta
+	}
 
 
 	
