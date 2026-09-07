@@ -13711,12 +13711,6 @@ countries = {
 		}
 
 		liturgical_language = church_slavonic_language
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 500
 			prestige = 75
@@ -41790,12 +41784,6 @@ countries = {
 		capital = vilnius
 		dynasty = gediminid_dynasty
 		court_language = polish_dialect
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1433.1.1
-			size = 0.75
-		}
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 500
@@ -49061,12 +49049,6 @@ countries = {
 		tolerated_cultures = {
 			baloch_culture
 		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 2500
 			prestige = 100
@@ -56159,12 +56141,6 @@ countries = {
 		}
 		tolerated_cultures = {
 			champenais
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1375.1.1
-			size = 0.33
 		}
 		country_rank = rank_kingdom
 		capital = metz

@@ -7,7 +7,7 @@ br_lucky_countries_ai.1 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	fire_only_once = yes
+	#fire_only_once = yes
 
 	dynamic_historical_event = {
         tag = SER
@@ -21,6 +21,9 @@ br_lucky_countries_ai.1 = {
 
 	trigger = {
 		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_country_buff
+		}
 	}
 
 	immediate = { #33% x100 years
@@ -203,7 +206,7 @@ br_lucky_countries_ai.5 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	fire_only_once = yes
+	#fire_only_once = yes
 	dynamic_historical_event = {
         tag = VEN
 		tag = GEN
@@ -214,6 +217,9 @@ br_lucky_countries_ai.5 = {
     }
 	trigger = {
 		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_republic_buff
+		}
 	}
 	immediate = {
 		add_country_modifier = {
@@ -237,7 +243,7 @@ br_lucky_countries_ai.6 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	fire_only_once = yes
+	#fire_only_once = yes
 	dynamic_historical_event = {
         tag = MLO
 		tag = FLO
@@ -247,6 +253,9 @@ br_lucky_countries_ai.6 = {
     }
 	trigger = {
 		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_republic_buff
+		}
 	}
 	immediate = {
 		add_country_modifier = {
@@ -264,17 +273,19 @@ br_lucky_countries_ai.7 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	fire_only_once = yes
+	#fire_only_once = yes
+
 	dynamic_historical_event = {
         tag = LOT
-		tag = TNC #Aztec
-		tag = CSU #Inca
         from = 1337.1.1
         to = 1338.1.1
         monthly_chance = 100
     }
 	trigger = {
 		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_country_buff
+		}
 	}
 	immediate = { #decaying to 0.5% x150 years
 		add_country_modifier = {
@@ -285,7 +296,75 @@ br_lucky_countries_ai.7 = {
 		}
 		add_country_modifier = {
 			modifier = br_levy_size_modifier
+			years = 75
+			mode = add_and_extend
+			size = 0.35
+		}
+	}
+}
+
+br_lucky_countries_ai.8 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	#fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = TNC #Aztec
+		tag = CSU #Inca
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_country_buff
+		}
+	}
+	immediate = { #decaying to 0.5% x150 years
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 250
+			mode = add_and_extend
+			size = 0.5
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
 			years = 150
+			mode = add_and_extend
+			size = 1
+		}
+	}
+}
+
+br_lucky_countries_ai.8 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	#fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = IRO
+		tag = CKH
+        from = 1337.1.1
+        to = 1339.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+		NOT = {
+			has_country_modifier = br_levy_size_modifier
+		}
+	}
+	immediate = { #decaying to 0.5% x150 years
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 200
 			mode = add_and_extend
 			size = 0.5
 		}
