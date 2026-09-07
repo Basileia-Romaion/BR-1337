@@ -71,14 +71,9 @@ K1K = { #BR addition
 
 #Natives
 IRO = {
-	color = map_onondowaga
-	color2 = rgb { 87 182 80 }
-
+	color = rgb { 87 182 80 }
 	culture_definition = onondowaga_culture
 	religion_definition = iroquoian_totemism
-
 	description_category = diplomatic
 	difficulty = 5
-
-	
 }
