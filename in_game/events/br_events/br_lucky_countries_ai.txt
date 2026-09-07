@@ -335,12 +335,12 @@ br_lucky_countries_ai.8 = {
 			modifier = br_levy_size_modifier
 			years = 150
 			mode = add_and_extend
-			size = 1
+			size = 2
 		}
 	}
 }
 
-br_lucky_countries_ai.8 = {
+br_lucky_countries_ai.9 = {
 	type = country_event
 	outcome = neutral
 	title = empty_text
@@ -368,5 +368,42 @@ br_lucky_countries_ai.8 = {
 			mode = add_and_extend
 			size = 0.5
 		}
+		research_advance = advance_type:north_american_warrior_societies
+		research_advance = advance_type:tribal_religious_values_law_advance
+		research_advance = advance_type:colonies
+	}
+}
+
+
+br_lucky_countries_ai.10 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	#fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = E1Y
+		tag = NRV
+        from = 1337.1.1
+        to = 1339.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+		NOT = {
+			has_country_modifier = br_levy_size_modifier
+		}
+	}
+	immediate = { #decaying to 0.5% x150 years
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 100
+			mode = add_and_extend
+			size = 0.5
+		}
+		research_advance = advance_type:standardized_coins
+		research_advance = advance_type:br_colonial_militia
 	}
 }
