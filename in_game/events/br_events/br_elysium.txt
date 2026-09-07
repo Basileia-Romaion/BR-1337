@@ -312,14 +312,14 @@ elysium_event.4 = {
 
 	option = {
 		name = elysium_event.4.a
-		hidden_effect = {
-			c:E4Y = {
-				make_subject_of = {
-					target = c:E2Y
-					type = subject_type:colonial_nation
-				}
-			}
-		}
+		#hidden_effect = {
+			#c:E4Y = {
+				#make_subject_of = {
+					#target = c:E2Y
+					#type = subject_type:colonial_nation
+				#}
+			#}
+		#}
 	}
 
 }

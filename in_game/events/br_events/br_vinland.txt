@@ -54,26 +54,26 @@ br_vinland_event.1 = {
 			}
 		}
 
-		hidden_effect = {
-			c:NRC = {
-				make_subject_of = {
-					target = c:NRV
-					type = subject_type:colonial_nation
-				}
-			}
-			c:NRH = {
-				make_subject_of = {
-					target = c:NRV
-					type = subject_type:colonial_nation
-				}
-			}
-			c:NRR = {
-				make_subject_of = {
-					target = c:NRV
-					type = subject_type:colonial_nation
-				}
-			}
-		}
+		#hidden_effect = {
+			#c:NRC = {
+				#make_subject_of = {
+					#target = c:NRV
+					#type = subject_type:colonial_nation
+				#}
+			#}
+			#c:NRH = {
+				#make_subject_of = {
+					#target = c:NRV
+					#type = subject_type:colonial_nation
+				#}
+			#}
+			#c:NRR = {
+				#make_subject_of = {
+					#target = c:NRV
+					#type = subject_type:colonial_nation
+				#}
+			#}
+		#}
 	}
 
 }
