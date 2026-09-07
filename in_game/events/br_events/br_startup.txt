@@ -127,6 +127,17 @@ br_startup.1 = {
 			change_raw_material = goods:maize
 		}
 
+		#apaleisia
+		location:onimgohow = {
+			change_raw_material = goods:iron
+		}
+		location:calicua = {
+			change_raw_material = goods:wild_game
+		}
+		location:pocatalico = {
+			change_raw_material = goods:fur
+		}
+
 		location:unquachog = {
             change_raw_material = goods:tin
         }
