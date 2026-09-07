@@ -246,7 +246,14 @@ elysium_event.3 = {
 		10 = exterior
 	}
 
+	dynamic_historical_event = {
+        tag = E1Y
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
 	trigger = {
+		tag = E1Y
 	}
 
 	immediate = {
@@ -274,19 +281,6 @@ elysium_event.3 = {
 			consort ?= {
 				change_character_religion = religion:hellenism_religion
 			}
-
-			c:E5Y = {
-				make_subject_of = {
-					target = c:E1Y
-					type = subject_type:colonial_nation
-				}
-			}
-			c:K1K = {
-				make_subject_of = {
-					target = c:E1Y
-					type = subject_type:colonial_nation
-				}
-			}
 		}
 	}
 }
@@ -302,7 +296,14 @@ elysium_event.4 = {
 		10 = exterior
 	}
 
+	dynamic_historical_event = {
+        tag = E2Y
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
 	trigger = {
+		tag = E2Y
 	}
 
 	immediate = {
