@@ -5,7 +5,6 @@
 #monthly_complacency = 0.05
 #artist_salary_modifier = 1
 #global_monthly_control = 0.005
-#potential_trigger = {  societal_value:br_bureaucratic_vs_stratiotai >= 50 }
 #monthly_pretender_rebel_growth  = 0.005
 #monthly_nationalist_rebel_growth = 0.005
 #subject_opinions = 50
@@ -114,7 +113,7 @@
 			}
 		}
 		can_revoke = {
-			societal_value:centralization_vs_decentralization >= -50
+			societal_value:centralization_vs_decentralization <= -50
 			"estate_power(estate_type:nobles_estate)" <= 0.25
 		}
 		country_modifier = {
@@ -142,13 +141,13 @@
 		}
 		allow = {
 			OR = {
-				societal_value:br_bureaucratic_vs_stratiotai >= 0
+				societal_value:br_bureaucratic_vs_stratiotai >= 25
 				has_estate_privilege = estate_privilege:br_dynatoi_magnates #So it won't drop off if you fall below 25 value
 			}
 		}
 		can_revoke = {
 			government_power > 75
-			societal_value:centralization_vs_decentralization >= -75
+			societal_value:centralization_vs_decentralization <= -75
 			"estate_power(estate_type:nobles_estate)" <= 0.25
 		}
 		country_modifier = {
@@ -338,7 +337,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory > -75
+			societal_value:belligerent_vs_conciliatory < -75
 		}
 		country_modifier = {
 			global_nobles_estate_power = 1
@@ -369,7 +368,7 @@
 		can_revoke = {
 			government_power > 75
 			"estate_power(estate_type:peasants_estate)" <= 0.1
-			societal_value:centralization_vs_decentralization > -50
+			societal_value:centralization_vs_decentralization < -50
 		}
 		country_modifier = {
 			monthly_towards_decentralization = societal_value_minor_monthly_move
@@ -422,7 +421,7 @@
 		can_revoke = {
 			government_power > 75
 			"estate_power(estate_type:peasants_estate)" <= 0.1
-			societal_value:centralization_vs_decentralization > -50
+			societal_value:centralization_vs_decentralization < -50
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
@@ -528,7 +527,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory > -25
+			societal_value:belligerent_vs_conciliatory < -25
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
@@ -557,7 +556,7 @@
 			}
 		}
 		can_revoke = {
-			societal_value:centralization_vs_decentralization >= -50
+			societal_value:centralization_vs_decentralization <= -50
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
@@ -578,6 +577,136 @@
 	}
 
 ### Burgher Privileges ###
+
+ #BYZ
+	br_latin_trade_naval_reliance = {
+		estate = burghers_estate
+		#icon = sponsor_maritime_contracts
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization < -50
+			government_power > 95
+		}
+		country_modifier = {
+			global_burghers_estate_power = 0.25
+			burghers_estate_allowed_in_cabinet = yes
+			trade_income = -0.25
+			expected_navy_size_modifier = -0.5
+			monthly_towards_plutocracy = societal_value_monthly_move
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 0 }
+			scale = {
+				value = stability
+				multiply = 0.01
+			}
+			trade_sea_efficiency = 0.25
+			sea_cost_on_distance_from_capital_when_maritime = -0.5
+		}
+		location_modifier = {
+			potential_trigger = {
+				root = location:constantinople
+			}
+			local_marketplace_building_levels = 25
+			local_monthly_prosperity = 0.001
+		}
+		#negative modifiers
+		country_modifier = {
+			potential_trigger = { legitimacy < 100 }
+			scale = {
+				value = legitimacy
+				multiply = -0.01
+				add = 1
+			}
+			global_navy_levy_size_modifier = -0.5
+			navy_maintenance_efficiency = -0.25
+		}
+		country_modifier = {
+			potential_trigger = { prestige < 100 }
+			scale = {
+				value = prestige
+				multiply = -0.01
+				add = 1
+			}
+			global_sailors_modifier = -0.5
+		}
+	}
+	br_latins_traders_subjugated = { #Upgrade version via event. NEEDS LOC
+		estate = burghers_estate
+		icon = br_latin_trade_naval_reliance
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				has_estate_privilege = estate_privilege:br_latins_subjugated
+			}
+		}
+		allow = {
+			OR = {
+				c:GTC = { is_subject_or_below_of = root }
+				c:VTC = { is_subject_or_below_of = root }
+				has_estate_privilege = estate_privilege:br_latins_subjugated
+			}
+		}
+		can_revoke = {
+			government_power > 95
+		}
+		country_modifier = {
+			global_burghers_estate_power = 0.1
+			burghers_estate_allowed_in_cabinet = yes
+			monthly_towards_plutocracy = societal_value_monthly_move
+		}
+		#positive
+		country_modifier = {
+			potential_trigger = { stability > 25 }
+			trade_sea_efficiency = 0.25
+			sea_cost_on_distance_from_capital_when_maritime = -0.5
+		}
+		location_modifier = {
+			potential_trigger = {
+				root = location:constantinople
+			}
+			local_marketplace_building_levels = 25
+			local_monthly_prosperity = 0.001
+		}
+		#negative modifiers
+		country_modifier = {
+			potential_trigger = { legitimacy < 75 }
+			global_navy_levy_size_modifier = -0.25
+			navy_maintenance_efficiency = -0.1
+		}
+		country_modifier = {
+			potential_trigger = { prestige < 75 }
+			global_sailors_modifier = -0.25
+		}
+	}
+	br_latin_minority_privilege = { # NEEDS LOC
+		estate = burghers_estate
+		#icon = sponsor_maritime_contracts
+		potential = {
+			OR = {
+				has_or_had_tag = BYZ
+				has_estate_privilege = estate_privilege:br_latin_minority_privilege
+			}
+		}
+		can_revoke = {
+			societal_value:centralization_vs_decentralization < -50
+			government_power > 95
+		}
+		country_modifier = {
+			global_burghers_conversion_blocked = yes
+			tolerance_heretic = 1
+			tolerance_own = -0.5
+			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		}
+	}
+ #Latins/trade companies
+
 	br_special_trade_companies = { #break into multiple
 		estate = burghers_estate
 		icon = sponsor_maritime_contracts
@@ -674,85 +803,7 @@
 			add = 25
 		}
 	}
- #BYZ
-	br_latin_trade_naval_reliance = {
-		estate = burghers_estate
-		#icon = sponsor_maritime_contracts
-		potential = {
-			OR = {
-				has_or_had_tag = BYZ
-				has_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
-			}
-		}
-		can_revoke = {
-			societal_value:centralization_vs_decentralization > -50
-			government_power > 95
-		}
-		country_modifier = {
-			global_burghers_estate_power = 0.25
-			burghers_estate_allowed_in_cabinet = yes
-			trade_income = -0.25
-			expected_navy_size_modifier = -0.5
-			monthly_towards_plutocracy = societal_value_monthly_move
-		}
-		#positive
-		country_modifier = {
-			potential_trigger = { stability > 0 }
-			scale = {
-				value = stability
-				multiply = 0.01
-			}
-			trade_sea_efficiency = 0.25
-			sea_cost_on_distance_from_capital_when_maritime = -0.5
-		}
-		location_modifier = {
-			potential_trigger = {
-				root = location:constantinople
-			}
-			local_marketplace_building_levels = 25
-			local_monthly_prosperity = 0.001
-		}
-		#negative modifiers
-		country_modifier = {
-			potential_trigger = { legitimacy < 100 }
-			scale = {
-				value = legitimacy
-				multiply = -0.01
-				add = 1
-			}
-			global_navy_levy_size_modifier = -0.5
-			navy_maintenance_efficiency = -0.25
-		}
-		country_modifier = {
-			potential_trigger = { prestige < 100 }
-			scale = {
-				value = prestige
-				multiply = -0.01
-				add = 1
-			}
-			global_sailors_modifier = -0.5
-		}
-	}
-	br_latin_minority_privilege = {
-		estate = burghers_estate
-		#icon = sponsor_maritime_contracts
-		potential = {
-			OR = {
-				has_or_had_tag = BYZ
-				has_estate_privilege = estate_privilege:br_latin_minority_privilege
-			}
-		}
-		can_revoke = {
-			societal_value:centralization_vs_decentralization > -50
-			government_power > 95
-		}
-		country_modifier = {
-			global_burghers_conversion_blocked = yes
-			tolerance_heretic = 1
-			tolerance_own = -0.5
-			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
-		}
-	}
+ 
 
 
 ### Clergy Privileges ###
