@@ -42,6 +42,8 @@
 #trunk_road_to_erzurum_privilege
 #Senate
 
+###for societial values left_vs_right = -value vs value and > = more than and < less than. 
+
 ### Noble Privileges ###
  #BUL
 	boyarski_voiski = {
@@ -112,7 +114,7 @@
 			}
 		}
 		can_revoke = {
-			societal_value:centralization_vs_decentralization <= -50
+			societal_value:centralization_vs_decentralization >= -50
 			"estate_power(estate_type:nobles_estate)" <= 0.25
 		}
 		country_modifier = {
@@ -146,7 +148,7 @@
 		}
 		can_revoke = {
 			government_power > 75
-			societal_value:centralization_vs_decentralization <= -75
+			societal_value:centralization_vs_decentralization >= -75
 			"estate_power(estate_type:nobles_estate)" <= 0.25
 		}
 		country_modifier = {
@@ -336,7 +338,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory < -75
+			societal_value:belligerent_vs_conciliatory > -75
 		}
 		country_modifier = {
 			global_nobles_estate_power = 1
@@ -526,7 +528,7 @@
 			}
 		}
 		allow = {
-			societal_value:belligerent_vs_conciliatory < -25
+			societal_value:belligerent_vs_conciliatory > -25
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
@@ -555,7 +557,7 @@
 			}
 		}
 		can_revoke = {
-			societal_value:centralization_vs_decentralization <= -50
+			societal_value:centralization_vs_decentralization >= -50
 		}
 		country_modifier = {
 			global_peasants_estate_power = 1
