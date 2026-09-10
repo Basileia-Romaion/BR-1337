@@ -57293,7 +57293,17 @@ countries = {
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
 
+		discovered_areas = {
+			brazil_sea_zones_area
+			west_africa_coastline
+			gulf_of_africa_sea
+			nw_africa_coast_area
+			atlantic_north_equatorial_area
+			atlantic_equatorial_countercurrent_area
+			jaguaribe_area
+		}
 		discovered_regions = {
+			guinea_region
 			macaronesia_region
 		}
 
@@ -57322,8 +57332,17 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-
+		discovered_areas = {
+			brazil_sea_zones_area
+			west_africa_coastline
+			gulf_of_africa_sea
+			nw_africa_coast_area
+			atlantic_north_equatorial_area
+			atlantic_equatorial_countercurrent_area
+			jaguaribe_area
+		}
 		discovered_regions = {
+			guinea_region
 			macaronesia_region
 		}
 
@@ -57338,7 +57357,6 @@ countries = {
 		country_rank = rank_county
 		capital = horta
 	}
-
 
 	
 
