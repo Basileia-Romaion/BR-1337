@@ -12,12 +12,13 @@ government = {
 	spiritualist_vs_humanist = -25
 	mercantilism_vs_free_trade = 25
 	offensive_vs_defensive = -50
-	land_vs_naval = -50
+	land_vs_naval = -75
 	quality_vs_quantity = -25
-	belligerent_vs_conciliatory = -50
+	belligerent_vs_conciliatory = -45
 	capital_economy_vs_traditional_economy = 25
 	individualism_vs_communalism = 25
-	outward_vs_inward = 50
+	outward_vs_inward = 75
+	br_bureaucratic_vs_stratiotai = 50
 
 	parliament = {
 		parliament_type = estate_parliament
@@ -63,11 +64,13 @@ government = {
 		communal_lands
 		peasants_free_peasantry
 		peasants_allowed_weapons_privilege
+		br_themata_peasant_privilege
 	}
 
 	reforms = {
 		br_new_world_colonial_reform
 		br_spqe_reform
+		study_of_the_classics
 	}
 	
 }

@@ -939,6 +939,7 @@ br_phorophoros_subject = {  #Phorophóros
 	
 	subject_modifier = {
 		blocked_from_conversion = yes
+		disallow_migration_beyond_borders = yes
 	}
 
 	diplo_chance_accept_subject = {

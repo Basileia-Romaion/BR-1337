@@ -20,21 +20,52 @@ br_stone_weapons = {
 	potential = {
 		exists = capital
 		original_capital ?= { continent = continent:america }
-		NOR = {
-			has_or_had_tag = NRV
-			has_or_had_tag = NRR
-			has_or_had_tag = NRH
-			has_or_had_tag = NRC
-			has_or_had_tag = E1Y
-			has_or_had_tag = E2Y
-			has_or_had_tag = K1K
-		}
+		government_type ?= government_type:tribe
 	}
 	requires = agriculture_advance
 	unlock_production_method = pre_columbian_weapon_smith_maintenance
-	#global_wild_game_output_modifier = 0.1
-	#tribes_estate_levy_size = 1
-	#levy_maintenance_modifier = -0.25
+}
+br_tribal_warriors = {
+	age = age_1_traditions
+	starting_technology_level = 1
+	
+	potential = {
+		exists = capital
+		original_capital ?= { continent = continent:america }
+		government_type ?= government_type:tribe
+	}
+	requires = agriculture_advance
+	tribes_estate_levy_size = 1
+	levy_maintenance_modifier = -0.5
+}
+
+br_early_migrations = {
+	age = age_1_traditions
+	starting_technology_level = 1
+	
+	potential = {
+		exists = capital
+		original_capital ?= { continent = continent:america }
+		government_type ?= government_type:tribe
+		country_type = pop 
+	}
+	requires = agriculture_advance
+	unlock_law = tribal_migration_law
+}
+
+br_native_trade_with_the_elysians = {
+	age = age_2_renaissance
+	icon = expand_varangian_guard_advance
+	potential = { 
+		OR = {
+			has_or_had_tag = E7Y
+			has_or_had_tag = IRO
+			has_or_had_tag = CHK
+		}
+	}
+	requires = agriculture_advance
+	global_wild_game_output_modifier = 0.2
+	global_fur_output_modifier = 0.2
 }
 
 
@@ -168,7 +199,7 @@ vinlander_longhouse_settlement = {
 		}
 	}
 	requires = pike_square
-	global_population_growth = 0.0002
+	global_population_growth = 0.0001
 }
 
 vinlander_pathfinders = {
@@ -343,8 +374,7 @@ elysian_civic_syncretism = {
 		}
 	}
 	requires = feudalism_advance
-	cultures_capacity_modifier = 0.5
-	#global_pop_assimilation_speed = 0.001
+	cultures_capacity_modifier = 0.25
 	global_pop_assimilation_speed_modifier = 0.25
 }
 
@@ -362,7 +392,7 @@ elysian_colonial_charters = {
 	global_integration_speed_modifier = 0.1
 	global_migration_speed_modifier = 0.1
 	rural_migration_attraction = 0.1
-	global_population_growth = 0.0002
+	global_population_growth = 0.0001
 }
 
 # age_2_renaissance
@@ -698,7 +728,7 @@ br_colonial_tradition = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	global_population_growth = 0.0005
+	global_population_growth = 0.0002
 }
 br_colonial_heritage = {
 	age = age_1_traditions
@@ -714,7 +744,7 @@ br_colonial_heritage = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	global_monthly_development = 0.005
+	global_monthly_development = 0.002
 }
 br_founding_fathers = {
 	age = age_2_renaissance
@@ -763,7 +793,7 @@ br_new_frontiers = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
-	colonial_migration_size_modifier = 0.15
+	colonial_migration_size_modifier = 0.1
 }
 br_continental_trade = {
 	age = age_3_discovery
@@ -863,3 +893,93 @@ br_colonial_ambition = {
 }
 
 
+br_ely_unlock_legionaries_1_advance = {
+	age = age_1_traditions
+	allow_children	= no
+	requires = iron_working
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_1
+}
+
+br_ely_unlock_legionaries_2_advance = {
+	age = age_2_renaissance
+	allow_children	= no
+	requires = armory_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_2
+}
+
+br_ely_unlock_legionaries_3_advance = {
+	age = age_3_discovery
+	allow_children	= no
+	requires = training_fields_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_3
+}
+
+br_ely_unlock_legionaries_4_advance = {
+	age = age_4_reformation
+	allow_children	= no
+	requires = barracks_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_4
+}
+
+br_ely_unlock_legionaries_5_advance = {
+	age = age_5_absolutism
+	allow_children	= no
+	requires = military_revolution_advance
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_5
+}
+
+
+br_ely_unlock_legionaries_6_advance = {
+	age = age_6_revolutions
+	requires = conscription_center_advance
+	allow_children	= no
+	potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		OR = {
+			has_or_had_tag = E1Y			
+			has_or_had_tag = E2Y
+			culture = { has_culture_group = culture_group:elysian_group }
+		}
+	}
+	unlock_unit = a_legionaries_6
+}

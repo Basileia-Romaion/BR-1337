@@ -328,4 +328,14 @@ diplomacy_manager = {
 	opinion = { first = RIC second = VIJ type = opinion_traders_in_x }
 	opinion = { first = RIC second = DLH type = opinion_traders_in_x }
 
+	#New World
+	opinion = { first = NRV second = IRO type = opinion_good_relations }
+	opinion = { first = IRO second = NRV type = opinion_good_relations }
+	opinion = { first = NRV second = IRO type = opinion_traders_in_x }
+	opinion = { first = IRO second = NRV type = opinion_traders_in_x }
+
+	opinion = { first = E1Y second = E27 type = border_aggression }
+	opinion = { first = E2Y second = E17 type = border_aggression }
+	opinion = { first = E1Y second = E2Y type = opinion_threatens_conquest }
+	opinion = { first = E2Y second = E1Y type = opinion_threatens_conquest }
 }

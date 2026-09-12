@@ -868,3 +868,131 @@ br_mount_athos_scriptorium = {
 #bardic_school
 #camara_comptos
 #college_of_poets
+
+
+br_pirate_hideout = { #smaller than pirate haven, but still a place for pirates to gather and plan their raids. It is often hidden away in remote coastal areas, making it difficult for authorities to find and shut down.
+	icon = smuggler_cove
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = peasants
+
+	category = estate_category
+	employment_size = estate_peasants_employment
+
+	rural_settlement = yes
+	town = setup_only
+
+	estate = peasants_estate
+	build_time = estate_build_time
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+
+	location_potential = {
+		is_port = yes
+	}
+	
+	allow = {
+		is_port = yes
+		population > 1.0
+		OR = {
+			NOT = { integration_level = core }
+			local_control < 0.35
+			owner = { has_reform = government_reform:pirate_brethren_reform }
+		}
+	}
+	remove_if = {
+		location = {
+			integration_level = core
+			local_control > 0.5
+
+			owner = { NOT = { has_reform = government_reform:pirate_brethren_reform } }
+		}
+	}
+	
+	modifier = {
+		local_pirate_spawn_chance = 0.5		#0.5% chance each month
+	}
+}
+
+br_pirate_hideout_elysia = { #These are the easiest to remove.
+	icon = smuggler_cove
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = peasants
+
+	category = estate_category
+	employment_size = estate_peasants_employment
+
+	rural_settlement = yes
+	town = setup_only
+
+	estate = peasants_estate
+	build_time = estate_build_time
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+
+	location_potential = {
+		is_port = yes
+	}
+	
+	allow = { always = no } #setup or event only.
+
+	remove_if = {
+		location = {
+			local_control > 0.25
+		}
+	}
+	
+	modifier = {
+		local_pirate_spawn_chance = 0.5		#0.5% chance each month
+	}
+}
+
+br_pirate_hideout_vikings = {
+	icon = smuggler_cove
+	audio_tier = 2
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = peasants
+
+	category = estate_category
+	employment_size = estate_peasants_employment
+
+	rural_settlement = yes
+	town = setup_only
+
+	estate = peasants_estate
+	build_time = estate_build_time
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+
+	location_potential = {
+		is_port = yes
+	}
+	
+	allow = { always = no } #setup or event only.
+
+	remove_if = {
+		location = {
+			local_control > 0.25
+		}
+	}
+	
+	modifier = {
+		local_pirate_spawn_chance = 0.5		#0.5% chance each month
+	}
+}

@@ -621,8 +621,6 @@ diplomacy_manager = {
     dependency = { first = POL second = RAW subject_type = vassal }
     dependency = { first = POL second = CZK subject_type = vassal }
 
-    dependency = { first = POL second = VOL subject_type = vassal }
-    dependency = { first = POL second = HAL subject_type = vassal }
 
     #Balkans:
     scripted_mutual = { first = HUN second = POL type = alliance }

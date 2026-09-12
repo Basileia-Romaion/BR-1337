@@ -8,9 +8,9 @@ aureliani = {
 
 	opinions = {
 		greek_culture = positive
-		median = kindred
-		photianoi = kindred
-		elysian_culture = kindred
+		roman_culture = kindred
+		#photianoi = kindred
+		elyrics_culture = positive
 	}
 	country_modifier = {
 		levy_combat_efficiency_modifier = 0.1
@@ -18,7 +18,7 @@ aureliani = {
 	}	
 	
 	culture_groups = {
-		elysian_group roman_group
+		elysian_group greek_group roman_group
 	}
 }
 
@@ -29,10 +29,10 @@ photianoi = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 	
 	opinions = {
-		greek_culture = positive
-		median = positive
-		aureliani = kindred
-		elysian_culture = kindred
+		greek_culture = kindred
+		roman_culture = positive
+		#aureliani = kindred
+		elyrics_culture = positive
 	}
 	country_modifier = {
 		tolerance_own = 2
@@ -42,7 +42,7 @@ photianoi = {
 	}
 	
 	culture_groups = {
-		elysian_group roman_group
+		elysian_group greek_group roman_group
 	}
 }
 
@@ -53,9 +53,9 @@ elyrics_culture = {
 	tags = { east_mediterranean_gfx north_american_gfx american_gfx }
 	#iroquois_gfx
 	opinions = {
-		photianoi = kindred
-		aureliani = kindred
-		elysian_culture = kindred
+		photianoi = positive
+		aureliani = positive
+		elysian_culture = positive
 	}
 
 	country_modifier = {
@@ -65,7 +65,7 @@ elyrics_culture = {
 	
 	culture_groups = {
 		elysian_group
-		powhatan_group
+		roman_group
 	}
 }
 
@@ -78,15 +78,17 @@ elysian_culture = {
 	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
-		photianoi = kindred
-		aureliani = kindred
+		elyrics_culture = positive
+		kykladian_culture = positive
+		roman_culture = positive
+		greek_culture = positive
 	}	
 	country_modifier = {
 		cultural_influence_modifier = 0.25
 	}
 	
 	culture_groups = {
-		elysian_group roman_group
+		elysian_group greek_group roman_group
 	}
 }
 
@@ -100,7 +102,9 @@ kykladian_culture = {
 		aureliani = positive
 		elyrics_culture = positive
 		elysian_culture = positive
-		photianoi = kindred
+		photianoi = positive
+		roman_culture = positive
+		greek_culture = positive
 	}
 
 	country_modifier = {
@@ -109,6 +113,6 @@ kykladian_culture = {
 	}
 	
 	culture_groups = {
-		elysian_group roman_group
+		elysian_group greek_group roman_group
 	}
 }

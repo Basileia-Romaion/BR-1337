@@ -1,0 +1,37 @@
+﻿
+br_temple_solis = {
+	location = patapsco
+	type = temple
+	importance = 3
+	religions = { hellenism_religion }
+	# god = athena_god
+}
+
+br_shrine_elysium = {
+	location = anacostia
+	type = shrine #Sanctuary
+	importance = 2
+	religions = { hellenism_religion }
+}
+
+br_ely_mt_aithaia = {
+	location = massawomeck
+	type = mountain
+	importance = 5
+	religions = { hellenism_religion }
+}
+
+#Orthodox until I make a new relgion 
+br_ely_eiros = { #Cathedral of Eiros
+	location = nansemond
+	type = episcopal_see
+	importance = 4
+	religions = { orthodox }
+}
+
+#br_ely_mount_2 = {
+	#location = mount_athos
+	#type = orthodox_church_holy_site
+	#importance = 3
+	#religions = { orthodox }
+#}

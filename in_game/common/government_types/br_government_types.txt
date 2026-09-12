@@ -3,9 +3,6 @@
 		horde_unity_hit_at_ruler_death = 25 #edit so the new total will be -25 instead of -50
 		tribes_estate_levy_size = 1
 		global_tribes_estate_power = 1
-		levy_maintenance_modifier = -0.33
-		global_tribal_promotion = -0.33
-		#global_tribesmen_pop_growth = 0.25
 	}
 }
 
@@ -13,8 +10,5 @@ TRY_INJECT:tribe = {
 	modifier = {
 		tribes_estate_levy_size = 1
 		global_tribes_estate_power = 1
-		levy_maintenance_modifier = -0.33
-		global_tribal_promotion = -0.33
-		#global_tribesmen_pop_growth = 0.25
 	}
 }

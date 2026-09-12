@@ -2,20 +2,79 @@
 
 # Patch Notes
 
+# 24.1
+
+- Fix: Elysian privilege wanting the opposite value than I intended.
+- Fix: Add some missing localization to a couple ere privileges
+
 # 0.24
+
+## Dawn of Elysium content. Part 1
+- The Lost Legions: "The Elysian state still rests upon the military institutions established by the Roman settlers centuries ago. Legionary service has become the foundation of political authority, while the descendants of the old officers form a powerful hereditary nobility."
+- dlc owners will have access to the Legionary units while playing in Elysium.
+- dlc owners will have access to the latinization_vs_hellenization mechanics while playing in Elysium including dozens of events.
+- Forming Elysium will allow the construction of hippodrome, aqueduct & gymnasiums
+- Opening flavor event for both the main Elysian tags. (Will be improved more later)
+- Elysian language to the tongue of the Elysian culture, with a dialect for Elyrics.
+- The Elysian priviledge Frontier Settlements has been split in two with the enslave all tribesmen when colonizing portion being broken off into a seperate nobles privilage that requires 75 towards bellgerance
+  -  Spoils of the Frontier: "The frontier is a place of conquest, and those who wage war shall be entitled to claim captives and slaves among the defeated."
+- Updates 
+- More starting characters for the Elysian tags.
+- Lowered the Elysian and New World Pop growth modifiers to better align with vanilla modifiers.
+- Added a capital modifier for the Elysians that gives pop growth and attraction for the capital to help balance out all the pops colonizing.
+  - br_new_world_elysian_capital: "Elysian Polis"
+  - br_new_world_elysian_capital_2: "Cradle of Elysium"
+  - +80 proximity for 100 years in their old capital when moving the capital to new Elysium.
+  - When forming Elysium the natives within the core area will hybridize and settle.
+- Added two Pirate hideout buildings for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
+  - Kykladian Pirate Cove: "Pirates originating from the Kykladian Islands to the south have established hidden coves along the shores of Elysium, using them as bases from which to gather and launch their raids."
+  - Varangian Pirate Cove: "Varangian pirates and raiders from the northern seas have established hidden coves along the shores, using them as bases from which to gather and launch their raids."
+- Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
+- Elysians with the dlc should now be able to sponsor greek fire if they get a scientist.
+- Forming Elysium will give you a Scientist.
+- Forming Elysium will change all your court characters to the Elysian culture.
+- Elysians will start with colonial subjects
+- Added 3 Hellenic Holy Sites to the new world
+- Added 2 'Orthodox' Holy sites to the New World.
+- Two new Elyric tags
+    - E6Y: "Aithaia"
+    - E7Y: "Apaleisia"
+- Put All the Elysian Cultures in the greek_group know know as Roman Group. It contains many events and other content the region could benefit from.
+
 
 ## Map changes
 ### Cultures
   - adjusted the Lur/Farsi cultural/religion border to blend a bit better and be more shia and less zorastrian.
 ### Countries
+  - Haudenosaunee unified at game start
   - The Morean Slavs and the Hellenized Turkic tags moved to releasable.
   - moved theme of Thessalonki to a releabable. Moved the city and Gold/Gem mines to ERE and the rest split between Strymon and Beroia
   - misc map changes in west HRE and iberia
+  - Two new Elyric tags
+    - E6Y: "Aithaia"
+    - E7Y: "Apaleisia"
 
 ## Events
   - Opening flavor event for vinland.
   - Opening flavor event for both the Elysian tags.
   - Moved the Iberia crusade target to the balerics since I changed Zaragoza to just be a city state.
+  - 10 events for Theme and Pronoia subject types. These are to cause a bit of friction with the emperor and add a tad bit more flavor.
+  - Haudenosauneega starting event added with some backstory
+
+## Cultural
+ - Restored the Elysian language to the tongue of the Elysian culture
+ - Made the Elyrics Dialect under the Elysian language
+
+## Characters
+ - More starting characters to the main elysian tags and vinland
+
+## Privileges
+  - split the Romans latin naval privilege in two with a religious portion being separate.
+  - slight tweaks to some other privileges.
+  - Add localization to the Russian privilage that protected Russian Orthodox subjects from being force converted from their overlord.
+  - Added a generic version for the Andalusi city states
+  - The Elysian priviledge Frontier Settlements has been split in two with the enslave all tribesmen when colonizing portion being broken off into a seperate nobles privilage that requires 75 towards bellgerance
+    -  Spoils of the Frontier: "The frontier is a place of conquest, and those who wage war shall be entitled to claim captives and slaves among the defeated."
 
 ## Balance changes
   - simplified these debuffs by removing the scaling so they simply on or off so they easier to understand
@@ -25,6 +84,20 @@
    - br_new_world_vinland_capital: "Heart of Vinland"
    - br_new_world_elysian_capital: "Elysian Polis"
    - br_new_world_elysian_capital_2: "Cradle of Elysium"
+  - Gave Vinland and Elysium +80 proximity for 100 years in their old capital when moving the capital to new location.
+  - moved most the 'lucky country' timed modifiers to happen via an event that only applies if they are ai controlled.
+  - When forming Elysium the natives within the core area will hybridize and settle.
+  - Vinland and the Elysians will start with colonial_nation subjects.
+  - small vinland outposts added
+  - Haudenosauneega and Cahokia given a large amount of tribal buildings
+  - Haudenosauneega and Cahokia given kingdom rank. No unique title yet.
+  - Haudenosauneega and Cahokia ai should colonize once they research the tech.
+
+## Buildings
+  - Added new Pirate hideout buildings they are smaller with half the spawn chance of the Pirate Haven. The Main building is a bit harder to remove than a haven. Also added two varients for the elysian coast that are actually easer to remove only need 25% control and don't need to core. They all start in unowned land so you'll need to colonize to remove.
+    - Pirate Hideout: "A secluded coastal refuge where pirates gather, plan their raids, and evade the authorities."
+    - Kykladian Pirate Cove: "Pirates originating from the Kykladian Islands to the south have established hidden coves along the shores of Elysium, using them as bases from which to gather and launch their raids."
+    - Varangian Pirate Cove: "Varangian pirates and raiders from the northern seas have established hidden coves along the shores, using them as bases from which to gather and launch their raids."
 
 ## Localization
   - Kipchak loc for the steppe.
@@ -32,6 +105,13 @@
 ## Fixes
   - Restored the Elysian language for the Elysian culture its supposed to be a hybrid between Latin and Greek. We had been using Elysian Latin because previously we could not get the location localization to work for new languages.
   - Fixed Elyrics ethnicity to be first nations native, since they are supposed to be mixed and or natives that took on parts of the Greco-Roman culture of the new comers.
+
+
+
+
+
+
+
 
 # 0.23.3
 - Balance pass on ERE modifiers especally ones active at game start.

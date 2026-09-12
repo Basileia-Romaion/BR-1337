@@ -85,6 +85,250 @@ REPLACE_OR_CREATE:a_varangians = {
 	gfx_tags = { axe_tag heavy_tag }
 }
 
+REPLACE_OR_CREATE:a_legionaries_1 = {
+	copy_from = a_age_1_traditions_heavy_infantry
+
+	limit = legionaries_unit_limit
+
+	
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+	upgrades_to_only = a_legionaries_2
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { legionary_tag sword_tag heavy_tag }
+}
+
+REPLACE_OR_CREATE:a_legionaries_2 = {
+	copy_from = a_age_2_renaissance_heavy_infantry
+
+	limit = legionaries_unit_limit
+	
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+
+	upgrades_to_only = a_legionaries_3
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { legionary_tag sword_tag heavy_tag }
+}
+
+REPLACE_OR_CREATE:a_legionaries_3 = {
+	copy_from = a_age_3_discovery_heavy_infantry
+
+	limit = legionaries_unit_limit
+
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+
+	upgrades_to_only = a_legionaries_4
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { legionary_tag sword_tag heavy_tag }
+}
+
+REPLACE_OR_CREATE:a_legionaries_4 = {
+	copy_from = a_age_4_reformation_heavy_infantry
+
+	limit = legionaries_unit_limit
+
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+
+	upgrades_to_only = a_legionaries_5
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { legionary_tag musket_tag heavy_tag }
+}
+
+REPLACE_OR_CREATE:a_legionaries_5 = {
+	copy_from = a_age_5_absolutism_heavy_infantry
+
+	limit = legionaries_unit_limit
+
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+
+	upgrades_to_only = a_legionaries_6
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { legionary_tag musket_tag heavy_tag }
+}
+
+REPLACE_OR_CREATE:a_legionaries_6 = {
+	copy_from = a_age_6_revolutions_heavy_infantry
+
+	limit = legionaries_unit_limit
+	
+	strength_damage_taken = -0.10	
+	morale_damage_taken = -0.10
+	initiative = -0.5
+	combat_speed = -1
+
+	buildable = yes
+	country_potential = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		OR = {
+			has_or_had_tag = ROM
+			has_or_had_tag = E1Y
+			has_or_had_tag = E2Y
+			has_or_had_tag = ELY
+			has_or_had_tag = IMP
+		}
+	}
+
+	location_potential = {
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = soldiers
+		multiply = 0.1
+	}
+
+	maintenance_demand =  heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { legionary_tag musket_tag heavy_tag }
+}
+
+
 ### New Units age 1
 
 #Heavy Infantry

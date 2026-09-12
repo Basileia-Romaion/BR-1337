@@ -453,9 +453,9 @@ countries = {
 		}
 		
 		BEO = {
-			#type = pop
+			type = pop
 			
-			own_control_core = {
+			add_pops_from_locations = {
 				eimastukwek epwikek kutapuskuj pgotapesg wli_qospem
 				gosaoie nogamsig meelpaeg amasipukwek sibook
 				cape_spear bacalhieu mekwiskajk mollyhuajeck
@@ -526,9 +526,9 @@ countries = {
 		
 		#Mi'kmaq
 		MIK = {
-			#type = pop
+			type = pop
 			
-			own_control_core = {
+			add_pops_from_locations = {
 				amqui anagance antigonish aspotogan canso caraquet cascapedia
 				causapscal chebogue chicchoc chignecto chipoudy cobequid elsiktuk esekatik
 				gaspe  jijkwtuk kekwapskuk kennetook kjipuktuk kouchibouguac
@@ -553,113 +553,40 @@ countries = {
 		}
 		
 		#Mohawk/Kanien'kehaka
-		KKA = {
+		#Oneida/Onyotaaka
+		#Onondaga/Onondagega
+		#Cayuga/Gayogohono
+		#Seneca/Onondowaga
+		IRO = {
 			own_control_core = {
-				canajoharie saratoga schenectady teionontatatie oneonta
+				canadaigua geneseo tsonentsiio irondequoit #ONN
+				skaniatares assorodus gahato #GYO
+				tsikahiotsisto otsiningo oswego #ONO
+				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
+
+				canajoharie saratoga schenectady teionontatatie oneonta #KKA
 				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
 				ahna_wate
 			}
 			
-			capital = canajoharie
+			capital = irondequoit #canadaigua
 			include = "haudenosaunee_tribe"
 			court_language = haudenosaunee_language
 			government = {
 				ruler = random
 			}
 			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
+				gold = 400
+				stability = 95
+				tribal_cohesion = 95
 			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Oneida/Onyotaaka
-		ONY = {
-			own_control_core = {
-				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa
+			accepted_cultures = {
+				gayogohono_culture
+				onondagega_culture
+				onyotaaka_culture
+				kanienkehaka_culture
 			}
-			
-			capital = onenioteke
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Onondaga/Onondagega
-		ONO = {
-			own_control_core = {
-				tsikahiotsisto otsiningo oswego
-			}
-			
-			capital = tsikahiotsisto
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Cayuga/Gayogohono
-		GYO = {
-			own_control_core = {
-				skaniatares assorodus gahato
-			}
-			
-			capital = skaniatares
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
-		}
-		
-		#Seneca/Onondowaga
-		ONN = {
-			own_control_core = {
-				canadaigua geneseo tsonentsiio irondequoit
-			}
-			
-			capital = canadaigua
-			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
-			government = {
-				ruler = random
-			}
-			currency_data = {
-				gold = 100
-				stability = 33
-				tribal_cohesion = 90
-			}
-			
+			country_rank = rank_kingdom
 			include = "expl_new_england"
 			include = "expl_american_great_lakes"
 		}
@@ -709,6 +636,7 @@ countries = {
 			capital = cahokia
 			include = "woodlands_centralized_natives"
 			court_language = dhegiha_language
+			country_rank = rank_kingdom
 			government = {
 				ruler = random
 			}
@@ -763,7 +691,7 @@ countries = {
 			}
 			own_control_colony = {
 			}
-			
+
 			capital = patapsco
 			include = "elysian_foothold"
 			court_language = elysian_latin_dialect
@@ -773,6 +701,7 @@ countries = {
 				heir_selection = cognatic_primogeniture
 				ruler = br_e1y_character_1
 				ruler_term = { character = br_e1y_character_1 start_date = 1308.5.24 }
+				latinization_vs_hellenization = -100
 			}
 			
 			tolerated_cultures = {
@@ -806,6 +735,7 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
+				latinization_vs_hellenization = 100
 			}
 			
 			tolerated_cultures = {
@@ -919,6 +849,40 @@ countries = {
 			discovered_regions = {
 				caribbean_region
 			}
+		}
+
+		E6Y = { #aithaia
+			own_control_core = {
+				massawomeck
+			}
+			
+			capital = massawomeck
+			include = "elysian_foothold"
+			country_rank = rank_county
+			government = {
+				type = theocracy
+				ruler = random
+			}
+			
+			include = "expl_eastern_seaboard"
+		}
+
+		E7Y = { #apaleisia
+			own_control_core = {
+				moneton kanawha ouasioto pocatalico tsalagi
+				onimgohow calicua 
+			}
+			
+			capital = kanawha
+			include = "elysian_foothold"
+			country_rank = rank_county
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+			
+			include = "expl_eastern_seaboard"
 		}
 		
 		#Rappahannock
@@ -1937,7 +1901,7 @@ countries = {
 			type = pop
 			
 			add_pops_from_locations = {
-				onojutta mattawana tuckahoe tangasootack loyalsock lycoming massawomeck
+				onojutta mattawana tuckahoe tangasootack loyalsock lycoming
 			}
 			
 			include = "american_east_coast_tribe"

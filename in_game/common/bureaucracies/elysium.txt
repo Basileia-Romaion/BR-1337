@@ -1,0 +1,49 @@
+﻿br_lost_legions_bureaucracy = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.002
+	}
+	potential = {
+		culture = { has_culture_group = culture_group:elysian_group }
+	}
+	allow = {
+		NOT = {
+			any_current_bureaucracy = {
+				bureaucracy_type = bureaucracy_type:themata_bureaucracy
+			}
+		}
+	}
+	estates_that_like = {
+		nobles_estate
+	}
+	estates_that_dislike = {
+		burghers_estate
+	}
+	#neutral
+	neutral_modifier = {
+		global_defensive = 0.1
+		global_levy_size_modifier = 0.1
+		monthly_army_tradition = 0.1
+		monthly_towards_stratiotai = societal_value_monthly_move
+	}
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		global_manpower_modifier = 0.1
+		train_general_ability = 10
+		military_tactics = 0.1
+	}
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		levy_recovery_modifier = -0.15
+		monthly_legitimacy = -0.15
+		global_nobles_estate_power = 0.5
+	}
+}

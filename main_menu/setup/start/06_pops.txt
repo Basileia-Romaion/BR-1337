@@ -10808,13 +10808,13 @@ tineo = {
 west_cantabrian_mountains = {
 }
 zamora = {
-	define_pop = {	type = nobles	size = 0.019	culture = andalusi	religion = catholic }
-	define_pop = {	type = clergy	size = 0.163	culture = andalusi	religion = catholic }
+	define_pop = {	type = nobles	size = 0.019	culture = andalusi	religion = sunni }
+	define_pop = {	type = clergy	size = 0.163	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 1.361	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 1.445	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 21.704	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 15.704	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 6.939	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 14.701	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 20.701	culture = andalusi	religion = sunni }
 }
 alba_de_aliste = {
 	define_pop = {	type = clergy	size = 0.008	culture = leonese	religion = catholic }
@@ -11607,13 +11607,13 @@ mora_de_rubielos = {
 	define_pop = {	type = peasants	size = 0.601	culture = andalusi	religion = sunni }
 }
 zaragoza = {
-	define_pop = {	type = nobles	size = 0.018	culture = andalusi	religion = catholic }
-	define_pop = {	type = clergy	size = 0.206	culture = andalusi	religion = catholic }
+	define_pop = {	type = nobles	size = 0.018	culture = andalusi	religion = sunni }
+	define_pop = {	type = clergy	size = 0.206	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 3.367	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 2.221	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 18.841	culture = aragonese	religion = catholic }
-	define_pop = {	type = peasants	size = 16.582	culture = andalusi	religion = sunni }
-	define_pop = {	type = peasants	size = 3.431	culture = sephardi	religion = judaism }
+	define_pop = {	type = peasants	size = 12.841	culture = aragonese	religion = catholic }
+	define_pop = {	type = peasants	size = 19.582	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 4.431	culture = sephardi	religion = judaism }
 }
 belchite = {
 	define_pop = {	type = peasants	size = 8.148	culture = aragonese	religion = catholic }
@@ -78213,6 +78213,7 @@ angra = {
 	define_pop = {	type = tribesmen	size = 0.356	culture = norwegian	religion = norse }
 }
 horta = {
+	define_pop = {	type = peasants	size = 0.074	culture = norwegian	religion = norse }
 	define_pop = {	type = tribesmen	size = 0.226	culture = norwegian	religion = norse }
 }
 santa_cruz_flores = {
@@ -89414,6 +89415,7 @@ atlantic_gulf_stream4 = {
 sargasso_sea = {
 }
 bermuda = {
+	define_pop = {	type = peasants		size = 0.076	culture = kykladian_culture religion = hellenism_religion }
 }
 north_atlantic_ocean = {
 }
