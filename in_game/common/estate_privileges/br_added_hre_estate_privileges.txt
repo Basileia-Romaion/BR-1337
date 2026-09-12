@@ -1,0 +1,58 @@
+#Nobles privileges
+
+br_feudal_nobility = {
+    estate = nobles_estate
+    icon = formalized_oath #wip
+    potential = {
+			has_or_had_tag = LOT
+			}
+    can_revoke = {
+        government_power > 80
+        "estate_power(estate_type:crown_estate)" > 0.25
+    }
+    country_modifier = {
+        nobles_estate_levy_size = 0.15
+        army_heavy_cavalry_maintenance_cost_modifier = -0.10
+        monthly_towards_aristocracy = societal_value_monthly_move
+        monthly_towards_decentralization = societal_value_minor_monthly_move
+        global_crown_estate_power = -0.3
+        global_nobles_estate_power = 1.5
+        nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+
+        }
+    ai_weight = {
+			add = 25
+		}
+	}
+
+
+#Clergy privileges
+
+br_clergy_excessive_influence = {
+    estate = clergy_estate
+    icon = formalized_oath #wip
+    potential = {
+			has_or_had_tag = LOT
+			}
+    can_revoke = {
+        government_power > 80
+        "estate_power(estate_type:crown_estate)" > 0.25
+    }
+    country_modifier = {
+        clergy_estate_max_tax = -1
+        country_cabinet_efficiency = -0.20
+        stability_investment = 0.02
+        monthly_towards_spiritualist = societal_value_large_monthly_move
+        clergy_estate_target_satisfaction = small_privilege_target_satisfaction
+        global_clergy_estate_power = 3
+    }
+    ai_weight = {
+			add = 25
+		}
+}
+
+
+
+#burghers privileges
+
+#Peasants privileges
