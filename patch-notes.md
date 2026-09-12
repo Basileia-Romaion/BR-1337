@@ -2,6 +2,11 @@
 
 # Patch Notes
 
+# 24.1
+
+- Fix: Elysian privilege wanting the opposite value than I intended.
+- Fix: Add some missing localization to a couple ere privileges
+
 # 0.24
 
 ## Dawn of Elysium content. Part 1

@@ -699,9 +699,8 @@
 			government_power > 95
 		}
 		country_modifier = {
-			global_burghers_conversion_blocked = yes
+			global_heretic_pop_conversion_speed_modifier = -0.5
 			tolerance_heretic = 1
-			tolerance_own = -0.5
 			clergy_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
 		}
 	}
