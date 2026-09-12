@@ -244,6 +244,7 @@ br_tribal_capital = {
 	}
 	construction_demand = early_soldier_building_construction
 }
+
 br_trade_outpost = {
 	audio_tier = 1
 	is_foreign = yes
@@ -251,9 +252,9 @@ br_trade_outpost = {
 	max_levels = 3
 	need_good_relation = yes
 	pop_type = burghers
-	
+
 	category = trade_category
-	
+
 	employment_size = foreign_trade_employment
 	pop_size_created = foreign_trade_employment
 
@@ -262,30 +263,23 @@ br_trade_outpost = {
 	city = no
 	megalopolis = no
 	lifts_fog_of_war = yes
-	price = cheap_building
 	country_potential = {
-		OR = {
-			has_reform = government_reform:vinlandic_granges_reform
-			has_reform = government_reform:hauklandic_sailors_reform
-		}
+		has_reform = government_reform:hauklandic_sailors_reform
 	}
 
 	allow = {
 		market = { in_trade_range_of = scope:actor }
 	}
-	
-	
-	
+
 	build_time = trade_post_build_time
-	
+
 	unique_production_methods = {
 		trade_office_requirements = {
 			paper = 0.1
 			category = building_maintenance
 		}
 	}
-	
-	
+
 	modifier = {
 		merchant_capacity_from_building = 0.15
 		building_owner_maritime_presence = 0.02
