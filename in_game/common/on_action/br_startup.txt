@@ -39,6 +39,7 @@ br_on_game_start = {
         #}
 		c:LOT ?= {
             trigger_event_silently = br_hre_events.1
+            trigger_event_silently = br_hre_events.2
         }
 		c:SAR ?= {
             trigger_event_silently = br_country_startup.4
