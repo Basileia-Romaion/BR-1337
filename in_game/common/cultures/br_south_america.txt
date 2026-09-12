@@ -1,0 +1,17 @@
+#New Anglander
+
+new_anglander = {
+	language = new_anglander_language
+	
+	color = rgb { 225 75 90 }
+	
+	tags = { english_gfx british_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		anglo_norse_culture = enemy
+	}
+
+	culture_groups = {
+		british_group
+	}
+}

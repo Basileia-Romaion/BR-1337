@@ -230,6 +230,13 @@ locations = {
 		rank = city
 		town_setup = andes_city
 	}
+
+	####---------- New Angland ----------####
+	chana = {
+		rank = town
+		town_setup = elysia_town
+	}
+	
 }
 
 building_manager = {
@@ -481,4 +488,9 @@ building_manager = {
 	
 	####---------- Andes ----------####
 	#--
+
+	####---------- New Angland ----------####
+	market_village = { tag = N2E level = 1 location = nakaigetergehe }
+	market_village = { tag = N3E level = 1 location = yaros }
+	market_village = { tag = N4E level = 1 location = tubicha_mini }
 }

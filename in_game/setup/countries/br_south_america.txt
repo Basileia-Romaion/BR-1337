@@ -1,0 +1,45 @@
+#New Angland
+
+N1E = { # Duchy of
+	color = rgb { 225 75 90 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = new_anglander
+	religion_definition = catholic
+}
+
+N2E = { # Duchy of
+	color = rgb { 225 175 225 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = new_anglander
+	religion_definition = catholic
+}
+
+N3E = { # Duchy of
+	color = rgb { 225 215 100 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = new_anglander
+	religion_definition = catholic
+}
+
+N4E = { # Duchy of
+	color = rgb { 225 225 100 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = new_anglander
+	religion_definition = catholic
+}

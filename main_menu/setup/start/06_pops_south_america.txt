@@ -4509,7 +4509,8 @@ locations = {
 		define_pop = {	type = tribesmen	size = 3.202	culture = abipones_culture	religion = nallagdigua_religion }
 	}
 	nakaigetergehe = {
-		define_pop = {	type = tribesmen	size = 2.957	culture = abipones_culture	religion = nallagdigua_religion }
+		define_pop = {	type = peasants		size = 5.933	culture = new_anglander		religion = catholic }
+		define_pop = {	type = slaves	size = 0.957	culture = abipones_culture	religion = nallagdigua_religion }
 	}
 	moqoit = {
 		define_pop = {	type = tribesmen	size = 2.278	culture = moqoit_culture	religion = nallagdigua_religion }
@@ -4874,9 +4875,10 @@ locations = {
 		define_pop = {	type = tribesmen	size = 2.050	culture = guenoa_culture	religion = tunpa_religion }
 	}
 	chana = {
-		define_pop = {	type = tribesmen	size = 0.637	culture = yaros_culture	religion = tunpa_religion }
-		define_pop = {	type = tribesmen	size = 1.150	culture = chana_culture	religion = tunpa_religion }
-		define_pop = {	type = tribesmen	size = 0.765	culture = guenoa_culture	religion = tunpa_religion }
+		define_pop = {	type = peasants		size = 8.656	culture = new_anglander		religion = catholic }
+		define_pop = {	type = slaves	size = 0.637	culture = yaros_culture		religion = tunpa_religion }
+		define_pop = {	type = slaves	size = 0.950	culture = chana_culture		religion = tunpa_religion }
+		define_pop = {	type = slaves	size = 0.765	culture = guenoa_culture	religion = tunpa_religion }
 	}
 	mbegua = {
 		define_pop = {	type = tribesmen	size = 1.090	culture = chana_culture	religion = tunpa_religion }
@@ -4893,8 +4895,9 @@ locations = {
 		define_pop = {	type = tribesmen	size = 3.137	culture = quirandi_culture	religion = kenos_religion }
 	}
 	yaros = {
-		define_pop = {	type = tribesmen	size = 0.628	culture = bohan_culture	religion = tunpa_religion }
-		define_pop = {	type = tribesmen	size = 0.942	culture = yaros_culture	religion = tunpa_religion }
+		define_pop = {	type = peasants		size = 5.710	culture = new_anglander		religion = catholic }
+		define_pop = {	type = slaves	size = 0.628	culture = bohan_culture		religion = tunpa_religion }
+		define_pop = {	type = slaves	size = 0.942	culture = yaros_culture		religion = tunpa_religion }
 	}
 	bohan = {
 		define_pop = {	type = tribesmen	size = 1.259	culture = bohan_culture	religion = tunpa_religion }
@@ -4934,7 +4937,8 @@ locations = {
 		define_pop = {	type = tribesmen	size = 3.595	culture = quirandi_culture	religion = kenos_religion }
 	}
 	tubicha_mini = {
-		define_pop = {	type = tribesmen	size = 4.674	culture = quirandi_culture	religion = kenos_religion }
+		define_pop = {	type = peasants		size = 9.126	culture = new_anglander		religion = catholic }
+		define_pop = {	type = slaves	size = 1.674	culture = quirandi_culture	religion = kenos_religion }
 	}
 	pillahuinco = {
 		define_pop = {	type = tribesmen	size = 3.523	culture = het_culture	religion = tain_feyentun_religion }

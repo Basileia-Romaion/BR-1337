@@ -398,3 +398,27 @@ IT1_f = {
         #trigger_event_non_silently = placeholder_event
     }
 }
+
+REPLACE_OR_CREATE:NAE_f = {
+    level = 3
+    required_locations_fraction = 0.5	
+    rule = historical
+    potential = {
+		culture = culture:new_anglander
+    }
+
+    allow = {}
+
+    name = NAE
+    flag = NAE
+    adjective = NAE_ADJ
+    tag = NAE
+    color = map_NAE
+
+    areas = {
+        pampa_area
+    }
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+    }
+}
