@@ -78204,20 +78204,34 @@ north_eastern_atlantic60 = {
 north_eastern_atlantic61 = {
 }
 ponta_delgada = {
-	define_pop = {	type = peasants	size = 0.654	culture = andalusi	religion = sunni }
+	define_pop = {	type = nobles	size = 1.113	culture = hauklandic	religion = norse }
+	define_pop = {	type = clergy	size = 0.416	culture = hauklandic	religion = norse }
+	define_pop = {	type = peasants	size = 6.974	culture = hauklandic	religion = norse }
+	define_pop = {	type = tribesmen	size = 9.474	culture = hauklandic	religion = norse }
+	define_pop = {	type = slaves	size = 1.108	culture = irish	religion = catholic }
 }
 santa_maria = {
 }
 angra = {
-	define_pop = {	type = peasants	size = 0.254	culture = andalusi	religion = sunni }
-	define_pop = {	type = tribesmen	size = 0.356	culture = norwegian	religion = norse }
+	define_pop = {	type = nobles	size = 2.013	culture = hauklandic	religion = norse }
+	define_pop = {	type = clergy	size = 0.416	culture = hauklandic	religion = norse }
+	define_pop = {	type = peasants	size = 7.974	culture = hauklandic	religion = norse }
+	define_pop = {	type = tribesmen	size = 10.474	culture = hauklandic	religion = norse }
+	define_pop = {	type = slaves	size = 2.974	culture = irish	religion = catholic }
 }
 horta = {
-	define_pop = {	type = peasants	size = 0.074	culture = norwegian	religion = norse }
-	define_pop = {	type = tribesmen	size = 0.226	culture = norwegian	religion = norse }
+	define_pop = {	type = nobles	size = 2.013	culture = hauklandic	religion = norse }
+	define_pop = {	type = clergy	size = 0.416	culture = hauklandic	religion = norse }
+	define_pop = {	type = peasants	size = 7.974	culture = hauklandic	religion = norse }
+	define_pop = {	type = tribesmen	size = 9.474	culture = hauklandic	religion = norse }
+	define_pop = {	type = slaves	size = 2.974	culture = irish	religion = catholic }
 }
 santa_cruz_flores = {
-	define_pop = {	type = tribesmen	size = 0.356	culture = norwegian	religion = norse }
+	define_pop = {	type = nobles	size = 1.113	culture = hauklandic	religion = norse }
+	define_pop = {	type = clergy	size = 0.416	culture = hauklandic	religion = norse }
+	define_pop = {	type = peasants	size = 6.974	culture = hauklandic	religion = norse }
+	define_pop = {	type = tribesmen	size = 7.474	culture = hauklandic	religion = norse }
+	define_pop = {	type = slaves	size = 1.108	culture = irish	religion = catholic }
 }
 azores_biscay_ridge = {
 }

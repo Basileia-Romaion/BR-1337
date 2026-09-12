@@ -56,3 +56,24 @@ br_spqe_reform = {
 
 	years = 2
 }
+
+hauklandic_sailors_reform = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			culture = culture:hauklandic
+		}
+	}
+	allow = {
+	}
+	country_modifier = {
+		monthly_towards_naval = societal_value_tiny_monthly_move
+		government_reform_slots = 1
+		global_monthly_food_modifier = 0.10
+		global_population_growth = 0.00025
+		naval_range_modifier = 0.25
+		naval_unit_attrition = -0.25
+	}
+	years = 2
+}
+

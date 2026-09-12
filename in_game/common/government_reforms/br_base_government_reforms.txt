@@ -196,6 +196,7 @@ REPLACE_OR_CREATE:family_sagas_reform = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			culture = culture:hauklandic
 			culture = culture:icelandic
 		}
 	}
@@ -212,6 +213,44 @@ REPLACE_OR_CREATE:family_sagas_reform = {
 	years = 2
 }
 
+REPLACE_OR_CREATE:peasant_republic_reform = {
+	major = yes
+	government = republic
+
+	potential = { country_has_estate = estate_type:peasants_estate }
+
+	allow = {
+		OR = {
+			OR = {
+				has_or_had_tag = DIT
+				has_or_had_tag = HUK
+				has_or_had_tag = FAK
+			}
+			AND = {
+				"estate_power(estate_type:peasants_estate)" > 0.1
+				societal_value:serfdom_vs_free_subjects > 80
+			}
+
+			#This is added for countries that should be given access to this through an event etc
+			has_reform = government_reform:peasant_republic_reform
+		}
+	}
+
+	country_modifier = {
+		global_peasants_estate_power = 1
+		global_nobles_estate_power = -0.25
+		global_raw_material_output = 0.33
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+		nobles_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_free_subjects = societal_value_monthly_move
+		peasants_estate_can_participate_in_parliament = yes
+		government_reform_slots = 1
+		court_language_is_common_language_importance_modifier = 5
+	}
+
+	years = 3
+}
 #West HRE
 REPLACE_OR_CREATE:gabelle = {
 	unique = yes

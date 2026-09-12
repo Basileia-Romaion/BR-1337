@@ -136,3 +136,119 @@ skraeling_culture = {
 	
 	use_patronym = yes
 }
+hauklandic = {
+	language = hauklandic_dialect
+	
+	color = map_dorpat
+	
+	tags = { norwegian_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		norn_culture = kindred
+		swedish = kindred
+		norwegian = kindred
+		vinlander = kindred
+		icelandic = kindred
+		skraeling_culture = positive
+		kathurlander = kindred
+		marklander = kindred
+		hellulander = kindred
+		anglo_norse_culture = positive
+		norse_gael = positive
+	}
+
+	culture_groups = {
+		scandinavian_group
+	}
+	
+	use_patronym = yes
+
+}
+
+
+
+REPLACE_OR_CREATE:norwegian = {
+	language = norwegian_dialect
+	
+	color = map_norwegian
+	
+	tags = { norwegian_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		norn_culture = kindred
+		swedish = kindred
+		hauklandic = kindred
+		vinlander = kindred
+		icelandic = kindred
+		norse_gael = positive
+		skraeling_culture = positive
+		kathurlander = kindred
+		marklander = kindred
+		hellulander = kindred
+		anglo_norse_culture = positive
+	}
+
+	culture_groups = {
+		scandinavian_group
+	}
+	
+	use_patronym = yes
+
+}
+
+REPLACE_OR_CREATE:icelandic = {
+	language = icelandic_dialect
+	
+	color = map_icelandic
+	
+	tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		norn_culture = kindred
+		norwegian = kindred
+		norse_gael = positive
+		hauklandic = kindred
+		vinlander = kindred
+		skraeling_culture = positive
+		kathurlander = kindred
+		marklander = kindred
+		hellulander = kindred
+		anglo_norse_culture = positive
+	}
+
+	culture_groups = {
+		scandinavian_group
+	}
+	
+	use_patronym = yes
+
+}
+
+REPLACE_OR_CREATE:norn_culture = {
+	language = icelandic_dialect
+	
+	color = map_norn
+	
+	tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		icelandic = kindred
+		norwegian = kindred
+		hauklandic = kindred
+		vinlander = kindred
+		norse_gael = positive
+		skraeling_culture = positive
+		kathurlander = kindred
+		marklander = kindred
+		hellulander = kindred
+		anglo_norse_culture = positive
+	}
+
+	culture_groups = {
+		scandinavian_group
+		scottish_group
+	}
+	
+	use_patronym = yes
+
+}
