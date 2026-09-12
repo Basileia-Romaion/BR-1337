@@ -2,6 +2,30 @@
 
 character_db={
 	#NEW BR Characters
+	#Patriarch of Antioch
+	br_patriarch_mark = {
+		first_name = { name = name_mark }
+		#last_name = { name = name_kalekas }
+		culture = greek_culture
+		religion = orthodox
+		estate = clergy_estate
+		adm = 65 dip = 75 mil = 35
+		birth_date = 1308.1.1
+		birth = antioch
+		tag = AOI
+	}
+	#Patriarch of Jerusalem
+	br_patriarch_lazaros = {
+		first_name = { name = name_lazarus }
+		#last_name = { name = name_kalekas }
+		culture = greek_culture
+		religion = orthodox
+		estate = clergy_estate
+		adm = 65 dip = 75 mil = 35
+		birth_date = 1308.1.1
+		birth = jerusalem
+		tag = SY2
+	}
 
 #ERE
 	br_ere_rdm_character_00 = {

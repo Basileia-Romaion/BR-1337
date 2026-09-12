@@ -24,6 +24,58 @@ br_on_game_start = {
 			}
         }
 
+				if = {
+			limit = {
+				has_dlc = "d008_fate_of_the_phoenix"
+			}
+			religion:orthodox = {
+				add_to_variable_map = {
+					name = pentarchy
+					key = location:antioch
+					value = character:br_patriarch_mark
+				}
+				add_to_variable_map = {
+					name = pentarchy
+					key = location:rome
+					value = character:pap_benedetto_xii
+				}
+				add_to_variable_map = {
+					name = pentarchy
+					key = location:alexandria
+					value = character:mam_benjamin_ii_alexandria
+				}
+				add_to_variable_map = {
+					name = pentarchy
+					key = location:jerusalem
+					value = character:br_patriarch_lazaros
+				}
+			}
+			character:br_patriarch_mark = {
+				set_pentarch_variable = { location = location:antioch }
+			}
+			c:AOI = {
+				add_pentarchy_modifier = { location = location:antioch }
+			}
+			character:pap_benedetto_xii = {
+				set_pentarch_variable = { location = location:rome }
+			}
+			c:PAP = {
+				add_pentarchy_modifier = { location = location:rome }
+			}
+			character:mam_benjamin_ii_alexandria = {
+				set_pentarch_variable = { location = location:alexandria }
+			}
+			c:MAM = {
+				add_pentarchy_modifier = { location = location:alexandria }
+			}
+			character:br_patriarch_lazaros = {
+				set_pentarch_variable = { location = location:jerusalem }
+			}
+			c:SY2 = {
+				add_pentarchy_modifier = { location = location:jerusalem }
+			}
+		}
+
         c:E1Y ?= {
             trigger_event_silently = br_startup.1 #resource changes
 			trigger_event_silently = elysium_event.3
