@@ -20,21 +20,52 @@ br_stone_weapons = {
 	potential = {
 		exists = capital
 		original_capital ?= { continent = continent:america }
-		NOR = {
-			has_or_had_tag = NRV
-			has_or_had_tag = NRR
-			has_or_had_tag = NRH
-			has_or_had_tag = NRC
-			has_or_had_tag = E1Y
-			has_or_had_tag = E2Y
-			has_or_had_tag = K1K
-		}
+		government_type ?= government_type:tribe
 	}
 	requires = agriculture_advance
 	unlock_production_method = pre_columbian_weapon_smith_maintenance
-	#global_wild_game_output_modifier = 0.1
-	#tribes_estate_levy_size = 1
-	#levy_maintenance_modifier = -0.25
+}
+br_tribal_warriors = {
+	age = age_1_traditions
+	starting_technology_level = 1
+	
+	potential = {
+		exists = capital
+		original_capital ?= { continent = continent:america }
+		government_type ?= government_type:tribe
+	}
+	requires = agriculture_advance
+	tribes_estate_levy_size = 1
+	levy_maintenance_modifier = -0.5
+}
+
+br_early_migrations = {
+	age = age_1_traditions
+	starting_technology_level = 1
+	
+	potential = {
+		exists = capital
+		original_capital ?= { continent = continent:america }
+		government_type ?= government_type:tribe
+		country_type = pop 
+	}
+	requires = agriculture_advance
+	unlock_law = tribal_migration_law
+}
+
+br_native_trade_with_the_elysians = {
+	age = age_2_renaissance
+	icon = expand_varangian_guard_advance
+	potential = { 
+		OR = {
+			has_or_had_tag = E7Y
+			has_or_had_tag = IRO
+			has_or_had_tag = CHK
+		}
+	}
+	requires = agriculture_advance
+	global_wild_game_output_modifier = 0.2
+	global_fur_output_modifier = 0.2
 }
 
 

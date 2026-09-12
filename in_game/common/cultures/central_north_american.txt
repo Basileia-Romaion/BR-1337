@@ -320,14 +320,17 @@ kuhtsutuuka_culture = {
 	}
 }
 
-tawakoni_culture = { 
+tawakoni_culture = {
 	language = caddoan_language
-	
+
 	color = map_tawakoni
-	
+
  	tags = { north_american_gfx american_gfx }
-		
+
 	opinions = {
+	}
+	culture_groups = {
+		caddoan_group
 	}
 }
 
