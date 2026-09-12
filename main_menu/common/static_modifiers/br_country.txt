@@ -22,6 +22,49 @@ TRY_INJECT:is_regional_power = {
 }
 
 #BR added modifiers
+
+br_levy_size_adu = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	global_levy_recruitment_speed_modifier = 0.25
+	levy_maintenance_modifier = -0.25
+	global_levy_size_modifier = 0.5
+	levy_recovery_modifier = 0.5
+	land_morale_modifier = 0.5
+	discipline = 0.1
+
+}
+
+br_iberian_crusade_aftermatch = {
+	game_data = {
+		category = country
+	}
+	stability_investment = 0.3
+	monthly_legitimacy = 0.15
+	integration_speed_modifier = 1.5
+}
+
+br_iberian_crusade_aftermatch_lot = {
+	game_data = {
+		category = country
+	}
+	stability_investment = 0.3
+	monthly_prestige = 0.5
+	monthly_legitimacy = 0.15
+	diplomatic_reputation = 2
+
+}
+
+br_war_against_electors_diplo = {
+	game_data = {
+		category = country
+	}
+	monthly_prestige = -0.5
+	diplomatic_reputation = -5
+}
+
 br_levy_size_modifier = {
 	game_data = {
 		category = country
