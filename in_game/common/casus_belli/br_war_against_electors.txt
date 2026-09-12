@@ -1,0 +1,24 @@
+cb_war_against_electors = {
+	years = 15
+	create_enabled = {
+		scope:target = {
+			any_owned_location = {
+				is_core_of = root
+			}
+		}
+	}
+	
+	#scopes are actor/recipient for countries, while root = province checked.
+	province = {
+		any_location_in_province = {
+			is_core_of = scope:actor
+		}
+	}
+	allow_separate_peace = no
+	required_peace_treaties = {
+		war_against_electors_victory
+	}
+
+
+	war_goal_type = war_against_electors
+}

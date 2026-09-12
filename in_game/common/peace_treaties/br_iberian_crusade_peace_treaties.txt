@@ -1,0 +1,114 @@
+iberian_crusade_victory = {
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = 100
+		}
+	}
+
+	potential = {
+		scope:war ?= {
+			casus_belli ?= {
+				this = casus_belli:cb_iberian_crusade
+			}
+		}
+	}
+
+	allow = {
+		always = yes
+	}
+
+	effect = {
+
+		# Portugal
+		scope:war = {
+			every_defender = {
+				every_owned_location = {
+					limit = {
+						is_in_scripted_geography = scripted_geography:Porto_conquest_geography
+					}
+					change_location_owner = c:POR
+				}
+			}
+		}
+
+		c:POR = {
+			add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch
+				years = 15
+				mode = add_and_extend
+			}
+		}
+
+
+		# Asturias / Castille
+		scope:war = {
+			every_defender = {
+				every_owned_location = {
+					limit = {
+						is_in_scripted_geography = scripted_geography:Asturias_castile_conquest_geography
+					}
+					change_location_owner = c:CAS
+				}
+			}
+		}
+
+		c:CAS = {
+			add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch
+				years = 15
+				mode = add_and_extend
+			}
+		}
+
+		c:LON = {
+			add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch
+				years = 15
+				mode = add_and_extend
+			}
+		}
+
+
+		# Aragon
+		scope:war = {
+			every_defender = {
+				every_owned_location = {
+					limit = {
+						is_in_scripted_geography = scripted_geography:Aragon_conquest_geography
+					}
+					change_location_owner = c:ARA
+				}
+			}
+		}
+
+		c:ARA = {
+			add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch
+				years = 15
+				mode = add_and_extend
+			}
+		}
+
+
+
+		# Lotharingia
+		c:LOT = {
+			set_variable = {
+				name = iberian_crusade
+				value = yes
+			}
+			trigger_event_non_silently = {
+		id = br_hre_events.3
+	}
+		}
+
+	}
+
+	ai_desire = {
+		add = {
+			desc = "BASE"
+			value = 10000
+		}
+	}
+}

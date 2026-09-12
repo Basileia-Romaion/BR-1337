@@ -1,0 +1,49 @@
+iberian_crusade = {
+	type = superiority
+	
+	war_name = "COALITION_WAR_NAME" #uses second
+	
+	attacker = {
+		conquer_cost = 1
+		subjugate_cost = 1
+		release_cost = 0.25
+		allowed_locations = { # Scripted peace deals
+			trigger_if = {
+				limit = {
+					scope:war.attacker_leader ?= scope:winner
+				}
+				custom_tooltip = {
+					text = ADU_cannot_take_territory_besides_scripted_peace_deal
+					always = no
+				}
+			}
+			trigger_else = { always = yes }
+		}
+	}
+	ticking_war_score = 0.5
+}
+
+war_against_electors = {
+	type = superiority
+	
+	war_name = "COALITION_WAR_NAME" #uses second
+	
+	attacker = {
+		conquer_cost = 1
+		subjugate_cost = 1
+		release_cost = 0.25
+		allowed_locations = { # Scripted peace deals
+			trigger_if = {
+				limit = {
+					scope:war.attacker_leader ?= scope:winner
+				}
+				custom_tooltip = {
+					text = ADU_cannot_take_territory_besides_scripted_peace_deal
+					always = no
+				}
+			}
+			trigger_else = { always = yes }
+		}
+	}
+	ticking_war_score = 0.5
+}
