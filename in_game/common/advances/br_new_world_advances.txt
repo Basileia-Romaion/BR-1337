@@ -107,13 +107,9 @@ br_vinland_naval_tradition = { #todo break up a bit
 	trade_range_modifier = 0.25
     global_sailors_modifier = 0.50
     global_fish_output_modifier = 0.1
-    #can_recruit_explorer = yes
-    #may_explore = yes
     exploration_maintenance_efficiency = 0.25
     navy_maintenance_efficiency = 0.25
     global_maritime_presence_modifier = 0.1
-	#merchant_power_from_maritime_modifier = 0.2
-	#trade_sea_efficiency = -0.2
 	global_naval_supplies_output_modifier = 0.1
     requires = ship_building_advance
 }
@@ -133,6 +129,7 @@ vinlander_thing_of_vinland = {
 	government = republic
 	unlock_heir_selection = veche_selection
 	allow_tributary_subject = yes
+	global_max_bureaucracy_slots = 1
 }
 
 vinlander_woodland_warfare = {
