@@ -15,7 +15,12 @@ elysium_event.1 = {
 		10 = exterior
 	}
 
-	#orphan = yes 
+	dynamic_historical_event = {
+        tag = ELY
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 
 	trigger = {
 		#Should trigger on country formation.

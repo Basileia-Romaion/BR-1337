@@ -14,6 +14,12 @@ br_ere_events.1 = {
 		tag = BYZ
 	}
 	
+	dynamic_historical_event = {
+  		tag = BYZ
+ 		from = 1336.1.1
+ 		to = 1337.1.1
+ 		monthly_chance = 100
+ 	}
 	illustration_tags = {
 		10 = regular
 		10 = interior

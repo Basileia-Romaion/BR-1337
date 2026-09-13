@@ -83,7 +83,7 @@ br_on_game_start = {
 			trigger_event_silently = elysium_event.4
         }
 		c:NRV ?= {
-			trigger_event_silently = br_vinland_event.1 #extra cbs
+			trigger_event_silently = br_vinland_event.1
         }
         #c:RIC ?= {
             #trigger_event_silently = br_indikes_events.1
