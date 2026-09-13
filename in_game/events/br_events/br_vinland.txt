@@ -11,6 +11,12 @@ br_vinland_event.1 = {
 		10 = armed
 		10 = exterior
 	}
+	dynamic_historical_event = {
+        tag = NRV
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 	trigger = {
 	}
 
@@ -77,3 +83,206 @@ br_vinland_event.1 = {
 	}
 
 }
+
+#############
+namespace = northern_trade
+#Context event that explains to the player what is in store for them
+northern_trade.1 = {
+    type=country_event
+    title=northern_trade.1.title
+    desc=northern_trade.1.desc
+    outcome=neutral
+
+    trigger={
+    }
+
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from = 1337.1.1	# the earliest date at which this event can fire
+        to = 1338.1.1 		# the latest date at which this event can fire
+        monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = northern_trade.1.a
+    }
+
+}
+
+northern_trade.2 = {
+    type=country_event
+    title=northern_trade.2.title
+    desc=northern_trade.2.desc
+    outcome=negative
+
+    trigger={
+    }
+    image = "gfx/interface/illustrations/situation/black_death.dds"
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from = 1350.1.1	# the earliest date at which this event can fire
+        to = 1360.1.1 		# the latest date at which this event can fire
+        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = northern_trade.2.a
+        capital = {
+            spawn_disease = {
+                disease = disease:bubonic_plague
+                value = 1
+            }
+        }
+        c:E1Y= {
+            trigger_event_silently = northern_trade.4
+        }
+        c:E2Y= {
+            trigger_event_silently = northern_trade.4
+        }
+    }
+}
+
+northern_trade.3 = {
+    type = country_event
+    title = northern_trade.3.title
+    desc = northern_trade.3.desc
+    outcome = positive
+
+    trigger = {
+
+    }
+    image = "gfx/interface/illustrations/institutions/professional_armies.dds"
+    fire_only_once = yes
+
+    dynamic_historical_event = {
+        # Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from = 1370.1.1    # the earliest date at which this event can fire
+        to = 1380.1.1        # the latest date at which this event can fire
+        monthly_chance = 1    # monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = northern_trade.3.a
+        capital = {
+            change_institution_progress = {
+                type = institution:professional_armies
+                value = 100
+            }
+        }
+        create_character = {
+            age = 34
+            add_trait = trait:glory_seeker
+            estate = estate_type:nobles_estate
+            adm = 84
+            dip = 37
+            mil = 95
+            culture = culture:danish
+            religion = religion:catholic
+        }
+    }
+}
+
+northern_trade.4 = {
+    type = country_event
+    title = northern_trade.4.title
+    desc = northern_trade.4.desc
+    outcome = negative
+
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+
+    option = {
+        name = northern_trade.2.a
+        capital = {
+            spawn_disease = {
+                disease = disease:bubonic_plague
+                value = 1
+            }
+        }
+    }
+}
+
+############
+namespace = southern_trade
+
+southern_trade.1 = {
+    type=country_event
+    title=southern_trade.1.title
+    desc=southern_trade.1.desc
+    outcome=neutral
+
+    trigger={
+    }
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from =1340.1.1	# the earliest date at which this event can fire
+        to = 1341.1.1 		# the latest date at which this event can fire
+        monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = southern_trade.1.a
+        discover_area=area:new_jersey_area
+        discover_area=area:pennsylvania_area
+        discover_area=area:maryland_area
+        discover_area=area:virginia_area
+        discover_area=area:east_coast_sea_zones_area
+        c:E1Y= {
+            trigger_event_silently = southern_trade.2
+        }
+        c:E2Y= {
+            trigger_event_silently = southern_trade.2
+        }
+    }
+}
+southern_trade.2 = {
+    type=country_event
+    title=southern_trade.2.title
+    desc=southern_trade.2.desc
+    outcome=neutral
+
+    trigger={
+    }
+
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from =1340.1.1	# the earliest date at which this event can fire
+        to = 1341.1.1 		# the latest date at which this event can fire
+        monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = southern_trade.2.a
+        discover_area=area:canadian_atlantic_coast_area
+        discover_area=area:newfoundland_area
+        discover_area=area:acadia_area
+    }
+}
+
+
