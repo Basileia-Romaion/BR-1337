@@ -23,8 +23,7 @@ br_on_game_start = {
 				target = c:BYZ
 			}
         }
-
-				if = {
+		if = {
 			limit = {
 				has_dlc = "d008_fate_of_the_phoenix"
 			}
