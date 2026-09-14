@@ -125,10 +125,290 @@ namespace = br_sax_events
 	}
 }
 
-br_sax_events.3 = { #The Rise of Hanover
+br_sax_events.3 = { #Johann Gottlieb Fichte
 	type = country_event
 	title = br_sax_events.3.title
 	desc = br_sax_events.3.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/situation/reformation.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1795.1.1
+		to = 1814.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:burghers   background = pop_type:burghers }
+		create_character = {
+			first_name = name_john.name_gottlieb
+			last_name = Fichte
+			adm = 62
+			dip = 32
+			mil = 8
+			birth_date = 1762.5.19
+			birth_location = location:bautzen
+			estate = estate_type:burghers_estate
+			artist_skill = 0.92
+			artist = philosopher
+			save_scope_as = target_artist
+		}
+		random_neighbor_country = {
+			save_scope_as = target_country
+		}
+	}
+
+	trigger = {
+		owns = location:berlin
+		has_embraced_institution = institution:enlightenment
+	}
+
+	option = {
+		name = br_sax_events.3.a
+		historical_option = yes
+		add_research_progress = research_progress_mild_bonus
+		location:berlin = {
+			create_art = {
+				artist = scope:target_artist
+				type = work_of_art_type:treatise
+				quality = 72
+				key = teaching_nova_methodo
+			}
+		}
+	}
+
+	option = {
+		name = br_sax_events.3.b
+		trigger = {
+			exists = scope:target_country
+		}
+		scope:target_artist = {
+			move_country = scope:target_country
+		}
+	}
+}
+
+br_sax_events.4 = { #Friedrich Nicolai and the Joys of Young Werther
+	type = country_event
+	title = br_sax_events.4.title
+	desc = br_sax_events.4.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/institutions/enlightenment.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1770.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		create_character = {
+			first_name = name_frederick
+			last_name = Nicolai
+			adm = 54
+			dip = 68
+			mil = 9
+			birth_date = 1733.3.18
+			birth_location = location:berlin
+			estate = estate_type:burghers_estate
+			artist_skill = 0.78
+			artist = writer
+			save_scope_as = target_artist
+			create_in_limbo = yes
+		}
+	}
+
+	trigger = {
+		owns = location:berlin
+		exists = work_of_art:sorrows_of_young_werther
+		c:MEI = {
+			capital = {
+				any_work_of_art_in_location = {
+					this = work_of_art:sorrows_of_young_werther
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_sax_events.4.a
+		historical_option = yes
+		add_prestige = prestige_mild_penalty
+		scope:target_artist = { move_country = root }
+		location:berlin = {
+			create_art = {
+				artist = scope:target_artist
+				type = work_of_art_type:novel
+				quality = 75
+				key = joys_of_young_werther
+			}
+		}
+	}
+
+	option = {
+		name = br_sax_events.4.b
+		add_prestige = prestige_mild_bonus
+		scope:target_artist = {
+			banish_character = yes
+		}
+	}
+}
+
+br_sax_events.5 = { #Wilhelm von Humbolt - University of Hanover
+	type = country_event
+	title = br_sax_events.5.title
+	desc = br_sax_events.5.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1805.1.1
+		to = 1835.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		create_character = {
+			first_name = name_william
+			last_name = von_humboldt
+			adm = 67
+			dip = 59
+			mil = 31
+			birth_date = 1767.6.22
+			birth_location = location:potsdam
+			estate = estate_type:nobles_estate
+			artist_skill = 0.93
+			artist = philosopher
+			save_scope_as = target_artist
+			create_in_limbo = yes
+		}
+		random_neighbor_country = {
+			save_scope_as = target_country
+		}
+	}
+
+	trigger = {
+		owns = location:berlin
+		capital = {
+			has_building_with_at_least_one_level = university
+		}
+	}
+
+	option = {
+		name = br_sax_events.5.a
+		historical_option = yes
+		if = {
+			limit = {
+				NOT = { has_policy = education_of_the_people }
+			}
+			add_policy = policy:education_of_the_people
+		}
+		else = {
+			add_research_progress = research_progress_severe_bonus
+		}
+		change_gold_effect = { scale = -1 }
+		scope:target_artist = { move_country = root }
+	}
+
+	option = {
+		name = br_sax_events.5.b
+
+		scope:target_artist = { banish_character = yes }
+	}
+}
+
+flavor_brapru.6 = { #Gotthold Ephraim Lessing
+	type = country_event
+	title = flavor_brapru.6.title
+	desc = flavor_brapru.6.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SAX
+		from = 1748.1.1
+		to = 1780.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:clergy   background = pop_type:clergy }
+		create_character = {
+			first_name = name_gotthold.name_ephraim
+			last_name = Lessing
+			adm = 45
+			dip = 67
+			mil = 25
+			birth_date = 1729.1.22
+			birth_location = location:bautzen
+			estate = estate_type:clergy_estate
+			artist_skill = 0.84
+			artist = writer
+			save_scope_as = target_artist
+			create_in_limbo = yes
+		}
+	}
+
+	trigger = {
+		owns = location:berlin
+	}
+
+	option = {
+		name = br_sax_events.6.a
+		historical_option = yes
+		scope:target_artist = { move_country = root }
+		capital = {
+			create_art = {
+				artist = scope:target_artist
+				type = work_of_art_type:play
+				quality = 84
+				key = nathan_the_wise
+			}
+		}
+	}
+
+	option = {
+		name = br_sax_events.6.b
+		trigger = {
+			exists = scope:target_country
+		}
+		scope:target_artist = { banish_character = yes }
+	}
+}
+
+
+br_sax_events.7 = { #The Rise of Hanover
+	type = country_event
+	title = br_sax_events.7.title
+	desc = br_sax_events.7.desc
 	outcome = neutral
 
 	fire_only_once = yes
