@@ -1,4 +1,6 @@
 ﻿### BR Unique buildings ###
+
+##ERE 'BYZ' 
 br_great_palace_building = {
 	is_special = yes
 	is_foreign = no
@@ -431,71 +433,6 @@ br_hippodrome_building = {
 	construction_demand = university_construction
 }
 
-br_ely_hippodrome_building = {
-	icon = hippodrome
-	audio_tier = 5
-	is_foreign = no
-	max_levels = 1
-	pop_type = laborers
-	category = cultural_category
-	employment_size = construction_employment
-	town = no
-	city = yes
-	megalopolis = yes
-	build_time = huge_unique_build_time
-	price = build_hippodrome_price
-	country_potential = {
-		OR = {
-			tag = ELY
-			tag = IMP
-			owns = location:anacostia
-		}
-	}
-	location_potential = {
-		this = location:anacostia
-	}
-	possible_production_methods = { hippodrome_maintenance }
-	construction_demand = soldier_building_construction
-	capital_country_modifier = {
-		global_estate_target_satisfaction = small_permanent_target_satisfaction
-		global_crown_estate_power = 0.2
-	}
-}
-
-br_ely_aqueduct_system = {
-	icon = aqueduct_system
-	content_priority = 100
-	is_foreign = no
-	max_levels = aqueduct_system_max_level 
-	pop_type = laborers
-	forbidden_for_estates = yes
-	employment_size = aqueduct_system_employment
-	price = expand_aqueduct_system
-	category = infrastructure_category
-	town = yes
-	city = yes
-	megalopolis = yes
-	build_time = infrastructure_build_time
-	country_potential = {
-		OR = {
-			tag = ELY
-			tag = IMP
-			owns = location:anacostia
-		}
-	}
-	location_potential = {
-		this = location:anacostia
-	}
-	possible_production_methods = { aqueduct_system_maintenance }
-	construction_demand = aqueduct_system_construction
-
-	modifier = {
-		local_disease_resistance = 0.1
-		local_monthly_food_modifier = 0.15
-		local_monthly_prosperity = 0.001
-		local_monthly_development_modifier = 0.1
-	}
-}
 
 # The Cisterns and Aqueducts of Constantinople
 br_constantinople_infrastructure = {
@@ -645,7 +582,6 @@ br_agioi_apostoloi_building = {
 	capital_country_modifier = {
 		monthly_prestige = 0.01
 		tolerance_own = 0.1
-		stability_investment = 0.01
 		maximum_religious_influence = 50
 		monthly_towards_spiritualist = 0.01
 		monthly_religious_influence = 0.05
@@ -658,3 +594,254 @@ br_agioi_apostoloi_building = {
 	construction_demand = capital_building_construction
 }
 
+
+##ELY 
+br_ely_hippodrome_building = {
+	icon = hippodrome
+	audio_tier = 5
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	category = cultural_category
+	employment_size = construction_employment
+	town = no
+	city = yes
+	megalopolis = yes
+	build_time = huge_unique_build_time
+	price = build_hippodrome_price
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+	possible_production_methods = { hippodrome_maintenance }
+	construction_demand = soldier_building_construction
+	capital_country_modifier = {
+		global_estate_target_satisfaction = small_permanent_target_satisfaction
+		global_crown_estate_power = 0.2
+	}
+}
+
+br_ely_aqueduct_system = {
+	icon = aqueduct_system
+	content_priority = 100
+	is_foreign = no
+	max_levels = aqueduct_system_max_level 
+	pop_type = laborers
+	forbidden_for_estates = yes
+	employment_size = aqueduct_system_employment
+	price = expand_aqueduct_system
+	category = infrastructure_category
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = infrastructure_build_time
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+	possible_production_methods = { aqueduct_system_maintenance }
+	construction_demand = aqueduct_system_construction
+
+	modifier = {
+		local_disease_resistance = 0.1
+		local_monthly_food_modifier = 0.15
+		local_monthly_prosperity = 0.001
+		local_monthly_development_modifier = 0.1
+	}
+}
+
+br_ely_academy_of_arts_and_sciences = {
+	icon = usa_academy_of_arts_and_sciences
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = cultural_category
+	employment_size = cultural_employment
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+	expensive = yes
+	build_time = cultural_building_time
+	
+	modifier = {
+		local_cultural_tradition = 1.0
+		local_max_literacy = 10
+	}
+	capital_country_modifier = {
+		monthly_towards_humanist = societal_value_monthly_move
+	}
+	unique_production_methods = {
+		br_ely_academy_of_arts_and_sciences_maintenance = {
+			icon_type = building_type
+			icon = usa_academy_of_arts_and_sciences
+			paper = 1
+			books = 0.25
+			glass = 0.25
+			beeswax = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = university_construction
+}
+
+br_ely_philosophical_society = {
+	icon = usa_philosophical_society
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = cultural_category
+	employment_size = cultural_employment
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+
+	expensive = yes
+	build_time = cultural_building_time
+	modifier = {
+		local_cultural_tradition = 0.5
+		local_cultural_influence = 0.5
+		local_max_literacy = 5
+	}
+	capital_country_modifier = {
+		monthly_towards_humanist = societal_value_monthly_move
+		skill_of_new_artists = 0.1
+	}
+	unique_production_methods = {
+		br_ely_philosophical_society_maintenance = {
+			icon_type = building_type
+			icon = usa_philosophical_society
+			paper = 1.5
+			books = 0.5
+			glass = 0.5
+			beeswax = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = university_construction
+}
+
+br_ely_national_bank = {
+	icon = usa_national_bank
+	audio_tier = 5
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = trade_category
+	employment_size = generic_burgher_employment
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+	expensive = yes	
+	build_time = generic_town_build_time
+	
+	capital_country_modifier = {
+		minting_inflation_threshold = 0.04
+		max_bonds = 2
+	}
+	unique_production_methods = {
+		br_ely_national_bank_maintenance = {
+			icon_type = building_type
+			icon = usa_national_bank
+			paper = 1.0
+			goods_gold = 1.0
+			category = building_maintenance
+		}
+	}
+	construction_demand = bank_construction
+}
+
+br_ely_national_mint = {
+	icon = usa_national_mint
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = trade_category
+	employment_size = generic_burgher_employment
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		OR = {
+			tag = ELY
+			tag = IMP
+			owns = location:anacostia
+		}
+	}
+	location_potential = {
+		this = location:anacostia
+	}
+	expensive = yes	
+	build_time = generic_town_build_time
+	
+	capital_country_modifier = {
+		minting_income_factor = 0.2
+	}
+	unique_production_methods = {
+		br_ely_national_mint_maintenance = {
+			icon_type = building_type
+			icon = usa_national_mint
+			paper = 1.0
+			goods_gold = 1.0
+			silver = 1.0
+			category = building_maintenance
+		}
+	}
+	construction_demand = bank_construction
+}
