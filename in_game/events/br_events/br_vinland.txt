@@ -6,6 +6,7 @@ br_vinland_event.1 = {
 	title = br_vinland_event.1.title
 	desc = br_vinland_event.1.desc
 	outcome = positive
+    fire_only_once = yes
 
 	illustration_tags = {
 		10 = armed
@@ -14,7 +15,7 @@ br_vinland_event.1 = {
 	dynamic_historical_event = {
         tag = NRV
         from = 1337.1.1
-        to = 1800.1.1
+        to = 1338.1.1
         monthly_chance = 100
     }
 	trigger = {
@@ -60,26 +61,34 @@ br_vinland_event.1 = {
 			}
 		}
 
-		#hidden_effect = {
-			#c:NRC = {
+		hidden_effect = {
+            add_policy = policy:native_trade
+            add_policy = policy:settled_colonies
+			c:NRC = {
 				#make_subject_of = {
 					#target = c:NRV
 					#type = subject_type:colonial_nation
 				#}
-			#}
-			#c:NRH = {
+                add_policy = policy:native_trade
+                add_policy = policy:settled_colonies
+			}
+			c:NRH = {
 				#make_subject_of = {
 					#target = c:NRV
 					#type = subject_type:colonial_nation
 				#}
-			#}
-			#c:NRR = {
+                add_policy = policy:native_trade
+                add_policy = policy:settled_colonies
+			}
+			c:NRR = {
 				#make_subject_of = {
 					#target = c:NRV
 					#type = subject_type:colonial_nation
 				#}
-			#}
-		#}
+                add_policy = policy:native_trade
+                add_policy = policy:settled_colonies
+			}
+		}
 	}
 
 }
@@ -92,15 +101,12 @@ northern_trade.1 = {
     title=northern_trade.1.title
     desc=northern_trade.1.desc
     outcome=neutral
-
     trigger={
     }
-
     illustration_tags = {
         10 = armed
         10 = exterior
     }
-
     fire_only_once = yes
 
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
@@ -109,11 +115,9 @@ northern_trade.1 = {
         to = 1338.1.1 		# the latest date at which this event can fire
         monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
     }
-
     option = {
         name = northern_trade.1.a
     }
-
 }
 
 northern_trade.2 = {
@@ -121,19 +125,16 @@ northern_trade.2 = {
     title=northern_trade.2.title
     desc=northern_trade.2.desc
     outcome=negative
-
     trigger={
     }
     image = "gfx/interface/illustrations/situation/black_death.dds"
     fire_only_once = yes
-
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
         from = 1350.1.1	# the earliest date at which this event can fire
         to = 1360.1.1 		# the latest date at which this event can fire
         monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
     }
-
     option = {
         name = northern_trade.2.a
         capital = {
@@ -156,13 +157,10 @@ northern_trade.3 = {
     title = northern_trade.3.title
     desc = northern_trade.3.desc
     outcome = positive
-
     trigger = {
-
     }
     image = "gfx/interface/illustrations/institutions/professional_armies.dds"
     fire_only_once = yes
-
     dynamic_historical_event = {
         # Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
@@ -170,7 +168,6 @@ northern_trade.3 = {
         to = 1380.1.1        # the latest date at which this event can fire
         monthly_chance = 1    # monthly chance to fire the event (10 = 10%)
     }
-
     option = {
         name = northern_trade.3.a
         capital = {
@@ -197,13 +194,11 @@ northern_trade.4 = {
     title = northern_trade.4.title
     desc = northern_trade.4.desc
     outcome = negative
-
     illustration_tags = {
         10 = armed
         10 = exterior
     }
     fire_only_once = yes
-
     option = {
         name = northern_trade.2.a
         capital = {
@@ -223,7 +218,6 @@ southern_trade.1 = {
     title=southern_trade.1.title
     desc=southern_trade.1.desc
     outcome=neutral
-
     trigger={
     }
     illustration_tags = {
@@ -259,17 +253,13 @@ southern_trade.2 = {
     title=southern_trade.2.title
     desc=southern_trade.2.desc
     outcome=neutral
-
     trigger={
     }
-
     illustration_tags = {
         10 = armed
         10 = exterior
     }
-
     fire_only_once = yes
-
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
         from =1340.1.1	# the earliest date at which this event can fire
