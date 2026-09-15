@@ -690,6 +690,8 @@ countries = {
 				minguannan
 			}
 			own_control_colony = {
+				catoctin
+				conewago
 			}
 
 			capital = patapsco
@@ -703,15 +705,12 @@ countries = {
 				ruler_term = { character = br_e1y_character_1 start_date = 1308.5.24 }
 				latinization_vs_hellenization = -100
 				bureaucracies = {
-					{ type = br_lost_legions_bureaucracy	date = 380.1.1 entrenchment = 75 } 
+					{ type = br_lost_legions_bureaucracy	date = 380.1.1 } 
 				}
 			}
-			
 			tolerated_cultures = {
-				piscataway_culture
-				nanticoke_culture
+				elyrics_culture
 			}
-			
 			include = "expl_eastern_seaboard"
 		}
 		
@@ -729,7 +728,6 @@ countries = {
 				rappahannock werowocomoco nanzatico wicocomico
 				patawomeck
 			}
-			
 			capital = nansemond
 			include = "elysian_foothold"
 			court_language = elysian_greek_dialect
@@ -740,15 +738,12 @@ countries = {
 				ruler = random
 				latinization_vs_hellenization = 100
 				bureaucracies = {
-					{ type = br_ely_colonial_office_bureaucracy	date = 380.1.1 entrenchment = 75 } 
+					{ type = br_ely_colonial_office_bureaucracy	date = 380.1.1 } 
 				}
 			}
-			
 			tolerated_cultures = {
-				nansemond_culture
-				powhatan_culture
+				elyrics_culture
 			}
-			
 			include = "expl_eastern_seaboard"
 		}
 		

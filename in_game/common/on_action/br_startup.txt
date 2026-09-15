@@ -183,7 +183,6 @@ br_on_game_start = {
         }
 		every_country = {
 			limit = { has_reform = government_reform:military_order_reform }
-
             if = {
                 limit = {
 					capital ?= { NOT = { region = region:baltic_region } }
@@ -202,7 +201,7 @@ br_on_game_start = {
 			research_advance = advance_type:new_world_advance
             research_advance = advance_type:colonial_charters
 			research_advance = advance_type:colonial_policy_advance
-			#research_advance = advance_type:send_people_to_the_colonies_advance
+			research_advance = advance_type:native_policy_advance
         }
 		every_country = {
 			limit = {
@@ -392,6 +391,7 @@ br_on_game_start = {
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 			#add_policy = policy:pirate_elective
 			#add_policy = policy:benefits_for_privateers
+			add_policy = policy:native_trade
 		}
 		c:A1G ?= {
 			trigger_event_silently = br_ere_events.1002

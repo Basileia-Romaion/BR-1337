@@ -7399,6 +7399,7 @@ character_db={
 		first_name = { name = name_john }
 		culture = greek_culture
 		religion = orthodox
+		estate = nobles_estate
 		birth_date = 1193.1.1
 		death_date = 1253.1.1
 		birth = constantinople
@@ -9271,7 +9272,7 @@ character_db={
 		#mother = Anna Kantakuzene
 		spouse = alb_filippo_i_taranto
 		dynasty = komnenos_doukas_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	epi_thomas_i_komnenos_doukas = {
@@ -11033,7 +11034,7 @@ character_db={
 		father = bul_michael_shishman
 		mother = ser_ana_neda
 		dynasty = shishman_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}		
 
 	bos_shishman_wife_stephen_kotromanic = {
@@ -11679,7 +11680,7 @@ character_db={
 		father = thp_tanush_thopia
 		mother = thp_maria_aquino
 		dynasty = thopia_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Son & Heir of the Thopia Lord
@@ -12519,7 +12520,7 @@ character_db={
 		mother = fra_mahaut_chatillon
 		spouse = nap_carlo_anjou
 		dynasty = carolingian_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# Spouse of the Heir of the Duke of Bourbon & Sister of the King of France
@@ -13324,7 +13325,7 @@ character_db={
 		father = fra_louis_viii_capet
 		mother = fra_blanche_burgundy
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = conqueror
 		ruler_trait = inspiring_leader
 		ruler_trait = zealot
@@ -13344,7 +13345,7 @@ character_db={
 		mother = pro_beatritz_i_arago
 		spouse = pea_philippe_i_courtenay
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Father of the King of Naples, Grandfather of the King of Hungary, the Duke of Durazzo, the Prince of Achaia & Count of Cephalonia & Previous King of Naples
@@ -13359,7 +13360,7 @@ character_db={
 		father = nap_charles_i_anjou
 		mother = pro_beatritz_i_arago
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = babbling_buffoon
 	}
 
@@ -13379,7 +13380,7 @@ character_db={
 		father = nap_carlo_ii_anjou
 		mother = nap_maria_arpad
 		dynasty = anjou_dynasty # Should be dynasty = anjou_hungary_dynasty # Founder of the Hungarian Line of the House of Anjou
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# King of Hungary & Croatia
@@ -13493,7 +13494,7 @@ character_db={
 		father = hun_karoly_robert
 		mother = pol_elzbieta_piast
 		dynasty = anjou_dynasty # Should be dynasty = anjou_hungary_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		child_trait = child_rowdy
 	}
 	
@@ -13576,7 +13577,7 @@ character_db={
 		father = nap_carlo_ii_anjou
 		mother = nap_maria_arpad
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = loose_lips
 		ruler_trait = greedy
 		ruler_trait = scholar
@@ -13595,7 +13596,7 @@ character_db={
 		father = nap_robert_i_anjou
 		mother = nap_violante_aragon
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# Granddaughter & Heiress of the King of Naples
@@ -13611,7 +13612,7 @@ character_db={
 		mother = nap_marie_valois
 		spouse = hun_andras
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# Granddaughter of the King of Naples
@@ -13626,7 +13627,7 @@ character_db={
 		father = nap_carlo_anjou
 		mother = nap_marie_valois
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_eloisa_anjou = {
@@ -13641,7 +13642,7 @@ character_db={
 		father = nap_carlo_anjou
 		mother = nap_marie_valois
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Son of the King of Naples
@@ -13656,7 +13657,7 @@ character_db={
 		father = nap_robert_i_anjou
 		mother = nap_violante_aragon
 		dynasty = anjou_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	thp_helene_anjou = {
@@ -13695,7 +13696,7 @@ character_db={
 		father = nap_carlo_ii_anjou
 		mother = nap_maria_arpad
 		dynasty = anjou_dynasty # Should be dynasty = anjou_taranto_dynasty # Founder of the Taranto Line of the House of Anjou
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = greedy
 		ruler_trait = babbling_buffoon
 		ruler_trait = craven
@@ -13731,7 +13732,7 @@ character_db={
 		father = alb_filippo_i_taranto
 		mother = alb_thamar_angelina_komnene_doukas
 		dynasty = anjou_dynasty # Should be dynasty = anjou_taranto_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Lady Consort of Argos & Sister of the Prince of Achaea & Count of Cephalonia
@@ -13795,7 +13796,7 @@ character_db={
 		father = alb_filippo_i_taranto
 		mother = ach_catherine_valois
 		dynasty = anjou_dynasty # Should be dynasty = anjou_taranto_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_margherita_anjou = {
@@ -13809,7 +13810,7 @@ character_db={
 		father = alb_filippo_i_taranto
 		mother = ach_catherine_valois
 		dynasty = anjou_dynasty # Should be dynasty = anjou_taranto_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_filippo_ii_taranto = {	
@@ -13822,10 +13823,10 @@ character_db={
 		father = alb_filippo_i_taranto
 		mother = ach_catherine_valois
 		dynasty = anjou_dynasty # Should be dynasty = anjou_taranto_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
-	pat_guglielmo_frangipani = {	
+	pat_guglielmo_frangipani = {
 		first_name = { name = name_william }
 		last_name = { name = Frangipani }
 		culture = median
@@ -18926,7 +18927,7 @@ character_db={
 		father = nap_hugues_iv_baux
 		mother = nap_jeanne_dapchier
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_raymond_baux = {
@@ -18939,7 +18940,7 @@ character_db={
 		father = nap_hugues_iv_baux
 		mother = nap_jeanne_dapchier
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_bertrand_baux = {
@@ -18952,7 +18953,7 @@ character_db={
 		father = nap_hugues_iv_baux
 		mother = nap_jeanne_dapchier
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Countess Consort of Valentinois
@@ -19039,7 +19040,7 @@ character_db={
 		father = pro_bertrand_ii_baux
 		#mother = Bérengère d'Andria
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}	
 	
 	nap_marguerite_daulnay = {
@@ -19054,7 +19055,7 @@ character_db={
 		#father = Robert d'Aulnay
 		#mother = Unknown
 		spouse = nap_bertrand_iii_andria
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_francesco_i_del_balzo = {
@@ -19067,7 +19068,7 @@ character_db={
 		father = nap_bertrand_iii_andria
 		mother = nap_marguerite_daulnay
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}	
 
 	nap_bianca_del_balzo = {
@@ -19081,7 +19082,7 @@ character_db={
 		father = nap_bertrand_iii_andria
 		mother = nap_marguerite_daulnay
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}	
 
 	nap_isabella_del_balzo = {
@@ -19095,7 +19096,7 @@ character_db={
 		father = nap_bertrand_iii_andria
 		mother = nap_marguerite_daulnay
 		dynasty = baux_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Dauphine Consort of Viennois
@@ -20351,7 +20352,7 @@ character_db={
 		father = koj_gautier_iv_brienne
 		mother = cyp_marie_lusignan
 		dynasty = de_brienne_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	ath_gautier_v_brienne = {	
@@ -26611,7 +26612,7 @@ character_db={
 		mother = per_brunissende_foix
 		#spouse = alb_john_gravina
 		dynasty = perigord_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# HOUSE OF PIERREPONT (Counts of Roucy)
@@ -26940,7 +26941,7 @@ character_db={
 		#mother = Sybille de Beaujeu
 		spouse = nap_bertrand_iii_baux
 		dynasty = poitiers_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Father of the Count of Valentinois & Previous Count
@@ -29552,7 +29553,7 @@ character_db={
 		birth_date = 1285.1.1
 		death_date = 1323.9.27
 		birth = avignon
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_giovanni_boccaccio = {
@@ -29564,7 +29565,7 @@ character_db={
 		adm = 80 dip = 75 mil = 26
 		birth_date = 1313.6.16
 		birth = florence
-		tag = NAP
+		tag = BNV #NAP
 		artist = writer
 		artist_skill = 0.85
 		artist_trait = prominent
@@ -29580,7 +29581,7 @@ character_db={
 		estate = clergy_estate
 		birth_date = 1336.1.1
 		birth = aquila
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	pap_urbano_vi = {
@@ -29592,7 +29593,7 @@ character_db={
 		adm = 39 dip = 39 mil = 13
 		birth_date = 1318.1.1
 		birth = naples
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# HOUSE ACCIAIOLI (Accioli Bank & Future Dukes of Athens)
@@ -29683,7 +29684,7 @@ character_db={
 		father = flo_niccolo_acciaioli_vecchio
 		#mother = A Mistress
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = midas_touched
 		timed_modifier = {
 			modifier = "bastard"
@@ -29703,7 +29704,7 @@ character_db={
 		birth_date = 1290.1.1 # Unknown
 		birth = florence
 		spouse = acc_acciaiolo_acciaioli
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_niccolo_acciaioli = {
@@ -29717,7 +29718,7 @@ character_db={
 		father = acc_acciaiolo_acciaioli
 		mother = flo_gugliemina_pazzi
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_margherita_degli_spini = {
@@ -29730,7 +29731,7 @@ character_db={
 		birth_date = 1312.1.1 # Unknown
 		birth = naples
 		spouse = nap_niccolo_acciaioli
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_lorenzino_acciaioli = {
@@ -29744,7 +29745,7 @@ character_db={
 		father = nap_niccolo_acciaioli
 		mother = nap_margherita_degli_spini
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		child_trait = child_rowdy
 	}
 	
@@ -29758,7 +29759,7 @@ character_db={
 		father = nap_niccolo_acciaioli
 		mother = nap_margherita_degli_spini
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_bernardo_acciaioli = {
@@ -29771,7 +29772,7 @@ character_db={
 		father = nap_niccolo_acciaioli
 		mother = nap_margherita_degli_spini
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	flo_tommaso_acciaioli = {
@@ -29872,7 +29873,7 @@ character_db={
 		father = flo_monte_acciaioli
 		#mother = Unknown
 		dynasty = acciaioli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	flo_martinaccio_acciaioli = {
@@ -32996,7 +32997,7 @@ character_db={
 		#father = Unknown
 		#mother = Unknown
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Nursemaid of Joanna I, future regent of Naples after Robert's death
@@ -33012,7 +33013,7 @@ character_db={
 		#father = A Fisherman
 		#mother = Unknown
 		spouse = nap_raimondo_cabanni
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_carlo_cabanni = {
@@ -33026,7 +33027,7 @@ character_db={
 		father = nap_raimondo_cabanni
 		mother = nap_filippa_catanese
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_margherita_ceccano = {
@@ -33039,7 +33040,7 @@ character_db={
 		birth_date = 1310.1.1 # First child in 1328
 		birth = naples
 		spouse = nap_carlo_cabanni
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_raimondello_cabanni = {
@@ -33052,7 +33053,7 @@ character_db={
 		father = nap_carlo_cabanni
 		mother = nap_margherita_ceccano
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_antonello_cabanni = {
@@ -33065,7 +33066,7 @@ character_db={
 		father = nap_carlo_cabanni
 		mother = nap_margherita_ceccano
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_sancia_cabanni = {
@@ -33079,7 +33080,7 @@ character_db={
 		father = nap_carlo_cabanni
 		mother = nap_margherita_ceccano
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_giovannella_cabanni = {
@@ -33093,7 +33094,7 @@ character_db={
 		father = nap_carlo_cabanni
 		mother = nap_margherita_ceccano
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_roberto_cabanni = {
@@ -33106,7 +33107,7 @@ character_db={
 		father = nap_raimondo_cabanni
 		mother = nap_filippa_catanese
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_sichelgaita_filomarino = {
@@ -33119,7 +33120,7 @@ character_db={
 		birth_date = 1315.1.1 # Unknown
 		birth = naples
 		spouse = nap_roberto_cabanni
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	nap_caterina_cabanni = {
@@ -33133,7 +33134,7 @@ character_db={
 		father = nap_roberto_cabanni
 		mother = nap_sichelgaita_filomarino
 		dynasty = cabanni_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# HOUSE CAETANI
@@ -34623,7 +34624,7 @@ character_db={
 		birth = fabriano
 		father = fab_tommaso_i_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = bold_fighter
 	}
 
@@ -34638,7 +34639,7 @@ character_db={
 		birth = fabriano
 		father = fab_alberghetto_ii_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		child_trait = child_rowdy
 	}
 
@@ -34651,7 +34652,7 @@ character_db={
 		birth = naples
 		father = fab_alberghetto_ii_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	fab_francesco_chiavelli = {	
@@ -34664,7 +34665,7 @@ character_db={
 		birth = naples
 		father = fab_alberghetto_ii_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		child_trait = child_gregarious
 	}
 
@@ -34678,7 +34679,7 @@ character_db={
 		birth = fabriano
 		father = fab_tommaso_i_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	fab_crescenzio_chiavelli_ii = {	
@@ -34691,7 +34692,7 @@ character_db={
 		birth = fabriano
 		father = fab_tommaso_i_chiavelli
 		dynasty = chiavelli_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	fab_casaleta_chiavelli = {	
@@ -42656,7 +42657,7 @@ character_db={
 		father = pap_bertoldo_orsini
 		#mother = Filippa
 		dynasty = orsini_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Father of the Count of Pitigliano
@@ -42779,7 +42780,7 @@ character_db={
 		father = ptg_romano_orsini
 		#mother = Margherita Aldobrandeschi
 		dynasty = orsini_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_sveva_balzo = {	
@@ -42795,7 +42796,7 @@ character_db={
 		#father = Ugo IV del Balzo
 		#mother = Jacopa della Marra
 		spouse = nap_roberto_orsini
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_nicola_orsini = {	
@@ -42807,7 +42808,7 @@ character_db={
 		father = nap_roberto_orsini
 		mother = nap_sveva_balzo
 		dynasty = orsini_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_giocomo_orsini_ii = {	
@@ -42819,7 +42820,7 @@ character_db={
 		father = nap_roberto_orsini
 		mother = nap_sveva_balzo
 		dynasty = orsini_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	nap_anastasia_orsini = {	
@@ -42832,7 +42833,7 @@ character_db={
 		father = nap_roberto_orsini
 		mother = nap_sveva_balzo
 		dynasty = orsini_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Brother of the Count of Pitigliano
@@ -47465,7 +47466,7 @@ character_db={
 		mother = hun_elizabeth_cuman
 		spouse = nap_carlo_ii_anjou
 		dynasty = arpad_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	#Predecessor of Ruler
@@ -48163,6 +48164,9 @@ character_db={
 		culture = moroccan
 		religion = sunni
 		estate = clergy_estate
+		artist = writer
+		artist_skill = 0.9
+		artist_trait = prominent
 		adm = 89
 		dip = 100
 		mil = 82
@@ -48504,7 +48508,7 @@ character_db={
 
 	lon_pedro_cantabria = {
 		first_name = { name = name_peter }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 680.1.1
@@ -48517,7 +48521,7 @@ character_db={
 	lon_alfonso_i_asturias = { #https://en.wikipedia.org/wiki/Alfonso_I_of_Asturias
 		first_name = { name = name_alphonse }
 		nickname = { name = nick_the_catholic }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 26 dip = 26 mil = 45
@@ -48532,7 +48536,7 @@ character_db={
 	
 	lon_mauregato_asturias = { # A Bastard #https://en.wikipedia.org/wiki/Mauregatus
 		first_name = { name = name_mauregatus }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 39 dip = 39 mil = 55
@@ -48554,7 +48558,7 @@ character_db={
 	
 	lon_fruela_cantabria = {
 		first_name = { name = name_froila }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 708.1.1
@@ -48567,7 +48571,7 @@ character_db={
 	
 	lon_aurelio_asturias = { #https://en.wikipedia.org/wiki/Aurelius_of_Asturias
 		first_name = { name = name_aurelius }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 740.1.1
@@ -48581,7 +48585,7 @@ character_db={
 	lon_bermudo_i_asturias = { #https://en.wikipedia.org/wiki/Bermudo_I_of_Asturias
 		first_name = { name = name_bermund }
 		nickname = { name = nick_the_deacon }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 750.1.1
@@ -48889,7 +48893,7 @@ character_db={
 	cat_guifre_i_barcelona = {
 		first_name = { name = name_wilfred }
 		nickname = { name = nick_the_hairy }
-		culture = catalan
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 80 dip = 55 mil = 45
@@ -49500,7 +49504,7 @@ character_db={
 		mother = sic_costanza_ii_sicilia
 		spouse = nap_robert_i_anjou
 		dynasty = barcelona_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 
 	# Line of the Kings of Sicily, Dukes of Athens & Neopatras & Counts of Salona
@@ -49973,7 +49977,7 @@ character_db={
 		mother = mll_esclarmonda_foix
 		spouse = nap_robert_i_anjou
 		dynasty = barcelona_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = pious
 	}
 
@@ -49989,7 +49993,7 @@ character_db={
 		father = mll_jacme_ii_mallorca
 		mother = mll_esclarmonda_foix
 		dynasty = barcelona_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = righteous
 	}
 
@@ -50057,7 +50061,7 @@ character_db={
 		#mother = Beatrix of Savoy
 		spouse = nap_charles_i_anjou
 		dynasty = barcelona_dynasty
-		tag = NAP
+		tag = BNV #NAP
 		ruler_trait = calm
 	}
 
@@ -50204,7 +50208,7 @@ character_db={
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 1240.1.1 # estimated
-		death_date = 1278.1.1 # estimated
+		death_date = 1285.1.1 # estimated; must postdate son cas_pedro_nunez_guzman_ii birth 1280.1.1
 		birth = sevilla
 		dynasty = guzman_dynasty
 		tag = CAS
@@ -51455,7 +51459,7 @@ character_db={
 	
 	lon_pelagio_asturias = {#https://en.wikipedia.org/wiki/Pelagius_of_Asturias
 		first_name = { name = name_pelagius }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 39 dip = 39 mil = 70
@@ -51470,7 +51474,7 @@ character_db={
 	
 	lon_favila_asturias = {#https://en.wikipedia.org/wiki/Favila_of_Asturias
 		first_name = { name = name_favila }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 719.1.1 # Unknown
@@ -51484,7 +51488,7 @@ character_db={
 	
 	lon_ermesinda_asturias = {
 		first_name = { name = name_ermesinde }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		female = yes
@@ -51501,7 +51505,7 @@ character_db={
 	lon_fruela_i_asturias = {#https://en.wikipedia.org/wiki/Fruela_I_of_Asturias
 		first_name = { name = name_froila }
 		nickname = { name = Cruel }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 55 dip = 45 mil = 39
@@ -51535,7 +51539,7 @@ character_db={
 	
 	lon_adosinda_asturias = {
 		first_name = { name = name_adosinda }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		female = yes
@@ -51551,7 +51555,7 @@ character_db={
 	
 	lon_silo_asturias = { #https://en.wikipedia.org/wiki/Silo_of_Asturias
 		first_name = { name = name_silo }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 720.1.1 # Unknown
@@ -74957,6 +74961,7 @@ character_db={
 		birth_date = 1258.1.1
 		culture = turkish_culture
 		religion = sunni
+		adm = 52 dip = 58 mil = 43
 		tag = GRM
 	}
 	
@@ -75092,7 +75097,7 @@ character_db={
 	#Haciemirids - HCI #BR removed
 	
 	#Ayyubids - HSN
-	
+
 	#Ruler
 	hsn_adil_shahabeddin = {
 		first_name = { name = Adil_Shahab }
@@ -79377,7 +79382,7 @@ character_db={
 	}
 
 	ans_agnes_von_wurttemberg_helfenstein = { #Second Spouse of Ruler
-		first_name = { name = name_conrad }
+		first_name = { name = name_agnes }
 		culture = east_franconian
 		religion = catholic
 		female = yes
@@ -79421,7 +79426,7 @@ character_db={
 		culture = swabian
 		religion = catholic
 		birth_date = 1300.1.1
-		birth = leuchtenberg 
+		birth = tubingen 
 		death_date = 1327.1.1
 		dynasty = tubingen_dynasty
 		tag = TUB
@@ -79432,7 +79437,7 @@ character_db={
 		culture = swabian
 		religion = catholic
 		birth_date = 1317.1.1
-		birth = leuchtenberg 
+		birth = tubingen 
 		father = tub_wilhelm_ii_tubingen
 		dynasty = tubingen_dynasty
 		tag = TUB
@@ -79445,7 +79450,7 @@ character_db={
 		religion = catholic
 		estate = clergy_estate
 		birth_date = 1280.1.1
-		birth = leuchtenberg 
+		birth = cheb 
 		tag = WLD
 	}	
 
@@ -80289,7 +80294,7 @@ character_db={
 		culture = arpitan
 		religion = catholic
 		estate = clergy_estate
-		adm = 12 dip = 18 mil = 4
+		adm = 12 dip = 20 mil = 4
 		birth_date = 1330.1.1
 		birth = vesoul
 		father = bas_othon_ii_grandson
@@ -83131,7 +83136,7 @@ character_db={
 		father = hab_albrecht_i_habsburg
 		mother = bav_elisabeth_gorz_und_tirol
 		dynasty = habsburg_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# Brother of the Duke of Austria & Styria & the Duke of Carinthia & Former Duke of Austria & Styria 
@@ -83348,7 +83353,7 @@ character_db={
 		mother = hab_gertrud_hohenberg
 		spouse = cro_martell_karoly
 		dynasty = habsburg_dynasty
-		tag = NAP
+		tag = BNV #NAP
 	}
 	
 	# Uncle of the Duke of Austria & Styria & Duke of Carinthia & Former Duke of Austria & Styria
@@ -84445,8 +84450,10 @@ character_db={
 		religion = catholic
 		female = yes
 		birth_date = 1300.1.1
-		birth = hohenberg
+		birth = wiesbaden
 		spouse = hhb_rudolf_ii_hohenberg_rotenburg
+		father = nsh_emich_i_nassau
+		mother = nsa_anna_nassau
 		tag = HHB
 	}
 
@@ -88173,17 +88180,6 @@ character_db={
 		tag = HSF
 	}
 
-	#Speyer
-	sye_gerhard_von_ehrenberg = { #Ruler
-		first_name = { name = name_gerard }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1300.1.1
-		birth = lippstadt
-		dynasty = ehrenberg_dynasty
-		tag = SYE
-	}
-
 	#Cologne
 	kol_walram_von_julich = { #Ruler
 		first_name = { name = Walram }
@@ -91510,6 +91506,7 @@ character_db={
 		last_name = { name = Mikhailovich }
 		culture = muscovite
 		religion = orthodox
+		adm = 38 dip = 52 mil = 32
 		birth_date = 1306.1.1
 		birth = tver
 		father = tve_mikhail_yaroslavich_rurikovich
@@ -91798,7 +91795,7 @@ character_db={
 		last_name = { name = Svyatoslavich }
 		culture = muscovite
 		religion = orthodox
-		adm = 55 dip = 75 mil = 50
+		adm = 55 dip = 85 mil = 50
 		birth_date = 1300.1.1
 		birth = bryansk
 		dynasty = rurikovich_dynasty
