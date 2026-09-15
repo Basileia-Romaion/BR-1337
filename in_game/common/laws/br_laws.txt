@@ -286,8 +286,8 @@ INJECT:colonial_policy = {
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 		country_modifier = {
-			colonial_maintenance_efficiency = 0.25
-			colonial_migration_size_modifier = 0.25
+			colonial_maintenance_efficiency = 0.33
+			colonial_migration_size_modifier = 0.33
 			monthly_towards_aristocracy = societal_value_minor_monthly_move
 		}
 		estate_preferences = {
