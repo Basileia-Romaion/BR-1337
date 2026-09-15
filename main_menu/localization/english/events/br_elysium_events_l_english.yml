@@ -46,13 +46,13 @@
  br_elysian_DHE.5.b.tt: "All [pops|e] in the province of [unrest_location.GetProvince.GetName] gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] but the locations also lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
  br_elysian_DHE.5.entry: "$br_elysian_DHE.5.title$"
 
- br_elysian_DHE.6.title: "[unrest_location.GetNameWithNoTooltip] Post Road"
+ br_elysian_DHE.6.title: "The Post Road"
  br_elysian_DHE.6.desc: "The countryside of [ROOT.GetCountry.GetName] remains poorly connected to our towns and cities, and petitions for better roads have reached the administration with increasing frequency. A proper road network would bring our settlements closer together, hasten the movement of merchants and messengers, and allow our soldiers to answer more swiftly when danger threatens the frontier. Such works may prove costly, but the strength of a realm is measured also by the roads that bind it together."
  br_elysian_DHE.6.a: "Let the administration build it."
  br_elysian_DHE.6.b: "The cost is not justified."
  br_elysian_DHE.6.entry: "$br_elysian_DHE.6.title$"
 
- br_elysian_DHE.7.title: "The Great Fire of [target_location.GetNameWithNoTooltip]"
+ br_elysian_DHE.7.title: "The Great Fire"
  br_elysian_DHE.7.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has been consumed by a great fire!\n\nAs the flames still devour homes and workshops, representatives of [target_location.GetNameWithNoTooltip] have already begun organizing relief and plans for the rebuilding of the [target_location.GetRank.GetNameWithNoTooltip]. The undertaking will place a heavy burden upon the treasury, yet the rebuilding of so valuable a settlement may prove a worthy investment in the future of the frontier."
  br_elysian_DHE.7.a.tt: "[target_location.GetName] will lose [prosperity|e], lose [pops|e] and some [buildings|e] will be affected by the fire"
  br_elysian_DHE.7.a: "Rebuild it greater than before!"
@@ -60,7 +60,7 @@
  br_elysian_DHE.7.b: "Repair only what is necessary."
  br_elysian_DHE.7.entry: "$br_elysian_DHE.7.title$"
 
- br_elysian_DHE.8.title: "The Expedition of [target_character.GetNameWithNoTooltip] and [target_character_2.GetNameWithNoTooltip]"
+ br_elysian_DHE.8.title: "The Expedition"
  br_elysian_DHE.8.desc: "[target_character.GetName] and his close companion [target_character_2.GetName] have proposed an expedition across the western reaches of [ShowSubContinent('north_america')]. Their purpose is to discover the most direct and practicable waterways across the continent, opening new routes for commerce and communication. With a small company of volunteers, the two intend to cross the wilderness and chart the Missouri River, seeking any river passage that might carry Elysian merchants and vessels across the continent."
  br_elysian_DHE.8.a: "The Republic shall fund their expedition."
  br_elysian_DHE.8.b: "They require further preparation."

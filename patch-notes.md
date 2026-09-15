@@ -2,7 +2,37 @@
 
 # Patch Notes
 
-# 24.1
+# 0.25
+
+## Pentarchy
+- All historical Patriarchs of 1337 set active at game start. This fixes a PDX bug or oversight that would only active the Patriarchs if the BYZ tag owned the location. 
+
+## Map Change
+- Unique Azoreas Norse tags added.
+
+## buildings
+- Arts and Sciences Academy of Elysium
+- Philosophical Society of Elysium
+- Bank of Elysium
+- Mint of Elysium"
+
+## bureaucracies
+- The Lost Legions
+- Apikion
+- Elysian Apikía
+- Vinlandsráðuneyti
+
+## events
+- 8 more Elysian DHEs
+
+## laws
+- Starting Colonial/Native laws for Elysians $ Vinlanders
+- New unique Elysian colonial law
+
+## GFX
+- New roman inspired icons for the Elysian bureaucracies
+
+# 0.24.1
 
 - Fix: Elysian privilege wanting the opposite value than I intended.
 - Fix: Add some missing localization to a couple ere privileges
