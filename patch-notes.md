@@ -14,7 +14,8 @@
 - Arts and Sciences Academy of Elysium
 - Philosophical Society of Elysium
 - Bank of Elysium
-- Mint of Elysium"
+- Mint of Elysium
+- Trade Outpost: New building type for the new Norse tags and Vinland can be built in unowned land.
 
 ## bureaucracies
 - The Lost Legions
@@ -70,6 +71,7 @@
     - E6Y: "Aithaia"
     - E7Y: "Apaleisia"
 - Put All the Elysian Cultures in the greek_group know know as Roman Group. It contains many events and other content the region could benefit from.
+
 
 
 ## Map changes

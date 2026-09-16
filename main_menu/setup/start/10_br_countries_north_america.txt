@@ -425,7 +425,7 @@ countries = {
 			
 			include = "expl_vinland"
 		}
-		
+
 		NRH = {
 			own_control_core = {
 				navchak
@@ -557,16 +557,25 @@ countries = {
 		#Onondaga/Onondagega
 		#Cayuga/Gayogohono
 		#Seneca/Onondowaga
+		
 		IRO = {
 			own_control_core = {
+				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
+				ahna_wate
+
 				canadaigua geneseo tsonentsiio irondequoit #ONN
 				skaniatares assorodus gahato #GYO
 				tsikahiotsisto otsiningo oswego #ONO
 				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
-
 				canajoharie saratoga schenectady teionontatatie oneonta #KKA
-				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
-				ahna_wate
+
+				
+
+				tiotoren cattaraugus kanentaweron #WRO
+				erie shenango kittaning tionesta #ERI
+				mahoning_oh ashtabula cuyahoga saucunk #KEN
+				niagara kenhionatatie macassa thahnawate ahouenro #ONG
+				nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio #ADR
 			}
 			
 			capital = irondequoit #canadaigua
@@ -585,6 +594,13 @@ countries = {
 				onondagega_culture
 				onyotaaka_culture
 				kanienkehaka_culture
+				wenrohronon_culture
+				kentaientonga_culture
+				erielhonan_culture
+				honniasont_culture
+				onojutta_culture
+				carantouan_culture
+				atrakwaye_culture
 			}
 			country_rank = rank_kingdom
 			include = "expl_new_england"
