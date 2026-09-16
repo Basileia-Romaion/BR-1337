@@ -207,3 +207,76 @@
 
 
 
+ br_ere_disaster_events.1.title: "The Curse of [GetCountry('BYZ').GetNameWithNoTooltip]"
+ br_ere_disaster_events.1.desc: "Dire days have befallen the realm! The curse of [GetCharacter('target_character').GetName] has taken hold of our Empire. Within the halls of the Palace, courtiers and counsellors whisper that an age is drawing to its end, and that the fortunes of the Roman realm are descending into a dark and perilous hour..."
+ br_ere_disaster_events.1.a: "This cannot be the end, not thus..."
+
+ br_ere_disaster_events.2.title: "A New Era for [GetCountry('BYZ').GetNameWithNoTooltip]"
+ br_ere_disaster_events.2.desc: "Once more the heavens above our great realm shine with the light of hope and a new dawn. Though we have endured grievous troubles and the dark counsel of superstition, the Empire has weathered the storm. Our people have prevailed, and the Roman realm rises once more, strengthened by the trials it has endured!"
+ br_ere_disaster_events.2.a: "United and strengthened, we march onward."
+
+ br_ere_disaster_events.3.title: "Demands for Autonomy"
+ br_ere_disaster_events.3.desc: "The weakening of the imperial administration has emboldened many voices to challenge the authority of the throne. The latest petitions for representation and local autonomy have arisen from [target_province.GetName]. Word has spread that imperial authority has waned, and they now come before us bearing arms, making outrageous demands, and speaking of some foreign notion they call freedom."
+ br_ere_disaster_events.3.a: "Let them have their desire."
+ br_ere_disaster_events.3.b: "Let them learn the Roman remedy of the whip!"
+
+ br_ere_disaster_events.4.title: "Neighbors as Vultures"
+ br_ere_disaster_events.4.desc: "The scheming courtiers of [target_country.GetName] have lost no time in plotting to descend upon our lands at the first scent of imperial weakness. Like vultures circling a wounded lion, they prepare to carve away the dominions of Rome. Such insolence cannot go unanswered; we must remind them why the [GetCountry('BYZ').GetLongName] remains a power to be feared."
+ br_ere_disaster_events.4.a: "Let them dare!"
+
+ br_ere_disaster_events.5.title: "Peasant Uprising"
+ br_ere_disaster_events.5.desc: "The waning authority of the throne in these troubled days has emboldened the peasantry throughout the realm to demand relief from the burdens of the countryside at the expense of the imperial court. The peasant leaders of [target_location.GetName] have pressed their demands beneath the threat of widespread ruin and disorder!"
+ br_ere_disaster_events.5.a: "We do not bargain with peasants!"
+ br_ere_disaster_events.5.b: "Surely some accord may yet be reached?"
+
+ br_ere_disaster_events.6.title: "Province Declares Independence!"
+ br_ere_disaster_events.6.desc: "The grasping shadows of [target_location.GetName] have dared to bare their claws against the authority of the throne. In a grotesque imitation of imperial dignity, they have proclaimed themselves separate from the crown and have even raised their eyes toward the throne of Rome!"
+ br_ere_disaster_events.6.a: "Their remains shall fertilize the fields of the Empire!"
+ br_ere_disaster_events.6.b: "Leave them to their folly..."
+
+ br_people_of_target_province_will_declare_war_on_us_tt: "The people of [target_province.GetNameWithNoTooltip] will declare [war|e] upon us!"
+ 
+ br_ere_disaster_events.7.title: "Local Dynatoi Defy the Throne"
+ br_ere_disaster_events.7.desc: "The regional dynatoi of [target_location.GetName] have begun to conduct themselves as though they were sovereign, disregarding imperial decrees and ruling their lands without heed to the authority of the throne. Emboldened by the weakness of the central administration, others may soon follow their example. Unless we act decisively, the Empire may be rent asunder by ever greater fragmentation."
+ br_ere_disaster_events.7.a: "We have greater matters to attend to."
+ br_ere_disaster_events.7.b: "Reassert the authority of the throne over [target_location.GetNameWithNoTooltip]."
+
+ br_ere_disaster_events.8.title: "Courtier Accused of Treason"
+ br_ere_disaster_events.8.desc: "One of our most trusted counsellors, [target_character.GetName], has fallen under grave suspicion. [target_character.GetSheHe|U] is accused of accepting foreign coin in exchange for secrets concerning our $rank_empire_byzantine$. Though no certain proof has yet been uncovered, the accusation alone has stirred unease within the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. To disregard the matter may leave a traitor free to strike from within our own ranks; yet haste may see a faithful servant condemned unjustly."
+ br_ere_disaster_events.8.a: "Cast [target_character.GetHerHim] from the Palace at once!"
+ br_ere_disaster_events.8.b: "It is surely but a whisper of slander..."
+
+ br_ere_disaster_events.9.title: "Mutineers in the Army"
+ br_ere_disaster_events.9.desc: "The spirit of our armies falters as unpaid soldiers murmur and officers struggle to preserve order. With their pay delayed and the chain of command weakened by each passing day, those who once stood as a pillar of Roman strength may instead become a sword turned against the Empire."
+ br_ere_disaster_events.9.a: "Pay the soldiers their due."
+ br_ere_disaster_events.9.b: "The treasury cannot bear the burden."
+ br_ere_disaster_events.9.c: "Crush this mutiny before it spreads!"
+
+ br_ere_disaster_events.10.title: "A Rebellious Subject"
+ br_ere_disaster_events.10.desc: "Rumors have reached the capital that the dynatoi of [subject_target.GetName] grow ever more defiant. It is said that they conspire in secret, testing the limits of their allegiance to the throne. Though no open rebellion has yet been proclaimed, our trusted informants report that their [subject_target.GetGovernment.GetCourtTitle] resounds with whispers of independence."
+ br_ere_disaster_events.10.a: "Appease them with concessions."
+ br_ere_disaster_events.10.b: "For now, our hands are bound."
+
+ br_ere_disaster_events.11.title: "Unpaid Garrison"
+ br_ere_disaster_events.11.desc: "The soldiers stationed at our garrison in [target_location.GetName] grow mutinous, accusing the local governors of neglecting the defenses and withholding their rightful pay. These men, entrusted with the defense of a fortress guarding the whole of [target_area.GetName], see little reason to remain faithful to a crown that cannot provide for those who bear its arms."
+ br_ere_disaster_events.11.a: "Pay their wages without delay!"
+ br_ere_disaster_events.11.b: "Compel the local dynatoi to pay them."
+ br_ere_disaster_events.11.c: "The treasury can spare no nomisma."
+
+ br_ere_disaster_events.12.title: "Feuding Estates"
+ br_ere_disaster_events.12.desc: "The weakening of imperial authority in recent years has emboldened the estates of the $rank_empire_byzantine$, each contending for greater influence over the diminished [GetEstateName('crown_estate')]. Long-simmering rivalries have now erupted into open hostility, and maintaining our neutrality grows ever more difficult. If we risk turning both factions against the throne, we may yet secure the loyalty of one by sacrificing what remains of unity within the realm."
+ br_ere_disaster_events.12.a: "We shall stand with the [first_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.b: "We shall defend the interests of the [second_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.c: "Let the throne take no side in this quarrel."
+
+ #bul_restore_the_realms_unity: "Restore the Unity of the Realm"
+ #bul_restore_the_realms_unity_desc: "Lands that were once an integral part of the [GetCountry('BYZ').GetFlavorRank] have slipped from the grasp of the throne and no longer acknowledge its authority. If the Empire is to endure this twilight, these wayward lands must be restored to the Roman fold. By force, if need be..."
+ #bul_reassert_our_authority: "Reassert the Authority of the Throne"
+ #bul_reassert_our_authority_desc: "The internal weakness of [GetCountry('BYZ').GetName] has emboldened the dynatoi throughout the [GetCountry('BYZ').GetFlavorRank], who now defy imperial decrees and rule their domains as though they answered to no sovereign. We must halt the fragmentation of the realm, restore the authority of the throne, and compel these lords to bend the knee once more."
+ #bul_push_for_diplomatic_reintegration: "Pursue Diplomatic Reintegration"
+ #bul_push_for_diplomatic_reintegration_desc: "To avert the fires of civil war, we have entrusted portions of our lands to lords who govern them in the name of Rome. Though such an arrangement may preserve the peace for a season, it is our imperial duty to pursue the diplomatic reunification of the $rank_empire_byzantine$. For a realm divided cannot long endure the trials that await it."
+
+ br_ere_disaster_events.13.title: "Surrounded by Vultures"
+ br_ere_disaster_events.13.desc: "While the Empire remains consumed by strife within, our opportunistic neighbors circle like vultures around a dying beast. Sensing weakness, they watch our every movement and await the hour in which they may descend upon what remains of our $rank_empire_byzantine$. Now word has reached the capital that [target_country.GetName] has laid claim to [border_claim_province.GetName], intending to seize it should fortune grant them the opportunity."
+ br_ere_disaster_events.13.a: "Let them test the strength of Rome!"
+ br_ere_disaster_events.13.b: "Buy their silence and make them revoke the claim."
