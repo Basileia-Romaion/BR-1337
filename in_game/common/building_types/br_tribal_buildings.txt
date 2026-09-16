@@ -246,10 +246,11 @@ br_tribal_capital = {
 }
 
 br_trade_outpost = {
+	icon = trade_office
 	audio_tier = 1
 	is_foreign = yes
 	stronger_power_projection = no
-	max_levels = 3
+	max_levels = 3 # trade_office_max_level
 	need_good_relation = yes
 	pop_type = burghers
 
@@ -274,15 +275,16 @@ br_trade_outpost = {
 	build_time = trade_post_build_time
 
 	unique_production_methods = {
-		trade_office_requirements = {
-			paper = 0.1
+		br_trade_outpost_requirements = {
+			lumber = 0.05
 			category = building_maintenance
 		}
 	}
 
 	modifier = {
 		merchant_capacity_from_building = 0.15
-		building_owner_maritime_presence = 0.02
 		merchant_power_from_building = 0.1
+		building_owner_maritime_presence = 0.02
+		local_market_access = 0.02
 	}
 }
