@@ -1664,5 +1664,59 @@ countries = {
 			}
 		}
 
+		#BR new world additions
+		E1Y ?= {
+			area_preferences = {
+				england_explore_usa
+				generic_conquer_home_region
+				
+			}
+		}
+		E2Y ?= {
+			area_preferences = {
+				england_explore_usa
+				generic_conquer_home_region
+				
+			}
+		}
+		K1K ?= {
+			area_preferences = {
+				england_explore_usa
+				
+			}
+		}
+		NRV ?= {
+			area_preferences = {
+				england_explore_usa
+				generic_conquer_home_region
+				
+			}
+		}
+		NRR ?= {
+			area_preferences = {
+				england_explore_usa
+				
+			}
+		}
+		NRH ?= {
+			area_preferences = {
+				england_explore_usa
+				
+			}
+		}
+		NRC ?= {
+			area_preferences = {
+				england_explore_usa
+				
+			}
+		}
+		INV ?= {
+			area_preferences = {
+				england_explore_usa
+				
+			}
+		}
+
+
 	}
 }

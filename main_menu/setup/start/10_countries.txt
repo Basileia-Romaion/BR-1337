@@ -935,6 +935,7 @@ countries = {
 
 		include = "catholic_monarchy_not_present"
 		include = "expl_northern_europe"
+		country_rank = rank_duchy
 
 		government = {
 		}
@@ -9860,6 +9861,8 @@ countries = {
 			heir_selection = bank_selection
 			reforms = { banking_country }
 			ruler = acc_acciaiolo_acciaioli
+			ruler_term = { character = acc_leone_acciaioli start_date = 1284.1.1 end_date = 1300.1.1 regnal_number = 0 }
+			ruler_term = { character = acc_acciaiolo_acciaioli start_date = 1333.11.1 regnal_number = 0 }
 
 			centralization_vs_decentralization = 20
 			aristocracy_vs_plutocracy = 70
@@ -42615,7 +42618,7 @@ countries = {
 		
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
-		include = "br_russian_principality"
+		include = "ruthenian_principality_no_coast"
 		government = {
 			ruler = kie_teodoras_ivanovich_rurikovich
 

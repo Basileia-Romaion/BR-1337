@@ -4,6 +4,13 @@
 
 # 0.25
 
+## Disasters
+- New late-game disaster for the ERE.
+  - Includes 13 new disaster events.
+- Edited the DLC Fate of the Phoenix disaster
+  - Replaced the Mercenary cost increase with Court Cost Increase.
+  - Added 11 new events to spice things up. Please provide feedback on the events.
+
 ## Pentarchy
 - All historical Patriarchs of 1337 set active at game start. This fixes a PDX bug or oversight that would only active the Patriarchs if the BYZ tag owned the location. 
 
@@ -71,7 +78,6 @@
     - E6Y: "Aithaia"
     - E7Y: "Apaleisia"
 - Put All the Elysian Cultures in the greek_group know know as Roman Group. It contains many events and other content the region could benefit from.
-
 
 
 ## Map changes
