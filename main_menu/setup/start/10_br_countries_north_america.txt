@@ -393,8 +393,8 @@ countries = {
 			tolerated_cultures = {
 				beothuk_culture
 			}
-			
 			include = "expl_vinland"
+			include = "expl_american_great_lakes"
 		}
 		
 		NRR = {
@@ -880,8 +880,8 @@ countries = {
 				type = theocracy
 				ruler = random
 			}
-			
 			include = "expl_eastern_seaboard"
+			include = "expl_american_great_lakes"
 		}
 
 		E7Y = { #apaleisia
@@ -898,8 +898,8 @@ countries = {
 				heir_selection = oligarchic_elective
 				ruler = random
 			}
-			
 			include = "expl_eastern_seaboard"
+			include = "expl_american_great_lakes"
 		}
 		
 		#Rappahannock
