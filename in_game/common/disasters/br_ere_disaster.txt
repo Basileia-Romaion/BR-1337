@@ -1,38 +1,49 @@
-﻿##Diaster created from various diasters but primarily used curse_of_stefan_uros_iii as the base with the goal of having regular mid-late game challenge for the ere.
+﻿##disaster created from various diasters but primarily used curse_of_stefan_uros_iii as the base with the goal of having regular mid-late game challenge for the ere.
 
 br_ere_disaster = {
 	image = "gfx/interface/illustrations/disaster/byzantine_succ_crisis.dds"
 	monthly_spawn_chance = monthly_spawn_chance_very_high
-	
-	fire_only_once = yes
+	#fire_only_once = yes
 
 	can_start = {
+		OR = {
+			tag = BYZ
+			tag = ELY
+			tag = IMP
+		}
+		NOT = { 
+			had_disaster_trigger = {
+				type = br_ere_disaster
+			}
+		}
+
 		has_any_active_disaster = no
-		tag = BYZ
 		current_age_or_later = { age = age_3_discovery }
-		country_rank = country_rank:rank_empire
+		num_locations > 250
+
 		ruler ?= { total_abilities <= 250 }
 		stability <= 30
 		government_power <= 75
+
 	}
-	
 
 	can_end = {
-		byzantine_succession_crisis_end_trigger = yes
+		br_ere_disaster_end_trigger = yes
 	}
 	modifier = {
 		monthly_pretender_rebel_growth = 0.01
 		monthly_nationalist_rebel_growth = 0.01
 		monthly_legitimacy = -0.25
+		stability_cost_efficiency = -0.25
 	}
-	
+
 	on_start = {
 		trigger_event_non_silently = br_ere_disaster_events.1
 	}
 	on_end = {
 		trigger_event_non_silently = br_ere_disaster_events.2
 	}
-	
+
 	on_monthly = {
 		random_list = {
 			20 = { custom_tooltip = an_event_occurs_tt }
@@ -40,7 +51,7 @@ br_ere_disaster = {
 		}
 		hidden_effect = {
 			random_list = {
-				100 = {}
+				80 = {}
 				4 = { trigger_event_silently = br_ere_disaster_events.3 }
 				4 = { trigger_event_silently = br_ere_disaster_events.4 }
 				4 = { trigger_event_silently = br_ere_disaster_events.5 }
