@@ -2,10 +2,10 @@
 
 # Patch Notes
 
-# 0.25
+# 0.25 Dawn of Elysium content. Part II
 
 ## Disasters
-- New late-game disaster for the ERE.
+- New late-game disaster for the ERE, also eligible for Elysium and IMPERIUM.
   - Includes 13 new disaster events.
 - Edited the DLC Fate of the Phoenix disaster
   - Replaced the Mercenary cost increase with Court Cost Increase.
@@ -24,7 +24,7 @@
 - Mint of Elysium
 - Trade Outpost: New building type for the new Norse tags and Vinland can be built in unowned land.
 
-## bureaucracies
+## Bureaucracies
 - The Lost Legions
 - Apikion
 - Elysian Apikía
