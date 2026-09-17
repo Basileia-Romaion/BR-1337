@@ -40,4 +40,21 @@ REPLACE_OR_CREATE:unit_byzantine_cataphracts_location_trigger = {
 #	}
 #}
 
+br_ere_disaster_end_trigger = {
+	OR = {
+		ruler ?= { total_abilities >= 250 }
 
+		AND = {
+			stability >= 45
+			government_power >= 75
+		}
+
+		NOT = { government_type = government_type:monarchy }
+		in_civil_war = yes
+
+		had_disaster_for_years = {
+			disaster_type = disaster_type:br_ere_disaster
+			years >= 25
+		}
+	}
+}
