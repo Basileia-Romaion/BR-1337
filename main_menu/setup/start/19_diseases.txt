@@ -452,7 +452,24 @@ disease_outbreak_manager = {
 			upper_guinea_area
 			yoruba_area
         }
-    }	
+        locations = {
+            ferrara
+            argenta
+            ficarolo
+            rovigo
+            mirandola
+            guastalla
+            lodi
+            mantova
+            ostiglia
+            voghera
+            salo_ita
+            pancevo
+            petrovaradin
+            sremska_mitrovica
+            sabac
+        }
+    }
 
     add_disease_resistance = {
         type = malaria
@@ -481,7 +498,24 @@ disease_outbreak_manager = {
             south_yemen_area
             north_yemen_area
         }
-    }	
+        locations = {
+            ferrara
+            argenta
+            ficarolo
+            rovigo
+            mirandola
+            guastalla
+            lodi
+            mantova
+            ostiglia
+            voghera
+            salo_ita
+            pancevo
+            petrovaradin
+            sremska_mitrovica
+            sabac
+        }
+    }
 
     add_disease_resistance = {
         type = malaria
@@ -503,5 +537,5 @@ disease_outbreak_manager = {
             morea_area
             aegean_sea_area
         }
-    }	
+    }
 }

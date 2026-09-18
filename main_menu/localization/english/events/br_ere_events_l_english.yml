@@ -18,6 +18,7 @@
  br_ere_events.1.desc: "Once the [GetCountry('BYZ').GetFlavorRank] stood unrivaled. From the mountains of Armenia to the shores of the Adriatic, all trembled before the majesty of the Roman Empire. Those days are now but a fading memory.\n\nThe Empire has fractured under the weight of corruption, ambition, and neglect. Across the provinces, the [ShowSubjectTypeName('br_thema_subject')] no longer heed the commands of [ShowLocationName('constantinople')]. [ShowSpecialStatusName('defiant_strategoi')] and [ShowEstatePrivilegeName('br_dynatoi_magnates')] rule their lands as petty lords, while the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ShowPolicyName('pronoia_system')] holders enrich themselves as imperial authority fades beyond the [ShowBuildingTypeName('theodosian_walls')].\n\nEven now, the Basileus grows weak and infirm. Physicians whisper that his days are numbered, and that the purple will soon pass to a child whose talents are... uncertain. When the Emperor dies, rival claimants and ambitious generals will surely descend upon the throne.\n\nYet the Roman Empire has endured darker trials than these. If the rebellious provinces can be brought again beneath the imperial eagle, if the authority of the throne is restored and the themes returned to obedience, then the Empire may yet rise again. The dream of a united [GetUniqueInternationalOrganization('roman_world').GetName] has not yet died."
  br_ere_events.1.a: "The Emperor still lives not all hope is lost."
  br_ere_events.1.att: "The Basileía stands on the brink. Only a handful of Strategoi remain loyal, while factions within the Empire prepare to rise in open revolt."
+ br_ere_events.1.entry: "$br_ere_events.1.title$"
 
  br_ere_events.3.title: "The Reordering of the Themes"
  br_ere_events.3.desc: "Now that the authority of [ShowLocationName('constantinople')] has been restored—if only in form—the ordering of the provinces must be set aright.\n\nThroughout the Empire, the themes lie divided among strategoi, pronoia holders, and grasping [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], each clinging to his privileges and jealous of imperial command. Such disorder weakens the Roman state, yet it has long served to deny any one man the power to rival the throne.\n\nIn the Sacred Palace, counsel is divided. Some urge that the provinces be brought once more into proper obedience, their holders reduced and bound directly to the will of the Basileus, that the ancient order of the Empire might be restored. Others speak for a sterner remedy: that the lands be gathered into great commands and entrusted to men of strength, capable of defending the realm in these perilous times—though such men may in time forget their place.\n\nThus must the Basileus decide: shall the Empire be governed by many who are weak, or a few who are strong?"
@@ -41,7 +42,7 @@
  ### The Ascendancy of the Dynatoi ###
  br_ere_events.7.title: "The Ascendancy of the Dynatoi"
  br_ere_events.7.entry: "$br_ere_events.7.title$"
- br_ere_events.7.desc: "The great aristocratic houses of the Empire have grown immensely powerful through grants of land, court influence, and military patronage. Many among the Dynatoi now regard themselves less as servants of the Basileus and more as hereditary magnates whose privileges are beyond challenge. Ministers warn that unless their ambitions are curbed, the authority of Constantinople may steadily erode."
+ br_ere_events.7.desc: "The great aristocratic houses of the Empire have grown immensely powerful through grants of land, court influence, and military patronage. Many among the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] now regard themselves less as servants of the Basileus and more as hereditary magnates whose privileges are beyond challenge. Ministers warn that unless their ambitions are curbed, the authority of Constantinople may steadily erode."
  br_ere_events.7.a: "The aristocracy remains the pillar of the Empire."
  br_ere_events.7.b: "Attempt to balance their influence carefully."
  br_ere_events.7.c: "Revoke their privileges and restore imperial authority."
@@ -195,6 +196,7 @@
  br_ere_events.2000.a: "The Basileus must reclaim his authority."
  br_ere_events.2000.b: "Let [ambitious_ruler.GetHerHim] temper ambition with prudence."
  br_ere_events.2000.c: "The Empire cannot risk such upheaval."
+ br_ere_events.2000.entry: "$br_ere_events.2000.title$"
 
  br_ere_events.2001.title: "The Wrath of the Varangians"
  br_ere_events.2001.desc: "The reforms of [ambitious_ruler.GetName] have not gone unanswered. In seeking to curb entrenched power and restore imperial authority, [ambitious_ruler.GetSheHe] has alarmed those who stand as guardians of the established order.\n\nThe Varangian Guard, long sworn to defend the Basileus yet deeply tied to the balance of power within the Empire, now seethe with anger. Rumors spread that [ambitious_ruler.GetSheHe] intends to diminish their influence—or worse, replace them entirely. Allies among the nobility and court have already begun to whisper of action.\n\nUnless decisive steps are taken, the fate of the Basileus may soon be decided not in council, but in blood."
@@ -204,4 +206,78 @@
 
 
 
+
+ br_ere_disaster_events.1.title: "The Crisis of the Imperial Order"
+ br_ere_disaster_events.1.desc: "For generations, [ROOT.GetCountry.GetFlavorRank] has endured because the order of the realm has endured. The throne commanded, the provinces obeyed, the armies guarded the frontiers, and the great houses of the Empire remained bound to the authority of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Now, that ancient order begins to falter. The weakness of the throne has emboldened those who would test its authority, while rival claimants and ambitious [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] cast their eyes upon the imperial dignity. From the provinces come petitions and defiance; from the armies, murmurs of discontent; and within the [ShowBuildingTypeName('br_great_palace_building')], factions gather around their own interests. The bonds that hold the [GetUniqueInternationalOrganization('roman_world').GetName] together are beginning to fray. Should the authority of [ShowLocationName('constantinople')] continue to wane, what was preserved by our forefathers may yet be divided by their descendants..."
+ br_ere_disaster_events.1.a: "[GetCountry('BYZ').GetName] shall endure."
+
+ br_ere_disaster_events.2.title: "A New Era for [GetCountry('BYZ').GetName]"
+ br_ere_disaster_events.2.desc: "At last, the clouds that have darkened the Roman realm begin to part, and the light of a new dawn shines once more upon the Empire. The troubles that beset the throne have passed, the factions of the realm have been reconciled, and the authority of the Basileus stands restored. The Empire has endured the trials laid before it, and the Roman people emerge from this dark hour chastened, yet stronger than before."
+ br_ere_disaster_events.2.a: "United once more, Rome endures."
+
+ br_ere_disaster_events.3.title: "Demands for Autonomy"
+ br_ere_disaster_events.3.desc: "As the authority of the imperial administration falters, voices long kept obedient to the throne have grown bold. The latest petitions for greater representation and local autonomy have come from [target_province.GetName]. Word has spread that the hand of [ShowLocationName('constantinople')] has weakened, and their petitioners have come not merely with parchment, but with arms in hand. They speak of rights, privileges, and the strange foreign notion of freedom, as though the ancient customs of the Empire were no longer sufficient."
+ br_ere_disaster_events.3.a: "Let them have what they demand."
+ br_ere_disaster_events.3.b: "Remind them of the Roman remedy."
+
+ br_ere_disaster_events.4.title: "Neighbors as Vultures"
+ br_ere_disaster_events.4.desc: "The courts of [target_country.GetName] have not failed to notice our troubles. Their envoys speak with honeyed tongues while their lords sharpen their swords, waiting for the moment when Roman weakness presents them with an opportunity. Like vultures circling a wounded lion, they look upon our lands and calculate what they might seize. We must remind them that the [GetCountry('BYZ').GetLongName] is not prey to be divided at the whim of foreign princes."
+ br_ere_disaster_events.4.a: "Let them dare."
+
+ br_ere_disaster_events.5.title: "Peasant Uprising"
+ br_ere_disaster_events.5.desc: "The weakening of imperial authority has emboldened the peasantry throughout the realm. Burdened by hardship and encouraged by the disorder around them, they now demand relief from their obligations and aid from the imperial treasury. The leaders of the peasantry in [target_location.GetName] have brought their demands before us, threatening unrest and devastation should the court refuse to heed them."
+ br_ere_disaster_events.5.a: "We shall not bargain with peasants."
+ br_ere_disaster_events.5.b: "Surely an accord can be reached."
+
+ br_ere_disaster_events.6.title: "Province Declares Independence!"
+ br_ere_disaster_events.6.desc: "The governors and notables of [target_location.GetName] have dared to cast aside the authority of the throne. In a brazen imitation of imperial dignity, they have proclaimed their lands separate from the crown and, more outrageously still, have raised their own claim to the Roman throne! What was once an imperial province now stands in open defiance of [ShowLocationName('constantinople')]."
+ br_ere_disaster_events.6.a: "Their bones shall feed the fields of Rome."
+ br_ere_disaster_events.6.b: "Leave them to their folly..."
+
+ br_people_of_target_province_will_declare_war_on_us_tt: "The people of [target_province.GetNameWithNoTooltip] will declare [war|e] upon us!"
+
+ br_ere_disaster_events.7.title: "The Dynatoi Defy the Throne"
+ br_ere_disaster_events.7.desc: "The regional [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] of [target_location.GetName] have begun to conduct themselves as though they were sovereign princes. Imperial decrees go unanswered, taxes are withheld, and local affairs are settled without regard for the authority of the throne. Emboldened by the weakness of the central administration, other great houses may soon follow their example. If the Basileus does not act, the bonds of imperial authority may soon be too weak to restrain them."
+ br_ere_disaster_events.7.a: "There are greater matters before us."
+ br_ere_disaster_events.7.b: "Restore the authority of the throne in [target_location.GetNameWithNoTooltip]."
+
+ br_ere_disaster_events.8.title: "A Courtier Accused of Treason"
+ br_ere_disaster_events.8.desc: "One of our trusted counsellors, [target_character.GetName], has fallen under grave suspicion. [target_character.GetSheHe|U] is accused of accepting foreign coin in exchange for secrets concerning our $rank_empire_byzantine$. No certain proof has yet been uncovered, but in these troubled days even a whisper of treachery can set the Palace against itself. The accusation has already stirred unease within the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. To ignore the matter may leave a traitor free to strike from within; yet to act without proof may see a loyal servant sacrificed to suspicion."
+ br_ere_disaster_events.8.a: "Cast [target_character.GetHerHim] from the Palace!"
+ br_ere_disaster_events.8.b: "It is surely nothing more than a courtly rumor..."
+
+ br_ere_disaster_events.9.title: "Mutineers in the Tagma"
+ br_ere_disaster_events.9.desc: "The discipline of our armies begins to falter. Soldiers whose pay has been withheld murmur against their commanders, while officers struggle to preserve order among increasingly restless ranks. Each day that passes without payment weakens the chain of command. The men who should form the shield of the Roman realm may soon turn their swords against those whom they were sworn to defend."
+ br_ere_disaster_events.9.a: "Pay the soldiers their due."
+ br_ere_disaster_events.9.b: "The treasury cannot bear the expense."
+ br_ere_disaster_events.9.c: "Crush the mutiny before it spreads!"
+
+ br_ere_disaster_events.10.title: "A Rebellious Subject"
+ br_ere_disaster_events.10.desc: "Rumors have reached [ShowLocationName('constantinople')] that the elites of [subject_target.GetName] have grown increasingly defiant. It is said that they conspire in secret, testing the limits of their allegiance while measuring the weakness of the imperial court. No open rebellion has yet been proclaimed, but our informants report that the [subject_target.GetGovernment.GetCourtTitle] is filled with whispers of independence. A subject who no longer fears the authority of the throne is already halfway to becoming its enemy."
+ br_ere_disaster_events.10.a: "Appease them with concessions."
+ br_ere_disaster_events.10.b: "For now, there is little we can do."
+
+ br_ere_disaster_events.11.title: "An Unpaid Garrison"
+ br_ere_disaster_events.11.desc: "The soldiers stationed at our garrison in [target_location.GetName] have grown mutinous. They accuse the local governors of neglecting the defenses and withholding their rightful pay. These men were entrusted with a fortress guarding the whole of [target_area.GetName], yet they now see little reason to bleed for a throne that cannot provide for those who bear its arms."
+ br_ere_disaster_events.11.a: "Pay their wages without delay!"
+ br_ere_disaster_events.11.b: "Compel the local [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] to pay them."
+ br_ere_disaster_events.11.c: "The treasury can spare no nomisma."
+
+ br_ere_disaster_events.12.title: "Feuding Estates"
+ br_ere_disaster_events.12.desc: "The weakening of imperial authority has emboldened the estates of the $rank_empire_byzantine$. Each now seeks greater influence over the diminished [GetEstateName('crown_estate')], while long-standing rivalries have hardened into open hostility. The Palace finds it increasingly difficult to remain above their quarrels. Should both factions turn against the throne, the Empire may be torn apart; yet securing the loyalty of one may demand that we deepen the divisions of the realm."
+ br_ere_disaster_events.12.a: "We shall stand with the [first_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.b: "We shall protect the interests of the [second_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.c: "The throne shall take no side."
+
+ br_ere_disaster_events.13.title: "Surrounded by Vultures"
+ br_ere_disaster_events.13.desc: "While the Empire remains consumed by strife within, our opportunistic neighbors gather at its borders like vultures around a wounded beast. They watch our every movement, measuring the strength of our armies and waiting for the hour when they may descend upon what remains of our $rank_empire_byzantine$. Word has now reached [ShowLocationName('constantinople')] that [target_country.GetName] has laid claim to [border_claim_province.GetName], hoping to seize it should the fortunes of Rome decline further."
+ br_ere_disaster_events.13.a: "Let them test the strength of Rome!"
+ br_ere_disaster_events.13.b: "Buy their silence and have them revoke the claim."
+
+ #bul_restore_the_realms_unity: "Restore the Unity of the Realm"
+ #bul_restore_the_realms_unity_desc: "Lands that were once an integral part of the [GetCountry('BYZ').GetFlavorRank] have slipped from the grasp of the throne and no longer acknowledge its authority. If the Empire is to endure this twilight, these wayward lands must be restored to the Roman fold. By force, if need be..."
+ #bul_reassert_our_authority: "Reassert the Authority of the Throne"
+ #bul_reassert_our_authority_desc: "The internal weakness of [GetCountry('BYZ').GetName] has emboldened the dynatoi throughout the [GetCountry('BYZ').GetFlavorRank], who now defy imperial decrees and rule their domains as though they answered to no sovereign. We must halt the fragmentation of the realm, restore the authority of the throne, and compel these lords to bend the knee once more."
+ #bul_push_for_diplomatic_reintegration: "Pursue Diplomatic Reintegration"
+ #bul_push_for_diplomatic_reintegration_desc: "To avert the fires of civil war, we have entrusted portions of our lands to lords who govern them in the name of Rome. Though such an arrangement may preserve the peace for a season, it is our imperial duty to pursue the diplomatic reunification of the $rank_empire_byzantine$. For a realm divided cannot long endure the trials that await it."
 

@@ -861,6 +861,12 @@ br_country_startup.4 = {
 		tag = SAR
 	}
 	
+	dynamic_historical_event = {
+        tag = SAR
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -1008,6 +1014,12 @@ br_country_startup.5 = {
 		tag = S1C
 	}
 	
+	dynamic_historical_event = {
+        tag = S1C
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -1063,6 +1075,12 @@ br_country_startup.6 = {
 		tag = B0L
 	}
 	
+	dynamic_historical_event = {
+        tag = B0L
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -2792,7 +2810,6 @@ br_country_startup.7 = {
 
 
 }
-
 
 br_country_startup.8 = {
 	type = country_event

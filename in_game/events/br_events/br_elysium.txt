@@ -9,13 +9,19 @@ elysium_event.1 = {
 	title = elysium_event.1.title
 	desc = elysium_event.1.desc
 	outcome = positive
+	fire_only_once = yes
 
 	illustration_tags = {
 		10 = armed
 		10 = exterior
 	}
 
-	#orphan = yes 
+	dynamic_historical_event = {
+        tag = ELY
+        from = 1337.1.1
+        to = 1800.1.1
+        monthly_chance = 100
+    }
 
 	trigger = {
 		#Should trigger on country formation.
@@ -29,6 +35,7 @@ elysium_event.1 = {
 			artist_skill = { 0.4 0.9 }
 			culture = root.culture
 			religion = root.religion
+			min_age = 30
 			create_in_limbo = yes
 			save_scope_as = the_scientist
 		}
@@ -264,6 +271,7 @@ elysium_event.3 = {
 		name = elysium_event.3.a
 
 		hidden_effect = { #Needed so the game knows Hellenism exists.
+			add_policy = policy:br_elysian_colonial_settlement
 			change_religion = religion:hellenism_religion
 			add_religious_aspect = religious_aspect:monism_aspect
 			ruler_or_regent ?= {
@@ -295,7 +303,6 @@ elysium_event.4 = {
 		10 = happy
 		10 = exterior
 	}
-
 	dynamic_historical_event = {
         tag = E2Y
         from = 1337.1.1
@@ -312,14 +319,16 @@ elysium_event.4 = {
 
 	option = {
 		name = elysium_event.4.a
-		#hidden_effect = {
+		hidden_effect = {
+			add_policy = policy:native_trade
+			add_policy = policy:br_elysian_colonial_settlement
 			#c:E4Y = {
 				#make_subject_of = {
 					#target = c:E2Y
 					#type = subject_type:colonial_nation
 				#}
 			#}
-		#}
+		}
 	}
 
 }
@@ -348,14 +357,7 @@ br_elysian_DHE.1 = { #Possibility to sponsor Greek Fire
 		to = 1837.1.1
 		monthly_chance = 25
 	}
-
 	trigger = {
-		OR = {
-			has_or_had_tag = IMP
-			has_or_had_tag = ELY
-			has_or_had_tag = E1Y
-			has_or_had_tag = E2Y
-		}
 		has_dlc = "d008_fate_of_the_phoenix"
 		any_artist = {
 			artist_type = scientist
@@ -364,7 +366,6 @@ br_elysian_DHE.1 = { #Possibility to sponsor Greek Fire
 			artist_skill > 0.7
 		}
 	}
-
 	immediate = {
 		random_artist = {
 			limit = {
@@ -415,17 +416,499 @@ br_elysian_DHE.1 = { #Possibility to sponsor Greek Fire
 
 
 
+br_elysian_DHE.2 = {
+	type = country_event
+	title = br_elysian_DHE.2.title
+	desc = br_elysian_DHE.2.desc
+	outcome = neutral
+	fire_only_once = yes
 
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
 
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
 
+	trigger = {
+		has_presence_in = area:ohio_area
+		has_presence_in = area:michigan_area
+		has_presence_in = area:illinois_area
+		has_presence_in = area:wisconsin_area
+		has_presence_in = area:superior_area
+	}
 
+	option = {
+		name = br_elysian_DHE.2.a
+		custom_tooltip = {
+			text = br_elysian_DHE.2.a.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:ohio_area
+						area = area:michigan_area
+						area = area:illinois_area
+						area = area:wisconsin_area
+						area = area:superior_area
+					}
+				}
+				change_development = development_weak_bonus
+				change_control = control_mild_penalty
+			}
+		}
+	}
+	option = {
+		name = br_elysian_DHE.2.b
+		custom_tooltip = {
+			text = br_elysian_DHE.2.b.tt
+			every_owned_location = {
+				limit = {
+					OR = {
+						area = area:ohio_area
+						area = area:michigan_area
+						area = area:illinois_area
+						area = area:wisconsin_area
+						area = area:superior_area
+					}
+				}
+				change_development = development_weak_penalty
+				change_control = control_mild_bonus
+			}
+		}
+	}
+}
 
+br_elysian_DHE.3= {
+	type = country_event
+	title = br_elysian_DHE.3.title
+	desc = br_elysian_DHE.3.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_fur.dds"
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
 
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		produced_in_country:fur > 0
+	}
 
+	option = {
+		name = br_elysian_DHE.3.a
+		change_gold_effect = { scale = -4 }
+		custom_tooltip = {
+			text = br_elysian_DHE.3.a.tt
+			every_owned_location = {
+				limit = {
+					raw_material = goods:fur
+				}
+				change_max_raw_material_workers = 1
+			}
+		}
+		change_societal_value = {
+			type = capital_economy_vs_traditional_economy
+			value = societal_value_minor_move_to_right
+		}
+	}
+	option = {
+		name = br_elysian_DHE.3.b
+		change_societal_value = {
+			type = capital_economy_vs_traditional_economy
+			value = societal_value_minor_move_to_left
+		}
+	}
+}
 
+br_elysian_DHE.4 = {
+	type = country_event
+	title = br_elysian_DHE.4.title
+	desc = br_elysian_DHE.4.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
 
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		NOT = {
+			#has_policy = native_trade
+			#has_policy = native_subjugation
+			has_policy = native_integration
+		}
+		has_advance = native_policy_advance
+	}
 
+	option = {
+		name = br_elysian_DHE.4.a
+		historical_option = yes
+		add_policy = policy:native_integration
+	}
+	option = {
+		name = br_elysian_DHE.4.b
+		add_prestige = prestige_mild_bonus
+	}
+}
 
+br_elysian_DHE.5 = {
+	type = country_event
+	title = br_elysian_DHE.5.title
+	desc = br_elysian_DHE.5.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		random_owned_location = {
+			save_scope_as = unrest_location
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		"estate(estate_type:peasants_estate)" = { estate_tax_rate > 0.6 }
+	}
+
+	option = {
+		name = br_elysian_DHE.5.a
+		custom_tooltip = {
+			text = br_elysian_DHE.5.a.tt
+			scope:unrest_location.province = {
+				every_location_in_province = {
+					limit = {
+						owner = root
+					}
+					change_control = control_weak_bonus
+					every_pop = {
+						limit = {
+							owner = root
+						}
+						add_pop_satisfaction = pop_satisfaction_severe_penalty
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = br_elysian_DHE.5.b
+		custom_tooltip = {
+			text = br_elysian_DHE.5.b.tt
+			scope:unrest_location.province = {
+				every_location_in_province = {
+					limit = {
+						owner = root
+					}
+					change_control = control_mild_penalty
+					every_pop = {
+						limit = {
+							owner = root
+						}
+						add_pop_satisfaction = pop_satisfaction_mild_bonus
+					}
+				}
+			}
+		}
+	}
+}
+
+br_elysian_DHE.6 = {
+	type = country_event
+	title = br_elysian_DHE.6.title
+	desc = br_elysian_DHE.6.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		location:shawmut = {
+			save_scope_as = unrest_location
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		owns = location:shawmut
+	}
+
+	option = {
+		name = br_elysian_DHE.6.a
+		change_gold_effect = { scale = -3 }
+		add_country_modifier = {
+			modifier = usa_postal_roads_expansion
+			years = 5
+			mode = add_and_extend
+		}
+	}
+	option = {
+		name = br_elysian_DHE.6.b
+		add_stability = stability_weak_penalty
+	}
+}
+
+br_elysian_DHE.7 = {
+	type = country_event
+	title = br_elysian_DHE.7.title
+	desc = br_elysian_DHE.7.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		location:manhattan = {
+			save_scope_as = target_location
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		owns = location:manhattan
+	}
+
+	option = {
+		name = br_elysian_DHE.7.a
+		custom_tooltip = {
+			text = br_elysian_DHE.7.a.tt
+			scope:target_location = {
+				change_prosperity = prosperity_mild_penalty
+				every_pop = {
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.05
+					}
+				}
+				ordered_buildings_in_location = {
+					order_by = building_level
+					max = {
+						value = 1
+	
+						add = {
+							value = location.num_buildings
+							divide = 10
+						}
+					}
+					location = { major_destroy_building_levels_in_location = yes }
+				}
+			}
+		}
+		change_gold_effect = { scale = -2 }
+	}
+	option = {
+		name = br_elysian_DHE.7.b
+		
+		custom_tooltip = {
+			text = br_elysian_DHE.7.b.tt
+			scope:target_location = {
+				change_prosperity = prosperity_mild_penalty
+				change_development = development_mild_penalty
+				every_pop = {
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.05
+					}
+				}
+				ordered_buildings_in_location = {
+					order_by = building_level
+					max = {
+						value = 1
+	
+						add = {
+							value = location.num_buildings
+							divide = 10
+						}
+					}
+				
+					location = { major_destroy_building_levels_in_location = yes }
+				}
+			}
+		}
+	}
+}
+
+br_elysian_DHE.8 = {
+	type = country_event
+	title = br_elysian_DHE.8.title
+	desc = br_elysian_DHE.8.desc
+	outcome = neutral
+	fire_only_once = yes
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		create_character = {
+			adm = { 70 100 }
+			dip = { 80 100 }
+			mil = { 70 100 }
+			min_age = 30
+			trait_category = explorer
+			estate = estate_type:burghers_estate
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+		create_character = {
+			adm = { 70 100 }
+			dip = { 80 100 }
+			mil = { 70 100 }
+			min_age = 30
+			trait_category = explorer
+			estate = estate_type:burghers_estate
+			save_scope_as = target_character_2
+			create_in_limbo = yes
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		has_presence_in = region:great_plains_region
+		region:west_coast_region = {
+			any_location_in_region = {
+				NOT = {
+					is_discovered_by = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_elysian_DHE.8.a
+		historical_option = yes
+		scope:target_character = { move_country = root }
+		scope:target_character_2 = { move_country = root }
+		change_gold_effect = { scale = -3 }
+		region:west_coast_region = {
+			every_location_in_region = {
+				discover_location = root
+			}
+		}
+	}
+	option = {
+		name = br_elysian_DHE.8.b
+		scope:target_character = { move_country = root }
+		scope:target_character_2 = { move_country = root }
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+br_elysian_DHE.9 = {
+	type = country_event
+	title = br_elysian_DHE.9.title
+	desc = br_elysian_DHE.9.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		random_country_at_war_with = {
+			limit = {
+				culture = { is_culture_native_american =yes }
+			}
+			save_scope_as = target_country
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = IMP
+		tag = ELY
+		tag = E1Y
+		tag = E2Y
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		any_country_at_war_with = {
+			culture = { is_culture_native_american =yes }
+		}
+	}
+
+	option = {
+		name = br_elysian_DHE.9.a
+		drop_antagonism_bomb = {
+			target = root.capital
+			modifier = antagonism_planned_invasion
+		}
+	}
+}
 
 
 

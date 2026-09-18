@@ -340,6 +340,7 @@
 			societal_value:belligerent_vs_conciliatory < -75
 		}
 		country_modifier = {
+			pop_countries_opinions = -25
 			global_nobles_estate_power = 1
 			monthly_towards_belligerent = societal_value_minor_monthly_move
 			tribes_estate_target_satisfaction = -1
@@ -530,6 +531,7 @@
 			societal_value:belligerent_vs_conciliatory < -25
 		}
 		country_modifier = {
+			pop_countries_opinions = -10
 			global_peasants_estate_power = 1
 			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
 			monthly_towards_decentralization = societal_value_minor_monthly_move

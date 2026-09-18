@@ -14,6 +14,12 @@ br_ere_events.1 = {
 		tag = BYZ
 	}
 	
+	dynamic_historical_event = {
+  		tag = BYZ
+ 		from = 1336.1.1
+ 		to = 1337.1.1
+ 		monthly_chance = 100
+ 	}
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -854,8 +860,7 @@ br_ere_events.100 = { #armenian rebellion
 			culture = culture:armenian_culture
 			religion = religion:miaphysite
 			estate = estate_type:clergy_estate
-			birth_location = location:bozok
-			birth_date = 1475
+			min_age = 30
 			add_trait = trait:scholar
 			script = br_armenian_scholar
 			save_scope_as = armenian_uprising_leader
@@ -1976,11 +1981,9 @@ br_ere_events.1002 = {
 br_ere_events.1003 = {
 	type = country_event
 	outcome = neutral
-	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
+	title = empty_text
+	desc = empty_text
+	hidden = yes
 
 	immediate = {
 		capital = {
@@ -2028,14 +2031,9 @@ br_ere_events.1003 = {
 br_ere_events.1004 = {
 	type = country_event
 	outcome = neutral
-	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
-	trigger = {
-	}
-	
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
+	title = empty_text
+	desc = empty_text
+	hidden = yes
 
 	immediate = {
 		capital = {
@@ -2050,6 +2048,7 @@ br_ere_events.1004 = {
 		if = {
             limit = {
                 NOR = {
+					scope:target_location = { has_building = building_type:br_doukate_building }
                     scope:target_location = { has_building = building_type:br_katapanate_building }
 					scope:target_location = { has_building = building_type:br_despotate_building }
 					scope:target_location = { has_building = building_type:br_dioikesis_building }
@@ -2072,14 +2071,9 @@ br_ere_events.1004 = {
 br_ere_events.1005 = {
 	type = country_event
 	outcome = neutral
-	image = "gfx/interface/illustrations/international_organization_types/roman_world.dds"
-	trigger = {
-	}
-	
-	illustration_tags = {
-		10 = regular
-		10 = interior
-	}
+	title = empty_text
+	desc = empty_text
+	hidden = yes
 
 	immediate = {
 		capital = {

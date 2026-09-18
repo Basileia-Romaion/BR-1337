@@ -54,7 +54,7 @@ br_early_migrations = {
 }
 
 br_native_trade_with_the_elysians = {
-	age = age_2_renaissance
+	age = age_1_traditions
 	icon = expand_varangian_guard_advance
 	potential = { 
 		OR = {
@@ -107,13 +107,9 @@ br_vinland_naval_tradition = { #todo break up a bit
 	trade_range_modifier = 0.25
     global_sailors_modifier = 0.50
     global_fish_output_modifier = 0.1
-    #can_recruit_explorer = yes
-    #may_explore = yes
     exploration_maintenance_efficiency = 0.25
     navy_maintenance_efficiency = 0.25
     global_maritime_presence_modifier = 0.1
-	#merchant_power_from_maritime_modifier = 0.2
-	#trade_sea_efficiency = -0.2
 	global_naval_supplies_output_modifier = 0.1
     requires = ship_building_advance
 }

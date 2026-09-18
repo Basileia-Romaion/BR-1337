@@ -393,8 +393,8 @@ countries = {
 			tolerated_cultures = {
 				beothuk_culture
 			}
-			
 			include = "expl_vinland"
+			include = "expl_american_great_lakes"
 		}
 		
 		NRR = {
@@ -425,7 +425,7 @@ countries = {
 			
 			include = "expl_vinland"
 		}
-		
+
 		NRH = {
 			own_control_core = {
 				navchak
@@ -522,6 +522,7 @@ countries = {
 			}
 			
 			include = "expl_vinland"
+			include = "expl_eastern_seaboard"
 		}
 		
 		#Mi'kmaq
@@ -557,16 +558,25 @@ countries = {
 		#Onondaga/Onondagega
 		#Cayuga/Gayogohono
 		#Seneca/Onondowaga
+		
 		IRO = {
 			own_control_core = {
+				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
+				ahna_wate
+
 				canadaigua geneseo tsonentsiio irondequoit #ONN
 				skaniatares assorodus gahato #GYO
 				tsikahiotsisto otsiningo oswego #ONO
 				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
-
 				canajoharie saratoga schenectady teionontatatie oneonta #KKA
-				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
-				ahna_wate
+
+				
+
+				tiotoren cattaraugus kanentaweron #WRO
+				erie shenango kittaning tionesta #ERI
+				mahoning_oh ashtabula cuyahoga saucunk #KEN
+				niagara kenhionatatie macassa thahnawate ahouenro #ONG
+				nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio #ADR
 			}
 			
 			capital = irondequoit #canadaigua
@@ -585,6 +595,13 @@ countries = {
 				onondagega_culture
 				onyotaaka_culture
 				kanienkehaka_culture
+				wenrohronon_culture
+				kentaientonga_culture
+				erielhonan_culture
+				honniasont_culture
+				onojutta_culture
+				carantouan_culture
+				atrakwaye_culture
 			}
 			country_rank = rank_kingdom
 			include = "expl_new_england"
@@ -690,6 +707,8 @@ countries = {
 				minguannan
 			}
 			own_control_colony = {
+				catoctin
+				conewago
 			}
 
 			capital = patapsco
@@ -702,13 +721,13 @@ countries = {
 				ruler = br_e1y_character_1
 				ruler_term = { character = br_e1y_character_1 start_date = 1308.5.24 }
 				latinization_vs_hellenization = -100
+				bureaucracies = {
+					{ type = br_lost_legions_bureaucracy	date = 380.1.1 } 
+				}
 			}
-			
 			tolerated_cultures = {
-				piscataway_culture
-				nanticoke_culture
+				elyrics_culture
 			}
-			
 			include = "expl_eastern_seaboard"
 		}
 		
@@ -726,7 +745,6 @@ countries = {
 				rappahannock werowocomoco nanzatico wicocomico
 				patawomeck
 			}
-			
 			capital = nansemond
 			include = "elysian_foothold"
 			court_language = elysian_greek_dialect
@@ -736,13 +754,13 @@ countries = {
 				heir_selection = cognatic_primogeniture
 				ruler = random
 				latinization_vs_hellenization = 100
+				bureaucracies = {
+					{ type = br_ely_colonial_office_bureaucracy	date = 380.1.1 } 
+				}
 			}
-			
 			tolerated_cultures = {
-				nansemond_culture
-				powhatan_culture
+				elyrics_culture
 			}
-			
 			include = "expl_eastern_seaboard"
 		}
 		
@@ -863,8 +881,8 @@ countries = {
 				type = theocracy
 				ruler = random
 			}
-			
 			include = "expl_eastern_seaboard"
+			include = "expl_american_great_lakes"
 		}
 
 		E7Y = { #apaleisia
@@ -881,8 +899,8 @@ countries = {
 				heir_selection = oligarchic_elective
 				ruler = random
 			}
-			
 			include = "expl_eastern_seaboard"
+			include = "expl_american_great_lakes"
 		}
 		
 		#Rappahannock

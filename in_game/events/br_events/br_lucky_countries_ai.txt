@@ -165,9 +165,13 @@ br_lucky_countries_ai.4 = {
 
 	trigger = {
 		is_ai = yes
+		c:KAR ?= {
+			is_ai = yes
+		}
 	}
 
 	immediate = {
+		annex_country = { country = c:KAR }
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
 			years = 200
@@ -267,13 +271,14 @@ br_lucky_countries_ai.6 = {
 	}
 }
 
+#West HRE
 br_lucky_countries_ai.7 = {
 	type = country_event
 	outcome = neutral
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	#fire_only_once = yes
+	fire_only_once = yes
 
 	dynamic_historical_event = {
         tag = LOT
@@ -283,11 +288,20 @@ br_lucky_countries_ai.7 = {
     }
 	trigger = {
 		is_ai = yes
-		NOT = {
-			has_country_modifier = br_lucky_country_buff
+		c:LUX ?= {
+			is_ai = yes
+		}
+		c:DUN ?= {
+			is_ai = yes
+		}
+		c:AAC ?= {
+			is_ai = yes
 		}
 	}
 	immediate = { #decaying to 0.5% x150 years
+		annex_country = { country = c:LUX }
+		annex_country = { country = c:DUN }
+		annex_country = { country = c:AAC }
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
 			years = 150
@@ -298,11 +312,12 @@ br_lucky_countries_ai.7 = {
 			modifier = br_levy_size_modifier
 			years = 75
 			mode = add_and_extend
-			size = 0.35
+			size = 0.25
 		}
 	}
 }
 
+#New World
 br_lucky_countries_ai.8 = {
 	type = country_event
 	outcome = neutral
@@ -329,11 +344,11 @@ br_lucky_countries_ai.8 = {
 			modifier = br_lucky_country_buff
 			years = 250
 			mode = add_and_extend
-			size = 0.5
+			size = 2
 		}
 		add_country_modifier = {
 			modifier = br_levy_size_modifier
-			years = 150
+			years = 250
 			mode = add_and_extend
 			size = 2
 		}
@@ -374,7 +389,6 @@ br_lucky_countries_ai.9 = {
 	}
 }
 
-
 br_lucky_countries_ai.10 = {
 	type = country_event
 	outcome = neutral
@@ -405,5 +419,62 @@ br_lucky_countries_ai.10 = {
 		}
 		research_advance = advance_type:standardized_coins
 		research_advance = advance_type:br_colonial_militia
+	}
+}
+
+br_lucky_countries_ai.12 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+        tag = FRA
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+		c:TNE ?= {
+			is_ai = yes
+		}
+		c:ANJ ?= {
+			is_ai = yes
+		}
+		c:CEX ?= {
+			is_ai = yes
+		}
+		c:POI ?= {
+			is_ai = yes
+		}
+	}
+	immediate = {
+		c:TNE ?= {
+			make_subject_of = {
+				target = c:FRA
+				type = subject_type:vassal
+			}
+		}
+		c:ANJ ?= {
+			make_subject_of = {
+				target = c:FRA
+				type = subject_type:vassal
+			}
+		}
+		c:CEX ?= {
+			make_subject_of = {
+				target = c:FRA
+				type = subject_type:vassal
+			}
+		}
+		c:POI ?= {
+			make_subject_of = {
+				target = c:FRA
+				type = subject_type:vassal
+			}
+		}
 	}
 }

@@ -125,7 +125,7 @@ REPLACE_OR_CREATE:KAP_f = {
 		aksaray_province
 	}
 	form_effect = {
-		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -157,7 +157,7 @@ REPLACE_OR_CREATE:AN0_f = {
 		erzurum_province
 	}
 	form_effect = {
-		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -298,7 +298,7 @@ REPLACE_OR_CREATE:P0N_f = {
 		trebizond_province
 	}
 	form_effect = {
-		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -326,7 +326,7 @@ REPLACE_OR_CREATE:P1N_f = {
 		crimea_area
 	}
 	form_effect = {
-		#set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
         #trigger_event_non_silently = placeholder_event
     }
 }

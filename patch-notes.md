@@ -2,7 +2,45 @@
 
 # Patch Notes
 
-# 24.1
+# 0.25 Dawn of Elysium content. Part II
+
+## Disasters
+- New late-game disaster for the ERE, also eligible for Elysium and IMPERIUM.
+  - Includes 13 new disaster events.
+- Edited the DLC Fate of the Phoenix disaster
+  - Replaced the Mercenary cost increase with Court Cost Increase.
+  - Added 11 new events to spice things up. Please provide feedback on the events.
+
+## Pentarchy
+- All historical Patriarchs of 1337 set active at game start. This fixes a PDX bug or oversight that would only active the Patriarchs if the BYZ tag owned the location. 
+
+## Map Change
+- Unique Azoreas Norse tags added.
+
+## buildings
+- Arts and Sciences Academy of Elysium
+- Philosophical Society of Elysium
+- Bank of Elysium
+- Mint of Elysium
+- Trade Outpost: New building type for the new Norse tags and Vinland can be built in unowned land.
+
+## Bureaucracies
+- The Lost Legions
+- Apikion
+- Elysian Apikía
+- Vinlandsráðuneyti
+
+## events
+- 8 more Elysian DHEs
+
+## laws
+- Starting Colonial/Native laws for Elysians $ Vinlanders
+- New unique Elysian colonial law
+
+## GFX
+- New roman inspired icons for the Elysian bureaucracies
+
+# 0.24.1
 
 - Fix: Elysian privilege wanting the opposite value than I intended.
 - Fix: Add some missing localization to a couple ere privileges

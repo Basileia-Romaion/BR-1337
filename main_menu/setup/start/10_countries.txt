@@ -935,6 +935,7 @@ countries = {
 
 		include = "catholic_monarchy_not_present"
 		include = "expl_northern_europe"
+		country_rank = rank_duchy
 
 		government = {
 		}
@@ -1714,6 +1715,7 @@ countries = {
 			regnal_numbers = {
 				name_odoacer = 2
 				name_wenceslas = 3
+				name_henry = 1
 				name_rudolf = 1
 				name_henry = 1
 				name_john = 1
@@ -4108,7 +4110,7 @@ countries = {
 		accepted_cultures = {
 			astrakhani
 			crimean
-			#mongolian_culture
+			mongolian_culture
 			nogai
 			kazani
 			mishar
@@ -4310,104 +4312,20 @@ countries = {
 	ENG = { # England
 		our_cores_conquered_by_others = {
 			appleby hythe alnwick barnstaple bedford dunstable birmingham boston bosworth shoreham lewes bristol buckingham bury glossop cambridge canterbury carlisle rochester cheltenham chelmsford chesterfield chichester chippenham cockermouth colchester kettering coventry cirencester derby dorchester dover exeter gloucester grimsby guildford reigate harrow hastings hedingham hertford hexham hull huntingdon ipswich kendal grantham penrith kidderminster leeds leicester lincoln london loughborough lowestoft lynn daventry newark newcastle northampton norwich nottingham oxford ely plymouth bideford bampton okehampton poole portsmouth amesbury lymington retford rutland salisbury southampton prittlewell kingston stafford stoke stratford trowbridge taunton wells barking weymouth shaftesbury wight winchester windsor worcester yarmouth york scarborough tamworth bedale richmond whitby bridlington selby pontefract skipton wakefield louth thetford fakenham reading tonbridge minehead portishead bath henley royston aylesbury wycombe lavenham abingdon st_albans banbury walden spalding woking morpeth billingham norton ripon doncaster egremont basingstoke
-
-			# Earldom of Chester
-			#chester macclesfield nantwich
-
-			# English towns on the Welsh March
 			shrewsbury hereford
 		}
-		#own_control_integrated = {
-		#	# Earldom of Chester
-		#	# cornwall
-		#	launceston truro bodmin
-		#	# channel
-		#	jersey
-		#	# france			
-		#	abbeville montreuil #Ponthieu
-		#}
-		#own_control_conquered = {
-		#	berwick
-		#}
-
 		include = "catholic_monarchy_not_present"
-
 		starting_technology_level = 3
 		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = eng_edward_iii
-
-			ruler_term = {	 character = eng_alfred_the_great start_date = 886.1.1 end_date = 899.10.26 regnal_number = 0	}
-			ruler_term = {	 character = eng_edward_the_elder start_date = 899.10.26 end_date = 924.7.17 regnal_number = 0	}
-			ruler_term = {	 character = eng_athelstan_the_glorious start_date = 924.7.17 end_date = 939.10.27 regnal_number = 0	}
-			ruler_term = {	 character = eng_edmund_the_magnificent start_date = 939.10.27 end_date = 946.5.26 regnal_number = 0	}
-			ruler_term = {	 character = eng_eadred start_date = 946.5.26 end_date = 955.11.23 regnal_number = 0	}
-			ruler_term = {	 character = eng_eadwig start_date = 955.11.23 end_date = 959.10.1 regnal_number = 0	}
-			ruler_term = {	 character = eng_edgar_the_peaceful start_date = 959.10.1 end_date = 975.7.8 regnal_number = 0	}
-			ruler_term = {	 character = eng_edward_the_martyr start_date = 975.7.8 end_date = 978.3.18 regnal_number = 0	}
-			ruler_term = {	 character = eng_ethelred_the_unready start_date = 978.3.18 end_date = 1013.12.25 regnal_number = 0	}
-
-			ruler_term = {	 character = eng_sweyn_forkbeard start_date = 1013.12.25 end_date = 1014.2.3 regnal_number = 0	}
-
-			ruler_term = {	 character = eng_ethelred_the_unready start_date = 1014.2.3 end_date = 1016.4.23 regnal_number = 0	}
-
-			ruler_term = { character = eng_edmund_ironside start_date = 1016.4.23 end_date = 1016.11.18 regnal_number = 0 }
-
-			ruler_term = { character = eng_cnut_the_great start_date = 1016.11.18 end_date = 1035.11.12 regnal_number = 0 }
-			ruler_term = { character = eng_harold_harefoot start_date = 1035.11.12 end_date = 1040.3.17 regnal_number = 0 }
-
-			ruler_term = { character = eng_harthacnute start_date = 1040.3.17 end_date = 1042.6.8 regnal_number = 0 }
-
-			ruler_term = { character = eng_edward_the_confessor start_date = 1042.6.8 end_date = 1066.1.5 regnal_number = 0 }
-
-			ruler_term = {	 character = eng_harold_godwinson start_date = 1066.1.6 end_date = 1066.10.14 regnal_number = 0	}
-
-			# regnal numbering usually starts with the Norman Invasion
-			ruler_term = {	 character = eng_william_the_conquerer start_date = 1066.12.25 end_date = 1087.9.9 regnal_number = 1	}
-			ruler_term = {	 character = eng_william_ii_rufus start_date = 1087.9.26 end_date = 1100.7.2 regnal_number = 2	}
-			ruler_term = {	 character = eng_henry_i start_date = 1100.7.5 end_date = 1135.12.1 regnal_number = 1	}
-
-			ruler_term = {	 character = eng_stephen_i start_date = 1135.12.22 end_date = 1154.10.25 regnal_number = 1	}
-
-			ruler_term = {	 character = eng_henry_ii_curtmantle start_date = 1154.12.19 end_date = 1189.7.6 regnal_number = 2	}
-			ruler_term = {	 character = eng_richard_i_lionheart start_date = 1189.9.3 end_date = 1199.4.6 regnal_number = 1	}
-			ruler_term = {	 character = eng_john_lackland start_date = 1199.5.27 end_date = 1216.10.19 regnal_number = 1	}
-
-			ruler_term = {	 character = eng_henry_iii start_date = 1216.10.28 end_date = 1272.11.16 regnal_number = 3	}
-			ruler_term = {	 character = eng_edward_i start_date = 1272.11.20 end_date = 1307.7.8 regnal_number = 1	}
-			ruler_term = {	 character = eng_edward_ii start_date = 1307.7.8 end_date = 1327.1.20 regnal_number = 2	}
-			#ruler_term = {	 character = eng_edward_iii start_date = 1327.1.25 end_date = 1332.1.1 regnal_number = 3 }
-
-			regnal_numbers = {
-				name_william = 2
-				name_henry = 3
-				name_stephen = 1
-				name_richard = 2
-				name_john = 1
-				name_edward = 3
-			}
-
-			reforms = {
-				magna_carta_reform
-			}
-
 		}
-
 		accepted_cultures = {
 			northumbrian
 		}
 		tolerated_cultures = { cornish welsh }
-
 		court_language = norman_dialect
 		country_rank = rank_kingdom
 		capital = london
-
 		include = "expl_western_europe"
-
-		ai_advance_preference_tags = {
-			exploration = 5
-		}
 	}
 
 	AGL = {
@@ -5485,6 +5403,7 @@ countries = {
 
 		include = "catholic_bishopric"
 		include = "expl_western_europe"
+		country_rank = rank_duchy
 
 		government = {
 			type = theocracy
@@ -6778,7 +6697,6 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			afghan_culture
 			kohistani
 		 }
 		religious_school = hanafi_school
@@ -8990,7 +8908,7 @@ countries = {
 				name_barisone = 2
 				name_marianus = 3
 				name_orzocorre = 3
-				name_torbjon = 1
+				name_torbjorn = 1
 				name_constantine = 3
 				name_barisone = 1
 				name_peter = 3
@@ -9004,7 +8922,7 @@ countries = {
 				#judicate_reform
 			}
 			laws = {
-				piracy_law = state_piracy_policy
+				piracy_law = br_state_piracy_policy
 			}
 		}
 
@@ -9221,7 +9139,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			regnal_numbers = {
-				Barisone = 1
+				name_barisone = 1
 				name_constantine = 2
 				name_john = 1
 				name_william = 3
@@ -9456,7 +9374,7 @@ countries = {
 		include = "catholic_republic_no_coast"
 		government = {
 			type = republic
-			heir_selection = podesta_elective
+			heir_selection = signoria_selection
 
 			reforms = {
 				signoria_reform
@@ -9688,7 +9606,6 @@ countries = {
 			}
 
 			ruler = fae_ricciardo_manfredi
-			consort = for_cia_ubaldini
 
 			ruler_term = { character = fae_francesco_manfredi start_date = 1313.1.1	end_date = 1327.1.1 regnal_number = 0 }
 			ruler_term = { character = fae_alberghettino_ii_manfredi start_date = 1327.1.1 end_date = 1329.1.1 regnal_number = 2 }
@@ -9838,12 +9755,6 @@ countries = {
 			date = 1345.1.1
 			size = 1
 		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
-		}
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 1000
@@ -9948,8 +9859,10 @@ countries = {
 		government = {
 			type = republic
 			heir_selection = bank_selection
-			reforms = {	banking_country }
+			reforms = { banking_country }
 			ruler = acc_acciaiolo_acciaioli
+			ruler_term = { character = acc_leone_acciaioli start_date = 1284.1.1 end_date = 1300.1.1 regnal_number = 0 }
+			ruler_term = { character = acc_acciaiolo_acciaioli start_date = 1333.11.1 regnal_number = 0 }
 
 			centralization_vs_decentralization = 20
 			aristocracy_vs_plutocracy = 70
@@ -10038,7 +9951,7 @@ countries = {
 				Saltaro = 1
 				#Ittocorre = 1
 				name_comita = 1
-				Barisone = 1
+				name_barisone = 1
 				name_helen = 1
 				name_lambert = 1
 				name_adelaide = 1
@@ -10173,12 +10086,7 @@ countries = {
 		tolerated_cultures = {
 			corsican
 		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.33
-		}
+
 		capital = genoa
 		currency_data = {
 			gold = 1500
@@ -10708,12 +10616,6 @@ countries = {
 		tolerated_cultures = {
 			emilian
 		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
-		}
 		capital = milano
 		dynasty = visconti_dynasty
 		country_rank = rank_duchy
@@ -10873,7 +10775,7 @@ countries = {
 	}
 
 	#Naples
-	#NAP = {
+	NAP = {
 		#our_cores_conquered_by_others = {
 			#aquila atri celano cittaducale csantangelo sulmona teramo chieti lanciano vasto bojano
 			#isernia larino trivento altamura andria bari barletta monopoli bovino foggia lucera
@@ -10883,20 +10785,20 @@ countries = {
 			#gaeta naples nola piedimonte sora venafro campagna salacon salerno vallo ariano avellino santangelo
 		#}
 
-		#starting_technology_level = 3
-		#include = "expl_mediterranean"
-		#include = "expl_silk_road_west"
-		#include = "expl_silk_road_center"
-		#include = "expl_silk_road_east"
-		#include = "expl_indian_trade_route"
-		#include = "catholic_monarchy_not_present"
-		#government = {
-			#type = monarchy
-			#ruler = random
-		#}
-		#capital = naples
-		#country_rank = rank_kingdom
-	#}
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			ruler = random
+		}
+		capital = naples
+		country_rank = rank_kingdom
+	}
 
 	#Provence (Union with Naples)
 	PRO = {
@@ -10996,7 +10898,7 @@ countries = {
 			}
 
 			ruler = ver_alberto_ii_scala
-			heir = pad_ubertino_novello_carrara
+			heir = ver_mastino_ii_scala
 
 			ruler_term = { character = ven_lorenzo_tiepolo start_date = 1265.7.1 end_date = 1266.7.1 }
 			ruler_term = { character = pad_giacomo_carrara start_date = 1318.7.25 end_date = 1324.11.23 }
@@ -11004,8 +10906,8 @@ countries = {
 
 			ruler_term = { character = ver_cangrande_scala start_date = 1328.9.10 end_date = 1329.7.22 }
 			ruler_term = {
-				#character = ver_mastino_ii_scala start_date = 1329.7.22
-				character = ver_alberto_ii_scala start_date = 1329.7.22 #Co-Ruler
+				character = ver_alberto_ii_scala start_date = 1329.7.22
+				character = ver_mastino_ii_scala start_date = 1329.7.22
 			}
 		}
 
@@ -11141,7 +11043,7 @@ countries = {
 			capital_economy_vs_traditional_economy = 65
 			individualism_vs_communalism = 65
 			outward_vs_inward = -75
-			
+
 		}
 
 		tolerated_cultures = {
@@ -11886,7 +11788,7 @@ countries = {
 
 			regnal_numbers = {
 				name_conrad = 3
-				Rainaldo = 2
+				name_reginald = 2
 				name_henry = 2
 				name_welf = 2
 			}
@@ -12009,10 +11911,10 @@ countries = {
 			regnal_numbers = {
 				name_adelaide = 1
 				name_andrea = 1
-				Barisone = 3
+				name_barisone = 3
 				name_comita = 2
 				name_constantine = 4
-				Enzo = 1
+				name_henry = 1
 				Gonario = 2
 				name_marianus = 2
 				name_peter = 2
@@ -12068,6 +11970,8 @@ countries = {
 		government = {
 			type = republic
 			heir_selection = podesta_elective
+
+			ruler_term = { character = gor_john_henry_iv_gorizia start_date = 1332.12.1 end_date = 1333.12.1 regnal_number = 0 }
 
 			reforms = {
 				signoria_reform
@@ -12182,7 +12086,7 @@ countries = {
 		country_rank = rank_duchy
 		government = {
 			type = republic
-			heir_selection = lottery_election
+			heir_selection = doge_election
 
 			ruler = ven_francesco_dandolo
 
@@ -12281,12 +12185,6 @@ countries = {
 					}
 				}
 			}
-		}
-		timed_modifier = {
-			modifier = "br_lucky_republic_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 0.33
 		}
 		#https://www.researchgate.net/publication/269643384_The_Venetian_Money_Market_Banks_Panics_and_the_Public_Debt_1200-1500
 		#https://www.jstor.org/stable/1882461
@@ -12444,6 +12342,8 @@ countries = {
 			ruler_term = { character = ver_cangrande_scala start_date = 1311.11.29 end_date = 1329.7.22 regnal_number = 1 }
 			ruler_term = { character = ver_mastino_ii_scala start_date = 1329.7.22 regnal_number = 2 }
 			#ruler_term = { character = ver_alberto_ii_scala start_date = 1329.7.22 regnal_number = 2 } # Co-Ruler until 1351
+
+			belligerent_vs_conciliatory = -90
 		}
 
 		tolerated_cultures = {
@@ -12507,14 +12407,37 @@ countries = {
 
 	#Balkans
 
+	ATH = {
+		our_cores_conquered_by_others = {
+			athens megara thebes atalanti livadeia gravia
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_monarchy_not_present"
+		government = {
+		}
+
+		culture = greek_culture
+		religion = orthodox
+		country_rank = rank_duchy
+		court_language = catalan_dialect
+		capital = thebes
+	}
+
+
 	ACH = { #https://en.wikipedia.org/wiki/Principality_of_Achaea
 		own_control_core = {
 			kalamata kyparissia
 			chalandritsa patras vostitsa
 			andravida pontikokastro
+			andritsaina kalavryta
 		}
 		our_cores_conquered_by_others = {
-			kalavryta andritsaina
 			tripolitsa veligosti karytaina
 			corinth damala ermioni xylokastro
 		}
@@ -12529,7 +12452,6 @@ countries = {
 			ruler = br_ere_rdm_character_41
 			ruler_term = { character = br_ere_rdm_character_41 start_date = 1329.9.25 } 
 		}
-
 		currency_data = { #From ongoing civil war and turkic raiding
 			stability = -5
 			government_power = -5
@@ -12537,7 +12459,6 @@ countries = {
 			war_exhaustion = 4
 		}
 
-		
 		culture = greek_culture
 		religion = orthodox
 		country_rank = rank_county
@@ -12829,7 +12750,7 @@ countries = {
 	}
 
 	THE = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			hatera veria edessa kassandreia polygyros thessaloniki
 			kilkis giannitsa gynaikokastro rentina
 		}
@@ -12966,6 +12887,8 @@ countries = {
 			tire balat birgi guzelhisar nazilli
 			milas
 			mugla cine
+
+			kassandreia polygyros thessaloniki hatera
 		}
 
 		our_cores_conquered_by_others = {
@@ -12975,7 +12898,7 @@ countries = {
 			xanthia
 			komotini
 			#THE
-			hatera veria edessa kassandreia polygyros thessaloniki
+			veria edessa
 			kilkis giannitsa gynaikokastro mount_athos rentina
 			#A1G
 			canakkale
@@ -13160,7 +13083,6 @@ countries = {
 			ruler_term = { character = byz_theodora_ii        start_date = 1055.1.12 end_date = 1056.9.11 regnal_number = 1 }
 			ruler_term = { character = byz_michael_vi_stratiotikos start_date = 1056.9.11 end_date = 1057.6.8 regnal_number = 6 }
 
-
 			ruler_term = { character = byz_isaakios_i_komnenos start_date = 1057.6.8 end_date = 1059.11.22 regnal_number = 1 }
 
 			ruler_term = { character = byz_konstantinos_x_doukas start_date = 1059.11.23 end_date = 1067.5.23 regnal_number = 10 }
@@ -13251,7 +13173,7 @@ countries = {
 				name_eudokia = 1
 				name_alexis = 5
 				name_emmanuel = 1
-				name_andonikos = 3
+				name_andronikos = 3
 				name_theodore = 2
 			}
 
@@ -13335,6 +13257,7 @@ countries = {
 				{ type = ritualistic_court_bureaucracy           date = 330.5.11 entrenchment = 30  }
 				{ type = court_eunuchs_bureaucracy           	 date = 700.5.11 entrenchment = 25 	}
 			}
+
 
 			laws = {
 				legal_code_law = byzantine_law
@@ -13594,6 +13517,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			ruler = mtr_pal_mataranga
+
 			ruler_term = { character = mtr_pal_mataranga start_date = 1305.1.1 regnal_number = 1 }
 	
 			regnal_numbers = {
@@ -13673,7 +13597,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			ruler = ser_stefan_dusan
-			consort = ser_helena
+			consort = ser_helena_sratsimir
 
 			ruler_term = { character = ser_stefan_nemanja start_date = 1166.1.1 end_date = 1196.1.1 regnal_number = 0 }
 			ruler_term = { character = ser_stefan_nemanjic start_date = 1196.1.1 end_date = 1202.1.1 regnal_number = 1 }
@@ -13727,6 +13651,16 @@ countries = {
 				gradozadanje_and_gradobljudenlje_rights
 				peasants_yeomanry
 			}
+			laws = {
+				feudal_de_jure_law = by_tradition
+				medieval_levy_law = noble_levies
+				royal_court_customs_law = aristocratic_court_policy
+				administrative_system = feudal_administration
+				distribution_of_power_law = dop_traditional_distribution_of_power
+			}
+
+			quality_vs_quantity = 15
+			belligerent_vs_conciliatory = -10
 
 		}
 		tolerated_cultures = {
@@ -13735,18 +13669,6 @@ countries = {
 		}
 
 		liturgical_language = church_slavonic_language
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 500
 			prestige = 75
@@ -14260,6 +14182,7 @@ countries = {
 				name_john.name_stephen = 1
 				name_john.name_alexander = 1
 			}
+			
 			reforms = {
 				bulgarian_tsardom
 			}
@@ -14374,17 +14297,17 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
-	
+
 			regnal_numbers = {
 			}
 			
 			land_vs_naval = 40
 		}
-	
+
 		tolerated_cultures = {
 			wallachian
 		}
-	
+
 		country_rank = rank_duchy
 		capital = karvuna
 	}
@@ -14395,15 +14318,15 @@ countries = {
 			argos nafplio
 			tripolitsa 
 			oitylo
+			karytaina veligosti leuktron
 		}
 		our_cores_conquered_by_others = {
-			karytaina veligosti leuktron
 			damala ermioni kalamata kyparissia
 			andritsaina pontikokastro andravida corinth
 			chalandritsa patras vostitsa kalavryta xylokastro
 			kythira modon
 		}
-		
+
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -14415,20 +14338,17 @@ countries = {
 			ruler = br_ere_rdm_character_13
 			ruler_term = { character = br_ere_rdm_character_13 start_date = 1331.9.25 }
 		}
-		
 		country_rank = rank_duchy
 		liturgical_language = koine_dialect
-
 		currency_data = { #From ongoing civil war and turkic raiding
 			stability = -5
 			government_power = -5
 			#inflation = 0.1
 			war_exhaustion = 4
 		}
-		
 		capital = mystras
 	}
-
+	
 	ZTA = {
 		our_cores_conquered_by_others = {
 			podgorica bar_cg gradina kotor
@@ -14536,7 +14456,7 @@ countries = {
 			ruler_term = { character = anr_arnau_de_llorda start_date = 1326.6.27 }
 		}
 		capital = andorra_la_vella
-		country_rank = rank_duchy
+		country_rank = rank_county
 	}
 	ARA = {
 		own_control_core = {
@@ -14550,12 +14470,12 @@ countries = {
 			pina_de_ebro
 			peniscola
 			alcaniz valderrobres
+			belchite carinena calatayud tarazona
 		}
 		our_cores_conquered_by_others = {
-			belchite tarazona
 			puigcerda prades montpellier perpignan
 			vielha
-			zaragoza ariza daroca carinena calatayud
+			zaragoza ariza daroca
 			palma ibiza manacor pollensa #Majorca
 			castellon_de_la_plana ares_del_maestre llucena morella
 			teruel albarracin alfambra cantavieja montalban mora_de_rubielos
@@ -14607,6 +14527,7 @@ countries = {
 			centralization_vs_decentralization = 50
 			traditionalist_vs_innovative = -20
 			spiritualist_vs_humanist = -50
+			aristocracy_vs_plutocracy = -20
 			mercantilism_vs_free_trade = 0
 			aristocracy_vs_plutocracy = -100
 			offensive_vs_defensive = 100
@@ -14625,7 +14546,12 @@ countries = {
 			}
 
 		}
-
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 1
+		}
 		currency_data = {
 			gold = 500
 			army_tradition = 100
@@ -14641,7 +14567,6 @@ countries = {
 			gascon
 			castilian
 		}
-		
 	}
 	VAL = {
 		our_cores_conquered_by_others = {
@@ -14719,7 +14644,7 @@ countries = {
 			aguilar_de_campoo carrion_de_los_condes monzon_campos saldana reinosa
 			puebla_de_sanabria alcanices benavente
 		}
-		
+
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -14858,6 +14783,7 @@ countries = {
 				clergy_military_orders
 				#Burghers
 				land_of_commerce
+				shipwright_contracts
 			}
 			laws = {
 				administrative_system = central_councils
@@ -14884,6 +14810,12 @@ countries = {
 			leonese
 			andalusi
 			sephardi
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 1
 		}
 		currency_data = {
 			gold = 750
@@ -15014,6 +14946,12 @@ countries = {
 
 		country_rank = rank_kingdom
 		capital = leon
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1500.1.1
+			size = 0.75
+		}
 		currency_data = {
 			gold = 1000
 			army_tradition = 100
@@ -15103,7 +15041,6 @@ countries = {
 		own_control_colony = {
 			teguise
 			funchal
-			ponta_delgada
 			bissagos
 		}
 
@@ -15145,6 +15082,7 @@ countries = {
 				name_ishmael = 1
 				name_joseph = 1
 			}
+
 			reforms = {
 				the_jewel_of_alandalus_reform
 				br_alandalus_reform
@@ -15158,7 +15096,6 @@ countries = {
 				noble_sponsored_navy
 				br_ghazi_privilege
 				#joint_assembly_decrees
-				auxilium_et_consilium # buff adu
 
 				#Clergy
 				clergy_literacy_rights
@@ -15228,18 +15165,37 @@ countries = {
 		accepted_cultures = {
 			sephardi
 			zenati
+		}
+		tolerated_cultures = {
 			mozarabic
-
-		capital = cordoba #br edit
-		
-		timed_modifier = {
-			modifier = "br_levy_size_modifier_adu"
-			start_date = 1333.1.1
-			date = 1350.1.1
-			size = 1
 		}
 
-		
+		capital = cordoba #br edit
+	}
+
+	GRA = {
+		our_cores_conquered_by_others = {
+			almeria almanzora baza gergal mojacar velez_rubio
+			granada adra almunecar guadix huescar illora loja pinar orgiva
+			malaga antequera velez_malaga
+			olvera
+		}
+
+		starting_technology_level = 3
+		include = "expl_muslim_mediterranean"
+		include = "muslim_monarchy_not_present"
+
+		government = {
+		}
+		court_language = maghrebi_dialect
+		religious_school = maliki_school
+		country_rank = rank_duchy
+
+		tolerated_cultures = {
+			sephardi
+		}
+
+		capital = granada
 	}
 
 	#Navarre
@@ -15326,8 +15282,6 @@ countries = {
 				pyrenean_fueros_reform
 				sons_of_the_oak_reform
 			}
-
-
 			laws = {
 				administrative_system = merindad_policy
 				legal_code_law = pyrenean_law_policy
@@ -15529,6 +15483,8 @@ countries = {
 			avallon
 			montcenis
 			aignay arnay beaune auxonne louhans
+			
+			langres grancey #D. de Langres
 		}
 
 		starting_technology_level = 3
@@ -15779,7 +15735,6 @@ countries = {
 				name_wido = 2
 				name_william = 12
 				name_robert = 7
-				name_joanna = 1
 			}
 		}
 
@@ -16150,7 +16105,7 @@ countries = {
 
 			regnal_numbers = {
 				name_roger = 1
-				name_eudes = 1
+				name_otto = 1
 				name_theobald = 2
 				name_stephen.name_henry = 1
 				name_stephen = 2
@@ -16961,7 +16916,10 @@ countries = {
 	#Tonnerre (Vassal, Fief Mouvant)
 	TON = {
 		own_control_core = {
-			tonnerre saint_florentin bar_sur_seine #Sénonais
+			tonnerre saint_florentin #Sénonais
+		}
+		our_cores_conquered_by_others = {
+			bar_sur_seine
 		}
 
 		starting_technology_level = 3
@@ -18127,7 +18085,7 @@ countries = {
 		capital = troyes
 	}
 
- #---------------------------- HRE ----------------------------
+	#-------------------- East HRE -------------------
 
 	#Dauphine
 	DAU = {
@@ -18967,6 +18925,12 @@ countries = {
 			ruler = cli_friderik
 			consort = cli_diemut_walsee
 
+			ruler_term = { character = cli_friderik start_date = 1332.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_frederick = 1
+			}
+
 			laws = {
 				mining_law = nobles_mining_law
 			}
@@ -19610,11 +19574,12 @@ countries = {
 				name_omar = 1
 				Khalid = 1
 				name_zechariah = 1
-				Abu_Bakr = 1
+				name_abu_bakr = 1
 			}
 
 			#https://en.wikipedia.org/wiki/Barbary_Coast
 			land_vs_naval = 30
+			land_vs_naval = 30 # https://en.wikipedia.org/wiki/Hafsids_of_B%C3%A9ja%C3%AFa and subjects
 			laws = {
 				piracy_law = state_piracy_policy
 			}
@@ -19641,12 +19606,6 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 1000
 			navy_tradition = 100
@@ -19851,6 +19810,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 
 		religious_school = ibadi_school
 
@@ -19929,6 +19889,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 		religious_school = ibadi_school
 
 		tolerated_cultures = {
@@ -19992,6 +19953,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 		religious_school = ibadi_school
 
 		tolerated_cultures = {
@@ -20088,11 +20050,13 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 
 		religious_school = ibadi_school
 
 		tolerated_cultures = {
 			mustaarabi
+			hausa
 		}
 
 		capital = ouargla
@@ -21166,6 +21130,7 @@ countries = {
 			}
 		}
 
+
 		capital = kaedi
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
@@ -21830,7 +21795,7 @@ countries = {
 
 		liturgical_language = geez_language
 
-		capital = maldarede
+		capital = bonga
 	}
 
 	#Ennarea - ENN
@@ -22033,7 +21998,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = random
 		}
-		capital = maldarede
+		capital = bahir_dar
 
 		liturgical_language = geez_language
 
@@ -22332,6 +22297,7 @@ countries = {
 
 		tolerated_cultures = {
 			gurage
+			amhara
 		}
 
 		capital = hadiya
@@ -22619,7 +22585,7 @@ countries = {
 			tigre
 		}
 
-		capital = agordat
+		capital = khawr_baraka
 	}
 
 	#Bazin - BZN
@@ -22920,6 +22886,10 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture #mamluk_succesion
 			ruler = mam_an_nasir_bahri
+			regnal_numbers = {
+				lajin = 1
+				name_baybars = 2
+			}
 
 			reforms = {
 				autocracy
@@ -31193,6 +31163,7 @@ countries = {
 			khorezmian_culture
 			uyghur_culture
 		}
+		religious_school = maliki_school
 
 		capital = kashgar
 	}
@@ -31571,6 +31542,7 @@ countries = {
 		}
 		tolerated_cultures = {
 			yi_culture
+			bai_culture
 		}
 		capital = ningfan
 	}
@@ -31625,6 +31597,7 @@ countries = {
 		}
 		tolerated_cultures = {
 			hani_culture
+			hui_muslim_culture
 		}
 		capital = ami
 	}
@@ -31653,6 +31626,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		tolerated_cultures = {
+			mongolian_culture
+		}
 		capital = jianshui
 	}
 
@@ -31677,6 +31653,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		accepted_cultures = {
+			bai_culture
+		}
 		capital = xisha
 	}
 
@@ -31688,6 +31667,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		tolerated_cultures = {
+			khampa_culture
 		}
 		capital = jianchang_sichuan
 	}
@@ -31726,6 +31708,9 @@ countries = {
 			ruler = random
 		}
 		capital = hequ_wuding
+		tolerated_cultures = {
+			bai_culture
+		}
 	}
 
 	RND = { #Réndé
@@ -31748,6 +31733,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		tolerated_cultures = {
+			shu_culture
 		}
 		capital = dongchuan
 	}
@@ -31791,6 +31779,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		tolerated_cultures = {
+			shu_culture
+		}
 		capital = leibo
 	}
 
@@ -31820,6 +31811,7 @@ countries = {
 		}
 		tolerated_cultures = {
 			hmong_culture
+			shu_culture
 		}
 		capital = mangbu
 	}
@@ -31833,6 +31825,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		tolerated_cultures = {
+			shu_culture
+		}
 		capital = wusa
 	}
 
@@ -31845,6 +31840,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		tolerated_cultures = {
+			hui_muslim_culture
+		}
 		capital = zhanyi
 	}
 
@@ -31856,6 +31854,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		tolerated_cultures = {
+			hui_muslim_culture
 		}
 		capital = nanning
 	}
@@ -31880,6 +31881,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		tolerated_cultures = {
+			hui_muslim_culture
 		}
 		capital = malong_qujing
 	}
@@ -31922,6 +31926,7 @@ countries = {
 		}
 		tolerated_cultures = {
 			hani_culture
+			hui_muslim_culture
 		}
 		capital = qiubei
 	}
@@ -31949,6 +31954,7 @@ countries = {
 		}
 		tolerated_cultures = {
 			hmong_culture
+			bai_culture
 		}
 		capital = shuicheng
 	}
@@ -32447,6 +32453,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		tolerated_cultures = {
+			hui_muslim_culture
+		}
 		capital = pingba
 	}
 
@@ -32462,6 +32471,7 @@ countries = {
 		tolerated_cultures = {
 			hmong_culture
 			yi_culture
+			hui_muslim_culture
 		}
 		capital = puan_puan
 	}
@@ -32475,6 +32485,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		accepted_cultures = {
+			mongolian_culture
+		}
 		capital = xincheng_annan
 	}
 
@@ -32486,6 +32499,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		accepted_cultures = {
+			mongolian_culture
 		}
 		capital = baise
 	}
@@ -32543,6 +32559,9 @@ countries = {
 			ruler = random
 		}
 		capital = nandan
+		tolerated_cultures = {
+			sui_culture
+		}
 	}
 
 	DLN = { #Donglan
@@ -32555,6 +32574,9 @@ countries = {
 			ruler = random
 		}
 		capital = donglan
+		tolerated_cultures = {
+			mongolian_culture
+		}
 	}
 
 	XCG = { #Xincheng
@@ -32589,6 +32611,9 @@ countries = {
 		include = "south_east_asia_monarchy_no_mandala_no_coast"
 		government = {
 			ruler = random
+		}
+		accepted_cultures = {
+			mongolian_culture
 		}
 		capital = laian_tianzhou
 	}
@@ -32627,6 +32652,9 @@ countries = {
 			ruler = random
 		}
 		capital = zhenan_guishun
+		tolerated_cultures = {
+			mongolian_culture
+		}
 	}
 
 	TPG = { #Taiping
@@ -32674,6 +32702,9 @@ countries = {
 		government = {
 			ruler = random
 		}
+		accepted_cultures = {
+			bai_culture
+		}
 		capital = guangnan
 	}
 
@@ -32711,6 +32742,9 @@ countries = {
 			ruler = random
 		}
 		capital = bazhai
+		tolerated_cultures = {
+			bai_culture
+		}
 	}
 
 	SZI = { #Shezi
@@ -33757,20 +33791,6 @@ countries = {
 		accepted_cultures = { 
 			turkoman_culture
 			farsi_culture
-			adhari_culture
-			iraqi_culture
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1395.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1525.1.1
-			size = 1
 		}
 		currency_data = {
 			gold = 1500
@@ -34787,6 +34807,31 @@ countries = {
 
 		country_rank = rank_county
 		capital = weissenburg
+	}
+
+	HNB = {	#Henneberg
+		our_cores_conquered_by_others = {
+			meiningen schleusingen schmalkalden
+			aschach
+			coburg hildburghausen #Lordship of Coburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+
+		}
+
+		tolerated_cultures = {
+			saxon
+		}
+
+		country_rank = rank_county
+		capital = meiningen
+		dynasty = henneberg_dynasty
 	}
 
 	FKN = {	#W�rzburg
@@ -36044,6 +36089,94 @@ countries = {
 		capital = katzenelnbogen
 	}
 
+	NSW = {  # Nassau Weilburg (North Germany)
+		own_control_core = {
+			usingen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+
+		government = {
+		}
+
+		country_rank = rank_county
+		capital = usingen
+	}
+
+	NSI = {  # Nassau Idstein (North Germany)
+		our_cores_conquered_by_others = {
+			wiesbaden
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+		}
+
+		country_rank = rank_county
+		capital = wiesbaden
+	}
+
+	NSH = {  # Nassau Hadamar (North Germany)
+		our_cores_conquered_by_others = {
+			hadamar
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+		}
+		tolerated_cultures = {
+			ripuarian_franconian
+		}
+		country_rank = rank_county
+		capital = hadamar
+	}
+
+	NSS = {  # Nassau Siegen (North Germany)
+		our_cores_conquered_by_others = {
+			dillenburg #Nassau Dillenburg
+			siegen #Nassau Siegen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+
+		}
+		tolerated_cultures = {
+			rhine_franconian
+		}
+		country_rank = rank_county
+		capital = siegen
+	}
+
+	NSD = {  # Nassau Dillenburg (North Germany)		
+		our_cores_conquered_by_others = {
+			dillenburg
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+
+		}
+		country_rank = rank_county
+		capital = dillenburg
+	}
+
+	#BR COMBINED
 	NSA = {  # Nassau Weilburg (North Germany)
 		own_control_core = {
 			usingen 
@@ -36936,6 +37069,29 @@ countries = {
 
 		country_rank = rank_county
 		capital = konstanz
+	}
+
+	WUR = {	#Württemberg
+		our_cores_conquered_by_others = {
+			stuttgart goppingen sigmaringen welzheim backnang urach nagold riedlingen oberndorf calw
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		government = {
+
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+
+		country_rank = rank_county
+		capital = stuttgart
+		dynasty = wurttemberg_dynasty
 	}
 
 	SWA = {	#Württemberg
@@ -39667,6 +39823,61 @@ countries = {
 		dynasty = welfen_dynasty
 	}
 
+	LUN = {	#Lüneburg
+		our_cores_conquered_by_others = {
+			luneburg celle winsen harburg ebstorf isenhagen winsen_aller fallingbostel
+			dannenberg #County of Danneberg
+			luchow #County of Lüchow
+			uelzen #Amt of Bodenteich
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		country_rank = rank_duchy
+		government = {
+		}
+
+		tolerated_cultures = {
+			angrian
+			polabian
+		}
+
+		capital = luneburg
+		dynasty = welfen_dynasty
+	}
+
+	BRU = {	#Brunswick (Lüneburg)
+		our_cores_conquered_by_others = {
+			brunswick gifhorn helmstedt meinersen wolfenbuttel gandersheim #Duchy of Braunschweig-Wolfenbüttel
+			hanover hamelin neustadt_am_rubenberge #Duchy of Calemberg
+			gottingen #Duchy of Göttingen
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "expl_northern_europe"
+		include = "german_principality_not_present"
+		country_rank = rank_duchy
+		government = {
+
+		}
+
+		tolerated_cultures = {
+			angrian
+			lower_saxon
+		}
+
+		capital = brunswick
+		dynasty = welfen_dynasty
+	}
+
+
 	GBH = {	#Grubenhagen
 		own_control_core = {
 			einbeck duderstadt herzberg
@@ -41244,12 +41455,6 @@ countries = {
 			date = 1342.1.1
 			size = 1
 		}
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1475.1.1
-			size = 0.5
-		}
 
 		accepted_cultures = {
 			greater_polish
@@ -41834,18 +42039,6 @@ countries = {
 		capital = vilnius
 		dynasty = gediminid_dynasty
 		court_language = polish_dialect
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1395.1.1
-			size = 0.33
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1395.1.1
-			size = 0.75
-		}
 		country_rank = rank_duchy
 		currency_data = {
 			gold = 500
@@ -42425,7 +42618,7 @@ countries = {
 		
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
-		include = "br_russian_principality"
+		include = "ruthenian_principality_no_coast"
 		government = {
 			ruler = kie_teodoras_ivanovich_rurikovich
 
@@ -42831,7 +43024,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1400.1.1
+			date = 1425.1.1
 			size = 1
 		}
 		court_language = karluk_language
@@ -49111,18 +49304,6 @@ countries = {
 		tolerated_cultures = {
 			baloch_culture
 		}
-		timed_modifier = {
-			modifier = "br_lucky_country_buff"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1425.1.1
-			size = 0.33
-		}
 		currency_data = {
 			gold = 2500
 			prestige = 100
@@ -53294,7 +53475,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1355.1.1
+			date = 1400.1.1
 			size = 0.5
 		}
 		currency_data = {
@@ -53538,7 +53719,7 @@ countries = {
 			ruler = tun_abu_yahya_abu_bakr_ii
 			land_vs_naval = 50
 			laws = {
-				piracy_law = state_piracy_policy
+				piracy_law = br_state_piracy_policy
 			}
 			privilege = {
 				#Nobles
@@ -53590,7 +53771,7 @@ countries = {
 		timed_modifier = {
 			modifier = "br_levy_size_modifier"
 			start_date = 1333.1.1
-			date = 1355.1.1
+			date = 1365.1.1
 			size = 1
 		}
 		currency_data = {
@@ -53887,10 +54068,8 @@ countries = {
 
 	HE2 = {
 		#type = pop
-		own_control_core = {
-			andritsaina kalavryta
-		}
 		our_cores_conquered_by_others = {
+			andritsaina kalavryta
 			pontikokastro 
 		}
 		include = "expl_mediterranean"
@@ -53916,12 +54095,10 @@ countries = {
 	}
 
 	HE3 = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			karytaina
 			veligosti 
 			leuktron
-		}
-		our_cores_conquered_by_others = {
 			tripolitsa 
 			oitylo 
 		}
@@ -54453,9 +54630,10 @@ countries = {
 	ICO = {
 		own_control_core = {
 			konya hatunsaray larende pirloganda cumra
+			obruk karapinar
 		}
 		our_cores_conquered_by_others = {
-			obruk karapinar altinekin ladik
+			altinekin ladik
 		}
 		starting_technology_level = 3
 		include = "br_thema_template"
@@ -54599,6 +54777,7 @@ countries = {
 			kavala drama serres
 			xanthia
 			komotini
+			kilkis gynaikokastro rentina
 		}
 		our_cores_conquered_by_others = {
 			smolyan ustra
@@ -54633,6 +54812,7 @@ countries = {
 	B0R = {
 		own_control_core = {
 			grevena siatista kastoria servia ostrovo
+			giannitsa veria edessa
 		}
 		#our_cores_conquered_by_others = {
 		#	florina
@@ -54657,7 +54837,7 @@ countries = {
 			war_exhaustion = 4
 		}
 		liturgical_language = koine_dialect
-		capital = ostrovo
+		capital = veria
 	}
 
 	A1G = {
@@ -54800,8 +54980,6 @@ countries = {
 			bozok sorgun baliseyh
 			huseyinabad sungurlu
 			corum
-		}
-		our_cores_conquered_by_others = {
 			kirsehir hacibektas dinek_keskin
 		}
 		starting_technology_level = 3
@@ -54898,9 +55076,10 @@ countries = {
 		own_control_core = {
 			aksaray eregli_kar
 			bekarlar bor_tur nigde
+			eskil
 		}
 		our_cores_conquered_by_others = {
-			eskil nevsehir kochisar sariyahsi
+			nevsehir kochisar sariyahsi
 		}
 		starting_technology_level = 3
 		include = "br_pronoia_template"
@@ -55294,8 +55473,8 @@ countries = {
 	}
 
 	AN24 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Iconium
-		type = army
-		own_control_conquered = {
+		#type = army
+		our_cores_conquered_by_others = {
 			eskil obruk karapinar
 		}
 		starting_technology_level = 3
@@ -55322,7 +55501,6 @@ countries = {
 		}
 		capital = obruk
 		dynasty = bayindir_dynasty
-		religious_school = maturidi_school
 	}
 	
 	AN25 = { #Kurdish tribe in mountains near Van
@@ -55344,8 +55522,8 @@ countries = {
 	}
 	
 	AN26 = { #Turkic tribe brought in as mercanaries for the Romans before revolting and settling near Kayseri
-		type = army
-		own_control_conquered = {
+		#type = army
+		our_cores_conquered_by_others = {
 			kirsehir hacibektas dinek_keskin
 		}
 		starting_technology_level = 3
@@ -55356,7 +55534,6 @@ countries = {
 			heir_selection = tribal_oldest_male
 			ruler = br_tourkoromaioi_rdm_character_9
 			ruler_term = { character = br_tourkoromaioi_rdm_character_9 start_date = 1329.9.25 }
-
 			reforms = {
 				br_sub_foideratoi_subject
 			}
@@ -55372,7 +55549,6 @@ countries = {
 		}
 		capital = kirsehir
 		dynasty = avsar_dynasty
-		religious_school = maturidi_school
 	}
 
 	AN27 = { #Cappadocian pronoia
@@ -55757,12 +55933,6 @@ countries = {
 			individualism_vs_communalism = 80
 			outward_vs_inward = 80
 		}
-		timed_modifier = {
-			modifier = "br_levy_size_modifier"
-			start_date = 1333.1.1
-			date = 1338.1.1
-			size = 2
-		}
 		capital = kodak
 	}
 	
@@ -56064,7 +56234,6 @@ countries = {
 
 	LOT = {
 		own_control_core = {
-			langres grancey #D. de Langres
 			chalons_champagne #C. de Chalon
 			reims #D. Reims
 
@@ -56086,6 +56255,8 @@ countries = {
 			rosnay villemaur choiseul
 			thionville
 
+			bar_sur_seine
+			chateau_thierry broyes #Brie Champenoise
 			# landau_rhineland speyer
 		}
 		own_control_integrated = {
@@ -56178,10 +56349,10 @@ countries = {
 				name_lothar = 2
 			}
 
-			centralization_vs_decentralization = 30
+			centralization_vs_decentralization = -25
 			aristocracy_vs_plutocracy = -75
 			serfdom_vs_free_subjects = -80
-			traditionalist_vs_innovative = -45
+			traditionalist_vs_innovative = -30
 			spiritualist_vs_humanist = -50
 			mercantilism_vs_free_trade = -25
 			offensive_vs_defensive = -35
@@ -56195,13 +56366,12 @@ countries = {
 			reforms = {
 				br_carolingian_heritage
 				br_ancient_french_taxation
-				br_aftermatch_louis_iv
+				br_french_feudal_nobility
+				autocracy
 			}
 
 			laws = {
-				administrative_system = br_feudal_frankish_administration
-				medieval_levy_law = br_hre_army	#Dependence on nobles
-				legal_code_law = br_hre_mess_law
+				medieval_levy_law = noble_levies	#Dependence on nobles
 				cultural_traditions_law = civil_society	#Taxing the peasants
 				mining_law = nobles_mining_law	#Noble Controlled
 				precious_metal_distribution_law = unlimited_gold_export
@@ -56218,14 +56388,6 @@ countries = {
 				chancellor_nobles
 				villes_franches
 				great_offices_of_the_crown_of_france
-				banal_lordship
-				clergy_strengthen_faith
-				clergy_religious_advisory_council
-				reduced_from_military_obligations
-				clergy_powerful_dioceses
-			    clergy_papal_emissary
-				br_clergy_excessive_influence
-				br_feudal_nobility
 			}
 		}
 
@@ -56238,7 +56400,7 @@ countries = {
 		country_rank = rank_kingdom
 		capital = metz
 		currency_data = {
-			gold = 3000
+			gold = 2250
 			prestige = 100
 			army_tradition = 100
 		}
@@ -56411,8 +56573,11 @@ countries = {
 	SSN = {
 		own_control_core = {
 			soissons braine noyon coucy laon #Soissonnais
-			chateau_thierry broyes #Brie Champenoise
 			guise hirson marle ribemont #Thiérache
+		}
+
+		our_cores_conquered_by_others = {
+			chateau_thierry broyes #Brie Champenoise
 		}
 
 		starting_technology_level = 3
@@ -56448,7 +56613,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy_no_auxilium"
+		include = "muslim_monarchy"
 		
 		government = {
 			type = monarchy
@@ -56488,6 +56653,8 @@ countries = {
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
 				dhimmi_in_administration
+
+				br_protected_subject_faith_privilege
 				
 			}
 			
@@ -56523,15 +56690,13 @@ countries = {
 		}
 	}
 	
-	
 	AD1 = { #BR addition
 		own_control_core = {
 			zaragoza
-			belchite carinena calatayud tarazona
 		}
 
 		our_cores_conquered_by_others = {
-			
+			belchite carinena calatayud tarazona
 			peniscola
 			alcaniz valderrobres
 			daroca teruel alfambra mora_de_rubielos castellon_de_la_plana ares_del_maestre
@@ -56548,14 +56713,13 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy_no_auxilium"
+		include = "muslim_monarchy"
 		
 		government = {
 			type = monarchy
 			heir_selection = oligarchic_elective
 			ruler = random
 			
-
 			privilege = {
 				#Nobles
 				
@@ -56588,6 +56752,8 @@ countries = {
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
 				dhimmi_in_administration
+
+				br_protected_subject_faith_privilege
 				
 			}
 			
@@ -56641,7 +56807,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "iberian_monarchy"
+		include = "muslim_monarchy"
 		
 		country_rank = rank_duchy
 		capital = palma
@@ -57089,6 +57255,9 @@ countries = {
 		tolerated_cultures = {
 			english
 		}
+		ai_advance_preference_tags = {
+			exploration = 8
+		}
 
 	}
 
@@ -57366,8 +57535,79 @@ countries = {
 		capital = raseiniai
 		country_rank = rank_county
 	}
+	######Azores#####
+	
+	HUK = {	#Haukland
+		own_control_core = {
+			ponta_delgada
+			angra
+		}
+
+		starting_technology_level = 3
+		include = "peasant_republic"
+		include = "expl_scandinavia"
+
+		discovered_areas = {
+			brazil_sea_zones_area
+			west_africa_coastline
+			gulf_of_africa_sea
+			nw_africa_coast_area
+			atlantic_north_equatorial_area
+			atlantic_equatorial_countercurrent_area
+			jaguaribe_area
+		}
+		discovered_regions = {
+			guinea_region
+			macaronesia_region
+		}
+
+		government = {
+			reforms = {
+				family_sagas_reform
+				hauklandic_sailors_reform
+			}
+		}
+
+		country_rank = rank_county
+		capital = angra
+	}
+	FAK = {	#Falkland
+		own_control_core = {
+			horta
+			santa_cruz_flores
+		}
+
+		starting_technology_level = 3
+		include = "peasant_republic"
+		include = "expl_scandinavia"
+
+		discovered_areas = {
+			brazil_sea_zones_area
+			west_africa_coastline
+			gulf_of_africa_sea
+			nw_africa_coast_area
+			atlantic_north_equatorial_area
+			atlantic_equatorial_countercurrent_area
+			jaguaribe_area
+		}
+		discovered_regions = {
+			guinea_region
+			macaronesia_region
+		}
+
+		government = {
+			reforms = {
+				family_sagas_reform
+				hauklandic_sailors_reform
+			}
+		}
+
+		country_rank = rank_county
+		capital = horta
+	}
 
 	
+
 }
 }
 

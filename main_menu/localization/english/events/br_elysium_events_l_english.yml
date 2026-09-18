@@ -1,14 +1,72 @@
 ﻿l_english:
  elysium_event.1.title: "The Birth of Elysium"
  elysium_event.1.desc: "For generations, our scattered settlements survived as fragments of an exile—Latin and Greek, Pantheonic and Christian, divided by creed and custom. Yet the old dream endured: that one day, the heirs of the first voyagers would rise above their fracturing past and forge a true homeland in this new world.\n\nNow that day has come. With our people united and our rivals humbled, the ancient name spoken by the first colonists—Elysium—can finally be claimed. The sacred texts speak of Elysium as a land where heroes dwell in peace, a realm beyond memory and loss. Here, on the shores of our adopted world, we shall make that myth real.\n\nOur new capital shall be moved to the Elyric settlement of Dryopeia, standing as a bridge between the lands of the Elysilatinī to the north and the Elysinói to the south, the meeting point of all who call themselves Elysian."
-
+ elysium_event.1.entry: "$elysium_event.1.title$"
  elysium_event.1.a: "Found a new Elysium."
  elysium_event.1.b: "Retain current culture and capital."
 
  elysium_event.3.title: "The Legacy of Rome"
  elysium_event.3.desc: "For generations, the Elysilatinī have lived beyond the reach of the Old World. The names of Rome and Constantinople survive only in ancient manuscripts, family traditions, and the weathered stones of our oldest temples. Across the great western ocean, no emperor rules us, no Roman fleet comes to our aid, and no messenger has crossed the sea to tell us what became of our forefathers.\n\nYet Rome is not forgotten. In the temples of our cities, the old gods still receive offerings, and the eagle remains a symbol of the order our ancestors carried across the sea. Around us, the peoples of this new land trade with us, war with us, and increasingly adopt our customs. We may be far from Rome, but perhaps we are not so far from its spirit."
  elysium_event.3.a: "Our destiny lies in this new world."
+ elysium_event.3.entry: "$elysium_event.3.title$"
 
  elysium_event.4.title: "The Light Across the Sea"
  elysium_event.4.desc: "The people of the Elysinói have long known that they are heirs to a world they shall never see. Our ancestors crossed the western sea centuries ago, carrying with them the language of the Greeks and the teachings of Christ. Since then, the ocean has become our wall and our shield. No priest from the Old World has visited our churches, and no ship from the lands of the Romans has found its way to our shores.\n\nHere, beside the great waters of the western bay, our people have built a life of their own. We trade with the peoples of the forests and rivers, sharing goods and customs across the waters. Some among them have taken our faith as their own, while others remain devoted to their ancestral gods. We stand alone, but the light of our faith has not gone out."
  elysium_event.4.a: "Perhaps this land is our promised home."
+ elysium_event.4.entry: "$elysium_event.4.title$"
+
+ br_elysian_DHE.1.entry: "$d008_flavor_byz.1.title$"
+
+ br_elysian_DHE.2.title: "The Northwest Ordinance"
+ br_elysian_DHE.2.desc: "The lands between the Mississippi River, the [ShowAreaName('great_lakes_sea_zones_area')], and the Ohio River, known collectively as the Northwest Ordinance, have long remained upon the periphery of our realm. Now that our settlements have taken firmer root, the question of their place within our administration can no longer be ignored. Shall these lands be granted their own assemblies and governed with a measure of local freedom, or shall they remain firmly beneath the authority of our capital? We must settle this matter, that an orderly rule may be established across the frontier."
+ br_elysian_DHE.2.a: "Let them govern themselves."
+ br_elysian_DHE.2.a.tt: "Every owned [location|e] in the Northwest Ordinance will gain [ShowNamedValue('development_weak_bonus')|+=] [development|e] and lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
+ br_elysian_DHE.2.b: "The frontier shall answer to us."
+ br_elysian_DHE.2.b.tt: "Every owned [location|e] in the Northwest Ordinance will lose [ShowNamedValue('development_weak_penalty')|+=] [development|e] and gain [ShowNamedValue('control_mild_bonus')|+=2%] [control|e]"
+ br_elysian_DHE.2.entry: "$br_elysian_DHE.2.title$"
+
+ br_elysian_DHE.3.title: "The [ShowGoodsNameWithNoTooltip('fur')] Trade"
+ br_elysian_DHE.3.desc: "The vast reaches of [ShowSubContinentName('north_america')] are famed for the abundance and quality of their [ShowGoodsName('fur')]. As demand for these goods grows throughout [ShowContinentName('europe')], merchants have urged us to turn greater attention toward their acquisition and trade. The forests of the frontier may yet yield a handsome profit for those willing to venture into them."
+ br_elysian_DHE.3.a: "Send more trappers into the wilds."
+ br_elysian_DHE.3.a.tt: "This will improve all [ShowGoodsNameWithNoTooltip('fur')] Extractions in our country."
+ br_elysian_DHE.3.b: "Our resources are needed elsewhere."
+ br_elysian_DHE.3.entry: "$br_elysian_DHE.3.title$"
+
+ br_elysian_DHE.4.title: "The Assimilation of the Natives"
+ br_elysian_DHE.4.desc: "The lands claimed by us are also home to numerous native peoples, whose place within our dominion remains uncertain. Some among our magistrates have proposed a policy of assimilation, encouraging these peoples to adopt the customs, language, and ways of life of the [ROOT.GetCountry.GetCulture.GetName]. Such a policy may bind the frontier more closely to our realm, though it will not be without consequence."
+ br_elysian_DHE.4.a: "Adopt the policy of [ShowPolicyNameWithNoTooltip('native_integration')]."
+ br_elysian_DHE.4.b: "Let the native peoples keep their ways."
+ br_elysian_DHE.4.entry: "$br_elysian_DHE.4.title$"
+
+ br_elysian_DHE.5.title: "Unjust Taxation"
+ br_elysian_DHE.5.desc: "The burdensome taxes imposed upon the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] have stirred unrest in [unrest_location.GetName]. The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] cry out against what they consider an injustice, and their discontent has spread among their countrymen throughout [unrest_location.GetProvince.GetName]. If their grievances are left unanswered, this local dispute may soon become a wider challenge to our authority."
+ br_elysian_DHE.5.a: "What do they know of a just tax?"
+ br_elysian_DHE.5.a.tt: "All [pops|e] in the province of [unrest_location.GetProvince.GetName] lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] but the locations also gain [ShowNamedValue('control_weak_bonus')|+=2%] [control|e]"
+ br_elysian_DHE.5.b: "Grant them greater freedom."
+ br_elysian_DHE.5.b.tt: "All [pops|e] in the province of [unrest_location.GetProvince.GetName] gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] but the locations also lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
+ br_elysian_DHE.5.entry: "$br_elysian_DHE.5.title$"
+
+ br_elysian_DHE.6.title: "The Post Road"
+ br_elysian_DHE.6.desc: "The countryside of [ROOT.GetCountry.GetName] remains poorly connected to our towns and cities, and petitions for better roads have reached the administration with increasing frequency. A proper road network would bring our settlements closer together, hasten the movement of merchants and messengers, and allow our soldiers to answer more swiftly when danger threatens the frontier. Such works may prove costly, but the strength of a realm is measured also by the roads that bind it together."
+ br_elysian_DHE.6.a: "Let the administration build it."
+ br_elysian_DHE.6.b: "The cost is not justified."
+ br_elysian_DHE.6.entry: "$br_elysian_DHE.6.title$"
+
+ br_elysian_DHE.7.title: "The Great Fire"
+ br_elysian_DHE.7.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has been consumed by a great fire!\n\nAs the flames still devour homes and workshops, representatives of [target_location.GetNameWithNoTooltip] have already begun organizing relief and plans for the rebuilding of the [target_location.GetRank.GetNameWithNoTooltip]. The undertaking will place a heavy burden upon the treasury, yet the rebuilding of so valuable a settlement may prove a worthy investment in the future of the frontier."
+ br_elysian_DHE.7.a.tt: "[target_location.GetName] will lose [prosperity|e], lose [pops|e] and some [buildings|e] will be affected by the fire"
+ br_elysian_DHE.7.a: "Rebuild it greater than before!"
+ br_elysian_DHE.7.b.tt: "[target_location.GetName] will lose [prosperity|e], lose [development|e], lose [pops|e] and some [buildings|e] will be affected by the fire"
+ br_elysian_DHE.7.b: "Repair only what is necessary."
+ br_elysian_DHE.7.entry: "$br_elysian_DHE.7.title$"
+
+ br_elysian_DHE.8.title: "The Expedition"
+ br_elysian_DHE.8.desc: "[target_character.GetName] and his close companion [target_character_2.GetName] have proposed an expedition across the western reaches of [ShowSubContinent('north_america')]. Their purpose is to discover the most direct and practicable waterways across the continent, opening new routes for commerce and communication. With a small company of volunteers, the two intend to cross the wilderness and chart the Missouri River, seeking any river passage that might carry Elysian merchants and vessels across the continent."
+ br_elysian_DHE.8.a: "The Republic shall fund their expedition."
+ br_elysian_DHE.8.b: "They require further preparation."
+ br_elysian_DHE.8.entry: "$br_elysian_DHE.8.title$"
+
+ br_elysian_DHE.9.title: "Tension with the Native Peoples"
+ br_elysian_DHE.9.desc: "The steady advance of [ROOT.GetCountry.GetAdjective] settlers across [ShowContinentName('america')] has brought us into increasing conflict with the native peoples of these lands. Our settlements now stand where others have lived for generations, and many native communities have begun to unite in defense of their homes. What began as scattered resistance may yet become a common cause against our expansion."
+ br_elysian_DHE.9.a: "The frontier must not yield!"
+ br_elysian_DHE.9.entry: "$br_elysian_DHE.9.title$"
