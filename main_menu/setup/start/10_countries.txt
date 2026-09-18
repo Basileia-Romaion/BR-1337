@@ -56366,12 +56366,13 @@ countries = {
 			reforms = {
 				br_carolingian_heritage
 				br_ancient_french_taxation
-				br_french_feudal_nobility
-				autocracy
+				br_aftermatch_louis_iv
 			}
 
 			laws = {
-				medieval_levy_law = noble_levies	#Dependence on nobles
+				administrative_system = br_feudal_frankish_administration
+				medieval_levy_law = br_hre_army	#Dependence on nobles
+				legal_code_law = br_hre_mess_law
 				cultural_traditions_law = civil_society	#Taxing the peasants
 				mining_law = nobles_mining_law	#Noble Controlled
 				precious_metal_distribution_law = unlimited_gold_export
@@ -56388,6 +56389,14 @@ countries = {
 				chancellor_nobles
 				villes_franches
 				great_offices_of_the_crown_of_france
+				banal_lordship
+				clergy_strengthen_faith
+				clergy_religious_advisory_council
+				reduced_from_military_obligations
+				clergy_powerful_dioceses
+			    clergy_papal_emissary
+				br_clergy_excessive_influence
+				br_feudal_nobility
 			}
 		}
 
@@ -56400,7 +56409,7 @@ countries = {
 		country_rank = rank_kingdom
 		capital = metz
 		currency_data = {
-			gold = 2250
+			gold = 3000
 			prestige = 100
 			army_tradition = 100
 		}
