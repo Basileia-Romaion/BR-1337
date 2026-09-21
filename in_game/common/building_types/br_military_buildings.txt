@@ -480,7 +480,7 @@ br_foederati_grant = { #Foederati Settlements
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	can_destroy = {
-        local_control > 0.75
+        local_control > 0.5
 	}
 	destroy_price = br_bandits_building_remove_price
 	
