@@ -1,0 +1,70 @@
+﻿
+
+##Serbia
+
+br_ser_pronoia_bureaucracy = {
+    implementation_price = price:implement_bureaucracy_price
+    maintenance_price = price:maintain_bureaucracy_price
+    removal_price = price:remove_bureaucracy_price
+
+    potential = {
+        has_advance = br_SER_pronoial_administration
+    }
+
+    estates_that_like = { nobles_estate crown_estate }
+    estates_that_dislike = { peasants_estate }
+
+    neutral_modifier = {
+		global_levy_size_modifier = 0.10	
+    }
+
+    positive_modifier = {
+        scale = { value = scope:maintenance }
+		nobles_estate_levy_size = 0.5
+        army_reinforce_efficiency = 0.10
+        army_heavy_cavalry_power = 0.10
+    }
+
+    negative_modifier = {
+        scale = { value = 1 subtract = scope:maintenance }
+        global_nobles_estate_power = 0.5
+		peasants_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+    }
+}
+
+##Bulgaria
+
+br_bul_pronoia_bureaucracy = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+
+	potential = {
+		has_advance = br_BUL_pronoial_administration
+	}
+
+	estates_that_like = {
+		nobles_estate
+		crown_estate
+	}
+	estates_that_dislike = {
+		peasants_estate
+	}
+
+	neutral_modifier = {
+		global_levy_size_modifier = 0.10	
+    }
+
+    positive_modifier = {
+        scale = { value = scope:maintenance }
+		nobles_estate_levy_size = 0.5
+        army_reinforce_efficiency = 0.10
+        army_heavy_cavalry_power = 0.10
+    }
+
+    negative_modifier = {
+        scale = { value = 1 subtract = scope:maintenance }
+        global_nobles_estate_power = 0.5
+		peasants_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+    }
+}

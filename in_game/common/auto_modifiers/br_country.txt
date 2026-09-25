@@ -5,15 +5,13 @@
 
 #negative because inject doesn't replace is adds or subtracts
 TRY_INJECT:country_base_values = {
-	#monthly_legitimacy = -0.25 #an additional -0.25
-	stability_decay = 0.0025 #an additional 0.0025 for 0.0075 total
-	#stability_investment = stability_investment_penalty #br addition
+	#stability_decay = 0.0025 #an additional 0.0025 for 0.0075 total
 	global_trade_protection_factor = 0.25 #added to better balance the global markets
 	antagonism_religion_influence = 1 #increase to antagonism against different religions
 }
 
 TRY_INJECT:war_exhaustion_impact = {
-	stability_decay = 0.0001 #br addition
+	stability_decay = 0.0002 #br addition
 	monthly_legitimacy = -0.02 #br addition
 }
 
@@ -22,6 +20,45 @@ TRY_INJECT:positive_stability_impact = {
 }
 
 TRY_INJECT:negative_stability_impact = {
-	monthly_legitimacy = -0.1
+	monthly_legitimacy = -1
 	global_monthly_prosperity = -0.001 #br addition
+}
+
+#REPLACE_OR_CREATE:country_base_values_with_taxation = {
+	#potential_trigger = {
+		#modifier:enable_taxation = yes
+	#}
+	#monthly_legitimacy = -1.25 #was 1.0
+	#monthly_republican_tradition = 1.25 #was 1.0
+	#monthly_devotion = 1.25 #was 1.0
+	#monthly_horde_unity = -1.0
+	#monthly_tribal_cohesion = -1.0
+#
+#}
+
+#has_variable = roman_authority
+#var:roman_authority
+
+high_roman_authority= {
+	potential_trigger = {
+		is_leader_of_international_organization = international_organization:roman_world
+		international_organization:roman_world = {
+			var:roman_authority > 50
+		}
+	}
+	#monthly_prestige = 0.1
+	global_monthly_control = 0.0025
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction
+}
+
+low_roman_authority = {
+	potential_trigger = {
+		is_leader_of_international_organization = international_organization:roman_world
+		international_organization:roman_world = {
+			var:roman_authority < 50
+		}
+	}
+	#stability_decay = 0.001
+	monthly_legitimacy = -0.25
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 }

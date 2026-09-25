@@ -93,6 +93,7 @@ br_ere_disaster_events.4 = { #Border Frictions
 	trigger = {
 		any_neighbor_country = {
 			NOT = { is_allied_with = { target = ROOT } }
+			NOT = { is_subject_or_below_of = root }
 			NOT = { has_truce_with = ROOT }
 			any_owned_location = {
 				any_neighbor_location = {
@@ -109,6 +110,7 @@ br_ere_disaster_events.4 = { #Border Frictions
 				NOT = { is_allied_with = { target = ROOT } }
 				NOT = { has_truce_with = ROOT }
 				NOT = { root = { has_blocked_treaties = prev } }
+				NOT = { is_subject_or_below_of = root }
 			}
 			save_scope_as = target_country
 		}
@@ -230,26 +232,18 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 
 	option = {
 		name = br_ere_disaster_events.6.a
-
-		scope:target_province = {
-			create_location_country_from_province = {
-				custom_tooltip = {
-					text = people_of_target_province_will_declare_war_on_us_tt
-					if = {
-						limit = {
-							can_declare_legal_war_on = { target = root }
-						}
-						declare_war_with_cb = {
-							target = root
-							type = casus_belli:cb_insulted_us
-						}
-					}
-					else = {
-						add_casus_belli = {
-							target = root
-							type = casus_belli:cb_insulted_us
-						}
-					}
+		custom_tooltip = {
+			text = people_of_target_province_will_declare_war_on_us_tt
+					
+			scope:target_province = {
+				create_location_country_from_province = {
+					save_scope_as = target_country
+				}
+			}
+			c:BYZ ?= {
+				declare_war_with_cb = {
+					target = scope:target_country
+					type = casus_belli:cb_annex
 				}
 			}
 		}
@@ -257,11 +251,9 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 
 	option = {
 		name = br_ere_disaster_events.6.b
-
 		scope:target_province = {
-			every_location_in_province = { change_control = control_mild_penalty }
+			every_location_in_province = { change_control = self_control_severe_penalty }
 		}
-
 		scope:target_location = {
 			ordered_pop = {
 				limit = { owner = root }
@@ -278,7 +270,6 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 
 
 ###
-
 
 br_ere_disaster_events.7 = { #Local Elites Question our Authority
 	category = disaster_event
@@ -312,7 +303,7 @@ br_ere_disaster_events.7 = { #Local Elites Question our Authority
 
 	option = {
 		name = br_ere_disaster_events.7.a
-		add_stability = stability_weak_penalty
+		add_stability = stability_weak_bonus
 		scope:target_location = {
 			add_location_modifier = { modifier = bul_powerful_local_elites years = 20 mode = add }
 		}
@@ -326,10 +317,10 @@ br_ere_disaster_events.7 = { #Local Elites Question our Authority
 					owner = root
 					pop_type = pop_type:nobles
 				}
-				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
 			}
 		}
-		add_stability = stability_weak_bonus
+		add_stability = stability_weak_penalty
 	}
 }
 

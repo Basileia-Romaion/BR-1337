@@ -4,7 +4,7 @@
 #stability_cost_efficiency
 #court_spending_efficiency
 TRY_INJECT:average_literacy = {
-	stability_decay = 0.0025 #0.25 at 100% literacy
+	stability_decay = 0.005 #0.5 at 100% literacy
 }
 
 TRY_INJECT:average_development = {
@@ -19,6 +19,17 @@ TRY_INJECT:is_great_power = {
 TRY_INJECT:is_regional_power = {
 	court_spending_efficiency = -0.1
 	stability_decay = 0.001
+}
+
+REPLACE_OR_CREATE:is_subject = {
+	game_data = {
+		category = country
+	}
+	pop_join_rebel_threshold = -0.05 #was 0.1
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty #was large_permanent_target_satisfaction
+	global_pop_assimilation_speed_modifier = -0.35 #was 0.5
+	global_pop_conversion_speed_modifier = -0.25 #was 0.5
+	
 }
 
 #BR added modifiers
@@ -200,4 +211,16 @@ REPLACE_OR_CREATE:byz_mercantile_self_reliance_modifier = {
 
 TRY_INJECT:BYZ_cracking_down_on_nobility = {
 	stability_investment = stability_investment_penalty
+}
+
+REPLACE_OR_CREATE:country_art = {
+	game_data = {
+		category = country
+	}
+	monthly_prestige = 1 #5
+	# cultural_tradition removed: tradition/influence are now computed per-WoA type in C++ (Phase B)
+
+	monthly_karma = 1
+
+	monthly_towards_innovative = 1 #2
 }

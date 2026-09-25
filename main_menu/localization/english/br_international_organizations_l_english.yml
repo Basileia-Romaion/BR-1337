@@ -36,6 +36,10 @@
  roman_authority_DISPLAY: "$VAL|0$"
  ROMAN_AUTHORITY_DISPLAY: "$VAL$"
 
+ SUBJUGATED_ERE_MEMBER: "[GetUniqueInternationalOrganization('roman_world').GetName] states subjugated by Foreign Powers"
+ FOREIGN_PROVINCES_ANATOLIA: "[GetUniqueInternationalOrganization('roman_world').GetName] [ShowRegionName('anatolia_region')] locations owned by Foreign powers."
+ FOREIGN_PROVINCES_WEST: "[GetUniqueInternationalOrganization('roman_world').GetName] Western locations owned by Foreign powers."
+
  roman_authority_desc: "$roman_authority$ represents the recognized legitimacy and moral authority of the [GetUniqueInternationalOrganization('roman_world').GetLeaderTitle] within the [GetUniqueInternationalOrganization('roman_world').GetName].\n\nIt is sustained not by arms alone, but through [ShowLawName('br_romaiokratia_law')], ancient tradition, and the recognition of the primacy of [ShowLocationName('constantinople')].\n\nAs more [ShowSpecialStatusName('imperial_loyalist')] and [ShowSpecialStatusName('external_member')] acknowledge the imperial order, $roman_authority$ grows, enabling the [ShowSpecialStatusName('br_emperor')] to command obedience, issue decrees, and uphold Roman rule. When $roman_authority$ declines, the authority of the Empire loses its binding force, regardless of its military strength."
 
  roman_tribute: "Phóros"
