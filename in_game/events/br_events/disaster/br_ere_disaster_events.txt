@@ -192,7 +192,7 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 	outcome = neutral
 	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
 	trigger = {
-		any_province = {
+		any_owned_location = {
 			NOT = {
 				any_location_in_province = {
 					has_variable = revolter_location
@@ -208,7 +208,7 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
-		random_province = {
+		random_owned_location = {
 			limit = {
 				NOT = {
 					any_location_in_province = {
