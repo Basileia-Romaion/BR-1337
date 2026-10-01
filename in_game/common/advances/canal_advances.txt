@@ -1,0 +1,61 @@
+﻿##########################
+# Canal Megaprojects (Phase B of buildable_canals_plan)
+##########################
+
+suez_canal_advance = {
+	age = age_5_absolutism
+
+	potential = {
+		has_discovered = location:suez
+		original_capital ?= {
+			OR = {
+				continent = continent:europe
+				continent = continent:asia
+				continent = continent:africa
+			}
+		}
+	}
+
+	allow = {
+		has_advance = pound_lock_canals_advance
+		owns_or_non_sovereign_subject_owns = location:suez
+	}
+
+	allow_children = no
+}
+
+panama_canal_advance = {
+	age = age_5_absolutism
+
+	potential = {
+		has_discovered = location:panama
+		original_capital ?= {
+			NOT = { continent = continent:oceania }
+		}
+	}
+
+	allow = {
+		has_advance = pound_lock_canals_advance
+		owns_or_non_sovereign_subject_owns = location:panama
+	}
+
+	allow_children = no
+}
+
+erie_canal_advance = {
+	age = age_5_absolutism
+
+	potential = {
+		has_discovered = location:niagara
+		original_capital ?= {
+			NOT = { continent = continent:oceania }
+		}
+	}
+
+	allow = {
+		has_advance = pound_lock_canals_advance
+		owns_or_non_sovereign_subject_owns = location:niagara
+	}
+
+	allow_children = no
+}

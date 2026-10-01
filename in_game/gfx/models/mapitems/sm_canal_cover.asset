@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "sm_canal_cover_mesh"
+	file = "sm_canal_cover.mesh"
+
+	meshsettings = {
+		name = "pPlaneShape1"
+		index = 0
+		texture_diffuse = "nodiffuse.dds"
+        texture_normal  = "nonormal.dds"
+        texture_specular = "nospec.dds"
+        shader = "terrain_chameleon"
+        shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "sm_canal_cover_entity"
+	pdxmesh = "sm_canal_cover_mesh"
+}
