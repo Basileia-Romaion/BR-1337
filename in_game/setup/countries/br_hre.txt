@@ -38,6 +38,7 @@ REPLACE_OR_CREATE:HRE = {
 
 	culture_definition = lorrain
 	religion_definition = catholic
+	is_historic = yes
 }
 
 #Br edit new countries
@@ -71,7 +72,6 @@ REPLACE_OR_CREATE:CMT = {
 #Combraille
 REPLACE_OR_CREATE:CMB = {
     color = rgb { 33 81 166 }
-
     culture_definition = auvergnat
     religion_definition = catholic
 }

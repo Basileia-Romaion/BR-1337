@@ -15240,6 +15240,8 @@ countries = {
 		include = "muslim_monarchy_not_present"
 
 		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
 		}
 		court_language = maghrebi_dialect
 		religious_school = maliki_school
@@ -34015,6 +34017,8 @@ countries = {
 		include = "muslim_monarchy_not_present"
 
 		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
 		}
 		capital = kaysun
 		religious_school = maturidi_school #Widespread among the Turks together with Hanafi
@@ -56879,7 +56883,7 @@ countries = {
 	}
 
 	#Combraille
-	CMT = {
+	CMB = {
 		own_control_core = {
 			tour_auvergne herment chambon montaigut #Combraille
 		}
