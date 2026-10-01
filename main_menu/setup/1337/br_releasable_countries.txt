@@ -403,18 +403,28 @@ countries = {
 
 		IT1 = { #releasable
 			our_cores_conquered_by_others = {
-				rimini cesena faenza imola modigliana ravenna
+				ravenna
 			}
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
 			include = "br_pronoia_template"
 			country_rank = rank_kingdom
 			government = {
 			}
 			capital = ravenna
+		}
+
+		IT0 = { #releasable
+			our_cores_conquered_by_others = {
+				bari
+			}
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "br_pronoia_template"
+			country_rank = rank_kingdom
+			government = {
+			}
+			capital = bari
 		}
 
 	#IBERIA
