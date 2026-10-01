@@ -530,9 +530,6 @@ br_pyrgoi = {#frontier watchtowers
 			}
 		}
 	}
-	remove_if = {
-		is_border = no
-	}
 	country_potential = {
 		culture = { has_culture_group = culture_group:roman_group }
 	}
@@ -549,6 +546,7 @@ br_pyrgoi = {#frontier watchtowers
 	modifier = {
 		local_garrison_size = 0.025
 		local_hostile_attrition = 0.25
+		hostile_movement_cost = 0.25
 	}
 	
 	raw_modifier = {
@@ -556,6 +554,7 @@ br_pyrgoi = {#frontier watchtowers
 		propagating_zone_of_control = no
 	}
 	remove_if = {
+		is_border = no
 		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
 	}
 	allow_wrong_startup = yes
@@ -602,7 +601,7 @@ br_kleisourai = {#fortified mountain passes
 	modifier = {
 		local_garrison_size = 0.05
 		local_hostile_attrition = 0.5
-		movement_cost = 0.5
+		hostile_movement_cost = 0.75
         possible_frontage_modifier = -0.5
 	}
 	raw_modifier = {
@@ -629,6 +628,125 @@ br_kleisourai = {#fortified mountain passes
 #pomor_outpost
 
 ### Tier 2 / Age 3 ###
+
+br_syria_outpost = {
+	is_special = yes
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	#obsolete = br_pyrgoi
+	
+	employment_size = 0.075
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+
+	ai_forbid_shutdown = yes
+	build_time = small_fort_building
+
+	expensive = no
+	location_potential = {
+		#is_border = yes
+		NOT = {
+			has_fort = yes
+		}
+		OR = {
+			any_neighbor_location = { dominant_religion ?= religion:sunni }
+			any_neighbor_location = { dominant_religion ?= religion:shia }
+		}
+	}
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	unique_production_methods = {
+		br_syria_outpost_maintenance = {
+			lumber = 0.05
+			tar = 0.05
+			stone = 0.2
+			weaponry = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+	modifier = {
+		local_garrison_size = 0.075
+		local_hostile_attrition = 0.35
+		hostile_movement_cost = 0.35
+	}
+	
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+	remove_if = {
+		is_border = no
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	allow_wrong_startup = yes
+}
+
+br_syria_fort = {
+	is_special = yes
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	#obsolete = br_pyrgoi
+	
+	employment_size = 0.25
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+
+	ai_forbid_shutdown = yes
+	build_time = small_fort_building
+
+	expensive = no
+	location_potential = {
+		#is_border = yes
+		NOT = {
+			has_fort = yes
+		}
+		OR = {
+			any_neighbor_location = { dominant_religion ?= religion:sunni }
+			any_neighbor_location = { dominant_religion ?= religion:shia }
+		}
+	}
+	country_potential = {
+		culture = { has_culture_group = culture_group:roman_group }
+	}
+	unique_production_methods = {
+		br_syria_fort_maintenance = {
+			lumber = 0.1
+			tar = 0.1
+			stone = 0.3
+			weaponry = 0.2
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+	modifier = {
+		local_manpower = 0.01
+		can_recruit_regiment_in_this_location = yes
+		local_garrison_size = 0.25
+		local_hostile_attrition = 0.5
+		hostile_movement_cost = 0.5
+	}
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = yes
+	}
+
+	remove_if = {
+		NOT = { owner = { culture = { has_culture_group = culture_group:roman_group } } }
+	}
+	allow_wrong_startup = yes
+}
 
 br_varangian_barracks = {
 	is_special = yes

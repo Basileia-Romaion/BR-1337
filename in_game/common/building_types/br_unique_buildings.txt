@@ -33,9 +33,7 @@ br_great_palace_building = {
 	}
 
 	capital_country_modifier = { 
-		monthly_prestige = 0.02
-		diplomatic_capacity_modifier = 0.1
-		diplomatic_reputation = diplomatic_reputation_very_weak_bonus
+		monthly_political_influence = 0.1
 		monthly_towards_br_bureaucratic = societal_value_tiny_monthly_move
 	}
 
@@ -146,7 +144,7 @@ br_senaton_building = {
 	}
 
 	capital_country_modifier = {
-		country_cabinet_efficiency = 0.025
+		monthly_political_influence = 0.05
 		global_estate_max_tax = 0.025
 		imperial_senate_bureaucracy_impact_modifier = 0.1
 		permanent_parliament_location = yes

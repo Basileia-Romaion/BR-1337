@@ -69,6 +69,7 @@ br_crisis_of_legitimacy = {
 	}
 	
 	monthly_legitimacy = -0.25
+	monthly_political_influence = -0.25
 	land_morale_modifier = -0.1
 }
 
@@ -98,6 +99,7 @@ br_lucky_country_buff = {
 	#global_estate_power = -0.5
 	global_crown_estate_power = 0.5
 	monthly_legitimacy = 0.25
+	monthly_political_influence = 0.25
 	stability_investment = 0.25
 	global_integration_speed_modifier = 1
 	annexation_speed_modifier = 1
@@ -171,7 +173,7 @@ stratiotai_progress_cabinet_efficiency = {
 REPLACE_OR_CREATE:restored_the_imperial_capital_modifier = {
 	game_data = { category = country }
 	global_crown_estate_power = 0.1 #br added
-	monthly_legitimacy = 0.05 #0.3
+	monthly_political_influence = 0.1 # was 0.3 legitimacy 
 	global_estate_target_satisfaction = small_permanent_target_satisfaction #large_permanent_target_satisfaction
 }
 

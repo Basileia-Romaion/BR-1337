@@ -243,15 +243,23 @@ diplomacy_manager = {
     dependency = { first = FCB second = MTB subject_type = vassal }
 	
 	#-------Italy-------
-	dependency = { first = VTC second = NAX subject_type = vassal } #BR EDIT
-	dependency = { first = VTC second = NEG subject_type = vassal } #BR ADDED
+	dependency = { first = VTC second = NAX subject_type = vassal }
+    scripted_oneway = { first = VTC second = NAX type = divert_trade }
+	dependency = { first = VTC second = NEG subject_type = vassal }
+    scripted_oneway = { first = VTC second = NEG type = divert_trade }
 	dependency = { first = VTC second = CEP subject_type = vassal }
+    scripted_oneway = { first = VTC second = CEP type = divert_trade }
 	dependency = { first = VEN second = TTE subject_type = vassal start_date = 1202.10.9 } #Trieste and Muggia swear loyalty to Dux Enrico Dandolo
 	dependency = { first = VTC second = CRT subject_type = vassal }
+    scripted_oneway = { first = VTC second = CRT type = divert_trade }
 	dependency = { first = VEN second = RAG subject_type = vassal }
     dependency = { first = VEN second = DLM subject_type = vassal }
+    scripted_oneway = { first = VEN second = DLM type = divert_trade }
+    #
+    #scripted_oneway = { first = BYZ second = AOI type = divert_trade }
 
     dependency = { first = VEN second = VTC subject_type = trade_company }
+    scripted_oneway = { first = VEN second = VTC type = divert_trade }
     dependency = { first = GEN second = GTC subject_type = trade_company }
     dependency = { first = GTC second = GAZ subject_type = vassal } #colonial_nation
     scripted_mutual = { first = S1C second = SAR type = alliance }
@@ -334,6 +342,7 @@ diplomacy_manager = {
     dependency = { first = TUN second = MZB subject_type = vassal }
     dependency = { first = TUN second = ZAB subject_type = vassal }
     dependency = { first = ZAB second = OGL subject_type = vassal }
+    dependency = { first = TUN second = BIJ subject_type = vassal }
     scripted_mutual = { first = ADU second = TUN type = alliance }
 
     #-------Germany-------
@@ -500,11 +509,11 @@ diplomacy_manager = {
 
     dependency = { first = AOI second = AN13 subject_type = vassal }
     dependency = { first = AOI second = KYP subject_type = vassal }
-    dependency = { first = AOI second = OHS subject_type = br_stavropegion_subject }
+    dependency = { first = AOI second = OHS subject_type = march }
     dependency = { first = AOI second = AN5 subject_type = vassal } # Pronoïakon Ktéma
 
     #scripted_mutual = { first = AN8 second = AN13 type = alliance }
-
+    scripted_mutual = { first = A1G second = K1B type = alliance }
     
 
     #Patiachate dependencies
@@ -515,6 +524,9 @@ diplomacy_manager = {
     scripted_oneway = { first = BYZ second = ARM type = guarantee }
 	scripted_oneway = { first = BYZ second = GEO type = guarantee }
     scripted_oneway = { first = BYZ second = SER type = guarantee }
+
+    scripted_oneway = { first = BYZ second = GTC type = sound_toll_exemption }
+    scripted_oneway = { first = BYZ second = VTC type = sound_toll_exemption }
 
     scripted_mutual = { first = SER second = BYZ type = alliance }
     #scripted_mutual = { first = RIC second = BYZ type = food_access }

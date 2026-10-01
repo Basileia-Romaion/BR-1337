@@ -1,7 +1,8 @@
 ﻿country_flavor = {
 	type = country
 
-	#BR
+	###BR Start
+
 	text = {
 		localization_key = rank_empire_IMPERIUM
 		trigger = {
@@ -10,6 +11,7 @@
 			culture = { has_culture_group = culture_group:elysian_group }
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_naval_theme
 		trigger = {
@@ -17,30 +19,29 @@
 				OR = {
 					tag = A1G
 					tag = K1B
+ 					is_subject_type = br_naval_thema_subject
 				}
-			#	OR = {
-			#		is_subject_type = vassal
-			#		is_subject_type = fiefdom
-			#		is_subject_type = march
-			#	}
 			}
 			overlord ?= {
 				culture = { has_culture_group = culture_group:roman_group }
 			}
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_holy_community
 		trigger = {
 			has_reform = government_reform:br_holy_community
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_foideratoi
 		trigger = {
 			has_reform = government_reform:br_sub_foideratoi_subject
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_kleisoura
 		trigger = {
@@ -50,6 +51,7 @@
 			}
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_thema
 		trigger = {
@@ -88,7 +90,11 @@
 		trigger = {
 			AND = {
 				country_rank = country_rank:rank_kingdom
+				OR = {
 				has_reform = government_reform:br_sub_theme_subject
+				has_reform = government_reform:br_katepanata_reform
+				}
+				
 			}
 		}
 	}
@@ -96,27 +102,10 @@
 	text = {
 		localization_key = country_rank_br_autonomia
 		trigger = {
-			is_subject_type = tributary
-			overlord ?= {
-				culture = { has_culture_group = culture_group:roman_group }
+			OR = {
+				is_subject_type = tributary
+				is_subject_type = br_phorophoros_subject
 			}
-		}
-	}
-
-	#text = {
-		#localization_key = country_rank_br_phorophoros
-		#trigger = {
-			#is_subject_type = br_phorophoros_subject
-			#overlord ?= {
-				#culture = { has_culture_group = culture_group:roman_group }
-			#}
-		#}
-	#}
-
-	text = {
-		localization_key = country_rank_br_apoikia
-		trigger = {
-			is_subject_type = colonial_nation
 			overlord ?= {
 				culture = { has_culture_group = culture_group:roman_group }
 			}
@@ -131,7 +120,15 @@
 					country_rank = country_rank:rank_duchy
 					country_rank = country_rank:rank_county
 				}
-				culture = { has_culture_group = culture_group:elysian_group }
+				OR = {
+					AND = {
+						is_subject_type = colonial_nation
+						overlord ?= {
+							culture = { has_culture_group = culture_group:roman_group }
+						}
+					}
+					culture = { has_culture_group = culture_group:elysian_group }
+				}
 			}
 		}
 	}
@@ -145,6 +142,7 @@
 			}
 		}
 	}
+
 	text = {
 		localization_key = country_rank_br_hetaireia
 		trigger = {
@@ -153,7 +151,6 @@
 				tag = VTC
 				tag = GTC
 			}
-			
 		}
 	}
 
@@ -166,10 +163,6 @@
 					country_rank = country_rank:rank_county
 				}
 				is_subject_type = fiefdom
-			}
-			NOT = {
-				tag = A1G
-				tag = K1B
 			}
 			overlord ?= {
 				culture = { has_culture_group = culture_group:roman_group }
@@ -189,12 +182,12 @@
 				religion.group = religion_group:christian
 				has_reform = government_reform:patriarchate
 			}
-
 		}
 	}
 
-	#Vanilla
+	###BR End
 
+	###Vanilla 
 	text = {
 		localization_key = country_rank_people
 		trigger = {
@@ -624,44 +617,6 @@
 	}
 
 	text = {
-		localization_key = rank_empire_muslim_marinids
-		trigger = {
-			tag = MOR
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:marinid_dynasty ?= this }
-			country_rank_is_empire = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_empire_muslim_zayyanids
-		trigger = {
-			tag = TLE
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:zayyanid_dynasty ?= this }
-			country_rank_is_empire = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_empire_muslim_hafsids
-		trigger = {
-			tag = TUN
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:hafsid_dynasty ?= this }
-			country_rank_is_empire = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
-		localization_key = rank_empire_muslim_nasrids
-		trigger = {
-			tag = ADU #BR EDIT
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:nasrid_dynasty ?= this } 
-			country_rank_is_empire = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
 		localization_key = rank_empire_tsar
 		trigger = {
 			country_rank_is_empire = yes
@@ -812,6 +767,20 @@
 		trigger = {
 			country_rank_is_empire = yes
 			court_language ?= language:bulgarian_language
+		}
+	}
+
+	text = {
+		localization_key = rank_empire_muslim
+		trigger = {
+
+			country_rank_is_empire = yes
+			OR = {
+				government_type = government_type:theocracy
+				has_variable = hafsid_caliphate_name
+				tag = ADU #br added
+			}
+			religion.group = religion_group:muslim
 		}
 	}
 
@@ -1213,44 +1182,6 @@
 	}
 
 	text = {
-		localization_key = rank_kingdom_muslim_marinids
-		trigger = {
-			tag = MOR
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:marinid_dynasty ?= this }
-			country_rank_is_kingdom = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_kingdom_muslim_zayyanids
-		trigger = {
-			tag = TLE
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:zayyanid_dynasty ?= this }
-			country_rank_is_kingdom = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_kingdom_muslim_hafsids
-		trigger = {
-			tag = TUN
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:hafsid_dynasty ?= this }
-			country_rank_is_kingdom = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
-		localization_key = rank_kingdom_muslim_nasrids
-		trigger = {
-			tag = GRA
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:nasrid_dynasty ?= this }
-			country_rank_is_kingdom = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
 		localization_key = rank_kingdom_muslim
 		trigger = {
 
@@ -1623,16 +1554,6 @@
 	}
 
 	# Theocracy
-
-	text = {
-		localization_key = rank_empire_muslim
-		trigger = {
-
-			country_rank_is_empire = yes
-			government_type = government_type:theocracy
-			religion.group = religion_group:muslim
-		}
-	}
 	
 	text = {
 		localization_key = rank_kingdom_papacy
@@ -1896,44 +1817,6 @@
 	}
 
 	text = {
-		localization_key = rank_duchy_muslim_marinids
-		trigger = {
-			tag = MOR
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:marinid_dynasty ?= this }
-			country_rank_is_duchy = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_duchy_muslim_zayyanids
-		trigger = {
-			tag = TLE
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:zayyanid_dynasty ?= this }
-			country_rank_is_duchy = yes
-			religion.group = religion_group:muslim
-		}
-	}
-	text = {
-		localization_key = rank_duchy_muslim_hafsids
-		trigger = {
-			tag = TUN
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:hafsid_dynasty ?= this }
-			country_rank_is_duchy = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
-		localization_key = rank_duchy_muslim_nasrids
-		trigger = {
-			tag = GRA
-			ruler_or_heir_if_regent.dynasty ?= { dynasty:nasrid_dynasty ?= this }
-			country_rank_is_duchy = yes
-			religion.group = religion_group:muslim
-		}
-	}
-
-	text = {
 		localization_key = rank_duchy_muslim
 		trigger = {
 
@@ -1996,13 +1879,17 @@
 		localization_key = rank_duchy_principality
 		trigger = {
 			OR = {
-				culture = culture:welsh
-				tag = WLS
-				tag = CAT
 				tag = ANR
-			}
+				AND = {
+					OR = {
+						culture = culture:welsh
+						tag = WLS
+						tag = CAT
+					}
 
-			country_rank_is_duchy = yes
+					country_rank_is_duchy = yes
+				}
+			}
 		}
 	}
 

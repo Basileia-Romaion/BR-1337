@@ -2,10 +2,42 @@
 
 # Patch Notes
 
-# 0.25 Dawn of Elysium content. Part II
+# 0.26
+
+## Organization
+- Added new Auctoritas debuffs for locations owned by non-members, as well as members who have been subjugated by non-members.
+- Auctoritas is now more than just an IO currency.
+As leader of the Roman world, keep your Auctoritas high and reap the rewards: more Prestige, stronger Control, and happier Estates. Let it slip, and you'll face unrest at home: faster Stability decay, falling Legitimacy, and unhappy Estates.
+
+
+## Advances
+- Gateway of the East: "The Syrenikoi, Greek in tongue and faith but Syrian in blood and custom, hold the roads where Anatolia meets the Levant. Through their markets flow silk from the far East, spices from Arabia, and silver from every corner of the Roman world, binding Constantinople's trade to routes older than the Empire itself."
+- The Eastern Shield of Rome: "Antioch and the Syrian marches stand where the Roman world presses hardest against its Muslim neighbors. Here the throne cannot rely on distance or diplomacy alone — only stone, garrison, and the discipline of frontier soldiery hold the line for Christendom's oldest surviving realm."
+- Pronija System: "The Serbian Pronija is a military landholding institution derived from the Roman pronoia. Revenues from designated lands are entrusted to nobles in return for military service to the crown, providing the Serbian ruler with a dependable body of mounted retainers. The system strengthens the power of the nobility and the army, but places a growing burden upon the peasantry and ties the strength of the realm to the loyalty of its pronoiars."
+- Military Fiefs: "The Bulgarian crown grants estates and their revenues to members of the military aristocracy in return for service and loyalty. Influenced by Roman practices, these military fiefs provide the ruler with a dependable source of cavalry and levies while strengthening the great boyars who administer them. The system increases the military strength of the realm, but grants the nobility considerable influence over the countryside and places additional burdens upon the peasantry."
+
+## Buildings
+- Phrourion: "A modest watch-post, manned by a handful of soldiers and raised wherever the frontier presses close against Muslim neighbors and no greater fortification yet stands. It cannot hold a siege for long, but its garrison denies the enemy an easy road and buys time for word to reach the nearest kastron."
+- Kastron: "A proper frontier fortress-town, garrisoned, provisioned, and capable of raising soldiers from among its own people. Where the phrourion merely watches the border, the kastron holds it — anchoring the zone of control and giving the Syrian marches a heart that no raid can easily reach."
+
+## Bureaucracies
+- Pronija System: "The Serbian Pronija is a military landholding institution derived from the Roman pronoia. Revenues from designated lands are entrusted to nobles in return for military service to the crown, providing the Serbian ruler with a dependable body of mounted retainers. The system strengthens the power of the nobility and the army, but places a growing burden upon the peasantry and ties the strength of the realm to the loyalty of its pronoiars."
+- Military Fiefs: "The Bulgarian crown grants estates and their revenues to members of the military aristocracy in return for service and loyalty. Influenced by Roman practices, these military fiefs provide the ruler with a dependable source of cavalry and levies while strengthening the great boyars who administer them. The system increases the military strength of the realm, but grants the nobility considerable influence over the countryside and places additional burdens upon the peasantry."
+
+## Events 
+- Dozen new DHEs for Baselia Romaion.
+- Dozen new events for ERE minors & Subjects including a 5 event to become a Katepaníkion from Thema.
+
+## Balance/Fixes
+- rebalances Balkan military and estate modifiers,
+- fixes for disaster events modifiers
+- removed haudenosaune area from the Elysians explored area.
+- Added divert trade relationships to the Italian trade companies
+
+# 0.25
 
 ## Disasters
-- New late-game disaster for the ERE, also eligible for Elysium and IMPERIUM.
+- New late-game disaster for the ERE.
   - Includes 13 new disaster events.
 - Edited the DLC Fate of the Phoenix disaster
   - Replaced the Mercenary cost increase with Court Cost Increase.
@@ -24,7 +56,7 @@
 - Mint of Elysium
 - Trade Outpost: New building type for the new Norse tags and Vinland can be built in unowned land.
 
-## Bureaucracies
+## bureaucracies
 - The Lost Legions
 - Apikion
 - Elysian Apikía

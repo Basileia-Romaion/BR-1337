@@ -722,7 +722,7 @@
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
 			global_burghers_estate_power = 0.5
 			global_trades_per_burgher = 1
-			trade_income = 0.5
+			trade_income = 0.25
 			trade_importance_modifier = 0.5
 		}
 		ai_weight = {
@@ -738,7 +738,6 @@
 			OR = {
 				has_or_had_tag = GTC
 				has_or_had_tag = VTC
-				has_or_had_tag = RIC
 				has_estate_privilege = estate_privilege:br_latinoi_navy
 			}
 		}
@@ -765,6 +764,7 @@
 				culture = culture:latinoi
 				has_or_had_tag = VEN
 				has_or_had_tag = GEN
+				has_estate_privilege = estate_privilege:br_latinoi_privateers
 			}
 		}
 		country_modifier = {
@@ -790,6 +790,7 @@
 				culture = culture:latinoi
 				has_or_had_tag = VEN
 				has_or_had_tag = GEN
+				has_estate_privilege = estate_privilege:br_latinoi_army
 			}
 		}
 		country_modifier = {
@@ -1058,6 +1059,7 @@
 			levy_maintenance_modifier = -0.1
 			monthly_towards_free_subjects = societal_value_monthly_move
 			global_tribal_promotion = -0.1
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1087,6 +1089,7 @@
 			tribes_estate_levy_size = 0.25
 			wrong_culture_levy_size = 0.05
 			levy_maintenance_modifier = -0.1
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1179,6 +1182,7 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1251,6 +1255,7 @@
 			global_tribal_promotion = -0.5
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1280,6 +1285,7 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1348,6 +1354,7 @@
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.25
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1369,6 +1376,7 @@
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.5
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25

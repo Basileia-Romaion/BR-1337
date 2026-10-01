@@ -1,0 +1,31 @@
+﻿
+rebel_demand_br_ere_events_114 = {
+	trigger = { always = no }
+	concession_effect = {
+		pacify_rebel_pops = yes
+		owner = {
+			change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_right }
+			create_country_from_cores_in_our_locations = c:ANA
+			c:ANA = {
+				make_subject_of = { target = prev type = subject_type:vassal }
+			}
+			add_government_power = government_power_severe_penalty
+		}
+	}
+}
+
+
+rebel_demand_br_ere_events_115 = {
+	trigger = { always = no }
+	concession_effect = {
+		pacify_rebel_pops = yes
+		owner = {
+			change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_right }
+			create_country_from_cores_in_our_locations = c:KAP
+			c:ANA = {
+				make_subject_of = { target = prev type = subject_type:vassal }
+			}
+			add_government_power = government_power_severe_penalty
+		}
+	}
+}

@@ -1,0 +1,1093 @@
+#hidden_effect = {
+#These are fun little events I make during campaigns to test and see different things 
+
+#add_migration = {
+	#owner = scope:actor
+	#from = scope:origin.province_definition
+	#to = scope:target_colony.province_definition
+	#religion = scope:target_religion
+	#type = pop_type:peasants
+	#amount = 0.100
+	#months = 60
+#}
+#add_migration = {
+	#owner = this
+	#from = province_definition:uppland_province
+	#to = province_definition:dalarna_province
+	#culture = culture:turkoman_culture
+	#type = pop_type:tribesmen
+	#amount = 0.500
+	#months = 120
+#}
+
+namespace = br_console_only_events
+
+#br 1337 cheat event for testing purposes only. 
+br_console_only_events.1 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.1.a
+
+		international_organization:roman_world = {
+			#remove_law_from_international_organization = policy:br_romaiokratia_weak_policy
+			add_policy_to_international_organization = policy:br_romaiokratia_high_policy
+		}
+		annex_country = { country = c:S1Y }
+		annex_country = { country = c:A1G }
+		annex_country = { country = c:K1B }
+		annex_country = { country = c:FEO }
+		annex_country = { country = c:PAF }
+
+		annex_country = { country = c:AN29 }
+		annex_country = { country = c:AN30 }
+		annex_country = { country = c:AN31 }
+		annex_country = { country = c:AN32 }
+		add_legitimacy = 50
+		add_prestige = 50
+		add_stability = 50
+		add_gold = 5000
+
+		c:SER ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_phorophoros_subject
+			}
+		}
+		c:GEO ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_phorophoros_subject
+			}
+		}
+		c:ARM ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_phorophoros_subject
+			}
+		}
+		c:N3P ?= {
+			make_subject_of = {
+				target = c:S2C
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:S3C ?= {
+			make_subject_of = {
+				target = c:S2C
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:S2C ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+			form_country = formable_country:IT0_f
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+		c:S1C ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:EPI ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:DYR ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:HE1 ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:AN8 ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+			form_country = formable_country:KAP_f
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+		c:AN10 ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+			annex_country = { country = c:AN2 }
+			form_country = formable_country:AN0_f
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+		c:AON ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:ICO ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:TRE ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+			form_country = formable_country:P0N_f
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+		c:AN13 ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+		}
+		c:AOI ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:br_thema_subject
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+		c:OHS ?= {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:march
+			}
+		}
+
+		every_subject = {
+			limit = {  
+				has_opinion = { modifier = opinion_declined_to_recognize_monarchy_modifier target = c:BYZ }
+			}
+			remove_opinion = {
+				target = c:BYZ
+				modifier = opinion_declined_to_recognize_monarchy_modifier
+			}
+			add_opinion = {
+				target = c:BYZ
+				modifier = br_hre_start_opinion
+			}
+		}
+
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_peasants
+		revoke_estate_privilege = estate_privilege:br_themata_peasant_privilege
+		revoke_estate_privilege = estate_privilege:br_latin_trade_naval_reliance
+
+		grant_estate_privilege = estate_privilege:br_themata_reformed_privilege
+		grant_estate_privilege = estate_privilege:akritai_privilege
+		grant_estate_privilege = estate_privilege:br_latins_traders_subjugated
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+
+		add_army_tradition = army_tradition_ultimate_bonus
+		add_navy_tradition = navy_tradition_ultimate_bonus
+		research_advance = advance_type:unlock_m_galley_advance
+		research_advance = advance_type:unlock_barque_advance
+		research_advance = advance_type:unlock_hulk_advance
+		research_advance = advance_type:unlock_supply_carts
+		
+		research_advance = advance_type:roman_thematic_recruitment
+		research_advance = advance_type:br_kekhrismene_advance
+		research_advance = advance_type:expand_varangian_guard_advance
+		research_advance = advance_type:br_age_2_kontaratoi_advance
+		research_advance = advance_type:br_katapanate_building_advance
+		research_advance = advance_type:br_despotate_building_advance
+		
+		create_sub_unit = unit_type:a_byzantine_cataphracts
+		create_sub_unit = unit_type:a_byzantine_cataphracts
+		create_sub_unit = unit_type:a_supply_carts
+		create_sub_unit = unit_type:a_supply_carts
+
+		location:smyrna = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+		location:thessaloniki = {
+			construct_building = {
+				building_type = building_type:br_despotate_building
+			}
+		}
+		location:mystras = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+	}
+}
+### br_ere_events.3
+#br vanilla map cheat event for testing purposes only. 
+br_console_only_events.2 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.2.a
+
+		international_organization:roman_world = {
+			add_policy_to_international_organization = policy:br_romaiokratia_high_policy
+		}
+		c:EPI = {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:pronoia
+			}
+			add_reform = government_reform:br_sub_pronoia_subject
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			add_policy = policy:br_thema_levies
+			add_policy = policy:br_pronoia_system
+			add_policy = policy:br_roman_tradition
+			add_policy = policy:br_byzantine_law
+			add_policy = policy:br_roman_distribution_of_power_law
+			add_bureaucracy = bureaucracy_type:themata_bureaucracy
+			br_military_frontier = br_frontier_maintained
+		}
+		c:FEO = {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:pronoia
+			}
+			add_reform = government_reform:br_sub_pronoia_subject
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:akritai_privilege
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			add_policy = policy:br_thema_levies
+			add_policy = policy:br_pronoia_system
+			add_policy = policy:br_roman_tradition
+			add_policy = policy:br_byzantine_law
+			add_policy = policy:br_roman_distribution_of_power_law
+			add_bureaucracy = bureaucracy_type:themata_bureaucracy
+			add_policy = policy:br_frontier_maintained
+		}
+		c:TRE = {
+			make_subject_of = {
+				target = c:BYZ
+				type = subject_type:pronoia
+			}
+			#set_country_rank_effect = { rank = country_rank:rank_duchy }
+			add_reform = government_reform:br_sub_theme_subject
+			grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+			grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+			grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+			grant_estate_privilege = estate_privilege:akritai_privilege
+
+			add_policy = policy:br_thema_levies
+			add_policy = policy:br_pronoia_system
+			add_policy = policy:br_roman_tradition
+			add_policy = policy:br_byzantine_law
+			add_policy = policy:br_roman_distribution_of_power_law
+			add_policy = policy:br_frontier_maintained
+			annex_country = { country = c:HCI }
+		}
+
+		add_legitimacy = 50
+		add_prestige = 50
+		add_stability = 50
+		add_gold = 55000
+		grant_estate_privilege = estate_privilege:akritai_privilege
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_clergy
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_burghers
+		revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_peasants
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		add_army_tradition = army_tradition_ultimate_bonus
+		add_navy_tradition = navy_tradition_ultimate_bonus
+		research_advance = advance_type:unlock_m_galley_advance
+		research_advance = advance_type:unlock_barque_advance
+		research_advance = advance_type:unlock_hulk_advance
+		research_advance = advance_type:unlock_supply_carts
+		
+		research_advance = advance_type:roman_thematic_recruitment
+		research_advance = advance_type:br_kekhrismene_advance
+		research_advance = advance_type:expand_varangian_guard_advance
+		research_advance = advance_type:br_age_2_kontaratoi_advance
+		research_advance = advance_type:br_katapanate_building_advance
+		#research_advance = advance_type:br_despotate_building_advance
+		
+		create_sub_unit = unit_type:a_byzantine_cataphracts
+		create_sub_unit = unit_type:a_byzantine_cataphracts
+		create_sub_unit = unit_type:a_supply_carts
+		create_sub_unit = unit_type:a_supply_carts
+		add_casus_belli = {
+			target = c:ALB
+			type = casus_belli:cb_border_war
+		}
+		add_casus_belli = {
+			target = c:ATH
+			type = casus_belli:cb_border_war
+		}
+		add_casus_belli = {
+			target = c:GRM
+			type = casus_belli:cb_border_war
+		}
+		add_casus_belli = {
+			target = c:HMD
+			type = casus_belli:cb_border_war
+		}
+		location:izmit = {
+			change_location_owner = c:BYZ
+		}
+		location:iznik = {
+			change_location_owner = c:BYZ
+		}
+		location:bursa = {
+			change_location_owner = c:BYZ
+		}
+		location:adranos = {
+			change_location_owner = c:BYZ
+		}
+		location:akcasehir = {
+			change_location_owner = c:BYZ
+		}
+		location:samsun = {
+			change_location_owner = c:BYZ
+		}
+		location:terme = {
+			change_location_owner = c:BYZ
+		}
+		location:gerze = {
+			change_location_owner = c:BYZ
+		}
+		location:bafra = {
+			change_location_owner = c:BYZ
+		}
+		location:inebolu = {
+			change_location_owner = c:BYZ
+		}
+		location:kure_i_mamure = {
+			change_location_owner = c:BYZ
+		}
+		
+		location:lusta = {
+			change_location_owner = c:FEO
+		}
+		location:soldaia = {
+			change_location_owner = c:FEO
+		}
+
+		location:atpazari = {
+			change_location_owner = c:BYZ
+		}
+		location:canakkale = {
+			change_location_owner = c:BYZ
+		}
+		location:lapseki = {
+			change_location_owner = c:BYZ
+		}
+		location:smyrna = {
+			change_location_owner = c:BYZ
+		}
+		location:menemen = {
+			change_location_owner = c:BYZ
+		}
+		location:sinop = {
+			change_location_owner = c:BYZ
+		}
+		location:amasra = {
+			change_location_owner = c:BYZ
+		}
+		location:foca = {
+			change_location_owner = c:BYZ
+		}
+		location:bergama = {
+			change_location_owner = c:BYZ
+		}
+		location:edremit = {
+			change_location_owner = c:BYZ
+		}
+		location:ayvacik = {
+			change_location_owner = c:BYZ
+		}
+		location:cesme = {
+			change_location_owner = c:BYZ
+		}
+		location:urla = {
+			change_location_owner = c:BYZ
+		}
+		location:bergama = {
+			change_location_owner = c:BYZ
+		}
+		location:ayasuluk = {
+			change_location_owner = c:BYZ
+		}
+		location:balat = {
+			change_location_owner = c:BYZ
+		}
+		location:milas = {
+			change_location_owner = c:BYZ
+		}
+		location:bodrum = {
+			change_location_owner = c:BYZ
+		}
+		location:gokabat = {
+			change_location_owner = c:BYZ
+		}
+		location:marmaris = {
+			change_location_owner = c:BYZ
+		}
+		location:anamur = {
+			change_location_owner = c:CIL
+		}
+		location:silifke = {
+			change_location_owner = c:CIL
+		}
+		location:mut = {
+			change_location_owner = c:CIL
+		}
+		location:ermenek = {
+			change_location_owner = c:CIL
+		}
+		location:malta = {
+			change_location_owner = c:KNI
+		}
+		location:yuksekkum = {
+			change_location_owner = c:HMD
+		}
+		location:megri = {
+			change_location_owner = c:HMD
+		}
+		location:smyrna = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+		location:thessaloniki = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+		location:mystras = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+		c:HMD ?= {
+			annex_country = { country = c:TEK }
+			annex_country = { country = c:ALY }
+		}
+		c:GRM ?= {
+			annex_country = { country = c:SHP }
+		}
+		c:AYD ?= {
+			annex_country = { country = c:MEN }
+			annex_country = { country = c:INA }
+			annex_country = { country = c:TVS }
+		}
+		c:KBD ?= {
+			annex_country = { country = c:TDJ }
+			annex_country = { country = c:BFR }
+		}
+		annex_country = { country = c:KRD }
+		annex_country = { country = c:SRU }
+		annex_country = { country = c:AYD }
+		c:HAB ?= {
+			annex_country = { country = c:LOT }
+		}
+	}
+}
+
+br_console_only_events.3 = { #culture changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.3.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					#culture = culture:turkish_culture
+					OR = {
+						culture = culture:turkish_culture
+						culture = culture:turkoman_culture
+					}
+					#area = {
+						#OR = {
+							#this = area:marmara_area
+							#this = area:west_anatolia_area
+						#}
+					#}
+				}
+				change_pop_culture = culture:anatolian_greek_culture
+			}
+		}
+	}
+}
+
+br_console_only_events.4 = { #religion changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.4.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					OR = {
+						religion = religion:shia
+						religion = religion:sunni
+					}
+				}
+				change_pop_religion = religion:miaphysite
+			}
+		}
+	}
+}
+
+br_console_only_events.5 = { #Armenia Kingdom restoration
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.5.a
+		historical_option = yes
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					religion = religion:orthodox
+				}
+				change_pop_religion = religion:miaphysite
+			}
+		}
+	}
+}
+
+br_console_only_events.6 = { #RUM Kingdom
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+		location:kayseri = {
+			save_scope_as = target_location
+		}
+		capital = {
+			save_scope_as = current_capital
+		}
+	}
+
+	option = {
+		name = br_console_only_events.6.a
+		historical_option = yes
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#annex_country = { country = c:ERE }
+		move_capital_event_effect = {
+			from = scope:current_capital
+			to = scope:target_location
+		}
+	}
+}
+
+br_console_only_events.7 = { #culture changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.7.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					NOT = { culture = { is_accepted_in = root } }
+				}
+				change_pop_culture = culture:kilikioi_greek_culture
+			}
+		}
+	}
+}
+br_console_only_events.8 = { #culture changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.8.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					culture = culture:turkish_culture
+				}
+				change_pop_culture = culture:armenikon_greek_culture
+			}
+		}
+	}
+}
+
+br_console_only_events.9 = { #culture changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.9.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					culture = culture:turkish_culture
+				}
+				change_pop_culture = culture:cappadocian_greek_culture
+			}
+		}
+	}
+}
+
+br_console_only_events.10 = { #culture changes
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		name = br_console_only_events.10.a
+		historical_option = yes
+		every_owned_location = {
+			every_pop = {
+				limit = {
+					culture = culture:turkish_culture
+				}
+				change_pop_culture = culture:pontic_greek_culture
+			}
+		}
+	}
+}
+
+
+#flavor_hab.17 = { #Expulsion of Lutherans in Salzburg
+	#hide_portraits = yes
+	#type = country_event
+	#title = flavor_hab.17.title
+	#desc = flavor_hab.17.desc
+	#outcome = neutral
+	#historical_info = flavor_hab.17.historical_info
+#
+	#fire_only_once = yes
+#
+	#dynamic_historical_event = {
+		#tag = HAB
+		#tag = SLZ
+		#from = 1700.1.1
+		#to = 1750.1.1
+		#monthly_chance = 2
+	#}
+#
+	#illustration_tags = {
+		#10 = angry
+		#10 = exterior
+	#}
+#
+	#immediate = {
+		#event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+#
+		#region:carpathia_region = {
+			#random_location_in_region = {
+				#limit = {
+					#owner != root
+					#is_discovered_by = root
+				#}
+				#save_scope_as = escape_target1
+			#}
+		#}
+		#region:north_german_region = {
+			#random_location_in_region = {
+				#limit = {
+					#owner != root
+					#dominant_religion = religion:lutheran
+					#is_discovered_by = root
+				#}
+				#save_scope_as = escape_target2
+			#}
+		#}
+		#region:north_german_region = {
+			#random_location_in_region = {
+				#limit = {
+					#owner != root
+					#dominant_religion = religion:lutheran
+					#is_discovered_by = root
+				#}
+				#save_scope_as = escape_target3
+			#}
+		#}
+	#}
+#
+	#trigger = {
+		#religion = religion:catholic
+		#own_entire_area = area:salzburg_area
+		#any_province = {
+			#area = area:salzburg_area
+			#religion_percentage = {
+				#religion = religion:lutheran
+				#value > 0
+			#}
+		#}
+	#}
+#
+	#option = {
+		#name = flavor_hab.17.a
+		#historical_option = yes
+#
+		#change_societal_value = { type = traditionalist_vs_innovative value = societal_value_minor_move_to_left }
+#
+		#custom_tooltip = flavor_hab.17.a.tt
+		#hidden_effect = {
+			#area:salzburg_area  = {
+				#every_location_in_area = {
+					#every_pop = {
+						#limit = {
+							#religion = religion:lutheran
+						#}
+						#split_pop = {
+							#fraction = 0.1
+							#religion = religion:catholic
+						#}
+					#}
+				#}
+			#}
+			#every_province = {
+				#limit = {
+					#area = area:salzburg_area
+					#religion_percentage = {
+						#religion = religion:lutheran
+						#value > 0
+					#}
+				#}
+				#add_migration = {
+					#owner = prev
+					#from = this.province_definition
+					#to = scope:escape_target1.province_definition
+					#religion = religion:lutheran
+					#amount = 0.200
+					#months = 60
+				#}
+				#add_migration = {
+					#owner = prev
+					#from = this.province_definition
+					#to = scope:escape_target2.province_definition
+					#religion = religion:lutheran
+					#amount = 0.200
+					#months = 60
+				#}
+				#add_migration = {
+					#owner = prev
+					#from = this.province_definition
+					#to = scope:escape_target3.province_definition
+					#religion = religion:lutheran
+					#amount = 0.200
+					#months = 60
+				#}
+			#}
+		#}
+	#}
+#
+	#option = {
+		#name = flavor_hab.17.b
+#
+		#change_societal_value = { type = traditionalist_vs_innovative value = societal_value_minor_move_to_right }
+		#add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_penalty }
+	#}
+#}
+
+br_console_only_events.11 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.11.a
+		add_gold = 5000
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		add_army_tradition = army_tradition_ultimate_bonus
+		add_navy_tradition = navy_tradition_ultimate_bonus
+		location:mystras = {
+			construct_building = {
+				building_type = building_type:br_katapanate_building
+			}
+		}
+	}
+}
+
+br_console_only_events.12 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.12.a
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		location:antalya = {
+			construct_building = {
+				building_type = building_type:br_doukate_building
+			}
+		}
+		location:durres = {
+			construct_building = {
+				building_type = building_type:br_doukate_building
+			}
+		}
+		location:thebes = {
+			construct_building = {
+				building_type = building_type:br_doukate_building
+			}
+		}
+	}
+}
+
+br_console_only_events.13 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+		capital = {
+            save_scope_as = target_location
+        }
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.13.a
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_extreme_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_extreme_bonus }
+		if = {
+            limit = {
+                NOT = {
+                    scope:target_location = { has_building = building_type:thema_headquarters }
+                }
+            }
+            scope:target_location = {
+                change_development = development_mild_bonus
+                construct_building = {
+                    building_type = building_type:thema_headquarters
+                    cost_multiplier = 0
+                    cost_multiplier_reason = "game_concept_event"
+                }
+            }
+        }
+
+	}
+}
+
+br_console_only_events.14 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+	trigger = {
+		#tag = BYZ console only
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.14.a
+
+		add_legitimacy = 50
+		add_prestige = 50
+		add_stability = 50
+		add_gold = 55000
+		add_army_tradition = army_tradition_ultimate_bonus
+		add_navy_tradition = navy_tradition_ultimate_bonus
+		research_advance = advance_type:unlock_m_galley_advance
+		research_advance = advance_type:unlock_barque_advance
+		research_advance = advance_type:unlock_hulk_advance
+		research_advance = advance_type:unlock_supply_carts
+		
+		research_advance = advance_type:roman_thematic_recruitment
+		research_advance = advance_type:br_kekhrismene_advance
+		research_advance = advance_type:expand_varangian_guard_advance
+		research_advance = advance_type:br_age_2_kontaratoi_advance
+		research_advance = advance_type:br_katapanate_building_advance
+		research_advance = advance_type:br_despotate_building_advance
+		
+		create_sub_unit = unit_type:a_supply_carts
+		create_sub_unit = unit_type:a_supply_carts
+		create_sub_unit = unit_type:a_supply_carts
+		create_sub_unit = unit_type:a_supply_carts
+		location:smyrna = {
+			construct_building = {
+				building_type = building_type:br_despotate_building
+			}
+		}
+		location:thessaloniki = {
+			construct_building = {
+				building_type = building_type:br_despotate_building
+			}
+		}
+		location:mystras = {
+			construct_building = {
+				building_type = building_type:br_despotate_building
+			}
+		}
+	}
+}
+
+br_console_only_events.15 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+	trigger = {
+		#tag = BYZ console only
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.15.a
+
+		religion:orthodox = {
+			add_to_variable_map = {
+				name = pentarchy
+				key = location:antioch
+				value = character:br_patriarch_mark
+			}
+		}
+		character:br_patriarch_mark = {
+			set_pentarch_variable = { location = location:antioch }
+		}
+		c:AOI = {
+			add_pentarchy_modifier = { location = location:antioch }
+		}
+	}
+}
+
+br_console_only_events.16 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+	trigger = {
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.16.a
+
+		annex_country = { country = c:DOE }
+		annex_country = { country = c:PSC }
+		annex_country = { country = c:ACW }
+		annex_country = { country = c:NTK }
+		annex_country = { country = c:UNL }
+		annex_country = { country = c:UNA }
+		annex_country = { country = c:MNS }
+		annex_country = { country = c:E5Y }
+		annex_country = { country = c:RPP }
+		annex_country = { country = c:TSN }
+		annex_country = { country = c:E2Y }
+		annex_country = { country = c:E4Y }
+		annex_country = { country = c:WMG }
+
+		form_country = formable_country:ELY_f #IMP_f
+		#trigger_event_non_silently = elysium_event.1
+	}
+}
+
+br_console_only_events.17 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+	trigger = {
+	}
+
+	option = {
+		high_reward_option = yes
+		name = br_console_only_events.17.a
+
+
+	}
+}

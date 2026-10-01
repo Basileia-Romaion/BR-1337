@@ -5779,6 +5779,16 @@ dynasty_manager = {
 		home = tunis
 	}
 
+	tafragin_dynasty = {
+		name = { name = tafragin_dynasty }
+		home = tunis
+	}
+
+	almohad_dynasty = {
+		name = { name = almohad_dynasty }
+		home = marrakesh
+	}
+
 	thabit_dynasty = {
 		name = { name = thabit_dynasty }
 		home = tripoli
@@ -9572,7 +9582,12 @@ dynasty_manager = {
 		name = { name = name_han2 }
 		home = qiaoxian
 	}
-	
+
+	rtr_li_zicheng_dynasty = { #CSH
+		name = { name = name_li31 }
+		home = fushi
+	}
+
 	baatud_dynasty = {
 		name = { name = baatud_dynasty }
 		home = barkul
@@ -9633,6 +9648,47 @@ dynasty_manager = {
 		name = { name = berenberg_dynasty }
 		home = antwerp
 	}
+
+	abulafia_dynasty = {
+		name = { name = abulafia_dynasty }
+		home = toledo
+	}
+
+	benveniste_dynasty = {
+		name = { name = benveniste_dynasty }
+		home = zaragoza
+	}
+
+	crescas_dynasty = {
+		name = { name = crescas_dynasty }
+		home = barcelona
+	}
+
+	ibn_danan_dynasty = {
+		name = { name = ibn_danan_dynasty }
+		home = fez
+	}
+
+	ibn_tibbon_dynasty = {
+		name = { name = ibn_tibbon_dynasty }
+		home = granada
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 	
 	### BR added Dynasties ###

@@ -3,7 +3,7 @@
   "id": "Basileia-Romaion-1337",
   "version": "0.26",
   "game_id" : "eu5",
-  "supported_game_version": "1.3*",
+  "supported_game_version": "1.4*",
   "short_description": "",
   "tags":	["Advancements", "Alternative history", "Balance", "Characters", "Culture & Art", "Diplomacy", "Events", "Fixes", "Flags", "Gameplay", "Government and Estates", "Historical", "International Organizations", "Loading Screen", "Map", "Military", "Overhaul", "Religion", "Trade and Economics"],
   "picture": "thumbnail.gif",
@@ -12,7 +12,7 @@
     "multiplayer_synchronized": true,
     "replace_paths": [
       "main_menu/localization/english/replace",
-      "main_menu/setup/start"
+      "main_menu/setup/1337"
     ]
   }
 }

@@ -943,7 +943,7 @@ locations = {
 	kangiqsualujjuaq = {
 		define_pop = {	type = peasants		size = 0.311	culture = hellulander	religion = norse }
 		define_pop = {	type = peasants		size = 0.311	culture = skraeling_culture	religion = norse }
-		define_pop = {	type = tribesmen	size = 0.2108	culture = hellulander		religion = norse }
+		define_pop = {	type = tribesmen	size = 0.218	culture = hellulander		religion = norse }
 		define_pop = {	type = tribesmen	size = 0.396	culture = skraeling_culture		religion = totemism }
 		define_pop = {	type = slaves		size = 0.321	culture = dorset_culture	religion = totemism }
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
@@ -4104,6 +4104,7 @@ locations = {
 		define_pop = {	type = peasants		size = 1.120	culture = elyrics_culture	religion = hellenism_religion}
 	}
 	conewago = {
+		define_pop = {	type = peasants		size = 0.296	culture = aureliani religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.820	culture = atrakwaye_culture	religion = iroquoian_totemism }
 		define_pop = {	type = peasants		size = 1.120	culture = elyrics_culture	religion = hellenism_religion}
 	}
@@ -4287,6 +4288,7 @@ locations = {
 		define_pop = {	type = tribesmen	size = 3.815	culture = piscataway_culture	religion = midewiwin_religion }
 	}
 	catoctin = {
+		define_pop = {	type = peasants		size = 0.256	culture = aureliani religion = hellenism_religion }
 		define_pop = {	type = tribesmen	size = 1.840	culture = atrakwaye_culture	religion = iroquoian_totemism }
 		define_pop = {	type = peasants		size = 1.120	culture = elyrics_culture	religion = hellenism_religion}
 	}
@@ -4381,10 +4383,8 @@ locations = {
 		define_pop = {	type = peasants		size = 0.912	culture = elyrics_culture	religion = orthodox }
 	}
 	pamunkey = {
-		define_pop = {	type = nobles	size = 0.016	culture = photianoi	religion = orthodox }
-		define_pop = {	type = clergy	size = 0.076	culture = photianoi	religion = orthodox }
-		define_pop = {	type = peasants	size = 4.346	culture = photianoi	religion = orthodox }
-		define_pop = {	type = peasants		size = 2.912	culture = elyrics_culture	religion = orthodox }
+		define_pop = {	type = peasants	size = 0.846	culture = photianoi	religion = orthodox }
+		define_pop = {	type = peasants		size = 1.912	culture = elyrics_culture	religion = orthodox }
 		define_pop = {	type = tribesmen	size = 1.912	culture = elyrics_culture	religion = midewiwin_religion }
 		define_pop = {	type = tribesmen	size = 4.946	culture = powhatan_culture	religion = midewiwin_religion }
 	}
@@ -4565,10 +4565,12 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.841	culture = croatan_culture	religion = midewiwin_religion }
 	}
 	croatan = {
+		define_pop = {	type = peasants	size = 0.546	culture = photianoi	religion = orthodox }
 		define_pop = {	type = tribesmen	size = 0.701	culture = croatan_culture	religion = midewiwin_religion }
 		define_pop = {	type = peasants		size = 0.912	culture = elyrics_culture	religion = orthodox }
 	}
 	hatteras = {
+		define_pop = {	type = peasants	size = 0.546	culture = photianoi	religion = orthodox }
 		define_pop = {	type = tribesmen	size = 0.701	culture = croatan_culture	religion = midewiwin_religion }
 		define_pop = {	type = peasants		size = 0.912	culture = elyrics_culture	religion = orthodox }
 	}
@@ -4592,6 +4594,8 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.701	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	coree = {
+		define_pop = {	type = peasants	size = 0.146	culture = photianoi	religion = orthodox }
+		define_pop = {	type = peasants		size = 0.412	culture = elyrics_culture	religion = orthodox }
 		define_pop = {	type = tribesmen	size = 1.122	culture = pamlico_culture	religion = midewiwin_religion }
 	}
 	corani = {

@@ -33,7 +33,7 @@ roman_tribute = {
 				multiply = 2
 			}
 		}
-		monthly_legitimacy = -0.5
+		monthly_political_influence = -0.5
 		#global_crown_estate_power = -0.2
 	}
 	maintenance_modifier = {
@@ -45,7 +45,7 @@ roman_tribute = {
 			subtract = 0.5
 			multiply = 2
 		}
-		monthly_legitimacy = 0.5
+		monthly_political_influence = 0.5
 		#global_crown_estate_power = 0.2
 	}
 	price_multiplier = {

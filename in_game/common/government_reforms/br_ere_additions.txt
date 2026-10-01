@@ -291,10 +291,7 @@ br_katepanata_reform = {
 	icon = katepanata
 	potential = {
 		NOT = { has_or_had_tag = BYZ }
-		OR = {
-			culture = { has_culture_group = culture_group:roman_group }
-			#is_subject_type = br_thema_subject
-		}
+		culture = { has_culture_group = culture_group:roman_group }
 		country_rank = country_rank:rank_kingdom
 	}
 	country_modifier = {
@@ -303,6 +300,7 @@ br_katepanata_reform = {
 		monthly_towards_stratiotai = societal_value_large_monthly_move
 		global_crown_estate_power = 0.25
 		allow_thema_headquarters = yes
+		themata_bureaucracy_impact_modifier = 0.25
 		kephalai_bureaucracy_impact_modifier = 0.25
 		global_max_bureaucracy_slots = 1
 	}

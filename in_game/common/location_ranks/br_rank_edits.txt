@@ -74,6 +74,7 @@ REPLACE_OR_CREATE:city = {
 		fort_limit = 1
 	}
 	
+	upgrade_from = town
 	allow = {
 		location_rank = location_rank:town
 		OR = {
@@ -96,6 +97,8 @@ REPLACE_OR_CREATE:city = {
 	
 	construction_demand = build_city_demand
 	
+	institution_spawn_chance_factor = 3
+	tier = 3
 	frame_tier = 3
 	show_in_label = yes
 
@@ -151,6 +154,8 @@ REPLACE_OR_CREATE:town = {
 	build_time = 365
 	construction_demand = build_town_demand
 
+	institution_spawn_chance_factor = 2
+	tier = 2
 	frame_tier = 2
 	show_in_label = yes
 

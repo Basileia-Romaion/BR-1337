@@ -62,7 +62,7 @@
  br_ere_resistance_events.31.b: "Ragusa shall remain free."
 
  br_ere_resistance_events.32.title: "An Offer from Ragusa"
- br_ere_resistance_events.32.desc: "Envoys from Ragusa have arrived bearing gifts, tribute, and proposals of friendship. Fearing the growing might of the Empire, the republic seeks the protection of Constantinople rather than risking destruction through resistance.\n\nSome within our court see this as a wise arrangement: Ragusa's merchants and ports would enrich the Empire while securing Roman influence along the Adriatic. Others argue that the city is weak and vulnerable, and that outright annexation would better serve imperial interests."
+ br_ere_resistance_events.32.desc: "Envoys from Ragusa have arrived bearing gifts, tribute, and proposals of friendship. Fearing the growing might of the Empire, the republic seeks the protection of [ShowLocationName('constantinople')] rather than risking destruction through resistance.\n\nSome within our court see this as a wise arrangement: Ragusa's merchants and ports would enrich the Empire while securing Roman influence along the Adriatic. Others argue that the city is weak and vulnerable, and that outright annexation would better serve imperial interests."
  br_ere_resistance_events.32.a: "Let them submit willingly."
  br_ere_resistance_events.32.b: "The city should belong to the Empire directly."
 
@@ -84,7 +84,7 @@
 
  br_ere_resistance_events.43.title: "Refugees from the South"
  br_ere_resistance_events.43.entry: "$br_ere_resistance_events.43.title$"
- br_ere_resistance_events.43.desc: "The expansion of Roman authority across Wallachia and Moldavia has driven many Vlachs northward into Hungary. Peasants, clergy, merchants, and lesser nobles alike arrive in growing numbers, carrying tales of imperial governors, military levies, and the steady consolidation of Roman power along the Danube.\n\nSome within the court believe these refugees could strengthen the kingdom and replenish the population of the frontier. Others warn that accepting too many outsiders may bring instability and strain the resources of the realm."
+ br_ere_resistance_events.43.desc: "The expansion of Roman authority across Wallachia and Moldavia has driven many Vlachs northward into Hungary. Peasants, clergy, merchants, and lesser nobles alike arrive in growing numbers, carrying tales of imperial $country_rank_br_thema_ruler_male$, military levies, and the steady consolidation of Roman power along the Danube.\n\nSome within the court believe these refugees could strengthen the kingdom and replenish the population of the frontier. Others warn that accepting too many outsiders may bring instability and strain the resources of the realm."
  br_ere_resistance_events.43.a: "Permit them to settle within Hungary."
  br_ere_resistance_events.43.b: "We cannot bear this burden."
 
@@ -148,7 +148,7 @@
 
  br_ere_resistance_events.60.title: "Enemies of Our Enemy"
  br_ere_resistance_events.60.entry: "$br_ere_resistance_events.60.title$"
- br_ere_resistance_events.60.desc: "The continued strength of the Romans has become an increasing concern for the rulers of Egypt and Syria. From Constantinople, the emperors project their influence across the eastern Mediterranean, fielding armies that rival the greatest powers of the age.\n\nSome among the court now argue that pragmatic diplomacy is necessary to contain Roman expansion. Though relations with the [ShowReligionAdjective('catholic')] kingdoms of the west have long been marked by rivalry and distrust, shared fear of Roman power may provide the basis for cooperation.\n\nEnvoys have therefore proposed opening closer ties with certain western courts opposed to the Empire."
+ br_ere_resistance_events.60.desc: "The continued strength of the Romans has become an increasing concern for the rulers of Egypt and Syria. From [ShowLocationName('constantinople')], the emperors project their influence across the eastern Mediterranean, fielding armies that rival the greatest powers of the age.\n\nSome among the court now argue that pragmatic diplomacy is necessary to contain Roman expansion. Though relations with the [ShowReligionAdjective('catholic')] kingdoms of the west have long been marked by rivalry and distrust, shared fear of Roman power may provide the basis for cooperation.\n\nEnvoys have therefore proposed opening closer ties with certain western courts opposed to the Empire."
  br_ere_resistance_events.60.a: "We shall seek common cause against the Romans."
 
  br_ere_resistance_events.61.title: "Envoys from Egypt"
@@ -283,10 +283,14 @@
 
  br_ere_resistance_events.100.title: "The Bulgarian-Roman Struggle"
  br_ere_resistance_events.100.entry: "$br_ere_resistance_events.100.title$"
- br_ere_resistance_events.100.desc_victory: "The long struggle between Bulgaria and the Romans has once again entered the minds of the people and nobility alike. Tales of past victories against the Empire are celebrated throughout the realm, and many look back proudly upon the days when Bulgarian rulers humbled the emperors of Constantinople.\n\nThough the Romans remain powerful, confidence grows within the kingdom that Bulgaria can once again defend its independence and challenge imperial ambitions in the Balkans."
- br_ere_resistance_events.100.desc_defeat: "The shadow of the Roman Empire once more looms over Bulgaria. Memories of past defeats and lost wars against Constantinople continue to haunt the kingdom, while many fear that the Romans still seek to dominate the Balkans as they once did.\n\nAmong the nobility and military alike, fierce debate has emerged over how Bulgaria should confront the growing imperial threat."
+ br_ere_resistance_events.100.desc_victory: "The long struggle between Bulgaria and the Romans has once again entered the minds of the people and nobility alike. Tales of past victories against the Empire are celebrated throughout the realm, and many look back proudly upon the days when Bulgarian rulers humbled the emperors of [ShowLocationName('constantinople')].\n\nThough the Romans remain powerful, confidence grows within the kingdom that Bulgaria can once again defend its independence and challenge imperial ambitions in the Balkans."
+ br_ere_resistance_events.100.desc_defeat: "The shadow of the Roman Empire once more looms over Bulgaria. Memories of past defeats and lost wars against [ShowLocationName('constantinople')] continue to haunt the kingdom, while many fear that the Romans still seek to dominate the Balkans as they once did.\n\nAmong the nobility and military alike, fierce debate has emerged over how Bulgaria should confront the growing imperial threat."
  br_ere_resistance_events.100.a: "Bulgaria must stand strong against the Romans."
  br_ere_resistance_events.100.b: "We should avoid provoking the Empire."
+
+
+
+
 
  ### events for internal struggles and resistance to the Empire
   ### events for ERE subjects or administrative divisions.
@@ -318,7 +322,7 @@
  br_ere_resistance_events.206.a: "This is an outrage."
 
  br_ere_resistance_events.207.title: "A New [from.GetCountry.GetGovernment.GetRulerTitle]"
- br_ere_resistance_events.207.desc: "Rumors of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s ineffective rule have inevitably reached the Imperial Court, raising concerns over the damage this unfortunate situation may bring to both their reputation and ours. Under threat of bringing the province under direct imperial administration, [ROOT.GetName] has offered us a conciliatory remedy: appoint a new [from.GetCountry.GetGovernment.GetRulerTitle] who can take the reins of our [ROOT.GetName] before the situation worsens."
+ br_ere_resistance_events.207.desc: "Rumors of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s ineffective rule have inevitably reached the Imperial Court, raising concerns over the damage this unfortunate situation may bring to both their reputation and ours. Under threat of bringing the [ShowSubjectTypeName('br_thema_subject')] under direct imperial administration, [ROOT.GetName] has offered us a conciliatory remedy: appoint a new [from.GetCountry.GetGovernment.GetRulerTitle] who can take the reins of our [ROOT.GetName] before the situation worsens."
  br_ere_resistance_events.207.a: "We should heed their counsel."
  br_ere_resistance_events.207.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] can still govern."
 
@@ -344,4 +348,47 @@
  STATIC_MODIFIER_NAME_colonist_incentives: "Settler Incentives"
  STATIC_MODIFIER_DESC_colonist_incentives: "A new set of privileges has been granted to all faiths."
 
+ br_ere_subject_events.50.title: "The $country_rank_br_katapanate$ of [GetCountry('AOI').GetNameWithNoTooltip]"
+ br_ere_subject_events.50.desc: "[ShowSpecialStatusName('domestikos_east')], [GetCountry('AOI').GetNameWithNoTooltip] and the Eastern Themes have long stood as the Empire's shield against the Persian, Arab, and now Turkic powers of the east. Yet distance breeds independence, and the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] who hold these marches now believe their service has earned them more than a $country_rank_br_thema_ruler_male$ mandate alone can grant. Petition is made, through you, that [ShowLocationName('constantinople')] recognize what already stands in fact: a $country_rank_br_katapanate$ of the eastern frontier, answerable to the [ShowSpecialStatusName('br_emperor')], but master in its own house."
+ br_ere_subject_events.50.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.50.entry: "The $country_rank_br_katapanate$ of [GetCountry('AOI').GetNameWithNoTooltip]"
 
+ br_ere_subject_events.51.title: "The $rank_empire_byzantine_ruler_male$'s Judgment"
+ br_ere_subject_events.51.desc: "Word has reached the Sacred Palace that [SCOPE.sCountry('origin_country').GetName] would be recognized as a $country_rank_br_katapanate$, ruling in the $rank_empire_byzantine_ruler_male$'s name over lands it already commands in truth if not in title. To grant this recognition binds an ambitious frontier more closely to the crown by giving its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] a dignity worth defending. To refuse it costs nothing today, and risks everything should their patience run out."
+ br_ere_subject_events.51.a: "Grant them the dignity they ask."
+ br_ere_subject_events.51.b: "There shall be no such concession."
+
+ br_ere_subject_events.52.title: "The $rank_empire_byzantine_ruler_male$'s Refusal"
+ br_ere_subject_events.52.desc: "The answer returns from [ShowLocationName('constantinople')], and it is not the one that was hoped for. The $rank_empire_byzantine_ruler_male$ will not diminish the crown's prerogative merely to reward a $country_rank_br_thema_ruler_male$'s ambition, however faithfully that service has been rendered. The frontier remains a [ShowSubjectTypeName('br_thema_subject')] in name, whatever it may be in practice."
+ br_ere_subject_events.52.a: "So be it. The [ShowSpecialStatusName('br_emperor')] has spoken."
+
+ br_ere_subject_events.53.title: "The $country_rank_br_katapanate$ Confirmed"
+ br_ere_subject_events.53.desc: "The $rank_empire_byzantine_ruler_male$'s seal is set upon the grant. What was won by the sword and held by patient governance is now sanctioned by imperial decree: a $country_rank_br_katapanate$ in truth as well as in fact, its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] raised among the great officers of the Roman world."
+ br_ere_subject_events.53.a: "Long may the $country_rank_br_katapanate$ serve the Empire."
+
+ br_ere_subject_events.54.title: "The $country_rank_br_katapanate$ of [GetCountry('KAP').GetNameWithNoTooltip]"
+ br_ere_subject_events.54.desc: "Among the caves and rock-cut monasteries of [GetCountry('KAP').GetNameWithNoTooltip], far from the sea and farther still from [ShowLocationName('constantinople')], the local [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] have built their strength on horse and highland alone. The highlanders answer to them in all but name, and they now ask that the [ShowSpecialStatusName('br_emperor')] make plain what the plateau already knows: that theirs is a $country_rank_br_katapanate$, not merely a [ShowSubjectTypeName('br_thema_subject')]."
+ br_ere_subject_events.54.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.54.entry: "The $country_rank_br_katapanate$ of [GetCountry('KAP').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.55.title: "The $country_rank_br_katapanate$ of [GetCountry('AN0').GetNameWithNoTooltip]"
+ br_ere_subject_events.55.desc: "On the eastern marches, where the highlands meet the Armenian frontier, the $country_rank_br_thema_ruler_male$ has spent more years at war than at court. Rome's writ there is upheld by their swords, not the [ShowSpecialStatusName('br_emperor')]'s clerks, and they judge it time that [ShowLocationName('constantinople')] acknowledge what its own frontier has become: a $country_rank_br_katapanate$, standing between the Empire and the beyliks beyond."
+ br_ere_subject_events.55.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.55.entry: "The $country_rank_br_katapanate$ of [GetCountry('AN0').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.56.title: "The $country_rank_br_katapanate$ of [GetCountry('ANA').GetNameWithNoTooltip]"
+ br_ere_subject_events.56.desc: "It forms the beating heart of the old Anatolic theme, the heartland from which armies once marched to every frontier of the Empire. Its $country_rank_br_thema_ruler_male$ now holds a strength few provincial [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] can claim, and asks that this ancient core of Roman [GetCountry('ANA').GetNameWithNoTooltip] be recognized for what it has long been in substance: a $country_rank_br_katapanate$, not a mere thema in decline."
+ br_ere_subject_events.56.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.56.entry: "The $country_rank_br_katapanate$ of [GetCountry('ANA').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.57.title: "The $country_rank_br_katapanate$ of [GetCountry('IT0').GetNameWithNoTooltip]"
+ br_ere_subject_events.57.desc: "They remain the last true footholds of Roman Italy, ringed by Latin princes and adventurers, and separated from [ShowLocationName('constantinople')] by a sea that grows wider with every year of neglect. Governing so distant a march demands an authority the [ShowSpecialStatusName('br_emperor')] rarely troubles to send. The $country_rank_br_thema_ruler_male$ now asks that the crown grant in law what necessity has already granted in practice: recognition as a $country_rank_br_katapanate$ of Italy."
+ br_ere_subject_events.57.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.57.entry: "The $country_rank_br_katapanate$ of [GetCountry('IT0').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.58.title: "The $country_rank_br_katapanate$ of [GetCountry('P0N').GetNameWithNoTooltip]"
+ br_ere_subject_events.58.desc: "Along the Black Sea coast, where Trebizond's harbors carry the trade of the Empire's northern reach, its people answer more readily to their own $country_rank_br_thema_ruler_male$ than to any decree from the capital. The mountains that shield [GetCountry('P0N').GetNameWithNoTooltip] from its neighbors shield it just as well from the [ShowSpecialStatusName('br_emperor')]'s oversight. Its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] now asks [ShowLocationName('constantinople')] to name plainly what geography and years of self-reliance have already decided: that [GetCountry('P0N').GetNameWithNoTooltip] is a $country_rank_br_katapanate$."
+ br_ere_subject_events.58.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.58.entry: "The $country_rank_br_katapanate$ of [GetCountry('P0N').GetNameWithNoTooltip]"
+
+ 

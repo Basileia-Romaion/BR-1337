@@ -118,30 +118,38 @@ REPLACE_OR_CREATE:AD2 = { #BR Addition
     religion_definition = sunni
 }
 
-REPLACE_OR_CREATE:AD3 = { #BR Addition
-    color = rgb { 46 161 140 }
-
-    culture_definition = andalusi
+REPLACE_OR_CREATE:ALV = { #Algarve
+	color = map_ALV
+	culture_definition = andalusi
     religion_definition = sunni
 }
 
-REPLACE_OR_CREATE:AD4 = { #BR Addition
-    color = rgb { 46 141 99 }
-
-    culture_definition = andalusi
+REPLACE_OR_CREATE:CRD = { #Córdoba
+	color = map_CRD
+	culture_definition = andalusi
     religion_definition = sunni
 }
 
-REPLACE_OR_CREATE:AD5 = { #BR Addition
-    color = rgb { 36 161 77 }
-
-    culture_definition = andalusi
+REPLACE_OR_CREATE:JAE = { #Jaén
+	color = map_JAE
+	culture_definition = andalusi
     religion_definition = sunni
 }
 
-REPLACE_OR_CREATE:AD6 = { #BR Addition
-    color = rgb { 56 131 157 }
+REPLACE_OR_CREATE:MUC = { #Murcia
+	color = map_MUC
+	culture_definition = andalusi
+    religion_definition = sunni
+}
 
-    culture_definition = andalusi
+REPLACE_OR_CREATE:SEV = { #Sevilla
+	color = map_SEV
+	culture_definition = andalusi
+    religion_definition = sunni
+}
+
+REPLACE_OR_CREATE:TOL = { #Toledo
+	color = map_TOL
+	culture_definition = andalusi
     religion_definition = sunni
 }

@@ -221,6 +221,7 @@ countries = {
 			privilege = {
 				#Nobles
 				primacy_of_nobility
+				noble_private_armies_privilege
 				#Clergy
 				#Peasants
 				peasants_free_peasantry
@@ -1968,6 +1969,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -3244,6 +3246,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -3331,6 +3334,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -4305,6 +4309,21 @@ countries = {
 	
  #------------------ British Isles -------------------------
 	# ENG replaced by AGL and associated tags
+
+	CET = { #Palatinate of Chester
+		our_cores_conquered_by_others = {
+			flint
+		}
+		include = "catholic_monarchy_not_present"
+		include = "expl_western_europe"
+		government = {
+		}
+
+		tolerated_cultures = {
+			welsh
+		}
+		capital = chester
+	}
 	# WLS removed and replaced by Welsh tags
 	# PLE replaced by HBA
 	
@@ -6113,6 +6132,10 @@ countries = {
 				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
 				dhimmi_in_administration
+			}
+			bureaucracies = {
+				# The Persian-style chancery was the defining institution of Delhi's administration.
+				{ type = diwan_al_insha_bureaucracy date = 1320.1.1 entrenchment = 60 }
 			}
 
 		}
@@ -13659,6 +13682,10 @@ countries = {
 				distribution_of_power_law = dop_traditional_distribution_of_power
 			}
 
+			bureaucracies = {
+				{ type = br_ser_pronoia_bureaucracy date = 1282.1.1 entrenchment = 50 }
+			}
+
 			quality_vs_quantity = 15
 			belligerent_vs_conciliatory = -10
 
@@ -14195,6 +14222,11 @@ countries = {
 				#burghers
 				#peasants
 			}
+
+			bureaucracies = {
+				{ type = br_bul_pronoia_bureaucracy date = 1320.1.1 entrenchment = 5 }
+			}
+
 		}
 		accepted_cultures = {
 			boulgaroi
@@ -14438,6 +14470,10 @@ countries = {
 				name_peter = 3
 				name_james = 2
 			}
+			
+			reforms = {
+				cat_corts_catalanes_reform
+			}
 		}
 	}
 	ANR = {
@@ -14454,6 +14490,10 @@ countries = {
 			type = theocracy
 
 			ruler_term = { character = anr_arnau_de_llorda start_date = 1326.6.27 }
+
+			reforms = {
+				anr_coprincipality_reform
+			}
 		}
 		capital = andorra_la_vella
 		country_rank = rank_county
@@ -15085,10 +15125,13 @@ countries = {
 
 			reforms = {
 				the_jewel_of_alandalus_reform
+				gra_hajib_reform
 				br_alandalus_reform
 			}
 			laws = {
 				sharia_law = maliki_policy
+				dhimmi_regulations_law = dhimmi_status_policy
+				slave_conversion = allow_slave_religion
 			}
 			privilege = {
 				#Nobles
@@ -15133,7 +15176,13 @@ countries = {
 				dhimmi_mazalim_court
 				dhimmi_in_administration
 				br_andalusian_dhimmi_levies
-				
+				jewish_court_financier_charter
+				jewish_physician_exemption
+				al_caid
+				treasury_rights
+			}
+			parliament = {
+				parliament_type = jamaa_parliament
 			}
 			
 			centralization_vs_decentralization = -50
@@ -15150,7 +15199,12 @@ countries = {
 			individualism_vs_communalism = -50
 			outward_vs_inward = -75
 			mysticism_vs_jurisprudence = 50
-			
+
+			bureaucracies = {
+				{ type = hisba_bureaucracy date = 1150.1.1 entrenchment = 90 }
+				{ type = diwan_al_insha_bureaucracy date = 1232.1.1 entrenchment = 65 }
+				{ type = barid_bureaucracy date = 1260.1.1 entrenchment = 45 }
+			}
 			
 		}
 		court_language = maghrebi_dialect
@@ -15279,8 +15333,8 @@ countries = {
 			}
 
 			reforms = {
+				nav_cortes_navarra_reform
 				pyrenean_fueros_reform
-				sons_of_the_oak_reform
 			}
 			laws = {
 				administrative_system = merindad_policy
@@ -15316,6 +15370,125 @@ countries = {
 
 	}
 
+	#Nominal Iberian kingdoms (titular claimants; cores held by conquerors in 1337)
+	ALV = {
+		our_cores_conquered_by_others = {
+			faro silves tavira lagos
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = faro
+	}
+
+	ATU = {
+		our_cores_conquered_by_others = {
+			oviedo aviles castropol tineo villaviciosa cangas llanes mieres
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = oviedo
+	}
+
+	CRD = {
+		our_cores_conquered_by_others = {
+			cordoba lucena baena palma_del_rio carpio espiel fuenteovejuna pedroche santa_eufemia
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = cordoba
+	}
+
+	JAE = {
+		our_cores_conquered_by_others = {
+			jaen baeza ubeda andujar jodar cazorla martos
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = jaen
+	}
+
+	MUC = {
+		our_cores_conquered_by_others = {
+			murcia cartagena lorca mula
+			albacete chinchilla jumilla villena
+			hellin caravaca cieza segura_de_la_sierra
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = murcia
+	}
+
+	SEV = {
+		our_cores_conquered_by_others = {
+			sevilla carmona constantina coria_del_rio ecija moron olvera osuna sanlucar_la_mayor
+			cadiz algeciras arcos_de_la_frontera gibraltar jerez_de_la_frontera medina_sidonia sanlucar tarifa
+			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = sevilla
+	}
+
+	TOL = {
+		our_cores_conquered_by_others = {
+			toledo guadalupe illescas los_yebenes navalucillos puebla_de_montalban puente_arzobispo talavera_de_la_reina
+			ocana alcazar_de_san_juan chinchon consuegra tomelloso ucles
+			madrid alcala_de_henares colmenar el_escorial maqueda
+			guadalajara brihuega buitrago_de_lozoya cobeta siguenza zorita
+			cuenca beteta canete huete molina_de_aragon pareja torralba
+			alarcon belmonte iniesta jorquera moya san_clemente requena
+			alcaraz lezuza alhambra_location montiel villapalacios villarobledo
+			ciudad_real almaden almodovar_del_campo calatrava malagon manzanares puertollano
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = toledo
+	}
+
+
+	#----------------------------- France -------------------------------
 
  #----------------------------- France -------------------------------
 
@@ -15378,6 +15551,7 @@ countries = {
 				clergy_literacy_rights
 				auxilium_et_consilium
 				nobles_land_rights
+				noble_private_armies_privilege
 				noble_leaders_only
 				primacy_of_nobility
 				noble_armies
@@ -19430,17 +19604,25 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
+				mor_andalusian_refugees
+				treasury_rights
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
 				local_tribal_strongholds
+				desert_power
 				br_berber_privilege
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
+				distribution_of_power_law = dop_favor_the_nobles
+				bled_makhzen_siba_law = negotiated_authority_policy
+				bayaa_succession_law = bayaa_tribal_assembly_policy
 			}
 		}
 
@@ -19457,6 +19639,20 @@ countries = {
 
 		capital = fez
 		dynasty = marinid_dynasty
+	}
+	
+	ALM = {
+		include = "expl_muslim_mediterranean"
+		include = "muslim_monarchy_not_present"
+		country_rank = rank_empire
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+		}
+
+		capital = marrakesh
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
 	}
 
 	TLE = { #Tlemcen
@@ -19494,6 +19690,11 @@ countries = {
 				Abu_Tashufin = 1
 			}
 
+			reforms = {
+				tle_support_of_banu_al_wad
+				catalan_merchant_privileges
+			}
+
 			#https://en.wikipedia.org/wiki/Barbary_Coast
 			land_vs_naval = 30
 			laws = {
@@ -19507,16 +19708,23 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
+				desert_power
 				br_berber_privilege
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
+			}
+			bureaucracies = {
+				# Tlemcen's Zayyanid court maintained the Maghrebi muhtasib tradition.
+				{ type = hisba_bureaucracy date = 1250.1.1 entrenchment = 50 }
 			}
 		}
 		religious_school = maliki_school
@@ -19579,6 +19787,9 @@ countries = {
 
 			#https://en.wikipedia.org/wiki/Barbary_Coast
 			land_vs_naval = 30
+			reforms = {
+				guardians_of_ifriqiya
+			}
 			land_vs_naval = 30 # https://en.wikipedia.org/wiki/Hafsids_of_B%C3%A9ja%C3%AFa and subjects
 			laws = {
 				piracy_law = state_piracy_policy
@@ -19592,6 +19803,8 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
@@ -19602,6 +19815,10 @@ countries = {
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
+			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1150.1.1 entrenchment = 90 }
+				{ type = hisba_bureaucracy date = 1232.1.1 entrenchment = 65 }
 			}
 		}
 		religious_school = maliki_school
@@ -19619,6 +19836,88 @@ countries = {
 		}
 
 		capital = tunis
+		dynasty = hafsid_dynasty
+	}
+
+	BIJ = {
+		own_control_core = {
+			bejaia el_kseur mansouria bouira kalaa_of_ait_abbas setif
+			annaba cheffia jijel el_milia skikda el_kala guelma collo tekouch
+			
+			constantine_ALG mila ngaous baghai dufanat bazer_sakhra tiffech tebessa meskiana tijis ikjan
+			
+			bordj_bou_arreridj
+		}
+
+		starting_technology_level = 3
+		include = "expl_muslim_mediterranean"
+		include = "muslim_monarchy_no_abrahamic_dhimmi"
+		country_rank = rank_duchy
+		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = tun_abu_zakariya_yahya
+
+			regnal_numbers = {
+				Abd_al-Wahid = 1
+				name_abdullah = 1
+				name_john = 2
+				name_muhammad = 2
+				name_abraham = 1
+				name_abd_al_aziz = 1
+				name_omar = 1
+				Khalid = 1
+				name_zechariah = 1
+				name_abu_bakr = 1
+			}
+ 
+			laws = {
+				piracy_law = state_piracy_policy
+			}
+			privilege = {
+				#Nobles
+				noble_sponsored_navy
+				#Ulama
+				waqf_payments
+				#Burghers
+				land_of_commerce
+				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
+				#Dhimmi
+				dhimmi_pact_of_umar
+				#Tribes
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				desert_power
+			}
+			laws = {
+				amazigh_familial_connections = reliance_on_local_tribes
+				sharia_law = maliki_policy
+			}
+			bureaucracies = {
+				# The Hafsid court upheld the western-Mediterranean muhtasib tradition.
+				{ type = hisba_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
+		}
+		include = "hafsid_state"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+
+		accepted_cultures = {
+			tunisian
+		}
+
+		tolerated_cultures = {
+			kabyle
+			chaoui
+			mustaarabi
+		}
+
+		capital = bejaia
 		dynasty = hafsid_dynasty
 	}
 
@@ -19984,6 +20283,8 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
+
+		include = "hafsid_state"
 
 		tolerated_cultures = {
 			chaoui
@@ -21188,14 +21489,117 @@ countries = {
 		government = { mysticism_vs_jurisprudence = -5 }
 	}
 
-	TRG = {
+	KAY = {
+		type = pop
+
+		add_pops_from_locations = {
+			agadez assode iferouane in_gall marandet
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	AHG = {
+		type = pop
+
+		add_pops_from_locations = {
+			abalessa
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	AJJ = {
+		type = pop
+
+		add_pops_from_locations = {
+			djanet ghat in_amenas
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	KAH = {
+		type = pop
+
+		add_pops_from_locations = {
+			tadmekka takedda
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	IWL = {
 		type = pop
 
 		add_pops_from_locations = {
 			walata gotheye boubon ouallam goudel hamdallaye tondikandia koure loga dongondoutchi kaouara
-			birni_ader tahoua kalfou abalak marandet aderbissinat ollelewa zinder guidimouni kelle in_gall agadez
-			takedda assode iferouane abalessa djanet ghat in_amenas
-			tadmekka
+			birni_ader tahoua kalfou abalak
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	KGS = {
+		type = pop
+
+		add_pops_from_locations = {
+			zinder guidimouni kelle aderbissinat ollelewa
 		}
 
 		include = "expl_west_africa_muslim"
@@ -22966,6 +23370,13 @@ countries = {
 				mining_law = nobles_mining_law
 				royal_court_customs_law = harem_policy
 				harem_law = public_harem_policy
+			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 969.1.1 entrenchment = 90 }
+  				{ type = diwan_al_insha_bureaucracy date = 969.1.1 entrenchment = 95 }
+    			{ type = diwan_al_jund_bureaucracy date = 969.1.1 entrenchment = 90 }
+    			{ type = hisba_bureaucracy date = 969.1.1 entrenchment = 80 }
+				#{ type = barid_bureaucracy date = 1261.1.1 entrenchment = 75 }
 			}
 		}
 		religious_school = ismaili_school

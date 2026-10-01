@@ -37,6 +37,7 @@
 #global_max_literacy = 5
 #subject_loyalty = -10
 #monthly_legitimacy = -0.1
+#monthly_political_influence = 0.25
 #monthly_pretender_rebel_growth = 0.001
 #monthly_nobles_estate_rebel_growth = 0.001
 #peasants_estate_levy_size = -0.25
@@ -344,19 +345,19 @@ roman_civic_order = {
 	ai_weight = { add = 5 }
 }
 
-br_roman_inquisition = {
-	icon = byz_heart_of_orthodoxy_advance
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = BYZ
-			culture = { has_culture_group = culture_group:greek_group }
-			culture = { has_culture_group = culture_group:elysian_group }
-		}
-	}
-	requires = roman_civic_order
-	global_pop_conversion_speed_modifier = 0.1
-}
+#br_roman_inquisition = {
+	#icon = byz_heart_of_orthodoxy_advance
+	#age = age_4_reformation
+	#potential = {
+		#OR = {
+			#has_or_had_tag = BYZ
+			#culture = { has_culture_group = culture_group:greek_group }
+			#culture = { has_culture_group = culture_group:elysian_group }
+		#}
+	#}
+	#requires = roman_civic_order
+	#global_pop_conversion_speed_modifier = 0.1
+#}
 
 br_kekhrismene_advance = {
 	age = age_4_reformation
@@ -772,4 +773,32 @@ br_mount_athos_wine = {
 	}
 	global_wine_output_modifier = 0.33
 	requires = br_mount_athos_books
+}
+
+#Syria
+br_syrenikoi_eastern_gateway = {
+	age = age_1_traditions
+	icon = byz_crossroads_of_continents
+	potential = {
+		culture = culture:syrenikoi_greek_culture
+	}
+	requires = trade_advance_age_of_trad
+	trade_land_efficiency = 0.1
+	global_trade_protection_factor = 0.1
+}
+
+br_syria_eastern_shield_advance = {
+	age = age_1_traditions
+	icon = byz_shield_of_the_west
+	potential = {
+		OR = {
+			owns = location:antioch
+			culture = culture:syrenikoi_greek_culture
+		}
+	}
+	requires = feudalism_advance
+	global_defensive = 0.1
+	unlock_building = br_syria_outpost
+	unlock_building = br_syria_fort
+	ai_weight = { add = 10 }
 }

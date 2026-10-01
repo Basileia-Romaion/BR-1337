@@ -26,8 +26,15 @@
  #br_ere_events.3.att: "All loyal themes and pronoia will be reduced to direct vassals of the Basileus."
  br_ere_events.3.b: "Entrust Them to the Great Houses."
  #br_ere_events.3.btt: "The Empire will be reorganized into powerful regional commands under a few great governors."
- br_ere_events.3.att: "All Greek themata and pronoia in the Balkans and Anatolia will become direct vassals of the Basileus."
+ br_ere_events.3.att: "All themata and pronoia in the Balkans and Anatolia will become direct vassals of the Basileus."
  br_ere_events.3.btt: "The Empire will be reorganized into a few large regional vassals. Several minor states will be annexed into stronger governors, who will become vassals or marches."
+
+ br_ere_events.4.entry: "$br_ere_events.4.title$"
+ br_ere_events.4.title: "The Romaniote Jews"
+ br_ere_events.4.desc: "For generations, [ROOT.GetCountry.GetName] has stood as a haven for the followers of [ShowReligionName('judaism')], sheltering their communities within its most prosperous cities. Of late, many among them have made the [target_location.GetRank.GetName] of [target_location.GetName] their refuge in truth as well as in name, free at last to live and worship without persecution or scorn.\n\nWord of this has reached the [ROOT.GetCountry.GetGovernment.GetCourtTitle], and opinion there is divided. Some speak in favor of the newcomers, holding that all creations of [ROOT.GetCountry.GetReligion.GetGodName] deserve equal shelter beneath the throne. Others, of a harsher piety, name it a stain upon the sanctity of the [ROOT.GetCountry.GetFlavorRank], and would see it scoured away."
+ br_ere_events.4.a: "We shall stand as protectors of the [ShowReligionAdjectiveWithNoTooltip('judaism')] people."
+ br_ere_events.4.b: "[ROOT.GetCountry.GetReligion.GetGodName] would never suffer these unbelievers to live among us in peace!"
+ br_jewish_people_in_target_location_become_unhappy: "Every [ShowReligionAdjective('judaism')] [pop|e] in [target_location.GetName] will suffer a loss of [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%]"
 
  br_ere_events.5.title: "The Death of [GetCharacter('byz_andronikos_iii_palaiologos').GetName]"
  br_ere_events.5.entry: "$br_ere_events.5.title$"
@@ -77,6 +84,24 @@
  br_ere_events.11.b: "Increase naval construction without major expansion."
  br_ere_events.11.c: "Our strength lies upon the land, not the sea."
 
+ br_ere_events.12.title: "The Question of $AGY$"
+ br_ere_events.12.desc: "Alexandria, jewel of the Nile and seat of one of the Church's five ancient patriarchates, has remained bound to the Roman crown through centuries of storm. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] must now decide how best to hold what has been won: to draw $AGY$ fully into the machinery of the state, or to entrust her governance to an Exarch, ruling in the Emperor's name but by his own hand."
+ br_ere_events.12.a: "Bind $AGY$ closer to the throne."
+ br_ere_events.12.b: "Let an Exarch govern in our stead."
+ br_ere_events.12.historical_info: "No Exarchate of $AGY$ ever existed in our own history. Historically Roman Egypt was instead governed as the Diocese of Egypt under an Augustal Prefect, prized above all for the grain that fed Constantinople. It was lost to the Arab conquest in 641, scarcely a decade after Emperor Heraclius had recovered it from Persian occupation — a loss from which the Empire never fully recovered."
+
+ br_ere_events.13.title: "The Question of $AFK$"
+ br_ere_events.13.desc: "Carthage and the coastlands of $AFK$ once fed the granaries of Old Rome, and now sustain the New. Yet the province lies far across the sea, and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] must weigh whether distant $AFK$ is better ruled directly from Constantinople, or set beneath an Exarch who can answer its troubles without awaiting a fleet from home."
+ br_ere_events.13.a: "Bind $AFK$ closer to the throne."
+ br_ere_events.13.b: "Let an Exarch govern in our stead."
+ br_ere_events.13.historical_info: "In our own history, the Exarchate of Africa was established around 591 by Emperor Maurice, uniting civil and military authority under a single governor at Carthage so that so distant a province might be defended without waiting on word from the capital. It endured for over a century before falling to the Umayyad conquest of Carthage in 698, ending Roman rule in North Africa."
+
+ br_ere_events.14.title: "The Question of Ravenna"
+ br_ere_events.14.desc: "Ravenna has stood as Rome's window upon Italy since the days when emperors first fled the chaos of the peninsula for her marshes and walls. To rule Italy from Constantinople alone has always strained the Empire's reach; the throne must decide whether Ravenna is to be governed as any other province, or raised again as the seat of an Exarch, as in ages past."
+ br_ere_events.14.a: "Bind Ravenna closer to the throne."
+ br_ere_events.14.b: "Restore the Exarchate of Ravenna."
+ br_ere_events.14.historical_info: "The Exarchate of Ravenna was founded around 584, also under Emperor Maurice, as the seat of Roman authority in Italy after the Lombard invasions had shattered the peninsula's unity. For over a century and a half it held Constantinople's last true foothold in the Italian north, until King Aistulf's Lombards captured Ravenna in 751 — ending Roman rule there and clearing the way for the rise of the Papal States."
+
  ### Armenian Rebellion ###
  br_ere_events.100.title: "The Armenian Revolt"
  br_ere_events.100.entry: "$br_ere_events.100.title$"
@@ -87,12 +112,12 @@
  celal_available.tt: "The revolt will be suppressed before it can fully erupt."
 
  ### Tunisian Revolt ###
- br_ere_events.101.title: "Unrest in Tunis"
+ br_ere_events.101.title: "Unrest in $AFK$"
  br_ere_events.101.entry: "$br_ere_events.101.title$"
  br_ere_events.101.desc: "The Sunni populations of Ifriqiya have grown increasingly resentful of imperial centralization and the expanding authority of Constantinople. Provincial notables condemn the erosion of local autonomy, while veterans and tribal leaders speak openly of resistance. Reports from Tunis suggest that the situation may soon spiral into outright rebellion."
- br_ere_events.101.a: "The unrest spreads throughout Tunis."
+ br_ere_events.101.a: "The unrest spreads throughout $AFK$."
  br_ere_events.101.b: "Grant concessions to the local elites."
- tunisian_uprising: "Sunni populations throughout Tunis will grow deeply dissatisfied."
+ tunisian_uprising: "Sunni populations throughout $AFK$ will grow deeply dissatisfied."
 
  ### Tripolitanian Revolt ###
  br_ere_events.102.title: "The Tribes of Tripolitania"
@@ -166,6 +191,38 @@
  br_ere_events.110.b: "Contain the uprising through military occupation."
  tur_all_of_specified_locations_join_rebellion_tt: "The populations of the affected Serbian provinces will rally behind the uprising."
  tur_all_specified_locations_lose_control: "Imperial control in the affected Serbian provinces will collapse."
+
+ br_ere_events.111.title: "Peasant Uprising"
+ br_ere_events.111.entry: "$br_ere_events.111.title$"
+ br_ere_events.111.desc: "With the dynatoi granted ever wider privilege over the land, and the throne's authority worn thin, the peasantry of the Imperial heartland have taken up scythe and sickle against their landlords. The magnates ask only that the crown make an example, and swiftly — before the fields go untended and the unrest spreads beyond the villages that first raised it."
+ br_ere_events.111.a: "The dynatoi will have their due."
+
+ br_ere_events.112.title: "Rebellion in the Morea"
+ br_ere_events.112.entry: "$br_ere_events.112.title$"
+ br_ere_events.112.desc: "The Morea has ever been a peninsula of hard men and harder terrain, and its unwalled towns now rise against the tax-collector and the governor alike. Where no fort stands to overawe them, the peasantry and the lesser folk have made common cause, and the roads south of Corinth are no longer safe for the throne's officers."
+ br_ere_events.112.a: "Crush the rebels where they stand."
+ br_ere_events.112.b: "Let the peninsula burn itself out."
+ flavor_hun_show_rebels_tt: "Word of the reprisal spreads swiftly among the rebels of the Morea, and they will not soon forget it."
+ every_location_slovakia_loses_prosperity_tt: "The Morea is left to its ruin, its fields and towns alike paying the price of rebellion."
+
+ br_ere_events.113.title: "Restlessness Among the Vlachs"
+ br_ere_events.113.entry: "$br_ere_events.113.title$"
+ br_ere_events.113.desc: "In the lands beyond the Danube, where Wallachian tongues are heard, the throne's Roman officials have grown careless in their dealings with the shepherds and freeholders under their charge. Grievance has hardened into open defiance in more than one settlement, and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] can no longer pretend the matter will settle itself."
+ br_ere_events.113.a: "Make an example of them."
+
+ br_ere_events.114.title: "The Anatolian Nobility Rises"
+ br_ere_events.114.entry: "$br_ere_events.114.title$"
+ br_ere_events.114.desc: "The lords of Anatolia have watched other frontiers win by petition what they themselves have been denied, and their patience has run out. In province after province the common folk stand as discontented as their betters, and the notables now raise the banner of revolt rather than wait any longer on the throne's goodwill."
+ br_ere_events.114.a: "Let them have their way — for now."
+ br_ere_events.114.b: "Grant their demands and end this uprising."
+ anatolian_nobles_joining: "The Anatolian nobles, and the common folk who follow them, abandon the throne's cause and flock to the rebel banner."
+
+ br_ere_events.115.title: "The Kappadocian Nobility Rises"
+ br_ere_events.115.entry: "$br_ere_events.115.title$"
+ br_ere_events.115.desc: "Among the caves and highland strongholds of Kappadokia, the regions lords have grown weary of a throne too distant to reward their loyalty or answer their petitions. Discontent runs deep among the common folk as well, and the notables now choose the sword over further patience, raising their own banner against Constantinople's neglect."
+ br_ere_events.115.a: "Let them have their way — for now."
+ br_ere_events.115.b: "Grant their demands and end this uprising."
+ cappadocian_nobles_joining: "The Kappadocian nobles, and the common folk who follow them, abandon the throne's cause and flock to the rebel banner."
 
  ### The Matter of the Nile ###
  br_ere_events.200.title: "The Matter of the Nile"
