@@ -1276,6 +1276,10 @@
 				tag = ARA
 				tag = CAS
 				AND = {
+					tag = POL
+					has_advance = corona_regni_poloniae
+				}
+				AND = {
 					tag = BOH
 					has_variable = crown_of_bohemia_variable
 				}

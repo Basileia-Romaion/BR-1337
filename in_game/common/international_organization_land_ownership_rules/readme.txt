@@ -13,3 +13,5 @@
 # - on_removed: effect when a location is removed from the orgnaisation (root = location, recipient = international organization)
 # - ai_desire_to_add: how much the actual country owner of the land wants to add it to the organization (root = location, recipient = international organization)
 # - owned_location_color: <optional> color of owned locations on the diplomatic map (will be stripes)
+# - removed_by_peace_treaty: <yes/no> makes that land can only be removed via peace treaties from the IO, defaults to no
+# - remove_war_score_modifier: <double> modify the war score cost for removing provinces from the IO, has no effect if removed_by_peace_treaty is not used

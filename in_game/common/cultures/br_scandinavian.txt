@@ -165,7 +165,25 @@ hauklandic = {
 
 }
 
-
+innulander = {
+	language = innuland_dialect
+	
+	color = rgb { 77 61 80 }
+	
+	tags = { native_american_tag north_american_gfx american_gfx eastern_woodlands_coa_gfx }
+	
+	opinions = {
+		beothuk_culture = kindred
+		vinlander = kindred
+		marklander = positive
+		hellulander = positive
+		innu_culture = kindred
+	}
+	culture_groups = {
+		cree_group
+		scandinavian_group
+	}
+}
 
 REPLACE_OR_CREATE:norwegian = {
 	language = norwegian_dialect

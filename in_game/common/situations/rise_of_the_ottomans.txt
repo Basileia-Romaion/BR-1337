@@ -13,8 +13,147 @@
 		current_date < 1350
 	}
 	
-	can_end = {
-		rise_of_the_ottomans_end_trigger = yes
+	outcome = {
+		name = "rise_of_the_ottomans_beylik_ascendant"
+		desc = "rise_of_the_ottomans_beylik_ascendant_desc"
+		trigger = {
+			trigger_if = {
+				limit = {
+					country_exists = c:TUR
+					var:strongest_beylik_variable = c:TUR
+				}
+				AND = {
+					custom_tooltip = {
+						text = strongest_beylik_has_over_75_locations
+						var:strongest_beylik_variable = {
+							num_locations > 500
+							num_of_non_rural >= 50
+						}
+					}
+					var:strongest_beylik_variable = { is_subject = no }
+				}
+			}
+			trigger_else = {
+				AND = {
+					custom_tooltip = {
+						text = strongest_beylik_has_over_75_locations
+						var:strongest_beylik_variable = {
+							num_locations > 500
+							num_of_non_rural >= 50
+						}
+					}
+					NOT = { country_exists = c:TUR }
+					var:strongest_beylik_variable = { is_subject = no }
+				}
+			}
+		}
+		immediate = {
+			every_country = {
+				limit = {
+					NOT = { situation:rise_of_the_ottomans.var:strongest_beylik_variable = this }
+					can_see_situation = situation:rise_of_the_ottomans
+				}
+
+				trigger_event_non_silently = rise_of_the_ottomans.4
+			}
+			if = {
+				limit = {
+					NOT = { var:strongest_beylik_variable = c:TUR }
+					NOT = { country_exists = c:TUR }
+				}
+				every_location_in_the_world = {
+					limit = {
+						is_core_of = c:TUR
+					}
+					remove_core = c:TUR
+				}
+				var:strongest_beylik_variable = {
+					form_country = formable_country:RUM_f
+					set_variable = was_not_tur_variable
+				}
+			}
+			var:strongest_beylik_variable ?= {
+				if = {
+					limit = { has_variable = roto600_variable }
+					remove_variable = roto600_variable
+				}
+				trigger_event_non_silently = rise_of_the_ottomans.5
+				set_global_variable = {
+					name = victory_in_rise_of_ottomans_variable
+					years = 2
+				}
+			}
+		}
+	}
+	outcome = {
+		name = "rise_of_the_ottomans_beyliks_extinguished"
+		desc = "rise_of_the_ottomans_beyliks_extinguished_desc"
+		trigger = {
+			custom_tooltip = {
+				text = no_beyliks_left_tt
+				global_variable_list_size = {
+					name = eligible_beylik_list
+					value < 1
+				}
+			}
+		}
+		immediate = {
+			every_country = {
+				limit = { can_see_situation = situation:rise_of_the_ottomans }
+				trigger_event_non_silently = rise_of_the_ottomans.3
+			}
+		}
+	}
+	outcome = {
+		name = "rise_of_the_ottomans_anatolia_fragmented"
+		desc = "rise_of_the_ottomans_anatolia_fragmented_desc"
+		trigger = {
+			current_year > 1400
+			country_exists = var:strongest_beylik_variable
+			var:strongest_beylik_variable = {
+				num_locations < 100
+				at_war = no
+			}
+		}
+		immediate = {
+			every_in_global_list = {
+				variable = eligible_beylik_list
+				trigger_event_non_silently = rise_of_the_ottomans.500
+			}
+			every_country = {
+				limit = {
+					any_in_global_list = {
+						variable = eligible_beylik_list
+						this != prev
+					}
+					can_see_situation = situation:rise_of_the_ottomans
+				}
+				trigger_event_non_silently = rise_of_the_ottomans.3
+			}
+		}
+	}
+	outcome = {
+		name = "rise_of_the_ottomans_era_closes"
+		desc = "rise_of_the_ottomans_era_closes_desc"
+		trigger = {
+			current_year > 1565
+		}
+		immediate = {
+			every_in_global_list = {
+				variable = eligible_beylik_list
+				trigger_event_non_silently = rise_of_the_ottomans.500
+			}
+			every_country = {
+				limit = {
+					any_in_global_list = {
+						variable = eligible_beylik_list
+						this != prev
+					}
+					can_see_situation = situation:rise_of_the_ottomans
+				}
+				trigger_event_non_silently = rise_of_the_ottomans.3
+			}
+		}
 	}
 	
 	visible = {
@@ -294,89 +433,7 @@
 	}
 
 
-	on_ending = {
-		if = {
-			limit = {
-				global_variable_list_size = {
-					name = eligible_beylik_list
-					value < 1
-				}
-			}
-			every_country = {
-				limit = { can_see_situation = situation:rise_of_the_ottomans }
-				trigger_event_non_silently = rise_of_the_ottomans.3
-			}
-		}
-		else_if = {
-			limit = {
-				current_year > 1400
-				OR = {
-					AND = {
-						current_year > 1565
-						var:strongest_beylik_variable ?= { 
-							num_locations < 500
-							num_of_non_rural < 50
-						}
-					}
-					NOT = {
-						var:strongest_beylik_variable ?= {
-							num_locations >= 100
-						}
-					}
-				}
-			}
-			every_in_global_list = {
-				variable = eligible_beylik_list
-				trigger_event_non_silently = rise_of_the_ottomans.500
-			}
-			every_country = {
-				limit = {
-					any_in_global_list = {
-						variable = eligible_beylik_list
-						this != prev
-					}
-					can_see_situation = situation:rise_of_the_ottomans
-				}
-				trigger_event_non_silently = rise_of_the_ottomans.3
-			}
-		}
-		else =  {
-			every_country = {
-				limit = {
-					NOT = { situation:rise_of_the_ottomans.var:strongest_beylik_variable = this }
-					can_see_situation = situation:rise_of_the_ottomans
-				}
- 
-				trigger_event_non_silently = rise_of_the_ottomans.4
-			}
-			if = {
-				limit = { 
-					NOT = { var:strongest_beylik_variable = c:TUR }
-					NOT = { country_exists = c:TUR }
-				}
-				every_location_in_the_world = {
-					limit = {
-						is_core_of = c:TUR
-					}
-					remove_core = c:TUR
-				}
-				var:strongest_beylik_variable = {
-					form_country = formable_country:RUM_f
-					set_variable = was_not_tur_variable
-				}
-			}
-			var:strongest_beylik_variable ?= {
-				if = {
-					limit = { has_variable = roto600_variable }
-					remove_variable = roto600_variable
-				}
-				trigger_event_non_silently = rise_of_the_ottomans.5
-				set_global_variable = {
-					name = victory_in_rise_of_ottomans_variable
-					years = 2
-				}
-			}
-		}
+	on_ended = {
 		c:TUR ?= {
 			remove_area_preference = ottoman_expansion_balkan
 		}
