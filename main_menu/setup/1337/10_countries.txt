@@ -19353,7 +19353,6 @@ countries = {
 				br_latinoi_navy
 				br_latinoi_army
 				privateer_contracts #By the mid/late point of the 14th century Rhodes had become one of the major naval bases in the eastern Mediterranean specifically structured to support Hospitaller corsair operations and fleet maintenance.
-
 			}
 
 		}
@@ -54990,7 +54989,9 @@ countries = {
 		include = "orthodox_military_order"
 		government = {
 			type = theocracy
-			ruler = random
+
+			ruler = br_ortho_military_order_character_01
+			ruler_term = { character = br_ortho_military_order_character_01 start_date = 1319.6.18 }
 		}
 		currency_data = {
 			gold = 500
@@ -55023,7 +55024,8 @@ countries = {
 		include = "orthodox_military_order"
 		government = {
 			type = theocracy
-			ruler = random
+			ruler = br_ortho_military_order_character_02
+			ruler_term = { character = br_ortho_military_order_character_02 start_date = 1319.6.18 }
 		}
 		currency_data = {
 			gold = 500
@@ -56373,8 +56375,8 @@ countries = {
 		include = "orthodox_military_order"
 		government = {
 			type = theocracy
-			ruler = random
-
+			ruler = br_ortho_military_order_character_03
+			ruler_term = { character = br_ortho_military_order_character_03 start_date = 1319.6.18 }
 		}
 		currency_data = {
 			gold = 750

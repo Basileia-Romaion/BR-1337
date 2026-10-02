@@ -27,6 +27,42 @@ character_db={
 		tag = SY2
 	}
 
+	br_ortho_military_order_character_01 = {
+		first_name = { name = "random" }
+		culture = greek_culture
+		religion = orthodox
+		adm = 39 dip = 39 mil = 95
+		birth_date = 1290.1.1
+		religious_order = br_order_holy_sepulchre
+		birth = antioch
+		tag = OHS
+	}
+
+	br_ortho_military_order_character_02 = {
+		first_name = { name = "random" }
+		culture = georgian_culture
+		religion = orthodox
+		adm = 39 dip = 39 mil = 95
+		birth_date = 1290.1.1
+		religious_order = br_order_saint_george
+		dynasty = bagrationi_dynasty
+		birth = kutaisi
+		tag = SGO
+	}
+
+	br_ortho_military_order_character_03 = {
+		first_name = { name = "random" }
+		culture = rhos_culture
+		religion = orthodox
+		adm = 39 dip = 39 mil = 95
+		birth_date = 1290.1.1
+		religious_order = br_order_saint_vladimir
+		dynasty = rurikovich_dynasty
+		birth = theodoro
+		tag = RH0
+	}
+	
+
 #ERE
 	br_ere_rdm_character_00 = {
 		first_name = { name = "random" }
