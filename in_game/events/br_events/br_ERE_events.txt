@@ -3211,3 +3211,137 @@ br_ere_events.2001 = { #The Wrath of the Varangians, triggered by br_ere_events.
 #
 #}
 
+
+
+
+#### Repurposed vanilla DHEs
+
+
+br_ere_events.3000 = { #https://en.wikipedia.org/wiki/Palaeologan_Renaissance
+#Considering the last contributions were shortly before 1337, I think making a decline for that event to be fair
+	type = country_event
+	title = flavor_byz.27.title
+	desc = flavor_byz.27.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/institutions/renaissance.dds"
+
+	historical_info = flavor_byz.27.historical_info
+
+	fire_only_once = yes
+
+	trigger = {
+		has_or_had_tag = BYZ
+		has_ruler = yes
+		capital = { has_building = building_type:br_constantinople_university }
+	}
+
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1337.1.1
+		to = 1453.1.1
+		monthly_chance = 5
+	}
+
+	immediate = {
+		ruler_or_regent ?= { save_scope_as = target_character }
+
+		capital = { save_scope_as = target_location }
+	}
+
+	option = {
+		name = flavor_byz.27.a
+		
+		historical_option = yes
+
+		add_prestige = prestige_mild_penalty
+		scope:target_location = { change_prosperity = prosperity_mild_penalty }
+
+	}
+
+	option = {
+		name = flavor_byz.27.b
+
+		scope:target_location = {
+			add_location_modifier = {
+				modifier = continued_patronage_of_institutions_modifier
+				years = modifier_duration_years_long
+				mode = replace
+			}
+		}
+
+		change_gold_effect = { scale = -2 }
+
+		set_variable = byz_continued_byzantine_renaissance_event
+	}
+
+	option = {
+		name = flavor_byz.27.c
+
+		trigger = {
+			estate_satisfaction:nobles_estate > estate_satisfaction_radical_bonus
+		}
+
+		scope:target_location = {
+			add_location_modifier = {
+				modifier = continued_patronage_of_institutions_modifier
+				years = modifier_duration_years_long
+				mode = replace
+			}
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_penalty
+		}
+
+		add_gold_to_estate = {
+			estate_type = estate_type:nobles_estate
+			value = {
+				value = monthly_income_trade_and_tax
+				multiply = -4
+			}
+		}
+
+		set_variable = byz_continued_byzantine_renaissance_event
+	}
+
+	option = {
+		name = flavor_byz.27.d
+
+		trigger = {
+			capital = location:constantinople
+			has_dlc = "d008_fate_of_the_phoenix"
+			NOT = { knows_about_institution = institution:renaissance }
+			NOT = { has_game_rule = institution_spawn_fixed_historical }
+		}
+
+		scope:target_location = {
+			add_location_modifier = {
+				modifier = continued_patronage_of_institutions_modifier
+				years = modifier_duration_years_long
+				mode = replace
+			}
+		}
+
+		change_gold_effect = { scale = -6 }
+
+		set_variable = byz_continued_byzantine_renaissance_event
+
+		if = {
+			limit = {
+				institution:renaissance = {
+					has_spawned = no
+				}
+			}
+			custom_tooltip = {
+				text = constantinople_to_spawn_renaissance_tt
+				scope:target_location = {
+					set_variable = {
+						name = center_of_renaissance_variable
+						years = 20
+					}
+				}
+			}
+		}
+	}
+}
