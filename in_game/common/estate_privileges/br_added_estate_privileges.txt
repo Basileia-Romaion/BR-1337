@@ -176,10 +176,9 @@
 				local_control < 0.5
 			}
 			local_nobles_estate_power = 0.5
-			local_nobles_desired_pop_scaled = 0.002 #1 per 1000 pops
+			local_nobles_desired_pop_scaled = 0.001 #1 per 1000 pops
 			local_peasant_enfranchisment = -0.1
-			local_pop_join_rebel_threshold = 0.05
-			#local_peasants_estate_unrest = 0.1
+			local_peasants_estate_unrest = 0.1
 		}
 		country_modifier = {
 			#potential_trigger = { "estate_power(estate_type:crown_estate)" <= 0.25 }
@@ -194,6 +193,42 @@
 		}
 		ai_weight = {
 			add = 25
+		}
+	}
+	br_anatolian_themes = {
+		estate = nobles_estate
+
+		potential = {
+			culture = { has_culture_group = culture_group:roman_group }
+			any_owned_location = { region = region:anatolia_region }
+		}
+		allow = {
+			any_owned_location = { region = region:anatolia_region }
+		}
+
+		can_revoke = {
+			government_power > 75
+			societal_value:centralization_vs_decentralization <= -75
+			"estate_power(estate_type:nobles_estate)" <= 0.35
+		}
+
+		location_modifier = {
+			potential_trigger = {
+				region = region:anatolia_region
+			}
+			local_crown_estate_power = -0.5
+			local_nobles_estate_power = 0.5
+			local_max_control = 0.05
+			local_nobles_estate_unrest = -0.1
+			local_raw_material_output = 0.15
+		}
+
+		country_modifier = {
+			nobles_estate_target_satisfaction = small_privilege_target_satisfaction
+			monthly_towards_aristocracy = societal_value_monthly_move
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			monthly_towards_stratiotai = societal_value_minor_monthly_move
+			global_nobles_estate_power = 0.05
 		}
 	}
 
@@ -340,7 +375,7 @@
 			societal_value:belligerent_vs_conciliatory < -75
 		}
 		country_modifier = {
-			pop_countries_opinions = -25
+			pop_countries_opinions = -50
 			global_nobles_estate_power = 1
 			monthly_towards_belligerent = societal_value_minor_monthly_move
 			tribes_estate_target_satisfaction = -1
@@ -531,7 +566,7 @@
 			societal_value:belligerent_vs_conciliatory < -25
 		}
 		country_modifier = {
-			pop_countries_opinions = -10
+			pop_countries_opinions = -25
 			global_peasants_estate_power = 1
 			peasants_estate_target_satisfaction = small_privilege_target_satisfaction
 			monthly_towards_decentralization = societal_value_minor_monthly_move
@@ -723,7 +758,7 @@
 			burghers_estate_target_satisfaction = tiny_privilege_target_satisfaction
 			global_burghers_estate_power = 0.5
 			global_trades_per_burgher = 1
-			trade_income = 0.5
+			trade_income = 0.25
 			trade_importance_modifier = 0.5
 		}
 		ai_weight = {
@@ -739,7 +774,6 @@
 			OR = {
 				has_or_had_tag = GTC
 				has_or_had_tag = VTC
-				has_or_had_tag = RIC
 				has_estate_privilege = estate_privilege:br_latinoi_navy
 			}
 		}
@@ -766,6 +800,7 @@
 				culture = culture:latinoi
 				has_or_had_tag = VEN
 				has_or_had_tag = GEN
+				has_estate_privilege = estate_privilege:br_latinoi_army
 			}
 		}
 		country_modifier = {
@@ -791,6 +826,7 @@
 				culture = culture:latinoi
 				has_or_had_tag = VEN
 				has_or_had_tag = GEN
+				has_estate_privilege = estate_privilege:br_latinoi_privateers
 			}
 		}
 		country_modifier = {
@@ -1059,6 +1095,7 @@
 			levy_maintenance_modifier = -0.1
 			monthly_towards_free_subjects = societal_value_monthly_move
 			global_tribal_promotion = -0.1
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1088,6 +1125,7 @@
 			tribes_estate_levy_size = 0.25
 			wrong_culture_levy_size = 0.05
 			levy_maintenance_modifier = -0.1
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1180,6 +1218,7 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1252,6 +1291,7 @@
 			global_tribal_promotion = -0.5
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1281,6 +1321,7 @@
 			global_tribal_promotion = -0.25
 			global_tribesmen_migration_allowed = yes
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1349,6 +1390,7 @@
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.25
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25
@@ -1370,6 +1412,7 @@
 			monthly_towards_decentralization = societal_value_monthly_move
 			global_tribal_promotion = -0.5
 			tribes_estate_allowed_leading_military = yes
+			tribes_estate_allowed_private_army = yes
 		}
 		ai_weight = {
 			add = 25

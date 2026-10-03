@@ -308,7 +308,7 @@ REPLACE_OR_CREATE:sixty_books_of_the_basilika_bureaucracy = {
 	#neutral
 	neutral_modifier = {
 		tax_income_efficiency = 0.05
-		monthly_legitimacy = 0.05
+		monthly_political_influence = 0.1 #was legitimacy
 		monthly_towards_br_bureaucratic = societal_value_minor_monthly_move #br added
 	}
 
@@ -385,7 +385,7 @@ REPLACE_OR_CREATE:romanitas_bureaucracy = { #rework
 	positive_modifier = {
 		scale = { value = scope:maintenance }
 		global_integration_speed_modifier = 0.25
-		monthly_legitimacy = 0.05 #was 0.1
+		monthly_political_influence = 0.1 #was legitimacy
 		monthly_roman_authority = 0.02 #br added
 	}
 
@@ -457,7 +457,7 @@ REPLACE_OR_CREATE:imperial_senate_bureaucracy = {
 			subtract = scope:maintenance
 		}
 		monthly_legitimacy = -0.25 #increase from 0.2
-		monthly_republican_tradition = -0.2
+		monthly_republican_tradition = -0.25
 		monthly_roman_authority = -0.02 #br added
 	}
 }

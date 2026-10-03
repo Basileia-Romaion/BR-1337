@@ -1,0 +1,73 @@
+﻿# Iberian Catholic military orders that exist at the 1337 bookmark.
+
+##BR edited locations further north along the frontier 
+REPLACE_OR_CREATE:order_of_calatrava_religious_order = {
+	graphical_cultures = { calatrava_gfx }
+	type = iberian_military_order_type
+	calling = crusaders_calling
+	religion = catholic
+	color = { 200 50 50 }
+	coa = CTV
+	zeal = 75
+	locations = { segovia } # calatrava toledo
+	head_character = cas_juan_nunez_de_prado
+}
+
+REPLACE_OR_CREATE:order_of_santiago_religious_order = {
+	graphical_cultures = { santiago_gfx }
+	type = iberian_military_order_type
+	calling = crusaders_calling
+	religion = catholic
+	color = { 180 30 30 }
+	coa = STO
+	zeal = 80
+	locations = { santiago_compostela salamanca } # ucles sevilla
+	head_character = cas_vasco_rodriguez_de_coronado
+}
+
+REPLACE_OR_CREATE:order_of_alcantara_religious_order = {
+	graphical_cultures = { alcantara_gfx }
+	type = iberian_military_order_type
+	calling = wardens_calling
+	religion = catholic
+	color = { 80 160 80 }
+	coa = ACT
+	zeal = 70
+	locations = { bejar } #alcantara caceres
+	head_character = cas_rodrigo_perez_alcantara
+}
+
+REPLACE_OR_CREATE:order_of_christ_religious_order = {
+	graphical_cultures = { order_of_christ_gfx }
+	type = iberian_military_order_type
+	calling = mariners_calling
+	religion = catholic
+	color = { 220 50 50 }
+	coa = OPX
+	zeal = 70
+	locations = { burgos } # tavira
+	head_character = por_estevao_goncalves_leitao
+}
+
+REPLACE_OR_CREATE:order_of_avis_religious_order = {
+	graphical_cultures = { avis_gfx }
+	type = iberian_military_order_type
+	calling = confidants_calling
+	religion = catholic
+	color = { 60 160 60 }
+	coa = AVI
+	zeal = 75
+	locations = { viseu } #avis setubal
+}
+
+REPLACE_OR_CREATE:order_of_montesa_religious_order = {
+	graphical_cultures = { montesa_gfx }
+	type = iberian_military_order_type
+	calling = wardens_calling
+	religion = catholic
+	color = { 60 60 160 }
+	coa = MTS
+	zeal = 70
+	locations = { peniscola girona } # valencia
+	head_character = ara_pere_de_thous
+}

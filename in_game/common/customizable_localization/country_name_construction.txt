@@ -1,13 +1,22 @@
 ﻿country_name_construction = {
 	type = country
+	
+	### BR Start
+
 	text = {
 		localization_key = country_name_construction_basileia_rank_name
 		trigger = {
-			NOT = { has_game_rule = byz_name_greek }
+			NOT = { 
+				OR = {
+					has_game_rule = byz_name_greek 
+					has_game_rule = byz_name_ere
+				}
+			}
 			country_rank ?= country_rank:rank_empire
 			tag = BYZ
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_IMPERIUM_rank_name
 		trigger = {
@@ -15,6 +24,10 @@
 			tag = IMP
 		}
 	}
+
+	### BR End
+	### Vanilla
+
 	text = {
 		localization_key = country_name_construction_ROM_republic # Senatus Populusque Romanus
 		trigger = {
@@ -57,6 +70,17 @@
 			}
 		}
 	}
+	
+
+	text = {
+		localization_key = country_name_construction_prefix_rank_of_name
+		trigger = {
+			has_variable = hafsid_caliphate_name
+			country_rank_is_empire = yes
+			religion.group = religion_group:muslim
+		}
+	}
+
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
 		trigger = {
@@ -67,14 +91,6 @@
 				}
 				AND = {
 					tag = MAM
-					OR = {
-						country_rank = country_rank:rank_empire
-						country_rank = country_rank:rank_kingdom
-					}
-					religion.group = religion_group:muslim
-				}
-				AND = {
-					tag = ADU
 					OR = {
 						country_rank = country_rank:rank_empire
 						country_rank = country_rank:rank_kingdom
@@ -194,7 +210,10 @@
 			OR = {
 				tag = ARA
 				tag = CAS
-				tag = POL
+				AND = {
+					tag = POL
+					has_advance = corona_regni_poloniae
+				}
 				AND = {
 					tag = BOH
 					has_variable = crown_of_bohemia_variable

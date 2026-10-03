@@ -28,7 +28,7 @@ domestikos_west = {
 
 	modifier = {
 		loyalty_to_overlord = 25
-		monthly_legitimacy = 0.1
+		monthly_political_influence = 0.1
 		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
 		global_manpower_modifier = 0.25
@@ -104,7 +104,7 @@ domestikos_east = {
 
 	modifier = {
 		loyalty_to_overlord = 25
-		monthly_legitimacy = 0.1
+		monthly_political_influence = 0.1
 		army_maintenance_efficiency = 0.25
 		expected_army_size = 5
 		global_manpower_modifier = 0.25
@@ -175,7 +175,7 @@ imperial_loyalist = {
 	priority = 5
 
 	modifier = {
-		monthly_legitimacy = 0.05
+		monthly_political_influence = 0.1
 		loyalty_to_overlord = 10
 		global_defensive = 0.1
 	}
@@ -334,7 +334,7 @@ external_member = {
 	priority = 5
 
 	modifier = {
-		monthly_legitimacy = 0.1
+		monthly_political_influence = 0.1
 	}
 
 	leader_modifier = {

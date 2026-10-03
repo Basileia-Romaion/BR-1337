@@ -189,6 +189,53 @@
 							}
 						}
 					}
+					#foreign provinces
+					add = {
+						desc = "FOREIGN_PROVINCES_ANATOLIA"
+						value = 0
+						every_international_organization_owned_location = {
+							limit = {
+								has_owner = yes
+								owner = {
+									not = { is_member_of_international_organization = root }
+								}
+								region = region:anatolia_region
+							}
+							add = 1
+						}
+						multiply = -0.003
+					}
+					add = {
+						desc = "FOREIGN_PROVINCES_WEST"
+						value = 0
+						every_international_organization_owned_location = {
+							limit = {
+								has_owner = yes
+								owner = {
+									not = { is_member_of_international_organization = root }
+								}
+								OR = {
+									region = region:balkan_region
+									region = region:italy_region
+								}
+							}
+							add = 1
+						}
+						multiply = -0.001
+						
+					}
+					#subjugated members
+					add = {
+						desc = "SUBJUGATED_ERE_MEMBER"
+						every_international_organization_member = {
+							limit = {
+								is_subject = yes
+								top_overlord ?= { NOT = { is_member_of_international_organization = root } }
+							}
+							add = 1
+						}
+						multiply = -0.003
+					}
 				}
 				if = {
 					limit = { 
@@ -259,7 +306,6 @@
 		always = no
 	}
 
-	
 	auto_disband_trigger = {
 		always = no
 	}

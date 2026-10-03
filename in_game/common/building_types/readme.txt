@@ -34,7 +34,7 @@
 # - modifier: <modifier> modifier applied to the location (multiplied by building level and goods access)
 # - raw_modifier: <modifier> modifier applied to the location (not scaled)
 # - market_center_modifier: <modifier> modifier applied to the location if built in a market center (multiplied by building level and goods access)
-# - pop_size_created: <float> creates a pop of this size for the new building, taking it from your capital (for foreign buildings only)
+# - pop_size_created: <float> creates a pop of this size for the new building, taking it from the largest available population center in your capital's area (for foreign buildings only)
 # - increase_per_level_cost: <per cent> each new level added increases the cost by this percentage. So 0.5 = 50% more expensive per extra level
 # - <location rank>: <yes/no> location ranks that the building can be built in
 # - on_built = { <effects> }
@@ -44,3 +44,7 @@
 # - AI_ignore_available_worker_flag = <yes/no> AI will build this building even if it is lacking the required pop type
 # - important_for_AI = <yes/no> When set it makes the AI use more performance trying to find a suitable place to build this
 # - important_for_UI = <yes/no> When set the building type can appear in important UI elements (e.g. high-priority alerts)
+# - audio_category: <string> overrides the audio_category inherited from the building_category. Used to pick the Wwise event when this building is built or upgraded — final event name is "construction_building_<audio_category>_<audio_tier>". If unset, falls back to the building_category's audio_category, then to NCityAudio::CONSTRUCTION_DEFAULT_AUDIO_CATEGORY. Categories used by audio: generic, industry, military, culture, religion, economy.
+# - audio_tier: <int 1..6> impact-driven loudness tier for the construction sound. 1 = age-1 / basic, 2 = age-2 default or age-1 with strong modifier, 3 = anchor / chain-mid / capital upgrade with strong local effect, 4 = palace-class capital with country-wide modifier, 5 = top-impact rare strategic / wonder-adjacent, 6 = age-6 endgame cool stuff (apex of a chain, late-age factories, advanced government, monuments). Clamped to [NCityAudio::CONSTRUCTION_AUDIO_MIN_TIER, NCityAudio::CONSTRUCTION_AUDIO_MAX_TIER] at use-time. Out-of-range values ERRORLOG during PostReadInit. Default: 1.
+# - ai_construct_weight: <scripted float> influences AI utility of the building when constructing (root = location, scope:owner = country owning the building, scope:builder = country doing the construction)
+# - ai_destroy_weight: <scripted float> influences AI utility of the building when destroying (root = location, scope:owner = country owning the building, scope:builder = country doing the destruction)

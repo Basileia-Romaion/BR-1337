@@ -26,7 +26,14 @@
         pennsylvania_area
     }
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		if = {
+			limit = { 
+				NOT = { 
+					rank = country_rank:rank_kingdom
+				} 
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
         trigger_event_non_silently = elysium_event.1
     }
 }
@@ -93,8 +100,7 @@ REPLACE_OR_CREATE:ANA_f = {
 		sultanonu_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+        trigger_event_non_silently = br_ere_subject_events.56
     }
 }
 
@@ -125,8 +131,7 @@ REPLACE_OR_CREATE:KAP_f = {
 		aksaray_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+        trigger_event_non_silently = br_ere_subject_events.54
     }
 }
 
@@ -157,8 +162,7 @@ REPLACE_OR_CREATE:AN0_f = {
 		erzurum_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+        trigger_event_non_silently = br_ere_subject_events.55
     }
 }
 
@@ -192,8 +196,14 @@ REPLACE_OR_CREATE:SY3_f = {
 			}
 			change_culture = culture:syrenikoi_greek_culture
 		}
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+		if = {
+			limit = { 
+				NOT = { 
+					rank = country_rank:rank_kingdom
+				} 
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
     }
 }
 
@@ -229,7 +239,14 @@ REPLACE_OR_CREATE:AGY_f = {
 			}
 			change_culture = culture:aegyptian_greek_culture
 		}
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		if = {
+			limit = { 
+				NOT = { 
+					rank = country_rank:rank_kingdom
+				} 
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -266,7 +283,14 @@ REPLACE_OR_CREATE:AFK_f = {
 			}
 			change_culture = culture:african_greek_culture
 		}
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		if = {
+			limit = { 
+				NOT = { 
+					rank = country_rank:rank_kingdom
+				} 
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
         #trigger_event_non_silently = placeholder_event
     }
 }
@@ -298,8 +322,7 @@ REPLACE_OR_CREATE:P0N_f = {
 		trebizond_province
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+        trigger_event_non_silently = br_ere_subject_events.58
     }
 }
 
@@ -356,8 +379,7 @@ IT0_f = {
 		campania_area
 	}
 	form_effect = {
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
-        #trigger_event_non_silently = placeholder_event
+        trigger_event_non_silently = br_ere_subject_events.57
     }
 }
 
@@ -375,10 +397,10 @@ IT1_f = {
 		#culture = culture:italiotai_culture 
 	}
 	
-	name = IT0
-	flag = IT0
-	adjective = IT0_ADJ
-	tag = IT0
+	name = IT1
+	flag = IT1
+	adjective = IT1_ADJ
+	tag = IT1
 
 	areas = {
 		emilia_area

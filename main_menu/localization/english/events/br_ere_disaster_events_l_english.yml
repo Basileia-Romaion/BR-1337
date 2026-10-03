@@ -1,0 +1,68 @@
+﻿l_english:
+
+ br_ere_disaster_events.1.title: "The Crisis of the Imperial Order"
+ br_ere_disaster_events.1.desc: "For generations, [ROOT.GetCountry.GetFlavorRank] has endured because the order of the realm has endured. The throne commanded, the themes obeyed, the Tagmata guarded the frontiers, and the great houses of the Empire remained bound to the authority of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Now that ancient order begins to falter. Rival claimants sharpen their designs on the purple, ambitious [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] court favor far from Constantinople, and murmurs of discontent spread through the ranks. Petitions arrive from the provinces; whispers of conspiracy fill the halls of the [ShowBuildingTypeName('br_great_palace_building')]. The bonds that hold the [GetUniqueInternationalOrganization('roman_world').GetName] together grow thin. Should the authority of [ShowLocationName('constantinople')] continue to wane, what was preserved by our forefathers may yet be divided by their descendants..."
+ br_ere_disaster_events.1.a: "[ROOT.GetCountry.GetName] shall endure."
+
+ br_ere_disaster_events.2.title: "A New Dawn for [ROOT.GetCountry.GetName]"
+ br_ere_disaster_events.2.desc: "At last, the clouds that darkened the Roman realm begin to part, and the light of a new dawn shines once more upon the Empire. The turmoil that gripped the throne has passed, the fractious houses of the realm have been reconciled, and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] once more commands the obedience owed to God's regent on Earth. The Empire has endured its trial, and the Roman people emerge from this dark hour chastened, yet stronger than before."
+ br_ere_disaster_events.2.a: "United once more, Rome endures."
+
+ br_ere_disaster_events.3.title: "Demands for Autonomy"
+ br_ere_disaster_events.3.desc: "Word reaches [ShowLocationName('constantinople')] that the notables of [target_province.GetName] have grown bold enough to test the throne's patience directly. Their envoys come not as petitioners but as men who believe the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s hand no longer reaches so far — speaking of ancestral rights, local privilege, and the strange foreign notion of freedom, backed now by armed retainers rather than parchment alone."
+ br_ere_disaster_events.3.a: "Let them have what they demand."
+ br_ere_disaster_events.3.b: "Remind them of the Roman remedy."
+
+ br_ere_disaster_events.4.title: "Neighbors as Vultures"
+ br_ere_disaster_events.4.desc: "The court of [target_country.GetName] has taken the measure of our troubles. Their envoys speak in honeyed phrases of eternal friendship, even as their lords quietly muster levies along our marches, waiting only for a clearer sign of weakness. We must remind them that [ROOT.GetCountry.GetLongName] is no carcass to be picked clean at a foreign prince's leisure."
+ br_ere_disaster_events.4.a: "Let them dare."
+
+ br_ere_disaster_events.5.title: "Peasant Uprising"
+ br_ere_disaster_events.5.desc: "Hunger and the burdens of war have driven the peasantry of [target_location.GetName] past the point of quiet suffering. Their headmen now stand before the governor's hall with a list of grievances and a threat behind every line of it: relief from their obligations, or the fields shall burn and the harvest go ungathered."
+ br_ere_disaster_events.5.a: "We shall not bargain with peasants."
+ br_ere_disaster_events.5.b: "Surely an accord can be reached."
+
+ br_ere_disaster_events.6.title: "Province Declares Independence!"
+ br_ere_disaster_events.6.desc: "The governors and notables of [target_location.GetName] have cast aside the authority of the throne outright. In a brazen mockery of imperial dignity, they proclaim their lands a realm apart — and, more outrageous still, raise their own claim to the Roman throne itself. What was once an imperial province now stands in open defiance of [ShowLocationName('constantinople')]."
+ br_ere_disaster_events.6.a: "Their bones shall feed the fields of Rome."
+ br_ere_disaster_events.6.b: "Leave them to their folly..."
+
+ people_of_target_province_will_declare_war_on_us_tt: "The people of [target_province.GetNameWithNoTooltip] will declare [war|e] upon us!"
+
+ br_ere_disaster_events.7.title: "The Dynatoi Defy the Throne"
+ br_ere_disaster_events.7.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] of [target_location.GetName] have begun to comport themselves as sovereign princes in all but name. Imperial decrees go unread, taxes are withheld at the magnate's pleasure, and disputes are settled in his own hall rather than the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Other dynatoi watch closely; should this one go unanswered, they may soon follow his example, and the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s writ will carry no further than the walls of [ShowLocationName('constantinople')]."
+ br_ere_disaster_events.7.a: "There are greater matters before us."
+ br_ere_disaster_events.7.b: "Restore the authority of the throne in [target_location.GetNameWithNoTooltip]."
+
+ br_ere_disaster_events.8.title: "A Courtier Accused of Treason"
+ br_ere_disaster_events.8.desc: "One of our trusted counsellors, [target_character.GetName], has fallen under grave suspicion. [target_character.GetSheHe|U] stands accused of trading secrets of our $rank_empire_byzantine$ for foreign gold. No proof has yet surfaced, but in these uncertain days even a whispered accusation can turn the Sacred Palace against itself. Unease has already spread through the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. To ignore the matter risks leaving a traitor free to strike from within; to act without proof risks casting out a loyal servant on nothing more than rumor."
+ br_ere_disaster_events.8.a: "Cast [target_character.GetHerHim] from the Sacred Palace!"
+ br_ere_disaster_events.8.b: "It is surely nothing more than a courtly rumor..."
+
+ br_ere_disaster_events.9.title: "Mutineers in the Tagma"
+ br_ere_disaster_events.9.desc: "The discipline of the Tagmata begins to crack. Soldiers whose pay has gone unmet for months murmur openly against their officers, while those same officers struggle to hold order among ranks grown restless and hungry. Each month that passes without their due weakens the chain of command further. The men who should stand as Rome's shield may yet turn their swords upon those they were sworn to defend."
+ br_ere_disaster_events.9.a: "Pay the soldiers their due."
+ br_ere_disaster_events.9.b: "The treasury cannot bear the expense."
+ br_ere_disaster_events.9.c: "Crush the mutiny before it spreads!"
+
+ br_ere_disaster_events.10.title: "A Rebellious Subject"
+ br_ere_disaster_events.10.desc: "Word reaches [ShowLocationName('constantinople')] that the elites of [subject_target.GetName] have grown restless under Roman suzerainty. They are said to conspire in private, weighing how far their allegiance might be tested before it breaks. No open revolt has yet been declared, but our informants report the [subject_target.GetGovernment.GetCourtTitle] alive with talk of independence. A subject who no longer fears Roman displeasure is already halfway to becoming its enemy."
+ br_ere_disaster_events.10.a: "Appease them with concessions."
+ br_ere_disaster_events.10.b: "For now, there is little we can do."
+
+ br_ere_disaster_events.11.title: "An Unpaid Garrison"
+ br_ere_disaster_events.11.desc: "The garrison at [target_location.GetName] has turned mutinous, its men accusing the local governors of neglecting the walls and pocketing their pay. These soldiers were entrusted with a fortress guarding the whole of [target_area.GetName], yet see little reason now to bleed for a throne that cannot provision those who bear its arms."
+ br_ere_disaster_events.11.a: "Pay their wages without delay!"
+ br_ere_disaster_events.11.b: "Compel the local [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] to pay them."
+ br_ere_disaster_events.11.c: "The treasury can spare no nomisma."
+
+ br_ere_disaster_events.12.title: "Feuding Estates"
+ br_ere_disaster_events.12.desc: "Rivalry among the estates of the $rank_empire_byzantine$ has hardened into open hostility. Each now schemes for a greater share of what the [GetEstateName('crown_estate')] has lost, and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] finds it ever harder to stand above their quarrels. Should both factions turn against the throne together, the realm may be torn in two; yet to win the loyalty of one may require deepening the very divisions that threaten it."
+ br_ere_disaster_events.12.a: "We shall stand with the [first_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.b: "We shall protect the interests of the [second_estate.GetNameWithNoTooltip]."
+ br_ere_disaster_events.12.c: "The throne shall take no side."
+
+ br_ere_disaster_events.13.title: "Surrounded by Vultures"
+ br_ere_disaster_events.13.desc: "Even as the Empire struggles within, opportunistic neighbors gather along its frontiers, watching for the moment our strength falters. Word now reaches [ShowLocationName('constantinople')] that [target_country.GetName] has laid formal claim to [border_claim_province.GetName], wagering that the fortunes of Rome will only worsen from here."
+ br_ere_disaster_events.13.a: "Let them test the strength of Rome!"
+ br_ere_disaster_events.13.b: "Buy their silence and have them revoke the claim."

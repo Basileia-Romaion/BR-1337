@@ -1,0 +1,38 @@
+﻿# Iberian Catholic military orders that exist at the 1337 bookmark.
+
+##BR edited locations further north along the frontier 
+br_order_holy_sepulchre = {
+	graphical_cultures = { montesa_gfx }
+	type = iberian_military_order_type
+	calling = wardens_calling
+	religion = orthodox
+	color = { 152 125 104 }
+	coa = OHS
+	zeal = 70
+	locations = { antioch ulnia}
+	head_character = br_ortho_military_order_character_01
+}
+
+br_order_saint_george = {
+	graphical_cultures = { santiago_gfx }
+	type = iberian_military_order_type
+	calling = crusaders_calling
+	religion = orthodox
+	color = { 162 105 134 }
+	coa = SGO
+	zeal = 40
+	locations = { kutaisi costa}
+	head_character = br_ortho_military_order_character_02
+}
+
+br_order_saint_vladimir = {
+	graphical_cultures = { santiago_gfx }
+	type = iberian_military_order_type
+	calling = crusaders_calling
+	religion = orthodox
+	color = { 132 185 114 }
+	coa = RH0
+	zeal = 80
+	locations = { theodoro kyiv moscow novgorod }
+	head_character = br_ortho_military_order_character_03
+}

@@ -362,22 +362,8 @@ countries = {
 			}
 			own_control_colony = {
 				kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate ahwendoe
+				wachilmezi andawaohie wolinak ekwentondie
 			}
-		#	our_cores_conquered_by_others = { #to encourage conquering the region
-		#		eimastukwek epwikek kutapuskuj pgotapesg wli_qospem
-		#		gosaoie nogamsig meelpaeg amasipukwek sibook
-		#		cape_spear bacalhieu mekwiskajk mollyhuajeck
-		#		placentia cape_race maqtewey nukamkiajijk miquelon
-		#		akilasiewakik baie_verte walnaypek
-		#		kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate ahwendoe
-		#		amqui anagance antigonish apaqtukowatek askataliank aspotogan canso caraquet cascapedia
-		#		causapscal chebogue chicchoc chignecto chipoudy cobequid elsiktuk esekatik
-		#		gaspe  jijkwtuk kekwapskuk kennetook kjipuktuk kouchibouguac
-		#		maccan maleagit malpeque marsoui matane matapedia memramcook miramichi mitis
-		#		muinawamek musquedoboit neguac nepisiguit nictaux nisiamk nmejuaqnek oqumkikiak paspebiac
-		#		petitcodiac pewjeg pictou pogomeg pukusamkek qospemk restigouche richibucto seeboosis shubenacadie sipuk
-		#		tapu_tuitn tatamagouche tignish tracadie wekwayik weljuik wetewatoqsik wikipoq
-		#	}
 			
 			capital = belle_isle
 			include = "vinlandic_foothold"
@@ -405,6 +391,9 @@ countries = {
 				sheshatshiu
 				misha_shipu
 				kenamu
+			}
+			own_control_colony = {
+				inutsualak natsitok aillik
 			}
 			
 			capital = tikigaksuagusik
@@ -435,6 +424,9 @@ countries = {
 				okak
 				napaktok
 				aulatsivik
+			}
+			own_control_colony = {
+				kangiqsualujjuaq
 			}
 			
 			capital = navchak
@@ -506,7 +498,8 @@ countries = {
 			}
 			own_control_colony = {
 				askataliank qospemk apaqtukowatek sipuk
-				pukusamkek
+				pukusamkek elsiktuk tapu_tuitn tignish malpeque
+				gosaoie epwikek
 			}
 			
 			capital = ingonish
@@ -737,7 +730,10 @@ countries = {
 				chesapeake
 				weyanock
 				kiskiack
+			}
+			own_control_colony = {
 				pamunkey
+				croatan
 			}
 			our_cores_conquered_by_others = { #to encourage conquering the region
 				powhatan
@@ -768,6 +764,10 @@ countries = {
 			own_control_core = {
 				roanoke
 			}
+			own_control_colony = {
+				hatteras
+				coree
+			}
 			
 			capital = roanoke
 			include = "elysian_foothold"
@@ -778,9 +778,9 @@ countries = {
 				heir_selection = cognatic_primogeniture
 				ruler = random
 			}
-			
-			accepted_cultures = {
+			tolerated_cultures = {
 				croatan_culture
+				elyrics_culture
 			}
 			
 			include = "expl_eastern_seaboard"

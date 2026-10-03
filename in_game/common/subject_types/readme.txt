@@ -47,6 +47,7 @@
 # fleet_basing_rights = <yes/no> whether or not the subject gives fleet basing rights to the overlord
 # food_access = <yes/no> whether or not the subject gives food access to the overlord
 # use_overlord_laws = <yes/no> whether or not the subject gives uses the same set of laws and policies as the overlord
+# on_overlord_becomes_a_subject = <cancel_subjects/transfer_subjects/nothing> what happens to this subject when its overlord itself becomes a subject of another country. cancel_subjects = release subject as independent; transfer_subjects = move subject to the new top overlord (downgrading to vassal if the subject type conditions fail); nothing = default, subject stays under the old overlord as a sub-subject. default: nothing
 # annulled_by_peace_treaty = <yes/no> whether this subject type gets broken / becomes unavailable when treaties get annulled, default: yes
 # annullment_favours_required = <integer> number of favours needed to annul this membership diplomatically
 # allow_declaring_wars = <trigger> whether or not the subject can declare their own wars. (root = subject type, scope:attacker = subject trying to declare war, scope:defender = country they are trying to declare war on)
@@ -61,8 +62,6 @@
 # can_overlord_build_buildings = <yes/no> whether or not the overlord can build buildings in the subjects locations
 # can_overlord_build_rgos = <yes/no> whether or not the overlord can build rgos in the subjects locations
 # overlord_share_exploration = <yes/no> whether or not the overlord will share their exploration or not
-# overlord_protects_external = <yes/no> whether or not the overlord will protect the subject from external attackers, defaults to yes
-# overlord_protects_other_subjects = <yes/no> whether or not the overlord will protect the subject from internal attackers (such as other subjects), defaults to no
 # can_be_force_broken_in_peace_treaty = <yes/no> can this subject type be demanded to be broken in a peace treaty
 # overlord_can_enforce_peace_on_subject = <yes/no> can the overlord demand that the subject leave any wars they're in
 # war_score_cost = <script_value> how much will this subject cost to establish in wars, modifies the base war score cost calculation
@@ -75,4 +74,82 @@
 
 # institution_spread_to_overlord = <script_value> how fast do embraced institutions spread from the Subject to the Overlord Capital?
 # institution_spread_to_subject = <script_value> how fast do embraced institutions spread from the Overlord to the Subject Capital?
+
+# ai_biases = {	#The AI weight bonuses this subject type gives to certain goals (such as cabinet actions, desire to conquer a specific location, etc...)
+#		# An ai_importance can have multiple categories at the same time so that the same number is applied to multiple considerations at the same time.
+#		# Each category has script value which is then only considered for their category (so estate_privilege = 50 would give estate privilege importance calculations 50 points without affecting anything else)
+#		# ai_importance affects how much the AI wants to:
+
+#database objects
+#		estate_privilege = <type = <scope>, bias = <script value>>						# add (or remove if negative) specific estate privileges
+#		government_reform = <type = <scope>, bias = <script value>>						# add (or remove if negative) specific government reforms
+#		language = <type = <scope>, bias = <script value>>						        # change language
+#		heir_selection = <type = <scope>, bias = <script value>>				    	# change succession law
+#		government_type = <type = <scope>, bias = <script value>>					    # change the government type
+#		societal_value = <type = <scope>, bias = <script value>>						# gives extra points for a societal value (negative would be then the opposite side of it). Which societal value precisely should be in the math done in ai_importance
+#		cabinet_action = <type = <scope>, bias = <script value>>						# use the specific cabinet actions
+#		parliament_issue = <type = <scope>, bias = <script value>>						# pass the parliament issue
+#		parliament_agenda = <type = <scope>, bias = <script value>>						# select the parliament agenda
+#		policy = <type = <scope>, bias = <script value>>							    # change the policy to a specified target policy
+#		building_type = <type = <scope>, bias = <script value>>							# to prioritize the specified building type(s) above others
+#		advance_type = <type = <scope>, bias = <script value>>							# to select a specific advance
+#		generic_action = <type = <scope>, bias = <script value>>						# to do the specified generic action
+#		country_interaction = <type = <scope>, bias = <script value>>					# to do the specified diplomatic action
+#		character_interaction = <type = <scope>, bias = <script value>>					# to do the specified character action
+#		goods = <type = <scope>, bias = <script value>>							        # how many goods of a specified type should be produced/rgo'd
+#		international_organization = <type = <tag>, bias = <script value>>		        # AI willingness to join the specific existing IO
+#		international_organization_type = <type = <tag>, bias = <script value>>		    # AI willingness to join/create the IO type
+#		town_rights_type = <type = <tag>, bias = <script value>>		                        # AI willingness to add the town rights type
+
+#currencies - bias towards or away from accumulating these
+#		manpower = <script value>
+#		sailors = <script value>
+#		gold = <script value>
+#		stability = <script value>
+#		war_exhaustion = <script value>
+#		inflation = <script value>
+#		prestige = <script value>
+#		army_tradition = <script value>
+#		navy_tradition = <script value>
+#		government_power = <script value>
+#		karma = <script value>
+#		religious_influence = <script value>
+#		purity = <script value>
+#		honor = <script value>
+#		doom = <script value>
+#		rite_power = <script value>
+#		yanantin = <script value>
+#		righteousness = <script value>
+#		harmony = <script value>
+#		self_control = <script value>
+#		political_influence = <script value>
+
+#target geography
+#		colonize = <where = <scope geography>, bias = <script value>>					# to colonize somewhere
+#		conquer = <where = <scope geography>, bias = <script value>>					# conquer somewhere
+#		explore = <where = <scope geography>, bias = <script value>>					# to explore somewhere
+#		maritime_presence = <where = <scope geography>, bias = <script value>>			# to have this amount of maritime presence somewhere. Keep this number reasonably low, it goes into a number that is generally in the range of 0..10
+
+#target country
+#		opinion = <who = <scope country>, bias = <script value>>						# to have at least this much opinion with the target country
+#		trust = <who = <scope country>, bias = <script value>>							# to have at least this much trust with the target country
+#		antagonism = <who = <scope country>, bias = <script value>>						# to get antagonism down to this level
+#		spy_network = <who = <scope country>, bias = <script value>>					# to have at least that much spy network in the target country
+#		favors = <who = <scope country>, bias = <script value>>							# to have at least that many favors owed by the target country
+#		subjectloyalty = <who = <scope country>, bias = <script value>>					# to have this amount loyalty from the specified subjects
+#		subvert = <who = <scope country>, bias = <script value>>						# to screw up the target country via warfare, spynetwork and other hostile diplomatic actions (such as insulting). This is the "just fuck shit up" option
+#		conquer = <who = <scope country>, bias = <script value>>						# take them all
+#		relation = <who = <scope country>, script = <scope relation type> OR type = <code relation type tag>, [direction = mutual/giving/receiving], bias = <script value>>			# to create the specified relationship with the target country
+
+#other stuff in your country
+#		population = <script value>						                            	# to get this amount of total population (this will affect cabinet actions which increase pop growth mostly)
+#		diplomatic_capacity = <script value>			                     		    # to have the specified used diplomatic_capacity
+#		subjects = <script value>						                           		# to have this amount of subjects
+#		army_size = <script value>					                       	    		# to have this amount of troops
+#		navy_size = <script value>					                           			# to have this amount of ships
+#		market = <script value>						                         			# to build a new market
+#		literacy = <script value>	                			        				# to reach a certain level of literacy (so AI happiness to take stuff which increase literacy is increased)
+
+#target market
+#		merchant_capacity = <where = <scope market>, bias = <script value>>				# put merchants into a specific market to reach a certain market presence
 

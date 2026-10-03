@@ -4,23 +4,19 @@
 #multiplied with 1-control
 
 #negative because inject doesn't replace is adds or subtracts
-TRY_INJECT:inverse_control = {
-	local_sailors_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
-	local_manpower_modifier = 0.1 #br addition so total wll be -0.9 instead of -1.0.
-	local_levy_size_modifier = 0.2 #br addition so total wll be -0.8 instead of -1.0.
-	local_tribal_promotion = -1.0 #br added
+TRY_INJECT:inverse_control = { #removed in 1.4
+	local_tribal_promotion = -0.5 #br added
 	local_separatism = 0.25 #BR added not sure if it works
-	local_tribes_estate_unrest = -0.25 #more loyal with less control
+	#local_tribes_estate_unrest = -0.25 #more loyal with less control
 }
-TRY_INJECT:is_occupied = {
-	local_food_capacity_modifier = -0.5 #br added
-}
+#TRY_INJECT:is_occupied = {
+#	local_food_capacity_modifier = -0.5 #br added #pulled for 1.4
+#}
 
 TRY_INJECT:capital = {
-	local_market_access = 0.04
+	local_market_access = 0.05
 	local_garrison_size = 0.2
 	local_nobles_max_literacy = 5
-	#local_monthly_prosperity = 0.001
 	local_marketplace_building_levels = 2
 }
 
@@ -43,23 +39,23 @@ TRY_INJECT:looted = {
 	local_monthly_development_modifier = -0.05 #additonal 0.05 for 0.3 total
 }
 
-TRY_INJECT:raised_levies = {
-	local_raw_material_output = -0.1 #additional -0.1 for -0.3 total
-	local_monthly_food_modifier = -0.1 #additonal -0.1 for -0.3 total
-}
+#TRY_INJECT:raised_levies = {  #removed in 1.4
+	#local_raw_material_output = -0.1 #additional -0.1 for -0.3 total
+	#local_monthly_food_modifier = -0.1 #additonal -0.1 for -0.3 total #pulled for 1.4
+#}
 
 #multiplies with devastation in location (0 to -1) I think this means positive is negative
 TRY_INJECT:devastation = {
 	local_disease_resistance = 0.25 #addition 
 }
-TRY_INJECT:winter_mild = {
-	local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.5 total
-}
-TRY_INJECT:winter_normal = {
-	local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.75 total
-}
+#TRY_INJECT:winter_mild = { #pulled for 1.4
+	#local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.5 total
+#}
+#TRY_INJECT:winter_normal = { #pulled for 1.4
+	#local_monthly_food_modifier = -0.25 #additonal -0.25 for -0.75 total
+#}
 TRY_INJECT:expensive_food_in_location = {
-	local_unrest = 0.1 #addition
+	local_peasants_estate_unrest = 0.1 #addition
 	#local_disease_resistance = -0.1 #addition
 }
 
@@ -69,7 +65,17 @@ TRY_INJECT:minor_rebel_uprising = {
 	local_monthly_control = -0.005 # additional -0.005 for 0.01 total
 }
 
-
+# mulitplied by 0-1 from total share of art in the world.  expect it to be multiplied by 0.0001 at best or maybe 0.02 if its like Paris
+REPLACE_OR_CREATE:location_art = {
+	game_data = {
+		category = location
+	}
+	local_pop_promotion_speed_modifier = 2.5 #10.0
+	local_pop_conversion_speed_modifier = 2.5 #10.0
+	local_pop_assimilation_speed_modifier = 2.5 #10.0
+	local_institution_growth_modifier = 5
+	local_cultural_tradition = 5
+}
 
 #Nerfed DLC modifiers
 REPLACE_OR_CREATE:repopulation_of_anatolia_modifier = {

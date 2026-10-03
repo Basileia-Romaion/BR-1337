@@ -217,7 +217,8 @@ war_manager = {
 			country = FLO
 			request = {
 				caller = VEN
-				reason = Ally
+				reason = Scripted
+				which = alliance
 			}
 		}
 
@@ -225,7 +226,8 @@ war_manager = {
 			country = MLO
 			request = {
 				caller = VEN
-				reason = Ally
+				reason = Scripted
+				which = alliance
 			}
 		}
 
@@ -233,7 +235,8 @@ war_manager = {
 			country = FER
 			request = {
 				caller = VEN
-				reason = Ally
+				reason = Scripted
+				which = alliance
 			}
 		}
 
@@ -241,7 +244,8 @@ war_manager = {
 			country = MAN
 			request = {
 				caller = VEN
-				reason = Ally
+				reason = Scripted
+				which = alliance
 			}
 		}
 
@@ -276,6 +280,4 @@ war_manager = {
 			}
 		}
 	}
-	
-	
 }

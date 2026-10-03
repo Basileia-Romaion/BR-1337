@@ -30,12 +30,19 @@ work_of_art_manager = {
 	monument = { location = novgorod origin = novgorod quality = 60 creation_date = 1130.1.1 key = saint_george_in_yuriev }
 	#Mallorca - MLL
 	monument = { location = palma origin = palma  quality = 60 creation_date = 1229.1.1  key = palma_cathedral }
+	scripture = { location = perpignan origin = perpignan quality = 65 creation_date = 1299.1.1 key = perpignan_bible } #https://en.wikipedia.org/wiki/Perpignan_Bibles
 	#Aragon - ARA
 	monument = { location = vic origin = vic  quality = 49 creation_date = 888.1.1  key = ripoll_abbey }
 	monument = { location = barcelona origin = barcelona  quality = 74 creation_date = 1011.1.1  key = montserrat_abbey }
 	monument = { location = tarragona origin = tarragona  quality = 65 creation_date = 1151.1.1  key = poblet_abbey }
 	monument = { location = zaragoza origin = zaragoza  quality = 65 creation_date = 1297.1.1  key = basilica_pilar }
+	palace = { location = zaragoza origin = zaragoza  quality = 72 creation_date = 1065.1.1  key = aljaferia_palace } #https://en.wikipedia.org/wiki/Aljafer%C3%ADa
 	statue = { location = barcelona origin = barcelona  quality = 60 creation_date = 1150.1.1  key = moreneta_key }
+	monument = { location = barcelona origin = barcelona  quality = 78 creation_date = 1329.1.1  key = santa_maria_del_mar } #https://en.wikipedia.org/wiki/Santa_Maria_del_Mar,_Barcelona
+	scripture = { location = cervera origin = cervera quality = 72 creation_date = 1300.5.19 key = cervera_bible } #https://en.wikipedia.org/wiki/Cervera_Bible
+	scripture = { location = barcelona origin = barcelona quality = 80 creation_date = 1320.1.1 key = golden_haggadah } #https://en.wikipedia.org/wiki/Golden_Haggadah
+	#Orange - ORA
+	treatise = { artist = ora_levi_ben_gershom location = orange origin = orange quality = 70 creation_date = 1329.1.1 key = milhamot_hashem } #https://en.wikipedia.org/wiki/The_Wars_of_the_Lord
 	#Kanem - KBO
 	chronicle = { location = njimi origin = njimi  quality = 70 creation_date = 1087.5.12  key = girgam }
 	#Mali - MAL
@@ -62,6 +69,7 @@ work_of_art_manager = {
 	chronicle = { location = pamplona origin = pamplona quality = 55 creation_date = 1209.1.1 key = liber_regum }
 	monument = { location = roncesvalles origin = roncesvalles  quality = 55 creation_date = 1221.1.1  key = collegiate_roncesvalles }
 	monument = { location = tudela origin = tudela  quality = 45 creation_date = 1145.1.1  key = la_oliva_abbey }
+	chronicle = { location = tudela origin = tudela quality = 72 creation_date = 1173.1.1 key = itinerary_benjamin_tudela } #https://en.wikipedia.org/wiki/Book_of_Benjamin_of_Tudela
 	#Korea - KOR
 	scripture = { location = inju origin = inju quality = 75 creation_date = 1237.1.1 key = tripitaka_koreana } #https://en.wikipedia.org/wiki/Tripitaka_Koreana
 	painting = { location = kaesong origin = kaesong quality = 45 creation_date = 1250.1.1 key = amitabha_triad } #https://www.metmuseum.org/art/collection/search/39882
@@ -126,6 +134,12 @@ work_of_art_manager = {
 	treatise = { location = toledo origin = toledo quality = 55 creation_date = 1272.1.1  key = tablas_alfonsies }
 	treatise = { location = toledo origin = toledo quality = 57 creation_date = 1279.1.1  key = libros_saber_astrologia }
 	treatise = { location = toledo origin = toledo quality = 60 creation_date = 1283.1.1  key = libro_de_los_juegos }
+	monument = { location = santiago_compostela origin = santiago_compostela quality = 85 creation_date = 1075.1.1 key = cathedral_santiago_compostela }
+	palace = { location = segovia origin = segovia quality = 70 creation_date = 1122.1.1 key = alcazar_segovia }
+	scripture = { location = guadalajara origin = guadalajara quality = 85 creation_date = 1286.1.1 key = sefer_hazohar } #https://en.wikipedia.org/wiki/Zohar
+	treatise = { location = toledo origin = toledo quality = 82 creation_date = 1140.1.1 key = kuzari } #https://en.wikipedia.org/wiki/Kuzari
+	#Granada - GRA
+	palace = { location = granada origin = granada quality = 90 creation_date = 1238.1.1 key = alhambra_palace }
 	#Upper Bavaria - UBV
 	monument = { location = munich origin = munich quality = 50 creation_date = 1200.1.1  key = marienkapelle }
 	#Imperial Regalia of the HRE will move with each emperor - starting in Upper Bavaria
@@ -148,9 +162,11 @@ work_of_art_manager = {
 	monument = { location = damascus origin = damascus quality = 64 creation_date = 1318.1.1  key = al_karimi_mosque }
 	#Morocco - MOR
 	chronicle = { artist = mor_ibn_abi_zar location = fez origin = fez quality = 51 creation_date = 1326.1.1 key = rawd_al_qirtas } #https://en.wikipedia.org/wiki/Rawd_al-Qirtas
-	monument = { location = ouarzazate origin = ouarzazate quality = 34 creation_date = 1000.1.1  key = ait_ben_haddou } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
+	monument = { location = ait_benhaddou origin = ait_benhaddou quality = 34 creation_date = 1000.1.1  key = ait_ben_haddou } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
 	temple_tower = { location = marrakesh origin = marrakesh quality = 70 creation_date = 1158.1.1  key = kutubiyya_mosque } #https://en.wikipedia.org/wiki/Kutubiyya_Mosque
 	monument = { location = marrakesh origin = marrakesh quality = 66 creation_date = 1130.5.3 key = ben_youssef_mosque }
+	monument = { location = gibraltar origin = gibraltar quality = 38 creation_date = 711.1.1 key = rock_of_gibraltar }
+	monument = { location = fez origin = fez quality = 76 creation_date = 859.1.1 key = al_qarawiyyin }
 	#Lithuania - LIT
 	regalia = { location = vilnius origin = vilnius  quality = 61 creation_date = 1275.1.1  key = gediminas_cap } #https://en.wikipedia.org/wiki/Gediminas%27_Cap
 	#Dai Viet - DAI

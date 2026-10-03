@@ -1,0 +1,860 @@
+﻿namespace = br_ere_subject_events
+
+# *Refactor code locaton but localization kept same: br_ere_subject_events.1 though br_ere_subject_events.11 localization kept named br_ere_resistance_events to avoid loc conflicts with translation mods
+############################## Roman Subject Events ##############################
+
+br_ere_subject_events.1 = { 
+	type = country_event
+	title = br_ere_resistance_events.201.title
+	desc = br_ere_resistance_events.201.desc
+	outcome = neutral
+	trigger = {
+		liberty_desire > 50
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		OR = {
+			current_age = age_5_absolutism
+			current_age = age_6_revolutions
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		save_scope_as = from
+		create_character = {
+			trait_category = general
+			save_scope_as = new_general_scope
+			create_in_limbo = yes
+		}
+	}
+
+	option = {
+		name = br_ere_resistance_events.201.a
+		scope:new_general_scope = { move_country = root }
+
+		overlord = {
+			trigger_event_silently = { id = br_ere_resistance_events.202 }
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.201.b
+		add_liberty_desire = liberty_desire_mild_plus
+		overlord = {
+			trigger_event_silently = { id = br_ere_resistance_events.203 }
+		}
+		kill_character = {
+			target = scope:new_general_scope
+			reason = execution
+			killer = ruler
+		}
+	}
+}
+
+br_ere_subject_events.2 = {
+	type = country_event
+	title = br_ere_resistance_events.202.title
+	desc = br_ere_resistance_events.202.desc
+	outcome = neutral
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+	option = {
+		name = br_ere_resistance_events.202.a
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+br_ere_subject_events.3 = {
+	type = country_event
+	title = br_ere_resistance_events.203.title
+	desc = br_ere_resistance_events.203.desc
+	outcome = neutral
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+	option = {
+		name = br_ere_resistance_events.203.a
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+br_ere_subject_events.4 = {
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_resistance_events.204.title
+	desc = br_ere_resistance_events.204.desc
+	outcome = neutral
+	trigger = {
+		any_subject = {
+			OR = {
+				is_subject_type = pronoia
+				is_subject_type = br_thema_subject
+			}
+		}
+		war_exhaustion > 4
+	}
+	
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		save_scope_as = from
+	}
+
+	option = {
+		name = br_ere_resistance_events.204.a
+		add_war_exhaustion = war_exhaustion_mild_bonus
+		ordered_subject = {
+			limit = {
+				OR = {
+					is_subject_type = pronoia
+					is_subject_type = br_thema_subject
+				}
+			}
+			order_by = total_population
+			max = {
+				value = 1
+				add = {
+					value = num_subjects
+					divide = 3
+				}
+			}
+
+			show_as_tooltip = {
+				add_liberty_desire = liberty_desire_mild_plus
+				add_war_exhaustion = war_exhaustion_weak_penalty
+			}
+			trigger_event_silently = { id = br_ere_resistance_events.205 }
+
+		}
+	}
+	option = {
+		name = br_ere_resistance_events.204.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_ere_subject_events.5 = {
+	type = country_event
+	title = br_ere_resistance_events.205.title
+	desc = br_ere_resistance_events.205.desc
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_resistance_events.205.a
+		add_liberty_desire = liberty_desire_mild_plus
+		add_war_exhaustion = war_exhaustion_weak_penalty
+	}
+}
+
+br_ere_subject_events.6 = {
+	type = country_event
+	title = br_ere_resistance_events.206.title
+	desc = br_ere_resistance_events.206.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		stability < 10
+		
+		ruler ?= {
+			OR = {
+				adm < 50
+				has_trait = embezzler
+				has_trait = sinner
+				has_trait = greedy
+				has_trait = obsessive_perfectionist
+			}
+		}
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.206.a
+		change_gold_effect = { scale = -2 }
+	}
+}
+
+br_ere_subject_events.7 = {
+	type = country_event
+	title = br_ere_resistance_events.207.title
+	desc = br_ere_resistance_events.207.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		ruler ?= {
+			mil < 40
+			dip < 40
+			adm < 40
+		}
+
+	}
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.207.a
+		ruler = { remove_ruler = root }
+	}
+	option = {
+		name = br_ere_resistance_events.207.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+	}
+}
+
+br_ere_subject_events.8 = {
+	type = country_event
+	title = br_ere_resistance_events.208.title
+	desc = br_ere_resistance_events.208.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		gold < 150.00
+		num_loans >= 3
+		stability < 0
+	}
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.208.a
+		add_government_power = government_power_extreme_penalty
+	}
+	option = {
+		name = br_ere_resistance_events.208.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+br_ere_subject_events.9 = {
+	type = country_event
+	title = br_ere_resistance_events.209.title
+	desc = br_ere_resistance_events.209.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		stability > 20
+	}
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.209.a
+		add_country_modifier = { modifier = colonist_incentives years = 10 mode = add_and_extend }  
+	}
+}
+
+br_ere_subject_events.10 = {
+	type = country_event
+	title = br_ere_resistance_events.210.title
+	desc = br_ere_resistance_events.210.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		"estate_power(estate_type:nobles_estate)" > 0.20
+		estate_satisfaction:burghers_estate < 0.75
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.210.a
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = br_ere_resistance_events.210.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+br_ere_subject_events.11 = {
+	type = country_event
+	title = br_ere_resistance_events.211.title
+	desc = br_ere_resistance_events.211.desc
+	outcome = neutral
+	trigger = {
+		OR = {
+			is_subject_type = pronoia
+			is_subject_type = br_thema_subject
+		}
+		"estate_power(estate_type:burghers_estate)" >= 0.20
+		estate_satisfaction:nobles_estate < 0.75
+	}
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = br_ere_resistance_events.211.a
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = br_ere_resistance_events.211.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+#Katapanate of Antioch 
+br_ere_subject_events.50 = { #Katapanate of Antioch
+	type = country_event
+	title = br_ere_subject_events.50.title
+	desc = br_ere_subject_events.50.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = AOI
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:antioch
+		owns_or_non_sovereign_subject_owns = location:tarsus
+		owns_or_non_sovereign_subject_owns = location:nicosia_cyp
+	}
+
+	option = {
+		name = br_ere_subject_events.50.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}
+
+#shared events
+br_ere_subject_events.51 = { #Emperors Response to Demand
+	type = country_event
+	title = br_ere_subject_events.51.title
+	desc = br_ere_subject_events.51.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_subject_events.51.a
+		historical_option = yes
+
+		hidden_effect = {
+			scope:origin_country = {
+				trigger_event_non_silently = { # Privilege Granted
+					id = br_ere_subject_events.53
+				}
+			}
+		}
+	}
+
+	option = {
+		name = br_ere_subject_events.51.b
+
+		scope:origin_country = {
+			trigger_event_non_silently = { # Privilege denied
+				id = br_ere_subject_events.52
+			}
+		}
+	}
+}
+
+br_ere_subject_events.52 = { # Privilege denied
+	type = country_event
+	title = br_ere_subject_events.52.title
+	desc = br_ere_subject_events.52.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_subject_events.52.a
+	}
+}
+
+br_ere_subject_events.53 = { # Privilege Granted
+	type = country_event
+	title = br_ere_subject_events.53.title
+	desc = br_ere_subject_events.53.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	option = {
+		name = br_ere_subject_events.53.a
+
+		unlock_government_reform_effect = { type = br_katepanata_reform }
+		add_reform = government_reform:br_katepanata_reform
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		hidden_effect = {
+			ruler ?= {
+				reset_ruler_title = {}
+			}
+		}
+	}
+}
+
+#Katapanate of Kappadocia 
+br_ere_subject_events.54 = { #Katapanate of Kappadocia
+	type = country_event
+	title = br_ere_subject_events.54.title
+	desc = br_ere_subject_events.54.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = AN8
+		tag = KAP
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:kayseri
+		owns_or_non_sovereign_subject_owns = location:aksaray
+		owns_or_non_sovereign_subject_owns = location:nevsehir
+	}
+
+	option = {
+		name = br_ere_subject_events.54.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}
+
+#Katapanate of Armenikon 
+br_ere_subject_events.55 = { #Katapanate of Armenikon
+	type = country_event
+	title = br_ere_subject_events.55.title
+	desc = br_ere_subject_events.55.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = AN0
+		tag = AN2
+		tag = AN10
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:sivas
+		owns_or_non_sovereign_subject_owns = location:amasya
+		owns_or_non_sovereign_subject_owns = location:sebinkarahisar
+	}
+
+	option = {
+		name = br_ere_subject_events.55.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}
+
+#Katapanate of Anatolia
+br_ere_subject_events.56 = { #Katapanate of Anatolia
+	type = country_event
+	title = br_ere_subject_events.56.title
+	desc = br_ere_subject_events.56.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = AON
+		tag = ANA
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:ankara
+		owns_or_non_sovereign_subject_owns = location:cankiri
+		owns_or_non_sovereign_subject_owns = location:bozok
+	}
+
+	option = {
+		name = br_ere_subject_events.56.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}
+
+#Katapanate of Italias
+br_ere_subject_events.57 = { #Katapanate of Italias
+	type = country_event
+	title = br_ere_subject_events.57.title
+	desc = br_ere_subject_events.57.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = S1C
+		tag = S2C
+		tag = S3C
+		tag = N3P
+		tag = IT0
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:bari
+		owns_or_non_sovereign_subject_owns = location:naples
+		owns_or_non_sovereign_subject_owns = location:catanzaro
+	}
+
+	option = {
+		name = br_ere_subject_events.57.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}
+
+#Katapanate of Pontos
+br_ere_subject_events.58 = { #Katapanate of Pontos
+	type = country_event
+	title = br_ere_subject_events.58.title
+	desc = br_ere_subject_events.58.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = TRE
+		tag = P0N
+		from = 1345.1.1
+		to = 1800.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler ?= {
+			save_scope_as = target_ruler
+		}
+		international_organization:roman_world.leader_country = {
+			save_scope_as = target_emperor_country
+		}
+		international_organization:roman_world.leader_country.ruler = {
+			save_scope_as = target_emperor
+		}
+		root = {
+			save_scope_as = origin_country
+		}
+	}
+
+	trigger = {
+		has_ruler = yes
+		is_member_of_international_organization = international_organization:roman_world
+		NOT = {
+			is_leader_of_international_organization = international_organization:roman_world
+		}
+		international_organization:roman_world = {
+			international_organization_has_leader = yes
+			leader_country = {
+				has_ruler = yes
+			}
+		}
+		owns_or_non_sovereign_subject_owns = location:trebizond
+		owns_or_non_sovereign_subject_owns = location:samsun
+		owns_or_non_sovereign_subject_owns = location:sinop
+	}
+
+	option = {
+		name = br_ere_subject_events.58.a
+		historical_option = yes
+
+		scope:target_emperor_country = {
+			trigger_event_non_silently = { #Ask the Emperor for the title
+				id = br_ere_subject_events.51
+			}
+		}
+	}
+}

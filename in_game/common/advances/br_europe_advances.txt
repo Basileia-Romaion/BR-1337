@@ -798,10 +798,9 @@ br_balkan_mountain_strongholds = {
 	requires = feudalism_advance
 	global_garrison_size_modifier = 0.1
 	global_hostile_attrition = 0.1
-	trade_land_efficiency = 0.1
+	#trade_land_efficiency = 0.1
 	mountains_proximity_impact = -0.1
 	hills_proximity_impact = -0.1
-	plateau_proximity_impact = -0.1
 }
 
 br_balkan_tribal_heritage = {
@@ -815,9 +814,9 @@ br_balkan_tribal_heritage = {
             culture = culture:serbian
 		}
 	}
-	army_light_cavalry_build_cost_modifier = -0.15
-	army_light_cavalry_maintenance_cost_modifier = -0.15
-	tribes_estate_levy_size = 0.33
+	army_light_cavalry_build_cost_modifier = -0.1
+	army_light_cavalry_maintenance_cost_modifier = -0.1
+	tribes_estate_levy_size = 0.15
 	levy_maintenance_modifier = -0.15
 }
 br_magyar_cumen_cavalry = {
@@ -837,6 +836,27 @@ br_magyar_cumen_cavalry = {
 	unlock_unit = a_steppe_horse_archers
 }
 
+br_SER_pronoial_administration = {
+	age = age_1_traditions
+	requires = br_balkan_mountain_strongholds
+	potential = {
+		culture = culture:serbian
+	}
+	unlock_policy = br_pronoia_system
+	unlock_building = br_pronoia_estate
+	subject_opinions = 5
+}
+
+br_BUL_pronoial_administration = {
+	age = age_1_traditions
+	requires = br_balkan_mountain_strongholds
+	potential = {
+		culture = culture:bulgarian
+	}
+	unlock_policy = br_pronoia_system
+	unlock_building = br_pronoia_estate
+	subject_opinions = 5
+}
 
 ##############################-Norse-##############################
 br_norse_heritage = {

@@ -6,7 +6,7 @@
 # - years:
 # - months:
 # - weeks:
-# - days: <ints> all used to define how long it takes to become fully implemented. Modifiers will be scaled by how much of this time is completed.
+# - days: <ints> all used to define how long it takes to become fully implemented. This gates on_fully_activated and the implementation progress display only; modifiers apply at full strength from activation.
 # - on_activate: <effect> fired when the action is chosen (root = country)
 # - on_fully_activated: <effect> fired when the action's implementation reaches 100% (instant if there's no time delay): root = country
 # - on_deactivate: <effect> fired when the action is removed (root = country)
