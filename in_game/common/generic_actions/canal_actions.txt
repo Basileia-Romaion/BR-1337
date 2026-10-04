@@ -1,0 +1,91 @@
+﻿# Canal owner-only actions for restricting / unrestricting passage.
+# The C++ canal manager already auto-blocks enemies at war (via IsEnemy in
+# CCanalManager::IsCanalAccessible); the "restricted" flag is the extra lever
+# that excludes non-allies/non-subjects (e.g. neutrals) on top of that.
+
+close_canal_to_enemies = {
+	type = owncountry
+	decision_category = infrastructure_decisions
+	show_in_decision_panel = yes
+	show_message = no
+
+	potential = {
+		OR = {
+			location:suez = {
+				owner ?= scope:actor
+				is_canal_open = yes
+				is_canal_restricted = no
+			}
+			location:panama = {
+				owner ?= scope:actor
+				is_canal_open = yes
+				is_canal_restricted = no
+			}
+			location:niagara = {
+				owner ?= scope:actor
+				is_canal_open = yes
+				is_canal_restricted = no
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			every_owned_location = {
+				limit = {
+					is_canal_open = yes
+				}
+				set_canal_restricted = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 100
+	}
+}
+
+open_canal_to_all = {
+	type = owncountry
+	decision_category = infrastructure_decisions
+	show_in_decision_panel = yes
+	show_message = no
+
+	potential = {
+		OR = {
+			location:suez = {
+				owner ?= scope:actor
+				is_canal_restricted = yes
+			}
+			location:panama = {
+				owner ?= scope:actor
+				is_canal_restricted = yes
+			}
+			location:niagara = {
+				owner ?= scope:actor
+				is_canal_restricted = yes
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			every_owned_location = {
+				limit = {
+					is_canal_restricted = yes
+				}
+				set_canal_restricted = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 0
+	}
+}
