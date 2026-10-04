@@ -1,0 +1,28 @@
+﻿l_english:
+ # Decision category
+ DECISION_CATEGORY_INFRASTRUCTURE: "Infrastructure"
+
+ # CConstruction name/tooltip strings used by CConstruction::GetNameWithNoTooltip
+ # and CConstruction::GetTooltip when _IsCanal is set.
+ CANAL_CONSTRUCTING: "Constructing canal in [LOCATION.GetNameWithNoTooltip]"
+ CANAL_CONST_DETAILS_TIP: "A navigable canal will be cut through [LOCATION.GetNameWithNoTooltip], opening a new passage between the seas it connects."
+
+ # Advances
+ suez_canal_advance: "Suez Canal Project"
+ suez_canal_advance_desc: "Survey and begin construction of a channel through the Isthmus of Suez, opening a direct route between the Mediterranean and the Red Sea."
+ panama_canal_advance: "Panama Canal Project"
+ panama_canal_advance_desc: "Survey and begin construction of a channel through the Isthmus of Panama, linking the Atlantic and Pacific oceans."
+ niagara_canal_advance: "Niagara Canal Project"
+ panama_canal_advance_desc: "Survey and begin construction of a set of locks for our ships to travel beyond the Niagara Falls."
+
+ # Owncountry actions for restricting / opening canal passage
+ close_canal_to_enemies: "Close Canal to Non-Allies"
+ close_canal_to_enemies_desc: "Restrict passage through our canals to allies and subjects only for the duration of the war. Enemies are blocked automatically; this further excludes neutrals and rivals."
+ open_canal_to_all: "Open Canal to All"
+ open_canal_to_all_desc: "Lift restrictions and re-open canal passage to any country we are not actively at war with."
+
+ CANAL_LOCATION: "Canal"
+ CANAL_LOCATION_DESC: "A navigable canal cuts through this location, opening a passage between the seas it connects."
+ CANAL_LOCATION_RESTRICTED: "Passage is currently restricted to the allies and subjects of the canal owner."
+ CANAL_LOCATION_RESTRICTED_FOR_US: "We do not qualify, and cannot currently pass through this canal."
+ CANAL_LOCATION_NOT_RESTRICTED: "We may currently pass through this canal."
