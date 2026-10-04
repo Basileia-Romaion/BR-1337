@@ -13,7 +13,7 @@ br_latin_wars.1 = {
 	dynamic_historical_event = {
 		tag = PAP
 		from = 1337.1.1
-		to = 1370.1.1
+		to = 1375.1.1
 		monthly_chance = 10
 	}
 
@@ -21,7 +21,6 @@ br_latin_wars.1 = {
 		location:palma = {
 			owner.religion.group != ROOT.religion.group
 		}
-		religion = religion:catholic
 		country_exists = c:KNI
 		crusade_potential_trigger = yes
 		crusade_allow_trigger = yes
@@ -428,7 +427,7 @@ br_latin_wars.20 = {
 		tag = VTC
 		from = 1400.1.1
 		to = 1551.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 		
 	trigger = {
@@ -662,7 +661,7 @@ br_latin_wars.30 = {
 		tag = GTC
 		from = 1337.1.1
 		to = 1550.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 	illustration_tags = {
 		10 = regular
