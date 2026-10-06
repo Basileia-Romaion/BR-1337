@@ -18,7 +18,7 @@ br_ere_resistance_events.1 = {
 		tag = PAP
 		from = 1356.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 
 	trigger = {
@@ -471,7 +471,7 @@ br_ere_resistance_events.20 = {
 	}
 }
 
-# Rise of Romans
+# Rise of the Romans
 br_ere_resistance_events.21 = {
 	hide_portraits = yes
 	type = country_event
@@ -548,7 +548,7 @@ br_ere_resistance_events.31 = { #Enemy at the Gates
 		tag = RAG
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 1
+		monthly_chance = 10
 	}
 	
 	immediate = {
@@ -662,7 +662,7 @@ br_ere_resistance_events.40 = {
 		tag = HUN
 		from = 1340.1.1
 		to = 1700.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 
 	trigger = {
@@ -717,7 +717,7 @@ br_ere_resistance_events.41 = {
 		tag = HUN
 		from = 1340.1.1
 		to = 1700.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 
 	trigger = {
@@ -778,7 +778,7 @@ br_ere_resistance_events.42 = {
 		tag = HUN
 		from = 1337.1.1
 		to = 1700.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 
 	trigger = {
@@ -845,7 +845,7 @@ br_ere_resistance_events.43 = {
 		tag = HUN
 		from = 1300.1.1
 		to = 1700.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 
 	trigger = {
@@ -920,7 +920,7 @@ br_ere_resistance_events.44 = { #Evacuation of the Capital
 		tag = HUN
 		from = 1336.1.1
 		to = 1700.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 
 	trigger = {
@@ -993,7 +993,7 @@ br_ere_resistance_events.45 = { #Shield of West
 		tag = HUN
 		from = 1375.1.1
 		to = 1453.6.1
-		monthly_chance = 1
+		monthly_chance = 25
 	}
 
 	trigger = {
@@ -1329,7 +1329,7 @@ br_ere_resistance_events.33 = { #Populating the Military Frontier
 		tag = HUN
 		from = 1350.1.1
 		to = 1700.1.1
-		monthly_chance = 1
+		monthly_chance = 10
 	}
 
 	immediate = {
@@ -1404,7 +1404,7 @@ br_ere_resistance_events.50 = {
 		tag = TUR
 		from = 1300.1.1
 		to = 1700.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 	illustration_tags = {
 		10 = armed
@@ -1506,7 +1506,7 @@ br_ere_resistance_events.60 = {
 		tag = MAM
 		from = 1350.1.1
 		to = 1600.1.1
-		monthly_chance = 2
+		monthly_chance = 5
 	}
 
 	illustration_tags = {
@@ -1601,7 +1601,7 @@ br_ere_resistance_events.62 = {
 		tag = MEC
 		from = 1356.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 	trigger = {
 		has_ruler = yes
@@ -1979,7 +1979,7 @@ br_ere_resistance_events.71 = {
 		tag = MEC
 		from = 1356.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 	trigger = {
 		has_ruler = yes
@@ -2359,7 +2359,7 @@ br_ere_resistance_events.80 = {
 		tag = ADU
 		from = 1356.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 	trigger = {
 		has_ruler = yes
@@ -2729,7 +2729,7 @@ br_ere_resistance_events.100 = { #Bulgarian-Roman Wars
 		tag = BUL
 		from = 1340.1.1
 		to = 1700.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 	trigger = {
 		has_ruler = yes
@@ -2738,7 +2738,7 @@ br_ere_resistance_events.100 = { #Bulgarian-Roman Wars
 		c:BYZ = {
 			has_ruler = yes
 			any_owned_location = {
-				region = region:balkan_region
+				dominant_culture = culture:bulgarian
 			}
 		}
 	}

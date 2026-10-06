@@ -442,6 +442,7 @@ locations={
 	algiers = { rank = town 	town_setup = maghreb_coastal_town }
 	kairouan = { rank = town town_setup = maghreb_town }
 	azemmour = { rank = town 		town_setup = maghreb_coastal_town }
+	sale = { rank = town 		town_setup = maghreb_coastal_town }
 	noul_lamta = { rank = town 	town_setup = maghreb_coastal_town }
 	cherchell = { rank = town 	town_setup = maghreb_coastal_town }
 	tahert = { rank = town 		town_setup = maghreb_town }
@@ -471,16 +472,16 @@ locations={
 	# Iberia
 	barcelona = { rank = city 	town_setup = barcelona_city }
 	cordoba = { rank = city town_setup = cordoba_city }
-	granada = { rank = city town_setup = iberian_city }
+	granada = { rank = city town_setup = granada_city }
 	lisbon = { rank = town town_setup = iberian_town_port }
-	malaga = { rank = city town_setup = iberian_city_port }
+	malaga = { rank = city town_setup = malaga_city }
 	sevilla = { rank = city town_setup = iberian_city }
-	toledo = { rank = city town_setup = iberian_city }
+	toledo = { rank = city town_setup = toledo_city }
 	valencia = { rank = city town_setup = iberian_city_port }
 	valladolid = { rank = town town_setup = iberian_town }
 	
 	alcala_de_henares = { rank = town town_setup = iberian_town }
-	almeria = { rank = town town_setup = iberian_town_port }
+	almeria = { rank = town town_setup = almeria_town }
 	badajoz = { rank = town town_setup = iberian_town }
 	burgos = { rank = town town_setup = iberian_town }
 	#calatayud = { rank = town town_setup = iberian_town }
@@ -613,7 +614,7 @@ locations={
 	ganzhou = { rank = city town_setup = chinese_city }
 	guangzhou = { rank = city town_setup = guangzhou_city }
 	handan = { rank = city town_setup = chinese_city }
-	hangzhou = { rank = city town_setup = hangzhou_city }
+	hangzhou = { rank = megalopolis town_setup = hangzhou_city }
 	jiangdu = { rank = city town_setup = chinese_city } #Yangzhou
 	jiangling = { rank = city town_setup = chinese_city }
 	kaifeng = { rank = city town_setup = chinese_city }
@@ -1142,7 +1143,6 @@ locations={
 	# tongatapu
 	# o_ahu
 	# gardr
-	patapsco = { rank = town 		town_setup = south_east_woodlands_town }
 }
 
 # for the unique and special buildings
@@ -1785,6 +1785,8 @@ building_manager = {
 	#castle = { tag = NAV level = 1 location = tudela } #Castle of Cortes. Already implemented by the country template. Keeping for info.
 	castle = { tag = POR level = 1 location = viana_do_castelo } #Castle of Valença do Minho
 
+	monument_torre_de_hercules = { tag = CAS level = 1 location = coruna } #Roman-era lighthouse, 2nd century AD
+
 	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069
 	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091
 	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276
@@ -1974,6 +1976,13 @@ building_manager = {
 	#Granada Alhambra
 	alhambra = { tag = ADU level = 1 location = granada }	
 	funduq = { tag = ADU level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+		#Granadan Trans-Saharan Trade Office network — funduq factors along the gold caravan axis
+	trade_office = { tag = ADU level = 4 location = niani }
+	trade_office = { tag = ADU level = 4 location = timbuktu }
+	trade_office = { tag = ADU level = 4 location = sijilmasa }
+	trade_office = { tag = ADU level = 3 location = fez }
+	trade_office = { tag = ADU level = 3 location = marrakesh }
+	trade_office = { tag = ADU level = 2 location = meknes }
 
 		#Brethren of the Marsh #Unique
 	brethren_marsh = { tag = LON level = 1 location = bilbao }   #BR edit
@@ -3653,14 +3662,26 @@ building_manager = {
 	royal_garden = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/Mosara_Garden
 	royal_court = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/Royal_Palace_of_Fez
 	madrasa = { tag = MOR level = 1 location = fez } # https://en.wikipedia.org/wiki/Al-Attarine_Madrasa https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin
+	cloth_guild = { tag = MOR level = 5 location = fez }
 	castle = { tag = TFL level = 1 location = ouarzazate } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
 	qalat_al_mashwar = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/El_Mechouar_Palace
+	local_governor = { tag = MOR level = 1 location = marrakesh }
+	wharf = { tag = SLE level = 1 location = sale }
+	dock = { tag = SLE level = 1 location = sale }
+
+	monument_dar_al_makhzen = { tag = MOR level = 1 location = fez } #Fes Jdid royal city, founded 1276
+	monument_qarawiyyin = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin, founded 859
+	monument_hassan_tower = { tag = MOR level = 1 location = rabat } #https://en.wikipedia.org/wiki/Hassan_Tower, built 1195-1199
+	monument_kasbah_udayas = { tag = MOR level = 1 location = rabat } #https://en.wikipedia.org/wiki/Kasbah_of_the_Udayas
+	monument_mansourah_tlemcen = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/Mansourah,_Tlemcen, built c. 1303
+	monument_great_mosque_algiers = { tag = TLE level = 1 location = algiers } #https://en.wikipedia.org/wiki/Great_Mosque_of_Algiers, built 1097
+	monument_kairouan_mosque = { tag = TUN level = 1 location = kairouan } #https://en.wikipedia.org/wiki/Great_Mosque_of_Kairouan, founded 670
+	
 	library = { tag = TUN level = 1 location = tunis }
 	sergeantry = { tag = TUN level = 1 location = tunis }
 	madrasa = { tag = TUN level = 1 location = tunis }
 	library = { tag = TUN level = 1 location = palermo }
 	madrasa = { tag = TUN level = 1 location = palermo }
-
 	
 	#Caucasus
 
@@ -3763,6 +3784,7 @@ building_manager = {
 	city_walls = { tag = FLA level = 1 location = ghent } # 13 km
 	city_walls = { tag = KAN level = 1 location = kano } # 12 km, completed mid-14th c.
 	city_walls = { tag = KHM level = 1 location = angkor } # 12 km – Angkor Thom, 10 m tall, wide moat
+	city_walls = { tag = COC level = 1 location = mayapan } # 9.1 km, 12 gates
 	city_walls = { tag = FLO level = 1 location = florence } # 8.5 km
 	city_walls = { tag = YSU level = 1 location = samarkand } # 8 km (pre-Timur)
 	city_walls = { tag = KOL level = 1 location = cologne } # 8.0 km
