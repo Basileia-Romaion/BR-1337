@@ -607,6 +607,12 @@ international_organization_manager = {
 			#Alexandria
 			#RIC
 
+			#Bulgarian 
+			BUL RH0 B1L WA0 WA1 WA2 SE0 SE1 SE2
+
+			#Georgian
+			GEO AAI SME CPA HTY HYT KDA KIP TEM ALN SMS SGO
+
 		}
 		variables = { 
 			religion = religion:orthodox
@@ -629,7 +635,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 1235.1.1
-		members = { BUL RH0 B1L WA0 WA1 WA2 SE0 SE1 SE2 }
+		members = {  }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:tarnovo
@@ -651,7 +657,7 @@ international_organization_manager = {
 	add_international_organization = {
 		type = autocephalous_patriarchate
 		creation_date = 1010.1.1
-		members = { GEO AAI SME CPA HTY HYT KDA KIP TEM ALN SMS SGO }
+		members = { }
 		variables = { 
 			religion = religion:orthodox
 			seat = location:tbilisi
