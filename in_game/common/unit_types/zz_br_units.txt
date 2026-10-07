@@ -76,11 +76,7 @@ REPLACE_OR_CREATE:a_varangians = {
 	}
 	
 	buildable = yes
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 
 	gfx_tags = { axe_tag heavy_tag }
 }
@@ -328,6 +324,78 @@ REPLACE_OR_CREATE:a_legionaries_6 = {
 	gfx_tags = { legionary_tag musket_tag heavy_tag }
 }
 
+REPLACE_OR_CREATE:n_greek_fire_galley_renaissance = {
+    category = navy_galley
+    copy_from = n_age_2_renaissance_galley
+    buildable = yes
+	
+	cannons = 12
+	strength_damage_done = 0.2
+
+	upgrades_to = n_greek_fire_galley_discovery
+	
+	country_potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
+		has_variable = unlocked_greek_fire
+	}
+
+	family = br_greek_fire_family
+	gfx_tags = { mediterranean_galley_tag greek_fire_tag }
+}
+
+REPLACE_OR_CREATE:n_greek_fire_galley_discovery = {
+	category = navy_galley
+    copy_from = n_age_3_discovery_galley
+	buildable = yes
+	
+	cannons = 15
+	strength_damage_done = 0.2
+
+	country_potential = {
+        has_dlc = "d008_fate_of_the_phoenix"
+        has_variable = unlocked_greek_fire
+        current_age_or_later = { age = age_3_discovery }
+	}
+
+	family = br_greek_fire_family
+	gfx_tags = { mediterranean_galley_tag greek_fire_tag }
+}
+
+REPLACE_OR_CREATE:a_greek_fire_renaissance_infantry = {
+	copy_from = a_age_2_renaissance_light_infantry
+
+	initiative = -0.5
+	morale_damage_done = 0.2
+	strength_damage_done = 0.1
+
+	upgrades_to = a_greek_fire_discovery_infantry
+
+	buildable = yes
+	country_potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
+		has_variable = unlocked_greek_fire
+	}
+	family = br_greek_fire_family
+	gfx_tags = { flamethrower_tag medium_tag greek_fire_tag }
+}
+
+REPLACE_OR_CREATE:a_greek_fire_discovery_infantry = {
+	copy_from = a_age_3_discovery_light_infantry
+
+	initiative = -0.5
+	morale_damage_done = 0.2
+	strength_damage_done = 0.1
+
+	buildable = yes
+	country_potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
+		has_variable = unlocked_greek_fire
+        current_age_or_later = { age = age_3_discovery }
+	}
+	family = br_greek_fire_family
+	gfx_tags = { flamethrower_tag medium_tag greek_fire_tag }
+}
+
 
 ### New Units age 1
 
@@ -446,11 +514,7 @@ br_renaissance_varangians = {
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 	
 	gfx_tags = { heavy_tag }
 }
@@ -502,13 +566,7 @@ br_discovery_varangians = {
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
-
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 
 	gfx_tags = { medium_tag musket_tag }
 }
@@ -563,13 +621,7 @@ br_reformation_varangians = {
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
-
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 	
 	gfx_tags = { medium_tag musket_tag }
 }
@@ -624,13 +676,7 @@ br_absolutism_varangians = {
 	strength_damage_done = 0.25 #br increased from 0.2
 	morale_damage_done = 0.25 #br increased from 0.2
 
-
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 
 	gfx_tags = { medium_tag musket_tag }
 }
@@ -684,12 +730,7 @@ br_revolutions_varangians = {
 	morale_damage_done = 0.25 #br increased from 0.2
 
 
-	#limit = {
-	#	value = 1
-	#	add = modifier:num_of_varangian_units
-	#}
-
-	limit = br_varangian_unit_limit
+	family = br_varangian_family
 
 	gfx_tags = { medium_tag musket_tag }
 }

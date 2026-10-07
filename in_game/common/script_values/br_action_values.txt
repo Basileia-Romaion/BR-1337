@@ -9,3 +9,12 @@ br_varangian_unit_limit = {
         add = total_effective_building_levels:br_varangian_recruitment_building
     }
 }
+
+br_greek_fire_unit_limit = {
+    add = {
+        desc = "EFFECTIVE_GREEK_FIRE_BUILDINGS"
+        add = total_effective_building_levels:br_naval_theme_hq
+        add = total_effective_building_levels:br_tagmata_camp
+        add = total_effective_building_levels:br_tagmata_barracks
+    }
+}
