@@ -10,8 +10,8 @@ diplomacy_manager = {
 	dependency = { first = IRO second = WRO subject_type = tributary }
 	dependency = { first = IRO second = ERI subject_type = tributary }
 	dependency = { first = IRO second = KEN subject_type = tributary }
-	dependency = { first = IRO second = ONG subject_type = tributary }
-	dependency = { first = IRO second = ADR subject_type = tributary }
+	#dependency = { first = IRO second = ONG subject_type = tributary }
+	#dependency = { first = IRO second = ADR subject_type = tributary }
 	
 	####---------- Tsenacommacah ----------####
 	dependency = { first = E2Y second = E4Y subject_type = dominion }
