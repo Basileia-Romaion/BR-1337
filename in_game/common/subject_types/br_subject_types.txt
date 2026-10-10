@@ -365,7 +365,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 	
 	diplomatic_capacity_cost_scale = 0.75
 	
-	use_overlord_laws = yes
+	#use_overlord_laws = yes
 	only_overlord_or_kindred_culture = yes
 	only_overlord_court_language = yes
 	strength_vs_overlord = -0.5
@@ -447,6 +447,7 @@ REPLACE_OR_CREATE:br_thema_subject = {
 		add_policy = policy:br_byzantine_law
 		add_policy = policy:br_roman_distribution_of_power_law
 		add_policy = policy:br_frontier_maintained
+		add_policy = policy:br_military_court_policy
 		trigger_event_non_silently = br_ere_events.1003
 	}
 
@@ -556,7 +557,7 @@ REPLACE_OR_CREATE:br_naval_thema_subject = {
 	
 	diplomatic_capacity_cost_scale = 0.75
 	
-	use_overlord_laws = yes
+	#use_overlord_laws = yes
 	only_overlord_or_kindred_culture = yes
 	only_overlord_court_language = yes
 	strength_vs_overlord = -0.5
