@@ -1,0 +1,50 @@
+﻿l_english:
+
+######################-ERE Subject Events-######################
+
+ br_ere_subject_events.50.title: "The $country_rank_br_katapanate$ of [GetCountry('AOI').GetNameWithNoTooltip]"
+ br_ere_subject_events.50.desc: "[ShowSpecialStatusName('domestikos_east')], [GetCountry('AOI').GetNameWithNoTooltip] and the Eastern Themes have long stood as the Empire's shield against the Persian, Arab, and now Turkic powers of the east. Yet distance breeds independence, and the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] who hold these marches now believe their service has earned them more than a $country_rank_br_thema_ruler_male$ mandate alone can grant. Petition is made, through you, that [ShowLocationName('constantinople')] recognize what already stands in fact: a $country_rank_br_katapanate$ of the eastern frontier, answerable to the [ShowSpecialStatusName('br_emperor')], but master in its own house."
+ br_ere_subject_events.50.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.50.entry: "The $country_rank_br_katapanate$ of [GetCountry('AOI').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.51.title: "The $rank_empire_byzantine_ruler_male$'s Judgment"
+ br_ere_subject_events.51.desc: "Word has reached the Sacred Palace that [SCOPE.sCountry('origin_country').GetName] would be recognized as a $country_rank_br_katapanate$, ruling in the $rank_empire_byzantine_ruler_male$'s name over lands it already commands in truth if not in title. To grant this recognition binds an ambitious frontier more closely to the crown by giving its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] a dignity worth defending. To refuse it costs nothing today, and risks everything should their patience run out."
+ br_ere_subject_events.51.a: "Grant them the dignity they ask."
+ br_ere_subject_events.51.b: "There shall be no such concession."
+
+ br_ere_subject_events.52.title: "The $rank_empire_byzantine_ruler_male$'s Refusal"
+ br_ere_subject_events.52.desc: "The answer returns from [ShowLocationName('constantinople')], and it is not the one that was hoped for. The $rank_empire_byzantine_ruler_male$ will not diminish the crown's prerogative merely to reward a $country_rank_br_thema_ruler_male$'s ambition, however faithfully that service has been rendered. The frontier remains a [ShowSubjectTypeName('br_thema_subject')] in name, whatever it may be in practice."
+ br_ere_subject_events.52.a: "So be it. The [ShowSpecialStatusName('br_emperor')] has spoken."
+
+ br_ere_subject_events.53.title: "The $country_rank_br_katapanate$ Confirmed"
+ br_ere_subject_events.53.desc: "The $rank_empire_byzantine_ruler_male$'s seal is set upon the grant. What was won by the sword and held by patient governance is now sanctioned by imperial decree: a $country_rank_br_katapanate$ in truth as well as in fact, its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] raised among the great officers of the Roman world."
+ br_ere_subject_events.53.a: "Long may the $country_rank_br_katapanate$ serve the Empire."
+
+ br_ere_subject_events.54.title: "The $country_rank_br_katapanate$ of [GetCountry('KAP').GetNameWithNoTooltip]"
+ br_ere_subject_events.54.desc: "Among the caves and rock-cut monasteries of [GetCountry('KAP').GetNameWithNoTooltip], far from the sea and farther still from [ShowLocationName('constantinople')], the local [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] have built their strength on horse and highland alone. The highlanders answer to them in all but name, and they now ask that the [ShowSpecialStatusName('br_emperor')] make plain what the plateau already knows: that theirs is a $country_rank_br_katapanate$, not merely a [ShowSubjectTypeName('br_thema_subject')]."
+ br_ere_subject_events.54.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.54.entry: "The $country_rank_br_katapanate$ of [GetCountry('KAP').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.55.title: "The $country_rank_br_katapanate$ of [GetCountry('AN0').GetNameWithNoTooltip]"
+ br_ere_subject_events.55.desc: "On the eastern marches, where the highlands meet the Armenian frontier, the $country_rank_br_thema_ruler_male$ has spent more years at war than at court. Rome's writ there is upheld by their swords, not the [ShowSpecialStatusName('br_emperor')]'s clerks, and they judge it time that [ShowLocationName('constantinople')] acknowledge what its own frontier has become: a $country_rank_br_katapanate$, standing between the Empire and the beyliks beyond."
+ br_ere_subject_events.55.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.55.entry: "The $country_rank_br_katapanate$ of [GetCountry('AN0').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.56.title: "The $country_rank_br_katapanate$ of [GetCountry('ANA').GetNameWithNoTooltip]"
+ br_ere_subject_events.56.desc: "It forms the beating heart of the old Anatolic theme, the heartland from which armies once marched to every frontier of the Empire. Its $country_rank_br_thema_ruler_male$ now holds a strength few provincial [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] can claim, and asks that this ancient core of Roman [GetCountry('ANA').GetNameWithNoTooltip] be recognized for what it has long been in substance: a $country_rank_br_katapanate$, not a mere thema in decline."
+ br_ere_subject_events.56.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.56.entry: "The $country_rank_br_katapanate$ of [GetCountry('ANA').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.57.title: "The $country_rank_br_katapanate$ of [GetCountry('IT0').GetNameWithNoTooltip]"
+ br_ere_subject_events.57.desc: "They remain the last true footholds of Roman Italy, ringed by Latin princes and adventurers, and separated from [ShowLocationName('constantinople')] by a sea that grows wider with every year of neglect. Governing so distant a march demands an authority the [ShowSpecialStatusName('br_emperor')] rarely troubles to send. The $country_rank_br_thema_ruler_male$ now asks that the crown grant in law what necessity has already granted in practice: recognition as a $country_rank_br_katapanate$ of Italy."
+ br_ere_subject_events.57.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.57.entry: "The $country_rank_br_katapanate$ of [GetCountry('IT0').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.58.title: "The $country_rank_br_katapanate$ of [GetCountry('P0N').GetNameWithNoTooltip]"
+ br_ere_subject_events.58.desc: "Along the Black Sea coast, where Trebizond's harbors carry the trade of the Empire's northern reach, its people answer more readily to their own $country_rank_br_thema_ruler_male$ than to any decree from the capital. The mountains that shield [GetCountry('P0N').GetNameWithNoTooltip] from its neighbors shield it just as well from the [ShowSpecialStatusName('br_emperor')]'s oversight. Its [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] now asks [ShowLocationName('constantinople')] to name plainly what geography and years of self-reliance have already decided: that [GetCountry('P0N').GetNameWithNoTooltip] is a $country_rank_br_katapanate$."
+ br_ere_subject_events.58.a: "Petition the $rank_empire_byzantine_ruler_male$ for the dignity of a $country_rank_br_katapanate$."
+ br_ere_subject_events.58.entry: "The $country_rank_br_katapanate$ of [GetCountry('P0N').GetNameWithNoTooltip]"
+
+ br_ere_subject_events.59.title: "Restoration of the Naval Theme"
+ br_ere_subject_events.59.desc: "The islands and maritime possessions of [GetCountry('BYZ').GetNameWithNoTooltip] have long served as outposts of imperial sea power, guarding the sea lanes, harbours, and approaches upon which the security of Constantinople depends. Such lands require an order of governance suited to their duties, with their rulers entrusted with the defence of the coasts and the maintenance of the imperial fleet. Yet through the changing fortunes of war and the settlement of lordships, these obligations have not always been reflected in their formal standing. The Imperial Court has therefore decreed that this dependency be placed under the naval administration proper to its charge, restoring the established order of the maritime themata and reaffirming its duty to defend the Roman seas."
+ br_ere_subject_events.59.a: "Let the naval theme serve the Empire at sea."
