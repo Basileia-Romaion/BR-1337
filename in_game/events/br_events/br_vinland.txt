@@ -176,6 +176,8 @@ northern_trade.3 = {
                 value = 100
             }
         }
+        research_advance = advance_type:trade_range_advance_age_2
+        research_advance = advance_type:merchants_and_trade
         create_character = {
             age = 34
             add_trait = trait:glory_seeker
@@ -274,5 +276,101 @@ southern_trade.2 = {
         discover_area=area:acadia_area
     }
 }
+southern_trade.3 = {
+    type=country_event
+    title=southern_trade.3.title
+    desc=southern_trade.3.desc
+    outcome=neutral
+    trigger={
+    }
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from =1380.1.1	# the earliest date at which this event can fire
+        to = 1390.1.1 		# the latest date at which this event can fire
+        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+    }
 
+    option = {
+        name = southern_trade.3.a
+        historical_option = yes
 
+        c:E1Y= {
+            trigger_event_silently = southern_trade.4
+        }
+        c:E2Y= {
+            trigger_event_silently = southern_trade.4
+        }
+    }
+    option = {
+        name = southern_trade.3.b
+    }
+}
+southern_trade.4 = {
+    type=country_event
+    title=southern_trade.4.title
+    desc=southern_trade.4.desc
+    outcome=neutral
+    trigger={
+    }
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from =1380.1.1	# the earliest date at which this event can fire
+        to = 1390.1.1 		# the latest date at which this event can fire
+        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = southern_trade.4.a
+        historical_option = yes
+        add_gold = -250
+        research_advance = advance_type:merchants_and_trade
+        research_advance = advance_type:trade_range_advance_age_2
+        capital = {
+            change_institution_progress = {
+                type = institution:professional_armies
+                value = 100
+            }
+        }
+        c:NRV= {
+            trigger_event_silently = southern_trade.5
+        }
+    }
+    option = {
+        name = southern_trade.4.b
+        
+    }
+}
+southern_trade.5 = {
+    type=country_event
+    title=southern_trade.5.title
+    desc=southern_trade.5.desc
+    outcome=neutral
+    trigger={
+    }
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from =1380.1.1	# the earliest date at which this event can fire
+        to = 1390.1.1 		# the latest date at which this event can fire
+        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+    }
+
+    option = {
+        name = southern_trade.5.a
+        add_gold = 250
+    }
+}
