@@ -7,9 +7,9 @@ countries = {
 		####---------- Canada ----------####
 		#Taontaenrat - TRT
 		TRT = { #??
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				missinihe tkaronto tetioneshohon scanonaenrat
 			}
 			
@@ -19,7 +19,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				ruler = random
@@ -28,9 +28,9 @@ countries = {
 		
 		#Attignawantan - AGW
 		AGW = {#https://pueblosoriginarios.com/norte/bosques/huron/huron.html
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				garafraxa ossossane
 			}
 			
@@ -40,7 +40,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				ruler = random
@@ -70,9 +70,9 @@ countries = {
 		
 		#Attigneenongnahac
 		ATG = {#https://pueblosoriginarios.com/norte/bosques/huron/huron.html
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				otonabee quinte ganneious ganaraska oshawa scugog haskaont ouentarionk
 			}
 			
@@ -83,7 +83,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe
@@ -162,9 +162,9 @@ countries = {
 		
 		#Maisouna
 		MAS = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				wachilmezi wolinak nebesek masolian loigan_sibo yamachiche ekwentondie andawaohie
 			}
 			
@@ -174,7 +174,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe
@@ -185,9 +185,9 @@ countries = {
 		
 		#Osheaga
 		OSG = { #??
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				kemoimenahan ahkwesasne otennienontant hochelaga makigotekw kahwenoke
 			}
 			
@@ -197,7 +197,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe
@@ -207,27 +207,27 @@ countries = {
 		}
 		
 		#Stadacona
-	STD = {#https://en.wikipedia.org/wiki/Stadacona https://en.wikipedia.org/wiki/St._Lawrence_Iroquoians
-		type = pop
-
-		add_pops_from_locations = {
-			kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate
-		}
-
-		discovered_regions = {
-			canada_region
-			east_coast_region
-			great_plains_region
-		}
-
-		include = "amerindian_tribe"
-		include = "expl_mesoamerica"
-	 	government = {
-			type = tribe
-			heir_selection = tribal_oldest_male
-			ruler = random
-		}
-	}
+		#STD = {#https://en.wikipedia.org/wiki/Stadacona https://en.wikipedia.org/wiki/St._Lawrence_Iroquoians
+			#type = pop
+#
+			#add_pops_from_locations = {
+				#kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate
+			#}
+#
+			#discovered_regions = {
+				#canada_region
+				#east_coast_region
+				#great_plains_region
+			#}
+#
+			#include = "vinland_exposed_natives"
+			#include = "expl_mesoamerica"
+			#government = {
+				#type = tribe
+				#heir_selection = tribal_oldest_male
+				#ruler = random
+			#}
+		#}
 		
 		#Atikamekw
 		AKW = {#https://en.wikipedia.org/wiki/Atikamekw
@@ -444,51 +444,6 @@ countries = {
 			include = "expl_vinland"
 		}
 		
-		BEO = {
-			type = pop
-			
-			add_pops_from_locations = {
-				eimastukwek epwikek kutapuskuj pgotapesg wli_qospem
-				gosaoie nogamsig meelpaeg amasipukwek sibook
-				cape_spear bacalhieu mekwiskajk mollyhuajeck
-				placentia cape_race maqtewey nukamkiajijk miquelon
-				akilasiewakik baie_verte walnaypek
-			}
-			#our_cores_conquered_by_others = {
-			#	belle_isle
-			#	naskwotchu
-			#	wipetikil
-			#	mekapisk
-			#	upsukdaskooch
-			#}
-			
-			capital = maqtewey
-			include = "vinland_exposed_natives"
-			court_language = beothuk_dialect
-			government = {
-				ruler = random
-			}
-			
-			include = "expl_vinland"
-		}
-		
-		INV = {
-			own_control_core = {
-				uashat mistecapiu mingan pigou
-			}
-			
-			capital = uashat
-			include = "vinland_exposed_natives"
-			court_language = innuland_dialect
-			government = {
-				ruler = random
-			}
-			
-			include = "expl_vinland"
-		}
-		
-		
-		####---------- Haudenosauneega ----------####
 		NRC = {
 			own_control_core = {
 				ingonish
@@ -518,22 +473,70 @@ countries = {
 			include = "expl_eastern_seaboard"
 		}
 		
+		BEO = {
+			#type = pop
+			
+			own_control_core = {
+				eimastukwek kutapuskuj pgotapesg wli_qospem
+				nogamsig meelpaeg amasipukwek sibook
+				cape_spear bacalhieu mekwiskajk mollyhuajeck
+				placentia cape_race maqtewey nukamkiajijk miquelon
+				akilasiewakik baie_verte walnaypek
+			}
+			our_cores_conquered_by_others = {
+				belle_isle
+				naskwotchu
+				wipetikil
+				mekapisk
+				upsukdaskooch
+				gosaoie
+				epwikek
+			}
+			
+			capital = maqtewey
+			include = "vinland_exposed_natives"
+			court_language = beothuk_dialect
+			government = {
+				ruler = random
+			}
+			
+			include = "expl_vinland"
+		}
+		
+		INV = {
+			own_control_core = {
+				uashat mistecapiu mingan pigou
+			}
+			
+			capital = uashat
+			include = "vinland_exposed_natives"
+			court_language = innuland_dialect
+			government = {
+				ruler = random
+			}
+			
+			include = "expl_vinland"
+		}
+		
+		
+		####---------- Haudenosauneega ----------####
+
 		#Mi'kmaq
 		MIK = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				amqui anagance antigonish aspotogan canso caraquet cascapedia
-				causapscal chebogue chicchoc chignecto chipoudy cobequid elsiktuk esekatik
+				causapscal chebogue chicchoc chignecto chipoudy cobequid esekatik
 				gaspe  jijkwtuk kekwapskuk kennetook kjipuktuk kouchibouguac
-				maccan maleagit malpeque marsoui matane matapedia memramcook miramichi mitis
+				maccan maleagit marsoui matane matapedia memramcook miramichi mitis
 				muinawamek musquedoboit neguac nepisiguit nictaux nisiamk nmejuaqnek oqumkikiak paspebiac
 				petitcodiac pewjeg pictou pogomeg restigouche richibucto seeboosis shubenacadie
-				tapu_tuitn tatamagouche tignish tracadie wekwayik weljuik wetewatoqsik wikipoq
+				tatamagouche tracadie wekwayik weljuik wetewatoqsik wikipoq
 			}
-			#our_cores_conquered_by_others = {
-			#	ingonish cheticamp kluskapewiktuk menageesenog
-			#}
+			our_cores_conquered_by_others = {
+				ingonish cheticamp kluskapewiktuk menageesenog malpeque tignish elsiktuk tapu_tuitn
+			}
 			
 			capital = kjipuktuk
 			include = "vinland_exposed_natives"
@@ -621,6 +624,8 @@ countries = {
 		OJI = {
 			own_control_core = {
 				pogamasing eskimanetigon mississagi baawitigong batchawana agawa_superior mackinac tahquamenon manistique ishpeming keweenaw ontonagon gaamiskwaabikaang chequamegon
+				manitoulin menesetung saugeen dehskan_ziibi nochemoweniing
+				saganing cheboygan asiniike
 			}
 			
 			capital = keweenaw
@@ -2689,9 +2694,9 @@ countries = {
 		#Agojuda
 		#https://muse.jhu.edu/pub/4/article/11612
 		AGJ = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				toniato gananoque cataraqui opinicon napanee kaniatarahontsi ahkwesasne_ny
 			}
 			
@@ -2701,7 +2706,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe

@@ -56,6 +56,12 @@ br_country_startup.1 = { #naval units added
 			}
 		}
 		c:NRV ?= {
+			add_country_modifier = {
+				modifier = br_vinland_buff
+				years = 100
+				mode = add_and_extend
+				size = 1
+			}
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -68,6 +74,12 @@ br_country_startup.1 = { #naval units added
 			}
 		}
 		c:NRR ?= {
+			add_country_modifier = {
+				modifier = br_vinland_buff
+				years = 100
+				mode = add_and_extend
+				size = 1
+			}
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -76,6 +88,12 @@ br_country_startup.1 = { #naval units added
 			}
 		}
 		c:NRH ?= {
+			add_country_modifier = {
+				modifier = br_vinland_buff
+				years = 100
+				mode = add_and_extend
+				size = 1
+			}
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship
@@ -84,6 +102,12 @@ br_country_startup.1 = { #naval units added
 			}
 		}
 		c:NRC ?= {
+			add_country_modifier = {
+				modifier = br_vinland_buff
+				years = 100
+				mode = add_and_extend
+				size = 1
+			}
 			capital = {
 				create_sub_unit = unit_type:n_vinland_longship
 				create_sub_unit = unit_type:n_vinland_longship

@@ -141,6 +141,21 @@ br_lucky_colonial_ai_buff = {
 	aggressiveness_modifier = 0.5
 }
 
+br_vinland_buff = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	army_maintenance_efficiency = 0.5
+	navy_maintenance_efficiency = 0.5
+	trade_income = 0.5
+	exploration_maintenance_efficiency = 0.5
+    colonial_maintenance_efficiency = 0.5
+	global_crown_estate_power = 0.5
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	aggressiveness_modifier = 0.5
+}
+
 br_assimilation_culture_buff = {
 	game_data = {
 		category = country

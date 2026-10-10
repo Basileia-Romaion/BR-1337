@@ -226,6 +226,12 @@ international_organization_manager = {
 		#members = { MNS UNL UNA }
 	#}
 
+	add_international_organization = {
+		type = colonial_federation
+		creation_date = 1337.1.1
+		members = { NRV NRC NRH NRR }
+	}
+
 
 
 }

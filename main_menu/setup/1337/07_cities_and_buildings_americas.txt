@@ -235,26 +235,41 @@ locations = {
 building_manager = {
 	####---------- Vinland ----------####
 	#--
+	br_vinland_outpost = { tag = NRH level = 1 location = koroc }
 	forest_village = { tag = NRH level = 1 location = koroc }
+	br_vinland_fort = { tag = NRH level = 1 location = navchak }
 	#rural_clothmaker = { tag = NRH level = 1 location = navchak }
 	#wharf = { tag = NRH level = 1 location = navchak }
 
 
-	fishing_village = { tag = NRR level = 1 location = tessuialluk }
-	fishing_village = { tag = NRR level = 1 location = aivitok }
+	br_vinland_fort = { tag = NRR level = 1 location = tikigaksuagusik }
+	br_vinland_outpost = { tag = NRR level = 1 location = tessuialluk }
+	br_vinland_outpost = { tag = NRR level = 1 location = natsitok }
+	br_vinland_coastal_village = { tag = NRR level = 1 location = tessuialluk }
+	br_vinland_coastal_village = { tag = NRR level = 1 location = aivitok }
 
 
 	#Vinland
+
+	br_vinland_fort = { tag = NRV level = 1 location = stadacona }
+	br_vinland_fort = { tag = NRV level = 1 location = belle_isle }
+	br_vinland_outpost = { tag = NRC level = 1 location = red_bay }
+
+
+	br_vinland_fort = { tag = NRC level = 1 location = ingonish }
+	br_vinland_outpost = { tag = NRC level = 1 location = menageesenog }
+
 	wharf = { tag = NRV level = 1 location = belle_isle }
 	tar_kiln = { tag = NRV level = 1 location = belle_isle }
 	wharf = { tag = NRC level = 1 location = ingonish }
-	fishing_village = { tag = NRV level = 1 location = walnaypek }
-	fishing_village = { tag = NRV level = 1 location = akilasiewakik }
+	br_vinland_coastal_village = { tag = NRV level = 1 location = walnaypek }
+	br_vinland_coastal_village = { tag = NRV level = 1 location = akilasiewakik }
 	forest_village = { tag = NRV level = 1 location = wipetikil }
 	fruit_orchard = { tag = NRV level = 1 location = uashat }
-	fruit_orchard = { tag = INV level = 1 location = stadacona }
+	fruit_orchard = { tag = NRV level = 1 location = stadacona }
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
 
+	
 	br_trade_outpost = { tag = NRV level = 2 location = navchak }
 	br_trade_outpost = { tag = NRV level = 2 location = maqtewey }
 	br_trade_outpost = { tag = NRV level = 2 location = uashat }
