@@ -13,9 +13,9 @@ government = {
 	serfdom_vs_free_subjects = 25
 	mercantilism_vs_free_trade = -25
 	belligerent_vs_conciliatory = -75
-	quality_vs_quantity = -25
+	quality_vs_quantity = -75
 	offensive_vs_defensive = -50
-	land_vs_naval = 0
+	land_vs_naval = 75
 	capital_economy_vs_traditional_economy = 70
 	individualism_vs_communalism = 25
 	outward_vs_inward = 25
@@ -57,15 +57,19 @@ government = {
 		market_fairs
 		formal_guilds
 		sponsor_maritime_contracts
+		shipwright_contracts
 
 		#Commoners
 		allow_hunting
 		communal_lands
 		peasants_free_peasantry
 		peasants_allowed_weapons_privilege
+
+		tribes_tribal_levies
 	}
 	reforms = {
 		br_new_world_colonial_reform
+		family_sagas_reform
 	}
 	#bureaucracies = {
 	#	{ type = br_vinlandic_colonial_office_bureaucracy	date = 980.1.1 } 

@@ -524,7 +524,7 @@ countries = {
 		#Mi'kmaq
 		MIK = {
 			#type = pop
-			
+
 			own_control_core = {
 				amqui anagance antigonish aspotogan canso caraquet cascapedia
 				causapscal chebogue chicchoc chignecto chipoudy cobequid esekatik
@@ -537,14 +537,14 @@ countries = {
 			our_cores_conquered_by_others = {
 				ingonish cheticamp kluskapewiktuk menageesenog malpeque tignish elsiktuk tapu_tuitn
 			}
-			
+
 			capital = kjipuktuk
 			include = "vinland_exposed_natives"
 			court_language = abenakian_language
 			government = {
 				ruler = random
 			}
-			
+
 			include = "expl_new_england"
 			include = "expl_vinland"
 		}
