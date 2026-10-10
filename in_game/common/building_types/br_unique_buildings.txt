@@ -936,6 +936,8 @@ br_vinland_fort = {
 		rural_weaponmaker
 		rural_blacksmith
 		br_soldier_farmers_horses_maintenance
+		rural_jewelry_carver
+		rural_pottery_maker
 	}
 	construction_demand = ostrog_construction
 	modifier = {
@@ -991,17 +993,17 @@ br_vinland_coastal_village = {
 	construction_demand = village_construction
 
 	modifier = {
-		local_navy_levy_size_modifier = 0.25
+		local_navy_levy_size_modifier = 0.25 #added
 		local_merchant_capacity = 0.25
-		local_peasants_estate_power = 0.25		#25% higher here.
-		local_food_capacity = 75
+		local_peasants_estate_power = 0.25
+		local_food_capacity = 75 # was 50
 		local_peasant_enfranchisment = 0.01
 
-		local_maritime_presence = 0.02
+		local_maritime_presence = 0.02 #was 0.01
 
-		harbor_suitability = 0.05
+		harbor_suitability = 0.05 #was 0.02
 
-		local_sailors = 0.004
+		local_sailors = 0.004 #was 0.001
 	}
 	raw_modifier = {
 		local_laborers_desired_pop = 0.1

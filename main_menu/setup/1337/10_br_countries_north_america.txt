@@ -139,9 +139,9 @@ countries = {
 		}
 		#Tionontate
 		TIO = {#https://en.wikipedia.org/wiki/Petun
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				etharita ehwae eramosa
 			}
 			
@@ -151,7 +151,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "vinland_exposed_natives"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe
