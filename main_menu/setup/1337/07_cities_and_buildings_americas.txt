@@ -258,7 +258,12 @@ building_manager = {
 	br_vinland_outpost = { tag = NRV level = 1 location = red_bay }
 
 	wharf = { tag = NRV level = 1 location = belle_isle }
-	tar_kiln = { tag = NRV level = 1 location = belle_isle }
+	tar_kiln = { tag = NRV level = 2 location = belle_isle }
+	bog_iron_smelter = { tag = NRV level = 1 location = belle_isle }
+	slave_market = { tag = NRV level = 1 location = belle_isle }
+	slave_market = { tag = NRV level = 1 location = stadacona }
+	tar_kiln = { tag = NRV level = 2 location = stadacona }
+	clay_pit = { tag = NRV level = 2 location = stadacona }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = walnaypek }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = akilasiewakik }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = ahwendoe }
@@ -276,6 +281,7 @@ building_manager = {
 	wharf = { tag = NRC level = 1 location = ingonish }
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
 	br_vinland_fort = { tag = NRC level = 1 location = ingonish }
+	slave_market = { tag = NRC level = 1 location = ingonish }
 	br_vinland_outpost = { tag = NRC level = 1 location = menageesenog }
 	br_vinland_coastal_village = { tag = NRR level = 1 location = menageesenog }
 	br_vinland_coastal_village = { tag = NRR level = 2 location = kluskapewiktuk }
@@ -308,6 +314,12 @@ building_manager = {
 	
 	####---------- Canada ----------####
 	#--
+	tribal_market_villages = { tag = IRO level = 1 location =  niagara }
+	tribal_war_camp = { tag = IRO level = 1 location =  niagara }
+	tribal_market_villages = { tag = IRO level = 1 location =  erie }
+	tribal_war_camp = { tag = IRO level = 1 location =  erie }
+	tribal_market_villages = { tag = IRO level = 1 location =  kanagio }
+	tribal_war_camp = { tag = IRO level = 1 location =  kanagio }
 	
 	####---------- Alaska ----------####
 	#--
@@ -329,6 +341,12 @@ building_manager = {
 	tribal_war_camp = { tag = IRO level = 1 location =  canadaigua }
 	tribal_hunting_lodge = { tag = IRO level = 1 location =  canadaigua }
 	tribal_market_villages = { tag = IRO level = 1 location =  canadaigua }
+	tribal_market_villages = { tag = IRO level = 1 location =  niagara }
+	tribal_war_camp = { tag = IRO level = 1 location =  niagara }
+	tribal_market_villages = { tag = IRO level = 1 location =  erie }
+	tribal_war_camp = { tag = IRO level = 1 location =  erie }
+	tribal_market_villages = { tag = IRO level = 1 location =  kanagio }
+	tribal_war_camp = { tag = IRO level = 1 location =  kanagio }
 
 	warrior_lodge = { tag = IRO level = 1 location = irondequoit }
 	warrior_lodge = { tag = IRO level = 1 location = canajoharie }
