@@ -15,7 +15,7 @@ br_vinland_event.1 = {
 	dynamic_historical_event = {
         tag = NRV
         from = 1337.1.1
-        to = 1338.1.1
+        to = 1342.1.1
         monthly_chance = 100
     }
 	trigger = {
@@ -92,6 +92,32 @@ br_vinland_event.1 = {
 	}
 
 }
+
+br_vinland_event.2 = { #Opening event
+    type = country_event
+	title = br_vinland_event.2.title
+	desc = br_vinland_event.2.desc
+    outcome = neutral
+    trigger={
+    }
+    illustration_tags = {
+        10 = armed
+        10 = exterior
+    }
+    fire_only_once = yes
+
+    dynamic_historical_event = { 	# Used to make the event fire for the right tags
+        tag = NRV # tag that this event can fire for, can provide multiple
+        from = 1337.1.1	# the earliest date at which this event can fire
+        to = 1338.1.1 		# the latest date at which this event can fire
+        monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
+    }
+    option = {
+        name = br_vinland_event.2.a
+    }
+}
+
+### br_vinland_event.3 push toward the st lawrence river and the great lakes.
 
 #############
 namespace = northern_trade
@@ -250,6 +276,7 @@ southern_trade.1 = {
         }
     }
 }
+
 southern_trade.2 = {
     type=country_event
     title=southern_trade.2.title
@@ -276,6 +303,7 @@ southern_trade.2 = {
         discover_area=area:acadia_area
     }
 }
+
 southern_trade.3 = {
     type=country_event
     title=southern_trade.3.title
@@ -310,6 +338,7 @@ southern_trade.3 = {
         name = southern_trade.3.b
     }
 }
+
 southern_trade.4 = {
     type=country_event
     title=southern_trade.4.title
@@ -350,6 +379,7 @@ southern_trade.4 = {
         
     }
 }
+
 southern_trade.5 = {
     type=country_event
     title=southern_trade.5.title
