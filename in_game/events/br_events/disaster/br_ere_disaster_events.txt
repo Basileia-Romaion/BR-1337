@@ -7,7 +7,7 @@ br_ere_disaster_events.1 = {
 	title = br_ere_disaster_events.1.title
 	desc = br_ere_disaster_events.1.desc
 	outcome = neutral
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	immediate = {
 		ruler ?= { save_scope_as = target_character }
 	}
@@ -26,7 +26,7 @@ br_ere_disaster_events.2 = { #End of the Turbulent Era
 	title = br_ere_disaster_events.2.title
 	desc = br_ere_disaster_events.2.desc
 	outcome = neutral
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	immediate = { set_variable = had_serbian_disaster_variable }
 
 	option = {
@@ -43,7 +43,7 @@ br_ere_disaster_events.3 = { #Province Demands Autonomy
 	title = br_ere_disaster_events.3.title
 	desc = br_ere_disaster_events.3.desc
 	outcome = neutral
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
 
@@ -102,7 +102,7 @@ br_ere_disaster_events.4 = { #Border Frictions
 			}
 		}
 	}
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
 		random_neighbor_country = {
@@ -148,7 +148,7 @@ br_ere_disaster_events.5 = { #Peasants-at-Arms
 	title = br_ere_disaster_events.5.title
 	desc = br_ere_disaster_events.5.desc
 	outcome = neutral
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
 		random_owned_location = {
@@ -176,7 +176,7 @@ br_ere_disaster_events.5 = { #Peasants-at-Arms
 	option = {
 		name = br_ere_disaster_events.5.b
 
-		change_gold_effect = { scale = -2.5 }
+		change_gold_effect = { scale = -3 }
 		add_estate_satisfaction = { type = estate_type:peasants_estate
 			value = estate_satisfaction_mild_bonus
 		}
@@ -190,7 +190,7 @@ br_ere_disaster_events.6 = { #Province Declares Independence
 	title = br_ere_disaster_events.6.title
 	desc = br_ere_disaster_events.6.desc
 	outcome = neutral
-	image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	image = "gfx/interface/illustrations/disaster/twilight_of_the_tsardom.dds"
 	trigger = {
 		any_owned_location = {
 			NOT = {
@@ -390,7 +390,7 @@ br_ere_disaster_events.9 = { #Mutineers in the Army
 
 	option = {
 		name = br_ere_disaster_events.9.a
-		change_gold_effect = { scale = -1 }
+		change_gold_effect = { scale = -2 }
 	}
 	
 	option = {
@@ -504,7 +504,7 @@ br_ere_disaster_events.11 = { #Unpaid Garrison
 	
 	option = {
 		name = br_ere_disaster_events.11.a
-		change_gold_effect = { scale = -1 }
+		change_gold_effect = { scale = -2 }
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
 			value = estate_satisfaction_severe_bonus
