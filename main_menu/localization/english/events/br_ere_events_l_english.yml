@@ -102,6 +102,27 @@
  br_ere_events.14.b: "Restore the Exarchate of Ravenna."
  br_ere_events.14.historical_info: "The Exarchate of Ravenna was founded around 584, also under Emperor Maurice, as the seat of Roman authority in Italy after the Lombard invasions had shattered the peninsula's unity. For over a century and a half it held Constantinople's last true foothold in the Italian north, until King Aistulf's Lombards captured Ravenna in 751 — ending Roman rule there and clearing the way for the rise of the Papal States."
 
+ # The Theme of Macedonia
+ br_ere_events.15.title: "The Reorganization of the Balkan Themes"
+ br_ere_events.15.desc: "The lands of the Balkans have long been a bulwark of Roman power, guarding the approaches to Constantinople and securing the imperial dominion over Thrace and the lands beyond. Now that the authority of the Basileus extends throughout the region, the Imperial Court must determine how these territories shall best be governed. The provincial administration may be strengthened, binding the lands more closely to the imperial fisc and the order of the state. Alternatively, the lands around Philippopolis may be constituted as the Theme of $B4L$, entrusted to a loyal lord charged with their governance and defence in the Emperor's name."
+ br_ere_events.15.a: "Strengthen the imperial administration."
+ br_ere_events.15.b: "Establish the Theme of $B4L$."
+ br_ere_events.15.historical_info: "The Roman Empire organized its territories into themes, combining civil administration with military obligations. The names and boundaries of these themes changed over time, reflecting shifting strategic priorities and the Empire's changing fortunes in the Balkans."
+
+ # The Theme of Bulgaria
+ br_ere_events.16.title: "The Theme of $B5L$"
+ br_ere_events.16.desc: "The Vardar lands occupy a position of great consequence to the Roman Empire, commanding the routes that connect Constantinople with the western Balkans and the Danubian frontier. Their governance demands both steadfast loyalty and a constant readiness for war. The Imperial Court may strengthen the existing provincial administration, ensuring that its revenues and inhabitants remain more directly subject to the Basileus. Or the region may be entrusted to a loyal pronoia lord, raised to govern the Theme of Bulgaria and charged with maintaining its fortresses, mustering its soldiers, and preserving the Emperor's peace throughout the surrounding lands."
+ br_ere_events.16.a: "Strengthen the imperial administration."
+ br_ere_events.16.b: "Establish the Theme of $B5L$."
+ br_ere_events.16.historical_info: "The Roman Empire established and reorganized military-administrative districts in the Balkans as imperial control expanded and contracted. The theme of Bulgaria emerged following the conquest of the Bulgarian Empire under Basil II in the early eleventh century, though its organization and extent changed over time."
+
+ # The Theme of Paristrion
+ br_ere_events.17.title: "The Theme of $B6L$"
+ br_ere_events.17.desc: "The lands along the Lower Danube form the northern shield of the Roman Empire, where the great river marks both a line of defence and a gateway through which hostile peoples may descend upon the Balkans. Such a frontier cannot be guarded by distant decrees alone. Its fortresses must be maintained, its garrisons supplied, and its soldiers ready to answer the imperial summons. The Basileus may bring the lands of the region more firmly under direct administration, or establish the Theme of Paristrion, entrusting its defence to a loyal pronoia lord whose authority shall be exercised in the Emperor's name."
+ br_ere_events.17.a: "Strengthen the imperial administration."
+ br_ere_events.17.b: "Establish the Theme of $B6L$."
+ br_ere_events.17.historical_info: "Paristrion, also known as Paradounavon, was a Roman frontier region along the Lower Danube. Its organization and control varied over time, particularly during the Empire's struggles with the Bulgarians and other peoples of the Danubian frontier."
+
  ### Armenian Rebellion ###
  br_ere_events.100.title: "The Armenian Revolt"
  br_ere_events.100.entry: "$br_ere_events.100.title$"

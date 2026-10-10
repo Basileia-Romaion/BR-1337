@@ -527,7 +527,6 @@ br_ere_events.4 = {
 	}
 }
 
-
 br_ere_events.5 = {
 	type = country_event
 	title = br_ere_events.5.title
@@ -916,6 +915,7 @@ br_ere_events.11 = {
 	}
 }
 
+#Release of the Exarchates
 br_ere_events.12 = {
 	type = country_event
 	fire_only_once = yes
@@ -961,8 +961,11 @@ br_ere_events.12 = {
 
 	option = { #Release Exarchate of Aegypt
 		name = br_ere_events.12.b
+		trigger = {
+			NOT = { country_exists = c:AGY }
+		}
 		historical_option = yes
-		add_prestige = prestige_mild_bonus
+		add_stability = stability_severe_bonus
 
 		release_tag = { tag = AGY }
 		region:egypt_region = {
@@ -1073,8 +1076,11 @@ br_ere_events.13 = {
 
 	option = { #Release Exarchate of Afrika
 		name = br_ere_events.13.b
+		trigger = {
+			NOT = { country_exists = c:AFK }
+		}
 		historical_option = yes
-		add_prestige = prestige_mild_bonus
+		add_stability = stability_severe_bonus
 
 		release_tag = { tag = AFK }
 		region:maghreb_region = {
@@ -1183,8 +1189,11 @@ br_ere_events.14 = {
 
 	option = { #Release Exarchate of Ravenna
 		name = br_ere_events.14.b
+		trigger = {
+			NOT = { country_exists = c:IT1 }
+		}
 		historical_option = yes
-		add_prestige = prestige_mild_bonus
+		add_stability = stability_severe_bonus
 
 		release_tag = { tag = IT1 }
 		area:emilia_area = {
@@ -1247,6 +1256,344 @@ br_ere_events.14 = {
 		}
 	}
 }
+
+# release of thmes in the Balkans
+br_ere_events.15 = {
+	type = country_event
+	fire_only_once = yes
+	title = br_ere_events.15.title
+	desc = br_ere_events.15.desc
+	historical_info = br_ere_events.15.historical_info
+	outcome = positive
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1350.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		has_or_had_tag = BYZ
+		owns_or_non_sovereign_subject_owns_entire_province = province_definition:zagore_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = br_ere_events.15.a
+		add_prestige = prestige_mild_bonus
+
+		province_definition:zagore_province = {
+			every_location_in_province_definition = {
+				#limit = { owner = root }
+				change_integration_progress = 50
+			}
+		}
+	}
+
+	option = { #Release Thema of Philippópolis aka Macedonia
+		name = br_ere_events.15.b
+		trigger = {
+			NOT = { country_exists = c:B4L }
+		}
+		historical_option = yes
+		add_stability = stability_severe_bonus
+
+		release_tag = { tag = B4L }
+		province:zagore_province = {
+			every_location_in_province = {
+				limit = {
+					owner = root
+				}
+				change_location_owner = c:B4L
+				add_core = c:B4L
+			}
+		}
+		hidden_effect = {
+			c:B4L = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+				international_organization:roman_world = {
+					add_country_to_international_organization = c:B4L
+				}
+
+				create_character = {
+					culture = culture:boulgaroi
+					religion = religion:orthodox
+					min_age = 25
+					save_scope_as = target_character
+				}
+				set_new_ruler = scope:target_character
+				set_variable = {
+					name = character_creator
+					value = 5 #His 5 buddies
+				}
+				while = {
+					limit = { var:character_creator > 0 }
+					change_variable = {
+						name = character_creator
+						subtract = 1
+					}
+					create_character = {
+						culture = culture:boulgaroi
+						religion = religion:orthodox
+						min_age = 18
+					}
+				}
+				remove_variable = character_creator
+
+				set_country_rank_effect = { rank = country_rank:rank_duchy }
+				add_reform = government_reform:br_sub_pronoia_subject
+				grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+				grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+				grant_estate_privilege = estate_privilege:akritai_privilege
+				grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+				add_policy = policy:br_thema_levies
+				add_policy = policy:br_pronoia_system
+				add_policy = policy:br_roman_tradition
+				add_policy = policy:br_byzantine_law
+				add_policy = policy:br_roman_distribution_of_power_law
+				br_military_frontier = br_frontier_maintained
+			}
+		}
+	}
+}
+
+br_ere_events.16 = {
+	type = country_event
+	fire_only_once = yes
+	title = br_ere_events.16.title
+	desc = br_ere_events.16.desc
+	historical_info = br_ere_events.16.historical_info
+	outcome = positive
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1350.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		has_or_had_tag = BYZ
+		owns_or_non_sovereign_subject_owns_entire_province = province_definition:vardar_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = br_ere_events.16.a
+		add_prestige = prestige_mild_bonus
+
+		province_definition:vardar_province = {
+			every_location_in_province_definition = {
+				#limit = { owner = root }
+				change_integration_progress = 50
+			}
+		}
+	}
+
+	option = { #Release Thema of Boulgaría
+		name = br_ere_events.16.b
+		trigger = {
+			NOT = { country_exists = c:B5L }
+		}
+		historical_option = yes
+		add_stability = stability_severe_bonus
+
+		release_tag = { tag = B5L }
+		province:vardar_province = {
+			every_location_in_province = {
+				limit = {
+					owner = root
+				}
+				change_location_owner = c:B5L
+				add_core = c:B5L
+			}
+		}
+		hidden_effect = {
+			c:B5L = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+				international_organization:roman_world = {
+					add_country_to_international_organization = c:B5L
+				}
+
+				create_character = {
+					culture = culture:boulgaroi
+					religion = religion:orthodox
+					min_age = 25
+					save_scope_as = target_character
+				}
+				set_new_ruler = scope:target_character
+				set_variable = {
+					name = character_creator
+					value = 5 #His 5 buddies
+				}
+				while = {
+					limit = { var:character_creator > 0 }
+					change_variable = {
+						name = character_creator
+						subtract = 1
+					}
+					create_character = {
+						culture = culture:boulgaroi
+						religion = religion:orthodox
+						min_age = 18
+					}
+				}
+				remove_variable = character_creator
+
+				set_country_rank_effect = { rank = country_rank:rank_duchy }
+				add_reform = government_reform:br_sub_pronoia_subject
+				grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+				grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+				grant_estate_privilege = estate_privilege:akritai_privilege
+				grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+				add_policy = policy:br_thema_levies
+				add_policy = policy:br_pronoia_system
+				add_policy = policy:br_roman_tradition
+				add_policy = policy:br_byzantine_law
+				add_policy = policy:br_roman_distribution_of_power_law
+				br_military_frontier = br_frontier_maintained
+			}
+		}
+	}
+}
+
+br_ere_events.17 = {
+	type = country_event
+	fire_only_once = yes
+	title = br_ere_events.17.title
+	desc = br_ere_events.17.desc
+	historical_info = br_ere_events.17.historical_info
+	outcome = positive
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1350.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		has_or_had_tag = BYZ
+		owns_or_non_sovereign_subject_owns_entire_province = province_definition:tarnovo_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = br_ere_events.17.a
+		add_prestige = prestige_mild_bonus
+
+		province_definition:tarnovo_province = {
+			every_location_in_province_definition = {
+				limit = { owner = root }
+				change_integration_progress = 50
+			}
+		}
+	}
+
+	option = { #Release Thema of Paristrion aka Moesia
+		name = br_ere_events.17.b
+		trigger = {
+			NOT = { country_exists = c:B6L }
+		}
+		historical_option = yes
+		add_stability = stability_severe_bonus
+
+		release_tag = { tag = B6L }
+		area:bulgaria_area = {
+			every_location_in_area = {
+				limit = {
+					owner = root
+				}
+				change_location_owner = c:B6L
+				add_core = c:B6L
+			}
+		}
+		hidden_effect = {
+			c:B6L = {
+				make_subject_of = {
+					target = c:BYZ
+					type = subject_type:pronoia
+				}
+				international_organization:roman_world = {
+					add_country_to_international_organization = c:B6L
+				}
+
+				create_character = {
+					culture = culture:boulgaroi
+					religion = religion:orthodox
+					min_age = 25
+					save_scope_as = target_character
+				}
+				set_new_ruler = scope:target_character
+				set_variable = {
+					name = character_creator
+					value = 5 #His 5 buddies
+				}
+				while = {
+					limit = { var:character_creator > 0 }
+					change_variable = {
+						name = character_creator
+						subtract = 1
+					}
+					create_character = {
+						culture = culture:boulgaroi
+						religion = religion:orthodox
+						min_age = 18
+					}
+				}
+				remove_variable = character_creator
+
+				set_country_rank_effect = { rank = country_rank:rank_duchy }
+				add_reform = government_reform:br_sub_pronoia_subject
+				grant_estate_privilege = estate_privilege:br_bureaucrat_clergy
+				grant_estate_privilege = estate_privilege:br_dynatoi_magnates
+				grant_estate_privilege = estate_privilege:akritai_privilege
+				grant_estate_privilege = estate_privilege:br_themata_peasant_privilege
+				add_policy = policy:br_thema_levies
+				add_policy = policy:br_pronoia_system
+				add_policy = policy:br_roman_tradition
+				add_policy = policy:br_byzantine_law
+				add_policy = policy:br_roman_distribution_of_power_law
+				br_military_frontier = br_frontier_maintained
+			}
+		}
+	}
+}
+
 
 #rebellions
 br_ere_events.100 = { #armenian rebellion
