@@ -119,7 +119,10 @@ domestikos_east = {
 
 	can_bestow_trigger = {
 		capital = {
-			region = region:anatolia_region
+			OR = {
+				region = region:anatolia_region
+				region = region:crescent_region
+			}
 		}
 		has_ruler = yes
 		has_regent = no
