@@ -976,7 +976,6 @@ br_vinland_coastal_village = {
 			has_or_had_tag = NRC
 		}
 	}
-
 	location_potential = {
 		is_coastal = yes
 		region = region:canada_region
@@ -989,9 +988,7 @@ br_vinland_coastal_village = {
 		coastal_boatyard
 		rural_pottery_maker
 	}
-
 	construction_demand = village_construction
-
 	modifier = {
 		local_navy_levy_size_modifier = 0.25 #added
 		local_merchant_capacity = 0.25
