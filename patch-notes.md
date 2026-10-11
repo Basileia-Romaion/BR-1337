@@ -24,6 +24,9 @@
 ### Eiríksson dynasty for Vinland
 * The descendants of Leif Eiríksson live on.
 
+### New Town Rights
+* Fortified Trading Post: "The privilege of maintaining a fortified trading post grants merchants protection within a defensible stronghold, encouraging commerce while strengthening the local garrison. The presence of soldiers safeguards the surrounding countryside, while the flow of goods and traders sustains the settlement and supports the mustering of troops."
+
 ### Events
 * Split Vinland's opening event into two events, with the second occurring one month after the start date, when you found the new capital of Eiríksvágr (modern-day Quebec City).
 * Further improvements to the localization will explain the last 300 years of Vinland's history. I just need to iron out the details without making it too drawn-out or convoluted.

@@ -417,8 +417,50 @@ br_lucky_countries_ai.10 = {
 			mode = add_and_extend
 			size = 0.5
 		}
+
 		research_advance = advance_type:standardized_coins
 		research_advance = advance_type:br_colonial_militia
+
+		add_truce_with = {
+			target = c:ADR
+			years = 150
+		}
+		add_truce_with = {
+			target = c:ONG
+			years = 150
+		}
+		add_truce_with = {
+			target = c:KEN
+			years = 150
+		}
+		add_truce_with = {
+			target = c:ERI
+			years = 150
+		}
+		add_truce_with = {
+			target = c:WRO
+			years = 150
+		}
+		add_truce_with = {
+			target = c:ONN
+			years = 150
+		}
+		add_truce_with = {
+			target = c:GYO
+			years = 150
+		}
+		add_truce_with = {
+			target = c:ONY
+			years = 150
+		}
+		add_truce_with = {
+			target = c:KKA
+			years = 150
+		}
+		add_truce_with = {
+			target = c:ONO
+			years = 150
+		}
 	}
 }
 

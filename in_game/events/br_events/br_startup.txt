@@ -11,7 +11,7 @@ br_startup.1 = {
 	fire_only_once = yes
 
 	immediate = {
-		#Balkans
+	#Balkans
 		location:vostitsa = {
 			change_raw_material = goods:millet
 		}
@@ -52,7 +52,7 @@ br_startup.1 = {
 			change_raw_material = goods:fruit
 		}
 
-		#Anatolia
+	#Anatolia
 		location:karahisar_i_sahib = {
             change_raw_material = goods:wheat
         }
@@ -126,8 +126,14 @@ br_startup.1 = {
 		location:patawomeck = {
 			change_raw_material = goods:maize
 		}
+		location:chicamacomico = {
+			change_raw_material = goods:wheat
+		}
+		location:werowocomoco = {
+			change_raw_material = goods:lumber
+		}
 
-		#apaleisia
+	#apaleisia
 		location:onimgohow = {
 			change_raw_material = goods:iron
 		}
@@ -136,6 +142,9 @@ br_startup.1 = {
 		}
 		location:pocatalico = {
 			change_raw_material = goods:fur
+		}
+		location:weotowe = {
+			change_raw_material = goods:goods_gold
 		}
 
 		location:unquachog = {
