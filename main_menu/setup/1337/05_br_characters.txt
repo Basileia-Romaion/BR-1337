@@ -2434,27 +2434,68 @@ character_db={
 	}
 #Vinland
 
-	br_vinland_character_0 = {
-		first_name = { name = "random" }
-		birth_date = 1301.1.1
+	br_vinland_character_001 = {
+		first_name = { name = name_leif }
+		birth_date = 1281.1.1
 		culture = vinlander
 		religion = norse
 		birth = belle_isle
+		dynasty = eiriksson_dynasty
 		tag = NRV
 		general_trait = master_of_arms
 		admiral_trait = accomplished_sailor
 	}
+
+	br_vinland_character_002 = {
+		first_name = { name = name_torvid }
+		birth_date = 1303.1.1
+		culture = vinlander
+		religion = norse
+		birth = belle_isle
+		dynasty = eiriksson_dynasty
+		tag = NRV
+		father = br_vinland_character_001
+		general_trait = master_of_arms
+		admiral_trait = accomplished_sailor
+	}
+
+	br_vinland_character_003 = {
+		first_name = { name = name_sven }
+		birth_date = 1305.1.1
+		culture = vinlander
+		religion = norse
+		birth = belle_isle
+		dynasty = eiriksson_dynasty
+		tag = NRV
+		father = br_vinland_character_001
+		general_trait = master_of_arms
+		admiral_trait = accomplished_sailor
+	}
+
+	br_vinland_character_0 = {
+		first_name = { name = name_eric }
+		birth_date = 1301.1.1
+		culture = vinlander
+		religion = norse
+		birth = belle_isle
+		dynasty = eiriksson_dynasty
+		tag = NRV
+		father = br_vinland_character_001
+		general_trait = master_of_arms
+		admiral_trait = accomplished_sailor
+	}
 	br_vinland_character_03 = {
-		first_name = { name = "random" }
+		first_name = { name = name_leif }
 		birth_date = 1331.1.1
 		culture = vinlander
 		religion = norse
 		birth = belle_isle
+		dynasty = eiriksson_dynasty
 		tag = NRV
 		father = br_vinland_character_0
 	}
 	br_vinland_character_01 = {
-		first_name = { name = "random" }
+		first_name = { name = name_olaf }
 		birth_date = 1301.1.1
 		culture = vinlander
 		religion = norse
@@ -2464,7 +2505,7 @@ character_db={
 		admiral_trait = accomplished_sailor
 	}
 	br_vinland_character_04 = {
-		first_name = { name = "random" }
+		first_name = { name = name_bjorn }
 		birth_date = 1331.1.1
 		father = br_vinland_character_01
 		culture = vinlander
@@ -2473,7 +2514,7 @@ character_db={
 		tag = NRV
 	}
 	br_vinland_character_02 = {
-		first_name = { name = "random" }
+		first_name = { name = name_halldor }
 		birth_date = 1301.1.1
 		culture = vinlander
 		religion = norse
@@ -2493,7 +2534,7 @@ character_db={
 	}
 
 	br_vinland_character_06 = {
-		first_name = { name = "random" }
+		first_name = { name = name_snorre }
 		birth_date = 1301.1.1
 		culture = vinlander
 		religion = norse
@@ -2502,17 +2543,18 @@ character_db={
 		tag = NRV
 	}
 	br_vinland_character_07 = {
-		first_name = { name = "random" }
+		first_name = { name = name_raven }
 		birth_date = 1331.1.1
 		culture = vinlander
 		religion = norse
 		birth = belle_isle
 		female = yes
 		tag = NRV
+		dynasty = eiriksson_dynasty
 		father = br_vinland_character_0
 	}
 	br_vinland_character_08 = {
-		first_name = { name = "random" }
+		first_name = { name = name_halsten }
 		birth_date = 1301.1.1
 		culture = vinlander
 		religion = norse
