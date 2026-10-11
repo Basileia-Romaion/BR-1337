@@ -117,9 +117,9 @@ countries = {
 		
 		#Aondironon
 		ADR = {#https://en.wikipedia.org/wiki/Neutral_Confederacy
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio
 			}
 			
@@ -129,7 +129,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "haudenosaunee_tribe"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe
@@ -364,21 +364,20 @@ countries = {
 				kamitsisit etchemin kikonteku ontaretse stadacona ondaonnentakwi aunona taoondewake kouate ahwendoe
 				wachilmezi andawaohie wolinak ekwentondie
 			}
-			
+
 			capital = belle_isle
 			include = "vinlandic_foothold"
 			court_language = vinland_dialect
 			country_rank = rank_duchy
 			government = {
-				ruler = random
+				ruler = br_vinland_character_0
+				ruler_term = { character = br_vinland_character_0 start_date = 1328.5.24 }
 			}
-			
+
 			accepted_cultures = {
 				marklander
 			}
-			tolerated_cultures = {
-				beothuk_culture
-			}
+
 			include = "expl_vinland"
 			include = "expl_american_great_lakes"
 		}
@@ -550,59 +549,162 @@ countries = {
 		}
 		
 		#Mohawk/Kanien'kehaka
-		#Oneida/Onyotaaka
-		#Onondaga/Onondagega
-		#Cayuga/Gayogohono
-		#Seneca/Onondowaga
-		
-		IRO = {
+		KKA = {
+
 			own_control_core = {
-				ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
-				ahna_wate
-
-				canadaigua geneseo tsonentsiio irondequoit #ONN
-				skaniatares assorodus gahato #GYO
-				tsikahiotsisto otsiningo oswego #ONO
-				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
-				canajoharie saratoga schenectady teionontatatie oneonta #KKA
-
-				
-
-				tiotoren cattaraugus kanentaweron #WRO
-				erie shenango kittaning tionesta #ERI
-				mahoning_oh ashtabula cuyahoga saucunk #KEN
-				niagara kenhionatatie macassa thahnawate ahouenro #ONG
-				nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio #ADR
+				canajoharie teionontatatie oneonta schenectady saratoga ticonderoga kawenote oronia tsiietsenhtha oskennonton itekiatonhniarikon
+				ahna_wate adirondacks kanyengehaga oneyotdehaga #added for sake of clean borders, not historical accuracy
 			}
-			
-			capital = irondequoit #canadaigua
+
+			starting_technology_level = 0
 			include = "haudenosaunee_tribe"
-			court_language = haudenosaunee_language
+			include = "expl_amerindian_east_coast"
 			government = {
 				ruler = random
 			}
+			capital = canajoharie
+
 			currency_data = {
-				gold = 400
-				stability = 95
-				tribal_cohesion = 95
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
 			}
-			accepted_cultures = {
-				gayogohono_culture
-				onondagega_culture
-				onyotaaka_culture
-				kanienkehaka_culture
-				wenrohronon_culture
-				kentaientonga_culture
-				erielhonan_culture
-				honniasont_culture
-				onojutta_culture
-				carantouan_culture
-				atrakwaye_culture
-			}
-			country_rank = rank_kingdom
-			include = "expl_new_england"
-			include = "expl_american_great_lakes"
 		}
+
+		#Oneida/Onyotaaka
+		ONY = {
+
+			own_control_core = {
+				onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa
+			}
+
+			starting_technology_level = 0
+			include = "haudenosaunee_tribe"
+			include = "expl_amerindian_east_coast"
+			government = {
+				ruler = random
+			}
+			capital = onenioteke
+
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Onondaga/Onondagega
+		ONO = {
+
+			own_control_core = {
+			tsikahiotsisto otsiningo oswego
+			}
+
+			starting_technology_level = 0
+			include = "expl_amerindian_east_coast"
+			include = "haudenosaunee_tribe"
+			government = {
+				ruler = random
+			}
+			capital = tsikahiotsisto
+
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Cayuga/Gayogohono
+		GYO = {
+
+			own_control_core = {
+			skaniatares assorodus gahato
+			}
+
+			starting_technology_level = 0
+			include = "expl_amerindian_east_coast"
+			include = "haudenosaunee_tribe"
+			government = {
+				ruler = random
+			}
+			capital = skaniatares
+
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}
+		#Seneca/Onondowaga
+		ONN = {
+
+			own_control_core = {
+			canadaigua geneseo tsonentsiio irondequoit
+			}
+
+			starting_technology_level = 0
+			include = "haudenosaunee_tribe"
+			include = "expl_amerindian_east_coast"
+			government = {
+				ruler = random
+			}
+			capital = canadaigua
+
+			currency_data = {
+				gold = 100
+				stability = 33
+				tribal_cohesion = 90
+			}
+		}		
+	
+		
+		#IRO = {
+			#own_control_core = {
+				#ticonderoga itekiatonhniarikon oskennonton oronia oneyotdehaga kawenote tsiietsenhtha adirondacks kanyengehaga
+				#ahna_wate
+#
+				#canadaigua geneseo tsonentsiio irondequoit #ONN
+				#skaniatares assorodus gahato #GYO
+				#tsikahiotsisto otsiningo oswego #ONO
+				#onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa #ONY
+				#canajoharie saratoga schenectady teionontatatie oneonta #KKA
+#
+#				
+#
+				#tiotoren cattaraugus kanentaweron #WRO
+				#erie shenango kittaning tionesta #ERI
+				#mahoning_oh ashtabula cuyahoga saucunk #KEN
+				#niagara kenhionatatie macassa thahnawate ahouenro #ONG
+				#nissouri kandoucho kanagio tekahionhake bkwejanong ganatchio #ADR
+			#}
+#			
+			#capital = irondequoit #canadaigua
+			#include = "haudenosaunee_tribe"
+			#court_language = haudenosaunee_language
+			#government = {
+				#ruler = random
+			#}
+			#currency_data = {
+				#gold = 400
+				#stability = 95
+				#tribal_cohesion = 95
+			#}
+			#accepted_cultures = {
+				#gayogohono_culture
+				#onondagega_culture
+				#onyotaaka_culture
+				#kanienkehaka_culture
+				#wenrohronon_culture
+				#kentaientonga_culture
+				#erielhonan_culture
+				#honniasont_culture
+				#onojutta_culture
+				#carantouan_culture
+				#atrakwaye_culture
+			#}
+			#country_rank = rank_kingdom
+			#include = "expl_new_england"
+			#include = "expl_american_great_lakes"
+		#}
 		
 		#Wampanoag
 		WMG = {
@@ -1837,13 +1939,13 @@ countries = {
 		
 		#Wenrohronon
 		WRO = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				tiotoren cattaraugus kanentaweron
 			}
 			
-			include = "american_east_coast_tribe"
+			include = "haudenosaunee_tribe"
 			government = {
 				ruler = random
 			}
@@ -1851,13 +1953,13 @@ countries = {
 		
 		#Kentaientonga Erie
 		KEN = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				mahoning_oh ashtabula cuyahoga saucunk
 			}
 			
-			include = "american_east_coast_tribe"
+			include = "haudenosaunee_tribe"
 			government = {
 				ruler = random
 			}
@@ -1865,13 +1967,13 @@ countries = {
 		
 		#Erielhonan Erie
 		ERI = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				erie shenango kittaning tionesta
 			}
 			
-			include = "american_east_coast_tribe"
+			include = "haudenosaunee_tribe"
 			government = {
 				ruler = random
 			}
@@ -2718,9 +2820,9 @@ countries = {
 		#Onghniaahra
 		#https://en.wikipedia.org/wiki/Neutral_Confederacy
 		ONG = {
-			type = pop
+			#type = pop
 			
-			add_pops_from_locations = {
+			own_control_core = {
 				niagara kenhionatatie macassa thahnawate ahouenro
 			}
 			
@@ -2730,7 +2832,7 @@ countries = {
 				great_plains_region
 			}
 			
-			include = "amerindian_tribe"
+			include = "haudenosaunee_tribe"
 			include = "expl_mesoamerica"
 			government = {
 				type = tribe

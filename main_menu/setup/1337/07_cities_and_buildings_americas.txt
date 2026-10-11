@@ -256,12 +256,16 @@ building_manager = {
 	br_vinland_fort = { tag = NRV level = 1 location = stadacona }
 	br_vinland_fort = { tag = NRV level = 1 location = belle_isle }
 	br_vinland_outpost = { tag = NRV level = 1 location = red_bay }
+	br_vinland_outpost = { tag = NRV level = 1 location = ekwentondie }
+	br_vinland_outpost = { tag = NRV level = 1 location = wolinak }
 
 	wharf = { tag = NRV level = 1 location = belle_isle }
 	tar_kiln = { tag = NRV level = 2 location = belle_isle }
 	bog_iron_smelter = { tag = NRV level = 1 location = belle_isle }
 	slave_market = { tag = NRV level = 1 location = belle_isle }
+	charcoal_maker = { tag = NRV level = 1 location = naskwotchu }
 	slave_market = { tag = NRV level = 1 location = stadacona }
+	salt_collector= { tag = NRV level = 1 location = stadacona }
 	tar_kiln = { tag = NRV level = 2 location = stadacona }
 	clay_pit = { tag = NRV level = 2 location = stadacona }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = walnaypek }
@@ -314,39 +318,44 @@ building_manager = {
 	
 	####---------- Canada ----------####
 	#--
-	tribal_market_villages = { tag = IRO level = 1 location =  niagara }
-	tribal_war_camp = { tag = IRO level = 1 location =  niagara }
-	tribal_market_villages = { tag = IRO level = 1 location =  erie }
-	tribal_war_camp = { tag = IRO level = 1 location =  erie }
-	tribal_market_villages = { tag = IRO level = 1 location =  kanagio }
-	tribal_war_camp = { tag = IRO level = 1 location =  kanagio }
+	
 	
 	####---------- Alaska ----------####
 	#--
 	
 	
 	####---------- Haudenosauneega ----------####
-	tribal_war_camp = { tag = IRO level = 1 location =  canajoharie }
-	tribal_hunting_lodge = { tag = IRO level = 1 location =  canajoharie }
-	tribal_market_villages = { tag = IRO level = 2 location =  canajoharie }
-	tribal_war_camp = { tag = IRO level = 1 location =  onenioteke }
-	tribal_hunting_lodge = { tag = IRO level = 1 location =  onenioteke }
-	tribal_market_villages = { tag = IRO level = 1 location =  onenioteke }
-	tribal_war_camp = { tag = IRO level = 1 location =  tsikahiotsisto }
-	tribal_hunting_lodge = { tag = IRO level = 1 location =  tsikahiotsisto }
-	tribal_market_villages = { tag = IRO level = 1 location =  tsikahiotsisto }
-	tribal_war_camp = { tag = IRO level = 1 location =  skaniatares }
-	tribal_hunting_lodge = { tag = IRO level = 1 location =  skaniatares }
-	tribal_market_villages = { tag = IRO level = 1 location =  skaniatares }
-	tribal_war_camp = { tag = IRO level = 1 location =  canadaigua }
-	tribal_hunting_lodge = { tag = IRO level = 1 location =  canadaigua }
-	tribal_market_villages = { tag = IRO level = 1 location =  canadaigua }
-	tribal_market_villages = { tag = IRO level = 1 location =  niagara }
-	tribal_war_camp = { tag = IRO level = 1 location =  niagara }
-	tribal_market_villages = { tag = IRO level = 1 location =  erie }
-	tribal_war_camp = { tag = IRO level = 1 location =  erie }
-	tribal_market_villages = { tag = IRO level = 1 location =  kanagio }
-	tribal_war_camp = { tag = IRO level = 1 location =  kanagio }
+	tribal_war_camp = { tag = IRO level = 1 location = canajoharie }
+	tribal_hunting_lodge = { tag = IRO level = 1 location = canajoharie }
+	tribal_market_villages = { tag = IRO level = 2 location = canajoharie }
+	tribal_war_camp = { tag = IRO level = 1 location = onenioteke }
+	tribal_hunting_lodge = { tag = IRO level = 1 location = onenioteke }
+	tribal_market_villages = { tag = IRO level = 1 location = onenioteke }
+	tribal_war_camp = { tag = IRO level = 1 location = tsikahiotsisto }
+	tribal_hunting_lodge = { tag = IRO level = 1 location = tsikahiotsisto }
+	tribal_market_villages = { tag = IRO level = 1 location = tsikahiotsisto }
+	tribal_war_camp = { tag = IRO level = 1 location = skaniatares }
+	tribal_hunting_lodge = { tag = IRO level = 1 location = skaniatares }
+	tribal_market_villages = { tag = IRO level = 1 location = skaniatares }
+	tribal_war_camp = { tag = IRO level = 1 location = canadaigua }
+	tribal_hunting_lodge = { tag = IRO level = 1 location = canadaigua }
+	tribal_market_villages = { tag = IRO level = 1 location = canadaigua }
+	tribal_market_villages = { tag = IRO level = 1 location = niagara }
+	tribal_war_camp = { tag = IRO level = 1 location = niagara }
+	tribal_market_villages = { tag = IRO level = 1 location = erie }
+	tribal_war_camp = { tag = IRO level = 1 location = erie }
+	tribal_market_villages = { tag = IRO level = 1 location = kanagio }
+	tribal_war_camp = { tag = IRO level = 1 location = kanagio }
+	tribal_market_villages = { tag = IRO level = 1 location = niagara }
+	tribal_war_camp = { tag = IRO level = 1 location = niagara }
+	tribal_market_villages = { tag = IRO level = 1 location = erie }
+	tribal_war_camp = { tag = IRO level = 1 location = erie }
+	tribal_market_villages = { tag = IRO level = 1 location = kanagio }
+	tribal_war_camp = { tag = IRO level = 1 location = kanagio }
+	tribal_market_villages = { tag = IRO level = 1 location = ashtabula }
+	tribal_war_camp = { tag = IRO level = 1 location = ashtabula }
+	tribal_market_villages = { tag = IRO level = 1 location = tiotoren }
+	tribal_war_camp = { tag = IRO level = 1 location = tiotoren }
 
 	warrior_lodge = { tag = IRO level = 1 location = irondequoit }
 	warrior_lodge = { tag = IRO level = 1 location = canajoharie }
@@ -358,9 +367,9 @@ building_manager = {
 	cloth_guild = { tag = E1Y level = 1 location = patapsco }
 	furniture_guild = { tag = E1Y level = 1 location = patapsco }
 	tools_guild = { tag = E1Y level = 1 location = patapsco }
-	#weapon_guild = { tag = E1Y level = 1 location =  patapsco }
+	#weapon_guild = { tag = E1Y level = 1 location = patapsco }
 	wharf = { tag = E1Y level = 1 location = patapsco }
-	#brewery = { tag = E1Y level = 1 location =  patapsco }
+	#brewery = { tag = E1Y level = 1 location = patapsco }
 	glass_guild = { tag = E1Y level = 1 location = patapsco }
 	paper_guild = { tag = E1Y level = 1 location = patapsco }
 	naval_supplies_guild = { tag = E1Y level = 1 location = patapsco }
@@ -403,9 +412,9 @@ building_manager = {
 	parish_church = { tag = E2Y level = 1 location = kiskiack }
 	horse_breeders = { tag = E2Y level = 1 location = nansemond }
 	
-	tribal_war_camp = { tag = E5Y level = 1 location =  patawomeck }
-	forest_village = { tag = E5Y level = 1 location =  patawomeck }
-	market_village = { tag = E5Y level = 1 location =  patawomeck }
+	tribal_war_camp = { tag = E5Y level = 1 location = patawomeck }
+	forest_village = { tag = E5Y level = 1 location = patawomeck }
+	market_village = { tag = E5Y level = 1 location = patawomeck }
 
 	fiber_crops_farm = { tag = K1K level = 1 location = roanoke }
 
@@ -436,18 +445,18 @@ building_manager = {
 
 	####---------- Cahokia ----------####
 	warrior_lodge = { tag = CHK level = 1 location = cahokia }
-	tribal_war_camp = { tag = CHK level = 1 location =  tamaroa }
-	tribal_hunting_lodge = { tag = CHK level = 1 location =  tamaroa }
-	tribal_market_villages = { tag = CHK level = 2 location =  tamaroa }
-	tribal_war_camp = { tag = CHK level = 1 location =  moingwena }
-	tribal_hunting_lodge = { tag = CHK level = 1 location =  moingwena }
-	tribal_market_villages = { tag = CHK level = 2 location =  moingwena }
-	tribal_war_camp = { tag = CHK level = 1 location =  ochechiton }
-	tribal_hunting_lodge = { tag = CHK level = 1 location =  ochechiton }
-	tribal_market_villages = { tag = CHK level = 2 location =  ochechiton }
-	tribal_war_camp = { tag = CHK level = 1 location =  chepoussa }
-	tribal_hunting_lodge = { tag = CHK level = 1 location =  chepoussa }
-	tribal_market_villages = { tag = CHK level = 2 location =  chepoussa }
+	tribal_war_camp = { tag = CHK level = 1 location = tamaroa }
+	tribal_hunting_lodge = { tag = CHK level = 1 location = tamaroa }
+	tribal_market_villages = { tag = CHK level = 2 location = tamaroa }
+	tribal_war_camp = { tag = CHK level = 1 location = moingwena }
+	tribal_hunting_lodge = { tag = CHK level = 1 location = moingwena }
+	tribal_market_villages = { tag = CHK level = 2 location = moingwena }
+	tribal_war_camp = { tag = CHK level = 1 location = ochechiton }
+	tribal_hunting_lodge = { tag = CHK level = 1 location = ochechiton }
+	tribal_market_villages = { tag = CHK level = 2 location = ochechiton }
+	tribal_war_camp = { tag = CHK level = 1 location = chepoussa }
+	tribal_hunting_lodge = { tag = CHK level = 1 location = chepoussa }
+	tribal_market_villages = { tag = CHK level = 2 location = chepoussa }
 	#--
 	####---------- Great Plains ----------####
 	#--
