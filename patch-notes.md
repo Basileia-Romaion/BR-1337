@@ -2,6 +2,50 @@
 
 # Patch Notes
 
+# 0.27 The Vinland Saga
+
+## New Content for Vinland.
+
+### The Vinlandic countries are all members of a Colonial Union at game start.
+
+### 3 unique buildings
+* Riverside Outpost: "Established along the rivers that wind deep into the wilderness, these fortified settlements serve as outposts of civilization on the frontier. Combining modest defenses with local provisions, hunting, and river trade, they secure the surrounding countryside, protect vital waterways, and provide a foothold for further settlement into the vast lands beyond."
+* Frontier Stronghold: "In the distant reaches of the New World, a seat of government must be more than a mere gathering of dwellings. Protected by sturdy defenses and sustained by local craftsmen, provisions, and a garrison of warriors, these strongholds serve as bastions of authority on the frontier. They safeguard important settlements, provide a center for mustering troops and organizing trade, and extend the reach of the ruling power into the surrounding wilderness."
+* Coastal Village: "Along the shores of Vinland, fishing communities sustain themselves through the bounty of the sea. Their boats carry fish and goods between neighboring settlements, while local craftsmen maintain vessels, prepare tools, and produce wares for coastal trade. These villages are the lifeblood of Vinland's maritime communities, connecting its scattered settlements across the waters."
+
+### New Vinlandic Military Units
+* Vinlandic Warriors: "Generations of warfare across the forests, rivers, and rugged highlands of the New World have forged the Vinlandic warriors into formidable fighters. Wielding axes and drawing upon the martial traditions of their Norse forefathers, they are adept at navigating the wilderness and striking where their enemies least expect. Fiercely protective of their homeland, they stand ready to defend the settlements their ancestors carved from the untamed lands of Vinland."
+* Vinlandic Raiders: "Centuries of warfare in the forests, along the rivers, and across the rugged highlands of the New World have perfected the art of Vinlandic raiding. Armed with axes and hardened by generations of frontier warfare, these seasoned warriors excel at swift assaults, ambushes, and devastating strikes against their foes. Though their ancestors crossed the western ocean in search of new lands, the Vinlandic raiders now fight to preserve a homeland that is theirs by birthright."
+
+### New tags. Both are small outposts on Lake Ontario.
+* Markarborg
+* Humbernes
+
+### Eiríksson dynasty for Vinland
+* The descendants of Leif Eiríksson live on.
+
+### Events
+* Split Vinland's opening event into two events, with the second occurring one month after the start date, when you found the new capital of Eiríksvágr (modern-day Quebec City).
+* Further improvements to the localization will explain the last 300 years of Vinland's history. I just need to iron out the details without making it too drawn-out or convoluted.
+* Added new events related to trade between Vinland and Elysium. Both parties can now unlock naval technologies that were previously locked behind the Banking institution. PP
+
+## Other Map/Balance Changes
+* Split the Haudenosaunee back into its confederated tribes.
+* Changed a dozen or so other Societies of Pops into landed countries along the St. Lawrence and Lake Ontario.
+* Added 100 rural settlements, commons, and villages to Vinland and the Great Lakes tribes so that markets should function properly.
+
+## ERE Content
+* Added 3 events regarding the conquest of Bulgaria, with options to restore the 11th-century themes.
+* Added a couple of events for the naval themes of Kibyrrhaiōtai and Aigaíon Pélagos.
+* Removed 3 events from the starting disaster that were more tedious, moving them to the late-game disaster instead.
+* The autocephalous patriarchates were frustrating to manage when playing as the Romans, as everyone constantly needed to be reinvited. For now, I merged the two remaining starting autocephalous Orthodox patriarchates, Georgia and Bulgaria, into the Ecumenical Patriarchate. Created events that allow Bulgaria and Georgia to reestablish their own autocephalous patriarchates if they become great powers.
+* Added a limit to the number of Greek Fire Ships and units you can have. The limit is based on the number of Naval Theme HQs and Tagmata buildings.
+
+## Bug Fixes
+* Fixed the Thema subjects to use unique laws instead of their overlord's laws, which could cause blank laws if the overlord had laws that the subjects couldn't have.
+* Fixed the Domestikos of the East to allow its capital to be in the Crescent region, so Antioch can serve as its capital as intended.
+
+
 # 0.26
 
 ## Updated to 1.4 Beta.
