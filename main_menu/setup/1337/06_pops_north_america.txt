@@ -826,6 +826,8 @@ locations = {
 	lake_naococane = {
 	}
 	kuujjuarapik = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
+		define_pop = {	type = tribesmen	size = 0.086	culture = skraeling_culture	religion = norse }
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
 	}
 	qingaaluk = {
@@ -881,16 +883,22 @@ locations = {
 	lake_payne = {
 	}
 	pangnirtung = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	iglunga = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	iqaluit = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	kimmirut = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	amadjuak = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	kinngait = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
 	}
 	baffin_island = {
 	}
@@ -934,6 +942,8 @@ locations = {
 	lake_caniapiscau = {
 	}
 	qikirtajuaq = {
+		define_pop = {	type = peasants		size = 0.011	culture = hellulander	religion = norse }
+		define_pop = {	type = tribesmen	size = 0.086	culture = skraeling_culture	religion = norse }
 		define_pop = {	type = tribesmen	size = 0.106	culture = dorset_culture	religion = totemism }
 	}
 	kamusawawasich = {
@@ -1638,11 +1648,9 @@ locations = {
 		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	gananoque = {
+		define_pop = {	type = peasants		size = 2.125	culture = vinlander		religion = norse }
+		define_pop = {	type = peasants		size = 1.600	culture = skraeling_culture	religion = norse }
 		define_pop = {	type = tribesmen	size = 1.084	culture = agojuda_culture	religion = iroquoian_totemism }
-		define_pop = {	type = tribesmen	size = 0.050	culture = vinlander		religion = norse }
-		define_pop = {	type = peasants		size = 0.025	culture = vinlander		religion = norse }
-		define_pop = {	type = tribesmen	size = 0.300	culture = skraeling_culture		religion = iroquoian_totemism }
-		define_pop = {	type = peasants		size = 0.200	culture = skraeling_culture	religion = norse }
 	}
 	opinicon = {
 		define_pop = {	type = tribesmen	size = 0.531	culture = agojuda_culture	religion = iroquoian_totemism }
@@ -1705,7 +1713,9 @@ locations = {
 		define_pop = {	type = tribesmen	size = 0.212	culture = arendaronon_culture	religion = iroquoian_totemism }
 	}
 	macassa = {
-		define_pop = {	type = tribesmen	size = 4.166	culture = onghniaahra_culture	religion = iroquoian_totemism }
+		define_pop = {	type = peasants		size = 1.825	culture = vinlander		religion = norse }
+		define_pop = {	type = peasants		size = 1.200	culture = skraeling_culture	religion = norse }
+		define_pop = {	type = tribesmen	size = 2.166	culture = onghniaahra_culture	religion = iroquoian_totemism }
 	}
 	niagara = {
 		define_pop = {	type = tribesmen	size = 4.804	culture = onghniaahra_culture	religion = iroquoian_totemism }

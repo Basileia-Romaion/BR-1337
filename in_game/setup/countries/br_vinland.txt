@@ -30,6 +30,22 @@ NRC = { # Kathurland
 	religion_definition = norse
 }
 
+NR1 = { # Markarborg
+	color = rgb { 75 116 138 }
+	color2 = rgb{ 15 41 202 }
+	
+	culture_definition = vinlander
+	religion_definition = norse
+}
+
+NR2 = { # Humbernes
+	color = rgb { 77 116 138 }
+	color2 = rgb{ 18 41 202 }
+	
+	culture_definition = vinlander
+	religion_definition = norse
+}
+
 INV = { # Innulånd
 	color = rgb { 77 61 80 }
 	color2 = rgb{ 16 41 202 }

@@ -281,6 +281,14 @@ building_manager = {
 	fruit_orchard = { tag = NRV level = 1 location = uashat }
 	fruit_orchard = { tag = NRV level = 1 location = stadacona }
 
+	br_vinland_fort = { tag = NR1 level = 1 location = gananoque }
+	forest_village = { tag = NR1 level = 1 location = gananoque }
+	market_village = { tag = NR1 level = 1 location = gananoque }
+
+	br_vinland_fort = { tag = NR2 level = 1 location = macassa }
+	forest_village = { tag = NR2 level = 1 location = macassa }
+	market_village = { tag = NR2 level = 1 location = macassa }
+
 
 	wharf = { tag = NRC level = 1 location = ingonish }
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
@@ -358,7 +366,11 @@ building_manager = {
 	tribal_war_camp = { tag = IRO level = 1 location = tiotoren }
 
 	warrior_lodge = { tag = IRO level = 1 location = irondequoit }
+	clay_pit = { tag = IRO level = 1 location = irondequoit }
+	lumber_mill = { tag = IRO level = 2 location = irondequoit }
 	warrior_lodge = { tag = IRO level = 1 location = canajoharie }
+	clay_pit = { tag = IRO level = 1 location = canajoharie }
+	lumber_mill = { tag = IRO level = 1 location = canajoharie }
 	#--
 	
 	####---------- Tsenacommacah ----------####
@@ -391,12 +403,16 @@ building_manager = {
 	#temple = { tag = DOE level = 1 location = doeg }
 	#mason = { tag = DOE level = 1 location = doeg }
 
+	br_vinland_fort = { tag = E7Y level = 1 location = kanawha }
 	forest_village = { tag = E7Y level = 1 location = kanawha }
 	market_village = { tag = E7Y level = 1 location = kanawha }
 	rural_clothmaker = { tag = E7Y level = 1 location = kanawha }
 	forest_village = { tag = E7Y level = 1 location = ouasioto }
 	forest_village = { tag = E7Y level = 1 location = onimgohow }
+	tar_kiln = { tag = E7Y level = 1 location = kanawha }
+	clay_pit = { tag = E7Y level = 1 location = kanawha }
 
+	br_vinland_fort = { tag = E6Y level = 1 location = massawomeck }
 	temple = { tag = E6Y level = 1 location = massawomeck }
 	market_village = { tag = E6Y level = 1 location = massawomeck }
 	parish_church = { tag = E6Y level = 1 location = massawomeck }

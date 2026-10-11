@@ -471,6 +471,42 @@ countries = {
 			include = "expl_vinland"
 			include = "expl_eastern_seaboard"
 		}
+
+		NR1 = {
+			own_control_core = {
+				gananoque
+			}
+			
+			capital = gananoque
+			include = "vinlandic_foothold"
+			court_language = vinland_dialect
+			country_rank = rank_county
+			government = {
+				ruler = random
+			}
+			
+			include = "expl_vinland"
+			include = "expl_eastern_seaboard"
+			include = "expl_amerindian_east_coast"
+		}
+
+		NR2 = {
+			own_control_core = {
+				macassa
+			}
+			
+			capital = macassa
+			include = "vinlandic_foothold"
+			court_language = vinland_dialect
+			country_rank = rank_county
+			government = {
+				ruler = random
+			}
+			
+			include = "expl_vinland"
+			include = "expl_eastern_seaboard"
+			include = "expl_amerindian_east_coast"
+		}
 		
 		BEO = {
 			#type = pop
@@ -2799,7 +2835,10 @@ countries = {
 			#type = pop
 			
 			own_control_core = {
-				toniato gananoque cataraqui opinicon napanee kaniatarahontsi ahkwesasne_ny
+				toniato cataraqui opinicon napanee kaniatarahontsi ahkwesasne_ny
+			}
+			our_cores_conquered_by_others = {
+				gananoque
 			}
 			
 			discovered_regions = {
@@ -2823,7 +2862,10 @@ countries = {
 			#type = pop
 			
 			own_control_core = {
-				niagara kenhionatatie macassa thahnawate ahouenro
+				niagara kenhionatatie thahnawate ahouenro
+			}
+			our_cores_conquered_by_others = {
+				macassa
 			}
 			
 			discovered_regions = {

@@ -71,6 +71,23 @@ br_native_trade_with_the_elysians = {
 
 # Vinlander (Norse New World) Custom Advances
 
+br_frontier_settlements = {
+	age = age_1_traditions
+	potential = { 
+		OR = {
+			has_or_had_tag = NRV
+			has_or_had_tag = NRR
+			has_or_had_tag = NRH
+			has_or_had_tag = NRC
+			has_or_had_tag = E6Y
+			has_or_had_tag = E7Y
+		}
+	}
+	requires = unlock_feudal_levy_advance
+	unlock_building = br_vinland_outpost
+	unlock_building = br_vinland_fort
+}
+
 # age_1_traditions
 br_vinland_naval_raiding = {
 	age = age_1_traditions
@@ -82,6 +99,8 @@ br_vinland_naval_raiding = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	global_levy_size_modifier = 0.25
@@ -102,10 +121,12 @@ br_vinland_naval_tradition = { #todo break up a bit
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	trade_range_modifier = 0.25
-    global_sailors_modifier = 0.50
+    global_sailors_modifier = 0.5
     global_fish_output_modifier = 0.1
     exploration_maintenance_efficiency = 0.25
     navy_maintenance_efficiency = 0.25
@@ -123,6 +144,8 @@ vinlander_thing_of_vinland = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = legalism_advance
@@ -140,6 +163,8 @@ vinlander_woodland_warfare = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = unlock_feudal_levy_advance
@@ -159,6 +184,8 @@ vinlander_river_and_coast_raiding = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = merchants_and_trade
@@ -176,6 +203,8 @@ vinlander_trade_with_the_skraelings = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = maritime_advance_age_2
@@ -194,6 +223,8 @@ vinlander_longhouse_settlement = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = pike_square
@@ -209,6 +240,8 @@ vinlander_pathfinders = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = vinlander_longhouse_settlement
@@ -227,6 +260,8 @@ vinlander_old_gods_endure = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = confessional_court
@@ -242,6 +277,8 @@ vinlander_warrior_cults = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = recruitment_improvements_reformation
@@ -260,6 +297,8 @@ vinlander_jarldoms_of_the_west = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = regiment_reinforcement_speed_absolutism
@@ -275,6 +314,8 @@ vinlander_frontier_mobilization = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = regiment_reinforcement_speed_absolutism
@@ -292,6 +333,8 @@ vinlander_new_world_identity = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = crown_power_advance_revolutions
@@ -309,6 +352,8 @@ vinlander_army_of_the_western_seas = {
 			has_or_had_tag = NRR
 			has_or_had_tag = NRH
 			has_or_had_tag = NRC
+			has_or_had_tag = NR1
+			has_or_had_tag = NR2
 		}
 	}
 	requires = revolutions_agressive_advance

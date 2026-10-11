@@ -858,15 +858,6 @@ br_vinland_outpost = {
 	category = defense_category
 	rural_settlement = yes
 	build_time = government_build_time
-
-	country_potential = {
-		OR = {
-			has_or_had_tag = NRV
-			has_or_had_tag = NRR
-			has_or_had_tag = NRH
-			has_or_had_tag = NRC
-		}
-	}
 	
 	location_potential = {
 		is_capital = no
@@ -921,14 +912,6 @@ br_vinland_fort = {
 	ai_forbid_shutdown = yes
 	important_for_AI = yes
 
-	country_potential = {
-		OR = {
-			has_or_had_tag = NRV
-			has_or_had_tag = NRR
-			has_or_had_tag = NRH
-			has_or_had_tag = NRC
-		}
-	}
 	location_potential = {
 		is_capital = yes
 		region = region:canada_region
