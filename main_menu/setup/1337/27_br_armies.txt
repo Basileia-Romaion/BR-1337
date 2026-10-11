@@ -61,4 +61,34 @@ unit_manager = {
 			a_byzantine_cataphracts = { strength = 1.0 }
 		}
 	}
+	army = {
+		country = NRV
+		location = stadacona
+		sub_units = {
+			br_traditions_vinlanders = { strength = 1.0 }
+			br_traditions_vinlanders = { strength = 1.0 }
+			br_traditions_vinlanders = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = NRH
+		location = navchak
+		sub_units = {
+			br_traditions_vinlanders = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = NRR
+		location = tikigaksuagusik
+		sub_units = {
+			br_traditions_vinlanders = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = NRC
+		location = ingonish
+		sub_units = {
+			br_traditions_vinlanders = { strength = 1.0 }
+		}
+	}
 }

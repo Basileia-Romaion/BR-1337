@@ -898,6 +898,8 @@ br_vinland_outpost = {
 		local_sailors = 0.003
 	}
 	raw_modifier = {
+		minimum_fort_level = 1
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 		local_soldiers_desired_pop = 0.05
 	}
 }
@@ -951,6 +953,8 @@ br_vinland_fort = {
 		can_recruit_regiment_in_this_location = yes
 	}
 	raw_modifier = {
+		minimum_fort_level = 1
+		pure_tooltip_entry = pte_no_propagating_zone_of_control
 		local_soldiers_desired_pop = 0.1
 	}
 }

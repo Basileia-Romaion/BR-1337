@@ -145,6 +145,7 @@ vinlander_woodland_warfare = {
 	requires = unlock_feudal_levy_advance
 	army_tradition_from_battle = 0.2
 	levy_maintenance_modifier = -0.2
+	unlock_unit = br_traditions_vinlanders
 }
 
 # age_2_renaissance
@@ -163,6 +164,7 @@ vinlander_river_and_coast_raiding = {
 	requires = merchants_and_trade
 	naval_morale = 0.1
 	amount_looted_modifier = 0.25
+	unlock_unit = br_renaissance_vinlanders
 }
 
 vinlander_trade_with_the_skraelings = {

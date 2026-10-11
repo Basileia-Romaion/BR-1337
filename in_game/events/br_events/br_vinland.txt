@@ -62,6 +62,15 @@ br_vinland_event.1 = {
 		}
 
 		hidden_effect = {
+            add_migration = {
+                owner = root
+                from = scope:current_capital.province_definition
+                to = scope:target_location.province_definition
+                culture = root.culture
+                amount = 0.050
+                months = 60
+                type = pop_type:peasants
+            }
             add_policy = policy:native_trade
             add_policy = policy:settled_colonies
 			c:NRC = {
