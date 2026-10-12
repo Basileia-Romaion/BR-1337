@@ -263,11 +263,13 @@ building_manager = {
 	tar_kiln = { tag = NRV level = 2 location = belle_isle }
 	bog_iron_smelter = { tag = NRV level = 1 location = belle_isle }
 	slave_market = { tag = NRV level = 1 location = belle_isle }
+	winery = { tag = NRV level = 1 location = belle_isle }
 	charcoal_maker = { tag = NRV level = 1 location = naskwotchu }
 	slave_market = { tag = NRV level = 1 location = stadacona }
 	salt_collector= { tag = NRV level = 1 location = stadacona }
 	tar_kiln = { tag = NRV level = 2 location = stadacona }
 	clay_pit = { tag = NRV level = 2 location = stadacona }
+	winery = { tag = NRV level = 1 location = stadacona }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = walnaypek }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = akilasiewakik }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = ahwendoe }
@@ -294,8 +296,12 @@ building_manager = {
 	fruit_orchard = { tag = NRC level = 1 location = ingonish }
 	br_vinland_fort = { tag = NRC level = 1 location = ingonish }
 	slave_market = { tag = NRC level = 1 location = ingonish }
+	salt_collector = { tag = NRC level = 1 location = ingonish }
+	lumber_mill = { tag = NRC level = 1 location = ingonish }
+	winery = { tag = NRC level = 1 location = ingonish }
 	br_vinland_outpost = { tag = NRC level = 1 location = menageesenog }
 	br_vinland_coastal_village = { tag = NRR level = 1 location = menageesenog }
+	rural_clothmaker = { tag = NRR level = 1 location = menageesenog }
 	br_vinland_coastal_village = { tag = NRR level = 2 location = kluskapewiktuk }
 	br_vinland_coastal_village = { tag = NRR level = 2 location = cheticamp }
 
