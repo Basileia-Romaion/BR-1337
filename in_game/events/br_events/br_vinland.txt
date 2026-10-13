@@ -199,9 +199,9 @@ northern_trade.3 = {
     dynamic_historical_event = {
         # Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
-        from = 1370.1.1    # the earliest date at which this event can fire
-        to = 1380.1.1        # the latest date at which this event can fire
-        monthly_chance = 1    # monthly chance to fire the event (10 = 10%)
+        from = 1377.1.1    # the earliest date at which this event can fire
+        to = 1400.1.1        # the latest date at which this event can fire
+        monthly_chance = 100    # monthly chance to fire the event (10 = 10%)
     }
     option = {
         name = northern_trade.3.a
@@ -301,7 +301,7 @@ southern_trade.2 = {
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
         from =1340.1.1	# the earliest date at which this event can fire
-        to = 1341.1.1 		# the latest date at which this event can fire
+        to = 1370.1.1 		# the latest date at which this event can fire
         monthly_chance = 100	# monthly chance to fire the event (10 = 10%)
     }
 
@@ -328,8 +328,8 @@ southern_trade.3 = {
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
         from =1380.1.1	# the earliest date at which this event can fire
-        to = 1390.1.1 		# the latest date at which this event can fire
-        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+        to = 1444.1.1 		# the latest date at which this event can fire
+        monthly_chance = 5	# monthly chance to fire the event (10 = 10%)
     }
 
     option = {
@@ -363,8 +363,8 @@ southern_trade.4 = {
     dynamic_historical_event = { 	# Used to make the event fire for the right tags
         tag = NRV # tag that this event can fire for, can provide multiple
         from =1380.1.1	# the earliest date at which this event can fire
-        to = 1390.1.1 		# the latest date at which this event can fire
-        monthly_chance = 1	# monthly chance to fire the event (10 = 10%)
+        to = 1444.1.1 		# the latest date at which this event can fire
+        monthly_chance = 5	# monthly chance to fire the event (10 = 10%)
     }
 
     option = {
