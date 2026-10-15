@@ -170,7 +170,10 @@ br_alandalus_reform = {
 	government = monarchy
     icon = the_jewel_of_alandalus_reform
 	potential = {
-		has_or_had_tag = ADU
+		OR = {
+			has_or_had_tag = GRA
+			has_or_had_tag = ADU
+		}
 	}
 	allow = {
 		has_embraced_institution = institution:legalism

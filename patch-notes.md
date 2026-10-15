@@ -1,4 +1,9 @@
 
+# Github
+git fetch --tags
+git tag --sort=-creatordate
+
+git log 0.27..HEAD --pretty=format:"- %s"
 
 # Patch Notes
 

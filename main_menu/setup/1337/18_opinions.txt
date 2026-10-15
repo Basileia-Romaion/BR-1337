@@ -3,14 +3,14 @@ diplomacy_manager = {
 
 
 	#Iberia
-	opinion = { first = ADU second = ARA type = left_empire }
-	opinion = { first = ADU second = CAS type = left_empire }
-	opinion = { first = ADU second = POR type = left_empire }
-	opinion = { first = ADU second = LON type = left_empire }
-	opinion = { first = ARA second = ADU type = border_aggression }
-	opinion = { first = CAS second = ADU type = border_aggression }
-	opinion = { first = POR second = ADU type = border_aggression }
-	opinion = { first = LON second = ADU type = border_aggression }
+	opinion = { first = GRA second = ARA type = left_empire }
+	opinion = { first = GRA second = CAS type = left_empire }
+	opinion = { first = GRA second = POR type = left_empire }
+	opinion = { first = GRA second = LON type = left_empire }
+	opinion = { first = ARA second = GRA type = border_aggression }
+	opinion = { first = CAS second = GRA type = border_aggression }
+	opinion = { first = POR second = GRA type = border_aggression }
+	opinion = { first = LON second = GRA type = border_aggression }
 	opinion = { first = TOU second = ARA type = opinion_military_aid }
 	opinion = { first = AQN second = LON type = opinion_military_aid }
 	opinion = { first = AQN second = NAV type = opinion_military_aid }
@@ -289,14 +289,14 @@ diplomacy_manager = {
 	opinion = { first = BYZ second = GLH type = opinion_traders_in_x }
 	opinion = { first = BYZ second = GLH type = opinion_protected_christian_minorities }
 	opinion = { first = BYZ second = MAM type = opinion_protected_christian_minorities }
-	opinion = { first = BYZ second = ADU type = opinion_protected_christian_minorities }
+	opinion = { first = BYZ second = GRA type = opinion_protected_christian_minorities }
 
 
 	#Maghreb
 	opinion = { first = TUN second = TLE type = border_aggression }
 	opinion = { first = TLE second = MOR type = border_aggression }
-	opinion = { first = ADU second = MOR type = opinion_good_relations }
-	opinion = { first = ADU second = TUN type = opinion_good_relations }
+	opinion = { first = GRA second = MOR type = opinion_good_relations }
+	opinion = { first = GRA second = TUN type = opinion_good_relations }
 	
 	#Indonesia
 	opinion = { first = SPN second = LAV type = opinion_good_relations }

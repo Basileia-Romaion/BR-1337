@@ -167,7 +167,10 @@ REPLACE_OR_CREATE:the_jewel_of_alandalus_reform = {
 	age = age_1_traditions
 	government = monarchy
 	potential = {
-		has_or_had_tag = ADU #Br edit
+		OR = {
+			has_or_had_tag = GRA			
+			has_or_had_tag = ADU #Br edit
+		}
 	}
 	allow = {
 		has_embraced_institution = institution:legalism

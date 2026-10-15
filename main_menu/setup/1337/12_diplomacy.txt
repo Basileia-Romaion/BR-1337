@@ -343,7 +343,7 @@ diplomacy_manager = {
     dependency = { first = TUN second = ZAB subject_type = vassal }
     dependency = { first = ZAB second = OGL subject_type = vassal }
     dependency = { first = TUN second = BIJ subject_type = vassal }
-    scripted_mutual = { first = ADU second = TUN type = alliance }
+    scripted_mutual = { first = GRA second = TUN type = alliance }
 
     #-------Germany-------
     dependency = { first = LOT second = MSB subject_type = vassal }

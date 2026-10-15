@@ -476,12 +476,14 @@ br_on_game_start = {
 			research_advance = advance_type:muslim_caravans
         }
 
-		c:ADU ?= {
+		c:GRA ?= {
+			trigger_event_silently = br_startup.2
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
 		}
+		
 		c:MAM ?= {
 			research_advance = advance_type:ledgers_double_checking
             research_advance = advance_type:power_projection_advance_1
