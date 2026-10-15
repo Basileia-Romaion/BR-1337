@@ -182,7 +182,10 @@
 		age = age_1_traditions
 		icon = hun_castle_warriors
 		potential = {
-			has_or_had_tag = LON
+			OR = {
+				has_or_had_tag = LON
+				has_or_had_tag = ATU
+			}
 		}
 		requires = feudalism_advance
 		fort_limit_modifier = 0.2
@@ -197,7 +200,10 @@
 		age = age_1_traditions
 		icon = hun_castle_warriors
 		potential = {
-			has_or_had_tag = LON
+			OR = {
+				has_or_had_tag = LON
+				has_or_had_tag = ATU
+			}
 		}
 		requires = br_asturias_fortress
 		discipline = 0.05

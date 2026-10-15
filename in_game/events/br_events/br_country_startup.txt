@@ -536,6 +536,7 @@ br_country_startup.2 = { #units added
 			}
 		}
 		c:CAS ?= {
+			#change_tag_cosmetic = { tag = ATU }
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights

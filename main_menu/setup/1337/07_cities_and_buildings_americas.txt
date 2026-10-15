@@ -242,6 +242,7 @@ building_manager = {
 	br_vinland_coastal_village = { tag = NRH level = 1 location = napaktok }
 	br_vinland_coastal_village = { tag = NRH level = 1 location = okak }
 	forest_village = { tag = NRH level = 1 location = koroc }
+	lumber_mill = { tag = NRH level = 2 location = navchak }
 
 	#--
 	br_vinland_fort = { tag = NRR level = 1 location = tikigaksuagusik }
@@ -250,6 +251,7 @@ building_manager = {
 	br_vinland_outpost = { tag = NRR level = 1 location = natsitok }
 	br_vinland_coastal_village = { tag = NRR level = 3 location = tessuialluk }
 	br_vinland_coastal_village = { tag = NRR level = 2 location = aivitok }
+	lumber_mill = { tag = NRR level = 2 location = tikigaksuagusik }
 
 
 	#--Vinland
@@ -260,10 +262,10 @@ building_manager = {
 	br_vinland_outpost = { tag = NRV level = 1 location = wolinak }
 
 	wharf = { tag = NRV level = 1 location = belle_isle }
-	tar_kiln = { tag = NRV level = 2 location = belle_isle }
-	bog_iron_smelter = { tag = NRV level = 1 location = belle_isle }
+	tar_kiln = { tag = NRV level = 3 location = belle_isle }
+	bog_iron_smelter = { tag = NRV level = 2 location = belle_isle }
 	slave_market = { tag = NRV level = 1 location = belle_isle }
-	winery = { tag = NRV level = 1 location = belle_isle }
+	winery = { tag = NRV level = 2 location = belle_isle }
 	charcoal_maker = { tag = NRV level = 1 location = naskwotchu }
 	slave_market = { tag = NRV level = 1 location = stadacona }
 	salt_collector= { tag = NRV level = 1 location = stadacona }
@@ -280,8 +282,8 @@ building_manager = {
 	br_vinland_coastal_village = { tag = NRV level = 1 location = mekapisk }
 	br_vinland_coastal_village = { tag = NRV level = 1 location = red_bay }
 	forest_village = { tag = NRV level = 1 location = wipetikil }
-	fruit_orchard = { tag = NRV level = 1 location = uashat }
-	fruit_orchard = { tag = NRV level = 1 location = stadacona }
+	fruit_orchard = { tag = NRV level = 3 location = uashat }
+	fruit_orchard = { tag = NRV level = 3 location = stadacona }
 
 	br_vinland_fort = { tag = NR1 level = 1 location = gananoque }
 	forest_village = { tag = NR1 level = 1 location = gananoque }
@@ -293,12 +295,13 @@ building_manager = {
 
 
 	wharf = { tag = NRC level = 1 location = ingonish }
-	fruit_orchard = { tag = NRC level = 1 location = ingonish }
+	fruit_orchard = { tag = NRC level = 2 location = ingonish }
 	br_vinland_fort = { tag = NRC level = 1 location = ingonish }
 	slave_market = { tag = NRC level = 1 location = ingonish }
 	salt_collector = { tag = NRC level = 1 location = ingonish }
-	lumber_mill = { tag = NRC level = 1 location = ingonish }
-	winery = { tag = NRC level = 1 location = ingonish }
+	lumber_mill = { tag = NRC level = 2 location = ingonish }
+	winery = { tag = NRC level = 2 location = ingonish }
+	clay_pit = { tag = NRV level = 2 location = ingonish }
 	br_vinland_outpost = { tag = NRC level = 1 location = menageesenog }
 	br_vinland_coastal_village = { tag = NRR level = 1 location = menageesenog }
 	rural_clothmaker = { tag = NRR level = 1 location = menageesenog }
@@ -372,11 +375,11 @@ building_manager = {
 	tribal_war_camp = { tag = IRO level = 1 location = tiotoren }
 
 	warrior_lodge = { tag = IRO level = 1 location = irondequoit }
-	clay_pit = { tag = IRO level = 1 location = irondequoit }
+	clay_pit = { tag = IRO level = 2 location = irondequoit }
 	lumber_mill = { tag = IRO level = 2 location = irondequoit }
 	warrior_lodge = { tag = IRO level = 1 location = canajoharie }
-	clay_pit = { tag = IRO level = 1 location = canajoharie }
-	lumber_mill = { tag = IRO level = 1 location = canajoharie }
+	clay_pit = { tag = IRO level = 2 location = canajoharie }
+	lumber_mill = { tag = IRO level = 2 location = canajoharie }
 	#--
 	
 	####---------- Tsenacommacah ----------####
@@ -425,6 +428,8 @@ building_manager = {
 	
 	# E2Y - Elysium South
 	forest_village = { tag = E2Y level = 1 location = anacostia }
+	clay_pit = { tag = E2Y level = 1 location = anacostia }
+	lumber_mill = { tag = E2Y level = 1 location = anacostia }
 	forest_village = { tag = E2Y level = 1 location = pamunkey }
 	fishing_village = { tag = E2Y level = 1 location = chesapeake }
 	fishing_village = { tag = E2Y level = 1 location = weyanock }
@@ -433,12 +438,21 @@ building_manager = {
 	parish_church = { tag = E2Y level = 1 location = nansemond }
 	parish_church = { tag = E2Y level = 1 location = kiskiack }
 	horse_breeders = { tag = E2Y level = 1 location = nansemond }
+	bog_iron_smelter = { tag = E2Y level = 1 location = nansemond }
 	
 	tribal_war_camp = { tag = E5Y level = 1 location = patawomeck }
 	forest_village = { tag = E5Y level = 1 location = patawomeck }
 	market_village = { tag = E5Y level = 1 location = patawomeck }
 
-	fiber_crops_farm = { tag = K1K level = 1 location = roanoke }
+	fiber_crops_farm = { tag = E4Y level = 1 location = roanoke }
+	bog_iron_smelter = { tag = E4Y level = 1 location = roanoke }
+	lumber_mill = { tag = E4Y level = 1 location = roanoke }
+	clay_pit = { tag = E4Y level = 1 location = roanoke }
+
+	forest_village = { tag = E4Y level = 1 location = coree }
+	market_village = { tag = E4Y level = 1 location = coree }
+	clay_pit = { tag = E4Y level = 1 location = coree }
+	bog_iron_smelter = { tag = E4Y level = 1 location = coree }
 
 	#kykladia
 	pirate_tavern = { tag = K1K level = 1 location = abacoa }
@@ -448,7 +462,8 @@ building_manager = {
 	fruit_orchard = { tag = K1K level = 1 location = abacoa }
 	fiber_crops_farm = { tag = K1K level = 1 location = abacoa }
 	clay_pit = { tag = K1K level = 1 location = abacoa }
-	lumber_mill = { tag = K1K level = 1 location = abacoa }
+	lumber_mill = { tag = K1K level = 2 location = abacoa }
+	bog_iron_smelter = { tag = K1K level = 1 location = abacoa }
 	#market_village = { tag = K1K level = 1 location = abacoa }
 	#fishing_village = { tag = K1K level = 1 location = abacoa }
 
