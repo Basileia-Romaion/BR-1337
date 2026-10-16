@@ -1,5 +1,4 @@
 ﻿REPLACE_OR_CREATE:HRE_f = {
-
 	level = 4
 	required_locations_fraction = 0.75
 	rule = plausible
@@ -63,6 +62,86 @@
 		tolmin gorizia 
 	}
 	form_effect = {
+	}
+}
+
+REPLACE_OR_CREATE:HRE_f_french = { #relaxed requirements for these tags does not force complete consolidation 
+	level = 4
+	required_locations_fraction = 0.35
+	rule = plausible
+	potential = {
+		OR = {
+			has_or_had_tag = FRA
+			has_or_had_tag = LOT
+		}
+	}
+
+	allow = {
+		owns = location:paris
+		owns = location:aachen
+		owns = location:metz
+		country_rank = country_rank:rank_empire
+
+		OR = {
+			has_or_had_tag = LOT
+			NOT = { country_exists = c:LOT }
+		}
+		OR = {
+			has_or_had_tag = FRA
+			NOT = { country_exists = c:FRA }
+		}
+	}
+	
+	name = HRE
+	flag = HRE
+	adjective = HRE_ADJ
+	tag = HRE
+	color = map_HRE
+	
+	regions = {
+		france_region
+	}
+	areas = {
+		#North Germany
+		brabant_area friesland_area holland_area wallonia_area rhineland_area
+		hesse_area westphalia_area flanders_area
+		# lower_saxony_area upper_saxony_area mecklenburg_area brandenburg_area holstein_area
+		#Italy
+		liguria_area lombardy_area piemonte_area  
+		#South Germany 
+		austria_area upper_austria_area salzburg_area styria_area alsace_area
+		carinthia_area tirol_area central_switzerland_area eastern_switzerland_area
+		western_switzerland_area upper_rhine_area swabia_area franconia_area bavaria_area
+	}
+	provinces = { 
+		#Emilia Romagna
+		piacenza_province parma_province reggioem_province modena_province
+		#Tuscany
+		florence_province grosseto_province lucca_province pisa_province siena_province
+		#Veneto
+		belluno_province friuli_province verona_province vicenza_province
+		#Slovenia
+		lower_styria_province lower_carniola_province upper_carniola_province 
+	}
+	locations = { 
+		aalst hulst sint_niklaas
+		cambrai 
+		mouzon
+		clermont_en_argonne saint_mihiel 
+		auxonne louhans
+		trevoux villars
+		apt forcalquier orange
+		arezzo cortona
+		modigliana
+		padova este monselice
+		pazin 
+		rijeka
+		# slawno slupsk miastko nowoszczecin drawsko choszczno
+		tolmin gorizia 
+	}
+	form_effect = {
+		unlock_government_reform_effect = { type = holy_imperial_monarchy_reform }
+		add_reform = government_reform:holy_imperial_monarchy_reform
 	}
 }
 
