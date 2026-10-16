@@ -68,7 +68,7 @@
 REPLACE_OR_CREATE:HRE_f_french = { #relaxed requirements for these tags does not force complete consolidation 
 	level = 4
 	required_locations_fraction = 0.35
-	rule = plausible
+	rule = historical
 	potential = {
 		OR = {
 			has_or_had_tag = FRA
@@ -144,6 +144,32 @@ REPLACE_OR_CREATE:HRE_f_french = { #relaxed requirements for these tags does not
 		add_reform = government_reform:holy_imperial_monarchy_reform
 	}
 }
+
+REPLACE_OR_CREATE:ADU_f_GRA = { #relaxed requirement so I can tag switch during startup
+	level = 3
+	required_locations_fraction = 0.3
+	rule = historical
+	
+	potential = {
+		culture = culture:andalusi
+	}
+	allow = {
+		owns = location:cordoba
+	}
+	
+	name = ADU
+	flag = ADU
+	adjective = ADU_ADJ
+	tag = ADU
+	color = map_ADU
+
+	regions = {
+		iberia_region
+	}
+	form_effect = {
+	}
+}
+
 
 REPLACE_OR_CREATE:NSE_f = {
 	level = 4
