@@ -17,12 +17,12 @@ diplomacy_manager = {
 
 
 	#Papal
-	opinion = { first = BNV second = PAP type = opinion_military_aid }
-	opinion = { first = PAP second = BNV type = opinion_military_aid }
+	opinion = { first = NAP second = PAP type = opinion_military_aid }
+	opinion = { first = PAP second = NAP type = opinion_military_aid }
 	opinion = { first = PAP second = BYZ type = western_schism_opposing_side }
 	opinion = { first = BYZ second = PAP type = western_schism_opposing_side }
 	#opinion = { first = LOT second = BYZ type = opressing_catholic_population }
-	opinion = { first = BNV second = BYZ type = claimed_italy }
+	opinion = { first = NAP second = BYZ type = claimed_italy }
 	opinion = { first = N1P second = BYZ type = claimed_italy }
 	opinion = { first = N2P second = BYZ type = claimed_italy }
 

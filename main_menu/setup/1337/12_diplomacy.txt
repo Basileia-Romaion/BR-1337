@@ -274,7 +274,7 @@ diplomacy_manager = {
     dependency = { first = SPL second = MTA subject_type = vassal }
     dependency = { first = SPL second = PES subject_type = vassal }
     dependency = { first = SPL second = GUB subject_type = vassal }
-    scripted_mutual = { first = PAP second = BNV type = alliance }
+    scripted_mutual = { first = PAP second = NAP type = alliance }
     scripted_oneway = { first = PAP second = KNI type = military_sponsorship }
     scripted_oneway = { first = TOU second = KNI type = military_sponsorship }
     scripted_oneway = { first = PRO second = KNI type = military_sponsorship }
@@ -299,8 +299,8 @@ diplomacy_manager = {
     dependency = { first = FLO second = CDC subject_type = vassal }
     dependency = { first = FLO second = VLT subject_type = vassal }
 
-	dependency = { first = BNV second = N2P subject_type = vassal }
-    dependency = { first = BNV second = N1P subject_type = vassal }
+	dependency = { first = NAP second = N2P subject_type = vassal }
+    dependency = { first = NAP second = N1P subject_type = vassal }
     dependency = { first = N1P second = N4P subject_type = vassal }
     dependency = { first = S2C second = S5C subject_type = vassal }
 

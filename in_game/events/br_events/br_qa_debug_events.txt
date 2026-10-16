@@ -630,6 +630,9 @@ br_console_only_events.6 = { #RUM Kingdom
 			to = scope:target_location
 		}
 	}
+	option = {
+		form_country = formable_country:RUM_f
+	}
 }
 
 br_console_only_events.7 = { #culture changes
@@ -1089,5 +1092,38 @@ br_console_only_events.17 = {
 		name = br_console_only_events.17.a
 
 
+	}
+}
+
+br_console_only_events.18 = { #RUM Kingdom
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+	}
+
+	option = {
+		change_tag_cosmetic = { tag = RUM }
+		#form_country = formable_country:RUM_f
+	}
+}
+
+br_console_only_events.19 = { #RUM Kingdom
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+	}
+
+	option = {
+		form_country = formable_country:IRA_f
 	}
 }

@@ -10800,32 +10800,6 @@ countries = {
 		capital = macerata
 	}
 
-	#Naples
-	NAP = {
-		#our_cores_conquered_by_others = {
-			#aquila atri celano cittaducale csantangelo sulmona teramo chieti lanciano vasto bojano
-			#isernia larino trivento altamura andria bari barletta monopoli bovino foggia lucera
-			#manfredonia rotondo sansevero brindisi francavilla gallipoliita lecce martinafr taranto
-			#acerenza lagonegro matera melfi montepeloso potenza santarcangelo catanzaro cotrone gerace
-			#monteleone nicastro palmi reggiocal cassano castrovillari cosenza scalea paola rossano caserta
-			#gaeta naples nola piedimonte sora venafro campagna salacon salerno vallo ariano avellino santangelo
-		#}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
-		government = {
-			type = monarchy
-			ruler = random
-		}
-		capital = naples
-		country_rank = rank_kingdom
-	}
-
 	#Provence (Union with Naples)
 	PRO = {
 		own_control_core = {
@@ -53859,7 +53833,7 @@ countries = {
 	
  #---------------------------- BR Added Tags ----------------------------
   #Italian
-	BNV = {
+	NAP = {
 		own_control_core = {
 			lanciano vasto bojano
 			melfi benevento

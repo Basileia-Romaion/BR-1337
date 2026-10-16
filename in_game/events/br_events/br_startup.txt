@@ -401,4 +401,22 @@ br_startup.2 = {
 	}
 }
 
+br_startup.3 = {
+	type = country_event
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	outcome = neutral
+	trigger = {
+		tag = NAP
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		change_tag_cosmetic = { tag = BNV }
+		#set_country_rank_effect = { rank = country_rank:rank_duchy }
+		#set_capital = location:benevento
+		change_country_color = map_naples
+	}
 }

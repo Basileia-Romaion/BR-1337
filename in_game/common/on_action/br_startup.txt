@@ -496,6 +496,10 @@ br_on_game_start = {
 			research_advance = advance_type:indian_sea_trade
 		}
 
+		c:NAP ?= {
+			trigger_event_silently = br_startup.3
+		}
+
 
 	#Starting roads
 	 

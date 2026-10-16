@@ -1335,7 +1335,7 @@ br_country_startup.7 = {
                 }
             }
 		}
-		c:BNV ?= {
+		c:NAP ?= {
 			every_owned_location = {
 				limit = {
 					OR = {
