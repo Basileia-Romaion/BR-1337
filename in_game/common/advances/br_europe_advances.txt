@@ -184,17 +184,15 @@
 		potential = {
 			OR = {
 				has_or_had_tag = LON
+				has_or_had_tag = CAS
 				has_or_had_tag = ATU
+				culture = culture:leonese
 			}
 		}
 		requires = feudalism_advance
-		fort_limit_modifier = 0.2
-		fort_maintenance_efficiency = 0.2
-		global_garrison_size_modifier = 0.2
-		global_hostile_attrition = 0.1
-		mountains_proximity_impact = -0.1
-		hills_proximity_impact = -0.1
-		plateau_proximity_impact = -0.1
+		fort_limit_modifier = 0.1
+		fort_maintenance_efficiency = 0.1
+		global_garrison_size_modifier = 0.1
 	}
 	br_asturias_military = {
 		age = age_1_traditions
@@ -202,14 +200,15 @@
 		potential = {
 			OR = {
 				has_or_had_tag = LON
+				has_or_had_tag = CAS
 				has_or_had_tag = ATU
+				culture = culture:leonese
 			}
 		}
 		requires = br_asturias_fortress
-		discipline = 0.05
-		nobles_estate_levy_size = 0.25
+		discipline = 0.02
+		nobles_estate_levy_size = 0.1
 		levy_maintenance_modifier = -0.1
-		army_heavy_cavalry_power = 0.1
 		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
 
@@ -219,6 +218,8 @@
 		potential = {
 			OR = {
 				has_or_had_tag = LON
+				has_or_had_tag = CAS
+				has_or_had_tag = ATU
 				culture = culture:leonese
 			}
 		}
@@ -232,10 +233,12 @@
 		potential = {
 			OR = {
 				has_or_had_tag = LON
+				has_or_had_tag = CAS
+				has_or_had_tag = ATU
 				culture = culture:leonese
 			}
 		}
-		land_morale_modifier = 0.15
+		land_morale_modifier = 0.1
 		requires = feudalism_advance
 	}
 	br_asturias_castilian_navy = {

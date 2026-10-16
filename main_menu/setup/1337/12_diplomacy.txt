@@ -317,7 +317,7 @@ diplomacy_manager = {
     scripted_oneway = { first = ARA second = KNI type = guarantee }
     scripted_oneway = { first = GEN second = KNI type = guarantee }
 	
-    dependency = { first = CAS second = LON subject_type = dominion }
+    #dependency = { first = CAS second = LON subject_type = dominion }
 	dependency = { first = LON second = AD0 subject_type = tributary }
     dependency = { first = ARA second = AD1 subject_type = tributary }
 	
