@@ -1449,7 +1449,8 @@ br_country_startup.7 = {
 				change_max_raw_material_workers = 1
 			}
 		}
-		c:CRH ?= {
+		c:HAB ?= {
+			change_tag_cosmetic = { tag = CRH }
 			every_owned_location = {
 				limit = {
 					OR = {

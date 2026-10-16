@@ -216,8 +216,8 @@ diplomacy_manager = {
 	opinion = { first = POL second = BOH type = opinion_declared_war }
 	opinion = { first = LOT second = BOH type = opinion_declared_war }
 
-	opinion = { first = HUN second = CRH type = opinion_good_relations }
-	opinion = { first = CRH second = HUN type = opinion_good_relations }
+	opinion = { first = HUN second = HAB type = opinion_good_relations }
+	opinion = { first = HAB second = HUN type = opinion_good_relations }
 	opinion = { first = HUN second = POL type = opinion_good_relations }
 	opinion = { first = POL second = HUN type = opinion_good_relations }
 	opinion = { first = HUN second = BUL type = opinion_good_relations }

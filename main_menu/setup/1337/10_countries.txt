@@ -35002,7 +35002,7 @@ countries = {
 		capital = graz
 	}
 
-	CRH = {	#Carinthia
+	HAB = {	#Carinthia
 		own_control_core = {
 			klagenfurt st_veit steinfeld volkermarkt #Duchy of Carinthia
 			ljubljana kranj novo_mesto postojna #Duchy of Carniola
@@ -35132,32 +35132,32 @@ countries = {
 		dynasty = wittelsbach_dynasty
 	}
 
-	HAB = {	#Revolter Tag
-		our_cores_conquered_by_others = {
-			vienna amstetten austria_baden bruck_leitha ganserndorf hollabrunn horn korneuburg krems lilienfeld scheibbs melk mistelbach pitten tulln waidhofen_an_der_thaya wiener_neustadt zwettl  #Duchy of Lower Austria
-			klagenfurt st_veit steinfeld volkermarkt #Duchy of Carinthia
-			ljubljana kranj novo_mesto postojna #Duchy of Carniola
-			graz feldbach furstenfeld judenburg kapfenberg leoben liezen maribor murau murzzuschlag rottenmann schladming slovenj_gradec voitsberg weiz #Duchy of Styria
-			linz bad_ischl freistadt gmunden kirchdorf perg rohrbach st_georgen steyr wels #Duchy of Upper Austria
-		}
-
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		include = "feudal_europe"
-		include = "expl_northern_europe"
-		include = "german_principality"
-		country_rank = rank_duchy
-		
-		
-		tolerated_cultures = {
-			swabian
-			upper_palatine
-		}
-
-		capital = munich
-		dynasty = wittelsbach_dynasty
-	}
+	#HAB = {	#Revolter Tag
+		#our_cores_conquered_by_others = {
+			#vienna amstetten austria_baden bruck_leitha ganserndorf hollabrunn horn korneuburg krems lilienfeld scheibbs melk mistelbach pitten tulln waidhofen_an_der_thaya wiener_neustadt zwettl  #Duchy of Lower Austria
+			#klagenfurt st_veit steinfeld volkermarkt #Duchy of Carinthia
+			#ljubljana kranj novo_mesto postojna #Duchy of Carniola
+			#graz feldbach furstenfeld judenburg kapfenberg leoben liezen maribor murau murzzuschlag rottenmann schladming slovenj_gradec voitsberg weiz #Duchy of Styria
+			#linz bad_ischl freistadt gmunden kirchdorf perg rohrbach st_georgen steyr wels #Duchy of Upper Austria
+		#}
+#
+		#starting_technology_level = 3
+		#include = "expl_western_europe"
+		#include = "catholic_monarchy_no_coast"
+		#include = "feudal_europe"
+		#include = "expl_northern_europe"
+		#include = "german_principality"
+		#country_rank = rank_duchy
+#		
+#		
+		#tolerated_cultures = {
+			#swabian
+			#upper_palatine
+		#}
+#
+		#capital = munich
+		#dynasty = wittelsbach_dynasty
+	#}
 
 	EIC = {	#Eichst�tt
 		own_control_core = {

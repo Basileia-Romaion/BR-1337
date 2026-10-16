@@ -381,10 +381,10 @@ diplomacy_manager = {
 
     dependency = { first = UBV second = GRF subject_type = vassal }
 
-    dependency = { first = CRH second = CLI subject_type = vassal }
-    dependency = { first = CRH second = GOR subject_type = vassal }
-    dependency = { first = CRH second = ORT subject_type = vassal }
-    dependency = { first = CRH second = GRK subject_type = vassal }
+    dependency = { first = HAB second = CLI subject_type = vassal }
+    dependency = { first = HAB second = GOR subject_type = vassal }
+    dependency = { first = HAB second = ORT subject_type = vassal }
+    dependency = { first = HAB second = GRK subject_type = vassal }
 
     #Rhine
     dependency = { first = HES second = ZIG subject_type = vassal }
