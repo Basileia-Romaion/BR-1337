@@ -1451,6 +1451,7 @@ br_country_startup.7 = {
 		}
 		c:HAB ?= {
 			change_tag_cosmetic = { tag = CRH }
+			change_country_color = map_austrian
 			every_owned_location = {
 				limit = {
 					OR = {
