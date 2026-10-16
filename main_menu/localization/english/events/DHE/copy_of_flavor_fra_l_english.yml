@@ -5,9 +5,7 @@
  copy_of_flavor_fra.2.desc: "Once one of the many [ShowDynastyName('capet_dynasty')] realms, the [ShowDynastyNameWithNoTooltip('capet_dynasty')] rule over [GetCountry('NAP').GetName] has long since ended and with the current rule of [ruler_nap.GetName], the [GetCountry('NAP').GetAdjectiveWithNoTooltip] [GetCountry('NAP').GetFlavorRank] is not without enemies. While [ruler_fra.GetName] [ShowDynastyNameWithNoTooltip('capet_dynasty')] roots allow [ruler_fra.GetHimHer] to claim the [GetCountry('NAP').GetLongNameWithNoTooltip] through past dynastic ties, it would remain rather weak. However, the unpopular rule of [ruler_nap.GetShortNameWithNoTooltip] presents the opportunity for the [GetCountry('NAP').GetFlavorRank] to be reclaimed."
  copy_of_flavor_fra.2.historical_info: "In 1442 René of Anjou lost control of the Kingdom of Naples to the Trastámara dynasty. Though he would never reacquire the crown himself, René continued to style himself King of Naples throughout his life. Louis XII would later use René's claim to invade Naples and establish a personal union. Louis XII's invasion however, would lead to the eventual Italian Wars."
  copy_of_flavor_fra.2.a: "Let us claim what is rightfully ours!"
- fra_claimed_naples: "Claimed Naples"
  copy_of_flavor_fra.2.b: "Let us drop our claims for good!"
- fra_did_not_claim_naples: "Did Not Claim Naples"
 
  copy_of_flavor_fra.3.title: "Seizure of the Guilds"
  copy_of_flavor_fra.3.entry: "$copy_of_flavor_fra.3.title$"
@@ -20,7 +18,6 @@
  copy_of_flavor_fra.4.desc: "The growing influence of Cardinal [target_character.GetName] has deeply angered the [ShowReligionAdjective('lutheran')] population in [ShowProvinceDefinitionName('bearn_bigorre_province')]. Should [target_character.GetShortNameWithNoTooltip]'s influence continue to grow, it risks relations with other [ShowReligionAdjectiveWithNoTooltip('lutheran')] communities in [ROOT.GetCountry.GetName] reaching a rebellious boiling point."
  copy_of_flavor_fra.4.historical_info: "In the reign of King Louis XIII, Cardinal de Richelieu decided to suppress Protestant political privileges. An uprising (1621-22) against the introduction of Catholicism in Béarn was put down by de Richelieu, and the Protestants lost all the strongholds given to them under the Edict of Nantes, except Montauban and La Rochelle."
  copy_of_flavor_fra.4.a: "Concerning."
- richelieu_may_cause_more_revolts: "[target_character.GetName] hostile policies against [ShowReligionAdjective('lutheran')] may grow more to seek a open revolt against [ROOT.GetCountry.GetName]"
   
  copy_of_flavor_fra.5.title: "Cardinal de Richelieu"
  copy_of_flavor_fra.5.entry: "$copy_of_flavor_fra.5.title$"
@@ -32,7 +29,6 @@
  copy_of_flavor_fra.6.entry: "$copy_of_flavor_fra.6.title$"
  copy_of_flavor_fra.6.desc: "Throughout the royal court, Cardinal [target_character.GetName] is known by all for his rather refined and elegant taste in the court's cuisine. Seeking to further improve on the court's delicacy, [target_character.GetShortNameWithNoTooltip] embarked on a personal task to better improve the utensils used by the various royal chefs. Now after intense and rigorous research, [target_character.GetShortNameWithNoTooltip] has unveiled his designs of the table knife, which features a curved blade and pointed tip, a utensil that [target_character.GetShortNameWithNoTooltip] insists would make it perfect for slicing through vegetables and meats. Such an invention would make the delicacies of the court all the more enjoyable."
  copy_of_flavor_fra.6.a: "This is high culture!"
- table_knife_court_flavor: "The [ROOT.GetCountry.GetAdjective] court will now enjoy more elegant meals!"
 
  copy_of_flavor_fra.7.title: "[fronde_uprising.GetNameWithNoTooltip] in [ROOT.GetCountry.GetNameWithNoTooltip]"
  copy_of_flavor_fra.7.entry: "The Fronde in France"
@@ -41,8 +37,6 @@
  copy_of_flavor_fra.7.a: "L'État, c'est moi."
  copy_of_flavor_fra.7.b: "Appease them, we cannot risk a conflict with the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]!"
  copy_of_flavor_fra.7.b.entry: "Appease them, we cannot risk a conflict with the $nobles_estate$!"
- fronde_uprising: "The Fronde"
- fronde_joining: "All [ShowPopTypeName('nobles')] [pops|e] in [ShowRegionName('france_region')] will join [fronde_uprising.GetName]"
 
  copy_of_flavor_fra.8.title: "Academie Française"
  copy_of_flavor_fra.8.entry: "$copy_of_flavor_fra.8.title$"
@@ -71,13 +65,8 @@
  copy_of_flavor_fra.11.desc: "Seeking to establish [ROOT.GetCountry.GetAdjective] hegemony in [ShowContinentNameWithNoTooltip('europe')] and reinforce control over disputed territories with the [GetUniqueInternationalOrganization('hre').GetName], [fra_ruler.GetName] has ordered the creation of the #italic Chambers of Reunion#! courts in these contested areas. The goal of these courts is to further enable the territorial ambitions of [fra_ruler.GetShortNameWithNoTooltip], while further entrenching [ROOT.GetCountry.GetAdjectiveWithNoTooltip] rule. Without a doubt, [fra_ruler.GetShortNameWithNoTooltip]'s aggressive policies are likely to earn the ire of our neighbors, though pursuing expansion into these contested regions will prove far easier."
  copy_of_flavor_fra.11.historical_info: "Aiming at European hegemony and the rounding of the French frontiers in the North and in the East (to the Rhine), Louis XIV had established the Chambers of Reunion, courts that advanced claims to Imperial lands. These expansionist policies were at first tolerated by France powerless neighbors though would later see the anti-French Alliance, the League of Augsburg formed in 1689 to counteract Louis XIV's aggression."
  copy_of_flavor_fra.11.a: "Formalize the creation of the courts!"
- claims_through_chambers_of_union: "Claims Through Chambers of Union"
  copy_of_flavor_fra.11.b: "Let the matter fall."
- did_not_form_chambers_of_union: "Rescind the Chambers of Reunions"
- did_not_form_chambers_of_union_antagonism: "$did_not_form_chambers_of_union$"
- chamber_of_union_claims: "[ROOT.GetCountry.GetName] will gain claims on all neighboring locations that are dominant in the [GetCountry('LOT').GetAdjective] language"
- improve_relations_with_neighbors_with_french_provinces: "[ROOT.GetCountry.GetName] will gain increased opinion with all neighbors that have locations that are dominant in the [GetCountry('LOT').GetAdjective] language"
- 
+
  copy_of_flavor_fra.12.title: "Plight of the [ShowReligionAdjectiveWithNoTooltip('lutheran')]s"
  copy_of_flavor_fra.12.entry: "Plight of the Lutherans"
  copy_of_flavor_fra.12.desc: "While the [ShowReligionAdjective('lutheran')] population has remained rather small to the larger [ShowReligionAdjective('calvinist')] population in [ROOT.GetCountry.GetName], the followers of the faith were one of the many religious minorities in [ROOT.GetCountry.GetNameWithNoTooltip] that were protected under the [ShowPolicyName('edict_of_nantes')]. However, with the revocation of the edict by [fra_ruler.GetName], many [ShowReligionAdjective('lutheran')]s have joined with their Huguenot kin and fled [ROOT.GetCountry.GetName] in fear of persecution."
@@ -114,9 +103,6 @@
  copy_of_flavor_fra.17.historical_info: "Turgot's #italic Six Edicts#! eliminated the forced labor system of building roads, dissolved the guild system, lifted all sorts of tariffs and foreign trade controls, and implemented a single tax on landowners."
  copy_of_flavor_fra.17.a: "Allow [target_character.GetLastNameWithNoTooltip] to enact the Reforms."
  copy_of_flavor_fra.17.a.entry: "Allow him to enact the Reforms."
- STATIC_MODIFIER_NAME_turgots_economic_reforms: "Turgot's Economic Reforms"
- STATIC_MODIFIER_DESC_turgots_economic_reforms: "The #italic Six Edicts#! of Turgot were a series of economic reforms implemented by [GetCountry('LOT').GetAdjectiveWithNoTooltip] finance minister Anne Robert Jacques Turgot in the mid-18th century. These reforms aimed to modernize and streamline the [GetCountry('LOT').GetAdjectiveWithNoTooltip] economy, and to reduce the influence of special interest groups and privileged classes."
- copy_of_flavor_fra.17.b: "Block the Reforms!"
  
  copy_of_flavor_fra.18.title: "[target_character.GetLastNameWithNoTooltip] and the State's Budget"
  copy_of_flavor_fra.18.entry: "Necker announces the Budget Deficit"
@@ -124,21 +110,14 @@
  copy_of_flavor_fra.18.a: "Remove [target_character.GetShortNameWithNoTooltip] from his post."
  copy_of_flavor_fra.18.a.entry: "Remove him from his post."
  copy_of_flavor_fra.18.b: "Encourage his excellent work."
- STATIC_MODIFIER_NAME_necker_reforms: "Necker Reforms"
- STATIC_MODIFIER_DESC_necker_reforms: "Necker's reforms are a series of economic and financial reforms implemented by Swiss banker and Minister of Finance Jacques Necker."
- necker_resigns: "[target_character.GetName] will be forced to resign and retire from public life."
- copy_of_flavor_fra.18.historical_info: "Jacques Necker was a Minister of Finance, and later the Chief Minister for Louis XVI. Necker gained recognition for publishing the #italic Compte Rendu#! in 1781 which was the first case of the French national budget being made available to the public. His release of the budget would lead to his dismissal months later, before being recalled by Louis XVI in 1789 to serve as Chief Minister."
- 
+
  
  copy_of_flavor_fra.19.title: "The Eden Agreement"
  copy_of_flavor_fra.19.entry: "$copy_of_flavor_fra.19.title$"
  copy_of_flavor_fra.19.desc: "Negotiators at the request of [target_character.GetName] of [GetCountry('ENG').GetName] have arrived to the [ROOT.GetCountry.GetAdjective] court in hopes of signing a new commercial treaty. While relations between [GetCountry('ENG').GetNameWithNoTooltip] and [ROOT.GetCountry.GetNameWithNoTooltip] have always remained tense, [target_character.GetShortNameWithNoTooltip] has offered a path to reconcile ties between the two states with the proposal of the #italic Eden Treaty#!.\n\nShould the court agree, [GetCountry('ENG').GetNameWithNoTooltip] and [ROOT.GetCountry.GetNameWithNoTooltip] will enter a closer commercial relationship that would see trade relations deepen. Members of the court have however offered skepticism as the treaty could be a ploy to make [GetCountry('ENG').GetAdjectiveWithNoTooltip] trade influence more dominant."
  copy_of_flavor_fra.19.historical_info: "In 1786, William Eden signed an important commercial agreement, the Eden Treaty, with France. It was in keeping with the argument made by the economist Adam Smith in his #italic The Wealth of Nations#! (1776) that England should be less economically dependent on trade with America and become more adventurous in exploring trading opportunities in continental Europe."
  copy_of_flavor_fra.19.a: "Agree to the treaty."
- the_eden_agreement: "The Eden Agreement"
  copy_of_flavor_fra.19.b: "Refuse this one-sided treaty!"
- refusal_of_the_eden_agreement: "Refusal of the Eden Agreement"
- 
  
  copy_of_flavor_fra.20.title: "[target_artist.GetLastNameWithNoTooltip] Publishes #italic The Social Contract#!"
  copy_of_flavor_fra.20.entry: "Rousseau Publishes 'The Social Contract'"
@@ -167,7 +146,6 @@
  copy_of_flavor_fra.24.desc: "[target_character.GetName] was dispatched by a [ROOT.GetCountry.GetAdjective] noble who had been given the privilege to establish a fur trading company by [fra_ruler.GetName]. During his travels [target_character.GetShortNameWithNoTooltip] made contact and befriended the [ShowLanguageName('wendat_language')] Indians. The time spent with the [ShowLanguageNameWithNoTooltip('wendat_language')] Indians exploring the area has left potential for [ROOT.GetCountry.GetNameWithNoTooltip] to form cordial relations in these lands, although the neighboring [ShowCultureGroupName('haudenosaunee_group')] may prove more fruitful allies."
  copy_of_flavor_fra.24.a: "Let us befriend the [ShowLanguageNameWithNoTooltip('wendat_language')]."
  copy_of_flavor_fra.24.b: "Let us befriend the [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')]."
- samuel_de_champlain: "Befriended by Samuel de Champlain"
 
  copy_of_flavor_fra.25.title: "A Dazzling Display of Power"
  copy_of_flavor_fra.25.desc_common: "has masterminded a rather expensive but effective proposal that would see the wealth and power of [ROOT.GetCountry.GetName] displayed whilst also improving relations with [target_root_country.GetNameWithNoTooltip].\n\nA meeting of the two rulers would take place in [summit_location.GetName], near the [target_root_country.GetAdjectiveWithNoTooltip] border, with elaborate arrangements being made to accommodate them both.\n\nTents weaved with gold threads and the erection of a temporary palace are some of the ideas being considered."
@@ -230,9 +208,6 @@
  copy_of_flavor_fra.1015.a: "Call upon the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]!"
  copy_of_flavor_fra.1015.a.entry: "Call upon the $nobles_estate$!"
  copy_of_flavor_fra.1015.b: "We need no assistance."
- jacquerie_revolt: "The Jacquerie"
- jacquerie_revolt_warning: "Approximately #Y [ROOT.GetVariable('jacquerie_revolt_total_num_pop_variable').GetValue|V0]K#! [pops|e] from [ROOT.GetVariable('jacquerie_revolt_total_num_provinces_variable').GetValue] [provinces|e] will join the [jacquerie_revolt.GetName]\n"
- based_on_our_crown_power_tt: "Based on our [crown_power|e]:"
 
  copy_of_flavor_fra.1016.t: "Ordinance of Normandy"
  copy_of_flavor_fra.1016.entry: "$copy_of_flavor_fra.1016.t$"
@@ -307,7 +282,6 @@
  copy_of_flavor_fra.1123.b: "Enact a temporary pause on the Fouage."
  copy_of_flavor_fra.1123.c: "Abolish the tax by any means necessary!"
  copy_of_flavor_fra.1123.historical_info: "On his deathbed, Charles (1380) ordered the repeal of the Fouage tax alongside other taxes raised during the Hundred years war under his reign. The state however, having become increasingly reliant on the Fouage tax, would reinstate the tax in the months following Charles' death and would lead to several new tax revolts across France."
- variable_imposed_fouage_tax_tt: "The Fouage Tax has been Imposed"
 
  copy_of_flavor_fra.1122.title: "The Harelle and Maillotin Revolts"
  copy_of_flavor_fra.1122.entry: "$copy_of_flavor_fra.1122.title$"
@@ -333,10 +307,6 @@
  copy_of_flavor_fra.1133.a.entry: "$name_stephen.french_language$ will pay in time for what he has done!"
  copy_of_flavor_fra.1133.b: "[SCOPE.sCharacter('etienne_marcel').GetShortNameWithNoTooltip] and his supporters must be handled now."
  copy_of_flavor_fra.1133.b.entry: "$name_stephen.french_language$ and his supporters must be handled now."
- tooltip_marcel_1: "Marcel assassination of two Marshals of noble bearing has cost his significant support amongst the [GetCountry('LOT').GetGovernment.GetEstateName('nobles_estate')] and [GetCountry('LOT').GetGovernment.GetEstateName('clergy_estate')]. Any further actions he takes may be his own undoing."
- tooltip_marcel_2: " Attempting to strike now may deal with Marcel once and for all, but his support amongst the [GetCountry('LOT').GetGovernment.GetEstateName('burghers_estate')] is still rather influential, and will further worsen relations if he is killed."
- tooltip_marcel_3: "Guards will be sent to assassinate [SCOPE.sCharacter('etienne_marcel').GetNameWithNoTooltip]."
- flavor_fra_hyw.historical_info: "Following worsening relations between the Dauphin Charles and Étienne Marcel, the Provost would take the opportunity following the murder of a citizen to march a Mob into the royal palace in Paris. While the Provost did not take any actions towards capturing the King, he instead executed the marshals Jean de Conflans and Robert de Clermont before the Dauphin. While his actions horrified and made the Dauphin appear weak, it also would mark the quick decline of Marcel's influence as members of the nobles became furious with the murder of the two marshals."
 
  copy_of_flavor_fra.1134.title: "Death of [etienne_marcel.GetNameWithNoTooltip]"
  copy_of_flavor_fra.1134.entry: "Death of $name_stephen.french_language$ $Marcel$"
@@ -346,8 +316,6 @@
  copy_of_flavor_fra.1134.b: "Any agreements with him are now null and void."
  copy_of_flavor_fra.1134.c: "[etienne_marcel.GetLastNameWithNoTooltip] may be dead, but his influential legacy remains for now."
  copy_of_flavor_fra.1134.c.entry: "$Marcel$ may be dead, but his influential legacy remains for now."
- variable_marcel_executed_by_crown_tt: "Etienne Marcel was Executed by the Crown"
- variable_marcel_reputation_ruined_tt: "Etienne Marcel's Reputation is Ruined"
 
  copy_of_flavor_fra.1135.title: "A [ROOT.GetCountry.GetGovernment.GetAdjective|U] Progress"
  copy_of_flavor_fra.1135.entry: "$copy_of_flavor_fra.1135.title$"
@@ -357,8 +325,6 @@
  copy_of_flavor_fra.1135.b: "Win over the people of [ShowLocationNameWithNoTooltip('paris')]."
  copy_of_flavor_fra.1135.c: "Aim to weaken the influence of [target_character.GetNameWithNoTooltip]."
  copy_of_flavor_fra.1135.c.entry: "Aim to weaken the influence of the character."
- flavor_fra_province_gain_control_satisfaction: "All [locations|e] in [target_province.GetName] will gain [ShowNamedValue('control_severe_bonus')|+=2%] [control|e] and [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|E]."
- flavor_fra_paris_gain_satisfaction_prosperity: "[ShowLocationName('paris')] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|E] and [ShowNamedValue('prosperity_mild_bonus')|+=2%] [prosperity|E]."
 
  copy_of_flavor_fra.1136.title: "Ball of the Burning Men"
  copy_of_flavor_fra.1136.entry: "$copy_of_flavor_fra.1136.title$"
@@ -390,11 +356,6 @@
  copy_of_flavor_fra.1160.a: "We must crush them!"
  copy_of_flavor_fra.1160.b: "Keep them hired to maintain peace!"
  copy_of_flavor_fra.1160.c: "Let them roam freely."
- fra_roaming_routiers_faction: "Rogue Free Companies"
- routier_revolt_provinces: "The following [locations|e] will join [fra_roaming_routiers_faction.GetName]\n [SCOPE.sLocation('english_french_flashpoint_1').GetName], [SCOPE.sLocation('english_french_flashpoint_2').GetName], [SCOPE.sLocation('english_french_flashpoint_3').GetName], [SCOPE.sLocation('english_french_flashpoint_4').GetName]"
- routier_affected_provinces: "The following [locations|e] will lose [ShowNamedValue('prosperity_weak_penalty')|+=2%] [prosperity|e]\n[SCOPE.sLocation('english_french_flashpoint_1').GetName], [SCOPE.sLocation('english_french_flashpoint_2').GetName], [SCOPE.sLocation('english_french_flashpoint_3').GetName], [SCOPE.sLocation('english_french_flashpoint_4').GetName]"
- routiers_affected_provinces_by_undisturbed_raids: "The following [locations|e] will gain [ShowModifier('fra_routiers_looted_province')] for 10 years\n[SCOPE.sLocation('english_french_flashpoint_1').GetName], [SCOPE.sLocation('english_french_flashpoint_2').GetName], [SCOPE.sLocation('english_french_flashpoint_3').GetName], [SCOPE.sLocation('english_french_flashpoint_4').GetName]"
- hire_rogue_mercenaries: "The rogue mercenaries will be rehired, consisting of two mercenary bands with #G 7.00#! Infantry each."
 
  copy_of_flavor_fra.1161.title: "Routiers Raids in [routiers_target_province.GetNameWithNoTooltip]"
  copy_of_flavor_fra.1161.desc: "Having been allowed to freely roam throughout the country, a rogue free company has established themselves in [routiers_target_province.GetName], styling themselves a baron. The local administrators of [routiers_target_province.GetNameWithNoTooltip] have petitioned the state to quickly dispatch a force to eliminate the rogue mercenaries before they can cause any further damage."
@@ -422,7 +383,6 @@
  copy_of_flavor_fra.1170.b.entry: "$name_bertrand$ Du Guesclin is needed more in $BRI$."
  copy_of_flavor_fra.1170.c: "Retire him from service."
  copy_of_flavor_fra.1170.historical_info: "Originally serving as a general during the Breton Civil War, Bertrand would go on to earn the recognition of the French King and would be promoted to lead French Armies in the Hundred Years war. Under Guesclin leadership, France was able to recover lost territories as well as push back Edward the Black Prince raids into French territories."
- bertrand_can_lead_troops_tt: "[bertrand_guesclin.GetName] will be allowed to lead troops, even with [ShowEstatePrivilegeName('noble_leaders_only')]"
 
  copy_of_flavor_fra.1171.title: "[bertrand_guesclin.GetLastNameWithNoTooltip]'s Fabian Strategy"
  copy_of_flavor_fra.1171.entry: "Bertrand Guesclin's Fabian Strategy"
@@ -455,7 +415,7 @@
  copy_of_flavor_fra.1174.desc: "With an armada assembled, [target_character.GetName] has successfully managed to raid several of the critical ports along the [english_nation.GetAdjective] coast, crippling the ability of [english_nation.GetNameWithNoTooltip] to supply troops within [ROOT.GetCountry.GetName]. It will take quite some time before the forces of [ruler_eng.GetName] can mount a recovery, so we must push this advantage [target_character.GetNameWithNoTooltip] has created for us!"
  copy_of_flavor_fra.1174.a: "Now is the time to drive out [english_nation.GetNameWithNoTooltip] from [ROOT.GetCountry.GetNameWithNoTooltip]!"
  copy_of_flavor_fra.1174.a.entry: "Now is the time to drive out $ENG$ from us!"
- ports_raided_by_guesclin: "The following [locations|e] will gain [ShowModifier('fra_english_ports_raided')] for 5 years and lose [ShowNamedValue('prosperity_mild_penalty')|-=2%] [prosperity|e]: [SCOPE.sLocation('target_location_1').GetName], [SCOPE.sLocation('target_location_2').GetName], [SCOPE.sLocation('target_location_3').GetName], [SCOPE.sLocation('target_location_4').GetName]."
+
 
  copy_of_flavor_fra.1175.title: "Disloyalty in [norman_nation.GetNameWithNoTooltip]"
  copy_of_flavor_fra.1175.entry: "Disloyalty in Normandy"
@@ -464,7 +424,6 @@
  copy_of_flavor_fra.1175.a.entry: "Clamp down further on them!"
  copy_of_flavor_fra.1175.b: "Appease the [norman_nation.GetAdjectiveWithNoTooltip] lords to avoid enraging other subjects."
  copy_of_flavor_fra.1175.b.entry: "Appease our lords to avoid enraging other subjects."
- normandy_event_chain_reward: "Should [norman_nation.GetName] drop below #R 5.00%#! loyalty, [norman_nation.GetAdjectiveWithNoTooltip] lords may attempt to elect a new ruler in [norman_nation.GetNameWithNoTooltip] and swear allegiance to [english_nation.GetName]. Should [norman_nation.GetNameWithNoTooltip] not exceed #G 30#! [locations|e], along with achieving #G 85.00%#! loyalty, we will be given the chance to fully integrate [norman_nation.GetNameWithNoTooltip] as a [ROOT.GetCountry.GetAdjective] core."
 
  copy_of_flavor_fra.1176.title: "Consolidating [norman_nation.GetNameWithNoTooltip]"
  copy_of_flavor_fra.1176.entry: "Consolidating the Norman Domain"
@@ -478,23 +437,7 @@
  copy_of_flavor_fra.1177.entry: "Norman Lords Swear Fealty to England"
  copy_of_flavor_fra.1177.desc: "In an act of defiance against [fra_ruler.GetName]'s attempts to consolidate [norman_nation.GetName] into the royal domain, the [norman_nation.GetAdjectiveWithNoTooltip] lords have chosen [nrm_ruler.GetName] as their new duke, who has now sworn allegiance to [ruler_eng.GetName].\n\nWith the open rebellion of the [norman_nation.GetAdjectiveWithNoTooltip] lords now in full swing, [fra_ruler.GetNameWithNoTooltip] has ordered the traitors titles and lands forfeited. However, [ruler_eng.GetNameWithNoTooltip]'s acceptance of [nrm_ruler.GetNameWithNoTooltip] as a loyal subject leaves no other option but war with [GetCountry('ENG').GetNameWithNoTooltip] to reclaim [norman_nation.GetAdjectiveWithNoTooltip]."
  copy_of_flavor_fra.1177.a: "We will crush this rebellion!"
- cores_on_normandy_fra: "[ROOT.GetCountry.GetName] gains [cores|e] on all [norman_nation.GetAdjective] [locations|e]."
 
- flavor_fra_nrm.1.title: "Growing Disloyalty"
- flavor_fra_nrm.1.entry: "$flavor_fra_nrm.1.title$"
- flavor_fra_nrm.1.desc: "Many [ROOT.GetCountry.GetAdjective] lords have grown to despise [fra_ruler.GetName] and [fra_ruler.GetHisHer] [french_nation.GetGovernment.GetCourtTitle] attempts to consolidate the [ROOT.GetCountry.GetLongName] into the [french_nation.GetGovernment.GetAdjective] domain. Seeking to prevent the dissolution of the [ROOT.GetCountry.GetFlavorRank], multiple lords have gathered in hiding to plot an uprising against [fra_ruler.GetShortNameWithNoTooltip] in hopes of restoring autonomy to [ROOT.GetCountry.GetNameWithNoTooltip], although some lords have put forth the idea of seeking protection from [GetCountry('ENG').GetName]."
- flavor_fra_nrm.1.a: "The future of [ROOT.GetCountry.GetNameWithNoTooltip] is at a crossroads."
- flavor_fra_nrm.1.a.entry: "The future of $LOT$ is at a crossroads."
- flavor_fra_nrm_tt: "Should [ROOT.GetCountry.GetName] drop below #G 5.00%#! loyalty, [ROOT.GetCountry.GetAdjectiveWithNoTooltip] lords will have a chance to elect a new ruler and swear allegiance to [GetCountry('ENG').GetNameWithNoTooltip]. However, should [ROOT.GetCountry.GetNameWithNoTooltip] achieve #G 85.00%#! loyalty with [french_nation.GetNameWithNoTooltip], it risks direct annexation by the [french_nation.GetAdjectiveWithNoTooltip] [french_nation.GetGovernment.GetCourtTitle]. Becoming independent through other means, owning 30 or more [locations|e], or maintaining loyalty between #G 5.00%#! and #G 85.00%#! will prevent the [french_nation.GetAdjectiveWithNoTooltip] [french_nation.GetGovernment.GetCourtTitle] from directing annexing of [ROOT.GetCountry.GetNameWithNoTooltip]."
-
- flavor_fra_nrm.2.title: "Election of [nrm_ruler.GetNameWithNoTooltip]"
- flavor_fra_nrm.2.entry: "Election of the Norman Ruler"
- flavor_fra_nrm.2.desc: "Seeing an opportunity at hand to break free from [french_nation.GetAdjective] [french_nation.GetGovernment.GetAdjective] consolidation efforts, disgruntled [ROOT.GetCountry.GetAdjective] lords have elected [nrm_ruler.GetName] as the new [ROOT.GetCountry.GetGovernment.GetRulerTitle] of [ROOT.GetCountry.GetNameWithNoTooltip]. Owing close ties to [eng_ruler.GetName], [nrm_ruler.GetShortNameWithNoTooltip] has sworn himself as a vassal and has earned the protection of [english_nation.GetName].\n\nThe news of [nrm_ruler.GetShortNameWithNoTooltip] ascension has been met with ire in the [french_nation.GetAdjectiveWithNoTooltip] [french_nation.GetGovernment.GetAdjective] [french_nation.GetGovernment.GetCourtTitle] and they have now declared all lands and titles held by [ROOT.GetCountry.GetAdjectiveWithNoTooltip] lords forfeit."
- flavor_fra_nrm.2.a: "[ROOT.GetCountry.GetNameWithNoTooltip] will find greater protection under [english_nation.GetNameWithNoTooltip]."
- flavor_fra_nrm.2.a.entry: "We will find greater protection under $ENG$."
- variable_new_norman_duke_tt: "A New Duke of Normandy has been Installed"
- variable_norman_lords_revolt_tt: "The Norman Lords are in Revolt"
- fra_cores_on_normandy_nrm: "[french_nation.GetName] gains [cores|e] on all [norman_nation.GetAdjective] [locations|e]."
 
  copy_of_flavor_fra.1180.title: "[joan_of_arc.GetNameWithNoTooltip]"
  copy_of_flavor_fra.1180.entry: "Jeanne d'Arc"
@@ -502,8 +445,6 @@
  copy_of_flavor_fra.1180.a: "But pay heed [fra_ruler.GetHeShe] did."
  copy_of_flavor_fra.1180.a.entry: "But pay heed he did."
  copy_of_flavor_fra.1180.b: "We can achieve victory without her help!"
- variable_recently_lost_to_england_tt: "We have Recently Suffered Defeat by England"
-
 
  # Age 2 Events
  copy_of_flavor_fra.2000.title: "Resurgence against [GetCountry('ENG').GetNameWithNoTooltip]"
@@ -541,8 +482,6 @@
  copy_of_flavor_fra.2005.b: "We cannot risk financial ruin to save the life of one person."
  copy_of_flavor_fra.2005.c: "Welcome her return."
  copy_of_flavor_fra.2005.d: "Her return is a miracle, but we cannot risk losing her again."
- variable_fra_joan_peacefully_released_tt: "Joan of Arc was Peacefully Released"
- variable_fra_joan_ransom_tt: "Joan of Arc was Ransomed"
 
  copy_of_flavor_fra.2006.title: "A Contested Succession"
  copy_of_flavor_fra.2006.entry: "$copy_of_flavor_fra.2006.title$"
@@ -622,8 +561,7 @@
  copy_of_flavor_fra.2022.a: "Consent to [target_character.GetLastNameWithNoTooltip]'s agreement."
  copy_of_flavor_fra.2022.a.entry: "Consent to his agreement."
  copy_of_flavor_fra.2022.b: "Forbid the ratification of the deal."
- mam_trade_with_france: "Trade Agreement with France"
- fra_trade_with_mamluks: "Trade Agreement with the Mamluks"
+
 
  copy_of_flavor_fra.2023.title: "Château d'Ainay-le-Vieil and Palais [target_character.GetNameWithNoTooltip]"
  copy_of_flavor_fra.2023.entry: "Château d'Ainay-le-Vieil by Couer"
@@ -1002,7 +940,6 @@
  copy_of_flavor_fra.342.desc: "Seeking to enforce their policies onto [ruler_fra.GetName], the Huguenot faction attempted to kidnap [ruler_fra.GetHerHim]. Fortunately, the perpetrators were slain before any harm could come to the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Such a terrible act demonstrates the lengths to which which the Huguenots have grown in strength.\n\nAn emergency council has been summoned in order to handle the fallout of the attempted kidnapping, but one thing is now clear, The Huguenots must now be crushed, or their continued growing influence risks an all out rebellion."
  copy_of_flavor_fra.342.a: "We must handle the Huguenots, now or never."
  copy_of_flavor_fra.342.b: "Perhaps the Huguenot cause is just."
- amboise_revolt: "Huguenots Revolt"
  
  copy_of_flavor_fra.351.title: "[ruler_fra.GetShortNameWithNoTooltip] converts to [ShowReligionNameWithNoTooltip('calvinist')]"
  copy_of_flavor_fra.351.entry: "The Ruler Converts to Calvinism"
@@ -1103,7 +1040,6 @@
  copy_of_flavor_fra.403.b.entry: "Demote him so that the queen mother can retain political power."
  copy_of_flavor_fra.403.c: "Accept [fra_queen_mother.GetShortNameWithNoTooltip] ultimatum and remove [target_character.GetShortNameWithNoTooltip] from [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
  copy_of_flavor_fra.403.c.entry: "Accept the queen mother ultimatum and remove the character from court."
- richelieu_retires_from_court: "[target_character.GetShortName] will retire from the politics of the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
 
  copy_of_flavor_fra.404.title: "Peace of Alès"
  copy_of_flavor_fra.404.entry: "$copy_of_flavor_fra.404.title$"
@@ -1111,7 +1047,6 @@
  copy_of_flavor_fra.404.a: "Agree to the treaty negotiated by [target_character.GetShortNameWithNoTooltip]."
  copy_of_flavor_fra.404.a.entry: "Agree to the treaty negotiated by him."
  copy_of_flavor_fra.404.b: "Retain the current terms of the [ShowPolicyNameWithNoTooltip('edict_of_nantes')] to ensure religious peace."
- if_monarch_revokes_nantes_modifier_lost: "In the event a [ROOT.GetCountry.GetGovernment.GetRulerTitle] revokes the [ShowPolicyName('edict_of_nantes')], the below modifier will be lost."
 
  copy_of_flavor_fra.405.title: "[target_character.GetNameWithNoTooltip] and the Military Expenses of the State"
  copy_of_flavor_fra.405.entry: "Richelieu's Military Budget Reforms"
@@ -1149,10 +1084,7 @@
  copy_of_flavor_fra.410.a.entry: "His rule will be one to remember."
  copy_of_flavor_fra.410.b: "[target_character.GetShortNameWithNoTooltip]'s rule will hopefully be an era of stability and peace."
  copy_of_flavor_fra.410.b.entry: "His rule will hopefully be an era of stability and peace."
- fra_sun_king_adm_prestige: "Choosing this option will lead to a greater increase of #G Administrative#! skills over #T Diplomatic#! skills in future events."
- fra_sun_king_dip_stability: "Choosing this option will lead to a greater increase of #G Diplomatic#! skills over #T Administrative#! skills in future events."
- if_fra_ruler_designate_dies: "If [target_character.GetName] dies, the skills increase from certain [ROOT.GetCountry.GetAdjective] [dynamic_historical_events|e] will be #R halved#!."
- 
+
  copy_of_flavor_fra.411.title: "[scope_former_consort.GetNameWithNoTooltip]'s Regency"
  copy_of_flavor_fra.411.entry: "The Regency of the Queen and Mazarin"
  copy_of_flavor_fra.411.desc: "In the event of [scope_ruler_dead.GetHisHer] passing, [scope_ruler_dead.GetName] had declared that the young [ROOT.GetCountry.GetGovernment.GetHeirTitle] have a regency council formed by [scope_ruler_dead.GetShortNameWithNoTooltip]'s closest advisors to prepare [scope_heir_fra.GetName] for [scope_heir_fra.GetHisHer] eventual ascension to the throne. Notably however, [scope_former_consort.GetName], along with the backing of prominent [ROOT.GetCountry.GetGovernment.GetCourtTitle] allies such as [target_character.GetName] have demanded that [scope_former_consort.GetHeShe] be installed as acting regent, seeking to undermine the last wishes of [scope_ruler_dead.GetNameWithNoTooltip].\n\nWhile it was [scope_ruler_dead.GetShortNameWithNoTooltip]'s wish for [scope_heir_fra.GetShortNameWithNoTooltip] to be governed by the regency council, the ambitions of [scope_former_consort.GetShortNameWithNoTooltip] may bring instability if she is not instated as regent."
@@ -1160,7 +1092,6 @@
  copy_of_flavor_fra.411.a.entry: "Allow her to rule as regent."
  copy_of_flavor_fra.411.b: "We shall carry out [scope_ruler_dead.GetShortNameWithNoTooltip]'s last wishes."
  copy_of_flavor_fra.411.b.entry: "We shall carry out his last wishes."
- fra_designated_regency_council: "A new Regent will be installed to lead [ROOT.GetCountry.GetNameWithNoTooltip]."
 
  copy_of_flavor_fra.412.title: "Suspected Corruption of [target_character.GetNameWithNoTooltip]"
  copy_of_flavor_fra.412.entry: "Suspected Corruption of Nicolas Fouquet"
@@ -1169,7 +1100,6 @@
  copy_of_flavor_fra.412.a.entry: "The character must resign at once!" 
  copy_of_flavor_fra.412.b: "Admonish him, but allow him to retain his current position."
  copy_of_flavor_fra.412.c: "His supposed corruption is just baseless rumors."
- fouquet_will_resign_and_retire_from_life: "[target_character.GetName] will retire from political affairs and leave [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
 
  copy_of_flavor_fra.413.title: "Taxation of the Aristocracy"
  copy_of_flavor_fra.413.entry: "$copy_of_flavor_fra.413.title$"
@@ -1200,7 +1130,6 @@
  copy_of_flavor_fra.417.a: "It is time we seize this territories and incorporate them."
  copy_of_flavor_fra.417.b: "The [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip] may be weakened, but it is best we avoid conflict."
  copy_of_flavor_fra.417.b.entry: "The $hre$ may be weakened, but it is best we avoid conflict."
- claims_on_lowland_culture_countries: "[ROOT.GetCountry.GetName] will gain a [casus_belli|e] against neighboring nations located in the Lowlands."
 
  copy_of_flavor_fra.418.title: "Rapprochement with [GetCountry('TUR').GetNameWithNoTooltip]"
  copy_of_flavor_fra.418.entry: "Reapprochment with the Ottoman Turks"
@@ -1278,7 +1207,6 @@
  copy_of_flavor_fra.431.a: "May [target_character.GetShortNameWithNoTooltip] spread the [ShowReligionAdjectiveWithNoTooltip('catholic')] faith abroad!"
  copy_of_flavor_fra.431.a.entry: "May him spread the [ShowReligionAdjectiveWithNoTooltip('catholic')] faith abroad!"
  copy_of_flavor_fra.431.b: "Forbid the Jesuits to prevent a Diplomatic incident."
- nothing_happens_with_jesuits: "The Jesuits will proselytize in peace."
 
  copy_of_flavor_fra.432.title: "An Exotic Gift from the [GetCountry('POR').GetAdjectiveWithNoTooltip] [GetCountry('POR').GetGovernment.GetRulerTitle]"
  copy_of_flavor_fra.432.entry: "Gift from the Portuguese King"
@@ -1348,8 +1276,6 @@
  copy_of_flavor_fra.503.entry: "Fleury and the King"
  copy_of_flavor_fra.503.desc: "Coming into the [ROOT.GetCountry.GetGovernment.GetRulerTitle] personal circle as a loyal advisor during his early reign, [target_character.GetName] has so many times proven himself as one of the most capable members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] that [fra_ruler.GetName] has decided to grant him the position of chief minister. While [target_character.GetNameWithNoTooltip] has not demonstrated much personal ambition himself, he has lay out plans to guide [ROOT.GetCountry.GetName] in this new age of ideals."
  copy_of_flavor_fra.503.a: "We shall use his advice well."
- fleury_additional_dhe: "Additional [dynamic_historical_events|e] relating to [target_character.GetNameWithNoTooltip] tenure as chief minister may now fire."
- fleury_ministry_bonus: "Gain the following modifier below until the death of [target_character.GetNameWithNoTooltip], afterwards it will be removed."
 
  copy_of_flavor_fra.504.title: "The Cartes de Cassini"
  copy_of_flavor_fra.504.entry: "$copy_of_flavor_fra.504.title$"
@@ -1380,8 +1306,7 @@
  copy_of_flavor_fra.507.a: "Let [target_artist.GetLastNameWithNoTooltip] take the reins!"
  copy_of_flavor_fra.507.a.entry: "Let him take the reins!"
  copy_of_flavor_fra.507.b: "His ideas will only bring further ruin!" 
- john_law_dhe_events: "Enables [target_artist.GetNameWithNoTooltip] related [dynamic_historical_events|e]."
- john_law_joins_france_and_bank: "[target_artist.GetNameWithNoTooltip]'s will begin to reshape the finances of [ROOT.GetCountry.GetNameWithNoTooltip] as Controller General of Finances."
+
 
  copy_of_flavor_fra.508.title: "The Banque Générale"
  copy_of_flavor_fra.508.entry: "$copy_of_flavor_fra.508.title$"
@@ -1389,8 +1314,6 @@
  copy_of_flavor_fra.508.a: "Reap the rewards of the Banque Générale."
  copy_of_flavor_fra.508.b: "Heed the caution of the advisors, and prevent overlying on [target_artist.GetLastNameWithNoTooltip]'s Bank." 
  copy_of_flavor_fra.508.b.entry: "Heed the caution of the advisors, and prevent overlying on his Bank."
- john_law_bank_risk: "Over investment in the bank increases the risk the bank may fail. Should this occur, it would cripple the recovering finances of [ROOT.GetCountry.GetNameWithNoTooltip]."
- john_law_bank_more_direct: "Reducing over reliance on the bank will help mitigate damage should a collapse of the bank occur."
 
  copy_of_flavor_fra.509.title: "The Banque Générale Invests in the Colonies"
  copy_of_flavor_fra.509.entry: "$copy_of_flavor_fra.509.title$"
@@ -1405,7 +1328,6 @@
  copy_of_flavor_fra.510.desc: "Since its inception, the Banque Générale has only continued to grow, and alongside it, the coffers of [ROOT.GetCountry.GetName] have only seen a surge of wealth. While it appears for now that [target_artist.GetName]'s policies have been a great success, leading to the Banque Générale becoming a prominent bank in [ShowContinentName('europe')], it has also earned the attention of the wealthy elite. Many of these elites, seeking to invest in the growing trade companies of the new world, have taken to relying on the paper currency on the bank to obtain shares within these new world companies. It would appear for now, the skepticism once given by various advisors towards [target_artist.GetNameWithNoTooltip]'s policies have been proven false."
  copy_of_flavor_fra.510.a: "May these policies continue to benefit [ROOT.GetCountry.GetNameWithNoTooltip]!"
  copy_of_flavor_fra.510.a.entry: "May these policies continue to benefit us!"
- bank_yields_benefits_for_now: "[target_artist.GetNameWithNoTooltip] policies have seen [ROOT.GetCountry.GetNameWithNoTooltip] recover from a near economic collapse, although the reliance on the Banque Générale may prove disastrous in the long run."
 
  copy_of_flavor_fra.511.title: "Collapse of the Banque Générale"
  copy_of_flavor_fra.511.entry: "$copy_of_flavor_fra.511.title$"
@@ -1426,7 +1348,6 @@
  copy_of_flavor_fra.520.desc: "Following a previous request by [GetCountry('LOT').GetGovernment.GetPreviousRuler.GetName] to [pap_ruler.GetName], the Unigenitus papal bull was granted in hopes of clamping down on the growing Jansenism, a doctrine based on the teachings of Saint Augustine. Although the papal bull has long since been issued, the death of [GetCountry('LOT').GetGovernment.GetPreviousRuler.GetShortNameWithNoTooltip] and not codifying it as the law of [ROOT.GetCountry.GetName] have only seen followers of the doctrine grow in strength since the rule of [fra_ruler.GetName]. However, growing pressure amongst anti-jansenists ministers has renewed discussion on formalizing the bull as law, although the now large following may make the task difficult."
  copy_of_flavor_fra.520.a: "It is time the status of the Unigenitus is decided in [ROOT.GetCountry.GetNameWithNoTooltip]."
  copy_of_flavor_fra.520.a.entry: "It is time the status of the Unigenitus is decided in us."
- janseism_unigenitus_conflict_events_wilL_occur: "Enables [dynamic_historical_events|e] related to the Unigenitus Papal Bull and Jansenism religious conflict."
 
  copy_of_flavor_fra.521.title: "Repudiation of Jansenism"
  copy_of_flavor_fra.521.entry: "$copy_of_flavor_fra.521.title$"
@@ -1439,17 +1360,13 @@
  copy_of_flavor_fra.522.desc: "Seeking to take further action against Jansenist followers, proponents of the Unigenitus have drafted plans for a tax should the Unigenitus become the eventual law of [ROOT.GetCountry.GetName]. Under this #italic Cinquantième tax#!, anyone who is discovered reading the #italic Nouvelles Ecclésiastiques#! (The text of Jansenism) will be forced to pay a sizable tax to the state. Furthermore, any religious figures who were previously exempted but have ties to Jansenism will be forced to take up the tax as well.\n\nSuch a tax would likely be seen as extremely detrimental should the Unigenitus bull come into law, as the followers of Jansenism will retain great disdain for the [ROOT.GetCountry.GetFlavorRank]."
  copy_of_flavor_fra.522.a: "Agree to establish the tax with the Unigenitus."
  copy_of_flavor_fra.522.b: "Publicly oppose the tax." 
- cheapter_to_enact_unigenitus: "Should the Unigenitus come into law, the Cinquantième tax will be reflected in it."
- period_of_stability_when_declining_unigenitus: "Declining to enact the Unigenitus decree will lead to a large increase of stability."
  
  copy_of_flavor_fra.523.title: "Dissent Amongst Gallicans Proponents"
  copy_of_flavor_fra.523.entry: "$copy_of_flavor_fra.523.title$"
  copy_of_flavor_fra.523.desc: "Having been staunch supporters for a independent [ROOT.GetCountry.GetAdjective] [ShowReligionAdjective('catholic')] Church, largely independent from the [ShowGovernmentReformName('papacy_reform')], many strong Gallican voices throughout the government have offered condemnation for support for Unigenitus while also voicing support for many Jansenist followers. Seeing the implementation of the Unigenitus as a means to strengthen the papacy influence over the [ROOT.GetCountry.GetFlavorRank], many Gallican members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have signaled they would greatly oppose the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] in future endeavors should the Unigenitus ultimately become the law of [ROOT.GetCountry.GetNameWithNoTooltip]."
  copy_of_flavor_fra.523.a: "We will have to be weary of the Gallicans."
  copy_of_flavor_fra.523.b: "Appease them for now, leaving the Unigenitus bull an open question." 
- gallicans_in_clergy_will_oppose_crown: "The Gallican sect of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] will become opposed to the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')], but their influence will be diminished."
- avoids_gallican_ire_unless_unigenitus_implemented: "The Gallicans will not become opposed to the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')], however, should the Unigenitus be enacted as a law, it will earn the ire of the Gallican followers."
- 
+
  copy_of_flavor_fra.524.title: "The Unigenitus Decree"
  copy_of_flavor_fra.524.entry: "$copy_of_flavor_fra.524.title$"
  copy_of_flavor_fra.524.desc: "Having been met with various roadblocks, and opposition by Jansenist followers in the Estates-General, proponents of the Unigenitus bull have drafted a decree for [fra_ruler.GetName] to enact. Mirroring the policies put forth by [pap_ruler.GetName], the decree would not only ban the practice of Jansenism throughout [ROOT.GetCountry.GetName], but also take action towards known followers, threatening action as well as establishing a tax on possessions related to the doctrine.\n\nShould [fra_ruler.GetShortNameWithNoTooltip] sign the decree, it will no doubt sow discount amongst the remaining Jansenist followers in [ROOT.GetCountry.GetNameWithNoTooltip], but it would serve as another means to further reinforce [fra_ruler.GetShortNameWithNoTooltip]'s authority."
@@ -1479,7 +1396,6 @@
  copy_of_flavor_fra.532.a.entry: "Agree with his proposal for a road network."
  copy_of_flavor_fra.532.b: "The project is too large a burden to inflict on the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]." 
  copy_of_flavor_fra.532.b.entry: "The project is too large a burden to inflict on the $peasants_estate$."
- if_fleury_dies_road_network_change: "In the event [target_character.GetLastNameWithNoTooltip] dies, [ShowModifier('fra_fleury_national_road_project')] will be replaced with [ShowModifier('fra_fleury_national_road_project_legacy')]."
 
  copy_of_flavor_fra.533.title: "Growth of Commercial Trade Under [target_character.GetLastNameWithNoTooltip]"
  copy_of_flavor_fra.533.entry: "Fleury Maritime Growth of France"
@@ -1536,99 +1452,3 @@
  copy_of_flavor_fra.550.desc: "Once one of the many palaces of the old [ShowGovernmentTypeName('monarchy')], the Louvre palace once served as the royal collection for past [ROOT.GetCountry.GetAdjective] kings. While the #italic Ancien régime#! is no more, some in the [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip] feel that the Louvre palace should instead become a new cultural center to display the various works [ROOT.GetCountry.GetName] has created over the centuries. No longer should the cultural history of [ROOT.GetCountry.GetNameWithNoTooltip] be locked to that of the old elite."
  copy_of_flavor_fra.550.a: "Decree the Louvre palace be open to the public as a cultural center!"
  copy_of_flavor_fra.550.b: "It would be best if the Louvre palace remained closed to the public."
-
- # Tooltips
- joan_of_arc_may_lead_tt: "[joan_of_arc.GetName] will be allowed to lead troops!"
- joan_of_arc_disappears_tt: "[joan_of_arc.GetName] will disappear into obscurity"
- marcel_will_now_oppose_the_crown: "Étienne Marcel will act more hostile towards the Crown"
- marcel_loses_support_for_murder: "The murder of figures of noble blood has caused Marcel to bleed support across the Clergy and Nobility estates, severely weakening him politically."
- routiers_can_raid_nearby_locations: "Routiers may expand their raids into neighboring provinces!"
- fra_annexing_appanages_moves_towards_centralize: "Each Appanage [subject|e] annexed will move us towards the Centralization [societal_values|E] by 5 at the cost of reducing [opinion|e] with remaining Appanages by -25."
- fra_how_to_remove_feudal_nobility_info: "The French Feudal Nobility [government_reform|E] will become obsolete if there are no remaining Appanage [subjects|e] and will be removed." 
- fra_aggression_towards_burgundy: "While the Lords of [GetCountry('BUR').GetNameWithNoTooltip] have garnered enough territory and power to be considered politically independent, they are still viewed by our subjects as a fellow vassal. Pursuing an aggressive stance will lower relations with all subjects of [GetCountry('LOT').GetNameWithNoTooltip] by -33."
- fra_neutrality_towards_burgundy: "The Lords of [GetCountry('BUR').GetNameWithNoTooltip] have garnered enough territory and power, that they are now considered politically independent from the [GetCountry('LOT').GetLongNameWithNoTooltip]."
- appanages_can_now_take_public_weal_reform: "Appanage subjects can now adopt the 'Member of the League of Public Weal' reform. Disloyal Appanages will be more inclined to join the League."
- more_than_six_will_trigger_war: "Should more than 5 Appanages join the League, a power struggle may break out between the [ROOT.GetCountry.GetGovernment.GetAdjective|U] [ROOT.GetCountry.GetGovernment.GetCourtTitle|l] and the League."
- league_demands_accepted_fra: "The Centralization of the Crown will be greatly rescinded, however the peaceful resolution will result in no bloodshed."
- league_demands_rejected_fra: "War will erupt between the Crown and the League, should the crown emerge victorious, efforts to centralize the state will be greatly improved."
- public_weal_will_disband: "The League of Public Weal has been disbanded and will no longer trouble [GetCountry('LOT').GetName]."
- weal_members_bonus_and_appanage_autonomy: "All members of the League will receive the bonuses of the 'Member of the League of Public Weal' Government reform for 15 years as well as vastly decreasing the centralization of [GetCountry('LOT').GetName]."
- weal_members_weakened_royalist_integration_boost: "[GetCountry('LOT').GetName] will receive a powerful integration speed bonus, alongside increasing the loyalty of all subjects."
- jeanne_d_arc_will_face_trial: "[joan_of_arc.GetName] will become subject to a heresy trial by [GetCountry('ENG').GetName]"
- jeanne_d_arc_will_trouble_us_no_further: "[joan_of_arc.GetName] will be executed for heresy!"
- random_joan_of_arc_or_executed: "[joan_of_arc.GetName] will be offered on terms of ransom to [GetCountry('LOT').GetName]. Should [GetCountry('LOT').GetNameWithNoTooltip] decline the ransom offer, [joan_of_arc.GetShortNameWithNoTooltip] will be executed."
- legitimacy_penalty_with_english_advancements: "While [GetCountry('ENG').GetName] controls a large swath of territory in [GetCountry('LOT').GetName], the legitimacy of [GetCountry('LOT').GetAdjectiveWithNoTooltip] rulers will be affected."
- reduced_legitimacy_penalty_but_prestige_hit: "Reduces the legitimacy penalty of [GetCountry('ENG').GetAdjective] control of territory in [GetCountry('LOT').GetNameWithNoTooltip], but also incurs a prestige penalty."
- french_succession_no_longer_contested: "The [GetCountry('LOT').GetAdjective] succession will no longer be considered contested."
- english_appeasement_reduced_reward_tt: "Reduced bonuses from appeasing the [GetCountry('ENG').GetAdjective] claims to [GetCountry('LOT').GetNameWithNoTooltip]."
- fra_may_enact_bourges_sanctions: "The Pragmatic Sanctions will be abolished, but can be reenacted should relations with the Papacy worsen."
- unlocks_formalize_relations_action: "Unlocks the [ShowCountryInteractionName('formalize_relations')] [diplomatic_action|e] against [ShowCultureGroupName('italian_group')] nations."
- has_unlocks_formalize_relations_action: "Has unlocked the [ShowCountryInteractionName('formalize_relations')] [diplomatic_action|e] from the $fra_formalized_relations_decision.title$ [decision|e]." 
- every_independent_italian_state_loses_opinion: "Our relations with all [ShowCultureGroupName('italian_group')] nations will worsen significantly. Allied nations will suffer a smaller penalty to relations."
- formalize_disabled_tt: "The [ShowCountryInteractionName('formalize_relations')] [diplomatic_action|e] will become #R unavailable#!."
- withdraw_opinion_penalty_increase: "Our relations with all [ShowCultureGroupName('italian_group')] nations will still worsen, but peacefully withdrawing will reduce the penalty."
- bonuses_will_be_lost_if_broken: "Should the Union between [GetCountry('LOT').GetName] and [GetCountry('NAP').GetName] be broken, these bonuses will be lost."
- league_of_weal_joiners: "[league_member_ruler.GetCountry.GetName] will join the war on the side of [league_leader_ruler.GetCountry.GetName]"
- lower_cooldown_campaign_in_italy_tt: "The cooldown of the [ShowGenericActionName('plan_campaign_in_italy')] [action|e] of the [ShowSituationName('italian_wars')] [situation|e] will be reduced by #G -1#! year"
- fra_may_attract_prominent_painters_tt: "A #G prominent#! [ShowCultureGroupNameWithNoTooltip('italian_group')] artist may join the [GetCountry('LOT').GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
- da_vinci_brings_mona_lisa: "[target_character.GetName] will join the [ROOT.GetCountry.GetGovernment.GetCourtTitle], and bring with him the #italic $mona_lisa$#!"
- fra_colonial_power_risk: "Establishing a colonial power base could prove challenging for [ROOT.GetCountry.GetNameWithNoTooltip], and bring it into conflict with other European colonial powers."
- canada_cartier_bonus: "Sending [target_character.GetName] to [ShowAreaName('canadian_atlantic_coast_area')] has the potential to trigger further colonial events"
- devoting_crown_resources_is_costly: "While establishing a colonial frontier could prove beneficial for future colonial efforts, it may prove a difficult task with newly discovered lands being a great distance from [ROOT.GetCountry.GetNameWithNoTooltip]."
- may_suffer_widespread_condemnation: "[ROOT.GetCountry.GetNameWithNoTooltip] will #R suffer condemnation#! from [ShowReligionGroupAdjective('christian')] neighbors by allying with [GetCountry('TUR').GetLongNameWithNoTooltip]"
- fra_may_recieve_benefit_from_alliance: "An alliance with the [GetCountry('TUR').GetLongNameWithNoTooltip] may yield #G profitable#! trade relations"
- fra_hostilities_with_lutheran_nations: "All [ShowReligionAdjective('lutheran')] nations that are not our subject will lose [ShowBiasValue('opinion_protestant_persecution')|+=0] [opinion|e] of [ROOT.GetCountry.GetName]"
- fra_hostilities_with_catholic_nations: "All [ShowReligionAdjective('catholic')] nations that are not our subject will lose [ShowBiasValue('opinion_tolerance_to_protestants')|+=0] [opinion|e] of [ROOT.GetCountry.GetName]"
- hostilities_will_expand_with_calvinists_nations: "The [ShowPolicyName('edict_of_fontainebleau')] will be expanded to include policies targeting [ShowReligionAdjectiveWithNoTooltip('calvinist')] followers.\nAll [ShowReligionAdjective('calvinist')] nations that are not our subject will lose [ShowBiasValue('opinion_fra_persecute_calvinists')|+=0] [opinion|e] of [ROOT.GetCountry.GetName]"
- further_hostilities_with_catholic_nations: "All [ShowReligionAdjective('catholic')] nations that are not our subject will lose an additional [ShowBiasValue('opinion_fra_calvinist_granted_tolerance')|+=0] [opinion|e] of [ROOT.GetCountry.GetName]"
- fra_high_negative_tolerance_warning: "High #R Intolerance#!, comes with the risk of increased rebellions"
- council_will_condemn_but_continue_rule: "[ruler_fra.GetShortName] will continue to rule, though the council may #R pressure [ruler_fra.GetHimHer]#! to convert if they feel emboldened."
- ruler_may_improve_relations_with_calvinist_nations: "[ruler_fra.GetShortName] conversion may lead to #G improved relations#! with neighboring [ShowReligionName('calvinist')] nations."
- avoid_risks_of_a_calvinist_ruler: "[ruler_fra.GetShortName] forceful reconversion will be seen as deeply #R intolerant#!."
- fra_ruler_may_become_inspired_french_eoc: "This may #G inspire#! [fra_ruler.GetShortName] to create a Trade Company in $india$!"
- fra_maintain_current_colonial_policy_but_unlock: "Unlocks the [ShowPolicyName('french_east_india_company')] policy"
- richelieu_may_pursue_supression: "[target_character.GetName] may draft policies that aim to suppress the power of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]"
- richelieu_curtailed_keeps_nobles_strong: "[target_character.GetName] will avoid policies aimmed at suppressing the power of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
-
- # Trade Goods
- fra_trade_with_levant: "Trade with the Levant"
- tur_trade_with_fra: "Trade with France"
-
- # Laws Mechanics
- why_law_is_locked_fra_religious_laws: "[GetCountry('LOT').GetAdjective] Reformation Edicts can only be changed through certain events."
-
- # has_variable custom tooltips
- variable_tt_nantes_revoked_by_sun_king: "Edict of Nantes Revoked by Sun King"
- variable_tt_last_rites_of_charles_v: "Fouage Abolition"
- variable_tt_marcel_embargo_tax_collection: "Étienne Marcel's Embargo on Royal Tax Collection"
- variable_tt_fra_marcel_opposes_the_crown: "Étienne Marcel in Open Revolt against the Crown"
- variable_tt_fra_allowed_routiers_to_roam: "Routier Allowed to Ravage the Countryside"
- variable_tt_fra_can_launch_naval_raids: "France Can Launch Naval Raiding Operations"
- variable_tt_norman_lords_disloyal: "Disloyal Norman Lords"
- variable_tt_disloyal_normandy_fired: "Norman Nobility in Rebellion"
- variable_tt_jeanne_d_arc_captured: "Joan of Arc Captured"
- variable_tt_jeanne_d_arc_captured_eng: "Joan of Arc Handed to the English"
- variable_tt_fra_informed_of_joan_capture: "France Learns of Joan of Arc's Capture"
- variable_tt_fra_joan_of_arc_executed: "Joan of Arc is Executed"
- variable_tt_french_succession_is_contested: "French Succession Contested"
- variable_tt_france_italian_interests: "France Holds Ambitions in Italy"
- variable_tt_nap_fra_event_fired: "Neapolitan French Intervention"
- variable_tt_naples_under_france: "Naples Under French Control"
- variable_tt_fra_may_gain_da_vinci: "Leonardo da Vinci may be Invited to France"
- variable_tt_fra_colonial_affairs_enabled: "French Colonial Enterprises"
- variable_tt_enable_fra_tolerance_edicts: "Royal Tolerance Edicts"
- variable_tt_rise_of_the_huguenots: "Rise of the Huguenots"
- variable_tt_council_may_demand_reconversion: "Catholic Council Pressing for Huguenot Reconversion"
- variable_tt_enable_fra_colonial_ambitions: "French Colonial Ambitions"
- variable_tt_fra_eoc_inspiration: "Edict of Compiègne Inspires Religious Resolve"
- variable_tt_richelieu_may_supress: "Cardinal Richelieu May Move against the Huguenots"
- variable_tt_silent_richelieu_death: "Death of Richelieu"
- variable_tt_enable_sun_king_events: "The Sun King's Reign has Begun!"
- variable_tt_academie_francaise_built: "Académie Française Founded"
- variable_tt_enable_sun_king_successor_events: "Sun King's Succession in Question"
- variable_tt_college_de_france_wants_more_funding: "Collège de France Seeking Royal Patronage"
- variable_tt_enable_general_private_bank: "General Private Bank Established"
- variable_tt_enable_general_private_bank_collapsed: "The Collapse of the General Private Bank"
- variable_tt_janseism_conflict_events: "Jansenist Controversy Brewing"
-
- 
