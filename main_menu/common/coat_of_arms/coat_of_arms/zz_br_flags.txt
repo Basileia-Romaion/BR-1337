@@ -90,18 +90,18 @@ HRE = {
     }
 }
 
-ASU = { #BR edit Asturias with LON tag (Leon)
-    pattern = "pattern_solid.dds"
-	color1 = "blue"
-	color2 = "yellow"
-
-	colored_emblem = {
-		texture = "ce_cross_asturias.dds"
-		color1 = "yellow"
-		color2 = "red"
-		instance = { scale = { 0.8 0.8 }  }
-	}
-}
+#ASU = { #BR edit Asturias with LON tag (Leon)
+    #pattern = "pattern_solid.dds"
+	#color1 = "blue"
+	#color2 = "yellow"
+#
+	#colored_emblem = {
+		#texture = "ce_cross_asturias.dds"
+		#color1 = "yellow"
+		#color2 = "red"
+		#instance = { scale = { 0.8 0.8 }  }
+	#}
+#}
 
 POH = { #Patriarchate of Hangzhou
     pattern = "pattern_solid.dds"

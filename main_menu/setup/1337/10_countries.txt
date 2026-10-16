@@ -14637,7 +14637,7 @@ countries = {
 
 	}
 
-	CAS = { #BR edit
+	LON = { #BR edit
 		own_control_core = { #BR edit
 			#Castilla
 			avila arevalo villatoro #Avila
@@ -14654,13 +14654,13 @@ countries = {
 			# medinaceli almazan berlanga
 		}
 
-		our_cores_conquered_by_others = {
-			medinaceli almazan berlanga
-			burgos briviesca castrojeriz lerma miranda_de_ebro sto_domingo_silos villadiego villarcayo
-			santander laredo potes san_vicente_barquera
-			aguilar_de_campoo carrion_de_los_condes monzon_campos saldana reinosa
-			puebla_de_sanabria alcanices benavente
-		}
+		#our_cores_conquered_by_others = {
+			#medinaceli almazan berlanga
+			#burgos briviesca castrojeriz lerma miranda_de_ebro sto_domingo_silos villadiego villarcayo
+			#santander laredo potes san_vicente_barquera
+			#aguilar_de_campoo carrion_de_los_condes monzon_campos saldana reinosa
+			#puebla_de_sanabria alcanices benavente
+		#}
 
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -14845,7 +14845,7 @@ countries = {
 		}
 	}
 
-	LON = { #BR edit
+	CAS = { #BR edit
 		own_control_core = { #BR edit
 			#Leon
 			leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
@@ -15365,20 +15365,20 @@ countries = {
 		capital = faro
 	}
 
-	ATU = {
-		our_cores_conquered_by_others = {
-			oviedo aviles castropol tineo villaviciosa cangas llanes mieres
-		}
-		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = random
-		}
-		country_rank = rank_kingdom
-		capital = oviedo
-	}
+	#ATU = {
+		#our_cores_conquered_by_others = {
+			#oviedo aviles castropol tineo villaviciosa cangas llanes mieres
+		#}
+		#include = "expl_western_europe"
+		#include = "catholic_monarchy_not_present"
+		#government = {
+			#type = monarchy
+			#heir_selection = cognatic_primogeniture
+			#ruler = random
+		#}
+		#country_rank = rank_kingdom
+		#capital = oviedo
+	#}
 
 	CRD = {
 		our_cores_conquered_by_others = {

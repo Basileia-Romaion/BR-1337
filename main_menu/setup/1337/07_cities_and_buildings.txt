@@ -1985,12 +1985,12 @@ building_manager = {
 	trade_office = { tag = ADU level = 2 location = meknes }
 
 		#Brethren of the Marsh #Unique
-	brethren_marsh = { tag = LON level = 1 location = bilbao }   #BR edit
-	brethren_marsh = { tag = LON level = 1 location = laredo }   #BR edit
-	brethren_marsh = { tag = LON level = 1 location = san_vicente_barquera }   #BR edit
-	brethren_marsh = { tag = LON level = 1 location = santander }   #BR edit
-	brethren_marsh = { tag = LON level = 1 location = san_sebastian }   #BR edit
-	brethren_marsh = { tag = LON level = 1 location = tolosa }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = bilbao }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = laredo }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = san_vicente_barquera }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = santander }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = san_sebastian }   #BR edit
+	brethren_marsh = { tag = CAS level = 1 location = tolosa }   #BR edit
 
 
 
@@ -5281,7 +5281,7 @@ building_manager = {
 	
 	#Extra Weapon Guilds
 	
-	weapon_guild = { tag = LON level = 4 location = leon }
+	weapon_guild = { tag = CAS level = 4 location = leon }
 	weapon_guild = { tag = LIT level = 4 location = vilnius }
 	weapon_guild = { tag = MLO level = 6 location = milano }
 	weapon_guild = { tag = LOT level = 6 location = metz }
@@ -7421,8 +7421,8 @@ building_manager = {
 	order_stronghold = { tag = ARA level = 1	location = zuera } # BR added
 	order_stronghold = { tag = ARA level = 1	location = huesca } # BR added
 	order_stronghold = { tag = NAV level = 1	location = tudela } # BR added
-	order_stronghold = { tag = LON level = 1	location = burgos } # BR added
-	order_stronghold = { tag = LON level = 1	location = leon } # BR added
+	order_stronghold = { tag = CAS level = 1	location = burgos } # BR added
+	order_stronghold = { tag = CAS level = 1	location = leon } # BR added
 
 	order_commandery = { tag = KNI level = 1 location = valladolid } #BR added
 	order_commandery = { tag = KNI level = 1 location = porto } #BR added

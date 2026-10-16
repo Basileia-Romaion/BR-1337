@@ -23,17 +23,12 @@ INJECT:POR = {
 	culture_definition = galician
 }
 
-REPLACE_OR_CREATE:LON = {
+REPLACE_OR_CREATE:ATU = {
 	#BR edit (repurposed as asturias)
 	color = map_asturias
 	color2 = rgb { 16 41 202 }
-
 	culture_definition = leonese
 	religion_definition = catholic
-	
-	unit_color0 = purple
-	unit_color1 = white
-	unit_color2 = red
 }
 
 REPLACE_OR_CREATE:GLC = {
@@ -59,46 +54,6 @@ REPLACE_OR_CREATE:ADU = { #BR Addition
     culture_definition = andalusi
     religion_definition = sunni
 }
-
-#CTV = {
-#	color = map_CTV
-#	color2 = rgb { 16 41 202 }
-#
-#	culture_definition = castilian
-#	religion_definition = catholic
-#}
-
-#STO = {
-#	color = map_STO
-#	color2 = rgb { 16 41 202 }
-#
-#	culture_definition = castilian
-#	religion_definition = catholic
-#}
-
-#ACT = {
-#	color = map_ACT
-#	color2 = rgb { 16 41 202 }
-#
-#	culture_definition = castilian
-#	religion_definition = catholic
-#}
-
-#MTS = {
-#	color = map_MTS
-#	color2 = rgb { 16 41 202 }
-#
-#	culture_definition = aragonese
-#	religion_definition = catholic
-#}
-
-#OPX = {
-#	color = map_OPX
-#	color2 = rgb { 16 41 202 }
-#
-#	culture_definition = galician
-#	religion_definition = catholic
-#}
 
 REPLACE_OR_CREATE:AD0 = { #BR Addition
     color = rgb { 16 141 175 }

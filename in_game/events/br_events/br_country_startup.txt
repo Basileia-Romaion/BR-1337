@@ -536,7 +536,9 @@ br_country_startup.2 = { #units added
 			}
 		}
 		c:CAS ?= {
-			#change_tag_cosmetic = { tag = ATU }
+			change_tag_cosmetic = { tag = ATU }
+			change_culture = culture:leonese
+			change_country_color = map_asturias
 			capital = {
 				create_sub_unit = unit_type:a_crusader_knights
 				create_sub_unit = unit_type:a_crusader_knights
@@ -847,20 +849,6 @@ br_country_startup.3 = { #cbs added
 			add_casus_belli ?= {
 				target = c:ERE
 				type = casus_belli:cb_border_war
-			}
-		}
-		c:LON ?= {
-			add_casus_belli = {
-				target = c:POR
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:CAS
-				type = casus_belli:cb_subjugation
-			}
-			add_casus_belli = {
-				target = c:NAV
-				type = casus_belli:cb_subjugation
 			}
 		}
 
@@ -2576,6 +2564,8 @@ br_country_startup.7 = {
 			}
 		}
 		c:LON ?= {
+			change_tag_cosmetic = { tag = CAS }
+			change_culture = culture:castilian
 			every_owned_location = {
 				limit = {
 					raw_material = goods:iron
