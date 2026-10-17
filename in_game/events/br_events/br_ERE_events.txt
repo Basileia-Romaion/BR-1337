@@ -2861,6 +2861,124 @@ br_ere_events.115 = {
 	}
 }
 
+#Minor revolts
+br_ere_events.116 = { # Rumors of Revolt in Adrianople
+	type = country_event
+	title = br_ere_events.116.title
+	desc = br_ere_events.116.desc
+	outcome = neutral
+	fire_only_once = yes
+	
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1378.6.1
+		to = 1398.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		owns = location:edirne
+		#is_at_war_with = c:BYZ
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+	}
+
+	option = { # Crush them!
+		name = br_ere_events.116.a
+		historical_option = yes
+		location:edirne = {
+			every_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_radical_penalty
+			}
+		}
+		ai_chance = {
+			base = 70
+		}
+	}
+
+	option = { # Grant them autonomy!
+		name = br_ere_events.116.b
+		location:edirne = {
+			change_control = control_radical_penalty
+			every_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_bonus
+			}
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+br_ere_events.117 = { # Smyrna Revolt
+	type = country_event
+	title = br_ere_events.117.title
+	desc = br_ere_events.117.desc
+	outcome = neutral
+	fire_only_once = yes
+	
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1382.6.1
+		to = 1392.1.1
+		monthly_chance = 20
+	}
+
+	trigger = {
+		owns = location:smyrna
+		has_estate_privilege = estate_privilege:br_dynatoi_magnates
+	}
+	
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = { # Crush them!
+		name = br_ere_events.117.a
+		historical_option = yes
+		location:smyrna = {
+			every_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_radical_penalty
+			}
+		}
+		root.capital = {
+			every_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+
+	}
+}
+
 
 #others
 

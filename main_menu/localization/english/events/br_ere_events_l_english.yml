@@ -245,6 +245,17 @@
  br_ere_events.115.b: "Grant their demands and end this uprising."
  cappadocian_nobles_joining: "The Kappadocian nobles, and the common folk who follow them, abandon the throne's cause and flock to the rebel banner."
 
+ br_ere_events.116.title: "Rumors of Revolt in Adrianople"
+ br_ere_events.116.entry: "$br_ere_events.116.title$"
+ br_ere_events.116.desc: "News has arrived that the local administration of [ShowLocationName('edirne')] attempts to levy a new tax on the populace has been met with fierce resistance, with local artisans decrying the tax as being too harsh, with many now taking up arms. To make matters worse, members of nearby towns have joined the rebel's cause and are planning to take up arms against both the administrators of [ShowLocationNameWithNoTooltip('edirne')] and the state."
+ br_ere_events.116.a: "The members of the revolt will have to be dealt with!"
+ br_ere_events.116.b: "Grant them autonomy."
+
+ br_ere_events.117.title: "Smyrna Revolt"
+ br_ere_events.117.entry: "$br_ere_events.117.title$"
+ br_ere_events.117.desc: "While the initial repeal of the [ShowEstatePrivilegeName('br_dynatoi_magnates')] by the orders of [GetCountry('BYZ').GetGovernment.GetPreviousRuler.GetName] was cheered by many members of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], due to the financial burden it imposed, the subsequent re-imposement by the state has caused that initial relief to transform into anger. In the city of [ShowLocationName('smyrna')], this anger has reached a boiling point where members of the local guilds are plotting to orchestrate an organized revolt in opposition to the state. Furthermore, in [ShowLocationName('constantinople')], opposition to the return of the [ShowEstatePrivilegeName('br_dynatoi_magnates')] has seen many arm themselves with mauls, risks yet another revolt unfolding."
+ br_ere_events.117.a: "We will crush them!"
+
  ### The Matter of the Nile ###
  br_ere_events.200.title: "The Matter of the Nile"
  br_ere_events.200.entry: "$br_ere_events.200.title$"
