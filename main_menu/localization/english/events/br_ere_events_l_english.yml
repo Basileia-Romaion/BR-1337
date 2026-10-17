@@ -85,18 +85,21 @@
  br_ere_events.11.c: "Our strength lies upon the land, not the sea."
 
  br_ere_events.12.title: "The Question of $AGY$"
+ br_ere_events.12.entry: "$br_ere_events.12.title$"
  br_ere_events.12.desc: "Alexandria, jewel of the Nile and seat of one of the Church's five ancient patriarchates, has remained bound to the Roman crown through centuries of storm. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] must now decide how best to hold what has been won: to draw $AGY$ fully into the machinery of the state, or to entrust her governance to an Exarch, ruling in the Emperor's name but by his own hand."
  br_ere_events.12.a: "Bind $AGY$ closer to the throne."
  br_ere_events.12.b: "Let an Exarch govern in our stead."
  br_ere_events.12.historical_info: "No Exarchate of $AGY$ ever existed in our own history. Historically Roman Egypt was instead governed as the Diocese of Egypt under an Augustal Prefect, prized above all for the grain that fed Constantinople. It was lost to the Arab conquest in 641, scarcely a decade after Emperor Heraclius had recovered it from Persian occupation — a loss from which the Empire never fully recovered."
 
  br_ere_events.13.title: "The Question of $AFK$"
+ br_ere_events.13.entry: "$br_ere_events.13.title$"
  br_ere_events.13.desc: "Carthage and the coastlands of $AFK$ once fed the granaries of Old Rome, and now sustain the New. Yet the province lies far across the sea, and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] must weigh whether distant $AFK$ is better ruled directly from Constantinople, or set beneath an Exarch who can answer its troubles without awaiting a fleet from home."
  br_ere_events.13.a: "Bind $AFK$ closer to the throne."
  br_ere_events.13.b: "Let an Exarch govern in our stead."
  br_ere_events.13.historical_info: "In our own history, the Exarchate of Africa was established around 591 by Emperor Maurice, uniting civil and military authority under a single governor at Carthage so that so distant a province might be defended without waiting on word from the capital. It endured for over a century before falling to the Umayyad conquest of Carthage in 698, ending Roman rule in North Africa."
 
  br_ere_events.14.title: "The Question of Ravenna"
+ br_ere_events.14.entry: "$br_ere_events.14.title$"
  br_ere_events.14.desc: "Ravenna has stood as Rome's window upon Italy since the days when emperors first fled the chaos of the peninsula for her marshes and walls. To rule Italy from Constantinople alone has always strained the Empire's reach; the throne must decide whether Ravenna is to be governed as any other province, or raised again as the seat of an Exarch, as in ages past."
  br_ere_events.14.a: "Bind Ravenna closer to the throne."
  br_ere_events.14.b: "Restore the Exarchate of Ravenna."
@@ -104,6 +107,7 @@
 
  # The Theme of Macedonia
  br_ere_events.15.title: "The Reorganization of the Balkan Themes"
+ br_ere_events.15.entry: "$br_ere_events.15.title$"
  br_ere_events.15.desc: "The lands of the Balkans have long been a bulwark of Roman power, guarding the approaches to Constantinople and securing the imperial dominion over Thrace and the lands beyond. Now that the authority of the Basileus extends throughout the region, the Imperial Court must determine how these territories shall best be governed. The provincial administration may be strengthened, binding the lands more closely to the imperial fisc and the order of the state. Alternatively, the lands around Philippopolis may be constituted as the Theme of $B4L$, entrusted to a loyal lord charged with their governance and defence in the Emperor's name."
  br_ere_events.15.a: "Strengthen the imperial administration."
  br_ere_events.15.b: "Establish the Theme of $B4L$."
@@ -111,6 +115,7 @@
 
  # The Theme of Bulgaria
  br_ere_events.16.title: "The Theme of $B5L$"
+ br_ere_events.16.entry: "$br_ere_events.16.title$"
  br_ere_events.16.desc: "The Vardar lands occupy a position of great consequence to the Roman Empire, commanding the routes that connect Constantinople with the western Balkans and the Danubian frontier. Their governance demands both steadfast loyalty and a constant readiness for war. The Imperial Court may strengthen the existing provincial administration, ensuring that its revenues and inhabitants remain more directly subject to the Basileus. Or the region may be entrusted to a loyal pronoia lord, raised to govern the Theme of Bulgaria and charged with maintaining its fortresses, mustering its soldiers, and preserving the Emperor's peace throughout the surrounding lands."
  br_ere_events.16.a: "Strengthen the imperial administration."
  br_ere_events.16.b: "Establish the Theme of $B5L$."
@@ -171,6 +176,7 @@
 
  ### Disarming Anatolia ###
  br_ere_events.105.title: "Disarming Anatolia"
+ br_ere_events.105.entry: "$br_ere_events.105.title$"
  br_ere_events.105.desc: "Imperial officials argue that the countryside must be pacified through force and disarmament, yet many peasants regard these measures as tyranny. Villages resist confiscation efforts, and rumors spread that entire districts may rise against the state if the policy continues."
  br_ere_events.105.a: "Disarm the countryside by force."
  br_ere_events.105.b: "Offer compensation and limited concessions."
