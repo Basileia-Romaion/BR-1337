@@ -4,7 +4,6 @@
  copy_of_flavor_dan.1.desc: "A terrible flood has hit our coast along the [ShowAreaName('north_sea_area')]! Reports from the local population have reached us, with one of them by the [ShowCultureName('low_franconian')] overseer of the local reclamation projects being especially descriptive:\n\n#italic 'In the evening, a great storm and bad weather rose from the southwest out of the sea. The wind began to blow so hard that no sleep could touch our eyes. The waves were rising up at the sea dike and onto the roof of the house. It was a very frightening sound.'#!\n\nThe sudden storm tide hitting the coastline from [ShowLocationName('ribe')] to [ShowLocationName('heide')] has left the local population and countryside devastated and without much hope. Some islands have been entirely swept away, leaving nothing behind."
  copy_of_flavor_dan.1.a: "This has to be divine punishment!"
  copy_of_flavor_dan.1.historical_info: "The Burchardi storm tide occurred in October 1634 and devastated the North Sea coastline of Denmark and Schleswig. Due to the ongoing conflict in the Holy Roman Empire between Protestants and Catholics at that time, the dikes protecting the north Frisian coastline fell in disrepair and were not able to provide protection against the incoming waves. The flood caused approximately between 8000 and 15000 deaths and had severe long-term consequences for the area, causing the abandoning of farmland and the eradication of the Old Nordstrand variety of the North Frisian language"
- variable_flood_follow_event_tt: "The Great Drowning has Struck"
 
  copy_of_flavor_dan.2.title: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] Permission for Higher Education"
  copy_of_flavor_dan.2.entry: "University of Copenhagen"
@@ -32,7 +31,6 @@
  copy_of_flavor_dan.5.a: "Draft the Scandinavian Constitution."
  opinion_enforced_scandinavian_constitution: "Enforced the Scandinavian Constitution"
  copy_of_flavor_dan.5.b: "Keep the Union decentralized."
- opinion_discarded_scandinavian_constitution: "Discarded the Scandinavian Constitution"
 
  copy_of_flavor_dan.6.title: "A New Dynasty"
  copy_of_flavor_dan.6.entry: "$copy_of_flavor_dan.6.title$"
@@ -85,8 +83,6 @@
  copy_of_flavor_dan.13.title: "Growth of the Cattle Trade"
  copy_of_flavor_dan.13.entry: "$copy_of_flavor_dan.13.title$"
  copy_of_flavor_dan.13.desc: "For centuries the Oxen Road has carried armies and merchants to and from [ShowProvinceDefinitionName('western_jutland_province')]. More than anything, however, it is used to bring thousands of cattle to the great market of Wedel, near [ShowLocationName('hamburg')], where the cattle is sold to places all over [ShowRegionName('north_german_region')]. With the current growth of the population in northern [ShowContinentName('europe')], we could expand our own participation in the trade of cattle southwards and raise our profits. However, some advisors worry that this will empower our landed [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], while decreasing the freedom of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]."
- STATIC_MODIFIER_NAME_growth_of_the_cattle_trade: "Growth of the Cattle Trade"
- STATIC_MODIFIER_DESC_growth_of_the_cattle_trade: "Expanding our focus on the cattle trade will increase our agricultural capacities while favoring interests of the [ShowEstateTypeName('nobles_estate')] with consequences for the freedom of our [ShowEstateTypeName('peasants_estate')]."
  copy_of_flavor_dan.13.a: "More money has never harmed anyone!"
  copy_of_flavor_dan.13.b: "We can not allow this."
  
@@ -248,14 +244,12 @@
  copy_of_flavor_dan.37.entry: "Decline of the Hanseatic League"
  copy_of_flavor_dan.37.desc: "Following our decisive victories in the capture of [ShowLocationName('lubeck')] and [ShowLocationName('hamburg')], two of the most significant ports of [GetCountry('HSA').GetName], the power and influence of our longstanding trading rival have been substantially diminished. With the [GetCountry('HSA').GetAdjectiveWithNoTooltip] defeat, our dominance over the Baltic trade has been solidified, making us the undisputed hegemon of commerce in the region."
  copy_of_flavor_dan.37.a: "Baltic wealth now flows solely into our coffers!"
- STATIC_MODIFIER_NAME_dan_defeated_hansa: "Defeated the Hanseatic League"
- 
+
  copy_of_flavor_dan.38.title: "Lion of the North"
  copy_of_flavor_dan.38.entry: "$copy_of_flavor_dan.38.title$"
  copy_of_flavor_dan.38.desc: "Our recent rise to [ROOT.GetCountry.GetGovernment.GetAdjective] status, coupled with our control over [ShowLocationName('stockholm')] and [ShowLocationName('oslo')], has solidified our dominance in the region. With our authority unchallenged, we are the undisputed rulers of [ShowRegionName('scandinavian_region')], and our influence only continues to grow. The [ShowCultureName('danish')] lion now roars with unmatched strength, its echo heard across the north."
  copy_of_flavor_dan.38.a: "Our foes shall tremble before our might!"
- STATIC_MODIFIER_NAME_dan_lion_from_the_north: "Lion of the North"
- 
+
  copy_of_flavor_dan.39.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Colonial Empire"
  copy_of_flavor_dan.39.entry: "$copy_of_flavor_dan.39.title$"
  copy_of_flavor_dan.39.desc: "The exploration spirit of our Viking ancestors has been reignited as we have established footholds in [ShowContinentName('america')], [ShowContinentName('africa')], and [ShowContinentName('asia')]. With these new territories under our control, we have claimed our rightful place among the great colonial empires of the world. Our reach now extends across continents, and our influence is felt in distant lands, securing our place on the global stage."
