@@ -3,21 +3,16 @@
  copy_of_flavor_eng.1.entry: "The Lollardy Heresy"
  copy_of_flavor_eng.1.desc: "In the hallowed halls of [target_location.GetName], a new religious movement has emerged, challenging the established order. [john_wycliffe.GetName], a respected philosopher, advocates for a radical vision of [ShowReligionGroupName('christian')], aimed at empowering the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] while suppressing the corrupt [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and their obscene hierarchy.\n\nHis teachings are unique in that he calls for the Bible to be translated into [ROOT.GetCountry.GetCulture.GetLanguage.GetName], so that it can be read and understood by the common people.\n\nWe are faced with a choice to actively suppress the heretics, or simply ignore the harmless musings."
  copy_of_flavor_eng.1.a: "Stop the Heretics."
- lots_of_lollards: "Many of our [ROOT.GetCountry.GetCulture.GetName] [ShowReligionAdjective('catholic')] [pops|e] in [ShowRegionName('great_britain_region')] will convert to [ShowReligionName('lollardy')]"
- eng_opposes_lollards: "Opposing the Lollards"
  copy_of_flavor_eng.1.b: "Let them be."
  copy_of_flavor_eng.1.tt2: "Efforts made to oppose [john_wycliffe.GetHimHer] may slow the ongoing spread of [ShowReligionName('lollardy')]"
  copy_of_flavor_eng.1.tt3: "[john_wycliffe.GetHisHer|U] tolerated presence in [target_root_country.GetName] is likely to contribute to the ongoing spread of [ShowReligionName('lollardy')]"
- eng_tolerates_lollards: "Tolerates Lollards"
  copy_of_flavor_eng.1.historical_info: "The Lollard movement was a religious reform movement in England that grew in popularity in the fourteenth and fifteenth centuries, predating the Reformation. Inspired by the teachings of John Wycliffe, its followers sought to reform the perceived corruption of the Catholic Church. Lollards faced persecution, and some were executed for their beliefs."
 
  copy_of_flavor_eng.2.title: "The End of the Hundred Years War"
  copy_of_flavor_eng.2.entry: "$copy_of_flavor_eng.2.title$"
  copy_of_flavor_eng.2.desc: "The territorial holdings once held in [ShowRegionName('france_region')] by [ROOT.GetCountry.GetName] have been lost, dealing a devastating blow to our ambitions of subjugating [GetCountry('FRA').GetName] and forging a great cross-channel empire. We can persevere and attempt yet another reconquest, or come to terms with the bitter reality that our grand aspirations may be slipping away."
  copy_of_flavor_eng.2.a: "Accept the inevitable."
- eng_no_english_in_france: "No English in France"
  copy_of_flavor_eng.2.b: "We will never give this up!"
- eng_refuse_to_give_up_france: "Refuse to Give Up France"
  copy_of_flavor_eng.2.c: "Spin this in our favor."
  copy_of_flavor_eng.2.tt1: "The eloquent and persuasive manner of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] skillfully plays down the recent territorial losses"
  copy_of_flavor_eng.2.historical_info: "The Hundred Years War was the last great medieval war. It was a war not just between kings, but lesser nobles were also able to pursue their agendas while participating in the larger conflict. Future wars saw far less factionalism, at least on the scale of medieval conflicts. The Hundred Years War was dozens of little wars and hundreds of battles and sieges that lasted for over a century, between 1337 and 1453, until both sides were exhausted. While neither side won in any real sense, the result was that while there were two kingdoms at the beginning of the war, there were two nations at the end."
@@ -47,7 +42,6 @@
  copy_of_flavor_eng.7.b.entry: "Accept the supremacy of $PAP$."
  copy_of_flavor_eng.7.tt3: "[anne_boleyn.GetHimHer|U] removal from court plays into the schemes of [thomas_wolsey.GetName], who sees [thomas_wolsey.GetHisHer] influence grow stronger"
  copy_of_flavor_eng.7.tt4: "The heart-broken [target_root_country.GetGovernment.GetRulerTitle] disposes of [target_root_country.GetGovernment.GetRuler.GetHisHer] wretched mistress as the prospects of a marital union fade into oblivion"
- accepted_supremacy_of_rome: "Accepted Supremacy of the Pope"
  copy_of_flavor_eng.7.historical_info: "In 1521, Henry VIII of England earned the papal title of Defender of the Faith for his anti-Luther pamphlet. His focus shifted to the issue of succession in 1529 when the Papal Curia rejected his divorce proposal to Catherine of Aragon. Subsequently, Henry stripped of his government office and property the Pope's Legate, Cardinal Wolsey, and compelled the English clergy to acknowledge him as the Church's supreme head. Securing his divorce in 1533, Henry married Anne Boleyn, marking it the second of his six marriages. The Act of Supremacy then was passed on 3 November 1534 by the Parliament of England, solidifying his authority over the Church of England."
  
  copy_of_flavor_eng.8.title: "The Board of Admiralty"
@@ -62,12 +56,10 @@
  copy_of_flavor_eng.9.desc: "A band of disgruntled farmers originating from [ShowProvinceDefinitionName('norfolk_province')] have aligned themselves with a rebel movement, led by local Earl [robert_kett.GetName]. They are protesting against economic inequality which is blamed on [ShowPolicyName('enclosure_allowed')], which has resulted in the fencing off of common lands, displaced traditional farming communities, and contributed to rural unemployment. They are currently seeking support across the country unless we act to stem the movement by restoring the status quo."
  copy_of_flavor_eng.9.a: "It is for their own good."
  copy_of_flavor_eng.9.tt2: "The [ShowPopTypeName('peasants')] of [ShowProvinceDefinitionName('norfolk_province')] rally disgruntled agrarians across [ShowRegionName('great_britain_region')] and rise up in armed rebellion"
- kett_rebellion: "Kett's Rebellion"
  copy_of_flavor_eng.9.b: "Demand all fencing be removed."
  copy_of_flavor_eng.9.tt3: "Landowners of the nobility protest against the infringement on their landed privileges"
  copy_of_flavor_eng.9.historical_info: "Kett's Rebellion was a popular uprising in Norfolk, England. The rebellion was a result of the enclosures of the agricultural areas across England, which restricted land access and led to socio-economic grievances. The rebels successfully took over Norwich, but were ultimately defeated as Royal Forces breached the city walls."
- every_location_norfolk_kett_rebellion_tt: "Every owned [location|e] in [ShowProvinceDefinitionName('norfolk_province')] gains [ShowModifier('kett_rebellion')] for #W 5 years#!"
- 
+
  copy_of_flavor_eng.10.title: "The Towering Apartments"
  copy_of_flavor_eng.10.entry: "$copy_of_flavor_eng.10.title$"
  copy_of_flavor_eng.10.desc: "The bustling [target_location.GetRank.GetName] of [target_location.GetName] is a beacon of prosperity and commerce, but the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] finds itself trapped in the confines of Westminster, hemmed in by the powerful [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] who have greedily held special rights over the main [target_location.GetRank.GetNameWithNoTooltip] since time immemorial. These merchants and traders have seized control of the streets and markets, using their influence to shape the direction of the [target_location.GetRank.GetNameWithNoTooltip]'s growth and development.\n\nTo reassert the authority of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] and restore order to the streets, a bold new plan must be hatched. One possibility is the construction of a grand riverside apartment for [target_ruler.GetName], near the imposing Tower of [target_location.GetNameWithNoTooltip]. From this vantage point, the [ROOT.GetCountry.GetGovernment.GetRulerTitle] can keep a watchful eye on the city and show the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] who truly holds the power."
@@ -94,7 +86,6 @@
  copy_of_flavor_eng.12.tt1: "All ports are abandoned as a result of shifting sentiment over their contribution along with the cancellation of the long-held celebrations"
  copy_of_flavor_eng.12.tt2: "A port is abandoned as it is perceived as a relic of the past"
  copy_of_flavor_eng.12.tt3: "The tradition dies out"
- decline_of_cinque_ports_tt: "The [ShowBuildingTypeName('cinque_port')] buildings are in decline"
  copy_of_flavor_eng.12.historical_info: "The Lord Warden's Show is a procession associated with the Lord Warden of the Cinque Ports, and was used as a ceremonial display of his authority. Today, it takes place annually and celebrates the maritime heritage and historical significance of the Cinque Ports."
  
  copy_of_flavor_eng.13.title: "The Great Divide"
@@ -123,9 +114,6 @@
  copy_of_flavor_eng.15.desc: "Being a distant cousin of [target_ruler.GetName] and an astute follower of [ShowReligionName('anglican')], [jane_grey.GetName] has carefully maneuvered herself with the help of aspiring relatives to press her claim for the [ROOT.GetCountry.GetAdjective] throne. Despite her reluctance and lack of country-wide support, she has mustered a sizeable following in [ShowProvinceDefinitionName('northumberland_province')], who are willing to use force to secure the crown for the Lady."
  copy_of_flavor_eng.15.a: "Her claim will not be recognized!"
  copy_of_flavor_eng.15.tt1: "[jane_grey.GetNameWithNoTooltip] is added as a [character|e]"
- jane_grey_support: "Supporters of Jane Grey"
- STATIC_MODIFIER_NAME_grey_support: "Support for Jane Grey"
- jane_grey_support_nobles_joining: "All [ShowReligionAdjective('anglican')] [ShowPopTypeName('nobles')] in [ShowAreaName('northumbria_area')] will join [jane_grey_support.GetName]"
  copy_of_flavor_eng.15.b: "Offer the prospect of next-in-line."
  copy_of_flavor_eng.15.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] oppose the appointment of a heretic as heir"
  copy_of_flavor_eng.15.c: "The Tower awaits her."
@@ -177,13 +165,11 @@
  copy_of_flavor_eng.20.entry: "Northern Rebellion"
  copy_of_flavor_eng.20.desc: "The arrest and subsequent imprisonment of influential [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] from [ShowProvinceDefinitionName('norfolk_province')] in the Tower of [ShowLocationName('london')] has sent shock waves across the political landscape. Their incarceration is an attempt to quell the growing [ShowReligionAdjective('catholic')] movement in [ShowProvinceDefinitionName('northumberland_province')] and [ShowProvinceDefinitionName('westmorland_province')], provinces which host a sizeable heretic population. In response to these arrests, two local members of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] - [thomas_percy.GetName] and [charles_neville.GetName] - have raised a rebellion, vowing to restore the [ROOT.GetCountry.GetFlavorRank] to the true faith. We are now confronted with an armed uprising unless we release the imprisoned [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] or engage in dialogue with the rebel leaders."
  copy_of_flavor_eng.20.a: "Keep them in the Tower."
- northern_rebellion: "Northern Rebellion"
  
  copy_of_flavor_eng.20.b: "Attempt to negotiate."
  copy_of_flavor_eng.20.c: "Release them."
  copy_of_flavor_eng.20.tt3: "The release of the imprisoned [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] calms the waters but strengthens the [ShowReligionAdjectiveWithNoTooltip('catholic')] movement in the North"
  copy_of_flavor_eng.20.historical_info: "Queen Elizabeth I aimed to establish Protestant Anglicanism in England, but faced challenges when Mary Queen of Scots sought refuge in her kingdom. Mary's Catholic claim to the throne posed a threat, so Elizabeth imprisoned her. Mary then became the focus of plots to overthrow Elizabeth, including a marriage proposal to Norfolk, England's only Duke. Norfolk's delay led to his imprisonment, yet Elizabeth suspected other nobles, like the Earls of Northumberland, Westmorland, and Cumberland, of involvement. When summoned to London, they rebelled on November 9, 1569. The uprising, fueled by resentment against Tudor rule, led to harsh measures from Elizabeth, including executions. Despite this, Catholicism persisted in the North, leading to a decade of persecution."
- every_pop_in_province_pop_satisfaction_ultimate_penalty_and_northern_rebellion_tt: "Every [pop|e] in this [province|e] that follows the [ShowReligionAdjectiveWithNoTooltip('catholic')] faith and is not already supporting another [rebel|e], will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and join the [northern_rebellion.GetName]"
  
  copy_of_flavor_eng.21.title: "The Ill-Mannered Speculators"
  copy_of_flavor_eng.21.entry: "$copy_of_flavor_eng.21.title$"
@@ -205,9 +191,7 @@
  copy_of_flavor_eng.23.desc: "Initially raised in [ROOT.GetCountry.GetName] and loyal to the [ROOT.GetCountry.GetFlavorRank], [target_character.GetName] served in the the local [ROOT.GetCountry.GetAdjectiveWithNoTooltip] government in [ShowRegionName('ireland_region')]. Recently, however, he has proved to be a contrarian, going against many of our cornerstone policies. He rebelled, forging alliances with other [ShowCultureNameWithNoTooltip('irish')] chiefs and securing foreign support against his masters. This level of disloyalty and infighting is endangering our stability, and the whole situation puts our internal grasp on power in great danger!"
  copy_of_flavor_eng.23.historical_info: "Hugh O'Neill lived in England in the 1560s, where he served the government until his rebellion in 1594. Dissatisfied with the English government's persistent policy of playing the chiefs against one another, O'Neill was also angered by the English refusal to restore the lands granted to his grandfather. Finally, he united the Irish chiefs and sought aid from Catholic Spain against Protestant England. After 1595, he forged a fragile but effective alliance and won several victories over Queen Elizabeth's top commanders in Ireland. However, in 1601, he was defeated while attempting to link up with a Spanish force at Kinsale. With his allies scattered, he retreated to Ulster. In 1603, he made peace with the English, surrendering his tribal authority, and was later pardoned by King James I."
  copy_of_flavor_eng.23.a: "We are not amused!"
- irish_pops_rise_up_tt: "[ShowCultureNameWithNoTooltip('irish')] [pops|e] in every owned [location|e] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and support the [tyrone_rebels.GetName]"
- tyrone_rebellion: "Tyrone's Rebellion"
- 
+
  copy_of_flavor_eng.24.title: "The [ShowGovernmentReformNameWithNoTooltip('petition_of_rights')]"
  copy_of_flavor_eng.24.entry: "The Petition Of Rights"
  copy_of_flavor_eng.24.desc: "Tensions between [target_character.GetShortName] and the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] have culminated in demands by our estates under a bold document, the [ShowGovernmentReformName('petition_of_rights')]. The bill demands limits on [ROOT.GetCountry.GetGovernment.GetAdjective] authority, setting many limits to the powers of [target_character.GetNameWithNoTooltip], the billeting of soldiers in private homes, the use of martial law in peacetime, and imprisonment without cause. Signing it would secure much-needed cooperation, but it would also weaken our power. Refusing could assert [ROOT.GetCountry.GetGovernment.GetAdjective] authority, but at the risk of deepening the divide with the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
@@ -223,9 +207,7 @@
  copy_of_flavor_eng.25.a.entry: "We will not negotiate with our parliament."
  copy_of_flavor_eng.25.b: "Submit to the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]..."
  copy_of_flavor_eng.25.b.entry: "Submit to our parliament..."
- parliamentary_rebellion: "Parliament Rebels"
- flavor_eng25_rebellion_tt: "Approximately #Y [ROOT.GetVariable('total_rebel_pops_variable').GetValue|V0]K#! [pops|e] from [ROOT.GetVariable('total_affected_provinces_variable').GetValue] [provinces|e] in [ShowRegionName('great_britain_region')] such as [target_province.GetName] will join the [target_rebel.GetName]"
- 
+
  copy_of_flavor_eng.26.title: "The [ShowPolicyNameWithNoTooltip('act_of_navigation')]"
  copy_of_flavor_eng.26.entry: "The Act Of Navigation"
  copy_of_flavor_eng.26.desc: "The sea is the lifeblood of our [ROOT.GetCountry.GetFlavorRank], yet foreign merchants from [target_country.GetName] grow fat off our commerce while our own merchants are outcompeted in shared markets. In markets such as [ShowLocationName('london')], the greedy [target_country.GetAdjectiveWithNoTooltip] merchants have sunk their claws greedily, profiting from trade that would otherwise belong to us.Now, under the strong direction of [target_character1.GetName], our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] demand action.\n\nA bold new policy, the [ShowPolicyName('act_of_navigation')], has been drafted. It would shift our markets towards a mercantilist stance and immediately enforce an embargo against the merchants of [target_character2.GetName]. However, the balance of power and diplomacy is a delicate one and we must handle this matter with utmost care."
@@ -254,9 +236,6 @@
  copy_of_flavor_eng.29.desc: "The unbreakable spirit of the [ShowCultureName('highland')] people has led them to rise in rebellion under [target_character.GetName]. As of lately, thousands flock to the banner of the [jacobite_uprising.GetName] cause. They demand the throne for [target_character.GetShortNameWithNoTooltip], stirring unrest against the established order under [target_sitting_ruler.GetName]. This is but the latest threat to our continued and prosperous rule, their failed cause will be crushed posthaste!"
  copy_of_flavor_eng.29.historical_info: "The rebellion of the Jacobite cause led by the Earl of Mar began in 1715. By the end of September, most of the Highlands were in his control and his army numbered some 5,000 with more appearing daily. But all this was done without even notifying the King they were claiming to support. The Old Pretender, King James III, was not even aware of the situation as of yet. Word was sent to the King, and the size of the force continued to grow. The Earl, with his growing army, moved to Perth and established his base there after taking the city. Meanwhile another Jacobite army was forming to the south, The Old Pretender hearing the news began to make preparations for his trip to Scotland and his crowning. By early November, the northern Jacobite army numbered some 12,000, mostly Clansmen from the Highlands. The Earl then decided to march south where he soon met the army of the Duke of Argyll, the only remaining government troops in Scotland. The Jacobite forces were mismanaged and split. The southern army marched south to raise Lancashire instead of turning on the Duke of Argyll's flank, while a much smaller force under the Duke defeated the larger northern army of the Jacobites at Sheriffmuir on November 13th. The southern army was also met and defeated at Preston by other government forces in England. The Jacobites were forced to retreat to Perth, while still waiting for their leader to arrive. The Old Pretender finally arrived in Scotland on the 22nd of December after leaving fittingly enough from Dunkirk. But the matter was already settled, as the Duke of Argyll was already receiving reinforcements of experienced troops and was preparing an overwhelming force to march north. The King, James III, was again forced to retreat after spending a dismal six weeks in Scotland."
  copy_of_flavor_eng.29.a: "We will smash them!"
- jacobite_uprising: "Jacobite Rebellion"
- jacobite_uprising_joining: "All [ShowCultureName('highland')] [pops|e] in [ShowAreaName('scottish_highlands_area')] join [jacobite_uprising.GetName]"
-
  
  copy_of_flavor_eng.30.title: "[robert_walpole.GetNameWithNoTooltip]"
  copy_of_flavor_eng.30.entry: "Robert Walpole"
@@ -269,7 +248,6 @@
  copy_of_flavor_eng.31.desc: "Word has reached us of a tense exchange between one of our captains being detained and confronted by a [target_country.GetAdjective] vessel. According to the messenger, our crew was mistreated greatly and the captain even lost one of his ears. This is just the latest round of provocation from the despicable [target_character2.GetName], we must project strength!"
  copy_of_flavor_eng.31.historical_info: "The War of Jenkins' Ear, which later merged into the War of the Austrian Succession, stemmed from a minor but controversial incident in 1731 between Spanish Guardacostas and the crew of the Glasgow brig Rebecca. Captain Jenkins claimed that while sailing in the Caribbean, his ship was boarded, his crew mistreated, and his ear cut off by the Spaniards. He also alleged torture and death threats. Though the war saw no major battles, it led to the dispatch of Anson's squadron, which eventually circumnavigated the globe, and Admiral Edward Vernon's fleet launched attacks on Spanish territories in the Caribbean."
  copy_of_flavor_eng.31.a: "An ear for an ear..."
- eng_captain_jenkins_incident: "Captain Jenkins Incident"
  copy_of_flavor_eng.31.b: "Let us not risk open war."
  
  copy_of_flavor_eng.32.title: "[jacobite_uprising.GetNameWithNoTooltip]"
@@ -359,37 +337,6 @@
  copy_of_flavor_eng.44.a: "Crack down on the nobles."
  copy_of_flavor_eng.44.b: "Let the lords do what they please."
  copy_of_flavor_eng.44.b.tt: "Many [ShowReligionAdjective('catholic')] [pops|e] in [target_province.GetName] convert to [ShowReligionName('lollardy')]"
- STATIC_MODIFIER_NAME_suppressing_heresy: "Suppressing Heresy"
- 
- copy_of_flavor_eng.45.title: "The Founding of House [target_dynasty.GetNameWithNoTooltip]"
- copy_of_flavor_eng.45.entry: "The Founding of House York"
- copy_of_flavor_eng.45.desc: "The many noble Houses that populate our [ROOT.GetCountry.GetFlavorRank] have long since held tremendous power and influence. Recently, a new dynasty by the name [target_dynasty.GetName], a cadet branch of the [ShowDynastyNameWithNoTooltip('plantagenet_dynasty')] dynasty, has emerged under [target_character.GetName]. Their ambitions are not yet clear, but they seem to be shaping into a great contender for [ROOT.GetCountry.GetAdjective] politics."
- copy_of_flavor_eng.45.historical_info: "The House of York, a cadet branch of the Plantagenets, produced three English kings during the 15th century: Edward IV, Edward V, and Richard III. Descended from Edward III's son Edmund of Langley, it had a strong claim to the throne, leading to conflict with the Lancastrians in the Wars of the Roses. Edward IV secured the throne, but Richard III's reign ended at Bosworth in 1485, ushering in the Tudor era. Despite its short rule, the Yorkist legacy shaped England's monarchy and remains influential, especially through Elizabeth of York's marriage to Henry VII, uniting the warring factions."
- copy_of_flavor_eng.45.a: "This can only be good!"
-
- copy_of_flavor_eng.46.title: "The House [ShowDynastyNameWithNoTooltip('lancaster_dynasty')]"
- copy_of_flavor_eng.46.entry: "The House of Lancaster"
- copy_of_flavor_eng.46.desc: "The House [ShowDynastyName('lancaster_dynasty')] is a split from our own [target.GetDynasty.GetName] Dynasty. By establishing a marriage between both branches through [target.GetName] and [target_female.GetName], we can ensure a more tight relationship with them, and that they will always contribute to and work for the benefit of the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetAdjective] House."
- copy_of_flavor_eng.46.historical_info: "The Second House of Lancaster was a cadet branch of the House of Plantagenet. It was formed by the third surviving son of King Edward III, John of Gaunt, who married his cousin Blanche of Lancaster. She was the daughter of one of the most powerful nobles of England, Henry of Grosmont, the Duke of the First House of Lancaster, a branch descending from King Henry III. The Lancaster family produced three kings of England, and their conflict with House of York over who to rule England became known as the War of the Roses."
- copy_of_flavor_eng.46.a: "This can only be good!"
-
- copy_of_flavor_eng.47.title: "Edward III's Younger Sons"
- copy_of_flavor_eng.47.entry: "$copy_of_flavor_eng.47.title$"
-
- copy_of_flavor_eng.667.title: "Birth of Blanche of Lancaster"
- copy_of_flavor_eng.667.entry: "$copy_of_flavor_eng.667.title$"
-
- copy_of_flavor_eng.48.title: "[isabella.GetNameWithNoTooltip] of [target_country.GetNameWithNoTooltip]"
- copy_of_flavor_eng.48.entry: "Isabella of Castile"
- copy_of_flavor_eng.48.desc: "With our ambitions in [ShowRegionName('iberia_region')] growing, the [target_dynasty.GetName] dynasty has secured yet another valuable alliance. [target_head.GetName] has taken [isabella.GetName] as [target_head.GetHerHis] [isabella.GetWifeHusband], strengthening the dynasty's ties to the legacy of the [target_country.GetLongName]. This new marriage further legitimizes our influence and claim over one of the most prestigious countries in [ShowContinentName('europe')]. Perhaps it is time to ensure our dominance in the affairs of [ShowRegionNameWithNoTooltip('iberia_region')]."
- copy_of_flavor_eng.48.a: "A White Rose!"
- copy_of_flavor_eng.48.historical_info: "The marriage in 1372 of Edmund of Langley, 1st Duke of York, and Isabella of Castile, daughter of King Pedro I of Castile and his mistress María de Padilla, was a politically motivated union arranged by Edmund's older brother, John of Gaunt. At the time, John was asserting a claim to the Castilian throne through his own marriage to Isabella's sister, Constance, who held dynastic rights to the Castilian throne as Pedro's oldest successor. Marrying Isabella to Edmund helped to further reinforce John of Gaunt's ambitions in Castile, and further strengthen his ties to the Petrist 'legitimist' followers."
- 
- copy_of_flavor_eng.49.title: "The Fate of House Plantagenet"
- copy_of_flavor_eng.49.entry: "$copy_of_flavor_eng.49.title$"
- copy_of_flavor_eng.49.desc: "While [ROOT.GetCountry.GetGovernment.GetRuler.GetName] have no children yet, there is no worry for the succession, as there are two strong cadet branches in House [ShowDynastyName('york_dynasty')] and the House [ShowDynastyName('lancaster_dynasty')].\n\nSurely there will be no way for these Roses to have a Conflict..."
- copy_of_flavor_eng.49.a: "The future is safe!"
- copy_of_flavor_eng.49.a.tooltip: "Clearly this can never cause a war."
  
  copy_of_flavor_eng.50.title: "The Forme of Cury"
  copy_of_flavor_eng.50.entry: "$copy_of_flavor_eng.50.title$"
@@ -397,7 +344,6 @@
  copy_of_flavor_eng.50.historical_info: "The Forme of Cury ('cury' meaning 'cookery') was an extensive collection of recipes written by Richard II's personal chefs.\n\nMany of the dishes described were rich with foreign spices and colorings, far beyond the means of any ordinary cook of the time. In fact, many recipes were even more elaborate and expensive than contemporary French royal cookery books. Because of this, it has been suggested that the extravagant quantities were not realistic, but instead part of a propaganda effort to increase the prestige of the English royal court abroad."
  copy_of_flavor_eng.50.a: "Retain the exclusivity."
  copy_of_flavor_eng.50.b: "Introduce it to all."
- eng_the_forme_of_cury_demand: "The Forme of Cury"
  
  copy_of_flavor_eng.51.title: "The Order of the Garter"
  copy_of_flavor_eng.51.entry: "$copy_of_flavor_eng.51.title$"
@@ -604,7 +550,6 @@
  copy_of_flavor_eng.79.desc: "The rebels arrived at [target_location.GetName] castle to find the [ROOT.GetCountry.GetGovernment.GetRulerTitle] absent from the celebrations. Hearing that their plan has been revealed, they quickly left and are attempting to raise the standard of rebellion."
  copy_of_flavor_eng.79.a: "Let the local authorities handle it."
  copy_of_flavor_eng.79.b: "Off with their heads!"
- epiphany_rebellion_support: "Epiphany Rebellion"
 
  copy_of_flavor_eng.80.title: "The Coup d'Etat"
  copy_of_flavor_eng.80.entry: "$copy_of_flavor_eng.80.title$"
@@ -705,16 +650,12 @@
  copy_of_flavor_eng.95.a: "An unholy alliance that deserves no mercy."
  copy_of_flavor_eng.95.b: "Appeal to the [percy_dynasty.GetNameWithNoTooltip] family."
  copy_of_flavor_eng.95.b.entry: "Appeal to the [ShowDynastyNameWithNoTooltip('percy_dynasty')] family."
- percy_uprising: "Percy Rebels"
  copy_of_flavor_eng.95.tt2: "The [percy_dynasty.GetNameWithNoTooltip] family may lay down arms in exchange for a hefty lump sum of gold"
  copy_of_flavor_eng.95.c: "Appeal to the [mortimer_dynasty.GetNameWithNoTooltip] family."
  copy_of_flavor_eng.95.c.entry: "Appeal to the [ShowDynastyNameWithNoTooltip('mortimer_dynasty')] family."
- mortimer_uprising: "Mortimer Rebels"
- percy_and_mortimer_uprising: "Percy and Mortimer Rebels"
  copy_of_flavor_eng.95.tt3: "The [mortimer_dynasty.GetNameWithNoTooltip] family may lay down arms in exchange for a generous donation"
  copy_of_flavor_eng.95.tt4: "The [percy_dynasty.GetNameWithNoTooltip] and [mortimer_dynasty.GetNameWithNoTooltip] families raise their armies in [ShowProvinceDefinitionName('northumberland_province')] and [ShowProvinceDefinitionName('staffordshire_province')]"
  copy_of_flavor_eng.95.historical_info: "The Tripartite Indenture was an agreement to divide England and Wales at the expense of the reigning monarch Henry IV. If successful, it would have split England into three separate kingdoms."
- variable_tripartite_indenture_tt: "The Tripartite Indenture has been Signed"
 
  copy_of_flavor_eng.96.title: "[john_thornton.GetNameWithNoTooltip]"
  copy_of_flavor_eng.96.entry: "John Thornton"
@@ -755,19 +696,12 @@
  copy_of_flavor_eng.99.desc_generic: "Ongoing hostilities and persecution have turned the reformist movement of the [ShowReligionName('lollardy')] against us. Equipped with pitchforks and other armaments, they have risen up in great numbers to combat what they perceive as grave injustices towards them."
  copy_of_flavor_eng.99.a: "A minor inconvenience."
  copy_of_flavor_eng.99.tt: "The Lollards rise up in open rebellion"
- lollard_uprising: "Lollard Rebels"
  copy_of_flavor_eng.99.historical_info: "The Lollard Rising was a religious and social uprising in England, centered in the southeastern counties. The rebellion was sparked by a combination of dissatisfaction with religious practices and social grievances. The rebels demanded the removal of what they considered to be heretical bishops, as well as an end to tithes, along with other religious reforms. The rebels faced significant military opposition and lost their momentum when many of its leaders were captured and executed."
 
  copy_of_flavor_eng.100.title: "River Thames freezes over"
  copy_of_flavor_eng.100.entry: "$copy_of_flavor_eng.100.title$"
  copy_of_flavor_eng.100.desc: "A cold spell has caused the river Thames to freeze from [ShowProvinceDefinitionName('kent_province')] to [london.GetName], crippling sea-based trade with the continent. We face shortages in key goods and [london.GetNameWithNoTooltip] trade is likely to remain impaired for some time, as merchants are inclined to set up alternative routes for the purpose of continued trading."
  copy_of_flavor_eng.100.a: "A minor inconvinience."
- STATIC_MODIFIER_NAME_wine_imports_banned: "Restricted Wine Import"
- STATIC_MODIFIER_NAME_wool_imports_banned: "Restricted Wool Import"
- STATIC_MODIFIER_NAME_fur_imports_banned: "Restricted Fur Import"
- STATIC_MODIFIER_NAME_cloth_exports_banned: "Restricted Cloth Export"
- STATIC_MODIFIER_NAME_fine_cloth_exports_banned: "Restricted Fine Cloth Export"
- trade_impaired: "Trade Impaired"
  copy_of_flavor_eng.100.tt1: "Merchants using [london.GetName] as their hub for continental trade will need to charter transportation to other trading ports"
  copy_of_flavor_eng.100.b: "Provide funding to reroute all trade to [southampton.GetNameWithNoTooltip]."
  copy_of_flavor_eng.100.b.entry: "Provide funding to reroute all trade to [ShowLocationNameWithNoTooltip('southampton')]."
@@ -821,8 +755,6 @@
  copy_of_flavor_eng.104.b: "She is a jinx that one."
  copy_of_flavor_eng.104.tt2: "[margaret_beaufort.GetNameWithNoTooltip] is added as a [character|e]"
  copy_of_flavor_eng.104.historical_info: "Margaret Beaufort was the mother of Henry VII, whom she gave birth to when she was just 13 years old. She played a significant role in his efforts to seize the English throne and took an active role in conspiracies and plans to make this possible. She is also remembered for her strong religious beliefs and devotion, and for founding Christ's College and St. John's College at the University of Cambridge."
- variable_supports_house_of_lancaster_tt: "The Court Supports the [ShowDynastyName('lancaster_dynasty')]"
- variable_supports_house_of_york_tt: "The Court Supports the [ShowDynastyName('york_dynasty')]"
 
  copy_of_flavor_eng.105.title: "The Aspirations of [henry_tudor.GetNameWithNoTooltip]"
  copy_of_flavor_eng.105.entry: "The Aspirations of Henry Tudor"
@@ -874,8 +806,6 @@
  copy_of_flavor_eng.111.b.custom: "Every owned [location|e] in [ShowProvinceDefinitionName('cornwall_province')] and [ShowProvinceDefinitionName('devon_province')] gains [ShowModifier('tin_mining_reduced')] and [ShowModifier('privileges_revoked')] for #W 4 years#!"
  copy_of_flavor_eng.111.tt2: "The tin miners are disgruntled and less productive"
  copy_of_flavor_eng.111.c: "$common_string_leave_them_be$"
- STATIC_MODIFIER_NAME_tin_mining_reduced: "Tin Mining Reduced"
- STATIC_MODIFIER_NAME_privileges_revoked: "Tin Miner privileges revoked"
  copy_of_flavor_eng.111.historical_info: "Following disagreements regarding new regulations for the tin-mining industry, King Henry VII suspended the operation and privileges of the Cornish stannaries which at the time constituted a a major part of the economy of the county. The cause of the suspension was partially motivated by the ongoing wars with Scotland, for which the crown lacked sufficient funds to combat."
 
  copy_of_flavor_eng.112.title: "The Cornish Rebellion"
@@ -885,8 +815,6 @@
  copy_of_flavor_eng.112.tt1: "The tin miners join forces and rise up in armed rebellion"
  copy_of_flavor_eng.112.b: "Cancel the forced loans."
  copy_of_flavor_eng.112.tt2: "The fine-tuned diplomatic skills of [target_character.GetNameWithNoTooltip] allows for a peaceful settlement"
- cornish_rebellion: "Cornish Rebellion"
- STATIC_MODIFIER_NAME_cornish_rebellion: "Cornish Rebellion"
  copy_of_flavor_eng.112.historical_info: "The Cornish Rebellion was a major uprising that took place in Cornwall, triggered by the King's attempt to revoke the special privileges granted to the Tin Miners centuries before. The rebellion was eventually quelled but the privileges of the miners were eventually restored and would endure for another two centuries."
 
  copy_of_flavor_eng.114.title: "[thomas_wolsey.GetNameWithNoTooltip]"
@@ -965,8 +893,6 @@
  copy_of_flavor_eng.121.c.custom2: "This option is available due to the high diplomatic skill of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
  copy_of_flavor_eng.121.d: "Force must be met with force."
  copy_of_flavor_eng.121.tt5: "The rebels must be defeated by force"
- pilgrimage_of_grace_rebellion: "Pilgrimage of Grace Rebellion"
- STATIC_MODIFIER_NAME_pilgrimage_of_grace_rebellion: "Pilgrimage of Grace Rebellion"
  copy_of_flavor_eng.121.historical_info: "The Pilgrimage of Grace was a major uprising in northern England in the late 1530's. It was triggered by religious policies and the dissolution of the monasteries, but overall discontent towards Thomas Cromwell and the tax policies he implemented played a significant part. King Henry VIII initially offered a pardon, but would rescind on his word and violently suppress the rebellion. Thousands of rebels were executed with little achieved despite the considerable support it had garnered."
 
  copy_of_flavor_eng.122.title: "[thomas_cromwell.GetNameWithNoTooltip]"
@@ -1132,7 +1058,6 @@
  copy_of_flavor_eng.140.tt6: "[walter_raleigh.GetHisHer|U] presence at court bedazzles a smittened [target_root_country.GetGovernment.GetRuler.GetName]"
  copy_of_flavor_eng.140.d: "Our fates are not intertwined."
  copy_of_flavor_eng.140.tt7: "[walter_raleigh.GetNameWithNoTooltip] and [walter_raleigh.GetHisHer] mysterious crops are refused an audience"
- eng_raleighs_gifts: "[ShowGoodsName('potato')] and [ShowGoodsName('tobacco')] introduced"
  copy_of_flavor_eng.140.historical_info: "Sir Walter Raleigh was an English explorer, soldier, poet, and politician. He took part in several expeditions to the New World and is renowned for his adventurous spirit. He was instrumental in establishing the first English colony in North America, which he named Virginia in honor of Queen Elizabeth I. Raleigh remained popular with the Queen who considered him witty, charming, and being gifted with literary talents."
 
  copy_of_flavor_eng.141.title: "[thomas_tallis.GetNameWithNoTooltip]"
@@ -1196,8 +1121,6 @@
  copy_of_flavor_eng.148.a: "Introduce a cheaper metal."
  copy_of_flavor_eng.148.b: "No intervention is necessary."
  copy_of_flavor_eng.148.historical_info: "The Great Debasement was a deliberate devaluation of the English currency during the reign of Henry VIII, which saw the amount of precious metals in gold and silver reduced while maintaining their face value. The goal was to generate additional revenue for the Crown and at a point, copper constituted such a high percentage that the thin layer of silver would wear off over the protruding nose of the King's portrait, earning the King the nickname of 'Old Coppernose'."
- eng_lack_of_bullion: "Lack of Bullion for Minting"
- eng_copper_introduced: "Increased Copper into Coin Production"
 
  copy_of_flavor_eng.149.title: "The [anthony_babington.GetLastNameWithNoTooltip] Plot"
  copy_of_flavor_eng.149.entry: "The $Babington$ Plot"
@@ -1228,7 +1151,6 @@
  copy_of_flavor_eng.151.tt4: "[william_cecil.GetNameWithNoTooltip] is added as a [character|e] but cannot serve at court"
  copy_of_flavor_eng.151.tt5: "He continues to sit in parliament to promote the agenda of the [target_root_country.GetGovernment.GetRulerTitle]"
  copy_of_flavor_eng.151.c: "We do not require additional advice."
- STATIC_MODIFIER_NAME_working_from_within: "Working From Within"
  copy_of_flavor_eng.151.historical_info: "William Cecil was an influential advisor to Queen Elizabeth I, and remained one of her closest and most trusted advisors throughout her reign. He held several key positions such as Secretary of State and later Lord High Treasurer, and helped steer England through domestic and international challenges. He worked tirelessly for the Protestant cause and to strengthen the English monarchy."
 
  copy_of_flavor_eng.152.title: "The exploits of [john_hawkins.GetNameWithNoTooltip]"
@@ -1311,10 +1233,6 @@
  copy_of_flavor_eng.159.tt2: "The withdrawal experienced by [ShowGoodsNameWithNoTooltip('tobacco')] consumers is compensated by an increase in [ShowGoodsName('beer')] consumption"
  copy_of_flavor_eng.159.tt3: "The economic effects of the ban leads to the closure of [ShowGoodsNameWithNoTooltip('tobacco')] plantations in the colonies"
  copy_of_flavor_eng.159.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are unhappy about the meddling in trade"
- STATIC_MODIFIER_NAME_tobacco_imports_banned: "Tobacco Imports Banned"
- STATIC_MODIFIER_NAME_tax_tobacco: "Taxed Tobacco"
- eng_compensating_addictions: "Compensating For Tobacco Addiction"
- eng_growing_addiction: "Popularization of Tobacco"
  copy_of_flavor_eng.159.c: "Settle for publishing the treatise."
  copy_of_flavor_eng.159.tt5: "Demand for [ShowGoodsNameWithNoTooltip('tobacco')] temporarily increases due to a lack of government intervention"
  copy_of_flavor_eng.159.historical_info: "#italic A Counterblaste to Tobacco#! was a treatise written and published by King James VI, expressing his opposition and distaste for tobacco smoking. His opposition led to the implementation of an excise tax and tariff on tobacco imports. The economic effect on the colonies was overall negative and the intervention did little to reduce demand for tobacco in England."
@@ -1367,9 +1285,6 @@
  copy_of_flavor_eng.164.b: "Renegotiate the terms."
  copy_of_flavor_eng.164.tt3: "The negotiating skills of [target_character.GetName] secure a more moderate agreement"
  copy_of_flavor_eng.164.c: "We are in agreement."
- STATIC_MODIFIER_NAME_great_contract: "Great Contract"
- STATIC_MODIFIER_NAME_great_contract_compromise: "Revised Great Contract"
- STATIC_MODIFIER_NAME_lack_of_agreement: "Lack of Agreement"
 
  copy_of_flavor_eng.164.historical_info: "The Great Contract was an attempted agreement by Robert Cecil to seek funding from Parliament in order to settle the outstanding debt of the Monarchy. In return, the Crown would have to give up its feudal rights of Wardship and Purveyance, as well as the power of creating new impositions. The agreement fell through as neither King James I nor Parliament could agree to the terms."
 
@@ -1414,8 +1329,6 @@
  copy_of_flavor_eng.168.desc: "It has been suggested that a local festivity be arranged to promote good feeling among the common people towards their [ROOT.GetCountry.GetGovernment.GetRulerTitle]. It could bring together men and women of different classes, with activities such as horse racing, dancing, sledgehammer throwing, and shin-kicking being part of the itinerary. [ShowGoodsName('wild_game')], [ShowGoodsName('fish')] and [ShowGoodsName('beer')] in abundance will be supplied to everyone who attends, with booths and tents set up to host gambling with small stakes.\n\nA suitable date has been proposed, with the Thursday and Friday of the week of Whitsun being the favored alternative."
  copy_of_flavor_eng.168.a: "Make it an annual event."
  copy_of_flavor_eng.168.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')], disapproves of such festivities, believing them to be of pagan origin"
- STATIC_MODIFIER_NAME_cotswold_olimpick_games: "Cotswold Olimpick Games"
- cotswold_olimpick_games: "Cotswold Olimpick Games"
  copy_of_flavor_eng.168.b: "A one-off will suffice."
  copy_of_flavor_eng.168.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] are content and offer to sponsor the first event"
  copy_of_flavor_eng.168.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] are content and offer to sponsor the event"
@@ -1427,7 +1340,6 @@
  copy_of_flavor_eng.169.desc: "Pioneering architect and theatrical producer [inigo_jones.GetName] holds a close association with the court and has recently returned from his studies in [ShowRegionName('italy_region')]. He is mainly occupied with arranging extravagant masques but has shown an aptitude towards a new style of architecture with influences from the Greco-Roman cultures."
  copy_of_flavor_eng.169.a: "Employ him as Surveyor-General."
  copy_of_flavor_eng.169.tt1: "[inigo_jones.GetNameWithNoTooltip] is added as a [character|e]"
- enable_inigo_architecture_advance: "Grants access to the [ShowAdvanceName('inigo_architecture')] [advance|e]"
  copy_of_flavor_eng.169.b: "The stage needs him."
  copy_of_flavor_eng.169.tt2: "[inigo_jones.GetNameWithNoTooltip] is added as a [character|e] but focuses entirely on the stage"
  copy_of_flavor_eng.169.c: "Let him choose his own path."
@@ -1443,8 +1355,6 @@
  copy_of_flavor_eng.172.tt2: "[target_root_country.GetGovernment.GetParliament.GetName] withholds one year's worth of [taxes|e]"
  copy_of_flavor_eng.172.c: "Refuse to sign."
  copy_of_flavor_eng.172.tt3: "The matter remains unsettled for the remainder of the current reign"
- STATIC_MODIFIER_NAME_tonnage_and_poundage_denied: "Tonnage and Poundage Denied"
- STATIC_MODIFIER_NAME_abusing_royal_prerogative: "Abusing Royal Prerogative"
  copy_of_flavor_eng.172.historical_info: "Tonnage and poundage were customs duties imposed on imported and exported goods such as wine, representing a significant revenue source for the English monarchy. The Tonnage referred to the duty levied based on weight or volume, while the Poundage was instead levied as a percentage of the value of imported goods. The Tonnage and Poundage were abolished by the Customs and Excise Act 1787."
 
  copy_of_flavor_eng.173.title: "The Golden Age Restored"
@@ -1476,7 +1386,6 @@
  copy_of_flavor_eng.175.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are delighted about the prospect of a major religious [building|e] work"
  copy_of_flavor_eng.175.b: "Local parishes will suffice for now."
  copy_of_flavor_eng.175.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are displeased by the lack of enthusiasm for a new mother church"
- st_pauls_construction: "St. Paul's Cathedral Construction"
  copy_of_flavor_eng.175.historical_info: "St. Paul's Cathedral is an iconic landmark in central London. It was conceived by Christopher Wren, who designed over 50 churches in London alone following the Great Fire. The cathedral is renowned for its elegant and iconic dome, which was the second-largest dome in the world when it was completed. The cathedral itself is fashioned in the English Baroque style."
 
  copy_of_flavor_eng.176.title: "The Great Fire"
@@ -1512,7 +1421,6 @@
  copy_of_flavor_eng.178.tt3: "[anton_van_dyck.GetHisHer|U] style of beard influences other gentlemen to embrace a similar fashion, challenging the prevailing clean-shaven appearance of the era"
  copy_of_flavor_eng.178.b: "Let us call it a '[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]' beard."
  copy_of_flavor_eng.178.b.entry: "Let us call it a 'him' beard."
- grooming_equipment: "High Demand for Grooming Equipment"
  copy_of_flavor_eng.178.historical_info: "The Van Dyck beard stands out as a unique and fashionable facial hair style, marked by the combination of a neatly-trimmed, pointed goatee and a mustache, with a clear seperation between the two. It was introduced to England by Anthony Van Dyck, a baroque artist from Flanders, whose work as a court portraitist would become the dominant influence on English portrait-painting. The style of beard was adopted by King Charles II, who referred to it as a 'Charlie'."
 
  copy_of_flavor_eng.179.title: "The Wicked Bible"
@@ -1536,8 +1444,6 @@
  copy_of_flavor_eng.180.c: "Burn him for heresy."
  copy_of_flavor_eng.180.tt5: "Times are changing. The words of [john_milton.GetNameWithNoTooltip] rallies Parliamentarians whom oppose this course of action"
  copy_of_flavor_eng.180.tt6: "The [ShowPolicyName('de_heretico_comburendo')] mandates that heretics must burn"
- STATIC_MODIFIER_NAME_parliament_influenced: "Parliament influenced"
- STATIC_MODIFIER_NAME_parliament_desires_change: "Parliament Desires Change"
  copy_of_flavor_eng.180.historical_info: "John Milton was an influential English poet and civil servant during the English Civil War and the subsequent Commonwealth and Protectorate under Oliver Cromwell. He wrote several pamphlets advocating for freedom and the separation of Church and state. Later in his life he became blind, but it did not prevent him from continuing his literary and political pursuits."
 
  copy_of_flavor_eng.181.title: "The Hudson Bay Company"
@@ -1565,7 +1471,6 @@
  copy_of_flavor_eng.184.a: "Accept the outcome."
  copy_of_flavor_eng.184.tt: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] perceive the [target_root_country.GetGovernment.GetRulerTitle] as weak for failing to sway enough members of parliament to [target_root_country.GetGovernment.GetRuler.GetHisHer] cause"
  copy_of_flavor_eng.184.b: "Refuse to sign."
- STATIC_MODIFIER_NAME_grand_remonstrance_compromise: "Grand Remonstrance Compromise"
 
  copy_of_flavor_eng.185.title: "Hampton Court Conference"
  copy_of_flavor_eng.185.entry: "$copy_of_flavor_eng.185.title$"
@@ -1596,7 +1501,6 @@
  copy_of_flavor_eng.187.desc: "Military strategist and experienced sailor [robert_blake.GetName] has recently produced the navy's first-ever set of rules and regulations, and has now taken on the grandiose task of overhauling the naval tactics employed by the Royal Navy. While his tactics are quite unconventional, they are expected to revolutionize the way battles are fought at sea."
  copy_of_flavor_eng.187.a: "Get on with it, man."
  copy_of_flavor_eng.187.tt1: "[robert_blake.GetNameWithNoTooltip] is added as a [character|e]"
- enable_sailing_and_fighting_instructions_advance: "Grants access to the [ShowAdvanceName('sailing_and_fighting_instructions')] [advance|e]"
  copy_of_flavor_eng.187.b: "The navy needs him elsewhere."
  copy_of_flavor_eng.187.tt2: "[robert_blake.GetNameWithNoTooltip] is added as an [admiral|e]"
  copy_of_flavor_eng.187.c: "Our current tactics are sound and solid."
@@ -1623,7 +1527,6 @@
  copy_of_flavor_eng.190.a: "Permission Granted."
  copy_of_flavor_eng.190.tt: "The establishment of a coffee house in [ShowLocationNameWithNoTooltip('oxford')] prompts the emergence of comparable establishments in various other towns and cities, further increasing the exchange of ideas"
  copy_of_flavor_eng.190.b: "A spy in our midst attempting to poison us."
- the_angel: "The Angel Coffee House"
  copy_of_flavor_eng.190.historical_info: "The Angel coffeehouse is often credited as the first coffeehouse in England and played a significant role in introducing coffee to the country. At the time, coffeehouses were a relatively new concept in Europe, but quickly became a popular gathering place for scholars, academics, students, and intellectuals from the nearby university, playing an important role in the spread of knowledge."
 
  copy_of_flavor_eng.191.title: "Punch and Judy"
@@ -1650,7 +1553,6 @@
  copy_of_flavor_eng.195.b: "Sway parlimanetarians to our cause."
  copy_of_flavor_eng.195.tt: "Enough Parliamentarians are swayed to prevent the Act from being passed"
  copy_of_flavor_eng.195.c: "A logical step."
- STATIC_MODIFIER_NAME_opposed_parliament: "Opposed Parliament"
  copy_of_flavor_eng.195.historical_info: "The Exclusion Crisis were several attempts by Parliament to exclude King Charles II's brother and heir presumptive, James, Duke of York, from the thrones of England, Scotland and Ireland because he was Catholic. The attempts were unsuccessful, but would eventually lead to the passing of the Act of Settlement in 1701, when the future king was deposited in the Glorious Revolution."
 
  copy_of_flavor_eng.196.title: "Restoration Comedy"
@@ -1680,7 +1582,6 @@
  copy_of_flavor_eng.199.a: "Print with our blessing."
  copy_of_flavor_eng.199.b: "Settle the expenses."
  copy_of_flavor_eng.199.tt1: "A [ShowBuildingTypeName('printing_press_shop')] is hastily constructed at the expense of the government"
- STATIC_MODIFIER_NAME_philosophical_transactions: "Philosophical Transactions of the Royal Society"
  copy_of_flavor_eng.199.c: "A limited edition is enough."
  copy_of_flavor_eng.199.tt2: "A one of circulation is published with the aid of the Royal Printer"
  copy_of_flavor_eng.199.historical_info: "The Philosophical Transactions of the Royal Society is a scientific journal that has been published continuously since 1665. It covers several fields of science and has been a major contributor to the sharing of scientific knowledge and ensured the recording of significant breakthroughs. Many published discoveries have inspired continued research and innovation."
@@ -1690,7 +1591,6 @@
  copy_of_flavor_eng.200.desc: "In 1330, the traitorous Queen Mother [isabella.GetName] assisted [GetCharacter('eng_roger_mortimer_1st_earl_of_march').GetName] in the bloodthirsty murder of her own husband, [GetCharacter('eng_edward_ii').GetName]. We eventually caught [GetCharacter('eng_roger_mortimer_1st_earl_of_march').GetLastNameWithNoTooltip], and since his execution we have confined our Queen Mother to house arrest.\n\nAlthough her reputation in [ROOT.GetCountry.GetName] is one of a traitor, she is known in the [GetCountry('FRA').GetLongName] mainly as a senior member of the prestigious [isabella.GetDynasty.GetName] dynasty, which still commands a significant amount of respect amongst the [GetCountry('FRA').GetAdjectiveWithNoTooltip] nobility.\n\nWith our ongoing struggles across the channel, it might be useful to exploit her distinguished heritage by having her treat with [GetCountry('FRA').GetAdjectiveWithNoTooltip] emissaries on her son's behalf."
  copy_of_flavor_eng.200.a: "Time heals all wounds."
  copy_of_flavor_eng.200.b: "Let her rot."
- eng_capetian_mother: "Capetian Queen Mother" 
 
  copy_of_flavor_eng.201.title: "The Royal Touch"
  copy_of_flavor_eng.201.entry: "$copy_of_flavor_eng.201.title$"
@@ -1711,9 +1611,6 @@
  copy_of_flavor_eng.203.b: "Iron and stone."
  copy_of_flavor_eng.203.c: "Silver and gold."
  copy_of_flavor_eng.203.d: "Control its inevitable collapse."
- eng_london_bridge_wood_clay: "London Bridge — Wood and Clay"
- eng_london_bridge_iron_stone: "London Bridge — Iron and Stone"
- eng_london_bridge_silver_gold: "London Bridge — Silver and Gold"
 
  copy_of_flavor_eng.204.title: "Paved With Gold"
  copy_of_flavor_eng.204.entry: "$copy_of_flavor_eng.204.title$"
@@ -1721,10 +1618,6 @@
  copy_of_flavor_eng.204.a: "Allow the rumors to spread."
  copy_of_flavor_eng.204.b: "The streets are paved with coal and muck."
  copy_of_flavor_eng.204.c: "Why do not we actually pave the streets with gold?"
-
- STATIC_MODIFIER_NAME_eng_paved_with_gold_rumor: "Rumored To Be Paved With Gold"
- STATIC_MODIFIER_NAME_eng_paved_with_gold_actually: "Actually Paved With Gold"
- eng_paved_with_gold: "Cost of Paving With Gold"
 
  copy_of_flavor_eng.205.title: "[robert_boyle.GetNameWithNoTooltip]"
  copy_of_flavor_eng.205.entry: "Robert Boyle"
@@ -1818,8 +1711,6 @@
  copy_of_flavor_eng.215.tt2: "The diligence of [robert_walpole.GetNameWithNoTooltip] mitigates some of the economic damage"
  copy_of_flavor_eng.215.b: "Provide a bailout and compensate the investors."
  copy_of_flavor_eng.215.tt3: "Government intervention stabilizes the economy but damages investor sentiment"
- STATIC_MODIFIER_NAME_south_sea_bubble: "South Sea Bubble"
- STATIC_MODIFIER_NAME_restructuring: "Company Restructuring"
  copy_of_flavor_eng.215.historical_info: "The South Sea Bubble was one of the earliest financial crashes in history. It began when a British joint stock company was created to consolidate, control, and reduce the national debt and to help Britain increase its trade and profits in the Americas. Speculation drove up the share price to unsustainable levels, and the share eventually collapsed to the ruin of thousands of investors."
 
  copy_of_flavor_eng.216.title: "The Spitalfield Riots"
@@ -1831,9 +1722,6 @@
  copy_of_flavor_eng.216.c: "Temporarily improve working conditions."
  copy_of_flavor_eng.216.tt1: "Several weavers are killed or caught awaiting trial"
  copy_of_flavor_eng.216.tt2: "Temporary legislation is passed to pacify the weavers"
- STATIC_MODIFIER_NAME_improved_working_conditions_silk_weavers: "Improved Working Conditions for Silk Weavers"
- STATIC_MODIFIER_NAME_fine_cloth_imports_banned: "Fine Cloth Imports Banned"
- STATIC_MODIFIER_NAME_liquor_imports_banned: "Liquor Imports Banned"
  copy_of_flavor_eng.216.historical_info: "The Spitalfields Riots were a series of violent protests and disturbances in London's Spitalfields district during the late 18th century. It coincided with the economic and social challenges experienced by the working class during the early onset of industrialization, particularly its effect on traditional craft industries. It would lead to several government acts being passed to bring about labor rights and economic change."
 
  copy_of_flavor_eng.217.title: "The Gin Craze"
@@ -1847,10 +1735,6 @@
  copy_of_flavor_eng.217.c: "Let them have their bevvies."
  copy_of_flavor_eng.217.c.custom: "Several [locations|e] across [target_root_country.GetName] lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e] due to increasing crimes rates."
  copy_of_flavor_eng.217.tt3: "The social problems continue to mount with an overall rise in addiction, mental illness, and physical deterioration"
- reduced_gin_consumption: "Reduced Gin Consumption"
- excessive_gin_consumption: "Excessive Gin Consumption"
- STATIC_MODIFIER_NAME_regulated_gin_production: "Regulated Gin Production"
- STATIC_MODIFIER_NAME_heavily_restricted_gin_production: "Heavily Restricted Gin Production"
  copy_of_flavor_eng.217.historical_info: "The Gin Craze was a period of excessive consumption of gin, caused by increased domestic production and a reduction of imported French brandy as a result of ongoing hostilities between England and France. Gin became the drink of choice for people from all social classes, leading to widespread consumption and a destructive impact on family life. The combination of government regulation, increased prices, and a changing cultural perception of gin gradually reduced its consumption."
 
  copy_of_flavor_eng.218.title: "The Dining Club"
@@ -1861,7 +1745,6 @@
  copy_of_flavor_eng.218.tt2: "An invitation is extended to [artists|e] in the field of literature"
  copy_of_flavor_eng.218.b: "Secure the inclusion of politicians."
  copy_of_flavor_eng.218.c: "A pompeus spectacle with little significance."
- STATIC_MODIFIER_NAME_the_dining_club: "The Dining Club"
  copy_of_flavor_eng.218.historical_info: "The Dining Club was a famous literary club that brought together some of the most prominent literary and intellectual figures of the time. It played a significant role in promoting intellectual discussions, debates, and friendships among its members and also had a significant influence on the cultural and intellectual life in Britain. It provided a space for leading thinkers and artists to share their thoughts and collaborate on various projects."
 
  copy_of_flavor_eng.221.title: "The Bow Street Runners"
@@ -1869,8 +1752,6 @@
  copy_of_flavor_eng.221.desc: "The Bow Street Magistrates, based in Covent Garden, have suggested an organized law enforcement be set up to counter rising crime and disorder in [ShowLocationName('london')]. Their primary task should be to investigate and actively seek out criminals and apprehend them, with a regular salary paid to uphold their professionalism. Select recruiting is a must so that the group is made up of mainly constables and officers."
  copy_of_flavor_eng.221.a: "Tha magistrate plan is sound."
  copy_of_flavor_eng.221.b: "There is no place for a vigilante squad."
- STATIC_MODIFIER_NAME_bow_street_runners: "Bow Street Runners"
- STATIC_MODIFIER_NAME_rampant_crime: "Rampant Crime"
  copy_of_flavor_eng.221.historical_info: "The Bow Street Runners were an organized law enforcement group that laid the foundation for the later development of policing in London. This would eventually lead to the establishment of the Metropolitan Police Service. The Runners played a major part in investigating crimes and gathering evidence and were known for their investigative techniques, such as surveillance and informants."
 
  copy_of_flavor_eng.222.title: "The Jenny Spinner Riots"
@@ -1886,8 +1767,6 @@
  copy_of_flavor_eng.222.tt4: "No worker is laid off as machines are introduced into the production cycle, hampering productivity"
  copy_of_flavor_eng.222.c: "Make false promises."
  copy_of_flavor_eng.222.tt5: "The textile workers cease their acts of sabotage and resume their work"
- STATIC_MODIFIER_NAME_jenny_spinner_riots: "Jenny Spinner Riots"
- STATIC_MODIFIER_NAME_improved_working_conditions_cloth_makers: "Improved Working Conditions for Cloth Makers"
  copy_of_flavor_eng.222.historical_info: "The Jenny Spinner Riots or Luddite Riots were a series of protests by skilled workers in the textile industry, who were concerned that the new machinery would result in unemployment and lower wages for traditional hand workers. They engaged in acts of violence and sabotage, breaking into factories to destroy the new machinery. The riots were relatively unorganized and were violently suppressed by the British Government, but subsequent riots would follow as more work was automatized."
 
  copy_of_flavor_eng.223.title: "[horatio_nelson.GetNameWithNoTooltip]"
@@ -1920,7 +1799,6 @@
  copy_of_flavor_eng.225.a.custom: "The [ShowPopTypeName('peasants')] in [ShowRegionName('great_britain_region')] lose #R 50.00%#! [pop_satisfaction|e]"
  copy_of_flavor_eng.225.b: "Institute parliamentary reform."
  copy_of_flavor_eng.225.tt2: "The [ShowPopTypeName('burghers')] and the [ShowPopTypeName('nobles')] are appalled by the attempted erosion of their social privileges"
- enable_representative_parliament_reform: "Grants access to the [ShowGovernmentReformName('representative_parliament_reform')] [government_reform|e]"
  copy_of_flavor_eng.225.historical_info: "The #italic Rights of Man#! was a controversial pamphlet published in the late 18th century by Thomas Paine. Its popularity alarmed the British government, which took action to suppress dissent and opposition to the status quo. It is considered the starting point for discussions about political reform and the rights of citizens and contributed to raising public awareness about issues related to democracy and the importance of equal representation."
 
  copy_of_flavor_eng.226.title: "[james_cook.GetNameWithNoTooltip]"
@@ -1942,7 +1820,6 @@
  copy_of_flavor_eng.227.c: "Trade is essential for imperial ambitions."
  copy_of_flavor_eng.227.d: "Extend the expedition."
  copy_of_flavor_eng.227.tt: "The captain and his crew make additional stops to take on extra supplies"
- STATIC_MODIFIER_NAME_extended_expedition: "Extended Expedition"
  copy_of_flavor_eng.227.historical_info: "Captain James Cook made several journeys to the Pacific Ocean during the eighteenth century, which helped advance the understanding of Pacific geography, natural history, and culture. Initially, the missions were focused on observing the transit of Venus across the sun, but another key objective was to explore and chart the largely uncharted regions of the South Pacific."
 
  copy_of_flavor_eng.229.title: "The Diary of Samuel Pepys"
@@ -1971,8 +1848,6 @@
  copy_of_flavor_eng.233.desc: "The [east_india_trade_company.GetName] is risking insolvency owing to it being unable to sell its abundance of [ShowGoodsName('tea')]. Factors like overproduction and competition with other European tea companies have led to an excess, which is further exacerbated by the fact that the company primarily produces black tea, while there is a growing demand for green tea among [ROOT.GetCountry.GetAdjective] consumers.\n\nWe could grant them a monopoly on all sales in [thirteen_colonies.GetName], as a way to outcompete foreign producers and stabilize the company in the process."
  copy_of_flavor_eng.233.a: "A tad protectionist but necessary."
  copy_of_flavor_eng.233.b: "We cannot impose such restrictions."
- STATIC_MODIFIER_NAME_no_market_for_goods: "No Market for Goods"
- STATIC_MODIFIER_NAME_tea_imports_banned: "Tea Imports Banned"
  copy_of_flavor_eng.233.historical_info: "The main purpose of the Tea Act was to bail out the financially struggling British East India Company, which had a surplus of tea stored in warehouses. The Act enforced a monopoly on tea sales to the American colonies, allowing the company to reduce the price and ship tea directly, effectively cutting out the colonial merchants. Despite the lower price, many colonists considered the Act as an infringement on their rights."
 
  copy_of_flavor_eng.234.title: "The Experienced English Housekeeper"
@@ -2000,7 +1875,6 @@
  copy_of_flavor_eng.236.desc: "We are currently grappling with a surplus of convicts and it has been proposed that we transport some of these men and women to a far-off colony to help alleviate this problem. It is the intention that these convicts can be rehabilitated and become productive members of society once their sentences are served.\n\nA group of ships are currently being prepared for this significant expedition with a proposed site of the recently established colony of [target_location.GetName]. It is slated to depart momentarily."
  copy_of_flavor_eng.236.a: "Hoist the sails and make way."
  copy_of_flavor_eng.236.b: "We cannot export our problems."
- STATIC_MODIFIER_NAME_overcrowded_prisons: "Overcrowded Prisons"
  copy_of_flavor_eng.236.historical_info: "The First Fleet was comprised of 11 ships which transported more than one thousand convicts, as well as marines, officers, and other personnel. It became the first group of European settlers to establish a permanent European presence on the continent that would become Australia. One of the main reasons for the expedition was to establish a penal colony, as Britain was facing overcrowding in its prisons. The other reason was that the convicts would provide a potential source of labor for the development of the new colony."
 
  copy_of_flavor_eng.237.title: "The London Monster"
@@ -2022,8 +1896,6 @@
  copy_of_flavor_eng.238.custom: "Grants access to the [ShowLawName('trade_unions_law')] [law|e]"
  copy_of_flavor_eng.238.a.custom: "Disgruntled [ShowPopTypeName('peasants')] may band together to protest the infringement on basic labor rights"
  copy_of_flavor_eng.238.b: "They are people after all."
- disgruntled_factory_workers: "Disgruntled Factory Workers"
- STATIC_MODIFIER_NAME_eng_disgruntled_factory_workers_rebellion: "Disgruntled Factory Workers"
  copy_of_flavor_eng.238.historical_info: "The Combination Act was passed during the early stages of the Industrial Revolution when workers were forming trade unions to address poor working conditions, low wages, and long hours. The act aimed to criminalize any form of organized labor action and favored employers and factory owners, but met with significant opposition from factory workers and some parliamentary support. Eventually, a change in attitude towards workers' rights led to the repeal of the Act."
 
  copy_of_flavor_eng.239.title: "The Rosetta Stone"
@@ -2042,13 +1914,9 @@
  copy_of_flavor_eng.240.a: "Begin construction immediately."
  copy_of_flavor_eng.240.tt1: "[thomas_pritchard.GetNameWithNoTooltip] is added as a [character|e]"
  copy_of_flavor_eng.240.b: "Better spent on modernizing textile production."
- STATIC_MODIFIER_NAME_invested_in_textile_production: "Modernized Textile Production"
  copy_of_flavor_eng.240.c: "Food production could be bolstered instead."
  copy_of_flavor_eng.240.d: "There is no pressing need."
- STATIC_MODIFIER_NAME_invested_in_farming_output: "Modernized Food Production"
- iron_bridge_construction: "Iron Bridge Construction"
  copy_of_flavor_eng.240.historical_info: "The Iron Bridge is a cast-iron bridge and is considered an iconic symbol of the Industrial Revolution in Britain. It was constructed between 1777 and 1779 marking a shift in bridge construction technology, which became necessary due to the heavy machinery and material being transported."
- variable_the_iron_bridge_tt: "The Iron Bridge has been Built"
 
  copy_of_flavor_eng.241.title: "The Gordon Riots"
  copy_of_flavor_eng.241.entry: "$copy_of_flavor_eng.241.title$"
@@ -2058,9 +1926,6 @@
  copy_of_flavor_eng.241.a: "Call in the military."
  copy_of_flavor_eng.241.tt1: "Several rioters are killed as they clash with soldiers"
  copy_of_flavor_eng.241.tt2: "The riots damage the reputation of [target_root_country.GetName] across Europe"
- STATIC_MODIFIER_NAME_eng_gordon_riots: "The Gordon Riots"
- opressing_catholic_population: "Opressing Catholic Population"
- protestant_association: "Protestant Association"
  copy_of_flavor_eng.241.b: "They will tire eventually."
  copy_of_flavor_eng.241.b.custom: "A number of [ShowReligionAdjectiveWithNoTooltip('catholic')] embassies are set on fire and subjected to looting, provoking strong reactions and anger from foreign governments"
  copy_of_flavor_eng.241.tt4: "The riots cause great embarrassment to the government for its inability to maintain control"
@@ -2070,7 +1935,6 @@
  copy_of_flavor_eng.242.entry: "$copy_of_flavor_eng.242.title$"
  copy_of_flavor_eng.242.desc: "A diplomatic dispute has arisen between [target_country.GetName] and [target_root_country.GetName], sparked by the destruction of a customs schooner deployed to combat widespread smuggling by colonial merchants. It poses a challenge to [target_root_country.GetAdjectiveWithNoTooltip] sovereignty if the rule of law cannot be upheld.\n\nThe colonial administration has attempted to de-escalate the situation by drafting a carefully worded petition, reaffirming their loyalty whilst expressing a desire for a peaceful resolution to any disagreements."
  copy_of_flavor_eng.242.a: "Launch an immediate investigation."
- STATIC_MODIFIER_NAME_committees_of_correspondence: "Committee of Correspondence"
  copy_of_flavor_eng.242.tt1: "Attempts to procecute the responsible colonists cause further resentment towards [target_root_country.GetAdjectiveWithNoTooltip] rule"
  copy_of_flavor_eng.242.tt2: "The [target_country.GetAdjective] administration establish a network of communication and coordination, with the aim of fostering unity among the colonies and organizing resistance against colonial policies"
  copy_of_flavor_eng.242.b: "Overlook the incident."
@@ -2086,14 +1950,12 @@
  copy_of_flavor_eng.243.tt1: "[elizabeth_montagu.GetNameWithNoTooltip] is added as a [character|e]"
  copy_of_flavor_eng.243.b: "Her rebellious nature is a concern."
  copy_of_flavor_eng.243.historical_info: "Elizabeth Montagu was an important figure in the intellectual and literary circles in England. She was essential in organizing and leading the Blue Stockings Society, an informal women's social and educational movement. Her published work includes satire and Dialogues of the Dead, a series of conversations between the living and the illustrious dead that served as a critique of eighteenth-century society."
- variable_restoration_comedy_allowed_tt: "Restoration Comedy is Permitted"
 
  copy_of_flavor_eng.244.title: "Blue Stockings Society"
  copy_of_flavor_eng.244.entry: "$copy_of_flavor_eng.244.title$"
  copy_of_flavor_eng.244.desc: "Literary critic and salonnière [elizabeth_montagu.GetName] has been hosting an organization of privileged women who meet to discuss literature and arts, with the purpose of promoting equal education opportunities for women. Invitations have been extended to educated men to participate in intellectual endeavors such as reading and writing.\n\nIf allowed to continue without intervention, it may expand its influence to include advocacy for women's education."
  copy_of_flavor_eng.244.a: "A commendable initiative."
  copy_of_flavor_eng.244.tt1: "The Blue Stockings Society meet regularly to promote equal education, literature, and the arts"
- STATIC_MODIFIER_NAME_blue_stockings_society: "Blue Stockings Society"
  copy_of_flavor_eng.244.b: "Knowledge is acquired through conversations with men."
  copy_of_flavor_eng.244.historical_info: "The Blue Stockings Society was an intellectual and literary society founded by Elizabeth Montagu, a prominent woman who hosted informal gatherings to promote equal education as well as the inclusion of both men and women, at a time when formal education for women was limited. Their efforts contributed to the later development of women's education in the subsequent century."
 
@@ -2148,17 +2010,3 @@
  copy_of_flavor_eng.250.title: "The Act of Supremacy"
  copy_of_flavor_eng.250.desc: "Without prior consultation with our court, our [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has dissolved [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] previous marriage and wed [ROOT.GetCountry.GetGovernment.GetConsort.GetName] as [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] new consort. Furthermore, [ROOT.GetCountry.GetGovernment.GetRuler.GetHeShe] has broken with the Church of Rome, declaring [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself] supreme head of the Church in [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] other realm."
  copy_of_flavor_eng.250.a: "We are informed of this development."
-
- # has_variable custom tooltips
- variable_tt_stannary_law: "Stannary Law"
- variable_tt_epiphany_prequel_event_triggered: "The Epiphany Prequel"
- variable_tt_cornish_rebellion: "The Cornish Rebellion"
- variable_tt_drake_loot: "Sir Francis Drake's Plundered Treasure"
- variable_tt_drake_ongoing_raid: "Sir Francis Drake's Raids are Ongoing"
- variable_tt_restoration_comedy_allowed: "Restoration Comedy Theatre is Permitted"
- variable_tt_spinning_jenny_flag: "Spinning Jenny"
- variable_tt_samuel_pepys_diary_entries: "Samuel Pepys Diary Entries"
- variable_tt_new_world_discovered: "The New World is Discovered"
- james_lancaster_exists_tt: "James Lancaster Exists"
- james_lancaster_leads_expedition_tt: "James Lancaster Leads the Expedition"
- variable_tt_commission_established: "Ruling Commission of England Established"
