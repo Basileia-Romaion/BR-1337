@@ -29,3 +29,33 @@ rebel_demand_br_ere_events_115 = {
 		}
 	}
 }
+
+rebel_demand_br_ere_events_118 = {	# DHE/flavor_FRA.txt — flavor_fra.1160 option b (pick-one, negotiate)
+	trigger = { always = no }
+	concession_effect = {
+		pacify_rebel_pops = yes
+		owner = {
+			change_gold_effect = { scale = -3 }
+			add_legitimacy = legitimacy_mild_penalty
+			add_stability = stability_mild_bonus
+			custom_tooltip = {
+				text = br_ere_hire_rogue_mercenaries
+				hire_mercenary = root.var:var_rogue_company_1
+				hire_mercenary = root.var:var_rogue_company_2
+			}
+			root.var:var_br_bulgarian_roman_flashpoint_1 = { save_scope_as = br_bulgarian_roman_flashpoint_1 }
+			root.var:var_br_bulgarian_roman_flashpoint_2 = { save_scope_as = br_bulgarian_roman_flashpoint_2 }
+			root.var:var_br_bulgarian_roman_flashpoint_3 = { save_scope_as = br_bulgarian_roman_flashpoint_3 }
+			root.var:var_br_bulgarian_roman_flashpoint_4 = { save_scope_as = br_bulgarian_roman_flashpoint_4 }
+			custom_tooltip = {
+				text = br_ere_mercenary_affected_provinces
+				scope:br_bulgarian_roman_flashpoint_1 = { change_prosperity = prosperity_weak_penalty }
+				scope:br_bulgarian_roman_flashpoint_2 = { change_prosperity = prosperity_weak_penalty }
+				scope:br_bulgarian_roman_flashpoint_3 = { change_prosperity = prosperity_weak_penalty }
+				scope:br_bulgarian_roman_flashpoint_4 = { change_prosperity = prosperity_weak_penalty }
+				kill_character_silently = root.var:var_target_character
+			}
+		}
+	}
+}
+

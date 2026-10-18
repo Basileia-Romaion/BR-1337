@@ -1257,7 +1257,7 @@ br_ere_events.14 = {
 	}
 }
 
-# release of thmes in the Balkans
+# release of themes in the Balkans
 br_ere_events.15 = {
 	type = country_event
 	fire_only_once = yes
@@ -2665,7 +2665,7 @@ br_ere_events.112 = {
 	}
 }
 
-#
+# vlach revolt
 br_ere_events.113 = {
 	type = country_event
 	title = br_ere_events.113.title
@@ -2976,6 +2976,391 @@ br_ere_events.117 = { # Smyrna Revolt
 		}
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
 
+	}
+}
+
+###
+
+br_ere_events.118 = { # The Roaming Routiers
+	hide_portraits = yes
+	type = country_event
+	title = br_ere_events.118.title
+	desc = br_ere_events.118.desc
+	outcome = neutral
+	fire_only_once = yes
+	
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1345.1.1
+		to = 1364.1.1
+		monthly_chance = 25
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	trigger = {
+		at_war = no
+		has_truce_with = c:BUL
+		can_build_units_of_category = sub_unit_category:army_heavy_infantry #Check that the country can have infantry in the first place for the mercs
+		any_owned_location = {
+			is_capital = no
+			region = region:balkan_region
+			any_neighbor_location = {
+			   OR = {
+				   owner ?= c:BUL
+				   owner ?= c:B1L
+			   }
+			}
+			count > 4
+		}
+	}
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		create_character = {
+			adm = { 45 72 }
+			dip = { 40 65 }
+			mil = { 50 78 }
+			min_age = 30
+			save_scope_as = target_character
+		}
+		random_owned_location = {
+		 	limit = {
+				is_capital = no
+		 		region = region:balkan_region
+		 		any_neighbor_location = {
+					OR = {
+						owner ?= c:BUL
+						owner ?= c:B1L
+					}
+				}
+		 	}
+			save_scope_as = br_bulgarian_roman_flashpoint_1
+		}
+		random_owned_location = {
+		 	limit = {
+				is_capital = no
+		 		region = region:balkan_region
+				this != scope:br_bulgarian_roman_flashpoint_1
+		 		any_neighbor_location = {
+					OR = {
+						owner ?= c:BUL
+						owner ?= c:B1L
+					}
+				}
+		 	}
+			save_scope_as = br_bulgarian_roman_flashpoint_2
+		}
+		random_owned_location = {
+		 	limit = {
+				is_capital = no
+		 		region = region:balkan_region
+				this != scope:br_bulgarian_roman_flashpoint_1
+				this != scope:br_bulgarian_roman_flashpoint_2
+		 		any_neighbor_location = {
+					OR = {
+						owner ?= c:BUL
+						owner ?= c:B1L
+					}
+				}
+		 	}
+			save_scope_as = br_bulgarian_roman_flashpoint_3
+		}
+		random_owned_location = {
+		 	limit = {
+				is_capital = no
+		 		region = region:balkan_region
+				this != scope:br_bulgarian_roman_flashpoint_1
+				this != scope:br_bulgarian_roman_flashpoint_2
+				this != scope:br_bulgarian_roman_flashpoint_3
+		 		any_neighbor_location = {
+					OR = {
+						owner ?= c:BUL
+						owner ?= c:B1L
+					}
+				}
+		 	}
+			save_scope_as = br_bulgarian_roman_flashpoint_4
+		}
+		create_rebel = {
+			category = pretender
+			name = br_ere_unruly_archontes_faction
+			rebel_demand = rebel_demand_br_ere_events_118
+			save_scope_as = br_ere_unruly_archontes_faction
+		}
+		scope:target_character = {
+			change_character_allegiance = scope:br_ere_unruly_archontes_faction
+		}
+		hidden_effect = { # Generate 2 Merc Companies in case of hire
+			create_mercenary = {
+				name = br_ere_rogue_company_1
+				home = scope:br_bulgarian_roman_flashpoint_1
+				categories = {
+					army_heavy_infantry = 7
+				}
+				save_scope_as = rogue_company_1
+			}
+			create_mercenary = {
+				name = br_ere_rogue_company_2
+				home = scope:br_bulgarian_roman_flashpoint_2
+				categories = {
+					army_heavy_infantry = 7
+				}
+				save_scope_as = rogue_company_2
+			}
+		}
+		scope:br_ere_unruly_archontes_faction = {
+			set_variable = { name = var_rogue_company_1 value = scope:rogue_company_1 }
+			set_variable = { name = var_rogue_company_2 value = scope:rogue_company_2 }
+			set_variable = { name = var_br_bulgarian_roman_flashpoint_1 value = scope:br_bulgarian_roman_flashpoint_1 }
+			set_variable = { name = var_br_bulgarian_roman_flashpoint_2 value = scope:br_bulgarian_roman_flashpoint_2 }
+			set_variable = { name = var_br_bulgarian_roman_flashpoint_3 value = scope:br_bulgarian_roman_flashpoint_3 }
+			set_variable = { name = var_br_bulgarian_roman_flashpoint_4 value = scope:br_bulgarian_roman_flashpoint_4 }
+			set_variable = { name = var_target_character value = scope:target_character }
+		}
+	}
+
+	option = { # We must crush them
+		name = br_ere_events.118.a
+		add_legitimacy = legitimacy_mild_bonus
+		#scope:br_ere_unruly_archontes_faction = {
+		#	add_rebel_progress = 1.5
+		#}
+		custom_tooltip = {
+			text = br_ere_mercenary_revolt_provinces
+			scope:br_bulgarian_roman_flashpoint_1 = {
+				every_pop = {
+					limit = {
+						owner = root
+					}
+					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+				}
+				add_to_list = rebellion_provinces
+			}
+			scope:br_bulgarian_roman_flashpoint_2 = {
+				every_pop = {
+					limit = {
+						owner = root
+					}
+					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+				}
+				add_to_list = rebellion_provinces
+			}
+			scope:br_bulgarian_roman_flashpoint_3 = {
+				every_pop = {
+					limit = {
+						owner = root
+					}
+					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+				}
+				add_to_list = rebellion_provinces
+			}
+			scope:br_bulgarian_roman_flashpoint_4 = {
+				every_pop = {
+					limit = {
+						owner = root
+					}
+					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+				}
+				add_to_list = rebellion_provinces
+			}
+			destroy_mercenary = scope:rogue_company_1
+			destroy_mercenary = scope:rogue_company_2
+		}
+
+		# no instant spawning, as its most likely too weak anyway..
+
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+	option = { # Perhaps we can negotiate with them
+		name = br_ere_events.118.b
+		apply_rebel_demands = scope:br_ere_unruly_archontes_faction
+		hidden_effect = { destroy_rebel = scope:br_ere_unruly_archontes_faction }
+		ai_chance = {
+			base = 15
+		}
+	}
+	
+	option = { # Let them roam freely
+		name = br_ere_events.118.c
+		add_stability = stability_weak_penalty
+		add_prestige = prestige_weak_penalty
+		custom_tooltip = {
+			text = br_ere_mercenary_provinces_raided
+			scope:br_bulgarian_roman_flashpoint_1 = {
+				add_location_modifier = {
+					modifier = br_ere_mercenary_raided_province
+					years = 10
+					mode = add
+				}
+			}
+			scope:br_bulgarian_roman_flashpoint_2 = {
+				add_location_modifier = {
+					modifier = br_ere_mercenary_raided_province
+					years = 10
+					mode = add
+				}
+			}
+			scope:br_bulgarian_roman_flashpoint_3 = {
+				add_location_modifier = {
+					modifier = br_ere_mercenary_raided_province
+					years = 10
+					mode = add
+				}
+			}
+			scope:br_bulgarian_roman_flashpoint_4 = {
+				add_location_modifier = {
+					modifier = br_ere_mercenary_raided_province
+					years = 10
+					mode = add
+				}
+			}
+			destroy_mercenary = scope:rogue_company_1
+			destroy_mercenary = scope:rogue_company_2
+			kill_character_silently = scope:target_character
+			destroy_rebel = scope:br_ere_unruly_archontes_faction
+		}
+		custom_tooltip = br_ere_mercenary_bands_can_raid_nearby
+		set_variable = { name = br_ere_mercenary_bands_at_large years = 25 }
+		ai_chance = {
+			base = 65
+		}
+	}
+}
+
+br_ere_events.119 = { # Merc Companies raid the countryside # Happens at Peace
+	type = country_event
+	title = br_ere_events.119.title
+	desc = br_ere_events.119.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+		custom_tooltip = {
+			text = variable_tt_br_ere_mercenary_bands_at_large
+			has_variable = br_ere_mercenary_bands_at_large
+		}
+		at_war = no
+		any_owned_location = {
+			is_capital = no
+			NOT = { has_location_modifier = br_ere_mercenary_raided_province }
+			region = region:balkan_region
+			any_neighbor_location = {
+				has_location_modifier = br_ere_mercenary_raided_province
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}	
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		random_owned_location = {
+		 	limit = {
+				is_capital = no
+				NOT = { has_location_modifier = br_ere_mercenary_raided_province }
+		 		region = region:balkan_region
+		 		any_neighbor_location = {
+					has_location_modifier = br_ere_mercenary_raided_province
+				}
+		 	}
+			save_scope_as = routiers_target_province
+		}
+	}
+
+	option = { # Crush them!
+		name = br_ere_events.119.a
+		scope:routiers_target_province = {
+			change_prosperity = prosperity_severe_penalty
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_radical_penalty
+			}
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+	
+	option = { # Ignore it
+		name = br_ere_events.119.b
+		scope:routiers_target_province = {
+			add_location_modifier = {
+				modifier = br_ere_mercenary_raided_province
+				years = 5
+				mode = add
+			}
+			change_prosperity = prosperity_mild_penalty
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_mild_penalty
+			}
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+}
+
+br_ere_events.120 = { # Routiers handled
+	type = country_event
+	title = br_ere_events.120.title
+	desc = br_ere_events.120.desc
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1346.6.1
+		to = 1364.1.1
+		monthly_chance = 100
+	}
+	
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	
+	trigger = {
+		tag = BYZ
+		at_war = no
+		custom_tooltip = {
+			text = variable_tt_br_ere_mercenary_bands_at_large
+			has_variable = br_ere_mercenary_bands_at_large
+		}
+		region:balkan_region = {
+			any_location_in_region = {
+				has_location_modifier = br_ere_mercenary_raided_province
+				count < 1
+			}
+		}
+	}
+
+	option = { # Peace is restored
+		name = br_ere_events.120.a
+		add_stability = stability_severe_bonus
+		remove_variable = br_ere_mercenary_bands_at_large
+		ai_chance = {
+			base = 1
+		}
 	}
 }
 

@@ -2,3 +2,12 @@
 	local_defensive = -0.25 #addition
 	local_unrest = 0.1 #addition
 }
+
+br_ere_mercenary_raided_province = {
+	game_data = {
+		category = province
+	}
+	local_raw_material_output = -0.10
+	local_monthly_control = -0.001
+	local_max_control = -0.15	
+}
