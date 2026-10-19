@@ -196,6 +196,7 @@
 		}
 	}
 	br_anatolian_themes = {
+		icon = br_themata_reformed_privilege
 		estate = nobles_estate
 
 		potential = {
@@ -209,14 +210,14 @@
 		can_revoke = {
 			government_power > 75
 			societal_value:centralization_vs_decentralization <= -75
-			"estate_power(estate_type:nobles_estate)" <= 0.35
+			"estate_power(estate_type:nobles_estate)" <= 0.3
 		}
 
 		location_modifier = {
 			potential_trigger = {
 				region = region:anatolia_region
 			}
-			local_crown_estate_power = -0.5
+			local_burghers_estate_power = -0.5
 			local_nobles_estate_power = 0.5
 			local_max_control = 0.05
 			local_nobles_estate_unrest = -0.1
