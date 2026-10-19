@@ -22,7 +22,7 @@ REPLACE_OR_CREATE:clergy_military_orders = {
 	
 	country_modifier = {
 		allow_warrior_monks_training_grounds = yes
-		allow_military_order_units = yes
+		can_recruit_crusader_regiments = yes
 		global_clergy_estate_power = 0.5
 		#nobles_estate_levy_size = 0.25 #Added 
 		clergy_estate_levy_size = 1 #Added 
