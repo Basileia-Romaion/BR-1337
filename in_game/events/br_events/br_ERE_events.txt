@@ -3098,7 +3098,7 @@ br_ere_events.118 = { # The Roaming Routiers
 				name = br_ere_rogue_company_1
 				home = scope:br_bulgarian_roman_flashpoint_1
 				categories = {
-					army_heavy_infantry = 7
+					army_heavy_infantry = 4
 				}
 				save_scope_as = rogue_company_1
 			}
@@ -3106,7 +3106,7 @@ br_ere_events.118 = { # The Roaming Routiers
 				name = br_ere_rogue_company_2
 				home = scope:br_bulgarian_roman_flashpoint_2
 				categories = {
-					army_heavy_infantry = 7
+					army_heavy_infantry = 4
 				}
 				save_scope_as = rogue_company_2
 			}
@@ -3125,9 +3125,6 @@ br_ere_events.118 = { # The Roaming Routiers
 	option = { # We must crush them
 		name = br_ere_events.118.a
 		add_legitimacy = legitimacy_mild_bonus
-		#scope:br_ere_unruly_archontes_faction = {
-		#	add_rebel_progress = 1.5
-		#}
 		custom_tooltip = {
 			text = br_ere_mercenary_revolt_provinces
 			scope:br_bulgarian_roman_flashpoint_1 = {
@@ -3136,6 +3133,7 @@ br_ere_events.118 = { # The Roaming Routiers
 						owner = root
 					}
 					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
 				}
 				add_to_list = rebellion_provinces
 			}
@@ -3145,6 +3143,7 @@ br_ere_events.118 = { # The Roaming Routiers
 						owner = root
 					}
 					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
 				}
 				add_to_list = rebellion_provinces
 			}
@@ -3154,6 +3153,7 @@ br_ere_events.118 = { # The Roaming Routiers
 						owner = root
 					}
 					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
 				}
 				add_to_list = rebellion_provinces
 			}
@@ -3163,14 +3163,18 @@ br_ere_events.118 = { # The Roaming Routiers
 						owner = root
 					}
 					change_pop_allegiance = scope:br_ere_unruly_archontes_faction
+					add_pop_satisfaction = pop_satisfaction_ultimate_penalty
 				}
 				add_to_list = rebellion_provinces
 			}
+			
 			destroy_mercenary = scope:rogue_company_1
 			destroy_mercenary = scope:rogue_company_2
+			scope:br_ere_unruly_archontes_faction = {
+				add_rebel_progress = 0.5
+			}
 		}
 
-		# no instant spawning, as its most likely too weak anyway..
 
 		ai_chance = {
 			base = 20
@@ -3364,6 +3368,126 @@ br_ere_events.120 = { # Routiers handled
 	}
 }
 
+br_ere_events.121 = { #Local Strategoes rebels
+	type = country_event
+	title = br_ere_events.121.title
+	desc = br_ere_events.121.desc
+	outcome = neutral
+	#fire_only_once = yes low chance but repeatable
+
+	dynamic_historical_event = {
+		tag = BYZ
+		from = 1436.1.1
+		to = 1836.1.1
+		monthly_chance = 1
+	}
+
+	trigger = {
+		NOR = { 
+			country_exists = c:ANA
+			has_estate_privilege = estate_privilege:br_anatolian_themes
+		}
+		owns = location:ankara
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		c:ANA = { save_scope_as = target_country }
+		location:ankara = {
+			save_scope_as = target_location
+			area = {
+				every_location_in_area = {
+					limit = { owner ?= root }
+					add_core = scope:target_country
+				}
+			}
+			floodfill_locations = {
+				limit = { 
+					owner ?= root
+					OR = {
+						is_core_of = scope:target_country
+						"this.distance_to(root.capital)" > "this.distance_to(scope:target_location)"
+						local_control < 0.1
+					}
+				}
+				#add_core = scope:target_country
+			}
+		}
+		create_country_from_cores_in_our_locations = scope:target_country
+		scope:target_country = {
+			set_capital = scope:target_location
+			change_culture = culture:anatolian_greek_culture
+			change_country_type = army
+			add_gold = 3000
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_radical_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_radical_bonus }
+			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_radical_bonus }
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_radical_bonus }
+			grant_estate_privilege = estate_privilege:br_themata_reformed_privilege
+			add_reform = government_reform:br_sub_theme_subject
+			add_policy = policy:br_thema_levies_upgraded
+			every_owned_location = {
+				change_control = control_radical_bonus
+			}
+			#every_province = {
+				#limit = { any_location_in_province = { NOT = { integration_level = core } } }
+				#change_province_integration = core
+			#}
+		}
+		scope:target_location = {
+			if = {
+				limit = {
+					NOT = { has_building = building_type:br_despotate_building }
+				}
+				construct_building = {
+					building_type = building_type:br_despotate_building
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+					instant = yes
+				}
+			}
+			while =  {
+				count = 4
+				create_sub_unit_with_owner = {
+					type = a_byzantine_cataphracts
+					owner = scope:target_country
+				}
+			}
+			while =  {
+				count = 4
+				create_sub_unit_with_owner = {
+					type = a_akritai
+					owner = scope:target_country
+				}
+			}
+		}
+		cancel_subject = scope:target_country
+		if = {
+			limit = {
+				scope:target_country = {
+					NOT = { is_member_of_international_organization = international_organization:roman_world }
+				}
+			}
+			international_organization:roman_world = { add_country_to_international_organization = scope:target_country }
+		}
+	}
+
+	option = {
+		name = br_ere_events.121.a
+		hidden_effect = {
+			c:BYZ = {
+				add_casus_belli = { target = c:ANA type = casus_belli:cb_annex }
+				declare_war_with_cb = {  target = c:ANA type = casus_belli:cb_annex }
+
+			}
+		}
+	}
+}
 
 #others
 
