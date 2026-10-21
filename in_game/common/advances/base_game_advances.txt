@@ -4,6 +4,32 @@ TRY_INJECT:castle_advance = {
 	unlock_unit = br_unit_trebuchet
 }
 
+REPLACE_OR_CREATE:north_american_warrior_societies = {
+	age = age_2_renaissance
+	icon = warrior_lodge
+	potential = {
+		exists = capital
+		has_tribal_government = yes #br added
+		NOT = { is_subject_type = colonial_nation }
+		OR = {
+			original_capital.region = region:east_coast_region
+			original_capital.region = region:canada_region
+			original_capital.region = region:great_plains_region
+			original_capital.region = region:west_coast_region
+			original_capital.region = region:alaska_region
+			original_capital.region = region:aridoamerica_region
+		}
+		NOR = {
+			original_capital.area = area:xalisco_area
+			original_capital.area = area:zacatecas_area
+		}
+	}
+
+	unlock_building = warrior_lodge
+
+	requires = medieval_military
+}
+
 REPLACE_OR_CREATE:byz_cataphracts_advance = {
 	potential = {
 		OR = {
