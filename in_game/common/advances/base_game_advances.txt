@@ -1,5 +1,9 @@
 ﻿##############################-Edited Base Game Advances-##############################
 
+TRY_INJECT:castle_advance = {
+	unlock_unit = br_unit_trebuchet
+}
+
 REPLACE_OR_CREATE:byz_cataphracts_advance = {
 	potential = {
 		OR = {
