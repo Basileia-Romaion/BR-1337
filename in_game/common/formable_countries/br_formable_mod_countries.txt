@@ -1,6 +1,6 @@
 ﻿REPLACE_OR_CREATE:ELY_f = {
     level = 3
-    required_locations_fraction = 0.75
+    required_locations_fraction = 0.5
     rule = historical
     potential = {
         OR = {
@@ -9,7 +9,16 @@
         }
     }
 
-    allow = {}
+    allow = {
+		OR = {
+			has_or_had_tag = E1Y
+			NOT = { country_exists = c:E1Y }
+		}
+		OR = {
+			has_or_had_tag = E2Y
+			NOT = { country_exists = c:E2Y }
+		}
+	}
 
     name = ELY
     flag = ELY
@@ -21,7 +30,7 @@
         maryland_area
         virginia_area
         north_carolina_area
-        #south_carolina_area
+        south_carolina_area
         new_jersey_area
         pennsylvania_area
     }
