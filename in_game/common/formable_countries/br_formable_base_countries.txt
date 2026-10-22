@@ -308,9 +308,8 @@ REPLACE_OR_CREATE:GBR_f = {
 }
 
 REPLACE_OR_CREATE:BAV_f = { 
-
 	level = 2
-	required_locations_fraction = 0.85 #75
+	required_locations_fraction = 0.75
 	rule = historical
 
 	potential = {
@@ -322,6 +321,14 @@ REPLACE_OR_CREATE:BAV_f = {
 			has_estate_privilege = estate_privilege:bavarian_share_of_land
 		}
 		owns = location:munich
+		OR = {
+			has_or_had_tag = UBV
+			NOT = { country_exists = c:UBV }
+		}
+		OR = {
+			has_or_had_tag = LBV
+			NOT = { country_exists = c:LBV }
+		}
 	}
 	
 	name = BAV
