@@ -633,7 +633,7 @@
 		country_modifier = {
 			global_burghers_estate_power = 0.25
 			burghers_estate_allowed_in_cabinet = yes
-			trade_income = -0.25
+			trade_income = -0.1
 			expected_navy_size_modifier = -0.5
 			monthly_towards_plutocracy = societal_value_monthly_move
 		}
