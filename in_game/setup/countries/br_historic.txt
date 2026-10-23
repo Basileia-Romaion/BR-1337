@@ -1,0 +1,199 @@
+﻿#BR edited
+
+REPLACE_OR_CREATE:CYP = {
+	color = map_cyprus
+	color2 = rgb { 245 200 30 } #same as in EU4
+
+	#BR EDIT
+	culture_definition = latinoi
+	religion_definition = catholic
+	is_historic = yes
+}
+
+# REMOVED TAGS
+
+INJECT:AHI = {
+	is_historic = yes
+}
+
+INJECT:ALY = {
+	is_historic = yes
+}
+
+INJECT:AYD = {
+	is_historic = yes
+}
+
+INJECT:BFR = {
+	is_historic = yes
+}
+
+INJECT:CND = {
+	is_historic = yes
+}
+
+INJECT:GRM = {
+	is_historic = yes
+}
+
+INJECT:HMD = {
+	is_historic = yes
+}
+
+INJECT:HCI = {
+	is_historic = yes
+}
+
+INJECT:INA = {
+	is_historic = yes
+}
+
+INJECT:KBD = {
+	is_historic = yes
+}
+
+INJECT:KRD = {
+	is_historic = yes
+}
+
+INJECT:MEN = {
+	is_historic = yes
+}
+
+INJECT:SHP = {
+	is_historic = yes
+}
+
+INJECT:SRU = {
+	is_historic = yes
+}
+
+INJECT:SUT = {
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:TDJ = {
+	is_historic = yes
+}
+
+INJECT:TEK = {
+	is_historic = yes
+}
+
+INJECT:TVS = {
+	is_historic = yes
+}
+
+INJECT:BIN = {
+	is_historic = yes
+}
+
+INJECT:CEM = {
+	is_historic = yes
+}
+
+INJECT:JAL = {
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:UGH = { #Ughanids
+	culture_definition = turkoman_culture
+	is_historic = yes
+}
+
+INJECT:JUR = { #Jurmanids
+	is_historic = yes
+	culture_definition = turkoman_culture
+}
+
+INJECT:GRG = { #Gurgan  (Togha Temur)
+	is_historic = yes
+	culture_definition = turkmen_culture
+}
+
+INJECT:HLG = { #Huleguids
+	is_historic = yes
+	culture_definition = turkoman_culture
+}
+
+INJECT:NGD = { #Neguderi
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:QUN = { #Qara'unas
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:BSD = { #Besüd
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:ART = { #Arlat
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:APD = { #Apardi
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:SLD = { #Suldus
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:BRL = { #Barlas
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:YSU = { #Yasa'uri
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:KTT = { #Khuttal
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:JLY = { #Jalayirs
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+INJECT:JKR = { #Jauni Kurban
+	culture_definition = turkmen_culture
+	is_historic = yes
+}
+
+
+
+INJECT:IRO = { is_historic = yes }
+INJECT:BNV = { is_historic = yes }
+INJECT:SY3 = { is_historic = yes }
+INJECT:INN = { is_historic = yes }
+INJECT:DOR = { is_historic = yes }
+INJECT:DHM = { is_historic = yes }
+INJECT:LAN = { is_historic = yes }
+INJECT:GWR = { is_historic = yes }
+INJECT:GMG = { is_historic = yes }
+INJECT:MAC = { is_historic = yes }
+INJECT:BRO = { is_historic = yes }
+INJECT:EWY = { is_historic = yes }
+INJECT:CMS = { is_historic = yes }
+INJECT:DEN = { is_historic = yes }
+INJECT:PWS = { is_historic = yes }
+INJECT:STD = { is_historic = yes }
+INJECT:ODW = { is_historic = yes }
+INJECT:ATU = { is_historic = yes }
+INJECT:ARB = { is_historic = yes }
+INJECT:CRH = { is_historic = yes }
+INJECT:WBG = { is_historic = yes }
+INJECT:ADU = { is_historic = yes }
