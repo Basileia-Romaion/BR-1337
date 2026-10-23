@@ -1,0 +1,161 @@
+religious_order_manager = {
+	order_of_calatrava_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { calatrava_gfx }
+		type = iberian_military_order_type
+		calling = crusaders_calling
+		religion = catholic
+		coa = CTV
+		zeal = 75
+		locations = { segovia }
+		head_character = cas_juan_nunez_de_prado
+	}
+
+	order_of_santiago_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { santiago_gfx }
+		type = iberian_military_order_type
+		calling = crusaders_calling
+		religion = catholic
+		coa = STO
+		zeal = 80
+		locations = { santiago_compostela salamanca }
+		head_character = cas_vasco_rodriguez_de_coronado
+	}
+
+	order_of_alcantara_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { alcantara_gfx }
+		type = iberian_military_order_type
+		calling = wardens_calling
+		religion = catholic
+		coa = ACT
+		zeal = 70
+		locations = { bejar }
+		head_character = cas_rodrigo_perez_alcantara
+	}
+
+	order_of_christ_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { order_of_christ_gfx }
+		type = iberian_military_order_type
+		calling = mariners_calling
+		religion = catholic
+		coa = OPX
+		zeal = 70
+		locations = { burgos }
+		head_character = por_estevao_goncalves_leitao
+	}
+
+	order_of_avis_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { avis_gfx }
+		type = iberian_military_order_type
+		calling = confidants_calling
+		religion = catholic
+		coa = AVI
+		zeal = 75
+		locations = { viseu }
+		head_character = por_goncalo_vasques
+	}
+
+	order_of_montesa_religious_order = {
+		dlc = "d009_across_the_pillars"
+		graphical_cultures = { montesa_gfx }
+		type = iberian_military_order_type
+		calling = wardens_calling
+		religion = catholic
+		coa = MTS
+		zeal = 70
+		locations = { peniscola girona  }
+		head_character = ara_pere_de_thous
+	}
+
+	benedictine_order_religious_order = {
+		graphical_cultures = { benedictine_gfx }
+		type = monastic_order_type
+		calling = contemplatives_calling
+		religion = catholic
+		zeal = 85
+		locations = { salzburg regensburg bamberg melk augsburg mainz siena rome sahagun sto_domingo_silos jaca }
+		head_character = nap_raymond_gramat
+	}
+
+	cistercian_order_religious_order = {
+		graphical_cultures = { cistercian_gfx }
+		type = monastic_order_type
+		calling = cultivators_calling
+		religion = catholic
+		zeal = 84
+		locations = { dijon chartres beauvais toulouse oxford tarragona ravenna milano viterbo }
+		head_character = bur_jean_chaudenay
+	}
+
+	dominican_order_religious_order = {
+		graphical_cultures = { dominican_gfx }
+		type = mendicant_order_type
+		calling = preachers_calling
+		religion = catholic
+		zeal = 80
+		locations = { bologna benevento cologne montpellier krakow florence vienna erfurt }
+		head_character = bur_hugh_vaucemain
+	}
+
+	franciscan_order_religious_order = {
+		graphical_cultures = { franciscan_gfx }
+		type = mendicant_order_type
+		calling = almoners_calling
+		religion = catholic
+		zeal = 85
+		locations = { assisi padova munich prague canterbury esztergom pisa }
+		head_character = pap_gerald_odonis
+	}
+
+	augustine_order_religious_order = {
+		graphical_cultures = { augustine_gfx }
+		type = mendicant_order_type
+		calling = confessors_calling
+		religion = catholic
+		zeal = 78
+		locations = { paris angers amiens arras london utrecht liege }
+		head_character = fra_guglielmo_cremona
+	}
+
+
+ ##BR edited locations further north along the frontier 
+	br_order_holy_sepulchre = {
+		graphical_cultures = { montesa_gfx }
+		type = iberian_military_order_type
+		calling = wardens_calling
+		religion = orthodox
+		color = { 152 125 104 }
+		coa = OHS
+		zeal = 70
+		locations = { ulnia enguzud kapan elbistan kars_armenia arsuz mistretta }
+		head_character = br_ortho_military_order_character_01
+	}
+
+	br_order_saint_george = {
+		graphical_cultures = { santiago_gfx }
+		type = iberian_military_order_type
+		calling = crusaders_calling
+		religion = orthodox
+		color = { 162 105 134 }
+		coa = SGO
+		zeal = 40
+		locations = { kutaisi costa hereti kasriskari jariekhi shatili omalo }
+		head_character = br_ortho_military_order_character_02
+	}
+
+	br_order_saint_vladimir = {
+		graphical_cultures = { santiago_gfx }
+		type = iberian_military_order_type
+		calling = crusaders_calling
+		religion = orthodox
+		color = { 132 185 114 }
+		coa = RH0
+		zeal = 80
+		locations = { qirq_yer pohrebyshche drahushiv kyiv moscow novgorod }
+		head_character = br_ortho_military_order_character_03
+	}
+}
