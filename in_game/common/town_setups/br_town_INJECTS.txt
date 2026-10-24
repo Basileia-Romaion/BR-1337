@@ -275,7 +275,7 @@ REPLACE_OR_CREATE:greek_city_port = {
 	jewelry_guild = 1
 	tannery = 1
 	granary = 2
-	marketplace = 1
+	marketplace = 3 #was 1
 	naval_supplies_guild = 1
 	dyes_guild = 1
 	wharf = 1
@@ -297,7 +297,7 @@ REPLACE_OR_CREATE:greek_town_port = {
 	granary = 1
 	naval_supplies_guild = 1
 	wharf = 1
-	marketplace = 1
+	marketplace = 2 #was 1
 	artisan_guilds = 1 #BR added estate building
 	merchants_guild = 1 #BR added estate building
 }
@@ -333,7 +333,7 @@ REPLACE_OR_CREATE:christian_anatolian_town = {
 	weapon_guild = 1
 	mason = 1
 	pottery_guild = 1
-	marketplace = 1
+	marketplace = 2
 	parish_church = 1 #BR added estate building
 	horse_breeders = 1
 }
