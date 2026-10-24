@@ -56955,7 +56955,7 @@ countries = {
 			
 
 			privilege = {
-				
+				br_protected_subject_faith_privilege
 			}
 			
 			laws = {
@@ -57002,7 +57002,9 @@ countries = {
 			type = monarchy
 			heir_selection = oligarchic_elective
 			ruler = random
-			
+			privilege = {
+				br_protected_subject_faith_privilege
+			}
 			laws = {
 				sharia_law = maliki_policy
 			}
