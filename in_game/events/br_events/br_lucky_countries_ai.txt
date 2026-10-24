@@ -324,11 +324,10 @@ br_lucky_countries_ai.8 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	#fire_only_once = yes
+	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = TNC #Aztec
-		tag = CSU #Inca
         from = 1337.1.1
         to = 1338.1.1
         monthly_chance = 100
@@ -338,17 +337,37 @@ br_lucky_countries_ai.8 = {
 		NOT = {
 			has_country_modifier = br_lucky_country_buff
 		}
+		c:TEP ?= {
+			is_ai = yes
+		}
+		c:TCP ?= {
+			is_ai = yes
+		}
+		c:XCH ?= {
+			is_ai = yes
+		}
+		c:CLC ?= {
+			is_ai = yes
+		}
+		c:CUL ?= {
+			is_ai = yes
+		}
 	}
-	immediate = { #decaying to 0.5% x150 years
+	immediate = {
+		annex_country = { country = c:TEP }
+		annex_country = { country = c:TCP }
+		annex_country = { country = c:XCH }
+		annex_country = { country = c:CLC }
+		annex_country = { country = c:CUL }
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
-			years = 250
+			years = 200
 			mode = add_and_extend
-			size = 2
+			size = 1.5
 		}
 		add_country_modifier = {
 			modifier = br_levy_size_modifier
-			years = 250
+			years = 200
 			mode = add_and_extend
 			size = 2
 		}
@@ -395,11 +414,10 @@ br_lucky_countries_ai.10 = {
 	title = empty_text
 	desc = empty_text
 	hidden = yes
-	#fire_only_once = yes
+	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = E1Y
-		tag = NRV
         from = 1337.1.1
         to = 1339.1.1
         monthly_chance = 100
@@ -409,11 +427,20 @@ br_lucky_countries_ai.10 = {
 		NOT = {
 			has_country_modifier = br_levy_size_modifier
 		}
+		c:E2Y ?= {
+			is_ai = yes
+		}
 	}
 	immediate = { #decaying to 0.5% x150 years
 		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 150
+			mode = add_and_extend
+			size = 0.5
+		}
+		add_country_modifier = {
 			modifier = br_levy_size_modifier
-			years = 100
+			years = 150
 			mode = add_and_extend
 			size = 0.5
 		}
@@ -517,6 +544,62 @@ br_lucky_countries_ai.12 = {
 				target = c:FRA
 				type = subject_type:vassal
 			}
+		}
+	}
+}
+
+br_lucky_countries_ai.13 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = CSU #Inca
+        from = 1337.1.1
+        to = 1338.1.1
+        monthly_chance = 100
+    }
+	trigger = {
+		is_ai = yes
+		NOT = {
+			has_country_modifier = br_lucky_country_buff
+		}
+		c:PIG ?= {
+			is_ai = yes
+		}
+		c:CNC ?= {
+			is_ai = yes
+		}
+		c:KKE ?= {
+			is_ai = yes
+		}
+		c:KNA ?= {
+			is_ai = yes
+		}
+		c:QUL ?= {
+			is_ai = yes
+		}
+	}
+	immediate = { #decaying to 0.5% x150 years
+		annex_country = { country = c:PIG }
+		annex_country = { country = c:CNC }
+		annex_country = { country = c:KKE }
+		annex_country = { country = c:KNA }
+		annex_country = { country = c:QUL }
+		add_country_modifier = {
+			modifier = br_lucky_country_buff
+			years = 250
+			mode = add_and_extend
+			size = 2
+		}
+		add_country_modifier = {
+			modifier = br_levy_size_modifier
+			years = 250
+			mode = add_and_extend
+			size = 2
 		}
 	}
 }
