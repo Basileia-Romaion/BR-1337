@@ -6,8 +6,11 @@
 #negative because inject doesn't replace is adds or subtracts
 TRY_INJECT:country_base_values = {
 	#stability_decay = 0.0025 #an additional 0.0025 for 0.0075 total
-	global_trade_protection_factor = 0.25 #added to better balance the global markets
+	global_trade_protection_factor = 0.1 #added to better balance the global markets
 	antagonism_religion_influence = 1 #increase to antagonism against different religions
+	antagonism_culture_influence = 0.5
+	antagonism_government_type_influence = 0.25
+	antagonism_societal_value_influence = 0.1
 }
 
 TRY_INJECT:war_exhaustion_impact = {
