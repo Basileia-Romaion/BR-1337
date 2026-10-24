@@ -92,6 +92,10 @@ elysium_event.1 = {
                     type = institution:meritocracy
                     value = 100
                 }
+				change_institution_progress = {
+                    type = institution:renaissance
+                    value = 100
+                }
             }
 			every_owned_location = {
 				every_pop = {
@@ -124,10 +128,11 @@ elysium_event.1 = {
 							culture = { has_culture_group = culture_group:lenape_group }
 							culture = { has_culture_group = culture_group:skarureh_group }
 							culture = { has_culture_group = culture_group:tutelo_group }
+							culture = { has_culture_group = culture_group:massachusett_group }
 						}
 					}
 					split_pop = {
-						fraction = 0.5 #50% of the pop will be changed to the new culture
+						fraction = 0.25 #25% of the pop will be changed to the new culture
 						culture = culture:elyrics_culture
 					}
 					#change_pop_culture = culture:elyrics_culture
@@ -171,7 +176,11 @@ elysium_event.1 = {
             change_institution_progress = {
                 type = institution:meritocracy
                 value = 100
-             }
+            }
+			change_institution_progress = {
+				type = institution:renaissance
+				value = 100
+			}
         }
 		location:anacostia = {
 			change_raw_material = goods:silk
@@ -579,6 +588,37 @@ br_elysian_DHE.4 = {
 		name = br_elysian_DHE.4.a
 		historical_option = yes
 		add_policy = policy:native_integration
+
+		hidden_effect = {
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						OR = {
+							culture = { has_culture_group = culture_group:powhatan_group }
+							culture = { has_culture_group = culture_group:lenape_group }
+							culture = { has_culture_group = culture_group:skarureh_group }
+							culture = { has_culture_group = culture_group:tutelo_group }
+							culture = { has_culture_group = culture_group:massachusett_group }
+							culture = { has_culture_group = culture_group:ta_arawakan_group }
+						}
+					}
+					split_pop = {
+						fraction = 0.25 #50% of the pop will be changed to the new culture
+						culture = culture:elyrics_culture
+					}
+				}
+			}
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = culture:elyrics_culture
+						pop_type = pop_type:tribesmen
+					}
+					change_pop_type = pop_type:peasants
+				}
+			}
+		}
+
 	}
 	option = {
 		name = br_elysian_DHE.4.b
