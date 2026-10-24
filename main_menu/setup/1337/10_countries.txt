@@ -15068,7 +15068,7 @@ countries = {
 		include = "expl_indian_trade_route"
 		include = "expl_west_africa_muslim"
 		include = "expl_west_africa_south"
-		include = "muslim_monarchy"
+		include = "br_andalusian_monarchy"
 		discovered_areas = {
 			kongo_sea_zones_area
 			canary_islands_area
@@ -15102,80 +15102,22 @@ countries = {
 			reforms = {
 				the_jewel_of_alandalus_reform
 				gra_hajib_reform
+				catalan_merchant_privileges
 				br_alandalus_reform
 			}
 			laws = {
 				sharia_law = maliki_policy
 				dhimmi_regulations_law = dhimmi_status_policy
 				slave_conversion = allow_slave_religion
+				royal_court_customs_law = court_of_culture_policy
 			}
 			privilege = {
-				#Nobles
-				elaborate_court_ceremonies
-				noble_sponsored_navy
-				br_ghazi_privilege
-				#joint_assembly_decrees
-
-				#Clergy
-				clergy_literacy_rights
-				clergy_enforced_unity
-				embellish_great_works_of_faith
-				clergy_land_rights
-				freedom_of_interpretation
-
-				#Burghers
-				formal_guilds
-				building_rights
-				market_fairs
-				shipwright_contracts
-				sponsor_maritime_contracts
-				land_of_commerce
-				urban_development_grants
-				commercial_advisory_council
-				burghers_protected_faith
-				allow_trade_center_sponsorship
-
-				#Peasants
-				partial_yield
-				peasants_free_peasantry
-
-				#Dhimmi
-				dhimmi_land_rights
-				dhimmi_administrative_posts
-				dhimmi_abrahamic_communities
-				dhimmi_pact_of_umar
-				dhimmi_military_service
-				dhimmi_traditions
-				dhimmi_promote_tolerance
-				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
-				dhimmi_mazalim_court
-				dhimmi_in_administration
-				br_andalusian_dhimmi_levies
-				jewish_court_financier_charter
-				jewish_physician_exemption
-				al_caid
-				treasury_rights
+				
 			}
 			parliament = {
 				parliament_type = jamaa_parliament
 			}
 			
-			centralization_vs_decentralization = -50
-			aristocracy_vs_plutocracy = 50
-			serfdom_vs_free_subjects = 50
-			traditionalist_vs_innovative = 50
-			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 50
-			offensive_vs_defensive = 100
-			land_vs_naval = -25
-			quality_vs_quantity = -50
-			belligerent_vs_conciliatory = 100
-			capital_economy_vs_traditional_economy = -75
-			individualism_vs_communalism = -50
-			outward_vs_inward = -75
-			mysticism_vs_jurisprudence = 50
-
 			bureaucracies = {
 				{ type = hisba_bureaucracy date = 1150.1.1 entrenchment = 90 }
 				{ type = diwan_al_insha_bureaucracy date = 1232.1.1 entrenchment = 65 }
@@ -15200,34 +15142,14 @@ countries = {
 			mozarabic
 		}
 
-		capital = cordoba #br edit
-	}
-
-	GRA = {
-		our_cores_conquered_by_others = {
-			almeria almanzora baza gergal mojacar velez_rubio
-			granada adra almunecar guadix huescar illora loja pinar orgiva
-			malaga antequera velez_malaga
-			olvera
+		currency_data = {
+			gold = 3500
+			stability = 75
+			prestige = 75
+			government_power = 75
 		}
 
-		starting_technology_level = 3
-		include = "expl_muslim_mediterranean"
-		include = "muslim_monarchy_not_present"
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-		}
-		court_language = maghrebi_dialect
-		religious_school = maliki_school
-		country_rank = rank_duchy
-
-		tolerated_cultures = {
-			sephardi
-		}
-
-		capital = granada
+		capital = cordoba
 	}
 
 	#Navarre
@@ -15354,7 +15276,7 @@ countries = {
 			faro silves tavira lagos
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -15384,7 +15306,7 @@ countries = {
 			cordoba lucena baena palma_del_rio carpio espiel fuenteovejuna pedroche santa_eufemia
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -15399,7 +15321,7 @@ countries = {
 			jaen baeza ubeda andujar jodar cazorla martos
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -15416,7 +15338,7 @@ countries = {
 			hellin caravaca cieza segura_de_la_sierra
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -15433,7 +15355,7 @@ countries = {
 			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -15455,7 +15377,7 @@ countries = {
 			ciudad_real almaden almodovar_del_campo calatrava malagon manzanares puertollano
 		}
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -54548,7 +54470,14 @@ countries = {
 			heir_selection = bank_selection
 			ruler = random
 
-			reforms = {	banking_country }
+			reforms = {	
+				banking_country 
+				jewish_kehilla_federation_reform 
+			}
+			privilege = {
+				jewish_bet_din_commercial_courts
+				jewish_diaspora_trade_network
+			}
 
 			aristocracy_vs_plutocracy = 100
 			traditionalist_vs_innovative = 75
@@ -54581,7 +54510,14 @@ countries = {
 		government = {
 			type = republic
 			heir_selection = bank_selection
-			reforms = {	banking_country }
+			reforms = {	
+				banking_country 
+				jewish_kehilla_federation_reform 
+			}
+			privilege = {
+				jewish_bet_din_commercial_courts
+				jewish_diaspora_trade_network
+			}
 			ruler = br_ere_rdm_character_84
 			aristocracy_vs_plutocracy = 100
 			traditionalist_vs_innovative = 75
@@ -54614,7 +54550,14 @@ countries = {
 		government = {
 			type = republic
 			heir_selection = bank_selection
-			reforms = {	banking_country }
+			reforms = {	
+				banking_country 
+				jewish_kehilla_federation_reform 
+			}
+			privilege = {
+				jewish_bet_din_commercial_courts
+				jewish_diaspora_trade_network
+			}
 			ruler = br_ere_rdm_character_89
 			aristocracy_vs_plutocracy = 100
 			traditionalist_vs_innovative = 75
@@ -56991,7 +56934,6 @@ countries = {
 		own_control_core = {
 			zamora
 		}
-		
 		our_cores_conquered_by_others = {
 			avila arevalo villatoro #Avila
 			alba_de_aliste fermoselle toro villalpando
@@ -57004,7 +56946,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "muslim_monarchy"
+		include = "br_andalusian_monarchy"
 		
 		government = {
 			type = monarchy
@@ -57013,58 +56955,9 @@ countries = {
 			
 
 			privilege = {
-				#Nobles
-				
-				#Clergy
-				freedom_of_interpretation
-				
-				#Burghers
-				formal_guilds
-				building_rights
-				market_fairs
-				land_of_commerce
-				urban_development_grants
-				commercial_advisory_council
-				burghers_protected_faith
-				allow_trade_center_sponsorship
-				
-				#Peasants
-				partial_yield
-				peasants_free_peasantry
-				
-				#Dhimmi
-				dhimmi_land_rights
-				dhimmi_administrative_posts
-				dhimmi_abrahamic_communities
-				dhimmi_pact_of_umar
-				dhimmi_military_service
-				dhimmi_traditions
-				dhimmi_promote_tolerance
-				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
-				dhimmi_mazalim_court
-				dhimmi_in_administration
-
-				br_protected_subject_faith_privilege
 				
 			}
 			
-			centralization_vs_decentralization = -50
-			aristocracy_vs_plutocracy = 50
-			serfdom_vs_free_subjects = 25
-			traditionalist_vs_innovative = 50
-			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 35
-			offensive_vs_defensive = 50
-			land_vs_naval = -20
-			quality_vs_quantity = -30
-			belligerent_vs_conciliatory = 50
-			capital_economy_vs_traditional_economy = -60
-			individualism_vs_communalism = -20
-			outward_vs_inward = -60
-			mysticism_vs_jurisprudence = 50
-			
-
 			laws = {
 				sharia_law = maliki_policy
 			}
@@ -57085,7 +56978,6 @@ countries = {
 		own_control_core = {
 			zaragoza
 		}
-
 		our_cores_conquered_by_others = {
 			belchite carinena calatayud tarazona
 			peniscola
@@ -57104,64 +56996,12 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "muslim_monarchy"
+		include = "br_andalusian_monarchy"
 		
 		government = {
 			type = monarchy
 			heir_selection = oligarchic_elective
 			ruler = random
-			
-			privilege = {
-				#Nobles
-				
-				#Clergy
-				freedom_of_interpretation
-				
-				#Burghers
-				formal_guilds
-				building_rights
-				market_fairs
-				land_of_commerce
-				urban_development_grants
-				commercial_advisory_council
-				burghers_protected_faith
-				allow_trade_center_sponsorship
-				
-				#Peasants
-				partial_yield
-				peasants_free_peasantry
-				
-				#Dhimmi
-				dhimmi_land_rights
-				dhimmi_administrative_posts
-				dhimmi_abrahamic_communities
-				dhimmi_pact_of_umar
-				dhimmi_military_service
-				dhimmi_traditions
-				dhimmi_promote_tolerance
-				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
-				dhimmi_mazalim_court
-				dhimmi_in_administration
-
-				br_protected_subject_faith_privilege
-				
-			}
-			
-			centralization_vs_decentralization = -50
-			aristocracy_vs_plutocracy = 50
-			serfdom_vs_free_subjects = 25
-			traditionalist_vs_innovative = 50
-			spiritualist_vs_humanist = 80
-			mercantilism_vs_free_trade = 35
-			offensive_vs_defensive = 50
-			land_vs_naval = -20
-			quality_vs_quantity = -30
-			belligerent_vs_conciliatory = 50
-			capital_economy_vs_traditional_economy = -60
-			individualism_vs_communalism = -20
-			outward_vs_inward = -60
-			mysticism_vs_jurisprudence = 50
 			
 			laws = {
 				sharia_law = maliki_policy
@@ -57198,7 +57038,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "muslim_monarchy"
+		include = "br_andalusian_monarchy"
 		
 		country_rank = rank_duchy
 		capital = palma
