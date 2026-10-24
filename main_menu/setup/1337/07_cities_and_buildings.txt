@@ -480,44 +480,44 @@ locations={
 	valencia = { rank = city town_setup = iberian_city_port }
 	valladolid = { rank = town town_setup = iberian_town }
 	
-	alcala_de_henares = { rank = town town_setup = iberian_town }
+	#alcala_de_henares = { rank = town town_setup = iberian_town }
 	almeria = { rank = town town_setup = almeria_town }
 	badajoz = { rank = town town_setup = iberian_town }
 	burgos = { rank = town town_setup = iberian_town }
 	#calatayud = { rank = town town_setup = iberian_town }
 	#castellon_de_la_plana = { rank = town town_setup = iberian_town_port }
-	cervera = { rank = town town_setup = iberian_town }
+	#cervera = { rank = town town_setup = iberian_town }
 	#ciudad_rodrigo = { rank = town town_setup = iberian_town }
 	coimbra = { rank = town town_setup = iberian_town }
 	#cuenca = { rank = town town_setup = iberian_town }
-	ecija = { rank = town town_setup = iberian_town }
+	#ecija = { rank = town town_setup = iberian_town }
 	#viseu = { rank = town town_setup = iberian_town }
-	evora = { rank = town town_setup = iberian_town }
+	#evora = { rank = town town_setup = iberian_town }
 	faro = { rank = town town_setup = iberian_town_port }
 	girona = { rank = town town_setup = iberian_town_port }
 	huesca = { rank = town town_setup = iberian_town }
 	jaen = { rank = town town_setup = iberian_town }
-	jativa = { rank = town town_setup = iberian_town }
-	jerez_de_la_frontera = { rank = town town_setup = iberian_town }
+	#jativa = { rank = town town_setup = iberian_town }
+	cadiz = { rank = town town_setup = iberian_town_port }
 	leon = { rank = town town_setup = iberian_town }
-	lleida = { rank = town town_setup = iberian_town }
+	#lleida = { rank = town town_setup = iberian_town }
 	#medina_del_campo = { rank = town town_setup = iberian_town }
 	caceres = { rank = town town_setup = iberian_town }
 	#morella = { rank = town town_setup = iberian_town }
 	murcia = { rank = town town_setup = iberian_town_port }
-	orihuela = { rank = town town_setup = iberian_town_port }
+	#orihuela = { rank = town town_setup = iberian_town_port }
 	palma = { rank = town town_setup = iberian_town_port }
 	pamplona = { rank = town town_setup = iberian_town }
 	porto = { rank = town town_setup = iberian_town_port }
 	#salamanca = { rank = town town_setup = iberian_town }
 	santander = { rank = town town_setup = iberian_town_port }
-	santarem = { rank = town town_setup = iberian_town }
+	#santarem = { rank = town town_setup = iberian_town }
 	santiago_compostela = { rank = town town_setup = iberian_town }
 	oviedo = { rank = town town_setup = iberian_town }
 	#segovia = { rank = town town_setup = iberian_town }
 	tarragona = { rank = town town_setup = iberian_town }
 	#teruel = { rank = town town_setup = iberian_town }
-	tortosa = { rank = town town_setup = iberian_town_port }
+	#tortosa = { rank = town town_setup = iberian_town_port }
 	#tudela = { rank = town town_setup = iberian_town }
 	zamora = { rank = town town_setup = iberian_town }
 	zaragoza = { rank = town town_setup = iberian_town }
@@ -1190,25 +1190,25 @@ building_manager = {
 	parish_church	= { tag = ICE level = 1 location = holar }
 	
 	
-	tar_kiln = { tag = SWE level = 3 location = arboga }
-	tar_kiln = { tag = SWE level = 3 location = vasteras }
-	tar_kiln = { tag = SWE level = 3 location = riseberga }
-	tar_kiln = { tag = SWE level = 3 location = kinda }
-	tar_kiln = { tag = SWE level = 3 location = handbord }
-	tar_kiln = { tag = SWE level = 3 location = ekenas }
-	tar_kiln = { tag = SWE level = 2 location = poytis }
-	tar_kiln = { tag = SWE level = 1 location = hudiksvall }  # Hälsingland — historically the core tar region
-	tar_kiln = { tag = SWE level = 2 location = soderala }    # Hälsingland
-	tar_kiln = { tag = SWE level = 3 location = gefle }       # Gästrikland, major export port for tar
-	tar_kiln = { tag = SWE level = 1 location = mora }        # Dalarna
-	tar_kiln = { tag = SWE level = 1 location = bjorneborg }  # Ostrobothnia (Pori) — Finnish tar export hub
-	#tar_kiln = { tag = SWE level = 2 location = uleaborg }    # Northern Ostrobothnia (Oulu) — major tar port
+	tar_kiln = { tag = SWE level = 4 location = arboga }
+	tar_kiln = { tag = SWE level = 4 location = vasteras }
+	tar_kiln = { tag = SWE level = 4 location = riseberga }
+	tar_kiln = { tag = SWE level = 4 location = kinda }
+	tar_kiln = { tag = SWE level = 4 location = handbord }
+	tar_kiln = { tag = SWE level = 4 location = ekenas }
+	tar_kiln = { tag = SWE level = 3 location = poytis }
+	tar_kiln = { tag = SWE level = 2 location = hudiksvall }  # Hälsingland — historically the core tar region
+	tar_kiln = { tag = SWE level = 3 location = soderala }    # Hälsingland
+	tar_kiln = { tag = SWE level = 4 location = gefle }       # Gästrikland, major export port for tar
+	tar_kiln = { tag = SWE level = 2 location = mora }        # Dalarna
+	tar_kiln = { tag = SWE level = 2 location = bjorneborg }  # Ostrobothnia (Pori) — Finnish tar export hub
+	tar_kiln = { tag = SWE level = 2 location = uleaborg }    # Northern Ostrobothnia (Oulu) — major tar port
 
-	tar_kiln = { tag = NOR level = 4 location = bragernes }
-	tar_kiln = { tag = NOR level = 1 location = roros }
-	tar_kiln = { tag = NOR level = 1 location = elverum }
-	tar_kiln = { tag = NOR level = 2 location = ringerike }
-	tar_kiln = { tag = NOR level = 1 location = lillehammer }
+	tar_kiln = { tag = NOR level = 5 location = bragernes }
+	tar_kiln = { tag = NOR level = 2 location = roros }
+	tar_kiln = { tag = NOR level = 2 location = elverum }
+	tar_kiln = { tag = NOR level = 3 location = ringerike }
+	tar_kiln = { tag = NOR level = 2 location = lillehammer }
 	
 	weapon_guild = { tag = SWE level = 3 location = stockholm }
 	wharf = { tag = SWE level = 1 location = stockholm }
@@ -1230,13 +1230,13 @@ building_manager = {
 	
 	cathedral = { tag = TEU level = 1 location = konigsberg }
 	
-	tar_kiln = { tag = BIO level = 3 location = lihula }
-	tar_kiln = { tag = LIV level = 3 location = kandava }
-	tar_kiln = { tag = ORE level = 1 location = vyborg }
+	tar_kiln = { tag = BIO level = 4 location = lihula }
+	tar_kiln = { tag = LIV level = 4 location = kandava }
+	tar_kiln = { tag = ORE level = 2 location = vyborg }
 
 
 	stockade	= { tag = ORE level = 1 location = korela }
-	marketplace	= { tag = RIG level = 1 location = riga }
+	marketplace	= { tag = RIG level = 4 location = riga }
 
 
 	# steppes 
@@ -1290,12 +1290,12 @@ building_manager = {
 	# The Hanseatic Kontors
 	dock = { tag = LUB level = 1 location = lubeck }
 	
-	hanseatic_kontor = { tag = HSA level = 3 location = lubeck }
+	hanseatic_kontor = { tag = HSA level = 4 location = lubeck }
 	hanseatic_kontor = { tag = HSA level = 2 location = visby }
-	hanseatic_kontor = { tag = HSA level = 2 location = riga }
-	hanseatic_kontor = { tag = HSA level = 2 location = hamburg }
+	hanseatic_kontor = { tag = HSA level = 3 location = riga }
+	hanseatic_kontor = { tag = HSA level = 4 location = hamburg }
 	hanseatic_kontor = { tag = HSA level = 2 location = goslar }
-	hanseatic_kontor = { tag = HSA level = 2 location = bremen }
+	hanseatic_kontor = { tag = HSA level = 3 location = bremen }
 	hanseatic_kontor = { tag = HSA level = 2 location = rostock }
 	hanseatic_kontor = { tag = HSA level = 2 location = wismar }
 	#not a town or city hanseatic_kontor = { tag = HSA level = 2 location = stade }
@@ -1447,12 +1447,12 @@ building_manager = {
 	cathedral 	= { tag = SCO level = 1 location = dornoch }
 	cathedral 	= { tag = ORK level = 1 location = orkney } # kirkwall
 
-	tar_kiln = { tag = ENG level = 3 location = hereford }
-	tar_kiln = { tag = ENG level = 4 location = kidderminster }
-	tar_kiln = { tag = ENG level = 4 location = shrewsbury }
-	tar_kiln = { tag = ENG level = 4 location = stafford }
+	tar_kiln = { tag = ENG level = 4 location = hereford }
+	tar_kiln = { tag = ENG level = 5 location = kidderminster }
+	tar_kiln = { tag = ENG level = 5 location = shrewsbury }
+	tar_kiln = { tag = ENG level = 5 location = stafford }
 
-	tar_kiln = { tag = SCO level = 3 location = inverary }
+	tar_kiln = { tag = SCO level = 4 location = inverary }
 
 
 	# Wales had the highest castle per area in the world. It was totally locked down.
@@ -1614,18 +1614,18 @@ building_manager = {
 	university	= { tag = FRA level = 1	location = toulouse }
 	university	= { tag = FRA level = 1	location = orleans }
 	university	= { tag = SIE level = 1	location = siena }
-	university	= { tag = ADU level = 1	location = toledo }   #BR edit
+	university	= { tag = GRA level = 1	location = toledo }   #BR edit
 	university	= { tag = MLL level = 1	location = montpellier }
 	university	= { tag = MTA level = 1	location = macerata }
-	university	= { tag = ADU level = 1	location = sevilla }
-	university	= { tag = ADU level = 1	location = valencia }   #BR edit
+	university	= { tag = GRA level = 1	location = sevilla }
+	university	= { tag = GRA level = 1	location = valencia }   #BR edit
 	university	= { tag = ARA level = 1	location = lleida }
 	university	= { tag = PAP level = 1	location = rome }
 	university	= { tag = PEA level = 1	location = perugia }
 	university	= { tag = PLE level = 1	location = dublin }
 	university	= { tag = FLO level = 1	location = florence }
 	#university	= { tag = BYZ level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
-	university	= { tag = ADU level = 1	location = cordoba }
+	university	= { tag = GRA level = 1	location = cordoba }
 	university	= { tag = TUR level = 1	location = baghdad }
 	university	= { tag = MAM level = 1	location = alexandria }
 	
@@ -1844,7 +1844,7 @@ building_manager = {
 	charcoal_maker = { tag = CAS level = 1 location = valmaseda } 
 
 
-	dock = { tag = ADU level = 1	location = valencia }
+	dock = { tag = GRA level = 1	location = valencia }
 	dock = { tag = ARA level = 1	location = barcelona }
 
 	fishing_village = { tag = CAS level = 1 location = bilbao }
@@ -1955,34 +1955,35 @@ building_manager = {
 	sergeantry	= { tag = NAV level = 1 location = pamplona } #Sergeants at arms
 	
 	fine_cloth_guild = { tag = ARA level = 1 location = barcelona }
-	fine_cloth_guild = { tag = ARA level = 1 location = jativa }
-	fine_cloth_guild = { tag = ADU level = 1 location = valencia }
+	#fine_cloth_guild = { tag = ARA level = 1 location = jativa }
+	fine_cloth_guild = { tag = GRA level = 1 location = valencia }
+	fine_cloth_guild = { tag = FLO level = 3 location = florence }
 
 
-	tar_kiln = { tag = NAV level = 4 location = elizondo } 
-	tar_kiln = { tag = CAS level = 4 location = bilbao } 
-	tar_kiln = { tag = CAS level = 4 location = san_sebastian } 
-	tar_kiln = { tag = CAS level = 4 location = beteta } 
-	tar_kiln = { tag = CAS level = 3 location = segura_de_la_sierra } 
-	tar_kiln = { tag = MOR level = 4 location = ronda } 
-	tar_kiln = { tag = POR level = 4 location = chao_de_couce } 
+	tar_kiln = { tag = NAV level = 5 location = elizondo } 
+	tar_kiln = { tag = CAS level = 5 location = bilbao } 
+	tar_kiln = { tag = CAS level = 5 location = san_sebastian } 
+	tar_kiln = { tag = CAS level = 5 location = beteta } 
+	tar_kiln = { tag = CAS level = 4 location = segura_de_la_sierra } 
+	tar_kiln = { tag = MOR level = 5 location = ronda } 
+	tar_kiln = { tag = POR level = 5 location = chao_de_couce } 
 
 		#Barcelona Royal Shipyard #Unique
 	barcelona_royal_shipyard = { tag = ARA level = 1 location = barcelona }
 	
 		#Royal Atarazanas of Seville #Unique
-	royal_atarazanas_seville = { tag = ADU level = 1 location = sevilla }   #BR edit
+	royal_atarazanas_seville = { tag = GRA level = 1 location = sevilla }   #BR edit
 
 	#Granada Alhambra
-	alhambra = { tag = ADU level = 1 location = granada }	
-	funduq = { tag = ADU level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+	alhambra = { tag = GRA level = 1 location = granada }	
+	funduq = { tag = GRA level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
 		#Granadan Trans-Saharan Trade Office network — funduq factors along the gold caravan axis
-	trade_office = { tag = ADU level = 4 location = niani }
-	trade_office = { tag = ADU level = 4 location = timbuktu }
-	trade_office = { tag = ADU level = 4 location = sijilmasa }
-	trade_office = { tag = ADU level = 3 location = fez }
-	trade_office = { tag = ADU level = 3 location = marrakesh }
-	trade_office = { tag = ADU level = 2 location = meknes }
+	trade_office = { tag = GRA level = 4 location = niani }
+	trade_office = { tag = GRA level = 4 location = timbuktu }
+	trade_office = { tag = GRA level = 4 location = sijilmasa }
+	trade_office = { tag = GRA level = 3 location = fez }
+	trade_office = { tag = GRA level = 3 location = marrakesh }
+	trade_office = { tag = GRA level = 2 location = meknes }
 
 		#Brethren of the Marsh #Unique
 	brethren_marsh = { tag = CAS level = 1 location = bilbao }   #BR edit
@@ -1992,7 +1993,22 @@ building_manager = {
 	brethren_marsh = { tag = CAS level = 1 location = san_sebastian }   #BR edit
 	brethren_marsh = { tag = CAS level = 1 location = tolosa }   #BR edit
 
+		#Aragonese Trade Offices
+	trade_office = { tag = ARA level = 1 location = genoa } #1233
+	trade_office = { tag = ARA level = 1 location = tunis } #1253
+	trade_office = { tag = ARA level = 1 location = alexandria } #1264
+	trade_office = { tag = ARA level = 1 location = pisa } #1279
+	trade_office = { tag = ARA level = 1 location = bejaia } #1281
+	trade_office = { tag = ARA level = 1 location = constantinople } #1281
+	trade_office = { tag = ARA level = 1 location = sevilla } #1282
+	trade_office = { tag = ARA level = 1 location = messina } #1286
+	trade_office = { tag = ARA level = 1 location = palermo } #1286
+	trade_office = { tag = ARA level = 1 location = montpellier } #1301
+	trade_office = { tag = ARA level = 1 location = trapani } #1301
+	#trade_office = { tag = ARA level = 1 location = malta } #1305
+	#trade_office = { tag = ARA level = 1 location = oristano } #1325
 
+	pirate_haven = { tag = BIJ level = 1 location = bejaia }
 
 	tar_kiln = { tag = HUN level = 3 location = cuhea } 
 	cathedral 	= { tag = HUN level = 1 location = fehervar } 
@@ -2061,16 +2077,16 @@ building_manager = {
 	stockade = { tag = TEU level = 1 location = insterburg }
 
 
-	tar_kiln = { tag = LIT level = 3 location = kraziai } 
-	tar_kiln = { tag = LIT level = 4 location = vilkmerge } 
-	tar_kiln = { tag = LIT level = 4 location = lida } 
+	tar_kiln = { tag = LIT level = 4 location = kraziai } 
+	tar_kiln = { tag = LIT level = 5 location = vilkmerge } 
+	tar_kiln = { tag = LIT level = 5 location = lida } 
 
-	tar_kiln = { tag = TEU level = 4 location = tuchola }
-	tar_kiln = { tag = BRA level = 4 location = drawsko }
+	tar_kiln = { tag = TEU level = 5 location = tuchola }
+	tar_kiln = { tag = BRA level = 5 location = drawsko }
 
-	tar_kiln = { tag = POL level = 4 location = kielce }
-	tar_kiln = { tag = POL level = 4 location = lodz }
-	tar_kiln = { tag = POL level = 4 location = leczyca }
+	tar_kiln = { tag = POL level = 5 location = kielce }
+	tar_kiln = { tag = POL level = 5 location = lodz }
+	tar_kiln = { tag = POL level = 5 location = leczyca }
 
 	#Low Countries
 	#castle = { tag = FLA level = 1 location = ghent } #Gravensteen
@@ -2107,8 +2123,8 @@ building_manager = {
 	monastery 	= { tag = MEI level = 1 location = meissen } # Altzella 
 
 
-	tar_kiln = { tag = MAI level = 4 location = miltenberg } 
-	tar_kiln = { tag = HNB level = 4 location = saalfeld } 
+	tar_kiln = { tag = MAI level = 5 location = miltenberg } 
+	tar_kiln = { tag = HNB level = 5 location = saalfeld } 
 
 	#Switzerland
 
@@ -2179,17 +2195,17 @@ building_manager = {
 	orthodox_monastery	= { tag = KOS level = 1 location = kostroma } #Ipatiev Monastery, c.1330
 	orthodox_monastery	= { tag = NZH level = 1 location = nizhny_novgorod } #Pechersky Ascension Monastery, c.1328
 
-	tar_kiln = { tag = NOV level = 1 location = tikhvin }
-	tar_kiln = { tag = NOV level = 3 location = beloozero }
-	tar_kiln = { tag = NOV level = 2 location = kargopol }
-	tar_kiln = { tag = NOV level = 2 location = veliky_ustyug }
-	tar_kiln = { tag = NOV level = 1 location = yarensk }
+	tar_kiln = { tag = NOV level = 2 location = tikhvin }
+	tar_kiln = { tag = NOV level = 4 location = beloozero }
+	tar_kiln = { tag = NOV level = 3 location = kargopol }
+	tar_kiln = { tag = NOV level = 3 location = veliky_ustyug }
+	tar_kiln = { tag = NOV level = 2 location = yarensk }
 
-	tar_kiln = { tag = MOS level = 4 location = vologda }
-	tar_kiln = { tag = MOS level = 4 location = galich }
-	tar_kiln = { tag = MOS level = 3 location = vyatka }
-	tar_kiln = { tag = MOS level = 3 location = varnavino }
-	tar_kiln = { tag = MOS level = 2 location = sudai }
+	tar_kiln = { tag = MOS level = 5 location = vologda }
+	tar_kiln = { tag = MOS level = 5 location = galich }
+	tar_kiln = { tag = MOS level = 4 location = vyatka }
+	tar_kiln = { tag = MOS level = 4 location = varnavino }
+	tar_kiln = { tag = MOS level = 3 location = sudai }
 
 	#Ruthenia
 	castle = { tag = KIE level = 1 location = myrhorod }
@@ -2229,9 +2245,9 @@ building_manager = {
 	royal_court = { tag = FRA level = 1 location = paris }
 	sergeantry	= { tag = FRA level = 1 location = paris } #Sergeants at arms
 	
-	tar_kiln = { tag = FRA level = 4 location = mende } 
-	tar_kiln = { tag = VNT level = 4 location = ventadour } 
-	tar_kiln = { tag = BRI level = 4 location = josselin } 
+	tar_kiln = { tag = FRA level = 5 location = mende } 
+	tar_kiln = { tag = VNT level = 5 location = ventadour } 
+	tar_kiln = { tag = BRI level = 5 location = josselin } 
 
 	cathedral 	= { tag = FRA level = 1 location = agde } #Saint-Étienne d'Agde Cathedral, established in 1173
 	cathedral 	= { tag = FRA level = 1 location = agen } #Saint-Caprais d'Agen Cathedral
@@ -3455,25 +3471,25 @@ building_manager = {
 	venetian_quarter = { tag = VEN level = 1 location = constantinople }
 	galata = { tag = GEN level = 1 location = constantinople }
 	
-	tar_kiln = { tag = BYZ level = 1 location = tavas } 
-	tar_kiln = { tag = BYZ level = 1 location = gediz } 
-	tar_kiln = { tag = TRE level = 1 location = gerze } 
+	tar_kiln = { tag = BYZ level = 2 location = tavas } 
+	tar_kiln = { tag = BYZ level = 2 location = gediz } 
+	tar_kiln = { tag = TRE level = 2 location = gerze } 
 	temple = { tag = BYZ level = 1 location = birgi }
 	#temple = { tag = KAR level = 1 location = ermenek }
 
 	#middle east
-	tar_kiln = { tag = SUT level = 4 location = sirnak } 
-	tar_kiln = { tag = HZP level = 3 location = izeh } 
-	tar_kiln = { tag = IHB level = 4 location = dulab } 
-	tar_kiln = { tag = MAM level = 4 location = deir_qamar } 
+	tar_kiln = { tag = SUT level = 5 location = sirnak } 
+	tar_kiln = { tag = HZP level = 4 location = izeh } 
+	tar_kiln = { tag = IHB level = 5 location = dulab } 
+	tar_kiln = { tag = MAM level = 5 location = deir_qamar } 
 	
 	#india
 	#Tar Kiln
-	tar_kiln = { tag = DLH level = 4 location = nasik } 
-	tar_kiln = { tag = DLH level = 4 location = bir } 
-	tar_kiln = { tag = DLH level = 4 location = chakan } 
-	tar_kiln = { tag = ORI level = 4 location = asika } 
-	tar_kiln = { tag = LWA level = 4 location = phakphok } 
+	tar_kiln = { tag = DLH level = 5 location = nasik } 
+	tar_kiln = { tag = DLH level = 5 location = bir } 
+	tar_kiln = { tag = DLH level = 5 location = chakan } 
+	tar_kiln = { tag = ORI level = 5 location = asika } 
+	tar_kiln = { tag = LWA level = 5 location = phakphok } 
 
 	royal_court = { tag = DLH level = 1 location = sargadwari }
 
@@ -3507,9 +3523,9 @@ building_manager = {
 
 	
 	#se asia
-	tar_kiln = { tag = SUK level = 4 location = nakhon_sawan } 
-	tar_kiln = { tag = SPN level = 4 location = chaisri } 
-	tar_kiln = { tag = MUA level = 4 location = kut_ling } 
+	tar_kiln = { tag = SUK level = 5 location = nakhon_sawan } 
+	tar_kiln = { tag = SPN level = 5 location = chaisri } 
+	tar_kiln = { tag = MUA level = 5 location = kut_ling } 
 	
 	stockade = { tag = BEI level = 1 location = berune }
 
@@ -3653,7 +3669,7 @@ building_manager = {
 	sand_pit = { tag = DUL level = 2 location = aleppo }
 	bog_iron_smelter = { tag = DUL level = 2 location = jabbul }
 	clay_pit = { tag = DUL level = 1 location = jabbul }
-	tar_kiln = { tag = DUL level = 2 location = zardana }
+	tar_kiln = { tag = DUL level = 3 location = zardana }
 	charcoal_maker = { tag = DUL level = 2 location = afrin }
 	stone_quarry = { tag = DUL level = 2 location = kilis }
 	
@@ -3704,7 +3720,7 @@ building_manager = {
 
 	sand_pit = { tag = KHM level = 2 location = srey_sarchhor }
 
-	tar_kiln = { tag = KHM level = 4 location = peam }
+	tar_kiln = { tag = KHM level = 5 location = peam }
 
 	market_village = { tag = KHM level = 1 location = kampong_saom }
 	market_village = { tag = KHM level = 1 location = phsar_dek }
@@ -3847,10 +3863,10 @@ building_manager = {
 	city_walls = { tag = TUR level = 1 location = isfahan }
 	city_walls = { tag = TUR level = 1 location = rey }
 
-	city_walls = { tag = ADU level = 1 location = cordoba }
-	city_walls = { tag = ADU level = 1 location = granada }
-	city_walls = { tag = ADU level = 1 location = valencia }
-	city_walls = { tag = ADU level = 1 location = toledo }
+	city_walls = { tag = GRA level = 1 location = cordoba }
+	city_walls = { tag = GRA level = 1 location = granada }
+	city_walls = { tag = GRA level = 1 location = valencia }
+	city_walls = { tag = GRA level = 1 location = toledo }
 	city_walls = { tag = AD0 level = 1 location = zamora }
 	city_walls = { tag = AD1 level = 1 location = zaragoza }
 
@@ -4382,7 +4398,19 @@ building_manager = {
 	aqueduct_system = { tag = PAP level = 1 location = rome }
 	aqueduct_system = { tag = PAP level = 1 location = avignon }
 	#aqueduct_system = { tag = CAS level = 1 location = segovia }
+	porto_pisano = { tag = PIS level = 1 location = pisa }
 
+	#Itinerant Court starting seats — every realm that starts with itinerant_court_policy begins with one in the capital
+	itinerant_court_seat = { tag = SCO level = 1 location = dunfermline }
+	itinerant_court_seat = { tag = ARA level = 1 location = valencia }
+	itinerant_court_seat = { tag = CAS level = 1 location = sevilla }
+	itinerant_court_seat = { tag = POR level = 1 location = lisbon }
+	itinerant_court_seat = { tag = ETH level = 1 location = ankober }
+	itinerant_court_seat = { tag = UBV level = 1 location = munich }
+	itinerant_court_seat = { tag = MOY level = 1 location = elgin }
+	itinerant_court_seat = { tag = LOI level = 1 location = islay }
+	itinerant_court_seat = { tag = ROS level = 1 location = dingwall }
+	
 
 ###BR### ADDED Buildings ###BR###
 
@@ -4581,7 +4609,7 @@ building_manager = {
 	dock = { tag = BYZ level = 1 location = smyrna }
 	br_naval_theme_hq = { tag = A1G level = 1 location = canakkale }
 	stockade = { tag = A1G level = 1 location = canakkale }
-	tar_kiln = { tag = A1G level = 1 location = canakkale }
+	tar_kiln = { tag = A1G level = 2 location = canakkale }
 	br_naval_theme_hq = { tag = K1B level = 1 location = antalya }
 	stockade = { tag = K1B level = 1 location = antalya }
 
@@ -4648,7 +4676,7 @@ building_manager = {
 
 	tar_kiln = { tag = BYZ level = 1 location = izmit }
 	tar_kiln = { tag = BYZ level = 1 location = uskudar }
-	tar_kiln = { tag = BYZ level = 1 location = bandirma }
+	tar_kiln = { tag = BYZ level = 2 location = bandirma }
 	lumber_mill = { tag = BYZ level = 1 location = bandirma }
 	lumber_mill = { tag = BYZ level = 1 location = iznik }
 	lumber_mill = { tag = BYZ level = 2 location = constantinople }
@@ -5325,7 +5353,7 @@ building_manager = {
 	tools_guild = { tag = TUR level = 4 location = tabriz }
 	weapon_guild = { tag = TUR level = 2 location = baghdad }
 
-	weapon_guild = { tag = ADU level = 2 location = cordoba }
+	weapon_guild = { tag = GRA level = 2 location = cordoba }
 	weapon_guild = { tag = GLH level = 4 location = sarai_al_jadid }
 	weapon_guild = { tag = GLH level = 3 location = astrakhan }
 
@@ -5362,11 +5390,11 @@ building_manager = {
 	protected_harbor = { tag = MAM level = 1 location = alexandria }
 	dry_dock = { tag = MAM level = 1 location = alexandria }
 	wharf = { tag = MAM level = 1 location = suez }
-	protected_harbor = { tag = ADU level = 1 location = sevilla }
-	#coastal_fort  = { tag = ADU level = 1 location = sevilla }
-	wharf = { tag = ADU level = 1 location = sevilla }
-	dry_dock = { tag = ADU level = 1 location = sevilla }
-	lazaretto = { tag = ADU level = 1 location = sevilla }
+	protected_harbor = { tag = GRA level = 1 location = sevilla }
+	#coastal_fort  = { tag = GRA level = 1 location = sevilla }
+	wharf = { tag = GRA level = 1 location = sevilla }
+	dry_dock = { tag = GRA level = 1 location = sevilla }
+	lazaretto = { tag = GRA level = 1 location = sevilla }
 	lazaretto = { tag = PIS level = 1 location = pisa }
 	#coastal_fort  = { tag = PIS level = 1 location = pisa }
 	lazaretto = { tag = PAF level = 1 location = sinop }
@@ -5397,17 +5425,17 @@ building_manager = {
 	br_pirate_hideout = { tag = TUN level = 1 location = ajim }
 	br_pirate_hideout = { tag = BJA level = 1 location = derna }
 	br_pirate_hideout = { tag = MAM level = 1 location = sidon }
-	br_pirate_hideout = { tag = ADU level = 1 location = ibiza }
+	br_pirate_hideout = { tag = GRA level = 1 location = ibiza }
 	br_pirate_hideout = { tag = TLE level = 1 location = mostaganem }
 	br_pirate_hideout = { tag = MAM level = 1 location = tobruk }
 	br_pirate_hideout = { tag = GEN level = 1 location = alghero }
 
 
 	#atlantic
-	br_pirate_hideout = { tag = ADU level = 1 location = figueira }
-	br_pirate_hideout = { tag = ADU level = 1 location = lagos }
-	br_pirate_hideout = { tag = ADU level = 1 location = santiago }
-	br_pirate_hideout = { tag = ADU level = 1 location = tamaraceite }
+	br_pirate_hideout = { tag = GRA level = 1 location = figueira }
+	br_pirate_hideout = { tag = GRA level = 1 location = lagos }
+	br_pirate_hideout = { tag = GRA level = 1 location = santiago }
+	br_pirate_hideout = { tag = GRA level = 1 location = tamaraceite }
 
 	#Mesopotamia
 	royal_court = { tag = TUR level = 1 location = baghdad }
@@ -5483,129 +5511,133 @@ building_manager = {
 	charcoal_maker = { tag = AON level = 1 location = kalecik }
 
 	#IBERIA
-	#local_governor	= { tag = ADU level = 1	location = toledo }
-	#naval_governor	= { tag = ADU level = 1	location = valencia }
-	royal_court = { tag = ADU level = 1 location = cordoba }
-	royal_garden = { tag = ADU level = 1 location = cordoba } #Gardens of the Great Palace
-	fortress_granary = { tag = ADU level = 1 location = cordoba }
-	slave_market = { tag = ADU level = 4 location = cordoba }
-	funduq = { tag = ADU level = 1 location = cordoba }
-	marketplace	= { tag = ADU level = 20 location = cordoba }
-	trading_hub = { tag = ADU level = 1 location = cordoba }
-	entrepot = { tag = ADU level = 1 location = cordoba }
-	market_warehouse = { tag = ADU level = 3 location = cordoba }
-	fine_cloth_guild = { tag = ADU level = 5 location = cordoba }
-	saltpeter_guild = { tag = ADU level = 1 location = cordoba }
-	tannery = { tag = ADU level = 4 location = cordoba }
-	cloth_guild = { tag = ADU level = 5 location = cordoba }
-	dyes_guild = { tag = ADU level = 2 location = cordoba }
-	furniture_guild = { tag = ADU level = 4 location = cordoba }
-	glass_guild = { tag = ADU level = 2 location = cordoba }
-	paper_guild = { tag = ADU level = 2 location = cordoba }
-	#porcelain_guild = { tag = ADU level = 4 location = cordoba }
-	pottery_guild = { tag = ADU level = 2 location = cordoba }
-	tools_guild = { tag = ADU level = 2 location = cordoba }
-	scriptorium = { tag = ADU level = 6 location = cordoba }
-	hospital = { tag = ADU level = 1 location = cordoba }
-	library = { tag = ADU level = 1 location = cordoba }
-	medical_school = { tag = ADU level = 1 location = cordoba }
-	sergeantry = { tag = ADU level = 1 location = cordoba }
-	great_madrasa = { tag = ADU level = 1 location = cordoba }
+	local_governor	= { tag = GRA level = 1	location = toledo }
+	local_governor	= { tag = GRA level = 1	location = valencia }
+	royal_court = { tag = GRA level = 1 location = cordoba }
+	royal_garden = { tag = GRA level = 1 location = cordoba } #Gardens of the Great Palace
+	fortress_granary = { tag = GRA level = 1 location = cordoba }
+	slave_market = { tag = GRA level = 4 location = cordoba }
+	funduq = { tag = GRA level = 1 location = cordoba }
+	marketplace	= { tag = GRA level = 20 location = cordoba }
+	trading_hub = { tag = GRA level = 1 location = cordoba }
+	entrepot = { tag = GRA level = 1 location = cordoba }
+	market_warehouse = { tag = GRA level = 3 location = cordoba }
+	fine_cloth_guild = { tag = GRA level = 6 location = cordoba }
+	saltpeter_guild = { tag = GRA level = 1 location = cordoba }
+	tannery = { tag = GRA level = 4 location = cordoba }
+	cloth_guild = { tag = GRA level = 12 location = cordoba }
+	dyes_guild = { tag = GRA level = 2 location = cordoba }
+	furniture_guild = { tag = GRA level = 4 location = cordoba }
+	glass_guild = { tag = GRA level = 2 location = cordoba }
+	paper_guild = { tag = GRA level = 2 location = cordoba }
+	#porcelain_guild = { tag = GRA level = 4 location = cordoba }
+	pottery_guild = { tag = GRA level = 2 location = cordoba }
+	tools_guild = { tag = GRA level = 4 location = cordoba }
+	scriptorium = { tag = GRA level = 6 location = cordoba }
+	hospital = { tag = GRA level = 1 location = cordoba }
+	library = { tag = GRA level = 1 location = cordoba }
+	medical_school = { tag = GRA level = 1 location = cordoba }
+	sergeantry = { tag = GRA level = 1 location = cordoba }
+	madrasa = { tag = GRA level = 1 location = cordoba }
+	great_madrasa = { tag = GRA level = 1 location = cordoba }
 	great_madrasa = { tag = MAM level = 1 location = cairo }
 	counting_house = { tag = MAM level = 1 location = cairo }
 	slave_center = { tag = MAM level = 1 location = dongola }
 	slave_center = { tag = MAM level = 1 location = soba }
 	slave_center = { tag = MAM level = 1 location = kosa }
-	madrasa = { tag = ADU level = 1 location = granada }
-	madrasa = { tag = ADU level = 1 location = sevilla }
-	fortress_granary = { tag = ADU level = 1 location = sevilla }
-	slave_market = { tag = ADU level = 4 location = sevilla }
-	funduq = { tag = ADU level = 1 location = sevilla }
-	madrasa = { tag = ADU level = 1 location = toledo }
-	fortress_granary = { tag = ADU level = 1 location = toledo }
-	slave_market = { tag = ADU level = 2 location = toledo }
-	funduq = { tag = ADU level = 1 location = toledo }
-	madrasa = { tag = ADU level = 1 location = malaga }
-	fortress_granary = { tag = ADU level = 1 location = malaga }
-	slave_market = { tag = ADU level = 2 location = malaga }
-	funduq = { tag = ADU level = 1 location = malaga }
-	madrasa = { tag = ADU level = 1 location = valencia }
-	fortress_granary = { tag = ADU level = 1 location = valencia }
-	slave_market = { tag = ADU level = 2 location = valencia }
-	funduq = { tag = ADU level = 1 location = valencia }
-	fortress_granary = { tag = ADU level = 1 location = granada }
-	slave_market = { tag = ADU level = 3 location = granada }
-	slave_market = { tag = ADU level = 1 location = jaen }
-	slave_market = { tag = ADU level = 1 location = almeria }
-	slave_market = { tag = ADU level = 1 location = faro }
-	slave_market = { tag = ADU level = 1 location = evora }
-	slave_market = { tag = ADU level = 1 location = badajoz }
-	slave_market = { tag = ADU level = 1 location = caceres }
-	slave_market = { tag = ADU level = 1 location = murcia }
-	slave_market = { tag = ADU level = 1 location = orihuela }
-	slave_market = { tag = ADU level = 1 location = jativa }
-	slave_market = { tag = ADU level = 1 location = santarem }
+	madrasa = { tag = GRA level = 1 location = granada }
+	madrasa = { tag = GRA level = 1 location = sevilla }
+	fortress_granary = { tag = GRA level = 1 location = sevilla }
+	slave_market = { tag = GRA level = 4 location = sevilla }
+	funduq = { tag = GRA level = 1 location = sevilla }
+	madrasa = { tag = GRA level = 1 location = toledo }
+	fortress_granary = { tag = GRA level = 1 location = toledo }
+	slave_market = { tag = GRA level = 2 location = toledo }
+	funduq = { tag = GRA level = 1 location = toledo }
+	tools_guild = { tag = GRA level = 6 location = toledo }
+	madrasa = { tag = GRA level = 1 location = malaga }
+	fortress_granary = { tag = GRA level = 1 location = malaga }
+	slave_market = { tag = GRA level = 2 location = malaga }
+	funduq = { tag = GRA level = 1 location = malaga }
+	madrasa = { tag = GRA level = 1 location = valencia }
+	fortress_granary = { tag = GRA level = 1 location = valencia }
+	slave_market = { tag = GRA level = 2 location = valencia }
+	funduq = { tag = GRA level = 1 location = valencia }
+	fortress_granary = { tag = GRA level = 1 location = granada }
+	slave_market = { tag = GRA level = 3 location = granada }
+	slave_market = { tag = GRA level = 1 location = jaen }
+	slave_market = { tag = GRA level = 1 location = almeria }
+	slave_market = { tag = GRA level = 1 location = faro }
+	slave_market = { tag = GRA level = 1 location = evora }
+	slave_market = { tag = GRA level = 1 location = badajoz }
+	slave_market = { tag = GRA level = 1 location = caceres }
+	slave_market = { tag = GRA level = 1 location = murcia }
+	#slave_market = { tag = GRA level = 1 location = orihuela }
+	slave_market = { tag = GRA level = 1 location = santarem }
 
-	farming_village = { tag = ADU level = 1 location = merida }
-	farming_village = { tag = ADU level = 1 location = ocana }
-	farming_village = { tag = ADU level = 1 location = ubeda }
-	farming_village = { tag = ADU level = 1 location = pinar }
-	farming_village = { tag = ADU level = 1 location = huescar }
-	farming_village = { tag = ADU level = 1 location = espiel }
-	farming_village = { tag = ADU level = 1 location = lucena }
-	farming_village = { tag = ADU level = 1 location = osuna }
-	farming_village = { tag = ADU level = 1 location = calatrava }
-	farming_village = { tag = ADU level = 1 location = medellin }
-	farming_village = { tag = ADU level = 1 location = azuaga }
-	farming_village = { tag = ADU level = 1 location = llerena }
-	farming_village = { tag = ADU level = 1 location = andujar }
-	farming_village = { tag = ADU level = 1 location = merida }
+	farming_village = { tag = GRA level = 1 location = merida }
+	farming_village = { tag = GRA level = 1 location = ocana }
+	farming_village = { tag = GRA level = 1 location = ubeda }
+	farming_village = { tag = GRA level = 1 location = pinar }
+	farming_village = { tag = GRA level = 1 location = huescar }
+	farming_village = { tag = GRA level = 1 location = espiel }
+	farming_village = { tag = GRA level = 1 location = lucena }
+	farming_village = { tag = GRA level = 1 location = osuna }
+	farming_village = { tag = GRA level = 1 location = calatrava }
+	farming_village = { tag = GRA level = 1 location = medellin }
+	farming_village = { tag = GRA level = 1 location = azuaga }
+	farming_village = { tag = GRA level = 1 location = llerena }
+	farming_village = { tag = GRA level = 1 location = andujar }
+	farming_village = { tag = GRA level = 1 location = merida }
+
+	tar_kiln = { tag = GRA level = 3 location = andujar }
+	tar_kiln = { tag = GRA level = 3 location = aracena }
+	tar_kiln = { tag = GRA level = 3 location = baeza }
 
 
-	bailiff = { tag = ADU level = 1 location = aracena }
-	bailiff = { tag = ADU level = 1 location = ciudad_real }
-	bailiff = { tag = ADU level = 1 location = tangier }
-	market_village = { tag = ADU level = 1 location = aracena }
-	market_village = { tag = ADU level = 2 location = ciudad_real }
-	market_village = { tag = ADU level = 2 location = tangier }
-	castle = { tag = ADU level = 1 location = tangier }
-	counting_house = { tag = ADU level = 1 location = sevilla }
-	counting_house = { tag = ADU level = 1 location = cordoba }
-	market_village = { tag = ADU level = 1 location = alicante }
-	fishing_village = { tag = ADU level = 1 location = alicante }
-	market_village = { tag = ADU level = 2 location = cartagena }
-	fishing_village = { tag = ADU level = 2 location = cartagena }
-	market_village = { tag = ADU level = 1 location = gibraltar }
-	fishing_village = { tag = ADU level = 1 location = gibraltar }
-	market_village = { tag = ADU level = 1 location = algeciras }
-	fishing_village = { tag = ADU level = 1 location = algeciras }
-	fishing_village = { tag = ADU level = 1 location = tarifa }
-	market_village = { tag = ADU level = 2 location = cadiz }
-	fishing_village = { tag = ADU level = 2 location = cadiz }
-	fishing_village = { tag = ADU level = 1 location = sanlucar }
-	fishing_village = { tag = ADU level = 1 location = huelva }
-	fishing_village = { tag = ADU level = 1 location = ayamonte }
-	fishing_village = { tag = ADU level = 1 location = tavira }
-	fishing_village = { tag = ADU level = 1 location = silves }
-	fishing_village = { tag = ADU level = 1 location = lagos }
-	market_village = { tag = ADU level = 1 location = alcacer_do_sal }
-	fishing_village = { tag = ADU level = 1 location = alcacer_do_sal }
-	market_village = { tag = ADU level = 1 location = setubal }
-	fishing_village = { tag = ADU level = 1 location = setubal }
-	market_village = { tag = ADU level = 1 location = figueira }
-	fishing_village = { tag = ADU level = 1 location = figueira }
-	market_village = { tag = ADU level = 1 location = ourique }
-	market_village = { tag = ADU level = 1 location = aracena }
-	#market_village = { tag = ADU level = 1 location = seia }
-	market_village = { tag = ADU level = 1 location = covilha }
-	market_village = { tag = ADU level = 1 location = plasencia }
-	market_village = { tag = ADU level = 1 location = adrada }
-	market_village = { tag = ADU level = 1 location = siguenza }
-	market_village = { tag = ADU level = 1 location = ocana }
-	market_village = { tag = ADU level = 1 location = san_clemente }
-	market_village = { tag = ADU level = 1 location = alcaraz }
-	#market_village = { tag = ADU level = 1 location = albecete }
-	market_village = { tag = ADU level = 1 location = cieza }
+	bailiff = { tag = GRA level = 1 location = aracena }
+	bailiff = { tag = GRA level = 1 location = ciudad_real }
+	bailiff = { tag = GRA level = 1 location = tangier }
+	market_village = { tag = GRA level = 2 location = aracena }
+	market_village = { tag = GRA level = 2 location = ciudad_real }
+	market_village = { tag = GRA level = 2 location = tangier }
+	castle = { tag = GRA level = 1 location = tangier }
+	counting_house = { tag = GRA level = 1 location = sevilla }
+	counting_house = { tag = GRA level = 1 location = cordoba }
+	market_village = { tag = GRA level = 2 location = alicante }
+	fishing_village = { tag = GRA level = 1 location = alicante }
+	market_village = { tag = GRA level = 2 location = cartagena }
+	fishing_village = { tag = GRA level = 2 location = cartagena }
+	market_village = { tag = GRA level = 2 location = gibraltar }
+	fishing_village = { tag = GRA level = 1 location = gibraltar }
+	market_village = { tag = GRA level = 2 location = algeciras }
+	fishing_village = { tag = GRA level = 1 location = algeciras }
+	fishing_village = { tag = GRA level = 1 location = tarifa }
+	market_village = { tag = GRA level = 2 location = jerez_de_la_frontera }
+	fishing_village = { tag = GRA level = 1 location = sanlucar }
+	fishing_village = { tag = GRA level = 1 location = huelva }
+	fishing_village = { tag = GRA level = 1 location = ayamonte }
+	fishing_village = { tag = GRA level = 1 location = tavira }
+	fishing_village = { tag = GRA level = 1 location = silves }
+	fishing_village = { tag = GRA level = 1 location = lagos }
+	market_village = { tag = GRA level = 2 location = alcacer_do_sal }
+	fishing_village = { tag = GRA level = 1 location = alcacer_do_sal }
+	market_village = { tag = GRA level = 2 location = setubal }
+	fishing_village = { tag = GRA level = 1 location = setubal }
+	market_village = { tag = GRA level = 2 location = figueira }
+	fishing_village = { tag = GRA level = 1 location = figueira }
+	market_village = { tag = GRA level = 2 location = ourique }
+	market_village = { tag = GRA level = 2 location = aracena }
+	#market_village = { tag = GRA level = 1 location = seia }
+	market_village = { tag = GRA level = 2 location = covilha }
+	market_village = { tag = GRA level = 2 location = plasencia }
+	market_village = { tag = GRA level = 2 location = adrada }
+	market_village = { tag = GRA level = 2 location = siguenza }
+	market_village = { tag = GRA level = 2 location = ocana }
+	market_village = { tag = GRA level = 2 location = san_clemente }
+	market_village = { tag = GRA level = 2 location = alcaraz }
+	#market_village = { tag = GRA level = 1 location = albecete }
+	market_village = { tag = GRA level = 2 location = cieza }
 	fishing_village = { tag = TUN level = 2 location = bizerte }
 	fishing_village = { tag = TUN level = 1 location = tabarka }
 	fishing_village = { tag = TUN level = 2 location = hammamet }
@@ -5617,9 +5649,9 @@ building_manager = {
 	fishing_village = { tag = TLE level = 1 location = arzew }
 	fishing_village = { tag = MOR level = 2 location = melilla }
 	fishing_village = { tag = MOR level = 1 location = tetouan }
-	market_village = { tag = ADU level = 1 location = ceuta }
-	fishing_village = { tag = ADU level = 1 location = ceuta }
-	fishing_village = { tag = ADU level = 2 location = tangier }
+	market_village = { tag = GRA level = 2 location = ceuta }
+	fishing_village = { tag = GRA level = 1 location = ceuta }
+	fishing_village = { tag = GRA level = 2 location = tangier }
 	fishing_village = { tag = MOR level = 1 location = larache }
 	wharf = { tag = MOR level = 1 location = rabat }
 	tar_kiln = { tag = MOR level = 1 location = rabat }
@@ -5657,7 +5689,7 @@ building_manager = {
 	jewish_district = { tag = MLO level = 1 location = milano }
 	jewish_district = { tag = TUR level = 1 location = baghdad }
 	jewish_district = { tag = MAM level = 1 location = cairo }
-	jewish_district = { tag = ADU level = 1 location = cordoba }
+	jewish_district = { tag = GRA level = 1 location = cordoba }
 
 
 # steppes 
@@ -6320,6 +6352,20 @@ building_manager = {
 	market_village = { tag = CAS level = 1 location = segovia }
 	market_village = { tag = CAS level = 1 location = teruel }
 	market_village = { tag = CAS level = 1 location = tudela }
+	market_village = { tag = ARA level = 2 location = lleida }
+	market_village = { tag = ARA level = 2 location = tortosa }
+	market_village = { tag = ARA level = 2 location = cervera }
+	market_village = { tag = GRA level = 2 location = jativa }
+	market_village = { tag = GRA level = 2 location = orihuela }
+	market_village = { tag = GRA level = 2 location = ecija }
+	market_village = { tag = GRA level = 2 location = alcala_de_henares }
+	market_village = { tag = GRA level = 2 location = santarem }
+	market_village = { tag = GRA level = 2 location = evora }
+	market_village = { tag = GRA level = 1 location = coria }
+	market_village = { tag = GRA level = 3 location = madrid }
+	market_village = { tag = GRA level = 1 location = guadalajara }
+	market_village = { tag = GRA level = 1 location = daroca }
+	market_village = { tag = GRA level = 1 location = huete }
 	market_village = { tag = BYZ level = 1 location = ladik_pontus }
 	market_village = { tag = BYZ level = 1 location = niksar }
 	market_village = { tag = KIL level = 2 location = marash }
@@ -6681,7 +6727,6 @@ building_manager = {
 	library = { tag = FLO level = 1 location = florence }
 	scriptorium = { tag = FLO level = 2 location = florence }
 	paper_guild = { tag = FLO level = 3 location = florence }
-	fine_cloth_guild = { tag = FLO level = 3 location = florence }
 	cloth_guild = { tag = FLO level = 5 location = florence }
 	tannery = { tag = FLO level = 2 location = florence }
 	distillers_guild = { tag = FLO level = 2 location = florence }
@@ -6853,7 +6898,7 @@ building_manager = {
 	fishing_village = { tag = KNI level = 3 location = cefalu }
 	market_village = { tag = KNI level = 2 location = cefalu }
 
-	market_village = { tag = ADU level = 2 location = cuenca }
+	market_village = { tag = GRA level = 2 location = cuenca }
 
 	fishing_village = { tag = BQA level = 2 location = derna }
 	wharf = { tag = BQA level = 1 location = benghazi }
@@ -7617,11 +7662,11 @@ building_manager = {
 	marketplace	= { tag = TUR level = 12 location = tabriz }
 	marketplace	= { tag = MZF level = 12 location = isfahan }
 	marketplace	= { tag = FRA level = 8 location = metz }
-	marketplace	= { tag = ADU level = 6 location = sevilla }
-	marketplace	= { tag = ADU level = 5 location = malaga }
-	marketplace	= { tag = ADU level = 5 location = murcia }
-	marketplace	= { tag = ADU level = 5 location = valencia }
-	marketplace	= { tag = ADU level = 5 location = toledo }
+	marketplace	= { tag = GRA level = 6 location = sevilla }
+	marketplace	= { tag = GRA level = 5 location = malaga }
+	marketplace	= { tag = GRA level = 5 location = murcia }
+	marketplace	= { tag = GRA level = 5 location = valencia }
+	marketplace	= { tag = GRA level = 5 location = toledo }
 	marketplace	= { tag = AOI level = 6 location = antioch }
 	entrepot = { tag = AOI level = 1 location = antioch }
 	marketplace	= { tag = ARM level = 4 location = ani }
@@ -7669,7 +7714,7 @@ building_manager = {
 	overseas_trading_post = { tag = GEN level = 1 location = ciudadela_de_menorca }
 	overseas_trading_post = { tag = GEN level = 1 location = cartagena }
 	overseas_trading_post = { tag = GEN level = 1 location = gibraltar }
-	overseas_trading_post = { tag = GEN level = 1 location = cadiz }
+	trade_office = { tag = GEN level = 2 location = cadiz }
 	overseas_trading_post = { tag = GEN level = 1 location = ceuta }
 
 	#Black Sea Company
@@ -7855,26 +7900,26 @@ building_manager = {
 	#br_latin_slave_center = { tag = GTC level = 1 location = sarai_al_jadid }
 	#br_latin_slave_center = { tag = VTC level = 1 location = khadjibey }
 
-	#ADU Trade
-	trade_office = { tag = ADU level = 3 location = tunis }
-	trade_office = { tag = ADU level = 2 location = fez }
-	trade_office = { tag = ADU level = 2 location = rabat }
-	trade_office = { tag = ADU level = 2 location = azemmour }
-	trade_office = { tag = ADU level = 2 location = marrakesh }
-	trade_office = { tag = ADU level = 2 location = sijilmasa }
-	trade_office = { tag = ADU level = 2 location = valladolid }
-	trade_office = { tag = ADU level = 2 location = barcelona }
-	trade_office = { tag = ADU level = 2 location = oran }
-	trade_office = { tag = ADU level = 2 location = algiers }
-	trade_office = { tag = ADU level = 2 location = bejaia }
-	trade_office = { tag = ADU level = 2 location = annaba }
-	trade_office = { tag = ADU level = 2 location = palermo }
-	trade_office = { tag = ADU level = 2 location = cagliari }
-	overseas_trading_post = { tag = ADU level = 1 location = melilla }
-	overseas_trading_post = { tag = ADU level = 1 location = tetouan }
-	fondaco = { tag = ADU level = 1 location = rabat }
-	fondaco = { tag = ADU level = 1 location = oran }
-	slave_center = { tag = ADU level = 1 location = niani }
+	#GRA Trade
+	trade_office = { tag = GRA level = 3 location = tunis }
+	trade_office = { tag = GRA level = 2 location = fez }
+	trade_office = { tag = GRA level = 2 location = rabat }
+	trade_office = { tag = GRA level = 2 location = azemmour }
+	trade_office = { tag = GRA level = 2 location = marrakesh }
+	trade_office = { tag = GRA level = 2 location = sijilmasa }
+	trade_office = { tag = GRA level = 2 location = valladolid }
+	trade_office = { tag = GRA level = 2 location = barcelona }
+	trade_office = { tag = GRA level = 2 location = oran }
+	trade_office = { tag = GRA level = 2 location = algiers }
+	trade_office = { tag = GRA level = 2 location = bejaia }
+	trade_office = { tag = GRA level = 2 location = annaba }
+	trade_office = { tag = GRA level = 2 location = palermo }
+	trade_office = { tag = GRA level = 2 location = cagliari }
+	overseas_trading_post = { tag = GRA level = 1 location = melilla }
+	overseas_trading_post = { tag = GRA level = 1 location = tetouan }
+	fondaco = { tag = GRA level = 1 location = rabat }
+	fondaco = { tag = GRA level = 1 location = oran }
+	slave_center = { tag = GRA level = 1 location = niani }
 
 	#BYZ & Subjects
 	trade_office = { tag = BYZ level = 4 location = theodoro }
@@ -7989,5 +8034,19 @@ building_manager = {
 	#trade_company_local_venture = { tag = RIC level = 1 location = marmaris }
 	#trade_company_local_venture = { tag = RIC level = 1 location = iskenderun }
 	#trade_company_local_venture = { tag = RIC level = 1 location = sporades }
+
+	thagr_fort = { tag = GRA level = 2 location = coimbra }
+	thagr_fort = { tag = GRA level = 2 location = covilha }
+	thagr_fort = { tag = GRA level = 2 location = coria }
+	thagr_fort = { tag = GRA level = 2 location = madrid }
+	thagr_fort = { tag = GRA level = 2 location = guadalajara }
+	thagr_fort = { tag = GRA level = 2 location = daroca }
+	thagr_fort = { tag = GRA level = 2 location = castellon_de_la_plana }
+	thagr_fort = { tag = GRA level = 1 location = teruel }
+	thagr_fort = { tag = GRA level = 1 location = adrada }
+	thagr_fort = { tag = GRA level = 1 location = plasencia }
+	thagr_fort = { tag = GRA level = 1 location = huete }
+
+	
 
 }
