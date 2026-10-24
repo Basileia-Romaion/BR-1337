@@ -87,11 +87,11 @@ townrights_manager = {
 	salisbury = manorial_customals
 
 	#Foros Extensos
-	lisbon = foros_extensos_town_rights
-	faro = foros_extensos_town_rights
-	evora = foros_extensos_town_rights
-	santarem = foros_extensos_town_rights
-	coimbra = foros_extensos_town_rights
+	#lisbon = foros_extensos_town_rights
+	#faro = foros_extensos_town_rights
+	#evora = foros_extensos_town_rights
+	#santarem = foros_extensos_town_rights
+	#coimbra = foros_extensos_town_rights
 	#viseu = foros_extensos_town_rights
 	porto = foros_extensos_town_rights
 
@@ -99,27 +99,28 @@ townrights_manager = {
 	santiago_compostela = fuero_juzgo_town_rights
 	oviedo = fuero_juzgo_town_rights
 	leon = fuero_juzgo_town_rights
-	zamora = fuero_juzgo_town_rights
+	#zamora = fuero_juzgo_town_rights
 	#salamanca = fuero_juzgo_town_rights
 	#ciudad_rodrigo = fuero_juzgo_town_rights
-	caceres = fuero_juzgo_town_rights
-	badajoz = fuero_juzgo_town_rights
-	cordoba = fuero_juzgo_town_rights
-	ecija = fuero_juzgo_town_rights
-	sevilla = fuero_juzgo_town_rights
-	jerez_de_la_frontera = fuero_juzgo_town_rights
-	jaen = fuero_juzgo_town_rights
-	toledo = fuero_juzgo_town_rights
-	murcia = fuero_juzgo_town_rights
+	#caceres = fuero_juzgo_town_rights
+	#badajoz = fuero_juzgo_town_rights
+	#cordoba = fuero_juzgo_town_rights
+	#ecija = fuero_juzgo_town_rights
+	#sevilla = fuero_juzgo_town_rights
+	
+	#jerez_de_la_frontera = fuero_juzgo_town_rights
+	#jaen = fuero_juzgo_town_rights
+	#toledo = fuero_juzgo_town_rights
+	#murcia = fuero_juzgo_town_rights
 
 	#Fuero Real
 	#cuenca = fuero_real_town_rights
-	alcala_de_henares = fuero_real_town_rights
+	#alcala_de_henares = fuero_juzgo_town_rights
 	#segovia = fuero_real_town_rights
 	#medina_del_campo = fuero_real_town_rights
 	valladolid = fuero_real_town_rights
-	burgos = fuero_real_town_rights
-	santander = fuero_real_town_rights
+	burgos = fuero_juzgo_town_rights
+	santander = fuero_juzgo_town_rights
 
 	#Fuero General
 	pamplona = fuero_general_town_rights
@@ -127,25 +128,25 @@ townrights_manager = {
 
 	#Fuero de Aragon
 	#calatayud = fuero_de_aragon_town_rights
-	zaragoza = fuero_de_aragon_town_rights
+	#zaragoza = fuero_de_aragon_town_rights
 	huesca = fuero_de_aragon_town_rights
 	#teruel = fuero_de_aragon_town_rights
 
 	#Usatges de Barcelona
-	lleida = usatges_de_barcelona_town_rights
-	tortosa = usatges_de_barcelona_town_rights
+	#lleida = usatges_de_barcelona_town_rights
+	#tortosa = usatges_de_barcelona_town_rights
 	tarragona = usatges_de_barcelona_town_rights
 	barcelona = usatges_de_barcelona_town_rights
-	cervera = usatges_de_barcelona_town_rights
+	#cervera = usatges_de_barcelona_town_rights
 	girona = usatges_de_barcelona_town_rights
-	palma = usatges_de_barcelona_town_rights
+	#palma = usatges_de_barcelona_town_rights
 
 	#Furs de Valencia
 	#morella = furs_de_valencia_town_rights
 	#castellon_de_la_plana = furs_de_valencia_town_rights
-	valencia = furs_de_valencia_town_rights
-	jativa = furs_de_valencia_town_rights
-	orihuela = furs_de_valencia_town_rights
+	#valencia = furs_de_valencia_town_rights
+	#jativa = furs_de_valencia_town_rights
+	#orihuela = furs_de_valencia_town_rights
 
 	#Flemish Cloth Industries
 	bruges = flemish_cloth_industries_right

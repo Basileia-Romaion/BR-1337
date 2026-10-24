@@ -60,8 +60,13 @@ townrights_manager = {
 	candia = market_charter
 	syracuse = market_charter
 
-	valencia = market_charter
-	sevilla = market_charter
+	lisbon = staple_port
+	valencia = staple_port
+	sevilla = staple_port
+	riga = staple_port
+	london = staple_port
+	pisa = staple_port
+	cadiz = staple_port
 	
 	plovdiv = market_charter
 	varna = market_charter
@@ -89,6 +94,9 @@ townrights_manager = {
 	yazd = market_charter
 	bombay = market_charter
 
+	zaragoza = market_charter
+	zamora = market_charter
+
 	vidin = fortress_town
 	nis = fortress_town
 	belgrad = fortress_town
@@ -96,10 +104,15 @@ townrights_manager = {
 	van = fortress_town
 	malatya = fortress_town
 	trgoviste_SER = fortress_town
+	porto = fortress_town
 
 	### rural locations
 
 	demotica = fortress_town
+	bejar = fortress_town
+	segovia = fortress_town
+	viseu = fortress_town
+	tortosa = fortress_town
 
 	foca = br_latin_port_rights
 	samos = br_latin_port_rights
@@ -137,11 +150,32 @@ townrights_manager = {
 	kula = br_dynatoi_rights
 	guzelhisar = br_dynatoi_rights
 
-	
 
 	### New World
 	macassa = br_fortress_trade_post
 	gananoque = br_fortress_trade_post
 
 	
+	# 
+	#Iberia
+	lisbon = mozarab_charter_town_rights
+	coimbra = mozarab_charter_town_rights
+	toledo = mozarab_charter_town_rights
+
+	caceres = medina_charter_town_rights
+	badajoz = medina_charter_town_rights
+	cordoba = medina_charter_town_rights
+	cadiz = medina_charter_town_rights
+	jaen = medina_charter_town_rights
+	faro = medina_charter_town_rights
+
+	zaragoza = andalusi_refugee_town_rights
+	zamora = andalusi_refugee_town_rights
+
+	palma = taifa_al_rais_town_rights
+	valencia = taifa_al_rais_town_rights
+	sevilla = taifa_al_rais_town_rights
+	murcia = taifa_al_rais_town_rights
+	cadiz = taifa_al_rais_town_rights
+
 }
