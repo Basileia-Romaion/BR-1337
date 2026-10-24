@@ -393,12 +393,6 @@ br_startup.2 = {
 		}
 		set_capital = location:cordoba
 	}
-
-	option = {
-		c:GRA ?= {
-			form_country = formable_country:ADU_f_GRA
-		}
-	}
 }
 
 br_startup.3 = {
