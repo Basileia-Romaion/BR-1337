@@ -562,6 +562,15 @@ br_revolutions_varangians_advance = {
 	ai_weight = { add = 5 }
 }
 
+br_traditions_tsakonians_advance = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = BYZ
+	}
+	unlock_law = br_tsakonian_guard
+	icon = expand_varangian_guard_advance
+	ai_weight = { add = 5 }
+}
 # Tagmata
 
 br_katapanate_building_advance = {
