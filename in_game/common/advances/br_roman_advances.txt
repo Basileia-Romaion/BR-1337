@@ -567,7 +567,7 @@ br_traditions_tsakonians_advance = {
 	potential = {
 		has_or_had_tag = BYZ
 	}
-	unlock_law = br_tsakonian_guard
+	unlock_policy = br_tsakonian_guard
 	icon = expand_varangian_guard_advance
 	ai_weight = { add = 5 }
 }
