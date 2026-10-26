@@ -53,6 +53,9 @@ br_startup.1 = {
 		}
 
 	#Anatolia
+		location:devrekani = {
+            change_raw_material = goods:wheat
+        }
 		location:karahisar_i_sahib = {
             change_raw_material = goods:wheat
         }
