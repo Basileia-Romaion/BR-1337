@@ -568,6 +568,7 @@ br_traditions_tsakonians_advance = {
 		has_or_had_tag = BYZ
 	}
 	unlock_policy = br_tsakonian_guard
+	unlock_law = intelligence_agency
 	icon = expand_varangian_guard_advance
 	ai_weight = { add = 5 }
 }
