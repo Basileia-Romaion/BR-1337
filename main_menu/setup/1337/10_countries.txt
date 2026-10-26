@@ -13284,12 +13284,17 @@ countries = {
 
 		accepted_cultures = {
 			varangian
+			anatolian_greek_culture
 		}
 		tolerated_cultures = {
 			latinoi
-			anatolian_greek_culture
+			cappadocian_greek_culture
+			illyrikoi_greek_culture
 			pontic_greek_culture
-			armenian_culture
+			romanyoti
+		}
+		discriminated_culture = {
+			
 		}
 
 		liturgical_language = koine_dialect
