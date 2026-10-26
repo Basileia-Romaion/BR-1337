@@ -933,7 +933,7 @@ locations={
 	antioch = { rank = city	 	town_setup = greek_city_port }
 	bursa = { rank = town 		town_setup = greek_town_port}
 	diyarbekir = { rank = city 	town_setup = christian_anatolian_city }
-	izmit = { rank = city 		town_setup = greek_city_port }
+	izmit = { rank = town 		town_setup = greek_town_port}
 	kayseri = { rank = city 	town_setup = christian_anatolian_city }
 	konya = { rank = city 		town_setup = christian_anatolian_city }
 	larnaca = { rank = town 	town_setup = greek_town }
@@ -948,7 +948,7 @@ locations={
 	
 	amasra = { rank = town 		town_setup = greek_town_port }
 	bergama = { rank = town		town_setup = greek_town_port }
-	birgi = { rank = town		town_setup = christian_anatolian_town }
+	#birgi = { rank = town		town_setup = christian_anatolian_town }
 	iznik = { rank = city		town_setup = greek_city_port }
 	silifke = { rank = town		town_setup = greek_town_port }
 	mardin = { rank = town		town_setup = christian_anatolian_town }
@@ -6325,6 +6325,7 @@ building_manager = {
 	market_village = { tag = BYZ level = 2 location = uluborlu }
 	forest_village = { tag = BYZ level = 1 location = uluborlu }
 	market_village = { tag = BYZ level = 2 location = lazkiye }
+	market_village = { tag = BYZ level = 2 location = birgi }
 	tar_kiln = { tag = PAF level = 1 location = sinop }
 	sand_pit = { tag = PAF level = 1 location = amasra }
 	lumber_mill = { tag = PAF level = 1 location = amasra }
