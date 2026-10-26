@@ -3349,8 +3349,9 @@ locations = {
 		define_pop = {	type = slaves	size = 11.085	culture = chanka_culture	religion = chanka_religion }
 	}
 	huaman_karpa = {
-		define_pop = {	type = nobles	size = 0.037	culture = chanka_culture	religion = chanka_religion }
-		define_pop = {	type = clergy	size = 0.137	culture = chanka_culture	religion = chanka_religion }
+		define_pop = {	type = nobles	size = 0.035	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.125	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
 		define_pop = {	type = burghers	size = 2.375	culture = chanka_culture	religion = chanka_religion }
 		define_pop = {	type = peasants	size = 15.253	culture = chanka_culture	religion = chanka_religion }
 		define_pop = {	type = tribesmen	size = 18.346	culture = chanka_culture	religion = chanka_religion }
@@ -3425,8 +3426,9 @@ locations = {
 		define_pop = {	type = tribesmen	size = 16.909	culture = aimara_culture	religion = inti }
 	}
 	ayaviri = {
-		define_pop = {	type = nobles	size = 0.057	culture = aimara_culture	religion = inti }
-		define_pop = {	type = clergy	size = 0.207	culture = aimara_culture	religion = inti }
+		define_pop = {	type = nobles	size = 0.055	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.225	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
 		define_pop = {	type = burghers	size = 3.556	culture = aimara_culture	religion = inti }
 		define_pop = {	type = peasants	size = 10.037	culture = aimara_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 16.474	culture = aimara_culture	religion = inti }
@@ -3685,20 +3687,24 @@ locations = {
 		define_pop = {	type = tribesmen	size = 35.008	culture = wari_culture	religion = inti }
 	}
 	maukallaqta = {
+		define_pop = {	type = nobles	size = 0.015	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.025	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 25.545	culture = chillque_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 4.508	culture = wari_culture	religion = inti }
 	}
 	waqrapukara = {
-		define_pop = {	type = nobles	size = 0.013	culture = wari_culture	religion = inti }
-		define_pop = {	type = clergy	size = 0.033	culture = wari_culture	religion = inti }
-		define_pop = {	type = peasants	size = 8.384	culture = wari_culture	religion = inti }
+		define_pop = {	type = nobles	size = 0.015	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.025	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 6.384	culture = wari_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 14.625	culture = wari_culture	religion = inti }
 	}
 	pikillaqta = {
-		define_pop = {	type = nobles	size = 0.037	culture = wari_culture	religion = inti }
-		define_pop = {	type = clergy	size = 0.047	culture = wari_culture	religion = inti }
-		define_pop = {	type = peasants	size = 8.003	culture = wari_culture	religion = inti }
-		define_pop = {	type = peasants	size = 5.500	culture = inka_culture	religion = inti }
+		define_pop = {	type = nobles	size = 0.037	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.047	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 5.003	culture = wari_culture	religion = inti }
+		define_pop = {	type = peasants	size = 8.500	culture = inka_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 11.957	culture = wari_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 7.806	culture = inka_culture	religion = inti }
 	}
@@ -3706,14 +3712,14 @@ locations = {
 		define_pop = {	type = nobles	size = 0.063	culture = inka_culture	religion = inti }
 		define_pop = {	type = clergy	size = 0.137	culture = inka_culture	religion = inti }
 		define_pop = {	type = burghers	size = 2.375	culture = inka_culture	religion = inti }
-		define_pop = {	type = peasants	size = 7.839	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 27.839	culture = inka_culture	religion = inti }
 		define_pop = {	type = peasants	size = 1.457	culture = wari_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 8.651	culture = inka_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 2.664	culture = wari_culture	religion = inti }
 	}
 	pisaq = {
-		define_pop = {	type = nobles	size = 0.025	culture = wari_culture	religion = inti }
-		define_pop = {	type = clergy	size = 0.032	culture = wari_culture	religion = inti }
+		define_pop = {	type = nobles	size = 0.025	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.032	culture = inka_culture	religion = inti }
 		define_pop = {	type = peasants	size = 5.811	culture = wari_culture	religion = inti }
 		define_pop = {	type = peasants	size = 2.801	culture = inka_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 7.820	culture = wari_culture	religion = inti }
@@ -3724,11 +3730,16 @@ locations = {
 		define_pop = {	type = tribesmen	size = 1.445	culture = wari_culture	religion = inti }
 	}
 	urupampa = {
-		define_pop = {	type = clergy	size = 0.019	culture = wari_culture	religion = inti }
-		define_pop = {	type = peasants	size = 10.651	culture = wari_culture	religion = inti }
+		define_pop = {	type = nobles	size = 0.015	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.025	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 8.651	culture = wari_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 12.649	culture = wari_culture	religion = inti }
 	}
 	quillarumiyoc = {
+		define_pop = {	type = nobles	size = 0.015	culture = inka_culture	religion = inti }
+		define_pop = {	type = clergy	size = 0.025	culture = inka_culture	religion = inti }
+		define_pop = {	type = peasants	size = 2.500	culture = inka_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 17.214	culture = killke_culture	religion = inti }
 		define_pop = {	type = tribesmen	size = 3.037	culture = wari_culture	religion = inti }
 	}
