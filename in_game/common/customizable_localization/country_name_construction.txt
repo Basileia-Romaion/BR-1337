@@ -17,6 +17,22 @@
 		}
 	}
 
+	#text = {
+		#localization_key = BYZ_eastern_rome
+		#trigger = {
+			#NOT = { 
+				#OR = {
+					#has_game_rule = byz_name_greek 
+					#has_game_rule = country_name_construction_basileia_rank_name
+				#}
+			#}
+			#country_rank ?= country_rank:rank_empire
+			#tag = BYZ
+		#}
+	#}
+
+	
+
 	text = {
 		localization_key = country_name_construction_IMPERIUM_rank_name
 		trigger = {

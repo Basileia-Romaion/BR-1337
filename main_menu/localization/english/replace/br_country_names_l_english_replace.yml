@@ -2,7 +2,7 @@
  BYZ: "Romanía"
  BYZ_ADJ: "Romaíon"
  BYZ_LONG: "tōn Romaíon"
- BYZ_eastern_rome: "Roman"
+ BYZ_eastern_rome: "Empire of the Romans"
  BYZ_eastern_rome_ADJ: "Roman"
  BYZ_eastern_rome_abbreviation: "E.R.E."
  TUR: "Atabeg Türkmenleri"
@@ -51,11 +51,15 @@
 
  #rank_empire: "Empire"
 
- rule_byz_name: "Basileía Romaíon Name"
- setting_byz_name_default: "Default"
- setting_byz_name_default_desc: "The [ShowCultureName('greek_culture')] [country|e] centered around [ShowProvinceDefinitionName('constantinople_province')] will be known as the $BYZ_ADJ$"
- setting_byz_name_ere: "$BYZ_eastern_rome_ADJ$"
- setting_byz_name_ere_desc: "The [ShowCultureName('greek_culture')] [country|e] centered around [ShowProvinceDefinitionName('constantinople_province')] will be known as the $BYZ_eastern_rome_ADJ$."
+ rule_byz_name: "Basileía Romaíon: Name"
+ setting_byz_name_default: "Basileía Romaíon"
+ setting_byz_name_default_desc: "Official name of the empire in Greek during its existence. "Basileía" means "Empire" and "Romaíon" means "of the Romans."
+
+ setting_byz_name_ere: "$BYZ_eastern_rome$"
+ setting_byz_name_ere_desc: "Latinized version of "Basileía Romaíon"."
+
+ setting_byz_name_greek: "$BYZ_greek_long$"
+ setting_byz_name_greek_desc: "Phonetic Transliteration of "Basileía Romaíon" "
 
  mamluk: "Fatimid"
  mamluks: "Fatimid"

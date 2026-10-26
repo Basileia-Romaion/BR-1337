@@ -716,6 +716,9 @@
 
 			country_rank_is_empire = yes
 			culture = { has_culture_group = culture_group:greek_group }
+			NOT = { 
+				has_game_rule = byz_name_ere
+			}
 		}
 	}	
 
