@@ -317,10 +317,11 @@ REPLACE_OR_CREATE:P0N_f = {
 		culture = culture:pontic_greek_culture
 	}
 	
-	name = P0N
-	flag = P0N
-	adjective = P0N_ADJ
-	tag = P0N
+	name = PON
+	flag = PON
+	adjective = PON_ADJ
+	tag = PON
+	color = map_pontus
 	#color = map_AN0
 
 	provinces = {
