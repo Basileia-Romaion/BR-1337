@@ -10,24 +10,25 @@ git log 0.27..HEAD --pretty=format:"- %s"
 
 ## Previously 0.27 was labled 0.26 in launcher leading to a lot of confusion mostly myself, that has been fixed now properly labeled 0.27.1
 
-##
+## Map/Balance Changes
 - Castles now unlock trebuchets
-
-- Update br_ere_events_l_english.yml
 - Update br_added_estate_privileges.txt
-- Update br_ERE_events.txt
+- More scripted minor ERE revolts
+- one more wheat in Paphlagonia
+- lowered the Orthodox missionary building to convert 25 a month instead of 500.
+- decreased amount of cities in Iberia/Anatolia added more villages
+- Updated  starting diplomacy.txt
+- Updated started town rights of Iberia
+- Removed the scripted Iberia crusade I added, now that more dynamic ones are in the game.
+- Andalusian tags streamlined
+- Various starting buildings updated.
+- AI Inca and Aztecs will consolidate and form earlier and be stronger.
 
-
-- Update br_ere_events_l_english.yml
-- Update br_rebel_demands.txt
-- couple minor revolts
-
-
-- Update copy_of_flavor_fra_l_english.yml
-
+## Tag & Events changes
+- Update Pontus formable to use the vanilla flag/tag
+- Fixed/Updated the Latinized ERE name option to be Empire of the Romans.
 - North Sea Empire has been given access to English, Danish and Norwegian dynamic events nearly 300.
   - Note since it still uses the NSE tag some of the events effects that may require a certain tag may not function correctly let me know.
-
 - Carinthia now uses the HAB with the CRH flag and name. So you can try as a challanging way to create the Habsburg empire.
 - switch CAS and LON tags So Asturias is the primary Iberian Christian tag with access to all the base and DLC content.
   - Asturas now uses the CAS tag with the ATU (New base game Asturias tag) Flag, name and color.
@@ -35,8 +36,9 @@ git log 0.27..HEAD --pretty=format:"- %s"
 - Naples tag used for Benevento (So it has access to all naples content)
 - Neustria and Austrasia can form HRE tag without full consolidation.
 - Greenland enlarged a tad
-- Al-Andalus formed at game start instead of already active.
 - updated chances for Vinlands events to happen to gaurentee they fire.
+- Al-Andalus formed at game start from Granada instead of already active.
+
 
 # 0.27 The Vinland Saga
 

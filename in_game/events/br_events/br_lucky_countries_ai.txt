@@ -361,16 +361,17 @@ br_lucky_countries_ai.8 = {
 		annex_country = { country = c:CUL }
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
-			years = 200
+			years = 150
 			mode = add_and_extend
-			size = 1.5
+			size = 1
 		}
 		add_country_modifier = {
 			modifier = br_levy_size_modifier
-			years = 200
+			years = 150
 			mode = add_and_extend
-			size = 2
+			size = 1
 		}
+		form_country = formable_country:AZT_f
 	}
 }
 
@@ -589,17 +590,164 @@ br_lucky_countries_ai.13 = {
 		annex_country = { country = c:KKE }
 		annex_country = { country = c:KNA }
 		annex_country = { country = c:QUL }
+		location:maukallaqta = {
+			change_location_owner = c:CSU
+		}
+		location:cotapampa = {
+			change_location_owner = c:CSU
+		}
+		location:chumbivilcas = {
+			change_location_owner = c:CSU
+		}
+		location:kanamarca = {
+			change_location_owner = c:CSU
+		}
+		location:pukara = {
+			change_location_owner = c:CSU
+		}
+		location:picchu = {
+			change_location_owner = c:CSU
+		}
+		location:raqchi = {
+			change_location_owner = c:CSU
+		}
+		location:paucartambo = {
+			change_location_owner = c:CSU
+		}
+		location:pampahuaylla = {
+			change_location_owner = c:CSU
+		}
+		location:willkawaman = {
+			change_location_owner = c:CSU
+		}
+		location:tukri_apu_apu = {
+			change_location_owner = c:CSU
+		}
+		location:millcca = {
+			change_location_owner = c:CSU
+		}
+		location:seqse_qaqa = {
+			change_location_owner = c:CSU
+		}
+		location:caniche = {
+			change_location_owner = c:CSU
+		}
+		location:titimani = {
+			change_location_owner = c:CSU
+		}
+		location:ichuna = {
+			change_location_owner = c:CSU
+		}
+		location:churajon = {
+			change_location_owner = c:CSU
+		}
+		location:uyo_uyo = {
+			change_location_owner = c:CSU
+		}
+		location:antabamba = {
+			change_location_owner = c:CSU
+		}
+		location:wari_willka = {
+			change_location_owner = c:CSU
+		}
+		location:willka_ulo = {
+			change_location_owner = c:CSU
+		}
+		location:ingapirca = {
+			change_location_owner = c:CSU
+		}
+		location:llampqui = {
+			change_location_owner = c:CSU
+		}
+		location:tarmatambo = {
+			change_location_owner = c:CSU
+		}
+		location:tunanmarca = {
+			change_location_owner = c:CSU
+		}
+		location:hatun_xauxa = {
+			change_location_owner = c:CSU
+		}
+		location:pumaruri = {
+			change_location_owner = c:CSU
+		} 
+		location:garu = {
+			change_location_owner = c:CSU
+		}
+		location:wanuco_marka = {
+			change_location_owner = c:CSU
+		}
+		location:chiquia = {
+			change_location_owner = c:CSU
+		}
+		location:kotosh = {
+			change_location_owner = c:CSU
+		}
+		location:atash = {
+			change_location_owner = c:CSU
+		}
+		location:ichugan = {
+			change_location_owner = c:CSU
+		}
+		location:pumpu = {
+			change_location_owner = c:CSU
+		}
+		location:gochacalla = {
+			change_location_owner = c:CSU
+		}   
+		location:aqush = {
+			change_location_owner = c:CSU
+		}
+		location:yaino = {
+			change_location_owner = c:CSU
+		}
+		location:huari = {
+			change_location_owner = c:CSU
+		}
+		location:rapayan = {
+			change_location_owner = c:CSU
+		}
+		location:chavin = {
+			change_location_owner = c:CSU
+		}
+		location:japallan = {
+			change_location_owner = c:CSU
+		}
+		location:huacrachuco = {
+			change_location_owner = c:CSU
+		}
+		location:manchac = {
+			change_location_owner = c:CSU
+		}
+
+		every_owned_location = {
+			add_core = c:CSU
+			every_pop = {
+				limit = {
+					NOT = {
+						culture = culture:inka_culture
+					}
+				}
+				split_pop = {
+					fraction = 0.25 #25% of the pop will be changed to the new culture
+					culture = culture:inka_culture
+				}
+			}
+		}
+		
+
 		add_country_modifier = {
 			modifier = br_lucky_country_buff
-			years = 250
+			years = 150
 			mode = add_and_extend
-			size = 2
+			size = 1.5
 		}
 		add_country_modifier = {
 			modifier = br_levy_size_modifier
-			years = 250
+			years = 150
 			mode = add_and_extend
-			size = 2
+			size = 1
 		}
+		form_country = formable_country:INC_f
 	}
 }
