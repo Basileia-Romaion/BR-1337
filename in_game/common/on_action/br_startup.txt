@@ -477,7 +477,9 @@ br_on_game_start = {
         }
 
 		c:GRA ?= {
-			trigger_event_silently = br_startup.2
+			change_tag_cosmetic = { tag = ADU } #So it has the correct name until the tag is formed.
+			form_country = formable_country:ADU_f_GRA
+			#trigger_event_silently = br_startup.2
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
@@ -485,6 +487,9 @@ br_on_game_start = {
 		}
 		
 		c:MAM ?= {
+			change_tag_cosmetic = { tag = EGY } #So it has the correct name until the tag is formed.
+			#form_country = formable_country:EGY_f_Fatamid
+			change_country_color = map_egypt
 			research_advance = advance_type:ledgers_double_checking
             research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
@@ -497,12 +502,19 @@ br_on_game_start = {
 		}
 
 		c:NAP ?= {
-			trigger_event_silently = br_startup.3
+			change_tag_cosmetic = { tag = BNV }
+			change_country_color = map_naples
+			#trigger_event_silently = br_startup.3
 		}
 		c:ENG ?= {
 			change_tag_cosmetic = { tag = NSE } #So it has the correct name until the tag is formed.
 			form_country = formable_country:NSE_f
 			#trigger_event_silently = br_startup.4
+		}
+
+		c:TUR ?= {
+			change_tag_cosmetic = { tag = RUM } #So it has the correct name until the tag is formed.
+			#form_country = formable_country:RUM_f
 		}
 
 
