@@ -499,6 +499,12 @@ br_on_game_start = {
 		c:NAP ?= {
 			trigger_event_silently = br_startup.3
 		}
+		c:ENG ?= {
+			change_tag_cosmetic = { tag = NSE } #So it has the correct name until the tag is formed.
+			form_country = formable_country:NSE_f
+			#trigger_event_silently = br_startup.4
+		}
+
 
 
 	#Starting roads

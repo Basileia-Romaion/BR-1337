@@ -1,7 +1,7 @@
 diplomacy_manager = {
 	# Anglia
-	dependency = { first = NSE second = NOL subject_type = vassal }
-	dependency = { first = NSE second = MCA subject_type = vassal }
+	dependency = { first = ENG second = NOL subject_type = vassal }
+	dependency = { first = ENG second = MCA subject_type = vassal }
 	
 	# Britannia
 	dependency = { first = NRM second = DST subject_type = vassal }
@@ -35,20 +35,20 @@ diplomacy_manager = {
 	scripted_mutual = { first = MYO second = UMH type = alliance }
 	
 	# Scandinavia
-	dependency = { first = NSE second = ICE subject_type = fiefdom }
-	dependency = { first = NSE second = GRL subject_type = fiefdom }
-	dependency = { first = NSE second = ORK subject_type = vassal }
-	dependency = { first = NSE second = SLV subject_type = vassal }
-    dependency = { first = NSE second = ZEA subject_type = vassal }
-    dependency = { first = NSE second = SKE subject_type = fiefdom }
-    dependency = { first = NSE second = LOI subject_type = vassal }
+	dependency = { first = ENG second = ICE subject_type = fiefdom }
+	dependency = { first = ENG second = GRL subject_type = fiefdom }
+	dependency = { first = ENG second = ORK subject_type = vassal }
+	dependency = { first = ENG second = SLV subject_type = vassal }
+    dependency = { first = ENG second = ZEA subject_type = vassal }
+    dependency = { first = ENG second = SKE subject_type = fiefdom }
+    dependency = { first = ENG second = LOI subject_type = vassal }
 	dependency = { first = LOI second = MNN subject_type = vassal }
     dependency = { first = LOI second = GLS subject_type = vassal }
-    dependency = { first = NSE second = HBA subject_type = tributary }
-    dependency = { first = NSE second = N0R subject_type = fiefdom }
-	dependency = { first = NSE second = N1R subject_type = fiefdom }
-    dependency = { first = NSE second = N2R subject_type = fiefdom }
-	dependency = { first = NSE second = N3R subject_type = fiefdom }
+    dependency = { first = ENG second = HBA subject_type = tributary }
+    dependency = { first = ENG second = N0R subject_type = fiefdom }
+	dependency = { first = ENG second = N1R subject_type = fiefdom }
+    dependency = { first = ENG second = N2R subject_type = fiefdom }
+	dependency = { first = ENG second = N3R subject_type = fiefdom }
 
     dependency = { first = SWE second = BIO subject_type = vassal }
     dependency = { first = SWE second = KUR subject_type = vassal }

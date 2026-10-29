@@ -344,7 +344,7 @@ character_db={
 		#father = eng_harold_godwinson
 		#mother = 
 		dynasty = drogan_dynasty
-		tag = NSE
+		tag = ENG #NSE
 		general_trait = glory_seeker
 	}
 
@@ -2340,7 +2340,7 @@ character_db={
 		tag = CHK
 	}
 
-#NSE
+#ENG #NSE
 	br_nse_character_0 = {
 		first_name = { name = "random" }
 		culture = norwegian
@@ -2351,7 +2351,7 @@ character_db={
 		father = dan_chistopher_ii
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 		general_trait = master_of_arms
 		admiral_trait = accomplished_sailor
 	}
@@ -2365,7 +2365,7 @@ character_db={
 		father = br_nse_character_0
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 	}
 
 	br_nse_character_01 = {
@@ -2378,7 +2378,7 @@ character_db={
 		#father = dan_chistopher_ii 
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 		general_trait = glory_seeker
 		admiral_trait = accomplished_sailor
 	}
@@ -2392,7 +2392,7 @@ character_db={
 		father = br_nse_character_01
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 	}
 
 	br_nse_character_02 = {
@@ -2405,7 +2405,7 @@ character_db={
 		father = dan_chistopher_ii
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 		general_trait = glory_seeker
 		admiral_trait = accomplished_sailor
 	}
@@ -2419,7 +2419,7 @@ character_db={
 		father = br_nse_character_02
 		#mother = 
 		dynasty = siggurson_dynasty
-		tag = NSE
+		tag = ENG #NSE
 	}
 
 #HRE

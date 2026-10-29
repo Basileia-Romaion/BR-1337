@@ -435,290 +435,290 @@ REPLACE_OR_CREATE:dan_trading_economy = {
 	requires = urbanization
 }
 ##############################-Angland-##############################
-REPLACE_OR_CREATE:english_tradition = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	army_heavy_infantry_power = 0.1
-	requires = feudalism_advance
-}
-REPLACE_OR_CREATE:english_heritage = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	global_maritime_presence_modifier = 0.2
-	requires = english_tradition
-	unlock_estate_privilege = peasants_yeomanry
-}
-
-REPLACE_OR_CREATE:magna_carta_advance = {
-	age = age_1_traditions
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	unlock_government_reform = magna_carta_reform
-	requires = distribution_of_power_advance
-}
-
-REPLACE_OR_CREATE:unlock_early_longbowmen_advance = {
-	age = age_1_traditions
-	requires = city_building_advance
-	potential = {
-		OR = {
-			has_or_had_tag = WLS
-			has_or_had_tag = ENG
-			has_or_had_tag = NSE
-			culture = culture:welsh
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:welsh }
-			culture = { merged_culture_group_contains_culture = culture:english }
-		}
-	}
-	unlock_levy = levy_a_early_longbowmen
-	unlock_estate_privilege = peasants_yeomanry
-}
-
-REPLACE_OR_CREATE:unlock_longbowmen_advance = {
-	age = age_2_renaissance
-	requires = unlock_men_at_arms_advance
-	potential = {
-		OR = {
-			has_or_had_tag = WLS
-			has_or_had_tag = ENG
-			has_or_had_tag = NSE
-			culture = culture:welsh
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:welsh }
-			culture = { merged_culture_group_contains_culture = culture:english }
-		}
-	}
-	unlock_levy = levy_a_longbowmen
-}
-
-REPLACE_OR_CREATE:unlock_late_longbowmen_advance = {
-	age = age_3_discovery
-	requires = unlock_halberdiers_advance
-	potential = {
-		OR = {
-			has_or_had_tag = WLS
-			has_or_had_tag = ENG
-			has_or_had_tag = NSE
-			culture = culture:welsh
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:welsh }
-			culture = { merged_culture_group_contains_culture = culture:english }
-		}
-	}
-	unlock_levy = levy_a_late_longbowmen
-}
-
-REPLACE_OR_CREATE:royal_navy = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	navy_heavy_ship_power = 0.1
-}
-REPLACE_OR_CREATE:secretaries_of_state = {
-	age = age_3_discovery
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	diplomatic_capacity = 1
-}
-REPLACE_OR_CREATE:eltham_ordinance = {
-	age = age_4_reformation
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	global_production_efficiency = medium_production_efficiency_bonus
-}
-
-REPLACE_OR_CREATE:sick_and_hurt_board = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	navy_maintenance_efficiency = 0.1
-}
-
-REPLACE_OR_CREATE:british_bill_of_rights = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-}
-
-REPLACE_OR_CREATE:navigation_acts = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	export_efficiency = small_trade_efficiency_bonus
-}
-
-REPLACE_OR_CREATE:inigo_architecture = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	allow = { has_unlocked_advance_trigger = { type = inigo_architecture } }
-	allow_children = no
-	
-	cultural_tradition_modifier = 0.2
-	global_urban_build_buildings_efficiency = 0.025
-}
-REPLACE_OR_CREATE:sailing_and_fighting_instructions = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	allow = { has_unlocked_advance_trigger = { type = sailing_and_fighting_instructions } }
-	
-	allow_children = no
-
-
-	army_disembark_speed = 0.25
-	blockade_efficiency = 0.1
-	navy_initiative = 0.1
-}
-REPLACE_OR_CREATE:coke_smelting = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	allow = {
-		custom_tooltip = {
-				text = unlocked_advance_coke_smelting_tt
-				has_variable = unlocked_advance_coke_smelting
-			}
-	}
-
-	allow_children = no
-
-	
-	global_tools_output_modifier = 0.25
-}
-REPLACE_OR_CREATE:eng_red_coats = {
-	age = age_6_revolutions
-	requires = unlock_fusiliers_advance
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	
-	unlock_unit = a_redcoats
-}
-REPLACE_OR_CREATE:eng_experimental_riflemen = {
-	age = age_6_revolutions
-	requires = eng_red_coats
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	
-	unlock_unit = a_experimental_riflemen
-}
-
-REPLACE_OR_CREATE:english_ambition = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	blockade_efficiency = 0.40
-}
-REPLACE_OR_CREATE:water_frame = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = ENG
-			culture = culture:english
-			culture = { merged_culture_group_contains_culture = culture:english }
-			has_or_had_tag = NSE
-		}
-	}
-	allow = { has_unlocked_advance_trigger = { type = water_frame } }
-
-	allow_children = no
-	
-	global_cloth_output_modifier = 0.33
-}
+#REPLACE_OR_CREATE:english_tradition = {
+	#age = age_1_traditions
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#army_heavy_infantry_power = 0.1
+	#requires = feudalism_advance
+#}
+#REPLACE_OR_CREATE:english_heritage = {
+	#age = age_1_traditions
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#global_maritime_presence_modifier = 0.2
+	#requires = english_tradition
+	#unlock_estate_privilege = peasants_yeomanry
+#}
+#
+#REPLACE_OR_CREATE:magna_carta_advance = {
+	#age = age_1_traditions
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#unlock_government_reform = magna_carta_reform
+	#requires = distribution_of_power_advance
+#}
+#
+#REPLACE_OR_CREATE:unlock_early_longbowmen_advance = {
+	#age = age_1_traditions
+	#requires = city_building_advance
+	#potential = {
+		#OR = {
+			#has_or_had_tag = WLS
+			#has_or_had_tag = ENG
+			#has_or_had_tag = NSE
+			#culture = culture:welsh
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:welsh }
+			#culture = { merged_culture_group_contains_culture = culture:english }
+		#}
+	#}
+	#unlock_levy = levy_a_early_longbowmen
+	#unlock_estate_privilege = peasants_yeomanry
+#}
+#
+#REPLACE_OR_CREATE:unlock_longbowmen_advance = {
+	#age = age_2_renaissance
+	#requires = unlock_men_at_arms_advance
+	#potential = {
+		#OR = {
+			#has_or_had_tag = WLS
+			#has_or_had_tag = ENG
+			#has_or_had_tag = NSE
+			#culture = culture:welsh
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:welsh }
+			#culture = { merged_culture_group_contains_culture = culture:english }
+		#}
+	#}
+	#unlock_levy = levy_a_longbowmen
+#}
+#
+#REPLACE_OR_CREATE:unlock_late_longbowmen_advance = {
+	#age = age_3_discovery
+	#requires = unlock_halberdiers_advance
+	#potential = {
+		#OR = {
+			#has_or_had_tag = WLS
+			#has_or_had_tag = ENG
+			#has_or_had_tag = NSE
+			#culture = culture:welsh
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:welsh }
+			#culture = { merged_culture_group_contains_culture = culture:english }
+		#}
+	#}
+	#unlock_levy = levy_a_late_longbowmen
+#}
+#
+#REPLACE_OR_CREATE:royal_navy = {
+	#age = age_3_discovery
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#navy_heavy_ship_power = 0.1
+#}
+#REPLACE_OR_CREATE:secretaries_of_state = {
+	#age = age_3_discovery
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#diplomatic_capacity = 1
+#}
+#REPLACE_OR_CREATE:eltham_ordinance = {
+	#age = age_4_reformation
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#global_production_efficiency = medium_production_efficiency_bonus
+#}
+#
+#REPLACE_OR_CREATE:sick_and_hurt_board = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#navy_maintenance_efficiency = 0.1
+#}
+#
+#REPLACE_OR_CREATE:british_bill_of_rights = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+#}
+#
+#REPLACE_OR_CREATE:navigation_acts = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#export_efficiency = small_trade_efficiency_bonus
+#}
+#
+#REPLACE_OR_CREATE:inigo_architecture = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#allow = { has_unlocked_advance_trigger = { type = inigo_architecture } }
+	#allow_children = no
+#	
+	#cultural_tradition_modifier = 0.2
+	#global_urban_build_buildings_efficiency = 0.025
+#}
+#REPLACE_OR_CREATE:sailing_and_fighting_instructions = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#allow = { has_unlocked_advance_trigger = { type = sailing_and_fighting_instructions } }
+#	
+	#allow_children = no
+#
+#
+	#army_disembark_speed = 0.25
+	#blockade_efficiency = 0.1
+	#navy_initiative = 0.1
+#}
+#REPLACE_OR_CREATE:coke_smelting = {
+	#age = age_5_absolutism
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#allow = {
+		#custom_tooltip = {
+				#text = unlocked_advance_coke_smelting_tt
+				#has_variable = unlocked_advance_coke_smelting
+			#}
+	#}
+#
+	#allow_children = no
+#
+#	
+	#global_tools_output_modifier = 0.25
+#}
+#REPLACE_OR_CREATE:eng_red_coats = {
+	#age = age_6_revolutions
+	#requires = unlock_fusiliers_advance
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+#	
+	#unlock_unit = a_redcoats
+#}
+#REPLACE_OR_CREATE:eng_experimental_riflemen = {
+	#age = age_6_revolutions
+	#requires = eng_red_coats
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+#	
+	#unlock_unit = a_experimental_riflemen
+#}
+#
+#REPLACE_OR_CREATE:english_ambition = {
+	#age = age_6_revolutions
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#blockade_efficiency = 0.40
+#}
+#REPLACE_OR_CREATE:water_frame = {
+	#age = age_6_revolutions
+	#potential = {
+		#OR = {
+			#has_or_had_tag = ENG
+			#culture = culture:english
+			#culture = { merged_culture_group_contains_culture = culture:english }
+			#has_or_had_tag = NSE
+		#}
+	#}
+	#allow = { has_unlocked_advance_trigger = { type = water_frame } }
+#
+	#allow_children = no
+#	
+	#global_cloth_output_modifier = 0.33
+#}
 
 ##############################-Bulgaria-##############################
 REPLACE_OR_CREATE:legacy_of_ivan_asen_ii = {

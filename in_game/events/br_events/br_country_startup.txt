@@ -1179,9 +1179,9 @@ br_country_startup.7 = {
                 }
             }
 		}
-		
+
 	#North Europe
-		c:NSE ?= {
+		c:ENG ?= {
 			every_owned_location = {
 				limit = {
 					region = region:great_britain_region

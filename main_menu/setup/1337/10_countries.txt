@@ -4331,24 +4331,24 @@ countries = {
 	# PLE replaced by HBA
 	
 	#### ENGLAND
-	ENG = { # England
-		our_cores_conquered_by_others = {
-			appleby hythe alnwick barnstaple bedford dunstable birmingham boston bosworth shoreham lewes bristol buckingham bury glossop cambridge canterbury carlisle rochester cheltenham chelmsford chesterfield chichester chippenham cockermouth colchester kettering coventry cirencester derby dorchester dover exeter gloucester grimsby guildford reigate harrow hastings hedingham hertford hexham hull huntingdon ipswich kendal grantham penrith kidderminster leeds leicester lincoln london loughborough lowestoft lynn daventry newark newcastle northampton norwich nottingham oxford ely plymouth bideford bampton okehampton poole portsmouth amesbury lymington retford rutland salisbury southampton prittlewell kingston stafford stoke stratford trowbridge taunton wells barking weymouth shaftesbury wight winchester windsor worcester yarmouth york scarborough tamworth bedale richmond whitby bridlington selby pontefract skipton wakefield louth thetford fakenham reading tonbridge minehead portishead bath henley royston aylesbury wycombe lavenham abingdon st_albans banbury walden spalding woking morpeth billingham norton ripon doncaster egremont basingstoke
-			shrewsbury hereford
-		}
-		include = "catholic_monarchy_not_present"
-		starting_technology_level = 3
-		government = {
-		}
-		accepted_cultures = {
-			northumbrian
-		}
-		tolerated_cultures = { cornish welsh }
-		court_language = norman_dialect
-		country_rank = rank_kingdom
-		capital = london
-		include = "expl_western_europe"
-	}
+	#ENG = { # England
+		#our_cores_conquered_by_others = {
+			#appleby hythe alnwick barnstaple bedford dunstable birmingham boston bosworth shoreham lewes bristol buckingham bury glossop cambridge canterbury carlisle rochester cheltenham chelmsford chesterfield chichester chippenham cockermouth colchester kettering coventry cirencester derby dorchester dover exeter gloucester grimsby guildford reigate harrow hastings hedingham hertford hexham hull huntingdon ipswich kendal grantham penrith kidderminster leeds leicester lincoln london loughborough lowestoft lynn daventry newark newcastle northampton norwich nottingham oxford ely plymouth bideford bampton okehampton poole portsmouth amesbury lymington retford rutland salisbury southampton prittlewell kingston stafford stoke stratford trowbridge taunton wells barking weymouth shaftesbury wight winchester windsor worcester yarmouth york scarborough tamworth bedale richmond whitby bridlington selby pontefract skipton wakefield louth thetford fakenham reading tonbridge minehead portishead bath henley royston aylesbury wycombe lavenham abingdon st_albans banbury walden spalding woking morpeth billingham norton ripon doncaster egremont basingstoke
+			#shrewsbury hereford
+		#}
+		#include = "catholic_monarchy_not_present"
+		#starting_technology_level = 3
+		#government = {
+		#}
+		#accepted_cultures = {
+			#northumbrian
+		#}
+		#tolerated_cultures = { cornish welsh }
+		#court_language = norman_dialect
+		#country_rank = rank_kingdom
+		#capital = london
+		#include = "expl_western_europe"
+	#}
 
 	AGL = {
 		our_cores_conquered_by_others = {
@@ -57406,7 +57406,7 @@ countries = {
 
 	
   	#North Sea Empire
-	NSE = {
+	ENG = { #NSE
 		own_control_core = { #NOR
 			konghalla stromstad uddevalla hornborg
 			moss halden borg trogstad
@@ -57487,6 +57487,7 @@ countries = {
 			individualism_vs_communalism = 25
 			outward_vs_inward = -50
 		}
+		culture = anglo_norse_culture
 		accepted_cultures = {
 			danish norwegian norn_culture
 		}

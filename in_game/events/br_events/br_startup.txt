@@ -418,3 +418,25 @@ br_startup.3 = {
 		change_country_color = map_naples
 	}
 }
+
+br_startup.4 = {
+	type = country_event
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+	outcome = neutral
+	trigger = {
+		tag = ENG
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		change_tag_cosmetic = { tag = NSE } #So it has the correct name until the tag is formed.
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+		form_country = formable_country:NSE_f
+	}
+}

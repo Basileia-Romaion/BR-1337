@@ -230,8 +230,8 @@ diplomacy_manager = {
 	opinion = { first = HUN second = WA1 type = left_empire }
 	opinion = { first = HUN second = WA2 type = left_empire }
 
-	opinion = { first = NSE second = SWE type = opinion_good_relations }
-	opinion = { first = SWE second = NSE type = opinion_good_relations }
+	opinion = { first = ENG second = SWE type = opinion_good_relations }
+	opinion = { first = SWE second = ENG type = opinion_good_relations }
 
 	opinion = { first = LIT second = PSK type = opinion_supportive_monarch }
 	opinion = { first = PSK second = LIT type = opinion_supportive_monarch }
