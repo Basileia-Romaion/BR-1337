@@ -101,13 +101,13 @@ market_manager = {
 	add_market = al_hajr
 	add_market = samarkand
 	add_market = almaty
-	#add_market = sarayjuk #BR removed
+	add_market = sarayjuk
 	add_market = urgench
 	
 	# East Asia
 	add_market = dadu
 	add_market = kyoto #sakai
-	# add_market = kamakura
+	add_market = kamakura
 	# add_market = hakata
 	#add_market = souya
 	add_market = kaesong
@@ -169,12 +169,16 @@ market_manager = {
 	
 	
 	####---------- North America ----------####
-	# Canada
-	add_market = stadacona
-	
+
 	# Vinlandic North America
 	add_market = belle_isle
+	add_market = stadacona
 	add_market = kjipuktuk
+
+	add_market = navchak
+	add_market = tikigaksuagusik
+
+	# Canada
 	
 	# Haudenosauneega
 	add_market = irondequoit
@@ -208,6 +212,7 @@ market_manager = {
 
 	# Andes
 	add_market = chinchay
+	add_market = hatunqulla
 	
 	
 	####---------- Oceania ----------####
