@@ -38,6 +38,8 @@ Add a couple pirate tags that work 1.1 will work better
 ## New World Fantastical and or extra tags
 ~~- Option (No idea how yet) to create more nations via game rules~~
 Arthurian type tag
+    - Avalon Britano-Elysian tag
+        - Second wave of Roman refugees fleed from the dieing western Empre this wave from Romano-Britons of Britania as the Isles were being Overwhelmed by the Angles, Jutes and Saxons. They had heard of those that left earlier though did not have confirmation that they found last to the west but they believe to the West lay Avalon. A paradise untouched by war. They were led by Artherios a great Roman General who won a great victory over the Saxons bying time to gather the reources needed to assemble the mighty fleet needed.
 New Angland 
 
 ## Balkans
