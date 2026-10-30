@@ -14,7 +14,6 @@ market_manager = {
 	add_market = tarnovo
 	add_market = constantinople
 	add_market = paris
-	add_market = metz #Br added
 	add_market = barcelona
 	add_market = cordoba #Moved from sevilla
 	add_market = cologne
@@ -30,7 +29,6 @@ market_manager = {
 	add_market = skalholt	
 	add_market = gardr
 	add_market = naples
-	add_market = angra
 
 	add_market = oslo #should be Bergen but too low access
 	add_market = stockholm
@@ -39,24 +37,71 @@ market_manager = {
 	add_market = nuremberg
 	#add_market = lisbon 
 
+	### BR added Old World
 
-	#Update 13 additions tested may add later
+	#Francia
+	add_market = metz
+	#add_market = marseille
+	add_market = lyon
+
+	#Anatolia
+	#add_market = smyrna
+	#add_market = ankara
+	add_market = kayseri
+	#add_market = antalya
 	#add_market = sinop
+	#add_market = malatya
+
+	#Europa
+	#add_market = thessaloniki
 	#add_market = thebes
 	#add_market = durres
-	#add_market = tana
-	#add_market = tripoli
+	#add_market = candia
 
+	#Danubeia
+	#add_market = skopje
+	#add_market = belgrad
+	#add_market = brasov
 
+	#North Europe
+	#add_market = gdansk
+	#add_market = vilnius
+	#add_market = kobenhavn
+	#add_market = nidaros
+	#add_market = york
+
+	#Italia
+	#add_market = milano
+	#add_market = florence
+	#add_market = rome
 	#add_market = palermo
-	#add_market = thessaloniki
-	#add_market = smyrna
 
-	add_market = kayseri
+	#Iberia
+	#add_market = toledo
+	#add_market = valencia
+	add_market = porto
 
+	#Steppe
+	#add_market = tana
+	add_market = ismail
+	#add_market = kursk
+
+	#Levant
 	add_market = aleppo
 	add_market = mosul
-	add_market = ismail
+	add_market = medina
+
+	#Persia
+	add_market = rey
+
+	#Africa
+	#add_market = tripoli
+	#add_market = benghazi
+	#add_market = timbuktu
+	#add_market = marrakesh
+
+	#Atlantic
+	add_market = angra
 	
 	
 	####---------- Africa ----------####
