@@ -8,14 +8,14 @@ development = {
 	base = -2
 
 	#Waterways
-	coastal = 5 # multiplies by natural harbor suitability
+	coastal = 4 #5 # multiplies by natural harbor suitability
 	river = 0.5 # multiplies by river size, ranges from 1 to 8 but 5 is the biggest used in the setup
 	
 	#Roads
-	road = 2
+	road = 1 #2
 	
 	#location rank
-	city = 5
+	city = 4 #5
 	town = 2
 
 	# vegetation
@@ -24,18 +24,18 @@ development = {
 	sparse = -1
 	forest = -2
 	woods = -1
-	desert = -3
-	jungle = -4
+	desert = -4 #3
+	jungle = -5 #4
 
 	#climate
 	tropical = -3
-	subtropical = 2
+	subtropical = 1 #2
 	oceanic = 1
-	arid = -4
-	cold_arid = -3
+	arid = -5 #4
+	cold_arid = -4 #3
 	mediterranean = 2
 	continental = 1
-	arctic = -5
+	arctic = -6 #5
 	
 	#topography
 	flatland = 1
@@ -47,46 +47,46 @@ development = {
 
 	# regions
 	#western europe
-	scandinavian_region = 8
-	north_atlantic_islands_region = 5
-	north_german_region = 15
-	south_german_region = 20
-	great_britain_region = 15
-	ireland_region = 10
-	france_region = 20
-	iberia_region = 20
-	italy_region = 25
+	scandinavian_region = 7 #8
+	north_atlantic_islands_region = 4 #5
+	north_german_region = 12 #15
+	south_german_region = 15 #20
+	great_britain_region = 12 #15
+	ireland_region = 8 #10
+	france_region = 18 #20
+	iberia_region = 18 #20
+	italy_region = 24 #25
 	#eastern europe
-	carpathia_region = 13
-	baltic_region = 12
-	caucasus_region = 14
-	steppes_region = 5
-	russian_region = 12
-	ruthenia_region = 12
-	ural_region = 5
-	balkan_region = 14
+	carpathia_region = 11 #13
+	baltic_region = 10 #12
+	caucasus_region = 10 #14
+	steppes_region = 4 #5
+	russian_region = 8 #12
+	ruthenia_region = 8 #12
+	ural_region = 4 #5
+	balkan_region = 12 #14
 	#africa
-	egypt_region = 25
-	macaronesia_region = 10
-	maghreb_region = 15
-	guinea_region = 5
-	sahel_region = 13
-	ethiopia_region = 10
-	nubia_region = 10
-	somalia_region = 12
+	egypt_region = 23 #25
+	macaronesia_region = 7 #10
+	maghreb_region = 13 #15
+	guinea_region = 4 #5
+	sahel_region = 10 #13
+	ethiopia_region = 9 #10
+	nubia_region = 8 #10
+	somalia_region = 8 #12
 	great_lakes_region = 5
-	swahili_coast_region = 10
-	madagascar_region = 5
-	kongo_region = 5
+	swahili_coast_region = 8 #10
+	madagascar_region = 4 #5
+	kongo_region = 4 #5
 	southern_africa_islands_region = 0
 	southern_africa_region = 0
-	zimbabwe_region = 5
+	zimbabwe_region =  4 #5
 	#asia
-	anatolia_region = 20
-	crescent_region = 20
-	arabia_region = 10
-	persia_region = 20
-	khorasan_region = 15
+	anatolia_region = 18 #20
+	crescent_region = 18 #20
+	arabia_region = 9 #10
+	persia_region = 17 #20
+	khorasan_region = 14 #15
 	west_siberia_region = 0
 	east_siberia_region = 0
 	east_china_region = 30
@@ -110,15 +110,15 @@ development = {
 	canada_region = 0
 	caribbean_region = 0
 	east_coast_region = 0
-	great_plains_region = 5
-	mesoamerica_region = 12
-	central_america_region = 9
-	aridoamerica_region = 7
+	great_plains_region = 4 #5
+	mesoamerica_region = 11 #12
+	central_america_region = 7 #9
+	aridoamerica_region = 6 #7
 	alaska_region = 0
 	west_coast_region = 0
-	colombia_region = 7
+	colombia_region = 6 #7
 	brazil_region = 0
-	andes_region = 10
+	andes_region = 8 #10
 	chaco_region = 0
 	la_plata_region = 0
 	#oceania
@@ -137,15 +137,15 @@ development = {
 	#scandinavia
 	svealand_area = 4
 	gotaland_area = 3
-	denmark_area = 5
-	skaneland_area = 5
-	syd_norge_area = 3
+	denmark_area = 4 #5
+	skaneland_area = 4 #5
+	syd_norge_area = 2 #3
 	karelia_area = -5
 	kola_area = -5
 	#balkan region
 	thrace_area = 3
 	morea_area = 2
-	slovenia_area = 5
+	slovenia_area = 3 #5
 	#great britain
 	home_counties_area = 5
 	west_country_area = 3
@@ -406,11 +406,11 @@ development = {
 	abacoa = 5
 
 	#Vinland
-	belle_isle = 14
-	ingonish = 14
-	notiskuan = 5
-	uashat = 5
-	stadacona = 5
+	belle_isle = 10
+	ingonish = 10
+	notiskuan = 4
+	uashat = 4
+	stadacona = 4
 	
 	#unique locations
 	granada = 8
