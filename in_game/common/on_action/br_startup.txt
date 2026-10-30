@@ -487,7 +487,7 @@ br_on_game_start = {
 		}
 		
 		c:MAM ?= {
-			change_tag_cosmetic = { tag = EGY } #So it has the correct name until the tag is formed.
+			change_tag_cosmetic = { tag = EGY }
 			#form_country = formable_country:EGY_f_Fatamid
 			change_country_color = map_egypt
 			research_advance = advance_type:ledgers_double_checking
@@ -513,7 +513,7 @@ br_on_game_start = {
 		}
 
 		c:TUR ?= {
-			change_tag_cosmetic = { tag = RUM } #So it has the correct name until the tag is formed.
+			change_tag_cosmetic = { tag = RUM }
 			#form_country = formable_country:RUM_f
 		}
 
