@@ -61,6 +61,10 @@ unit_manager = {
 			a_byzantine_cataphracts = { strength = 1.0 }
 		}
 	}
+
+
+ 	#New World
+	#Vinlanders
 	army = {
 		country = NRV
 		location = stadacona
@@ -95,6 +99,104 @@ unit_manager = {
 		sub_units = {
 			br_traditions_vinlanders = { strength = 1.0 }
 			br_traditions_vinlanders = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+
+
+	#Steppes
+	army = {
+		country = G0L
+		location = chimgi_tura
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = G1L
+		location = saryozen
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = G2L
+		location = urgench
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = G3L
+		location = simbirsk
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = G3L
+		location = oskol
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = CRI
+		location = qalancaq
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = ATR
+		location = astrakhan
+		sub_units = {
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = OGE
+		location = kurchum
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+	army = {
+		country = OGE
+		location = kurchum
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+		}
+	}
+
+	army = {
+		country = CHI
+		location = dadu
+		sub_units = {
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_steppe_horse_archers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
+			a_camp_followers = { strength = 1.0 }
 			a_camp_followers = { strength = 1.0 }
 		}
 	}

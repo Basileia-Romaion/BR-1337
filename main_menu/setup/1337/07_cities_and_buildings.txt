@@ -5843,6 +5843,22 @@ building_manager = {
 	tribal_war_camp = { tag = TUR level = 1 location = aqmecit_prybuzhzhya }
 	tribal_market_villages = { tag = TUR level = 1 location = aqmecit_prybuzhzhya }
 
+	kurultai = { tag = GLH level = 1 location = oskol }
+	tribal_war_camp = { tag = GLH level = 1 location = oskol }
+	tribal_market_villages = { tag = GLH level = 2 location = oskol }
+	tribal_hunting_lodge = { tag = GLH level = 1 location = oskol }
+
+	kurultai = { tag = GLH level = 1 location = tagatay }
+	tribal_war_camp = { tag = GLH level = 1 location = tagatay }
+	tribal_market_villages = { tag = GLH level = 1 location = tagatay }
+
+	kurultai = { tag = GLH level = 1 location = saryozen }
+	tribal_war_camp = { tag = GLH level = 1 location = saryozen }
+	tribal_market_villages = { tag = GLH level = 1 location = saryozen }
+
+	tribal_war_camp = { tag = GLH level = 1 location = zhaldama }
+	tribal_market_villages = { tag = GLH level = 1 location = zhaldama }
+
 	tribal_hunting_lodge = { tag = GLH level = 1 location = yaransk }
 	tribal_hunting_lodge = { tag = GLH level = 1 location = karsun }
 	tribal_hunting_lodge = { tag = GLH level = 1 location = uyskoye }
@@ -5850,48 +5866,66 @@ building_manager = {
 	tribal_hunting_lodge = { tag = GLH level = 1 location = kurtamysh }
 	tribal_hunting_lodge = { tag = GLH level = 1 location = zainsk }
 	tribal_hunting_lodge = { tag = GLH level = 1 location = bogatye_saby }
-	tribal_war_camp = { tag = TUR level = 1 location = izium }
-	tribal_market_villages = { tag = TUR level = 1 location = izium }
-	tribal_war_camp = { tag = TUR level = 1 location = vovchansk }
-	tribal_market_villages = { tag = TUR level = 1 location = vovchansk }
-	tribal_war_camp = { tag = TUR level = 1 location = rovenky }
-	tribal_market_villages = { tag = TUR level = 1 location = rovenky }
-	tribal_war_camp = { tag = TUR level = 1 location = tatsinskaya }
-	tribal_market_villages = { tag = TUR level = 1 location = tatsinskaya }
-	tribal_war_camp = { tag = TUR level = 1 location = qalancaq }
-	tribal_market_villages = { tag = TUR level = 1 location = qalancaq }
-	tribal_war_camp = { tag = TUR level = 1 location = tighina }
-	tribal_market_villages = { tag = TUR level = 1 location = tighina }
-	tribal_war_camp = { tag = TUR level = 1 location = armavir }
-	tribal_market_villages = { tag = TUR level = 1 location = armavir }
-	tribal_war_camp = { tag = TUR level = 1 location = yessentuq }
-	tribal_market_villages = { tag = TUR level = 1 location = yessentuq }
-	tribal_war_camp = { tag = TUR level = 1 location = dzhulat }
-	tribal_market_villages = { tag = TUR level = 1 location = dzhulat }
-	tribal_war_camp = { tag = TUR level = 1 location = shkhancheriekhabl }
-	tribal_war_camp = { tag = TUR level = 1 location = maykop }
-	tribal_market_villages = { tag = TUR level = 1 location = maykop }
-	tribal_war_camp = { tag = TUR level = 1 location = khadyzhi }
-	tribal_war_camp = { tag = TUR level = 1 location = shanjir }
-	tribal_market_villages = { tag = TUR level = 1 location = shanjir }
-	tribal_war_camp = { tag = TUR level = 1 location = copa }
-	tribal_market_villages = { tag = TUR level = 1 location = copa }
-	tribal_war_camp = { tag = TUR level = 1 location = mapa }
-	tribal_market_villages = { tag = TUR level = 1 location = mapa }
-	tribal_war_camp = { tag = TUR level = 1 location = susaco }
-	tribal_market_villages = { tag = TUR level = 1 location = susaco }
-	tribal_war_camp = { tag = TUR level = 1 location = khumar }
-	tribal_war_camp = { tag = TUR level = 1 location = rim_gora }
-	tribal_war_camp = { tag = TUR level = 1 location = arkhyz }
-	tribal_market_villages = { tag = TUR level = 2 location = arkhyz }
-	tribal_war_camp = { tag = TUR level = 1 location = targim }
-	tribal_war_camp = { tag = TUR level = 1 location = argun }
-	tribal_war_camp = { tag = TUR level = 1 location = koban }
-	tribal_market_villages = { tag = TUR level = 1 location = koban }
-	tribal_war_camp = { tag = TUR level = 1 location = tsontaroy_kala }
-	tribal_market_villages = { tag = TUR level = 1 location = tsontaroy_kala }
-	tribal_war_camp = { tag = TUR level = 1 location = simsir }
-	tribal_market_villages = { tag = TUR level = 1 location = simsir }
+	tribal_war_camp = { tag = GLH level = 1 location = izium }
+	tribal_market_villages = { tag = GLH level = 1 location = izium }
+	tribal_war_camp = { tag = GLH level = 1 location = vovchansk }
+	tribal_market_villages = { tag = GLH level = 1 location = vovchansk }
+
+	tribal_war_camp = { tag = GLH level = 1 location = kupiansk }
+	tribal_market_villages = { tag = GLH level = 1 location = kupiansk }
+	tribal_war_camp = { tag = GLH level = 1 location = alexeyevka }
+	tribal_market_villages = { tag = GLH level = 1 location = alexeyevka }
+	tribal_war_camp = { tag = GLH level = 1 location = rossosh }
+	tribal_market_villages = { tag = GLH level = 1 location = rossosh }
+	tribal_war_camp = { tag = GLH level = 1 location = voronezh }
+	tribal_market_villages = { tag = GLH level = 1 location = voronezh }
+	tribal_war_camp = { tag = GLH level = 1 location = tambov }
+	tribal_market_villages = { tag = GLH level = 1 location = tambov }
+	tribal_war_camp = { tag = GLH level = 1 location = bondari }
+	tribal_market_villages = { tag = GLH level = 1 location = bondari }
+	tribal_war_camp = { tag = GLH level = 1 location = kadom }
+	tribal_hunting_lodge = { tag = GLH level = 1 location = kadom }
+	tribal_war_camp = { tag = GLH level = 1 location = atrat }
+	tribal_hunting_lodge = { tag = GLH level = 1 location = atrat }
+
+	tribal_war_camp = { tag = GLH level = 1 location = rovenky }
+	tribal_market_villages = { tag = GLH level = 1 location = rovenky }
+	tribal_war_camp = { tag = GLH level = 1 location = tatsinskaya }
+	tribal_market_villages = { tag = GLH level = 1 location = tatsinskaya }
+	tribal_war_camp = { tag = GLH level = 1 location = qalancaq }
+	tribal_market_villages = { tag = GLH level = 1 location = qalancaq }
+	tribal_war_camp = { tag = GLH level = 1 location = tighina }
+	tribal_market_villages = { tag = GLH level = 1 location = tighina }
+	tribal_war_camp = { tag = GLH level = 1 location = armavir }
+	tribal_market_villages = { tag = GLH level = 1 location = armavir }
+	tribal_war_camp = { tag = GLH level = 1 location = yessentuq }
+	tribal_market_villages = { tag = GLH level = 1 location = yessentuq }
+	tribal_war_camp = { tag = GLH level = 1 location = dzhulat }
+	tribal_market_villages = { tag = GLH level = 1 location = dzhulat }
+	tribal_war_camp = { tag = GLH level = 1 location = shkhancheriekhabl }
+	tribal_war_camp = { tag = GLH level = 1 location = maykop }
+	tribal_market_villages = { tag = GLH level = 1 location = maykop }
+	tribal_war_camp = { tag = GLH level = 1 location = khadyzhi }
+	tribal_war_camp = { tag = GLH level = 1 location = shanjir }
+	tribal_market_villages = { tag = GLH level = 1 location = shanjir }
+	tribal_war_camp = { tag = GLH level = 1 location = copa }
+	tribal_market_villages = { tag = GLH level = 1 location = copa }
+	tribal_war_camp = { tag = GLH level = 1 location = mapa }
+	tribal_market_villages = { tag = GLH level = 1 location = mapa }
+	tribal_war_camp = { tag = GLH level = 1 location = susaco }
+	tribal_market_villages = { tag = GLH level = 1 location = susaco }
+	tribal_war_camp = { tag = GLH level = 1 location = khumar }
+	tribal_war_camp = { tag = GLH level = 1 location = rim_gora }
+	tribal_war_camp = { tag = GLH level = 1 location = arkhyz }
+	tribal_market_villages = { tag = GLH level = 2 location = arkhyz }
+	tribal_war_camp = { tag = GLH level = 1 location = targim }
+	tribal_war_camp = { tag = GLH level = 1 location = argun }
+	tribal_war_camp = { tag = GLH level = 1 location = koban }
+	tribal_market_villages = { tag = GLH level = 1 location = koban }
+	tribal_war_camp = { tag = GLH level = 1 location = tsontaroy_kala }
+	tribal_market_villages = { tag = GLH level = 1 location = tsontaroy_kala }
+	tribal_war_camp = { tag = GLH level = 1 location = simsir }
+	tribal_market_villages = { tag = GLH level = 1 location = simsir }
 	tribal_war_camp = { tag = TUR level = 1 location = terek }
 	tribal_war_camp = { tag = TUR level = 1 location = endirey }
 	tribal_war_camp = { tag = TUR level = 1 location = boynak }
@@ -6030,12 +6064,73 @@ building_manager = {
 	tribal_market_villages = { tag = CHI level = 1 location = alyanbulag }
 	tribal_war_camp = { tag = CHI level = 1 location = eroo }
 	tribal_market_villages = { tag = CHI level = 1 location = eroo }
+	tribal_hunting_lodge = { tag = CHI level = 1 location = eroo }
+	tribal_hunting_lodge = { tag = CHI level = 1 location = khadanzaa }
+	tribal_hunting_lodge = { tag = CHI level = 1 location = ung }
 	tribal_war_camp = { tag = CHI level = 1 location = manzushir }
 	tribal_market_villages = { tag = CHI level = 1 location = manzushir }
 	tribal_war_camp = { tag = CHI level = 1 location = suriig }
 	tribal_market_villages = { tag = CHI level = 1 location = suriig }
 	tribal_war_camp = { tag = CHI level = 1 location = takhilyn }
 	tribal_market_villages = { tag = CHI level = 1 location = takhilyn }
+
+	hand_cannon_guild = { tag = CHI level = 2 location = dadu }
+
+	kurultai = { tag = CHI level = 1 location = ulan_hua }
+	tribal_war_camp = { tag = CHI level = 1 location = ulan_hua }
+	tribal_market_villages = { tag = CHI level = 3 location = ulan_hua }
+
+	marketplace	= { tag = CHI level = 6 location = karakorum }
+	kurultai = { tag = CHI level = 1 location = karakorum }
+	slave_market = { tag = CHI level = 1 location = karakorum }
+	tannery = { tag = CHI level = 4 location = karakorum }
+	lumber_mill = { tag = CHI level = 1 location = karakorum }
+	tar_kiln = { tag = CHI level = 2 location = karakorum }
+
+	tar_kiln = { tag = CHI level = 1 location = sulkhari }
+
+	tribal_war_camp = { tag = CHI level = 1 location = avraga }
+	tribal_market_villages = { tag = CHI level = 1 location = avraga }
+	tribal_war_camp = { tag = CHI level = 1 location = hulun }
+	tribal_market_villages = { tag = CHI level = 2 location = hulun }
+	forest_village = { tag = CHI level = 1 location = ongiin_khiid }
+	forest_village = { tag = CHI level = 2 location = manzushir }
+	forest_village = { tag = CHI level = 1 location = bornuur }
+
+	tribal_war_camp = { tag = CHI level = 1 location = kailu }
+	tribal_market_villages = { tag = CHI level = 3 location = kailu }
+	tribal_war_camp = { tag = CHI level = 1 location = zhengjiatun }
+	tribal_market_villages = { tag = CHI level = 2 location = zhengjiatun }
+	tribal_war_camp = { tag = CHI level = 1 location = yehe }
+	tribal_market_villages = { tag = CHI level = 2 location = yehe }
+	tribal_war_camp = { tag = CHI level = 1 location = nongan }
+	tribal_market_villages = { tag = CHI level = 2 location = nongan }
+	tribal_war_camp = { tag = CHI level = 1 location = huolin }
+	tribal_market_villages = { tag = CHI level = 2 location = huolin }
+	tribal_war_camp = { tag = CHI level = 1 location = gorlos }
+	tribal_market_villages = { tag = CHI level = 2 location = gorlos }
+	tribal_war_camp = { tag = CHI level = 1 location = xinkai }
+	tribal_market_villages = { tag = CHI level = 2 location = xinkai }
+	tribal_war_camp = { tag = CHI level = 1 location = wafang }
+	tribal_market_villages = { tag = CHI level = 2 location = wafang }
+	tribal_war_camp = { tag = CHI level = 1 location = sorin_nuur }
+	tribal_market_villages = { tag = CHI level = 2 location = sorin_nuur }
+	
+	tribal_war_camp = { tag = CHI level = 1 location = sonod }
+	tribal_market_villages = { tag = CHI level = 1 location = sonod }
+	tribal_war_camp = { tag = CHI level = 1 location = avga }
+	tribal_market_villages = { tag = CHI level = 1 location = avga }
+	tribal_war_camp = { tag = CHI level = 1 location = baganuur }
+	tribal_market_villages = { tag = CHI level = 1 location = baganuur }
+	tribal_war_camp = { tag = CHI level = 1 location = erenkhot }
+	tribal_market_villages = { tag = CHI level = 1 location = erenkhot }
+	tribal_war_camp = { tag = CHI level = 1 location = bathahalak }
+	tribal_market_villages = { tag = CHI level = 1 location = bathahalak }
+	tribal_war_camp = { tag = CHI level = 1 location = uraqai }
+	tribal_market_villages = { tag = CHI level = 1 location = uraqai }
+	tribal_war_camp = { tag = CHI level = 1 location = bayannur }
+	tribal_market_villages = { tag = CHI level = 1 location = bayannur }
+
 
 	tribal_market_villages = { tag = GLH level = 1 location = tagatay }
 	tribal_market_villages = { tag = GLH level = 1 location = tokrau }
@@ -6046,6 +6141,7 @@ building_manager = {
 	tribal_market_villages = { tag = GLH level = 1 location = or_aktobe }
 	tribal_market_villages = { tag = GLH level = 1 location = kumak }
 	tribal_market_villages = { tag = GLH level = 1 location = syun }
+
 
 
 	#middle_east
@@ -7752,7 +7848,7 @@ building_manager = {
 
 	br_latin_trading_base = { tag = GTC level = 1 location = cesme }
 	br_latin_garrison = { tag = GTC level = 1 location = cesme }
-	forest_village= { tag = GTC level = 3 location = cesme }
+	forest_village = { tag = GTC level = 3 location = cesme }
 
 	trade_company_governance = { tag = GTC level = 2 location = genoa }
 	br_latin_harbor = { tag = GTC level = 1 location = trebizond }

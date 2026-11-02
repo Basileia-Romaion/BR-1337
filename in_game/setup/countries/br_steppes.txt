@@ -27,9 +27,38 @@ REPLACE_OR_CREATE:GAZ = {
 INJECT:GLH = {
 	culture_definition = astrakhani
 }
-G0L = {
+
+G0L = { #Sibir
 	color = rgb { 16 41 202 }
 	culture_definition = yerle_qaliq_culture
+	religion_definition = tengri
+}
+
+G1L = { #Ak Orda
+	color = rgb { 75 80 125 }
+
+	culture_definition = uzbek_culture
+	religion_definition = tengri
+}
+
+G2L = { #Khorazm
+	color = rgb { 127 106 0 }
+
+	culture_definition = nogai
+	religion_definition = sunni
+}
+
+G3L = { #Bulghar
+	color = rgb { 97 102 135 }
+
+	culture_definition = bolghar_culture
+	religion_definition = sunni
+}
+
+G4L = { #Desht-i Qipchaq
+	color = rgb { 89 134 166 }
+	
+	culture_definition = mishar
 	religion_definition = tengri
 }
 
@@ -53,3 +82,13 @@ BA2 = {
 	culture_definition = estonian
 	religion_definition = muinaisusko
 }
+
+
+
+
+
+
+
+
+### Asia
+

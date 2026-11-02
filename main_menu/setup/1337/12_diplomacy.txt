@@ -98,6 +98,14 @@ diplomacy_manager = {
 	
 	# Golden Horde
 
+    dependency = { first = GLH second = G1L subject_type = vassal }
+	dependency = { first = GLH second = G2L subject_type = vassal }
+	dependency = { first = GLH second = G3L subject_type = vassal }
+	dependency = { first = GLH second = G4L subject_type = vassal }
+    dependency = { first = GLH second = CRI subject_type = vassal }
+	dependency = { first = GLH second = ATR subject_type = vassal }
+
+
 	#Moldova
 	dependency = { first = GLH second = BIA subject_type = tributary }
 	dependency = { first = GLH second = BLD subject_type = tributary }
@@ -1024,10 +1032,10 @@ diplomacy_manager = {
 
     #-------------Mongolia----------
     dependency = { first = CHI second = OGE subject_type = vassal }
-    dependency = { first = OGE second = BAT subject_type = vassal }
-    dependency = { first = OGE second = CRS subject_type = vassal }
-    dependency = { first = OGE second = KHD subject_type = vassal }
-    dependency = { first = OGE second = TRH subject_type = vassal }
+    dependency = { first = CHI second = BAT subject_type = vassal }
+    dependency = { first = CHI second = CRS subject_type = vassal }
+    dependency = { first = CHI second = KHD subject_type = vassal }
+    dependency = { first = CHI second = TRH subject_type = vassal }
     dependency = { first = CRS second = TVA subject_type = vassal }
     dependency = { first = CHI second = BGT subject_type = vassal }
     dependency = { first = CHI second = HCN subject_type = vassal }

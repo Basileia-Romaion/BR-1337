@@ -2817,9 +2817,8 @@ countries = {
 			dalneye_konstantinovo
 			pavlovo
 
-			#uren tonshayevo vetluga semyonov kovernino krasnye_baki sharanga varnavino
-			
-			#khakhaly raznezhye voskresenskoye
+			uren tonshayevo vetluga semyonov kovernino krasnye_baki sharanga varnavino
+			khakhaly raznezhye voskresenskoye kozmodemyansk
 		}
 
 		starting_technology_level = 3
@@ -2930,7 +2929,7 @@ countries = {
 		own_control_integrated = {
 			klepiki
 			kasimov
-			ardatov
+			#ardatov
 		}
 
 		starting_technology_level = 3
@@ -3291,14 +3290,15 @@ countries = {
 
 	VYT = {
 		own_control_core = {
-			nikolsk
+			vyatka nikolsk
 		}
 
 		own_control_integrated = {
-			vyatka ust_cheptsa suna verkhoshizhemye orlov belozerye slobodskoy
+			ust_cheptsa suna verkhoshizhemye orlov belozerye slobodskoy
 			oparino obyachevo lalsk vokhma
 			podosinovets omutninsk kholunitsky kobra nagorsk
-			nikolsky koksharov bolshaya_yakshanga 
+			nikolsky koksharov bolshaya_yakshanga
+			kabachischi kiknur kilmez kutarka morki sernur ural_nema urzhum vyatskiye_polyany yaransk yelabuga yoshkar_ola
 		}
 
 		starting_technology_level = 3
@@ -3378,7 +3378,7 @@ countries = {
 		own_control_core = {
 			cherdyn nyrob ust_kulom lupya chernaya troitsko_pechorsk vukyl ukhta kortkeros ust_vym zheshart
 			ust_sysola vizinga koygorodok kirs afanasyevo siva karagay nytva perm kungur 
-			beryozovka lysva kizel gubakha dobryanka solikamsk
+			lysva beryozovka kizel gubakha dobryanka solikamsk
 			usolye yusva chyormoz kudymkar kelich kosa_perm gayny 
 			ochyor okhannoye chastye debyosy stepanenki
 			igra dondykar yakshur_bodya votkings sarapul mozhga izhevsk vavozh_mozhga 
@@ -3387,7 +3387,7 @@ countries = {
 
 		own_control_integrated = {
 			aspa suksun ust_kishert orda kasevo yanaul tatyshly saygatsky yelovo osa 
-			yelabuga vyatskiye_polyany kilmez ural_nema
+			#kilmez ural_nema vyatskiye_polyany yelabuga
 		}
 
 		starting_technology_level = 3
@@ -3895,10 +3895,10 @@ countries = {
 
 	GLH = {
 		type = army
-		own_control_integrated = {
+		own_control_core = {
 			bol_shaya_martynovka cheplak bolshoy_gashun dubovskoye ust_tsimla konstantinovsk
-			tatsinskaya tormosin kremenskaya kletskaya ust_medveditskaya nizhny_chir anna_russia
-			novaya_pokrovka semidesyatnoye zemlyansk rossosh borisoglebsk bannoye sadovoye
+			tatsinskaya tormosin kremenskaya kletskaya ust_medveditskaya nizhny_chir
+			borisoglebsk bannoye sadovoye
 			bolshaya_gribanovka buturlinovka verkhny_mamon zimnyatsky malodelskaya ilovlya
 			atkarsk lysye_gory yekaterinovka balanda rtishchevo balashov turki arkadak
 			sosnovy_ostrov malykovka novye_burasy tereshka petrovsk mechet stepanevka
@@ -3906,132 +3906,52 @@ countries = {
 			kotovo kamyshin goly_karamysh pologoye_zaymishche srednyaya_akhtuba bykovo
 			elton zolotari berezhnovka kalmyk karatobe shyngyrlau aksay_pointic zhympity
 			terekti oral ryn saryadyn ushtagan sarayjuk kisikkamys kulagin talowski
-			astrakhan khosheutovo krasny_yar ganyushkino zamyany yenotayevka sapara
-			chernyye_zemli ikryanoye chyorny_yar nikolskoye_pontic malye_derbety
+			yenotayevka sapara
+			chernyye_zemli chyorny_yar nikolskoye_pontic malye_derbety
 			sadovoye_kalmykia ded_khulsun zavetnoye bolkhuny mikhaylovka_pontic
 			rechnoye bokey botkul zhanybek piterka krasny_kut_pontic mokrous
 			savinka rovnoye pokrovsk baronsk taskala dergachi chertanla alexandrov_gay
 			ozinki mechetnaya perelyub ivanteyevka balakovo dukhovnitskoye
-			sakminskoye_vodokhranilishche yershov dardeling mekletin kok_usn yashkul
+			sakminskoye_vodokhranilishche yershov mekletin kok_usn yashkul
 			iki_burul priyutnoye elista remontnoye gorodovikovsk raguli majar zelenokumsk arzgir levokumskoye
-			naurskaya kara_bazaar terekli_mekteb kurskaya kamysh_burun baytak ilek
-			kargaly_aktobe kobda irek tas_kichu kaynar shagiz tenteksor mavliberda
-			kiyl koptam uil emba atzhaksy shatyrlysay temir or_aktobe
+			naurskaya kara_bazaar terekli_mekteb kurskaya kamysh_burun
+			kobda tas_kichu kaynar tenteksor mavliberda
+			
+			kiyl koptam
 
-			izium vovchansk nyzhnia_duvanka
-
-			seyitler kalay kezlev aqmecit or_qapi solkhat jurchi khadjibey teligol kuyanlik ananiv iagorlic dashev
-			balikley aqmecit_prybuzhzhya argamakli_sarai vithold_hammami harbuzynka oleshia bereznehuvate bashtanka tavan velyka_oleksandrivka qalancaq aslan_horod
-			ordu_bazar rohat_kermen enice velyka_lepetykha melitopol kyrylivka tokmak konski_vody kuchugur berdiansk
-			kupiansk posad velyka_novosilka domakha huliaipole shyrokyne vasylivka taganrog bakhmut sloviansk lysychansk
-			kreminna oleksandrivka bielska_sloboda bilovodsk novopskov kalnivka konstantinovka krasny_sulin
-			shakhty rovenky kalmius kamenskaya azok bagayevskaya shcherbinovka balzimachi kanevskaya starominskaya yegorlykskaya semikarakorsk
-			yundin mityakinskaya luhansk novoaidar belaya_kalitva millerovo oblivskaya
-			kashary chertkovo bokovskaya milyutinskaya boguchar ostrogozhsk
+			
+			azok bagayevskaya shcherbinovka balzimachi kanevskaya starominskaya yegorlykskaya semikarakorsk
+			yundin mityakinskaya belaya_kalitva millerovo oblivskaya
+			kashary chertkovo bokovskaya milyutinskaya boguchar
 			kalach uryupin mikhaylovka novoanninsky alexeyevskaya veesky kumylzhenskaya
 			yelan machekha novonikolayevsky samoylovka
 			novopavlovsk yessentuq alexandrovskoye blagodarnoye novoselitskoye
 			kalininskaya bryukhovetskaya bzhedygu_kal ust_labinsk pavlovskaya tbilisskaya romanovsky_khutor
 			adyukh stavropol grigoropolisskaya uspenskoye shad_kirman petrovskoye_pontic privolnoye belaya_glina peschanokopskoye
-			novo_alexandrovskoye bezopasnoye ipatovo bakanas ashchyozek dagandely koksala sayak
-			irgiz chet_irgiz karasay kayrakty sazanbay
-			zhuban_ana kaip_ata karagau korgan maulimberdy gebergeyel khaiylmysh khaqmar shikashin yuldibay tagatay dandybay karabay smai_samkai yegindybulak
-			sarykopa karasu saryozen ulkayak bolgan_ana aitbulat belen_ana talmas_ata tengiz kon_tengiz kulanotpes sonaly tokrau espe kusak zhamankul
-			aybas kabyrga karaturgay turgay zhaldama orda_bazar alashakhan baskamyr ulytau namjan atach ishkul kumak suyunduk tanalyk yaik
-			zhamshy kashkanteniz kyzylsay moiynty mukur yangikent buzikkala jubara karmakshi
-			sighnaq asanas barchkend jand kamyskala sozak aksumbe gulshara kyzylkorgan ran tasty
+			novo_alexandrovskoye bezopasnoye ipatovo
 
-			chilia cetatea_alba gura_galbenei sarata tighina chatyun kabachischi
-			zainsk syun verkhneyarkeyevo
-			menzelinsk lower_aktanyshbash chalninsky_pochinok chekmagush chishmy
-			ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo
-			sterlitamak bavly bugulma abdulino aznakayevo
-			sadak
-	
-			siletiteniz
-			tarankol kyzylzhar presnowka staroye stanitsa_kokchetavskaya
-			ufa askino baltas
-				
+			chatyun
 			alkhan_kala nazran dzhulat tatartup
-			promsa alatyr batyrevo
-			atrat altyshevo bolshoye_boldino shatki arzamas sarov lukoyanov krasnoslobodsk ruzayevka
-			insar temnikov tarbeevka zubova_polyana mokhcha nizhny_lomov zemetchino bondari
-			sergach chamzinka saransk lunino
-			pokrovskoye simbirsk cherdakly staraya_mayna melekess tetyushi sviyazhsk
-			atishchevo tsivilsk
-
-			bolshoye_murashkino kurmysh lyskovo perevoz sechenovo spasskoye_lyskovo
-			cheboksary alikovo vasilsursk
-			azeevo
-			kadom
-			ushkan koskuduk manysai shagan zhaksy_karasay
-			ketik_kala kabakty karatobe_mangyshlak kyzylkala
-			beleuli kyushe sam shuruk sisem_ata uchkuduk
-			pulzhai qonirat shimbay xojeli khurgancha
-			vezir urgench
-			kazan laish calli mamadysh bogatye_saby oli_baraza dobyaz
+			bondari
+			ushkan koskuduk zhaksy_karasay
+			samara
+			mordovo zherdevka uvarovo kirsanov rasskazovo tambov
+			staroyuryevo
 			
-			bolghar cukataw bilyar almetyevsk
-			tabynsky ishimbay beloretsk
-			buguruslan sergiyevsk
-			koshki kamyshla bolshoy_cheremshan staryi_amanak
-			samara shigony morkvash chebarkul miass
-			krasnaya_gorka belekes
-
-			
-			lipetsk usman mordovo zherdevka uvarovo kirsanov rasskazovo izberdey tambov ust_stanovykh_ryas
-			kozlov terbuny kastornoye chernyanka alexeyevka 
-			
-			korocha
-			staroyuryevo morsha sasovo nikolskoye bazarny_syzgan karsun
-			mokshan chembar
-			serdobinskaya malaya_serdoba shemysheyka
-			penza gorodishche russky_kameshkir staraya_kulatka solovtsovo
-			troitskoye_kuroedovo
-			
-			meleuz kapova_pesera
-			khvorostyanka stavropol_na_volge kondurcha pestravka
-			poganovka sorochinskaya buzuluk grachevka bol_shoy_uran malyy_uran
-			s_ezzaja bogatoye
-				
-			bayanaul shybyndy bozok_astana akkol
-			arykbalyk kak kokshetau shoindykol atbasar
-			kulykol zhetykol shoptikol siberia_tenteksor konildi
-			zharkol sasykkol kartaly alakol almenevo safkul shchuchye kargapolye kurtamysh
-			yetkul troitsk uyskoye
-			bolshoy_ik ust_katav mesyagutovo zlatoust
-				
-			burayevo
-
-			ukek teshevka voronezh oskol rovenki valuyki
-			karkaraly
-			kaynar_atbai
+			khvorostyanka pestravka
+			poganovka
+			ukek
 			armavir
-			qarasuvbazar
-			ismail
+
 
 			# might make unowned
-			fatezh kosozhichi sudzha rakitnoye
-			kolomak kotelva okhtyrka khotmyzh
 
 			#Formerly BR subjects
-
-			kichkas rozdory hryshyne pavlohrad 
-			yelanets ingul petrove 
-			karlivka berestyn samarchyk oril ternivka
-			kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
-			adalaga barvinkove
-			donets_kharkiv zmiiv chuhuiv
-			kursk olgov
-			manturovo_kursk troitskoye_na_shchigrakh
-			opalkova
-			belgorod muzhech oboyan
-			tula_russia bogoroditsk arkhangelskoye kurkino donkov yelets talitsa_yelets gogol
-			ust_livny
+			imantau
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"
-		include = "eurasian_horde"
+		include = "br_eurasian_horde"
 		country_rank = rank_kingdom
 
 		government = {
@@ -4067,32 +3987,19 @@ countries = {
 			
 			reforms = {
 				legacy_of_genghis
-				br_mongol_tolerance
+				
 			}
 			privilege = {
-				#joint_assembly_decrees
 				br_ghazi_privilege
-				urban_development_grants
-
-				dhimmi_abrahamic_communities
+				br_turkoman_privilege
+		
+				br_ottoman_dhimmi_levies
 				dhimmi_military_service
 				dhimmi_traditions
-				dhimmi_administrative_posts
 				dhimmi_land_rights
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
-				dhimmi_in_administration
-
-				
-				tribal_autonomy
-				tribes_land_rights
-				tribes_pasture_access
-				tribes_tribal_registry
-				tribes_protected_faith
-				tribes_in_administration
-				tribes_respect_tribal_traditions
 				
 			}
 			
@@ -4115,52 +4022,77 @@ countries = {
 		}
 
 		accepted_cultures = {
-			astrakhani
-			crimean
 			mongolian_culture
 			nogai
 			kazani
 			mishar
-			bolghar_culture
-		}
-
-
-		tolerated_cultures = {
-			bashkir
-			uzbek_culture
-			yerle_qaliq_culture
-			kyrgyz_culture
 		}
 
 	}
 
 
 	CRI = {
-		type = location
-		our_cores_conquered_by_others = {
-			qirq_yer qarasuvbazar seyitler solkhat kalay kezlev aqmecit jurchi or_qapi mapa susaco shanjir copa siba_circassia akhtar kalininskaya bryukhovetskaya 
-			bzhedygu_kal ust_labinsk pavlovskaya tbilisskaya romanovsky_khutor qalancaq aslan_horod ordu_bazar rohat_kermen enice velyka_lepetykha hryshyne sloviansk 
-			melitopol kyrylivka tokmak konski_vody kuchugur berdiansk taganrog velyka_novosilka domakha huliaipole shyrokyne vasylivka bakhmut lysychansk kreminna 
-			oleksandrivka posad azok bagayevskaya shcherbinovka balzimachi kanevskaya starominskaya yegorlykskaya tana krasny_sulin shakhty rovenky kalmius 
-			kamenskaya semikarakorsk yundin gorodovikovsk raguli privolnoye belaya_glina peschanokopskoye novo_alexandrovskoye bezopasnoye ipatovo
+		type = army
+		own_control_core = {
+			kalay kezlev aqmecit jurchi or_qapi
+			qirq_yer
+			seyitler solkhat qarasuvbazar
+
+			khadjibey teligol kuyanlik ananiv iagorlic khadzhibey_liman kuialnyk_liman
+			dashev balikley aqmecit_prybuzhzhya argamakli_sarai vithold_hammami harbuzynka
+			oleshia bereznehuvate bashtanka tavan velyka_oleksandrivka
+			qalancaq aslan_horod ordu_bazar rohat_kermen enice velyka_lepetykha
+
+			melitopol kyrylivka tokmak konski_vody kuchugur berdiansk
+			taganrog velyka_novosilka domakha huliaipole shyrokyne vasylivka
+			bakhmut lysychansk oleksandrivka posad
+
+			kichkas rozdory hryshyne pavlohrad
+			yelanets usivka mala_vyska umanske ingul petrove
+			karlivka kolomak berestyn samarchyk oril ternivka
+			kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
+
+			cetatea_alba sarata chilia ismail
+			gura_galbenei tighina
+
+			poltava kremenchuk velyki_sorochyntsi hovtva opishnya
+			barvinkove adalaga sloviansk
+
+			luhansk
+			krasny_sulin shakhty rovenky kalmius kamenskaya
 		}
 		
 		starting_technology_level = 3
 		include = "expl_mongols"
-		include = "eurasian_horde_not_present"
+		include = "br_eurasian_horde"
 		country_rank = rank_duchy
 
-		capital = tana
+		capital = qalancaq
 		
 		religious_school = hanafi_school
 		government = { 
+			ruler_term = {	 character = glh_jani_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_jani_beg_borjigin
+
 			mysticism_vs_jurisprudence = -15 
 			laws = {
-				legal_code_law = sharia_law_policy
 				sharia_law = hanafi_policy
-				marriage_law = muslim_marriage
-				heir_religion_law = heir_same_religion
 			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		accepted_cultures = {
+			#mongolian_culture
+			alan_culture
 		}
 	}
 
@@ -4194,29 +4126,50 @@ countries = {
 	
 	ATR = {
 		type = location
+		own_control_core = {
+			astrakhan khosheutovo krasny_yar ganyushkino
+			zamyany ikryanoye
+			dardeling
+		}
 		our_cores_conquered_by_others = {
+			yenotayevka sapara chernyye_zemli
+			mekletin kok_usn iki_burul
 			bol_shaya_martynovka cheplak bolshoy_gashun dubovskoye ust_tsimla konstantinovsk tatsinskaya tormosin kremenskaya kletskaya ust_medveditskaya 
 			oblivskaya nizhny_chir zimnyatsky malodelskaya ilovlya mechet stepanevka sarai_al_jadid beljamen zenzevatka nagavskaya aksay rudnya_pontic 
-			danilovka kotovo kamyshin goly_karamysh astrakhan khosheutovo krasny_yar ganyushkino pologoye_zaymishche srednyaya_akhtuba bykovo elton 
-			zolotari berezhnovka zamyany yenotayevka sapara chernyye_zemli ikryanoye chyorny_yar nikolskoye_pontic malye_derbety sadovoye_kalmykia 
-			ded_khulsun zavetnoye bolkhuny mikhaylovka_pontic rechnoye botkul dardeling mekletin kok_usn yashkul iki_burul priyutnoye elista remontnoye savinka rovnoye 
+			danilovka kotovo kamyshin goly_karamysh pologoye_zaymishche srednyaya_akhtuba bykovo elton 
+			zolotari berezhnovka chyorny_yar nikolskoye_pontic malye_derbety sadovoye_kalmykia 
+			ded_khulsun zavetnoye bolkhuny mikhaylovka_pontic rechnoye botkul yashkul priyutnoye elista remontnoye savinka rovnoye 
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"
-		include = "eurasian_horde_not_present"
+		include = "br_eurasian_horde"
 		country_rank = rank_duchy
 		religious_school = hanafi_school
 		
 		capital = astrakhan
 		
 		government = { 
+			ruler_term = {	 character = glh_berdi_beg_borjigin start_date = 1311.1.1 regnal_number = 1	}
+			ruler = glh_berdi_beg_borjigin
+
 			mysticism_vs_jurisprudence = -15 
 			laws = {
-				legal_code_law = sharia_law_policy
 				sharia_law = hanafi_policy
-				marriage_law = muslim_marriage
-				heir_religion_law = heir_same_religion
 			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		accepted_cultures = {
+			mongolian_culture
 		}
 	}
 
@@ -6125,16 +6078,12 @@ countries = {
 				#Dhimmi
 				dhimmi_land_rights
 				dharmic_dhimmi_communities
-				dhimmi_administrative_posts
-				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_military_service
 				dhimmi_traditions
 				dhimmi_promote_tolerance
 				dhimmi_legal_autonomy
-				dhimmi_promote_dhimmi_hierarchy
 				dhimmi_mazalim_court
-				dhimmi_in_administration
 			}
 			bureaucracies = {
 				# The Persian-style chancery was the defining institution of Delhi's administration.
@@ -23245,9 +23194,7 @@ countries = {
 				tribes_allow_gatherings
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
 			}
 			
 			spiritualist_vs_humanist = 50
@@ -30501,14 +30448,13 @@ countries = {
 			qujiang hanguang mengli lechang wengyuan renhua ruyuan yingde
 			gaoyao yangchun duanxi enping gaoming guliang fengchuan shuangshui guangning_zhaoqing sanshui duling sihui xinxing_nanen ducheng yangjiang jinkang
 			lingui guanyang liupu dayaoshan lipu lingchuan yining luorong lishan_pingle qingxiang xingan xiyan yangshuo yongfu
-			wangmu luodian
 			maping changan shanglin liucheng luocheng huaiyuan_rongzhou qianjiang_binzhou rongshui tongdao_rongzhou wuxian_liuzhou yangshou laibin
 			langning wuyuan_nanning yongning_hengzhou qianlong
 			pingle linhe fengcheng gongcheng guiling longping_pingle fuchuan
 			cangwu bobai cenxi dongan wutun huaiji beiliu rongcheng luchuan_rongzhou puning_rongzhou shahe_bobai tanjin nanliu
 			guiping luoxiu guizhou_xunzhou pingnan watang
-			bazhai_duyun dushan
-			bafan
+			bazhai_duyun
+			
 			qingjiang_liping taigong
 			ganzhou gaotai hongshui liyuan qidaban qilian sanjiaocheng shandan yongchang_ganzhou
 			anding_suzhou dangcheng kuyu_shazhou guazhou jinta shazhou suzhou_gansu chijin yangguan
@@ -30525,7 +30471,7 @@ countries = {
 			anding baoan yichuan fugu fuzhou_yanan ganquan kaiguang huaiyuan_mizhi jiazhou luochuan dingrong suide mizhi zhongbu qingjian shenmu fushi yanchang yanchuan yijun yulin jingbian ansai
 			langzhong jiachuan huacheng miangu zhangming zengkou cangxi nanjiang nanbu tongjiang puan zhaohua zitong
 			chengdu anzhou zixian jinyuan deyang guanzhou shifang jianzhou mianzhou mianzhu neijiang pixian shiquan_maozhou shuangliu pengshan renshou xindu jingyan jintang ziyang_zizhong
-			baxian tongliang banan bishan changshou_changshou rongchang fuzhou_sichuan dianjiang pengshui shizhao jiangjin qianjiang_shaoqing dazu nanchuan fengdu wulong dingyuan yongchuan linjiang
+			baxian dazu tongliang banan bishan changshou_changshou rongchang fuzhou_sichuan dianjiang pengshui shizhao jiangjin qianjiang_shaoqing dazu nanchuan fengdu wulong dingyuan yongchuan linjiang
 			longyou_jiading emei jiajiang rongzhou weiyuan_jiading qianwei
 			fengjie xinning_dazhou daning_kuizhou tongchuan_dazhou dongxiang_dazhou kaizhou liangshan mingtong wanzhou taiping wushan jianshi yunyang
 			luzhou naxi hejiang jiangan
@@ -30533,62 +30479,19 @@ countries = {
 			qiongzhou pujiang_qiongzhou dayi
 			qingchuan
 			nanchong yingshan_shunqing huaying xichong yilong linshui qujiang_guangan liujiang yuechi xiangru dazhu
-			huili huichuan_dechang kuozhou puge
-			qixian_tongchuan pengxi lezhi xiaoxi shehong anyue yanting zhongjiang suining
+
+			qixian_tongchuan pengxi lezhi xiaoxi shehong anyue yanting zhongjiang suining dazu tongliang
 			yibin changning_changning fushun nanxi qingfu xuanhua
 			mingshan yandao rongjing
 
-			#Mongolia
-			avraga rahsaan_khad 
-			enhe_hada jiliu lower_gazimur merelka urov
-			choyrin_datsan bayan gazrin_chuluu takhilyn ulziit
-			tavan_tolgoi sumtiin zara_uul
-			jingzhou_dorbod bathahalak chahar muumyangan ulan_hua ulanchab
-			erenkhot avga baganuur khobootsar shuluun_khoboot_tsagaan sonod
-			bishreit dalay doloodyn_gobi ikh_narttin_chuluu saikhandulaan ulaanbadrakh
-			kyakhta khadanzaa 
-			selenge khimni ulenkhe zed zelterijin
-			amarbayas_galang bornuur eroo
-			sulkhari khilgo khilgoson ung
-			ude_baikal anaa bureen khudan khurbe
-			silkari kara_shilka
-			bayankhot alxa bagh bayannurhong urad
-			del_khad galbyn_gobi khatanbulag oiyin_korken ooshiyn_gobi zhavklant_khairkhan
-			bayannur uraqai xinhure
-			banzart_khairkhan zag_suujiyn_gobi
-			ordos aerzhai otog tongwancheng
-			karakorum orkhon
-			alyanbulag tarvagatai
-			urga kedun khar_bukhyn kharuukh manzushir tuul
-			ongiin_khiid gimpil_darjaalan shaazan_khot shaazan_tolgoi suriig
-			ulaan bogd khadat ukhaa_khudag
-			fuxin
+			chahar ulanchab
+			khobootsar shuluun_khoboot_tsagaan
+			ordos tongwancheng
 		}
 
 		own_control_integrated = {
-			nurchuu kuenga uryum
 			lingfang xuanhua_nanning ningpu
-
-			amgun dukin dzhuk imilen kerbi suluk 
-			nurgan bulava shantar torom tugur usalgin
-			achan nemptu simmi uninka xungake
-			kedar bitki evur pilda uschu
-			nanghaer idy_sakhalin porokotan wuliehe
-			guohuo boluohe kushunkotan nayoro
-			datta deren kema koppi samarginka tumzhdin
-			urmi bidzhan bira kukan kur sutara
-			namunka noto_ussuri
-			bikinka xunka
-			chalin
-			mergen dobkuri gan kuile menlu non
-			yakesa amazar emuer mohe ollo urka
-			gilyuy bryante mogot tukuringra tynda urkan
-			humar bir_amur kuanhe pangu sahar tahe
-			aigun arkhara chenqing jiajin taowen nioman xunhe zhanhe
-			gromatukha birma tehcha tom tygde yor
-			selemde burunda buse kogan mamyn nehru ulma
-			upper_nioman akishma olongki tujun tyrma urgal
-			djee argi dep kupuri mulmuga tok
+			fuxin
 		}
 
 		own_control_conquered = {
@@ -30720,19 +30623,19 @@ countries = {
 			modifier = "chi_factional_strife"
 			start_date = 1328.1.1
 			date = 1368.1.1
-			size = 0.75
+			size = 0.5
 		}
 		timed_modifier = {
 			modifier = "chi_administration_in_disarray"
 			start_date = 1328.1.1
 			date = 1368.1.1
-			size = 0.75
+			size = 0.5
 		}
 		timed_modifier = {
 			modifier = "chi_yuan_religious_stability"
 			start_date = 1337.1.1
 			date = 1368.1.1
-			size = 0.75
+			size = 0.5
 		}
 
 		currency_data = {
@@ -30776,7 +30679,13 @@ countries = {
 			modifier = "br_lucky_country_buff"
 			start_date = 1333.1.1
 			date = 1450.1.1
-			size = 0.75
+			size = 1.0
+		}
+		timed_modifier = {
+			modifier = "br_levy_size_modifier"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 0.5
 		}
 		country_rank = rank_kingdom
 		capital = shangyuan
@@ -31089,65 +30998,21 @@ countries = {
 	}
 
 	OGE = { #Ögedei Horde
-	type = army
-	own_control_core = {
-		kurchum kandysu kokpekty shar zyryan
-		arkat sarybulak 
-		zmeinogorsk shemonayevskoye oskemen ust_kalmanka
-		altayskoye onguday ust_koksa smolenskoye 
-		ayagoz 
-		burqin jeminay 
-		tsagaan_usun
-
-		karasor balyktykol tuzdysor zhalauly
-		zhanaarka takhir
-		abakasnk beya shushenskoye
-		#verkhotomsk kolchugino
-		taskayevo
-		imakia zhelezin lebyazhye
-		bursol kuchukskoye volchikha butyrskoe
-		kuznetsk salair kytmanovo ust_kabyrza askiz
-		mayma biysk
-		suzun berdsk chesnokovka kalmanka barnaul
-		krivoshchekovo kamen dovolnoye #kozhevnikovo bolotnye
-	}
-
-	starting_technology_level = 3
-	include = "expl_mongols"
-	include = "eurasian_horde_no_muslim"
-	government = {
-
-		type = steppe_horde
-		heir_selection = tribal_oldest_male
-		ruler = oge_temurchi_borjigin
-
-		ruler_term = { character = oge_temurchi_borjigin start_date = 1333.1.1 regnal_number = 1	}
-
-		reforms = {
-			legacy_of_genghis
-		}
-	}
-	country_rank = rank_kingdom
-
-	tolerated_cultures = {
-		uzbek_culture
-		telengit_culture
-	}
-
-	capital = kurchum
-}
-
-	BAT = { #Baatud Horde
 		type = army
 		own_control_core = {
-			altayn_ovor_gobi naomao zuun_garyn_gobi
-			otegu_qulan bugat chikhan_agui tevsh_uul tsogt
-			tost_uul gaxun_gobi shargyn_gobi shira_qulusun
-			noyon_uul 
-			niuquanzi 
+			kurchum kandysu kokpekty shar zyryan
+			arkat sarybulak 
+			zmeinogorsk shemonayevskoye oskemen ust_kalmanka
+			altayskoye onguday ust_koksa smolenskoye 
 		}
+
 		own_control_integrated = {
-			barkul santokhe khara_khoto naraan_chilaun 
+			ayagoz 
+			burqin jeminay 
+			tsagaan_usun
+			imakia lebyazhye tuzdysor karasor karkaraly balyktykol
+			takhir kaynar_atbai zhanaarka 
+			bursol kuchukskoye volchikha butyrskoe
 		}
 
 		starting_technology_level = 3
@@ -31157,13 +31022,59 @@ countries = {
 
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
-			ruler = random
+			ruler = oge_temurchi_borjigin
+
+			ruler_term = { character = oge_temurchi_borjigin start_date = 1333.1.1 regnal_number = 1	}
+
+			reforms = {
+				legacy_of_genghis
+			}
+		}
+		country_rank = rank_kingdom
+
+		accepted_cultures = {
+			oirat_culture
+			uzbek_culture
+		}
+		tolerated_cultures = {
+			telengit_culture
+		}
+
+		capital = kurchum
+	}
+
+	BAT = { #Baatud Horde
+		type = army
+		own_control_core = {
+			altayn_ovor_gobi naomao zuun_garyn_gobi
+			otegu_qulan bugat chikhan_agui tevsh_uul tsogt
+			tost_uul gaxun_gobi shargyn_gobi shira_qulusun
+			noyon_uul
+			niuquanzi 
+		}
+		own_control_integrated = {
+			oiyin_korken del_khad
+			naraan_chilaun banzart_khairkhan zag_suujiyn_gobi 
+			barkul santokhe khara_khoto 
+		}
+
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "eurasian_horde_no_muslim"
+		government = {
+
+			type = steppe_horde
+			heir_selection = tribal_oldest_male
+			ruler = bgt_alguncha_borjigin
+
+			ruler_term = { character = bgt_alguncha_borjigin start_date = 1330.1.1 regnal_number = 1	}
 
 			reforms = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
+			tumed_culture
 			mongolian_culture
 		}
 
@@ -31197,13 +31108,15 @@ countries = {
 
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
-			ruler = random
+			ruler = qas_shiliemen_borjigin
+
+			ruler_term = {	 character = qas_shiliemen_borjigin start_date = 1329.2.5 regnal_number = 1	}
 
 			reforms = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -31227,13 +31140,15 @@ countries = {
 
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
-			ruler = random
+			ruler = hcn_munanzi_borjigin
+
+			ruler_term = {	 character = hcn_munanzi_borjigin start_date = 1330.1.1 regnal_number = 1	}
 
 			reforms = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -31254,13 +31169,14 @@ countries = {
 
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
-			ruler = random
+			ruler = oge_temurchi_borjigin
 
+			ruler_term = { character = oge_temurchi_borjigin start_date = 1333.1.1 regnal_number = 1	}
 			reforms = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -31297,12 +31213,16 @@ countries = {
 	BGT = { #Belgutei Horde
 		type = army
 		own_control_core = {
-			onon balj baldan_bereeven kyra
-			bars_khot bayan_tumen bayantsagaan menen
-			lower_ulz upper_ulz yakhi
-			kherlen uguumur undurkhaan
-			khan_khentii tsokh
-			ingedei 
+			jingzhou_dorbod bathahalak muumyangan ulan_hua
+			erenkhot avga baganuur sonod
+			wuchuan xinhure
+			bayannur uraqai yinshan
+			urad bagh bayannurhong bayankhot
+
+			galbyn_gobi khatanbulag ooshiyn_gobi zhavklant_khairkhan
+			dalay ulaanbadrakh
+			alxa
+			aerzhai otog
 		}
 
 		starting_technology_level = 3
@@ -31322,29 +31242,28 @@ countries = {
 		}
 		country_rank = rank_kingdom
 
-		tolerated_cultures = {
-			
+		accepted_cultures = {
+			tumed_culture
 		}
 
-		capital = balj
+		capital = ulan_hua
 	}
 
 	HCN = { #Hachiun Horde
 		type = army
 		own_control_core = {
-			avnagar chono khuuchid sangiin_dalai sorin_nuur ulgain uzemchin
-			haihaer kailu linhuang qingzhou_mongol xinkai
-			pingdisonglin quanning yingchang 
-			tuliemao 
-			buir_nuur barun_xiabaer tamsabulag
-			matad sharga_uul 
+			avraga bayan bishreit bornuur choyrin_datsan doloodyn_gobi gazrin_chuluu gimpil_darjaalan ikh_narttin_chuluu karakorum kedun khar_bukhyn kharuukh manzushir matad ongiin_khiid orkhon rahsaan_khad shaazan_khot shaazan_tolgoi sharga_uul sumtiin suriig takhilyn tavan_tolgoi tevsh_uul tuul urga zara_uul
+		
+			saikhandulaan
+			ulziit
+			ulaan bogd khadat ukhaa_khudag
 		}
+
 
 		starting_technology_level = 3
 		include = "expl_mongols"
 		include = "eurasian_horde_no_muslim"
 		government = {
-
 			type = steppe_horde
 			heir_selection = tribal_oldest_male
 			ruler = hcn_munanzi_borjigin
@@ -31361,7 +31280,7 @@ countries = {
 			jurchen_culture
 		}
 
-		capital = qingzhou_mongol
+		capital = karakorum
 	}
 	
 	OTC = { #Otchigin Horde
@@ -31373,7 +31292,14 @@ countries = {
 			zhengjiatun 
 			khalkh 
 			hailar 
-			talaha sart 
+			talaha sart
+
+			avnagar chono khuuchid sangiin_dalai sorin_nuur ulgain uzemchin
+			haihaer kailu linhuang qingzhou_mongol xinkai
+			pingdisonglin quanning yingchang 
+			tuliemao 
+			buir_nuur barun_xiabaer tamsabulag
+			matad sharga_uul 
 		}
 		
 		own_control_integrated = {
@@ -31381,6 +31307,7 @@ countries = {
 			zhaozhou_jurchen
 			zhalong
 			arun bila nuomin
+			chalin yehe
 		}
 
 		starting_technology_level = 3
@@ -31416,11 +31343,28 @@ countries = {
 			upper_gazimur 
 			baruun_tar_nuur tsagaan zyyn_tar_nuur 
 			abagaita gegen hasar khirkhira talman_boorj
-			dalai_nuur 
+			dalai_nuur
+
+			kyakhta alyanbulag zelterijin khimni ulenkhe
+			amarbayas_galang eroo
+			khilgo khilgoson ung khudan ude_baikal bureen sulkhari
+			khadanzaa
+
+			onon balj baldan_bereeven kyra
+			bars_khot bayan_tumen bayantsagaan menen
+			lower_ulz upper_ulz yakhi
+			kherlen uguumur undurkhaan
+			khan_khentii tsokh
+			ingedei zed
+			slyudyanka selenge khurbe anaa narhata
 		}
 
 		own_control_integrated = {
-			hulun 
+			hulun
+			tarvagatai
+			nurchuu
+			enhe_hada jiliu lower_gazimur merelka urov
+			silkari kara_shilka kuenga uryum
 		}
 
 		starting_technology_level = 3
@@ -31483,10 +31427,12 @@ countries = {
 
 	BKH = { #Badakhshan
 		own_control_core = {
-			fayzabad jurm sar_sang zebak 
-			qalai_khumb kham_bahar ragh vanch
-			shighnan gunt murghab oksu shiveh vamar
-			qila_panjeh ishkashim roshtqala sarhad
+			fayzabad gunt ishkashim jurm murghab oksu qila_panjeh roshtqala sar_sang sarhad zebak
+
+			#fayzabad jurm sar_sang zebak 
+			#qalai_khumb kham_bahar ragh vanch
+			#shighnan gunt murghab oksu shiveh vamar
+			#qila_panjeh ishkashim roshtqala sarhad
 		}
 
 		starting_technology_level = 3
@@ -31505,7 +31451,8 @@ countries = {
 
 	KRG = { #Karategin
 		own_control_core = {
-			gharm daroot_korgon karakol muksu sangvor
+			daroot_korgon gharm muksu sangvor
+			#gharm daroot_korgon karakol muksu sangvor
 		}
 
 		starting_technology_level = 3
@@ -31574,6 +31521,11 @@ countries = {
 			kunming lufeng yiliang kunyang anning chenggong yimen songming fumin
 			zhennan dingyuan_chuxiong weichu nanan
 			heyang jiangchuan lunan xinxing
+
+			huili huichuan_dechang kuozhou puge
+			wangmu luodian
+			bafan
+			dushan
 		}
 
 		own_control_integrated = {
@@ -33206,7 +33158,6 @@ countries = {
 
 				#Dhimmi #BR ADDED
 				dhimmi_land_rights
-				dhimmi_administrative_posts
 				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_military_service
@@ -33358,7 +33309,7 @@ countries = {
 	}
 
 	KOJ = { #Kingdom of Jerusalem
-		our_cores_conquered_by_others = { }
+		
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
 		include = "eastern_european_catholic_monarchy_not_present"
@@ -34078,9 +34029,7 @@ countries = {
 				tribes_tribal_levies
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
 
 				br_ottoman_dhimmi_levies
 				br_turkoman_privilege
@@ -43352,7 +43301,7 @@ countries = {
 	MGE = { #The Mongol Empire
 		type = army
 		own_control_core = { }
-		our_cores_conquered_by_others = { }
+		
 		starting_technology_level = 3
 		include = "expl_mongols"
 		include = "eurasian_horde_not_present"
@@ -43371,7 +43320,7 @@ countries = {
 	OIR = {
 		type = army
 		own_control_core = { }
-		our_cores_conquered_by_others = { }
+		
 		starting_technology_level = 3
 		include = "expl_mongols"
 		include = "eurasian_horde_not_present"
@@ -49864,7 +49813,7 @@ countries = {
 			raz
 			konjikala anew dargaz durun
 			faraveh dehistan ganlygala gazanjyk jargalan maraveh sarlawuk
-			orta_kuyu talaikhan_ata uzboy
+			talaikhan_ata uzboy
 			bojnord samalqan khabushan shirvan_iran
 			firuzkuh
 
@@ -49887,9 +49836,7 @@ countries = {
 			ruler_term = {	 character = ere_eretna start_date = 1335.1.1 }
 			ruler = ere_eretna
 			privilege = {
-				dhimmi_abrahamic_communities
-				
-				#trunk_road_to_erzurum_privilege
+
 			}
 			
 		}
@@ -50852,8 +50799,6 @@ countries = {
 			ruler = kar_alaeddin_halil_mirza
 			
 			privilege = {
-				sponsor_maritime_contracts
-				dhimmi_abrahamic_communities
 				
 				#trunk_road_to_erzurum_privilege
 			}
@@ -51138,14 +51083,9 @@ countries = {
 		own_control_core = {
 			samarkand ayni dimishk panjakent
 			bukhara tim_samarkand
-			darganata hazarasp
+			darganata
 			alat daya_kathyn paykend vardanzi
 			nurota ishtixon karmana primkent yangirabod
-		}
-
-		own_control_integrated = {
-			khiva kyat_kala nyzvar 
-			kath
 		}
 
 		include = "expl_middle_east"
@@ -55833,7 +55773,6 @@ countries = {
 				br_ere_foederati_privilege
 				tribes_tribal_levies
 				tribes_allow_gatherings
-				tribal_autonomy
 				tribes_land_rights
 				tribes_pasture_access
 			}
@@ -55881,7 +55820,6 @@ countries = {
 				br_ere_foederati_privilege
 				tribes_tribal_levies
 				tribes_allow_gatherings
-				tribal_autonomy
 				tribes_land_rights
 				tribes_pasture_access
 			}
@@ -56393,7 +56331,7 @@ countries = {
 
 	G0L = { # SIBIR Khanate
 		own_control_core = {
-			qashliq siberia_abalak
+			qashliq siberia_abalak kargapolye kurtamysh
 			tara znamenskoye ust_ishim omsk kamyshnoye cherlak tyukalinsk kolosovka
 			chimgi_tura tugulym yalutorovsk shadrinsk tsaryovo_gorodishche
 			tobolsk vagay tavdinsky_sloboda yurginskoye vikulovo
@@ -56402,32 +56340,336 @@ countries = {
 			chastoozerye polovinnoye armizonskoye berdyuzhye korkina_sloboda
 			shish muromtsevo sartlan kargat kainsky_pas kyshtovka
 
+			tarankol kyzylzhar presnowka staroye stanitsa_kokchetavskaya siletiteniz
+			zhalauly zhelezin taskayevo
 			#turtas yukonda
 			#surgut bolshoy_balyk irtysh megion bolshoy_yugan upper_ob
 			#tomsk melnikovo molchanovo kargasok vasyugan kolpashevo
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"
-		include = "eurasian_horde"
+		include = "br_eurasian_horde"
 		government = {
-			ruler = random
+			ruler_term = {	 character = glh_tini_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_tini_beg_borjigin
 			reforms = {
 				legacy_of_genghis
 			}
 			privilege = {
-				tribal_autonomy
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
-				tribes_respect_tribal_traditions
 			}
 		}
 		country_rank = rank_duchy
 		capital = chimgi_tura
 		court_language = kipchak_language
 	}
+
+	#
+	G1L = {
+		type = army
+		starting_technology_level = 3
+		own_control_core = { 
+			yangikent buzikkala jubara karmakshi
+			sighnaq asanas barchkend jand kamyskala
+			aksumbe ran tasty
+			bolgan_ana aitbulat belen_ana talmas_ata
+			orda_bazar alashakhan baskamyr ulytau
+			zhuban_ana kaip_ata karagau korgan maulimberdy
+			tengiz kon_tengiz kulanotpes sonaly
+			tagatay dandybay karabay smai_samkai yegindybulak
+			zhamshy kashkanteniz moiynty mukur
+			tokrau espe kusak zhamankul
+			bakanas ashchyozek dagandely koksala sayak
+			akkol bayanaul bozok_astana shybyndy
+			gulshara kyzylkorgan kyzylsay
+			karkaraly kaynar_atbai sozak
+
+			namjan kumak suyunduk
+			atach ishkul tanalyk yaik
+			irgiz chet_irgiz karasay kayrakty sazanbay
+			kabyrga turgay 
+			sarykopa karasu saryozen ulkayak
+
+			kulykol zhetykol shoptikol siberia_tenteksor konildi  
+			zharkol sasykkol kartaly alakol
+			arykbalyk kak
+			gebergeyel
+			atzhaksy baytak emba ilek kargaly_aktobe manysai or_aktobe shagan shagiz shatyrlysay temir uil
+			almenevo chebarkul miass safkul shchuchye troitsk uyskoye yetkul
+			atbasar aybas gulshara karaturgay kokshetau kyzylkorgan kyzylsay shoindykol zhaldama
+
+			sorochinskaya buzuluk grachevka bol_shoy_uran malyy_uran sadak s_ezzaja bogatoye
+			chishmy ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo sterlitamak
+			meleuz tabynsky ishimbay beloretsk kapova_pesera
+			krasnaya_gorka belekes bolshoy_ik ust_katav mesyagutovo zlatoust
+			burayevo baltas askino ufa
+			irek khaiylmysh khaqmar shikashin yuldibay
+
+			
+		}
+		flag = "GLH"
+		include = "expl_mongols"
+		include = "br_eurasian_horde"
+		government = { 
+			ruler_term = {	 character = glh_tini_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_tini_beg_borjigin
+
+			mysticism_vs_jurisprudence = -15 
+			laws = {
+				sharia_law = hanafi_policy
+			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		country_rank = rank_duchy
+		court_language = kipchak_language
+		capital = saryozen
+
+		accepted_cultures = {
+			mongolian_culture
+			nogai
+			kazani
+			bashkir
+		}
+	}
+	#Khorazm
+	G2L = {
+		type = army
+		starting_technology_level = 3
+		own_control_core = { 
+			urgench vezir
+			khurgancha pulzhai qonirat shimbay xojeli
+			khiva nyzvar
+			beleuli kyushe sam shuruk sisem_ata uchkuduk
+			orta_kuyu
+			hazarasp kath kyat_kala
+		}
+		flag = "GLH"
+		include = "expl_mongols"
+		include = "br_eurasian_horde"
+		government = { 
+			ruler_term = {	 character = glh_tini_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_tini_beg_borjigin
+
+			mysticism_vs_jurisprudence = -15 
+			laws = {
+				sharia_law = hanafi_policy
+			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		country_rank = rank_duchy
+		court_language = kipchak_language
+		capital = urgench
+
+		accepted_cultures = {
+			mongolian_culture
+		}
+	}
+	# Bulghar
+	G3L = {
+		type = army
+		starting_technology_level = 3
+		own_control_core = { 
+			sarov bolshoye_boldino temnikov krasnoslobodsk lukoyanov shatki arzamas pavlovo ruzayevka
+			alatyr bolshoye_murashkino perevoz sechenovo sergach spasskoye_lyskovo
+			mokhcha nizhny_lomov zemetchino insar tarbeevka zubova_polyana
+			ardatov kadom azeevo
+			sasovo morsha
+			chamzinka lunino mokshan penza promsa saransk
+
+			kazan laish calli mamadysh bogatye_saby dobyaz oli_baraza
+			cheboksary alikovo vasilsursk tsivilsk atishchevo sviyazhsk
+			altyshevo atrat batyrevo simbirsk tetyushi
+			abdulino almetyevsk aznakayevo bavly bazarny_syzgan bilyar bolghar bolshoy_cheremshan bugulma buguruslan chalninsky_pochinok chekmagush chembar cherdakly cukataw gorodishche 
+			kamyshla karsun kondurcha koshki lower_aktanyshbash malaya_serdoba melekess menzelinsk morkvash nikolskoye 
+			pokrovskoye russky_kameshkir serdobinskaya sergiyevsk shemysheyka shigony solovtsovo staraya_kulatka staraya_mayna staryi_amanak stavropol_na_volge syun troitskoye_kuroedovo 
+			verkhneyarkeyevo zainsk kurmysh lyskovo
+		}
+		
+		include = "expl_mongols"
+		include = "br_eurasian_horde"
+		government = { 
+			ruler_term = {	 character = glh_giyas_al_din_mohammed_oz_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_giyas_al_din_mohammed_oz_beg_borjigin
+
+			mysticism_vs_jurisprudence = -15 
+			laws = {
+				sharia_law = hanafi_policy
+			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		country_rank = rank_duchy
+		court_language = kipchak_language
+		capital = simbirsk
+
+		accepted_cultures = {
+			kazani
+		}
+		tolerated_cultures = {
+			mongolian_culture
+		}
+	}
+
+	G4L = {
+		type = army
+		starting_technology_level = 3
+		own_control_core = { 
+			tula_russia bogoroditsk arkhangelskoye kurkino
+			donkov yelets talitsa_yelets gogol
+			ust_livny
+			lipetsk usman ust_stanovykh_ryas izberdey teshevka kozlov
+
+			kursk fatezh opalkova kosozhichi manturovo_kursk olgov oskol troitskoye_na_shchigrakh
+			belgorod korocha oboyan muzhech rakitnoye sudzha
+			yelets gogol talitsa_yelets terbuny ust_livny zemlyansk
+			alexeyevka rovenki valuyki chernyanka kastornoye
+			voronezh anna_russia novaya_pokrovka semidesyatnoye ostrogozhsk rossosh
+
+			bielska_sloboda bilovodsk novopskov kalnivka nyzhnia_duvanka konstantinovka
+			izium kupiansk vovchansk
+			krasnopillia
+			donets_kharkiv chuhuiv khotmyzh kotelva okhtyrka zmiiv
+			kreminna novoaidar
+			
+		}
+		
+		include = "expl_mongols"
+		include = "br_eurasian_horde"
+		government = { 
+			ruler_term = {	 character = glh_giyas_al_din_mohammed_oz_beg_borjigin start_date = 1333.1.1 regnal_number = 1	}
+			ruler = glh_giyas_al_din_mohammed_oz_beg_borjigin
+
+			mysticism_vs_jurisprudence = -15 
+			laws = {
+				sharia_law = hanafi_policy
+			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		country_rank = rank_duchy
+		court_language = kipchak_language
+		capital = oskol
+
+		accepted_cultures = {
+			alan_culture
+		}
+		tolerated_cultures = {
+			mongolian_culture
+		}
+	}
+
+	#G5L = {
+		#type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#namjan kumak suyunduk
+			#atach ishkul tanalyk yaik
+			#irgiz chet_irgiz karasay kayrakty sazanbay
+			#kabyrga turgay 
+			#sarykopa karasu saryozen ulkayak
+
+			#kulykol zhetykol shoptikol siberia_tenteksor konildi  
+			#arykbalyk kak gebergeyel
+			#zharkol sasykkol kartaly alakol or_aktobe 
+			#almenevo chebarkul miass safkul shchuchye troitsk uyskoye yetkul
+		#}
+		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#ruler = random
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#country_rank = rank_duchy
+		#court_language = kipchak_language
+		#capital = turgay
+		#accepted_cultures = {
+			#mongolian_culture
+			#bashkir
+		#}
+	#}
+
+	#G6L = {
+		#type = army
+		#culture = bashkir
+
+		#own_control_core = {
+			#sorochinskaya buzuluk grachevka bol_shoy_uran malyy_uran sadak s_ezzaja bogatoye
+			#chishmy ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo sterlitamak
+			#meleuz tabynsky ishimbay beloretsk kapova_pesera
+			#krasnaya_gorka belekes bolshoy_ik ust_katav mesyagutovo zlatoust
+			#burayevo baltas askino ufa
+
+			#irek khaiylmysh khaqmar shikashin yuldibay
+		#}
+
+		#discovered_regions = {
+			#russian_region
+			#ruthenia_region
+			#ural_region
+			#west_siberia_region
+			#khorasan_region
+		#}
+
+		#starting_technology_level = 3
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#ruler = random
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#country_rank = rank_duchy
+		#court_language = kipchak_language
+
+		#capital = khaiylmysh
+
+		#tolerated_cultures = {
+			#bolghar_culture chiyalik_culture kazani mongolian_culture
+			#nogai
+		#}
+	#}
 
   #India
 	INK = { 
@@ -57086,7 +57328,7 @@ countries = {
 		
 		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "muslim_monarchy"
+		include = "muslim_monarchy_not_present"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -57171,7 +57413,7 @@ countries = {
 		
 		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "turkish_beylik_no_coast_no_greek"
+		include = "muslim_monarchy_not_present"
 		government = {
 			#ruler = tur_ibrahim
 
@@ -57190,7 +57432,6 @@ countries = {
 				
 				#Dhimmi
 				dhimmi_land_rights
-				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_traditions
 				urban_development_grants
@@ -57199,9 +57440,7 @@ countries = {
 				tribes_tribal_levies
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
 
 				br_ottoman_dhimmi_levies
 				br_turkoman_privilege
@@ -57231,7 +57470,7 @@ countries = {
 		
 		starting_technology_level = 3
 		include = "expl_middle_east"
-		include = "turkish_beylik_no_coast_no_greek"
+		include = "muslim_monarchy_not_present"
 		government = {
 			ruler = tur_serefullah
 
@@ -57250,7 +57489,6 @@ countries = {
 				
 				#Dhimmi
 				dhimmi_land_rights
-				dhimmi_abrahamic_communities
 				dhimmi_pact_of_umar
 				dhimmi_traditions
 				urban_development_grants
@@ -57259,9 +57497,7 @@ countries = {
 				tribes_tribal_levies
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
 
 				br_ottoman_dhimmi_levies
 				br_turkoman_privilege
@@ -57351,9 +57587,7 @@ countries = {
 				tribes_allow_gatherings
 				tribes_land_rights
 				tribes_pasture_access
-				tribes_tribal_registry
 				tribes_protected_faith
-				tribes_in_administration
 			}
 			
 			spiritualist_vs_humanist = 50
@@ -57405,7 +57639,7 @@ countries = {
 	}
 
 	
-  	#North Sea Empire
+  #North Sea Empire
 	ENG = { #NSE
 		own_control_core = { #NOR
 			konghalla stromstad uddevalla hornborg
@@ -57714,7 +57948,7 @@ countries = {
 
 	}
 
- 	#Baltic additions
+  #Baltic additions
 	BA0 = {	#Pruthenia
 		own_control_core = {
 			ragnit tilsit gumbinnen barten wegorzewo
@@ -57774,7 +58008,7 @@ countries = {
 		capital = raseiniai
 		country_rank = rank_county
 	}
-	######Azores#####
+  ######Azores#####
 	
 	HUK = {	#Haukland
 		own_control_core = {
@@ -57846,6 +58080,210 @@ countries = {
 	}
 
 	
+ ########### Asia ########### 
+
+	TS1 = {
+		starting_technology_level = 3
+		own_control_core = {
+			wanan_wananjun dingan shuihui lingshui limushan ganen yande
+			yilun changhua 
+		}
+		include = "south_east_asia_monarchy_no_mandala_no_coast"
+		government = {
+			ruler = random
+		}
+		capital = shuihui
+	}
+
+  ########### Mongolia ########### 
+
+	#M10 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#lutang gulang anyuan zhuanglang xiliang zhenfan baiting yongchang_ganzhou shandan
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = xiliang
+#
+		#tolerated_cultures = {
+			#liang_culture amdowa_culture mi_niah_culture qin_culture yugur_culture
+		#}
+	#}
+	#M11 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#gaotai suzhou_gansu jinta
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = suzhou_gansu
+#
+		#tolerated_cultures = {
+			#liang_culture yugur_culture
+		#}
+	#}
+	#M12 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#chijin kuyu_shazhou shazhou guazhou yangguan anding_suzhou
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = shazhou
+#
+		#tolerated_cultures = {
+			#liang_culture
+		#}
+	#}
+	#M13 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#gushan nianbo xining
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = xining
+#
+		#tolerated_cultures = {
+			#liang_culture amdowa_culture mi_niah_culture
+		#}
+	#}
+	#M14 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#liyuan qidaban qilian haomen sanjiaocheng datong_xining buha 
+			#caka dungkar_amdo chabcha dangcheng
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = qilian
+#
+		#tolerated_cultures = {
+			#amdowa_culture khampa_culture liang_culture mi_niah_culture monguor_culture yugur_culture
+		#}
+	#}
+	#M16 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#dsun chogyal_khar gashun tsaidam balgatai 
+			#yuka temirlik nalinggele kumkol jingyu yalingkuo
+			#guolimu 
+		#}
+#
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = tsaidam
+#
+		#tolerated_cultures = {
+			#amdowa_culture changpa_culture uyghur_culture
+		#}
+	#}
+	#M17 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#nazhi hami geziyandun bailongdui
+		#}
+#		
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = hami
+#
+		#tolerated_cultures = {
+			#uyghur_culture liang_culture
+		#}
+	#}
+	#M18 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#zuun_garyn_gobi bugat altayn_ovor_gobi naomao tsogt
+			#shargyn_gobi chikhan_agui 
+		#}
+#
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = mongolian_language
+		#capital = 
+#
+		#tolerated_cultures = {
+			#uyghur_culture oirat_culture
+		#}
+	#}
+
+	#M34 = {
+		##type = army
+		#starting_technology_level = 3
+		#own_control_core = {
+			#bugur kuerchu kurla karasahr bosten
+			#bai_xinjiang kucha kumtura shayar
+		#}
+		#include = "expl_mongols"
+		#include = "eurasian_horde"
+		#government = {
+			#type = steppe_horde
+			#heir_selection = tribal_oldest_male
+		#}
+		#court_language = turkic_language
+		#capital = kurla
+		#tolerated_cultures = {
+			#khorezmian_culture mongolian_culture oirat_culture
+		#}
+	#}
+
+
+
 
 }
 }
