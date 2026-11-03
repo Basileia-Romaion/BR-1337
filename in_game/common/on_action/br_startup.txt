@@ -517,7 +517,106 @@ br_on_game_start = {
 			#form_country = formable_country:RUM_f
 		}
 
+	#Locations
 
+	location:baghdad = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:damascus = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:aleppo = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:mosul = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:rey = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:alexandria = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:tabriz = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:isfahan = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:samarkand = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+	location:astrakhan = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_center
+			mode = add
+		}
+	}
+
+	location:kayseri = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
+	location:ani = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
+	location:theodoro = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
+
+	location:trebizond = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
+	location:antioch = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
+	location:hormuz = {
+		add_location_modifier = {
+			modifier = br_silk_road_trade_hub
+			mode = add
+		}
+	}
 
 	#Starting roads
 	 

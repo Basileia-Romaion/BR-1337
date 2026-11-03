@@ -4190,6 +4190,9 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = feo_demetrios_gabras
 			ruler_term = { character = feo_demetrios_gabras start_date = 1337.1.1 regnal_number = 1 }
+			privilege = {
+				allow_trade_center_sponsorship
+			}
 		}
 		country_rank = rank_duchy
 		capital = theodoro
@@ -33929,6 +33932,9 @@ countries = {
 			bureaucracies = {
 				{ type = themata_bureaucracy	date = 1204.4.1 entrenchment = 20 }
 			}
+			privilege = {
+				allow_trade_center_sponsorship
+			}
 		}
 		
 		country_rank = rank_duchy
@@ -54809,6 +54815,10 @@ countries = {
 			ruler_term = { character = br_ere_rdm_character_101 start_date = 1333.1.1 }
 			ruler = br_ere_rdm_character_101
 
+			privilege = {
+				allow_trade_center_sponsorship
+			}
+
 		}
 		accepted_cultures = {
 			syriac_culture
@@ -55397,6 +55407,10 @@ countries = {
 		government = {
 			ruler = br_ere_rdm_character_24
 			ruler_term = { character = br_ere_rdm_character_24 start_date = 1297.11.1 }
+
+			privilege = {
+				allow_trade_center_sponsorship
+			}
 		}
 		country_rank = rank_duchy
 		accepted_cultures = {
@@ -56563,7 +56577,7 @@ countries = {
 			kreminna novoaidar
 			
 		}
-		
+		flag = "GLH"
 		include = "expl_mongols"
 		include = "br_eurasian_horde"
 		government = { 
