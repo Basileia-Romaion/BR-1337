@@ -352,7 +352,7 @@ locations={
 	the_hague = { rank = town 			town_setup = lowlands_costal_town }
 	amsterdam = { rank = town 			town_setup = lowlands_costal_town }
 	middelburg = { rank = town 			town_setup = lowlands_costal_town }
-	groningen = { rank = town 			town_setup = lowlands_costal_town }
+	groningen = { rank = town 			town_setup = lowlands_town }
 	utrecht = { rank = town 			town_setup = lowlands_town }
 	zwolle = { rank = town 				town_setup = lowlands_town }
 
@@ -1193,7 +1193,7 @@ building_manager = {
 	tar_kiln = { tag = SWE level = 4 location = arboga }
 	tar_kiln = { tag = SWE level = 4 location = vasteras }
 	tar_kiln = { tag = SWE level = 4 location = riseberga }
-	tar_kiln = { tag = SWE level = 4 location = kinda }
+	tar_kiln = { tag = SWE level = 3 location = kinda }
 	tar_kiln = { tag = SWE level = 4 location = handbord }
 	tar_kiln = { tag = SWE level = 4 location = ekenas }
 	tar_kiln = { tag = SWE level = 3 location = poytis }
@@ -1221,7 +1221,7 @@ building_manager = {
 	castle		= { tag = LIV level = 1 location = aluksne }
 	castle		= { tag = LIV level = 1 location = daugavpils }
 	
-	order_headquarters = { tag = LIV level = 1 location = parnu }
+	#order_headquarters = { tag = LIV level = 1 location = parnu }
 	order_headquarters = { tag = TEU level = 1 location = malbork }
 	order_headquarters = { tag = ERM level = 1 location = lidzbark }
 	order_headquarters = { tag = CHL level = 1 location = lubawa }
@@ -1452,7 +1452,7 @@ building_manager = {
 	tar_kiln = { tag = ENG level = 5 location = shrewsbury }
 	tar_kiln = { tag = ENG level = 5 location = stafford }
 
-	tar_kiln = { tag = SCO level = 4 location = inverary }
+	tar_kiln = { tag = SCO level = 3 location = inverary }
 
 
 	# Wales had the highest castle per area in the world. It was totally locked down.
@@ -1966,7 +1966,7 @@ building_manager = {
 	tar_kiln = { tag = CAS level = 5 location = beteta } 
 	tar_kiln = { tag = CAS level = 4 location = segura_de_la_sierra } 
 	tar_kiln = { tag = MOR level = 5 location = ronda } 
-	tar_kiln = { tag = POR level = 5 location = chao_de_couce } 
+	tar_kiln = { tag = POR level = 4 location = chao_de_couce } 
 
 		#Barcelona Royal Shipyard #Unique
 	barcelona_royal_shipyard = { tag = ARA level = 1 location = barcelona }
@@ -1975,7 +1975,7 @@ building_manager = {
 	royal_atarazanas_seville = { tag = GRA level = 1 location = sevilla }   #BR edit
 
 	#Granada Alhambra
-	alhambra = { tag = GRA level = 1 location = granada }	
+	alhambra = { tag = GRA level = 1 location = cordoba }	
 	funduq = { tag = GRA level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
 		#Granadan Trans-Saharan Trade Office network — funduq factors along the gold caravan axis
 	trade_office = { tag = GRA level = 4 location = niani }
@@ -2270,7 +2270,6 @@ building_manager = {
 	cathedral 	= { tag = FRA level = 1 location = paris } #Notre-Dame de Paris Cathedral, established in 1182
 	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
 	cathedral	= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
-	#cathedral	= { tag = BYZ level = 1	location = constantinople } #Gven unique Hagia Sophia
 	cathedral = { tag = BYZ level = 1 location = constantinople } #Hagia Sophia, established in 537
 	cathedral = { tag = BYZ level = 1 location = thessaloniki } #Hagia Sophia of Thessaloniki, 5th century metropolitan see
 	cathedral = { tag = BYZ level = 1 location = edirne } #Metropolitan of Adrianopolis
@@ -3681,7 +3680,7 @@ building_manager = {
 	cloth_guild = { tag = MOR level = 5 location = fez }
 	castle = { tag = TFL level = 1 location = ouarzazate } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
 	qalat_al_mashwar = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/El_Mechouar_Palace
-	local_governor = { tag = MOR level = 1 location = marrakesh }
+	#local_governor = { tag = MOR level = 1 location = marrakesh }
 	wharf = { tag = SLE level = 1 location = sale }
 	dock = { tag = SLE level = 1 location = sale }
 
@@ -4719,8 +4718,7 @@ building_manager = {
 	forest_village = { tag = BUL level = 2 location = targoviste_BUL }
 
 	br_pronoia_estate = { tag = BUL level = 1 location = veliki_preslav }
-	farming_village = { tag = BUL level = 2 location = veliki_preslav }
-	market_village = { tag = BUL level = 1 location = veliki_preslav }
+	market_village = { tag = BUL level = 2 location = veliki_preslav }
 
 	farming_village = { tag = BYZ level = 1 location = silivri }
 	farming_village = { tag = BYZ level = 1 location = catalca }
@@ -5112,12 +5110,12 @@ building_manager = {
 	peasants_training_grounds = { tag = ARM level = 1 location = kuzucan }
 	peasants_training_grounds = { tag = ARM level = 1 location = erzincan }
 
-	sergeantry = { tag = BUL level = 1 location = sredets }
+	sergeantry = { tag = BUL level = 1 location = tarnovo }
 	peasants_training_grounds = { tag = BUL level = 1 location = ruse }
 	peasants_training_grounds = { tag = BUL level = 1 location = cherven }
 	peasants_training_grounds = { tag = BUL level = 1 location = stanimaka }
 	peasants_training_grounds = { tag = BUL level = 1 location = shumen }
-	sergeantry = { tag = SER level = 1 location = prizren }
+	sergeantry = { tag = SER level = 1 location = trgoviste_SER }
 	sergeantry = { tag = SER level = 1 location = skopje }
 	sergeantry = { tag = SER level = 1 location = nis }
 	nobles_recruitment_center = { tag = SER level = 1 location = soko_grad }
@@ -5511,7 +5509,7 @@ building_manager = {
 	charcoal_maker = { tag = AON level = 1 location = kalecik }
 
 	#IBERIA
-	local_governor	= { tag = GRA level = 1	location = toledo }
+	#local_governor	= { tag = GRA level = 1	location = toledo }
 	local_governor	= { tag = GRA level = 1	location = valencia }
 	royal_court = { tag = GRA level = 1 location = cordoba }
 	royal_garden = { tag = GRA level = 1 location = cordoba } #Gardens of the Great Palace
@@ -5587,7 +5585,6 @@ building_manager = {
 	farming_village = { tag = GRA level = 1 location = medellin }
 	farming_village = { tag = GRA level = 1 location = azuaga }
 	farming_village = { tag = GRA level = 1 location = llerena }
-	farming_village = { tag = GRA level = 1 location = andujar }
 	farming_village = { tag = GRA level = 1 location = merida }
 
 	tar_kiln = { tag = GRA level = 3 location = andujar }
@@ -5798,9 +5795,7 @@ building_manager = {
 
 #Tribal Buildings
 	tribal_war_camp = { tag = GLH level = 1 location = yenotayevka }
-	tribal_hunting_lodge = { tag = GLH level = 1 location = yenotayevka }
 	tribal_market_villages = { tag = GLH level = 2 location = yenotayevka }
-	tribal_hunting_lodge = { tag = GLH level = 1 location = zamyany }
 	tribal_war_camp = { tag = GLH level = 1 location = zamyany }
 	tribal_market_villages = { tag = GLH level = 2 location = zamyany }
 	tribal_war_camp = { tag = GLH level = 1 location = malye_derbety }
@@ -5996,7 +5991,7 @@ building_manager = {
 	farming_village = { tag = RH1 level = 2 location = yelets }
 	stockade = { tag = RH2 level = 1 location = belgorod }
 	peasants_training_grounds = { tag = RH2 level = 1 location = belgorod }
-	farming_village = { tag = RH2 level = 2 location = belgorod }
+	market_village = { tag = RH2 level = 2 location = belgorod }
 	stockade = { tag = RH3 level = 1 location = donets_kharkiv }
 	tribal_war_camp = { tag = RH3 level = 1 location = donets_kharkiv }
 	tribal_market_villages = { tag = RH3 level = 1 location = donets_kharkiv }
@@ -6509,7 +6504,7 @@ building_manager = {
 	tribal_market_villages = { tag = SER level = 1 location = soko_grad }
 	forest_village = { tag = SER level = 1 location = uzice }
 	forest_village = { tag = SER level = 1 location = krupanj }
-	forest_village = { tag = SER level = 1 location = stalac }
+	market_village = { tag = SER level = 1 location = stalac }
 	farming_village = { tag = SER level = 1 location = budimlja }
 	forest_village = { tag = SER level = 1 location = visegrad }
 	forest_village = { tag = SER level = 1 location = prijepolje }
@@ -6530,8 +6525,7 @@ building_manager = {
 	lumber_mill = { tag = BUL level = 1 location = ruse }
 	market_village = { tag = BUL level = 1 location = shumen }
 	forest_village = { tag = BUL level = 1 location = shumen }
-	market_village = { tag = BUL level = 1 location = pleven }
-	farming_village = { tag = BUL level = 1 location = pleven }
+	market_village = { tag = BUL level = 2 location = pleven }
 	farming_village = { tag = BUL level = 1 location = strelcha }
 	farming_village = { tag = BUL level = 1 location = kozelj }
 	farming_village = { tag = BUL level = 1 location = archar }
@@ -6780,7 +6774,7 @@ building_manager = {
 	bog_iron_smelter = { tag = RAV level = 1 location = ravenna }
 	clay_pit = { tag = RAV level = 1 location = ravenna }
 
-	local_governor = { tag = PAP level = 1 location = rome }
+	#local_governor = { tag = PAP level = 1 location = rome }
 	art_school = { tag = PAP level = 1 location = rome }
 	library = { tag = PAP level = 1 location = rome }
 	scriptorium = { tag = PAP level = 5 location = rome }
