@@ -199,6 +199,12 @@ br_ere_events.1 = {
 					}
 				}
 			}
+			c:ICO ?= {
+				make_subject_of = {
+					target = c:AN8
+					type = subject_type:pronoia
+				}
+			}
 			if = {
 				limit = { country_exists = c:AN13 }
 				c:AN13 = {

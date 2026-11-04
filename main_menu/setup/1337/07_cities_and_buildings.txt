@@ -3861,6 +3861,7 @@ building_manager = {
 	city_walls = { tag = TUR level = 1 location = jerusalem }
 	city_walls = { tag = TUR level = 1 location = isfahan }
 	city_walls = { tag = TUR level = 1 location = rey }
+	city_walls = { tag = GLH level = 1 location = astrakhan }
 
 	city_walls = { tag = GRA level = 1 location = cordoba }
 	city_walls = { tag = GRA level = 1 location = granada }
@@ -5687,15 +5688,27 @@ building_manager = {
 	jewish_district = { tag = TUR level = 1 location = baghdad }
 	jewish_district = { tag = MAM level = 1 location = cairo }
 	jewish_district = { tag = GRA level = 1 location = cordoba }
+	jewish_district = { tag = GLH level = 1 location = astrakhan }
+	jewish_district = { tag = MAM level = 1 location = jerusalem }
 
 
 # steppes 
+	kurultai = { tag = GLH level = 1 location = shad_kirman }
+	caravanserai = { tag = GLH level = 1 location = shad_kirman }
+	tribal_war_camp = { tag = GLH level = 1 location = shad_kirman }
+	tribal_market_villages = { tag = GLH level = 1 location = shad_kirman }
+
+
 	kurultai = { tag = GLH level = 1 location = ismail }
 	kurultai = { tag = GLH level = 1 location = qalancaq }
-	slave_market = { tag = GLH level = 3 location = sarai_al_jadid }
+	slave_market = { tag = GLH level = 2 location = sarai_al_jadid }
 	caravanserai = { tag = GLH level = 1 location = sarai_al_jadid }
-	slave_market = { tag = GLH level = 5 location = astrakhan }
+	slave_market = { tag = GLH level = 2 location = astrakhan }
 	caravanserai = { tag = GLH level = 1 location = astrakhan }
+	funduq = { tag = GLH level = 1 location = astrakhan }
+	madrasa = { tag = GLH level = 1 location = astrakhan }
+	marketplace	= { tag = GLH level = 6 location = astrakhan }
+	market_warehouse = { tag = GLH level = 1 location = astrakhan }
 	slave_market = { tag = GLH level = 1 location = sarayjuk }
 	caravanserai = { tag = GLH level = 1 location = sarayjuk }
 	kurultai = { tag = GLH level = 1 location = urgench }
@@ -5842,14 +5855,17 @@ building_manager = {
 	tribal_war_camp = { tag = GLH level = 1 location = oskol }
 	tribal_market_villages = { tag = GLH level = 2 location = oskol }
 	tribal_hunting_lodge = { tag = GLH level = 1 location = oskol }
+	caravanserai = { tag = GLH level = 1 location = oskol }
 
 	kurultai = { tag = GLH level = 1 location = tagatay }
 	tribal_war_camp = { tag = GLH level = 1 location = tagatay }
 	tribal_market_villages = { tag = GLH level = 1 location = tagatay }
+	caravanserai = { tag = GLH level = 1 location = tagatay }
 
 	kurultai = { tag = GLH level = 1 location = saryozen }
 	tribal_war_camp = { tag = GLH level = 1 location = saryozen }
-	tribal_market_villages = { tag = GLH level = 1 location = saryozen }
+	tribal_market_villages = { tag = GLH level = 2 location = saryozen }
+	caravanserai = { tag = GLH level = 1 location = saryozen }
 
 	tribal_war_camp = { tag = GLH level = 1 location = zhaldama }
 	tribal_market_villages = { tag = GLH level = 1 location = zhaldama }

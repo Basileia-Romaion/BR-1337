@@ -80,7 +80,7 @@ br_latin_port_rights = {
 	}
 	location_modifier = {
 		harbor_suitability = 0.1
-		local_trades_per_burgher = 0.25
+		local_trades_per_burgher = 0.5
 		local_market_access = 0.1
 		local_burghers_estate_power = 0.5
 		local_production_efficiency = town_right_efficiency_penalty
@@ -118,7 +118,7 @@ br_siderokausia_rights = {
     }
 	location_modifier = {
 		local_goods_gold_output_modifier = 0.1
-        local_market_access = 0.03
+        local_market_access = 0.05
 		local_max_rgo_size_modifier = 0.25
 
 		local_peasant_enfranchisment = -0.1

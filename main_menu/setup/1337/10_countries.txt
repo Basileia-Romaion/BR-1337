@@ -30411,7 +30411,7 @@ countries = {
 			changyuan yuancheng baima_daming dongming nanle neihuang puyang qingfeng weixian xunxian
 			xiankang xingzhong lizhou daning_pingquan longshan huihe hezhong naiman pingquan chuanzhou wuping_daning shenshui fushu yizhou_jurchen 
 			qinghe guangping handan yongnian mingshui quzhou 
-			ningchang tongliao yehe
+			ningchang tongliao
 			jiaohe qingchi dongguang fucheng_hejian liguo hejian jinghai tiaoxian leshou nanpi ningjin qingyun huichuan renqiu wuqiao suning dagu zhigu yanshan gucheng_jingzhou
 			guangzong renxian julu neiqiu shahe xingtai
 			luanyang banbishan baodi yijin dadu changping fangshan fengrun guan huairou daxing yuyang sanhe_tongzhou shicheng_jizhou dongan_shuntian lutai miyun pinggu dacheng shunyi xianghe luxian wenan wuqing wanping yongqing yutian fanyang zunhua
@@ -30434,7 +30434,7 @@ countries = {
 			anqiu boxing changle yiyuan gegou lean juxian linqu mengyin yidu_qingzhou rizhao shizilu shouguang wulian yishui zhucheng zichuan
 			chuqiu chengwu dingtao xucheng feixian yutai jiyin jiaxiang tengdong rencheng jinxiang juye shouzhang linyi ningyang pingyin qufu shagou shansu sishui tancheng tengxian donge wenshang yanggu_yanzhou ziyang yuncheng yizhou_tengzhou zouxian
 
-			yinshan shanyin datong_datong hebin erdao xuanning guangling zhenwu huairen fengzhou hunyuan zhongling jining feihu lingqiu shenwu ningbian yunnei shanyang_yingzhou tiancheng liangcheng dongsheng wuchuan baideng jincheng yulin_datong lingxian_shanxi pingdi yunchuan
+			shanyin datong_datong hebin erdao xuanning guangling zhenwu huairen fengzhou hunyuan zhongling jining feihu lingqiu shenwu ningbian yunnei shanyang_yingzhou tiancheng liangcheng dongsheng baideng jincheng yulin_datong lingxian_shanxi pingdi yunchuan
 			xihe jiexiu pingyao xiaoyi heshun yushe liaoshan
 			shangdang huguan licheng_luan lucheng_luan qingyang_luan tunliu xiangyuan zhangzi
 			jishi_anze daning fenxi fushan hejin hongtong huoyi jiangxian jishan jizhou linfen lingshi linjin pinglu puxian quwo ruicheng shilou wanquan wenxi xiaxian taiping_jiangzhou xiangning yuanqu zhengping xichuan_xizhou yicheng_pingyang yonghe hedong yueyang_anze xiexian tongdi qinyuan wuxiang
@@ -30443,11 +30443,11 @@ countries = {
 
 			haiyang sanhe_chaozhou pantian chengxiang huilai chaoyang pingyuan_mei puning sanrao jieyang
 			maoming xinyi_gaozhou dianbai shilong shicheng wuchuan_huazhou baoning
-			guangzhou baoan_dongguan conghua shunde dongguan guanghai nanhai limushan huiqi lianshan xinfeng_panyu guanfu liannan zhengcheng longmen qingyuan panyu lianzhou yangshan xiangshan_xinhui
+			guangzhou baoan_dongguan conghua shunde dongguan guanghai nanhai huiqi lianshan xinfeng_panyu guanfu liannan zhengcheng longmen qingyuan panyu lianzhou yangshan xiangshan_xinhui
 			guishan khuzhupai haifeng heping heyuan lankou longchuan_xunzhou lianping lufeng_haifeng boluo pingshan_huiyang changle_xunzhou xingning qinjiang zuokeng
 			haikang qingdao zhanchuan suixi xuwen
 			hepu lingshan anyuan_lianzhou ruxi xiaodong gaoyang baochang_nanxiong shixing
-			qiongshan yande ganen shuihui dingan lehui chengmai lingao lingshui yilun ningyuan_wananjun changhua xinhui wanan_wananjun wenchang
+			qiongshan lehui chengmai lingao ningyuan_wananjun xinhui wenchang
 			qujiang hanguang mengli lechang wengyuan renhua ruyuan yingde
 			gaoyao yangchun duanxi enping gaoming guliang fengchuan shuangshui guangning_zhaoqing sanshui duling sihui xinxing_nanen ducheng yangjiang jinkang
 			lingui guanyang liupu dayaoshan lipu lingchuan yining luorong lishan_pingle qingxiang xingan xiyan yangshuo yongfu
@@ -30498,6 +30498,11 @@ countries = {
 		}
 
 		own_control_conquered = {
+		}
+
+		own_control_colony = {
+			wanan_wananjun dingan shuihui lingshui limushan ganen yande
+			yilun changhua 
 		}
 
 		include = "far_east_asia_monarchy"
@@ -56424,6 +56429,7 @@ countries = {
 			
 		}
 		flag = "GLH"
+		color = map_golden_horde
 		include = "expl_mongols"
 		include = "br_eurasian_horde"
 		government = { 
@@ -56470,6 +56476,7 @@ countries = {
 			hazarasp kath kyat_kala
 		}
 		flag = "GLH"
+		color = map_golden_horde
 		include = "expl_mongols"
 		include = "br_eurasian_horde"
 		government = { 
@@ -56520,7 +56527,8 @@ countries = {
 			pokrovskoye russky_kameshkir serdobinskaya sergiyevsk shemysheyka shigony solovtsovo staraya_kulatka staraya_mayna staryi_amanak stavropol_na_volge syun troitskoye_kuroedovo 
 			verkhneyarkeyevo zainsk kurmysh lyskovo
 		}
-		
+		flag = "GLH"
+		color = map_golden_horde
 		include = "expl_mongols"
 		include = "br_eurasian_horde"
 		government = { 
@@ -56578,6 +56586,7 @@ countries = {
 			
 		}
 		flag = "GLH"
+		color = map_golden_horde
 		include = "expl_mongols"
 		include = "br_eurasian_horde"
 		government = { 
@@ -56684,6 +56693,54 @@ countries = {
 			#nogai
 		#}
 	#}
+
+	G7L = {
+		type = army
+		starting_technology_level = 3
+		own_control_core = { 
+			kalininskaya bryukhovetskaya bzhedygu_kal ust_labinsk pavlovskaya tbilisskaya romanovsky_khutor
+			chatyun adyukh armavir
+			privolnoye belaya_glina peschanokopskoye novo_alexandrovskoye bezopasnoye ipatovo
+			stavropol grigoropolisskaya uspenskoye shad_kirman petrovskoye_pontic
+			majar zelenokumsk arzgir levokumskoye novopavlovsk yessentuq alexandrovskoye blagodarnoye novoselitskoye
+			naurskaya kara_bazaar terekli_mekteb kurskaya kamysh_burun
+			dzhulat tatartup nazran alkhan_kala 
+		}
+		flag = "GLH"
+		color = map_golden_horde
+		include = "expl_mongols"
+		include = "br_eurasian_horde"
+		government = {
+			ruler_term = {	 character = glh_berdi_beg_borjigin start_date = 1311.1.1 regnal_number = 1	}
+			ruler = glh_berdi_beg_borjigin
+
+			mysticism_vs_jurisprudence = -15 
+			laws = {
+				sharia_law = hanafi_policy
+			}
+			reforms = {
+				legacy_of_genghis
+				
+			}
+			privilege = {
+				br_ghazi_privilege
+				br_turkoman_privilege
+				br_ottoman_dhimmi_levies
+				dhimmi_military_service
+				dhimmi_promote_tolerance
+			}
+		}
+		accepted_cultures = {
+			alan_culture
+		}
+		tolerated_cultures = {
+			avar_culture balkar_culture circassian_culture dargin_culture
+			nakh_culture
+		}
+		country_rank = rank_county
+		court_language = kipchak_language
+		capital = shad_kirman
+	}
 
   #India
 	INK = { 
@@ -58095,19 +58152,6 @@ countries = {
 
 	
  ########### Asia ########### 
-
-	TS1 = {
-		starting_technology_level = 3
-		own_control_core = {
-			wanan_wananjun dingan shuihui lingshui limushan ganen yande
-			yilun changhua 
-		}
-		include = "south_east_asia_monarchy_no_mandala_no_coast"
-		government = {
-			ruler = random
-		}
-		capital = shuihui
-	}
 
   ########### Mongolia ########### 
 

@@ -2,15 +2,13 @@
 # Github
 git log 0.27..HEAD --pretty=format:"- %s"
 
-
-
 # Patch Notes
 
-# 0.27.1
-
-## Previously 0.27 was labled 0.26 in launcher leading to a lot of confusion mostly myself, that has been fixed now properly labeled 0.27.1
+# 0.28 Steppe rework.
 
 ## Map/Balance Changes
+- Large rework of the Steppe/Mongolia
+  - New/enlarged tags pop and building reworks.
 - Castles now unlock trebuchets
 - Update br_added_estate_privileges.txt
 - More scripted minor ERE revolts
@@ -23,8 +21,11 @@ git log 0.27..HEAD --pretty=format:"- %s"
 - Andalusian tags streamlined
 - Various starting buildings updated.
 - AI Inca and Aztecs will consolidate and form earlier and be stronger.
+- Few balance edits towards Markets around the silk road.
+- Decreased European/West Asia development a bit
 
 ## Tag & Events changes
+- Ottomans visually replaced with Selukids (Dynasty and flag/name/color)
 - Update Pontus formable to use the vanilla flag/tag
 - Fixed/Updated the Latinized ERE name option to be Empire of the Romans.
 - North Sea Empire has been given access to English, Danish and Norwegian dynamic events nearly 300.
@@ -39,6 +40,8 @@ git log 0.27..HEAD --pretty=format:"- %s"
 - updated chances for Vinlands events to happen to gaurentee they fire.
 - Al-Andalus formed at game start from Granada instead of already active.
 
+## Bug fixes
+- fixed a decent amount of benign errors.
 
 # 0.27 The Vinland Saga
 
