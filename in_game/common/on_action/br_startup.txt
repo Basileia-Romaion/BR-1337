@@ -310,6 +310,12 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
+		c:GAZ ?= {
+			make_subject_of = {
+				target = c:GEN
+				type = subject_type:colonial_nation
+			}
+		}
 		c:DLM ?= {
 			research_advance = advance_type:meritocracy_advance
             research_advance = advance_type:power_projection_advance_1
