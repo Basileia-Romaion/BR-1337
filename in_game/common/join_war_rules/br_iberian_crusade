@@ -1,0 +1,8 @@
+br_iberian_crusade = {
+    join_war_disabled_trigger = {
+        tag = TUN
+    }
+    scope:war = {
+        casus_belli = casus_belli:cb_iberian_crusade
+    }
+}
