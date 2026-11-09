@@ -1,0 +1,46 @@
+namespace = br_hre_civil_war
+
+br_hre_civil_war.1 = {
+    category = situation_event
+    type = country_event
+    title = br_hre_civil_war.1.title
+    desc = br_hre_civil_war.1.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+
+    option = {
+        name = br_hre_civil_war.1.a
+    }
+
+}
+
+br_hre_civil_war.2 = {
+    category = situation_event
+    type = country_event
+    title = br_hre_civil_war.2.title
+    desc = br_hre_civil_war.2.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+
+    option = {
+        name = br_hre_civil_war.2.a
+    }
+	
+}
+
+br_hre_civil_war.3 = {
+    category = situation_event
+    type = country_event
+    title = br_hre_civil_war.3.title
+    desc = br_hre_civil_war.3.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+
+    option = {
+        name = br_hre_civil_war.3.a
+    }
+
+}
+
+
+
