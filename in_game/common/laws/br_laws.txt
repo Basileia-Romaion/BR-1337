@@ -20,15 +20,55 @@ INJECT:administrative_system = { #Version for ERE subjects/minors
 		}
 		years = 2
 	}
+
+	br_feudal_frankish_administration = {
+		unique = yes
+		potential = {
+			has_or_had_tag = LOT
+		}
+
+		country_modifier = {
+			monthly_towards_decentralization = societal_value_minor_monthly_move
+			noble_estate_power = 0.1
+			nobles_estate_levy_size = 0.10
+			peasants_estate_max_tax = -0.05
+			global_distance_from_capital_speed_propagation = 0.8
+		}
+
+		estate_preferences = {
+			crown_estate
+			nobles_estate
+		}
+		years = 2
+	}
+
+	br_feudal_frankish_administration_upgraded = {
+		unique = yes
+		potential = {
+			has_or_had_tag = LOT
+		}
+
+		country_modifier = {
+			monthly_towards_centralization = societal_value_monthly_move
+			noble_estate_power = -0.2
+			nobles_estate_levy_size = 0.15
+			global_estate_max_tax = 0.1
+			global_distance_from_capital_speed_propagation = 0.15
+			global_crown_estate_power = 0.35
+		}
+
+		estate_preferences = {
+			crown_estate
+			nobles_estate
+		}
+		years = 2
+	}
 }
 
 INJECT:distribution_of_power_law = {
 	br_roman_distribution_of_power_law = {
 		potential = {
-			OR = {
-				culture = { has_culture_group = culture_group:greek_group }
-				culture = { has_culture_group = culture_group:elysian_group }
-			}
+			culture = { has_culture_group = culture_group:roman_group }
 		}
 		country_modifier = {
 			global_crown_estate_power = 0.25
@@ -137,7 +177,7 @@ INJECT:medieval_levy_law = {
 	br_thema_levies = {
 		country_modifier = {
 			nobles_estate_levy_size = 0.25
-			peasants_estate_levy_size = 0.05
+			monthly_towards_quality = societal_value_monthly_move
 			levy_combat_efficiency_modifier = 0.1
 			levy_recovery_modifier = 0.1
 			peasants_estate_max_tax = -0.06
@@ -154,8 +194,7 @@ INJECT:medieval_levy_law = {
 	}
 	br_thema_levies_upgraded = {
 		country_modifier = {
-			nobles_estate_levy_size = 0.4
-			peasants_estate_levy_size = 0.06
+			nobles_estate_levy_size = 0.33
 			levy_combat_efficiency_modifier = 0.15
 			levy_recovery_modifier = 0.15
 			peasants_estate_max_tax = -0.04
@@ -169,6 +208,43 @@ INJECT:medieval_levy_law = {
 		estate_preferences = {
 			crown_estate
 			peasants_estate
+		}
+		years = 2
+	}
+
+	br_hre_army = {
+		country_modifier = {
+			nobles_estate_levy_size = 0.10
+			army_heavy_cavalry_maintenance_cost_modifier = -0.1
+			army_heavy_cavalry_power = 0.1
+			monthly_towards_serfdom = societal_value_monthly_move
+
+		}
+		potential = {
+			has_or_had_tag = LOT
+		}
+		
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+	br_hre_army_upgrade = {
+		country_modifier = {
+			nobles_estate_levy_size = 0.20
+			army_heavy_cavalry_maintenance_cost_modifier = -0.2
+			army_heavy_cavalry_power = 0.25
+			monthly_towards_serfdom = societal_value_decent_monthly_move
+			monthly_towards_quality = societal_value_minor_monthly_move
+		}
+		potential = {
+			has_or_had_tag = LOT
+		}
+		
+		estate_preferences = {
+			nobles_estate
+			crown_estate
 		}
 		years = 2
 	}
@@ -189,6 +265,23 @@ INJECT:legal_code_law = { #Version for ERE administative divisions.
 			monthly_towards_centralization = societal_value_monthly_move
 			monthly_towards_br_bureaucratic = societal_value_minor_monthly_move
 			global_distance_from_capital_speed_propagation = 0.05
+		}
+		estate_preferences = {
+			crown_estate
+			clergy_estate
+		}
+		years = 2
+	}
+
+	br_hre_mess_law = {
+		potential = {
+			has_or_had_tag = LOT
+		}
+		country_modifier = {
+			legislative_efficiency = -0.25
+			tax_income_efficiency = -0.08
+			global_estate_target_satisfaction = 0.05
+            global_pop_assimilation_speed_modifier = -0.8
 		}
 		estate_preferences = {
 			crown_estate
@@ -281,23 +374,3 @@ br_military_frontier = {
 #		}
 #	}
 #}
-
-
-INJECT:colonial_policy = {
-	br_elysian_colonial_settlement = {
-		unique = yes
-		potential = {
-			culture = { has_culture_group = culture_group:elysian_group }
-		}
-		country_modifier = {
-			colonial_maintenance_efficiency = 0.33
-			colonial_migration_size_modifier = 0.33
-			monthly_towards_aristocracy = societal_value_minor_monthly_move
-		}
-		estate_preferences = {
-			nobles_estate
-			crown_estate
-		}
-		years = 2
-	}
-}
