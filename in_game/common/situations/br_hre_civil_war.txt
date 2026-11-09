@@ -1,0 +1,99 @@
+br_hre_civil_war = {
+    image = "gfx/interface/illustrations/disaster/byzantine_succ_crisis.dds"
+    monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_br_hre_civil_war
+    fire_only_once = yes
+
+    outcome = {
+        name = "br_hre_civil_war_war_declared"
+        trigger = {
+            always = no
+        }
+    }
+ 
+    visible = {
+     is_member_of_international_organization = international_organization:hre
+     }
+
+     can_start = {
+        tag = LOT
+        has_variable = br_hre_civil_war
+     }
+
+     can_end = {
+		always = no
+     }
+
+     on_start = {
+     create_international_organization = {
+        type = international_organization_type:emperor_faction
+        creator = c:LOT
+        add_country_to_international_organization = c:LOT
+         
+        c:LOT = {
+        every_subject = {
+            international_organization:emperor_faction = {
+                add_country_to_international_organization = root
+            }
+        }
+     }
+        set_leader_country = c:LOT
+     }
+
+     create_international_organization = {
+      type = international_organization_type:prince_faction
+      creator = c:LOT
+ 
+      set_leader_country = c:UBV
+
+     international_organization:hre = {
+      every_country_with_special_status_of_type = {
+        type = elector
+
+         international_organization:prince_faction = {
+            add_country_to_international_organization = prev
+         }
+     }
+       }
+    }
+         every_country = {
+			limit = {
+				is_member_of_international_organization = international_organization:hre
+			}
+
+			trigger_event_non_silently = br_hre_civil_war.1
+		 }
+         c:LOT ?= {
+            trigger_event_non_silently = br_hre_events.8
+         }
+     }
+ 
+     on_monthly = {
+        if = {
+            limit = {
+                years_since_situation_start >= 1
+            }
+            c:LOT = {
+                trigger_event_non_silently = br_hre_events.7
+            }
+        }
+     }
+
+     on_end = {
+        if = {
+            limit = {
+                has_variable = br_hre_victory_in_the_civil_war
+            }
+
+			every_country = {
+			limit = {
+				tag = c:LOT
+			}
+
+			 trigger_event_non_silently = br_hre_civil_war.2
+		 }
+			
+        }
+        ## br_hre_defeated_in_the_civil_war and its outcome are not implemented yet.Coming in the 0.4
+     }
+    }
