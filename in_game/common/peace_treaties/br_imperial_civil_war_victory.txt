@@ -1,0 +1,97 @@
+br_imperial_civil_war_victory = {
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = 100
+		}
+	}
+
+	potential = {
+		scope:war ?= {
+			casus_belli ?= {
+				this = casus_belli:cb_imperial_civil_war
+			}
+			OR = {
+				attacker_leader = { tag = LOT }
+				defender_leader = { tag = LOT }
+			}
+		}
+		c:UBV ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+		c:AQN ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+		c:MLO ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+		c:FLA ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+		c:HOL ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+		trigger_if = {
+			limit = {
+				c:LOT = { has_variable = br_lot_master_of_spain }
+			}
+			c:ARA ?= {
+				can_make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+				}
+			}
+			c:CAS ?= {
+				can_make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+				}
+			}
+		}
+		c:PAP ?= {
+			can_make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+		}
+	}
+
+	allow = {
+		scope:winner = {
+			tag = LOT
+		}
+	}
+
+	effect = {
+		c:LOT = {
+			set_variable = {
+				name = br_hre_victory_in_the_civil_war
+				value = yes
+			}
+			## set_variable = { name = br_hre_defeated_in_the_civil_war value = yes }
+			trigger_event_silently = br_hre_events.9
+		}
+	}
+
+	ai_desire = {
+		add = {
+			desc = "BASE"
+			value = 10000
+		}
+	}
+}
