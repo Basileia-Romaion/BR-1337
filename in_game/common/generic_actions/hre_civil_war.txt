@@ -1,0 +1,108 @@
+join_hre_civil_war = {
+    type = situation
+
+    ai_tick = monthly
+    ai_tick_frequency = 6
+
+    automation_tick = never
+    automation_tick_frequency = 12
+
+    potential = {
+        scope:actor = {
+            is_member_of_international_organization = international_organization:hre
+            NOT = {
+                is_member_of_international_organization = international_organization:emperor_faction
+            }
+            NOT = {
+                is_member_of_international_organization = international_organization:prince_faction
+            }
+        }
+    }
+
+    allow = {
+        scope:actor = {
+            situation:br_hre_civil_war = {
+                situation_is_active = yes
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = situation
+        target_flag = recipient
+        name = "choose_situation"
+        column = {
+            data = name
+        }
+        visible = {
+            situation:br_hre_civil_war = this
+            situation_is_active = yes
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = international_organization
+        target_flag = target
+        name = "join_hre_civil_war_choose_faction"
+        column = {
+            data = name
+        }
+        column = {
+            data = members_size
+        }
+        visible = {
+            OR = {
+                international_organization_type = international_organization_type:emperor_faction
+                international_organization_type = international_organization_type:prince_faction
+            }
+            scope:actor = {
+                NOT = {
+                    is_member_of_international_organization = root
+                }
+                can_join_international_organization = root
+            }
+        }
+    }
+
+    effect = {
+        if = {
+            limit = {
+                exists = scope:target
+            }
+            join_situation_faction = {
+                target = scope:actor
+                international_organization = scope:target
+                join_variable = br_hre_recently_joined_faction
+                join_years = 5
+                leave_variable = br_hre_recently_left_faction
+            }
+        }
+    }
+
+    ai_will_do = {
+        add = {
+            value = "scope:target.modifier_utility(scope:actor)"
+        }
+        add = {
+            value = "scope:actor.object_bias(scope:target)"
+        }
+
+        scope:actor = {
+            if = {
+                limit = {
+                    NOT = {
+                        is_member_of_international_organization_of_type = {
+                            type = emperor_faction
+                        }
+                    }
+                    NOT = {
+                        is_member_of_international_organization_of_type = {
+                            type = prince_faction
+                        }
+                    }
+                }
+                add = "join_organization_ai_desire(scope:target)"
+            }
+        }
+    }
+}
