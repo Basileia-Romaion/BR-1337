@@ -1,0 +1,82 @@
+lot_imperial_authority_2_hre_decision = {
+	decision_category = country_specific_decisions
+	only_once = yes
+	unique = yes
+
+	tag = { LOT }
+
+	potential = {
+		tag = LOT
+	}
+
+	allow = {
+		tag = LOT
+		international_organization:hre = {
+        international_organization_has_policy = policy:kaisertum_policy
+    }
+		at_war = no
+		has_ruler = yes
+		has_reform = government_reform:br_succesfull_iberian_crusade
+	}
+
+	ai_will_do = {
+		value = 100
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	option = {
+		name = lot_imperial_authority_2_hre_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			remove_reform = government_reform:br_succesfull_iberian_crusade
+			add_reform = government_reform:br_imperial_authority_restored
+			add_imperial_authority = 15
+			add_prestige = 25
+			add_stability = 15
+			
+		}
+	}
+}
+
+lot_convoque_the_elector_count_hre_decision = {
+	decision_category = country_specific_decisions
+	only_once = yes
+	unique = yes
+
+	tag = { LOT }
+
+	potential = {
+		tag = LOT
+	}
+
+	allow = {
+		tag = LOT
+		international_organization:hre = {
+        international_organization_has_policy = policy:improved_imperial_authority_policy
+    }
+		at_war = no
+		has_ruler = yes
+		has_reform = government_reform:br_imperial_authority_restored
+	}
+
+	ai_will_do = {
+		value = 100
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	option = {
+		name = lot_convoque_the_elector_count_hre_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			trigger_event_non_silently = br_hre_events.6
+		}
+	}
+}
