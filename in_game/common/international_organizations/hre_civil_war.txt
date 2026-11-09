@@ -1,0 +1,204 @@
+# Emperor faction
+emperor_faction = {
+    # Can have only ONE faction like this
+    leader_type = country
+    unique = yes
+    show_on_diplomatic_map = yes
+    expel_members_who_are_targets_of_other_members = no
+    leader_color = define:NMapColors|INTERNATIONAL_ORGANIZATION_LEADER_COLOR
+    has_leader_country = yes
+    disband_if_no_leader = no
+
+    can_declare_war = {
+        always = no
+    }
+
+    create_visible_trigger = {
+        is_disaster_active = disaster:br_hre_civil_war
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    invite_visible_trigger = {
+        is_disaster_active = disaster:br_hre_civil_war
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    can_join_trigger = {
+        OR = {
+            is_member_of_international_organization = international_organization:hre
+            is_leader_of_international_organization = international_organization:hre
+        }
+        is_rebel_country = no
+        NOT = {
+            is_member_of_international_organization = international_organization:prince_faction
+        }
+
+    }
+
+    can_leave_trigger = {
+        always = no
+    }
+
+    auto_leave_trigger = {
+    always = no
+}
+
+    can_lead_trigger = {
+        tag = LOT
+    }
+
+    join_offensive_wars_always = {
+        custom_tooltip = {
+            text = religious_leagues_join_offensive_war.tt
+            scope:actor = {
+                is_leader_of_international_organization = root
+            }
+            scope:target ?= {
+                is_leader_of_international_organization = international_organization:prince_faction
+            }
+        }
+    }
+
+    join_defensive_wars_always = {
+        always = yes
+    }
+
+    auto_disband_trigger = {
+        always = no
+    }
+
+    modifier = {}
+
+    ai_desire_to_join = {
+    value = -40
+    if = {
+        limit = {
+            country_rank = country_rank:rank_county
+            opinion = {
+                target = c:LOT
+                value >= 85
+            }
+        }
+        add = {
+            desc = "HRE_CIVIL_WAR_CENTRALIZER"
+            value = 500
+        }
+    }
+}
+
+ai_desire_to_allow_new_member = {
+    add = {
+        desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"
+        value = 100
+    }
+
+}
+}
+
+# Prince faction
+prince_faction = {
+    # Can have only ONE faction like this
+    leader_type = country
+    unique = yes
+    show_on_diplomatic_map = yes
+    expel_members_who_are_targets_of_other_members = no
+    member_color = war_of_religions_catholic_league_color
+    leader_color = war_of_religions_catholic_league_leader_color
+    has_leader_country = yes
+    disband_if_no_leader = no
+
+    can_declare_war = {
+        always = no
+    }
+
+    create_visible_trigger = {
+        is_disaster_active = disaster:br_hre_civil_war
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    invite_visible_trigger = {
+        is_disaster_active = disaster:br_hre_civil_war
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    can_join_trigger = {
+        OR = {
+            is_member_of_international_organization = international_organization:hre
+        }
+        is_rebel_country = no
+        NOT = {
+            is_member_of_international_organization = international_organization:emperor_faction
+        }
+    }
+
+    can_leave_trigger = {
+        always = no
+    }
+
+    auto_leave_trigger = {
+    always = no
+}
+
+    can_lead_trigger = {
+        is_member_of_international_organization = international_organization:hre
+        is_subject = no
+        trigger_if = {
+            limit = {
+                exists = union
+            }
+            any_union_partner = {
+                NOT = {
+                    is_member_of_international_organization = international_organization:emperor_faction
+                }
+            }
+        }
+    }
+
+    join_offensive_wars_always = {
+        custom_tooltip = {
+            text = religious_leagues_join_offensive_war.tt
+            scope:actor = {
+                is_leader_of_international_organization = root
+            }
+            scope:target ?= {
+                is_leader_of_international_organization = international_organization:emperor_faction
+            }
+        }
+    }
+
+    join_defensive_wars_always = {
+        always = yes
+    }
+
+    auto_disband_trigger = {
+        always = no
+    }
+
+
+
+    modifier = {}
+
+    ai_desire_to_join = {
+    value = -40
+    if = {
+        limit = {
+            country_rank = country_rank:rank_county
+            opinion = {
+                target = c:LOT
+                value <= 75
+            }
+        }
+        add = {
+            desc = "HRE_CIVIL_WAR_DECENTRALIZER"
+            value = 80
+        }
+    }
+}
+
+ai_desire_to_allow_new_member = {
+    add = {
+        desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"
+        value = 100
+    }
+}
+}
