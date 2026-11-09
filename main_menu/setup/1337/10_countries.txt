@@ -15094,8 +15094,6 @@ countries = {
 		accepted_cultures = {
 			sephardi
 			zenati
-		}
-		tolerated_cultures = {
 			mozarabic
 		}
 
@@ -15104,6 +15102,12 @@ countries = {
 			stability = 75
 			prestige = 75
 			government_power = 75
+		}
+				timed_modifier = {
+			modifier = "br_levy_size_adu"
+			start_date = 1333.1.1
+			date = 1425.1.1
+			size = 1
 		}
 
 		capital = cordoba
@@ -57019,6 +57023,7 @@ countries = {
 				br_carolingian_heritage
 				br_ancient_french_taxation
 				br_french_feudal_nobility
+				br_aftermatch_louis_iv
 				autocracy
 			}
 
