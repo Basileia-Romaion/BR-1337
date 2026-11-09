@@ -1,0 +1,187 @@
+# Iberian Crusade
+
+Porto_conquest_geography = {
+	area = {
+		north_portugal_area
+	}
+
+	province_definition = {
+		ribatejo_province
+	}
+
+	location = {
+		alcobaca
+		torres_vedras
+		lisbon
+		setubal
+	}
+}
+
+Asturias_castile_conquest_geography = {
+	location = {
+		zamora
+		coria
+		oropesa
+		adrada
+	}
+
+	province_definition = {
+		caceres_province
+		trujillo_province
+		plasencia_province
+		toledo_province
+		cuenca_province
+		ocana_province
+		madrid_province
+		guadalajara_province
+	}
+}
+
+Aragon_conquest_geography = {
+	area = {
+		aragon_area
+	}
+
+	province_definition = {
+		valencia_province
+	}
+
+	location = {
+		manacor
+		pollensa
+		palma
+		ibiza
+		castellon_de_la_plana
+	}
+}
+
+#Imperial civil war
+
+aquitaine_scripted_geography = {
+	location = {
+		agde aire albi allegre angouleme aspet aubusson auch
+		aulnay aurillac beauvoir bellac beziers brioude carcassonne castelnaudary
+		castres chabanais chalancon chambon charroux chateauneuf_de_randon chatellerault clermont
+		cognac condorcet die entraigues fenouillet florac foix fontenay
+		french_ales gueret herment la_roche_sur_yon la_rochelle lautrec lavaur le_puy
+		lectoure limoux lisle_jourdain lodeve loudun lusignan mauleon_poitou mauriac
+		melgueil mende millau mirande mirepoix mauleon mont_de_marsan montaigu montaigut
+		montlaur montmorillon montpellier muret narbonne nimes niort nogaro
+		oloron orange orthez pamiers parthenay pau perigueux perpignan
+		peyre peyrusse poitiers prades privas puigcerda riberac riom
+		rochechouart rodez saint_flour saint_gaudens saint_jean_pied_de_port saint_lizier saint_pons st_affrique st_ambroix
+		st_jean_dangely talmont tarbes thouars toulouse tour_auvergne tournon ussel
+		uzes valence ventadour verdun_sur_garonne vic_le_comte vielha villefranche villemur
+		viviers vodable
+	}
+}
+
+bavaria_scripted_geography = {
+	location = {
+		amstetten augsburg austria_baden bad_ischl beilngries berchtesgaden bischofshofen bled
+		bolzano brixen bruck_leitha bruneck celje eichstatt feldbach feldkirchen
+		freising freistadt friesach furstenfeld ganserndorf garmisch gmunden gorizia
+		grafenau graz hallein hermagor hollabrunn horn imst innsbruck
+		judenburg kapfenberg kirchdorf klagenfurt kocevje korneuburg kranj krems
+		landeck lasko laufen leibnitz leoben lienz liezen lilienfeld
+		linz ljubljana maribor melk merano metlika miesbach mistelbach
+		mittersill muhldorf murau murzzuschlag novo_mesto passau perg pitten
+		postojna ptuj regensburg reutte rohrbach rottenmann saalfelden salzburg
+		scheibbs schladming schwaz silandro skofja_loka slovenj_gradec spittal st_georgen
+		st_johann st_polten st_veit steinfeld sterzing steyr tamsweg tulln
+		vienna villach villandro voitsberg volkermarkt waidhofen waidhofen_an_der_thaya weiz
+		wels wiener_neustadt winklern wolfsberg zell_am_see zell_am_ziller zwettl
+	}
+}
+
+italy_scripted_geography = {
+	location = {
+		acqui ajaccio alba albenga aleria alessandria alghero aquileia
+		arezzo argenta asti bassano bastia belluno berceto bobbio
+		bologna bonifacio buzet cairo_montenotte calvi canossa carmagnola casale
+		castelfranco castelsardo ceneda ceva chieri cividale comacchio conegliano
+		corte este feltre ferrara ficarolo finalborgo florence fosdinovo
+		frassinoro gemona genoa goito guastalla ilirska_bistrica ivrea lanzo
+		lavagna legnago livorno lomello lucca mangona mantova massa
+		medicina mirandola modena mondovi monselice nonantola novi orosei
+		ostiglia ozieri padova parma pavia peschiera pescia pieve
+		pinerolo piombino pisa pistoia poggibonsi pontedera pordenone posada
+		prato reggioem rovegno rovereto rovigo saluzzo sandonnino sanlorenzo
+		sartene sarzana sassari savona schio spilimbergo susa tempiopausania
+		terranova_pausania thiesi tolmezzo tolmin tortoli tortona treviso turin
+		udine ventimiglia vergato verona vicenza vico voghera volterra
+	}
+}
+
+papal_scripted_geography = {
+	location = {
+		chiusi grosseto massamar montalcino pitigliano siena
+	}
+}
+
+holland_scripted_geography = {
+	location = {
+		amersfoort apeldoorn appingedam arnhem assen aurich bentheim borgloon
+		bree coevorden deventer doetinchem emden geldern groningen harderwijk
+		harlingen hasselt heinsberg kampen kleve leer leeuwarden meppel
+		middelburg nijmegen oldenzaal roermond sloten stavoren tiel utrecht
+		venlo wedde weert wesel wolvega zutphen zwolle
+	}
+}
+
+flanders_scripted_geography = {
+	location = {
+		antwerp ath bergen_zoom breda brussels chimay cuijk dinant
+		eindhoven enghien helmond hertogenbosch leuven liege maastricht maubeuge
+		mechelen mons namur nivelles turnhout valenciennes walcourt
+	}
+}
+
+aragon_scripted_geography = {
+	location = {
+		elizondo estella olite onate pamplona roncesvalles saint_jean_pied_de_port salvatierra
+		san_sebastian sanguesa tolosa viana
+	}
+}
+
+castile_scripted_geography = {
+	location = {
+		agreda aguiar alba_de_aliste alba_de_tormes aranda_de_duero arevalo arnedo avila
+		barcelos bejar braga braganca burgo_de_osma calahorra calatanazor chaves
+		cuellar feira fermoselle fuentiduena guimaraes lamego ledesma macedo
+		matilla_de_canos meda medina_de_rioseco medina_del_campo miranda_de_i_douro mirandela moncorvo montalegre
+		palencia palenzuela pedraza penafiel piedrahita porto salamanca san_felices
+		segovia sepulveda soria sto_domingo_silos tordesillas toro trancoso valenca
+		valladolid viana_do_castelo vila_real villalpando villatoro viseu yecla_de_yeltes
+	}
+}
+
+serg_departures_scripted_geography = {
+	location = {
+		achim alfeld altenburg angermunde anklam annaburg apolda arnstadt
+		ballenstedt bautzen beeskow beichlingen belzig berlin bernburg bialogard
+		bitterfeld blankenburg bobolice brandenburg bremervorde brunswick buckeburg burg
+		burgdorf butzow calau calbe celle chemnitz chojna choszczno
+		cottbus czaplinek czlopa dannenberg delitzsch demmin doberan drawsko
+		dresden duderstadt ebstorf einbeck eisenach eisenberg eisleben erfurt
+		eutin fallingbostel freiberg freienwalde freyburg gandersheim gardelegen gera
+		gestenthorpe gifhorn glauchau goleniow gorlitz gorzow goslar gotha
+		gottingen grabow grevesmuhlen grimma grimmen gryfia_gora gryfow guben
+		gustrow hagenow halberstadt haldensleben halle_an_der_saale hamburg hamelin hanover
+		harburg havelberg heide heiligenhafen helmstedt herzberg herzfelde hildesheim
+		hof holzminden hoyerswerda isenhagen jerichow juterbog kamien kiel
+		kolobrzeg koszalin langensalza lauenburg lebus leipzig liebenwerda lubben
+		lubeck luchow luckau luneburg magdeburg malchin malchow marienstern
+		meinersen meissen merseburg miastko muhlhausen naumburg neubrandenburg neuhaus
+		neustadt_am_rubenberge nordhausen nowogard nowoszczecin ohrdruf osterburg osterholz parchim
+		pinneberg pirna plauen plon potsdam prenzlau pritzwalk pyrzyce
+		quedlinburg ratzeburg rendsburg resko ribnitz ritzebuttel rochlitz rostock
+		rothenburg_oberlausitz rugen ruppin saalfeld salzwedel sangerhausen santok sayda
+		schleiz schweinitz schwerin segeberg slawno slupsk soltau soltyn
+		sondershausen spremberg stade steinburg stendal stettin stormarn stralsund
+		strelitz swidwin swinousjcie szadzko teltow templin torgau torzym
+		treuenbrietzen ueckermunde uelzen verden walcz waren weimar weissenfels
+		wernigerode winsen winsen_aller wismar wittenberg wittenberge wittstock wolfenbuttel
+		wolgast wolmirstedt wurzen zerbst zeven zossen zwickau
+	}
+}
