@@ -50,14 +50,24 @@
 
  #[ShowSpecialStatusName('emperor')] #[GetCountry('LOT').GetAdjectiveWithNoTooltip] #[GetCountry('LOT').GetName] #[GetCountry('LOT').GetAdjective]
  
+ #HRE
+ 
  br_ancient_french_taxation: "[GetUniqueInternationalOrganization('hre').GetName] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] Taxation"
- br_ancient_french_taxation_desc: "Historically, taxes have been imposed and collected only in times of need, not by a recurrent system."
+ br_ancient_french_taxation_desc: "Faced with a nobility too powerful to be adequately taxed, the emperors turned to the peasantry to fill the imperial coffers. Already burdened by feudal levies, the peasants saw their burdens grow even heavier. This policy strengthened imperial finances at the cost of their freedom and prosperity.."
 
- br_french_feudal_nobility: "[GetUniqueInternationalOrganization('hre').GetName] Feudal Nobility"
- br_french_feudal_nobility_desc: "Feudalism has a tight grip on the [ShowSpecialStatusName('emperor')]s court affairs. Powerful nobles and autonomous, decentralized subjects have unprecedented amounts of freedom and say in our internal administration."
+ br_aftermatch_louis_iv: "Aftermatch Louis IV"
+ br_aftermatch_louis_iv_desc: "Although nearly a century and a half has passed, the disastrous consequences of the defeat of Louis IV the Mad remain deeply rooted in imperial politics. Imperial authority has gradually collapsed in favor of the great lords of the realm. Until the imperial dignity regains its prestige and authority, the Empire will remain incapable of reforming itself."
+ br_aftermatch_louis_iv_removal_conditions: "Will be changed by the success of the iberian crusade , or by the defeat of electors ." 
+ 
  br_french_centralized_monarchy: "[GetUniqueInternationalOrganization('hre').GetName] Monarchy"
- br_french_centralized_monarchy_desc: "Following centuries of heavy decentralization, [ShowSpecialStatusName('emperor')] has consolidated many of its fragmented appanage and ducal lands, paving the way for a more modern state."
- #br_french_appanage_reform: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Appanage"
- #br_french_appanage_reform_desc: "As Princes of the Blood, holders of appanages enjoy a higher standing among the subjects of [GetCountry('LOT').GetName], as well as greater privileges. Furthermore, the [GetCountry('LOT').GetAdjective] monarch is expected to pay them adequate respect in exchange for their assistance in diplomatic affairs."
- #br_french_ducal_vassal_reform: "[GetCountry('LOT').GetAdjectiveWithNoTooltip] Ducal"
- #br_french_ducal_vassal_reform_desc: "While the ducal subjects of [GetCountry('LOT').GetName] lack the autonomy of the appanage domains, they instead enjoy a more cooperative relationship with the Crown."
+ br_french_centralized_monarchy_desc: "Following centuries of heavy decentralization, [ShowSpecialStatusName('emperor')] has consolidated many of its fragmented appanage and ducal lands, paving the way for a more modern state"
+
+ br_succesfull_iberian_crusade: "Victory in the Iberian Crusade"
+ br_succesfull_iberian_crusade_desc: "The honour of the Carolingian dynasty has finally been restored! We have annihilated the vile heretical state of Al-Andalus and saved Christian Spain! Yet, while this victory brings us great prestige and renewed influence within the Holy Roman Empire, the road remains long before the royal authority can be fully cleansed of the deeds of Louis IV."
+ br_succesfull_iberian_crusade_iv_removal_conditions: "Will be change by active a decision"
+
+br_imperial_authority_restored: "Imperial Authority Restored"
+br_imperial_authority_restored_desc: "There was a time when our name was mocked, a time when our authority was disregarded, a time when our Empire was an empire in name only. Those days are over. The faithful sons of Charlemagne have restored imperial authority. The prince-electors fear us and respect our authority. Yet they remain fiercely attached to their privileges. The day will come when the Empire shall once again be one and indivisible!"
+
+br_french_feudal_nobility: "The Feudal Nobility"
+br_french_feudal_nobility_desc: "The nobility, through the price of blood, certainly allows us to maintain inexpensive cavalry. However, in return, its influence over our lands continues to grow."
