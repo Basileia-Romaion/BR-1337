@@ -4,44 +4,48 @@ git log 0.27..HEAD --pretty=format:"- %s"
 
 # Patch Notes
 
-# 0.28 Steppe rework.
+## 0.28: Steppe Rework
 
-## Map/Balance Changes
+### Map Changes
 - Large rework of the Steppe/Mongolia
-  - New/enlarged tags pop and building reworks.
+  - New and enlarged tags, plus pop and building reworks
+- Greenland enlarged slightly
+- Added one more wheat in Paphlagonia
+- Reduced the number of cities in Iberia and Anatolia, and added more villages
+- Updated starting town rights of Iberia
+- Updated various starting buildings
+
+### Balance Changes
 - Castles now unlock trebuchets
-- Update br_added_estate_privileges.txt
-- More scripted minor ERE revolts
-- one more wheat in Paphlagonia
-- lowered the Orthodox missionary building to convert 25 a month instead of 500.
-- decreased amount of cities in Iberia/Anatolia added more villages
-- Updated  starting diplomacy.txt
-- Updated started town rights of Iberia
-- Removed the scripted Iberia crusade I added, now that more dynamic ones are in the game.
-- Andalusian tags streamlined
-- Various starting buildings updated.
-- AI Inca and Aztecs will consolidate and form earlier and be stronger.
-- Few balance edits towards Markets around the silk road.
-- Decreased European/West Asia development a bit
+- Reduced the Orthodox missionary building's conversion from 500 to 25 per month
+- A few balance edits to Markets around the Silk Road
+- Slightly decreased European/West Asian development
+- AI Inca and Aztecs now consolidate and form earlier, and are stronger
 
-## Tag & Events changes
-- Ottomans visually replaced with Selukids (Dynasty and flag/name/color)
-- Update Pontus formable to use the vanilla flag/tag
-- Fixed/Updated the Latinized ERE name option to be Empire of the Romans.
-- North Sea Empire has been given access to English, Danish and Norwegian dynamic events nearly 300.
-  - Note since it still uses the NSE tag some of the events effects that may require a certain tag may not function correctly let me know.
-- Carinthia now uses the HAB with the CRH flag and name. So you can try as a challanging way to create the Habsburg empire.
-- switch CAS and LON tags So Asturias is the primary Iberian Christian tag with access to all the base and DLC content.
-  - Asturas now uses the CAS tag with the ATU (New base game Asturias tag) Flag, name and color.
-  - Castile uses the LON tag with the CAS tag flag name and color.
-- Naples tag used for Benevento (So it has access to all naples content)
-- Neustria and Austrasia can form HRE tag without full consolidation.
-- Greenland enlarged a tad
-- updated chances for Vinlands events to happen to gaurentee they fire.
-- Al-Andalus formed at game start from Granada instead of already active.
+### Tags & Formables
+- Ottomans visually replaced with Seljuks (dynasty, flag, name, and color)
+- Updated the Pontus formable to use the new vanilla flag/tag
+- Fixed/updated the Latinized ERE name option to be "Empire of the Romans"
+- Swapped the CAS and LON tags so Asturias is the primary Iberian Christian tag, with access to all base-game and DLC content
+  - Asturias now uses the CAS tag with the ATU (new base-game Asturias) flag, name, and color
+  - Castile now uses the LON tag with the CAS flag, name, and color
+- Benevento now uses the Naples tag, giving it access to all Naples content
+- Carinthia now uses the HAB tag with the CRH flag and name, offering a challenging way to create the Habsburg empire
+- Neustria and Austrasia can now form the HRE tag without full consolidation
+- Al-Andalus is now formed from Granada at game start instead of starting already active.
+- North Sea Empire is now formed from England at game start instead of starting already active.
+- Streamlined Andalusian tags
 
-## Bug fixes
-- fixed a decent amount of benign errors.
+### Events
+- North Sea Empire now has access to the English, Danish, and Norwegian dynamic events (over 300)
+- Austrasia can now access most of the french events 
+**Note:** Some event effects that require a specific tag may not function correctly. Please report any issues.
+- Increased the chances of Vinland events so they are guaranteed to fire
+- Added more scripted minor ERE revolts
+- Removed the scripted Iberian crusade, now that more dynamic ones are in the game
+
+### Bug Fixes
+- Fixed a number of benign errors
 
 # 0.27 The Vinland Saga
 
