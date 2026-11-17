@@ -1,0 +1,54 @@
+war_against_electors_victory = {
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = 100
+		}
+	}
+
+	potential = {
+		scope:war ?= {
+			casus_belli ?= {
+				this = casus_belli:cb_war_against_electors
+			}
+		}
+	}
+
+	allow = {
+		always = yes
+	}
+
+	effect = {
+			c:LOT = {
+			set_variable = {
+				name = war_against_electors
+				value = yes
+			}
+			trigger_event_non_silently = {
+		    id = br_hre_events.4
+	}
+		}
+		c:FRA = {
+				make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+					}
+
+					 }
+
+		c:BUR = {
+				make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+					}
+
+	}
+
+	ai_desire = {
+		add = {
+			desc = "BASE"
+			value = 10000
+		}
+	}	
+}
+ }

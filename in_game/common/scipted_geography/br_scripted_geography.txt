@@ -1,0 +1,56 @@
+# Iberian Crusade
+
+Porto_conquest_geography = {
+	area = {
+		north_portugal_area
+	}
+
+	province_definition = {
+		ribatejo_province
+	}
+
+	location = {
+		alcobaca
+		torres_vedras
+		lisbon
+		setubal
+	}
+}
+
+Asturias_castile_conquest_geography = {
+	location = {
+		zamora
+		coria
+		oropesa
+		adrada
+	}
+
+	province_definition = {
+		caceres_province
+		trujillo_province
+		plasencia_province
+		toledo_province
+		cuenca_province
+		ocana_province
+		madrid_province
+		guadalajara_province
+	}
+}
+
+Aragon_conquest_geography = {
+	area = {
+		aragon_area
+	}
+
+	province_definition = {
+		valencia_province
+	}
+
+	location = {
+		manacor
+		pollensa
+		palma
+		ibiza
+		castellon_de_la_plana
+	}
+}

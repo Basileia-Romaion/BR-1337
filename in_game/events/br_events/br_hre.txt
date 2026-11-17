@@ -2,7 +2,7 @@
 
 namespace = br_hre_events
 
-#HRE starting event is to balance the massive negative opinion all members have due to the mods starting laws.
+#HRE starting event is to balance the massive negative opinion all members have due to the mods starting laws. And it's a hidden event
 br_hre_events.1 = {
 	type = country_event
 	title = br_hre_events.1.title
@@ -10,6 +10,7 @@ br_hre_events.1 = {
 	outcome = neutral
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	hidden = yes
 	trigger = {
 	}
 	
@@ -40,5 +41,219 @@ br_hre_events.1 = {
 				}
 			}
 		}
+	}
+}
+
+br_hre_events.2 = { #Initiale event
+	type = country_event
+	title = br_hre_events.2.title
+	desc = br_hre_events.2.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.2.a #iberian crusade
+		declare_war_with_cb = {
+	    target = c:ADU
+	    type = casus_belli:cb_iberian_crusade
+    }
+	c:ADU = {
+			random_current_war = {
+				limit = {
+					attacker_leader = root
+					defender_leader = c:ADU
+				}
+				save_scope_as = iberian_crusade_war
+			}
+		}
+
+	c:POR = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:LON = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:CAS = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:NAV = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:ARA = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD0 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD1 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD2 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+
+	international_organization:hre = {
+		add_country_to_international_organization = c:POR
+		add_country_to_international_organization = c:LON
+		add_country_to_international_organization = c:CAS
+		add_country_to_international_organization = c:NAV
+		add_country_to_international_organization = c:ARA
+
+		# Leon elector
+		international_organization_add_special_status = {
+			type = special_status:elector
+			country = c:LON
+		}
+	}
+
+	}
+
+	option = {
+		name = br_hre_events.2.b # diplomacy is not an option
+		declare_war_with_cb = {
+	    target = c:FRA
+		type = casus_belli:cb_war_against_electors
+	}
+
+	c:FRA = {
+			random_current_war = {
+				limit = {
+					attacker_leader = root
+					defender_leader = c:FRA
+				}
+				save_scope_as = war_against_electors
+			}
+		}
+	c:AQN = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:BUR = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:PRO = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:MLO = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:UBV = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+
+	}
+
+  }
+	
+	br_hre_events.3 = { #Win the iberian crusade
+	type = country_event
+	title = br_hre_events.3.title
+	desc = br_hre_events.3.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+		has_variable = iberian_crusade
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.3.a
+		add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch_lot
+				years = 15
+				mode = add_and_extend
+			}
+			remove_reform = government_reform:br_aftermatch_louis_iv
+			add_reform = government_reform:br_succesfull_iberian_crusade
+	}
+}
+
+br_hre_events.4 = {
+	type = country_event
+	title = br_hre_events.4.title
+	desc = br_hre_events.4.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+		has_variable = war_against_electors
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.4.a
+		add_country_modifier = {
+				modifier = br_war_against_electors_diplo
+				years = 10
+				mode = add_and_extend
+			}
+			remove_reform = government_reform:br_aftermatch_louis_iv
+			add_reform = government_reform:br_imperial_authority_restored
 	}
 }
