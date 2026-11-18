@@ -1,0 +1,318 @@
+
+situation_panel = {
+
+    ##################################### TOP HEADER #####################################
+
+
+    ##################################### MAIN IMAGE #####################################
+
+    blockoverride "situation_panel_image" {
+        using = two_countries_header_template
+
+        blockoverride "FirstCountryContext" {
+            datacontext = "[GetUniqueInternationalOrganization('emperor_faction').GetLeaderCountry]"
+        }
+
+        blockoverride "SecondCountryContext" {
+            datacontext = "[GetUniqueInternationalOrganization('prince_faction').GetLeaderCountry]"
+        }
+
+        blockoverride "first_character_portrait_anchor" {
+            parentanchor = bottom|left
+        }
+
+        blockoverride "second_character_portrait_anchor" {
+            parentanchor = bottom|right
+        }
+
+        blockoverride "character_religion_visibility" {
+            visible = no
+        }
+
+        blockoverride "character_name_maximumsize" {
+            maximumsize = { 270 -1 }
+        }
+
+        blockoverride "country_header_extra" {
+            icon = {
+                parentanchor = top|hcenter
+                texture = "gfx/interface/great_powers/banner_rank.dds"
+                texture_density = 2
+                size = { 65 40 }
+
+                datacontext = "[GetUniqueInternationalOrganization('hre')]"
+                datacontext = "[SituationView.GetActiveSituation.GetSituation]"
+
+                button = {
+                    parentanchor = center
+                    texture = "[GetUniqueInternationalOrganization('hre').GetIcon]"
+                    texture_density = 2
+                    size = {28 28}
+                    glow = {
+                        name = "drop_shadow"
+                        glow_radius = 3
+                        color = {0.0 0.0 0.0 1.0}
+                        alpha = 0.6
+                    }
+                    onclick = "[OpenInternationalOrganizationView(GetUniqueInternationalOrganization('hre').Self)]"
+                    tooltipwidget = {
+                        using = Situation_WarOfReligions_tooltip
+                    }
+                    onmousehierarchyenter = "[PdxGuiWidget.SetHighlightInternationalOrganization(GetUniqueInternationalOrganization('hre').Self)]"
+                }
+            }
+        }
+    }
+
+    ##################################### TAB NAME #####################################
+
+    ##################################### SUBHEADER #####################################
+
+    blockoverride "situation_subheader_content" {}
+
+    ##################################### MAIN CONTENT #####################################
+
+    blockoverride "situation_panel_outcome_hint" {
+        action_tooltip = {
+            title = "OPEN_HINT"
+            on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_war_of_religions')]"
+        }
+    }
+
+    blockoverride "situation_panel_main_content" {
+
+        # List of leading countries
+
+        situation_fancy_two_line_card = {
+            blockoverride "card_datacontext" {}
+
+            # Emperor faction
+
+            blockoverride "left_flag_properties" {
+                datacontext = "[GetUniqueInternationalOrganization('emperor_faction').GetLeaderCountry]"
+                visible = "[Country.IsValid]"
+            }
+
+            blockoverride "left_bottom_flag" {
+				icon = {
+					size = { 30 30 }
+					texture = "gfx/interface/icons/religion/lutheran.dds"
+				}
+			}
+
+            blockoverride "left_top_text" {
+                text = "[GetUniqueInternationalOrganization('emperor_faction').GetLeaderCountry.GetName]"
+            }
+
+            blockoverride "left_bottom_text" {
+                text = "[GetUniqueInternationalOrganization('emperor_faction').GetName]"
+                maximumsize = { 100 -1 }
+                fontsize = 11
+                fontsize_min = 11
+            }
+
+            # Prince faction
+
+            blockoverride "right_flag_properties" {
+                datacontext = "[GetUniqueInternationalOrganization('prince_faction').GetLeaderCountry]"
+                visible = "[Country.IsValid]"
+            }
+
+            blockoverride "right_bottom_flag" {
+				icon = {
+					size = { 30 30 }
+					texture = "gfx/interface/icons/religion/catholic.dds"
+				}
+			}
+
+            blockoverride "right_top_text" {
+                text = "[GetUniqueInternationalOrganization('prince_faction').GetLeaderCountry.GetName]"
+            }
+
+            blockoverride "right_bottom_text" {
+                text = "[GetUniqueInternationalOrganization('prince_faction').GetName]"
+                maximumsize = { 100 -1 }
+                fontsize = 11
+                fontsize_min = 11
+            }
+        }
+
+        # IO Membership
+
+        situation_side_cards = {
+            blockoverride "card_datacontext" {}
+
+            # Emperor faction
+
+            blockoverride "left_header_icon" {
+                texture = "gfx/interface/icons/international_organizations/emperor_faction.dds"
+            }
+
+            blockoverride "left_header_text" {
+                text = "Imperial League"
+            }
+
+            blockoverride "left_bottom_content" {
+                scrollarea = {
+                    layoutpolicy_horizontal = expanding
+                    size = { -1 200 }
+                    scrollbarpolicy_horizontal = always_off
+                    scrollbar_vertical = {
+                        using = Scrollbar_Vertical
+                    }
+
+                    scrollwidget = {
+                        dynamicgridbox = {
+                            layoutpolicy_horizontal = expanding
+                            flipdirection = yes
+                            position = {10 10}
+                            datamodel_wrap = 5
+                            maxhorizontalslots = 12
+                            datamodel = "[GetInternationalOrganization('emperor_faction').GetMembers]"
+                            item = {
+                                country_flag_small = {}
+                            }
+                        }
+                    }
+                }
+            }
+
+            # Prince faction
+
+            blockoverride "right_header_icon" {
+                texture = "gfx/interface/icons/international_organizations/prince_faction.dds"
+            }
+
+            blockoverride "right_header_text" {
+                text = "League of Princes"
+            }
+
+            blockoverride "right_bottom_content" {
+                scrollarea = {
+                    layoutpolicy_horizontal = expanding
+                    size = { -1 200 }
+                    scrollbarpolicy_horizontal = always_off
+                    scrollbar_vertical = {
+                        using = Scrollbar_Vertical
+                    }
+
+                    scrollwidget = {
+                        dynamicgridbox = {
+                            layoutpolicy_horizontal = expanding
+                            flipdirection = yes
+                            position = {10 10}
+                            datamodel_wrap = 5
+                            maxhorizontalslots = 12
+                            datamodel = "[GetInternationalOrganization('prince_faction').GetMembers]"
+                            item = {
+                                country_flag_small = {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ##################################### BOTTOM CONTENT #####################################
+
+    blockoverride "situation_panel_main_content_bottom" {
+
+        # Current war
+
+        situation_card_one_line = {
+            visible = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('br_hre_current_war').IsSet]"
+
+            blockoverride "header_icon" {
+                texture = "gfx/interface/icons/diplomatic_status/war.dds"
+            }
+
+            blockoverride "header_text" {
+                text = "BR_HRE_CURRENT_WAR"
+            }
+        }
+
+        # Supporting countries / opposing countries
+
+        situation_side_cards = {
+            visible = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('br_hre_current_war').IsSet]"
+
+            blockoverride "left_header_icon" {
+                texture = "gfx/interface/icons/diplomatic_status/war.dds"
+            }
+
+            blockoverride "left_header_text" {
+                text = "BR_HRE_WAR_SUPPORT"
+
+            }
+
+            blockoverride "left_bottom_content" {
+                scrollarea = {
+                    layoutpolicy_horizontal = expanding
+                    size = { -1 150 }
+                    scrollbarpolicy_horizontal = always_off
+                    scrollbar_vertical = {
+                        using = Scrollbar_Vertical
+                    }
+
+                    scrollwidget = {
+                        dynamicgridbox = {
+                            layoutpolicy_horizontal = expanding
+                            flipdirection = yes
+                            position = {10 10}
+                            datamodel_wrap = 5
+                            maxhorizontalslots = 12
+                            datamodel = "[GetGlobalList('br_hre_war_support_list')]"
+                            item = {
+                                country_flag_small = {
+                                    datacontext = "[Scope.GetCountry]"
+                                    tooltipwidget = {
+                                        using = CountryTooltip
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            blockoverride "right_header_icon" {
+                texture = "gfx/interface/icons/diplomatic_status/war.dds"
+            }
+
+            blockoverride "right_header_text" {
+                text = "BR_HRE_WAR_OPPOSITION"
+            }
+
+            blockoverride "right_bottom_content" {
+                scrollarea = {
+                    layoutpolicy_horizontal = expanding
+                    size = { -1 150 }
+                    scrollbarpolicy_horizontal = always_off
+                    scrollbar_vertical = {
+                        using = Scrollbar_Vertical
+                    }
+
+                    scrollwidget = {
+                        dynamicgridbox = {
+                            layoutpolicy_horizontal = expanding
+                            flipdirection = yes
+                            position = {10 10}
+                            datamodel_wrap = 5
+                            maxhorizontalslots = 12
+                            datamodel = "[GetGlobalList('br_hre_war_opposition_list')]"
+                            item = {
+                                country_flag_small = {
+                                    datacontext = "[Scope.GetCountry]"
+                                    tooltipwidget = {
+                                        using = CountryTooltip
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

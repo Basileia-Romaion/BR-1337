@@ -2,7 +2,7 @@
 
 namespace = br_hre_events
 
-#HRE starting event is to balance the massive negative opinion all members have due to the mods starting laws.
+#HRE starting event is to balance the massive negative opinion all members have due to the mods starting laws. And it's a hidden event
 br_hre_events.1 = {
 	type = country_event
 	title = br_hre_events.1.title
@@ -10,6 +10,7 @@ br_hre_events.1 = {
 	outcome = neutral
 	fire_only_once = yes
 	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	hidden = yes
 	trigger = {
 	}
 	
@@ -42,3 +43,617 @@ br_hre_events.1 = {
 		}
 	}
 }
+
+br_hre_events.2 = { #Initiale event
+	type = country_event
+	title = br_hre_events.2.title
+	desc = br_hre_events.2.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.2.a #iberian crusade
+		ai_chance = {
+			factor = 90
+		}
+		declare_war_with_cb = {
+	    target = c:GRA
+	    type = casus_belli:cb_iberian_crusade
+    }
+	c:GRA = {
+			random_current_war = {
+				limit = {
+					attacker_leader = root
+					defender_leader = c:GRA
+				}
+				save_scope_as = iberian_crusade_war
+			}
+		}
+
+	c:POR = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:LON = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:CAS = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:NAV = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:ARA = {
+			join_war_as_attacker = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD0 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD1 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+	c:AD2 = {
+			join_war_as_defender = {
+				war = scope:iberian_crusade_war
+			}
+
+	}
+
+	international_organization:hre = {
+		add_country_to_international_organization = c:POR
+		add_country_to_international_organization = c:LON
+		add_country_to_international_organization = c:CAS
+		add_country_to_international_organization = c:NAV
+		add_country_to_international_organization = c:ARA
+
+		# Leon elector
+		international_organization_add_special_status = {
+			type = special_status:elector
+			country = c:CAS
+		}
+	}
+
+	}
+
+	option = {
+		name = br_hre_events.2.b # diplomacy is not an option
+		ai_chance = {
+			factor = 10
+		}
+		declare_war_with_cb = {
+	    target = c:FRA
+		type = casus_belli:cb_war_against_electors
+	}
+
+	c:FRA = {
+			random_current_war = {
+				limit = {
+					attacker_leader = root
+					defender_leader = c:FRA
+				}
+				save_scope_as = war_against_electors
+			}
+		}
+	c:AQN = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:BUR = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:PRO = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:MLO = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+
+	c:UBV = {
+			join_war_as_defender = {
+				war = scope:war_against_electors
+			}
+
+	}
+	
+	c:LOT = {
+			add_country_modifier = {
+				modifier = br_disloyal_army_hre
+				years = 5
+				mode = add_and_extend
+			}
+		}
+	 }
+	  }
+	br_hre_events.3 = { #Win the iberian crusade
+	type = country_event
+	title = br_hre_events.3.title
+	desc = br_hre_events.3.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+		has_variable = iberian_crusade
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.3.a
+		set_variable = {
+			name = br_lot_master_of_spain
+			value = yes
+		}
+		add_country_modifier = {
+				modifier = br_iberian_crusade_aftermatch_lot
+				years = 15
+				mode = add_and_extend
+			}
+			remove_reform = government_reform:br_aftermatch_louis_iv
+			add_reform = government_reform:br_succesfull_iberian_crusade
+
+		}
+	}
+
+br_hre_events.4 = { #win against the electors
+	type = country_event
+	title = br_hre_events.4.title
+	desc = br_hre_events.4.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds" #wip
+
+	trigger = {
+		has_or_had_tag = LOT
+		has_variable = war_against_electors
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.4.a
+		add_country_modifier = {
+				modifier = br_war_against_electors_diplo
+				years = 10
+				mode = add_and_extend
+			}
+			remove_reform = government_reform:br_aftermatch_louis_iv
+			add_reform = government_reform:br_imperial_authority_restored
+
+			international_organization:hre = {
+	add_policy_to_international_organization = policy:electorate_policy
+	add_policy_to_international_organization = policy:imperial_armory_expanded
+	add_policy_to_international_organization = policy:only_treasury_payment
+	add_policy_to_international_organization = policy:landfriede_rank_2_policy
+	add_policy_to_international_organization = policy:kaisertum_policy
+
+	every_international_organization_member = {
+		limit = { NOT = { this = international_organization:hre.leader_country } }
+		remove_opinion = {
+			target = international_organization:hre.leader_country
+			modifier = opinion_hre_passed_controversial_law
+		}
+	}
+}
+	}
+}
+
+br_hre_events.5 = { # Imperial authority restored
+	type = country_event
+	title = br_hre_events.5.title
+	desc = br_hre_events.5.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.5.a
+		remove_reform = government_reform:br_succesfull_iberian_crusade
+		add_reform = government_reform:br_imperial_authority_restored
+	}
+}
+
+br_hre_events.6 = { # No more feodalism
+	type = country_event
+	title = br_hre_events.6.title
+	desc = br_hre_events.6.desc
+	outcome = neutral
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/international_organization_types/hre.dds"
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = br_hre_events.6.a
+		set_variable = {
+			name = br_hre_civil_war
+			value = yes
+		}
+		activate_situation = situation:br_hre_civil_war
+	}
+}
+
+br_hre_events.7 = { #Imperial civil war begun
+    type = country_event
+    title = br_hre_events.7.title
+    desc = br_hre_events.7.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+    option = {
+        name = br_hre_events.7.a
+
+        international_organization:prince_faction = {
+       leader_country = {
+        declare_war_with_cb = {
+            target = c:LOT
+            type = casus_belli:cb_imperial_civil_war
+           }
+         }
+       }
+
+        # Retrieve the war
+        c:LOT = {
+            random_current_war = {
+                limit = {
+                    attacker_leader = {
+                        is_leader_of_international_organization = international_organization:prince_faction
+                    }
+                    defender_leader = c:LOT
+                }
+                save_scope_as = imperial_civil_war
+            }
+        }
+
+        # Centralizers join the emperor
+        every_international_organizations_member_of = {
+            limit = {
+                international_organization_type = international_organization_type:emperor_faction
+            }
+            every_international_organization_member = {
+                limit = {
+                    NOT = { tag = LOT }
+                }
+                join_war_as_defender = {
+                    war = scope:imperial_civil_war
+                }
+            }
+        }
+
+        every_international_organizations_member_of = {
+            limit = {
+                international_organization_type = international_organization_type:prince_faction
+            }
+            every_international_organization_member = {
+                limit = {
+                    NOT = { tag = UBV }
+                    NOT = { tag = LOT }
+                }
+                join_war_as_attacker = {
+                    war = scope:imperial_civil_war
+                }
+            }
+        }
+
+		if = {
+			limit = {
+				situation:guelphs_and_ghibellines = {
+					situation_is_active = yes
+				}
+			}
+			end_situation = {
+				situation = situation:guelphs_and_ghibellines
+				outcome = "guelphs_and_ghibellines_factional_deadlock"
+			}
+		}
+
+        end_situation = {
+            situation = situation:br_hre_civil_war
+            outcome = "br_hre_civil_war_war_declared"
+        }
+    }
+}
+
+br_hre_events.8 = { #powerfull vassals
+	type = country_event
+    title = br_hre_events.8.title
+    desc = br_hre_events.8.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+    option = {
+        name = br_hre_events.8.a
+		scripted_geography:serg_departures_scripted_geography = {
+			every_present_country = {
+				limit = {
+					is_member_of_international_organization = international_organization:hre
+					capital = {
+						is_in_scripted_geography = scripted_geography:serg_departures_scripted_geography
+					}
+				}
+				international_organization:hre = {
+					remove_country_from_international_organization = prev
+				}
+			}
+		}
+    }
+}
+
+br_hre_events.9 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+
+	immediate = {
+		c:UBV ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:UBV
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:bavaria_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:UBV
+				}
+			}
+			if = {
+				limit = {
+					has_estate_privilege = estate_privilege:bavarian_share_of_land
+				}
+				revoke_estate_privilege = estate_privilege:bavarian_share_of_land
+			}
+			form_country = formable_country:BAV_f
+		}
+
+		c:AQN ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:AQN
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:aquitaine_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:AQN
+				}
+			}
+		}
+
+		c:MLO ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:MLO
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:italy_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:MLO
+				}
+			}
+			set_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
+			form_country = formable_country:ITA_f
+			remove_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
+		}
+
+		c:FLA ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:FLA
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:flanders_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:FLA
+				}
+			}
+		}
+
+		c:HOL ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:HOL
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:holland_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:HOL
+				}
+			}
+		}
+
+		if = {
+			limit = { has_variable = br_lot_master_of_spain }
+			c:CAS ?= {
+				international_organization:hre ?= {
+					remove_country_from_international_organization = c:CAS
+				}
+				make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+				}
+				scripted_geography:castile_scripted_geography = {
+					every_location_in_scripted_geography = {
+						change_integration_level = integrated
+						change_location_owner = c:CAS
+					}
+				}
+			}
+			c:ARA ?= {
+				international_organization:hre ?= {
+					remove_country_from_international_organization = c:ARA
+				}
+				make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+				}
+				scripted_geography:aragon_scripted_geography = {
+					every_location_in_scripted_geography = {
+						change_integration_level = integrated
+						change_location_owner = c:ARA
+					}
+				}
+			}
+		}
+
+		c:PAP ?= {
+			international_organization:hre ?= {
+				remove_country_from_international_organization = c:PAP
+			}
+			make_subject_of = {
+				target = c:LOT
+				type = subject_type:vassal
+			}
+			scripted_geography:papal_scripted_geography = {
+				every_location_in_scripted_geography = {
+					change_integration_level = integrated
+					change_location_owner = c:PAP
+				}
+			}
+		}
+
+		international_organization:hre ?= {
+			every_international_organization_member = {
+				limit = {
+					NOT = { tag = LOT }
+					NOT = { tag = UBV }
+					NOT = { tag = AQN }
+					NOT = { tag = MLO }
+					NOT = { tag = FLA }
+					NOT = { tag = HOL }
+					NOT = { tag = PAP }
+					NOT = {
+						AND = {
+							tag = LON
+							root = { has_variable = br_lot_master_of_spain }
+						}
+					}
+					NOT = {
+						AND = {
+							tag = ARA
+							root = { has_variable = br_lot_master_of_spain }
+						}
+					}
+					NOT = {
+						AND = {
+							tag = CAS
+							root = { has_variable = br_lot_master_of_spain }
+						}
+					}
+				}
+				save_scope_as = hre_prince_to_integrate
+				br_annex_country_as_integrated_territory = {
+					country = scope:hre_prince_to_integrate
+				}
+			}
+		}
+
+		trigger_event_non_silently = hre.102
+		trigger_event_non_silently = br_hre_events.10
+	}
+    }
+
+	br_hre_events.10 = {
+	type = country_event
+    title = br_hre_events.10.title
+    desc = br_hre_events.10.desc
+    outcome = neutral
+    image = "gfx/interface/illustrations/disaster/curse_of_stefan_uros_iii.dds"
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+    option = {
+        name = br_hre_events.10.a
+
+	}
+	 }

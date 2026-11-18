@@ -1,0 +1,33 @@
+cb_war_against_electors = {
+	years = 15
+	max_warscore_from_battles = 25
+	additional_war_enthusiasm = {
+		value = 0.5
+		subtract = {
+			value = scope:war.war_length
+			divide = 48
+		}
+		min = 0
+	}
+	create_enabled = {
+		scope:target = {
+			any_owned_location = {
+				is_core_of = root
+			}
+		}
+	}
+	
+	#scopes are actor/recipient for countries, while root = province checked.
+	province = {
+		any_location_in_province = {
+			is_core_of = scope:actor
+		}
+	}
+	allow_separate_peace = no
+	required_peace_treaties = {
+		war_against_electors_victory
+	}
+
+
+	war_goal_type = war_against_electors
+}

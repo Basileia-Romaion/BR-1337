@@ -23,73 +23,17 @@ br_on_game_start = {
 				target = c:BYZ
 			}
         }
-		if = {
-			limit = {
-				has_dlc = "d008_fate_of_the_phoenix"
-			}
-			religion:orthodox = {
-				add_to_variable_map = {
-					name = pentarchy
-					key = location:antioch
-					value = character:br_patriarch_mark
-				}
-				add_to_variable_map = {
-					name = pentarchy
-					key = location:rome
-					value = character:pap_benedetto_xii
-				}
-				add_to_variable_map = {
-					name = pentarchy
-					key = location:alexandria
-					value = character:mam_benjamin_ii_alexandria
-				}
-				add_to_variable_map = {
-					name = pentarchy
-					key = location:jerusalem
-					value = character:br_patriarch_lazaros
-				}
-			}
-			character:br_patriarch_mark = {
-				set_pentarch_variable = { location = location:antioch }
-			}
-			c:AOI = {
-				add_pentarchy_modifier = { location = location:antioch }
-			}
-			character:pap_benedetto_xii = {
-				set_pentarch_variable = { location = location:rome }
-			}
-			c:PAP = {
-				add_pentarchy_modifier = { location = location:rome }
-			}
-			character:mam_benjamin_ii_alexandria = {
-				set_pentarch_variable = { location = location:alexandria }
-			}
-			c:MAM = {
-				add_pentarchy_modifier = { location = location:alexandria }
-			}
-			character:br_patriarch_lazaros = {
-				set_pentarch_variable = { location = location:jerusalem }
-			}
-			c:SY2 = {
-				add_pentarchy_modifier = { location = location:jerusalem }
-			}
-		}
 
         c:E1Y ?= {
             trigger_event_silently = br_startup.1 #resource changes
 			trigger_event_silently = elysium_event.3
-        }
-		c:E2Y ?= {
-			trigger_event_silently = elysium_event.4
-        }
-		c:NRV ?= {
-			trigger_event_silently = br_vinland_event.2
         }
         #c:RIC ?= {
             #trigger_event_silently = br_indikes_events.1
         #}
 		c:LOT ?= {
             trigger_event_silently = br_hre_events.1
+			trigger_event_silently = br_hre_events.2
         }
 		c:SAR ?= {
             trigger_event_silently = br_country_startup.4
@@ -112,10 +56,6 @@ br_on_game_start = {
         c:OHS ?= {
             trigger_event_silently = br_country_startup.3 #extra cbs
         }
-
-		#Events to boost lucky ai countries
-		#33% x100 years
-		#50% x100 years
 
         c:BYZ ?= {
 			trigger_event_silently = br_ere_events.1 #start event with cbs
@@ -183,6 +123,7 @@ br_on_game_start = {
         }
 		every_country = {
 			limit = { has_reform = government_reform:military_order_reform }
+
             if = {
                 limit = {
 					capital ?= { NOT = { region = region:baltic_region } }
@@ -201,7 +142,7 @@ br_on_game_start = {
 			research_advance = advance_type:new_world_advance
             research_advance = advance_type:colonial_charters
 			research_advance = advance_type:colonial_policy_advance
-			research_advance = advance_type:native_policy_advance
+			#research_advance = advance_type:send_people_to_the_colonies_advance
         }
 		every_country = {
 			limit = {
@@ -310,12 +251,6 @@ br_on_game_start = {
 			research_advance = advance_type:guilds
 			research_advance = advance_type:talented_traders
 		}
-		c:GAZ ?= {
-			make_subject_of = {
-				target = c:GEN
-				type = subject_type:colonial_nation
-			}
-		}
 		c:DLM ?= {
 			research_advance = advance_type:meritocracy_advance
             research_advance = advance_type:power_projection_advance_1
@@ -388,6 +323,30 @@ br_on_game_start = {
 			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
 			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
 		}
+		c:VEN ?= {
+			research_advance = advance_type:naval_morale_advance_1
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+            research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:diplomatic_capacity_traditions
+		}
+		c:GEN ?= {
+			research_advance = advance_type:naval_morale_advance_1
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+            research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:diplomatic_capacity_traditions
+		}
+		c:PIS ?= {
+			research_advance = advance_type:naval_morale_advance_1
+			research_advance = advance_type:merchants_and_trade
+			research_advance = advance_type:trade_range_advance_age_2
+			research_advance = advance_type:rudimentary_coastal_ship_repair
+            research_advance = advance_type:meritocracy_advance
+			research_advance = advance_type:diplomatic_capacity_traditions
+		}
 		c:K1K ?= {
 			research_advance = advance_type:unlock_barque_advance
 			research_advance = advance_type:letters_of_marque
@@ -397,7 +356,6 @@ br_on_game_start = {
 			research_advance = advance_type:rudimentary_coastal_ship_repair
 			#add_policy = policy:pirate_elective
 			#add_policy = policy:benefits_for_privateers
-			add_policy = policy:native_trade
 		}
 		c:A1G ?= {
 			trigger_event_silently = br_ere_events.1002
@@ -482,20 +440,30 @@ br_on_game_start = {
 			research_advance = advance_type:muslim_caravans
         }
 
-		c:GRA ?= {
-			change_tag_cosmetic = { tag = ADU } #So it has the correct name until the tag is formed.
-			form_country = formable_country:ADU_f_GRA
-			#trigger_event_silently = br_startup.2
+		c:TUR ?= {
+			research_advance = advance_type:seljuk_roots
+			research_advance = advance_type:timariots
+			research_advance = advance_type:bashi_bazouks
+			research_advance = advance_type:akinji_cavalry
+			research_advance = advance_type:heirs_of_rum
+			research_advance = advance_type:uc_bey_advance
+			research_advance = advance_type:persian_in_the_court
+			research_advance = advance_type:crossroads_of_commerce
+			research_advance = advance_type:millets
+			research_advance = advance_type:timariots
+			research_advance = advance_type:autonomous_pashas
+			add_gold = 500
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_extreme_bonus }
+			add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_extreme_bonus }
+		}
+
+		c:ADU ?= {
 			research_advance = advance_type:ledgers_double_checking
 			research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
 			research_advance = advance_type:province_governors
 		}
-		
 		c:MAM ?= {
-			change_tag_cosmetic = { tag = EGY }
-			#form_country = formable_country:EGY_f_Fatamid
-			change_country_color = map_egypt
 			research_advance = advance_type:ledgers_double_checking
             research_advance = advance_type:power_projection_advance_1
             research_advance = advance_type:non_inheritable_offices
@@ -507,122 +475,6 @@ br_on_game_start = {
 			research_advance = advance_type:indian_sea_trade
 		}
 
-		c:NAP ?= {
-			change_tag_cosmetic = { tag = BNV }
-			change_country_color = map_naples
-			#trigger_event_silently = br_startup.3
-		}
-		c:ENG ?= {
-			change_tag_cosmetic = { tag = NSE } #So it has the correct name until the tag is formed.
-			form_country = formable_country:NSE_f
-			#trigger_event_silently = br_startup.4
-		}
-
-		c:TUR ?= {
-			change_tag_cosmetic = { tag = RUM }
-			#form_country = formable_country:RUM_f
-		}
-
-	#Locations
-
-	location:baghdad = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:damascus = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:aleppo = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:mosul = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:rey = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:alexandria = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:tabriz = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:isfahan = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:samarkand = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-	location:astrakhan = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_center
-			mode = add
-		}
-	}
-
-	location:kayseri = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
-	location:ani = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
-	location:theodoro = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
-
-	location:trebizond = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
-	location:antioch = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
-	location:hormuz = {
-		add_location_modifier = {
-			modifier = br_silk_road_trade_hub
-			mode = add
-		}
-	}
 
 	#Starting roads
 	 
