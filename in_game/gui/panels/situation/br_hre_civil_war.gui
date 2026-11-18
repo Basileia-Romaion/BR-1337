@@ -145,7 +145,7 @@ situation_panel = {
             # Emperor faction
 
             blockoverride "left_header_icon" {
-                texture = "gfx/interface/icons/international_organizations/emperor_faction.dds"
+                texture = "gfx\interface\icons\international_organizations\special_statuses/emperor.dds"
             }
 
             blockoverride "left_header_text" {
@@ -180,7 +180,7 @@ situation_panel = {
             # Prince faction
 
             blockoverride "right_header_icon" {
-                texture = "gfx/interface/icons/international_organizations/prince_faction.dds"
+                texture = "gfx\interface\icons\international_organizations\special_statuses/imperial_peasant_republic.dds"
             }
 
             blockoverride "right_header_text" {
