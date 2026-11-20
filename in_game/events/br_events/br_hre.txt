@@ -450,7 +450,7 @@ br_hre_events.8 = { #powerfull vassals
     }
 }
 
-br_hre_events.9 = {
+br_hre_events.9 = { #peace deal after the victory in the civil war
 	type = country_event
 	outcome = neutral
 	title = empty_text
@@ -498,37 +498,33 @@ br_hre_events.9 = {
 		}
 
 		c:MLO ?= {
-			international_organization:hre ?= {
-				remove_country_from_international_organization = c:MLO
-			}
-			make_subject_of = {
-				target = c:LOT
-				type = subject_type:vassal
-			}
-			scripted_geography:italy_scripted_geography = {
-				every_location_in_scripted_geography = {
-					change_integration_level = integrated
-					change_location_owner = c:MLO
+			if = {
+				limit = {
+					is_member_of_international_organization = international_organization:hre
 				}
-			}
-			set_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
-			form_country = formable_country:ITA_f
-			remove_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
-		}
-
-		c:FLA ?= {
-			international_organization:hre ?= {
-				remove_country_from_international_organization = c:FLA
-			}
-			make_subject_of = {
-				target = c:LOT
-				type = subject_type:vassal
-			}
-			scripted_geography:flanders_scripted_geography = {
-				every_location_in_scripted_geography = {
-					change_integration_level = integrated
-					change_location_owner = c:FLA
+				scripted_geography:italy_scripted_geography = {
+					every_location_in_scripted_geography = {
+						limit = {
+							owner = {
+								is_member_of_international_organization = international_organization:hre
+								NOT = { tag = PAP }
+								NOT = { is_subject_of = c:PAP }
+							}
+						}
+						change_integration_level = integrated
+						change_location_owner = c:MLO
+					}
 				}
+				international_organization:hre ?= {
+					remove_country_from_international_organization = c:MLO
+				}
+				make_subject_of = {
+					target = c:LOT
+					type = subject_type:vassal
+				}
+				set_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
+				form_country = formable_country:ITA_f
+				remove_variable = gag_guelphs_winner_may_form_italy_without_location_requirements
 			}
 		}
 
